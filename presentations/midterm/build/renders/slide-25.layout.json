@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/ab9e18","index":24,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/e9cfq1o3","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"初始空间宽度与相对展宽","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1c3y1gne","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/gbuxsb6t","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C02、C08　q₀ = (0.7,0)，η = 1","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3elg3q5k","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"25","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/b6xsnelo","kind":"image","position":{"left":43,"top":146,"width":727,"height":343},"fit":"contain","alt":"c02-space-bandwidth"},
+{"id":"ch/9gbe1kfu","kind":"chart","position":{"left":790,"top":151,"width":436,"height":353},"chartType":"scatter","title":"相对初始宽度"},
+{"id":"tb/1gbilgf6","kind":"table","position":{"left":61,"top":526,"width":1155,"height":82},"text":"初始 RMS 宽度 / a\t3\t6\t10\nσₓ(60) / σₓ(0)\t2.718\t1.185\t1.026","rows":2,"cols":4},
+{"id":"sh/ji1wrm5g","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/ihsfihov","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"更窄频谱减小速度分散，同时需要更大的初始空间范围。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

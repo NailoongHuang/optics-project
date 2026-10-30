@@ -1,0 +1,1712 @@
+{
+  "summary": {
+    "date": "2026-10-21",
+    "works": 43,
+    "works_with_pdf": 36,
+    "pdf_files": 37,
+    "missing_pdf": 7,
+    "all_local_pdf_paths": [
+      "literature/collection-completion-2026-10-21/extra-backflow/2211.09057v1.pdf",
+      "literature/collection-completion-2026-10-21/extra-backflow/2309.02245v2.pdf",
+      "literature/collection-completion-2026-10-21/followups/1101.2101v2_disordered-dynamics.pdf",
+      "literature/collection-completion-2026-10-21/followups/1708.09649v1_spin-ring-robustness.pdf",
+      "literature/collection-completion-2026-10-21/followups/2107.08518v1_dyson-disorder.pdf",
+      "literature/collection-completion-2026-10-21/followups/2504.05505v2_photonic-dispersion.pdf",
+      "literature/collection-completion-2026-10-21/followups/tapia2025_many-neighbors.pdf",
+      "literature/collection-completion-2026-10-21/followups/tapia2025_second-neighbors.pdf",
+      "literature/cosine-lattice-wavepacket-audit/backflow/2504.12489v2.pdf",
+      "literature/cosine-lattice-wavepacket-audit/backflow/2511.10155v2.pdf",
+      "literature/cosine-lattice-wavepacket-audit/backflow/2511.16867v2.pdf",
+      "literature/cosine-lattice-wavepacket-audit/discrete-optics/chen2007_two-dimensional-discrete-diffraction.pdf",
+      "literature/cosine-lattice-wavepacket-audit/discrete-optics/eisenberg_thesis.pdf",
+      "literature/cosine-lattice-wavepacket-audit/discrete-optics/longhi2009_1001.0997v1_discrete-diffraction.pdf",
+      "literature/cosine-lattice-wavepacket-audit/magnonics/2209.06608v1_inverse-design.pdf",
+      "literature/cosine-lattice-wavepacket-audit/magnonics/2603.22051v1_nonlinear-pulse-suppression.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/apollaro_2012_1203.5516v1.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/banchi_2013_1309.0069v2.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/gong_brumer_2007_quant-ph_0702265v1.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_quant-ph_0404152v2.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/meier_2025_2407.07948v1.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_quant-ph_0312141v1.pdf",
+      "literature/cosine-lattice-wavepacket-audit/spin-chain/thompson_2016_1511.05656v3.pdf",
+      "literature/linear-spin-wave-packets/optical-method/1711.04027v1_airy-bessel-pulsed-beams.pdf",
+      "literature/linear-spin-wave-packets/optical-method/2109.00782v1_space-time-dispersive-media.pdf",
+      "literature/linear-spin-wave-packets/optical-method/2201.08297v1_space-time-review.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/1703.05548v1_all-angle-collimation.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/1906.02301v1_bessel-gaussian-fourier-optics.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/2108.08054v1_dispersionless-pulses.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/2111.02236v1_geometrical-control.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/2301.01220v1_caustic-classification.pdf",
+      "literature/linear-spin-wave-packets/spin-wave/2404.15011v4_nonreciprocal-caustic-beams.pdf",
+      "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2602.12767v2.pdf",
+      "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2607.10281v1.pdf",
+      "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/2607.07324v1_perspectives.pdf",
+      "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/ji2024_robust_transport.pdf",
+      "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/meier2025_published.pdf"
+    ]
+  },
+  "records": [
+    {
+      "title": "The Propagation of Quantum Information Through a Spin System",
+      "authors": [
+        "Tobias J. Osborne",
+        "Noah Linden"
+      ],
+      "year": 2004,
+      "doi": "10.1103/PhysRevA.69.052315",
+      "arxiv_id": "quant-ph/0312141",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "先读：最直接对应本项目的 Gaussian 波包与三阶展宽。",
+      "sources": [
+        "https://arxiv.org/pdf/quant-ph/0312141v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physreva_69_052315.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_quant-ph_0312141v1.pdf",
+          "source_url": "https://arxiv.org/pdf/quant-ph/0312141v1",
+          "edition": "arXiv quant-ph/0312141v1",
+          "pages": 7,
+          "bytes": 528957,
+          "sha256": "eec3b4d4acb52d637949abafd535d1a91d5c8b1439a67d366cfa4eda8d047b34",
+          "first_page_excerpt": "arXiv:quant-ph/0312141v1  16 Dec 2003\nThe Propagation of Quantum Information Through a Spin System\nTobias J. Osborne∗and Noah Linden†\nDepartment of Mathematics, University of Bristol,\nUniversity Walk, Bristol BS8 1TW, United Kingdom\n(Dated: 19th November 2003)\nIt has been recently suggested that the dynamics of a quantum spin system may provide a natural\nmechanism for transporting quantum information. We show that one dimensional rings of qubits\nwith ﬁxed (time-independent) interactions, constant around the ring, allow high ﬁdelity communi-\ncation of quantum states. We show that the problem of maximising the ﬁdelity of the quantum\ncommunication is related to a classical problem in fourier wave analysis. By making use of this\nobservation we ﬁnd that if both communicating parties have access to limited numbers of qubits in\nthe ring (a fraction that vanishes in the limit of large rings) it is possible to make the communication\narbitrarily good.\nPACS numbers: 03.67.Hk, 05.50.+q, 32.80.Lg\nIn quantum information science it is a crucial problem\nto develop techniques for communicating qubits. A key\ntask is to develop protocols for taking a qubit’s state at\none location to another while min",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review A",
+      "volume": "69",
+      "pages_or_article": "052315",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_quant-ph_0312141v1.pdf",
+      "catalog_id": "P01"
+    },
+    {
+      "title": "Time Independent Universal Computing with Spin Chains: Quantum Plinko Machine",
+      "authors": [
+        "K F Thompson",
+        "C Gokler",
+        "S Lloyd",
+        "P W Shor"
+      ],
+      "year": 2016,
+      "doi": "10.1088/1367-2630/18/7/073044",
+      "arxiv_id": "1511.05656",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "查 Gaussian 波包近似平移的误差界。",
+      "sources": [
+        "https://arxiv.org/pdf/1511.05656v3"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_1367_2630_18_7_073044.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/thompson_2016_1511.05656v3.pdf",
+          "source_url": "https://arxiv.org/pdf/1511.05656v3",
+          "edition": "arXiv 1511.05656v3",
+          "pages": 34,
+          "bytes": 2015270,
+          "sha256": "76ff98eaca3b40af743cfab82e6ce6cfacd62bfcaa3f59c67d50d59e50d9d3d2",
+          "first_page_excerpt": "Time Independent Universal Computing with Spin\nChains: Quantum Plinko Machine\nK F Thompson1, C Gokler2, S Lloyd3, and P W Shor4\n1 School of Engineering and Applied Sciences, Harvard University, Cambridge MA\n02138, USA\n2 School of Engineering and Applied Sciences, Harvard University, Cambridge MA\n02138, USA\n3 Department of Mechanical Engineering, Room 3-160 Massachusetts Institute of\nTechnology 77 Massachusetts Ave. Cambridge, MA 02139, USA\n4 Department of Mathematics, Room 2-375 Massachusetts Institute of Technology 77\nMassachusetts Ave. Cambridge, MA 02139, USA\nE-mail: kft@seas.harvard.edu\nAbstract.\nWe present a scheme for universal quantum computing using XY\nHeisenberg spin chains. Information is encoded into packets propagating down these\nchains, and they interact with each other to perform universal quantum computation.\nA circuit using g gate blocks on m qubits can be encoded into chains of length\nO(g3+δm3+δ) for all δ > 0 with vanishingly small error.\nPACS numbers: 03.65.Aa, 03.67.Ac, 03.67.Hk\narXiv:1511.05656v3  [quant-ph]  5 Jan 2016\n",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "New Journal of Physics",
+      "volume": "18",
+      "pages_or_article": "073044",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/thompson_2016_1511.05656v3.pdf",
+      "catalog_id": "P02"
+    },
+    {
+      "title": "Precision is not limited by the second law of thermodynamics",
+      "authors": [
+        "Florian Meier",
+        "Yuri Minoguchi",
+        "Simon Sundelin",
+        "Tony J. G. Apollaro",
+        "Paul Erker",
+        "Simone Gasparinetti",
+        "Marcus Huber"
+      ],
+      "year": 2025,
+      "doi": "10.1038/s41567-025-02929-2",
+      "arxiv_id": "2407.07948",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "先读正式版；看低展宽传播如何用于量子时钟。",
+      "sources": [
+        "https://arxiv.org/pdf/2407.07948v1",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/",
+        "https://research.chalmers.se/publication/546881/file/546881_Fulltext.pdf"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1038_s41567_025_02929_2.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/meier_2025_2407.07948v1.pdf",
+          "source_url": "https://arxiv.org/pdf/2407.07948v1",
+          "edition": "arXiv 2407.07948v1",
+          "pages": 22,
+          "bytes": 3947540,
+          "sha256": "d37e2dbcec0edbf1de59570d7694bc56e58d789e11611c7707b693639eda16b5",
+          "first_page_excerpt": "Precision is not limited by the second law of thermodynamics\nFlorian Meier,1, ∗Yuri Minoguchi,1, 2 Simon Sundelin,3 Tony Apollaro,4\nPaul Erker,1, 2 Simone Gasparinetti,3, † and Marcus Huber1, 2, ‡\n1Atominstitut, Technische Universit¨at Wien, 1020 Vienna, Austria\n2Institute for Quantum Optics and Quantum Information - IQOQI Vienna,\nAustrian Academy of Sciences, Boltzmanngasse 3, 1090 Vienna, Austria\n3Department of Microtechnology and Nanoscience,\nChalmers University of Technology, 412 96 Gothenburg, Sweden\n4Department of Physics, University of Malta, Msida MSD 2080, Malta\n(Dated: July 12, 2024)\nPhysical devices operating out of equilibrium are inherently affected by thermal fluctuations,\nlimiting their operational precision. This issue is pronounced at microscopic and especially quantum\nscales and can only be mitigated by incurring additional entropy dissipation. Understanding this\nconstraint is crucial for both fundamental physics and technological design. For instance, clocks\nare inherently governed by the second law of thermodynamics and need a thermodynamic flux\ntowards equilibrium to measure time, which results in a minimum entropy dissipation per clock\ntick.\nClassical and quan",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        },
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/meier2025_published.pdf",
+          "source_url": "https://research.chalmers.se/publication/546881/file/546881_Fulltext.pdf",
+          "edition": "Published version of record with institutional cover",
+          "pages": 13,
+          "bytes": 2752496,
+          "sha256": "64aa3ef57083e26266db6255b2cd88ddd109c7009c7ba41c03593da30928188f",
+          "first_page_excerpt": "Precision is not limited by the second law of thermodynamics\nDownloaded from: https://research.chalmers.se, 2026-10-20 16:14 UTC\nCitation for the original published paper (version of record):\nMeier, F., Minoguchi, Y., Sundelin, S. et al (2025). Precision is not limited by the second law of\nthermodynamics. Nature Physics, 21. http://dx.doi.org/10.1038/s41567-025-02929-2\nN.B. When citing this work, cite the original published paper.\nresearch.chalmers.se offers the possibility of retrieving research publications produced at Chalmers University of Technology. It\ncovers all kind of research output: articles, dissertations, conference papers, reports etc. since 2004. research.chalmers.se is\nadministrated and maintained by Chalmers Library\n(article starts on next page)\n",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Nature Physics",
+      "volume": "21",
+      "pages_or_article": "1147-1152",
+      "status": "全文已保存",
+      "preferred_file": "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/meier2025_published.pdf",
+      "catalog_id": "P03"
+    },
+    {
+      "title": "Optimal state encoding for quantum walks and quantum communication over spin systems",
+      "authors": [
+        "Haselgrove, Henry L."
+      ],
+      "year": 2005,
+      "doi": "10.1103/PhysRevA.72.062326",
+      "arxiv_id": "quant-ph/0404152",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "了解怎样选择更适合发送和接收的初态。",
+      "sources": [
+        "https://arxiv.org/pdf/quant-ph/0404152v2"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_quant-ph_0404152v2.pdf",
+          "source_url": "https://arxiv.org/pdf/quant-ph/0404152v2",
+          "edition": "arXiv quant-ph/0404152v2",
+          "pages": 10,
+          "bytes": 358161,
+          "sha256": "67d4638ccf7907e756692fd62b0a793bb20497300d34b905336bfa8020b9adbf",
+          "first_page_excerpt": "arXiv:quant-ph/0404152v2  12 May 2004\nOptimal state encoding for quantum walks and quantum communication over spin\nsystems\nHenry L. Haselgrove1,2, ∗\n1School of Physical Sciences, University of Queensland, Brisbane 4072, Australia\n2Information Sciences Laboratory, Defence Science and Technology Organisation, Edinburgh 5111 Australia\n(Dated: November 6, 2018)\nRecent work has shown that a simple chain of interacting spins can be used as a medium for\nhigh-ﬁdelity quantum communication. We describe a scheme for quantum communication using a\nspin system that conserves z-spin, but otherwise is arbitrary. The sender and receiver are assumed\nto directly control several spins each, with the sender encoding the message state onto the larger\nstate-space of her control spins. We show how to ﬁnd the encoding that maximises the ﬁdelity of\ncommunication, using a simple method based on the singular-value decomposition. Also, we show\nthat this solution can be used to increase communication ﬁdelity in a rather diﬀerent circumstance:\nwhere no encoding of initial states is used, but where the sender and receiver control exactly two spins\neach and vary the interactions on those spins over time. The meth",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_quant-ph_0404152v2.pdf",
+      "catalog_id": "P04"
+    },
+    {
+      "title": "Controlled Quantum State Transfer in a Spin Chain",
+      "authors": [
+        "Gong, Jiangbin",
+        "Brumer, Paul"
+      ],
+      "year": 2007,
+      "doi": "10.1103/PhysRevA.75.032331",
+      "arxiv_id": "quant-ph/0702265",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "看少量自旋怎样制备、停止和重新发射波包。",
+      "sources": [
+        "https://arxiv.org/pdf/quant-ph/0702265v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/gong_brumer_2007_quant-ph_0702265v1.pdf",
+          "source_url": "https://arxiv.org/pdf/quant-ph/0702265v1",
+          "edition": "arXiv quant-ph/0702265v1",
+          "pages": 6,
+          "bytes": 151719,
+          "sha256": "fa36bbb8aa671581c88b1529fb7dd89c9d206b11012208383977553c615b6387",
+          "first_page_excerpt": "arXiv:quant-ph/0702265v1  28 Feb 2007\nControlled Quantum State Transfer in a Spin Chain\nJiangbin Gong1 and Paul Brumer2\n1Department of Physics and Center for Computational Science and Engineering,\nNational University of Singapore, 117542, Republic of Singapore\n2Chemical Physics Theory Group and Center for Quantum Information and Quantum Control,\nUniversity of Toronto, Toronto, Canada M5S 3H6\n(Dated: OCT. 25, 2006)\nControl of the transfer of quantum information encoded in quantum wavepackets moving along\na spin chain is demonstrated. Speciﬁcally, based on a relationship with control in a paradigm of\nquantum chaos, it is shown that wavepackets with slow dispersion can automatically emerge from\na class of initial superposition states involving only a few spins, and that arbitrary unspeciﬁed\ntravelling wavepackets can be nondestructively stopped and later relaunched with perfection. The\nresults establish an interesting application of quantum chaos studies in quantum information science.\nPACS numbers: 03.67.Hk, 32.80.Qk, 05.45.Mt, 75.10.Pq\nI.\nINTRODUCTION\nGreat eﬀort is being devoted to studies of spin chains\nas promising “quantum wires” for quantum information\ntransfer. With spin chain",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/gong_brumer_2007_quant-ph_0702265v1.pdf",
+      "catalog_id": "P05"
+    },
+    {
+      "title": "Dynamics of a quantum particle in low-dimensional disordered systems with extended states",
+      "authors": [
+        "P L Krapivsky",
+        "J M Luck"
+      ],
+      "year": 2011,
+      "doi": "10.1088/1742-5468/2011/02/P02031",
+      "arxiv_id": "1101.2101",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "了解无序系统中扩展态与动力学之间的关系。",
+      "sources": [
+        "https://arxiv.org/pdf/1101.2101",
+        "https://arxiv.org/pdf/1101.2101v2"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_1742_5468_2011_02_p02031.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/1101.2101v2_disordered-dynamics.pdf",
+          "source_url": "https://arxiv.org/pdf/1101.2101v2",
+          "edition": "arXiv v2",
+          "pages": 20,
+          "bytes": 406468,
+          "sha256": "008f62ad4e42a706123615ed1a17f2f7c84ac4e5a18d50adcac755cbe8a94795",
+          "first_page_excerpt": "arXiv:1101.2101v2  [cond-mat.dis-nn]  18 Feb 2011\nDynamics of a quantum particle in low-dimensional\ndisordered systems with extended states\nP L Krapivsky1,2 and J M Luck2\n1 Department of Physics, Boston University, Boston, MA 02215, USA\n2 Institut de Physique Th´eorique, IPhT, CEA Saclay and URA 2306, CNRS, 91191\nGif-sur-Yvette cedex, France\nAbstract.\nWe investigate the dynamics of a quantum particle in disordered tight-\nbinding models in one and two dimensions which are exceptions to the common wisdom\non Anderson localization, in the sense that the localization length diverges at some\nspecial energies. We provide a consistent picture for two well-known one-dimensional\nexamples: the chain with oﬀ-diagonal disorder and the random-dimer model. In both\ncases the quantum motion exhibits a peculiar kind of anomalous diﬀusion which can\nbe referred to as bi-fractality. The disorder-averaged density proﬁle of the particle\nbecomes critical in the long-time regime.\nThe q-th moment of the position of the\nparticle diverges with time whenever q exceeds some q0. We obtain q0 = 2 for oﬀ-\ndiagonal disorder on the chain (and conjecturally on two-dimensional bipartite lattices\nas well). For the rand",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Journal of Statistical Mechanics: Theory and Experiment",
+      "volume": "2011",
+      "pages_or_article": "P02031",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/1101.2101v2_disordered-dynamics.pdf",
+      "catalog_id": "P06"
+    },
+    {
+      "title": "99%-fidelity ballistic quantum-state transfer through long uniform channels",
+      "authors": [
+        "T. J. G. Apollaro",
+        "L. Banchi",
+        "A. Cuccoli",
+        "R. Vaia",
+        "P. Verrucchi"
+      ],
+      "year": 2012,
+      "doi": "10.1103/PhysRevA.85.052319",
+      "arxiv_id": "1203.5516",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "对比自由传播与实际端到端传输的区别。",
+      "sources": [
+        "https://arxiv.org/pdf/1203.5516v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physreva_85_052319.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/apollaro_2012_1203.5516v1.pdf",
+          "source_url": "https://arxiv.org/pdf/1203.5516v1",
+          "edition": "arXiv 1203.5516v1",
+          "pages": 12,
+          "bytes": 949717,
+          "sha256": "3b55de66f88d7f8f906f0f4233520ceb162dfd6ebfb5e7ee9734cc254c20ad7e",
+          "first_page_excerpt": "arXiv:1203.5516v1  [quant-ph]  25 Mar 2012\n99%-ﬁdelity ballistic quantum-state transfer through long uniform channels\nT. J. G. Apollaro,1, 2 L. Banchi,3 A. Cuccoli,4, 5 R. Vaia,6 and P. Verrucchi6, 4, 5\n1Dipartimento di Fisica, Universit`a della Calabria,\nVia P.Bucci, 87036 Arcavacata di Rende (CS), Italy\n2INFN–Gruppo collegato di Cosenza, Via P.Bucci, 87036 Arcavacata di Rende (CS), Italy\n3ISI Foundation, Via Alassio 11/c, I-10126 Torino (TO), Italy\n4Dipartimento di Fisica, Universit`a di Firenze, Via G. Sansone 1, I-50019 Sesto Fiorentino (FI), Italy\n5INFN Sezione di Firenze, via G.Sansone 1, I-50019 Sesto Fiorentino (FI), Italy\n6Istituto dei Sistemi Complessi, Consiglio Nazionale delle Ricerche,\nvia Madonna del Piano 10, I-50019 Sesto Fiorentino (FI), Italy\n(Dated: June 21, 2018)\nQuantum-state transfer with ﬁdelity higher than 0.99 can be achieved in the ballistic regime of an\narbitrarily long one-dimensional chain with uniform nearest-neighbor interaction, except for the two\npairs of mirror symmetric extremal bonds, say x (ﬁrst and last) and y (second and last-but-one).\nThese have to be roughly tuned to suitable values x ∼2N −1/3 and y ∼23/4N −1/6, N being the chain\nlength. The",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Physical Review A",
+      "volume": "85",
+      "pages_or_article": "052319",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/apollaro_2012_1203.5516v1.pdf",
+      "catalog_id": "P07"
+    },
+    {
+      "title": "Ballistic quantum state transfer in spin chains: general theory for quasi-free models and arbitrary initial states",
+      "authors": [
+        "Leonardo Banchi"
+      ],
+      "year": 2013,
+      "doi": "10.1140/epjp/i2013-13137-6",
+      "arxiv_id": "1309.0069",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "作为弹道传输和已有方案的综述入口。",
+      "sources": [
+        "https://arxiv.org/pdf/1309.0069v2"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1140_epjp_i2013_13137_6.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/banchi_2013_1309.0069v2.pdf",
+          "source_url": "https://arxiv.org/pdf/1309.0069v2",
+          "edition": "arXiv 1309.0069v2",
+          "pages": 18,
+          "bytes": 1603063,
+          "sha256": "39c9ca58c1955a0ba98f7c992d5d8e041ec3fad78b2fb51c15fbe23669bf1d05",
+          "first_page_excerpt": "EPJ manuscript No.\n(will be inserted by the editor)\nBallistic quantum state transfer in spin chains: general theory for\nquasi-free models and arbitrary initial states\nLeonardo Banchi1,2,3\n1 Department of Physics and Astronomy, University College London, Gower St., London WC1E 6BT, United Kingdom\n2 Dipartimento di Fisica, Universit`a di Firenze, Via G. Sansone 1, I-50019 Sesto Fiorentino (FI), Italy\n3 INFN Sezione di Firenze, via G.Sansone 1, I-50019 Sesto Fiorentino (FI), Italy\nNovember 8, 2018\nAbstract. Ballistic quantum-information transfer through spin chains is based on the idea of making the\nspin dynamics ruled by collective excitations with linear dispersion relation. Unlike perfect state transfer\nschemes, a ballistic transmission requires only a minimal engineering of the interactions; in fact, for most\npractical purposes, the optimization of the couplings to the ends of the chain is suﬃcient to obtain an almost\nperfect transmission. In this work we review diﬀerent ballistic quantum-state transfer protocols based on\nthe dynamics of quasi-free spin chains, and further generalize them both at zero and ﬁnite temperature.\nIn particular, besides presenting novel analytical result",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "The European Physical Journal Plus",
+      "volume": "128",
+      "pages_or_article": "137",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/spin-chain/banchi_2013_1309.0069v2.pdf",
+      "catalog_id": "P08"
+    },
+    {
+      "title": "Sensitivity and Robustness of Quantum Spin-1/2 Rings to Parameter Uncertainty",
+      "authors": [
+        "Sean O'Neil",
+        "Edmond Jonckheere",
+        "Sophie Schirmer",
+        "Frank Langbein"
+      ],
+      "year": 2017,
+      "doi": "10.1109/CDC.2017.8264584",
+      "arxiv_id": "1708.09649",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "了解参数不确定时，传输控制会怎样变化。",
+      "sources": [
+        "https://arxiv.org/abs/1708.09649",
+        "https://arxiv.org/pdf/1708.09649v1"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1109_cdc_2017_8264584.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/1708.09649v1_spin-ring-robustness.pdf",
+          "source_url": "https://arxiv.org/pdf/1708.09649v1",
+          "edition": "arXiv v1",
+          "pages": 6,
+          "bytes": 853836,
+          "sha256": "4a71b513f751ee09025016620506a91273278280894a8d2dbc6a792536c15c12",
+          "first_page_excerpt": " \n \nAbstract— Selective transfer of information between spin-1/2 \nparticles arranged in a ring is achieved by optimizing the \ntransfer fidelity over a readout time window via shaping, \nexternally applied, static bias fields. Such static control fields \nhave properties that clash with the expectations of classical \ncontrol theory. Previous work has shown that there are cases in \nwhich the logarithmic differential sensitivity of the transfer \nfidelity to uncertainty in coupling strength or spillage of the bias \nfield to adjacent spins is minimized by controllers that produce \nthe best fidelity.  Here we expand upon these examples and \nexamine cases of both classical and non-classical behavior of \nlogarithmic sensitivity to parameter uncertainty and robustness \nas measured by the 𝝁 function for quantum systems. In \nparticular we examine these properties in an 11-spin ring with a \nsingle uncertainty in coupling strength or a single bias spillage.   \nI. INTRODUCTION \nInformation encoded in networks of coupled spins can \npropagate without mass or change transport. For example, \nspintronic devices using nuclear or electron spins confined to \nquantum dots in 2D electron gas (2DEG) control",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "2017 IEEE 56th Annual Conference on Decision and Control (CDC)",
+      "volume": "",
+      "pages_or_article": "6137-6142",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/1708.09649v1_spin-ring-robustness.pdf",
+      "catalog_id": "P09"
+    },
+    {
+      "title": "Beyond the universal Dyson singularity for 1-D chains with hopping disorder",
+      "authors": [
+        "Akshay Krishna",
+        "R.N. Bhatt"
+      ],
+      "year": 2021,
+      "doi": "10.1016/j.aop.2021.168537",
+      "arxiv_id": "2107.08518",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "理解随机耦合链的带中心行为，避免把已知机制当作新发现。",
+      "sources": [
+        "https://arxiv.org/pdf/2107.08518",
+        "https://arxiv.org/pdf/2107.08518v1"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1016_j_aop_2021_168537.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/2107.08518v1_dyson-disorder.pdf",
+          "source_url": "https://arxiv.org/pdf/2107.08518v1",
+          "edition": "arXiv v1",
+          "pages": 13,
+          "bytes": 863733,
+          "sha256": "f1b1a9428820e76b5a5b4b851cce0f1352a87f1cf2d087b1d6cb8898ddf37fc4",
+          "first_page_excerpt": "Beyond the universal Dyson singularity for 1-D chains with hopping\ndisorder\nAkshay Krishnaa,b, R. N. Bhatta\naDepartment of Electrical Engineering, Princeton University, Princeton NJ 08544, USA\nbKLA Corporation, 2350 Green Road Suite 100, Ann Arbor, MI, 48105, USA\nAbstract\nWe study a simple non-interacting nearest neighbor tight-binding model in one dimension with disorder,\nwhere the hopping terms are chosen randomly. This model exhibits a well-known singularity at the band\ncenter both in the density of states and localization length. If the probability distribution of the hopping\nterms is well-behaved, then the singularities exhibit universal behavior, the functional form of which was\nﬁrst discovered by Freeman Dyson in the context of a chain of classical harmonic oscillators. We show here\nthat this universal form can be violated in a tunable manner if the hopping elements are chosen from a\ndivergent probability distribution. We also demonstrate a connection between a breakdown of universality\nin this quantum problem and an analogous scenario in the classical domain – that of random walks and\ndiﬀusion with anomalous exponents.\n1. Introduction\nThe question “How do particles move?” i",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Annals of Physics",
+      "volume": "435",
+      "pages_or_article": "168537",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/2107.08518v1_dyson-disorder.pdf",
+      "catalog_id": "P10"
+    },
+    {
+      "title": "Inverse engineering for robust state transport along a spin chain via low-energy subspaces",
+      "authors": [
+        "Yunlan Ji",
+        "Ze Wu",
+        "Ran Liu",
+        "Yuchen Li",
+        "Fangzhou Jin",
+        "Hui Zhou",
+        "Xinhua Peng"
+      ],
+      "year": 2024,
+      "doi": "10.1088/1367-2630/ad19fd",
+      "arxiv_id": "",
+      "topic": "01 自旋链与波包传播",
+      "why_read": "对比稳健输运的已有设计方法。",
+      "sources": [
+        "https://inspirehep.net/files/93a936faae11104f1437e94ef2b4b47b"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_1367_2630_ad19fd.json"
+      ],
+      "files": [
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/ji2024_robust_transport.pdf",
+          "source_url": "https://inspirehep.net/files/93a936faae11104f1437e94ef2b4b47b",
+          "edition": "Published open-access article",
+          "pages": 13,
+          "bytes": 901984,
+          "sha256": "4d62b438523834bcde634e97b64c7d04690dd7eaa46adbd021a3e1a03f38ee0b",
+          "first_page_excerpt": "New J. Phys. 26 (2024) 013041\nhttps://doi.org/10.1088/1367-2630/ad19fd\nOPEN ACCESS\nRECEIVED\n21 June 2023\nREVISED\n12 December 2023\nACCEPTED FOR PUBLICATION\n2 January 2024\nPUBLISHED\n22 January 2024\nOriginal Content from\nthis work may be used\nunder the terms of the\nCreative Commons\nAttribution 4.0 licence.\nAny further distribution\nof this work must\nmaintain attribution to\nthe author(s) and the title\nof the work, journal\ncitation and DOI.\nPAPER\nInverse engineering for robust state transport along a spin chain\nvia low-energy subspaces\nYunlan Ji1, Ze Wu2,3, Ran Liu2,3, Yuchen Li2,3, Fangzhou Jin4, Hui Zhou1,5,∗and Xinhua Peng2,3,∗\n1 School of Physics, Hefei University of Technology, Hefei, Anhui 230009, People’s Republic of China\n2 CAS Key Laboratory of Microscale Magnetic Resonance and School of Physical Sciences, University of Science and Technology of\nChina, Hefei, Anhui 230026, People’s Republic of China\n3 CAS Center for Excellence in Quantum Information and Quantum Physics, University of Science and Technology of China, Hefei,\nAnhui 230026, People’s Republic of China\n4 Department of Fundamental Subjects, Wuchang Shouyi University, Wuhan 430064, People’s Republic of China\n5 Departm",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "New Journal of Physics",
+      "volume": "26",
+      "pages_or_article": "013041",
+      "status": "全文已保存",
+      "preferred_file": "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/ji2024_robust_transport.pdf",
+      "catalog_id": "P11"
+    },
+    {
+      "title": "The peculiarities of discrete diffraction in two-dimensional optical waveguide arrays",
+      "authors": [
+        "Hongyun Chen",
+        "Xianfeng Chen",
+        "Yuxing Xia"
+      ],
+      "year": 2007,
+      "doi": "10.1016/j.optcom.2006.10.031",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "先读 Fig.3；它直接比较单方向和双方向的低展宽传播。",
+      "sources": [
+        "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/discrete-optics/search_records.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1016_j_optcom_2006_10_031.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/discrete-optics/chen2007_two-dimensional-discrete-diffraction.pdf",
+          "source_url": "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf",
+          "edition": "journal article",
+          "pages": 4,
+          "bytes": 343373,
+          "sha256": "39148a97cd66d100cb12ef63170de42d51135fb132ae8d08be195af2af0c228b",
+          "first_page_excerpt": "The peculiarities of discrete diﬀraction in two-dimensional\noptical waveguide arrays\nHongyun Chen, Xianfeng Chen *, Yuxing Xia\nDepartment of Physics, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai 200240, China\nReceived 11 July 2006; received in revised form 4 September 2006; accepted 16 October 2006\nAbstract\nThe fundamental peculiarities of discrete diﬀraction in the two-dimensional waveguide arrays were studied. The discrete diﬀraction\nproperties of such arrays can be eﬀectively altered, depending upon the input conditions. By slightly changing the input conditions, light\ncan experience normal diﬀraction in one-direction and experience anomalous diﬀraction in the other.\n\u0002 2006 Elsevier B.V. All rights reserved.\nPACS: 42.25.Fx; 42.82.Et\nDiscrete waveguide arrays have become a topic of con-\nsiderable attention for many years. These periodic struc-\ntures exhibit a wealth of phenomena that have no analog\nin the continuous regime [1–4]. For example, due to the\nperiodic nature of waveguide arrays, their diﬀraction\nbehavior can be tailored depending on the propagation\nk-vector within the Brillouin zone [3,4]. As a result, zero\nor even reverse diﬀraction is possible in these",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Optics Communications",
+      "volume": "271",
+      "pages_or_article": "382-385",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/discrete-optics/chen2007_two-dimensional-discrete-diffraction.pdf",
+      "catalog_id": "P12"
+    },
+    {
+      "title": "Discrete diffraction and shape-invariant beams in optical waveguide arrays",
+      "authors": [
+        "Stefano Longhi"
+      ],
+      "year": 2009,
+      "doi": "10.1103/PhysRevA.79.033847",
+      "arxiv_id": "1001.0997",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "先读：用统一框架理解展宽、波前和近似保形。",
+      "sources": [
+        "https://arxiv.org/pdf/1001.0997v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/discrete-optics/search_records.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physreva_79_033847.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/discrete-optics/longhi2009_1001.0997v1_discrete-diffraction.pdf",
+          "source_url": "https://arxiv.org/pdf/1001.0997v1",
+          "edition": "arXiv 1001.0997v1",
+          "pages": 14,
+          "bytes": 327199,
+          "sha256": "f54bbdd9296466a877f9fd17c9d32a29278a82aa95797ca5d355c20b441610d2",
+          "first_page_excerpt": "arXiv:1001.0997v1  [physics.optics]  6 Jan 2010\nDiscrete diﬀraction and shape-invariant beams in optical waveguide arrays\nStefano Longhi\nDipartimento di Fisica and Istituto di Fotonica e Nanotecnologie del CNR,\nPolitecnico di Milano, Piazza L. da Vinci 32, I-20133 Milano, Italy\nGeneral properties of linear propagation of discretized light in homogeneous and curved waveguide\narrays are comprehensively investigated and compared to those of paraxial diﬀraction in continuous\nmedia. In particular, general laws describing beam spreading, beam decay and discrete far-ﬁeld\npatterns in homogeneous arrays are derived using the method of moments and the steepest descend\nmethod. In curved arrays, the method of moments is extended to describe evolution of global beam\nparameters. A family of beams which propagate in curved arrays maintaining their functional shape\n-referred to as discrete Bessel beams- is also introduced. Propagation of discrete Bessel beams in\nwaveguide arrays is simply described by the evolution of a complex q parameter similar to the\ncomplex q parameter used for Gaussian beams in continuous lensguide media. A few applications of\nthe q parameter formalism are discussed, includi",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review A",
+      "volume": "79",
+      "pages_or_article": "033847",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/discrete-optics/longhi2009_1001.0997v1_discrete-diffraction.pdf",
+      "catalog_id": "P13"
+    },
+    {
+      "title": "Diffraction Management",
+      "authors": [
+        "H. S. Eisenberg",
+        "Y. Silberberg",
+        "R. Morandotti",
+        "J. S. Aitchison"
+      ],
+      "year": 2000,
+      "doi": "10.1103/PhysRevLett.85.1863",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "衍射管理的早期实验；原论文与博士论文分别保存状态。",
+      "sources": [
+        "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.1863"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/discrete-optics/search_records.json",
+        "literature/collection-completion-2026-10-21/new-downloads/acquisition.json"
+      ],
+      "files": [],
+      "acquisition_status_detail": "original_pdf_not_obtained",
+      "priority_read": false,
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P14"
+    },
+    {
+      "title": "Anomalous Refraction and Diffraction in Discrete Optical Systems",
+      "authors": [
+        "T. Pertsch",
+        "T. Zentgraf",
+        "U. Peschel",
+        "A. Braeuer",
+        "F. Lederer"
+      ],
+      "year": 2002,
+      "doi": "10.1103/PhysRevLett.88.093901",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "入射条件控制衍射的实验先例。",
+      "sources": [
+        "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.88.093901"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/discrete-optics/search_records.json",
+        "literature/collection-completion-2026-10-21/new-downloads/acquisition.json"
+      ],
+      "files": [],
+      "acquisition_status_detail": "original_pdf_not_obtained",
+      "priority_read": false,
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P15"
+    },
+    {
+      "title": "Nonlinear Effects in Waveguide Arrays",
+      "authors": [
+        "Hagai Eisenberg"
+      ],
+      "year": 2002,
+      "doi": "",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "作者博士论文，补充衍射管理及色散合成的说明。",
+      "sources": [
+        "https://openscholar.huji.ac.il/sites/default/files/hagai/files/hagaielectronicthesis.pdf"
+      ],
+      "metadata_sources": [],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/discrete-optics/eisenberg_thesis.pdf",
+          "source_url": "https://openscholar.huji.ac.il/sites/default/files/hagai/files/hagaielectronicthesis.pdf",
+          "edition": "PhD thesis; distinct from the 2000 PRL article",
+          "pages": 75,
+          "bytes": 9812069,
+          "sha256": "a8815c9fad705571d912e17d073318f337ccba64d7884276fa1fd71ff1942da7",
+          "first_page_excerpt": "zc \nמכון ויצמן למדע\n \nWeizmann Institute of Science\n \n \n \n \n \nחבור לשם קבלת התואר\n \nדוקטור לפילוסופיה\n \n \nמאת\n \nחגי איזנברג\n \n \n \nThesis for the degree \nPhilosophy Doctor \n \nby \nHagai Eisenberg \n \n \n \nNonlinear Effects in Waveguide Arrays \n \nתופעות אי-ליניאריות במערכים של מוליכי-גלים\n \n \nכסלו\n תש\n ג '' ס\n \nמוגש למועצה המדעית של\n \nמכון ויצמן למדע\n \nרחובות\n,\n ישראל\n \n \n \nNovember 2002 \n \nSubmitted to the Council of the \nWeizmann Institute of Science \nRehovot, Israel \n \n",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/discrete-optics/eisenberg_thesis.pdf",
+      "catalog_id": "P16"
+    },
+    {
+      "title": "Long-range interaction in waveguide lattices",
+      "authors": [
+        "Alexander Szameit",
+        "Thomas Pertsch",
+        "Stefan Nolte",
+        "Andreas Tünnermann",
+        "Falk Lederer"
+      ],
+      "year": 2008,
+      "doi": "10.1103/PhysRevA.77.043804",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "查远邻耦合怎样改变二维传播。",
+      "sources": [
+        "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.77.043804"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/discrete-optics/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physreva_77_043804.json"
+      ],
+      "files": [],
+      "priority_read": false,
+      "journal": "Physical Review A",
+      "volume": "77",
+      "pages_or_article": "043804",
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P17"
+    },
+    {
+      "title": "On-chip arbitrary dispersion engineering with deep photonic networks",
+      "authors": [
+        "Kazim Gorgulu",
+        "Aycan Deniz Vit",
+        "Ali Najjar Amiri",
+        "Emir Salih Magden"
+      ],
+      "year": 2025,
+      "doi": "10.1364/OL.564441",
+      "arxiv_id": "2504.05505",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "扩展阅读：芯片网络中的色散设计；不是同一种晶格能带。",
+      "sources": [
+        "https://arxiv.org/abs/2504.05505",
+        "https://arxiv.org/pdf/2504.05505v2"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/discrete-optics/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1364_ol_564441.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/2504.05505v2_photonic-dispersion.pdf",
+          "source_url": "https://arxiv.org/pdf/2504.05505v2",
+          "edition": "arXiv v2",
+          "pages": 5,
+          "bytes": 735300,
+          "sha256": "7d42f0e83874cfeee5bdd194bef0462c87083d914ec31b01e9e6526164e4bf90",
+          "first_page_excerpt": "arXiv:2504.05505v2  [physics.optics]  19 Jun 2025\n1\nOn-chip arbitrary dispersion engineering with deep\nphotonic networks\nKazim Gorgulu1,2, Aycan Deniz Vit1, Ali Najjar Amiri3,\nEmir Salih Magden1,4∗\n1Department of Electrical & Electronics Engineering, Koc¸ University, 34450, Istanbul, Turkey\n2Sicoya GmbH, 12489 Berlin, Germany\n3Department of Electrical and Computer Engineering, Northwestern University, Evanston, IL 60208, USA\n4KUIS-AI Center, Koc University, 34450, Istanbul, Turkey\nAbstract—We demonstrate the design and optimization of on-\nchip arbitrary dispersion profiles using deep photonic networks\nconstructed from custom-designed Mach-Zehnder interferome-\nters. These photonic networks employ optimizable waveguide\ntapers, enabling precise engineering of wavelength-dependent\ndispersion profiles. We experimentally demonstrate a proof-\nof-concept two-port photonic network that exhibits a highly\nnonintuitive triangular dispersion profile over the wavelength\nrange of 1.54 µm to 1.58 µm while simultaneously achieving\na flat-band transmission with an insertion loss of less than\n0.7 dB. We also illustrate the potential of multi-port photonic\nnetworks to enhance design freedom for more c",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Optics Letters",
+      "volume": "50",
+      "pages_or_article": "3780",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/2504.05505v2_photonic-dispersion.pdf",
+      "catalog_id": "P18"
+    },
+    {
+      "title": "Waveguide Arrays Interaction to Second Neighbors: Semi-Infinite Case",
+      "authors": [
+        "Marco A. Tapia-Valerdi",
+        "Irán Ramos-Prieto",
+        "Francisco Soto-Eguibar",
+        "Héctor M. Moya-Cessa"
+      ],
+      "year": 2025,
+      "doi": "10.3390/dynamics5040051",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "扩展阅读：半无限阵列的第二邻居传播。",
+      "sources": [
+        "https://www.mdpi.com/2673-8716/5/4/51",
+        "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00051/article_deploy/dynamics-05-00051.pdf"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/discrete-optics/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_3390_dynamics5040051.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/tapia2025_second-neighbors.pdf",
+          "source_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00051/article_deploy/dynamics-05-00051.pdf",
+          "edition": "publisher PDF",
+          "pages": 15,
+          "bytes": 1075327,
+          "sha256": "463384b5be1348b97b61c4c40661e5fcc5fe6ceeff5ac09312ccb2d0844744ca",
+          "first_page_excerpt": "Academic Editor: Christos Volos\nReceived: 16 October 2025\nRevised: 14 November 2025\nAccepted: 18 November 2025\nPublished: 1 December 2025\nCitation: Tapia-Valerdi M.A.;\nRamos-Prieto, I.; Soto-Eguibar, F.;\nMoya-Cessa, H.M. Waveguide Arrays\nInteraction to Second Neighbors:\nSemi-Infinite Case. Dynamics 2025, 5,\n51. https://doi.org/10.3390/\ndynamics5040051\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nWaveguide Arrays Interaction to Second Neighbors:\nSemi-Infinite Case\nMarco A. Tapia-Valerdi\n, Irán Ramos-Prieto\n, Francisco Soto-Eguibar\nand Héctor M. Moya-Cessa *\nInstituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla,\nPuebla 72840, Mexico; mvalerdi@inaoep.mx (M.A.T.-V.); iran@inaoep.mx (I.R.-P.); feguibar@inaoep.mx (F.S.-E.)\n* Correspondence: hmmc@inaoep.mx\nAbstract\nWe provide an analytical framework for describing the propagation of light in waveguide\narrays, considering both infinite and semi-infinite cases. The interac",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Dynamics",
+      "volume": "5",
+      "pages_or_article": "51",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/tapia2025_second-neighbors.pdf",
+      "catalog_id": "P19"
+    },
+    {
+      "title": "Waveguide Arrays: Interaction to Many Neighbors",
+      "authors": [
+        "Marco A. Tapia-Valerdi",
+        "Irán Ramos-Prieto",
+        "Francisco Soto-Eguibar",
+        "Héctor M. Moya-Cessa"
+      ],
+      "year": 2025,
+      "doi": "10.3390/dynamics5030025",
+      "arxiv_id": "",
+      "topic": "02 离散光学与色散设计",
+      "why_read": "扩展阅读：多邻居耦合的解析传播。",
+      "sources": [
+        "https://www.mdpi.com/2673-8716/5/3/25",
+        "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00025/article_deploy/dynamics-05-00025.pdf"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/discrete-optics/outlook_evidence.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_3390_dynamics5030025.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/followups/tapia2025_many-neighbors.pdf",
+          "source_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00025/article_deploy/dynamics-05-00025.pdf",
+          "edition": "publisher PDF",
+          "pages": 11,
+          "bytes": 967335,
+          "sha256": "b46793e770456c456ad522de61d4dfc055c5696655e7da13f07f920db3d13f04",
+          "first_page_excerpt": "Academic Editor: Christos Volos\nReceived: 19 May 2025\nRevised: 18 June 2025\nAccepted: 23 June 2025\nPublished: 1 July 2025\nCitation: Tapia-Valerdi, M.A.;\nRamos-Prieto, I.; Soto-Eguibar, F.;\nMoya-Cessa, H.M. Waveguide Arrays:\nInteraction to Many Neighbors.\nDynamics 2025, 5, 25. https://\ndoi.org/10.3390/dynamics5030025\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nWaveguide Arrays: Interaction to Many Neighbors\nMarco A. Tapia-Valerdi\n, Irán Ramos-Prieto\n, Francisco Soto-Eguibar\nand Héctor M. Moya-Cessa *\nInstituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla,\nPuebla 72840, Mexico; mvalerdi@inaoep.mx (M.A.T.-V.); iran@inaoep.mx (I.R.-P.); feguibar@inaoep.mx (F.S.-E.)\n* Correspondence: hmmc@inaoep.mx\nAbstract\nWe present an analytical framework for describing light propagation in infinite waveguide\narrays, incorporating a generalized long-range coupling to achieve a more realistic model.\nWe demonstrate that the resulting ",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Dynamics",
+      "volume": "5",
+      "pages_or_article": "25",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/followups/tapia2025_many-neighbors.pdf",
+      "catalog_id": "P20"
+    },
+    {
+      "title": "Dispersionless propagation of ultra-short spin-wave pulses in ultrathin yttrium iron garnet waveguides",
+      "authors": [
+        "B. Divinskiy",
+        "H. Merbouche",
+        "K.O. Nikolaev",
+        "S. Michaelis de Vasconcellos",
+        "R. Bratschitsch",
+        "D. Gouéré",
+        "R. Lebrun",
+        "V. Cros",
+        "J. Ben Youssef",
+        "P. Bortolotti",
+        "A. Anane",
+        "S.O. Demokritov",
+        "V.E. Demidov"
+      ],
+      "year": 2021,
+      "doi": "10.1103/PhysRevApplied.16.024028",
+      "arxiv_id": "2108.08054",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "先读：实际 YIG 波导中短脉冲低展宽的实验。",
+      "sources": [
+        "https://arxiv.org/pdf/2108.08054v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physrevapplied_16_024028.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/2108.08054v1_dispersionless-pulses.pdf",
+          "source_url": "https://arxiv.org/pdf/2108.08054v1",
+          "edition": "arXiv 2108.08054v1",
+          "pages": 24,
+          "bytes": 724678,
+          "sha256": "aee88f4a4370b6259e51c6f8a72a14d493f45f1db64d3c1df78107112a6124fb",
+          "first_page_excerpt": "1 \n \nDispersionless propagation of ultra-short spin-wave pulses  \nin ultrathin yttrium iron garnet waveguides \nB. Divinskiy1*, H. Merbouche2,  K. O. Nikolaev1, S. Michaelis de Vasoncellos3, R. Bratschitsch3, \nD. Gouéré2, R. Lebrun2, V. Cros2, J. Ben Youssef4,  P. Bortolotti2, A. Anane2,  \nS. O. Demokritov1, and V. E. Demidov1 \n1Institute for Applied Physics, University of Muenster, 48149 Muenster, Germany \n2Unité Mixte de Physique, CNRS, Thales, Université Paris-Saclay, 91767, Palaiseau, France \n3Institute of Physics and Center for Nanotechnology, University of Muenster, 48149 Muenster, \nGermany \n4LabSTICC, UMR 6285 CNRS, Université de Bretagne Occidentale, 29238 Brest, France \nWe study experimentally the propagation of nanosecond spin-wave pulses in microscopic \nwaveguides made of nanometer-thick yttrium iron garnet films. For these studies, we use micro-\nfocus Brillouin light scattering spectroscopy, which provides the possibility to observe propagation \nof the pulses with high spatial and temporal resolution. We show that, for most spin-wave \nfrequencies, dispersion leads to broadening of the pulse by several times at propagation distances \nof 10 m. However, for certain frequen",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review Applied",
+      "volume": "16",
+      "pages_or_article": "024028",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/2108.08054v1_dispersionless-pulses.pdf",
+      "catalog_id": "P21"
+    },
+    {
+      "title": "Caustic spin wave beams in soft, thin films: properties and classification",
+      "authors": [
+        "Alexis Wartelle",
+        "Franz Vilsmeier",
+        "Takuya Taniguchi",
+        "Christian H. Back"
+      ],
+      "year": 2023,
+      "doi": "10.1103/PhysRevB.107.144431",
+      "arxiv_id": "2301.01220",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "先读 Fig.13；本轮高阶波束 demo 的主要来源。",
+      "sources": [
+        "https://arxiv.org/pdf/2301.01220v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physrevb_107_144431.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/2301.01220v1_caustic-classification.pdf",
+          "source_url": "https://arxiv.org/pdf/2301.01220v1",
+          "edition": "arXiv 2301.01220v1",
+          "pages": 17,
+          "bytes": 16556516,
+          "sha256": "fa1eaa1edfd41b0a0cc3b4303a50d6147a47018996c6f4112f6e89695ccfc3b7",
+          "first_page_excerpt": "Caustic spin wave beams in soft, thin ﬁlms: properties and classiﬁcation\nAlexis Wartelle,∗Franz Vilsmeier, Takuya Taniguchi, and Christian H. Back\nFakult¨at fur Physik, Technische Universit¨at M¨unchen, Garching, Germany\n(Dated: January 4, 2023)\nIn the context of wave propagation, caustics are usually deﬁned as the envelope of a ﬁnite-extent\nwavefront; folds and cusps in a caustic result in enhanced wave amplitudes. Here, we tackle a related\nphenomenon, namely the existence of well-deﬁned beams originating solely from the geometric\nproperties of the corresponding dispersion relation. This directional emission, termed caustic beam,\nis enabled by a stationary group velocity direction, and has been observed ﬁrst in the case of\nphonons. We propose an overview of this “focusing” eﬀect in the context of spin waves excited\nin soft, thin ferromagnetic ﬁlms. Based on an analytical dispersion relation, we provide tools for\na systematic survey of caustic spin wave beams. Our theoretical approach is validated by time-\nresolved microscopy experiments using the magneto-optical Kerr eﬀect. Then, we identify two cases\nof particular interest both from fundamental and applicative perspectives. Indee",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review B",
+      "volume": "107",
+      "pages_or_article": "144431",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/2301.01220v1_caustic-classification.pdf",
+      "catalog_id": "P22"
+    },
+    {
+      "title": "Generation of Spin-Wave Pulses by Inverse Design",
+      "authors": [
+        "S. Casulleras",
+        "S. Knauer",
+        "Q. Wang",
+        "O. Romero-Isart",
+        "A.V. Chumak",
+        "C. Gonzalez-Ballestero"
+      ],
+      "year": 2023,
+      "doi": "10.1103/PhysRevApplied.19.064085",
+      "arxiv_id": "2209.06608",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "先读：用天线驱动设计目标脉冲。",
+      "sources": [
+        "https://arxiv.org/pdf/2209.06608v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_physrevapplied_19_064085.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/magnonics/2209.06608v1_inverse-design.pdf",
+          "source_url": "https://arxiv.org/pdf/2209.06608v1",
+          "edition": "arXiv 2209.06608v1",
+          "pages": 9,
+          "bytes": 4538059,
+          "sha256": "05df82d823abf3427895f825a234c90866ce2685331a0500b43c7b50ba9797aa",
+          "first_page_excerpt": "Generation of Spin-Wave Pulses by Inverse Design\nS. Casulleras,1, 2, ∗S. Knauer,3 Q. Wang,3 O. Romero-Isart,1, 2 A.V. Chumak,3 and C. Gonzalez-Ballestero1, 2, †\n1Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, 6020 Innsbruck, Austria\n2Institute for Theoretical Physics, University of Innsbruck, 6020 Innsbruck, Austria\n3Faculty of Physics, University of Vienna, 1090 Vienna, Austria\nThe development of fast magnonic information processing nanodevices requires operating with\nshort spin-wave pulses, but, the shorter the pulses, the more aﬀected they are by information loss\ndue to broadening and dispersion. The capability of engineering spin-wave pulses and controlling\ntheir propagation could solve this problem. Here, we provide a method to generate linear spin-wave\npulses with a desired spatial-temporal proﬁle in magnonic waveguides based on inverse design. As\nrelevant examples, we theoretically predict that both rectangular and self-compressing spin-wave\npulses can be generated in state-of-the-art waveguides with ﬁdelities ≳96% using narrow stripline\nantennas. The method requires minimal computational overhead and is universal, i.e., it applies\n",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review Applied",
+      "volume": "19",
+      "pages_or_article": "064085",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/magnonics/2209.06608v1_inverse-design.pdf",
+      "catalog_id": "P23"
+    },
+    {
+      "title": "Perspectives on inverse design for AI magnonics",
+      "authors": "F. Vilsmeier, F. Bruckner, C. Abert, D. Suess, A. V. Chumak",
+      "year": 2026,
+      "doi": "",
+      "arxiv_id": "2607.07324",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "先读展望：激发端设计、参数误差和可实现性。",
+      "sources": [
+        "https://arxiv.org/pdf/2607.07324v1"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/outlook-evidence.json"
+      ],
+      "files": [
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/2607.07324v1_perspectives.pdf",
+          "source_url": "https://arxiv.org/pdf/2607.07324v1",
+          "edition": "arXiv 2607.07324v1; perspective preprint",
+          "pages": 22,
+          "bytes": 3705724,
+          "sha256": "e6939a8061da9dbe1b1fd848951d3922528ab804f23c038a7c4fa5c1ef825576",
+          "first_page_excerpt": "Perspectives on inverse design for AI magnonics\nFranz Vilsmeier\n∗1, Florian Bruckner\n1, Claas Abert\n1, Dieter Suess\n1, and Andrii V.\nChumak\n†1\n1Faculty of Physics, University of Vienna, Vienna, Austria\nJuly 9, 2026\nAbstract\nInverse design—specifying a desired functionality and letting a computational algorithm find the\noptimal structure—has emerged as a powerful paradigm for magnonic device engineering. In\nthis article, we survey the rapidly growing field of inverse-design magnonics, organising it along\ntwo axes: the design variables (topology, material parameters, and magnetic field landscape)\nand the algorithmic toolbox (gradient-free, gradient-based, and neural-network-based methods)\ntogether with the differentiable micromagnetic solvers that enable them. We then identify open\nfrontiers that we consider most promising for the next phase of the field: sensitivity analysis\nand robust design to bridge the gap between simulation and experiment; input shaping and\ntransducer optimisation; the incorporation of nonlinear spin-wave effects as an explicit design\nresource; spatially structured amplification; self-adapting media and machine-learning-based\ndesign; and the long-term vision of",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "status": "全文已保存",
+      "preferred_file": "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/2607.07324v1_perspectives.pdf",
+      "catalog_id": "P24"
+    },
+    {
+      "title": "Shaping non-reciprocal caustic spin-wave beams",
+      "authors": [
+        "Dinesh Wagle",
+        "Daniel Stoeffler",
+        "Loic Temdie",
+        "Mojtaba Taghipour Kaffash",
+        "Vincent Castel",
+        "Hicham Majjad",
+        "Romain Bernard",
+        "Yves Henry",
+        "Matthieu Bailleul",
+        "M. Benjamin Jungfleisch",
+        "Vincent Vlaminck"
+      ],
+      "year": 2026,
+      "doi": "10.1103/qz9q-bp9j",
+      "arxiv_id": "2404.15011",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "看有限激发源怎样形成并调节真实自旋波束。",
+      "sources": [
+        "https://arxiv.org/pdf/2404.15011v4"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_qz9q_bp9j.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/2404.15011v4_nonreciprocal-caustic-beams.pdf",
+          "source_url": "https://arxiv.org/pdf/2404.15011v4",
+          "edition": "arXiv 2404.15011v4",
+          "pages": 7,
+          "bytes": 3587133,
+          "sha256": "451753d0a3c7963493f9c14717e4ff820ec6047e3adb9d7da3bcce0e227279da",
+          "first_page_excerpt": "Shaping non-reciprocal caustic spin wave beams\nDinesh Wagle,1 Daniel Stoeffler,2 Loic Temdie,3 Mojtaba Taghipour Kaffash,4 Vincent Castel,3 Hicham Majjad,2\nRomain Bernard,2 Yves Henry,2 Matthieu Bailleul,2 M. Benjamin Jungfleisch,4, ∗and Vincent Vlaminck3, †\n1Department of Physics and Astronomy, University of Delaware, Newark, Delaware 19716, USA\n2IPCMS - UMR 7504 CNRS Institut de Physique et Chimie des Materiaux de Strasbourg, France\n3IMT Atlantique, Dpt.\nMO, Lab-STICC - UMR 6285 CNRS,\nTechnopole Brest-Iroise CS83818, 29238 Brest Cedex 03, France\n4Department of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA\n(Dated: February 12, 2026)\nCaustics are intricate and challenging to control near-field interference patterns that exist in a\nwide range of physical systems, and which usually exhibit a reciprocal wave propagation. Here,\nwe utilize the highly anisotropic dispersion and inherent non-reciprocity of a magnonic system to\nshape non-reciprocal emission of caustic like spin wave beams in an extended yttrium iron gar-\nnet (YIG) film from a nano-constricted waveguide.\nWe introduce a near-field diffraction model\nto study spin wave beamforming in homogeneous in-plane",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review B",
+      "volume": "113",
+      "pages_or_article": "L060405",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/2404.15011v4_nonreciprocal-caustic-beams.pdf",
+      "catalog_id": "P25"
+    },
+    {
+      "title": "Non-linear spin dynamics in ferromagnetic films and Schrodinger's equation in the vicinity of the zero-dispersion point",
+      "authors": [
+        "V V Kiseliev",
+        "A P Tankeyev",
+        "A V Kobelev",
+        "A G Shagalov"
+      ],
+      "year": 1999,
+      "doi": "10.1088/0953-8984/11/17/305",
+      "arxiv_id": "",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "历史线索：零二阶色散附近的高阶传播。",
+      "sources": [
+        "https://doi.org/10.1088/0953-8984/11/17/305"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/new-downloads/acquisition.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_0953_8984_11_17_305.json"
+      ],
+      "files": [],
+      "acquisition_status_detail": "original_pdf_not_obtained",
+      "priority_read": false,
+      "journal": "Journal of Physics: Condensed Matter",
+      "volume": "11",
+      "pages_or_article": "3461-3474",
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P26"
+    },
+    {
+      "title": "Nondiffractive Subwavelength Wave Beams in a Medium with Externally Controlled Anisotropy",
+      "authors": [
+        "T. Schneider",
+        "A. A. Serga",
+        "A. V. Chumak",
+        "C. W. Sandweg",
+        "S. Trudel",
+        "S. Wolff",
+        "M. P. Kostylev",
+        "V. S. Tiberkevich",
+        "A. N. Slavin",
+        "B. Hillebrands"
+      ],
+      "year": 2010,
+      "doi": "10.1103/PhysRevLett.104.197203",
+      "arxiv_id": "",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "定向窄自旋波束的早期实验。",
+      "sources": [
+        "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.104.197203"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/README.md"
+      ],
+      "files": [],
+      "priority_read": false,
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P27"
+    },
+    {
+      "title": "All-Angle Collimation for Spin Waves",
+      "authors": [
+        "Jaroslaw W. Klos",
+        "Pawel Gruszecki",
+        "Andriy E. Serebryannikov",
+        "Maciej Krawczyk"
+      ],
+      "year": 2015,
+      "doi": "10.1109/LMAG.2015.2494558",
+      "arxiv_id": "1703.05548",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "了解单色波束准直，与短脉冲保形作区分。",
+      "sources": [
+        "https://arxiv.org/pdf/1703.05548v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1109_lmag_2015_2494558.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/1703.05548v1_all-angle-collimation.pdf",
+          "source_url": "https://arxiv.org/pdf/1703.05548v1",
+          "edition": "arXiv 1703.05548v1",
+          "pages": 4,
+          "bytes": 555773,
+          "sha256": "3eea493bb905b5bec4dfae29f6813c979e04fbc343dcbfd6e6d8b09486b7ff40",
+          "first_page_excerpt": "IEEE MAGNETICS LETTERS, Volume 6 (2015)                                                                 Page 1 of 4 (actually, 4 pages maximum; IEEE will place article number here) \n1949-307X ©2015 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. \nSee http://www.ieee.org/publications standards/publications/rights/index.html for more information. (Inserted by IEEE) \nMagnetodynamics ___________________________________________________________ \n \nAll-angle collimation for spin waves  \nJ. W. Kłos, P. Gruszecki, A. E. Serebryannikov, M. Krawczyk \nFaculty of Physics, Adam Mickiewicz University in Poznań, Umultowska 85, 61-614 Poznań, Poland \n \nReceived xxx, revised xxx, accepted xxx, published xxx, current version xxx. (Dates will be inserted by IEEE; “published” is the date the accepted \npreprint is posted on IEEE Xplore®; “current version” is the date the typeset version is posted on Xplore®). \n \nAbstract— We studied the effect of collimation for monochromatic beams of spin waves, resulting from the \nrefraction at the interface separating two magnetic half-planes. The collimation was observed in broad \nrange of the angles of incidence for homog",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "IEEE Magnetics Letters",
+      "volume": "6",
+      "pages_or_article": "1-4",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/1703.05548v1_all-angle-collimation.pdf",
+      "catalog_id": "P28"
+    },
+    {
+      "title": "Spin-Wave Optical Elements: Towards Spin-Wave Fourier Optics",
+      "authors": [
+        "M. Vogel",
+        "P. Pirro",
+        "B. Hillebrands",
+        "G. von Freymann"
+      ],
+      "year": 2020,
+      "doi": "10.1063/5.0018519",
+      "arxiv_id": "1906.02301",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "了解自旋波中的光学元件和 Bessel 型波束。",
+      "sources": [
+        "https://arxiv.org/pdf/1906.02301v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1063_5_0018519.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/1906.02301v1_bessel-gaussian-fourier-optics.pdf",
+          "source_url": "https://arxiv.org/pdf/1906.02301v1",
+          "edition": "arXiv 1906.02301v1",
+          "pages": 8,
+          "bytes": 7434982,
+          "sha256": "592922335c2079e56c7398062b854ec00e9a6d2ab518ac446673b37ba2a8bde5",
+          "first_page_excerpt": "Spin-Wave Optical Elements: Towards Spin-Wave Fourier Optics\nSpin-Wave Optical Elements: Towards Spin-Wave Fourier Optics\nM. Vogel,1, a) B. Hillebrands,1 and G. von Freymann1, 2\n1)Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK),\nErwin-Schrödinger-Str. 56, 67663 Kaiserslautern, Germany\n2)Fraunhofer-Institute for Industrial Mathematics ITWM, Fraunhofer-Platz 1, 67663 Kaiserslautern,\nGermany\n(Dated: 7 June 2019)\nWe perform micromagnetic simulations to investigate the propagation of spin-wave beams through spin-wave optical\nelements. Despite spin-wave propagation in magnetic media being strongly anisotropic, we use axicons to excite spin-\nwave Bessel-Gaussian beams and gradient-index lenses to focus spin waves in analogy to conventional optics with light\nin isotropic media. Moreover, we demonstrate spin-wave Fourier optics using gradient-index lenses. These results\ncontribute to the growing ﬁeld of spin-wave optics.\nSpin waves are eigenmodes of a magnetic solid body –\nmagnons are their quasiparticles. Spin-wave dispersion re-\nlations and the corresponding magnonic refractive indices de-\npend not only on the orientation of the externa",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Applied Physics Letters",
+      "volume": "116",
+      "pages_or_article": "262404",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/1906.02301v1_bessel-gaussian-fourier-optics.pdf",
+      "catalog_id": "P29"
+    },
+    {
+      "title": "Efficient geometrical control of spin waves in microscopic YIG waveguides",
+      "authors": [
+        "S. R. Lake",
+        "B. Divinskiy",
+        "G. Schmidt",
+        "S. O. Demokritov",
+        "V. E. Demidov"
+      ],
+      "year": 2021,
+      "doi": "10.1063/5.0071757",
+      "arxiv_id": "2111.02236",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "看波导几何怎样改变波长和传播速度。",
+      "sources": [
+        "https://arxiv.org/pdf/2111.02236v1",
+        "https://arxiv.org/abs/2111.02236v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1063_5_0071757.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/spin-wave/2111.02236v1_geometrical-control.pdf",
+          "source_url": "https://arxiv.org/pdf/2111.02236v1",
+          "edition": "arXiv 2111.02236v1",
+          "pages": 15,
+          "bytes": 431908,
+          "sha256": "1574d1478305da78ffa084612c4954966b12b326f40820e7d0d81ebe816616cb",
+          "first_page_excerpt": "1 \n \nEfficient geometrical control of spin waves in microscopic YIG waveguides \nS. R. Lake1 , B. Divinskiy2*, G. Schmidt1,3, S. O. Demokritov2, and V. E. Demidov2    \n1Institut für Physik, Martin-Luther-Universität Halle-Wittenberg, 06120 Halle, Germany \n2Institute for Applied Physics, University of Muenster, 48149 Muenster, Germany \n3Interdisziplinäres Zentrum für Materialwissenschaften, Martin-Luther-Universität Halle-\nWittenberg, 06120 Halle, Germany \n \nWe study experimentally and by micromagnetic simulations the propagation of spin waves \nin 100-nm thick YIG waveguides, where the width linearly decreases from 2 to 0.5 m over a \ntransition region with varying length between 2.5 and 10 m. We show that this geometry results \nin a down conversion of the wavelength, enabling efficient generation of waves with wavelengths \ndown to 350 nm. We also find that this geometry leads to a modification of the group velocity, \nallowing for almost-dispersionless propagation of spin-wave pulses. Moreover, we demonstrate \nthat the influence of energy concentration outweighs that of damping in these YIG waveguides, \nresulting in an overall increase of the spin-wave intensity during propagation i",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Applied Physics Letters",
+      "volume": "119",
+      "pages_or_article": "182401",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/spin-wave/2111.02236v1_geometrical-control.pdf",
+      "catalog_id": "P30"
+    },
+    {
+      "title": "Magnetically tunable Airy-like beam of magnetostatic surface spin waves",
+      "authors": [
+        "H. Dai et al."
+      ],
+      "year": 2021,
+      "doi": "",
+      "arxiv_id": "",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "扩展阅读：通过激发相位塑造弯曲的自旋波束。",
+      "sources": [
+        "https://opg.optica.org/col/abstract.cfm?uri=col-19-1-013501"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json"
+      ],
+      "files": [],
+      "priority_read": false,
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P31"
+    },
+    {
+      "title": "Dispersion-tunable low-loss implanted spin-wave waveguides for large magnonic networks",
+      "authors": [
+        "Jannis Bensmann",
+        "Robert Schmidt",
+        "Kirill O. Nikolaev",
+        "Dimitri Raskhodchikov",
+        "Shraddha Choudhary",
+        "Richa Bhardwaj",
+        "Shabnam Taheriniya",
+        "Akhil Varri",
+        "Sven Niehues",
+        "Ahmad El Kadri",
+        "Johannes Kern",
+        "Wolfram H. P. Pernice",
+        "Sergej O. Demokritov",
+        "Vladislav E. Demidov",
+        "Steffen Michaelis de Vasconcellos",
+        "Rudolf Bratschitsch"
+      ],
+      "year": 2025,
+      "doi": "10.1038/s41563-025-02282-y",
+      "arxiv_id": "",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "看材料加工怎样把色散调节变成实际器件。",
+      "sources": [
+        "https://www.nature.com/articles/s41563-025-02282-y"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/followups/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1038_s41563_025_02282_y.json"
+      ],
+      "files": [],
+      "priority_read": false,
+      "journal": "Nature Materials",
+      "volume": "24",
+      "pages_or_article": "1920-1926",
+      "status": "仅有书目信息，原文PDF未取得",
+      "preferred_file": "",
+      "catalog_id": "P32"
+    },
+    {
+      "title": "Nonlinear suppression of dispersion broadening of ultrashort spin-wave pulses in thin YIG films",
+      "authors": [
+        "K.O. Nikolaev",
+        "D. Raskhodchikov",
+        "J. Bensmann",
+        "I.V. Borisenko",
+        "E. Lomonte",
+        "L. Jin",
+        "R. Schmidt",
+        "J. Kern",
+        "S. Michaelis de Vasconcellos",
+        "R. Bratschitsch",
+        "S.O. Demokritov",
+        "W.H.P. Pernice",
+        "V.E. Demidov"
+      ],
+      "year": 2026,
+      "doi": "10.1103/wt14-t3dj",
+      "arxiv_id": "2603.22051",
+      "topic": "03 磁性波束与脉冲",
+      "why_read": "作为不同机制的对照：利用非线性减轻脉冲展宽。",
+      "sources": [
+        "https://arxiv.org/pdf/2603.22051v1"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_wt14_t3dj.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/magnonics/2603.22051v1_nonlinear-pulse-suppression.pdf",
+          "source_url": "https://arxiv.org/pdf/2603.22051v1",
+          "edition": "arXiv 2603.22051v1",
+          "pages": 19,
+          "bytes": 1705039,
+          "sha256": "f23ec6f18bda7a0ce8c190c554eff9e17acc8d080fdf161fe1d0f88b17e4047a",
+          "first_page_excerpt": "1 \n \nNonlinear suppression of dispersion broadening of ultrashort spin-wave \npulses in thin YIG films \nK. O. Nikolaev1#, D. Raskhodchikov2#,  J. Bensmann2#,  I. V. Borisenko1, E. Lomonte2, L. \nJin2,3, R. Schmidt2, J. Kern2, S. Michaelis de Vasconcellos2, R. Bratschitsch2, S. O. \nDemokritov1, W. H. P. Pernice2,3, and V. E. Demidov1* \n1Institute of Applied Physics, University of Muenster, 48149 Muenster, Germany \n2Institute of Physics, Center for Nanotechnology and Center for Soft Nanoscience, University \nof Muenster, 48149 Muenster, Germany \n3Kirchhoff-Institute for Physics, Heidelberg University, 69120 Heidelberg, Germany \nWe study experimentally the nonlinear propagation of short pulses of forward volume \nspin waves in nanometer-thick YIG films. We show that nonlinearity of the spin system can \nefficiently counteract dispersion broadening of the pulses, leading to the formation of envelope \nsolitons. We demonstrate that in microscopic YIG systems, microwave powers of the order of \none milliwatt are sufficient to reach the soliton formation threshold. At powers slightly above \nthis threshold, we achieve transmission of 3-ns spin-wave pulses over distances of up to 50 \nmicrometers w",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Physical Review Applied",
+      "volume": "25",
+      "pages_or_article": "034035",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/magnonics/2603.22051v1_nonlinear-pulse-suppression.pdf",
+      "catalog_id": "P33"
+    },
+    {
+      "title": "General quantum backflow in realistic wave packets",
+      "authors": [
+        "Tomasz Paterek",
+        "Arseni Goussev"
+      ],
+      "year": 2026,
+      "doi": "10.1103/tm9s-pkg5",
+      "arxiv_id": "2511.10155",
+      "topic": "04 反流与测量",
+      "why_read": "先读：含少量反向速度成分时怎样认证反流。",
+      "sources": [
+        "https://arxiv.org/pdf/2511.10155v2"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/backflow/assessment.txt",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_tm9s_pkg5.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/backflow/2511.10155v2.pdf",
+          "source_url": "https://arxiv.org/pdf/2511.10155v2",
+          "edition": "arXiv 2511.10155v2",
+          "pages": 21,
+          "bytes": 1119030,
+          "sha256": "129f81ff5de973145cd3649de1012d61b46e7fa8f0101b16c51f3d42c75689ab",
+          "first_page_excerpt": "General quantum backflow in realistic wave packets\nTomasz Paterek1, 2 and Arseni Goussev3, 4\n1School of Mathematics and Physics, Xiamen University Malaysia, 43900 Sepang, Malaysia\n2Institute of Theoretical Physics and Astrophysics, Faculty of Mathematics,\nPhysics and Informatics, University of Gdańsk, 80-308 Gdańsk, Poland\n3Section of Mathematics, University of Geneva, Rue du Conseil-Général 7-9, 1205 Geneva, Switzerland\n4Quantum Physics Corner Ltd, 20–22 Wenlock Road, London N1 7GU, United Kingdom\nQuantum backflow is a counterintuitive phenomenon in which the probability density of a quantum\nparticle propagates opposite to its momentum. Experimental observation of backflow has remained\nelusive due to two main challenges: (i) the effect is intrinsically small, with less than 4% of the\nprobability able to flow backward, and (ii) it requires wave packets with a well-defined momentum\ndirection, which are difficult both to prepare and to verify under realistic, noisy conditions. Here,\nwe overcome these challenges by introducing a general formulation of quantum backflow applicable\nto arbitrary momentum distributions. The framework recovers the standard backflow limit for\nunidirectional ",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review Letters",
+      "volume": "136",
+      "pages_or_article": "090202",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/backflow/2511.10155v2.pdf",
+      "catalog_id": "P34"
+    },
+    {
+      "title": "Preparing Quantum Backflow States by Large Momentum Transfer",
+      "authors": [
+        "Yuchong Chen",
+        "Yijun Tang"
+      ],
+      "year": 2026,
+      "doi": "10.1103/3b4f-6nfr",
+      "arxiv_id": "2602.12767",
+      "topic": "04 反流与测量",
+      "why_read": "先读：反流态的制备和成像困难。",
+      "sources": [
+        "https://arxiv.org/html/2602.12767v2"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/records.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_3b4f_6nfr.json"
+      ],
+      "files": [
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2602.12767v2.pdf",
+          "source_url": "https://arxiv.org/html/2602.12767v2",
+          "edition": "arXiv 2602.12767v2",
+          "pages": 11,
+          "bytes": 1492202,
+          "sha256": "71dd05ed3324f033df7e2b15f0d0270e53431ec86aef3f48cdb1733ac3f0d4d7",
+          "first_page_excerpt": "Preparing Quantum Backflow States by Large Momentum Transfer\nYuchong Chen1 and Yijun Tang1\n1Cavendish Laboratory, University of Cambridge,\nJJ Thomson Avenue, Cambridge CB3 0US, United Kingdom\nQuantum backflow refers to the appearance of negative probability current in a state whose\nmomentum distribution is essentially positive. We propose a scheme to prepare such states in a\nnoninteracting Bose–Einstein condensate using large-momentum-transfer (LMT) atom interferom-\netry. Our approach extends the single-pulse proposal of Palmero [1] by allowing one interferometer\narm to undergo a tunable sequence of momentum-transfer pulses before recombination with a freely\npropagating arm. For realistic parameters for 88Sr, the protocol generates interference states with\ntunable probability current and negligible negative-momentum contamination. We evaluate both the\nprobability current and the critical-density criterion introduced by Palmero [1], and identify param-\neter regimes in which the backflow signature is enhanced relative to the single-pulse scheme. These\nresults present LMT interferometry as a flexible route for preparing candidate quantum-backflow\nstates in cold-atom experiments.\nI.\nIn",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review A",
+      "volume": "113",
+      "pages_or_article": "063304",
+      "status": "全文已保存",
+      "preferred_file": "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2602.12767v2.pdf",
+      "catalog_id": "P35"
+    },
+    {
+      "title": "Quantum backflow in biased tight-binding systems",
+      "authors": [
+        "Francisco Ricardo Torres Arvizu",
+        "Adrian Ortega",
+        "Hernán Larralde"
+      ],
+      "year": 2026,
+      "doi": "10.1103/v49b-zz68",
+      "arxiv_id": "2511.16867",
+      "topic": "04 反流与测量",
+      "why_read": "先读：与本项目最近邻晶格反流直接对应。",
+      "sources": [
+        "https://arxiv.org/pdf/2511.16867v2"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/backflow/assessment.txt",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_v49b_zz68.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/backflow/2511.16867v2.pdf",
+          "source_url": "https://arxiv.org/pdf/2511.16867v2",
+          "edition": "arXiv 2511.16867v2",
+          "pages": 28,
+          "bytes": 1769558,
+          "sha256": "df57c4e383fc351bf5e0716bd7ccd75e3dffaaa114ff6440c8ce5004fe0ba6b8",
+          "first_page_excerpt": "Quantum backflow in biased tight-binding systems\nFrancisco Ricardo Torres Arvizu∗,1 Adrian Ortega,2 and Hernán Larralde1\n1Instituto de Ciencias Físicas, UNAM, Av. Universidad s/n,\nZIP 62210 Cuernavaca Morelos, México\n2Centro Universitario de Guadalajara,\nUniversidad de Guadalajara, Calle Guanajuato 1045,\nZIP 44160, Guadalajara, Jalisco, México\nWe study the phenomenon of quantum backflow in tight-binding systems with com-\nplex couplings, considering different boundary conditions and lattice sizes. Backflow\nis an intrinsically non-classical effect where the density flux associated with a particle\ndescribed by the superposition of wave functions with, say, positive-momentum, ac-\nquires negative values. We calculate the superposition of positive-momentum states\nthat gives rise to the strongest backflow in the system. We also evaluate the bounds\non the total amount of probability that flows in the opposite direction of the particle’s\nmomentum.\nI.\nINTRODUCTION\nThe phenomenon of backflow is a non-classical and non-linear effect that occurs when the\nprobability current (or density flux) of a particle takes values opposite to its momentum.\nThis phenomenon was first identified in 1969 by All",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": true,
+      "journal": "Physical Review A",
+      "volume": "113",
+      "pages_or_article": "032218",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/backflow/2511.16867v2.pdf",
+      "catalog_id": "P36"
+    },
+    {
+      "title": "Different routes to the classical limit of backflow",
+      "authors": [
+        "S V Mousavi",
+        "S Miret-Artés"
+      ],
+      "year": 2022,
+      "doi": "10.1088/1751-8121/aca36e",
+      "arxiv_id": "2211.09057",
+      "topic": "04 反流与测量",
+      "why_read": "了解耗散和退相干怎样削弱反流。",
+      "sources": [
+        "https://arxiv.org/abs/2211.09057",
+        "https://arxiv.org/pdf/2211.09057v1"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/records.json",
+        "literature/collection-completion-2026-10-21/extra-backflow/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_1751_8121_aca36e.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/extra-backflow/2211.09057v1.pdf",
+          "source_url": "https://arxiv.org/pdf/2211.09057v1",
+          "edition": "arXiv 2211.09057v1",
+          "pages": 24,
+          "bytes": 646801,
+          "sha256": "3187ad4eac94896bb56c35501b41c1d704e5ce3864979062e743b4e25e5c7ed3",
+          "first_page_excerpt": "Diﬀerent routes to the classical limit of backﬂow\nS. V. Mousavi\nDepartment of Physics, University of Qom, Ghadir Blvd., Qom 371614-6611, Iran\nE-mail: vmousavi@qom.ac.ir\nS. Miret-Art´es\nInstituto de F´ısica Fundamental, Consejo Superior de Investigaciones Cient´ıﬁcas,\nSerrano 123, 28006 Madrid, Spain\nE-mail: s.miret@iff.csic.es\nOctober 2022\nAbstract.\nDecoherence is a well established process for the emergence of classical mechanics\nin open quantum systems.\nHowever,\nit can have two diﬀerent origins or\nmechanisms depending on the dynamics one is considering, speaking then about\nintrinsic decoherence for isolated systems and environmental decoherence due to\ndissipation/ﬂuctuations for open systems.\nThis second mechanism can not be\nconsidered for backﬂow since no thermal ﬂuctuation terms can be added in the\nformalism in order to keep an important requirement for the occurrence of this eﬀect:\nonly contributions of positive momenta along time should be maintained. The purpose\nof this work is to analyze the backﬂow eﬀect in the light of the underlying intrinsic\ndecoherence and the dissipative dynamics. For this goal, we ﬁrst deal with the Milburn\napproach where a mean frequency of the unit",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Journal of Physics A: Mathematical and Theoretical",
+      "volume": "55",
+      "pages_or_article": "475302",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/extra-backflow/2211.09057v1.pdf",
+      "catalog_id": "P37"
+    },
+    {
+      "title": "Simulating quantum backflow on a quantum computer",
+      "authors": [
+        "Arseni Goussev",
+        "Jaewoo Joo"
+      ],
+      "year": 2024,
+      "doi": "10.1088/1402-4896/ad2be7",
+      "arxiv_id": "2309.02245",
+      "topic": "04 反流与测量",
+      "why_read": "作为量子计算机模拟反流的已有实现对照。",
+      "sources": [
+        "https://arxiv.org/abs/2309.02245",
+        "https://arxiv.org/pdf/2309.02245v2"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/records.json",
+        "literature/collection-completion-2026-10-21/extra-backflow/acquisitions.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1088_1402_4896_ad2be7.json"
+      ],
+      "files": [
+        {
+          "path": "literature/collection-completion-2026-10-21/extra-backflow/2309.02245v2.pdf",
+          "source_url": "https://arxiv.org/pdf/2309.02245v2",
+          "edition": "arXiv 2309.02245v2",
+          "pages": 8,
+          "bytes": 687786,
+          "sha256": "dd0342e1f0fea9a556afc919d4e257879ec4cd4c59d437ee2876d4a58a011571",
+          "first_page_excerpt": "Simulating quantum backflow on a quantum computer\nArseni Goussev∗and Jaewoo Joo\nSchool of Mathematics and Physics, University of Portsmouth, Portsmouth PO1 3HF, United Kingdom\n(Dated: March 5, 2024)\nQuantum backflow is a counterintuitive effect in which the probability density of a free particle\nmoves in the direction opposite to the particle’s momentum. If the particle is electrically charged,\nthen the effect can be viewed as the contrast between the direction of electric current and that of\nthe momentum. To date, there has been no direct experimental observation of quantum backflow.\nHowever, the effect has been simulated numerically (using classical computers) and optically (using\nclassical light).\nIn this study, we present the first simulation of quantum backflow using a real\nquantum computer.\nI.\nINTRODUCTION\nImagine a bead of mass M and electric charge Q con-\nstrained to move without friction along a rigid ring of\nradius R (Fig. 1). Suppose the bead moves freely (i.e.,\nFIG. 1. A particular manifestation of the quantum backflow\neffect.\nin the absence of any external forces other than the con-\nstraint force) in the counterclockwise direction, so that\nthe time derivative of the az",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Physica Scripta",
+      "volume": "99",
+      "pages_or_article": "045104",
+      "status": "全文已保存",
+      "preferred_file": "literature/collection-completion-2026-10-21/extra-backflow/2309.02245v2.pdf",
+      "catalog_id": "P38"
+    },
+    {
+      "title": "Searching for Bloch wave packets with almost definite momentum direction",
+      "authors": [
+        "Arseni Goussev",
+        "Gregory V. Morozov"
+      ],
+      "year": 2025,
+      "doi": "10.1103/k9km-k3dm",
+      "arxiv_id": "2504.12489",
+      "topic": "04 反流与测量",
+      "why_read": "厘清 Bloch 波矢、真实动量和速度的区别。",
+      "sources": [
+        "https://arxiv.org/pdf/2504.12489v2"
+      ],
+      "metadata_sources": [
+        "literature/cosine-lattice-wavepacket-audit/backflow/assessment.txt",
+        "literature/collection-completion-2026-10-21/metadata/10_1103_k9km_k3dm.json"
+      ],
+      "files": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/backflow/2504.12489v2.pdf",
+          "source_url": "https://arxiv.org/pdf/2504.12489v2",
+          "edition": "arXiv 2504.12489v2",
+          "pages": 12,
+          "bytes": 536331,
+          "sha256": "5553c9d06b4eb043bc02c693291a76ecabe602516d3025ad83529f934f1e02ea",
+          "first_page_excerpt": "Searching for Bloch wave packets with almost definite momentum direction\nArseni Goussev1, 2 and Gregory V. Morozov3\n1Section of Mathematics, University of Geneva, Rue du Conseil-G´en´eral 7-9, 1205 Gen`eve, Switzerland\n2Quantum Physics Corner Ltd, 20–22 Wenlock Road, London N1 7GU, United Kingdom\n3Scottish Universities Physics Alliance (SUPA), School of Computing, Engineering and Physical Sciences,\nUniversity of the West of Scotland, Paisley PA1 2BE, United Kingdom\n(Dated: September 29, 2025)\nThe motion of a quantum particle in a one-dimensional periodic potential can be described in\nterms of Bloch wave packets. Like free-particle wave packets, they can propagate without attenua-\ntion. Here, we examine this similarity more closely by investigating whether Bloch wave packets can\nmaintain a definite – or nearly definite – momentum direction, a property inherent to free-particle\nwave packets. This question is particularly relevant to the feasibility of using solid-state-based sys-\ntems in the search for the first experimental realization of quantum backflow, a quantum interference\neffect in which a particle’s probability density flows in a direction opposite to its momentum.\nI.\nINTROD",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Physical Review A",
+      "volume": "112",
+      "pages_or_article": "032223",
+      "status": "全文已保存",
+      "preferred_file": "literature/cosine-lattice-wavepacket-audit/backflow/2504.12489v2.pdf",
+      "catalog_id": "P39"
+    },
+    {
+      "title": "Nonlocal Manipulation of Backflow with Quantum Correlations",
+      "authors": [
+        "Ya Xiao",
+        "Zhen-Fei Zhang",
+        "Yan-Xin Rong",
+        "Kai Sun",
+        "Jin-Shi Xu",
+        "Yong-Jian Gu"
+      ],
+      "year": 2026,
+      "doi": "",
+      "arxiv_id": "2607.10281",
+      "topic": "04 反流与测量",
+      "why_read": "扩展阅读：量子关联对光学反流的影响。",
+      "sources": [
+        "https://arxiv.org/html/2607.10281v1"
+      ],
+      "metadata_sources": [
+        "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/records.json"
+      ],
+      "files": [
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2607.10281v1.pdf",
+          "source_url": "https://arxiv.org/html/2607.10281v1",
+          "edition": "arXiv 2607.10281v1",
+          "pages": 15,
+          "bytes": 2027004,
+          "sha256": "aea79725f8a08a79284d185b5a79608a18773769c112fff0fdfe3dff1d32d548",
+          "first_page_excerpt": "Nonlocal Manipulation of Backflow with Quantum\nCorrelations\nYA XIAO,1,†,* ZHEN-FEI ZHANG,1,† YAN-XIN RONG,1 KAI SUN,2,3\nJIN-SHI XU,2,3 AND YONG-JIAN GU1,4,5,*\n1College of Physics and Optoelectronic Engineering, Ocean University of China, Qingdao 266100, China.\n2Laboratory of Quantum Information, University of Science and Technology of China, Hefei 230026, China.\n3Anhui Province Key Laboratory of Quantum Network, University of Science and Technology of China,\nHefei, Anhui 230026, China.\n4Engineering Research Center of Advanced Marine Physical Instruments and Equipment (Ministry of\nEducation), Ocean University of China, Qingdao 266100, China.\n5Qingdao Key Laboratory of Optics and Optoelectronics, Ocean University of China, Qingdao 266100,\nChina.\n†The authors contributed equally to this work.\n*xiaoya@ouc.edu.cn\n*yjgu@ouc.edu.cn\nAbstract:\nQuantum correlations are central resources for quantum information processing, yet their\nability to manipulate dynamical transmission processes remains largely unexplored. Here, we\ninvestigate this ability through backflow, a uniquely interference phenomenon in which local\nprobability flow propagates opposite to the momentum direction. We report the f",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "status": "全文已保存",
+      "preferred_file": "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2607.10281v1.pdf",
+      "catalog_id": "P40"
+    },
+    {
+      "title": "Spatiotemporal diffraction-free pulsed beams in free-space of the Airy and Bessel type",
+      "authors": [
+        "Nikolaos K. Efremidis"
+      ],
+      "year": 2017,
+      "doi": "10.1364/OL.42.005038",
+      "arxiv_id": "1711.04027",
+      "topic": "05 可迁移的光学方法",
+      "why_read": "了解 Airy、Bessel 型时空脉冲的构造。",
+      "sources": [
+        "https://arxiv.org/pdf/1711.04027v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "literature/collection-completion-2026-10-21/metadata/10_1364_ol_42_005038.json"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/optical-method/1711.04027v1_airy-bessel-pulsed-beams.pdf",
+          "source_url": "https://arxiv.org/pdf/1711.04027v1",
+          "edition": "arXiv 1711.04027v1",
+          "pages": 5,
+          "bytes": 2884707,
+          "sha256": "856944b6680badfa081752108473159a365c601281042369921a9283f3064fae",
+          "first_page_excerpt": "Spatiotemporal diﬀraction-free pulsed beams in free-space of the Airy and Bessel type\nNikolaos K. Efremidis∗\nDepartment of Mathematics and Applied Mathematics,\nUniversity of Crete, 70013 Heraklion, Crete, Greece and\nInstitute of Applied and Computational Mathematics,\nFoundation for Research and Technology - Hellas (FORTH), 70013 Heraklion, Crete, Greece\n(Dated: May 23, 2022)\nWe investigate the dynamics of spatiotemporal optical waves with one transverse dimension that\nare obtained as the intersections of the dispersion cone with a plane. We show that, by appropriate\nspectral excitations, the three diﬀerent types of conic sections (elliptic, parabolic, and hyperbolic)\ncan lead to optical waves of the Bessel, Airy, and modiﬁed Bessel type, respectively. We ﬁnd closed\nform solutions that accurately describe the wave dynamics and unveil their fundamental properties.\nDiﬀraction-free pulses and beams are special classes of\noptical waves that can counteract diﬀraction and main-\ntain their proﬁle during propagation. Up to now a sig-\nniﬁcant amount of eﬀort has been devoted in the case of\nsingle frequency laser beams. Two are the main classes of\nbeams with such a unique feature: The ﬁrst is",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Optics Letters",
+      "volume": "42",
+      "pages_or_article": "5038",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/optical-method/1711.04027v1_airy-bessel-pulsed-beams.pdf",
+      "catalog_id": "P41"
+    },
+    {
+      "title": "Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media",
+      "authors": [
+        "He, Hao",
+        "Guo, Cheng",
+        "Xiao, Meng"
+      ],
+      "year": 2022,
+      "doi": "10.1002/lpor.202100634",
+      "arxiv_id": "2109.00782",
+      "topic": "05 可迁移的光学方法",
+      "why_read": "看频率与空间方向的关联怎样帮助保形。",
+      "sources": [
+        "https://arxiv.org/pdf/2109.00782v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "https://arxiv.org/abs/2109.00782"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/optical-method/2109.00782v1_space-time-dispersive-media.pdf",
+          "source_url": "https://arxiv.org/pdf/2109.00782v1",
+          "edition": "arXiv 2109.00782v1",
+          "pages": 6,
+          "bytes": 427771,
+          "sha256": "3bb384181b1c1848cdc16a1f1baec8b3853a72270be3bc22f9e9128405e30821",
+          "first_page_excerpt": "Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media\nHao He,1, 2 Cheng Guo,3, ∗and Meng Xiao1, †\n1Key Laboratory of Artiﬁcial Micro- and Nano-structures of Ministry of Education\nand School of Physics and Technology, Wuhan University, Wuhan 430072, China\n2Hongyi Honor school, Wuhan University, Wuhan 430072, China\n3Department of Applied Physics, Stanford University, California 94305, USA\nSpace-time wave packets can propagate invariantly in free space with arbitrary group velocity thanks to the\nspatio-temporal correlation. Here it is proved that the space-time wave packets are stable in dispersive media\nas well and free from the spread in time caused by material dispersion. Furthermore, the law of anomalous\nrefraction for space-time wave packets is generalized to the weakly dispersive situation. These results reveal\nnew potential of space-time wave packets for the applications in real dispersive media.\nINTRODUCTION\nMost materials are dispersive media in which waves of dif-\nferent frequencies travel at different velocities.[1, 2] Disper-\nsion causes the shape of a wave pulse to change as it travels,\nwhich is known as group velocity dispersion.[3] The group\nvelocity di",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Laser & Photonics Reviews",
+      "pages_or_article": "2100634",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/optical-method/2109.00782v1_space-time-dispersive-media.pdf",
+      "catalog_id": "P42"
+    },
+    {
+      "title": "Space-time wave packets",
+      "authors": [
+        "Yessenov, Murat",
+        "Hall, Layton A.",
+        "Schepler, Kenneth L.",
+        "Abouraddy, Ayman F."
+      ],
+      "year": 2022,
+      "doi": "10.1364/AOP.450016",
+      "arxiv_id": "2201.08297",
+      "topic": "05 可迁移的光学方法",
+      "why_read": "需要时查阅的长综述，不必从头读完。",
+      "sources": [
+        "https://arxiv.org/pdf/2201.08297v1"
+      ],
+      "metadata_sources": [
+        "literature/linear-spin-wave-packets/manifest.json",
+        "https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455"
+      ],
+      "files": [
+        {
+          "path": "literature/linear-spin-wave-packets/optical-method/2201.08297v1_space-time-review.pdf",
+          "source_url": "https://arxiv.org/pdf/2201.08297v1",
+          "edition": "arXiv 2201.08297v1",
+          "pages": 103,
+          "bytes": 23209174,
+          "sha256": "065abab8e939c51920a88eb99c5365d191f0df86a6f8cdc9408ff098946c1ea7",
+          "first_page_excerpt": "Space-time wave packets\nMURAT YESSENOV,1 LAYTON A. HALL,1 KENNETH L. SCHEPLER,1\nAND AYMAN F. ABOURADDY1,*\n1CREOL, The College of Optics & Photonics, University of Central Florida, Orlando, FL 32816, USA\n*raddy@creol.ucf.edu\nAbstract:\n‘Space-time’ (ST) wave packets constitute a broad class of pulsed optical ﬁelds\nthat are rigidly transported in linear media without diﬀraction or dispersion, and are therefore\npropagation-invariant in absence of optical nonlinearities or waveguiding structures. Such wave\npackets exhibit unique characteristics, such as controllable group velocities in free space and exotic\nrefractive phenomena. At the root of of these behaviors is a fundamental feature underpinning\nST wave packets: their spectra are not separable with respect to the spatial and temporal degrees\nof freedom. Indeed, the spatio-temporal structure is endowed with non-diﬀerentiable angular\ndispersion, in which each spatial frequency is associated with a single prescribed wavelength.\nFurthermore, deviation from this particular spatio-temporal structure yields novel behaviors\nthat depart from propagation invariance in a precise manner, such as acceleration with an\narbitrary axial distribution",
+          "verification": "PDF signature, all-page parsing and first-page identity inspection"
+        }
+      ],
+      "priority_read": false,
+      "journal": "Advances in Optics and Photonics",
+      "volume": "14",
+      "pages_or_article": "455-570",
+      "status": "全文已保存",
+      "preferred_file": "literature/linear-spin-wave-packets/optical-method/2201.08297v1_space-time-review.pdf",
+      "catalog_id": "P43"
+    }
+  ]
+}

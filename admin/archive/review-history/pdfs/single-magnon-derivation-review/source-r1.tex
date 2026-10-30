@@ -1,0 +1,307 @@
+\documentclass[UTF8,11pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=24mm,right=24mm,top=23mm,bottom=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{xcolor,fancyhdr,needspace}
+\usepackage[unicode,colorlinks=true,linkcolor=black,urlcolor=blue!45!black]{hyperref}
+\definecolor{ink}{HTML}{183B4E}
+\hypersetup{pdftitle={从库仑交换到二维铁磁体的单磁子色散},pdfauthor={},pdfsubject={自旋二分之一铁磁体的单翻转运动方程与色散}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{ink}二维铁磁体的单磁子色散}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.3em}
+\linespread{1.18}
+\allowdisplaybreaks[1]
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\id}{\mathbb I}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{ink}从库仑交换到二维铁磁体的单磁子色散}\\[0.65em]
+{\small 两电子矩阵、单翻转子空间与运动方程}
+\end{center}
+\vspace{0.3em}
+
+我们考虑每个格点上有一个自旋为 $1/2$ 的电子，先将相邻两个电子的库仑作用写成自旋哈密顿量，再求二维晶格上单个自旋翻转的运动方程。全文取 $\hbar=1$，自旋算符无量纲，极化方向统一选为 $x$ 轴；$\uparrow$、$\downarrow$ 分别表示沿 $+x$、$-x$ 的自旋态。最后求出的色散是单磁子相对全极化基态的激发能。\footnote{理论背景可参见张鹏飞《量子多体理论讲义》§1.5；二维局域自旋激发的传播问题参见 P.~Wrzosek et al., \textit{Phys.\ Rev.\ B} \textbf{102}, 024440 (2020), \href{https://doi.org/10.1103/PhysRevB.102.024440}{doi:10.1103/PhysRevB.102.024440}。下文独立写出本模型的矩阵计算，交换符号按本文约定。}
+
+先固定两个相邻轨道 $a,b$，假设其波函数 $\phi_a,\phi_b$ 正交归一，并且每个轨道恰有一个电子。这里仅保留固定占据下的直接库仑交换，不加入电子跃迁引起的超交换。两电子之间的相互作用核为
+\begin{equation}
+v(\mathbf r_1-\mathbf r_2)=
+\frac{e^2}{4\pi\varepsilon_0|\mathbf r_1-\mathbf r_2|}.
+\end{equation}
+$e$ 是元电荷的大小，$\varepsilon_0$ 是真空介电常数。对这一对电子，定义直接积分 $D$ 和交换积分 $K$：
+\begin{align}
+D&=\int d^3r_1\,d^3r_2\,
+|\phi_a(\mathbf r_1)|^2\,v(\mathbf r_1-\mathbf r_2)\,
+|\phi_b(\mathbf r_2)|^2, \label{eq:direct}\\
+K&=\int d^3r_1\,d^3r_2\,
+\phi_a^*(\mathbf r_1)\phi_b^*(\mathbf r_2)\,
+v(\mathbf r_1-\mathbf r_2)\,
+\phi_b(\mathbf r_1)\phi_a(\mathbf r_2). \label{eq:exchange}
+\end{align}
+$D$ 和 $K$ 都有能量量纲；按每对电子计一次的约定，这两个积分前不再放 $1/2$。交换粒子标签后，反向的直接积分仍为 $D$，反向的交换积分仍为 $K$。
+
+为了固定费米态的符号，令 $f^\dagger_{a\sigma}$ 表示在轨道 $a$ 上产生自旋为 $\sigma$ 的电子，$f_{a\sigma}$ 是相应的湮灭算符，并规定
+\begin{equation}
+\ket{\sigma_a\tau_b}
+=f^\dagger_{a\sigma}f^\dagger_{b\tau}\ket{0},
+\qquad \sigma,\tau\in\{\uparrow,\downarrow\},
+\end{equation}
+其中 $\ket{0}$ 是电子真空。交换两个轨道上的反平行自旋时，空间积分给出系数 $K$，而费米反对易关系给出
+\begin{equation}
+f^\dagger_{a\downarrow}f^\dagger_{b\uparrow}
+f_{a\uparrow}f_{b\downarrow}
+\left(f^\dagger_{a\uparrow}f^\dagger_{b\downarrow}\ket{0}\right)
+=-\ket{\downarrow_a\uparrow_b}.
+\end{equation}
+因此，反平行态之间的非对角矩阵元是 $-K$。反平行态的对角元为 $D$；对于平行自旋，直接项与交换项都落在同一个态上，对角元为 $D-K$。在有序基底
+\begin{equation}
+\bigl\{
+\ket{\uparrow_a\uparrow_b},\
+\ket{\uparrow_a\downarrow_b},\
+\ket{\downarrow_a\uparrow_b},\
+\ket{\downarrow_a\downarrow_b}
+\bigr\}
+\label{eq:pairbasis}
+\end{equation}
+中，固定占据后的库仑作用矩阵就是
+\begin{equation}
+V_{ab}=
+\begin{pmatrix}
+D-K&0&0&0\\
+0&D&-K&0\\
+0&-K&D&0\\
+0&0&0&D-K
+\end{pmatrix}.
+\label{eq:coulombmatrix}
+\end{equation}
+
+中间的二阶块作用在 $\{\ket{\uparrow_a\downarrow_b},\ket{\downarrow_a\uparrow_b}\}$ 上。它的特征方程是
+\begin{equation}
+\det\begin{pmatrix}D-E&-K\\-K&D-E\end{pmatrix}
+=(D-E)^2-K^2=0.
+\end{equation}
+因此，能量 $D-K$ 对应归一化的对称组合，能量 $D+K$ 对应反对称组合：
+\begin{equation}
+\begin{aligned}
+E=D-K:\quad&
+\frac{\ket{\uparrow_a\downarrow_b}+\ket{\downarrow_a\uparrow_b}}{\sqrt2},\\
+E=D+K:\quad&
+\frac{\ket{\uparrow_a\downarrow_b}-\ket{\downarrow_a\uparrow_b}}{\sqrt2}.
+\end{aligned}
+\label{eq:paireigen}
+\end{equation}
+到这里，两电子问题的能量和本征态已经确定。接下来把矩阵 \eqref{eq:coulombmatrix} 改写为局域自旋算符，是为了能对晶格上的各条键使用同一种表达式。
+
+在沿 $x$ 量子化的单电子基底 $\{\ket{\uparrow},\ket{\downarrow}\}$ 中，选定基矢相位后，自旋分量可以写成
+\begin{equation}
+S^x=\frac12\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\qquad
+S^y=\frac12\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\qquad
+S^z=\frac12\begin{pmatrix}0&-i\\i&0\end{pmatrix}.
+\label{eq:spinmatrices}
+\end{equation}
+这里 $S^x$ 是沿极化轴的分量，因此是对角矩阵。两个电子的算符作用在不同的自旋空间上。用 $\id_2$ 表示二维单位矩阵，则
+\begin{equation}
+S_a^\alpha=S^\alpha\otimes\id_2,\qquad
+S_b^\alpha=\id_2\otimes S^\alpha,\qquad
+S_a^\alpha S_b^\alpha=S^\alpha\otimes S^\alpha,
+\quad \alpha=x,y,z.
+\end{equation}
+张量积 $A\otimes B$ 是分块矩阵，其第 $m,n$ 个块为 $A_{mn}B$。将 \eqref{eq:spinmatrices} 代入，并将三个分量的乘积相加，得到
+\begin{equation}
+\begin{aligned}
+\mathbf S_a\cdot\mathbf S_b
+&=S_a^xS_b^x+S_a^yS_b^y+S_a^zS_b^z\\
+&=\frac14
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&2&0\\
+0&2&-1&0\\
+0&0&0&1
+\end{pmatrix}.
+\end{aligned}
+\label{eq:dotmatrix}
+\end{equation}
+这个矩阵与库仑矩阵 \eqref{eq:coulombmatrix} 的非对角结构相同。设等价的算符写法为
+\begin{equation}
+V_{ab}=C\,\id_4-J_{\mathrm H}\,\mathbf S_a\cdot\mathbf S_b,
+\end{equation}
+其中 $C$ 是整体能量常数，$J_{\mathrm H}$ 是需要由矩阵匹配确定的交换系数，$\id_4$ 是四维单位矩阵。比较中间二阶块的非对角元和对角元：
+\begin{equation}
+-\frac{J_{\mathrm H}}2=-K,\qquad
+C+\frac{J_{\mathrm H}}4=D.
+\end{equation}
+由此得到 $J_{\mathrm H}=2K$、$C=D-K/2$，即
+\begin{equation}
+\boxed{
+V_{ab}=\left(D-\frac K2\right)\id_4
+-2K\,\mathbf S_a\cdot\mathbf S_b.
+}
+\label{eq:pairspin}
+\end{equation}
+它在两个平行态上同样给出 $D-K$，所以这是完整四维自旋空间中的矩阵恒等式。自旋点积没有加入新的相互作用，只是把已经算出的库仑矩阵换成了局域自旋算符的表达。
+
+现在对晶格上的最近邻格点对求和，写 $J_{ij}=2K_{ij}$。轨道和占据固定后，每条键的 $D_{ij}-K_{ij}/2$ 都是常数；去掉这些常数之和，只改变共同的能量零点，得到
+\begin{equation}
+\boxed{
+H=-\sum_{\langle ij\rangle}J_{ij}\,\mathbf S_i\cdot\mathbf S_j.
+}
+\label{eq:latticeH}
+\end{equation}
+后面选定铁磁情形 $J_{ij}>0$，不加外场。对均匀的二维正方晶格，水平方向的键取 $J_x$，竖直方向的键取 $J_y$，因此
+\begin{equation}
+H=-J_x\sum_{\langle ij\rangle_x}\mathbf S_i\cdot\mathbf S_j
+-J_y\sum_{\langle ij\rangle_y}\mathbf S_i\cdot\mathbf S_j,
+\qquad J_x,J_y>0.
+\label{eq:squareH}
+\end{equation}
+每条键只计一次。晶格常数记为 $a$，格点数记为 $\mathcal N$，采用周期边界。$J_x\neq J_y$ 表示不同空间方向的交换强度不同；每一条键上的自旋交换仍是点积形式。
+
+把所有自旋都沿 $+x$ 的态记为
+\begin{equation}
+\ket{F}=\ket{\uparrow_1\uparrow_2\cdots\uparrow_{\mathcal N}}.
+\end{equation}
+由双自旋矩阵 \eqref{eq:dotmatrix} 的第一列，平行自旋满足
+$\mathbf S_i\cdot\mathbf S_j\ket{\uparrow_i\uparrow_j}
+=\tfrac14\ket{\uparrow_i\uparrow_j}$。因此
+\begin{equation}
+H\ket{F}=E_F\ket{F},
+\qquad
+E_F=-\frac14\sum_{\langle ij\rangle}J_{ij}.
+\label{eq:EFgeneral}
+\end{equation}
+$\mathbf S_i\cdot\mathbf S_j$ 的最大本征值为 $1/4$，所以当 $J_{ij}>0$ 时，每条键的能量下界是 $-J_{ij}/4$。$\ket{F}$ 同时达到所有键的下界，因而是严格基态之一。周期正方晶格的两个方向各有 $\mathcal N$ 条键，故
+\begin{equation}
+\boxed{E_F=-\frac{\mathcal N}{4}(J_x+J_y).}
+\label{eq:EF}
+\end{equation}
+这里 $E_F$ 是保留下来的交换哈密顿量的基态能量，和先前已经略去的库仑常数不是同一个量。
+
+我们现在明确选定初态：只翻转一个格点的自旋。用
+\begin{equation}
+\ket{i}=
+\ket{\uparrow_1\cdots\uparrow_{i-1}\downarrow_i
+\uparrow_{i+1}\cdots\uparrow_{\mathcal N}}
+\label{eq:oneflip}
+\end{equation}
+表示只有格点 $i$ 沿 $-x$、其他格点都沿 $+x$ 的完整晶格态。它不是单个电子的态。不同的 $\ket{i}$ 相互正交，翻转所在的格点是区分这些基矢的指标。
+
+为了计算 $H\ket{i}$，先看一条连接 $i$ 与其邻居 $j$ 的键。这条键的局域状态是 $\ket{\downarrow_i\uparrow_j}$，对应矩阵 \eqref{eq:dotmatrix} 的第三列。直接相乘：
+\begin{equation}
+-\frac{J_{ij}}4
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&2&0\\
+0&2&-1&0\\
+0&0&0&1
+\end{pmatrix}
+\begin{pmatrix}0\\0\\1\\0\end{pmatrix}
+=
+\begin{pmatrix}0\\-J_{ij}/2\\J_{ij}/4\\0\end{pmatrix}.
+\end{equation}
+第三个分量保留原来的翻转位置，第二个分量则把翻转移到 $j$。放回整个晶格，得到
+\begin{equation}
+-J_{ij}\mathbf S_i\cdot\mathbf S_j\ket{i}
+=\frac{J_{ij}}4\ket{i}-\frac{J_{ij}}2\ket{j}.
+\label{eq:bondaction}
+\end{equation}
+不连接格点 $i$ 的键仍然是两个向上自旋，贡献与其在 $\ket{F}$ 中完全相同。对于连接 $i$ 的一条键，留在 $\ket{i}$ 上的对角能量由背景值 $-J_{ij}/4$ 变为 $+J_{ij}/4$，增加了 $J_{ij}/2$。对所有邻居求和，因此
+\begin{equation}
+\boxed{
+(H-E_F)\ket{i}
+=\frac12\sum_{j\text{ 邻接 }i}J_{ij}\ket{i}
+-\frac12\sum_{j\text{ 邻接 }i}J_{ij}\ket{j}.
+}
+\label{eq:Haction}
+\end{equation}
+式 \eqref{eq:Haction} 表明，$H$ 作用在单翻转态上仍然只产生单翻转态的叠加；反复作用 $H$ 也不会离开这个子空间。因此，只要初态属于这个子空间，时间演化就始终可以在它内部精确计算。这是初态选择加上子空间的精确不变性，不是把任意多体态近似成一个翻转。
+
+将初始翻转的位置记为 $i_0$，写
+\begin{equation}
+\ket{\Psi(0)}=\ket{i_0},\qquad
+\ket{\Psi(t)}=\sum_i c_i(t)\ket{i},
+\qquad
+c_i(0)=\delta_{i,i_0}.
+\end{equation}
+$c_i(t)$ 是翻转位于格点 $i$ 的复概率振幅，归一化要求
+$\sum_i|c_i(t)|^2=1$；$\delta_{i,i_0}$ 在 $i=i_0$ 时为 $1$，其余为 $0$。
+
+下面始终使用原来的物理态 $\ket{\Psi(t)}$，保留能量常数 $E_F$，不另引入去相位的态。式 \eqref{eq:Haction} 等价于
+\begin{equation}
+H\ket{i}=E_F\ket{i}
++\frac12\sum_{j\text{ 邻接 }i}J_{ij}
+\bigl(\ket{i}-\ket{j}\bigr).
+\end{equation}
+将展开式代入薛定谔方程 $i\partial_t\ket{\Psi}=H\ket{\Psi}$，得到
+\begin{equation}
+\sum_i i\dot c_i\ket{i}
+=
+E_F\sum_i c_i\ket{i}
++\frac12\sum_i\sum_{j\text{ 邻接 }i}J_{ij}c_i\ket{i}
+-\frac12\sum_i\sum_{j\text{ 邻接 }i}J_{ij}c_i\ket{j}.
+\label{eq:schrodingersum}
+\end{equation}
+最后一项中，将两个求和指标交换名字，并使用同一条键的 $J_{ji}=J_{ij}$：
+\begin{equation}
+\sum_i\sum_{j\text{ 邻接 }i}J_{ij}c_i\ket{j}
+=
+\sum_i\sum_{j\text{ 邻接 }i}J_{ij}c_j\ket{i}.
+\end{equation}
+于是 \eqref{eq:schrodingersum} 两边都成为 $\ket{i}$ 的线性组合。比较相同基矢的系数，得到
+\begin{equation}
+\boxed{
+i\dot c_i
+=E_Fc_i+\frac12\sum_{j\text{ 邻接 }i}J_{ij}(c_i-c_j).
+}
+\label{eq:EOMgeneral}
+\end{equation}
+这是单翻转概率振幅的运动方程。写出正方晶格的四个邻居后，
+\begin{equation}
+\boxed{
+\begin{aligned}
+i\dot c_i={}&(E_F+J_x+J_y)c_i\\
+&-\frac{J_x}{2}
+(c_{i+\mathbf e_x}+c_{i-\mathbf e_x})
+-\frac{J_y}{2}
+(c_{i+\mathbf e_y}+c_{i-\mathbf e_y}).
+\end{aligned}
+}
+\label{eq:EOMsquare}
+\end{equation}
+$i\pm\mathbf e_x$ 表示沿水平方向移动一个格点，$i\pm\mathbf e_y$ 表示沿竖直方向移动一个格点；相邻格点的实际空间距离为 $a$。式 \eqref{eq:EOMsquare} 保留了完整的 $E_F$，因而与最初的薛定谔方程使用同一个态矢量和相位约定。
+
+由于 $J_x,J_y$ 不依赖格点位置，运动方程在均匀晶格上具有平移不变性。取平移算符的平面波模式，代入运动方程检验：
+\begin{equation}
+c_i(t)=\frac1{\sqrt{\mathcal N}}
+\exp\!\left[i\mathbf k\cdot\mathbf r_i-iE_{\mathbf k}t\right].
+\label{eq:planewave}
+\end{equation}
+这里 $\mathbf r_i$ 是格点位置，$\mathbf k=(k_x,k_y)$ 是周期边界允许的波矢，$E_{\mathbf k}$ 是这个单磁子模式的总能量，包含 $E_F$。对于一个平面波，移动一个格点只改变相位，因此
+\begin{equation}
+c_{i\pm\mathbf e_x}=e^{\pm ik_xa}c_i,\qquad
+c_{i\pm\mathbf e_y}=e^{\pm ik_ya}c_i,\qquad
+i\dot c_i=E_{\mathbf k}c_i.
+\label{eq:substitution}
+\end{equation}
+将 \eqref{eq:substitution} 代入 \eqref{eq:EOMsquare}，消去共同的平面波因子：
+\begin{equation}
+\begin{aligned}
+E_{\mathbf k}
+&=E_F+J_x+J_y
+-\frac{J_x}{2}(e^{ik_xa}+e^{-ik_xa})
+-\frac{J_y}{2}(e^{ik_ya}+e^{-ik_ya})\\
+&=E_F+J_x(1-\cos k_xa)+J_y(1-\cos k_ya).
+\end{aligned}
+\end{equation}
+因此，相对全极化基态的激发能为
+\begin{equation}
+\boxed{
+E_{\mathbf k}-E_F
+=J_x(1-\cos k_xa)+J_y(1-\cos k_ya).
+}
+\end{equation}
+\end{document}

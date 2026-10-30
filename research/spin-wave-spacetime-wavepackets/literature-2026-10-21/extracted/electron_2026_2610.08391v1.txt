@@ -1,0 +1,928 @@
+=== PDF PAGE 1 ===
+Space-Time Electron Wave Packets with Tunable Skyrmion Textures
+Sharoz Schezwen
+School of Electrical and Electronics Engineering, Nanyang Technological University, Singapore
+Yijie Shen∗
+Centre of Disruptive Photonics Technologies, School of Physical and Mathematical Sciences, Singapore and
+School of Electrical and Electronics Engineering, Nanyang Technological University, Singapore
+(Dated: October 7, 2026)
+Space-Time Wave Packets (STWPs) have enabled numerous nontrivial properties, such as tunable
+group velocities, nondiffraction and nonlocal spin textures in optical fields.
+However, this has
+not been properly studied in matter waves. Here, we investigate free-electron STWPs, which are
+propagation-invariant and group-velocity-tunable matter wave packets, constructed by constraining
+the spatiotemporal spectrum of the electron wavefunction in momentum space. Due to the unique
+dispersion of free-electrons, the electron STWP can carry two different topologies, and host both
+meron and skyrmion topological textures in momentum space.
+We demonstrate the topological
+phase transitions and tunable skyrmion numbers by spectral geometry tuning. We also show the
+topologically robust propagation of the electron pulses and corresponding real-space skyrmionic
+expectation value textures encoded within each single electron wavefunction. Our results open a
+platform for topological free-electron wavepackets uses in sensing and information transfer.
+Introduction - Structured free-electron waves have
+emerged as a reliable and powerful platform to control
+quantum matter waves, enabling the creation of elec-
+tron vortex beams carrying angular momentum [1–4],
+to shaped electron wavepackets used for microscopy and
+spectroscopy [5–7].
+Yet single free-electron wavepack-
+ets remain fundamentally limited by issues such as the
+diffractive spreading and dispersion, and temporal walk
+off that limits the interaction lengths in free-electron-
+photon interactions; persistent bottlenecks in electron
+optics applications [8–10]. Beyond this, a free-electron
+has an intrinsic spin degree of freedom, fundamentally
+limiting the possibility of creating spin textures for sin-
+gle electrons [11]. Such spin textures may provide fast
+spin filters for measuring material spin textures from
+the Hund’s exchange term in the interaction Hamilto-
+nian [12, 13] (see Supplemental Material F), without the
+need for complex vector reconstruction or sample tilting.
+Recently, Space-Time Wave Packets (STWPs) are an
+emerging class of structured waves with a correlated
+space and time degrees of freedom, which gives the waves
+a well defined and tunable group velocity and great re-
+sistance against ordinary diffraction and dispersion [14–
+31]. An optical STWP was also shown to carry a non-
+diffracting meron, by using a metasurface to imprint a
+polarization texture in momentum space [32], while re-
+lated momentum space merons have also been realized
+through photonic crystal slabs [33, 34].
+The merons
+are a half skyrmion, topologically nontrivial spin tex-
+tures originally introduced in nuclear physics, which have
+since been obtained in other fields [35–45]. The key fea-
+ture of a skyrmionic texture is the topological robust-
+ness, making it attractive for robust transport and in-
+formation encoding [46–48]. In optical STWP, the fun-
+damental structure of the light cone makes the meron
+a)
+𝜔
+b)
+𝜔
+𝜔0
+𝑘𝑥projection
+c) 𝑘𝑧
+(𝑘𝑧′, 𝜔′)
+projection
+(𝑘0, 𝜔0)
+𝑘𝑧𝑑
+𝜔𝑧𝑑(𝑘𝑧𝑑)
+𝑘𝑥
+𝑘𝑧projection
+projection
+(𝑘0, 𝜔0)
+𝜔
+𝜔0
+𝑘𝑥
+𝑘𝑧
+𝑘0
+𝜔
+d)
+e)
+f)
+FIG. 1. a) The construction of momentum space skyrmion
+uses a closed spectral loop in b) kx −ω space. c) The intersec-
+tion of the spectral plane and the dispersion surface gives the
+lowest point (k0, ω0) called the carrier, and the point (k′
+z, ω′).
+The difference between them is kzd. When ω′ is the maximum
+allowed constituent electron plane wave energy, we write the
+point as (kzmax, ωmax) in text. d-f) Merons can be obtained
+from an intersection that produces a parabolic projection in
+the kx −ω plane instead.
+the only naturally available topological structure. How-
+ever, non-relativistic free-electrons obey a quadratic dis-
+persion relation (ω = ℏk2/2m), see Fig. 1a the disper-
+sion surface.
+This allows a free-electron STWP to be
+nondiffracting and nondispersive, have tunable group ve-
+locities, and to host full or half skyrmionic topologies in
+momentum space and the corresponding realspace wave-
+function. Such realization gives an entirely new degree
+of freedom for free-electrons.
+In this paper, we show this construction of nonrel-
+ativistic free-electron STWP by engineering the spa-
+tiotemporal spectrum on the quadratic dispersion rela-
+arXiv:2610.08391v1  [quant-ph]  6 Oct 2026
+
+
+=== PDF PAGE 2 ===
+2
+tion. We show despite being propagation invariant, such
+construction also supports momentum space skyrmions
+and merons, and we further derive the analytical topo-
+logical phase transition between them. In realspace, we
+show the existence of propagation invariant skyrmion
+and meron textures in the local spin expectation value
+that remains robust upon extended propagation dis-
+tances.
+This establishes a route toward topologically
+structured electron wavepackets whose real-space topolo-
+gies are transported unchanged in free space, for use in
+sensing and information transfer.
+Results - To construct an electron STWP, the free-
+electron dispersion relation is given by the solution to
+the Schrodinger equation in a closed system, written as
+ω = ℏk2/2m, where k2 and m is the momentum and
+the mass of the elementary electron.
+Throughout this
+paper, both ℏand m is taken to be 1 for the analytical
+calculations. A spectral constraint in the form of a plane
+(ω = ω0+tan θ(kz −k0)) intersects the dispersion surface
+at an angle θ, giving a well defined group velocity of the
+electron wavepacket (Figure 1a). The intersection curve,
+called the spectral support curve, can be projected onto
+the kx −ω plane (Figure 1b), which shares at least one
+point (k0, ω0) with the spectral plane. We call this lowest
+frequency ω0 the carrier frequency, as seen in the kz −ω
+plane (Figure 1c). Tuning the parameters k0 and θ (the
+tilt of the spectral plane) gives different spectral projec-
+tions onto the plane kx −ω and kz −ω (Figure 1d,e,f).
+In this paper, we focus on the superluminal electrons
+with group velocities above the carrier group velocity at
+(k0, ω0).
+These projections form the energy-momentum rela-
+tions that the electron plane waves should possess to form
+a single electron STWP. Upon introducing the dimension
+ky, the curve in Figures 1b,e is revolved into a three-
+dimensional surface in momentum space. The different
+topologies of the three dimensional surfaces, either closed
+or open, is used to form momentum space skyrmions and
+fractional skyrmions respectively. This is due to the mo-
+mentum space surface covering a full Bloch sphere, or a
+portion of the Bloch sphere. This will be detailed more
+below. We first give an analytic description of the range
+where momentum space merons and skyrmions can be
+hosted in an electron STWP based on the three dimen-
+sional topology of the spectral surface and for a given
+maximum electron energy with frequency ωmax.
+To investigate the topology, the value of the carrier
+wavenumber and the group velocity was used as free pa-
+rameters. First, by imposing a condition where the spec-
+tral plane intersects the dispersion surface at exactly the
+carrier frequency, the lowest group velocity where the
+electron wavepackets has to possess to get a closed mo-
+mentum space surface is obtained.
+This is equivalent
+to the gradient of the dispersion surface ∂ω/∂kz at the
+point (k0, ω0). The group velocity has to satisfy Equa-
+tion 1 for the electron wavepacket to host a momentum
+𝑘𝑧𝑑
+𝑣𝑔
+𝑘𝑧𝑑
+𝑣𝑔
+𝑘0
+a)
+b)
+𝜃
+Meron
+Skyrmion
+c)
+𝑘0 = 2
+𝑘0 = 3
+𝑘0 = 4
+FIG. 2.
+a) The allowed parameter space in vg, k0 to host
+skyrmion and meron in momentum space in an electron
+STWP. The colormap is the longitudinal spectral linewidth
+in momentum space, and the white and black stars are the
+points used for skyrmion and meron real-space calculations
+respectively.
+Inset: The longitudinal spectral linewidth as
+a function of group velocity and carrier wavenumbers. The
+shown kzd is measured without a limit kzmax. b) The group
+velocity regions for a carrier wavenumber of k0 = 2, shown
+using the spectral tilt angle. c) The propagation invariance
+of the electron STWP can be seen by the almost unchanged
+peak intensity (blue line and axis) as the pulse moves form
+z = 0 to z = 100. The probability amplitude plot is scaled by
+103 for clarity, and shown in the lab frame.
+space skyrmion.
+vg > ℏk0
+m
+(1)
+At the same time, there is an upper limit after which
+only open momentum space surfaces can be obtained,
+and therefore only merons can be hosted. The analytical
+starting point depends on a given maximum electron en-
+ergy making up the wavepacket. We note that the largest
+group velocity that can host a skyrmion is when the spec-
+tral plane cuts the dispersion surface at exactly k0 and
+kzmax, where kzmax is the maximum value of the longitu-
+dinal wavenumber where the spectral plane can intersect
+the dispersion surface (Figure 1c and the corresponding
+figure caption, kzmax = 10 in Figure 2). This directly
+leads to the constraint in Equation 2. Both group veloc-
+ity constraints for merons and skyrmions are visualized
+
+
+=== PDF PAGE 3 ===
+3
+in the Figure 2a.
+vg >
+ℏ(k2
+zmax −k2
+0)
+2m(kzmax −k0)
+(2)
+Within the region that can host skyrmions, the closed
+three dimensional surface spanned by (kx, ky, ω) also has
+a size dependence on the group velocity and the carrier
+frequency. This size dependence is captured by the dif-
+ference between the two values of kz where the spectral
+plane intersects the dispersion surface (Figure 1c). These
+points are given by k0 and Equation 3 (See Supplemental
+Material A).
+k′
+z = 2m tan(θ)
+ℏ
+−k0
+(3)
+With θ ≥arctan(ℏk0/m) so all the spectral components
+have kz > 0, constrained to be only a forward propagat-
+ing electron wave.
+The colormap on Figure 2a depicts the different sizes
+of the momentum space surface for different values of the
+group velocity, vg and the carrier wavenumber, k0. For
+higher values of k0, the lower vg have a negative lon-
+gitudinal spectral linewidth kzd = k′
+z −k0, simply due
+to the fact that the point of intersection defined in the
+spectral plane, k0 will be the maximum instead of the
+minimum.
+This is the region of subluminal electrons,
+where the group velocity falls below the group velocity at
+(k0, ω0) in Figure 1c. For higher k0, it will also be increas-
+ingly difficult to construct a momentum space skyrmion
+before reaching the topological phase transition into a
+momentum space meron, despite higher energy electrons
+should also be treated relativistically.
+Within the regime where a skyrmion can be hosted,
+a higher k0 with a fixed vg gives a lower size of the
+skyrmion in momentum space (Figure 2a inset), which
+directly impacts the spectral requirement of the electron
+plane waves required to synthesize the whole single elec-
+tron wavepacket. In reality, this difference in the spectral
+extent in the synthesis of the STWP is directly observable
+on the probability distribution in real-space.
+Keeping
+k0 = 2.0, the group velocity was tuned to construct the
+different momentum space surfaces and prove the bound-
+aries given by the analytical derivations. The white star
+are the parameters used to construct the skyrmion and
+the black star are the parameters for the meron. Figure
+2b shows the spectral tilt angle used instead of the group
+velocity for clarity.
+Constructing the electron wavefunction with the al-
+lowed (kx, ky, ω) plane wave components on the momen-
+tum space surface is enough to create a propagation in-
+variant and nondiffracting electron STWP (see Figure
+2c, the blue line and axes are the intensity at x = 0
+overlaid onto the probability amplitude plot). However,
+such a scalar STWP construction lacks a vector structure
+on the momentum space surface. Therefore, we detail
+𝑥
+𝜏
+a)
+b)
+-1.0
+-2.0
+0.0
+1.0
+2.0
+-2.0
+0.0
+2.0
+𝑥
+𝑦
+⟨𝜎𝑧⟩
+-0.5
+0.0
+-0.6
+-0.3
+0.0
+0.3
+0.6
+𝑥
+𝑦
+d)
+c)
+0.5
+⟨𝜎𝑧⟩
+⟨𝜎𝑦⟩
+⟨𝜎𝑥⟩
+Ψ Ψ⟩ (× 10−3)
+1
+-1
+0.2
+0.4
+0.5 1.0
+1
+-1
+1
+-1
+-2.5
+0.0
+2.5
+0.5
+0.0
+-0.5
+0.5
+0.0
+-0.5
+0.5
+0.0
+-0.5
+0.5
+0.0
+-0.5
+-2.5
+0.0
+2.5
+-2.5
+0.0
+2.5
+-2.5
+0.0
+2.5
+0.2
+-0.2
+0.0
+0.2
+-0.2
+0.0
+0.2
+-0.2
+0.0
+0.2
+-0.2
+0.0
+-1
+0
+1
+-1
+0
+1
+-1
+0
+1
+-1
+0
+1
+FIG. 3.
+The realspace structure of the electron wavefunc-
+tion.
+a,b) The spatiotemporal structure for skyrmions and
+meron SEV respectively in the comoving frame. The SEV is
+normalized by the local probability amplitude. c) The real-
+space SEV of the skyrmions and d) merons.
+The in-plane
+arrows are directions of ⟨σx⟩and ⟨σy⟩, while the colormap
+and legend gives the direction of ⟨σz⟩. Inset: probability map
+of the electron pulse with the skyrmion and meron structure
+embedded, scaled to 103.
+now how the momentum space skyrmions and merons are
+constructed. We use the nonrelativistic electron spinor
+and impose it onto each point on the surface in momen-
+tum space.
+Effectively, this forms a momentum space
+skyrmion (similar to a momentum space meron in [32])
+and in real-space, it forms a propagating localized elec-
+tron wavepacket made up of momentum-spinor coupled
+plane waves.
+The spinor is defined as a two component orthogonal
+state as Eq. (4), which leads to the vectors on a Bloch
+sphere being defined as n = [sin θ cos ϕ, sin θ sin ϕ, cos θ].
+Here m, γ is the vorticity and the helicity of the topo-
+logical texture. In this paper, m, γ are set to 1 and 0
+respectively. We adopt a polarity of 1 for the momentum
+space skyrmions and polarity of -1 for the momentum
+space merons (See Supplemental Material C).
+χ = [cos(θ/2), ei(mϕ+γ) sin(θ/2)]
+(4)
+As
+the
+electron
+spin
+is
+an
+intrinsic
+quantity,
+we
+investigate the local spin expectation value (SEV)
+of the electron wavefunction in real-space, given by
+⟨Ψ|σ|Ψ⟩, with Ψ being the real-space wavefunction Ψ =
+R
+Aei(kxx+kyy+kzz−ωt)χ(kx, ky)dkxdky.
+σ is the three
+component Pauli matrices, and A is the amplitude of each
+constituent plane wave from each point on the momen-
+tum space surface and Ψ = (Ψ↑, Ψ↓) is a two-component
+normalized wavefunction corresponding to the compo-
+nents of χ.
+The governing equation for Ψ should ide-
+ally be the Pauli equation, but with the absence of mag-
+netic field, this is a two component field satisfying in-
+
+
+=== PDF PAGE 4 ===
+4
+Momentum Space
+Real Space
+Fourier Transform
+𝛾𝑟= 𝜋
+2
+𝛾𝑚= 0
+𝛾𝑟= 𝛾𝑚+ 𝜋
+2
+𝑦
+𝑥
+𝑘𝑥
+𝑘𝑦
+𝜔
+FIG. 4. The relation between the 3D Skyrmionic spinor tex-
+ture in momentum space and its in-plane Fourier transformed
+counterpart in realspace. There is a helicity shift of π/2 due
+to an extra im term, with m = 1 being the winding number
+(Supplementary B). γm is the helicity in momentum space of
+the spinor texture, and γr is the realspace helicity.
+dependent Schrodinger equations.
+We define the vec-
+tor S = (⟨σx⟩, ⟨σy⟩, ⟨σz⟩), which are the local normal-
+ized SEV (Eq. (5)), and we note that this information is
+carried within each single electron wavefunction.
+S = Ψ†σΨ
+Ψ†Ψ = 1
+ρ
+
+
+
+
+
+2 Re
+
+Ψ∗
+↑Ψ↓
+
+2 Im
+
+Ψ∗
+↑Ψ↓
+
+|Ψ↑|2 −|Ψ↓|2
+
+
+
+
+
+(5)
+where ρ = |Ψ↑|2 + |Ψ↓|2.
+The construction of the skyrmions and merons were
+done in momentum space, while Equation 5 was used to
+investigate the real-space probability distribution. Turn-
+ing now to the behaviour in real-space, we projected
+the expectation values of the three Pauli matrices onto
+the x −τ plane (Figures 3a,b for skyrmions and merons
+respectively). For skyrmion SEV, the radial transition
+from red to blue indicates a reversal of the out of plane
+component in ⟨Ψ|σz|Ψ⟩, and pole-to-pole coverage of the
+Bloch sphere. In contrast, the meron SEV do not ex-
+hibit pole-to-pole coverage. Next, we plotted the SEV
+on the x −y plane (z, t = 0) (Figure 3c,d for skyrmion
+and meron SEV respectively). For skyrmions, the cen-
+ter of the wavepacket is oriented purely in the positive z
+direction (⟨σz⟩= 1, and the ends of the high probabil-
+ity region has the expectation value of ⟨σz⟩= −1. For
+merons, the ends of the high probability region instead
+gives ⟨σz⟩= 0. Interestingly, the textures were found to
+exhibit a π/2 phase shift in the helicity (Figure 3c,d). A
+N´eel skyrmion in momentum space gives a Bloch SEV in
+real-space, and the reason for this is an extra factor of i.
+Intuitively, the momentum space factor eimϕk is mapped
+to imeimϕ in realspace. Hence, the integer winding m
+and the topological character of the texture, through the
+skyrmion number, is preserved, but the additional phase
+im rotates the in-plane spin orientation by mπ/2. This
+accounts for the observed helicity shift for m = 1 (Fig-
+ure 4).
+The Fourier transform therefore reshapes the
+a)
+b)
+1.0
+1.25
+1.5
+1.75
+2.0
+3.73
+4.01
+4.33
+4.70
+5.14
+0
+1
+10
+102
+103
+104
+0
+1
+10
+102
+103
+104
+0.94
+0.96
+0.98
+1.0
+FIG. 5.
+a) The propagation invariance of the skyrmion SEV
+for group velocity of vg = 3.73 for different carrier wavenum-
+bers, and b) the propagation invariance of the skyrmion SEV
+as a function of the group velocity, for k0 = 2.0.
+radial profile through the Bessel function (See Supple-
+mental Material B for further details). The existence of
+the skyrmion and meron local SEV permits the calcula-
+tion of the skyrmion number in real-space (Equation 6),
+which uses information encoded within each single elec-
+tron wavefunction.
+Q = 1
+4π
+Z Z
+m ·
+∂m
+∂x × ∂m
+∂y
+
+dx dy
+(6)
+where m is the vector creating the texture. As the elec-
+tron STWP adheres to the linear relation of kz and ω
+(Figure 1c,f), the matter wavepacket is propagation in-
+variant for large distances.
+It is therefore of interest
+to measure the propagation invariance of the skyrmion
+number in realspace, and this is shown in Figure 5 for
+skyrmions.
+The propagation invariance was measured
+in two ways.
+First, by changing the carrier frequency
+and wavenumber, and second, by tuning the group ve-
+locity. Figure 5 shows both the measurements. Impor-
+tantly, all the skyrmions propagate invariantly for large
+distances (103) before any large decays happen, which di-
+rectly demonstrates that the tunable structures embed-
+ded within an electron STWP, are propagation invariant
+for relatively long distances. The difference between the
+different decays at large distances for different group ve-
+locities and carrier wavenumber is due to the finite spec-
+tral weights. An ideal STWP will show a perfectly flat
+profile across all distances. The Space-Time meron tex-
+tures were already produced recently in optical STWP
+[32], which inherits the propagation invariance automat-
+ically from the STWP construction as well.
+In experiments, recent progress in electron waveshap-
+ing [1–3, 5, 6] may be used to sculpt the spatiotemporal
+spectrum of the electron wavepacket. To imprint spinor
+textures onto a free-electron plane waves in momentum
+space, a magnetic field may be utilized to give a probabil-
+ity distribution and realize the full or half Bloch sphere.
+This work is a general property of the quadratic depen-
+dence of the frequency on the momentum in the free elec-
+tron dispersion relation. For other waves, the pseudospin
+
+
+=== PDF PAGE 5 ===
+5
+degree of freedom intrinsic to quasiparticles may also be
+used [49, 50].
+Conclusion - In summary, we demonstrate that free
+space propagating STWPs can be created using non-
+relativistic free-electron matter waves, and the electron
+spinor can be used to construct propagation invariant
+momentum space topological textures tunable by the
+group velocity and the carrier wavenumber.
+At high
+group velocities, the momentum space surface will only
+host merons, as there is no closed momentum space sur-
+face directly obtained through the intersection of the
+spectral plane and the dispersion surface. However, at
+lower group velocities, the parabolic nature of the free-
+electron dispersion naturally allows a closed sphere in
+(kx, ky, ω) space. The closed momentum space structure
+allows the construction of momentum space skyrmions,
+and forms an analogous Bloch sphere.
+By this particular tuning, we show the possibility to
+generate persistent skyrmionic SEV structures in real-
+space that exhibits a helicity phase shift of π/2.
+This paper reveals a new class of free-space wave packet
+with a topological wavefunction and charge, whose topol-
+ogy is independently tunable without material band-
+structures. As this topological information exists in real-
+space, this may be a new robust route to transporting
+information with matter and for sensing applications.
+Another property automatically inherited from the
+Space-Time Wave Packets structure is self healing [51],
+which allows the skyrmions and meron SEV proposed
+here to propagate for large distances even with small
+perturbations. This approach provides a bridge between
+STWP and structured matter waves, and the proposed
+system may also offer a platform for studying tunable
+topological textures in matter waves beyond conventional
+methods typically done through Bose-Einstein Conden-
+sates [52–56]. To the best of our knowledge, this is the
+first single electron wavepacket free space propagating
+skyrmion, shown via the local SEV of electrons, and we
+assert this is still a single electron state. Our work opens
+up a range of possibilities of integration with a large
+body of existing literature on optical skyrmions, and
+free-electron behaviour. Such electron skyrmionic wave
+packets may be relevant to free-electron quantum optics,
+free-electron-photon interactions, may provide additional
+degrees of freedom for free-electron entanglement, mi-
+croscopy, free-electron-matter interaction and transition
+radiation and light generation by free-electrons [57–63],
+as well as any future schemes for information encoding
+and transfer that will empower future technologies.
+Acknowledgments.
+Singapore Ministry of Edu-
+cation (MOE) AcRF Tier 1 (RG157/23 & RT11/23),
+Singapore Agency for Science,
+Technology and Re-
+search (A*STAR) (M24N7c0080 & H25-MRO3489), and
+Nanyang Assistant Professorship Start Up grant.
+Data Availability The numerical simulations that
+support the findings of this study are openly available at
+the following URL/DOI: https://doi.org/10.21979/
+N9/EFUNNW [64]
+∗yijie.shen@ntu.edu.sg
+[1] B. J. McMorran, A. Agrawal, I. M. Anderson, A. A. Herz-
+ing, H. J. Lezec, J. J. McClelland, and J. Unguris, Elec-
+tron vortex beams with high quanta of orbital angular
+momentum, Science 331, 192–195 (2011).
+[2] S. Lloyd, M. Babiker, G. Thirunavukkarasu, and J. Yuan,
+Electron vortices: Beams with orbital angular momen-
+tum, Reviews of Modern Physics 89, 035004 (2017).
+[3] Y. Fang, J. Kuttruff, D. Nabben, and P. Baum, Struc-
+tured electrons with chiral mass and charge, Science 385,
+183–187 (2024).
+[4] Y. Fang, J. Kuttruff, and P. Baum, Electron mat-
+ter
+waves
+with
+internal
+torque,
+Nature
+Physics
+10.1038/s41567-026-03308-1 (2026).
+[5] I. Madan, V. Leccese, A. Mazur, F. Barantani, T. La-
+Grange, A. Sapozhnik, P. M. Tengdin, S. Gargiulo,
+E. Rotunno, J.-C. Olaya, and et al., Ultrafast transverse
+modulation of free electrons by interaction with shaped
+optical fields, ACS Photonics 9, 3215–3224 (2022).
+[6] O. Reinhardt and I. Kaminer, Theory of shaping elec-
+tron wavepackets with light, ACS Photonics 7, 2859–2870
+(2020).
+[7] S. R. Greig, J. B. Khurgin, and A. Y. Elezzabi, Nonrela-
+tivistic electron–electron møller scattering in a nonadia-
+batic tunnel-ionizing surface plasmon field, Communica-
+tions Physics 3, 28 (2020).
+[8] A. Gliserin, M. Walbran, F. Krausz, and P. Baum, Sub-
+phonon-period compression of electron pulses for atomic
+diffraction, Nature Communications 6, 8723 (2015).
+[9] C. D. Arrowsmith, K. G. Miller, M. V. Ambat, S.-W.
+Bahk, I. A. Begishev, J. Bromage, S. Bucht, N. Dauphin,
+C. Dorrer, C. Jeon, J. Kendrick, I. A. LaBelle, L. S.
+Mack, A. L. Martin, C. Mileham, S. Qin, J. J. Pi-
+geon, A. Raymond, M. Romanofsky, H. G. Rinderknecht,
+R. G. Roides, J. Szczepanski, I. A. Settle, M. Spilatro,
+B. Webb, J. L. Shaw, J. P. Palastro, and D. H. Froula, De-
+phasingless laser wakefield acceleration of electrons using
+a flying focus, Nature Physics 10.1038/s41567-026-03352-
+x (2026).
+[10] F. Pennacchio, G. M. Vanacore, G. F. Mancini, M. Op-
+permann, R. Jayaraman, P. Musumeci, P. Baum, and
+F. Carbone, Design and implementation of an optimal
+laser pulse front tilting scheme for ultrafast electron
+diffraction in reflection geometry with high temporal res-
+olution, Structural Dynamics 4, 044032 (2017).
+[11] Y. Wang and C.-F. Li, Bessel-gaussian electron beams
+of cylindrically symmetric spin polarization, EPL (Euro-
+physics Letters) 95, 44001 (2011).
+[12] K.
+Denisov,
+I.
+Rozhansky,
+N.
+Averkiev,
+and
+E.
+L¨ahderanta,
+Electron
+scattering
+on
+a
+magnetic
+skyrmion in the nonadiabatic approximation, Physical
+Review Letters 117, 027202 (2016).
+[13] H. Swain,
+A. Mandal,
+S. Satpathy, and B. R. K.
+Nanda, Quantum dynamics of electron scattering from
+skyrmions, Physical Review B 113, 104446 (2026).
+[14] L. A. Hall and A. F. Abouraddy, Spectral reorganiza-
+tion of space-time wave packets in the presence of nor-
+
+
+=== PDF PAGE 6 ===
+6
+mal group-velocity dispersion, Physical Review A 111,
+063515 (2025).
+[15] D. Kim, C. Guo, P. B. Catrysse, and S. Fan, Shaping
+space-time wave packets beyond the paraxial limit using
+a dispersion magnifier, Physical Review A 111, 013504
+(2025).
+[16] H. E. Kondakci and A. F. Abouraddy, Diffraction-free
+pulsed optical beams via space-time correlations, Optics
+Express 24, 28659 (2016).
+[17] H. E. Kondakci and A. F. Abouraddy, Optical space-
+time wave packets having arbitrary group velocities in
+free space, Nature Communications 10, 929 (2019).
+[18] M. A. Romer, L. A. Hall, and A. F. Abouraddy, Syn-
+thesis and characterization of space-time light sheets: a
+tutorial, Journal of Optics 27, 013501 (2025).
+[19] X. Su, K. Zou, Y. Wang, M. Yessenov, H. Zhou,
+H. Song, W. Ko, R. Zeng, A. Alhaddad, M. Ramakr-
+ishnan, Y. Duan, A. F. Abouraddy, M. Tur, D. N.
+Christodoulides, and A. E. Willner, Space-time wave
+packets in multimode optical fibers with controlled dy-
+namic motions and tunable group velocities, Nature
+Communications 16, 2027 (2025).
+[20] H. Wang, C. Guo, and S. Fan, Spatiotemporal steering
+of nondiffracting wave packets, Physical Review Letters
+134, 073803 (2025).
+[21] M. Yessenov and A. F. Abouraddy, Accelerating and de-
+celerating space-time optical wave packets in free space,
+Physical Review Letters 125, 233901 (2020).
+[22] M. Yessenov, L. A. Hall, K. L. Schepler, and A. F.
+Abouraddy, Space-time wave packets, Advances in Op-
+tics and Photonics 14, 455 (2022).
+[23] M. Yessenov, J. Free, Z. Chen, E. G. Johnson, M. P. J.
+Lavery, M. A. Alonso, and A. F. Abouraddy, Space-time
+wave packets localized in all dimensions, Nature Commu-
+nications 13, 4573 (2022).
+[24] H. E. Kondakci and A. F. Abouraddy, Diffraction-free
+space–time light sheets, Nature Photonics 11, 733–740
+(2017).
+[25] Q. Zhan, Spatiotemporal sculpturing of light: a tutorial,
+Advances in Optics and Photonics 16, 163 (2024).
+[26] Z. Che, W. Liu, J. Ye, L. Shi, C. Chan, and J. Zi, Gener-
+ation of spatiotemporal vortex pulses by resonant diffrac-
+tive grating, Physical Review Letters 132, 044001 (2024).
+[27] S. Liu, H. Ge, X.-Y. Xu, Y. Sun, X.-P. Liu, M.-H. Lu,
+and Y.-F. Chen, Generation of spatiotemporal acoustic
+vortices with arbitrarily oriented orbital angular momen-
+tum, Nature Communications 16, 2823 (2025).
+[28] A. Pitanti, N. Ashurbekov, I. dePedro Embid, M. Msall,
+and P. V. Santos, Ghz acousto-optic angular momentum
+with tunable topological charge, Nature Communications
+16, 8116 (2025).
+[29] A. Singh, J. Rønning, C.-C. Liu, L. Angheluta, A. Con-
+cha, and M. M. Bandi, Topology made visible through
+standing waves in a spinning fluid, Communications
+Physics 9, 123 (2026).
+[30] D. A. Smirnova, F. Nori, and K. Y. Bliokh, Water-wave
+vortices and skyrmions, Physical Review Letters 132,
+054003 (2024).
+[31] H. Zhang, Y. Sun, J. Huang, B. Wu, Z. Yang, K. Y.
+Bliokh, and Z. Ruan, Topologically crafted spatiotem-
+poral vortices in acoustics, Nature Communications 14,
+6238 (2023).
+[32] M. Yessenov, A. H. Dorrah, C. Guo, L. A. Hall, J.-S.
+Park, J. Free, E. G. Johnson, F. Capasso, S. Fan, and
+A. F. Abouraddy, Ultrafast space-time optical merons
+in momentum-energy space, Nature Communications 16,
+8592 (2025).
+[33] C. Guo, M. Xiao, Y. Guo, L. Yuan, and S. Fan, Meron
+spin textures in momentum space, Physical Review Let-
+ters 124, 106103 (2020).
+[34] C. Guo, M. Xiao, M. Orenstein, and S. Fan, Structured
+3d linear space–time light bullets by nonlocal nanopho-
+tonics, Light: Science & Applications 10, 160 (2021).
+[35] T. Skyrme, A unified field theory of mesons and baryons,
+Nuclear Physics 31, 556 (1962).
+[36] Y. Shen, H. Wang, and S. Fan, Free-space topological
+optical textures: tutorial, Advances in Optics and Pho-
+tonics 17, 295 (2025).
+[37] C. Psaroudaki and C. Panagopoulos, Skyrmion qubits: A
+new class of quantum logic elements based on nanoscale
+magnetization, Physical Review Letters 127, 067201
+(2021).
+[38] Y. Shen, Q. Zhang, P. Shi, L. Du, X. Yuan, and A. V.
+Zayats, Optical skyrmions and other topological quasi-
+particles of light, Nature Photonics 18, 15–25 (2024).
+[39] H. Teng, X. Liu, N. Zhang, H. Fan, G. Chen, Q. Cao,
+J. Zhong, X. Lei, and Q. Zhan, Construction of optical
+spatiotemporal skyrmions, Light: Science & Applications
+14, 324 (2025).
+[40] L.
+Niu,
+X.
+Feng,
+X.
+Zhang,
+W.
+Yu,
+Q.
+Wang,
+Y. Lang, Q. Xu, X. Chen, J. Ma, H. Qiu, Y. Shen,
+W. Zhang, and J. Han, Electric-magnetic-switchable free-
+space skyrmions in toroidal light pulses via a nonlinear
+metasurface, Optica 13, 203 (2026).
+[41] Y. Shen, Y. Hou, N. Papasimakis, and N. I. Zheludev,
+Supertoroidal light pulses as electromagnetic skyrmions
+propagating in free space, Nature Communications 12,
+5891 (2021).
+[42] R. Wang, B. Ying, S. Shi, J. Wang, B.-Z. Wang,
+M. Liang, and Y. Shen, Hybrid electromagnetic toroidal
+vortices, Science Advances 11, eads4797 (2025).
+[43] A. Zdagkas, C. McDonnell, J. Deng, Y. Shen, G. Li,
+T. Ellenbogen, N. Papasimakis, and N. I. Zheludev, Ob-
+servation of toroidal pulses of light, Nature Photonics 16,
+523–528 (2022).
+[44] Y. Shen, N. Papasimakis, and N. I. Zheludev, Non-
+diffracting supertoroidal pulses and optical “k´arm´an vor-
+tex streets”, Nature Communications 15, 4863 (2024).
+[45] R. Wang, P.-Y. Bao, Z.-Q. Hu, S. Shi, B.-Z. Wang, N. I.
+Zheludev, and Y. Shen, Observation of resilient propaga-
+tion and free-space skyrmions in toroidal electromagnetic
+pulses, Applied Physics Reviews 11, 031411 (2024).
+[46] A. A. Wang, Z. Zhao, Y. Ma, Y. Cai, R. Zhang, X. Shang,
+Y. Zhang, J. Qin, Z.-K. Pong, T. Marozs´ak, B. Chen,
+H. He, L. Luo, M. J. Booth, S. J. Elston, S. M. Morris,
+and C. He, Topological protection of optical skyrmions
+through complex media, Light: Science & Applications
+13, 314 (2024).
+[47] Z. Guo, C. Peters, N. Mata-Cervera, A. N. Vetlugin,
+R. Guo, P. Zhang, A. Forbes, and Y. Shen, Topological
+robustness of classical and quantum optical skyrmions
+in atmospheric turbulence, Nature Communications 17,
+2085 (2026).
+[48] Y. Zhang, A. A. Wang, R. Zhang, Z. Zhao, Y. Ma, R. Liu,
+Z.-K. Pong, Y. Cai, and C. He, Skyrmions based on op-
+tical anisotropy for topological encoding, Light: Science
+& Applications 15, 254 (2026).
+[49] Y. He, G. Luo, H. Sohn, O. Matsuda, O. B. Wright,
+
+
+=== PDF PAGE 7 ===
+7
+and Z. Su, Revealing intrinsic 3d spin angular momen-
+tum of evanescent acoustic phonons on a single-crystal
+surface using ultrafast optoacoustics, Nature Communi-
+cations 17, 10.1038/s41467-026-70019-9 (2026).
+[50] C. Herring and C. Kittel, On the theory of spin waves
+in ferromagnetic media, Physical Review 81, 869–880
+(1951).
+[51] H. E. Kondakci and A. F. Abouraddy, Self-healing of
+space-time light sheets, Optics Letters 43, 3830 (2018).
+[52] U. Al Khawaja and H. Stoof, Skyrmions in a ferro-
+magnetic bose–einstein condensate, Nature 411, 918–920
+(2001).
+[53] T.-L. Ho, Spinor bose condensates in optical traps, Phys-
+ical Review Letters 81, 742–745 (1998).
+[54] L. S. Leslie, A. Hansen, K. C. Wright, B. M. Deutsch,
+and N. P. Bigelow, Creation and detection of skyrmions
+in a bose-einstein condensate, Physical Review Letters
+103, 10.1103/physrevlett.103.250401 (2009).
+[55] K.-P. Marzlin, W. Zhang, and B. C. Sanders, Creation of
+skyrmions in a spinor bose-einstein condensate, Physical
+Review A 62, 10.1103/physreva.62.013602 (2000).
+[56] J. Ruostekoski and J. R. Anglin, Creating vortex rings
+and three-dimensional skyrmions in bose-einstein con-
+densates, Physical Review Letters 86, 3934–3937 (2001).
+[57] S. Tsesses, G. Bartal, and I. Kaminer, Light generation
+via quantum interaction of electrons with periodic nanos-
+tructures, Physical Review A 95, 013832 (2017).
+[58] I. D. Feranchuk and A. Ulyanenkov, Transition radiation
+from electrons: Application to thin film and superlattice
+analysis, Physical Review B 63, 155318 (2001).
+[59] A. Koneˇcn´a, F. Iyikanat, and F. J. Garc´ıa de Abajo, En-
+tangling free electrons and optical excitations, Science
+Advances 8, 10.1126/sciadv.abo7853 (2022).
+[60] R. Ruimy, A. Karnieli, and I. Kaminer, Free-electron
+quantum optics, Nature Physics 21, 193–200 (2025).
+[61] G. Baranes, R. Ruimy, A. Gorlach, and I. Kaminer,
+Free electrons can induce entanglement between photons,
+npj Quantum Information 8, 10.1038/s41534-022-00540-
+4 (2022).
+[62] Z. Xie, Z. Chen, H. Li, Q. Yan, H. Chen, X. Lin,
+I. Kaminer, O. D. Miller, and Y. Yang, Maximal quantum
+interaction between free electrons and photons, Physi-
+cal Review Letters 134, 10.1103/physrevlett.134.043803
+(2025).
+[63] D. N. Makarov, K. A. Makarova, S. N. Kapustin, A. A.
+Goshev, and Y. V. Tsykareva, Quantum entanglement of
+non-monochromatic photons on free electrons, Journal of
+the Optical Society of America B 42, 189 (2024).
+[64] https://doi.org/10.21979/N9/EFUNNW.

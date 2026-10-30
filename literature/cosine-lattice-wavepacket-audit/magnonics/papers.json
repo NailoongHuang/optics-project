@@ -1,0 +1,138 @@
+{
+  "search_started": "2026-10-20",
+  "scope": "Magnetic spin-wave pulse spreading, zero dispersion, caustic beams, higher-order dispersion, and experimental relevance to the current separable cosine one-magnon model.",
+  "papers": [
+    {
+      "id": "M1",
+      "title": "Dispersionless propagation of ultra-short spin-wave pulses in ultrathin yttrium iron garnet waveguides",
+      "authors_short": "B. Divinskiy et al.",
+      "year": 2021,
+      "journal": "Physical Review Applied 16, 024028",
+      "doi": "10.1103/PhysRevApplied.16.024028",
+      "arxiv": "2108.08054v1",
+      "url": "https://arxiv.org/abs/2108.08054v1",
+      "publisher_url": "https://doi.org/10.1103/PhysRevApplied.16.024028",
+      "full_text": "../../linear-spin-wave-packets/extracted/2108.08054v1.txt",
+      "evidence_locations": ["PDF pp. 6-7 and Fig. 2: measured temporal pulse widths and group velocity", "PDF pp. 8-11 and Fig. 4: dipolar-exchange competition, broad velocity minimum", "PDF p. 10: 2.5 ns Gaussian excitation, simulation field 0.1 Oe"],
+      "finding": "Experimentally measured near suppression of temporal broadening of approximately 2.5 ns pulses over 10 micrometers around 5.2 GHz. The explanation is a broad weak-variation region of group velocity produced by dipolar-exchange competition.",
+      "comparison": "Direct magnetic example of linear dispersion engineering for a pulse. It is a confined waveguide with realistic dipolar-exchange dispersion, not the two-dimensional nearest-neighbor cosine band or proof of permanent preservation in both spatial directions.",
+      "verification": "Current official arXiv metadata and relevant existing local full-text passages inspected."
+    },
+    {
+      "id": "M2",
+      "title": "Generation of Spin-Wave Pulses by Inverse Design",
+      "authors_short": "S. Casulleras et al.",
+      "year": 2023,
+      "journal": "Physical Review Applied 19, 064085",
+      "doi": "10.1103/PhysRevApplied.19.064085",
+      "arxiv": "2209.06608v1",
+      "url": "https://arxiv.org/abs/2209.06608v1",
+      "publisher_url": "https://doi.org/10.1103/PhysRevApplied.19.064085",
+      "full_text": "2209.06608v1.txt",
+      "evidence_locations": ["PDF p. 2, method and Eq. (1): backward linear propagation plus antenna transfer function", "PDF pp. 3-4, Fig. 2 and Eqs. (2)-(3): chirped self-compressing Gaussian target and generation fidelity"],
+      "finding": "Theory with micromagnetic validation designs antenna driving for specified spin-wave profiles; self-compressing and rectangular pulses are demonstrated within the linear regime.",
+      "comparison": "Initial phase or spectral design for pulse shaping is already an established magnetic-wave route. Targeting a shape at one selected time is not maintaining that shape at every propagation time.",
+      "verification": "Official APS and arXiv identity verified; official versioned PDF downloaded, parsed, and relevant method/results read."
+    },
+    {
+      "id": "M3",
+      "title": "All-Angle Collimation for Spin Waves",
+      "authors_short": "J. W. Klos et al.",
+      "year": 2015,
+      "journal": "IEEE Magnetics Letters 6, 3500804",
+      "doi": "10.1109/LMAG.2015.2494558",
+      "arxiv": "1703.05548v1",
+      "url": "https://arxiv.org/abs/1703.05548v1",
+      "publisher_url": "https://doi.org/10.1109/LMAG.2015.2494558",
+      "full_text": "../../linear-spin-wave-packets/extracted/1703.05548v1.txt",
+      "evidence_locations": ["PDF pp. 1-2: flat isofrequency contours and their normals", "PDF p. 2: small excitation for the linear regime", "PDF pp. 3-4: monochromatic-beam limitation and patterned YIG all-angle collimation"],
+      "finding": "Dispersion engineering of Co/Py interfaces and patterned YIG produces monochromatic spin-wave collimation; flat isofrequency contours align the group-velocity direction.",
+      "comparison": "The relevant curve curvature is the curvature of an equal-frequency contour, not Gaussian curvature of the energy graph. It does not establish two-dimensional finite-bandwidth packet preservation.",
+      "verification": "Official arXiv metadata checked; relevant full text read. Journal year 2015 differs from arXiv posting year 2017."
+    },
+    {
+      "id": "M4",
+      "title": "Caustic spin wave beams in soft, thin films: properties and classification",
+      "authors_short": "A. Wartelle, F. Vilsmeier, T. Taniguchi, and C. H. Back",
+      "year": 2023,
+      "journal": "Physical Review B 107, 144431",
+      "doi": "10.1103/PhysRevB.107.144431",
+      "arxiv": "2301.01220v1",
+      "url": "https://arxiv.org/abs/2301.01220v1",
+      "publisher_url": "https://doi.org/10.1103/PhysRevB.107.144431",
+      "full_text": "../../linear-spin-wave-packets/extracted/2301.01220v1.txt",
+      "evidence_locations": ["Section II.A: explicitly linear thin-film dispersion and model limitations", "Section II.B, Eq. (5): stationary group-velocity direction along the slowness curve", "Section III.D, PDF pp. 12-13 and Fig. 13: higher-order caustic with quartic directional and apparent-wavelength variation"],
+      "finding": "Classifies caustic spin-wave beams and identifies higher-order caustic points where the group-velocity direction is unusually insensitive to a range of wavevectors; includes time-resolved Kerr microscopy validation of the broader framework.",
+      "comparison": "Higher-order flattening is known in magnetic systems, but the paper studies direction on a fixed-frequency curve. Its higher-order caustic is not identical to a vanishing full Hessian of the cosine energy graph.",
+      "verification": "Official arXiv metadata and HTML plus relevant local PDF passages inspected. The HTML rendering date was not treated as publication date."
+    },
+    {
+      "id": "M5",
+      "title": "Shaping non-reciprocal caustic spin-wave beams",
+      "authors_short": "D. Wagle et al.",
+      "year": 2026,
+      "journal": "Physical Review B 113, L060405",
+      "doi": "10.1103/qz9q-bp9j",
+      "arxiv": "2404.15011v4",
+      "url": "https://arxiv.org/abs/2404.15011v4",
+      "publisher_url": "https://doi.org/10.1103/qz9q-bp9j",
+      "full_text": "../../linear-spin-wave-packets/extracted/2404.15011v4.txt",
+      "evidence_locations": ["PDF p. 2: caustic criterion on isofrequency curve", "PDF p. 2, Eq. (1): susceptibility and excitation-field Fourier integral, explicitly steady-state magnetization", "PDF pp. 3-5: simulation and BLS comparison"],
+      "finding": "Nanoconstricted RF excitation and dipolar-exchange anisotropy shape non-reciprocal caustic-like spin-wave beams; a near-field model, micromagnetic simulations and BLS measurements are compared.",
+      "comparison": "A modern experimental route for selective spectral excitation and beam steering. It is a fixed-frequency driven response rather than freely evolving localized packets in the cosine model.",
+      "verification": "Official arXiv latest version verified as v4 revised 2026-02-11; DOI and journal record checked; relevant local full text read."
+    },
+    {
+      "id": "M6",
+      "title": "Nonlinear suppression of dispersion broadening of ultrashort spin-wave pulses in thin YIG films",
+      "authors_short": "K. O. Nikolaev et al.",
+      "year": 2026,
+      "journal": "Physical Review Applied 25, 034035",
+      "doi": "10.1103/wt14-t3dj",
+      "arxiv": "2603.22051v1",
+      "url": "https://arxiv.org/abs/2603.22051v1",
+      "publisher_url": "https://doi.org/10.1103/wt14-t3dj",
+      "full_text": "2603.22051v1.txt",
+      "evidence_locations": ["PDF pp. 4-6: forward-volume geometry, 3 ns pulses, linear and nonlinear regimes", "PDF pp. 6-8 and Figs. 2-3: 0.1 mW pulse broadening versus 1.5 mW compensation", "PDF pp. 8-10: nonlinear threshold and damping"],
+      "finding": "Experimentally, approximately 3 ns pulses broaden by about 2.2 times over 50 micrometers at low power, whereas higher power produces nonlinear compensation and nearly unchanged pulse width.",
+      "comparison": "This is a deliberately different mechanism: nonlinearity compensates nonzero dispersion. It is not a direct precedent for the linear single-magnon calculation, and its envelope-soliton terminology must not be applied to the current packets.",
+      "verification": "Official arXiv metadata and full PDF inspected; PDF downloaded and verified with signature, title and all-page text checks."
+    }
+  ],
+  "supplemental_leads": [
+    {
+      "title": "Non-linear spin dynamics in ferromagnetic films and Schrodinger's equation in the vicinity of the zero-dispersion point",
+      "authors_short": "V. V. Kiseliev et al.",
+      "year": 1999,
+      "doi": "10.1088/0953-8984/11/17/305",
+      "journal": "Journal of Physics: Condensed Matter 11, 3461-3474",
+      "url": "https://doi.org/10.1088/0953-8984/11/17/305",
+      "status": "Crossref metadata verified and saved. Publisher full text was inaccessible. An indexed reproduction of the original paper describes a third-order-dispersion nonlinear envelope equation near omega''=0; retain as a historical lead, not the sole scientific evidence."
+    },
+    {
+      "title": "Magnetically tunable Airy-like beam of magnetostatic surface spin waves",
+      "authors_short": "H. Dai et al.",
+      "year": 2021,
+      "journal": "Chinese Optics Letters 19, 013501",
+      "url": "https://opg.optica.org/col/abstract.cfm?uri=col-19-1-013501",
+      "status": "Official metadata and abstract verified; full text inaccessible. Abstract reports micromagnetic simulations using an imposed 3/2 phase pattern. Do not identify this designed Airy-like beam with spontaneous cubic deformation of a Gaussian packet."
+    },
+    {
+      "title": "Efficient geometrical control of spin waves in microscopic YIG waveguides",
+      "authors_short": "S. R. Lake et al.",
+      "year": 2021,
+      "doi": "10.1063/5.0071757",
+      "arxiv": "2111.02236v1",
+      "url": "https://arxiv.org/abs/2111.02236v1",
+      "status": "Current official arXiv metadata verified. Existing full text PDF pp. 7-8 reports weak frequency dependence of group velocity in the narrow end of a tapered guide; this is supporting dispersion-control evidence, not rigid propagation through the taper."
+    },
+    {
+      "title": "Dispersion-tunable low-loss implanted spin-wave waveguides for large magnonic networks",
+      "authors_short": "J. Bensmann et al.",
+      "year": 2025,
+      "doi": "10.1038/s41563-025-02282-y",
+      "url": "https://www.nature.com/articles/s41563-025-02282-y",
+      "status": "Official article text inspected for the device scope and Fig. 5. Ion implantation provides dispersion control and waveguide matching. Continuous-wave excitation and transmission are not a demonstration of zero-Hessian localized-packet propagation."
+    }
+  ]
+}

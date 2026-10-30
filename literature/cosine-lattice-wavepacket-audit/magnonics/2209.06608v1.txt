@@ -1,0 +1,831 @@
+=== PDF PAGE 1 ===
+Generation of Spin-Wave Pulses by Inverse Design
+S. Casulleras,1, 2, ∗S. Knauer,3 Q. Wang,3 O. Romero-Isart,1, 2 A.V. Chumak,3 and C. Gonzalez-Ballestero1, 2, †
+1Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, 6020 Innsbruck, Austria
+2Institute for Theoretical Physics, University of Innsbruck, 6020 Innsbruck, Austria
+3Faculty of Physics, University of Vienna, 1090 Vienna, Austria
+The development of fast magnonic information processing nanodevices requires operating with
+short spin-wave pulses, but, the shorter the pulses, the more aﬀected they are by information loss
+due to broadening and dispersion. The capability of engineering spin-wave pulses and controlling
+their propagation could solve this problem. Here, we provide a method to generate linear spin-wave
+pulses with a desired spatial-temporal proﬁle in magnonic waveguides based on inverse design. As
+relevant examples, we theoretically predict that both rectangular and self-compressing spin-wave
+pulses can be generated in state-of-the-art waveguides with ﬁdelities ≳96% using narrow stripline
+antennas. The method requires minimal computational overhead and is universal, i.e., it applies
+to arbitrary targeted pulse shapes, type of waves (exchange or dipolar), waveguide materials, and
+waveguide geometries. It can also be extended to more complex magnonic structures. Our results
+could lead to the utilization of large-scale magnonic circuits for classical and quantum information
+processing.
+INTRODUCTION
+Spin waves, exhibiting strong non-linearity and low
+loss coeﬃcients, are promising candidates for classi-
+cal and quantum information processing [1–3] and sur-
+pass their electric current-based counterpart by har-
+nessing properties such as frequency and phase [4–8].
+The demonstrations of coherent spin-wave transport in
+nanoscale magnetic structures and prototype devices [9–
+13] allow access to the further miniaturization of large-
+scale magnonic circuits. Most of these works focus on tai-
+loring spin-wave propagation through spatial-temporal
+nanostructure engineering [10, 11, 14, 15] or by coupling
+to other systems such as paramagnetic spins [16–19] or
+acoustic waves [20, 21].
+Recently, the concept of in-
+verse design has been introduced into magnonics numer-
+ically [15, 22] and experimentally [23], and has shown its
+great potential for radio frequency applications as well as
+for Boolean and neuromorphic computing. In these in-
+vestigations, a medium through which a spin wave prop-
+agates was designed to obtain the required functionality,
+while the wave itself was excited continuously. However,
+modern high-performance computing demands the use of
+short pulses that carry data at high clock rates. The fact
+that spin-wave dispersions are not linear and the diﬀerent
+spectral components of the pulse have diﬀerent group ve-
+locities leads to a broadening and distortion of the pulse
+shape, resulting in data loss. The minimum duration of
+the pulse is also limited by the bandwidth of the spin-
+wave spectrum.
+Here we propose an inverse design method (IDM) to
+obtain linear spin-wave pulses of arbitrary target shape
+at any point of a waveguide. The method is universal,
+i.e., it is suitable for both dipolar or exchange spin waves
+∗silvia.casulleras-guardia@uibk.ac.at
+† carlos.gonzalez-ballestero@uibk.ac.at
+and for waveguides made of any material and with any
+geometry.
+As examples, we theoretically demonstrate
+the generation of self-compressing and rectangular pulses
+in state-of-the-art yttrium-iron-garnet (YIG) nanowaveg-
+uides. The self-compressing pulses possess an increased
+amplitude in a deﬁned local point of a waveguide, en-
+abling addressed read/write of data or local triggering of
+nonlinear phenomena in classical and quantum magnonic
+networks. The rectangular-wave pulses are of great in-
+terest for radio frequency and binary data processing as
+they allow the highest (undisturbed) data transmission
+rate. It is shown that the IDM provides a pulse genera-
+tion ﬁdelity close to unity.
+This article is organized as follows. First, we provide
+a stepwise method for the determination of the voltage
+signal which must be applied to a narrow but arbitrarily-
+shaped antenna to generate an arbitrary target spin-wave
+pulse, using minimal micromagnetic simulations. Then,
+we illustrate our method for three particular examples,
+namely the generation of a self-compressing spin-wave
+pulse and a rectangular pulse, both in the exchange
+regime of a recently reported YIG nanowaveguide [24],
+and of a weakly self-compressing spin-wave pulse in the
+dipolar regime. Our results are veriﬁed by micromagnetic
+simulations using MuMax3 [25]. Additionally, we discuss
+both the pulse generation ﬁdelity and the energy cost for
+pulse generation as a function of antenna size. Finally,
+a discussion of our results is presented in the Conclusion
+section.
+METHOD FOR INVERSE DESIGN OF
+SPIN-WAVE PULSES
+Pulse engineering comprises the generation of tailored
+wave packets able to evolve into a desired shape after
+propagation within a given nanostructure.
+It provides
+a method to control wave propagation without nanos-
+tructure engineering. Pulse engineering is used to con-
+arXiv:2209.06608v1  [cond-mat.mes-hall]  14 Sep 2022
+
+
+=== PDF PAGE 2 ===
+2
+wa
+Ly = 2Lz = 200nm
+c
+b
+a
+Ly = Lz = 50nm
+B0
+B0
+V (t)
+target pulse
+antenna
+Ly
+Lz
+x
+y
+z
+xa
+mT (x)
+FIG. 1. System charaterization. a, Schematic of the gen-
+eration of a target spin-wave pulse in a single-band waveguide
+of arbitrary cross-section.
+Our IDM provides the antenna
+driving V (t) needed to generate a pulse with a given shape
+mT (x) along the waveguide axis using a microwave antenna of
+width wa centered at x = xa. b, Examples of dispersion rela-
+tions for Yttrium-Iron-Garnet (YIG) waveguides with a rect-
+angular cross section of 50nm × 50nm and a transverse bias
+ﬁeld (left) and a rectangular cross section of 100nm × 200nm
+and a longitudinal bias ﬁeld (right). c, Modulus (blue) and
+phase (orange) of the waveguide transfer function (deﬁnition
+in the main text) at r = 0 for the same two waveguide conﬁgu-
+rations, for antenna widths wa = 70nm (left) and wa = 230nm
+(right). Here and in the remaining ﬁgures we ﬁx xa = 0. The
+dashed lines mark the cutoﬀfrequencies at which dω/dk = 0.
+See Methods section for details on the simulations.
+trol optical excitations [26–28], acoustic waves [29], or
+microwaves [30] for applications such as quantum infor-
+mation processing [31, 32]. Here, we propose a method
+for spin-wave pulse engineering based on inverse design
+(IDM), i.e., a method to determine the magnetic driving
+needed to generate a chosen target pulse.
+To model spin-wave pulse engineering, we focus on
+the experimentally relevant system shown in Fig. 1a,
+namely an inﬁnite single-band magnonic waveguide with
+arbitrary cross section, oriented along the x−axis and
+driven by a microwave antenna of width wa centered
+at x = xa.
+The antenna generates a magnetic ﬁeld
+B1(r, t) = Ba(r)V (t), with a spatial proﬁle Ba(r) given
+by the antenna geometry and a dimensionless driving
+V (t) proportional to the applied voltage. This magnetic
+ﬁeld generates spin waves, i.e., a propagating dynamic
+magnetization m(r, t) on top of the stationary waveguide
+magnetization. The purpose of the IDM is to determine
+the driving V (t) needed to generate a spin-wave pulse
+whose magnetization, at a chosen time tf, transverse po-
+sition (y0, z0), and waveguide arm x > xa, has a chosen
+target pulse shape mT (x), that is, e0 · m(x, y0, z0, tf) ∝
+mT (x), where e0 is an arbitrary unit vector.
+The IDM consists of three steps (see Methods section
+for details): (i) The characterization of the system by
+calculating the waveguide static magnetization, its dis-
+persion relation ω(k), and the antenna transfer function
+f(r, ω).
+The transfer function is deﬁned in frequency
+domain as the relation between the driving applied to
+the antenna and the magnetization generated by it at
+position r, i.e., m(r, ω) ≡f(r, ω)V (ω).
+Each of these
+quantities can be calculated eﬃciently with simple mi-
+cromagnetic simulations. (ii) The calculation of the time-
+dependent magnetization mT (xa, y0, z0, t), at the chosen
+transverse position (y0, z0) and at the antenna longi-
+tudinal position x = xa, which would evolve into the
+target pulse after free propagation in the waveguide.
+This magnetization is computed by evolving the pulse
+backward in time while recording the magnetization at
+r = (xa, y0, z0). The backward evolution is performed
+until the whole pulse lies at the other side of the antenna
+(x < xa), a time which we set as t = 0.
+We use the
+following approximate expression for the time evolution,
+valid in the linear regime and for low propagation losses,
+mT (r, t) ≃
+1
+√
+2π
+Z
+R
+dk
+
+c(k; y, z)ei(kx−ω(k)t) + c.c.
+
+,
+(1)
+where the coeﬃcients c(k; y, z) are determined by the
+constraint e0 · m(x, y0, z0, tf) = mT (x). (iii) The com-
+putation of the required driving as V (t) = F−1{F{e0 ·
+mT (xa, y0, z0, t)}/[e0·f(xa, y0, z0, ω)]}, where F and F−1
+denote the Fourier and inverse Fourier transforms, re-
+spectively.
+This IDM is valid for any dispersion relation and any
+target shape not forbidden by physical constraints (e.g.,
+too wide antennas, see example below). It thus provides
+a universal recipe for the generation of spin-wave pulses
+in the linear regime. The method is also computationally
+eﬃcient as steps (ii) and (iii) do not require additional
+micromagnetic simulations.
+An essential advantage of
+this IDM is the use of the approximate expression Eq. (1),
+which allows to backward-evolve the pulse with minimal
+computational overhead.
+RELEVANT EXAMPLES: SELF-COMPRESSING
+AND RECTANGULAR PULSES
+We demonstrate the performance and universality of
+our IDM by theoretically studying the generation of
+pulses relevant for magnonic information processing,
+and benchmarking it against full micromagnetic simu-
+lations. Speciﬁcally, we consider the generation of two
+
+
+=== PDF PAGE 3 ===
+3
+c
+b
+a
+d
+FIG. 2.
+Generation of a self-compressing spin-wave pulse in the exchange regime.
+a, Magnetization as a
+function of position along the waveguide and time. Left: Backward evolution of the target pulse Eq. (2) in a square YIG
+waveguide of Ly = Lz = 50nm width under a transverse bias ﬁeld B0 = (270mT)ey. The pulse parameters are xf = 6.8µm,
+σf = 194nm, k0 = 8µm−1 and A/Ms = 0.004, where Ms is the saturation magnetization. Right: micromagnetic simulation
+of the magnetization dynamics under the antenna driving V (t) obtained with our IDM, with chosen parameters tf = 83ns,
+xa = y0 = z0 = 0, and e0 = ez. In both panels, horizontal and vertical lines indicate tf and the antenna position xa = 0,
+respectively.
+b, Polynomial ﬁt of the waveguide dispersion relation (orange) and envelope of the target pulse Eq. (2) in
+reciprocal space (shaded area). c, modulus (blue) and derivative of the argument (orange) of the frequency-domain driving
+function V (ω) = |V (ω)|eiϕ(ω) extracted from our IDM. d, Comparison between the target magnetization (dashed blue line)
+and the magnetization generated at t = tf by applying our IDM according to micromagnetic simulations (solid green line).
+Both magnetizations are square-normalized using N 2 ≡R
+R dx(e0 · m(x, y0, z0, tf))2. The shaded area shows the envelope of the
+target pulse.
+classes of pulses, namely self-compressing and rectangu-
+lar pulses, in diﬀerent waveguides showing diﬀerent spin-
+wave regimes (exchange and dipolar). Self-compressing
+pulses are a family of chirped pulses that compress as
+they propagate along the waveguide due to the curvature
+of the dispersion relation [33]. At the time of maximum
+compression, these pulses have a Gaussian intensity pro-
+ﬁle whose spot size can be sub-wavelength. In contrast to
+related ideas, such as non-linear spin-wave bullets or soli-
+tons [34–37], these self-compressing pulses remain within
+the linear regime, and thus require less power and ex-
+hibit less dissipation due to magnon-magnon scattering.
+In magnonics, self-compressing pulses could be used to lo-
+cally switch nodes coupled to the waveguide (e.g., mag-
+netic nano-islands [38]), or to partially compensate for
+propagation losses by compressing all the intensity at the
+position of the detector, thereby enabling the detection
+of otherwise too weak signals. Furthermore, although in
+this work we focus on the linear regime, the compression
+of one or several pulses at the same point in space can cre-
+ate a strong and localized nonlinear response, a feature
+that could be used as a synapse trigger in magnon-based
+neuromorphic computing [39]. As a second example we
+consider the generation of rectangular pulses, which are
+the basis of digital information processing as they maxi-
+mize bit rate and information readability.
+First, we focus on the generation of a self-compressing
+pulse in the exchange regime.
+We consider a YIG
+nanowaveguide with a square cross section of 50nm width
+and a transverse bias ﬁeld [24], whose dispersion relation
+and transfer function are shown in Fig. 1b-c (left panel).
+We use the following Gaussian target pulse [33],
+mT (x) = A exp
+ 
+−(x −xf)2
+4σ2
+f
+!
+cos (k0x) ,
+(2)
+where A is the amplitude of the pulse (chosen to ensure
+that nonlinearity is negligible), k0 is its carrier wavenum-
+ber, xf the point of maximum compression and σf the
+width at x = xf. The self-compressing behavior of this
+pulse is evident in its backward time-evolution, shown
+in Fig. 2a (left panel). For the parameters used in the
+ﬁgure, the initial pulse width (i.e., standard deviation
+of intensity, see Methods for details), σ(0) = 5.27µm,
+shrinks to a ﬁnal value σ(tf) ≈
+√
+2σf = 295nm at t = tf
+(horizontal dashed line), thus reaching sub-wavelength
+
+
+=== PDF PAGE 4 ===
+4
+c
+b
+a
+d
+FIG. 3. Generation of a rectangular spin-wave pulse
+in the exchange regime.
+a, Micromagnetic simulation
+of the magnetization dynamics in a square YIG waveguide
+of Ly = Lz = 50nm width, under a transverse bias ﬁeld
+B0 = (270mT)ey and under the antenna driving V (t) given
+by our IDM. We choose an antenna width wa = 70nm, the tar-
+get pulse Eq. (4), and parameters k0 = 15µm−1, xf = 10µm,
+∆x = 2µm, A/Ms = 0.004, σc = 0.05µm, tf
+= 70ns,
+xa = y0 = z0 = 0, and e0 = ez. b, Polynomial ﬁt of the dis-
+persion relation (orange) and envelope of the target pulse in
+reciprocal space (shaded area). c, Extracted modulus (blue)
+and derivative of the argument (orange) of the required driv-
+ing function V (ω) = |V (ω)|eiϕ(ω) in frequency domain. d,
+Target magnetization (dashed blue line, envelope shown by
+shaded area) and magnetization generated by our IDM at
+t = tf extracted from the micromagnetic simulation (solid
+green line). Both magnetizations are square-normalized.
+spin-wave compression (σ(tf)k0/(2π) < 1). To generate
+this pulse using our IDM we consider a narrow antenna
+of width wa = 70nm, in order to eﬃciently excite all the
+pulse wavenumbers k (see Fig. 2b). Using the backward
+time-evolution (Fig. 2a) and the transfer function of this
+antenna (Fig. 1c) we obtain the driving V (t) needed to
+generate the pulse, shown in frequency domain in Fig. 2c.
+We then test our result by applying the obtained driv-
+ing to the antenna and calculating the exact magneti-
+zation dynamics using a full micromagnetic simulation
+(see Methods for details). The resulting generated mag-
+netization proﬁle, which we label mg(r, t), is shown in
+Fig. 2a (right panel). Note that, although we focus on
+the right arm of the waveguide (x > 0), identical pulses
+are generated at both sides of the antenna as the system
+is mirror-symmetric around x = xa = 0. The target and
+generated pulses at t = tf (both square-normalized) are
+shown in Fig. 2d. To quantify the performance of our
+method we deﬁne the pulse generation ﬁdelity as
+F(t) ≡
+R ∞
+0
+dxmg(x, t)mT (x)
+2
+R ∞
+0
+dxm2g(x, t)
+R ∞
+0
+dxm2
+T (x),
+(3)
+where mg(x, t) ≡e0 · mg(x, y0, z0, t). For the chosen pa-
+rameters a maximum ﬁdelity F = 0.963 is achieved at
+t = 83.07ns ≈tf, certifying the success of our gener-
+ation method. We attribute the small ≈4% errors to
+frequency-dependent propagation losses not considered
+in Eq. (1).
+As a second example we focus on the generation of a
+rectangular pulse in the exchange regime. We consider
+the same system as above, namely a 50nm×50nm square
+YIG waveguide excited by an antenna with wa = 70nm.
+We use the following rectangular target pulse,
+mT (x) = A
+2 [erf(x+) + erf(x−)] cos(k0x),
+(4)
+where x± ≡(∆x ± 2(x −xf))/(2
+√
+2σc) and erf(x) is the
+error function. Here, k0 is the carrier wavenumber, A
+the amplitude, xf the center of the pulse, ∆x its spa-
+tial extension and σc determines the curvature at the
+edge of the rectangular envelope. As shown in Fig. 3,
+this pulse can be successfully generated using the IDM
+method detailed above.
+Speciﬁcally, short rectangular
+pulses of duration ≈5ns can be generated with ﬁdelity
+0.98.
+As a third example, in Fig. 4 we demonstrate the gener-
+ation of a weakly self-compressing pulse in the backward-
+volume wave regime of a YIG waveguide with a rectan-
+gular cross section of 200nm × 100nm.
+In this setup,
+as the derivative of the dispersion is negative (see right
+panel of Fig. 1b), the target pulse is chosen at the op-
+posite waveguide arm x < xa and leftward-propagating.
+Moreover, for this waveguide the dispersion relation is
+degenerate in the range 3.30 GHz ≲ω/(2π) ≲3.75 GHz,
+i.e., there are two spin wave modes with the same energy
+and diﬀerent wavenumbers. To guarantee that the spin
+wave pulse is only generated in the region of negative
+derivative of the dispersion we choose a larger antenna
+(wa = 230nm), which is unable to excite wavenumbers
+larger than ≈π/wa = 13.6µm−1. The resulting pulse
+generation has a ﬁdelity of 0.999. The diﬀerent classes
+of pulses considered in this work show that our method
+is universal and enables near-perfect generation of spin-
+wave pulses of arbitrary shape in both the exchange and
+the dipolar regime.
+Although the narrow antennas used in Figs. 2 and 3
+are experimentally feasible, wider antennas are in prac-
+tice desirable as they are simpler to fabricate and pro-
+vide higher spin-wave excitation eﬃciency.
+In Fig. 5a
+
+
+=== PDF PAGE 5 ===
+5
+c
+b
+a
+d
+FIG. 4. Generation of a weakly self-compressing pulse
+in the dipolar regime.
+a, Micromagnetic simulation of
+the magnetization dynamics in a YIG rectangular waveguide
+of 200nm×100nm cross-section under a longitudinal bias ﬁeld
+B0 = (50mT)ex and the antenna driving V (t) given by our
+IDM. We choose an antenna width wa = 230nm and param-
+eters xf = −10µm, σf = 2µm, k0 = 2µm−1, A/Ms = 0.004,
+tf = 70ns, xa = y0 = z0 = 0, and e0 = ez.
+b, Polyno-
+mial ﬁt to the dispersion relation of the waveguide (orange)
+and target pulse envelope in reciprocal space (shaded area).
+c, Extracted modulus (blue) and derivative of the phase (or-
+ange) of the required driving function V (ω) = |V (ω)|eiϕ(ω)
+in frequency domain. d, Target magnetization (dashed blue,
+envelope shown by shaded area) and magnetization generated
+at t = tf extracted from the micromagnetic simulation (solid
+green). Both magnetizations are square-normalized.
+we study the pulse generation ﬁdelity as a function of
+antenna width wa, for the three example pulses shown
+above. As an antenna cannot generate spin waves with
+wavelengths smaller than ≈2wa, the generation ﬁdeli-
+ties are bound to decrease for wa ≳λmin, with λmin the
+minimum wavelength of the pulse (see Methods section
+for a deﬁnition).
+Generation ﬁdelities above 90% can
+still be achieved at wa ≲300nm for the pulses of Figs. 2
+and 3, and beyond wa = 1µm for the spatially much
+wider backward-volume pulse of Fig. 4. For the latter,
+the decrease in ﬁdelity for narrow antennas, indicated by
+a
+b
+FIG. 5.
+Pulse generation using wide antennas. a Pulse
+generation ﬁdelity as a function of antenna width wa for the
+three pulses shown in Figs. 2-4. For each antenna width the
+pulse has been rescaled so that its peak amplitude remains
+constant.
+The dashed vertical lines indicate the minimum
+wavelengths λmin of each pulse (λmin/2 for the dipolar-regime
+pulse). The shaded area indicates the region where the ﬁdelity
+for the dipolar-regime pulse decreases below 0.9 due to the
+excitation of degenerate modes. b, Maximum value Umax of
+the instantaneous magnetic energy of the driving magnetic
+ﬁeld as a function of antenna width wa, normalized to the
+energy associated to the homogeneous ﬁeld B0 used in each
+case. See Methods for the deﬁnitions of minimum wavelength
+and energy. In both panels, solid lines are a guide to the eye.
+the shaded area, stems from the excitation of unwanted,
+high-wavenumber modes in the degenerate dispersion re-
+lation (Fig. 1b, right panel). Within the regions of high
+ﬁdelity, the energy required to generate the pulse is re-
+duced for wider antennas. This is indicated in Fig. 5b
+where, as a ﬁgure of merit for energy cost, we display
+the maximum value of the instantaneous energy stored
+in the waveguide by the antenna driving ﬁeld (see details
+in Methods). We emphasize that the low ﬁdelity regions
+in Fig. 5a do not manifest a failure of our method but an
+unphysical choice of the target pulses, which cannot be
+generated by antennas of certain widths.
+
+
+=== PDF PAGE 6 ===
+6
+CONCLUSION
+We have proposed a method for universal spin-wave
+pulse engineering based on inverse design. The method
+provides,
+in a numerically eﬃcient way,
+the time-
+dependent driving which can be applied to a narrow an-
+tenna to generate an arbitrary target spin-wave pulse in
+the linear regime. Our concept is universal as it applies to
+arbitrary waveguide and antenna geometries, and to both
+the exchange and dipolar regimes. Using micromagnetic
+simulations, we have theoretically shown high-ﬁdelity
+generation of relevant pulses for magnonics. Speciﬁcally,
+we have predicted the generation of a self-compressing
+pulse which compresses into a sub-wavelength spot of
+width 295nm, with ﬁdelity 0.96. At the compression spot
+the pulse intensity is 3.7 times higher than the peak in-
+tensity of the pulse right after the driving even in the
+presence of damping. Moreover, we have predicted the
+generation of rectangular pulses of ∼5ns duration with
+ﬁdelity 0.98.
+Both pulses can be generated in the ex-
+change regime with antennas as wide as 300nm with ﬁ-
+delity > 0.9.
+Finally, we have shown how even wider
+antennas of widths ∼1µm can be used to generate a
+weakly self-compressing pulse in the dipolar regime with
+a ﬁdelity of 0.999. The presented inverse design method
+can be extended to other magnonic structures, and could
+be reﬁned at the cost of higher computational complex-
+ity, e.g., by including wavelength-dependent spin wave
+losses in the backward propagation step.
+Our results
+could enable fast magnon-based information processing
+at the nanoscale and pave the way to implementing fur-
+ther nanophotonics-inspired strategies in magnonics to
+devise magnon-based quantum technological platforms.
+[1] A. Barman et al., J. Phys.: Condens. Matter 33, 413001
+(2021).
+[2] A. V. Chumak et al., IEEE Trans. Magn. 58, 1 (2022).
+[3] D. Lachance-Quirion, Y. Tabuchi, A. Gloppe, K. Us-
+ami, and Y. Nakamura, Appl. Phys. Express 12, 070101
+(2019).
+[4] A. V. Chumak, V. I. Vasyuchka, A. A. Serga,
+and
+B. Hillebrands, Nat. Phys. 11, 453 (2015).
+[5] P. Pirro, V. I. Vasyuchka, A. A. Serga,
+and B. Hille-
+brands, Nat. Rev. Mater. 6, 1114 (2021).
+[6] B. Rana and Y. Otani, Commun. Phys 2, 90 (2019).
+[7] J. Chen, H. Yu,
+and G. Gubbiotti, J. Phys. D: Appl.
+Phys 55, 123001 (2021).
+[8] H. Yu, J. Xiao,
+and H. Schultheiss, Phys. Rep. 905, 1
+(2021).
+[9] B. Heinz, T. Brächer, M. Schneider, Q. Wang, B. Lägel,
+A. M. Friedel, D. Breitbach, S. Steinert, T. Meyer,
+M. Kewenig, C. Dubs, P. Pirro,
+and A. V. Chumak,
+Nano Lett. 20, 4220 (2020).
+[10] B. Divinskiy, H. Merbouche, K. Nikolaev, S. Michaelis de
+Vasconcellos, R. Bratschitsch, D. Gouéré, R. Lebrun,
+V. Cros, J. Ben Youssef, P. Bortolotti, A. Anane,
+S. Demokritov,
+and V. Demidov, Phys. Rev. Applied
+16, 024028 (2021).
+[11] E. Albisetti, D. Petti, G. Sala, R. Silvani, S. Tacchi,
+S. Finizio, S. Wintz, A. Calò, X. Zheng, J. Raabe,
+E. Riedo, and R. Bertacco, Commun. Phys 1, 56 (2018).
+[12] G. Talmelli et al., Sci. Adv. 6, eabb4042 (2020).
+[13] Q. Wang et al., Nat. Electron 3, 765 (2020).
+[14] M. Vogel, A. V. Chumak, E. H. Waller, T. Langner, V. I.
+Vasyuchka, B. Hillebrands, and G. von Freymann, Nat.
+Phys. 11, 487 (2015).
+[15] Q. Wang, A. V. Chumak, and P. Pirro, Nat. Commun.
+12, 2636 (2021).
+[16] C. Gonzalez-Ballestero, T. van der Sar, and O. Romero-
+Isart, Phys. Rev. B 105, 075410 (2022).
+[17] M. Fukami, D. R. Candido, D. D. Awschalom, and M. E.
+Flatté, PRX Quantum 2, 040314 (2021).
+[18] I. Bertelli, J. J. Carmiggelt, T. Yu, B. G. Simon, C. C.
+Pothoven, G. E. W. Bauer, Y. M. Blanter, J. Aarts, and
+T. van der Sar, Sci. Adv. 6, eabd3556 (2020).
+[19] B. G. Simon, S. Kurdi, H. La, I. Bertelli, J. J. Carmiggelt,
+M. Ruf, N. de Jong, H. van den Berg, A. J. Katan, and
+T. van der Sar, Nano Lett., Nano Lett. 21, 8213 (2021).
+[20] R. G. Kryshtal and A. V. Medved, J. Phys. D: Appl.
+Phys 50, 495004 (2017).
+[21] A. V. Chumak, P. Dhagat, A. Jander, A. A. Serga, and
+B. Hillebrands, Phys. Rev. B 81, 140404 (2010).
+[22] Á. Papp, W. Porod,
+and G. Csaba, Nat. Comm. 12,
+6422 (2021).
+[23] M. Kiechle, L. Maucha, V. Ahrens, C. Dubs, W. Porod,
+G. Csaba, M. Becherer, and A. Papp, arXiv:2207.00055
+(2022).
+[24] B. Heinz et al., Appl. Phys. Lett. 118, 132406 (2021).
+[25] A. Vansteenkiste, J. Leliaert, M. Dvornik, M. Helsen,
+F. Garcia-Sanchez, and B. Van Waeyenberge, AIP Adv.
+4, 107133 (2014).
+[26] Y.-J. Lu, R. Sokhoyan, W.-H. Cheng, G. Kafaie Shir-
+manesh, A. R. Davoyan, R. A. Pala, K. Thyagarajan,
+and H. A. Atwater, Nat. Commun. 8, 1631 (2017).
+[27] K. F. MacDonald, Z. L. Sámson, M. I. Stockman,
+and
+N. I. Zheludev, Nat. Photon 3, 55 (2009).
+[28] C. F. Roos, New J. Phys. 10, 013002 (2008).
+[29] C. Li, V. Gusev, T. Dekorsy, and M. Hettich, Opt. Ex-
+press 27, 18706 (2019).
+[30] A. Sharaﬁev, M. L. Juan, O. Gargiulo, M. Zanner,
+S. Wögerer, J. J. García-Ripoll,
+and G. Kirchmair,
+Quantum 5, 474 (2021).
+[31] S.-L. Zhu, C. Monroe, and L.-M. Duan, Phys. Rev. Lett.
+97, 050505 (2006).
+[32] G. Zarantonello, H. Hahn, J. Morgner, M. Schulte,
+A. Bautista-Salvador, R. F. Werner, K. Hammerer, and
+C. Ospelkaus, Phys. Rev. Lett. 123, 260503 (2019).
+[33] S. Casulleras, C. Gonzalez-Ballestero, P. Maurer, J. J.
+García-Ripoll,
+and O. Romero-Isart, Phys. Rev. Lett.
+126, 103602 (2021).
+[34] M. Bauer, O. Büttner, S. O. Demokritov, B. Hillebrands,
+V. Grimalsky, Y. Rapoport, and A. N. Slavin, Phys. Rev.
+Lett. 81, 3769 (1998).
+[35] A. A. Serga, S. O. Demokritov, B. Hillebrands, and A. N.
+Slavin, Phys. Rev. Lett. 92, 117203 (2004).
+
+
+=== PDF PAGE 7 ===
+7
+[36] A. A. Serga, B. Hillebrands, S. O. Demokritov, A. N.
+Slavin, P. Wierzbicki, V. Vasyuchka, O. Dzyapko,
+and
+A. Chumak, Phys. Rev. Lett. 94, 167202 (2005).
+[37] O. R. Sulymenko, O. V. Prokopenko, V. S. Tyberkevych,
+A. N. Slavin, and A. A. Serga, Low Temp. Phys. 44, 602
+(2018).
+[38] Á. Papp, W. Porod, and G. Csaba, Nat. Commun. 12,
+1 (2021).
+[39] J. Torrejon et al., Nature 547, 428 (2017).
+[40] D. Stancil and A. Prabhakar, Spin Waves: Theory and
+Applications (Springer US, 2009).
+
+
+=== PDF PAGE 8 ===
+8
+METHODS
+A.
+Waveguide and antenna characterization
+We determine the waveguide static magnetization and
+dispersion relation using MuMax3 [25]. To compute the
+dispersion relation we evolve the magnetization under a
+magnetic ﬁeld B1(r, t) ∝Ba(r)sin (ωmaxt) /t, able to ex-
+cite spin waves in a wide range of frequencies (ω < ωmax)
+and wavevectors.
+Applying a two-dimensional Fourier
+transform to the simulated magnetization leads to the
+excitation spectrum of the spin waves,
+m(k, 0, 0, ω) = 1
+2π
+Z
+R
+Z
+R
+dx dt m(x, 0, 0, t)e−i(kx+ωt).
+(5)
+Two examples of these spectra for diﬀerent waveguides
+and ωmax/(2π) = 10GHz are shown in Fig. 1b. The spin
+wave frequency for each wavenumber k can then be ex-
+tracted as the maximum of the excitation spectrum for
+such a wavenumber (red dashed curves in the ﬁgure).
+We model the ﬁeld generated by the antenna at the
+waveguide by the Gaussian function
+Ba(r) = |B0|Lz
+√
+2πσa
+exp
+
+−x2
+2σ2a
+
+ez.
+(6)
+The physical width of the antenna can be identiﬁed
+with the full width at half maximum of the ﬁeld pro-
+ﬁle, wa = 2
+p
+2 log(2)σa ≈2.3σa.
+To determine the
+antenna transfer function, we ﬁrst deﬁne the Fourier
+transform for a vector function as v(t) as F{v(t)} ≡
+(
+√
+2π)−1 R
+R dtv(t) exp(−iωt). Then, for every chosen an-
+tenna (i.e., for every value of σa) we perform one micro-
+magnetic simulation of the magnetization dynamics in
+the presence of the driving ﬁeld Eq. (6), using an im-
+pulse test driving Vtest(t) = δ(t). For this driving, the
+transfer function in time domain is simply proportional
+to the magnetization ﬁeld, f(r, t) =
+√
+2πm(r, t). To de-
+termine the transfer function in Fig. 1c (left panel) we use
+an impulse driving V (t) = 0.15 during a single time step
+of 1ps and V (t) = 0 afterward. The antenna ﬁeld width
+is chosen as σa = 30nm, corresponding to an antenna
+width of about wa ≈70nm. In Fig. 1c (right panel) we
+choose σa = 100nm, corresponding to wa ≈230nm, and
+an amplitude of the impulse driving V (t) = 0.4 during a
+single time step of 1ps.
+In Figs. 2 and 3 we model the system as a ﬁnite waveg-
+uide of dimensions (80µm×50nm×50nm), with material
+parameters for Yttrium-Iron-Garnet (YIG) [24], namely
+saturation magnetization Ms = 140.7kA · m−1, exchange
+constant Aex = 4.2pJ · m−1, Gilbert damping parameter
+α = 1.75 · 10−4, and a cell size of (10 × 6.25 × 6.25)nm3.
+For Fig. 4 we use a waveguide of dimensions (80µm ×
+200nm × 100nm) with the same material parameters de-
+scribed above, and a cell size of (10 × 10 × 10)nm3.
+B.
+Backward propagation of the pulse
+In order to perform the backward propagation in a fast
+way, we obtain an analytical approximation for the dis-
+persion relation ω(k) by ﬁtting the maxima of the magne-
+tization spectrum to a sixth-order polynomial in k. The
+resulting polynomial approximations, shown in panel b
+of Figs. 2 to 4, are then used to integrate Eq. (1) numer-
+ically. The maximum error incurred by this polynomial
+approximation is below 0.25% for all the wavenumbers
+in Figs. 2 and 3 and below 0.45% in Fig. 4. The integral
+is computed back to a time t = 0 deﬁned as the time at
+which 99.5% of the pulse lies at the opposite side of the
+antenna, i.e.,
+
+R xa
+L0 dx(e0 · mT (x, y0, z0, 0))2
+R
+R dx(e0 · mT (x, y0, z0, 0))2
+ = 0.995,
+(7)
+where L0 ≡−∞(L0 ≡+∞) for rightward (left)-
+propagating pulses.
+C.
+Deﬁnition of pulse width and minimum
+wavelength
+We deﬁne the time-dependent width of a given pulse
+as the standard deviation of the pulse position, i.e.,
+σ(t) ≡
+sZ
+R
+dx(e0 · m(x, y0, z0, t))2
+N 2(t)
+(x −¯x(t))2.
+(8)
+where N 2(t) ≡
+R
+R dx(e0 · m(x, y0, z0, t))2 is a normaliza-
+tion factor and ¯x(t) ≡
+R
+R dx x (e0 · m(x, y0, z0, t))2/N 2(t)
+is the mean value of the pulse position.
+The minimum wavelength of each pulse is deﬁned as
+λmin ≡2π/kmax, where we deﬁne kmax such that
+R kmax
+−∞dk|F−1{mT (x)}|
+R ∞
+−∞dk|F−1{mT (x)}| = 0.997.
+(9)
+Here mT (k) ≡(
+√
+2π)−1 R
+R dtmT (x) exp(ikx) is the in-
+verse Fourier transform of the target pulse mT (x) in posi-
+tion space. For the Gaussian pulse Eq. (2), the condition
+Eq. (9) corresponds to kmax = k0 + 2/σf.
+D.
+Energy cost of generating the driving ﬁeld
+The energy required to generate a pulse is lower-
+bounded by the total energy required to generate the
+driving ﬁeld. We deﬁne the following ﬁgure of merit for
+the latter,
+Umax ≡max
+t
+Z
+V
+d3r
+Z t
+−∞
+dt′H1(r, t′) · ∂
+∂t′ B1(r, t′), (10)
+where V denotes the volume of the waveguide. Equation
+(10) corresponds to the maximum value of the instanta-
+neous magnetic energy held inside the waveguide due to
+
+
+=== PDF PAGE 9 ===
+9
+the presence of a driving ﬁeld B1(r, t) [40]. Both ﬁelds
+in the integrand of Eq. (10) are assumed to vanish at
+t′ = −∞and are related in frequency domain by
+H1(r, ω) = 1
+µ0
+¯µ−1(ω)B1(r, ω),
+(11)
+where µ0 is the vacuum permeability and ¯µ(ω) is the
+relative permeability tensor.
+In frequency domain, all pulses considered in this ar-
+ticle have central frequencies near ω0 ≡|γB0|, where B0
+is the homogeneous bias ﬁeld and γ is the gyromagnetic
+ratio, and widths much smaller than ω0. We can thus
+approximate ¯µ−1(ω) ≈¯µ−1(ω0) in the above expression.
+Using the identity B1(r, t) = Ba(r)V (t) and assuming
+that the only non-zero component of Ba(r) is oriented
+along the unit vector ez, we cast the energy as
+Umax = LyLz
+2µ0
+¯µ−1(ω0)
+
+zz
+Z
+R
+dx |Ba(r)|2 max
+t
+V 2(t).
+(12)
+The energy Umax as a function of the antenna width is
+displayed in Fig. 5b. It is normalized to a reference en-
+ergy U0, namely the energy stored by the constant ho-
+mogeneous bias ﬁeld B0 in a section of the waveguide
+large enough to contain the pulse at all times, given
+by U0 = LxLyLz|B0|2/(2µ0) with Lz = 80µm taken as
+the length of our micromagnetic simulation domain. In
+particular, U0 = 5.83fJ for the homogeneous ﬁeld used
+in the generation of pulses in the exchange regime and
+U0 = 1.59fJ for the dipolar pulse. To compute the value
+of Umax, we approximate the inverse permeability tensor
+by its Polder susceptibility expression [40],
+¯µ−1(ω0)
+
+zz ≈
+1
+2 + (µ0Ms/|B0|),
+(13)
+where Ms is the saturation magnetization of the waveg-
+uide.
+ACKNOWLEDGEMENTS
+We acknowledge discussions with O. Dobrovolskiy, J.
+J. García Ripoll, and T. A. Gustafsson. This work was
+supported by the Austrian Science Fund (FWF) through
+Project No. I 4917-N (MagFunc). SK acknowledges the
+support by the H2020-MSCA-IF under the grant number
+101025758 (OMNI).

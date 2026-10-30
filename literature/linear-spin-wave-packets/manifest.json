@@ -1,0 +1,381 @@
+[
+  {
+    "arxiv_id": "2108.08054",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2108.08054",
+    "version": "v1",
+    "title": "Dispersionless propagation of ultra-short spin-wave pulses in ultrathin yttrium iron garnet waveguides",
+    "authors": [
+      "Divinskiy, B.",
+      "Merbouche, H.",
+      "Nikolaev, K. O.",
+      "de Vasoncellos, S. Michaelis",
+      "Bratschitsch, R.",
+      "Gouere, D.",
+      "Lebrun, R.",
+      "Cros, V.",
+      "Youssef, J. Ben",
+      "Bortolotti, P.",
+      "Anane, A.",
+      "Demokritov, S. O.",
+      "Demidov, V. E."
+    ],
+    "date": [
+      "2021/08/18"
+    ],
+    "doi": [
+      "10.1103/PhysRevApplied.16.024028"
+    ],
+    "pages": 24,
+    "pdf_metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "Boris Divinskiy",
+      "subject": "",
+      "keywords": "",
+      "creator": "Microsoft® Word 2019",
+      "producer": "Microsoft® Word 2019",
+      "creationDate": "D:20210818110113+02'00'",
+      "modDate": "D:20210818110113+02'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "1 \n \nDispersionless propagation of ultra-short spin-wave pulses  \nin ultrathin yttrium iron garnet waveguides \nB. Divinskiy1*, H. Merbouche2,  K. O. Nikolaev1, S. Michaelis de Vasoncellos3, R. Bratschitsch3, \nD. Gouéré2, R. Lebrun2, V. Cros2, J. Ben Youssef4,  P. Bortolotti2, A. Anane2,  \nS. O. Demokritov1, and V. E. Demidov1 \n1Institute for Applied Physics, University of Muenster, 48149 Muenster, Germany \n2Unité Mixte de Physique, CNRS, Thales, Université Paris-Saclay, 91767, Palaiseau, France \n3Institute of Physics and Center for Nanotechnology, University of Muenster, 48149 Muenster, \nGerma",
+    "pdf_url": "https://arxiv.org/pdf/2108.08054v1",
+    "final_url": "https://arxiv.org/pdf/2108.08054v1",
+    "local_path": "spin-wave/2108.08054v1_dispersionless-pulses.pdf",
+    "bytes": 724678,
+    "sha256": "aee88f4a4370b6259e51c6f8a72a14d493f45f1db64d3c1df78107112a6124fb",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "2111.02236",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2111.02236",
+    "version": "v1",
+    "title": "Efficient geometrical control of spin waves in microscopic YIG waveguides",
+    "authors": [
+      "Lake, S. R.",
+      "Divinskiy, B.",
+      "Schmidt, G.",
+      "Demokritov, S. O.",
+      "Demidov, V. E."
+    ],
+    "date": [
+      "2021/11/03"
+    ],
+    "doi": [
+      "10.1063/5.0071757"
+    ],
+    "pages": 15,
+    "pdf_metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "Boris Divinskiy",
+      "subject": "",
+      "keywords": "",
+      "creator": "Microsoft® Word 2019",
+      "producer": "Microsoft® Word 2019",
+      "creationDate": "D:20211103145044+01'00'",
+      "modDate": "D:20211103145044+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "1 \n \nEfficient geometrical control of spin waves in microscopic YIG waveguides \nS. R. Lake1 , B. Divinskiy2*, G. Schmidt1,3, S. O. Demokritov2, and V. E. Demidov2    \n1Institut für Physik, Martin-Luther-Universität Halle-Wittenberg, 06120 Halle, Germany \n2Institute for Applied Physics, University of Muenster, 48149 Muenster, Germany \n3Interdisziplinäres Zentrum für Materialwissenschaften, Martin-Luther-Universität Halle-\nWittenberg, 06120 Halle, Germany \n \nWe study experimentally and by micromagnetic simulations the propagation of spin waves \nin 100-nm thick YIG waveguides, where the width lin",
+    "pdf_url": "https://arxiv.org/pdf/2111.02236v1",
+    "final_url": "https://arxiv.org/pdf/2111.02236v1",
+    "local_path": "spin-wave/2111.02236v1_geometrical-control.pdf",
+    "bytes": 431908,
+    "sha256": "1574d1478305da78ffa084612c4954966b12b326f40820e7d0d81ebe816616cb",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "1906.02301",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/1906.02301",
+    "version": "v1",
+    "title": "Spin-Wave Optical Elements: Towards Spin-Wave Fourier Optics",
+    "authors": [
+      "Vogel, Marc",
+      "Hillebrands, Burkard",
+      "von Freymann, Georg"
+    ],
+    "date": [
+      "2019/06/05"
+    ],
+    "doi": [
+      "10.1063/5.0018519"
+    ],
+    "pages": 8,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref package",
+      "producer": "pdfTeX-1.40.17",
+      "creationDate": "D:20190607011350Z",
+      "modDate": "D:20190607011350Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Spin-Wave Optical Elements: Towards Spin-Wave Fourier Optics\nSpin-Wave Optical Elements: Towards Spin-Wave Fourier Optics\nM. Vogel,1, a) B. Hillebrands,1 and G. von Freymann1, 2\n1)Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK),\nErwin-Schrödinger-Str. 56, 67663 Kaiserslautern, Germany\n2)Fraunhofer-Institute for Industrial Mathematics ITWM, Fraunhofer-Platz 1, 67663 Kaiserslautern,\nGermany\n(Dated: 7 June 2019)\nWe perform micromagnetic simulations to investigate the propagation of spin-wave beams through spin-wave optical\nelements. Despite spi",
+    "pdf_url": "https://arxiv.org/pdf/1906.02301v1",
+    "final_url": "https://arxiv.org/pdf/1906.02301v1",
+    "local_path": "spin-wave/1906.02301v1_bessel-gaussian-fourier-optics.pdf",
+    "bytes": 7434982,
+    "sha256": "592922335c2079e56c7398062b854ec00e9a6d2ab518ac446673b37ba2a8bde5",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "1703.05548",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/1703.05548",
+    "version": "v1",
+    "title": "All-Angle Collimation for Spin Waves",
+    "authors": [
+      "Kłos, Jarosław W.",
+      "Gruszecki, Pawel",
+      "Serebryannikov, Andriy E.",
+      "Krawczyk, Maciej"
+    ],
+    "date": [
+      "2017/03/16"
+    ],
+    "doi": [
+      "10.1109/LMAG.2015.2494558"
+    ],
+    "pages": 4,
+    "pdf_metadata": {
+      "format": "PDF 1.4",
+      "title": "Microsoft Word - all_angle_collimation_final_arXiv.doc",
+      "author": "Jarek",
+      "subject": "",
+      "keywords": "",
+      "creator": "PScript5.dll Version 5.2.2",
+      "producer": "FREE PDFill PDF and Image Writer",
+      "creationDate": "D:20170314090003+01'00'",
+      "modDate": "D:20170314090006+01'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "IEEE MAGNETICS LETTERS, Volume 6 (2015)                                                                 Page 1 of 4 (actually, 4 pages maximum; IEEE will place article number here) \n1949-307X ©2015 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission. \nSee http://www.ieee.org/publications standards/publications/rights/index.html for more information. (Inserted by IEEE) \nMagnetodynamics ___________________________________________________________ \n \nAll-angle collimation for spin waves  \nJ. W. Kłos, P. Gruszecki, A. E. Serebryannikov, M. Krawczyk \nFaculty of",
+    "pdf_url": "https://arxiv.org/pdf/1703.05548v1",
+    "final_url": "https://arxiv.org/pdf/1703.05548v1",
+    "local_path": "spin-wave/1703.05548v1_all-angle-collimation.pdf",
+    "bytes": 555773,
+    "sha256": "3eea493bb905b5bec4dfae29f6813c979e04fbc343dcbfd6e6d8b09486b7ff40",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "2301.01220",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2301.01220",
+    "version": "v1",
+    "title": "Caustic spin wave beams in soft, thin films: properties and classification",
+    "authors": [
+      "Wartelle, Alexis",
+      "Vilsmeier, Franz",
+      "Taniguchi, Takuya",
+      "Back, Christian H."
+    ],
+    "date": [
+      "2023/01/03"
+    ],
+    "doi": [
+      "10.1103/PhysRevB.107.144431"
+    ],
+    "pages": 17,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "pdfTeX-1.40.21",
+      "creationDate": "D:20230104012410Z",
+      "modDate": "D:20230104012410Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Caustic spin wave beams in soft, thin ﬁlms: properties and classiﬁcation\nAlexis Wartelle,∗Franz Vilsmeier, Takuya Taniguchi, and Christian H. Back\nFakult¨at fur Physik, Technische Universit¨at M¨unchen, Garching, Germany\n(Dated: January 4, 2023)\nIn the context of wave propagation, caustics are usually deﬁned as the envelope of a ﬁnite-extent\nwavefront; folds and cusps in a caustic result in enhanced wave amplitudes. Here, we tackle a related\nphenomenon, namely the existence of well-deﬁned beams originating solely from the geometric\nproperties of the corresponding dispersion relation. This dire",
+    "pdf_url": "https://arxiv.org/pdf/2301.01220v1",
+    "final_url": "https://arxiv.org/pdf/2301.01220v1",
+    "local_path": "spin-wave/2301.01220v1_caustic-classification.pdf",
+    "bytes": 16556516,
+    "sha256": "fa1eaa1edfd41b0a0cc3b4303a50d6147a47018996c6f4112f6e89695ccfc3b7",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "2404.15011",
+    "category": "spin-wave",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2404.15011",
+    "version": "v4",
+    "title": "Shaping non-reciprocal caustic spin-wave beams",
+    "authors": [
+      "Wagle, Dinesh",
+      "Stoeffler, Daniel",
+      "Temdie, Loic",
+      "Kaffash, Mojtaba Taghipour",
+      "Castel, Vincent",
+      "Majjad, H.",
+      "Bernard, R.",
+      "Henry, Yves",
+      "Bailleul, Matthieu",
+      "Jungfleisch, M. Benjamin",
+      "Vlaminck, Vincent"
+    ],
+    "date": [
+      "2024/04/23"
+    ],
+    "doi": [
+      "10.1103/qz9q-bp9j"
+    ],
+    "pages": 7,
+    "pdf_metadata": {
+      "format": "PDF 1.7",
+      "title": "Shaping non-reciprocal caustic spin-wave beams",
+      "author": "Dinesh Wagle; Daniel Stoeffler; Loic Temdie; Mojtaba Taghipour Kaffash; Vincent Castel; H. Majjad; R. Bernard; Yves Henry; Matthieu Bailleul; M. Benjamin Jungfleisch; Vincent Vlaminck",
+      "subject": "",
+      "keywords": "",
+      "creator": "arXiv GenPDF (tex2pdf:57610bf)",
+      "producer": "pikepdf 8.15.1",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Shaping non-reciprocal caustic spin wave beams\nDinesh Wagle,1 Daniel Stoeffler,2 Loic Temdie,3 Mojtaba Taghipour Kaffash,4 Vincent Castel,3 Hicham Majjad,2\nRomain Bernard,2 Yves Henry,2 Matthieu Bailleul,2 M. Benjamin Jungfleisch,4, ∗and Vincent Vlaminck3, †\n1Department of Physics and Astronomy, University of Delaware, Newark, Delaware 19716, USA\n2IPCMS - UMR 7504 CNRS Institut de Physique et Chimie des Materiaux de Strasbourg, France\n3IMT Atlantique, Dpt.\nMO, Lab-STICC - UMR 6285 CNRS,\nTechnopole Brest-Iroise CS83818, 29238 Brest Cedex 03, France\n4Department of Physics and Astronomy, Universi",
+    "pdf_url": "https://arxiv.org/pdf/2404.15011v4",
+    "final_url": "https://arxiv.org/pdf/2404.15011v4",
+    "local_path": "spin-wave/2404.15011v4_nonreciprocal-caustic-beams.pdf",
+    "bytes": 3587133,
+    "sha256": "451753d0a3c7963493f9c14717e4ff820ec6047e3adb9d7da3bcce0e227279da",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "2109.00782",
+    "category": "optical-method",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2109.00782",
+    "version": "v1",
+    "title": "Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media",
+    "authors": [
+      "He, Hao",
+      "Guo, Cheng",
+      "Xiao, Meng"
+    ],
+    "date": [
+      "2021/09/02"
+    ],
+    "doi": [
+      "10.1002/lpor.202100634"
+    ],
+    "pages": 6,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "pdfTeX-1.40.21",
+      "creationDate": "D:20210903003330Z",
+      "modDate": "D:20210903003330Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media\nHao He,1, 2 Cheng Guo,3, ∗and Meng Xiao1, †\n1Key Laboratory of Artiﬁcial Micro- and Nano-structures of Ministry of Education\nand School of Physics and Technology, Wuhan University, Wuhan 430072, China\n2Hongyi Honor school, Wuhan University, Wuhan 430072, China\n3Department of Applied Physics, Stanford University, California 94305, USA\nSpace-time wave packets can propagate invariantly in free space with arbitrary group velocity thanks to the\nspatio-temporal correlation. Here it is proved that the space-time wave packets are s",
+    "pdf_url": "https://arxiv.org/pdf/2109.00782v1",
+    "final_url": "https://arxiv.org/pdf/2109.00782v1",
+    "local_path": "optical-method/2109.00782v1_space-time-dispersive-media.pdf",
+    "bytes": 427771,
+    "sha256": "3bb384181b1c1848cdc16a1f1baec8b3853a72270be3bc22f9e9128405e30821",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "2201.08297",
+    "category": "optical-method",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/2201.08297",
+    "version": "v1",
+    "title": "Space-time wave packets",
+    "authors": [
+      "Yessenov, Murat",
+      "Hall, Layton A.",
+      "Schepler, Kenneth L.",
+      "Abouraddy, Ayman F."
+    ],
+    "date": [
+      "2022/01/20"
+    ],
+    "doi": [],
+    "pages": 103,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "pdfTeX-1.40.21",
+      "creationDate": "D:20220121013439Z",
+      "modDate": "D:20220121013439Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Space-time wave packets\nMURAT YESSENOV,1 LAYTON A. HALL,1 KENNETH L. SCHEPLER,1\nAND AYMAN F. ABOURADDY1,*\n1CREOL, The College of Optics & Photonics, University of Central Florida, Orlando, FL 32816, USA\n*raddy@creol.ucf.edu\nAbstract:\n‘Space-time’ (ST) wave packets constitute a broad class of pulsed optical ﬁelds\nthat are rigidly transported in linear media without diﬀraction or dispersion, and are therefore\npropagation-invariant in absence of optical nonlinearities or waveguiding structures. Such wave\npackets exhibit unique characteristics, such as controllable group velocities in free space a",
+    "pdf_url": "https://arxiv.org/pdf/2201.08297v1",
+    "final_url": "https://arxiv.org/pdf/2201.08297v1",
+    "local_path": "optical-method/2201.08297v1_space-time-review.pdf",
+    "bytes": 23209174,
+    "sha256": "065abab8e939c51920a88eb99c5365d191f0df86a6f8cdc9408ff098946c1ea7",
+    "status": "downloaded-and-readable"
+  },
+  {
+    "arxiv_id": "1711.04027",
+    "category": "optical-method",
+    "retrieved_date": "2026-10-19",
+    "abstract_url": "https://arxiv.org/abs/1711.04027",
+    "version": "v1",
+    "title": "Spatiotemporal diffraction-free pulsed beams in free-space of the Airy and Bessel type",
+    "authors": [
+      "Efremidis, Nikolaos K."
+    ],
+    "date": [
+      "2017/11/10"
+    ],
+    "doi": [
+      "10.1364/OL.42.005038"
+    ],
+    "pages": 5,
+    "pdf_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref package",
+      "producer": "pdfTeX-1.40.17",
+      "creationDate": "D:20220523234014Z",
+      "modDate": "D:20220523234014Z",
+      "trapped": "",
+      "encryption": null
+    },
+    "first_page_excerpt": "Spatiotemporal diﬀraction-free pulsed beams in free-space of the Airy and Bessel type\nNikolaos K. Efremidis∗\nDepartment of Mathematics and Applied Mathematics,\nUniversity of Crete, 70013 Heraklion, Crete, Greece and\nInstitute of Applied and Computational Mathematics,\nFoundation for Research and Technology - Hellas (FORTH), 70013 Heraklion, Crete, Greece\n(Dated: May 23, 2022)\nWe investigate the dynamics of spatiotemporal optical waves with one transverse dimension that\nare obtained as the intersections of the dispersion cone with a plane. We show that, by appropriate\nspectral excitations, the t",
+    "pdf_url": "https://arxiv.org/pdf/1711.04027v1",
+    "final_url": "https://arxiv.org/pdf/1711.04027v1",
+    "local_path": "optical-method/1711.04027v1_airy-bessel-pulsed-beams.pdf",
+    "bytes": 2884707,
+    "sha256": "856944b6680badfa081752108473159a365c601281042369921a9283f3064fae",
+    "status": "downloaded-and-readable"
+  }
+]

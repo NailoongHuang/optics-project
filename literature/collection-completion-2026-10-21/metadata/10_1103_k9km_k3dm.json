@@ -1,0 +1,504 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2026-09-29T22:14:49Z",
+      "timestamp": 1790720089642,
+      "version": "4.1.0"
+    },
+    "reference-count": 39,
+    "publisher": "American Physical Society (APS)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              26
+            ]
+          ],
+          "date-time": "2025-09-26T00:00:00Z",
+          "timestamp": 1758844800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. A"
+    ],
+    "accepted": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1103/k9km-k3dm",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2025-09-04T11:00:57Z",
+      "timestamp": 1756983657000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Searching for Bloch wave packets with almost definite momentum direction"
+    ],
+    "prefix": "10.1103",
+    "volume": "112",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9903-3299",
+        "authenticated-orcid": true,
+        "given": "Arseni",
+        "family": "Goussev",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/01swzsf04",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Geneva"
+          },
+          {
+            "name": "Quantum Physics Corner Ltd."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3337-4984",
+        "authenticated-orcid": true,
+        "given": "Gregory V.",
+        "family": "Morozov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/04w3d2v20",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of the West of Scotland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "k9km-k3dmCc1R1",
+        "volume-title": "Solid State Physics",
+        "author": "N. W. Ashcroft",
+        "year": "1976",
+        "type": "book"
+      },
+      {
+        "key": "k9km-k3dmCc2R1",
+        "volume-title": "Introduction to Solid State Physics",
+        "author": "C. Kittel",
+        "year": "2004",
+        "type": "book"
+      },
+      {
+        "key": "k9km-k3dmCc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1119/1.19251",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4249/scholarpedia.30946",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc5R1",
+        "unstructured": "The body of literature on quantum backflow is substantial, and a full review is beyond our scope. Some of the key theoretical developments can be found in Refs.   [6, 7, 8]. For an accessible introduction, we refer the reader to Ref.   [9], while Refs.   [10, 11] provide a comprehensive list of more recent advancements in the field.",
+        "type": "other"
+      },
+      {
+        "key": "k9km-k3dmCc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/27/6/040",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00023-005-0197-9",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1751-8113/43/41/415302",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-6596/442/1/012055",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1402-4896/abdd54",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/adb77e",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.86.042116",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.87.053618",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1209/0295-5075/106/60004",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22331/q-2021-01-11-379",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22331/q-2021-09-07-536",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPTICA.371494",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/aca70b",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPTICA.495710",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.540905",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/39/2/012",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.103.022217",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-6633/aaa98a",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc24R1",
+        "unstructured": "For any periodic potential, the set of all Bloch waves forms a complete basis   [25]. This implies that every normalized wave packet capable of propagating through the periodic potential can be represented as a superposition of Bloch waves.",
+        "type": "other"
+      },
+      {
+        "key": "k9km-k3dmCc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1119/1.1976612",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc26R1",
+        "volume-title": "The Spectral Theory of Periodic Differential Equations",
+        "author": "M. S. P. Eastham",
+        "year": "1973",
+        "type": "book"
+      },
+      {
+        "key": "k9km-k3dmCc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1209/0295-5075/96/54005",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/JOSAB.424431",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PROC.1975.9871",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PROC.1977.10503",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PROC.1977.10726",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0031-8949/35/6/016",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc33R1",
+        "unstructured": "Throughout this paper, we assume that all allowed energy bands are separated by nonzero band gaps. That is, we do not consider exotic periodic potentials where certain band gaps vanish at specific quasimomentum values.",
+        "type": "other"
+      },
+      {
+        "key": "k9km-k3dmCc34R1",
+        "unstructured": "At the zone boundary, not all solutions to the time-independent Schrödinger equation have the Bloch-wave structure   [25, 35, 36, 37, 38], and the inclusion of the zone boundary in the support of the amplitudes ϕ(j)(κ) may require modifying the normalization condition   (14).",
+        "type": "other"
+      },
+      {
+        "key": "k9km-k3dmCc35R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRev.91.531",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc36R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0022-3719/5/18/008",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc37R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/25/13/015",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc38R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/JOSAB.35.001223",
+        "type": "journal-article"
+      },
+      {
+        "key": "k9km-k3dmCc39R1",
+        "volume-title": "Quantum Mechanics: Non-relativistic Theory",
+        "author": "L. D. Landau",
+        "year": "1981",
+        "type": "book"
+      }
+    ],
+    "container-title": [
+      "Physical Review A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/k9km-k3dm",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/k9km-k3dm/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2026-09-29T21:51:14Z",
+      "timestamp": 1790718674000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/k9km-k3dm"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          26
+        ]
+      ]
+    },
+    "references-count": 39,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            9
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/k9km-k3dm",
+    "relation": {},
+    "ISSN": [
+      "2469-9926",
+      "2469-9934"
+    ],
+    "issn-type": [
+      {
+        "value": "2469-9926",
+        "type": "print"
+      },
+      {
+        "value": "2469-9934",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          26
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-04-16",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "©2025 American Physical Society. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright_statement",
+        "label": "Copyright statement",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "2025",
+        "name": "copyright_year",
+        "label": "Copyright year",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "American Physical Society",
+        "name": "copyright_holder",
+        "label": "Copyright holder",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      }
+    ],
+    "article-number": "032223"
+  }
+}

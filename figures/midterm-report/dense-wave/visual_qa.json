@@ -1,0 +1,17 @@
+{
+  "all_static_pngs_inspected": true,
+  "gif_frames_decoded": {
+    "w07_wave_probability_animation.gif": 61,
+    "w08_anisotropy_animation.gif": 61
+  },
+  "gif_visual_inspection_frames": [
+    0,
+    30,
+    60
+  ],
+  "heatmap_interpolation": "nearest",
+  "framewise_normalization": false,
+  "carrier_visible": true,
+  "label_clipping_observed": false,
+  "contact_sheet": "qa_animation_frames.png"
+}

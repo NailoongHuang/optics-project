@@ -1,0 +1,44 @@
+{
+  "status": "candidate_only_not_run",
+  "name": "Finite-range harmonic engineering to cancel residual cubic dispersion",
+  "source_anchor": "Eisenberg2002 Section3.3 PDFp43 proposed arbitrary periodic diffraction synthesis; our specific static two-harmonic implementation is an inference, not the author claim.",
+  "question": "At fixed total positive hopping budget, how much shape-preserving propagation distance can one gain by cancelling the cubic term, and how accurately must the extra coupling be set?",
+  "models": {
+    "baseline": "epsilon(q)=J*(1-cos(q)), q0=pi/2",
+    "candidate": "epsilon(q)=J1*(1-cos(q))+J3*(1-cos(3q)), J1+J3=J",
+    "cancellation": "J3/J1=1/27; equivalently J1=27J/28,J3=J/28"
+  },
+  "analytic_prediction": "At q0=pi/2, epsilon second and fourth derivatives vanish by odd-harmonic parity; epsilon third derivative=-J1+27J3=0. The leading non-linear phase is fifth order, epsilon fifth derivative=-8J1. Expected narrow-spectrum lifetime scaling sigma^5 versus sigma^3 for the NN baseline.",
+  "fair_comparison": [
+    "Same initial probability RMS width and normalization",
+    "Same total positive coupling budget J1+J3=J",
+    "Compare at matched mean propagation distance as well as time, since mean speed changes",
+    "Use full exact dispersions, not truncated differential equations, for demo data"
+  ],
+  "minimal_parameter_grid": {
+    "sigma_a": [
+      3,
+      4,
+      6
+    ],
+    "relative_J3_errors": [
+      0,
+      -0.1,
+      -0.01,
+      0.01,
+      0.1
+    ],
+    "q0": "pi/2",
+    "example_noise_scope": "Coupling calibration error only; no separate disorder/dephasing claim"
+  },
+  "metrics": [
+    "Fidelity to each initial state translated at its own spectrum-weighted mean velocity",
+    "First F=0.9 crossing time and corresponding distance",
+    "Probability RMS width and density-overlap",
+    "Norm and doubled-box check"
+  ],
+  "negative_control": "An equally budgeted positive J3 not at 1/27 should retain cubic residual and asymptotic sigma^3 behavior. Any gain due only to slower mean speed fails the matched-distance criterion.",
+  "failure_criterion": "Do not call this promising for implementation if the matched-distance gain disappears under modest calibration error or if the required hopping hierarchy cannot be generated in a specified physical platform.",
+  "demo": "Three synchronized probability-envelope panels in comoving coordinates: nearest neighbor, tuned two-harmonic band, and mistuned band. Fixed probability color scale. Plot distance-resolved fidelity beside them.",
+  "limits": "This tests a specified toy Hamiltonian and known band-engineering logic. It does not establish a new physical mechanism or a realizable magnetic material. Exact whole-band linearity is neither claimed nor needed."
+}

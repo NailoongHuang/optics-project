@@ -1,0 +1,14 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/tkawm7","index":5,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/5s7et0ru","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"二维交换模型与全极化基态","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ipgvi583","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/3qpwra9o","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"原理 PDF 第 3 页，式 (22)–(25)　图 A01","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/gnydgvqx","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"06","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/0ri1w7ih","kind":"image","position":{"left":38,"top":142,"width":725,"height":420},"fit":"contain","alt":"a01-lattice"},
+{"id":"im/zq9032hw","kind":"image","position":{"left":780,"top":159,"width":440,"height":108},"fit":"contain","alt":"原理公式 22"},
+{"id":"im/epgjux0b","kind":"image","position":{"left":827,"top":315,"width":355,"height":84},"fit":"contain","alt":"原理公式 25"},
+{"id":"sh/8jedcvq1","kind":"textbox","position":{"left":804,"top":442,"width":409,"height":131},"text":"每条键只计一次\nJₓ、Jᵧ > 0，零外场\n背景自旋沿 +x 极化","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/tknulgrm","kind":"textbox","position":{"left":66,"top":574,"width":675,"height":31},"text":"左图为 5 × 5 个格点的局部示意。","style":{"fontSize":21,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/d03i5wvi","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/czu1crux","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"Jₓ ≠ Jᵧ 改变空间方向的耦合强度，单磁子仍在同一条能带上运动。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

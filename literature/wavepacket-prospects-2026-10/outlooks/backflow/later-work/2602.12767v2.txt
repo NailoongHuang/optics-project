@@ -1,0 +1,1344 @@
+PDF PAGE 1
+Preparing Quantum Backflow States by Large Momentum Transfer
+Yuchong Chen1 and Yijun Tang1
+1Cavendish Laboratory, University of Cambridge,
+JJ Thomson Avenue, Cambridge CB3 0US, United Kingdom
+Quantum backflow refers to the appearance of negative probability current in a state whose
+momentum distribution is essentially positive. We propose a scheme to prepare such states in a
+noninteracting Bose–Einstein condensate using large-momentum-transfer (LMT) atom interferom-
+etry. Our approach extends the single-pulse proposal of Palmero [1] by allowing one interferometer
+arm to undergo a tunable sequence of momentum-transfer pulses before recombination with a freely
+propagating arm. For realistic parameters for 88Sr, the protocol generates interference states with
+tunable probability current and negligible negative-momentum contamination. We evaluate both the
+probability current and the critical-density criterion introduced by Palmero [1], and identify param-
+eter regimes in which the backflow signature is enhanced relative to the single-pulse scheme. These
+results present LMT interferometry as a flexible route for preparing candidate quantum-backflow
+states in cold-atom experiments.
+I.
+Introduction
+Quantum mechanics permits the counterintuitive
+possibility that a freely propagating state can exhibit
+negative probability current even though its momen-
+tum distribution is essentially positive.
+This phe-
+nomenon is known as standard quantum backflow.
+It was first identified in the quantum arrival-time
+problem by Allcock [2], and later studied in detail
+by Bracken and Melloy [3]. Recent work has refined
+the quantitative bound for standard quantum back-
+flow, showing that the maximal probability transfer
+in the positive-momentum setting is approximately
+c ≈0.0384506 [4]. Over the past decades, quantum
+backflow has been investigated in a variety of set-
+tings, including operator-based approaches [5], ran-
+dom wave functions [6], decay processes [7], ring
+geometries [8–10], higher dimensions [11, 12], open
+quantum systems [13–15], scattering in the presence
+of potentials and defects [16, 17], many-particle sys-
+tems [18], the effects of bosonic and fermionic statis-
+tics [19], and periodic lattices [20].
+Despite this long-standing theoretical interest,
+quantum backflow has not yet been observed experi-
+mentally. A particularly promising route is provided
+by density measurements in ultracold atomic Bose–
+Einstein condensates [1, 21]. In particular, Palmero
+et al. derived a relation between probability current
+and particle density for two interfering wave packets
+with a relative phase linear in position [1]. In that
+framework, there exists a critical density ρcrit such
+that whenever the measured density ρ(x, t) falls be-
+low ρcrit(x, t), the local probability current is neces-
+sarily negative. This result is especially important be-
+cause it converts the current-based notion of backflow
+into a density criterion that is, in principle, accessi-
+ble to fluorescence or absorption imaging.
+Related
+experimentally motivated formulations that relax the
+strict positive-momentum constraint have also been
+discussed in Refs. [22, 23]. Although quantum back-
+flow itself has not yet been observed, classical optical
+analogs have recently been demonstrated [24–27].
+More recently, the scope of experimentally rele-
+vant backflow studies has been broadened beyond the
+standard positive-momentum setting. In particular,
+Paterek and Goussev introduced a general formula-
+tion of quantum backflow for realistic wave pack-
+ets with arbitrary momentum distributions, defin-
+ing the genuinely nonclassical contribution as the ex-
+cess probability flow beyond that expected from the
+corresponding classical momentum distribution alone
+[28]. Within that broader framework, the maximal
+general-backflow signal can reach nearly 13%, i.e.
+more than three times the standard Bracken–Melloy
+value for unidirectional states [4, 28].
+The present
+work does not analyze the generalized backflow for-
+mulation in detail. Instead, we focus on the standard
+quantum backflow setting, where the momentum dis-
+tribution is essentially positive.
+In this work, we ask whether the cold-atom strat-
+egy of Palmero et al. [1] can be extended to a large-
+momentum-transfer (LMT) atom-interferometric set-
+ting [29]. Compared with a single-pulse preparation
+protocol, LMT interferometry offers additional con-
+trol over the relative amplitudes of the two arms and
+over their final momentum separation before recombi-
+nation. These quantities directly influence the inter-
+ference pattern, the probability current, and the as-
+sociated critical-density threshold. Our goal is there-
+fore not to derive a new universal bound on quan-
+tum backflow, but rather to develop a more flexible
+preparation protocol for standard quantum backflow
+states.
+Specifically, we consider a noninteracting
+88Sr
+Bose–Einstein condensate in which one interferom-
+eter arm evolves freely while the other undergoes a
+tunable sequence of momentum-transfer pulses. We
+derive the final interfering state produced by this se-
+quence, evaluate its probability current and critical
+density, and identify parameter regimes in which the
+backflow signature is enhanced relative to the single-
+pulse scheme of Ref. [1] while negative-momentum
+arXiv:2602.12767v2  [quant-ph]  21 May 2026
+
+
+PDF PAGE 2
+2
+contamination remains negligible.
+We also quan-
+tify the resulting backflow signal and discuss the ac-
+companying experimental tradeoff: stronger backflow
+is associated with shorter density-modulation length
+scales, which may make direct imaging more demand-
+ing.
+This paper is organized as follows. In Sec. II we
+introduce the interferometric protocol and derive the
+final two-arm state. In Sec. III we present numer-
+ical results for the probability current, the critical-
+density criterion, and the dependence of the backflow
+signal on the beam-splitter parameters. Section IV
+concludes.
+II.
+Theory
+As shown in Fig. 1, we begin with a cloud of cold
+two-level atoms in a Bose–Einstein condensate con-
+fined in a dipole trap and launched upward, as in
+a standard atom-interferometric sequence.
+Shortly
+after launch, a splitting pulse is applied to the con-
+densate, creating two interferometer arms. The total
+state can then be written as the coherent superposi-
+tion
+|Ψ⟩= cf |Ψf⟩+ cb |Ψb⟩,
+where |Ψf⟩and |Ψb⟩denote the two arms after the
+splitter. The arm |Ψf⟩remains in the ground inter-
+nal state and subsequently undergoes free fall, while
+the arm |Ψb⟩is transferred to the excited internal
+state and is later addressed by a large-momentum-
+transfer (LMT) pulse sequence, i.e., a sequence of
+light pulses designed to impart multiple photon re-
+coils and thereby produce a larger momentum sepa-
+ration between the two interferometer arms.
+The LMT sequence consists of multiple laser pulses,
+generally applied in alternating directions.
+As the
+atomic wave packet passes through this pulse ar-
+ray in time, the pulses drive stimulated absorption
+and emission processes, as illustrated schematically
+in Fig. 2. Each pulse can therefore change both the
+internal state and the momentum of the addressed
+atoms. The amount of transferred population is con-
+trolled by the pulse area, or equivalently by the pulse
+duration. In particular, a π pulse transfers the en-
+tire addressed population to the other internal state,
+whereas a π/2 pulse creates an equal superposition of
+the two internal states.
+After the splitting pulse, only one arm is subjected
+to the subsequent LMT sequence, so that its momen-
+tum is tailored by a controlled series of recoils while
+the other arm evolves freely. The two arms later over-
+lap and interfere, thereby forming the final candidate
+backflow state. By tuning the pulse sequence after
+the initial splitter, one can control the relative arm
+amplitudes and the final momentum separation, and
+hence tune both the probability current and the asso-
+FIG. 1: Schematic of the large-momentum-transfer
+interferometric protocol used to prepare candidate
+quantum-backflow states. (a) A Bose–Einstein
+condensate is launched upward with momentum
+ℏk0. (b) A beam-splitter pulse, not necessarily a π/2
+pulse, creates two interferometer arms. (c) A π pulse
+drives stimulated emission on one arm, imparting a
+recoil momentum +ℏk, where k is the laser wave
+number. (d) A subsequent π pulse drives stimulated
+absorption, changing the internal state and
+imparting the corresponding recoil. (e) After many
+such pulses, the addressed arm acquires the desired
+momentum before recombination. (f) The two arms
+later overlap and interfere to form the final state.
+FIG. 2: Pulse-to-pulse notation used for the LMT
+sequence. The state of the addressed arm
+immediately after the nth pulse is denoted by |Ψn⟩.
+Each pulse has duration τ, and adjacent pulses are
+separated by an interval T = tn+1 −tn. After the
+next pulse, the state is denoted by |Ψn+1⟩. Blue and
+red segments denote the ground and excited internal
+states, respectively.
+ciated critical density. In this way, the present proto-
+col extends the single-pulse scheme of Ref. [1] within
+a more flexible interferometric setting.
+The theoretical description of this protocol con-
+sists of three parts: free evolution of the condensate
+between laser pulses, state modification during each
+
+
+PDF PAGE 3
+3
+pulse, and evaluation of the final probability current
+and critical-density criterion after recombination. We
+discuss these in Secs. II A–II C.
+A.
+Free propagation of the BEC state
+The free evolution of the wave packet between
+laser pulses can be described in a moving frame by a
+Galilean frame-transformation operator ˆG [29]:
+|Ψ⟩= ˆG |ϕc(t)⟩⊗|Ai(t)⟩
+= exp
+ i
+ℏ
+Z
+Lc dt
+
+exp
+
+−i
+ℏˆp ·⃗xc
+
+× exp
+ i
+ℏ⃗pc · ˆx
+
+|ϕc(t)⟩⊗|Ai(t)⟩.
+(1)
+Here, the Lagrangian Lc describes the action ac-
+cumulated by the center-of-mass motion, while⃗xc
+and⃗pc denote the center-of-mass position and mo-
+mentum, respectively. The operator ˆp ·⃗xc generates
+the spatial translation, and⃗pc · ˆx gives the momen-
+tum boost associated with the transformation to the
+moving frame.
+The remaining factor in Eq. (1) is
+the tensor product of the BEC center-of-mass state
+|ϕc(t)⟩and the internal atomic state |Ai(t)⟩. The cor-
+responding spatial wave function is therefore
+⟨⃗x|Ψ⟩= e
+i
+ℏ
+R
+Lc dte
+i
+ℏ⃗pc·(⃗x−⃗xc) ⟨⃗x −⃗xc|ϕc(t)⟩⊗|Ai(t)⟩.
+(2)
+To obtain the center-of-mass-frame wave function
+⟨⃗x −⃗xc|ϕc(t)⟩, we begin with the noninteracting BEC
+wave function in the laboratory frame [1]:
+ψ(x, t) = 1
+√
+b
+ψ0
+x −v1t
+b
+
+× exp
+"
+i m
+2ℏx2 ˙b
+b + ik1x
+ 
+1 −
+˙b
+bt
+!
++ iβ
+#
+.
+(3)
+Here,
+ψ0(x) =
+1
+π1/4√ax
+exp
+
+−x2
+2a2x
+
+is the initial wave function in the dipole trap, given
+by the ground state of a harmonic potential.
+The
+quantity ax =
+p
+ℏ/(mωx) is the harmonic-oscillator
+length, ωx is the trap frequency, β is an irrelevant
+global phase, and ℏk1 = mv1 is the condensate mo-
+mentum. The factor
+b =
+p
+1 + ω2xt2
+describes the cloud expansion.
+In
+the
+center-of-mass
+frame,
+the
+velocity-
+dependent terms vanish, and the wave function
+reduces to
+⟨x −xc|ϕc(t)⟩= 1
+√
+b
+ψ0
+x −xc
+b
+
+exp
+"
+im˙b(x −xc)2
+2ℏb
+#
+.
+(4)
+Physically, Eq. (4) describes a BEC wave packet lo-
+calized at the center-of-mass position xc and expand-
+ing with scale factor b. Because this form contains
+a small negative-momentum component, it can give
+rise to classical backflow, which is distinct from the
+quantum backflow studied here.
+In the present setup, the atoms are launched verti-
+cally, so the action accumulated between two pulses
+separated by a time interval ∆t is given by free-fall
+motion:
+∆SC =
+ 
+P 2
+c,n
+2m −mgxc,n
+!
+∆t−Pc,ng∆t2 + 1
+3mg2∆t3,
+(5)
+where Pc,n and xc,n are the center-of-mass momen-
+tum and position immediately after the nth pulse.
+This completes the description of the free evolution
+between pulses.
+B.
+Pulse influence
+We now consider the effect of a laser pulse on the
+atomic cloud. The general treatment follows Ref. [29].
+We write the state |Ψ⟩as a superposition of compo-
+nents associated with the two internal atomic states,
+corresponding to the ground and excited levels:
+|Ψtotal⟩=
+Z
+dp
+2
+X
+i=1
+ci(p) |p⟩.
+(6)
+Here, c1(p) and c2(p) denote the momentum-space
+amplitudes for the ground and excited internal states,
+respectively. In the short-pulse limit, the laser-driven
+transition is described by
+
+c′
+1(p)
+c′
+2(p + ℏk)
+
+=
+
+Λc
+−iΛse−iϕL
+−iΛ∗
+seiϕL
+Λc
+ 
+c1(p)
+c2(p + ℏk)
+
+,
+(7)
+where Λc = cos(|Ω|τ/2) and Λs =
+Ω
+|Ω| sin(|Ω|τ/2).
+Here, Ωis the Rabi frequency such that Ω/|Ω| = 1 as
+in Ref. [29], k is the laser wave number, ϕL is the laser
+phase, and τ is the pulse duration. For a π pulse, i.e.
+when |Ω|τ = π, this reduces to
+
+c′
+1(p)
+c′
+2(p + ℏk)
+
+=
+
+0
+−ie−iϕL
+−ieiϕL
+0
+ 
+c1(p)
+c2(p + ℏk)
+
+.
+(8)
+In our simulations, the initial BEC wave packet
+from the dipole trap is first split into two arms by a
+laser pulse that is not necessarily a π/2 pulse. This
+produces two arms with different amplitudes, and
+these weights ultimately affect the backflow signal.
+We treat the evolution of each arm separately. For
+example, applying a π pulse to an arm initially in the
+
+
+PDF PAGE 4
+4
+ground state |Ψ⟩gives
+|Ψ′⟩=
+Z
+dp c′
+2(p) |p⟩= −ieiϕL
+Z
+dp c1(p −ℏk) |p⟩
+= −ieiϕLeikˆx |Ψ⟩.
+(9)
+This corresponds to absorption of a photon by an
+atom in the ground state, transferring it to the ex-
+cited state and imparting a recoil momentum in the
+laser-propagation direction. To generalize this to ei-
+ther internal state and either pulse direction, we in-
+troduce an index µ, with µ = 1 for the ground state
+and µ = −1 for the excited state. The wave func-
+tion immediately after the (n + 1)th pulse can then
+be written in terms of the state after the nth pulse as
+⟨x|Ψ′⟩= −ieiµϕLe
+i
+ℏ
+R
+Lcdteiµkxce
+i
+ℏ(p+µℏk)(x−xc)
+× ⟨x −xc|ϕc(t)⟩⊗|Ai(t)⟩.
+(10)
+Compared with the pre-pulse state ⟨x|Ψ⟩in Eq. (2),
+this expression contains the laser phase ϕL, an addi-
+tional momentum boost (p+µℏk), and a global phase
+shift µkxc.
+C.
+Probability Flux and Critical Density
+We now trace the evolution of the two interferome-
+ter arms separately. The free arm undergoes pure free
+fall and is not affected by the subsequent laser pulses.
+Its state at the encounter time Tf is obtained by sub-
+stituting the free-fall action, the corresponding mo-
+mentum shift, the center-of-mass wave function, and
+the internal-state evolution into Eq. (2). For clarity,
+the derivation is given explicitly in Appendix A. The
+resulting spatial wave function is
+⟨x|Ψf⟩=
+1
+(1 + ω2xT 2
+f )1/4π1/4√ax
+exp
+ i
+ℏ
+1
+2mv2
+0Tf −mv0gT 2
+f + 1
+3mg2T 3
+f
+
+exp
+ i
+ℏm(v0 −gTf)(x −xc)
+
+× exp
+"
+−
+(x −xc)2
+2a2x(1 + ω2xT 2
+f )
+#
+exp
+"
+i m
+2ℏ(x −xc)2
+ω2
+xTf
+1 + ω2xT 2
+f
+#
+⊗exp
+
+−i
+ℏEλTf
+
+|λ⟩.
+(11)
+Here Eλ is the internal-state energy of the free arm.
+For the momentum-transferred arm, the state
+changes at each pulse because of both free propa-
+gation between pulses and laser-induced momentum
+transfer at the pulse times. We therefore construct
+the evolution iteratively. Specifically, we assume that
+the state immediately after the nth pulse is known.
+We then propagate this state freely over the interval
+∆t = tn+1 −tn using Eq. (2), and finally apply the
+(n + 1)th π pulse using Eq. (8) and Eq. (9). In this
+way, Eq. (12) gives the state immediately after the
+(n+1)th pulse in terms of the state immediately after
+the nth pulse. The detailed derivation is presented in
+Appendix B. The result is
+⟨x|Ψn+1⟩= −iexp (iµnϕL) exp (iµnkn+1xn+1) exp
+ i
+ℏ
+1
+2mv2
+c,n∆t −mgxc,n∆t −mvc,ng∆t2 + 1
+3mg2∆t3
+
+× exp
+ i
+ℏmvc,n+1(x −xc)
+
+1
+(1 + ω2xt2
+n+1)1/4π1/4√ax
+exp
+
+−
+(x −xc)2
+2a2x(1 + ω2xt2
+n+1)
+
+× exp
+
+i m
+2ℏ(x −xc)2
+ω2
+xtn+1
+1 + ω2xt2
+n+1
+
+˜ϕL,tot ˜ψi,tot ˜ΨS ⊗exp
+
+−i
+ℏEµn∆t
+
+|µn+1⟩.
+(12)
+Here the subscript n labels quantities evaluated
+immediately after the nth pulse. The overall factor
+−i exp(iµnϕL) exp(iµnkn+1xn+1)
+arises
+from
+the
+action of the (n + 1)th π pulse.
+The exponential
+containing vc,n and xc,n represents the free-fall
+action accumulated during the interval ∆t
+be-
+tween the nth and (n + 1)th pulses.
+The factor
+exp[imvc,n+1(x −xc)/ℏ] gives the updated mo-
+mentum boost after the pulse, while the Gaussian
+envelope and quadratic phase are the center-of-
+mass wave function of Eq. (4) evaluated at time
+
+
+PDF PAGE 5
+5
+tn+1.
+Finally, ˜ϕL,tot,
+˜ψi,tot, and ˜ΨS denote the
+laser, internal-state, and action phases accumulated
+during all earlier stages of the sequence, and the
+factor
+exp(−iEµn∆t/ℏ) |µn+1⟩
+accounts
+for
+the
+internal-state evolution over the interval together
+with the state transfer induced by the (n+1)th pulse.
+For later convenience, we rewrite Eqs. (11) and
+(12) in terms of overall phase factors and position-
+dependent envelopes. We also note that the two arms
+do not recombine immediately after the final pulse,
+but instead propagate for an additional time interval
+∆Tf after the last pulse at time TN. Their wave func-
+tions at the encounter time can therefore be written
+as
+⟨x|Ψf⟩= ⟨x −xc|ϕc(Tf)⟩exp[iθf(Eλ, v0, Tf)]
+× exp
+ i
+ℏm(v0 −gTf)(x −xc)
+
+,
+(13)
+and
+⟨x|Ψb⟩= ⟨x −xc|ϕc(Tf)⟩exp[iθb({Eµn}, {tn}, {kn})]
+× exp
+ i
+ℏm(vN −g∆Tf)(x −xc)
+
+,
+(14)
+where Tf = TN + ∆Tf is the encounter time. The
+total wave function is then
+⟨x|Ψ⟩= ⟨x|Ψf⟩
+h
+cf + cb exp(iθb −iθf)
+× exp
+ i
+ℏm(vN + gTN −v0)(x −xc)
+i
+.
+(15)
+Equation (15) has the same mathematical struc-
+ture as the wave function considered by Palmero et
+al. [1], namely an envelope multiplied by the interfer-
+ence factor of two components with a relative phase
+linear in position. Writing
+⟨x|Ψf⟩= R(x, t)eiθ(x,t),
+we can therefore apply the density-based backflow
+criterion of Ref. [1] directly to the present case. In
+that framework, backflow is guaranteed whenever the
+measured density ρ(x, t) falls below a critical thresh-
+old ρcrit(x, t). Since the atomic density can in princi-
+ple be extracted from fluorescence imaging or absorp-
+tion imaging, this criterion converts the current-based
+notion of backflow into an experimentally accessible
+density condition.
+The corresponding critical density is
+ρcrit =
+q
+q + 2∂xθ(x, t) |R(x, t)|2 |cf|2 −|cb|2
+,
+(16)
+where
+q = m
+ℏ(vN + gTN −v0)
+(17)
+is the effective wave-number difference between the
+two arms, and
+R(x, t) =
+1
+(1 + ω2xT 2
+f )1/4
+1
+π1/4√ax
+× exp
+"
+−(x −xc)2
+2a2x
+1
+1 + ω2xT 2
+f
+#
+,
+(18)
+θ(x, t) = 1
+ℏ
+1
+2mv2
+0Tf −mv0gT 2
+f + 1
+3mg2T 3
+f −EλTf
+
++ 1
+ℏ
+"
+m(v0 −gTf)(x −xc) + m
+2
+ω2
+xTf
+1 + ω2xT 2
+f
+(x −xc)2
+#
+.
+(19)
+These are simply the modulus and phase extracted
+from Eq. (11). The probability current then follows
+as
+m
+ℏJ(x, t) = ∂xθ |Ψ|2 + q|R|2|cb|2
++ q|R|2 Re
+ c∗
+fcbeiqx+iθb−iθf 
+,
+(20)
+where we have generalized the expression to allow for
+complex coefficients cf and cb.
+III.
+Simulation Results
+A.
+Setup
+In the simulations, we consider a hypothetical non-
+interacting 88Sr Bose–Einstein condensate and use
+its 1S0–3P1 transition for the LMT sequence, with
+laser wavelength 689 nm. The 3P1 excited state has
+a lifetime of 21.6 µs, which makes it suitable for
+LMT. Large-momentum-transfer interferometry up
+to 141ℏk has already been achieved in 88Sr atom in-
+terferometers [30].
+We consider a BEC cloud launched upward with
+initial velocity v0 = 0.2 m s−1 and an initial spatial
+profile determined by a dipole trap with trap fre-
+quency ωx = 2π × 70 s−1 [31]. A beam-splitter pulse
+of tunable duration τ first splits the atoms into two
+arms with coefficients cb and cf, according to Eq. (7).
+The subsequent geometry used in the simulation is
+shown in Fig. 3.
+Because of the narrow linewidth of the transition
+and the Doppler shift, only one arm is resonantly ad-
+dressed by the later laser pulses. We refer to the un-
+addressed arm as the free arm and to the addressed
+arm as the pulsed arm. The free arm undergoes free
+fall without further laser interaction until it recom-
+bines with the pulsed arm. The pulsed arm is initially
+transferred to the excited state by the beam-splitter
+pulse and then undergoes 7 LMT pulses at wave-
+length 689 nm, each with π-pulse duration, so that
+the population is transferred sequentially between the
+
+
+PDF PAGE 6
+6
+two internal states while acquiring momentum recoils.
+After this, the pulsed arm continues to propagate
+upward for 4 ms before being redirected downward
+by two pulse arrays, which are themselves separated
+by 4 ms.
+Adjacent pulses within the sequence are
+separated by 11 µs. The sequence is chosen so that,
+at the encounter point, the free arm has as small a
+downward velocity as possible, thereby maximizing
+the momentum difference between the two arms.
+B.
+Classical Backflow
+We first verify that the final state contains negligi-
+ble negative-momentum contribution, so that any ob-
+served negative current can be attributed to standard
+quantum backflow rather than to classical backflow
+arising from wave-packet expansion. In the present
+setting, classical backflow would originate from the
+small negative-momentum tail naturally generated
+as the Gaussian condensate expands during propa-
+gation. Following Ref. [1], this contribution can be
+made negligible by choosing parameters such that
+mv/ℏ≫1/ax and R0 < v/ωx, where R0 is the ini-
+tial width of the wave packet. To confirm that this
+condition is satisfied in our simulations, we transform
+⟨x|Ψ⟩to momentum space and inspect the resulting
+distribution, shown in Fig. 4. The spectrum exhibits
+negligible support at negative momentum, indicating
+that the backflow signal studied here is not dominated
+by classical contamination.
+For completeness, we note that recent work has
+introduced a more general formulation of quantum
+backflow for realistic wave packets, in which the clas-
+sical contribution associated with the momentum dis-
+tribution is subtracted explicitly from the total prob-
+ability flow [28]. The present work does not analyze
+that generalized framework in detail; rather, we focus
+on the standard positive-momentum setting adopted
+in Ref. [1]. Nevertheless, the LMT preparation strat-
+egy developed here may provide a useful starting
+point for future studies in that broader setting.
+C.
+Probability Flux
+The total wave function at the encounter point is
+used to evaluate the probability flux in its vicinity.
+Figure 5a shows an example of the spatial backflow
+profile for an initial splitting pulse with Ωτ = 0.6π.
+Near the center of mass, approximately one sixth of
+the flux is negative. Another prominent feature of the
+flux distribution is its rapid oscillation in space. This
+follows from Eq. (20), in which J contains an interfer-
+ence term oscillating with wave number q, set by the
+momentum difference between the two arms. In the
+present case, the velocity difference at the encounter
+point is 0.079 m s−1, which leads to the observed rapid
+spatial oscillations.
+In Fig. 5b, we plot the density profile of |Ψ⟩near
+the center of mass in blue, together with the critical
+density ρcrit in red. Both curves are normalized by
+the maximum value of |Ψ|2. The density profile of
+the final state consists of a Gaussian envelope mod-
+ulated by oscillations. The Gaussian envelope origi-
+nates from the initial ground-state wave function in
+the dipole trap, while the oscillatory structure arises
+from the position-dependent phase factor in Eq. (15).
+From Fig. 5b, the maximum value of ρcrit is 15.21%,
+while the minimum of |Ψ|2 near xc is 0.04%.
+D.
+Parameter Tuning
+We now show that the backflow signature can be
+tuned by varying the duration τ of the initial beam-
+splitter pulse. According to Eq. (7), this is equiva-
+lent to varying the Rabi phase Ωτ experienced by the
+initial condensate, and therefore to tuning the arm
+coefficients cb and cf.
+In the experimental setting considered here, the
+condensate enters the splitter pulse entirely in the
+ground state.
+We therefore take c1(p) = 1 and
+c2(p) = 0 in Eq. (7), which gives
+cb = cos(Ωτ/2),
+cf = −i sin(Ωτ/2).
+Thus, the coefficients produced directly by the split-
+ter pulse are, in general, complex.
+These complex
+coefficients are the ones most directly connected to
+the experimental preparation protocol studied in the
+present work. For each choice of Ωτ, we evaluate the
+probability flux using the fixed velocities and LMT
+sequence described in Sec. III A.
+To compare different parameter settings, we define
+a spatial backflow measure as the area of the nega-
+tive part of the flux profile. This quantity character-
+izes the spatial extent and magnitude of the negative-
+current region for a fixed encounter configuration.
+Figure 6a shows this measure as a function of Ωτ
+for the experimentally generated complex coefficients.
+The curve is symmetric about Ωτ = π, with one
+backflow peak on each side.
+There are also inter-
+vals, Ωτ ∈[0, π/2] ∪[3π/2, 2π], in which no back-
+flow occurs. These correspond to parameter values
+for which |cf|2 < |cb|2, so that Eq. (16) gives a neg-
+ative ρcrit. The dip at Ωτ = π corresponds to a π
+pulse, which transfers the entire initial ground-state
+population into the excited arm and therefore pro-
+duces no interference backflow.
+We next focus on the parameter value Ωτ = 0.75π,
+which maximizes the spatial backflow measure in
+Fig. 6a. The corresponding flux and density profiles
+are shown in Fig. 8a. The maximum negative flux
+is below −1000 s−1, and approximately one third of
+the flux profile is negative. Comparing Figs. 5b and
+8b, we find that the region where ρ < ρcrit remains
+
+
+PDF PAGE 7
+7
+FIG. 3: Simulation setup for preparing backflow states. The pulses address only |Ψb⟩(blue curve), so this
+arm undergoes large momentum transfer, while |Ψf⟩(red curve) evolves freely. At t = 0, a splitting pulse
+(shown by the purple dashed line) transfers a fraction of the condensate into the excited state and creates the
+initial velocity difference between the two arms. The arm |Ψb⟩is then accelerated by a sequence of π pulses.
+FIG. 4: Momentum-space distribution of the final
+combined state. The two dominant peaks
+correspond to the momenta of the two
+interferometer arms at the encounter time. The
+negligible weight at negative momentum confirms
+that classical backflow contamination is suppressed
+in the parameter regime considered here.
+of similar spatial extent, approximately ±20 µm, be-
+cause the overall cloud size is mainly set by the trap
+length scale ax and the propagation time, which are
+unchanged across the simulations. At the same time,
+the critical-density threshold itself is substantially en-
+hanced:
+the minimum of |Ψ|2 near xc is 18.39%,
+while the maximum ρcrit reaches 39.79%, more than
+twice the value reported in the single-pulse proposal
+of Ref. [1], where ρcrit ≈17%.
+For the experimentally relevant splitter considered
+here, the coefficients cb and cf are generally com-
+plex, as discussed above. For completeness, and to
+facilitate comparison with the earlier idealized treat-
+ment of Ref. [1], we also perform an auxiliary scan
+in which cb and cf are taken to be real while satis-
+fying c2
+b + c2
+f = 1. This real-coefficient case does not
+correspond to the bare splitter output alone; rather,
+it represents a phase-engineered variant in which an
+additional controllable phase shift is applied after the
+splitter and before the LMT sequence. As shown in
+Fig. 6b, this produces a single peak, and no back-
+flow occurs in the limiting cases where only one arm
+is present and no interference is possible. The maxi-
+mum value of the spatial backflow measure is compa-
+rable to that obtained for complex coefficients. Back-
+flow again disappears for cb > 1/
+√
+2, where cf < cb
+and ρcrit becomes negative. The maximum occurs at
+cb = 0.37.
+Compared with the complex-coefficient
+case, the real-coefficient scan produces a broader pa-
+rameter window in which backflow is present.
+Finally, to connect our results with the standard
+integrated backflow probability transfer discussed in
+Refs. [3, 4, 28], we evaluate the flux J at the en-
+
+
+PDF PAGE 8
+8
+(a) J vs. x −xc
+(b) |Ψ|2 vs. x −xc
+FIG. 5: Example of backflow for an initial splitting parameter Ωτ = 0.6π. (a) Probability flux J as a
+function of position: a finite portion of the flux lies below zero, indicating the presence of backflow. (b)
+Normalized density profile |Ψ|2 together with the critical density threshold: a corresponding portion of the
+density lies below ρcrit. At the center of the condensate, ρcrit −ρ is 15.17% of the maximum density.
+(a) Complex coefficients
+(b) Real coefficients
+FIG. 6: Dependence of the spatial backflow measure on the arm coefficients. (a) The measure is plotted
+against the splitter phase Ωτ for the coefficients generated directly by the beam-splitter pulse, which are
+generally complex. Two backflow windows appear symmetrically about Ωτ = π. (b) For comparison, the
+same measure is plotted against cb in an auxiliary scan with real coefficients. In this case a single peak is
+obtained. For cb > 1/
+√
+2, ρcrit becomes negative and no backflow occurs.
+counter location over a short time interval before
+the two arms overlap fully. Integrating the negative
+part of this time-dependent flux yields an integrated
+backflow probability transfer of ∆= 0.003514. This
+is the quantity that should be compared with the
+Bracken–Melloy bound. We stress that our claim of
+enhancement in the present work refers instead to
+the density-based signature, in particular the larger
+critical-density threshold relative to Ref. [1], rather
+than to any claim of exceeding the known universal
+bound on integrated backflow probability transfer.
+FIG. 7: Time-dependent flux J at a position near
+the encounter point. Although the magnitude of the
+negative flux is relatively large, the time interval over
+which J < 0 is short, giving an integrated backflow
+probability transfer of ∆= 0.003514.
+
+
+PDF PAGE 9
+9
+(a) J vs. x −xc
+(b) |Ψ|2 vs. x −xc
+FIG. 8: Backflow at the parameter value Ωτ = 0.75π,
+where the spatial backflow measure is maximal. (a)
+Probability flux J: approximately one third of the
+peak flux is negative.
+(b) Normalized density pro-
+file |Ψ|2: at the center of the cloud, ρcrit −ρ reaches
+21.40% of the maximum density.
+IV.
+Conclusion
+To prepare quantum-backflow states in a more flex-
+ible manner, we have proposed a protocol that ex-
+tends the single-pulse cold-atom scheme of Palmero
+et
+al.
+[1]
+to
+a
+large-momentum-transfer
+atom-
+interferometric setting. In contrast to Ref. [1], the
+present approach provides additional control over the
+relative arm amplitudes and the final momentum sep-
+aration through the initial beam-splitting pulse and
+the subsequent sequence of π pulses applied to one
+interferometer arm. Using realistic experimental pa-
+rameters, we have shown that this protocol produces
+final interference states with tunable probability cur-
+rent and negligible negative-momentum contamina-
+tion.
+We have also analyzed the associated critical-
+density criterion and identified a practical trade-
+off: stronger backflow is accompanied by a shorter
+density-modulation length scale, which makes con-
+ventional fluorescence imaging more challenging. The
+main outcome of the present work is therefore a more
+versatile interferometric framework for preparing and
+diagnosing candidate quantum-backflow states in a
+cold-atom platform. It would be interesting in future
+work to examine how the same LMT-based prepara-
+tion strategy may be adapted to the more general-
+backflow framework for realistic wave packets dis-
+cussed in Ref. [28].
+Since that framework is for-
+mulated in terms of position measurements at mul-
+tiple distinct times, it is plausible that fluorescence
+or absorption imaging of the atomic density at dif-
+ferent evolution times could provide a useful route
+toward implementing the required repeated position
+measurements in a cold-atom platform.
+Appendix
+A.
+Free Arm
+For the free arm, there is no influence from the subsequent LMT pulses. Its final state can therefore be
+derived analytically from Eq. (2). We evaluate each contribution in turn. Let Tf denote the time at which the
+two arms recombine, v0 the initial launch velocity of the BEC cloud, Pc the center-of-mass momentum, and
+m the atomic mass. The total action accumulated during free fall is then
+∆S =
+Z Tf
+0
+Lc dt =
+Z Tf
+0
+ P 2
+c
+2m −mgxc
+
+dt = 1
+2mv2
+0Tf −mv0gT 2
+f + 1
+3mg2T 3
+f .
+(A1)
+Here we assume that the cloud starts at xc(t = 0) = 0.
+The momentum-shift term in Eq. (2) is⃗
+Pc · (⃗x −⃗xc) = m(v0 −gTf)(x −xc).
+(A2)
+The BEC wave function in the center-of-mass frame is obtained by writing out Eq. (4) explicitly:
+⟨⃗x −⃗xc|ϕc(Tf)⟩=
+1
+(1 + ω2xT 2
+f )1/4
+1
+π1/4√ax
+exp
+"
+−(x −xc)2
+2a2x
+1
+1 + ω2xT 2
+f
+#
+exp
+"
+i m
+2ℏ(x −xc)2
+ω2
+xTf
+1 + ω2xT 2
+f
+#
+.
+(A3)
+
+
+PDF PAGE 10
+10
+The prefactor contains the expansion factor 1/
+√
+b, while the first exponential is the ground-state harmonic-trap
+wave function modified by the free expansion.
+For the internal-state evolution, the free arm remains in the same internal level throughout the sequence.
+Denoting its initial internal state by |λ⟩and the corresponding energy by Eλ, the time evolution is
+|Ai(Tf)⟩= exp
+
+−i
+ℏEλTf
+
+|λ⟩.
+(A4)
+Substituting Eqs. (A1), (A2), (A3), and (A4) into Eq. (2) gives the final state of the free arm:
+⟨x|Ψf⟩=
+1
+(1 + ω2xT 2
+f )1/4π1/4√ax
+exp
+ i
+ℏ
+1
+2mv2
+0Tf −mv0gT 2
+f + 1
+3mg2T 3
+f
+
+exp
+ i
+ℏm(v0 −gTf)(x −xc)
+
+× exp
+"
+−
+(x −xc)2
+2a2x(1 + ω2xT 2
+f )
+#
+exp
+"
+i m
+2ℏ(x −xc)2
+ω2
+xTf
+1 + ω2xT 2
+f
+#
+⊗exp
+
+−i
+ℏEλTf
+
+|λ⟩.
+(A5)
+B.
+Pulsed Arm
+The pulsed arm undergoes successive changes in momentum, phase, and internal state throughout the LMT
+sequence. For this reason, it is not convenient to write its final state in a single closed analytic form. Instead,
+we construct the evolution iteratively.
+Specifically, we assume that the state immediately after the nth pulse is known, and then determine the
+state immediately after the (n + 1)th pulse in two stages. First, the arm evolves freely during the interval
+∆t = tn+1 −tn according to Eq. (2). Second, at time tn+1 it encounters the next laser pulse, which induces
+the corresponding phase shift, internal-state transfer, and momentum recoil according to Eq. (8) and Eq. (9).
+Repeating this procedure pulse by pulse yields the final state at the end of the full LMT sequence.
+Since the pulse duration τ is much shorter than the separation between adjacent pulses, tn−tn−1, we neglect
+the free-fall evolution during each laser interaction. The free propagation between pulses has the same general
+form as for the free arm. In particular, the momentum-shift term after the (n + 1)th pulse is⃗
+Pc,n+1 · (⃗x −⃗xc) = mvc,n+1(x −xc),
+(B1)
+and the corresponding center-of-mass wave function at time tn+1 is
+⟨x −xc|ϕc(tn+1)⟩=
+1
+(1 + ω2xt2
+n+1)1/4
+1
+π1/4√ax
+exp
+
+−(x −xc)2
+2a2x
+1
+1 + ω2xt2
+n+1
+
+exp
+
+i m
+2ℏ(x −xc)2
+ω2
+xtn+1
+1 + ω2xt2
+n+1
+
+.
+(B2)
+All pulses after the initial splitter are taken to be π pulses. Since the pulsed arm starts in the excited state,
+it alternates between the excited and ground internal states throughout the sequence. We denote the internal
+state immediately after the nth pulse by |µn⟩, with µn = 1 for the ground state and µn = −1 for the excited
+state. From Eq. (8) and Eq. (9), the (n + 1)th pulse imparts a momentum recoil ∆Pc = µnℏk together with
+a global phase factor −i exp(iµnϕL) exp(iµnkxc). The corresponding internal-state evolution over the interval
+∆t is
+|Ai(tn+1)⟩= exp
+
+−i
+ℏEµn∆t
+
+|µn+1⟩.
+(B3)
+To write the full state after the (n + 1)th pulse, we must also include the phases accumulated during
+all previous stages of the sequence. We denote these by ˜ϕL,tot for the accumulated laser phase, ˜ΨS for the
+accumulated action phase, and ˜ψi,tot for the accumulated internal-state phase. Combining the free propagation
+over ∆t with the action of the (n + 1)th pulse then gives
+⟨x|Ψn+1⟩= −iexp (iµnϕL) exp (iµnkn+1xn+1) exp
+ i
+ℏ
+1
+2mv2
+c,n∆t −mgxc,n∆t −mvc,ng∆t2 + 1
+3mg2∆t3
+
+× exp
+ i
+ℏmvc,n+1(x −xc)
+
+1
+(1 + ω2xt2
+n+1)1/4π1/4√ax
+exp
+
+−
+(x −xc)2
+2a2x(1 + ω2xt2
+n+1)
+
+× exp
+
+i m
+2ℏ(x −xc)2
+ω2
+xtn+1
+1 + ω2xt2
+n+1
+
+˜ϕL,tot ˜ΨS ⊗˜ψi,tot exp
+
+−i
+ℏEµn∆t
+
+|µn+1⟩.
+(B4)
+
+
+PDF PAGE 11
+11
+In the simulations, we update the pulsed-arm state iteratively using Eq. (B4), and finally combine it with
+the free-arm state in Eq. (A5) at the encounter time to obtain the probability flux and number density.
+[1] Mikel Palmero, E Torrontegui, Juan Gonzalo Muga,
+and Michelle Modugno. Detecting quantum backflow
+by the density of a bose-einstein condensate. Physical
+Review A—Atomic, Molecular, and Optical Physics,
+87(5):053618, 2013.
+[2] Gordon R Allcock. The time of arrival in quantum
+mechanics ii. the individual measurement. Annals of
+Physics, 53(2):286–310, 1969.
+[3] AJ Bracken and GF Melloy.
+Probability backflow
+and a new dimensionless quantum number. Journal
+of Physics A: Mathematical and General, 27(6):2197,
+1994.
+[4] Christopher J Fewster and Harkan J Kirk-Karakaya.
+Repeated quantum backflow and overflow. Proceed-
+ings of the Royal Society A: Mathematical, Physical
+and Engineering Sciences, 481(2328), 2025.
+[5] Markus Penz, Gebhard Gr¨ubl, Sabine Kreidl, and
+Peter Wagner. A new approach to quantum back-
+flow. Journal of Physics A: Mathematical and Gen-
+eral, 39(2):423, 2005.
+[6] MV
+Berry.
+Quantum
+backflow,
+negative
+ki-
+netic energy, and optical retro-propagation.
+Jour-
+nal of Physics A: Mathematical and Theoretical,
+43(41):415302, 2010.
+[7] Wytse van Dijk and F Masafumi Toyama. Decay of a
+quasistable quantum system and quantum backflow.
+Physical Review A, 100(5):052101, 2019.
+[8] Paul Strange. Large quantum probability backflow
+and the azimuthal angle–angular momentum uncer-
+tainty relation for an electron in a constant magnetic
+field. European journal of physics, 33(5):1147, 2012.
+[9] Arseni Goussev. Quantum backflow in a ring. Phys-
+ical Review A, 103(2):022217, 2021.
+[10] Arseni Goussev, Felix Quinque, Jaewoo Joo, and An-
+drew Burbanks. Quantum backflow current in a ring:
+Optimal bounds and fractality. Physical Review A,
+110(2):022216, 2024.
+[11] Maximilien Barbier, Arseni Goussev, and Shashi CL
+Srivastava. Unbounded quantum backflow in two di-
+mensions. Physical Review A, 107(3):032204, 2023.
+[12] Valentin
+Daniel
+Paccoia,
+Orlando
+Panella,
+and
+Pinaki Roy. Angular momentum quantum backflow
+in the noncommutative plane.
+Physical Review A,
+102(6):062218, 2020.
+[13] SV Mousavi and Salvador Miret-Art´es. Dissipative
+quantum backflow. The European Physical Journal
+Plus, 135(3):1–18, 2020.
+[14] SV Mousavi and Salvador Miret-Art´es.
+Quantum
+backflow for dissipative two-identical-particle sys-
+tems. Results in Physics, 19:103426, 2020.
+[15] S. Mousavi and S. Miret-Art´es.
+Erratum to: Dis-
+sipative quantum backflow. The European Physical
+Journal Plus, 135, 08 2020.
+[16] Henning Bostelmann, Daniela Cadamuro, and Gan-
+dalf Lechner.
+Quantum backflow and scattering.
+Physical Review A, 96(1):012112, 2017.
+[17] Alexandre Hefren de Vasconcelos Junior. Quantum
+backflow in the presence of defects. PhD thesis, Uni-
+versity of York, 2021.
+[18] Maximilien Barbier.
+Quantum backflow for many-
+particle systems. arXiv preprint arXiv:2005.14685,
+2020.
+[19] Maximilien Barbier and Arseni Goussev. Quantum
+backflow for two identical particles. New Journal of
+Physics, 27(3):033011, 2025.
+[20] Arseni Goussev and Gregory V Morozov.
+Search-
+ing for bloch wave packets with almost definite mo-
+mentum direction. Physical Review A, 112(3):032223,
+2025.
+[21] Sh Mardonov, M Palmero, M Modugno, E Ya Sher-
+man, and JG Muga.
+Interference of spin-orbit–
+coupled bose-einstein condensates. Europhysics Let-
+ters, 106(6):60004, 2014.
+[22] Maximilien Barbier and Arseni Goussev.
+On the
+experiment-friendly formulation of quantum back-
+flow. Quantum, 5:536, 2021.
+[23] Marek Miller, Woo Chee Yuan, Rainer Dumke, and
+Tomasz Paterek. Experiment-friendly formulation of
+quantum backflow. Quantum, 5:379, 2021.
+[24] Yaniv Eliezer, Thomas Zacharias, and Alon Ba-
+habad.
+Observation of optical backflow.
+Optica,
+7(1):72–76, 2020.
+[25] Anat
+Daniel,
+Bohnishikha
+Ghosh,
+Bernard
+Gorzkowski, and Radek Lapkiewicz. Demonstrating
+backflow in classical two beams’ interference. New
+Journal of Physics, 24(12):123011, 2022.
+[26] Bohnishikha
+Ghosh,
+Anat
+Daniel,
+Bernard
+Gorzkowski, and Radek Lapkiewicz.
+Azimuthal
+backflow in light carrying orbital angular momen-
+tum. Optica, 10(9):1217–1222, 2023.
+[27] Zhen-Fei Zhang, Peng-Fei Huang, Shan-Chuan Dong,
+Yan-Xin Rong, Jin-Shi Xu, Yong-Jian Gu, and
+Ya Xiao.
+Observation of single-photon azimuthal
+backflow with weak measurement.
+Optics Letters,
+50(2):333–336, 2025.
+[28] Tomasz Paterek and Arseni Goussev. General quan-
+tum backflow in realistic wave packets. Physical Re-
+view Letters, 136(9):090202, 2026.
+[29] Savas Dimopoulos,
+Peter W Graham,
+Jason M
+Hogan, and Mark A Kasevich.
+General relativis-
+tic effects in atom interferometry. Physical Review
+D—Particles, Fields, Gravitation, and Cosmology,
+78(4):042003, 2008.
+[30] Jan Rudolph, Thomas Wilkason, Megan Nantel,
+Hunter Swan, Connor M Holland, Yijun Jiang, Ben-
+jamin E Garber, Samuel P Carman, and Jason M
+Hogan.
+Large momentum transfer clock atom in-
+terferometry on the 689 nm intercombination line
+of strontium. Physical review letters, 124(8):083604,
+2020.
+[31] Simon Stellmer, Florian Schreck, and Thomas C Kil-
+lian. Degenerate quantum gases of strontium. World
+Scientific, 2013.

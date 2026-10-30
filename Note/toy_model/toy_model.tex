@@ -1,0 +1,58 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\begin{document}
+考虑$N$个原子组成的二维正方晶格，设每个原子有一个电子对磁性有作用，晶格常数为$a$，向$x$方向施加横向磁场$B$，仅考虑邻近电子之间的库伦相互作用。由于元胞内只有一个内部自由度，该模型仅有一条能带。\par
+Wannier态的定义为：\par
+\begin{equation}
+    w_{\mathbf{R}_i}=\frac{1}{\sqrt{N}}\sum_{\mathbf{k}}\psi_\mathbf{k}(x) \exp[-\mathrm{i} \mathbf{k}\cdot \mathbf{R_i}]
+\end{equation}
+\par
+其二次量子化后的形式为：
+\begin{align}
+    &\hat{C}^\dagger_i=\frac{1}{\sqrt{N}}\sum_\mathbf{k}\hat{\psi}^\dagger_\mathbf{k}\exp[-\mathrm{i} \mathbf{k}\cdot \mathbf{R_i}]\\
+    &\hat{C}_i=\frac{1}{\sqrt{N}}\sum_\mathbf{k}\hat{\psi}_\mathbf{k}\exp[\mathrm{i} \mathbf{k}\cdot \mathbf{R_i}]
+\end{align}
+\par
+其中$\psi$为Bloch态的湮灭算符。使用基转换公式并注意到由于Wannier态是局域的，可以用原子的波函数对其进行代替：
+\begin{align}
+    &\hat{C}^\dagger_{\mathbf{R}_i\sigma}=\int \mathrm{d}^3\mathbf{x} \hat{\Psi}^\dagger_\sigma(\mathbf{x})\langle \mathbf{x}|\mathbf{R}_i\rangle=\int \mathrm{d}^3\mathbf{x} \hat{\Psi}^\dagger_\sigma(\mathbf{x})\phi_{\mathbf{R}_i}(\mathbf{x})\\
+    &\hat{C}_{\mathbf{R}_i\sigma}=\int \mathrm{d}^3\mathbf{x} \hat{\Psi}_\sigma(\mathbf{x})\langle \mathbf{R}_i|\mathbf{x}\rangle=\int \mathrm{d}^3\mathbf{x} \hat{\Psi}_\sigma(\mathbf{x})\phi^*_{\mathbf{R}_i}(\mathbf{x})
+\end{align}
+\par
+其中$\phi$为原子本身的波函数。我们使用上面的产生湮灭算符构建紧束缚模型的Fock空间。考虑邻近电子的库伦相互作用：
+\begin{equation}
+    \hat{V}=\frac{1}{2}\sum_{\sigma,\sigma^\prime}\int \mathrm{d}^3\mathbf{x}_1 \mathrm{d}^3\mathbf{x}_2 \hat{\Psi}^\dagger_{\sigma^\prime}(\mathbf{x}_2)\hat{\Psi}^\dagger_{\sigma}(\mathbf{x}_1)\frac{e^2}{|\mathbf{x}_1-\mathbf{x}_2|}\hat{\Psi}_{\sigma}(\mathbf{x}_1)\hat{\Psi}_{\sigma^\prime}(\mathbf{x}_2)
+\end{equation}
+\par
+通过费米子产生湮灭算符的对易关系，可以得到邻近电子库伦相互作用强度的期望值。当自旋方向平行时：
+\begin{equation}
+    \langle \hat{V} \rangle = U-J
+\end{equation}
+\par
+自旋方向反平行时，期望值为：
+\begin{equation}
+    \langle \hat{V} \rangle = U+J
+\end{equation}
+\par
+其中$U$和$J$的定义为:
+\begin{align}
+    &U = \frac{1}{2}\int \mathrm{d}^3\mathbf{x}_1\mathrm{d}^3\mathbf{x}_2 |\phi_a(\mathbf{x}_1)|^2 |\phi_b(\mathbf{x}_2)|^2\frac{e^2}{|\mathbf{x}_1-\mathbf{x}_2|}\\
+    &J = \frac{1}{2}\int \mathrm{d}^3\mathbf{x}_1\mathrm{d}^3\mathbf{x}_2 \phi^*_a(\mathbf{x}_1) \phi^*_b(\mathbf{x}_1) \phi_b(\mathbf{x}_2) \phi_a(\mathbf{x}_2) \frac{e^2}{|\mathbf{x}_1-\mathbf{x}_2|}
+\end{align}
+\par
+其中$a,b$代表相邻元胞。忽略零点能，考虑横向磁场对原子波函数产生的畸变作用，可以得到各向异性的Heinsenberg模型：
+\begin{equation}
+    \hat{H}=-J_x\sum_{\langle ij \rangle_x}\hat{S}_i \cdot \hat{S}_j-J_y\sum_{\langle ij \rangle_y}\hat{S}_i \cdot \hat{S}_j - g\mu_BB\sum_{i}\hat{S}_i^x
+\end{equation}
+\par
+显然基态时电子自旋方向均$x$轴。使用Holstein-Primakoff变换，并注意对电子有$S=1$：
+\begin{align}
+    &\hat{S}_i^x=S - \hat{a}^\dagger_i\hat{a}_i\\
+    &\hat{S}^+_i=\sqrt{2S}\hat{a}_i,&\hat{S}^-_i=\sqrt{2S}\hat{a}^\dagger_i
+\end{align}
+\par
+并进行傅里叶变换，舍去零点能得到：
+\begin{equation}
+    E(k_x,k_y)=J_x(1-\cos(k_xa))+J_y(1-\cos(k_ya))+g\mu_BB
+\end{equation}
+\end{document}

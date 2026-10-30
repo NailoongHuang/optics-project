@@ -1,0 +1,2576 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自旋激发的传播 | 中期报告图像与模拟</title><style>
+    :root{--ink:#203648;--muted:#526476;--accent:#246b9a;--line:#dbe3e8;--bg:#f4f7f9}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font:16px/1.75 'Microsoft YaHei',system-ui,sans-serif}
+    a{color:#17628c;text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #c07722;outline-offset:3px}
+    header{padding:52px max(5vw,24px) 36px;background:#fff;border-bottom:1px solid var(--line)}.eyebrow{letter-spacing:.1em;color:#326e72;font-size:13px}
+    h1{font-size:clamp(30px,3.6vw,48px);line-height:1.3;margin:12px 0 18px;font-weight:750}h2{font-size:25px;margin:42px 0 18px}h3{font-size:20px;line-height:1.55;margin:8px 0 16px}
+    .intro{max-width:920px;color:var(--muted)}.count{display:flex;gap:32px;margin:24px 0}.count strong{font-size:30px;display:block;color:var(--ink)}
+    .links{display:flex;gap:12px;flex-wrap:wrap}.links a{border:1px solid var(--line);padding:8px 16px;border-radius:7px;text-decoration:none;background:#fff}
+    main{max-width:1500px;margin:auto;padding:10px 4vw 70px}.note{padding:18px 24px;border-left:4px solid #388a78;background:white;margin:28px 0;color:var(--muted)}
+    .equation{font-family:'Cambria Math','Times New Roman',serif;font-size:21px;color:var(--ink);overflow-x:auto;padding:10px 0}
+    .toolbar{position:sticky;top:0;z-index:5;background:#f4f7f9f5;border-bottom:1px solid var(--line);padding:13px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .toolbar button{border:1px solid #b7c8d2;border-radius:20px;padding:7px 16px;background:white;color:var(--ink);font:inherit;cursor:pointer}.toolbar button.active{background:#203648;color:white;border-color:#203648}
+    input{font:inherit;border:1px solid #b7c8d2;border-radius:7px;padding:7px 12px;max-width:100%;margin-left:auto}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;overflow:hidden}
+    .card-head{display:flex;justify-content:space-between;font-size:12px;gap:10px}.id{font-family:ui-monospace,monospace;color:#536776;overflow-wrap:anywhere}.tag{border-radius:3px;padding:1px 8px;background:#eaf3f1;white-space:nowrap}
+    .figure{display:block;width:100%;border:1px solid #e4e9ec;background:white;padding:0;cursor:zoom-in;border-radius:5px;overflow:hidden}.figure img{display:block;width:100%;height:auto}
+    .caption{font-size:15px;line-height:1.9}.downloads{font-size:14px;margin-bottom:10px}details{font-size:13px;color:var(--muted)}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f7f9;padding:12px;border-radius:5px}
+    .anim-placeholder{height:235px;display:grid;place-content:center;color:var(--muted);background:linear-gradient(135deg,#eff5f8,#f5f8f5)}.anim-placeholder span{font-size:42px;text-align:center;color:var(--accent)}
+    dialog{width:min(1400px,96vw);max-height:95vh;border:0;border-radius:10px;padding:18px;background:white}dialog::backdrop{background:#10202ed9}dialog header{padding:0 0 12px;display:flex;justify-content:space-between;gap:20px}dialog img{display:block;max-width:100%;max-height:78vh;margin:auto;object-fit:contain}dialog button{font:inherit;border:1px solid #b7c8d2;background:white;border-radius:5px;padding:5px 14px;cursor:pointer}
+    dialog button{white-space:nowrap;flex-shrink:0}[hidden]{display:none!important}.empty{padding:40px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;color:var(--muted);font-size:14px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.toolbar{position:static}input{margin-left:0;width:100%}.card{padding:16px}.count{gap:20px}h2{font-size:22px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+    </style></head><body><header><div class="eyebrow">中期报告 · 物理图像与原理</div><h1>自旋激发怎样传播？</h1>
+    <p class="intro">从交换耦合与单磁子色散出发，依次观察局域翻转、Gaussian 波包、群速度与展宽。每张图回答一个具体问题；参数、可复现数据和数值核验一并保留。图中展示的是模型计算。</p>
+    <div class="count"><div><strong>39</strong>张独立静态图</div><div><strong>8</strong>段传播动画</div><div><strong>3</strong>条讲述主线</div></div>
+    <div class="links"><a href="midterm-figure-atlas.pdf">完整图册 PDF</a><a href="README.md">阅读与复现说明</a><a href="THEORY.md">物理原理与公式</a><a href="checks_independent.json">独立数值核验</a><a href="REVIEW.md">独立科学审查</a></div></header>
+    <main><div class="note"><strong>统一约定</strong><div class="equation">ε / J<sub>x</sub> = 1 − cos q<sub>x</sub> + η(1 − cos q<sub>y</sub>)</div>
+    q = ka，τ = J<sub>x</sub>t / ℏ，η = J<sub>y</sub> / J<sub>x</sub>。位置以晶格常数 a 为单位。所有传播态满足 ΣP = 1，P = |ψ|² 表示翻转概率；σ 是初始概率的均方根宽度。</div>
+    <p><strong>建议讲述：</strong>先用 A 组建立模型和色散图像，再用 B 组解释局域激发如何展开，最后用 C 组解释载波、群速度与展宽。标记“延伸”的图可用于结尾展望。动画点击后播放，最后一帧停留后循环重播。</p>
+    <nav class="toolbar" aria-label="图组筛选"><button class="active" data-filter="all">全部</button><button data-filter="a-dispersion">色散</button><button data-filter="b-local-flip">单点传播</button><button data-filter="c-gaussian">波包</button><button data-filter="动画">动画</button><button data-filter="延伸">延伸</button><input id="search" type="search" placeholder="搜索图名或物理概念" aria-label="搜索图名或物理概念"></nav>
+    <section class="group" id="a-dispersion"><h2>A · 模型、色散与群速度</h2><div class="grid"><article class="card" data-group="a-dispersion" data-kind="基础" id="a01-lattice">
+      <div class="card-head"><span class="id">a01-lattice</span><span class="tag">基础</span></div>
+      <h3>交换晶格与单翻转基底</h3>
+      <button class="figure" data-url="a-dispersion/a01-lattice.png" data-title="交换晶格与单翻转基底" aria-label="放大查看：交换晶格与单翻转基底"><img src="a-dispersion/a01-lattice.png" loading="lazy" alt="交换晶格与单翻转基底"></button>
+      <p class="caption">25个格点的局部示意中，蓝色实线是横向交换键，橙色虚线是纵向交换键。背景自旋沿+x极化，中心沿-x的箭头代表单翻转基底|0,0&gt;；时间演化后态为这些基底的量子叠加，P_mn=|c_mn|²是测得翻转位于该点的概率。图中箭头示意量子化轴上的取向，不把固定单磁子态的系数解释为经典横向磁矩。eta描述空间方向的交换各向异性。</p>
+      <div class="downloads"><a href="a-dispersion/a01-lattice.png" download>PNG</a> · <a href="a-dispersion/a01-lattice.svg" download>SVG</a> · <a href="a-dispersion/a01-lattice.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;display_lattice&quot;: [
+    5,
+    5
+  ],
+  &quot;schematic&quot;: true
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a02-isotropic-surface">
+      <div class="card-head"><span class="id">a02-isotropic-surface</span><span class="tag">基础</span></div>
+      <h3>各向同性交换的色散曲面</h3>
+      <button class="figure" data-url="a-dispersion/a02-isotropic-surface.png" data-title="各向同性交换的色散曲面" aria-label="放大查看：各向同性交换的色散曲面"><img src="a-dispersion/a02-isotropic-surface.png" loading="lazy" alt="各向同性交换的色散曲面"></button>
+      <p class="caption">在第一布里渊区内绘出eta=1的精确余弦色散。原点能量为零，最大能量为2(1+eta)=4。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta&lt;1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。</p>
+      <div class="downloads"><a href="a-dispersion/a02-isotropic-surface.png" download>PNG</a> · <a href="a-dispersion/a02-isotropic-surface.svg" download>SVG</a> · <a href="a-dispersion/a02-isotropic-surface.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_value&quot;: 1.0,
+  &quot;mesh&quot;: 81,
+  &quot;color_limits&quot;: [
+    0,
+    4
+  ]
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a03-anisotropic-surface">
+      <div class="card-head"><span class="id">a03-anisotropic-surface</span><span class="tag">基础</span></div>
+      <h3>各向异性交换改变曲面起伏</h3>
+      <button class="figure" data-url="a-dispersion/a03-anisotropic-surface.png" data-title="各向异性交换改变曲面起伏" aria-label="放大查看：各向异性交换改变曲面起伏"><img src="a-dispersion/a03-anisotropic-surface.png" loading="lazy" alt="各向异性交换改变曲面起伏"></button>
+      <p class="caption">在第一布里渊区内绘出eta=0.35的精确余弦色散。原点能量为零，最大能量为2(1+eta)=2.7。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta&lt;1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。</p>
+      <div class="downloads"><a href="a-dispersion/a03-anisotropic-surface.png" download>PNG</a> · <a href="a-dispersion/a03-anisotropic-surface.svg" download>SVG</a> · <a href="a-dispersion/a03-anisotropic-surface.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_value&quot;: 0.35,
+  &quot;mesh&quot;: 81,
+  &quot;color_limits&quot;: [
+    0,
+    4
+  ]
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a04-axial-cuts">
+      <div class="card-head"><span class="id">a04-axial-cuts</span><span class="tag">基础</span></div>
+      <h3>方向色散截面</h3>
+      <button class="figure" data-url="a-dispersion/a04-axial-cuts.png" data-title="方向色散截面" aria-label="放大查看：方向色散截面"><img src="a-dispersion/a04-axial-cuts.png" loading="lazy" alt="方向色散截面"></button>
+      <p class="caption">左图eta=1时沿x和y的截面完全重合（虚线覆盖实线），右图eta=0.35时y方向带宽降为0.7，而x方向带宽仍为2。每条曲线都固定另一分量为零，不能把两条轴向截面当成一般斜向传播的完整色散。</p>
+      <div class="downloads"><a href="a-dispersion/a04-axial-cuts.png" download>PNG</a> · <a href="a-dispersion/a04-axial-cuts.svg" download>SVG</a> · <a href="a-dispersion/a04-axial-cuts.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_values&quot;: [
+    1,
+    0.35
+  ],
+  &quot;sample_points&quot;: 1001
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a05-equal-frequency">
+      <div class="card-head"><span class="id">a05-equal-frequency</span><span class="tag">基础</span></div>
+      <h3>等频曲线</h3>
+      <button class="figure" data-url="a-dispersion/a05-equal-frequency.png" data-title="等频曲线" aria-label="放大查看：等频曲线"><img src="a-dispersion/a05-equal-frequency.png" loading="lazy" alt="等频曲线"></button>
+      <p class="caption">曲线数字是e=epsilon/Jx，依次为0.2、0.6、1.2、2、2.5。小波矢附近，eta=1的等频线近圆，eta=0.35时沿qy方向拉长；高波矢处方格晶格的结构清楚可见。等频线仅约束频率，群速度还取决于曲面的梯度，不能据此宣称局域波包保形。</p>
+      <div class="downloads"><a href="a-dispersion/a05-equal-frequency.png" download>PNG</a> · <a href="a-dispersion/a05-equal-frequency.svg" download>SVG</a> · <a href="a-dispersion/a05-equal-frequency.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_values&quot;: [
+    1,
+    0.35
+  ],
+  &quot;levels&quot;: [
+    0.2,
+    0.6,
+    1.2,
+    2.0,
+    2.5
+  ],
+  &quot;mesh&quot;: 501
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a06-group-velocity-field">
+      <div class="card-head"><span class="id">a06-group-velocity-field</span><span class="tag">基础</span></div>
+      <h3>群速度场与等频线法向</h3>
+      <button class="figure" data-url="a-dispersion/a06-group-velocity-field.png" data-title="群速度场与等频线法向" aria-label="放大查看：群速度场与等频线法向"><img src="a-dispersion/a06-group-velocity-field.png" loading="lazy" alt="群速度场与等频线法向"></button>
+      <p class="caption">灰线为等能曲线，蓝箭头为u=(sin qx,eta sin qy)，长度按统一比例绘制而未逐点归一化。梯度垂直于等能曲线，并指向能量上升方向。eta=0.35时箭头的y分量减小。该群速度描述窄频谱波包的主导运动；局域翻转包含整个能带，不能用单一箭头概括。</p>
+      <div class="downloads"><a href="a-dispersion/a06-group-velocity-field.png" download>PNG</a> · <a href="a-dispersion/a06-group-velocity-field.svg" download>SVG</a> · <a href="a-dispersion/a06-group-velocity-field.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_values&quot;: [
+    1,
+    0.35
+  ],
+  &quot;vector_mesh&quot;: 17,
+  &quot;arrow_scale&quot;: 3.7
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a07-slope-and-speed">
+      <div class="card-head"><span class="id">a07-slope-and-speed</span><span class="tag">基础</span></div>
+      <h3>色散斜率与群速度</h3>
+      <button class="figure" data-url="a-dispersion/a07-slope-and-speed.png" data-title="色散斜率与群速度" aria-label="放大查看：色散斜率与群速度"><img src="a-dispersion/a07-slope-and-speed.png" loading="lazy" alt="色散斜率与群速度"></button>
+      <p class="caption">左侧三个彩色点及切线位于qx=-pi/2、0、pi/2；右侧对应点分别给出ux=-1、0、1。原点和布里渊区边界处斜率为零，能量最高并不意味着群速度最大。波包具有有限频谱宽度时，质心速度是其频谱加权平均，中心波矢处的速度是窄带近似。</p>
+      <div class="downloads"><a href="a-dispersion/a07-slope-and-speed.png" download>PNG</a> · <a href="a-dispersion/a07-slope-and-speed.svg" download>SVG</a> · <a href="a-dispersion/a07-slope-and-speed.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;qy&quot;: 0,
+  &quot;marked_qx&quot;: [
+    -1.5707963267948966,
+    0,
+    1.5707963267948966
+  ]
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a08-long-wave-approximation">
+      <div class="card-head"><span class="id">a08-long-wave-approximation</span><span class="tag">基础</span></div>
+      <h3>长波二次近似</h3>
+      <button class="figure" data-url="a-dispersion/a08-long-wave-approximation.png" data-title="长波二次近似" aria-label="放大查看：长波二次近似"><img src="a-dispersion/a08-long-wave-approximation.png" loading="lazy" alt="长波二次近似"></button>
+      <p class="caption">两图绘出同一函数的不同范围；左图q&lt;=0.7，右图覆盖0至pi。由cos q=1-q²/2+O(q⁴)得到二次色散。近似只适合小波矢，不能把其无界抛物线及线性增长的群速度延伸到整个晶格能带。</p>
+      <div class="downloads"><a href="a-dispersion/a08-long-wave-approximation.png" download>PNG</a> · <a href="a-dispersion/a08-long-wave-approximation.svg" download>SVG</a> · <a href="a-dispersion/a08-long-wave-approximation.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;path&quot;: &quot;qy=0&quot;,
+  &quot;zoom_qmax&quot;: 0.7,
+  &quot;exact_range&quot;: [
+    0,
+    3.141592653589793
+  ]
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a09-long-wave-error">
+      <div class="card-head"><span class="id">a09-long-wave-error</span><span class="tag">基础</span></div>
+      <h3>长波近似的定量误差</h3>
+      <button class="figure" data-url="a-dispersion/a09-long-wave-error.png" data-title="长波近似的定量误差" aria-label="放大查看：长波近似的定量误差"><img src="a-dispersion/a09-long-wave-error.png" loading="lazy" alt="长波近似的定量误差"></button>
+      <p class="caption">纵轴是轴向能量的相对高估量；曲线在q=0取连续极限0，插图放大小误差区。1%与5%的示例门槛分别对应q约0.345和0.763。门槛仅刻画该轴向能量近似，不等同于波包传播保真度；相位误差还会随时间累积。</p>
+      <div class="downloads"><a href="a-dispersion/a09-long-wave-error.png" download>PNG</a> · <a href="a-dispersion/a09-long-wave-error.svg" download>SVG</a> · <a href="a-dispersion/a09-long-wave-error.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;tolerance_q&quot;: {
+    &quot;1&quot;: 0.34537557866113044,
+    &quot;5&quot;: 0.7632996084439329
+  },
+  &quot;sample_points&quot;: 1600
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a10-wavevector-velocity-direction">
+      <div class="card-head"><span class="id">a10-wavevector-velocity-direction</span><span class="tag">基础</span></div>
+      <h3>波矢与群速度的方向差</h3>
+      <button class="figure" data-url="a-dispersion/a10-wavevector-velocity-direction.png" data-title="波矢与群速度的方向差" aria-label="放大查看：波矢与群速度的方向差"><img src="a-dispersion/a10-wavevector-velocity-direction.png" loading="lazy" alt="波矢与群速度的方向差"></button>
+      <p class="caption">橙色虚线箭头指波矢方向，蓝色实线箭头指群速度方向；两者都单位化，箭长不表示速度大小。选择q0=(0.35pi,0.15pi)，eta=1时仍有有限角差，反映方格晶格而非连续各向同性介质的色散；eta=0.35时y向速度降低，传播更偏向x。eta=1的长波极限下二者趋于平行；eta不等于1时，即使长波区u约为(qx,eta*qy)，一般仍不平行。坐标轴等特殊方向需单独判断。</p>
+      <div class="downloads"><a href="a-dispersion/a10-wavevector-velocity-direction.png" download>PNG</a> · <a href="a-dispersion/a10-wavevector-velocity-direction.svg" download>SVG</a> · <a href="a-dispersion/a10-wavevector-velocity-direction.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;q0&quot;: [
+    1.0995574287564276,
+    0.47123889803846897
+  ],
+  &quot;eta_values&quot;: [
+    1,
+    0.35
+  ],
+  &quot;normalized_arrows&quot;: true
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a11-curvature-and-cubic">
+      <div class="card-head"><span class="id">a11-curvature-and-cubic</span><span class="tag">基础</span></div>
+      <h3>色散曲率与三阶残差</h3>
+      <button class="figure" data-url="a-dispersion/a11-curvature-and-cubic.png" data-title="色散曲率与三阶残差" aria-label="放大查看：色散曲率与三阶残差"><img src="a-dispersion/a11-curvature-and-cubic.png" loading="lazy" alt="色散曲率与三阶残差"></button>
+      <p class="caption">左图分别画cos q与0.35 cos q，标出q=±pi/2处零曲率。右图在qx=pi/2、qy=0附近减去一阶切线，所得残差接近-delta qx³/6。二维点(pi/2,pi/2)的两个二阶系数都为零，但三阶仍在；本图只建立机制线索，不证明有限宽度波包严格无色散。</p>
+      <div class="downloads"><a href="a-dispersion/a11-curvature-and-cubic.png" download>PNG</a> · <a href="a-dispersion/a11-curvature-and-cubic.svg" download>SVG</a> · <a href="a-dispersion/a11-curvature-and-cubic.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_values&quot;: [
+    1,
+    0.35
+  ],
+  &quot;residual_q0&quot;: [
+    1.5707963267948966,
+    0
+  ],
+  &quot;residual_range&quot;: [
+    -0.65,
+    0.65
+  ]
+}</pre></details>
+    </article><article class="card" data-group="a-dispersion" data-kind="基础" id="a12-exchange-and-scales">
+      <div class="card-head"><span class="id">a12-exchange-and-scales</span><span class="tag">基础</span></div>
+      <h3>交换比与能量和速度尺度</h3>
+      <button class="figure" data-url="a-dispersion/a12-exchange-and-scales.png" data-title="交换比与能量和速度尺度" aria-label="放大查看：交换比与能量和速度尺度"><img src="a-dispersion/a12-exchange-and-scales.png" loading="lazy" alt="交换比与能量和速度尺度"></button>
+      <p class="caption">左图的带宽为2(1+eta)，右图分别是x、y分量和速度模的全布里渊区最大值。eta=1是空间交换各向同性，eta=0对应互不耦合的x向链并带来qy简并。所有上限是精确群速度界，不把它们误读为概率分布的严格有限支撑边界。</p>
+      <div class="downloads"><a href="a-dispersion/a12-exchange-and-scales.png" download>PNG</a> · <a href="a-dispersion/a12-exchange-and-scales.svg" download>SVG</a> · <a href="a-dispersion/a12-exchange-and-scales.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;q&quot;: &quot;k*a&quot;,
+  &quot;energy&quot;: &quot;epsilon/Jx&quot;,
+  &quot;eta&quot;: &quot;Jy/Jx&quot;,
+  &quot;velocity&quot;: &quot;hbar*v/(Jx*a)&quot;,
+  &quot;boundary&quot;: &quot;first Brillouin zone&quot;,
+  &quot;eta_range&quot;: [
+    0,
+    1.5
+  ],
+  &quot;sample_points&quot;: 301
+}</pre></details>
+    </article></div></section><section class="group" id="b-local-flip"><h2>B · 单格点翻转怎样传播</h2><div class="grid"><article class="card" data-group="b-local-flip" data-kind="基础" id="b01-initial-local-flip">
+      <div class="card-head"><span class="id">b01-initial-local-flip</span><span class="tag">基础</span></div>
+      <h3>局域单翻转初态</h3>
+      <button class="figure" data-url="b-local-flip/b01-initial-local-flip.png" data-title="局域单翻转初态" aria-label="放大查看：局域单翻转初态"><img src="b-local-flip/b01-initial-local-flip.png" loading="lazy" alt="局域单翻转初态"></button>
+      <p class="caption">左图颜色为原点单翻转的概率P，线性色标0至1。右图显示y=0行的纵向自旋期望，原点为-1/2，其余为+1/2。量子化轴为+x；S为无量纲自旋算符。该归一化态有一个确定磁子，不能解释成具有非零横向自旋均值的经典旋转箭头。</p>
+      <div class="downloads"><a href="b-local-flip/b01-initial-local-flip.png" download>PNG</a> · <a href="b-local-flip/b01-initial-local-flip.svg" download>SVG</a> · <a href="b-local-flip/b01-initial-local-flip.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;tau&quot;: 0,
+  &quot;eta&quot;: 1
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b02-flat-spectrum">
+      <div class="card-head"><span class="id">b02-flat-spectrum</span><span class="tag">基础</span></div>
+      <h3>局域初态的均匀波矢权重</h3>
+      <button class="figure" data-url="b-local-flip/b02-flat-spectrum.png" data-title="局域初态的均匀波矢权重" aria-label="放大查看：局域初态的均匀波矢权重"><img src="b-local-flip/b02-flat-spectrum.png" loading="lazy" alt="局域初态的均匀波矢权重"></button>
+      <p class="caption">对归一化单格点态作正交归一化二维离散Fourier变换。每个离散波矢的概率均为1/N²，图中绘制N²|A|²以提高可读性。左图为整个第一布里渊区，右图为qy=0截面。局域初态包含整个能带，不能用单个中心波矢及低阶Taylor展开描述其全部传播。</p>
+      <div class="downloads"><a href="b-local-flip/b02-flat-spectrum.png" download>PNG</a> · <a href="b-local-flip/b02-flat-spectrum.svg" download>SVG</a> · <a href="b-local-flip/b02-flat-spectrum.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b03-early-neighbor-spreading">
+      <div class="card-head"><span class="id">b03-early-neighbor-spreading</span><span class="tag">基础</span></div>
+      <h3>早期近邻传播</h3>
+      <button class="figure" data-url="b-local-flip/b03-early-neighbor-spreading.png" data-title="早期近邻传播" aria-label="放大查看：早期近邻传播"><img src="b-local-flip/b03-early-neighbor-spreading.png" loading="lazy" alt="早期近邻传播"></button>
+      <p class="caption">四幅图依次为τ=0.25、0.6、1.2、2，固定线性色标0至1，显示中心7×7格点。颜色直接表示单翻转概率，不能逐图归一化解释为同一峰高。哈密顿量的近邻耦合产生概率向外转移；图中为完整FFT计算的局部裁切。</p>
+      <div class="downloads"><a href="b-local-flip/b03-early-neighbor-spreading.png" download>PNG</a> · <a href="b-local-flip/b03-early-neighbor-spreading.svg" download>SVG</a> · <a href="b-local-flip/b03-early-neighbor-spreading.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;times&quot;: [
+    0.25,
+    0.6,
+    1.2,
+    2.0
+  ],
+  &quot;eta&quot;: 1,
+  &quot;display_crop&quot;: 3
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b04-isotropic-late-snapshots">
+      <div class="card-head"><span class="id">b04-isotropic-late-snapshots</span><span class="tag">基础</span></div>
+      <h3>等方晶格的后期传播</h3>
+      <button class="figure" data-url="b-local-flip/b04-isotropic-late-snapshots.png" data-title="等方晶格的后期传播" aria-label="放大查看：等方晶格的后期传播"><img src="b-local-flip/b04-isotropic-late-snapshots.png" loading="lazy" alt="等方晶格的后期传播"></button>
+      <p class="caption">τ=6、12、24、36的二维翻转概率采用相同空间范围及10^-7至0.1的对数色标。概率低于色标下限不可见，显示边缘不是严格截止。分布向外展开，同时保留相干干涉条纹和方格晶格的四重对称性；因此等方交换的点激发传播并不必然形成圆形波前。</p>
+      <div class="downloads"><a href="b-local-flip/b04-isotropic-late-snapshots.png" download>PNG</a> · <a href="b-local-flip/b04-isotropic-late-snapshots.svg" download>SVG</a> · <a href="b-local-flip/b04-isotropic-late-snapshots.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;times&quot;: [
+    6.0,
+    12.0,
+    24.0,
+    36.0
+  ],
+  &quot;eta&quot;: 1,
+  &quot;display_crop&quot;: 44,
+  &quot;color_limits&quot;: [
+    1e-07,
+    0.1
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b05-anisotropy-comparison">
+      <div class="card-head"><span class="id">b05-anisotropy-comparison</span><span class="tag">基础</span></div>
+      <h3>交换各向异性与一维极限</h3>
+      <button class="figure" data-url="b-local-flip/b05-anisotropy-comparison.png" data-title="交换各向异性与一维极限" aria-label="放大查看：交换各向异性与一维极限"><img src="b-local-flip/b05-anisotropy-comparison.png" loading="lazy" alt="交换各向异性与一维极限"></button>
+      <p class="caption">固定τ=24与Jx，比较η=0、0.3、1。所有图使用同一空间尺度及10^-7至0.1的对数色标。η=0时y方向无耦合，概率严格停留在y=0行；η=0.3时二维分布沿y较窄；η=1时两个方向对称。这里的各向异性是空间交换参数差异，并未引入自旋空间的易轴或易面项。</p>
+      <div class="downloads"><a href="b-local-flip/b05-anisotropy-comparison.png" download>PNG</a> · <a href="b-local-flip/b05-anisotropy-comparison.svg" download>SVG</a> · <a href="b-local-flip/b05-anisotropy-comparison.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;tau&quot;: 24,
+  &quot;etas&quot;: [
+    0.0,
+    0.3,
+    1.0
+  ],
+  &quot;display_crop&quot;: 34
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b06-marginal-probabilities">
+      <div class="card-head"><span class="id">b06-marginal-probabilities</span><span class="tag">基础</span></div>
+      <h3>两个方向的边际概率</h3>
+      <button class="figure" data-url="b-local-flip/b06-marginal-probabilities.png" data-title="两个方向的边际概率" aria-label="放大查看：两个方向的边际概率"><img src="b-local-flip/b06-marginal-probabilities.png" loading="lazy" alt="两个方向的边际概率"></button>
+      <p class="caption">η=0.3时τ=4、12、24的边际概率：左图对y求和，右图对x求和。各曲线对全部格点求和均为1；固定相同横坐标范围和纵轴范围以比较扩展速度。边际概率P_x、P_y与中心截线P_{m,0}、P_{0,n}不同。</p>
+      <div class="downloads"><a href="b-local-flip/b06-marginal-probabilities.png" download>PNG</a> · <a href="b-local-flip/b06-marginal-probabilities.svg" download>SVG</a> · <a href="b-local-flip/b06-marginal-probabilities.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;eta&quot;: 0.3,
+  &quot;times&quot;: [
+    4.0,
+    12.0,
+    24.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b07-spacetime-isotropic">
+      <div class="card-head"><span class="id">b07-spacetime-isotropic</span><span class="tag">基础</span></div>
+      <h3>时空传播与最大群速度</h3>
+      <button class="figure" data-url="b-local-flip/b07-spacetime-isotropic.png" data-title="时空传播与最大群速度" aria-label="放大查看：时空传播与最大群速度"><img src="b-local-flip/b07-spacetime-isotropic.png" loading="lazy" alt="时空传播与最大群速度"></button>
+      <p class="caption">对每个时间计算归一化二维态，再对y求和得到P_x。纵轴为τ，横轴为x/a；固定对数色标10^-7至1。青色虚线为x/a=±τ，对应|v_x|≤Jx a/ℏ，指出主要弹道前沿的位置。有限时间的晶格传播核在线外仍有小而非零的尾部，图示不是严格光锥。</p>
+      <div class="downloads"><a href="b-local-flip/b07-spacetime-isotropic.png" download>PNG</a> · <a href="b-local-flip/b07-spacetime-isotropic.svg" download>SVG</a> · <a href="b-local-flip/b07-spacetime-isotropic.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;eta&quot;: 1,
+  &quot;times&quot;: [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5,
+    3.75,
+    4.0,
+    4.25,
+    4.5,
+    4.75,
+    5.0,
+    5.25,
+    5.5,
+    5.75,
+    6.0,
+    6.25,
+    6.5,
+    6.75,
+    7.0,
+    7.25,
+    7.5,
+    7.75,
+    8.0,
+    8.25,
+    8.5,
+    8.75,
+    9.0,
+    9.25,
+    9.5,
+    9.75,
+    10.0,
+    10.25,
+    10.5,
+    10.75,
+    11.0,
+    11.25,
+    11.5,
+    11.75,
+    12.0,
+    12.25,
+    12.5,
+    12.75,
+    13.0,
+    13.25,
+    13.5,
+    13.75,
+    14.0,
+    14.25,
+    14.5,
+    14.75,
+    15.0,
+    15.25,
+    15.5,
+    15.75,
+    16.0,
+    16.25,
+    16.5,
+    16.75,
+    17.0,
+    17.25,
+    17.5,
+    17.75,
+    18.0,
+    18.25,
+    18.5,
+    18.75,
+    19.0,
+    19.25,
+    19.5,
+    19.75,
+    20.0,
+    20.25,
+    20.5,
+    20.75,
+    21.0,
+    21.25,
+    21.5,
+    21.75,
+    22.0,
+    22.25,
+    22.5,
+    22.75,
+    23.0,
+    23.25,
+    23.5,
+    23.75,
+    24.0,
+    24.25,
+    24.5,
+    24.75,
+    25.0,
+    25.25,
+    25.5,
+    25.75,
+    26.0,
+    26.25,
+    26.5,
+    26.75,
+    27.0,
+    27.25,
+    27.5,
+    27.75,
+    28.0,
+    28.25,
+    28.5,
+    28.75,
+    29.0,
+    29.25,
+    29.5,
+    29.75,
+    30.0,
+    30.25,
+    30.5,
+    30.75,
+    31.0,
+    31.25,
+    31.5,
+    31.75,
+    32.0,
+    32.25,
+    32.5,
+    32.75,
+    33.0,
+    33.25,
+    33.5,
+    33.75,
+    34.0,
+    34.25,
+    34.5,
+    34.75,
+    35.0,
+    35.25,
+    35.5,
+    35.75,
+    36.0,
+    36.25,
+    36.5,
+    36.75,
+    37.0,
+    37.25,
+    37.5,
+    37.75,
+    38.0,
+    38.25,
+    38.5,
+    38.75,
+    39.0,
+    39.25,
+    39.5,
+    39.75,
+    40.0
+  ],
+  &quot;color_limits&quot;: [
+    1e-07,
+    1
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b08-anisotropic-spacetime">
+      <div class="card-head"><span class="id">b08-anisotropic-spacetime</span><span class="tag">基础</span></div>
+      <h3>各向异性时空传播</h3>
+      <button class="figure" data-url="b-local-flip/b08-anisotropic-spacetime.png" data-title="各向异性时空传播" aria-label="放大查看：各向异性时空传播"><img src="b-local-flip/b08-anisotropic-spacetime.png" loading="lazy" alt="各向异性时空传播"></button>
+      <p class="caption">η=0.3的x、y边际概率时空图。由于初态和色散都可分离，P_x不依赖η；其数据与η=1完全相同。虚线分别为|x|/a=τ和|y|/a=0.3τ，颜色使用固定10^-7至1对数范围。线外仍存在非零尾部，最大群速度给出主要弹道前沿尺度。</p>
+      <div class="downloads"><a href="b-local-flip/b08-anisotropic-spacetime.png" download>PNG</a> · <a href="b-local-flip/b08-anisotropic-spacetime.svg" download>SVG</a> · <a href="b-local-flip/b08-anisotropic-spacetime.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;eta&quot;: 0.3,
+  &quot;times&quot;: [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0,
+    3.25,
+    3.5,
+    3.75,
+    4.0,
+    4.25,
+    4.5,
+    4.75,
+    5.0,
+    5.25,
+    5.5,
+    5.75,
+    6.0,
+    6.25,
+    6.5,
+    6.75,
+    7.0,
+    7.25,
+    7.5,
+    7.75,
+    8.0,
+    8.25,
+    8.5,
+    8.75,
+    9.0,
+    9.25,
+    9.5,
+    9.75,
+    10.0,
+    10.25,
+    10.5,
+    10.75,
+    11.0,
+    11.25,
+    11.5,
+    11.75,
+    12.0,
+    12.25,
+    12.5,
+    12.75,
+    13.0,
+    13.25,
+    13.5,
+    13.75,
+    14.0,
+    14.25,
+    14.5,
+    14.75,
+    15.0,
+    15.25,
+    15.5,
+    15.75,
+    16.0,
+    16.25,
+    16.5,
+    16.75,
+    17.0,
+    17.25,
+    17.5,
+    17.75,
+    18.0,
+    18.25,
+    18.5,
+    18.75,
+    19.0,
+    19.25,
+    19.5,
+    19.75,
+    20.0,
+    20.25,
+    20.5,
+    20.75,
+    21.0,
+    21.25,
+    21.5,
+    21.75,
+    22.0,
+    22.25,
+    22.5,
+    22.75,
+    23.0,
+    23.25,
+    23.5,
+    23.75,
+    24.0,
+    24.25,
+    24.5,
+    24.75,
+    25.0,
+    25.25,
+    25.5,
+    25.75,
+    26.0,
+    26.25,
+    26.5,
+    26.75,
+    27.0,
+    27.25,
+    27.5,
+    27.75,
+    28.0,
+    28.25,
+    28.5,
+    28.75,
+    29.0,
+    29.25,
+    29.5,
+    29.75,
+    30.0,
+    30.25,
+    30.5,
+    30.75,
+    31.0,
+    31.25,
+    31.5,
+    31.75,
+    32.0,
+    32.25,
+    32.5,
+    32.75,
+    33.0,
+    33.25,
+    33.5,
+    33.75,
+    34.0,
+    34.25,
+    34.5,
+    34.75,
+    35.0,
+    35.25,
+    35.5,
+    35.75,
+    36.0,
+    36.25,
+    36.5,
+    36.75,
+    37.0,
+    37.25,
+    37.5,
+    37.75,
+    38.0,
+    38.25,
+    38.5,
+    38.75,
+    39.0,
+    39.25,
+    39.5,
+    39.75,
+    40.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b09-ballistic-rms">
+      <div class="card-head"><span class="id">b09-ballistic-rms</span><span class="tag">基础</span></div>
+      <h3>均方根宽度的弹道增长</h3>
+      <button class="figure" data-url="b-local-flip/b09-ballistic-rms.png" data-title="均方根宽度的弹道增长" aria-label="放大查看：均方根宽度的弹道增长"><img src="b-local-flip/b09-ballistic-rms.png" loading="lazy" alt="均方根宽度的弹道增长"></button>
+      <p class="caption">从归一化FFT概率计算质心及标准差σ。无限晶格Bessel恒等式给出σx/a=τ/√2和σy/a=ητ/√2；实线为解析值，空心点为FFT矩。η=1、0.3、0的x曲线重合，y曲线随η变化。这里表征的是局域初态分布的展开，不是窄带Gaussian包络的二阶色散近似。</p>
+      <div class="downloads"><a href="b-local-flip/b09-ballistic-rms.png" download>PNG</a> · <a href="b-local-flip/b09-ballistic-rms.svg" download>SVG</a> · <a href="b-local-flip/b09-ballistic-rms.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;etas&quot;: [
+    1,
+    0.3,
+    0
+  ],
+  &quot;times&quot;: [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0,
+    11.5,
+    12.0,
+    12.5,
+    13.0,
+    13.5,
+    14.0,
+    14.5,
+    15.0,
+    15.5,
+    16.0,
+    16.5,
+    17.0,
+    17.5,
+    18.0,
+    18.5,
+    19.0,
+    19.5,
+    20.0,
+    20.5,
+    21.0,
+    21.5,
+    22.0,
+    22.5,
+    23.0,
+    23.5,
+    24.0,
+    24.5,
+    25.0,
+    25.5,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0,
+    36.5,
+    37.0,
+    37.5,
+    38.0,
+    38.5,
+    39.0,
+    39.5,
+    40.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b10-return-probability">
+      <div class="card-head"><span class="id">b10-return-probability</span><span class="tag">基础</span></div>
+      <h3>中心返回概率的相干振荡</h3>
+      <button class="figure" data-url="b-local-flip/b10-return-probability.png" data-title="中心返回概率的相干振荡" aria-label="放大查看：中心返回概率的相干振荡"><img src="b-local-flip/b10-return-probability.png" loading="lazy" alt="中心返回概率的相干振荡"></button>
+      <p class="caption">比较η=1和0.3的原点翻转概率，纵轴为对数。曲线为P00=J0(τ)^2 J0(ητ)^2，空心点为FFT直接读出的原点值。这里J0表示第一类Bessel函数，与交换常数Jx、Jy不同。原点概率的降低和再升高源于相干演化，不代表耗散或非线性相互作用。</p>
+      <div class="downloads"><a href="b-local-flip/b10-return-probability.png" download>PNG</a> · <a href="b-local-flip/b10-return-probability.svg" download>SVG</a> · <a href="b-local-flip/b10-return-probability.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;etas&quot;: [
+    1,
+    0.3
+  ],
+  &quot;times&quot;: [
+    0.0,
+    0.1,
+    0.2,
+    0.30000000000000004,
+    0.4,
+    0.5,
+    0.6000000000000001,
+    0.7000000000000001,
+    0.8,
+    0.9,
+    1.0,
+    1.1,
+    1.2000000000000002,
+    1.3,
+    1.4000000000000001,
+    1.5,
+    1.6,
+    1.7000000000000002,
+    1.8,
+    1.9000000000000001,
+    2.0,
+    2.1,
+    2.2,
+    2.3000000000000003,
+    2.4000000000000004,
+    2.5,
+    2.6,
+    2.7,
+    2.8000000000000003,
+    2.9000000000000004,
+    3.0,
+    3.1,
+    3.2,
+    3.3000000000000003,
+    3.4000000000000004,
+    3.5,
+    3.6,
+    3.7,
+    3.8000000000000003,
+    3.9000000000000004,
+    4.0,
+    4.1000000000000005,
+    4.2,
+    4.3,
+    4.4,
+    4.5,
+    4.6000000000000005,
+    4.7,
+    4.800000000000001,
+    4.9,
+    5.0,
+    5.1000000000000005,
+    5.2,
+    5.300000000000001,
+    5.4,
+    5.5,
+    5.6000000000000005,
+    5.7,
+    5.800000000000001,
+    5.9,
+    6.0,
+    6.1000000000000005,
+    6.2,
+    6.300000000000001,
+    6.4,
+    6.5,
+    6.6000000000000005,
+    6.7,
+    6.800000000000001,
+    6.9,
+    7.0,
+    7.1000000000000005,
+    7.2,
+    7.300000000000001,
+    7.4,
+    7.5,
+    7.6000000000000005,
+    7.7,
+    7.800000000000001,
+    7.9,
+    8.0,
+    8.1,
+    8.200000000000001,
+    8.3,
+    8.4,
+    8.5,
+    8.6,
+    8.700000000000001,
+    8.8,
+    8.9,
+    9.0,
+    9.1,
+    9.200000000000001,
+    9.3,
+    9.4,
+    9.5,
+    9.600000000000001,
+    9.700000000000001,
+    9.8,
+    9.9,
+    10.0,
+    10.100000000000001,
+    10.200000000000001,
+    10.3,
+    10.4,
+    10.5,
+    10.600000000000001,
+    10.700000000000001,
+    10.8,
+    10.9,
+    11.0,
+    11.100000000000001,
+    11.200000000000001,
+    11.3,
+    11.4,
+    11.5,
+    11.600000000000001,
+    11.700000000000001,
+    11.8,
+    11.9,
+    12.0,
+    12.100000000000001,
+    12.200000000000001,
+    12.3,
+    12.4,
+    12.5,
+    12.600000000000001,
+    12.700000000000001,
+    12.8,
+    12.9,
+    13.0,
+    13.100000000000001,
+    13.200000000000001,
+    13.3,
+    13.4,
+    13.5,
+    13.600000000000001,
+    13.700000000000001,
+    13.8,
+    13.9,
+    14.0,
+    14.100000000000001,
+    14.200000000000001,
+    14.3,
+    14.4,
+    14.5,
+    14.600000000000001,
+    14.700000000000001,
+    14.8,
+    14.9,
+    15.0,
+    15.100000000000001,
+    15.200000000000001,
+    15.3,
+    15.4,
+    15.5,
+    15.600000000000001,
+    15.700000000000001,
+    15.8,
+    15.9,
+    16.0,
+    16.1,
+    16.2,
+    16.3,
+    16.400000000000002,
+    16.5,
+    16.6,
+    16.7,
+    16.8,
+    16.900000000000002,
+    17.0,
+    17.1,
+    17.2,
+    17.3,
+    17.400000000000002,
+    17.5,
+    17.6,
+    17.7,
+    17.8,
+    17.900000000000002,
+    18.0,
+    18.1,
+    18.2,
+    18.3,
+    18.400000000000002,
+    18.5,
+    18.6,
+    18.7,
+    18.8,
+    18.900000000000002,
+    19.0,
+    19.1,
+    19.200000000000003,
+    19.3,
+    19.400000000000002,
+    19.5,
+    19.6,
+    19.700000000000003,
+    19.8,
+    19.900000000000002,
+    20.0,
+    20.1,
+    20.200000000000003,
+    20.3,
+    20.400000000000002,
+    20.5,
+    20.6,
+    20.700000000000003,
+    20.8,
+    20.900000000000002,
+    21.0,
+    21.1,
+    21.200000000000003,
+    21.3,
+    21.400000000000002,
+    21.5,
+    21.6,
+    21.700000000000003,
+    21.8,
+    21.900000000000002,
+    22.0,
+    22.1,
+    22.200000000000003,
+    22.3,
+    22.400000000000002,
+    22.5,
+    22.6,
+    22.700000000000003,
+    22.8,
+    22.900000000000002,
+    23.0,
+    23.1,
+    23.200000000000003,
+    23.3,
+    23.400000000000002,
+    23.5,
+    23.6,
+    23.700000000000003,
+    23.8,
+    23.900000000000002,
+    24.0,
+    24.1,
+    24.200000000000003,
+    24.3,
+    24.400000000000002,
+    24.5,
+    24.6,
+    24.700000000000003,
+    24.8,
+    24.900000000000002,
+    25.0,
+    25.1,
+    25.200000000000003,
+    25.3,
+    25.400000000000002,
+    25.5,
+    25.6,
+    25.700000000000003,
+    25.8,
+    25.900000000000002,
+    26.0,
+    26.1,
+    26.200000000000003,
+    26.3,
+    26.400000000000002,
+    26.5,
+    26.6,
+    26.700000000000003,
+    26.8,
+    26.900000000000002,
+    27.0,
+    27.1,
+    27.200000000000003,
+    27.3,
+    27.400000000000002,
+    27.5,
+    27.6,
+    27.700000000000003,
+    27.8,
+    27.900000000000002,
+    28.0,
+    28.1,
+    28.200000000000003,
+    28.3,
+    28.400000000000002,
+    28.5,
+    28.6,
+    28.700000000000003,
+    28.8,
+    28.900000000000002,
+    29.0,
+    29.1,
+    29.200000000000003,
+    29.3,
+    29.400000000000002,
+    29.5,
+    29.6,
+    29.700000000000003,
+    29.8,
+    29.900000000000002,
+    30.0,
+    30.1,
+    30.200000000000003,
+    30.3,
+    30.400000000000002,
+    30.5,
+    30.6,
+    30.700000000000003,
+    30.8,
+    30.900000000000002,
+    31.0,
+    31.1,
+    31.200000000000003,
+    31.3,
+    31.400000000000002,
+    31.5,
+    31.6,
+    31.700000000000003,
+    31.8,
+    31.900000000000002,
+    32.0,
+    32.1,
+    32.2,
+    32.300000000000004,
+    32.4,
+    32.5,
+    32.6,
+    32.7,
+    32.800000000000004,
+    32.9,
+    33.0,
+    33.1,
+    33.2,
+    33.300000000000004,
+    33.4,
+    33.5,
+    33.6,
+    33.7,
+    33.800000000000004,
+    33.9,
+    34.0,
+    34.1,
+    34.2,
+    34.300000000000004,
+    34.4,
+    34.5,
+    34.6,
+    34.7,
+    34.800000000000004,
+    34.9,
+    35.0,
+    35.1,
+    35.2,
+    35.300000000000004,
+    35.4,
+    35.5,
+    35.6,
+    35.7,
+    35.800000000000004,
+    35.9,
+    36.0,
+    36.1,
+    36.2,
+    36.300000000000004,
+    36.4,
+    36.5,
+    36.6,
+    36.7,
+    36.800000000000004,
+    36.9,
+    37.0,
+    37.1,
+    37.2,
+    37.300000000000004,
+    37.4,
+    37.5,
+    37.6,
+    37.7,
+    37.800000000000004,
+    37.9,
+    38.0,
+    38.1,
+    38.2,
+    38.300000000000004,
+    38.400000000000006,
+    38.5,
+    38.6,
+    38.7,
+    38.800000000000004,
+    38.900000000000006,
+    39.0,
+    39.1,
+    39.2,
+    39.300000000000004,
+    39.400000000000006,
+    39.5,
+    39.6,
+    39.7,
+    39.800000000000004,
+    39.900000000000006,
+    40.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b11-anisotropy-scan">
+      <div class="card-head"><span class="id">b11-anisotropy-scan</span><span class="tag">基础</span></div>
+      <h3>交换比与RMS长宽比</h3>
+      <button class="figure" data-url="b-local-flip/b11-anisotropy-scan.png" data-title="交换比与RMS长宽比" aria-label="放大查看：交换比与RMS长宽比"><img src="b-local-flip/b11-anisotropy-scan.png" loading="lazy" alt="交换比与RMS长宽比"></button>
+      <p class="caption">固定Jx、初态、格点数和τ=24，只扫描η。左图显示σx不变、σy随η线性增长；右图为σy/σx=η。解析线和FFT点对照。在η&gt;1时分布沿y比沿x宽；η=0退化为一维传播。该比较固定的是无量纲τ，即固定Jx条件下相同的物理时间。</p>
+      <div class="downloads"><a href="b-local-flip/b11-anisotropy-scan.png" download>PNG</a> · <a href="b-local-flip/b11-anisotropy-scan.svg" download>SVG</a> · <a href="b-local-flip/b11-anisotropy-scan.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;tau&quot;: 24,
+  &quot;etas&quot;: [
+    0.0,
+    0.05,
+    0.1,
+    0.15000000000000002,
+    0.2,
+    0.25,
+    0.30000000000000004,
+    0.35000000000000003,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6000000000000001,
+    0.65,
+    0.7000000000000001,
+    0.75,
+    0.8,
+    0.8500000000000001,
+    0.9,
+    0.9500000000000001,
+    1.0,
+    1.05,
+    1.1,
+    1.1500000000000001,
+    1.2000000000000002,
+    1.25,
+    1.3,
+    1.35,
+    1.4000000000000001,
+    1.4500000000000002,
+    1.5
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b12-probability-to-spin">
+      <div class="card-head"><span class="id">b12-probability-to-spin</span><span class="tag">基础</span></div>
+      <h3>翻转概率与纵向自旋观测量</h3>
+      <button class="figure" data-url="b-local-flip/b12-probability-to-spin.png" data-title="翻转概率与纵向自旋观测量" aria-label="放大查看：翻转概率与纵向自旋观测量"><img src="b-local-flip/b12-probability-to-spin.png" loading="lazy" alt="翻转概率与纵向自旋观测量"></button>
+      <p class="caption">η=1、τ=8时的y=0截线。左图为P_m0，右图逐格点应用&lt;Sx&gt;=1/2-P得到纵向自旋期望；虚线为背景1/2。两图纵轴不同，峰值概率对应自旋亏损。归一化单磁子态的总亏损为1，而&lt;Sy&gt;=&lt;Sz&gt;=0；概率波的复相位不能直接画成非零的局域横向平均自旋。</p>
+      <div class="downloads"><a href="b-local-flip/b12-probability-to-spin.png" download>PNG</a> · <a href="b-local-flip/b12-probability-to-spin.svg" download>SVG</a> · <a href="b-local-flip/b12-probability-to-spin.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;tau&quot;: 8.0,
+  &quot;eta&quot;: 1
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="基础" id="b13-independent-bessel-check">
+      <div class="card-head"><span class="id">b13-independent-bessel-check</span><span class="tag">基础</span></div>
+      <h3>Bessel解析核独立验证</h3>
+      <button class="figure" data-url="b-local-flip/b13-independent-bessel-check.png" data-title="Bessel解析核独立验证" aria-label="放大查看：Bessel解析核独立验证"><img src="b-local-flip/b13-independent-bessel-check.png" loading="lazy" alt="Bessel解析核独立验证"></button>
+      <p class="caption">去除基态整体相位exp[-i EF t/ℏ]后，无限晶格解析振幅为exp[-i(1+η)τ] i^(m+n) J_m(τ)J_n(ητ)，故概率为两个Bessel平方的乘积。左图比较x边际，右图为FFT概率与解析概率逐格点之差的绝对值乘以10^17，采用线性色标；色标1代表实际误差10^-17。有限周期晶格只有在边界回绕可忽略时才与无限晶格核一致；另有N=512和边界概率质量检查。</p>
+      <div class="downloads"><a href="b-local-flip/b13-independent-bessel-check.png" download>PNG</a> · <a href="b-local-flip/b13-independent-bessel-check.svg" download>SVG</a> · <a href="b-local-flip/b13-independent-bessel-check.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;tau&quot;: 36,
+  &quot;eta&quot;: 0.3
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="动画" id="b14-early-spreading">
+      <div class="card-head"><span class="id">b14-early-spreading</span><span class="tag">动画</span></div>
+      <h3>最初几步的单格点传播</h3>
+      <button class="figure" data-url="b-local-flip/b14-early-spreading.gif" data-title="最初几步的单格点传播" aria-label="放大查看：最初几步的单格点传播"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">从τ=0到4的实际FFT时间演化，η=[1.0]。所有帧采用相同空间窗以及1e-05至1的对数概率色标，无逐帧峰值归一化。坐标单位为a，时间单位为ℏ/Jx；截断显示的尾部不是严格零。</p>
+      <div class="downloads"><a href="b-local-flip/b14-early-spreading.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;etas&quot;: [
+    1.0
+  ],
+  &quot;times&quot;: [
+    0.0,
+    0.0625,
+    0.125,
+    0.1875,
+    0.25,
+    0.3125,
+    0.375,
+    0.4375,
+    0.5,
+    0.5625,
+    0.625,
+    0.6875,
+    0.75,
+    0.8125,
+    0.875,
+    0.9375,
+    1.0,
+    1.0625,
+    1.125,
+    1.1875,
+    1.25,
+    1.3125,
+    1.375,
+    1.4375,
+    1.5,
+    1.5625,
+    1.625,
+    1.6875,
+    1.75,
+    1.8125,
+    1.875,
+    1.9375,
+    2.0,
+    2.0625,
+    2.125,
+    2.1875,
+    2.25,
+    2.3125,
+    2.375,
+    2.4375,
+    2.5,
+    2.5625,
+    2.625,
+    2.6875,
+    2.75,
+    2.8125,
+    2.875,
+    2.9375,
+    3.0,
+    3.0625,
+    3.125,
+    3.1875,
+    3.25,
+    3.3125,
+    3.375,
+    3.4375,
+    3.5,
+    3.5625,
+    3.625,
+    3.6875,
+    3.75,
+    3.8125,
+    3.875,
+    3.9375,
+    4.0
+  ],
+  &quot;display_crop&quot;: 6,
+  &quot;color_limits&quot;: [
+    1e-05,
+    1.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="动画" id="b15-isotropic-propagation">
+      <div class="card-head"><span class="id">b15-isotropic-propagation</span><span class="tag">动画</span></div>
+      <h3>等方晶格中的局域传播</h3>
+      <button class="figure" data-url="b-local-flip/b15-isotropic-propagation.gif" data-title="等方晶格中的局域传播" aria-label="放大查看：等方晶格中的局域传播"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">从τ=0到36的实际FFT时间演化，η=[1.0]。所有帧采用相同空间窗以及1e-07至1的对数概率色标，无逐帧峰值归一化。坐标单位为a，时间单位为ℏ/Jx；截断显示的尾部不是严格零。</p>
+      <div class="downloads"><a href="b-local-flip/b15-isotropic-propagation.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;etas&quot;: [
+    1.0
+  ],
+  &quot;times&quot;: [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0,
+    11.5,
+    12.0,
+    12.5,
+    13.0,
+    13.5,
+    14.0,
+    14.5,
+    15.0,
+    15.5,
+    16.0,
+    16.5,
+    17.0,
+    17.5,
+    18.0,
+    18.5,
+    19.0,
+    19.5,
+    20.0,
+    20.5,
+    21.0,
+    21.5,
+    22.0,
+    22.5,
+    23.0,
+    23.5,
+    24.0,
+    24.5,
+    25.0,
+    25.5,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0
+  ],
+  &quot;display_crop&quot;: 45,
+  &quot;color_limits&quot;: [
+    1e-07,
+    1.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="动画" id="b16-anisotropic-propagation">
+      <div class="card-head"><span class="id">b16-anisotropic-propagation</span><span class="tag">动画</span></div>
+      <h3>等方与各向异性交换的传播对照</h3>
+      <button class="figure" data-url="b-local-flip/b16-anisotropic-propagation.gif" data-title="等方与各向异性交换的传播对照" aria-label="放大查看：等方与各向异性交换的传播对照"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">从τ=0到36的实际FFT时间演化，η=[1.0, 0.3]。所有帧采用相同空间窗以及1e-07至1的对数概率色标，无逐帧峰值归一化。坐标单位为a，时间单位为ℏ/Jx；截断显示的尾部不是严格零。</p>
+      <div class="downloads"><a href="b-local-flip/b16-anisotropic-propagation.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;etas&quot;: [
+    1.0,
+    0.3
+  ],
+  &quot;times&quot;: [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0,
+    11.5,
+    12.0,
+    12.5,
+    13.0,
+    13.5,
+    14.0,
+    14.5,
+    15.0,
+    15.5,
+    16.0,
+    16.5,
+    17.0,
+    17.5,
+    18.0,
+    18.5,
+    19.0,
+    19.5,
+    20.0,
+    20.5,
+    21.0,
+    21.5,
+    22.0,
+    22.5,
+    23.0,
+    23.5,
+    24.0,
+    24.5,
+    25.0,
+    25.5,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0
+  ],
+  &quot;display_crop&quot;: 45,
+  &quot;color_limits&quot;: [
+    1e-07,
+    1.0
+  ]
+}</pre></details>
+    </article><article class="card" data-group="b-local-flip" data-kind="动画" id="b17-marginal-animation">
+      <div class="card-head"><span class="id">b17-marginal-animation</span><span class="tag">动画</span></div>
+      <h3>各向异性边际概率演化</h3>
+      <button class="figure" data-url="b-local-flip/b17-marginal-animation.gif" data-title="各向异性边际概率演化" aria-label="放大查看：各向异性边际概率演化"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">η=0.3时的x、y边际概率动画。对另一空间方向求和，分别得到归一化分布Px和Py；两个面板全程使用相同的空间窗[-45a,45a]及对数纵轴[10^-7,1.2]。数值零仅在绘图时下限替代为10^-15，处于显示范围以外。</p>
+      <div class="downloads"><a href="b-local-flip/b17-marginal-animation.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0,
+  &quot;a&quot;: 1,
+  &quot;Jx&quot;: 1,
+  &quot;hbar&quot;: 1,
+  &quot;time_definition&quot;: &quot;tau=Jx*t/hbar&quot;,
+  &quot;eta_definition&quot;: &quot;eta=Jy/Jx&quot;,
+  &quot;initial_state&quot;: &quot;one normalized spin flip at (0,0)&quot;,
+  &quot;boundary&quot;: &quot;periodic; edge mass and N=512 comparison checked&quot;,
+  &quot;method&quot;: &quot;FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]&quot;,
+  &quot;eta&quot;: 0.3,
+  &quot;times&quot;: [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    5.5,
+    6.0,
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0,
+    11.5,
+    12.0,
+    12.5,
+    13.0,
+    13.5,
+    14.0,
+    14.5,
+    15.0,
+    15.5,
+    16.0,
+    16.5,
+    17.0,
+    17.5,
+    18.0,
+    18.5,
+    19.0,
+    19.5,
+    20.0,
+    20.5,
+    21.0,
+    21.5,
+    22.0,
+    22.5,
+    23.0,
+    23.5,
+    24.0,
+    24.5,
+    25.0,
+    25.5,
+    26.0,
+    26.5,
+    27.0,
+    27.5,
+    28.0,
+    28.5,
+    29.0,
+    29.5,
+    30.0,
+    30.5,
+    31.0,
+    31.5,
+    32.0,
+    32.5,
+    33.0,
+    33.5,
+    34.0,
+    34.5,
+    35.0,
+    35.5,
+    36.0
+  ],
+  &quot;axis_limits&quot;: [
+    1e-07,
+    1.2
+  ]
+}</pre></details>
+    </article></div></section><section class="group" id="c-gaussian"><h2>C · Gaussian 波包怎样移动和展宽</h2><div class="grid"><article class="card" data-group="c-gaussian" data-kind="基础" id="c01-carrier-envelope-spectrum">
+      <div class="card-head"><span class="id">c01-carrier-envelope-spectrum</span><span class="tag">基础</span></div>
+      <h3>载波、包络与频谱</h3>
+      <button class="figure" data-url="c-gaussian/c01-carrier-envelope-spectrum.png" data-title="载波、包络与频谱" aria-label="放大查看：载波、包络与频谱"><img src="c-gaussian/c01-carrier-envelope-spectrum.png" loading="lazy" alt="载波、包络与频谱"></button>
+      <p class="caption">两种归一化Gaussian初态只有载波不同：q0=(0,0)和(0.7,0)，sigma=4。左图的x边际概率严格相同；中图画中心区域连续展开的载波相位q0x*x，省略低振幅尾部；右图为单位正交FFT所得离散频谱的x边际概率，所有波矢的总概率为1。载波改变频谱中心及后续传播，但不改变初始概率包络。</p>
+      <div class="downloads"><a href="c-gaussian/c01-carrier-envelope-spectrum.png" download>PNG</a> · <a href="c-gaussian/c01-carrier-envelope-spectrum.svg" download>SVG</a> · <a href="c-gaussian/c01-carrier-envelope-spectrum.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qzero&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.0,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c02-space-bandwidth">
+      <div class="card-head"><span class="id">c02-space-bandwidth</span><span class="tag">基础</span></div>
+      <h3>空间宽度与频谱宽度</h3>
+      <button class="figure" data-url="c-gaussian/c02-space-bandwidth.png" data-title="空间宽度与频谱宽度" aria-label="放大查看：空间宽度与频谱宽度"><img src="c-gaussian/c02-space-bandwidth.png" loading="lazy" alt="空间宽度与频谱宽度"></button>
+      <p class="caption">比较sigma=3、6、10的无啁啾Gaussian初态，q0=(0.7,0)。sigma是概率分布的RMS宽度；不是振幅指数中再平方后的宽度。所有初态总概率为1，所以窄初态的空间峰值更高，而宽初态的频谱更窄。本图横轴和纵轴在各参数曲线之间统一。Delta q=1/(2 sigma)是宽包络、频谱远离Brillouin区接缝时的连续Gaussian表达式。</p>
+      <div class="downloads"><a href="c-gaussian/c02-space-bandwidth.png" download>PNG</a> · <a href="c-gaussian/c02-space-bandwidth.svg" download>SVG</a> · <a href="c-gaussian/c02-space-bandwidth.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;sigma3&quot;,
+      &quot;sigma&quot;: 3.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma6&quot;,
+      &quot;sigma&quot;: 6.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma10&quot;,
+      &quot;sigma&quot;: 10.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c03-zero-carrier-spreading">
+      <div class="card-head"><span class="id">c03-zero-carrier-spreading</span><span class="tag">基础</span></div>
+      <h3>零中心波矢：质心停留，概率向外展开</h3>
+      <button class="figure" data-url="c-gaussian/c03-zero-carrier-spreading.png" data-title="零中心波矢：质心停留，概率向外展开" aria-label="放大查看：零中心波矢：质心停留，概率向外展开"><img src="c-gaussian/c03-zero-carrier-spreading.png" loading="lazy" alt="零中心波矢：质心停留，概率向外展开"></button>
+      <p class="caption">精确余弦色散下，sigma=4、q0=(0.0, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。谱分布关于零波矢对称，因此两个方向的平均群速度都为0，质心停留在原点；不同非零波矢成分仍会向外传播并引起展宽。</p>
+      <div class="downloads"><a href="c-gaussian/c03-zero-carrier-spreading.png" download>PNG</a> · <a href="c-gaussian/c03-zero-carrier-spreading.svg" download>SVG</a> · <a href="c-gaussian/c03-zero-carrier-spreading.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qzero&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.0,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c04-moving-gaussian">
+      <div class="card-head"><span class="id">c04-moving-gaussian</span><span class="tag">基础</span></div>
+      <h3>非零中心波矢：向右移动，同时逐渐展宽</h3>
+      <button class="figure" data-url="c-gaussian/c04-moving-gaussian.png" data-title="非零中心波矢：向右移动，同时逐渐展宽" aria-label="放大查看：非零中心波矢：向右移动，同时逐渐展宽"><img src="c-gaussian/c04-moving-gaussian.png" loading="lazy" alt="非零中心波矢：向右移动，同时逐渐展宽"></button>
+      <p class="caption">精确余弦色散下，sigma=4、q0=(0.7, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。频谱中心向正qx偏移，带来正x方向平均群速度；有限频宽仍使各成分群速度不同，所以包络一边移动一边展宽。y方向中心波矢为0，平均位移为0，但仍会展宽。</p>
+      <div class="downloads"><a href="c-gaussian/c04-moving-gaussian.png" download>PNG</a> · <a href="c-gaussian/c04-moving-gaussian.svg" download>SVG</a> · <a href="c-gaussian/c04-moving-gaussian.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c05-carrier-directions">
+      <div class="card-head"><span class="id">c05-carrier-directions</span><span class="tag">基础</span></div>
+      <h3>由载波控制传播方向</h3>
+      <button class="figure" data-url="c-gaussian/c05-carrier-directions.png" data-title="由载波控制传播方向" aria-label="放大查看：由载波控制传播方向"><img src="c-gaussian/c05-carrier-directions.png" loading="lazy" alt="由载波控制传播方向"></button>
+      <p class="caption">保持sigma=4和初始概率包络相同，只将载波改成(-0.7,0)、(0.7,0)、(0.7,0.7)。在tau=60时分别得到左行、右行和斜向传播。白箭头由原点指向谱平均速度乘以时间得到的质心预测。对当前等宽、各向同性交换且两个非零波矢分量相同的例子，斜向群速度方向与载波方向一致；这一一致性并非任意色散或各向异性情形下的普遍规律。</p>
+      <div class="downloads"><a href="c-gaussian/c05-carrier-directions.png" download>PNG</a> · <a href="c-gaussian/c05-carrier-directions.svg" download>SVG</a> · <a href="c-gaussian/c05-carrier-directions.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qleft&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        -0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c06-centroid-velocity">
+      <div class="card-head"><span class="id">c06-centroid-velocity</span><span class="tag">基础</span></div>
+      <h3>质心运动与谱平均速度</h3>
+      <button class="figure" data-url="c-gaussian/c06-centroid-velocity.png" data-title="质心运动与谱平均速度" aria-label="放大查看：质心运动与谱平均速度"><img src="c-gaussian/c06-centroid-velocity.png" loading="lazy" alt="质心运动与谱平均速度"></button>
+      <p class="caption">四种载波的概率质心由精确FFT演化计算。圆点为数值结果，实线用初态全频谱的&lt;sin qx&gt;和eta&lt;sin qy&gt;预测，虚线用中心波矢处的(sin q0x,eta sin q0y)近似。对于sigma=4，有限频宽使两者存在虽小但真实的差异，不能把中心值近似称为精确质心速度。当前无边界污染的平移不变模型中，位置期望按谱平均速度作直线运动。</p>
+      <div class="downloads"><a href="c-gaussian/c06-centroid-velocity.png" download>PNG</a> · <a href="c-gaussian/c06-centroid-velocity.svg" download>SVG</a> · <a href="c-gaussian/c06-centroid-velocity.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qzero&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.0,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qleft&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        -0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c07-comoving-marginals">
+      <div class="card-head"><span class="id">c07-comoving-marginals</span><span class="tag">基础</span></div>
+      <h3>共动坐标下的包络展宽</h3>
+      <button class="figure" data-url="c-gaussian/c07-comoving-marginals.png" data-title="共动坐标下的包络展宽" aria-label="放大查看：共动坐标下的包络展宽"><img src="c-gaussian/c07-comoving-marginals.png" loading="lazy" alt="共动坐标下的包络展宽"></button>
+      <p class="caption">对q0=(0.7,0)、sigma=4的同一个波包，画tau=0、20、40、60的x和y边际概率。仅在横轴减去数值质心，没有重新归一化峰值或宽度。曲线使用实际格点概率并连线。x、y方向的色散曲率不同，因而展宽程度不同；质心的直线移动与包络的形状变化是可以分别测量的两件事。</p>
+      <div class="downloads"><a href="c-gaussian/c07-comoving-marginals.png" download>PNG</a> · <a href="c-gaussian/c07-comoving-marginals.svg" download>SVG</a> · <a href="c-gaussian/c07-comoving-marginals.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c08-width-comparison">
+      <div class="card-head"><span class="id">c08-width-comparison</span><span class="tag">基础</span></div>
+      <h3>不同初始宽度的传播对照</h3>
+      <button class="figure" data-url="c-gaussian/c08-width-comparison.png" data-title="不同初始宽度的传播对照" aria-label="放大查看：不同初始宽度的传播对照"><img src="c-gaussian/c08-width-comparison.png" loading="lazy" alt="不同初始宽度的传播对照"></button>
+      <p class="caption">sigma=3、6、10的Gaussian都以q0=(0.7,0)传播至tau=60，各自归一化总概率为1。左图画共动坐标下真实x边际概率；右图明确采用u=(x-&lt;x&gt;)/sigma、纵轴sigma*Px，以比较相对初始宽度的变化，保持分布面积一致。宽初态频谱更窄，因此相对展宽较小，但需要更大的初始空间范围。本图不把不同初始尺寸的波包解释成相同制备资源下的性能排名。</p>
+      <div class="downloads"><a href="c-gaussian/c08-width-comparison.png" download>PNG</a> · <a href="c-gaussian/c08-width-comparison.svg" download>SVG</a> · <a href="c-gaussian/c08-width-comparison.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;sigma3&quot;,
+      &quot;sigma&quot;: 3.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma6&quot;,
+      &quot;sigma&quot;: 6.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma10&quot;,
+      &quot;sigma&quot;: 10.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c09-rms-exact-moments">
+      <div class="card-head"><span class="id">c09-rms-exact-moments</span><span class="tag">基础</span></div>
+      <h3>概率宽度与精确速度方差</h3>
+      <button class="figure" data-url="c-gaussian/c09-rms-exact-moments.png" data-title="概率宽度与精确速度方差" aria-label="放大查看：概率宽度与精确速度方差"><img src="c-gaussian/c09-rms-exact-moments.png" loading="lazy" alt="概率宽度与精确速度方差"></button>
+      <p class="caption">对于初始实Gaussian包络乘线性载波，初始位置与速度的对称协方差为零，因此无限晶格上Var(n_mu(tau))=Var(n_mu(0))+tau^2 Var(v_mu)精确成立。一般有啁啾的初态还会有2*tau*Cov_sym(n_mu,v_mu)项，不能直接套用本图公式。图中实线完全由初态离散频谱平均计算，圆点来自精确余弦色散演化；有限周期盒在tau&lt;=60内已检查边缘概率与扩大网格误差。</p>
+      <div class="downloads"><a href="c-gaussian/c09-rms-exact-moments.png" download>PNG</a> · <a href="c-gaussian/c09-rms-exact-moments.svg" download>SVG</a> · <a href="c-gaussian/c09-rms-exact-moments.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qzero&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.0,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c10-anisotropy-direction">
+      <div class="card-head"><span class="id">c10-anisotropy-direction</span><span class="tag">基础</span></div>
+      <h3>各向异性下波矢与传播方向</h3>
+      <button class="figure" data-url="c-gaussian/c10-anisotropy-direction.png" data-title="各向异性下波矢与传播方向" aria-label="放大查看：各向异性下波矢与传播方向"><img src="c-gaussian/c10-anisotropy-direction.png" loading="lazy" alt="各向异性下波矢与传播方向"></button>
+      <p class="caption">固定q0=(0.7,0.7)、sigma=4和tau=60，仅改变eta=Jy/Jx为1或0.3。青色虚箭头示意波矢方向，长度不代表物理速度；白色箭头表示实际质心位移。两个初态的波矢方向同为45度，谱平均群速度方向分别约为45度和16.7度。由于vy=eta sin qy，较弱的y方向交换降低了y方向传播速率。所有概率图用同一固定线性色标。</p>
+      <div class="downloads"><a href="c-gaussian/c10-anisotropy-direction.png" download>PNG</a> · <a href="c-gaussian/c10-anisotropy-direction.svg" download>SVG</a> · <a href="c-gaussian/c10-anisotropy-direction.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal_eta03&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 0.3
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c11-anisotropy-width">
+      <div class="card-head"><span class="id">c11-anisotropy-width</span><span class="tag">基础</span></div>
+      <h3>各向异性与二维宽度</h3>
+      <button class="figure" data-url="c-gaussian/c11-anisotropy-width.png" data-title="各向异性与二维宽度" aria-label="放大查看：各向异性与二维宽度"><img src="c-gaussian/c11-anisotropy-width.png" loading="lazy" alt="各向异性与二维宽度"></button>
+      <p class="caption">相同圆对称Gaussian包络在eta=1和eta=0.3下的x、y概率RMS宽度。由于qx=qy=0.7且初始频宽相同，eta=1时两个方向的宽度曲线重合；eta=0.3保留相同x方向演化，但减小y方向的速度方差，导致宽度比sigma_x/sigma_y增大。这里的圆形和椭圆形描述包络尺度，不意味着离散晶格具有连续旋转对称性。</p>
+      <div class="downloads"><a href="c-gaussian/c11-anisotropy-width.png" download>PNG</a> · <a href="c-gaussian/c11-anisotropy-width.svg" download>SVG</a> · <a href="c-gaussian/c11-anisotropy-width.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal_eta03&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 0.3
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="基础" id="c12-spectrum-phase">
+      <div class="card-head"><span class="id">c12-spectrum-phase</span><span class="tag">基础</span></div>
+      <h3>频谱功率守恒与相位积累</h3>
+      <button class="figure" data-url="c-gaussian/c12-spectrum-phase.png" data-title="频谱功率守恒与相位积累" aria-label="放大查看：频谱功率守恒与相位积累"><img src="c-gaussian/c12-spectrum-phase.png" loading="lazy" alt="频谱功率守恒与相位积累"></button>
+      <p class="caption">左图从tau=0、30、60的实际演化波函数重新做单位正交FFT，显示频谱概率逐点不变。这里e=epsilon/Jx为无量纲能量，tau=Jx*t/hbar。右图在qy=0截面画精确传播因子的残余相位-tau[e(qx,0)-e(0.7,0)-sin(0.7)(qx-0.7)]，相位连续展开而不是模2pi显示；去掉的是整体相位和中心群速度平移对应的线性相位。频谱概率不变并不保证实空间形状不变，因为不同模式的相对相位仍会变化。</p>
+      <div class="downloads"><a href="c-gaussian/c12-spectrum-phase.png" download>PNG</a> · <a href="c-gaussian/c12-spectrum-phase.svg" download>SVG</a> · <a href="c-gaussian/c12-spectrum-phase.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="延伸" id="c13-extension-inflection">
+      <div class="card-head"><span class="id">c13-extension-inflection</span><span class="tag">延伸</span></div>
+      <h3>拓展：零二阶曲率点</h3>
+      <button class="figure" data-url="c-gaussian/c13-extension-inflection.png" data-title="拓展：零二阶曲率点" aria-label="放大查看：拓展：零二阶曲率点"><img src="c-gaussian/c13-extension-inflection.png" loading="lazy" alt="拓展：零二阶曲率点"></button>
+      <p class="caption">这是后续保形研究的初步入口。两种初态的sigma都为3、总概率都为1。q0=(pi/2,pi/2)处两个方向的二阶色散项消失，有限频宽内速度差减小，因此tau&lt;=60内的展宽与形变明显较弱。右图比较实际波函数与按各自谱平均速度刚性平移的初态的模平方重合度，对整体相位不敏感，但会检测相对相位形变；它不是仅比较概率轮廓的指标。三阶及更高阶项仍存在，不能据此宣称无限时间严格保形。</p>
+      <div class="downloads"><a href="c-gaussian/c13-extension-inflection.png" download>PNG</a> · <a href="c-gaussian/c13-extension-inflection.svg" download>SVG</a> · <a href="c-gaussian/c13-extension-inflection.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;extension_ordinary&quot;,
+      &quot;sigma&quot;: 3.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;extension_inflection&quot;,
+      &quot;sigma&quot;: 3.0,
+      &quot;q0&quot;: [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="延伸" id="c14-extension-cubic-distortion">
+      <div class="card-head"><span class="id">c14-extension-cubic-distortion</span><span class="tag">延伸</span></div>
+      <h3>拓展：高阶色散的有限带宽形变</h3>
+      <button class="figure" data-url="c-gaussian/c14-extension-cubic-distortion.png" data-title="拓展：高阶色散的有限带宽形变" aria-label="放大查看：拓展：高阶色散的有限带宽形变"><img src="c-gaussian/c14-extension-cubic-distortion.png" loading="lazy" alt="拓展：高阶色散的有限带宽形变"></button>
+      <p class="caption">为使高阶形变在中期报告图中可见，本图用sigma=2、q0=(pi/2,pi/2)的独立示例；它与C13的sigma=3不同，不能据此直接比较保形性能。左图画tau=0、20、40、60的实际x边际概率，仅减去实际质心，保持统一纵轴。右图固定qy=pi/2，精确能量去除常数与线性项后为sin(delta q)-delta q，其首项是-(delta q)^3/6。有限频谱因此仍有相位差累积，产生不对称形变与尾部。此图说明零二阶曲率不等于零色散。</p>
+      <div class="downloads"><a href="c-gaussian/c14-extension-cubic-distortion.png" download>PNG</a> · <a href="c-gaussian/c14-extension-cubic-distortion.svg" download>SVG</a> · <a href="c-gaussian/c14-extension-cubic-distortion.pdf" download>PDF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;extension_inflection_sigma2&quot;,
+      &quot;sigma&quot;: 2.0,
+      &quot;q0&quot;: [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="动画" id="c15-animation-carrier">
+      <div class="card-head"><span class="id">c15-animation-carrier</span><span class="tag">动画</span></div>
+      <h3>C15  有无载波：静止展宽与移动展宽</h3>
+      <button class="figure" data-url="c-gaussian/c15-animation-carrier.gif" data-title="C15  有无载波：静止展宽与移动展宽" aria-label="放大查看：C15  有无载波：静止展宽与移动展宽"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">sigma=4的两个相同概率包络，载波分别为(0,0)与(0.7,0)，在精确色散下演化到tau=60。二维格点概率使用固定线性色标，图框和概率归一化固定，不逐帧放大。</p>
+      <div class="downloads"><a href="c-gaussian/c15-animation-carrier.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qzero&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.0,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="动画" id="c16-animation-directions">
+      <div class="card-head"><span class="id">c16-animation-directions</span><span class="tag">动画</span></div>
+      <h3>C16  载波选择左行、右行与斜向传播</h3>
+      <button class="figure" data-url="c-gaussian/c16-animation-directions.gif" data-title="C16  载波选择左行、右行与斜向传播" aria-label="放大查看：C16  载波选择左行、右行与斜向传播"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">三个sigma=4的初态仅载波不同，分别为(-0.7,0)、(0.7,0)、(0.7,0.7)。在相同尺度下播放到tau=60，帮助将载波相位梯度与传播方向联系起来。色标、位置范围、总概率固定。</p>
+      <div class="downloads"><a href="c-gaussian/c16-animation-directions.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qleft&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        -0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qright&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="动画" id="c17-animation-width">
+      <div class="card-head"><span class="id">c17-animation-width</span><span class="tag">动画</span></div>
+      <h3>不同初始宽度的展宽动画</h3>
+      <button class="figure" data-url="c-gaussian/c17-animation-width.gif" data-title="不同初始宽度的展宽动画" aria-label="放大查看：不同初始宽度的展宽动画"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">sigma=3、6、10的无啁啾Gaussian以q0=(0.7,0)传播。左图在各自共动坐标中显示真实边际概率，使用固定位置和纵轴范围；右图的移动点显示各自相对初始宽度的增长。所有初态总概率为1，初始尺寸不同是明确的物理输入。</p>
+      <div class="downloads"><a href="c-gaussian/c17-animation-width.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;sigma3&quot;,
+      &quot;sigma&quot;: 3.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma6&quot;,
+      &quot;sigma&quot;: 6.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;sigma10&quot;,
+      &quot;sigma&quot;: 10.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.0
+      ],
+      &quot;eta&quot;: 1.0
+    }
+  ]
+}</pre></details>
+    </article><article class="card" data-group="c-gaussian" data-kind="动画" id="c18-animation-anisotropy">
+      <div class="card-head"><span class="id">c18-animation-anisotropy</span><span class="tag">动画</span></div>
+      <h3>C18  交换各向异性改变传播方向与形状</h3>
+      <button class="figure" data-url="c-gaussian/c18-animation-anisotropy.gif" data-title="C18  交换各向异性改变传播方向与形状" aria-label="放大查看：C18  交换各向异性改变传播方向与形状"><div class="anim-placeholder"><span>▶</span><p>点击播放 · 固定色标</p></div></button>
+      <p class="caption">固定q0=(0.7,0.7)、sigma=4，比较eta=1与0.3。降低y方向交换后，y方向质心位移和宽度增长均减小。概率图采用相同固定线性色标及位置范围。</p>
+      <div class="downloads"><a href="c-gaussian/c18-animation-anisotropy.gif" download>GIF</a></div>
+      <details><summary>计算参数</summary><pre>{
+  &quot;N&quot;: 256,
+  &quot;boundary&quot;: &quot;periodic; verified against N=384&quot;,
+  &quot;tau_max&quot;: 60,
+  &quot;S&quot;: 0.5,
+  &quot;h&quot;: 0.0,
+  &quot;units&quot;: {
+    &quot;position&quot;: &quot;a&quot;,
+    &quot;time&quot;: &quot;hbar/Jx&quot;,
+    &quot;momentum&quot;: &quot;1/a&quot;
+  },
+  &quot;gaussian_convention&quot;: &quot;psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;name&quot;: &quot;qdiagonal&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 1.0
+    },
+    {
+      &quot;name&quot;: &quot;qdiagonal_eta03&quot;,
+      &quot;sigma&quot;: 4.0,
+      &quot;q0&quot;: [
+        0.7,
+        0.7
+      ],
+      &quot;eta&quot;: 0.3
+    }
+  ]
+}</pre></details>
+    </article></div></section><div class="empty" hidden>没有匹配的图，请换一个关键词。</div><footer>所有图均从保存的参数与数据生成。FFT 采用周期晶格；所展示时间内的边界影响通过边缘概率与扩大晶格对照检查。完整核验与模型适用范围见说明文件。</footer></main>
+    <dialog id="viewer"><header><strong id="viewer-title"></strong><button id="close">关闭 ×</button></header><img id="viewer-image" alt=""></dialog>
+    <script>
+    const cards=[...document.querySelectorAll('.card')];let selected='all';
+    function filter(){let visible=0;const q=document.querySelector('#search').value.trim().toLowerCase();cards.forEach(c=>{const match=(selected==='all'||c.dataset.group===selected||c.dataset.kind===selected)&&c.textContent.toLowerCase().includes(q);c.hidden=!match;if(match)visible++;});document.querySelectorAll('.group').forEach(g=>g.hidden=![...g.querySelectorAll('.card')].some(c=>!c.hidden));document.querySelector('.empty').hidden=visible>0;}
+    document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));filter();}));document.querySelector('#search').addEventListener('input',filter);
+    const viewer=document.querySelector('#viewer'),vi=document.querySelector('#viewer-image');document.querySelectorAll('.figure').forEach(b=>b.addEventListener('click',()=>{vi.src=b.dataset.url;vi.alt=b.dataset.title;document.querySelector('#viewer-title').textContent=b.dataset.title;viewer.showModal();}));document.querySelector('#close').onclick=()=>viewer.close();viewer.addEventListener('close',()=>vi.removeAttribute('src'));viewer.addEventListener('click',e=>{if(e.target===viewer)viewer.close();});
+    </script></body></html>

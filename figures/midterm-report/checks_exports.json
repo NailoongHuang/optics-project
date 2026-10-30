@@ -1,0 +1,544 @@
+{
+  "status": "passed",
+  "static_figures": 39,
+  "animations": 8,
+  "decoded_animation_frames": 528,
+  "pdf_pages": 40,
+  "pdf_renderer": "Poppler pdftoppm",
+  "pdf_text_outside_page": [],
+  "exports": [
+    {
+      "id": "a01-lattice",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a02-isotropic-surface",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a03-anisotropic-surface",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a04-axial-cuts",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a05-equal-frequency",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a06-group-velocity-field",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a07-slope-and-speed",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a08-long-wave-approximation",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a09-long-wave-error",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a10-wavevector-velocity-direction",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a11-curvature-and-cubic",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "a12-exchange-and-scales",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        1360
+      ]
+    },
+    {
+      "id": "b01-initial-local-flip",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b02-flat-spectrum",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b03-early-neighbor-spreading",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2652,
+        1054
+      ]
+    },
+    {
+      "id": "b04-isotropic-late-snapshots",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2652,
+        1054
+      ]
+    },
+    {
+      "id": "b05-anisotropy-comparison",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2465,
+        1088
+      ]
+    },
+    {
+      "id": "b06-marginal-probabilities",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b07-spacetime-isotropic",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b08-anisotropic-spacetime",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b09-ballistic-rms",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b10-return-probability",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b11-anisotropy-scan",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b12-probability-to-spin",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b13-independent-bessel-check",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        1955,
+        1156
+      ]
+    },
+    {
+      "id": "b14-early-spreading",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 65,
+      "seconds_per_loop": 6.32
+    },
+    {
+      "id": "b15-isotropic-propagation",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 73,
+      "seconds_per_loop": 6.96
+    },
+    {
+      "id": "b16-anisotropic-propagation",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 73,
+      "seconds_per_loop": 6.96
+    },
+    {
+      "id": "b17-marginal-animation",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 73,
+      "seconds_per_loop": 6.96
+    },
+    {
+      "id": "c01-carrier-envelope-spectrum",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2380,
+        952
+      ]
+    },
+    {
+      "id": "c02-space-bandwidth",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        935
+      ]
+    },
+    {
+      "id": "c03-zero-carrier-spreading",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2380,
+        952
+      ]
+    },
+    {
+      "id": "c04-moving-gaussian",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2380,
+        952
+      ]
+    },
+    {
+      "id": "c05-carrier-directions",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2380,
+        952
+      ]
+    },
+    {
+      "id": "c06-centroid-velocity",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2210,
+        969
+      ]
+    },
+    {
+      "id": "c07-comoving-marginals",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c08-width-comparison",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c09-rms-exact-moments",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c10-anisotropy-direction",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2380,
+        952
+      ]
+    },
+    {
+      "id": "c11-anisotropy-width",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c12-spectrum-phase",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c13-extension-inflection",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2125,
+        952
+      ]
+    },
+    {
+      "id": "c14-extension-cubic-distortion",
+      "formats": [
+        "png",
+        "svg",
+        "pdf"
+      ],
+      "pixels": [
+        2176,
+        952
+      ]
+    },
+    {
+      "id": "c15-animation-carrier",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 61,
+      "seconds_per_loop": 6.0
+    },
+    {
+      "id": "c16-animation-directions",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 61,
+      "seconds_per_loop": 6.0
+    },
+    {
+      "id": "c17-animation-width",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 61,
+      "seconds_per_loop": 6.0
+    },
+    {
+      "id": "c18-animation-anisotropy",
+      "formats": [
+        "gif"
+      ],
+      "all_frames_decoded": 61,
+      "seconds_per_loop": 6.0
+    }
+  ],
+  "visual_review": "Contact sheets and selected full pages require human/model visual inspection in addition to these mechanical checks."
+}

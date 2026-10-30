@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Local and time-integrated probability backflow in a homogeneous Hermitian nearest-neighbor cosine lattice, especially a single Gaussian near ka=pi/2 and its oscillatory tails.",
+  "sources": [
+    "Web search for discovery",
+    "Official arXiv abstract/version records, HTML and versioned PDFs",
+    "APS publisher metadata",
+    "University of the West of Scotland author accepted manuscript repository"
+  ],
+  "queries": [
+    "\"quantum backflow\" \"lattice\"",
+    "\"quantum backflow\" \"tight-binding\"",
+    "\"backflow\" \"discrete Schrodinger\"",
+    "\"quantum backflow\" \"Gaussian\" \"lattice\"",
+    "\"quantum backflow\" \"Airy\"",
+    "\"General Quantum Backflow in Realistic Wave Packets\"",
+    "\"Searching for Bloch wave packets with almost definite momentum direction\"",
+    "\"quantum backflow\" \"Airy\" \"lattice\"",
+    "\"quantum backflow\" \"Gaussian\" \"cosine\"",
+    "\"Airy wave packet\" \"backflow\"",
+    "\"Airy wavepacket\" \"backflow\"",
+    "\"quantum backflow\" \"Gaussian wave packet\" dispersion",
+    "\"backflow\" \"tight binding\" Gaussian"
+  ],
+  "included_primary_records": [
+    "2511.16867v2",
+    "2511.10155v2",
+    "2504.12489v2"
+  ],
+  "deduplication": "ArXiv and APS records were merged by identifier/DOI. Version updates were not counted as additional papers.",
+  "excluded_or_separated": [
+    "Neural-quantum-state backflow ansatz: different use of the word backflow",
+    "Information backflow in noisy quantum walks: not probability current backflow",
+    "Gain-loss PT-symmetric source-drain reverse flow: not the homogeneous Hermitian mechanism",
+    "Disorder scattering or boomerang return: not the positive-velocity free-lattice test",
+    "Continuum Gaussian-superposition results: useful criterion context, not an exact cosine-lattice example"
+  ],
+  "limitations": "Bounded targeted search, not an exhaustive systematic review. No exact single-Gaussian pi/2 Airy-tail backflow example was located, but this absence is not a novelty claim.",
+  "retrieval_failures": [
+    "The local Python requests package was absent; urllib was used successfully instead.",
+    "The institutional Bloch accepted-PDF URL returned HTTP 503 in terminal download; official arXiv v2 was downloaded successfully."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "reviewed_slides": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "visual_review": "Full-size exported-PPTX renders, changed pages rechecked after revision 2; preview PDF rendered and inspected; embedded animation initial/middle/end inspected",
+  "science_checks": [
+    "checks_symbolic.json",
+    "checks.json",
+    "checks_independent.json"
+  ],
+  "scope": "18 slides including cover, exact 3x3 extended-zone maps and 9 controlled propagation cases",
+  "removed_from_deck": [
+    "single-site excitation",
+    "front propagation",
+    "Bessel validation appendix",
+    "redundant wave animations",
+    "extended microscopic matrix derivation"
+  ],
+  "retained_source": "Source PDF, raw simulations and previous PPTX/PDF preserved",
+  "caveats": [
+    "dimensionless graph curvature, not Berry curvature",
+    "same width/time, unequal distances",
+    "finite spectrum and cubic residual remain",
+    "PowerPoint application playback not tested"
+  ],
+  "pptx_sha256": "e53abcb9d6e8fa27c7059bda9186997f069d77e09c507476a60145f58f977970",
+  "pdf_sha256": "d6e4a4d888bb16bd99c6257d201920c0117986a1115351add3d9c82bd3c61821"
+}

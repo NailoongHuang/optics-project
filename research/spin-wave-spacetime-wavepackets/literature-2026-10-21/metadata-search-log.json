@@ -1,0 +1,118 @@
+[
+  {
+    "provider": "crossref",
+    "query_id": "crossref-01",
+    "query": "\"spin wave\" \"space-time\" wave packet",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22spin+wave%22+%22space-time%22+wave+packet&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "failed",
+    "error": "curl: (22) The requested URL returned error: 429"
+  },
+  {
+    "provider": "crossref",
+    "query_id": "crossref-02",
+    "query": "\"magnon\" \"space-time\" wave packet",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22magnon%22+%22space-time%22+wave+packet&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "failed",
+    "error": "curl: (22) The requested URL returned error: 429"
+  },
+  {
+    "provider": "crossref",
+    "query_id": "crossref-03",
+    "query": "\"spin wave\" \"spatiotemporal\" spectral correlation",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22spin+wave%22+%22spatiotemporal%22+spectral+correlation&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/crossref-03.json"
+  },
+  {
+    "provider": "crossref",
+    "query_id": "crossref-04",
+    "query": "\"spin wave\" \"nondiffracting\" pulse",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22spin+wave%22+%22nondiffracting%22+pulse&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "failed",
+    "error": "curl: (22) The requested URL returned error: 429"
+  },
+  {
+    "provider": "crossref",
+    "query_id": "crossref-05",
+    "query": "\"spin wave\" \"frequency\" \"wavevector\" matching",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22spin+wave%22+%22frequency%22+%22wavevector%22+matching&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/crossref-05.json"
+  },
+  {
+    "provider": "crossref",
+    "query_id": "crossref-06",
+    "query": "\"spin wave\" \"X wave\"",
+    "date": "2026-10-21",
+    "url": "https://api.crossref.org/works?query.bibliographic=%22spin+wave%22+%22X+wave%22&rows=30&filter=until-pub-date%3A2026-10-21&select=DOI%2Ctitle%2Cauthor%2Cpublished%2Cabstract%2CURL%2Ctype",
+    "status": "failed",
+    "error": "curl: (22) The requested URL returned error: 429"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-01",
+    "query": "\"spin wave\" \"space-time\" wave packet",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22spin+wave%22+%22space-time%22+wave+packet&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/openalex-01.json"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-02",
+    "query": "\"magnon\" \"space-time\" wave packet",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22magnon%22+%22space-time%22+wave+packet&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/openalex-02.json"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-03",
+    "query": "\"spin wave\" \"spatiotemporal\" spectral correlation",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22spin+wave%22+%22spatiotemporal%22+spectral+correlation&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/openalex-03.json"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-04",
+    "query": "\"spin wave\" \"nondiffracting\" pulse",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22spin+wave%22+%22nondiffracting%22+pulse&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 18,
+    "raw_file": "raw/openalex-04.json"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-05",
+    "query": "\"spin wave\" \"frequency\" \"wavevector\" matching",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22spin+wave%22+%22frequency%22+%22wavevector%22+matching&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/openalex-05.json"
+  },
+  {
+    "provider": "openalex",
+    "query_id": "openalex-06",
+    "query": "\"spin wave\" \"X wave\"",
+    "date": "2026-10-21",
+    "url": "https://api.openalex.org/works?search=%22spin+wave%22+%22X+wave%22&per-page=30&filter=to_publication_date%3A2026-10-21&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Cprimary_location%2Cabstract_inverted_index%2Creferenced_works%2Ccited_by_count",
+    "status": "retrieved",
+    "returned": 30,
+    "raw_file": "raw/openalex-06.json"
+  }
+]

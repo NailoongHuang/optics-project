@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "method": "Closed Gaussian velocity moments and independent 80/160-point Gauss-Hermite quadrature of separable complex overlaps",
+  "approximation": "Continuous Gaussian spectrum; lattice alias tails negligible for sigma/a>=4 and centers far from BZ boundaries",
+  "cases": [
+    {
+      "case": "A_eta1",
+      "width_error": 0.0,
+      "fidelity_error": 7.771561172376096e-16,
+      "quadrature_convergence": 4.6629367034256575e-15
+    },
+    {
+      "case": "B_eta1",
+      "width_error": 5.417888360170764e-14,
+      "fidelity_error": 2.1094237467877974e-15,
+      "quadrature_convergence": 3.219646771412954e-15
+    },
+    {
+      "case": "C_eta1",
+      "width_error": 5.595524044110789e-14,
+      "fidelity_error": 4.440892098500626e-16,
+      "quadrature_convergence": 2.220446049250313e-16
+    },
+    {
+      "case": "A_eta03",
+      "width_error": 6.217248937900877e-15,
+      "fidelity_error": 2.220446049250313e-16,
+      "quadrature_convergence": 2.7755575615628914e-15
+    },
+    {
+      "case": "B_eta03",
+      "width_error": 5.062616992290714e-14,
+      "fidelity_error": 0.0,
+      "quadrature_convergence": 2.220446049250313e-16
+    },
+    {
+      "case": "C_eta03",
+      "width_error": 5.240252676230739e-14,
+      "fidelity_error": 6.661338147750939e-16,
+      "quadrature_convergence": 4.440892098500626e-16
+    },
+    {
+      "case": "C_sigma4",
+      "width_error": 2.682298827494378e-13,
+      "fidelity_error": 4.440892098500626e-16,
+      "quadrature_convergence": 5.426659122065303e-12
+    },
+    {
+      "case": "C_sigma6",
+      "width_error": 2.291500322826323e-13,
+      "fidelity_error": 1.3322676295501878e-15,
+      "quadrature_convergence": 3.3306690738754696e-15
+    },
+    {
+      "case": "C_sigma8",
+      "width_error": 1.5329959524024162e-12,
+      "fidelity_error": 6.661338147750939e-16,
+      "quadrature_convergence": 1.5543122344752192e-15
+    }
+  ]
+}

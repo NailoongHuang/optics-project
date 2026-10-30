@@ -1,0 +1,312 @@
+[
+  {
+    "index": "00_先读这里.md",
+    "target": "自旋波研究整理报告.pdf",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "01_文献索引.md",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "02_代码与结果索引.md",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "03_讲义与汇报索引.md",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "research/wavepacket-prospects/index.html",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "inventory.csv",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "manifest.json",
+    "status": "present"
+  },
+  {
+    "index": "00_先读这里.md",
+    "target": "REPRODUCE.md",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/collection-completion-2026-10-21/README.md",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/collection-completion-2026-10-21/catalog.csv",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/collection-completion-2026-10-21/catalog.json",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_quant-ph_0312141v1.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/discrete-optics/chen2007_two-dimensional-discrete-diffraction.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/discrete-optics/longhi2009_1001.0997v1_discrete-diffraction.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/linear-spin-wave-packets/spin-wave/2108.08054v1_dispersionless-pulses.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/linear-spin-wave-packets/spin-wave/2301.01220v1_caustic-classification.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/magnonics/2209.06608v1_inverse-design.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/backflow/2511.10155v2.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/wavepacket-prospects-2026-10/outlooks/transport-clock/meier2025_published.pdf",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/linear-spin-wave-packets/README.md",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/cosine-lattice-wavepacket-audit/README.md",
+    "status": "present"
+  },
+  {
+    "index": "01_文献索引.md",
+    "target": "literature/wavepacket-prospects-2026-10/outlooks/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "code/README.md",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "code/spin_wave_2d.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "code/test_spin_wave_2d.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "code/backups/2026-10-19-before-spin-wave-fix/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/index.html",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/midterm-figure-atlas.pdf",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/common.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/generate_local_flip.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/generate_gaussian.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/curvature-design/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/notation/README.md",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/crossing-diagnostics/phase_probability_comparison.png",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/crossing-diagnostics/dynamics/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/wavepacket-audit/tracking/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "figures/midterm-report/wavepacket-audit/robustness/",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/README.md",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/index.html",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/finite-source-caustic/run.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/finite-source-caustic/demo.gif",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/finite-source-caustic/results.json",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/backflow-resolution/run.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/backflow-resolution/demo.gif",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/backflow-resolution/results.json",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/loss-aware-pulse/run.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/loss-aware-pulse/demo.gif",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/loss-aware-pulse/results.json",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/transport-disorder/run.py",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/transport-disorder/demo.gif",
+    "status": "present"
+  },
+  {
+    "index": "02_代码与结果索引.md",
+    "target": "research/wavepacket-prospects/demos/transport-disorder/results.json",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "Note/single_magnon_derivation/main.pdf",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "Note/single_magnon_derivation/main.tex",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "Note/single_magnon_derivation/review.md",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "presentations/midterm/output/中期报告_统一符号与传播优化版.pptx",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "presentations/midterm/output/中期报告_统一符号与传播优化版_预览.pdf",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "presentations/midterm/README.md",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "Note/toy_model/",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "Note/toy_model_EOM/",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "presentations/midterm/output/",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "presentations/midterm/build/",
+    "status": "present"
+  },
+  {
+    "index": "03_讲义与汇报索引.md",
+    "target": "tmp/",
+    "status": "present"
+  }
+]

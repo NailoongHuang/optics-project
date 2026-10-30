@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/DaTmg4THAfayeuCsaEyXc5e5CUo</id>
+  <title>arXiv Query: search_query=all:"spin wave" AND (all:nondiffracting OR all:"spectral correlation")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-10-21T10:16:35Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22spin+wave%22+AND+(all:nondiffracting+OR+all:%22spectral+correlation%22)&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1703.01799v2</id>
+    <title>Entanglement and fluctuations in the XXZ model with power-law interactions</title>
+    <updated>2017-06-13T09:52:43Z</updated>
+    <link href="https://arxiv.org/abs/1703.01799v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1703.01799v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the ground-state properties of the XXZ model with $1/r^α$ interactions, describing spins interacting with long-range (LR) transverse (XX) ferromagnetic interactions and longitudinal (Z) antiferromagnetic interactions, or hardcore bosons with LR repulsion and hopping. The LR nature of the couplings allows us to quantitatively study the spectral, correlation and entanglement properties of the system by making use of linear spin-wave theory, supplemented with density-matrix renormalization group in one-dimensional systems. Our most important prediction is the existence of three distinct coupling regimes, depending on the decay exponent $α$ and number of dimensions $d$: 1) a short-range regime for $α&gt; d + σ_c$ (where $σ_c = 1$ in the gapped Néel antiferromagnetic phase exhibited by the XXZ model, and $σ_c = 2$ in the gapless XY ferromagnetic phase), sharing the same properties as those of finite-range interactions ($α=\infty$); 2) a long-range regime $α&lt; d$, sharing the same properties as those of the infinite-range interactions ($α=0$) in the thermodynamic limit; and 3) a most intriguing medium-range regime for $d &lt; α&lt; d+σ_c$, continuously interpolating between the finite-range and the infinite-range behavior. The latter regime is characterized by elementary excitations with a long-wavelength dispersion relation $ω\approx Δ_g + ck^z$ in the gapped phase, and $ω\sim k^z$ in the gapless phase, exhibiting a continuously varying dynamical exponent $z = (α- d) / σ_c$. In the gapless phase of the model the $z$ exponent is found to control the scaling of fluctuations, the decay of correlations, and a universal sub-dominant term in the entanglement entropy, leading to a very rich palette of behaviors for ground-state quantum correlations beyond what is known for finite-range interactions.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.quant-gas" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-03-06T10:18:29Z</published>
+    <arxiv:comment>21 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <arxiv:journal_ref>Phys. Rev. B 95, 245111 (2017)</arxiv:journal_ref>
+    <author>
+      <name>Irénée Frérot</name>
+    </author>
+    <author>
+      <name>Piero Naldesi</name>
+    </author>
+    <author>
+      <name>Tommaso Roscilde</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.95.245111</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.95.245111" title="doi"/>
+  </entry>
+</feed>

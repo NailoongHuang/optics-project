@@ -1,0 +1,977 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2026-09-09T09:27:51Z",
+      "timestamp": 1788946071481,
+      "version": "build-2803163510"
+    },
+    "reference-count": 48,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              9
+            ]
+          ],
+          "date-time": "2025-07-09T00:00:00Z",
+          "timestamp": 1752019200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              9
+            ]
+          ],
+          "date-time": "2025-07-09T00:00:00Z",
+          "timestamp": 1752019200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "Project-ID 433682494"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "Project-ID 433682494"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat. Mater."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Magnonic networks based on magnetic insulators are poised to revolutionize information processing due to their energy efficiency. However, current experimental realizations of spin-wave waveguides, which constitute the building blocks of such a network, suffer from limited spin-wave propagation lengths and inefficient dispersion tuning capabilities. Here we realize low-loss spin-wave waveguides in yttrium iron garnet thin films using silicon ion implantation, which creates an amorphous waveguide cladding. We measure spin-wave decay lengths exceeding 100 µm in submicrometre waveguides. The dispersion of the waveguides can be continuously tuned due to the precise and localized ion implantation, which sets them apart from commonly etched waveguides. Using our maskless waveguide definition, we demonstrate a large-scale magnonic network consisting of 198 crossings, paving the way for wafer-scale magnonic integrated circuits.</jats:p>",
+    "DOI": "10.1038/s41563-025-02282-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          10
+        ]
+      ],
+      "date-time": "2025-07-10T08:42:19Z",
+      "timestamp": 1752136939000
+    },
+    "page": "1920-1926",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": [
+      "Dispersion-tunable low-loss implanted spin-wave waveguides for large magnonic networks"
+    ],
+    "prefix": "10.1038",
+    "volume": "24",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-5716-4039",
+        "authenticated-orcid": false,
+        "given": "Jannis",
+        "family": "Bensmann",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8856-3347",
+        "authenticated-orcid": false,
+        "given": "Robert",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0214-6850",
+        "authenticated-orcid": false,
+        "given": "Kirill O.",
+        "family": "Nikolaev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dimitri",
+        "family": "Raskhodchikov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shraddha",
+        "family": "Choudhary",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3927-4239",
+        "authenticated-orcid": false,
+        "given": "Richa",
+        "family": "Bhardwaj",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shabnam",
+        "family": "Taheriniya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0008-5948-4181",
+        "authenticated-orcid": false,
+        "given": "Akhil",
+        "family": "Varri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-5062-2690",
+        "authenticated-orcid": false,
+        "given": "Sven",
+        "family": "Niehues",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ahmad",
+        "family": "El Kadri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5172-9094",
+        "authenticated-orcid": false,
+        "given": "Johannes",
+        "family": "Kern",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wolfram H. P.",
+        "family": "Pernice",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-4201",
+        "authenticated-orcid": false,
+        "given": "Sergej O.",
+        "family": "Demokritov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7840-5679",
+        "authenticated-orcid": false,
+        "given": "Vladislav E.",
+        "family": "Demidov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3584-0635",
+        "authenticated-orcid": false,
+        "given": "Steffen",
+        "family": "Michaelis de Vasconcellos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2368-2548",
+        "authenticated-orcid": false,
+        "given": "Rudolf",
+        "family": "Bratschitsch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2282_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "264005",
+        "DOI": "10.1088/0022-3727/43/26/264005",
+        "volume": "43",
+        "author": "A Khitun",
+        "year": "2010",
+        "unstructured": "Khitun, A., Bao, M. & Wang, K. L. Magnonic logic circuits. J. Phys. D Appl. Phys. 43, 264005 (2010).",
+        "journal-title": "J. Phys. D Appl. Phys."
+      },
+      {
+        "key": "2282_CR2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep09861",
+        "volume": "5",
+        "author": "S Dutta",
+        "year": "2015",
+        "unstructured": "Dutta, S. et al. Non-volatile clocked spin wave Interconnect for beyond-CMOS nanomagnet pipelines. Sci. Rep. 5, 9861 (2015).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2282_CR3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0019328",
+        "volume": "128",
+        "author": "A Mahmoud",
+        "year": "2020",
+        "unstructured": "Mahmoud, A. et al. Introduction to spin wave computing. J. Appl. Phys. 128, 161101 (2020).",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2282_CR4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-05135-2",
+        "volume": "9",
+        "author": "TS Seifert",
+        "year": "2018",
+        "unstructured": "Seifert, T. S. et al. Femtosecond formation dynamics of the spin Seebeck effect revealed by terahertz spectroscopy. Nat. Commun. 9, 2899 (2018).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "335",
+        "DOI": "10.1038/s41586-024-07448-3",
+        "volume": "630",
+        "author": "RA Leenders",
+        "year": "2024",
+        "unstructured": "Leenders, R. A., Afanasiev, D., Kimel, A. V. & Mikhaylovskiy, R. V. Canted spin order as a platform for ultrafast conversion of magnons. Nature 630, 335–339 (2024).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2282_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "6422",
+        "DOI": "10.1038/s41467-021-26711-z",
+        "volume": "12",
+        "author": "Á Papp",
+        "year": "2021",
+        "unstructured": "Papp, Á., Porod, W. & Csaba, G. Nanoscale neural network using non-linear spin-wave interference. Nat. Commun. 12, 6422 (2021).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-023-43891-y",
+        "volume": "14",
+        "author": "DD Yaremkevich",
+        "year": "2023",
+        "unstructured": "Yaremkevich, D. D. et al. On-chip phonon-magnon reservoir for neuromorphic computing. Nat. Commun. 14, 8296 (2023).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0161009",
+        "volume": "123",
+        "author": "KO Nikolaev",
+        "year": "2023",
+        "unstructured": "Nikolaev, K. O. et al. Operation of a submicrometer waveguide cross as a spin-wave logic gate. Appl. Phys. Lett. 123, 142402 (2023).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.18.054081",
+        "volume": "18",
+        "author": "D Raskhodchikov",
+        "year": "2022",
+        "unstructured": "Raskhodchikov, D. et al. Propagation of spin waves in intersecting yttrium iron garnet nanowaveguides. Phys. Rev. Appl. 18, 054081 (2022).",
+        "journal-title": "Phys. Rev. Appl."
+      },
+      {
+        "key": "2282_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "765",
+        "DOI": "10.1038/s41928-020-00485-6",
+        "volume": "3",
+        "author": "Q Wang",
+        "year": "2020",
+        "unstructured": "Wang, Q. et al. A magnonic directional coupler for integrated magnonic half-adders. Nat. Electron. 3, 765–774 (2020).",
+        "journal-title": "Nat. Electron."
+      },
+      {
+        "key": "2282_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "192406",
+        "DOI": "10.1063/1.4921206",
+        "volume": "106",
+        "author": "AV Sadovnikov",
+        "year": "2015",
+        "unstructured": "Sadovnikov, A. V. et al. Magnonic beam splitter: the building block of parallel magnonic circuitry. Appl. Phys. Lett. 106, 192406 (2015).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4979840",
+        "volume": "110",
+        "author": "T Fischer",
+        "year": "2017",
+        "unstructured": "Fischer, T. et al. Experimental prototype of a spin-wave majority gate. Appl. Phys. Lett. 110, 152401 (2017).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pssr.201900695",
+        "volume": "14",
+        "author": "F Heussner",
+        "year": "2020",
+        "unstructured": "Heussner, F. et al. Experimental realization of a passive gigahertz frequency-division demultiplexer for magnonic logic networks. Phys. Status Solidi Rapid Res. Lett. 14, 1900695 (2020).",
+        "journal-title": "Phys. Status Solidi Rapid Res. Lett."
+      },
+      {
+        "key": "2282_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-52889-w",
+        "volume": "9",
+        "author": "T Goto",
+        "year": "2019",
+        "unstructured": "Goto, T. et al. Three port logic gate using forward volume spin wave interference in a thin yttrium iron garnet film. Sci. Rep. 9, 16472 (2019).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2282_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "6237",
+        "DOI": "10.1021/acs.nanolett.1c02010",
+        "volume": "21",
+        "author": "J Chen",
+        "year": "2021",
+        "unstructured": "Chen, J. et al. Reconfigurable spin-wave interferometer at the nanoscale. Nano Lett. 21, 6237–6244 (2021).",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "2282_CR16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-017-09485-7",
+        "volume": "7",
+        "author": "Á Papp",
+        "year": "2017",
+        "unstructured": "Papp, Á., Porod, W., Csurgay, Á. I. & Csaba, G. Nanoscale spectrum analyzer based on spin-wave interference. Sci. Rep. 7, 9245 (2017).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2282_CR17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-023-37078-8",
+        "volume": "14",
+        "author": "K Baumgaertl",
+        "year": "2023",
+        "unstructured": "Baumgaertl, K. & Grundler, D. Reversal of nanomagnets by propagating magnons in ferrimagnetic yttrium iron garnet enabling nonvolatile magnon memory. Nat. Commun. 14, 1490 (2023).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2834714",
+        "volume": "92",
+        "author": "T Schneider",
+        "year": "2008",
+        "unstructured": "Schneider, T. et al. Realization of spin-wave logic gates. Appl. Phys. Lett. 92, 022505 (2008).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2975235",
+        "volume": "104",
+        "author": "K-S Lee",
+        "year": "2008",
+        "unstructured": "Lee, K.-S. & Kim, S.-K. Conceptual design of spin wave logic gates based on a Mach–Zehnder-type spin wave interferometer for universal logic functions. J. Appl. Phys. 104, 053909 (2008).",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2282_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.3159628",
+        "volume": "94",
+        "author": "U-H Hansen",
+        "year": "2009",
+        "unstructured": "Hansen, U.-H., Demidov, V. E. & Demokritov, S. O. Dual-function phase shifter for spin-wave logic applications. Appl. Phys. Lett. 94, 252502 (2009).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "3402204",
+        "DOI": "10.1109/TMAG.2014.2320632",
+        "volume": "50",
+        "author": "K Nanayakkara",
+        "year": "2014",
+        "unstructured": "Nanayakkara, K., Anferov, A., Jacob, A. P., Allen, S. J. & Kozhanov, A. Cross junction spin wave logic architecture. IEEE Trans. Magn. 50, 3402204 (2014).",
+        "journal-title": "IEEE Trans. Magn."
+      },
+      {
+        "key": "2282_CR22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms4727",
+        "volume": "5",
+        "author": "K Vogt",
+        "year": "2014",
+        "unstructured": "Vogt, K. et al. Realization of a spin-wave multiplexer. Nat. Commun. 5, 3727 (2014).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-021-22520-6",
+        "volume": "12",
+        "author": "H Qin",
+        "year": "2021",
+        "unstructured": "Qin, H. et al. Nanoscale magnonic Fabry-Pérot resonator for low-loss spin-wave manipulation. Nat. Commun. 12, 2293 (2021).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4759039",
+        "volume": "101",
+        "author": "Y Sun",
+        "year": "2012",
+        "unstructured": "Sun, Y. et al. Growth and ferromagnetic resonance properties of nanometer-thick yttrium iron garnet films. Appl. Phys. Lett. 101, 152405 (2012).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4991520",
+        "volume": "111",
+        "author": "S Maendl",
+        "year": "2017",
+        "unstructured": "Maendl, S., Stasinopoulos, I. & Grundler, D. Spin waves with large decay length and few 100 nm wavelengths in thin yttrium iron garnet grown at the wafer scale. Appl. Phys. Lett. 111, 012403 (2017).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "4220",
+        "DOI": "10.1021/acs.nanolett.0c00657",
+        "volume": "20",
+        "author": "B Heinz",
+        "year": "2020",
+        "unstructured": "Heinz, B. et al. Propagation of spin-wave packets in individual nanosized yttrium iron garnet magnonic conduits. Nano Lett. 20, 4220–4227 (2020).",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "2282_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "8719",
+        "DOI": "10.1021/acs.nanolett.3c02725",
+        "volume": "23",
+        "author": "KO Nikolaev",
+        "year": "2023",
+        "unstructured": "Nikolaev, K. O., Lake, S. R., Schmidt, G., Demokritov, S. O. & Demidov, V. E. Zero-field spin waves in YIG nanowaveguides. Nano Lett. 23, 8719–8724 (2023).",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "2282_CR28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-024-46108-y",
+        "volume": "15",
+        "author": "KO Nikolaev",
+        "year": "2024",
+        "unstructured": "Nikolaev, K. O., Lake, S. R., Schmidt, G., Demokritov, S. O. & Demidov, V. E. Resonant generation of propagating second-harmonic spin waves in nano-waveguides. Nat. Commun. 15, 1827 (2024).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2282_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "5294",
+        "DOI": "10.1021/acs.nanolett.2c01238",
+        "volume": "22",
+        "author": "H Qin",
+        "year": "2022",
+        "unstructured": "Qin, H., Holländer, R. B., Flajšman, L. & van Dijken, S. Low-loss nanoscopic spin-wave guiding in continuous yttrium iron garnet films. Nano Lett. 22, 5294–5300 (2022).",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "2282_CR30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.5007058",
+        "volume": "8",
+        "author": "WT Ruane",
+        "year": "2017",
+        "unstructured": "Ruane, W. T. et al. Controlling and patterning the effective magnetization in Y3Fe5O12 thin films using ion irradiation. AIP Adv. 8, 056007 (2017).",
+        "journal-title": "AIP Adv."
+      },
+      {
+        "key": "2282_CR31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smll.202207293",
+        "volume": "19",
+        "author": "M Kiechle",
+        "year": "2023",
+        "unstructured": "Kiechle, M. et al. Spin-wave optics in YIG realized by ion-beam irradiation. Small 19, 2207293 (2023).",
+        "journal-title": "Small"
+      },
+      {
+        "key": "2282_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "135301",
+        "DOI": "10.1088/1361-6528/adad7d",
+        "volume": "36",
+        "author": "J Greil",
+        "year": "2025",
+        "unstructured": "Greil, J. et al. The effect of Ga-ion irradiation on sub-micron-wavelength spin waves in yttrium-iron-garnet films. Nanotechnology 36, 135301 (2025).",
+        "journal-title": "Nanotechnology"
+      },
+      {
+        "key": "2282_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "6105305",
+        "DOI": "10.1109/LMAG.2022.3209647",
+        "volume": "13",
+        "author": "M Kiechle",
+        "year": "2022",
+        "unstructured": "Kiechle, M. et al. Experimental demonstration of a spin-wave lens designed with machine learning. IEEE Magn. Lett. 13, 6105305 (2022).",
+        "journal-title": "IEEE Magn. Lett."
+      },
+      {
+        "key": "2282_CR34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-021-93700-z",
+        "volume": "11",
+        "author": "Á Papp",
+        "year": "2021",
+        "unstructured": "Papp, Á. et al. Experimental demonstration of a concave grating for spin waves in the Rowland arrangement. Sci. Rep. 11, 14239 (2021).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2282_CR35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.21.040503",
+        "volume": "21",
+        "author": "Q Wang",
+        "year": "2024",
+        "unstructured": "Wang, Q., Csaba, G., Verba, R., Chumak, A. V. & Pirro, P. Nanoscale magnonic networks. Phys. Rev. Appl. 21, 040503 (2024).",
+        "journal-title": "Phys. Rev. Appl."
+      },
+      {
+        "key": "2282_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "1622",
+        "DOI": "10.1134/S106378421911015X",
+        "volume": "64",
+        "author": "YV Khivintsev",
+        "year": "2019",
+        "unstructured": "Khivintsev, Y. V. et al. Interference of spin waves in arrays of microwaveguides based on yttrium-iron garnet films. Tech. Phys. 64, 1622–1628 (2019).",
+        "journal-title": "Tech. Phys."
+      },
+      {
+        "key": "2282_CR37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4976708",
+        "volume": "110",
+        "author": "M Collet",
+        "year": "2017",
+        "unstructured": "Collet, M. et al. Spin-wave propagation in ultra-thin YIG based waveguides. Appl. Phys. Lett. 110, 092408 (2017).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2282_CR38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sebastian, T., Schultheiss, K., Obry, B., Hillebrands, B. & Schultheiss, H. Micro-focused Brillouin light scattering: imaging spin waves at the nanoscale. Front. Phys. 3, 00035 (2015).",
+        "DOI": "10.3389/fphy.2015.00035"
+      },
+      {
+        "key": "2282_CR39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/qute.202100094",
+        "volume": "4",
+        "author": "I Bertelli",
+        "year": "2021",
+        "unstructured": "Bertelli, I. et al. Imaging spin-wave damping underneath metals using electron spins in diamond. Adv. Quantum Technol. 4, 2100094 (2021).",
+        "journal-title": "Adv. Quantum Technol."
+      },
+      {
+        "key": "2282_CR40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.adk8495",
+        "volume": "10",
+        "author": "J Zhou",
+        "year": "2024",
+        "unstructured": "Zhou, J. et al. Sensing spin wave excitations by spin defects in few-layer-thick hexagonal boron nitride. Sci. Adv. 10, eadk8495 (2024).",
+        "journal-title": "Sci. Adv."
+      },
+      {
+        "key": "2282_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "352",
+        "DOI": "10.1038/nphys1229",
+        "volume": "5",
+        "author": "F Sotier",
+        "year": "2009",
+        "unstructured": "Sotier, F. et al. Femtosecond few-fermion dynamics and deterministic single-photon gain in a quantum dot. Nat. Phys. 5, 352–356 (2009).",
+        "journal-title": "Nat. Phys."
+      },
+      {
+        "key": "2282_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1818",
+        "DOI": "10.1016/j.nimb.2010.02.091",
+        "volume": "268",
+        "author": "JF Ziegler",
+        "year": "2010",
+        "unstructured": "Ziegler, J. F., Ziegler, M. D. & Biersack, J. P. SRIM – the stopping and range of ions in matter (2010). Nucl. Instrum. Methods Phys. Res. B 268, 1818–1823 (2010).",
+        "journal-title": "Nucl. Instrum. Methods Phys. Res. B"
+      },
+      {
+        "key": "2282_CR43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.100.014429",
+        "volume": "100",
+        "author": "Z Zhang",
+        "year": "2019",
+        "unstructured": "Zhang, Z. et al. Controlled interconversion of quantized spin wave modes via local magnetic fields. Phys. Rev. B 100, 014429 (2019).",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2282_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "2108",
+        "DOI": "10.1002/pssa.201026749",
+        "volume": "208",
+        "author": "BK Ostafiychuk",
+        "year": "2011",
+        "unstructured": "Ostafiychuk, B. K. et al. Implantation of single crystalline iron garnet thin films with He+, B+, and Si+ ions. Phys. Status Solidi A 208, 2108–2114 (2011).",
+        "journal-title": "Phys. Status Solidi A"
+      },
+      {
+        "key": "2282_CR45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4899186",
+        "volume": "4",
+        "author": "A Vansteenkiste",
+        "year": "2014",
+        "unstructured": "Vansteenkiste, A. et al. The design and verification of MuMax3. AIP Adv. 4, 107133 (2014).",
+        "journal-title": "AIP Adv."
+      },
+      {
+        "key": "2282_CR46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0144371",
+        "volume": "133",
+        "author": "MJ Roos",
+        "year": "2023",
+        "unstructured": "Roos, M. J. et al. Electrical, optical, and magnetic properties of amorphous yttrium iron oxide thin films and consequences for non-local resistance measurements. J. Appl. Phys. 133, 223901 (2023).",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2282_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "0800215",
+        "DOI": "10.1109/TMAG.2014.2388196",
+        "volume": "51",
+        "author": "VE Demidov",
+        "year": "2015",
+        "unstructured": "Demidov, V. E. & Demokritov, S. O. Magnonic waveguides studied by microfocus Brillouin light scattering. IEEE Trans. Magn. 51, 0800215 (2015).",
+        "journal-title": "IEEE Trans. Magn."
+      },
+      {
+        "key": "2282_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "387",
+        "DOI": "10.1016/j.carbon.2019.04.011",
+        "volume": "148",
+        "author": "Y Zhou",
+        "year": "2019",
+        "unstructured": "Zhou, Y. et al. One-step ion beam irradiation manufacture of 3D micro/nanopatterned structures in SiC with tunable work functions. Carbon 148, 387–393 (2019).",
+        "journal-title": "Carbon"
+      }
+    ],
+    "container-title": [
+      "Nature Materials"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41563-025-02282-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41563-025-02282-y",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41563-025-02282-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          26
+        ]
+      ],
+      "date-time": "2025-11-26T15:02:13Z",
+      "timestamp": 1764169333000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41563-025-02282-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          9
+        ]
+      ]
+    },
+    "references-count": 48,
+    "journal-issue": {
+      "issue": "12",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2282"
+    ],
+    "URL": "https://doi.org/10.1038/s41563-025-02282-y",
+    "relation": {},
+    "ISSN": [
+      "1476-1122",
+      "1476-4660"
+    ],
+    "issn-type": [
+      {
+        "value": "1476-1122",
+        "type": "print"
+      },
+      {
+        "value": "1476-4660",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "19 July 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "6 June 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "9 July 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  }
+}

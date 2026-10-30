@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-21",
+  "scope": "Only works already named in the four project research lines and their outlook follow-up records; no recursive reference-list expansion.",
+  "new_pdf_count": 8,
+  "existing_pdf_count": 29,
+  "final_pdf_count": 37,
+  "final_work_count": 43,
+  "work_types": {
+    "articles_or_preprints": 42,
+    "doctoral_thesis": 1
+  },
+  "available_work_types": {
+    "articles_or_preprints": 35,
+    "doctoral_thesis": 1
+  },
+  "retrieval_records": [
+    "new-downloads/acquisition.json",
+    "followups/acquisitions.json",
+    "extra-backflow/acquisitions.json",
+    "metadata-retrieval.json"
+  ],
+  "additional_primary_checks": [
+    {
+      "title": "Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media",
+      "url": "https://arxiv.org/abs/2109.00782",
+      "result": "Official journal reference gives publication year 2022; retained 2021 arXiv v1 PDF."
+    },
+    {
+      "title": "Space-time wave packets",
+      "url": "https://opg.optica.org/aop/abstract.cfm?uri=aop-14-3-455",
+      "result": "Verified DOI10.1364/AOP.450016, AOP14,455-570(2022); retained arXiv v1."
+    },
+    {
+      "title": "Nondiffractive Subwavelength Wave Beams in a Medium with Externally Controlled Anisotropy",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.104.197203",
+      "result": "Publisher marks text and references subscription required; no lawful OA PDF located in bounded exact-title searches."
+    },
+    {
+      "title": "Long-range interaction in waveguide lattices",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.77.043804",
+      "result": "Official metadata verified; bounded exact-title/author/DOI searches did not locate an available primary-source PDF."
+    },
+    {
+      "title": "Magnetically tunable Airy-like beam of magnetostatic surface spin waves",
+      "url": "https://opg.optica.org/col/abstract.cfm?uri=col-19-1-013501",
+      "result": "Publisher record marked Not Accessible; no lawful OA PDF located."
+    },
+    {
+      "title": "Dispersion-tunable low-loss implanted spin-wave waveguides for large magnonic networks",
+      "url": "https://www.nature.com/articles/s41563-025-02282-y",
+      "result": "Article is OA, but normal local PDF retrieval returned HTML. Official PMID/PMC identity checked; no PDF saved or claimed."
+    }
+  ],
+  "queries": [
+    "\"Nondiffractive Subwavelength Wave Beams\" pdf",
+    "\"Magnetically tunable Airy-like beam\" pdf",
+    "\"Long-range interaction in waveguide lattices\" pdf",
+    "\"Szameit\" \"043804\" \"pdf\"",
+    "\"Schneider\" \"197203\" \"pdf\"",
+    "\"Magnetically tunable Airy-like\" site:researching.cn",
+    "\"Dispersion-tunable low-loss implanted\" pdf"
+  ],
+  "validation": "All 37 PDFs have valid signature and parse; first-page identities inspected, eight new first pages visually reviewed; local catalog links and DOI/arXiv deduplication passed."
+}

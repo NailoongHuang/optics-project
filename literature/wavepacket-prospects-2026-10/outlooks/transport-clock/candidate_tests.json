@@ -1,0 +1,40 @@
+[
+  {
+    "id": "T1",
+    "name": "Finite-bandwidth sensitivity to bare-frequency versus hopping disorder",
+    "origin": "Meier2025 published Methods p.9 explicit expectation; chiral-symmetry discrimination is our inference.",
+    "minimal_model": "Use the Meier XY/cavity single-excitation hopping chain, not a mislabeled random-exchange Heisenberg chain. Launch the same normalized pi/2 Gaussian, optionally compare q0=0.7.",
+    "controlled_comparison": "Same length, initial support/width, propagation time or distance, disorder region, random seed ensemble, and a stated matched perturbation-energy budget. Compare zero disorder, random hopping only, random onsite frequencies only; optional third physical Heisenberg-exchange case with correlated diagonal and hopping disorder.",
+    "metrics": [
+      "Receiver-window probability",
+      "Overlap with clean transported state",
+      "Centroid and variance",
+      "Chiral anticommutator norm",
+      "Ensemble confidence intervals"
+    ],
+    "null": "At the chosen finite packet bandwidth and distance, the two error types reduce transport comparably.",
+    "discriminating_result": "A reproducible finite-bandwidth/distance regime where symmetry-breaking onsite noise causes a qualitatively or quantitatively different degradation, not explained by mismatched perturbation normalization.",
+    "failure_criterion": "No held-out ensemble separation after fair normalization and size/time convergence; then retain as a negative result rather than infer symmetry protection.",
+    "limits": "The bare-frequency benchmark is untested in Meier, but disorder-class differences are known. It does not prove a new clock scaling or reproduce the full open clock."
+  },
+  {
+    "id": "T2",
+    "name": "Launch-state encoding under incomplete Hamiltonian calibration",
+    "origin": "Haselgrove2005 explicit Conclusion; a modern constrained benchmark, not generic new robust control.",
+    "minimal_model": "One-excitation open chain with fixed sender window A, receiver B, arrival time T. M_delta=P_B exp(-i H_delta T) P_A.",
+    "baselines": [
+      "Truncated normalized Gaussian within A",
+      "Nominal SVD right singular vector of M_0",
+      "Ensemble encoding: top eigenvector of mean(M_delta^dagger M_delta)"
+    ],
+    "metrics": [
+      "Independent-test mean receiver probability",
+      "10th-percentile receiver probability",
+      "Clean-system price of robustness",
+      "Support and input norm equality"
+    ],
+    "null": "Nominal SVD is already sufficiently robust; ensemble training gives no reproducible improvement.",
+    "failure_criterion": "No improvement on an independent disorder/calibration-error ensemble, or advantage disappears with equal support and fixed T.",
+    "limits": "This tests static Hamiltonian uncertainty only. It does not test total-spin nonconservation, finite-temperature dynamics, detector efficiency, or environmental decoherence."
+  }
+]

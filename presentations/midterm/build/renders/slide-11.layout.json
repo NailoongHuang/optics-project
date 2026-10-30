@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/tpmp7d","index":10,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/cf6dwf2p","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"等频线与能量传播方向","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/bexw3al4","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/atovu5kj","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 A05、A06，η = 1 与 0.35","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/psfe103y","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"11","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/dwnuxoz2","kind":"image","position":{"left":44,"top":125,"width":1192,"height":365},"fit":"contain","alt":"a06-group-velocity-field"},
+{"id":"sh/nqdwzqls","kind":"textbox","position":{"left":59,"top":500,"width":551,"height":34},"text":"同一条等频线","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2p4vqlkn","kind":"textbox","position":{"left":59,"top":543,"width":551,"height":140},"text":"线上各模式的频率相同。\n群速度指向色散曲面的梯度方向。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1ovexg32","kind":"textbox","position":{"left":665,"top":500,"width":550,"height":34},"text":"空间各向异性","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/0nmdov2h","kind":"textbox","position":{"left":665,"top":543,"width":550,"height":140},"text":"减小 Jᵧ 会降低群速度的 y 分量。\n波矢方向与传播方向需分别判断。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "assumptions": "qx,qy real; eta>0; dimensionless Euclidean graph R=(qx,qy,e)",
+  "reference": "https://mathworld.wolfram.com/GaussianCurvature.html, Monge patch equation (15)",
+  "fundamental_form_residual": "0",
+  "curvature": "eta*cos(q_x)*cos(q_y)/(eta**2*sin(q_y)**2 + sin(q_x)**2 + 1)**2",
+  "hessian": "Matrix([[cos(q_x), 0], [0, eta*cos(q_y)]])",
+  "zero_locus": "qx=pi/2+n*pi OR qy=pi/2+m*pi, n,m integers",
+  "crossing_gradient": "Matrix([[1], [eta]])",
+  "crossing_cubic_coefficients": [
+    "-1/6",
+    "-eta/6"
+  ],
+  "distinction": "The Hessian controls quadratic spectral phase; its eigenvalues are not the graph surface principal curvatures in general."
+}

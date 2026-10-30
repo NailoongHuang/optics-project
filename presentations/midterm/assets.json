@@ -1,0 +1,1686 @@
+{
+  "formula": {
+    "direct_exchange": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\direct_exchange.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 1,
+      "equation": "2-3",
+      "bbox_pdf_points": [
+        168,
+        290,
+        427,
+        351
+      ],
+      "width": 1295,
+      "height": 305,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "coulomb_matrix": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\coulomb_matrix.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 2,
+      "equation": "11",
+      "bbox_pdf_points": [
+        201,
+        284,
+        394,
+        358
+      ],
+      "width": 965,
+      "height": 370,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "eigenstates": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\eigenstates.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 2,
+      "equation": "14",
+      "bbox_pdf_points": [
+        221,
+        553,
+        375,
+        617
+      ],
+      "width": 770,
+      "height": 320,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "spin_matrix": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\spin_matrix.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "17",
+      "bbox_pdf_points": [
+        222,
+        94,
+        375,
+        182
+      ],
+      "width": 765,
+      "height": 440,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "heisenberg_pair": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\heisenberg_pair.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "20",
+      "bbox_pdf_points": [
+        215,
+        319,
+        380,
+        356
+      ],
+      "width": 825,
+      "height": 185,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "lattice_H": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\lattice_H.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "22",
+      "bbox_pdf_points": [
+        172,
+        512,
+        423,
+        547
+      ],
+      "width": 1255,
+      "height": 175,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "ground_energy": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\ground_energy.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "25",
+      "bbox_pdf_points": [
+        242,
+        745,
+        354,
+        779
+      ],
+      "width": 560,
+      "height": 170,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "oneflip_state": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\oneflip_state.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 4,
+      "equation": "26",
+      "bbox_pdf_points": [
+        223,
+        143,
+        372,
+        162
+      ],
+      "width": 745,
+      "height": 95,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "bond_action": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\bond_action.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 4,
+      "equation": "28",
+      "bbox_pdf_points": [
+        221,
+        326,
+        375,
+        359
+      ],
+      "width": 770,
+      "height": 165,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "oneflip_action": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\oneflip_action.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 4,
+      "equation": "29",
+      "bbox_pdf_points": [
+        186,
+        400,
+        409,
+        445
+      ],
+      "width": 1115,
+      "height": 225,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "lattice_eom": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\lattice_eom.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "35",
+      "bbox_pdf_points": [
+        183,
+        162,
+        413,
+        215
+      ],
+      "width": 1150,
+      "height": 265,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "plane_wave": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\plane_wave.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "36",
+      "bbox_pdf_points": [
+        221,
+        287,
+        375,
+        315
+      ],
+      "width": 770,
+      "height": 140,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "neighbors": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\neighbors.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "37",
+      "bbox_pdf_points": [
+        168,
+        373,
+        427,
+        396
+      ],
+      "width": 1295,
+      "height": 115,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "dispersion_derivation": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\dispersion_derivation.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "38",
+      "bbox_pdf_points": [
+        149,
+        424,
+        446,
+        473
+      ],
+      "width": 1485,
+      "height": 245,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "dispersion": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\dispersion.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "39",
+      "bbox_pdf_points": [
+        185,
+        504,
+        411,
+        526
+      ],
+      "width": 1130,
+      "height": 110,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "fermi_exchange": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\fermi_exchange.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 2,
+      "equation": "9",
+      "bbox_pdf_points": [
+        212,
+        165,
+        384,
+        190
+      ],
+      "width": 860,
+      "height": 125,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "spin_components": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\spin_components.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 2,
+      "equation": "15",
+      "bbox_pdf_points": [
+        144,
+        678,
+        452,
+        718
+      ],
+      "width": 1540,
+      "height": 200,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "ferro_state": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\ferro_state.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "23",
+      "bbox_pdf_points": [
+        247,
+        610,
+        351,
+        631
+      ],
+      "width": 520,
+      "height": 105,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "ground_energy_general": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\ground_energy_general.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 3,
+      "equation": "24",
+      "bbox_pdf_points": [
+        204,
+        663,
+        394,
+        700
+      ],
+      "width": 950,
+      "height": 185,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "bond_matrix_action": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\bond_matrix_action.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 4,
+      "equation": "27",
+      "bbox_pdf_points": [
+        189,
+        231,
+        406,
+        302
+      ],
+      "width": 1085,
+      "height": 355,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "state_expansion": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\state_expansion.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 4,
+      "equation": "30",
+      "bbox_pdf_points": [
+        163,
+        525,
+        430,
+        558
+      ],
+      "width": 1335,
+      "height": 165,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    },
+    "general_eom": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\formula\\general_eom.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\Note\\single_magnon_derivation\\main.pdf",
+      "source_sha256": "e864fc36d260e84ee28acbde4400ac10d5c198723ccc09f2463681ea9dc0e339",
+      "page": 5,
+      "equation": "34",
+      "bbox_pdf_points": [
+        215,
+        89,
+        382,
+        130
+      ],
+      "width": 835,
+      "height": 205,
+      "dpi": 360,
+      "operation": "PDF clip rasterized on white; equation number excluded"
+    }
+  },
+  "figures": {
+    "a01-lattice": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a01-lattice.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a01-lattice.png",
+      "source_sha256": "86bae8d486852e9e364f9172f3293fd048102775d9a815dc7d048773a2550822",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        322,
+        298,
+        1883,
+        1122
+      ],
+      "width": 1561,
+      "height": 848,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "交换晶格与单翻转基底",
+      "caption": "25个格点的局部示意中，蓝色实线是横向交换键，橙色虚线是纵向交换键。背景自旋沿+x极化，中心沿-x的箭头代表单翻转基底|0,0>；时间演化后态为这些基底的量子叠加，P_mn=|c_mn|²是测得翻转位于该点的概率。图中箭头示意量子化轴上的取向，不把固定单磁子态的系数解释为经典横向磁矩。eta描述空间方向的交换各向异性。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a02-isotropic-surface": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a02-isotropic-surface.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a02-isotropic-surface.png",
+      "source_sha256": "d6efed3eb2bce6ce888fb2a685e68d8a67850825a0a71902bf4f8824e7f0cc36",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        457,
+        324,
+        2006,
+        1168
+      ],
+      "width": 1549,
+      "height": 868,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "各向同性交换的色散曲面",
+      "caption": "在第一布里渊区内绘出eta=1的精确余弦色散。原点能量为零，最大能量为2(1+eta)=4。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta<1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a03-anisotropic-surface": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a03-anisotropic-surface.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a03-anisotropic-surface.png",
+      "source_sha256": "416e88b92672ccac3d9f14fb271d5df2d14df7ab2522f6ce8dbd28595b57b633",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        457,
+        324,
+        2006,
+        1168
+      ],
+      "width": 1549,
+      "height": 868,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "各向异性交换改变曲面起伏",
+      "caption": "在第一布里渊区内绘出eta=0.35的精确余弦色散。原点能量为零，最大能量为2(1+eta)=2.7。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta<1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a04-axial-cuts": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a04-axial-cuts.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a04-axial-cuts.png",
+      "source_sha256": "34fc41e247755f2f9cc8d526b0f4d61894a306aad821412647af117fb7a8d79e",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        62,
+        253,
+        2068,
+        1229
+      ],
+      "width": 2006,
+      "height": 1000,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "方向色散截面",
+      "caption": "左图eta=1时沿x和y的截面完全重合（虚线覆盖实线），右图eta=0.35时y方向带宽降为0.7，而x方向带宽仍为2。每条曲线都固定另一分量为零，不能把两条轴向截面当成一般斜向传播的完整色散。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a05-equal-frequency": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a05-equal-frequency.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a05-equal-frequency.png",
+      "source_sha256": "0090a22321b89560456b9c455726d8c2f8b3017efa29d8e80aa5d06ed8a3b1a4",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        47,
+        264,
+        2068,
+        1213
+      ],
+      "width": 2021,
+      "height": 973,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "等频曲线",
+      "caption": "曲线数字是e=epsilon/Jx，依次为0.2、0.6、1.2、2、2.5。小波矢附近，eta=1的等频线近圆，eta=0.35时沿qy方向拉长；高波矢处方格晶格的结构清楚可见。等频线仅约束频率，群速度还取决于曲面的梯度，不能据此宣称局域波包保形。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a06-group-velocity-field": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a06-group-velocity-field.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a06-group-velocity-field.png",
+      "source_sha256": "cefd51a4d79aa5e192e0f90a26d73465005e0c9d47778b025cd66cb5547e5ef8",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        47,
+        235,
+        2068,
+        1213
+      ],
+      "width": 2021,
+      "height": 1002,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "群速度场与等频线法向",
+      "caption": "灰线为等能曲线，蓝箭头为u=(sin qx,eta sin qy)，长度按统一比例绘制而未逐点归一化。梯度垂直于等能曲线，并指向能量上升方向。eta=0.35时箭头的y分量减小。该群速度描述窄频谱波包的主导运动；局域翻转包含整个能带，不能用单一箭头概括。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a07-slope-and-speed": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a07-slope-and-speed.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a07-slope-and-speed.png",
+      "source_sha256": "f8f22cd64b902209b3c7bb19bb9f33892a485fef08a1170c36f3d761cb121ab6",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        83,
+        249,
+        2068,
+        1227
+      ],
+      "width": 1985,
+      "height": 1002,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "色散斜率与群速度",
+      "caption": "左侧三个彩色点及切线位于qx=-pi/2、0、pi/2；右侧对应点分别给出ux=-1、0、1。原点和布里渊区边界处斜率为零，能量最高并不意味着群速度最大。波包具有有限频谱宽度时，质心速度是其频谱加权平均，中心波矢处的速度是窄带近似。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a08-long-wave-approximation": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a08-long-wave-approximation.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a08-long-wave-approximation.png",
+      "source_sha256": "dcd688536c0a65dc6e2b38fff0bfc2837b20960ec98fef0ac69758b21bc8c11d",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        68,
+        249,
+        2068,
+        1230
+      ],
+      "width": 2000,
+      "height": 1005,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "长波二次近似",
+      "caption": "两图绘出同一函数的不同范围；左图q<=0.7，右图覆盖0至pi。由cos q=1-q²/2+O(q⁴)得到二次色散。近似只适合小波矢，不能把其无界抛物线及线性增长的群速度延伸到整个晶格能带。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a09-long-wave-error": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a09-long-wave-error.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a09-long-wave-error.png",
+      "source_sha256": "0afd3b3b076bbb784b03812f92a2bfba18f7a2eaa191b7bfd95c259d2497b193",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        66,
+        292,
+        2068,
+        1230
+      ],
+      "width": 2002,
+      "height": 962,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "长波近似的定量误差",
+      "caption": "纵轴是轴向能量的相对高估量；曲线在q=0取连续极限0，插图放大小误差区。1%与5%的示例门槛分别对应q约0.345和0.763。门槛仅刻画该轴向能量近似，不等同于波包传播保真度；相位误差还会随时间累积。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a10-wavevector-velocity-direction": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a10-wavevector-velocity-direction.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a10-wavevector-velocity-direction.png",
+      "source_sha256": "2444cbddd9dc8af8e037b3f52fab35509ccc730a2a80ef62504646b497d39269",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        74,
+        328,
+        2060,
+        1152
+      ],
+      "width": 1986,
+      "height": 848,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "波矢与群速度的方向差",
+      "caption": "橙色虚线箭头指波矢方向，蓝色实线箭头指群速度方向；两者都单位化，箭长不表示速度大小。选择q0=(0.35pi,0.15pi)，eta=1时仍有有限角差，反映方格晶格而非连续各向同性介质的色散；eta=0.35时y向速度降低，传播更偏向x。eta=1的长波极限下二者趋于平行；eta不等于1时，即使长波区u约为(qx,eta*qy)，一般仍不平行。坐标轴等特殊方向需单独判断。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a11-curvature-and-cubic": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a11-curvature-and-cubic.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a11-curvature-and-cubic.png",
+      "source_sha256": "7ed27fb9a4420a1cb3ba08f4814cb245a22c0c2f291f21db22533a8f2c3a03d0",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        64,
+        249,
+        2060,
+        1229
+      ],
+      "width": 1996,
+      "height": 1004,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "色散曲率与三阶残差",
+      "caption": "左图分别画cos q与0.35 cos q，标出q=±pi/2处零曲率。右图在qx=pi/2、qy=0附近减去一阶切线，所得残差接近-delta qx³/6。二维点(pi/2,pi/2)的两个二阶系数都为零，但三阶仍在；本图只建立机制线索，不证明有限宽度波包严格无色散。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "a12-exchange-and-scales": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\a12-exchange-and-scales.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\a-dispersion\\a12-exchange-and-scales.png",
+      "source_sha256": "424f87fdf9f874b93a53550f09756f6c540aa6e300061703a074babe98b85550",
+      "source_size": [
+        2176,
+        1360
+      ],
+      "bbox_pixels": [
+        95,
+        249,
+        2060,
+        1227
+      ],
+      "width": 1965,
+      "height": 1002,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "交换比与能量和速度尺度",
+      "caption": "左图的带宽为2(1+eta)，右图分别是x、y分量和速度模的全布里渊区最大值。eta=1是空间交换各向同性，eta=0对应互不耦合的x向链并带来qy简并。所有上限是精确群速度界，不把它们误读为概率分布的严格有限支撑边界。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_a.json"
+    },
+    "b01-initial-local-flip": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b01-initial-local-flip.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b01-initial-local-flip.png",
+      "source_sha256": "cfd4ec2a71dbb3fd5d673c914dd933da07389e956c9fd690e8393f7307e2a8cc",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        68,
+        203,
+        1853,
+        1051
+      ],
+      "width": 1785,
+      "height": 872,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "局域单翻转初态",
+      "caption": "左图颜色为原点单翻转的概率P，线性色标0至1。右图显示y=0行的纵向自旋期望，原点为-1/2，其余为+1/2。量子化轴为+x；S为无量纲自旋算符。该归一化态有一个确定磁子，不能解释成具有非零横向自旋均值的经典旋转箭头。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b02-flat-spectrum": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b02-flat-spectrum.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b02-flat-spectrum.png",
+      "source_sha256": "dac3fb8b252f4859d86e60447fed3caa422d5379b08a0bd30f680aca96e90a65",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        65,
+        205,
+        1853,
+        1051
+      ],
+      "width": 1788,
+      "height": 870,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "局域初态的均匀波矢权重",
+      "caption": "对归一化单格点态作正交归一化二维离散Fourier变换。每个离散波矢的概率均为1/N²，图中绘制N²|A|²以提高可读性。左图为整个第一布里渊区，右图为qy=0截面。局域初态包含整个能带，不能用单个中心波矢及低阶Taylor展开描述其全部传播。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b03-early-neighbor-spreading": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b03-early-neighbor-spreading.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b03-early-neighbor-spreading.png",
+      "source_sha256": "3ea4701ec877b71d296eac6c675c5541527dc7f51e0fbc1133189fadde87e860",
+      "source_size": [
+        2652,
+        1054
+      ],
+      "bbox_pixels": [
+        128,
+        217,
+        2555,
+        900
+      ],
+      "width": 2427,
+      "height": 707,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "早期近邻传播",
+      "caption": "四幅图依次为τ=0.25、0.6、1.2、2，固定线性色标0至1，显示中心7×7格点。颜色直接表示单翻转概率，不能逐图归一化解释为同一峰高。哈密顿量的近邻耦合产生概率向外转移；图中为完整FFT计算的局部裁切。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b04-isotropic-late-snapshots": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b04-isotropic-late-snapshots.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b04-isotropic-late-snapshots.png",
+      "source_sha256": "386742c380c654190e72d9ebb61619807b4d1e3a1ffd45a1d1258c2dbe7d11af",
+      "source_size": [
+        2652,
+        1054
+      ],
+      "bbox_pixels": [
+        113,
+        214,
+        2575,
+        901
+      ],
+      "width": 2462,
+      "height": 711,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "等方晶格的后期传播",
+      "caption": "τ=6、12、24、36的二维翻转概率采用相同空间范围及10^-7至0.1的对数色标。概率低于色标下限不可见，显示边缘不是严格截止。分布向外展开，同时保留相干干涉条纹和方格晶格的四重对称性；因此等方交换的点激发传播并不必然形成圆形波前。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b05-anisotropy-comparison": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b05-anisotropy-comparison.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b05-anisotropy-comparison.png",
+      "source_sha256": "916629269207988124d192874fcee4316a674dc5907a33f7f1a02561a9e70a99",
+      "source_size": [
+        2465,
+        1088
+      ],
+      "bbox_pixels": [
+        97,
+        221,
+        2405,
+        938
+      ],
+      "width": 2308,
+      "height": 741,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "交换各向异性与一维极限",
+      "caption": "固定τ=24与Jx，比较η=0、0.3、1。所有图使用同一空间尺度及10^-7至0.1的对数色标。η=0时y方向无耦合，概率严格停留在y=0行；η=0.3时二维分布沿y较窄；η=1时两个方向对称。这里的各向异性是空间交换参数差异，并未引入自旋空间的易轴或易面项。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b06-marginal-probabilities": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b06-marginal-probabilities.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b06-marginal-probabilities.png",
+      "source_sha256": "0ebfb80568fd2a8fcf35385d391d5c7c6780eeb3d0b54d97cb455cc1f2d67945",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        56,
+        211,
+        1853,
+        1051
+      ],
+      "width": 1797,
+      "height": 864,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "两个方向的边际概率",
+      "caption": "η=0.3时τ=4、12、24的边际概率：左图对y求和，右图对x求和。各曲线对全部格点求和均为1；固定相同横坐标范围和纵轴范围以比较扩展速度。边际概率P_x、P_y与中心截线P_{m,0}、P_{0,n}不同。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b07-spacetime-isotropic": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b07-spacetime-isotropic.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b07-spacetime-isotropic.png",
+      "source_sha256": "7caaa0f6338f64b9644ce372cb2f8bf40c4914e4f64e17cdab5f676ac864a1aa",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        63,
+        236,
+        1942,
+        1051
+      ],
+      "width": 1879,
+      "height": 839,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "时空传播与最大群速度",
+      "caption": "对每个时间计算归一化二维态，再对y求和得到P_x。纵轴为τ，横轴为x/a；固定对数色标10^-7至1。青色虚线为x/a=±τ，对应|v_x|≤Jx a/ℏ，指出主要弹道前沿的位置。有限时间的晶格传播核在线外仍有小而非零的尾部，图示不是严格光锥。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b08-anisotropic-spacetime": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b08-anisotropic-spacetime.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b08-anisotropic-spacetime.png",
+      "source_sha256": "09cfffa7ec2011239c5ba09c649f12c010202dac9406a0f381fba6404c8565c5",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        71,
+        205,
+        1945,
+        1051
+      ],
+      "width": 1874,
+      "height": 870,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "各向异性时空传播",
+      "caption": "η=0.3的x、y边际概率时空图。由于初态和色散都可分离，P_x不依赖η；其数据与η=1完全相同。虚线分别为|x|/a=τ和|y|/a=0.3τ，颜色使用固定10^-7至1对数范围。线外仍存在非零尾部，最大群速度给出主要弹道前沿尺度。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b09-ballistic-rms": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b09-ballistic-rms.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b09-ballistic-rms.png",
+      "source_sha256": "fa0e674b0cb3d1c83172e39b0648f1accbd93123fb2f361430eaf811ac50d093",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        64,
+        205,
+        1853,
+        1051
+      ],
+      "width": 1789,
+      "height": 870,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "均方根宽度的弹道增长",
+      "caption": "从归一化FFT概率计算质心及标准差σ。无限晶格Bessel恒等式给出σx/a=τ/√2和σy/a=ητ/√2；实线为解析值，空心点为FFT矩。η=1、0.3、0的x曲线重合，y曲线随η变化。这里表征的是局域初态分布的展开，不是窄带Gaussian包络的二阶色散近似。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b10-return-probability": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b10-return-probability.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b10-return-probability.png",
+      "source_sha256": "5c3e26746ce0e1fc5216dcf4b22d892e75beea3a1cf963f82fb1667fc013bc39",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        27,
+        208,
+        1853,
+        1051
+      ],
+      "width": 1826,
+      "height": 867,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "中心返回概率的相干振荡",
+      "caption": "比较η=1和0.3的原点翻转概率，纵轴为对数。曲线为P00=J0(τ)^2 J0(ητ)^2，空心点为FFT直接读出的原点值。这里J0表示第一类Bessel函数，与交换常数Jx、Jy不同。原点概率的降低和再升高源于相干演化，不代表耗散或非线性相互作用。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b11-anisotropy-scan": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b11-anisotropy-scan.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b11-anisotropy-scan.png",
+      "source_sha256": "0d2768c8e16b4901dcf5c3998c21aabdc0985a75f0416b454ddc899520a76593",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        64,
+        204,
+        1853,
+        1051
+      ],
+      "width": 1789,
+      "height": 871,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "交换比与RMS长宽比",
+      "caption": "固定Jx、初态、格点数和τ=24，只扫描η。左图显示σx不变、σy随η线性增长；右图为σy/σx=η。解析线和FFT点对照。在η>1时分布沿y比沿x宽；η=0退化为一维传播。该比较固定的是无量纲τ，即固定Jx条件下相同的物理时间。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b12-probability-to-spin": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b12-probability-to-spin.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b12-probability-to-spin.png",
+      "source_sha256": "0439cc09425ead8e668f0f1968529a01bb6b88c780c4cd98b42d749c0bc86161",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        13,
+        204,
+        1853,
+        1038
+      ],
+      "width": 1840,
+      "height": 858,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "翻转概率与纵向自旋观测量",
+      "caption": "η=1、τ=8时的y=0截线。左图为P_m0，右图逐格点应用<Sx>=1/2-P得到纵向自旋期望；虚线为背景1/2。两图纵轴不同，峰值概率对应自旋亏损。归一化单磁子态的总亏损为1，而<Sy>=<Sz>=0；概率波的复相位不能直接画成非零的局域横向平均自旋。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "b13-independent-bessel-check": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\b13-independent-bessel-check.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\b-local-flip\\b13-independent-bessel-check.png",
+      "source_sha256": "9450cff2a85a2d5832b97c9909e9dcb9f34086f23775972cfec9c7d1779d80ae",
+      "source_size": [
+        1955,
+        1156
+      ],
+      "bbox_pixels": [
+        43,
+        204,
+        1949,
+        1051
+      ],
+      "width": 1906,
+      "height": 871,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "Bessel解析核独立验证",
+      "caption": "去除基态整体相位exp[-i EF t/ℏ]后，无限晶格解析振幅为exp[-i(1+η)τ] i^(m+n) J_m(τ)J_n(ητ)，故概率为两个Bessel平方的乘积。左图比较x边际，右图为FFT概率与解析概率逐格点之差的绝对值乘以10^17，采用线性色标；色标1代表实际误差10^-17。有限周期晶格只有在边界回绕可忽略时才与无限晶格核一致；另有N=512和边界概率质量检查。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_b.json"
+    },
+    "c01-carrier-envelope-spectrum": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c01-carrier-envelope-spectrum.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c01-carrier-envelope-spectrum.png",
+      "source_sha256": "9c991a860c84802529e45af27658c777fc14337cab0382b404b3460884fa4de9",
+      "source_size": [
+        2380,
+        952
+      ],
+      "bbox_pixels": [
+        48,
+        166,
+        2252,
+        846
+      ],
+      "width": 2204,
+      "height": 704,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "载波、包络与频谱",
+      "caption": "两种归一化Gaussian初态只有载波不同：q0=(0,0)和(0.7,0)，sigma=4。左图的x边际概率严格相同；中图画中心区域连续展开的载波相位q0x*x，省略低振幅尾部；右图为单位正交FFT所得离散频谱的x边际概率，所有波矢的总概率为1。载波改变频谱中心及后续传播，但不改变初始概率包络。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c02-space-bandwidth": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c02-space-bandwidth.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c02-space-bandwidth.png",
+      "source_sha256": "f37ef3c7c28180b693c7952609980e22ac4880eb325d401523eff85797737b61",
+      "source_size": [
+        2125,
+        935
+      ],
+      "bbox_pixels": [
+        57,
+        157,
+        2030,
+        832
+      ],
+      "width": 1973,
+      "height": 699,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "空间宽度与频谱宽度",
+      "caption": "比较sigma=3、6、10的无啁啾Gaussian初态，q0=(0.7,0)。sigma是概率分布的RMS宽度；不是振幅指数中再平方后的宽度。所有初态总概率为1，所以窄初态的空间峰值更高，而宽初态的频谱更窄。本图横轴和纵轴在各参数曲线之间统一。Delta q=1/(2 sigma)是宽包络、频谱远离Brillouin区接缝时的连续Gaussian表达式。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c03-zero-carrier-spreading": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c03-zero-carrier-spreading.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c03-zero-carrier-spreading.png",
+      "source_sha256": "2a64e5e18100f9c00a678eb25c8a29b162f6eeb31421602020701f30d7ac9032",
+      "source_size": [
+        2380,
+        952
+      ],
+      "bbox_pixels": [
+        42,
+        191,
+        2347,
+        856
+      ],
+      "width": 2305,
+      "height": 689,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "零中心波矢：质心停留，概率向外展开",
+      "caption": "精确余弦色散下，sigma=4、q0=(0.0, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。谱分布关于零波矢对称，因此两个方向的平均群速度都为0，质心停留在原点；不同非零波矢成分仍会向外传播并引起展宽。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c04-moving-gaussian": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c04-moving-gaussian.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c04-moving-gaussian.png",
+      "source_sha256": "51d14c4872f51dbfc13a67a1a17f09cf52aeca6b2bfc2d123148669705c33a5c",
+      "source_size": [
+        2380,
+        952
+      ],
+      "bbox_pixels": [
+        30,
+        260,
+        2347,
+        788
+      ],
+      "width": 2317,
+      "height": 552,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "非零中心波矢：向右移动，同时逐渐展宽",
+      "caption": "精确余弦色散下，sigma=4、q0=(0.7, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。频谱中心向正qx偏移，带来正x方向平均群速度；有限频宽仍使各成分群速度不同，所以包络一边移动一边展宽。y方向中心波矢为0，平均位移为0，但仍会展宽。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c05-carrier-directions": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c05-carrier-directions.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c05-carrier-directions.png",
+      "source_sha256": "2332b0135c11877bfd233cb94b633d484ffc90a7921780439b74d826c6560143",
+      "source_size": [
+        2380,
+        952
+      ],
+      "bbox_pixels": [
+        30,
+        260,
+        2347,
+        784
+      ],
+      "width": 2317,
+      "height": 548,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "由载波控制传播方向",
+      "caption": "保持sigma=4和初始概率包络相同，只将载波改成(-0.7,0)、(0.7,0)、(0.7,0.7)。在tau=60时分别得到左行、右行和斜向传播。白箭头由原点指向谱平均速度乘以时间得到的质心预测。对当前等宽、各向同性交换且两个非零波矢分量相同的例子，斜向群速度方向与载波方向一致；这一一致性并非任意色散或各向异性情形下的普遍规律。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c06-centroid-velocity": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c06-centroid-velocity.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c06-centroid-velocity.png",
+      "source_sha256": "a7eca561834283eb5da52fecb26c1771a1fb4a492b0c21a8a7e187e9fca87e9d",
+      "source_size": [
+        2210,
+        969
+      ],
+      "bbox_pixels": [
+        74,
+        205,
+        2092,
+        853
+      ],
+      "width": 2018,
+      "height": 672,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "质心运动与谱平均速度",
+      "caption": "四种载波的概率质心由精确FFT演化计算。圆点为数值结果，实线用初态全频谱的<sin qx>和eta<sin qy>预测，虚线用中心波矢处的(sin q0x,eta sin q0y)近似。对于sigma=4，有限频宽使两者存在虽小但真实的差异，不能把中心值近似称为精确质心速度。当前无边界污染的平移不变模型中，位置期望按谱平均速度作直线运动。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c07-comoving-marginals": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c07-comoving-marginals.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c07-comoving-marginals.png",
+      "source_sha256": "8650f83fb829c6d1b4ad5ac46e4ddf1f3da654e78d1f968de7553b1024e4fe74",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        58,
+        160,
+        2013,
+        846
+      ],
+      "width": 1955,
+      "height": 710,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "共动坐标下的包络展宽",
+      "caption": "对q0=(0.7,0)、sigma=4的同一个波包，画tau=0、20、40、60的x和y边际概率。仅在横轴减去数值质心，没有重新归一化峰值或宽度。曲线使用实际格点概率并连线。x、y方向的色散曲率不同，因而展宽程度不同；质心的直线移动与包络的形状变化是可以分别测量的两件事。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c08-width-comparison": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c08-width-comparison.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c08-width-comparison.png",
+      "source_sha256": "a77d917365cd0af1a39b3178474667b838d2fcc895c4ac0af9b242d453a33fee",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        57,
+        160,
+        2018,
+        844
+      ],
+      "width": 1961,
+      "height": 708,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "不同初始宽度的传播对照",
+      "caption": "sigma=3、6、10的Gaussian都以q0=(0.7,0)传播至tau=60，各自归一化总概率为1。左图画共动坐标下真实x边际概率；右图明确采用u=(x-<x>)/sigma、纵轴sigma*Px，以比较相对初始宽度的变化，保持分布面积一致。宽初态频谱更窄，因此相对展宽较小，但需要更大的初始空间范围。本图不把不同初始尺寸的波包解释成相同制备资源下的性能排名。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c09-rms-exact-moments": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c09-rms-exact-moments.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c09-rms-exact-moments.png",
+      "source_sha256": "2de86e2e782f06d3677bf49ed9d4622a3288d83c9f2991ef2631cedae7503689",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        93,
+        194,
+        2013,
+        840
+      ],
+      "width": 1920,
+      "height": 670,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "概率宽度与精确速度方差",
+      "caption": "对于初始实Gaussian包络乘线性载波，初始位置与速度的对称协方差为零，因此无限晶格上Var(n_mu(tau))=Var(n_mu(0))+tau^2 Var(v_mu)精确成立。一般有啁啾的初态还会有2*tau*Cov_sym(n_mu,v_mu)项，不能直接套用本图公式。图中实线完全由初态离散频谱平均计算，圆点来自精确余弦色散演化；有限周期盒在tau<=60内已检查边缘概率与扩大网格误差。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c10-anisotropy-direction": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c10-anisotropy-direction.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c10-anisotropy-direction.png",
+      "source_sha256": "e52af0b3ff25d4e4c8ad5dc31eec7f9ceb7088f10adcc2d53034b47f2127a8cc",
+      "source_size": [
+        2380,
+        952
+      ],
+      "bbox_pixels": [
+        196,
+        191,
+        2347,
+        856
+      ],
+      "width": 2151,
+      "height": 689,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "各向异性下波矢与传播方向",
+      "caption": "固定q0=(0.7,0.7)、sigma=4和tau=60，仅改变eta=Jy/Jx为1或0.3。青色虚箭头示意波矢方向，长度不代表物理速度；白色箭头表示实际质心位移。两个初态的波矢方向同为45度，谱平均群速度方向分别约为45度和16.7度。由于vy=eta sin qy，较弱的y方向交换降低了y方向传播速率。所有概率图用同一固定线性色标。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c11-anisotropy-width": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c11-anisotropy-width.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c11-anisotropy-width.png",
+      "source_sha256": "2ff4c8151409d67e0a75af813d794848f831fb409772c425fc6d0c9d3f4099dd",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        70,
+        162,
+        2013,
+        840
+      ],
+      "width": 1943,
+      "height": 702,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "各向异性与二维宽度",
+      "caption": "相同圆对称Gaussian包络在eta=1和eta=0.3下的x、y概率RMS宽度。由于qx=qy=0.7且初始频宽相同，eta=1时两个方向的宽度曲线重合；eta=0.3保留相同x方向演化，但减小y方向的速度方差，导致宽度比sigma_x/sigma_y增大。这里的圆形和椭圆形描述包络尺度，不意味着离散晶格具有连续旋转对称性。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c12-spectrum-phase": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c12-spectrum-phase.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c12-spectrum-phase.png",
+      "source_sha256": "858abc3a952a4aeeb2377968f36d7aee7f0ac215d7827cecf3240e7ba00f9c93",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        54,
+        163,
+        2013,
+        849
+      ],
+      "width": 1959,
+      "height": 710,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "频谱功率守恒与相位积累",
+      "caption": "左图从tau=0、30、60的实际演化波函数重新做单位正交FFT，显示频谱概率逐点不变。这里e=epsilon/Jx为无量纲能量，tau=Jx*t/hbar。右图在qy=0截面画精确传播因子的残余相位-tau[e(qx,0)-e(0.7,0)-sin(0.7)(qx-0.7)]，相位连续展开而不是模2pi显示；去掉的是整体相位和中心群速度平移对应的线性相位。频谱概率不变并不保证实空间形状不变，因为不同模式的相对相位仍会变化。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c13-extension-inflection": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c13-extension-inflection.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c13-extension-inflection.png",
+      "source_sha256": "3e1d5a831918fd5fdbd6b5b0ee26b5d5db77deeb4fd313c7caf479b85c8e71fc",
+      "source_size": [
+        2125,
+        952
+      ],
+      "bbox_pixels": [
+        90,
+        160,
+        2013,
+        840
+      ],
+      "width": 1923,
+      "height": 704,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "拓展：零二阶曲率点",
+      "caption": "这是后续保形研究的初步入口。两种初态的sigma都为3、总概率都为1。q0=(pi/2,pi/2)处两个方向的二阶色散项消失，有限频宽内速度差减小，因此tau<=60内的展宽与形变明显较弱。右图比较实际波函数与按各自谱平均速度刚性平移的初态的模平方重合度，对整体相位不敏感，但会检测相对相位形变；它不是仅比较概率轮廓的指标。三阶及更高阶项仍存在，不能据此宣称无限时间严格保形。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    },
+    "c14-extension-cubic-distortion": {
+      "path": "C:\\Users\\xuanm\\Desktop\\optics\\presentations\\midterm\\build\\assets\\figures\\c14-extension-cubic-distortion.png",
+      "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\c-gaussian\\c14-extension-cubic-distortion.png",
+      "source_sha256": "1a5b6f465ee66cdb45e592f9ceccc1c4aae13684bc628f6a0b85002bf44b1cd5",
+      "source_size": [
+        2176,
+        952
+      ],
+      "bbox_pixels": [
+        47,
+        160,
+        2060,
+        846
+      ],
+      "width": 2013,
+      "height": 710,
+      "padding_pixels": [
+        0,
+        12,
+        0,
+        12
+      ],
+      "title": "拓展：高阶色散的有限带宽形变",
+      "caption": "为使高阶形变在中期报告图中可见，本图用sigma=2、q0=(pi/2,pi/2)的独立示例；它与C13的sigma=3不同，不能据此直接比较保形性能。左图画tau=0、20、40、60的实际x边际概率，仅减去实际质心，保持统一纵轴。右图固定qy=pi/2，精确能量去除常数与线性项后为sin(delta q)-delta q，其首项是-(delta q)^3/6。有限频谱因此仍有相位差累积，产生不对称形变与尾部。此图说明零二阶曲率不等于零色散。",
+      "operation": "Mechanical crop of original PNG; total heading and footer omitted",
+      "manifest_source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\manifest_c.json"
+    }
+  },
+  "dimensions": {
+    "direct_exchange": [
+      1295,
+      305
+    ],
+    "coulomb_matrix": [
+      965,
+      370
+    ],
+    "eigenstates": [
+      770,
+      320
+    ],
+    "spin_matrix": [
+      765,
+      440
+    ],
+    "heisenberg_pair": [
+      825,
+      185
+    ],
+    "lattice_H": [
+      1255,
+      175
+    ],
+    "ground_energy": [
+      560,
+      170
+    ],
+    "oneflip_state": [
+      745,
+      95
+    ],
+    "bond_action": [
+      770,
+      165
+    ],
+    "oneflip_action": [
+      1115,
+      225
+    ],
+    "lattice_eom": [
+      1150,
+      265
+    ],
+    "plane_wave": [
+      770,
+      140
+    ],
+    "neighbors": [
+      1295,
+      115
+    ],
+    "dispersion_derivation": [
+      1485,
+      245
+    ],
+    "dispersion": [
+      1130,
+      110
+    ],
+    "fermi_exchange": [
+      860,
+      125
+    ],
+    "spin_components": [
+      1540,
+      200
+    ],
+    "ferro_state": [
+      520,
+      105
+    ],
+    "ground_energy_general": [
+      950,
+      185
+    ],
+    "bond_matrix_action": [
+      1085,
+      355
+    ],
+    "state_expansion": [
+      1335,
+      165
+    ],
+    "general_eom": [
+      835,
+      205
+    ],
+    "a01-lattice": [
+      1561,
+      848
+    ],
+    "a02-isotropic-surface": [
+      1549,
+      868
+    ],
+    "a03-anisotropic-surface": [
+      1549,
+      868
+    ],
+    "a04-axial-cuts": [
+      2006,
+      1000
+    ],
+    "a05-equal-frequency": [
+      2021,
+      973
+    ],
+    "a06-group-velocity-field": [
+      2021,
+      1002
+    ],
+    "a07-slope-and-speed": [
+      1985,
+      1002
+    ],
+    "a08-long-wave-approximation": [
+      2000,
+      1005
+    ],
+    "a09-long-wave-error": [
+      2002,
+      962
+    ],
+    "a10-wavevector-velocity-direction": [
+      1986,
+      848
+    ],
+    "a11-curvature-and-cubic": [
+      1996,
+      1004
+    ],
+    "a12-exchange-and-scales": [
+      1965,
+      1002
+    ],
+    "b01-initial-local-flip": [
+      1785,
+      872
+    ],
+    "b02-flat-spectrum": [
+      1788,
+      870
+    ],
+    "b03-early-neighbor-spreading": [
+      2427,
+      707
+    ],
+    "b04-isotropic-late-snapshots": [
+      2462,
+      711
+    ],
+    "b05-anisotropy-comparison": [
+      2308,
+      741
+    ],
+    "b06-marginal-probabilities": [
+      1797,
+      864
+    ],
+    "b07-spacetime-isotropic": [
+      1879,
+      839
+    ],
+    "b08-anisotropic-spacetime": [
+      1874,
+      870
+    ],
+    "b09-ballistic-rms": [
+      1789,
+      870
+    ],
+    "b10-return-probability": [
+      1826,
+      867
+    ],
+    "b11-anisotropy-scan": [
+      1789,
+      871
+    ],
+    "b12-probability-to-spin": [
+      1840,
+      858
+    ],
+    "b13-independent-bessel-check": [
+      1906,
+      871
+    ],
+    "c01-carrier-envelope-spectrum": [
+      2204,
+      704
+    ],
+    "c02-space-bandwidth": [
+      1973,
+      699
+    ],
+    "c03-zero-carrier-spreading": [
+      2305,
+      689
+    ],
+    "c04-moving-gaussian": [
+      2317,
+      552
+    ],
+    "c05-carrier-directions": [
+      2317,
+      548
+    ],
+    "c06-centroid-velocity": [
+      2018,
+      672
+    ],
+    "c07-comoving-marginals": [
+      1955,
+      710
+    ],
+    "c08-width-comparison": [
+      1961,
+      708
+    ],
+    "c09-rms-exact-moments": [
+      1920,
+      670
+    ],
+    "c10-anisotropy-direction": [
+      2151,
+      689
+    ],
+    "c11-anisotropy-width": [
+      1943,
+      702
+    ],
+    "c12-spectrum-phase": [
+      1959,
+      710
+    ],
+    "c13-extension-inflection": [
+      1923,
+      704
+    ],
+    "c14-extension-cubic-distortion": [
+      2013,
+      710
+    ]
+  },
+  "review": {
+    "visual_status": "passed",
+    "visual_scope": "All 22 formula crops and all 39 figure crops inspected in contact sheets; full-size spot checks for matrix brackets, plot labels, color bars, subtitle descenders, and footer boundaries.",
+    "corrections": "Extended spin_matrix top boundary; removed residual grey subtitle descenders; adjusted B12 footer boundary; retained all axes and colorbars.",
+    "pixel_integrity": "All 39 figure crops are pixel-identical to the recorded source crop plus 12 white pixels on top and bottom.",
+    "source_files_modified": false
+  }
+}

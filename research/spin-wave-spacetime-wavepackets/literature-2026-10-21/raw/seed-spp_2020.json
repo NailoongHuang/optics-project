@@ -1,0 +1,1216 @@
+{
+  "id": "https://openalex.org/W3009403637",
+  "doi": "https://doi.org/10.1021/acsphotonics.0c00293",
+  "title": "Space–Time Surface Plasmon Polaritons: A New Propagation-Invariant Surface Wave Packet",
+  "display_name": "Space–Time Surface Plasmon Polaritons: A New Propagation-Invariant Surface Wave Packet",
+  "publication_year": 2020,
+  "publication_date": "2020-04-10",
+  "ids": {
+    "openalex": "https://openalex.org/W3009403637",
+    "doi": "https://doi.org/10.1021/acsphotonics.0c00293",
+    "mag": "3009403637"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1021/acsphotonics.0c00293",
+    "doi": "https://doi.org/10.1021/acsphotonics.0c00293",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1021/acsphotonics.0c00293",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S135184319",
+      "display_name": "ACS Photonics",
+      "issn_l": "2330-4022",
+      "issn": [
+        "2330-4022"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-b",
+        "jufo-2",
+        "ki-jl-1",
+        "norway-1",
+        "poland-140",
+        "russia-white-list-1"
+      ],
+      "host_organization": "https://openalex.org/P4310320006",
+      "host_organization_name": "American Chemical Society",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320006"
+      ],
+      "host_organization_lineage_names": [
+        "American Chemical Society"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "ACS Photonics",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "arxiv",
+    "crossref",
+    "datacite"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://arxiv.org/pdf/2003.02105",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5077694862",
+        "display_name": "Kenneth L. Schepler",
+        "orcid": "https://orcid.org/0000-0001-9658-2305",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-9658-2305"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Kenneth L. Schepler",
+      "raw_affiliation_strings": [
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+        "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5042564747",
+        "display_name": "Мurat Yessenov",
+        "orcid": "https://orcid.org/0000-0001-6850-1803",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-6850-1803"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Murat Yessenov",
+      "raw_affiliation_strings": [
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+        "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5031783896",
+        "display_name": "Yertay Zhiyenbayev",
+        "orcid": "https://orcid.org/0000-0002-9209-3413",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-9209-3413"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Yertay Zhiyenbayev",
+      "raw_affiliation_strings": [
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+        "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida , Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5006550826",
+        "display_name": "Ayman F. Abouraddy",
+        "orcid": "https://orcid.org/0000-0002-4987-5495",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4987-5495"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Ayman F. Abouraddy",
+      "raw_affiliation_strings": [
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+        "University of central florida"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4987-5495",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, United States",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "University of central florida",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5006550826"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I106165777"
+  ],
+  "apc_list": {
+    "value": 5000,
+    "currency": "USD",
+    "value_usd": 5000
+  },
+  "apc_paid": null,
+  "fwci": 1.9937,
+  "has_fulltext": true,
+  "cited_by_count": 45,
+  "citation_normalized_percentile": {
+    "value": 0.85592886,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 88,
+    "max": 99
+  },
+  "biblio": {
+    "volume": "7",
+    "issue": "11",
+    "first_page": "2966",
+    "last_page": "2977"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10295",
+    "display_name": "Plasmonic and Surface Plasmon Research",
+    "score": 0.9955999851226807,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2204",
+      "display_name": "Biomedical Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10295",
+      "display_name": "Plasmonic and Surface Plasmon Research",
+      "score": 0.9955999851226807,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2204",
+        "display_name": "Biomedical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10490",
+      "display_name": "Orbital Angular Momentum in Optics",
+      "score": 0.0017999999690800905,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10245",
+      "display_name": "Metamaterials and Metasurfaces Applications",
+      "score": 0.0006000000284984708,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2504",
+        "display_name": "Electronic, Optical and Magnetic Materials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/surface-plasmon-polaritons",
+      "display_name": "surface plasmon polaritons",
+      "score": 0.9649999737739563
+    },
+    {
+      "id": "https://openalex.org/keywords/metal-dielectric-interface",
+      "display_name": "metal-dielectric interface",
+      "score": 0.7730000019073486
+    },
+    {
+      "id": "https://openalex.org/keywords/subwavelength-localization",
+      "display_name": "subwavelength localization",
+      "score": 0.6039999723434448
+    },
+    {
+      "id": "https://openalex.org/keywords/spatiotemporal-correlation",
+      "display_name": "spatio-temporal correlation",
+      "score": 0.7990000247955322
+    },
+    {
+      "id": "https://openalex.org/keywords/subluminal-propagation",
+      "display_name": "subluminal propagation",
+      "score": 0.7919999957084656
+    },
+    {
+      "id": "https://openalex.org/keywords/superluminal-propagation",
+      "display_name": "superluminal propagation",
+      "score": 0.9909999966621399
+    },
+    {
+      "id": "https://openalex.org/keywords/negative-group-velocity",
+      "display_name": "negative group velocity",
+      "score": 0.9369999766349792
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C150835508",
+      "wikidata": "https://www.wikidata.org/wiki/Q15916346",
+      "display_name": "Surface plasmon polariton",
+      "level": 4,
+      "score": 0.7153830528259277
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.6656185984611511
+    },
+    {
+      "id": "https://openalex.org/C106978608",
+      "wikidata": "https://www.wikidata.org/wiki/Q1412691",
+      "display_name": "Wave packet",
+      "level": 2,
+      "score": 0.5971039533615112
+    },
+    {
+      "id": "https://openalex.org/C181341577",
+      "wikidata": "https://www.wikidata.org/wiki/Q217361",
+      "display_name": "Group velocity",
+      "level": 2,
+      "score": 0.5705666542053223
+    },
+    {
+      "id": "https://openalex.org/C136676167",
+      "wikidata": "https://www.wikidata.org/wiki/Q1151829",
+      "display_name": "Surface plasmon",
+      "level": 3,
+      "score": 0.4868239760398865
+    },
+    {
+      "id": "https://openalex.org/C51493423",
+      "wikidata": "https://www.wikidata.org/wiki/Q2486351",
+      "display_name": "Superluminal motion",
+      "level": 2,
+      "score": 0.47428447008132935
+    },
+    {
+      "id": "https://openalex.org/C84174578",
+      "wikidata": "https://www.wikidata.org/wiki/Q889796",
+      "display_name": "Surface wave",
+      "level": 2,
+      "score": 0.4728192090988159
+    },
+    {
+      "id": "https://openalex.org/C110879396",
+      "wikidata": "https://www.wikidata.org/wiki/Q58392",
+      "display_name": "Plasmon",
+      "level": 2,
+      "score": 0.45944488048553467
+    },
+    {
+      "id": "https://openalex.org/C130725296",
+      "wikidata": "https://www.wikidata.org/wiki/Q65296045",
+      "display_name": "Polariton",
+      "level": 2,
+      "score": 0.4452098608016968
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.42642655968666077
+    },
+    {
+      "id": "https://openalex.org/C44886760",
+      "wikidata": "https://www.wikidata.org/wiki/Q1758425",
+      "display_name": "Wave propagation",
+      "level": 2,
+      "score": 0.4223771393299103
+    },
+    {
+      "id": "https://openalex.org/C190470478",
+      "wikidata": "https://www.wikidata.org/wiki/Q2370229",
+      "display_name": "Invariant (physics)",
+      "level": 2,
+      "score": 0.4212706983089447
+    },
+    {
+      "id": "https://openalex.org/C30475298",
+      "wikidata": "https://www.wikidata.org/wiki/Q909554",
+      "display_name": "Computational physics",
+      "level": 1,
+      "score": 0.336519718170166
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.217250257730484
+    }
+  ],
+  "mesh": [],
+  "locations_count": 4,
+  "locations": [
+    {
+      "id": "doi:10.1021/acsphotonics.0c00293",
+      "doi": "https://doi.org/10.1021/acsphotonics.0c00293",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1021/acsphotonics.0c00293",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S135184319",
+        "display_name": "ACS Photonics",
+        "issn_l": "2330-4022",
+        "issn": [
+          "2330-4022"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "dongbi-b",
+          "jufo-2",
+          "ki-jl-1",
+          "norway-1",
+          "poland-140",
+          "russia-white-list-1"
+        ],
+        "host_organization": "https://openalex.org/P4310320006",
+        "host_organization_name": "American Chemical Society",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320006"
+        ],
+        "host_organization_lineage_names": [
+          "American Chemical Society"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "ACS Photonics",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:arXiv.org:2003.02105",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "http://arxiv.org/abs/2003.02105",
+      "pdf_url": "https://arxiv.org/pdf/2003.02105",
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "text"
+    },
+    {
+      "id": "mag:3009403637",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "https://arxiv.org/pdf/2003.02105.pdf",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "arXiv (Cornell University)",
+      "raw_type": null
+    },
+    {
+      "id": "doi:10.48550/arxiv.2003.02105",
+      "doi": "https://doi.org/10.48550/arxiv.2003.02105",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2003.02105",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:arXiv.org:2003.02105",
+    "doi": null,
+    "is_oa": true,
+    "landing_page_url": "http://arxiv.org/abs/2003.02105",
+    "pdf_url": "https://arxiv.org/pdf/2003.02105",
+    "source": {
+      "id": "https://openalex.org/S4306400194",
+      "display_name": "arXiv (Cornell University)",
+      "issn_l": "2331-8422",
+      "issn": [
+        "2331-8422"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": false,
+      "listed_in": [],
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_name": "Cornell University",
+      "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "text"
+  },
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [
+    {
+      "display_name": "Peace, justice, and strong institutions",
+      "id": "https://metadata.un.org/sdg/16",
+      "score": 0.7599999904632568
+    }
+  ],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G141174884",
+      "display_name": null,
+      "funder_award_id": "N00014- 20-1-2789",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G1851310322",
+      "display_name": null,
+      "funder_award_id": "N00014-17-1-2458",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G4504108201",
+      "display_name": null,
+      "funder_award_id": "N00014-17-1",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G8876996369",
+      "display_name": null,
+      "funder_award_id": "N00014",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G8929337198",
+      "display_name": null,
+      "funder_award_id": "N00014-17",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320337345",
+      "display_name": "Office of Naval Research",
+      "ror": "https://ror.org/00rk2pe57"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": true,
+    "pdf": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W3009403637.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W3009403637.grobid-xml"
+  },
+  "referenced_works_count": 81,
+  "referenced_works": [
+    "https://openalex.org/W4296862",
+    "https://openalex.org/W113883603",
+    "https://openalex.org/W943535167",
+    "https://openalex.org/W1488722834",
+    "https://openalex.org/W1495836024",
+    "https://openalex.org/W1572432597",
+    "https://openalex.org/W1615425580",
+    "https://openalex.org/W1705421740",
+    "https://openalex.org/W1920068563",
+    "https://openalex.org/W1951994228",
+    "https://openalex.org/W1967818727",
+    "https://openalex.org/W1974419684",
+    "https://openalex.org/W1974691446",
+    "https://openalex.org/W1977741779",
+    "https://openalex.org/W1981289976",
+    "https://openalex.org/W1983339621",
+    "https://openalex.org/W1985607358",
+    "https://openalex.org/W1994554237",
+    "https://openalex.org/W1994795223",
+    "https://openalex.org/W1995144131",
+    "https://openalex.org/W1997699966",
+    "https://openalex.org/W2009415312",
+    "https://openalex.org/W2010067249",
+    "https://openalex.org/W2010694664",
+    "https://openalex.org/W2017080453",
+    "https://openalex.org/W2022071597",
+    "https://openalex.org/W2022568576",
+    "https://openalex.org/W2023407353",
+    "https://openalex.org/W2028879812",
+    "https://openalex.org/W2040957662",
+    "https://openalex.org/W2043149304",
+    "https://openalex.org/W2056194713",
+    "https://openalex.org/W2056921062",
+    "https://openalex.org/W2062160909",
+    "https://openalex.org/W2068941137",
+    "https://openalex.org/W2071910284",
+    "https://openalex.org/W2087315595",
+    "https://openalex.org/W2088911595",
+    "https://openalex.org/W2091761640",
+    "https://openalex.org/W2107452313",
+    "https://openalex.org/W2122367715",
+    "https://openalex.org/W2131313345",
+    "https://openalex.org/W2139872781",
+    "https://openalex.org/W2145777690",
+    "https://openalex.org/W2165485874",
+    "https://openalex.org/W2165995642",
+    "https://openalex.org/W2466928390",
+    "https://openalex.org/W2557418847",
+    "https://openalex.org/W2557883529",
+    "https://openalex.org/W2585377602",
+    "https://openalex.org/W2600172587",
+    "https://openalex.org/W2734354662",
+    "https://openalex.org/W2748474656",
+    "https://openalex.org/W2754379600",
+    "https://openalex.org/W2756720740",
+    "https://openalex.org/W2766751816",
+    "https://openalex.org/W2768444774",
+    "https://openalex.org/W2788215311",
+    "https://openalex.org/W2794151539",
+    "https://openalex.org/W2797802276",
+    "https://openalex.org/W2802629815",
+    "https://openalex.org/W2883938747",
+    "https://openalex.org/W2887404872",
+    "https://openalex.org/W2889317353",
+    "https://openalex.org/W2890048266",
+    "https://openalex.org/W2896347213",
+    "https://openalex.org/W2907962860",
+    "https://openalex.org/W2911893218",
+    "https://openalex.org/W2912366456",
+    "https://openalex.org/W2913511407",
+    "https://openalex.org/W2928252620",
+    "https://openalex.org/W2930617098",
+    "https://openalex.org/W2936481435",
+    "https://openalex.org/W2943670829",
+    "https://openalex.org/W2944911819",
+    "https://openalex.org/W2980102083",
+    "https://openalex.org/W2990329885",
+    "https://openalex.org/W2996848990",
+    "https://openalex.org/W3004528345",
+    "https://openalex.org/W3102357199",
+    "https://openalex.org/W4319587752"
+  ],
+  "related_works": [
+    "https://openalex.org/W2095254900",
+    "https://openalex.org/W2481697680",
+    "https://openalex.org/W2073530883",
+    "https://openalex.org/W3102061714",
+    "https://openalex.org/W1980401740",
+    "https://openalex.org/W1976955971",
+    "https://openalex.org/W2962881919",
+    "https://openalex.org/W3029387610",
+    "https://openalex.org/W2140456258",
+    "https://openalex.org/W2783872736",
+    "https://openalex.org/W2897279690",
+    "https://openalex.org/W3117401795",
+    "https://openalex.org/W3084339021",
+    "https://openalex.org/W131634373",
+    "https://openalex.org/W1992123570",
+    "https://openalex.org/W2095976947",
+    "https://openalex.org/W1499907823",
+    "https://openalex.org/W2767356011",
+    "https://openalex.org/W2980910535",
+    "https://openalex.org/W236151031"
+  ],
+  "abstract_inverted_index": {
+    "We": [
+      0,
+      62,
+      95
+    ],
+    "introduce": [
+      1
+    ],
+    "the": [
+      2,
+      50,
+      65,
+      86,
+      104,
+      126,
+      129
+    ],
+    "unique": [
+      3
+    ],
+    "class": [
+      4
+    ],
+    "of": [
+      5,
+      36,
+      68,
+      91,
+      106,
+      120,
+      128
+    ],
+    "propagation-invariant": [
+      6
+    ],
+    "surface": [
+      7,
+      13
+    ],
+    "plasmon": [
+      8
+    ],
+    "polaritons": [
+      9
+    ],
+    "(SPPs)": [
+      10
+    ],
+    "representing": [
+      11
+    ],
+    "pulsed": [
+      12,
+      113
+    ],
+    "wave": [
+      14,
+      71
+    ],
+    "packets": [
+      15,
+      72
+    ],
+    "propagating": [
+      16
+    ],
+    "along": [
+      17
+    ],
+    "unpatterned": [
+      18
+    ],
+    "metal–dielectric": [
+      19
+    ],
+    "interfaces": [
+      20
+    ],
+    "and": [
+      21,
+      55,
+      80,
+      100,
+      117
+    ],
+    "are": [
+      22,
+      122
+    ],
+    "localized": [
+      23
+    ],
+    "in": [
+      24,
+      109
+    ],
+    "all": [
+      25
+    ],
+    "dimensions,": [
+      26
+    ],
+    "with": [
+      27,
+      111
+    ],
+    "potentially": [
+      28
+    ],
+    "subwavelength": [
+      29
+    ],
+    "transverse": [
+      30
+    ],
+    "spatial": [
+      31,
+      116
+    ],
+    "widths.": [
+      32
+    ],
+    "The": [
+      33
+    ],
+    "characteristic": [
+      34
+    ],
+    "features": [
+      35
+    ],
+    "such": [
+      37
+    ],
+    "linear": [
+      38
+    ],
+    "diffraction-free,": [
+      39
+    ],
+    "dispersion-free": [
+      40
+    ],
+    "“plasmonic": [
+      41
+    ],
+    "bullets”": [
+      42
+    ],
+    "stem": [
+      43
+    ],
+    "from": [
+      44
+    ],
+    "tight": [
+      45
+    ],
+    "spatiotemporal": [
+      46,
+      87
+    ],
+    "correlations": [
+      47
+    ],
+    "incorporated": [
+      48
+    ],
+    "into": [
+      49
+    ],
+    "SPP": [
+      51,
+      70
+    ],
+    "spectral": [
+      52
+    ],
+    "support": [
+      53
+    ],
+    "domain,": [
+      54
+    ],
+    "we": [
+      56
+    ],
+    "thus": [
+      57
+    ],
+    "call": [
+      58
+    ],
+    "them": [
+      59
+    ],
+    "“space-time”": [
+      60
+    ],
+    "SPPs.": [
+      61
+    ],
+    "show": [
+      63
+    ],
+    "that": [
+      64
+    ],
+    "group": [
+      66
+    ],
+    "velocity": [
+      67
+    ],
+    "space-time": [
+      69,
+      107
+    ],
+    "can": [
+      73
+    ],
+    "be": [
+      74
+    ],
+    "readily": [
+      75
+    ],
+    "tuned": [
+      76
+    ],
+    "to": [
+      77
+    ],
+    "subluminal,": [
+      78
+    ],
+    "superluminal,": [
+      79
+    ],
+    "even": [
+      81
+    ],
+    "negative": [
+      82
+    ],
+    "values": [
+      83
+    ],
+    "by": [
+      84
+    ],
+    "tailoring": [
+      85
+    ],
+    "field": [
+      88
+    ],
+    "structure": [
+      89
+    ],
+    "independently": [
+      90
+    ],
+    "any": [
+      92
+    ],
+    "material": [
+      93
+    ],
+    "properties.": [
+      94
+    ],
+    "present": [
+      96
+    ],
+    "an": [
+      97
+    ],
+    "analytical": [
+      98
+    ],
+    "framework": [
+      99
+    ],
+    "numerical": [
+      101
+    ],
+    "simulations": [
+      102
+    ],
+    "for": [
+      103
+    ],
+    "propagation": [
+      105
+    ],
+    "SPPs": [
+      108,
+      114
+    ],
+    "comparison": [
+      110
+    ],
+    "traditional": [
+      112
+    ],
+    "whose": [
+      115
+    ],
+    "temporal": [
+      118
+    ],
+    "degrees": [
+      119
+    ],
+    "freedom": [
+      121
+    ],
+    "separable,": [
+      123
+    ],
+    "thereby": [
+      124
+    ],
+    "verifying": [
+      125
+    ],
+    "propagation-invariance": [
+      127
+    ],
+    "former.": [
+      130
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 9
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 13
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-10-15T10:00:46.086208",
+  "created_date": "2025-10-10T00:00:00"
+}

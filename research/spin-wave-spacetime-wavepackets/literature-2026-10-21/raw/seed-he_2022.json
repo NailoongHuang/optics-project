@@ -1,0 +1,1024 @@
+{
+  "id": "https://openalex.org/W3198487091",
+  "doi": "https://doi.org/10.1002/lpor.202100634",
+  "title": "Nondispersive Space–Time Wave Packets Propagating in Dispersive Media",
+  "display_name": "Nondispersive Space–Time Wave Packets Propagating in Dispersive Media",
+  "publication_year": 2022,
+  "publication_date": "2022-07-11",
+  "ids": {
+    "openalex": "https://openalex.org/W3198487091",
+    "doi": "https://doi.org/10.1002/lpor.202100634",
+    "mag": "3198487091"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1002/lpor.202100634",
+    "doi": "https://doi.org/10.1002/lpor.202100634",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1002/lpor.202100634",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S95928045",
+      "display_name": "Laser & Photonics Review",
+      "issn_l": "1863-8880",
+      "issn": [
+        "1863-8880",
+        "1863-8899"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-b",
+        "jufo-3",
+        "norway-1",
+        "poland-200",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320595",
+      "host_organization_name": "Wiley",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320595"
+      ],
+      "host_organization_lineage_names": [
+        "Wiley"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Laser &amp; Photonics Reviews",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "arxiv",
+    "crossref",
+    "datacite"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://arxiv.org/pdf/2109.00782",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": null,
+        "display_name": "Hao He",
+        "orcid": "https://orcid.org/0000-0002-2121-2745",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-2121-2745"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I37461747",
+          "display_name": "Wuhan University",
+          "ror": "https://ror.org/033vjfk17",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I37461747"
+          ]
+        }
+      ],
+      "countries": [
+        "CN"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Hao He",
+      "raw_affiliation_strings": [
+        "Hongyi Honor College Wuhan University Wuhan 430072 China",
+        "Key Laboratory of Artificial Micro‐ and Nano‐Structures of Ministry of Education and School of Physics and Technology Wuhan University Wuhan 430072 China",
+        "Hongyi Honor College, Wuhan University, Wuhan, 430072 China",
+        "Key Laboratory of Artificial Micro- and Nano-Structures of Ministry of Education and School of Physics and Technology, Wuhan University, Wuhan, 430072 China"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-2121-2745",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Hongyi Honor College Wuhan University Wuhan 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Key Laboratory of Artificial Micro‐ and Nano‐Structures of Ministry of Education and School of Physics and Technology Wuhan University Wuhan 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Hongyi Honor College, Wuhan University, Wuhan, 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Key Laboratory of Artificial Micro- and Nano-Structures of Ministry of Education and School of Physics and Technology, Wuhan University, Wuhan, 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5088782824",
+        "display_name": "Cheng Guo",
+        "orcid": "https://orcid.org/0000-0003-4913-8150",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-4913-8150"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I97018004",
+          "display_name": "Stanford University",
+          "ror": "https://ror.org/00f54p054",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I97018004"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Cheng Guo",
+      "raw_affiliation_strings": [
+        "Department of Applied Physics Stanford University California 94305 USA",
+        "Department of Applied Physics, Stanford University, California, 94305 USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0003-4913-8150",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Applied Physics Stanford University California 94305 USA",
+          "institution_ids": [
+            "https://openalex.org/I97018004"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Department of Applied Physics, Stanford University, California, 94305 USA",
+          "institution_ids": [
+            "https://openalex.org/I97018004"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5068260764",
+        "display_name": "Meng Xiao",
+        "orcid": "https://orcid.org/0000-0002-2087-3007",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-2087-3007"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I37461747",
+          "display_name": "Wuhan University",
+          "ror": "https://ror.org/033vjfk17",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4405270616",
+          "display_name": "Wuhan Institute of Quantum Technology",
+          "ror": "https://ror.org/011a6ea26",
+          "country_code": "CN",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I4405270616"
+          ]
+        }
+      ],
+      "countries": [
+        "CN"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Meng Xiao",
+      "raw_affiliation_strings": [
+        "Key Laboratory of Artificial Micro‐ and Nano‐Structures of Ministry of Education and School of Physics and Technology Wuhan University Wuhan 430072 China",
+        "Wuhan Institute of Quantum Technology Wuhan 430206 China",
+        "Key Laboratory of Artificial Micro- and Nano-Structures of Ministry of Education and School of Physics and Technology, Wuhan University, Wuhan, 430072 China",
+        "Wuhan Institute of Quantum Technology, Wuhan, 430206 China"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-2087-3007",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Key Laboratory of Artificial Micro‐ and Nano‐Structures of Ministry of Education and School of Physics and Technology Wuhan University Wuhan 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Wuhan Institute of Quantum Technology Wuhan 430206 China",
+          "institution_ids": [
+            "https://openalex.org/I4405270616"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Key Laboratory of Artificial Micro- and Nano-Structures of Ministry of Education and School of Physics and Technology, Wuhan University, Wuhan, 430072 China",
+          "institution_ids": [
+            "https://openalex.org/I37461747"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Wuhan Institute of Quantum Technology, Wuhan, 430206 China",
+          "institution_ids": [
+            "https://openalex.org/I4405270616"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 2,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5068260764",
+    "https://openalex.org/A5088782824"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I37461747",
+    "https://openalex.org/I4405270616",
+    "https://openalex.org/I97018004"
+  ],
+  "apc_list": {
+    "value": 4300,
+    "currency": "USD",
+    "value_usd": 4300
+  },
+  "apc_paid": null,
+  "fwci": 1.4106,
+  "has_fulltext": false,
+  "cited_by_count": 15,
+  "citation_normalized_percentile": {
+    "value": 0.80269521,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 88,
+    "max": 99
+  },
+  "biblio": {
+    "volume": "16",
+    "issue": "10",
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10490",
+    "display_name": "Orbital Angular Momentum in Optics",
+    "score": 0.5957000255584717,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3107",
+      "display_name": "Atomic and Molecular Physics, and Optics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/31",
+      "display_name": "Physics and Astronomy"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10490",
+      "display_name": "Orbital Angular Momentum in Optics",
+      "score": 0.5957000255584717,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10566",
+      "display_name": "Laser-Matter Interactions and Applications",
+      "score": 0.19509999454021454,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11996",
+      "display_name": "Random lasers and scattering media",
+      "score": 0.01720000058412552,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3102",
+        "display_name": "Acoustics and Ultrasonics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/space-time-wave-packets",
+      "display_name": "space-time wave packets",
+      "score": 0.9800000190734863
+    },
+    {
+      "id": "https://openalex.org/keywords/dispersive-media",
+      "display_name": "dispersive media",
+      "score": 0.9399999976158142
+    },
+    {
+      "id": "https://openalex.org/keywords/material-dispersion",
+      "display_name": "material dispersion",
+      "score": 0.7689999938011169
+    },
+    {
+      "id": "https://openalex.org/keywords/anomalous-refraction",
+      "display_name": "anomalous refraction",
+      "score": 0.8080000281333923
+    },
+    {
+      "id": "https://openalex.org/keywords/weak-dispersion",
+      "display_name": "weak dispersion",
+      "score": 0.5920000076293945
+    },
+    {
+      "id": "https://openalex.org/keywords/spatiotemporal-correlation",
+      "display_name": "spatio-temporal correlation",
+      "score": 0.8330000042915344
+    },
+    {
+      "id": "https://openalex.org/keywords/group-velocity",
+      "display_name": "group velocity",
+      "score": 0.6790000200271606
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C106978608",
+      "wikidata": "https://www.wikidata.org/wiki/Q1412691",
+      "display_name": "Wave packet",
+      "level": 2,
+      "score": 0.8434981107711792
+    },
+    {
+      "id": "https://openalex.org/C158379750",
+      "wikidata": "https://www.wikidata.org/wiki/Q214111",
+      "display_name": "Network packet",
+      "level": 2,
+      "score": 0.7152417898178101
+    },
+    {
+      "id": "https://openalex.org/C177562468",
+      "wikidata": "https://www.wikidata.org/wiki/Q182893",
+      "display_name": "Dispersion (optics)",
+      "level": 2,
+      "score": 0.6615785360336304
+    },
+    {
+      "id": "https://openalex.org/C96402334",
+      "wikidata": "https://www.wikidata.org/wiki/Q3030793",
+      "display_name": "Space time",
+      "level": 2,
+      "score": 0.6320685744285583
+    },
+    {
+      "id": "https://openalex.org/C130187892",
+      "wikidata": "https://www.wikidata.org/wiki/Q133327",
+      "display_name": "Spacetime",
+      "level": 2,
+      "score": 0.6080955266952515
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.605790376663208
+    },
+    {
+      "id": "https://openalex.org/C2988672794",
+      "wikidata": "https://www.wikidata.org/wiki/Q11475",
+      "display_name": "Free space",
+      "level": 2,
+      "score": 0.5576340556144714
+    },
+    {
+      "id": "https://openalex.org/C2778572836",
+      "wikidata": "https://www.wikidata.org/wiki/Q380933",
+      "display_name": "Space (punctuation)",
+      "level": 2,
+      "score": 0.5531581044197083
+    },
+    {
+      "id": "https://openalex.org/C181341577",
+      "wikidata": "https://www.wikidata.org/wiki/Q217361",
+      "display_name": "Group velocity",
+      "level": 2,
+      "score": 0.5369640588760376
+    },
+    {
+      "id": "https://openalex.org/C202579712",
+      "wikidata": "https://www.wikidata.org/wiki/Q590051",
+      "display_name": "Dispersion relation",
+      "level": 2,
+      "score": 0.4630337953567505
+    },
+    {
+      "id": "https://openalex.org/C205318122",
+      "wikidata": "https://www.wikidata.org/wiki/Q72277",
+      "display_name": "Refraction",
+      "level": 2,
+      "score": 0.4510306119918823
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.43935972452163696
+    },
+    {
+      "id": "https://openalex.org/C30475298",
+      "wikidata": "https://www.wikidata.org/wiki/Q909554",
+      "display_name": "Computational physics",
+      "level": 1,
+      "score": 0.3494971990585327
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.26108318567276
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.17931807041168213
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.06549808382987976
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C42360764",
+      "wikidata": "https://www.wikidata.org/wiki/Q83588",
+      "display_name": "Chemical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 4,
+  "locations": [
+    {
+      "id": "doi:10.1002/lpor.202100634",
+      "doi": "https://doi.org/10.1002/lpor.202100634",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1002/lpor.202100634",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S95928045",
+        "display_name": "Laser & Photonics Review",
+        "issn_l": "1863-8880",
+        "issn": [
+          "1863-8880",
+          "1863-8899"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "dongbi-b",
+          "jufo-3",
+          "norway-1",
+          "poland-200",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320595",
+        "host_organization_name": "Wiley",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320595"
+        ],
+        "host_organization_lineage_names": [
+          "Wiley"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Laser &amp; Photonics Reviews",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:arXiv.org:2109.00782",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "http://arxiv.org/abs/2109.00782",
+      "pdf_url": "https://arxiv.org/pdf/2109.00782",
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "text"
+    },
+    {
+      "id": "pmh:oai:figshare.com:article/21880668",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "https://figshare.com/articles/preprint/Non-Dispersive_Space-Time_Wave_Packets_Propagating_in_Dispersive_Media/21880668",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4377196282",
+        "display_name": "Figshare",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I4210132348",
+        "host_organization_name": "Figshare (United Kingdom)",
+        "host_organization_lineage": [
+          "https://openalex.org/I4210132348"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "",
+      "raw_type": "Text"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2109.00782",
+      "doi": "https://doi.org/10.48550/arxiv.2109.00782",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2109.00782",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": "article-journal"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:arXiv.org:2109.00782",
+    "doi": null,
+    "is_oa": true,
+    "landing_page_url": "http://arxiv.org/abs/2109.00782",
+    "pdf_url": "https://arxiv.org/pdf/2109.00782",
+    "source": {
+      "id": "https://openalex.org/S4306400194",
+      "display_name": "arXiv (Cornell University)",
+      "issn_l": "2331-8422",
+      "issn": [
+        "2331-8422"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": false,
+      "listed_in": [],
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_name": "Cornell University",
+      "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "text"
+  },
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [
+    {
+      "display_name": "Peace, justice, and strong institutions",
+      "id": "https://metadata.un.org/sdg/16",
+      "score": 0.5400000214576721
+    },
+    {
+      "display_name": "Reduced inequalities",
+      "id": "https://metadata.un.org/sdg/10",
+      "score": 0.4399999976158142
+    }
+  ],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G7542835363",
+      "display_name": null,
+      "funder_award_id": "11904264",
+      "funder_id": "https://openalex.org/F4320321001",
+      "funder_display_name": "National Natural Science Foundation of China"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320321001",
+      "display_name": "National Natural Science Foundation of China",
+      "ror": "https://ror.org/01h0zpd94"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 46,
+  "referenced_works": [
+    "https://openalex.org/W596293473",
+    "https://openalex.org/W1585641754",
+    "https://openalex.org/W1597479380",
+    "https://openalex.org/W1977741779",
+    "https://openalex.org/W1985607358",
+    "https://openalex.org/W1986628558",
+    "https://openalex.org/W1986929931",
+    "https://openalex.org/W1992988254",
+    "https://openalex.org/W2004237821",
+    "https://openalex.org/W2022071597",
+    "https://openalex.org/W2023407353",
+    "https://openalex.org/W2040882982",
+    "https://openalex.org/W2051597024",
+    "https://openalex.org/W2052767485",
+    "https://openalex.org/W2053009519",
+    "https://openalex.org/W2055744222",
+    "https://openalex.org/W2056921062",
+    "https://openalex.org/W2058373580",
+    "https://openalex.org/W2062160909",
+    "https://openalex.org/W2063944654",
+    "https://openalex.org/W2083100538",
+    "https://openalex.org/W2113015072",
+    "https://openalex.org/W2165995642",
+    "https://openalex.org/W2479773813",
+    "https://openalex.org/W2595227829",
+    "https://openalex.org/W2734354662",
+    "https://openalex.org/W2788215311",
+    "https://openalex.org/W2890048266",
+    "https://openalex.org/W2896347213",
+    "https://openalex.org/W2898567873",
+    "https://openalex.org/W2907962860",
+    "https://openalex.org/W2928252620",
+    "https://openalex.org/W2996848990",
+    "https://openalex.org/W3009403637",
+    "https://openalex.org/W3014932893",
+    "https://openalex.org/W3042216194",
+    "https://openalex.org/W3093954985",
+    "https://openalex.org/W3094418367",
+    "https://openalex.org/W3129403371",
+    "https://openalex.org/W3154976488",
+    "https://openalex.org/W3189020219",
+    "https://openalex.org/W3195423322",
+    "https://openalex.org/W4200630171",
+    "https://openalex.org/W4238064805",
+    "https://openalex.org/W4240078651",
+    "https://openalex.org/W4299908858"
+  ],
+  "related_works": [
+    "https://openalex.org/W2351085713",
+    "https://openalex.org/W3100737382",
+    "https://openalex.org/W2033299890",
+    "https://openalex.org/W2078527222",
+    "https://openalex.org/W3197591291",
+    "https://openalex.org/W2090743606",
+    "https://openalex.org/W4210791671",
+    "https://openalex.org/W2799399174",
+    "https://openalex.org/W3198487091",
+    "https://openalex.org/W3206765184"
+  ],
+  "abstract_inverted_index": {
+    "Abstract": [
+      0
+    ],
+    "Space–time": [
+      1
+    ],
+    "wave": [
+      2,
+      26,
+      54,
+      70
+    ],
+    "packets": [
+      3,
+      27,
+      55,
+      71
+    ],
+    "can": [
+      4
+    ],
+    "propagate": [
+      5
+    ],
+    "invariantly": [
+      6
+    ],
+    "in": [
+      7,
+      30,
+      40,
+      75
+    ],
+    "free": [
+      8,
+      36
+    ],
+    "space": [
+      9
+    ],
+    "with": [
+      10
+    ],
+    "arbitrary": [
+      11
+    ],
+    "group": [
+      12
+    ],
+    "velocity": [
+      13
+    ],
+    "thanks": [
+      14
+    ],
+    "to": [
+      15,
+      58
+    ],
+    "the": [
+      16,
+      24,
+      38,
+      47,
+      59,
+      73
+    ],
+    "spatio‐temporal": [
+      17
+    ],
+    "correlation.": [
+      18
+    ],
+    "Here": [
+      19
+    ],
+    "it": [
+      20
+    ],
+    "is": [
+      21,
+      56
+    ],
+    "proved": [
+      22
+    ],
+    "that": [
+      23
+    ],
+    "space–time": [
+      25,
+      53,
+      69
+    ],
+    "are": [
+      28
+    ],
+    "stable": [
+      29
+    ],
+    "dispersive": [
+      31,
+      61,
+      77
+    ],
+    "media": [
+      32
+    ],
+    "as": [
+      33
+    ],
+    "well": [
+      34
+    ],
+    "and": [
+      35
+    ],
+    "from": [
+      37
+    ],
+    "spread": [
+      39
+    ],
+    "time": [
+      41
+    ],
+    "caused": [
+      42
+    ],
+    "by": [
+      43
+    ],
+    "material": [
+      44
+    ],
+    "dispersion.": [
+      45
+    ],
+    "Furthermore,": [
+      46
+    ],
+    "law": [
+      48
+    ],
+    "of": [
+      49,
+      68
+    ],
+    "anomalous": [
+      50
+    ],
+    "refraction": [
+      51
+    ],
+    "for": [
+      52,
+      72
+    ],
+    "generalized": [
+      57
+    ],
+    "weakly": [
+      60
+    ],
+    "situation.": [
+      62
+    ],
+    "These": [
+      63
+    ],
+    "results": [
+      64
+    ],
+    "reveal": [
+      65
+    ],
+    "new": [
+      66
+    ],
+    "potential": [
+      67
+    ],
+    "applications": [
+      74
+    ],
+    "real": [
+      76
+    ],
+    "media.": [
+      78
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-10-16T09:59:22.235173",
+  "created_date": "2025-10-10T00:00:00"
+}

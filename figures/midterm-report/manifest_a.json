@@ -1,0 +1,400 @@
+{
+  "group_title": "A 色散关系与基本传播原理",
+  "items": [
+    {
+      "id": "a01-lattice",
+      "title": "交换晶格与单翻转基底",
+      "caption": "25个格点的局部示意中，蓝色实线是横向交换键，橙色虚线是纵向交换键。背景自旋沿+x极化，中心沿-x的箭头代表单翻转基底|0,0>；时间演化后态为这些基底的量子叠加，P_mn=|c_mn|²是测得翻转位于该点的概率。图中箭头示意量子化轴上的取向，不把固定单磁子态的系数解释为经典横向磁矩。eta描述空间方向的交换各向异性。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "display_lattice": [
+          5,
+          5
+        ],
+        "schematic": true
+      },
+      "files": {
+        "png": "a-dispersion/a01-lattice.png",
+        "svg": "a-dispersion/a01-lattice.svg",
+        "pdf": "a-dispersion/a01-lattice.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a02-isotropic-surface",
+      "title": "各向同性交换的色散曲面",
+      "caption": "在第一布里渊区内绘出eta=1的精确余弦色散。原点能量为零，最大能量为2(1+eta)=4。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta<1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_value": 1.0,
+        "mesh": 81,
+        "color_limits": [
+          0,
+          4
+        ]
+      },
+      "files": {
+        "png": "a-dispersion/a02-isotropic-surface.png",
+        "svg": "a-dispersion/a02-isotropic-surface.svg",
+        "pdf": "a-dispersion/a02-isotropic-surface.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a03-anisotropic-surface",
+      "title": "各向异性交换改变曲面起伏",
+      "caption": "在第一布里渊区内绘出eta=0.35的精确余弦色散。原点能量为零，最大能量为2(1+eta)=2.7。高度与统一的0至4色标都表示epsilon/Jx。曲面在原点附近近似抛物面；eta<1时沿qy方向起伏较小。三维透视用于概览，方向比较应结合A04的共同坐标截面。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_value": 0.35,
+        "mesh": 81,
+        "color_limits": [
+          0,
+          4
+        ]
+      },
+      "files": {
+        "png": "a-dispersion/a03-anisotropic-surface.png",
+        "svg": "a-dispersion/a03-anisotropic-surface.svg",
+        "pdf": "a-dispersion/a03-anisotropic-surface.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a04-axial-cuts",
+      "title": "方向色散截面",
+      "caption": "左图eta=1时沿x和y的截面完全重合（虚线覆盖实线），右图eta=0.35时y方向带宽降为0.7，而x方向带宽仍为2。每条曲线都固定另一分量为零，不能把两条轴向截面当成一般斜向传播的完整色散。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_values": [
+          1,
+          0.35
+        ],
+        "sample_points": 1001
+      },
+      "files": {
+        "png": "a-dispersion/a04-axial-cuts.png",
+        "svg": "a-dispersion/a04-axial-cuts.svg",
+        "pdf": "a-dispersion/a04-axial-cuts.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a05-equal-frequency",
+      "title": "等频曲线",
+      "caption": "曲线数字是e=epsilon/Jx，依次为0.2、0.6、1.2、2、2.5。小波矢附近，eta=1的等频线近圆，eta=0.35时沿qy方向拉长；高波矢处方格晶格的结构清楚可见。等频线仅约束频率，群速度还取决于曲面的梯度，不能据此宣称局域波包保形。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_values": [
+          1,
+          0.35
+        ],
+        "levels": [
+          0.2,
+          0.6,
+          1.2,
+          2.0,
+          2.5
+        ],
+        "mesh": 501
+      },
+      "files": {
+        "png": "a-dispersion/a05-equal-frequency.png",
+        "svg": "a-dispersion/a05-equal-frequency.svg",
+        "pdf": "a-dispersion/a05-equal-frequency.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a06-group-velocity-field",
+      "title": "群速度场与等频线法向",
+      "caption": "灰线为等能曲线，蓝箭头为u=(sin qx,eta sin qy)，长度按统一比例绘制而未逐点归一化。梯度垂直于等能曲线，并指向能量上升方向。eta=0.35时箭头的y分量减小。该群速度描述窄频谱波包的主导运动；局域翻转包含整个能带，不能用单一箭头概括。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_values": [
+          1,
+          0.35
+        ],
+        "vector_mesh": 17,
+        "arrow_scale": 3.7
+      },
+      "files": {
+        "png": "a-dispersion/a06-group-velocity-field.png",
+        "svg": "a-dispersion/a06-group-velocity-field.svg",
+        "pdf": "a-dispersion/a06-group-velocity-field.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a07-slope-and-speed",
+      "title": "色散斜率与群速度",
+      "caption": "左侧三个彩色点及切线位于qx=-pi/2、0、pi/2；右侧对应点分别给出ux=-1、0、1。原点和布里渊区边界处斜率为零，能量最高并不意味着群速度最大。波包具有有限频谱宽度时，质心速度是其频谱加权平均，中心波矢处的速度是窄带近似。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "qy": 0,
+        "marked_qx": [
+          -1.5707963267948966,
+          0,
+          1.5707963267948966
+        ]
+      },
+      "files": {
+        "png": "a-dispersion/a07-slope-and-speed.png",
+        "svg": "a-dispersion/a07-slope-and-speed.svg",
+        "pdf": "a-dispersion/a07-slope-and-speed.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a08-long-wave-approximation",
+      "title": "长波二次近似",
+      "caption": "两图绘出同一函数的不同范围；左图q<=0.7，右图覆盖0至pi。由cos q=1-q²/2+O(q⁴)得到二次色散。近似只适合小波矢，不能把其无界抛物线及线性增长的群速度延伸到整个晶格能带。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "path": "qy=0",
+        "zoom_qmax": 0.7,
+        "exact_range": [
+          0,
+          3.141592653589793
+        ]
+      },
+      "files": {
+        "png": "a-dispersion/a08-long-wave-approximation.png",
+        "svg": "a-dispersion/a08-long-wave-approximation.svg",
+        "pdf": "a-dispersion/a08-long-wave-approximation.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a09-long-wave-error",
+      "title": "长波近似的定量误差",
+      "caption": "纵轴是轴向能量的相对高估量；曲线在q=0取连续极限0，插图放大小误差区。1%与5%的示例门槛分别对应q约0.345和0.763。门槛仅刻画该轴向能量近似，不等同于波包传播保真度；相位误差还会随时间累积。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "tolerance_q": {
+          "1": 0.34537557866113044,
+          "5": 0.7632996084439329
+        },
+        "sample_points": 1600
+      },
+      "files": {
+        "png": "a-dispersion/a09-long-wave-error.png",
+        "svg": "a-dispersion/a09-long-wave-error.svg",
+        "pdf": "a-dispersion/a09-long-wave-error.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a10-wavevector-velocity-direction",
+      "title": "波矢与群速度的方向差",
+      "caption": "橙色虚线箭头指波矢方向，蓝色实线箭头指群速度方向；两者都单位化，箭长不表示速度大小。选择q0=(0.35pi,0.15pi)，eta=1时仍有有限角差，反映方格晶格而非连续各向同性介质的色散；eta=0.35时y向速度降低，传播更偏向x。eta=1的长波极限下二者趋于平行；eta不等于1时，即使长波区u约为(qx,eta*qy)，一般仍不平行。坐标轴等特殊方向需单独判断。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "q0": [
+          1.0995574287564276,
+          0.47123889803846897
+        ],
+        "eta_values": [
+          1,
+          0.35
+        ],
+        "normalized_arrows": true
+      },
+      "files": {
+        "png": "a-dispersion/a10-wavevector-velocity-direction.png",
+        "svg": "a-dispersion/a10-wavevector-velocity-direction.svg",
+        "pdf": "a-dispersion/a10-wavevector-velocity-direction.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a11-curvature-and-cubic",
+      "title": "色散曲率与三阶残差",
+      "caption": "左图分别画cos q与0.35 cos q，标出q=±pi/2处零曲率。右图在qx=pi/2、qy=0附近减去一阶切线，所得残差接近-delta qx³/6。二维点(pi/2,pi/2)的两个二阶系数都为零，但三阶仍在；本图只建立机制线索，不证明有限宽度波包严格无色散。",
+      "group": "a-dispersion",
+      "role": "bridge",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_values": [
+          1,
+          0.35
+        ],
+        "residual_q0": [
+          1.5707963267948966,
+          0
+        ],
+        "residual_range": [
+          -0.65,
+          0.65
+        ]
+      },
+      "files": {
+        "png": "a-dispersion/a11-curvature-and-cubic.png",
+        "svg": "a-dispersion/a11-curvature-and-cubic.svg",
+        "pdf": "a-dispersion/a11-curvature-and-cubic.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    },
+    {
+      "id": "a12-exchange-and-scales",
+      "title": "交换比与能量和速度尺度",
+      "caption": "左图的带宽为2(1+eta)，右图分别是x、y分量和速度模的全布里渊区最大值。eta=1是空间交换各向同性，eta=0对应互不耦合的x向链并带来qy简并。所有上限是精确群速度界，不把它们误读为概率分布的严格有限支撑边界。",
+      "group": "a-dispersion",
+      "role": "core",
+      "parameters": {
+        "S": 0.5,
+        "h": 0.0,
+        "q": "k*a",
+        "energy": "epsilon/Jx",
+        "eta": "Jy/Jx",
+        "velocity": "hbar*v/(Jx*a)",
+        "boundary": "first Brillouin zone",
+        "eta_range": [
+          0,
+          1.5
+        ],
+        "sample_points": 301
+      },
+      "files": {
+        "png": "a-dispersion/a12-exchange-and-scales.png",
+        "svg": "a-dispersion/a12-exchange-and-scales.svg",
+        "pdf": "a-dispersion/a12-exchange-and-scales.pdf"
+      },
+      "figure_inches": [
+        12.8,
+        8.0
+      ],
+      "raster_dpi": 170
+    }
+  ]
+}

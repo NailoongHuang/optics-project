@@ -1,0 +1,518 @@
+=== PDF PAGE 1 ===
+The peculiarities of discrete diﬀraction in two-dimensional
+optical waveguide arrays
+Hongyun Chen, Xianfeng Chen *, Yuxing Xia
+Department of Physics, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai 200240, China
+Received 11 July 2006; received in revised form 4 September 2006; accepted 16 October 2006
+Abstract
+The fundamental peculiarities of discrete diﬀraction in the two-dimensional waveguide arrays were studied. The discrete diﬀraction
+properties of such arrays can be eﬀectively altered, depending upon the input conditions. By slightly changing the input conditions, light
+can experience normal diﬀraction in one-direction and experience anomalous diﬀraction in the other.
+ 2006 Elsevier B.V. All rights reserved.
+PACS: 42.25.Fx; 42.82.Et
+Discrete waveguide arrays have become a topic of con-
+siderable attention for many years. These periodic struc-
+tures exhibit a wealth of phenomena that have no analog
+in the continuous regime [1–4]. For example, due to the
+periodic nature of waveguide arrays, their diﬀraction
+behavior can be tailored depending on the propagation
+k-vector within the Brillouin zone [3,4]. As a result, zero
+or even reverse diﬀraction is possible in these waveguide
+array structures. Discrete solitons are also known to exist
+in such nonlinear array systems through the interplay of
+linear coupling eﬀects and material nonlinearity. Many
+properties of optical discrete spatial solitons have been
+systematically explored in theory and experiment, includ-
+ing generalizations to diﬀraction management [3,5], and
+diﬀraction-managed solitons [6].
+The above mentioned studies have been limited primar-
+ily to the one-dimensional waveguide arrays, but interest
+has been stimulated in two-dimensional waveguide arrays
+since the ﬁrst experimental observation of discrete solitons
+was
+achieved
+in
+one-dimensional
+AlGaAs
+waveguide
+arrays [2]. This experimental observation stimulated much
+new research, such as studies of solitons in two-dimen-
+sional photorefractive optical lattices in which localization
+phenomena have been observed [7–9]. But the optically
+induced lattices in photorefractives are limited to periodic
+conﬁgurations and are not permanent. To overcome these
+disadvantages, other methods to create two-dimensional
+arrays are also being developed. These include arrays of
+ﬁber bundles [10], and optically-written arrays in silica
+[11]. This optically-written technique has provided highly
+uniform linear arrays and holds much potential for the
+observation of nonlinear eﬀects as well [12]. It was demon-
+strated that one can write optical waveguides along arbi-
+trary paths by tightly focusing ultrashort laser pulses into
+silica glass .With this technique the ﬁeld energy is deposited
+in the focal volume and a permanent refractive-index
+increase is induced. Moving the sample with respect to
+the focus of the beam can create low-loss optical wave-
+guides
+and
+can
+fabricate
+two-dimensional
+waveguide
+arrays with designed diﬀraction. In this letter, stimulated
+by the idea of diﬀraction management in one-dimensional
+waveguide arrays, we study the properties of discrete dif-
+fraction in two-dimensional waveguide arrays environment
+and we ﬁnd that the diﬀraction behavior can be drastically
+altered depending on the propagation k-vector within the
+Brillouin zone. As will be shown, these structures possess
+signiﬁcantly more complex than their 1D counterpart.
+0030-4018/$ - see front matter  2006 Elsevier B.V. All rights reserved.
+doi:10.1016/j.optcom.2006.10.031
+* Corresponding author.
+E-mail address: xfchen@sjtu.edu.cn (X. Chen).
+www.elsevier.com/locate/optcom
+Optics Communications 271 (2007) 382–385
+
+
+=== PDF PAGE 2 ===
+We begin with tracing diﬀraction in the homogenous
+medium, we consider the propagation of scalar waves of
+the form EðrÞ ¼ E0 expðik  rÞ in a three-dimensional free
+space, where k is the wave vector whose x, y and z compo-
+nents are kx, ky and kz, respectively. The absolute value of
+k is k = 2pn/k0, and they are related by the condition
+k2 ¼ k2
+x þ k2
+y þ k2
+z
+or
+equivalently,
+kz ¼
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+k2  k2
+x  k2
+y
+q
+.
+When an optical ﬁeld propagates over a distance L, each
+transverse component of the frequency kx, ky gains a phase
+kz(kx,ky)L, the initial proﬁle of the beam along the x-,
+y-directions broadens as the beam propagates due to the
+phase accumulated by the diﬀerent spatial frequencies. In
+analogy with temporal dispersion, the spatial broadening
+of the beam is related to Dx ¼ o2kz=ok2
+x, Dy ¼ o2kz=ok2
+y in
+the x-, y-directions respectively. In homogeneous media,
+Dx and Dy are always negative, implying that diﬀraction
+in such media is equivalent to anomalous dispersion.
+Let us now analyze the spatial broadening of a beam in
+the discrete 2D waveguide arrays, considering two-dimen-
+sional waveguide arrays are lossless and inﬁnite and that
+they are comprised of identical, regularly spaced wave-
+guides. The distance between successive waveguides is d.
+Fig. 1(a) depicts such two-dimensional waveguide struc-
+ture. By using the formalism of coupled-mode theory and
+by considering only the around waveguides coupling, it
+can be shown that the electric ﬁeld propagating in the
+(n,m)th waveguide obeys the following equation
+dEn;m
+dz
+¼ ibEn;m þ ic1ðEnþ1;m þ En1;m þ En;m1 þ En;mþ1Þ
+þ ic2ðEnþ1;mþ1 þ Enþ1;m1 þ En1;m1 þ En1;mþ1Þ
+þ icjEn;mj2En;m
+ð1Þ
+where b is the ﬁeld propagation constant of each waveguide,
+c1 and c2 are the coupling coeﬃcients of nearest-neighbor
+and next-nearest-neighbor, which are proportional to an
+overlap integral of the two modes of such waveguides.
+Fig. 1(b) is the sketch drawing of coupling due to ﬁeld over-
+lap of such waveguides. The last term describes the nonlin-
+ear Kerr eﬀect, with a coeﬃcient c. The nonlinear term is
+signiﬁcant only at high powers and can be ignored in the
+low-intensity regime. This low-power linear solution de-
+scribes discrete diﬀraction in the 2D array of waveguides.
+When a single, or few, input guides are excited with low
+optical power, light spreads over more and more wave-
+guides as it propagates through discrete diﬀraction.
+The linear spatial dispersive relation of two-dimensional
+waveguide arrays can be obtained from Eq. (1) by assign-
+ing to En,m the form En,m = Aexp[i(kzz + kxxn + kyym)],
+where xn = nd, ym = md. In this case, the linear dispersion
+equation readily follows and is given by
+kz ¼ b þ 2c1ðcos kxd þ cos kydÞ þ 4c2 cos kxd cos kyd
+ð2Þ
+The dispersive character of the two-dimensional waveguide
+arrays are evident when only one waveguide is initially ex-
+cited, for example, E0,0 = A0 and En,m = 0 for (n50,m50)
+at z = 0. In order to study the properties of discrete diﬀrac-
+tion, we deﬁne the discrete diﬀraction coeﬃcients in the x-,
+y-directions respectively as follow
+Dx ¼ o2kz
+ok2
+x
+¼ 2c1d2 cosðkxdÞ  4c2d2 cosðkydÞ cosðkxdÞ
+ð3Þ
+Dy ¼ o2kz
+ok2
+y
+¼ 2c1d2 cosðkydÞ  4c2d2 cosðkxdÞ cosðkydÞ
+ð4Þ
+A Brillouin zone is formed in the range jkxdj < p and
+jkydj < p, any higher frequency has an equivalent inside
+it. Especially, when we ﬁx c1 = 0.284 mm1, c2 = 0.043
+mm1 [13], from the Eqs. (3) and (4), we can get the
+domain of the sign of the diﬀraction, as it is depicted
+in Fig. 2. Dx and Dy become positive in the range
+p/2 < jkxdj 6 p and p/2 < jkydj 6 p respectively, enabling
+light beams to experience anomalous diﬀraction, i.e, of
+opposite sign to that experienced in nature. In practice,
+the sign and value of the diﬀraction can be controlled
+Fig. 1. (a) Schematic drawing of the two-dimensional waveguides arrays.
+(b) The sketch drawing of coupling due to ﬁeld overlap of each waveguide
+in 2D waveguide arrays.
+-3
+-2
+-1
+0
+1
+2
+3
+-3
+-2
+-1
+0
+1
+2
+3
+kxd
+kyd
+-3
+-2
+-1
+0
+1
+2
+3
+-3
+-2
+-1
+0
+1
+2
+3
+kxd
+kyd
+IV
+     I
+IV
+III
+III
+II
+   II
+   II
+II
+Fig. 2. The sign of the diﬀraction coeﬃcients Dx and Dy in diﬀerent
+ranges. (I): Dx < 0 and Dy < 0. (II): Dx > 0 and Dy > 0. (III): Dx > 0 and
+Dy < 0. (IV): Dx < 0 and Dy > 0
+H. Chen et al. / Optics Communications 271 (2007) 382–385
+383
+
+
+=== PDF PAGE 3 ===
+and manipulated by launching light at a particular angle or
+equivalently by tilting the waveguide arrays. This in turn
+allows the possibility of achieving a self-defocusing (with
+positive Kerr coeﬃcient) regime which leads to the forma-
+tion of discrete dark solitons [4]. The tilted angle a and c
+are related to the wave numbers kx, ky by the relations
+[3] sina = kx/k, sinc = ky/k (a, c are the tilted angles of
+the input beam in the x-, y-directions respectively). The an-
+gles corresponded to various values h = kxd (or h = kyd) in
+the range of 0–p, if the input beam at a wavelength of
+1.53 lm and the linear refractive index n = 1.5, d = 16
+lm, then p equivalent to a tilt angle of a = sin1(h/kd)
+ 1.8 (or c = sin1(h/kd)  1.8) under these condition.
+Moreover we can see that Dx and Dy completely disappears
+around these points kx ¼  p
+2d and ky ¼  p
+2d respectively.
+Clearly, the sign and value of diﬀraction are determined
+by three physical parameters, namely the period, the cou-
+pling strength, and the tilted angle.
+It is also fundamental to understand the diﬀractive
+properties of these 2D discrete systems when broader
+beams, exciting more than one waveguide element, are
+involved. Under these circumstances the modal ﬁelds
+within waveguide n, m are written in the form En,m =
+un,mexp[i(kzz + kxxn + kyym)], Substituting this form into
+Eq. (1) we obtain
+ic1½unþ1;m expðikxdÞ þ un1;m expðikxdÞ þ un;m1 expðikydÞ
+þ un;mþ1 expðikydÞ þ ic2½unþ1;mþ1 expðikxd þ ikydÞ
+þ unþ1;m1 expðikxd  ikydÞ þ un1;m1 expðikxd  ikydÞ
+þ un1;mþ1 expðikxd þ ikydÞ  i½2c1 cosðkxdÞ
+þ 2c1 cosðkydÞ þ 4c2 cosðkxdÞ cosðkydÞun;m
+þ icjun;mj2un;m ¼ dun;m
+dz
+ð5Þ
+Notice that Eq. (5) is relation with kxd and kyd, thus, in the
+linear regime, the diﬀraction behavior of the array can be
+tailored or altered, depending on the values of kxd and
+kyd. It can be normal diﬀraction in one-direction and
+anomalous diﬀraction in the other, depending on the tilted
+angle. We carried out the simulations by exactly solving
+Eq. (5) under linear conditions. Assuming that the 2D
+waveguide arrays have the 27 · 27 structure, and the length
+of each waveguide is 8 mm long, the input Gaussian beam
+with w0 = 38 lm excited mostly nine waveguides. Fig. 3
+shows the peculiarities of discrete diﬀraction when a 2D
+circular Gaussian beam is launched into the waveguide
+with diﬀerent values of kxd and kyd corresponding to diﬀer-
+ent tilted angles. When the beam is normal injected into the
+waveguide arrays with low optical power, light spreads
+over more and more waveguides as it propagates through
+5
+10
+15
+20
+25
+5
+10
+15
+20
+25
+x position [waveguide number]
+]r
+e
+b
+m
+u
+n
+ 
+e
+diu
+g
+e
+v
+a
+w
+[ 
+n
+oitis
+o
+p
+ 
+y
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+(a)
+5
+10
+15
+20
+25
+5
+10
+15
+20
+25
+x position [waveguide number]
+]r
+e
+b
+m
+u
+n
+ 
+e
+diu
+g
+e
+v
+a
+w
+[ 
+n
+oitis
+o
+p
+ 
+y
+0.005
+0.01
+0.015
+0.02
+0.025
+0.03
+0.035
+0.04
+0.045
+(b)
+5
+10
+15
+20
+25
+5
+10
+15
+20
+25
+x position [waveguide number]
+]r
+e
+b
+m
+u
+n
+ 
+e
+diu
+g
+e
+v
+a
+w
+[ 
+n
+oitis
+o
+p
+ 
+y
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+(c)
+5
+10
+15
+20
+25
+5
+10
+15
+20
+25
+x position [waveguide number]
+]r
+e
+b
+m
+u
+n
+ 
+e
+diu
+g
+e
+v
+a
+w
+[ 
+n
+oitis
+o
+p
+ 
+y
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+(d)
+Fig. 3. Spatial intensity distribution for 2D waveguide arrays, when light is injected into the centre, with the maximal ﬁeld magnitude E = 1; (a) spatial
+intensity distribution of the initial injected beam at z = 0 mm; (b) spatial intensity distribution for kxd = 0, kyd = 0 at z = 8 mm; (c) spatial intensity
+distribution for kxd = p/2, kyd = 0 at z = 8 mm; (d) spatial intensity distribution for kxd = p/2, ky d = p/2 at z = 8 mm.
+384
+H. Chen et al. / Optics Communications 271 (2007) 382–385
+
+
+=== PDF PAGE 4 ===
+discrete diﬀraction, and the spatial intensity distribution is
+central symmetry (see Fig. 3(b)). For kxd = p/2 and
+kyd = 0, where diﬀraction should vanish in the x-direction
+and be the normal diﬀraction in the y-direction, we can see
+from Fig. 3(c) that the output ﬁeld along y-axis broadens
+much larger than x-axis, it also exhibits an asymmetric
+proﬁle along x-direction, attributed to the remanent
+third-order diﬀraction related to x. These results demon-
+strate that the properties of discrete diﬀraction in the
+two-dimensional waveguide arrays are more complex than
+their 1D counterpart.
+In conclusion, we have studied the discrete diﬀraction
+behavior of two-dimensional waveguide arrays in theory.
+Light can experience normal diﬀraction in one-direction
+and experience anomalous diﬀraction in the other in these
+waveguide array structures by slightly changing the input
+conditions, for example, at diﬀerent tilted angles.
+Acknowledgement
+This research was supported by the National Natural
+Science Foundation of China (No. 60477016 and No.
+10574092), the Foundation for Development of Science
+and Technology of Shanghai (No. 04DZ14001).
+References
+[1] D.N. Christodoulides, R.I. Joseph, Opt. Lett. 13 (1988) 794.
+[2] H.S. Eisenberg, Y. Silberberg, R. Morandotti, A.R. Boyd, J.S.
+Aitchison, Phys. Rev. Lett. 81 (1998) 3383.
+[3] H.S. Eisenberg, Y. Silberberg, R. Morandotti, J.S. Aitchison, Phys.
+Rev. Lett. 85 (2000) 1863.
+[4] R. Morandotti, H.S. Eisenberg, Y. Silberberg, M. Sorel, J.S.
+Aitchison, Phys. Rev. Lett. 86 (2001) 3296.
+[5] T. Pertsch, T. Zentgraf, U. Peschel, A. Bra¨uer, F. Lederer, Phys. Rev.
+Lett. 88 (2002) 093901.
+[6] Mark J. Ablowitz, Ziad H. Musslimani, Phys. Rev. Lett. 87 (2001)
+254102.
+[7] N. Efremidis, S. Sears, D.N. Christodoulides, J. Fleischer, M. Segev,
+Phys. Rev. E 66 (2002) 046602.
+[8] J. Fleischer, T. Carmon, M. Segev, N. Efremidis, D.N. Christodou-
+lides, Phys. Rev. Lett. 90 (2003) 023902.
+[9] J. Fleischer, M. Segev, N. Efremidis, D.N. Christodoulides, Nature
+422 (2003) 147.
+[10] T. Pertsch, U. Peshchl, J. Kobelke, K. Schuster, H. Bartelt, S. Nolte,
+A. Tu¨nnermann, F. Lederer, Phys. Rev. Lett. 93 (2004) 053901.
+[11] Thomas
+Pertsch,
+Ulf
+Peschel,
+Falk
+Lederer,
+Jonas
+Burghoﬀ,
+Matthias Will, Stefan Nolte, Andreas Tu¨nnermann, Opt. Lett.
+29 (2004) 468.
+[12] Alexander
+Szameit,
+Jonas
+Burghoﬀ,
+Thomas
+Pertsch,
+Stefan
+Nolte,
+Andreas
+Tu¨nnermann,
+Falk
+Lederer,
+Opt.
+Express
+14
+(2006) 6055.
+[13] Jared Hudock, Nikolaos K. Efremidis, Demetrios N. Christodou-
+lides, Opt. Lett. 29 (2004) 268.
+H. Chen et al. / Optics Communications 271 (2007) 382–385
+385

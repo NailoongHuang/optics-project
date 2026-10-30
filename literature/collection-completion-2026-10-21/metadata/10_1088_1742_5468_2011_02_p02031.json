@@ -1,0 +1,388 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T23:41:15Z",
+      "timestamp": 1790120475450,
+      "version": "4.0.1"
+    },
+    "reference-count": 33,
+    "publisher": "IOP Publishing",
+    "issue": "02",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Stat. Mech."
+    ],
+    "DOI": "10.1088/1742-5468/2011/02/p02031",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          2,
+          19
+        ]
+      ],
+      "date-time": "2011-02-19T04:33:00Z",
+      "timestamp": 1298089980000
+    },
+    "page": "P02031",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": [
+      "Dynamics of a quantum particle in low-dimensional disordered systems with extended states"
+    ],
+    "prefix": "10.1088",
+    "volume": "2011",
+    "author": [
+      {
+        "given": "P L",
+        "family": "Krapivsky",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J M",
+        "family": "Luck",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "266",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          2,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/9789814299084"
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRev.92.1331"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "crossref",
+        "first-page": "1145",
+        "DOI": "10.1088/0022-3719/4/10/023",
+        "volume": "4",
+        "author": "Herbert D C",
+        "year": "1971",
+        "journal-title": "J. Phys. C: Solid State Phys.",
+        "ISSN": "https://id.crossref.org/issn/0022-3719",
+        "issn-type": "print"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.13.4597"
+      },
+      {
+        "key": "5",
+        "doi-asserted-by": "crossref",
+        "first-page": "L125",
+        "DOI": "10.1088/0022-3719/10/6/003",
+        "volume": "10",
+        "author": "Fleishman L",
+        "year": "1977",
+        "journal-title": "J. Phys. C: Solid State Phys.",
+        "ISSN": "https://id.crossref.org/issn/0022-3719",
+        "issn-type": "print"
+      },
+      {
+        "key": "6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.18.569"
+      },
+      {
+        "key": "7",
+        "doi-asserted-by": "crossref",
+        "first-page": "4291",
+        "DOI": "10.1088/0022-3719/19/22/015",
+        "volume": "19",
+        "author": "Evangelou S N",
+        "year": "1986",
+        "journal-title": "J. Phys. C: Solid State Phys.",
+        "ISSN": "https://id.crossref.org/issn/0022-3719",
+        "issn-type": "print"
+      },
+      {
+        "key": "8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0550-3213(91)90401-I"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0550-3213(93)90601-K"
+      },
+      {
+        "key": "10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.49.3190"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.65.064206"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.67.064202"
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0550-3213(93)90373-W"
+      },
+      {
+        "key": "14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.50.7526"
+      },
+      {
+        "key": "15",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1209/0295-5075/10/2/001",
+        "volume": "10",
+        "author": "Guarneri I",
+        "year": "1989",
+        "journal-title": "Europhys. Lett.",
+        "ISSN": "https://id.crossref.org/issn/0295-5075",
+        "issn-type": "print"
+      },
+      {
+        "key": "16",
+        "doi-asserted-by": "crossref",
+        "first-page": "729",
+        "DOI": "10.1209/0295-5075/21/7/003",
+        "volume": "21",
+        "author": "Guarneri I",
+        "year": "1993",
+        "journal-title": "Europhys. Lett.",
+        "ISSN": "https://id.crossref.org/issn/0295-5075",
+        "issn-type": "print"
+      },
+      {
+        "key": "17",
+        "doi-asserted-by": "crossref",
+        "first-page": "7699",
+        "DOI": "10.1088/0305-4470/31/38/007",
+        "volume": "31",
+        "author": "De Toro Arias S",
+        "year": "1998",
+        "journal-title": "J. Phys. A: Math. Gen.",
+        "ISSN": "https://id.crossref.org/issn/0305-4470",
+        "issn-type": "print"
+      },
+      {
+        "key": "18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.40.10999"
+      },
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.65.88"
+      },
+      {
+        "key": "20",
+        "doi-asserted-by": "crossref",
+        "first-page": "1021",
+        "DOI": "10.1088/0305-4470/25/5/011",
+        "volume": "25",
+        "author": "Bovier A",
+        "year": "1992",
+        "journal-title": "J. Phys. A: Math. Gen.",
+        "ISSN": "https://id.crossref.org/issn/0305-4470",
+        "issn-type": "print"
+      },
+      {
+        "key": "21",
+        "doi-asserted-by": "crossref",
+        "first-page": "L1255",
+        "DOI": "10.1088/0305-4470/26/24/002",
+        "volume": "26",
+        "author": "Flores J C",
+        "year": "1993",
+        "journal-title": "J. Phys. A: Math. Gen.",
+        "ISSN": "https://id.crossref.org/issn/0305-4470",
+        "issn-type": "print"
+      },
+      {
+        "key": "22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00220-002-0757-5"
+      },
+      {
+        "key": "23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00220-007-0252-0"
+      },
+      {
+        "key": "24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.66.014204"
+      },
+      {
+        "key": "25",
+        "first-page": "145",
+        "volume": "30",
+        "author": "Kesten H",
+        "year": "1975",
+        "journal-title": "Compos. Math.",
+        "ISSN": "https://id.crossref.org/issn/0010-437X",
+        "issn-type": "print"
+      },
+      {
+        "key": "26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1127028"
+      },
+      {
+        "key": "27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0370-1573(90)90099-N"
+      },
+      {
+        "key": "28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physrep.2005.02.006"
+      },
+      {
+        "key": "29",
+        "first-page": "373",
+        "volume": "226",
+        "author": "Balian R",
+        "year": "1989",
+        "journal-title": "Astron. Astrophys.",
+        "ISSN": "https://id.crossref.org/issn/0004-6361",
+        "issn-type": "print"
+      },
+      {
+        "key": "30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0370-1573(00)00070-3"
+      },
+      {
+        "key": "31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/df9705000055"
+      },
+      {
+        "key": "32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0370-1573(74)90029-5"
+      },
+      {
+        "key": "33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.82.056602"
+      }
+    ],
+    "container-title": [
+      "Journal of Statistical Mechanics: Theory and Experiment"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          11
+        ]
+      ],
+      "date-time": "2020-04-11T10:10:10Z",
+      "timestamp": 1586599810000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1088/1742-5468/2011/02/P02031"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          2,
+          18
+        ]
+      ]
+    },
+    "references-count": 33,
+    "journal-issue": {
+      "issue": "02",
+      "published-online": {
+        "date-parts": [
+          [
+            2011,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S1742-5468(11)82820-7"
+    ],
+    "URL": "https://doi.org/10.1088/1742-5468/2011/02/p02031",
+    "relation": {},
+    "ISSN": [
+      "1742-5468"
+    ],
+    "issn-type": [
+      {
+        "value": "1742-5468",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          2,
+          18
+        ]
+      ]
+    }
+  }
+}

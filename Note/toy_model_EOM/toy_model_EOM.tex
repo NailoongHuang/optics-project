@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+The Hamiltonian of the toy model is:
+\begin{equation}
+    \hat{H}=-J_x\sum_{\langle ij \rangle_x}\hat{S}_i \cdot \hat{S}_j-J_y\sum_{\langle ij \rangle_y}\hat{S}_i \cdot \hat{S}_j - g\mu_BB\sum_{i}\hat{S}_i^x
+\end{equation}
+\par
+Set $h=\mu_BB$. Heisenberg EOM is $\frac{d}{dt}\hat{S}_i=\frac{1}{i\hbar}[\hat{S}_i, \hat{H}]$.
+\begin{equation}
+    \frac{d}{dt}\hat{S}_i=\hat{S}_i\times\left(J_x(\hat{S}_{i+\mathbf{e}_x}+\hat{S}_{i-\mathbf{e}_x})+J_y(\hat{S}_{i+\mathbf{e}_y}+\hat{S}_{i-\mathbf{e}_y})+h\mathbf{e}_x\right)
+\end{equation}
+\par
+Take classical limit $\mathbf{S}=S\mathbf{e}_x+s^y\mathbf{e}_y+s^z\mathbf{e}_z$:
+\begin{align}
+    &\dot{s}_i^y=s_i^zh-S(J_x(s^z_{i+\mathbf{e}_x}+s^z_{i-\mathbf{e}_x})+J_y(s^z_{i+\mathbf{e}_y}+s^z_{i-\mathbf{e}_y}))\\
+    &\dot{s}_i^z=-s_i^yh+S(J_x(s^y_{i+\mathbf{e}_x}+s^y_{i-\mathbf{e}_x})+J_y(s^y_{i+\mathbf{e}_y}+s^y_{i-\mathbf{e}_y}))
+\end{align}
+\par
+Take continue limit (Landau-Lifshitz equation, but we will not use this equation):
+\begin{equation}
+    \frac{d}{dt}M(x,y)=M(x,y)\times\left(J_xa^2\partial^2_xM(x,y)+J_ya^2\partial^2_yM(x,y)+h\mathbf{e}_x\right)
+\end{equation}
+\par
+We use plane wave method to solve the classical equation:
+$$s^y(r)=\exp(ik\cdot r)\sum_Gs^y_G\exp(iG\cdot r)$$
+$$s^z(r)=\exp(ik\cdot r)\sum_Gs^z_G\exp(iG\cdot r)$$
+and then we have:
+\begin{align}
+    &i\omega s_G^y=s_G^z[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]\\
+    &i\omega s_G^z=-s_G^y[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]
+\end{align}
+\par
+Set $\tilde{s}_G=s_G^y \pm is_G^z$, then we have $\omega=\pm [2S(J_x\cos(k_xa)+J_y\cos(k_ya))-h]$.
+\end{document}

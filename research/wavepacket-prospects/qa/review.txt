@@ -1,0 +1,35 @@
+Independent scientific reviews completed on 2026-10-21.
+
+Backflow review:
+The reviewer inspected the implemented classical null, smoothed observable,
+continuous Bloch integration, finite-box controls, coherent/incoherent controls,
+and both measurement-noise models. The supplemental tighter classical bound and
+frozen-state ranking reversal were separately checked. No unresolved material
+issue remains. The witness does not exclude classical coherent wave analogues.
+
+Pulse and transport review:
+The reviewer checked scripts, results, source anchors and final reports.
+The common training-rule control closes the misleading ensemble-advantage
+comparison. The Born-matched transport control closes the apparent large
+onsite-versus-bond difference. These null/limited results remain explicit.
+
+Caustic review:
+The reviewer checked the published dispersion and parameters, contour geometry,
+group velocity, normalization, branch inversion, numerical convergence and final
+prose. Alternate flux-normalized scalar window integrals are not presented as
+transmission fractions. The final receiver integrals use continuous endpoints.
+
+Combined report review:
+The report and gallery manifest were checked against the four result sets.
+Suggested clarifications were applied: receiver-window width, normalized
+quasimomentum density in the tighter bound, and prior ordinary-caustic work.
+No unresolved material cross-demo claim or unit inconsistency was found.
+
+Media and UI:
+Scientific figures and representative animation frames were visually inspected.
+All 228 frames across four GIF files were decoded again at delivery.
+HTML assets, local report links and JavaScript syntax were checked.
+Browser interaction was not verified: execution policy blocked the background
+preview launch, and the browser protocol policy rejected the file URL.
+No alternate browser surface or policy bypass was attempted. Standalone
+PNG/GIF artifacts remain the verified visual deliverables.

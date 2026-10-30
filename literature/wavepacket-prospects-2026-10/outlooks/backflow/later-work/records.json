@@ -1,0 +1,107 @@
+{
+  "checked_date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Bounded later-work and adjacent-prior-art check for experimental realization, realistic Gaussian states, finite resolution, disorder and decoherence of probability backflow.",
+  "records": [
+    {
+      "id": "chen_tang_2026",
+      "title": "Preparing Quantum Backflow States by Large Momentum Transfer",
+      "authors": [
+        "Yuchong Chen",
+        "Yijun Tang"
+      ],
+      "journal": "Physical Review A",
+      "volume": "113",
+      "article": "063304",
+      "year": 2026,
+      "doi": "10.1103/3b4f-6nfr",
+      "arxiv": "2602.12767v2",
+      "version_date": "2026-05-21",
+      "abstract_url": "https://arxiv.org/abs/2602.12767",
+      "full_text_url": "https://arxiv.org/html/2602.12767v2",
+      "local_pdf": "2602.12767v2.pdf",
+      "read_status": "Official latest metadata, full HTML and the PDF conclusion read; selected model and numerical-result passages inspected.",
+      "source_locations": [
+        "PDF p.9, Section IV Conclusion",
+        "HTML Section III.4, integrated probability transfer and density-signature distinction",
+        "HTML Introduction, distinction from general-backflow framework"
+      ],
+      "verified_result": "A theoretical noninteracting Sr-88 BEC LMT preparation protocol provides tunable two-arm interference states. It is a proposal with simulations, not a reported matter-wave backflow observation. The v2 reports an example integrated backflow transfer 0.003514 and explicitly distinguishes this from enhancement of the density-based signature.",
+      "explicit_future_work": "Adapt the LMT preparation strategy to the general-backflow framework for arbitrary realistic wave packets and use fluorescence or absorption density measurements at multiple distinct evolution times.",
+      "practical_unresolved_issue": "Stronger backflow comes with a shorter density-modulation scale, making conventional imaging harder.",
+      "short_quote": "adapted to the more general-backflow framework for realistic wave packets",
+      "quote_word_count": 10,
+      "version_warning": "The v1 conclusion said alternative density extraction was beyond scope. The latest v2 instead states the more specific general-backflow/multiple-time-imaging direction; use v2 for author-intent claims.",
+      "relation_to_parent_task": "This is a concrete author-stated open measurement route. A cosine-lattice finite-resolution witness test is a proposed transfer of the question, not a result already established in this cold-atom paper."
+    },
+    {
+      "id": "xiao_2026",
+      "title": "Nonlocal Manipulation of Backflow with Quantum Correlations",
+      "authors": [
+        "Ya Xiao",
+        "Zhen-Fei Zhang",
+        "Yan-Xin Rong",
+        "Kai Sun",
+        "Jin-Shi Xu",
+        "Yong-Jian Gu"
+      ],
+      "arxiv": "2607.10281v1",
+      "version_date": "2026-07-11",
+      "abstract_url": "https://arxiv.org/abs/2607.10281",
+      "full_text_url": "https://arxiv.org/html/2607.10281v1",
+      "local_pdf": "2607.10281v1.pdf",
+      "read_status": "Official metadata and Sections 1, 3, 4 and Appendix A read. No journal publication metadata was found on the official abstract page.",
+      "source_locations": [
+        "PDF pp.8-9, Section 4 Conclusion and Discussion",
+        "HTML Section 3, weak transverse-momentum measurements and reconstructed trajectories",
+        "HTML Appendix A, mixed-state current and purity thresholds"
+      ],
+      "verified_result": "The preprint reports experimental nonlocal manipulation of transverse backflow in entangled-photon double-slit interference. Conditional amplitude and phase choices alter currents; Werner-state studies quantify correlation thresholds.",
+      "scope_boundary": "This is quantum-optical transverse probability-current manipulation. It does not establish a direct longitudinal matter-wave realization of homogeneous tight-binding Gaussian backflow.",
+      "explicit_future_work": [
+        "Extend the scheme to multidimensional motion and multiparticle systems.",
+        "Develop applications in particle manipulation and imaging.",
+        "Clarify the fundamental connection between quantum correlations and backflow."
+      ],
+      "relation_to_parent_task": "It is no longer safe to repeat an unqualified claim that every form of backflow is experimentally unobserved. Optical analogues and single-photon variants must be separated from the matter-wave/tight-binding claim.",
+      "caution": "The paper's future relativistic wording is not used here as a recommendation; the current lattice task has no relativistic model."
+    },
+    {
+      "id": "mousavi_miret_artes_2022",
+      "title": "Different routes to the classical limit of backflow",
+      "authors": [
+        "S. V. Mousavi",
+        "S. Miret-Artes"
+      ],
+      "arxiv": "2211.09057",
+      "abstract_url": "https://arxiv.org/abs/2211.09057",
+      "read_status": "Official abstract inspected; not full-text-assessed in this branch.",
+      "verified_abstract_claim": "The paper studies intrinsic decoherence, Lindblad comparison and dissipative backflow routes; it emphasizes that thermal fluctuations can violate a maintained positive-momentum requirement.",
+      "relation_to_parent_task": "Noise/decoherence of backflow is not a wholly new general direction. A proposed lattice test must define the classical comparator and track velocity-sector contamination; negative current alone under scattering or heating is insufficient."
+    },
+    {
+      "id": "goussev_joo_2024",
+      "title": "Simulating quantum backflow on a quantum computer",
+      "authors": [
+        "Arseni Goussev",
+        "Jaewoo Joo"
+      ],
+      "journal": "Physica Scripta",
+      "volume": "99",
+      "article": "045104",
+      "year": 2024,
+      "doi": "10.1088/1402-4896/ad2be7",
+      "arxiv": "2309.02245v2",
+      "abstract_url": "https://arxiv.org/abs/2309.02245",
+      "read_status": "Official abstract and version/publication metadata inspected.",
+      "verified_abstract_claim": "Reports a backflow simulation using a real quantum computer.",
+      "relation_to_parent_task": "Quantum-hardware emulation already exists; a small local numerical demo alone is a verification artifact, not evidence for first realization or a new effect."
+    }
+  ],
+  "unresolved_after_search": [
+    "No exact later homogeneous nearest-neighbor cosine-band single-Gaussian pi/2 tail-backflow study was located.",
+    "No completed finite-resolution LMT/general-backflow measurement implementation was located.",
+    "No direct later study of the same homogeneous-lattice positive-velocity Gaussian backflow with disorder was located; generic disorder and information-backflow papers were excluded."
+  ],
+  "limits": "These are bounded-search absence statements, not proofs that no such work exists."
+}

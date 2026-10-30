@@ -1,0 +1,38 @@
+Portable dependency scan (read only), 2026-10-21
+
+Preserve the existing root-relative layout code/, figures/, research/, Note/, literature/, presentations/. Python research/figure scripts mostly resolve their own __file__ and relative parents, so preserving these names and depths is sufficient for their internal paths. Do not flatten scripts into a new single code directory.
+
+Core dependencies
+- figures/midterm-report/common.py imports Params from <project>/code/spin_wave_2d.py.
+- figures/midterm-report/{generate_dispersion,generate_local_flip,generate_gaussian,verify_numerics,build_catalog,validate_package}.py share common.py. build_all.py launches from the project root and rebuilds the whole figure package; do not invoke merely for packaging.
+- figures/midterm-report/notation/generate_notation.py reads ../curvature-design/generate_design.py, chart_data.json and design_data.npz. The lab-animation generator imports generate_notation.py and reads that same data. Preserve both directories together.
+- crossing-diagnostics/dynamics/trace_crossing.py reads curvature-design/design_data.npz and chart_data.json; make_summary.py additionally reads dynamics/dense_trace.csv and movie_trace.csv. render/inspect_render.py reads notation source and the original g15/g13 GIFs.
+- wavepacket-audit/{tracking,robustness} scripts import common.py. Preserve all corresponding CSV/JSON/NPZ data and original figure assets if the bundle is intended as an evidence snapshot.
+- Four research/wavepacket-prospects/demos/*/run.py scripts are self-contained relative to their own directories. backflow-resolution/supplemental_bound.py imports local run.py and reads local results.json. The gallery builder requires gallery_manifest.json, every referenced GIF/PNG/report/results/run.py; it embeds the manifest and uses local relative assets. Root research README links to ../../literature/, so that relative relationship must remain.
+- The three Note/*.tex documents do not currently include external graphics/input/bibliography directives. Their source plus PDF can be preserved without figure dependencies.
+
+Presentation caveat
+presentations/midterm/README.md identifies the current accepted release as output/中期报告_统一符号与传播优化版.pptx plus its preview PDF. The main aliases output/中期报告_能带曲率与波包设计.pptx and output/中期报告_单磁子传播.pptx refer to the same release. Explicitly named 18-page outputs are historical.
+
+Do NOT exclude presentations/midterm/build/ wholesale. It contains authoring source and required inputs, not merely caches:
+- build/notation/prepare_builder.py reads build/curvature/curvature.mjs, render_release.mjs and package_preview.py, and appends notation/content.mjs.
+- Current notation.mjs imports build/notation/source-before-notation.pptx and reads assets.json, build/data_facts.json, figures/midterm-report/notation assets and curvature-design/chart_data.json.
+- build/assets/ contains formula clips and image crops; asset manifests and builders refer to them.
+- source-before-*.pptx/pdf and revisions/ preserve the prior authored documents.
+
+However, presentation .mjs builders contain hard-coded C:/Users/xuanm/Desktop/optics plus versioned installed Codex skill/runtime paths. Moving a snapshot alone does not make PPTX authoring portable. Preserve their sources as archival reproduction material and document that these paths/runtime dependencies must be rebound before rebuilding elsewhere. Finished PPTX files embed GIFs and can be viewed independently.
+
+Do NOT traverse or copy presentations/midterm/build/node_modules as normal project content: it is a Windows junction (ReparsePoint) to external runtime modules. Exclude junctions/reparse points from inventory/copy traversal. Do not package installed app internals.
+
+External requirements
+- Python scientific work: numpy, scipy, matplotlib, pillow, sympy, mpmath, pymupdf (depending on script); standard-library modules are otherwise used.
+- Gallery build uses only Python stdlib.
+- PPTX authoring: Node @oai/artifact-tool, some @napi-rs/canvas use, and versioned Codex artifact_tool_utils.mjs; native charts/export depend on that runtime.
+- Figures and QA use Microsoft YaHei / C:/Windows/Fonts/msyh.ttc. Figures generally have font fallbacks; catalog/QA font paths need adjustment on other systems.
+- validate_package.py tries system pdftoppm then a bundled absolute Poppler path, then PyMuPDF fallback.
+- TeX sources use ctexart, Fandol fonts and XeLaTeX-compatible packages. No local TeX runner was found in the inspected entrypoints.
+
+Safe omission from copied delivery snapshot
+__pycache__/, *.pyc, TeX auxiliary build files, temporary logs and regenerated slide raster/contact sheets may be omitted if original paths are retained in a full inventory. Preserve source .py/.mjs/.tex, README/review/validation records, NPZ/CSV/JSON data, stable final PDF/PPTX/GIF/PNG/SVG assets, and historical authored source-before/revision outputs. Exclude .codex and external reparse targets.
+
+Read-only review only: no source files changed and no computational or presentation build was run.

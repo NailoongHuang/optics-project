@@ -1,0 +1,1282 @@
+[PDF PAGE 1]
+Precision is not limited by the second law of thermodynamics
+Downloaded from: https://research.chalmers.se, 2026-10-20 16:14 UTC
+Citation for the original published paper (version of record):
+Meier, F., Minoguchi, Y., Sundelin, S. et al (2025). Precision is not limited by the second law of
+thermodynamics. Nature Physics, 21. http://dx.doi.org/10.1038/s41567-025-02929-2
+N.B. When citing this work, cite the original published paper.
+research.chalmers.se offers the possibility of retrieving research publications produced at Chalmers University of Technology. It
+covers all kind of research output: articles, dissertations, conference papers, reports etc. since 2004. research.chalmers.se is
+administrated and maintained by Chalmers Library
+(article starts on next page)
+
+
+[PDF PAGE 2]
+Nature Physics
+nature physics
+https://doi.org/10.1038/s41567-025-02929-2
+Article
+Precision is not limited by the second law of 
+thermodynamics
+ 
+Florian Meier 
+  1 
+, Yuri Minoguchi1,2, Simon Sundelin 
+  3, Tony J. G. Apollaro 
+  4, 
+Paul Erker1,2, Simone Gasparinetti 
+  3 
+ & Marcus Huber 
+  1,2 
+Physical devices operating out of equilibrium are affected by thermal 
+fluctuations, limiting their operational precision. This issue is particularly 
+pronounced at microscopic and quantum scales, where its mitigation 
+requires additional entropy dissipation. Understanding this constraint is 
+important for both fundamental physics and technological design. Clocks, 
+for example, need a thermodynamic flux towards equilibrium to measure 
+time, resulting in a minimum entropy dissipation per clock tick. Although 
+classical and quantum models often show a linear relationship between 
+precision and dissipation, the ultimate bounds on this relationship remain 
+unclear. Here we present an autonomous quantum many-body clock 
+model that achieves clock precision that scales exponentially with entropy 
+dissipation. This is enabled by coherent transport in a spin chain with 
+tailored couplings, where dissipation is confined to a single link. The result 
+demonstrates that coherent quantum dynamics can surpass the traditional 
+thermodynamic precision limits, potentially guiding the development of 
+future high-precision, low-dissipation quantum devices.
+The basic dynamical equations of physics all seem to be invariant 
+under time reversal, that is, symmetric with respect to time. As sys-
+tems become more complex, this symmetry is observed to break 
+down. This statistical breaking of time-reversal symmetry through 
+the second law of thermodynamics is fully compatible with reversible 
+microphysics and seems to be the only contender for an explanation 
+for the emergence of a clear notion of past and future in physics. The 
+implications of this profound insight for the nature of time have long 
+been the centre of discussion in the foundation of physics. Borrowing 
+a dictum from Einstein, “time is what a clock measures”, clocks are the 
+witnesses of the macroscopic breaking of reversibility. As irreversible 
+out-of-equilibrium systems, clocks come at a fundamental thermody-
+namic cost—entropy dissipation1. In the quest for the most accurate 
+clocks, currently based on atomic2–4 or possibly nuclear transitions 
+in the future5, these costs are not the most pressing concern. But the 
+quest for small, self-contained quantum control6–11 shifts the ques-
+tion about the exact relationship between dissipation and precision 
+from a foundational one to a potentially practical one. The notion of 
+autonomous clocks not requiring external control to run allows us to 
+explore the ultimate dissipation limits of clocks12–16 and may also inform 
+practical designs for self-contained quantum control11.
+To quantify these limits, one has to resort to microscopic models 
+for the clock. In such models, all the resources that the clock requires 
+to run are explicitly accounted for within the model. Such tiniest con-
+ceivable clocks measure time by counting elementary stochastic events 
+as ticks in a regime far away from where state-of-the-art clocks work. 
+The clock precision can be understood as the average number of times 
+𝒩𝒩 said clock ticks until it goes wrong by one tick compared with a 
+perfect clock12, while the corresponding thermodynamic cost is quanti-
+fied by the entropy Σtick dissipated per unit tick. For fixed Σtick, one may 
+ask what is the maximum possible clock precision. This question relates 
+the fundamental limit of clock performance to the second law of ther-
+modynamics. A similar fluctuation tradeoff is encountered in stochas-
+tic thermodynamics with the thermodynamic uncertainty relations 
+(TUR). For classical stochastic systems, these limits are dictated by 
+entropy production. Classical TUR have received considerable 
+Received: 13 June 2024
+Accepted: 30 April 2025
+Published online: xx xx xxxx
+ Check for updates
+1Atominstitut, Technische Universität Wien, Vienna, Austria. 2Institute for Quantum Optics and Quantum Information – IQOQI Vienna, Austrian Academy 
+of Sciences, Vienna, Austria. 3Department of Microtechnology and Nanoscience, Chalmers University of Technology, Gothenburg, Sweden. 4Department 
+of Physics, University of Malta, Msida, Malta. 
+ e-mail: florianmeier256@gmail.com; simoneg@chalmers.se; marcus.huber@tuwien.ac.at
+
+
+[PDF PAGE 3]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+While our findings resolve the foundational question about 
+whether the second law imposes a restriction on clock precision, it also 
+holds promise beyond fundamental science. For one, a major challenge 
+in quantum communication is that many quantum network compo-
+nents rely on deterministic single-photon sources44. State-of-the-art 
+attempts to overcome this challenge are often based on quantum dots 
+and require active driving45–47. Our result provides a self-contained 
+model that could serve as a passive, deterministic single-photon source 
+by heralding the regular photons emitted as the clock’s ticks (Fig. 2). 
+For another, in distributed quantum computing, the dynamical control 
+needed to shape photons to match the receiver and ensure the wave 
+packet arrives precisely on time is a grand technological challenge48,49 
+that has so far been addressed with time-dependent control50–53. The 
+ring clock’s design provides a pathway towards passive photon shaping 
+using the preparation ramp of the transmission line.
+Theoretical description
+The model we work with is based in the single-excitation regime of a 
+spin chain. Thus, the relevant basis states can be written as |0⟩∶= |10 ⋯0⟩ 
+for the state where the excitation is on the first site, |1⟩∶= |01 ⋯0⟩ for 
+the state where it is in the second site and so on until |n −1⟩∶= |0 ⋯01⟩, 
+as visualized in Fig. 1a. With coherent nearest-neighbour hopping inter-
+actions, we obtain the single-excitation subspace Hamiltonian
+H =
+n−2
+∑
+j=0
+g j | j⟩⟨j + 1| + h.c.,
+(2)
+where h.c. stands for the Hermitian conjugate. The constant gj is a real 
+parameter describing the coherent hopping rate between site j and j + 1. 
+In this form, the chain of sites does not yet topologically form the desired 
+ring. A dissipative coupling between the first site |0⟩ and the last site |n −1⟩ 
+closes the loop and is described by a Lindblad jump operator of the form 
+J = √Γ |0⟩⟨n −1| to model the jump in the direction |n −1⟩→|0⟩. In 
+Fig. 1b, we propose a level scheme that allows such a jump process between 
+the last and first ring site (see additional details in the Methods).
+At finite entropy production, local detailed balance predicts that 
+each jump process is accompanied by its time-reverse that is 
+attention17–20, opening the question whether the same limits apply in 
+the quantum domain21–32. For fully dissipative clocks, a linear bound 
+𝒩𝒩𝒩Σtick/2 tightly bounds the clock precision. Such a bound has been 
+confirmed both theoretically12,13 and experimentally33. In certain quan-
+tum scenarios, the linear bound can be beaten by using quantum coher-
+ence beyond the dissipative regime. So far, however, only small 
+theoretical violations have been reported15,21–23,30, and larger ones 
+remain contested24,29,34.
+Here, we report the discovery of a fully autonomous quantum 
+clock model whose precision grows with entropy production as
+𝒩𝒩= eΩ(Σtick) ,
+(1)
+showing that dissipation does not limit clock precision. The Ω-notation 
+denotes an asymptotic lower bound, ignoring constant factors35. The 
+proposed quantum clock is based on a spin chain with site-dependent 
+nearest-neighbour couplings and is stable under small perturbations 
+of the couplings and losses along the chain as detailed in the Methods. 
+The set-up could be realized extensibly, for example, in the circuit 
+quantum electrodynamics architecture with coupled cavity arrays 
+(CCAs)36,37, and the set-up as sketched in Fig. 1a,b. The clock works by 
+topologically closing the spin chain to a ring and transporting a single 
+excitation around the ring. A chirality is introduced by applying a ther-
+mal bias between the first site and the last site. This set-up, which we 
+refer to as the ring clock, counts the net number of completed cycles 
+as ticks (Fig. 1c).
+We obtain the exponential scaling by numerically optimizing the 
+coupling coefficients between the sites in the ring. The insight enabling 
+this scaling is the dissipation-free coherent transport in the bulk of 
+the ring: by adding more sites, the clock’s precision can be arbitrar-
+ily increased while the dissipation occurs only between the two sites 
+closing the ring and therefore does not grow with the ring size. We also 
+provide a quantitative interpretation of the obtained coefficients in 
+terms of wave-packet reshaping and boundary matching, highlighting a 
+connection between our model and previous techniques from optimal 
+coherent quantum transport38,39, dissipative quantum transport in 
+condensed matter40,41, and photonics42,43.
+–1
++1
+N(t)
+g2
+gn–4
+gn–3
+g1
+g0
+gn–2
+|1
+|e
+|r
+|m
+|g
+|ℓ
+|n–2
+g0
+gn–2
+κC
+κH
+Γ
+βC
+βH
+βC
+Tick number N(t) 
+Couplings g/Γ 
+Boundary matching λr 
+Ramp λℓ 
+Bulk
+|0
+|n–1
+0
+2
+4
+6
+8
+10
+gj
+Coupling site index j
+0
+10
+20
+30
+40
+Time t (a.u.)
+Trajectory
+E[N(t)]
+Uncertainty band
+∆N(t) = –1
+a
+c
+b
+d
+0.1
+0.2
+0.3
+0
+5
+....
+....
+Fig. 1 | The ring clock. a, Schematic depiction. The clock consists of a ring of n 
+quantum systems (egg cups) hosting a single excitation that travels around the 
+ring. Upon completing one cycle, the clock ticks by undergoing a biased jump 
+from the last to the first site. Credit: fire and icecube icons in a, OpenMoji under 
+a Creative Commons license CC-BY-SA 4.0. b, A level diagram of a quantum 
+system providing a directional interface between the first site and the last site 
+of the ring using a thermal gradient. The level diagram is in the single-excitation 
+subspace, that is, if one of the sites is in an excited state, all others are in the 
+ground state. See the Methods for details. c, A representative trajectory of the 
+number of ticks N(t) counted by the clock as a function of time (solid line). Due 
+to thermal fluctuations, such a counter can jump backwards (highlighted jump). 
+For the clock to be precise, such backwards jumps must be suppressed, using a 
+strong thermal gradient. d, Numerically optimized couplings, gj, between the 
+nearest-neighbour sites of the ring clock, for a ring of n = 40 sites. Based on the 
+dependence of the coupling coefficients on the site position in the ring, well 
+approximated by equation (6), we identify three regions. In the initial ramp 
+region of length λℓ, an excitation present in the first site is autonomously shaped 
+into a travelling wave packet. The bulk propagation region is akin to a delay line. 
+Finally, the boundary matching region, of length λr, ensures that the wave packet 
+is absorbed from the last site without reflection.
+
+
+[PDF PAGE 4]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+suppressed by how much entropy is produced in each jump. Here, this 
+is described by the process J = e−Σtick/2 J
+†, whose rate is suppressed by 
+the factor e−Σtick from detailed balance, and Σtick is the entropy pro-
+duced by each unit population that undergoes the forward transition 
+|n −1⟩→|0⟩. How Σtick relates to thermodynamic notions of heat and 
+temperature depends on the specific realization of the biased tick 
+transition. For example, for a clock described by the level scheme of 
+Fig. 1b, the entropy is related to the exchanged heat Q, given by the 
+energy gap between |e⟩ and |m⟩, and to the difference in inverse tem-
+perature βC, βH of the environments driving the transition, according 
+to the expression
+Σtick = ( βC −βH)Q.
+(3)
+Given the initial state ρ(0) = |0⟩⟨0| , we describe the evolution of the 
+system using a quantum master equation ̇ρ = −i[H, ρ] + 𝒟𝒟𝒟J]ρ + 𝒟𝒟𝒟J]ρ 
+in units of ℏ = 1. Moreover, the dissipator is defined as 𝒟𝒟[ J]ρ
+= JρJ† −
+1
+2{ J†J, ρ}, with anticommutator {A, B} = AB + BA.
+The jumps generated by J are counted as positive ticks and the 
+reverse J as ‘negative ticks’, giving the number of ticks N(t) as the net 
+completed clock cycles to estimate parameter time t. Clock precision 
+can be quantified using the inverse Fano factor16
+𝒩𝒩Σ = lim
+t→∞
+E[N(t)]
+Var[N(t)],
+(4)
+comparing expectation value E[N(t)] with the fluctuations Var[N(t)]. 
+For high precision, fluctuations should ideally be minimal compared 
+with the expected number of ticks. The majority of ticks must therefore 
+be positive, meaning the forward jump J should dominate over the 
+backwards one J, which requires, a priori, a high entropy production 
+per tick Σtick.
+The goal we aim for, however, is the maximization of 𝒩𝒩Σ by varying 
+the Hamiltonian H while at the same time minimizing the entropy 
+production per tick Σtick. To solve this problem, we first work in the 
+regime without the negative ticks, J →0, requiring divergent entropy 
+production Σtick → ∞, so that only precision has to be maximized without 
+having to handle Σtick. As we find out later, the infinite entropy produc-
+tion is not needed to maintain the high precision, and the results actu-
+ally hold even when the entropy production is negligibly smaller than 
+the clock precision.
+Working without negative ticks simplifies the problem of maximiz-
+ing precision by making it equivalent to the problem of minimizing the 
+relative variance of the waiting time T between ticks. The reason for this 
+is that, because the clock resets to the same state |0⟩ after every tick, N(t) 
+can be mapped to a renewal process16,54 and, thus, the central limit applies 
+(see details in the Methods and Supplementary Section D1), giving
+𝒩𝒩Σ →𝒩𝒩∞= E[T ]
+2
+Var[T ],
+(5)
+where E[T] is the expected time between two ticks and Var[T] is the 
+variance. This precision 𝒩𝒩∞ defined relative to T is what has been tra-
+ditionally considered in the field of quantum clocks as the main figure 
+of merit12,15,16,55–57.
+Working in the waiting time picture, we can maximize the clock 
+precision by maximizing 𝒩𝒩∞ as defined in equation (5). Because clock 
+precision is timescale invariant, we can fix without loss of generality 
+the jump rate Γ and determine the coupling constants gj of the Hamil-
+tonian H that maximize 𝒩𝒩∞. A global numerical maximization yields 
+coupling constants gj that split the ring into three regions as shown in 
+Fig. 1d. Physically, the three regions are responsible for
+	(1)	a wave-packet preparation ramp with increasing couplings on a 
+length scale λℓ;
+	(2)	a propagation region in the middle of the ring with flat couplings;
+	(3)	an emission region at the end of the ring apodized on a length 
+scale λℓ, to prevent reflection.
+We find that the site dependence of the coupling coefficient is 
+well approximated by
+g j = −μℓe−j/λℓ+ g + μre( j−(n−1))/λr,
+(6)
+where μℓ, g and μr are variable coupling parameters and λℓ and λr are 
+the length scale of the exponential ramps (see numerically optimized 
+parameters in Extended Data Fig. 1).
+Region (1) autonomously shapes the initially localized excitation 
+at |0⟩ into a travelling wave packet. This problem is of independent 
+interest48,49 and has usually been addressed with actively controlled, 
+time-dependent nearest-neighbour couplings45,52,58, and here we solve 
+it with passive, time-independent couplings. In the limit of large times 
+and displacement 2gt, x ≫ λℓ when the wave packet has already left the 
+ramp, its width is determined by the ramp length and scales with λℓ. 
+The scaling form can be derived in a hydrodynamical continuum limit 
+for long ramps and large number of sites λℓ, n ≫ 1 (Methods). In the bulk 
+(2), the Hamiltonian H can be approximated by a constant coupling, 
+isotropic XY spin chain Hamiltonian59. This model is analytically diago-
+nalizable with the dispersion relation E(k) = 2g cos(k) and discrete 
+momenta k ∈ [0, 2π) in the case of periodic boundary conditions. We 
+find, as illustrated in Supplementary Fig. 2, that the momentum distri-
+bution of the wave packet is centred around k0 = π/2, the point where 
+the dispersion relation is linear, and thus, the wave packet propagates 
+nearly dispersion free. The length scale λℓ in real space translates into 
+the inverse length scale 1/λℓ in momentum space, meaning that the 
+longer the initial ramp, the more the momentum is concentrated 
+around k0. The final region (3) is carefully matched to the decay strength 
+Γ of the last site to ensure the emission of the incoming wave packet 
+with unit probability. In our setting, the optimal couplings increase 
+towards the emitter as shown in Fig. 1d, which is reminiscent of the 
+couplings used to minimize reflection in resonant tunnling structures, 
+a problem known as apodization (an expanded discussion can be found 
+in Supplementary Section C3 and ref. 42).
+The time between two ticks is determined by the tick probability 
+density function (PDF) p(t) = Γ|⟨n −1 ||e−iHefft|| 0⟩|2 , where Heff
+= H −i
+1
+2 J
+†J is the effective Hamiltonian of the system including the 
+decay back action from the jump operator J (see details in Supplemen-
+tary Section B1). The tick PDF can be split into two contributions 
+p(t) = p0(t) + p1(t), where p0(t) is the free theory without loss term J†J and 
+without the right ramp, and p1(t) is the interaction part to restore the 
+equality with the tick PDF. While the ineraction part can formally be 
+obtained as a Dyson series, the free theory is given by the overlap of 
+the wave function with |n −1⟩ at time t (see details in Supplementary 
+Section C3). To good approximation, p0(t) dominates the tick time, 
+Autocorrelation
+Delay time τ/E[T]
+30
+20
+10
+0
+0
+1
+2
+3
+g
+(2)(τ)
+Fig. 2 | Autocorrelation function. We show g (2)(τ) = E[I(τ)I(0)]/E[I(0)]2, the 
+autocorrelation function of the emitted ‘tick photons’ with current operator I = J†J 
+versus delay time τ in the steady-state limit (details in Supplementary Section A). 
+The graph is calculated for 350 spins, and τ is expressed in units of the expected 
+time between ticks E[T]. By construction of the single-excitation subspace, we 
+have anti-bunching g(2)(0) = 0, and for τ > 0 the deterministic, periodic emission 
+of single photons. The peak broadening comes from accumulation of uncertainty 
+after multiple ticks.
+
+
+[PDF PAGE 5]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+that is, E[T] ~ n/(2g) is the time the excitation takes to arrive at the final 
+site with velocity 2g at the quantum speed limit60. Similarly, the uncer-
+tainty of the arrival time Var[T ] ∼λ2
+ℓ/(2g)
+2 is given by the wave packet’s 
+width λℓ, where we use the symbol ‘~’ to denote asymptotic 
+proportionality.
+Optimization results
+Before discussing the numerical optimization, we analyse the precision 
+scaling predicted by the free theory. We find that 𝒩𝒩∞∼n2/λ2
+ℓ as long 
+as n and λℓ are sufficiently large. Although a wave packet with small 
+width λℓ would render the precision sufficiently large, such a packet 
+will be delocalized in momentum space on a scale ∼λ−1
+ℓ, leading to 
+strong braodening around k0 = π/2 due to dispersion. These adverse 
+effects are balanced for the choice λℓ ~ n1/3 (see Supplementary Section 
+C3b for details), for which we obtain the scaling 𝒩𝒩∞∼n4/3.
+This scaling is confirmed by numerically searching for the values 
+of gj that maximize 𝒩𝒩∞. We find that λ num.
+ℓ
+∼n0.35, for up to n = 1,000 
+sites (Extended Data Fig. 1), beyond which the computational runtime 
+limited the simulation. Furthermore the numerics also verify the rela-
+tionship between n and the tick time statistics, with the scaling laws 
+E[T] ~ n0.99 and Var[T] ~ n0.66, as shown in Fig. 3a. Combined, we find 
+that clock precision in the theory model and the numerical simulation 
+scales as
+𝒩𝒩∞
+num.
+∼n1.31 th.∼n4/3.
+(7)
+Up to deviations due to differences of the true and numerical maxi-
+mum, and finite n effects, simulation (num.) and theory (th.) are in 
+close agreement with each other (Fig. 3b).
+To obtain the precision scaling (equation (7)), divergent entropy 
+production per tick was assumed. Relaxing this idealization by going 
+to a regime of finite entropy production Σtick, negative ticks enter as a 
+perturbation in the evolution equations, with perturbation parameter 
+δ = e−Σtick. Large entropy per tick Σtick ensures a small parameter δ and, 
+thus, a minimal detrimental impact on the clock precision. At the same 
+time, a small entropy production is desirable from a resource theoretic 
+point of view, where we wish to keep the dissipation as small as possible. 
+A logarithmic growth of the entropy production Σtick ∼log n with the 
+number of sites makes the difference |𝒩𝒩Σ −𝒩𝒩∞| vanish in the limit of 
+large n as we confirm numerically for up to n = 200 sites (see details on 
+the theory in the Methods). This ensures that, even at finite entropy, 
+the precision still grows polynomially in the number of sites, 𝒩𝒩Σ ∼n1.31, 
+giving the main result,
+𝒩𝒩Σ = eΩ(Σtick),
+(1 rev.)
+that the clock precision is exponentially separated from the entropy 
+production, as also shown in Fig. 3c.
+Outlook
+In fully dissipative systems, the TUR13,17 have suggested that clock preci-
+sion fundamentally comes at an entropic cost due to the second law, 
+which also generalized to some quantum models12,15. We have devel-
+oped a model system fully compatible with autonomous quantum 
+evolution where this limitation breaks down, and in that sense, pre-
+cision is not not limited by the second law of thermodynamics. The 
+autonomy is guaranteed by combining non-equilibrium dissipative 
+dynamics with coherent quantum evolution in a spin chain. Contrarily 
+to other proposals of autonomous quantum clocks that increase their 
+precision by increasing the maximum energy in the system12,14,15,33,55 and 
+thereby also increase the entropy production, the ring clock works 
+in an energy-degenerate system and through careful design of the 
+interactions manages to exponentially improve the precision versus 
+entropy scaling compared with the previous results.
+The idealized setting of our analysis raises the question about 
+stability: how do imperfections impact the performance? So far, we 
+have assumed fine-tuned couplings and the absence of dissipation in 
+the channel along the entire chain, except for the last site. In realistic 
+settings, the couplings would not perfectly match the ideal ones, gj. In 
+addition, each site would couple to a finite-temperature environment. 
+This may lead to erroneous losses as well as absorption of excitations 
+in the bulk of the ring. In the presence of such noise, the ring may carry 
+more than one excitation in the clock, affecting the regularity of the 
+ticks (see the Methods for details). Any finite perturbation of the ideal 
+scenario thus leads to a maximum length in which the exponential 
+scaling can still be upheld, before breaking down again, as we detail 
+in Extended Data Figs. 2 and 3. We find that the error only needs to 
+decrease polynomially (rather than exponentially) in the maximum 
+length we want to achieve, showing that the exponential entropy pre-
+cision relationship (equation (1)) relies neither on an exponentially 
+Number of sites n
+Number of sites n
+a
+b
+c
+10
+2
+10
+3
+10
+1
+10
+6
+2,500
+∑ = /2 (C)
+∑  (numerics)
+∑ = ∑
+∑
+2
+2,000
+1,500
+1,000
+500
+0
+10
+5
+10
+1
+10
+2
+10
+3
+10
+4
+Entropy per tick (
+tickkB
+–1)
+∑
+Time T (1/Γ)
+Var[T]
+1/2∼ n
+0.33
+∞ = n
+∞ = n
+2
+∞ ∼ n
+1.31
+E[T] ∼ n
+0.98
+Precision   
+Precision 
+0
+10
+1
+10
+2
+10
+3
+10
+1
+10
+2
+10
+3
+5
+10
+15
+20
+Fig. 3 | Clock performance versus ring length, n, and entropy production per 
+tick, Σtick. a, We show how the expected tick time E[T] and the (square root) 
+variance Var[T]1/2 scale with the number of sites for the numerically optimized 
+choice of couplings. The simulation results are in agreement with the prediction 
+that E[T]th.
+∼n1 and Var[T]th.
+∼n2/3.Numerical values for the exponents are 
+determined by linear regression, and the uncertainty in the exponent is of the 
+order 10−4 and, thus, not shown in the figure. b, We show the clock precision 𝒩𝒩∞ 
+as a function of ring length n in the fully irreversible case (filled circles). For 
+comparison, we show the classical and quantum bounds that limit precision by 
+the dimension. The precision bound for classical stochastic clocks (dashed line) 
+is linear in the dimension 𝒩𝒩∞≤n (ref. 56), whereas the one for quantum clocks 
+(full line) scales quadratically 𝒩𝒩∞≤O(n2) (refs. 56,72). c, We visualize the main 
+result of this work showing that clock precision grows exponentially faster than 
+entropy production 𝒩𝒩Σ = eΩ(Σtick) (filled circles). We compare this with the 
+TUR bound 𝒩𝒩Σ ≤Σtick/2 that holds for classical dissipative systems (dashed 
+lines). For further comparison, the quadratic scaling 𝒩𝒩Σ ∼Σ2
+tick as recently 
+found15 is shown, ignoring subleading terms and constant factors (full line).
+
+
+[PDF PAGE 6]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+precise preparation of the set-up nor on perfect isolation from the 
+environment, thus corroborating the stability of the ring clock.
+Despite these technical challenges, CCAs, for example, have 
+been used to realize microwave metamaterials with tailored band 
+structures43,58,61, also serving as slow-light waveguides62. They consist 
+of an array of capacitively coupled lumped-element superconduct-
+ing microwave resonators, which can exhibit low intrinsic dissipation 
+(internal quality factors of Qi ~ 105), supporting arrays of up to n = 100 
+individual sites37. The couplings between adjacent sites are deter-
+mined by the capacitive network of the circuit and can be engineered 
+to satisfy the prescription in Fig. 1d without the need for active control. 
+The tick-generating element of the clock (Fig. 1b) could be achieved 
+using a superconducting artificial molecule comprising one or more 
+artificial atoms. Through careful design of the band structure of the 
+CCA and transition frequencies of the energy levels, selective emission 
+from certain transitions can be achieved62 ensuring that only a single 
+excitation is propagating through the CCA. Further dissipation into 
+the environment for other transitions can be made possible through 
+tailored dissipation engineering between the artificial atoms and 
+microwave waveguides63,64 to model the respective thermal baths65. To 
+detect the ticks of the clock, we envisage two methods. One method 
+uses continuous, dispersive readout of a particular eigenstate of the 
+molecule, marking a tick by the detection of a quantum jump66,67. Alter-
+natively, ticks can be registered by capturing emitted photons with a 
+microwave photodetector68–71, although this approach is currently 
+constrained by photon-detection fidelity.
+Online content
+Any methods, additional references, Nature Portfolio reporting sum-
+maries, source data, extended data, supplementary information, 
+acknowledgements, peer review information; details of author contri-
+butions and competing interests; and statements of data and code avail-
+ability are available at https://doi.org/10.1038/s41567-025-02929-2.
+References
+1.	
+Milburn, G. J. The thermodynamics of clocks. Contemp. Phys. 61, 
+69–95 (2020).
+2.	
+Ludlow, A. D., Boyd, M. M., Ye, J., Peik, E. & Schmidt, P. O. Optical 
+atomic clocks. Rev. Mod. Phys. 87, 637–701 (2015).
+3.	
+Bothwell, T. et al. Resolving the gravitational redshift across a 
+millimetre-scale atomic sample. Nature 602, 420–424  
+(2022).
+4.	
+King, S. A. et al. An optical atomic clock based on a highly 
+charged ion. Nature 611, 43–47 (2022).
+5.	
+Beeks, K. et al. The thorium-229 low-energy isomer and the 
+nuclear clock. Nat. Rev. Phys. 3, 238–248 (2021).
+6.	
+Aamir, M. A. et al. Thermally driven quantum refrigerator 
+autonomously resets a superconducting qubit. Nat. Phys. 21, 
+318–323 (2025).
+7.	
+Woods, M. P. & Horodecki, M. Autonomous quantum devices: 
+when are they realizable without additional thermodynamic 
+costs? Phys. Rev. X 13, 011016 (2023).
+8.	
+Culhane, O., Kewming, M. J., Silva, A., Goold, J. & Mitchison, M. T. 
+Powering an autonomous clock with quantum electromechanics. 
+New J. Phys. 26, 023047 (2024).
+9.	
+Woods, M. P. Quantum frequential computing: a quadratic run 
+time advantage for all algorithms. Preprint at https://arxiv.org/
+abs/2403.02389 (2024).
+10.	 Xuereb, J., Erker, P., Meier, F., Mitchison, M. T. & Huber, M. Impact 
+of imperfect timekeeping on quantum control. Phys. Rev. Lett. 131, 
+160204 (2023).
+11.	
+Meier, F., Huber, M., Erker, P. & Xuereb, J. Autonomous quantum 
+processing unit: what does it take to construct a self-contained 
+model for quantum computation? Preprint at https://arxiv.org/
+abs/2402.00111 (2024).
+12.	 Erker, P. et al. Autonomous quantum clocks: does 
+thermodynamics limit our ability to measure time? Phys. Rev. X 7, 
+031022 (2017).
+13.	 Barato, A. C. & Seifert, U. Cost and precision of brownian clocks. 
+Phys. Rev. X 6, 041053 (2016).
+14.	 Schwarzhans, E., Lock, M. P. E., Erker, P., Friis, N. & Huber, M. 
+Autonomous temporal probability concentration: clockworks and 
+the second law of thermodynamics. Phys. Rev. X 11, 011046 (2021).
+15.	 Dost, A. P. T. & Woods, M. P. Quantum advantages in timekeeping: 
+dimensional advantage, entropic advantage and how to realise 
+them via berry phases and ultra-regular spontaneous emission. 
+Preprint at https://arxiv.org/abs/2303.10029 (2023).
+16.	 Silva, R., Nurgalieva, N. & Wilming, H. Ticking clocks in quantum 
+theory. Preprint at https://arxiv.org/abs/2306.01829 (2023).
+17.	 Barato, A. C. & Seifert, U. Thermodynamic uncertainty relation for 
+biomolecular processes. Phys. Rev. Lett. 114, 158101 (2015).
+18.	 Pietzonka, P., Ritort, F. & Seifert, U. Finite-time generalization of 
+the thermodynamic uncertainty relation. Phys. Rev. E 96, 012101 
+(2017).
+19.	 Macieszczak, K., Brandner, K. & Garrahan, J. P. Unified 
+thermodynamic uncertainty relations in linear response. Phys. 
+Rev. Lett. 121, 130601 (2018).
+20.	 Horowitz, J. M. & Gingrich, T. R. Thermodynamic uncertainty 
+relations constrain non-equilibrium fluctuations. Nat. Phys. 16, 
+15–20 (2020).
+21.	 Ptaszyński, K. Coherence-enhanced constancy of a quantum 
+thermoelectric generator. Phys. Rev. B 98, 085425 (2018).
+22.	 Agarwalla, B. K. & Segal, D. Assessing the validity of the 
+thermodynamic uncertainty relation in quantum systems. Phys. 
+Rev. B 98, 155438 (2018).
+23.	 Liu, J. & Segal, D. Thermodynamic uncertainty relation in quantum 
+thermoelectric junctions. Phys. Rev. E 99, 062141 (2019).
+24.	 Brandner, K., Hanazato, T. & Saito, K. Thermodynamic bounds on 
+precision in ballistic multiterminal transport. Phys. Rev. Lett. 120, 
+090601 (2018).
+25.	 Guarnieri, G., Landi, G. T., Clark, S. R. & Goold, J. Thermodynamics 
+of precision in quantum nonequilibrium steady states. Phys. Rev. 
+Res. 1, 033021 (2019).
+26.	 Kalaee, A. A. S., Wacker, A. & Potts, P. P. Violating the 
+thermodynamic uncertainty relation in the three-level maser. 
+Phys. Rev. E 104, L012103 (2021).
+27.	 Menczel, P., Loisa, E., Brandner, K. & Flindt, C. Thermodynamic 
+uncertainty relations for coherently driven open quantum 
+systems. J. Phys. A 54, 314002 (2021).
+28.	 Rignon-Bret, A., Guarnieri, G., Goold, J. & Mitchison, M. T. 
+Thermodynamics of precision in quantum nanomachines. Phys. 
+Rev. E 103, 012133 (2021).
+29.	 Gerry, M. & Segal, D. Absence and recovery of cost-precision 
+tradeoff relations in quantum transport. Phys. Rev. B 105, 155401 
+(2022).
+30.	 Prech, K. et al. Entanglement and thermokinetic uncertainty 
+relations in coherent mesoscopic transport. Phys. Rev. Res. 5, 
+023155 (2023).
+31.	 Falasco, G., Esposito, M. & Delvenne, J.-C. Unifying 
+thermodynamic uncertainty relations. New J. Phys. 22, 053046 
+(2020).
+32.	 Hasegawa, Y. Thermodynamic uncertainty relation for  
+general open quantum systems. Phys. Rev. Lett. 126, 010602 
+(2021).
+33.	 Pearson, A. N. et al. Measuring the thermodynamic cost of 
+timekeeping. Phys. Rev. X 11, 021029 (2021).
+34.	 Ehrlich, T. & Schaller, G. Broadband frequency filters with 
+quantum dot chains. Phys. Rev. B 104, 045424 (2021).
+35.	 Knuth, D. E. Big omicron and big omega and big theta. SIGACT 
+News 8, 18–24 (1976).
+
+
+[PDF PAGE 7]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+36.	 Blais, A., Grimsmo, A. L., Girvin, S. M. & Wallraff, A. Circuit 
+quantum electrodynamics. Rev. Mod. Phys. 93, 025005 (2021).
+37.	 Jouanny, V. et al. High kinetic inductance cavity arrays for 
+compact band engineering and topology-based disorder meters. 
+Nat. Commun. 16, 3396 (2025).
+38.	 Christandl, M., Datta, N., Ekert, A. & Landahl, A. J. Perfect state 
+transfer in quantum spin networks. Phys. Rev. Lett. 92, 187902 
+(2004).
+39.	 Apollaro, T. J. G., Banchi, L., Cuccoli, A., Vaia, R. & Verrucchi, P. 
+99%-fidelity ballistic quantum-state transfer through long uniform 
+channels. Phys. Rev. A 85, 052319 (2012).
+40.	 Datta, S. Quantum Transport: Atom to Transistor (Cambridge Univ. 
+Press, 2005).
+41.	 Fedorov, G. P. et al. Photon transport in a Bose–Hubbard chain 
+of superconducting artificial atoms. Phys. Rev. Lett. 126, 180503 
+(2021).
+42.	 Sumetsky, M. & Eggleton, B. J. Modeling and optimization of 
+complex photonic resonant cavity circuits. Opt. Express 11, 381 
+(2003).
+43.	 Ferreira, V. S. et al. Collapse and revival of an artificial atom 
+coupled to a structured photonic reservoir. Phys. Rev. X 11, 041043 
+(2021).
+44.	 Couteau, C. et al. Applications of single photons to quantum 
+communication and computing. Nat. Rev. Phys. 5, 326–338 
+(2023).
+45.	 Kuhn, A., Hennrich, M. & Rempe, G. Deterministic single-photon 
+source for distributed quantum networking. Phys. Rev. Lett. 89, 
+067901 (2002).
+46.	 Uppu, R., Midolo, L., Zhou, X., Carolan, J. & Lodahl, P. 
+Quantum-dot-based deterministic photon–emitter interfaces for 
+scalable photonic quantum technology. Nat. Nanotechnol. 16, 
+1308–1317 (2021).
+47.	 Tomm, N. et al. A bright and fast source of coherent single 
+photons. Nat. Nanotechnol. 16, 399–403 (2021).
+48.	 Cirac, J. I., Zoller, P., Kimble, H. J. & Mabuchi, H. Quantum  
+state transfer and entanglement distribution among distant  
+nodes in a quantum network. Phys. Rev. Lett. 78, 3221–3224  
+(1997).
+49.	 DiVincenzo, D. P. The physical implementation of quantum 
+computation. Fortschr. Phys. 48, 771–783 (2000).
+50.	 Yin, Y. et al. Catch and release of microwave photon states. Phys. 
+Rev. Lett. 110, 107001 (2013).
+51.	 Pechal, M. et al. Microwave-controlled generation of shaped 
+single photons in circuit quantum electrodynamics. Phys. Rev. X 
+4, 041010 (2014).
+52.	 Kurpiers, P. et al. Deterministic quantum state transfer and remote 
+entanglement using microwave photons. Nature 558, 264 (2018).
+53.	 Yang, J. et al. Deterministic generation of shaped single 
+microwave photons using a parametrically driven coupler. Phys. 
+Rev. Appl. 20, 054018 (2023).
+54.	 Cox, D. R. Renewal Theory (Methuen & Co, 1962).
+55.	 Woods, M. P., Silva, R. & Oppenheim, J. Autonomous quantum 
+machines and finite-sized clocks. Ann. Henri Poincaré 20, 125–218 
+(2019).
+56.	 Woods, M. P., Silva, R., Pütz, G., Stupar, S. & Renner, R. Quantum 
+clocks are more accurate than classical ones. PRX Quantum 3, 
+010319 (2022).
+57.	 Meier, F., Schwarzhans, E., Erker, P. & Huber, M. Fundamental 
+accuracy-resolution trade-off for timekeeping devices. Phys. Rev. 
+Lett. 131, 220201 (2023).
+58.	 Castillo-Moreno, C. et al. Dynamical excitation control and 
+multimode emission of an atom-photon bound state. Phys. Rev. 
+Lett. 134, 133601 (2025).
+59.	 Lieb, E., Schultz, T. & Mattis, D. Two soluble models of an 
+antiferromagnetic chain. Ann. Phys. 16, 407–466 (1961).
+60.	 Yung, M.-H. Quantum speed limit for perfect state transfer in one 
+dimension. Phys. Rev. A 74, 030303 (2006).
+61.	 Carusotto, I. et al. Photonic materials in circuit quantum 
+electrodynamics. Nat. Phys. 16, 268–279 (2020).
+62.	 Ferreira, V. S., Kim, G., Butler, A., Pichler, H. & Painter, O. 
+Deterministic generation of multidimensional photonic cluster 
+states with a single quantum emitter. Nat. Phys. 20, 865–870 
+(2024).
+63.	 Murch, K. W. et al. Cavity-assisted quantum bath engineering. 
+Phys. Rev. Lett. 109, 183602 (2012).
+64.	 Aamir, M. A. et al. Engineering symmetry-selective couplings of 
+a superconducting artificial molecule to microwave waveguides. 
+Phys. Rev. Lett. 129, 123604 (2022).
+65.	 Sundelin, S., Aamir, M. A., Kulkarni, V. M., Castillo-Moreno, C. 
+& Gasparinetti, S. Quantum refrigeration powered by noise 
+in a superconducting circuit. Preprint at https://arxiv.org/
+abs/2403.03373 (2024).
+66.	 Vijay, R., Slichter, D. H. & Siddiqi, I. Observation of quantum jumps 
+in a superconducting artificial atom. Phys. Rev. Lett. 106, 110502 
+(2011).
+67.	 He, X. al. Effect of measurement backaction on quantum clock 
+precision studied with a superconducting circuit. Phys. Rev. Appl. 
+20, 034038 (2023).
+68.	 Inomata, K. et al. Single microwave-photon detector using an 
+artificial Λ-type three-level system. Nat. Commun. 7, 12303 (2016).
+69.	 Besse, J.-C. et al. Single-shot quantum non-demolition detection 
+of individual itinerant microwave photons. Phys. Rev. X 8, 021003 
+(2018).
+70.	 Kono, S., Koshino, K., Tabuchi, Y., Noguchi, A. & Nakamura, Y. 
+Quantum non-demolition detection of an itinerant microwave 
+photon. Nat. Phys. 14, 546–549 (2018).
+71.	 Lescanne, R. et al. Irreversible qubit–photon coupling for the 
+detection of itinerant microwave photons. Phys. Rev. X 10, 021038 
+(2020).
+72.	 Yang, Y. & Renner, R. Ultimate limit on time signal generation. 
+Preprint at https://arxiv.org/abs/2004.07857 (2020).
+Publisher’s note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
+Open Access This article is licensed under a Creative Commons 
+Attribution 4.0 International License, which permits use, sharing, 
+adaptation, distribution and reproduction in any medium or format, 
+as long as you give appropriate credit to the original author(s) and the 
+source, provide a link to the Creative Commons licence, and indicate 
+if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless 
+indicated otherwise in a credit line to the material. If material is not 
+included in the article’s Creative Commons licence and your intended 
+use is not permitted by statutory regulation or exceeds the permitted 
+use, you will need to obtain permission directly from the copyright 
+holder. To view a copy of this licence, visit http://creativecommons.
+org/licenses/by/4.0/.
+© The Author(s) 2025
+
+
+[PDF PAGE 8]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+Methods
+Here, we provide additional detail regarding the continuum description 
+of the wave-packet preparation, how to determine clock precision 𝒩𝒩Σ 
+and 𝒩𝒩∞ from the Lindbladian, and how the precision-entropy scaling 
+is derived. Furthermore, details are provided on how to obtain the 
+master equation model of the main text from an extensible microscopic 
+model, and finally, technical aspects regarding the robustness against 
+perturbations are given.
+Hydrodynamical continuum limit
+In the limit of large values for the number of ring sites n, the wave-packet 
+propagation can be described using a continuum description, where 
+we define the real space coordinates as xj = j/λℓ and go from the discrete 
+coordinates j = 0, 1, …, n − 1 to the continuum x ∈[0, n/λℓ) →ℝ+ in the 
+limit n ≫ λℓ. The particle density n(t, x j) = λ−1
+ℓ| ⟨j|ψ(t)⟩|
+2 can be described 
+by the evolution equation
+∂tn(t, x) = −2∂x(g(x)n(t, x)),
+(8)
+where g(x) is defined by the coupling constant g(xj) = gj. The equation of 
+motion for n(t, x) follows from the continuum limit of the Schrödinger 
+equation i∂t |ψ(t)⟩= H |ψ(t)⟩, and conserves probabilities 1 = ∫
+∞
+0 dx n(t, x). 
+The continuum model is valid so long as we consider times t < n/(2g) 
+where the wave packet has not yet reached the right ramp of the cou-
+pling potential (equation (6)), and furthermore λℓ, n ≫ 1, to ensure that 
+g(x) and n(t, x) do not vary quickly on the lattice length scale. The deri-
+vation of the continuum model is discussed in further detail in Sup-
+plementary Section C1, where we also provide the analytical solution 
+for n(t, x). The numerics confirm that the continuum limit captures 
+well the scaling behaviour of the discrete wave function beyond the 
+length scale of the lattice. In particular, we find that the initial distribu-
+tion n(0, x) is transported to x > 0 and broadened by the width λℓ of the 
+initial ramp. This leads to the scaling form | ⟨j|ψ(t)⟩|
+2 ∼λ−1
+ℓf(( j −2gt)/λℓ)
+2 
+of the wave packet in the limit of large times and and displacement x, 
+2gt ≫ λℓ, where f is some function independent of n and λℓ describing 
+the shape of the travelling wave packet.
+Clock precision with full counting statistics
+The definitions brought forward in equations (4) and (5) of the main 
+text defined clock precision relative to the tick number statistics 
+𝒩𝒩Σ = limt→∞E[N(t)]/Var[N(t)] and relative to the waiting time statistics 
+𝒩𝒩∞= E[T]
+2/Var[T ]. Here, we provide the necessary details to calculate 
+these two quantities based on the Lindblad master equation 
+ℒ= ℒ0 + ℒ+ + ℒ−. The decomposition of the Lindbladian into three 
+terms separates out the ‘no jump’ part
+ℒ0 ⋅= −i[H, ⋅] −1
+2 { J†J, ⋅} −1
+2 { J
+†
+J, ⋅},
+(9)
+describing the non-Hermitian evolution conditioned on no jumps. The 
+jumps generated by J defining positive ticks are described by ℒ+ ⋅= J ⋅J†, 
+and the ones for J, the negative ticks, by ℒ−⋅= J ⋅J
+†. The late time sta-
+tistics of N(t) are fully determined by introducing the tilted 
+Liouvillian73
+ℒ( χ) = ℒ0 + eiχℒ+ + e−iχℒ−,
+(10)
+with discrete counting field χ. The eigenvalue λ(χ) of ℒ( χ) that has the 
+largest real value is equal to the cumulant generating function t−1C(χ, t) 
+of N(t) at late times, and thus, we can determine the kth cumulant
+limt→∞t−1⟨⟨N(t)
+k⟩⟩= (−i∂χ)
+kλ(χ)|χ=0.
+(11)
+The special cases k = 1, 2 give the expectation value and variance of N(t) 
+needed to determine the clock precision 𝒩𝒩Σ, as further detailed in 
+Supplementary Section D1.
+In the limit where ℒ−= 0, that is, the limit of infinite entropy pro-
+duction, the counting variable N(t) is a renewal process54, that is, the 
+time between each increment of N(t) is an independent and identical 
+copy of the waiting time T. In this limit, the late time cumulants of N(t) 
+are fully determined by the statistics of T, and one can relate16,54
+limt→∞
+E[N(t)]
+t
+=
+1
+E[T ] ,
+limt→∞
+Var[N(t)]
+t
+= Var[T ]
+E[T ]
+3 ,
+(12)
+showing that 𝒩𝒩Σ →𝒩𝒩∞ as Σtick → ∞. The waiting time statistics for ℒ−= 0 
+can also be determined directly with the Liouvillian, E[Tk]
+= (−1)
+kk!tr[ℒ−k
+0 ρ0]. A detailed derivation can be found in Supplementary 
+Section B1.
+As for the introductory statement that 𝒩𝒩∞ equals how many times 
+the clock ticks until it misses one tick compared with the perfect param-
+eter time, it can be shown to be consistent with the definition 
+𝒩𝒩∞= E[T ]
+2/Var[T ] (ref. 12). As the time between ticks is independently 
+and identically distributed, the variance of the time to the kth tick is 
+given by Var[Tk] = kVar[T]. Setting the standard deviation of the kth 
+tick to equal the time between two ticks Var[Tk]
+1/2 ≡E[T ], we can formally 
+solve for k to give k = 𝒩𝒩∞, recovering the initial statement.
+Theory of the precision–entropy scaling
+In case of finite entropy dissipation, the master equation is perturbed 
+by a term describing the negative ticks, which is of magnitude δ = e−Σtick. 
+In the limit of small δ, the clock precision can be expanded in powers 
+of this correction, 𝒩𝒩Σ = 𝒩𝒩∞+ O(δ), using the Landau big-O notation35. 
+Because we aim to minimize entropy Σtick, we want to keep δ as large as 
+possible while at the same time making sure the precision 𝒩𝒩Σ is suffi-
+ciently close to 𝒩𝒩∞.
+If δ = n−ζ decays algebraically for some exponent ζ > 0 large enough 
+to cancel out the constant factors in the big-O correction, the entropy 
+scales only logarithmically while at the same time keeping the perturba-
+tions due to the negative ticks small. How large ζ needs to be is deter-
+mined in part by the spectral gap of the system’s Lindbladian and by 
+whether it scales algebraically with system size (which is related to the 
+famously hard problem of undecidability of the existence of spectral 
+gaps74; Supplementary Section D). We have numerically determined 
+the scaling up to n = 200 and found that the choice ζ = 4 is sufficient to 
+make the error between 𝒩𝒩Σ and 𝒩𝒩∞ arbitrarily small as n grows. Using 
+the identity log δ = −Σtick, we find the entropy scales logarithmically 
+Σtick = ζ log n, whereas 𝒩𝒩Σ ∼n1.31 scales polynomially (with the negli-
+gible correction), which results in equation (1).
+Applicability of the master equation
+Using spin chains or CCAs to model the ring clock from the main text 
+leads to an effective description with the Hamiltonian H as in equation 
+(2) and jump operators J, J. Working with a spin chain, the local Hamil-
+tonians are given by 
+ω
+2 σz, j for site j, and the nearest-neighbour coupling 
+can be modelled by the particle number conserving hopping term 
+gjσ−,jσ+,j+1 + h.c. The challenging part for a microscopic description 
+comes from the fact that we have to prevent multiple excitations enter-
+ing the ring at once to ensure that the description we have used so far 
+is valid. One way to solve this problem is to treat the first and the last 
+site of the ring clock separately as a single system—the ticking ele-
+ment—as proposed in Fig. 1b. To ensure that we recover the effective 
+dynamics described in the main text, this ticking element has to 
+(1) remember when it has emitted an excitation into the ring such that 
+it does not emit another excitation into the ring before it has ticked, 
+and (2) it has to be boundary-matched to the ring couplings gj to avoid 
+the reflection of the incoming wave packet.
+The proposed level scheme comprises five states and undergoes 
+the following cycle for a tick: |g⟩→|ℓ⟩→|m⟩→|e⟩→|r⟩→|g⟩. Note, we 
+identify |ℓ⟩≡|n −1⟩ as formally the last ring site in terms of the states 
+of the reduced model, and |r⟩≡|0⟩ as the first site. The idea of this 
+
+
+[PDF PAGE 9]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+scheme is that, by adiabatically eliminating the intermediate states |m⟩ 
+and |e⟩ from the tick cycle, we recover the jump process 
+|n −1⟩≡|ℓ⟩→|0⟩≡|r⟩ generated by J (and the inverse generated by J). 
+To get there, we look into each step of the tick cycle separately. When 
+the excitation is in the ring, the ticking element is in the ground state 
+|g⟩. When the excitation arrives at the site |n −2⟩ in the ring, it couples 
+to the transition |g⟩→|ℓ⟩ with strength gn−2. In turn, the state |ℓ⟩ decays 
+dissipatively as |ℓ⟩→|n⟩ with rate Γ, which defines the tick. This is the 
+rate that crucially has to be boundary matched to the couplings gj, and 
+the strength of the reverse process needs to be suppressed with the 
+entropy production Σtick by coupling this transition to a cold enough 
+bath at inverse temperature βC. After this decay, however, the system 
+is not in resonance with the frequency ω of the ring structure anymore 
+and it has to brought to a higher energy again, for which two additional 
+dissipative drives can be used. With an additional hot bath at inverse 
+temperature βH driving |m⟩↔|e⟩ at a rate κH and an additional cold bath 
+at inverse temperature βC mediating |e⟩→|r⟩ at a rate κC, we can create 
+a population inversion to ensure that, in the end, the state that arrived 
+on the ring ends up on |r⟩. Then, the ticking element is again on reso-
+nance with ω, and the excitation can be coherently coupled to the next 
+site with strength g0, completing the cycle.
+When the excitation is in the ring, the ticking element latches to 
+the ground state |g⟩, which is not addressed by the thermal drives, and 
+therefore, no second excitation is emitted into the ring. So long as 
+ω ≫ κH, κC, Γ ≳ gj is the hierarchy of energy scales in the problem, the 
+Lindblad master equation is applicable in a local picture with weak 
+interactions despite the many-body nature75,76, and the notion of 
+entropy Σtick we used coincides with the thermodynamic entropy from 
+Clausius’ law77 as in equation (3).
+Stability under perturbations
+In a realistic experimental implementation of the ring clock, the actual 
+nearest-neighbour couplings would differ slightly from the ideal choice 
+gj. From the disorder in the couplings, we would expect the clock to 
+perform worse due to imperfect preparation of the travelling wave 
+packet in the preparation region, off-diagonal Anderson localization in 
+the bulk78–81 and reflection in the final region of the ring. Furthermore, in 
+a realistic scenario, the bulk of the ring would not be perfectly isolated 
+from the environment. As a result, the bulk sites may absorb excitations 
+from the environment, or lose them, negatively impacting the preci-
+sion. We analyse the stability of the main result equation (1) under these 
+two perturbations of the ideal scenario. In a concrete experimental 
+realization, further sources of error may contribute depending on 
+the details of the physical platform, such as disorder in the bare qubit 
+frequencies in superconducting circuits, whose impact we expect to 
+be comparable to that of imperfections in the couplings gj.
+For a fixed but small error εloc in the nearest-neighbour couplings 
+or an unwanted coupling εenv to the environment, the predicted preci-
+sion scaling from equation (7) can be upheld up to some finite ring 
+length nmax. For longer rings, the errors start to dominate and the preci-
+sion decreases again (Extended Data Figs. 2a and 3a). The analysis in 
+the following shows that this point of breakdown nmax of the optimal 
+scaling increases the smaller the error ε in the couplings and dissipation 
+is with the precise relationship of the form
+nmax ∼1
+εκ ,
+(13)
+where κ > 0 is some exponent that depends on the type of error. This 
+relationship (equation (13)) is algebraic rather than exponential, and 
+in the following we determine the exponents κloc for the parameter per-
+turbations as well as κenv for the environmental perturbation seperately.
+Disorder in the couplings
+The error model for the couplings gj perturbs each nearest-neighbour 
+coupling with a multiplicative factor (1 + εloc)̂
+Xj, where ε > 0 is the error and ̂
+Xj ∼𝒩𝒩(0, 1) is normally distributed with mean 0 and variance 1. To create 
+Extended Data Fig. 2a, for a fixed ring length n and error ε, M = 400 inde-
+pendently and identically distributed (i.i.d.) samples of perturbed cou-
+plings ̃gj are generated, leading to a perturbed precision value ̃𝒩𝒩∞. Then, 
+a statistical average is taken ⟨̃𝒩𝒩∞⟩̂X over the M random choices of disor-
+dered parameters ̃ gj. It can be seen that, for εloc fixed, this average value 
+increases until a saddle point nmax is reached and the precision decreases 
+again. If we fit a linear slope (black dashed line) in the log–log scale through 
+the maxima of the average curves for all error values, we find that the 
+precision still scales as ~n1.39(5), albeit with a constant factor smaller in 
+comparison with the optimal scaling. This scaling approximately agrees 
+with the ideal one. The uncertainty in the exponent comes from the dis-
+tribution of the numerically determined maxima and is determined with 
+the covariance matrix from the linear regression. Extended Data Fig. 2b 
+shows how this maximal length nmax changes as a function of the εloc and 
+a linear fit in the log–log plot reveals a scaling exponent κloc = 0.81(3) for 
+equation (13). The uncertainty in the exponent comes from the statistical 
+distribution of the data points nmax and is determined again using the 
+covariance matrix from the linear fit. Note that the maximum ring length 
+in this analysis is of the order n = 300 owing to limitations in the compu-
+tational runtime for the statistical averaging.
+Undesired environment interactions
+In the ideal clock model, the ticks are generated by J = √Γ |0⟩⟨n −1|. 
+To model erroneous losses due to the environment along the ring in 
+the spirit of the abstract model, we assume that these decays are also 
+registered as ticks leading to a premature reinitialization of the clock 
+akin to the tick process defined by the jump operator J. This lowers the 
+expected time between two ticks E[T] and increases the variance 
+Var[T], thus overall decreasing the clock precision 𝒩𝒩∞. For an actual 
+experimental realization of the ring clock, this description is of course 
+only an approximation of how losses would impact the result, 
+but it captures the main features of such imperfections. We include 
+these processes with additional dissipators in the master 
+equation description L j = √Γ εenv |0⟩⟨j| for sites j = 1, …, n − 2, where 
+εenv > 0 is the fractional error in the dissipation. For a finite-temperature 
+environment, however, also the reverse process L†
+j is possible. Due to 
+detailed balance, the rate of this process is suppressed by a factor 
+e−Σenv, where Σenv is the entropy production in the (finite temperature) 
+environment. More importantly, it may also happen that the bulk 
+absorbs a second excitation from the environment, leading to two 
+excitations in the spin chain. If the ring is initially occupied only on 
+site j = 0, …, n − 1, an absorption on any other site i ≠ j can be modelled 
+by the jump operator
+L( ji), j = e−Σenv/2√Γ εenv | j, i⟩⟨j| ,
+(14)
+where | j, i⟩ is the state with exactly two excitations, one on each site i 
+and j. Detailed balance guarantees the existence of the reverse process 
+in which the doubly occupied state | j, i⟩ loses an excitation into the 
+environment. This excitation can be lost on both sites i and j. For exam-
+ple, if site i decays, the jump operator is given by L j,( ji) = √Γ εenv | j⟩⟨j, i|. 
+Although, in principle, higher excitation numbers >2 in the ring would 
+be possible, a sufficiently cold environment exponentially suppresses 
+the thermal occupation probability of these higher subspaces. In this 
+context, already a logarithmically growing inverse temperature 
+βenv ∼log n of the environment is sufficient. At the same time, an envi-
+ronment temperature with such scaling ensures that the entropy pro-
+duced by an excitation Σenv = βenvω ∼log n grows logarithmically only 
+in the ring length (for fixed bare spin frequency ω). An exact and effec-
+tive treatment of the single- and double-excitation subspaces thus 
+captures the dominant error contributions to the clock precision (see 
+details in Supplementary Section E).
+In Extended Data Fig. 3a, we show how the precision 𝒩𝒩Σ scales as 
+a function of the ring length, n, for a selection of fixed errors εenv, and 
+
+
+[PDF PAGE 10]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+with entropy Σenv =
+3
+2 Σtick also only logarithmically growing with chain 
+length. For up to n = 12 sites, we numerically simulate the full dynamics 
+in the double-excitation subspace, while for 12 ≤ n ≤ 200 we use a com-
+putationally efficient, effective model for extrapolation (see details in 
+Supplementary Section E). The inset in Extended Data Fig. 3a shows 
+that the difference between exact and effective model vanishes for 
+growing n, supporting the applicability of the effective model. Similar 
+to the coupling perturbations we find that, for every fixed error εenv, 
+there is a turn-around point nmax, where the precision reaches its maxi-
+mum and after which the precision decreases as the ring gets longer. 
+A fit (dashed black line) through all the maxima recovers a polynomial 
+scaling of the precision, ~n1.23(1). Together with Σenv ∼log n, this still 
+guarantees an exponential precision–entropy relationship, albeit with 
+a lower exponent than in the idealized case. We show the log–log rela-
+tionship between εenv and nmax in Extended Data Fig. 3b, where a linear 
+fit reveals a an exponent κenv = 0.43 following equation (13). We further 
+observe that the ring clock is more sensitive to amplitude damping 
+noise in the bulk than to disorder in the couplings, as the tolerable loss 
+εenv is smaller than the coupling error εloc; yet, in both cases, the scaling 
+with nmax remains algebraic.
+Data availability
+All parameters and data are available via GitHub at https://github.com/
+aspects-quantum/ring-clock.
+Code availability
+All code is available via GitHub at https://github.com/aspects-quantum/
+ring-clock.
+References
+73.	 Schaller, G. Open Quantum Systems Far from Equilibrium 
+(Springer, 2014); https://doi.org/10.1007/978-3-319-03877-3
+74.	 Cubitt, T. S., Perez-Garcia, D. & Wolf, M. M. Undecidability of the 
+spectral gap. Nature 528, 207–211 (2015).
+75.	 Hofer, P. P. et al. Markovian master equations for quantum thermal 
+machines: local versus global approach. New J. Phys. 19, 123037 
+(2017).
+76.	 Shiraishi, K., Nakagawa, M., Mori, T. & Ueda, M. Quantum master 
+equation for many-body systems: derivation based on the Lieb–
+Robinson bound. Phys. Rev. B 111, 184311 (2025).
+77.	 Landi, G. T. & Paternostro, M. Irreversible entropy production: 
+from classical to quantum. Rev. Mod. Phys. 93, 035008  
+(2021).
+78.	 Anderson, P. W. Absence of diffusion in certain random lattices. 
+Phys. Rev. 109, 1492–1505 (1958).
+79.	 Dyson, F. J. The dynamics of a disordered linear chain. Phys. Rev. 
+92, 1331–1338 (1953).
+80.	 Eggarter, T. P. & Riedinger, R. Singular behavior of tight-binding 
+chains with off-diagonal disorder. Phys. Rev. B 18, 569–575  
+(1978).
+81.	 Fleishman, L. & Licciardello, D. C. Fluctuations and localization in 
+one dimension. J. Phys. C 10, L125 (1977).
+Acknowledgements
+We thank R. Silva, N. Nurgalieva and Y. Hasegawa for disussions. 
+This work received funding from the European Research Council 
+Consolidator grant ‘Cocoquest’ 101043705 (Y.M., P.E. and M.H.); the 
+John Templeton Foundation through grant no. 62179 (Y.M.); the Austrian 
+Science Fund (FWF) I 4863, SFB 1225 ISOQUANT Project ID 27381115 
+(Y.M.); the European Research Council via grant no. 101041744 ESQuAT 
+(S.G.); the Knut and Alice Wallenberg Foundation via the Wallenberg 
+Centre for Quantum Technology (WACQT) (S.G.); the European Union, 
+Quantum Flagship project ASPECTS, grant agreement no. 101080167 
+(F.M., S.S., T.J.G.A., P.E., S.G. and M.H.). Views and opinions expressed 
+are, however, those of the authors only and do not necessarily reflect 
+those of the European Union, REA or UKRI. Neither the European Union 
+nor UKRI can be held responsible for them.
+Author contributions
+F.M., S.S., S.G. and M.H. conceived the original idea of the project with 
+inputs from T.J.G.A. and P.E. F.M. developed the theory and numerics 
+with important contributions from Y.M. and with input from S.S. and 
+S.G. about experimental aspects. F.M. prepared the manuscript and 
+figures with inputs from all the authors. All authors contributed to 
+the discussions and interpretation of the results. M.H. supervised the 
+project.
+Funding
+Open access funding provided by TU Wien (TUW).
+Competing interests
+S.G. is a founder and shareholder of Sweden Quantum AB. The other 
+authors declare no competing interests.
+Additional information
+Extended data is available for this paper at https://doi.org/10.1038/
+s41567-025-02929-2.
+Supplementary information The online version contains 
+supplementary material available at https://doi.org/10.1038/s41567-
+025-02929-2.
+Correspondence and requests for materials should be addressed to 
+Florian Meier, Simone Gasparinetti or Marcus Huber.
+Peer review information Nature Physics thanks the anonymous 
+reviewers for their contribution to the peer review of this work.
+Reprints and permissions information is available at  
+www.nature.com/reprints.
+
+
+[PDF PAGE 11]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+Extended Data Fig. 1 | Optimized couplings. Plot of the numerically optimized 
+parameters μℓ, μr, g, λℓ, λr as a function of the ring length n. In (a), we show the 
+ramp lengths λℓ and λr, finding that the left ramp grows as n0.35 close to the 
+predicted exponent of 1/3. The exponent is determined with linear regression 
+and has uncertainty of order 10−6 and is thus not shown in the figure. The right 
+ramp does not become larger with the ring length, indicating an agreement 
+with previous literature on apodization showing that only a constant number 
+of couplings have to modified in a coupled cavity array to avoid reflection at a 
+dissipative sink [42]. In (b), we show how μℓ, μr and g change as a function of n 
+showing that both g and μr quickly approach a constant value with growing n, 
+whereas μℓ only slowly increases, indicating that the depth of the left ramp keeps 
+increasing with n.
+
+
+[PDF PAGE 12]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+Extended Data Fig. 2 | Coupling disorder. We show the precision 𝒩𝒩∞ under 
+perturbations of the couplings. (a) Here, the precision is shown as a function of 
+the number of sites for a selection of three relative errors εloc in the parameters. 
+The dots correspond to the instances of the clock subject to random error and 
+the dashed line with the cross markers is the numerical average over M = 400 
+samples for fixed εloc and n. The solid black line is the optimal scaling and the red 
+star markers are the maxima nmax of the average curve for fixed error. The dashed 
+black line is a linear fit through all maxima and the uncertainty in the exponent is 
+due to the statistical errors in obtaining the average. (b) Here, nmax as identified 
+from the M = 400 samples in (a) is plotted as a function of the error εloc. The error 
+bars for nmax show the finite resolution in the number of sites n sampled in (a) as 
+the estimated uncertainty. The linear fit of the curve determines the exponent 
+κloc, with the error coming from the statistical distribution of the data points.
+
+
+[PDF PAGE 13]
+Nature Physics
+Article
+https://doi.org/10.1038/s41567-025-02929-2
+Extended Data Fig. 3 | Amplitude damping noise. Precision under amplitude 
+damping noise with strength Γεenv. (a) Filled circles show the precision for 4 
+values of εenv as calculated with the effective model. Data points where the 
+numerical calculation was unstable have been removed. The solid black line 
+shows the ideal precision as a function of the number of sites n. The red star 
+markers correspond to the maxima nmax of each curve showing the turn-around 
+point for fixed loss ε where the precision decreases with more sites, and the black 
+dashed line is a linear fit through the maxima. Inset: differences between the 
+precision predicted by the effective model and the full model vs ring size. 
+Because of coherent effects in the double-excitation subspace not captured by 
+the effective model, the difference vanishes at different rates for odd and even 
+site numbers, but is negligible for all n ≳ 10. (b) This plot shows nmax as a function 
+of the error εenv in a double logarithmic scale, together with a linear fit.

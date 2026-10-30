@@ -1,0 +1,3376 @@
+=== PDF PAGE 1 ===
+Journal of Physics: Condensed
+Matter
+     
+ROADMAP • OPEN ACCESS
+The 2024 magnonics roadmap
+To cite this article: Benedetta Flebus et al 2024 J. Phys.: Condens. Matter 36 363501
+ 
+View the article online for updates and enhancements.
+You may also like
+Review and prospects of magnonic
+crystals and devices with reprogrammable
+band structure
+M Krawczyk and D Grundler
+-
+Applications of nanomagnets as dynamical
+systems: II
+Bivas Rana, Amrit Kumar Mondal, Supriyo
+Bandyopadhyay et al.
+-
+Unidirectional spin-wave propagation and
+devices
+Jilei Chen, Haiming Yu and Gianluca
+Gubbiotti
+-
+This content was downloaded from IP address 141.250.2.9 on 14/06/2024 at 10:55
+
+
+=== PDF PAGE 2 ===
+Journal of Physics: Condensed Matter
+J. Phys.: Condens. Matter 36 (2024) 363501 (40pp)
+https://doi.org/10.1088/1361-648X/ad399c
+Roadmap
+The 2024 magnonics roadmap
+Benedetta Flebus1,∗, Dirk Grundler2,3,∗, Bivas Rana4, YoshiChika Otani5,6,
+Igor Barsukov7, Anjan Barman8, Gianluca Gubbiotti9, Pedro Landeros10,
+Johan Akerman11, Ursula Ebels12, Philipp Pirro13, Vladislav E Demidov14,
+Katrin Schultheiss15, Gyorgy Csaba16, Qi Wang17, Florin Ciubotaru18,
+Dmitri E Nikonov19, Ping Che20, Riccardo Hertel21, Teruo Ono22, Dmytro Afanasiev23,
+Johan Mentink23, Theo Rasing23, Burkard Hillebrands13, Silvia Viola Kusminskiy24,
+Wei Zhang25, Chunhui Rita Du26, Aurore Finco27, Toeno van der Sar28,
+Yunqiu Kelly Luo29,30, Yoichi Shiota31, Joseph Sklenar32, Tao Yu17 and Jinwei Rao33
+1 Department of Physics, Boston College, 140 Commonwealth Avenue, Chestnut Hill, MA 02467, United
+States of America
+2 Laboratory of Nanoscale Magnetic Materials and Magnonics, Institute of Materials (IMX), Ecole
+Polytechnique Fédérale de Lausanne (EPFL), Lausanne 1015, Switzerland
+3 Institute of Electrical and Micro Engineering (IEM), EPFL, Lausanne 1015, Switzerland
+4 Institute of Spintronics and Quantum Information (ISQI), Faculty of Physics, Adam Mickiewicz
+University, Pozna´n, Poland
+5 Center for Emergent Matter Science, RIKEN, Wako, Japan
+6 Institute for Solid State Physics (ISSP), University of Tokyo, Kashiwa, Japan
+7 Department of Physics and Astronomy, University of California, Riverside, United States of America
+8 S N Bose National Centre for Basic Sciences, Salt Lake, Sector III, Kolkata, India
+9 Cnr-Istituto Officina dei Materiali, Perugia, Italy
+10 Universidad Técnica Federico Santa María, Av. Espa˜na 1680, Valparaíso, Chile
+11 Department of Physics, University of Gothenburg, Gothenburg, Sweden
+12 Univ. Grenoble Alpes, CEA, CNRS, Grenoble-INP, SPINTEC, Grenoble 38000, France
+13 Fachbereich Physik and Landesforschungszentrum OPTIMAS, RPTU Kaiserslautern-Landau,
+Kaiserslautern, Germany
+14 Institute of Applied Physics, University of Münster, Münster 48149, Germany
+15 Helmholtz-Zentrum Dresden-Rossendorf, Dresden, Germany
+16 Pázmány Péter Catholic University, Budapest, Hungary
+17 School of Physics, Huazhong University of Science and Technology, Wuhan 430074, People’s
+Republic of China
+18 Imec, Leuven 3001, Belgium
+19 Components Research, Intel Corp., Hillsboro, OR 97124, United States of America
+20 Laboratoire Albert Fert, CNRS, Thales, Université Paris-Saclay, Palaiseau 91767, France
+21 Université de Strasbourg, CNRS, Institut de Physique et Chimie des Matériaux de Strasbourg,
+Strasbourg 67000, France
+22 Institute for Chemical Research, Kyoto University, Center for Spintronics Research Network, Kyoto
+University, Uji, Japan
+23 Radboud University, Institute for Molecules and Materials, Nijmegen, The Netherlands
+∗Authors to whom any correspondence should be addressed.
+Original content from this work may be used under the terms
+of the Creative Commons Attribution 4.0 licence. Any fur-
+ther distribution of this work must maintain attribution to the author(s) and the
+title of the work, journal citation and DOI.
+1
+© 2024 The Author(s). Published by IOP Publishing Ltd
+
+
+=== PDF PAGE 3 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+24 RWTH Aachen University, Aachen and Max Planck Institute for the Physics of Light, Erlangen,
+Germany
+25 University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, United States of America
+26 School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, United States of America
+27 Laboratoire Charles Coulomb, Université de Montpellier, CNRS, Montpellier 34095, France
+28 Department of Quantum Nanoscience, Kavli Institute of Nanoscience, Delft University of Technology,
+Lorentzweg 1, Delft 2628 CJ, The Netherlands
+29 Department of Physics and Astronomy, University of Southern California, Los Angeles, CA, 90089,
+United States of America
+30 Kavli Institute at Cornell, Ithaca, NY 14853, United States of America
+31 Institute for Chemical Research, Kyoto University, Gokasho, Uji, Kyoto 611-0011, Japan
+32 Wayne State University, Detroit, MI, United States of America
+33 ShanghaiTech University, Shanghai, People’s Republic of China
+E-mail: flebus@bc.edu and dirk.grundler@epfl.ch
+Received 20 September 2023, revised 28 November 2023
+Accepted for publication 2 April 2024
+Published 14 June 2024
+Abstract
+Magnonics is a research field that has gained an increasing interest in both the fundamental and
+applied sciences in recent years. This field aims to explore and functionalize collective spin
+excitations in magnetically ordered materials for modern information technologies, sensing
+applications and advanced computational schemes. Spin waves, also known as magnons, carry
+spin angular momenta that allow for the transmission, storage and processing of information
+without moving charges. In integrated circuits, magnons enable on-chip data processing at
+ultrahigh frequencies without the Joule heating, which currently limits clock frequencies in
+conventional data processors to a few GHz. Recent developments in the field indicate that
+functional magnonic building blocks for in-memory computation, neural networks and Ising
+machines are within reach. At the same time, the miniaturization of magnonic circuits advances
+continuously as the synergy of materials science, electrical engineering and nanotechnology
+allows for novel on-chip excitation and detection schemes. Such circuits can already enable
+magnon wavelengths of 50 nm at microwave frequencies in a 5G frequency band. Research into
+non-charge-based technologies is urgently needed in view of the rapid growth of machine
+learning and artificial intelligence applications, which consume substantial energy when
+implemented on conventional data processing units. In its first part, the 2024 Magnonics
+Roadmap provides an update on the recent developments and achievements in the field of
+nano-magnonics while defining its future avenues and challenges. In its second part, the
+Roadmap addresses the rapidly growing research endeavors on hybrid structures and
+magnonics-enabled quantum engineering. We anticipate that these directions will continue to
+attract researchers to the field and, in addition to showcasing intriguing science, will enable
+unprecedented functionalities that enhance the efficiency of alternative information technologies
+and computational schemes.
+Keywords: magnonics, road map, spin wave, microwave, neuromorphic, ferromagnet,
+antiferromagnet
+1. Introduction
+Benedetta Flebus and Dirk Grundler
+The research field of magnonics has witnessed rapid devel-
+opment in recent years (figure 1(a)). In this field, scient-
+ists and engineers explore the fundamentals of collective
+spin excitations (spin waves (SWs)) in magnetically ordered
+materials (which we summarize as ‘magnetic materials’ in
+the following) from the microscopic to the macroscopic
+length scales. Understanding the coherent and incoherent SWs
+(magnons) represents a multiscale problem. It ranges from
+the quantum-mechanical exchange interaction acting on the
+Angstrom length scale via magnetic domain formation on the
+(sub)micron length scale to classical electromagnetism with
+its far-reaching magnetic stray fields that act up to the mm
+scale and beyond. Relevant intrinsic timescales range from
+roughly fs (ultrafast demagnetization of materials) to several
+msec (decay times of long-wavelength SWs in a low-damping
+magnetic insulator). Providing charge-less angular momentum
+2
+
+
+=== PDF PAGE 4 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+(a)
+(b)
+(d)
+c
+Figure 1. (a) Number of publications which contain the term ‘(nano)magnonic’ or ‘(nano)magnonics’ in the abstract. (b) Number of
+publications containing ‘magnonic crystal’ in the abstract. (c) Number of publications containing the terms (‘spin wave’ or ‘magnon’) and
+‘circuit’ in the abstract. (d) Number of publications containing (‘magnon’ or ‘spin wave’) and (‘neuromorphic’ or ‘neural’) in the abstract.
+(a)–(d) Data from Web of Science, provided by Clarivate. Web of Science and Clarivate are trademarks of their respective owners and used
+herein with permission.
+flow as an information carrier in thin-film materials and cor-
+responding nanostructures, propagating magnons have been
+steered, gated, directionally coupled and amplified in the lin-
+ear and nonlinear regime via different external control para-
+meters and spintronics concepts [1–3]. Encoding signals and
+data in their amplitudes or phases, one can thereby functional-
+ize magnons on the nanoscale for applications in information
+technology (IT) and computation that avoid charge flow and
+Joule heating. At the same time, clock frequencies can go
+far beyond the currently established few GHz as magnons
+with wavelengths down to the atomic scale offer the THz fre-
+quency regime concomitant with unprecedented miniaturiza-
+tion of circuits. Recently, propagating magnons moved domain
+walls (DWs) and changed the magnetic states of bistable nano-
+magnets enabling a non-volatile magnetic storage of magnonic
+signals.
+In 2021 the first Magnonics Roadmap was published in the
+IOP’s Journal of Physics: Condensed Matter [4]. The authors
+addressed the multiple directions pursued in magnonics. The
+Roadmap presented the advancements in the fundamental sci-
+ence and engineering of magnons in individual functional ele-
+ments, such as logic gates for Boolean computing architec-
+tures and magnonic crystals for data processing. The latter
+devices have been the focus of research endeavors for many
+years (figure 1(b)). Recently, more complex magnonic circuits
+gained great interest (figure 1(c)) and their relevance continues
+growing. An emergent objective is now hardware implement-
+ations for unconventional computing schemes (figure 1(d)),
+which had yet to start off prominently in 2021. However, since
+then, the rapidly growing demands in artificial intelligence
+(AI) applications and machine learning have shown that
+conventional digital data processing and their charge-based
+circuits are particularly energy hungry and need to be
+optimized for future challenges in computation. To enhance
+the sustainability of modern information technologies, altern-
+ative solutions exploiting charge-less information carriers and,
+for instance, wave-based computation require accelerated and
+targeted exploration. Figure 2 demonstrates that magnonic
+crystal structures based on yttrium iron garnet Y3Fe5O12
+(YIG) films have pushed the field of magnonics in terms of
+miniaturization, led to numerous functional devices and paved
+the way towards nanostructured neural networks operating
+with magnons at deep-sub-100 nm wavelength. It is timely to
+create an updated magnonics roadmap that reviews the recent
+scientific and technical developments in the field, highlights
+the emergent topics and identifies white spots regarding the
+technological exploitation of magnonics (part I). To encode
+data in either amplitudes or phases and process them over
+macroscopic distances in magnetic circuits, coherently excited
+magnons are particularly interesting as they can propagate up
+to mm in e.g. a low-damping ferrimagnetic thin film grown
+at the wafer scale [5]. Their coherency and decay lengths
+have reached values at room temperature that are much lar-
+ger than corresponding lengths of electrons used in conven-
+tional semiconductor technology, but also of incoherently
+excited magnons addressed in magnon spintronics [6]. Based
+on coherent magnons one can realize multifrequency circuits
+and computational devices that allow for parallel processing of
+3
+
+
+=== PDF PAGE 5 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 2. Functional devices and circuits (green labels) which make use of a magnonic crystal (MC) structure (black labels) based on
+yttrium iron garnet (YIG) subjected to periodic patterning or periodic ferromagnetic nanoelements (hybrid). Miniaturization during the last
+few years has led to one- (1D) and two-dimensional (2D) MCs that exploit and control magnons of wavelengths (wave vectors) down to
+50 nm (up to 126 rad µm−1) in YIG. Wave vectors are indicated by yellow circles. These exchange-dominated magnons enable large signal
+speeds in ultrathin films (beyond 2 µm ns−1).
+∗The neural network circuit considered in the graph was explored by micromagnetic simulations.
+data over a large array of memory cells. These aspects motiv-
+ate the focus of part 1 on coherent magnons. At the same
+time, it is essential that the Magnonics Roadmap 2024 offers a
+broader perspective (part II) and reflects on the novel research
+endeavors in the fundamental and applied sciences. In the fol-
+lowing, we motivate the different sections of the two parts of
+the Roadmap in detail. In each part, the sections are structured
+as follows: status, current and future challenges, advances in
+science and technology to meet challenges and concluding
+remarks.
+Part I of this Roadmap addresses experimental and the-
+oretical concepts and findings that define the state-of-the-
+art concerning functional elements and magnonic circuits.
+Magnetic materials such as insulating ferrimagnets support
+collective spin excitations in the technologically relevant GHz
+frequency regime. Embedded as macroscopic bulk elements
+in conventional microwave circuits and IT equipment, they
+are commercialized as power limiters, oscillators, bandpass fil-
+ters and nonreciprocal circulators. On the macroscopic length
+scale, inductive coupling is adequate for signal transduction.
+For future on-chip applications and miniaturized circuitry,
+the same coupling mechanism is expected, however, to com-
+promise the low-power consumption offered by the charge-
+less information processing. Section 2 discusses the current
+status and prospects of alternative transduction schemes based
+on electrical field effects and appropriate materials selection.
+To enable directional signal transmission with high power
+efficiency, avoid unwanted signal reflections and control the
+crosstalk in densely integrated magnonic channels, the nonre-
+ciprocal characteristics of magnons need special attention and
+optimization. However, the conventional approach based on
+interfacial Dzyaloshinskii–Moriya interaction and spin–orbit
+coupling is known to induce dissipation in metallic magnetic
+materials. Section 3 discusses recent findings that circumvent
+such a detrimental effect. A further way out is presented in
+section 4, which highlights advances in absolute spin-wave
+amplification, which is of significant importance for the whole
+field of applications in magnonics. The following sections 5
+and 6 address recent developments that support the envisioned
+potential of magnonics for unconventional computing. The
+sections first revisit non-linear effects, which form the basis for
+computation and second present currently explored computing
+schemes. The remaining sections of part 1 outline strategies
+for realizing 3D magnonic device architectures (section 7)
+and explore operational frequencies up to the THz regime
+(section 8). These two last sections of part 1 outline the long-
+term vision of on-chip magnonics by which data processing
+capacity and speed, respectively, will be pushed to ultimate
+limits.
+Part II of this roadmap delves into exciting new fronti-
+ers within the field of magnonics. Here, one aims at har-
+nessing the quantum properties of magnons into novel and
+enhanced functionalities [7, 8]. By leveraging the interac-
+tions between diverse quantum degrees of freedom, quantum
+hybrid systems are paving the way for significant advance-
+ments in fundamental physics and cutting-edge device applic-
+ations, particularly with their potential for coherent informa-
+tion processing. Due to their long coherence times, low dis-
+sipation rates and capability of reaching strong coupling with
+different excitations, magnons are promising candidates for
+novel hybrid technologies based on integrating complimentary
+quantum systems [8]. Section 9 guides the reader through three
+4
+
+
+=== PDF PAGE 6 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+directions in hybrid quantum magnonics and their correspond-
+ing challenges, i.e. true magnonic quantum systems operated
+at very low temperatures, quantized SWs mimicking quantum
+functionalities and magnon Bose–Einstein condensation.
+Quantum systems whose interactions with magnons are
+consistently and successfully leveraged are solid-state spin
+defects. Nitrogen vacancies in diamond, in particular, have
+emerged as a leading quantum sensor of static and dynamical
+magnetic properties owing to their exceptional sensitivity and
+coherence properties [9]. Section 10 discusses recent develop-
+ments in this field and outlines new quantum sensing oppor-
+tunities based on different solid-state defects. While vastly
+unexplored, particularly promising are the spin defects in
+layered van der Waals (vdW) crystals, which could enable
+nanoscale proximity to the quantum material under invest-
+igation, presenting a unique advantage for magnetic studies
+of vdW heterostructures. In recent years, vdW magnets have
+garnered intense attention as an ideal platform for exploring
+magnetism in the two-dimensional limit and magnon-magnon
+interactions in their layered form [10]. Synthetic antiferro-
+magnets (SAFs) have already been essential and technolo-
+gically relevant in spintronics for e.g. the sensors based on
+the giant magnetoresistance effect and the exploration of the
+racetrack memory concept. More recently, SAFs generated
+interest in skyrmionics for engineering topologically protected
+spin structures. Section 11 discusses how these material sys-
+tems can play a key role in shaping the next generation of mag-
+nonic devices. SAFs allow for engineering novel spin dynam-
+ics properties via magnon-magnon interactions, as they offer
+a far more significant degree of tunability—via layer thick-
+ness and material composition—than bulk crystals and homo-
+geneous thin films [11]. The tunability of these systems rep-
+resents a critical asset not only for device optimization but
+also for engineering fundamentally novel physical phenom-
+ena. The recent application of non-Hermitian frameworks to
+open systems, e.g. photonic systems and metamaterials, has
+led to the observation of several new phenomena ranging from
+lasing topological edge states to the breakdown of the con-
+ventional bulk-edge correspondence. The key ingredient to
+engineering nontrivial non-Hermitian phases is the tunability
+of the parameters controlling the non-Hermiticity of an open
+system, i.e. gain and loss. While the feasibility with which
+the balance between gain and loss can be tuned suggests that
+magnetic systems might be promising solid-state platforms
+for harnessing non-Hermitian phenomena, their experimental
+investigation is still in its infancy [12]. Section 12 discusses
+the current status of this field and explores pathways to over-
+come its experimental challenges. It addresses as well topo-
+logical magnonics [13] by considering the finite lifetimes of
+quasiparticles.
+The different parts of the 2024 Roadmap allow us to define
+particular technological advantages of the magnonics plat-
+form over other platforms, such as electronics, plasmonics
+and phononics and identify white spots (challenges). The
+key advantages discussed in part I of the Roadmap are the
+availability of (i) an extremely broad microwave frequency
+regime for multi-frequency operation of, e.g. IT devices,
+(ii) ultrashort magnon wavelengths potentially reaching the
+soft x-ray wavelength regime at sub-THz frequencies, (iii)
+long decay lengths for parallel processing across an array
+of memory cells or nodes, (iv) the avoidance of Joule heat-
+ing, (v) the inherent nonlinearity needed for (neuromorphic)
+computing and (vi) the nonvolatile data storage in the same
+materials system allowing for low energy consumption and
+instant-on computation. Magnonics enables in-memory com-
+putation schemes and avoidance of the von Neumann bottle-
+neck currently threatening the sustainability of electronics-
+based digital computation in an era of ever-growing machine
+learning and AI applications. To harvest and functionalize the
+advantageous features in disruptive technologies that go bey-
+ond the planar circuit design, we see challenges in magnonics
+concerning materials science, 3D circuit design and modeling.
+Considering the existing blueprint of 3D IT devices, such as
+the multi-level NAND flash memory, experimental and theor-
+etical research on 3D magnonic device architectures should be
+strengthened.
+From part II, it becomes clear that the technological devel-
+opment of truly quantum magnonic platforms is still in its
+infancy. New powerful computation methods and fabrication
+techniques, together with high-quality, low-damping mater-
+ials, are needed to unlock the set of unique features that
+quantum magnonics is shown to offer compared to the more
+mature field of quantum optics, such as scalability down to
+the atomic lattice scale, broad frequency range, straightfor-
+ward control of spin dynamics by electric currents and fields
+and a manifold of nonreciprocal phenomena and nonlinear-
+ities. Central to the development of novel quantum hybrid
+platforms is the interaction between magnons and solid-state
+defects. While the latter has already been successfully lever-
+aged to probe fundamental magnonic properties, new sens-
+ing methods with nanoscale proximity operating at cryogenic
+temperatures are required. By such methods one can access
+a strong-coupling quantum regime that will allow for single-
+spin-state-to-single-magnon-occupancy transduction and the
+implementation of quantum interconnects. A potential candid-
+ate in this sense is offered by vdW magnets, which host defects
+embedded in lower dimensional crystalline structures. The
+tunability and functionality of these materials, together with
+SAFs, make them also a leading platform for future funda-
+mental and technological advances in the field of magnonics,
+including concrete realizations of non-Hermitian topological
+phases.
+Acknowledgments
+B F acknowledges support from the NSF under Grant No.
+NSF DMR-2144086. D G acknowledges the SNSF for fund-
+ing Project 197360 Synthesis and functionalities of nanoscale
+magnonic superstructures.
+5
+
+
+=== PDF PAGE 7 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+2. Low-energy excitation and manipulation of SWs
+Bivas Rana, YoshiChika Otani and Igor Barsukov
+Status
+For efficient excitation and manipulation of SWs, various
+electric-field-induced methods, i.e. magnetoelectric effects,
+were proposed. One of the most promising methods is voltage-
+controlled magnetic anisotropy (VCMA). The applied electric
+field relatively modifies electronic occupation in 3d orbitals
+of ferromagnetic materials at the ferromagnet/oxide interface.
+Since VCMA does not rely on chemical reactions and ionic
+movements, it is suitable for microwave applications. Because
+of its interfacial nature, the device dimension can be reduced
+dramatically and the VCMA coefficient can be increased sig-
+nificantly by interface engineering. VCMA has been widely
+adopted for the excitation of linear [14] and nonlinear para-
+metric (figures 3(a) and (b)) [15–17] SWs and manipulation
+of SW frequency (figure 4(a)) [18]. Remarkably, parametric
+excitation becomes possible for perfectly in-plane and out-
+of-plane [15] magnetization orientation, where linear excita-
+tion is prohibited due to vanishing VCMA torque. Parametric
+excitations through VCMA has been proposed for antiferro-
+magnets (figure 3(a)) [16] and shown in ferromagnets through
+electric field induced modulation of interfacial in-plane mag-
+netic anisotropy (figure 3(b)) [17]. Reconfigurable magnonic
+crystals and magnonic nanochannels were proposed to oper-
+ate by periodically arranging metal gate electrodes with spe-
+cific shapes on waveguides and applying a gate voltage to the
+electrodes [4, 19]. The magnonic band structures and band
+gaps in these magnonic crystals and nanochannels (figure 4(b))
+can be tuned on-demand through VCMA [4, 19]. Notably,
+the damping parameter of an ultrathin ferromagnetic film can
+also be modulated by an electric-field in a linear and nonlin-
+ear (figure 4(c)) fashion, depending on the ferromagnetic layer
+thickness, type of buffer layer and oxide materials [20].
+In multiferroic materials, an external electric field can
+directly control the magnetization and magnetic anisotropy
+(figure 4(d)). In contrast, an electric-field-induced strain
+in piezoelectric/ferromagnetic and multiferroic/ferromagnetic
+bilayers is transferred to the adjacent ferromagnetic layer, res-
+ulting in the deformation of lattice in a ferromagnet and mod-
+ulation of magnetic parameters through spin-lattice coupling.
+Likewise, an electric-field-induced electrical polarity in fer-
+roelectric or multiferroic layers in ferroelectric/ferromagnetic
+and multiferroic/ferromagnetic bilayers affects the magnetic
+properties in ferromagnetic layers [24]. These magneto-
+electric effects in multiferroic heterostructures have been
+used for SW excitation [25]; tuning of the amplitude,
+phase, resonance frequencies/fields [21] of SWs; and mag-
+nonic band structures. Interestingly, the SW routing between
+two waveguides placed parallel to each other on top of
+a piezoelectric layer (figure 4(e)) can be controlled by
+electric-field-induced strain in the piezoelectric layer [22].
+When an external electric field is applied along a direction
+perpendicular to SW propagating direction and magnetization,
+it can induce a Dzyaloshinskii–Moriya-like interaction, known
+as the Aharanov–Casher effect. This method was found to be
+very efficient for tuning phases of exchange-dominated SWs
+(figure 4(g)) [23] and also able to impose nonreciprocity in
+SW-dispersion (section 3 ), which could be very promising for
+creating caustic-like SW beam excited from a point source in
+a ferromagnetic thin film. Among all these magneto-electric
+effects the VCMA has proven its potential due to its interfa-
+cial origin, ultrafast response time, linear response to electric
+field in most cases, possibility to customize VCMA coefficient
+through interface and material engineering.
+Current and future challenges
+The electric-field-induced excitation and manipulation of SWs
+are in the infant stage and associated with many challenges.
+The first challenge would be the experimental realization of
+various ideas, such as VCMA-induced two-dimensional mag-
+nonic crystals, magnonic logic gates, unidirectional SW flow
+(section 3) from phased-array antenna, etc. The next chal-
+lenge would be to increase the VCMA coefficient in ferro-
+magnet/oxide heterostructures beyond ∼pJ V−1 m−1, which
+currently shows a value up to a few hundred fJ V−1 m−1.
+Apart from interfacial magnetic anisotropy, the SWs are also
+affected by other interfacial properties, which originate from
+spin–orbit coupling (SOC). Although electric-field-induced
+modulation of other interfacial properties such as interfacial
+damping [20], interfacial Dzyaloshinskii–Moriya interaction
+(DMI), interfacial SOC and exchange interaction have been
+reported, substantial effort is still required to enhance its effic-
+acy. Choosing appropriate materials seems to be the key to
+developing energy-efficient devices (section 11). In ultrathin
+ferromagnetic films, easily functionalized by interfacial phe-
+nomena, low SW group velocity may limit the performance
+of SW circuits. On the one hand, antiferromagnetic thin films,
+which generate short wavelength coherent SWs with THz fre-
+quency, begin to show their potential [26]. Magnetic insulat-
+ors, Heusler alloys and band-engineered materials can ensure
+ultralow damping. On the other hand, magnetic 2D materials
+and their heterostructures show fascinating interfacial prop-
+erties. However, experimental studies on the modulation and
+optimization of various interfacial properties are required.
+Consequently, SW manipulation via electric field in those
+materials are still lacking and would be one of the most chal-
+lenging tasks.
+In most proof-of-principle experiments, thick individual
+layers are used in multiferroics heterostructures. Therefore,
+a relatively large voltage is required to observe a substan-
+tial change in magnetic and SW properties. Reducing applied
+voltage by orders of magnitude and miniaturizing multiferroic
+heterostructures down to the nanoscale is urgently needed for
+practical applications. Growing epitaxial multiferroic films
+with nanometer thickness is another open challenge. The
+SWs should be coupled to other degrees of freedom such
+as spin current, phonons and skyrmions, for novel device
+6
+
+
+=== PDF PAGE 8 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 3. (a) Amplitude of the linear (blue circles and curve) and parametric (red triangles and curve) antiferromagnetic resonance (AFMR)
+as a function of driving VCMA amplitude. The frequencies of linear and parametric VCMA drivers were set as 33 GHz and 65 GHz,
+respectively. Note, parametric AFMR is excited only above the threshold VCMA amplitude. Adapted figure with permission from [16],
+Copyright (2022) by the American Physical Society. (b) The inverse spin Hall effect signal shows linear (Hres, 1) and parametric (Hres, 2)
+ferromagnetic resonance excited by electric field-induced modulation of interfacial in-plane magnetic anisotropy in Ta/Ru/Ta/
+CoFeB/MgO/Al2O3 heterostructure under parallel pumping condition. The bias magnetic field is applied in-plane of the magnetic film
+parallel to the in-plane magnetic anisotropy axis. The parametric resonance peak appears only above the threshold microwave power.
+Adapted from [17]. CC BY 4.0.
+Figure 4. (a) The SW signals for various gate voltages show the modulation of SW frequency by VCMA. The SWs are excited by
+microwave antenna-induced Oersted field and detected by spin pumping and inverse spin Hall effect. Adapted figure with permission from
+[18], Copyright (2019) by the American Physical Society. (b) The evolution of magnonic band gap with gate voltage in a VCMA-induced
+configurable magnonic nanochannel. The stripe-like metal gate electrodes are fabricated on a ferromagnet/oxide waveguide and the gate
+voltage is applied across the electrodes to form virtual nanochannels through the VCMA effect. Red stars and square symbols represent the
+experimental and numerical simulation results. The figure is adapted from [19]. (c) Nonlinear variation of the damping parameter in the
+ultrathin ferromagnetic film with the gate voltage applied across the top metal gate electrode and metal waveguide. Adapted figure with
+permission from [20], Copyright (2020) by the American Physical Society. (d) Schematic of the experimental set-up for studying
+electric-field-induced modulation of SWs in single crystal multiferroic material. An external electric field E is applied to the multiferroic
+material through a transparent ITO top electrode and the SWs are probed by Raman spectroscopy. Adapted from [21], with permission from
+Springer Nature. (e) Schematic of bilateral magnonic stripes deposited on GGG substrate. The SWs are excited and detected in the middle
+strip. The piezoelectric layer (PZT) is deposited on the magnonic strips for applying strain. The strain is created in PZT using an applied
+electric potential across the top (Cr) and bottom electrodes. The top inset shows the microphotograph of the fabricated magnonic stripes,
+whereas the bottom inset shows the voltage distribution for Vc1 = 250 V and Vc3 = −250 V. Adapted figure with permission from [22],
+Copyright (2018) by the American Physical Society. (f) Experimental results show the electric-field-induced (i.e. Aharanov–Casher
+effect-induced) phase (symbols) of SW at various applied electric fields. Dashed lines indicate linear fittings. Adapted figure with
+permission from [23], Copyright (2014) by the American Physical Society.
+functionalities. Although some efforts have been made to
+investigate the coupling of SWs with other quasiparticles, the
+coupling efficiency has always been very low. Increasing the
+coupling strength and control, preferably by the electric field
+and exploration of the quantum regime (sections 9 and 10)
+should be the priority.
+7
+
+
+=== PDF PAGE 9 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Advances in science and technology to meet
+challenges
+Significant advances in current technology are needed to com-
+bat current challenges. One of the essential tasks for study-
+ing and optimizing various interfacial properties would be to
+prepare magnetic thin film-based heterostructures with smooth
+and defect-free interfaces. The thin film deposition techniques
+should be cost-effective and suitable for large-scale produc-
+tion. The preference should be given to optimizing the prop-
+erties of magnetic films deposited by sputtering techniques,
+generally used for commercial purposes. With the reduc-
+tion of film thickness and device dimension, sensitive detec-
+tion techniques are getting more critical. Although optical
+techniques (e.g. magneto-optical Kerr effects, inelastic scat-
+tering of lights) and various x-ray microscopy techniques
+have been widely used in laboratories, sensitive electrical
+methods should be developed for practical device applica-
+tions. The magnetic tunnel junctions and generally electrical
+detection methods, nitrogen-vacancy (NV) centers and inverse
+VCMA effects can be considered as alternative approaches.
+However, improving their detection sensitivity, especially in
+the nanoscale dimension without complex device fabrica-
+tion, is an open challenge. VCMA could be one of the most
+promising electric-field-induced methods for SW excitation
+because of its fast response time. However, the impedance
+mismatch between the microwave source and the junction for
+SW excitation should be sorted out by adequately optimiz-
+ing the layer thicknesses, junction dimension, microwave sig-
+nal frequency and power. Many strategies have been proposed
+and demonstrated to increase the VCMA coefficient bey-
+ond pJ V−1 m−1, such as voltage-controlled redox reactions,
+charge trapping and electromigration. They could be benefi-
+cial for SW manipulation but less advantageous for develop-
+ing faster and miniaturized magnonic devices. Alternatively,
+interfacial engineering, such as inserting ultrathin heavy metal
+layers or doping heavy metals at ferromagnet/oxide inter-
+faces, has increased the VCMA coefficient to a few hun-
+dred fJ V−1 m−1. Further studies are required to improve this
+coefficient.
+Consequently, it would be interesting to investigate how
+interfacial engineering affects other interfacial properties. The
+damping parameter is one of the most critical parameters
+determining the SW decay rate [27]. Efforts have been made to
+reduce the damping parameter of ferromagnetic thin films by
+electronic band structure engineering. It would be instructive
+to study whether electric-field-induced charge accumulation
+or strain at interfaces can reduce the damping parameter.
+Understanding the underlying mechanism of this effect is
+equally important to improve damping modulation efficiency.
+Another novel approach to minimize power consumption
+would be to combine magnonics with fluxoids observed in
+superconductors. The superconductor can hold a lattice of
+quantized magnetic flux under a moderate magnetic field. This
+fluxoid lattice can interact with magnons to form magnonic
+band gaps. However, the realization of complex superconduct-
+or/ferromagnet hybrid nanostructures and stabilizing fluxoids
+during current-induced motion is crucial and requires low
+temperatures.
+Concluding remarks
+The electric-field-induced methods have emerged as one of the
+most potential approaches for the excitation and manipulation
+of SWs in ultrathin ferromagnetic films to develop energy-
+efficient magnonic devices. However, the research field is
+in the early stage of development and is naturally associ-
+ated with many open challenges. Improving the VCMA coef-
+ficient, reduction of layer thickness down to nanometer in
+hybrid multiferroic structures and experimental demonstra-
+tion of various ideas are some of the major challenges in this
+field. In addition to the outlined mitigation approaches, many
+new concepts have emerged, such as coupling or hybridizing
+magnons with other quasiparticles like microwave photons,
+surface acoustic wave phonons, superconducting fluxoids and
+spin-polarized electrons, which not only offers to increase the
+device functionality significantly but also brings opportunities
+to reduce the power consumption or enter quantum engineer-
+ing (sections 9 and 10). Some efforts have also been made to
+reduce the power consumption in magnonic devices by elim-
+inating or reducing power consumption from other sources,
+such as engineering magnetic damping [28], developing bias
+magnetic field-free magnonic devices, etc. Discovering new
+materials, including magnetic 2D heterostructures with gate-
+tuneable emerging interfacial properties, is also getting equal
+importance.
+Acknowledgments
+B R acknowledges the NCN SONATA-16 Project with Grant
+No. 2020/39/D/ST3/02378 and the ID-UB Project with Grant
+No. 038/04/NS/0037. Y O thanks the JSPS and JST-CREST
+for the support with Grant Nos. 19H05629 and JPMJCR18T3,
+respectively. I B acknowledges support by the National
+Science Foundation through Grant No. ECCS-1810541.
+8
+
+
+=== PDF PAGE 10 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+3. Non-reciprocal magnonics
+Anjan Barman, Gianluca Gubbiotti and Pedro Landeros
+Status
+The non-reciprocity of wave phenomena describes the situ-
+ation in which inversion symmetry is broken and the wave
+dispersion depends on the propagation direction, i.e. waves
+propagating in opposite directions can exhibit different amp-
+litudes and wavelengths for the same frequency. Such asym-
+metry appears in different kinds of waves and has been of
+great recent interest in magnonics. The non-reciprocal fea-
+ture allows for additional functionalities. Traditional non-
+reciprocal components have relied on magnetic materials such
+as ferrites, which are incompatible with low-cost semicon-
+ductor integrated-circuit fabrication processes and are chal-
+lenging to miniaturize to chip scales, rendering them bulky
+and expensive and ultimately preventing their widespread
+use [29]. Favorably for on-chip magnonics, in magnetic sys-
+tems, which naturally break time-reversal symmetry, non-
+reciprocity emerges in the presence of any chiral magnetic
+interaction that breaks inversion symmetry [30], such as:
+(i) Asymmetric
+exchange
+interactions
+(Dzyaloshinskii–
+Moriya) from the relativistic spin–orbit interaction,
+present in non-centrosymmetric crystals and ultrathin
+films in contact with a heavy-metal layer with strong
+SOC [31].
+(ii) Dipolar interactions: present in films hosting topolo-
+gical Damon–Eshbach surface spin-waves (SWs) [30],
+coupled magnetic bilayers [32, 33], systems with graded
+magnetization [34], or in curvilinear architectures such as
+magnetic nanotubes [33, 35].
+(iii) Symmetric anisotropic exchange interactions, which
+depend
+on
+the
+bond
+direction
+in
+honeycomb
+antiferromagnets [36].
+(iv) Magnetic anisotropy, in the case where a thickness-
+dependent, graded anisotropy, or one-sided surface aniso-
+tropy is present, where the size of the avoided crossing
+among different SWs is also asymmetric [37].
+In the DMI and dipolar cases, the non-reciprocity in
+frequency scales linearly with layer thickness for small
+wavenumbers. For the dipolar systems, however, the non-
+reciprocity in frequency (∆f) shows a maximum value and then
+decreases for larger wave vectors [32]. It is also found that ∆f
+increases markedly in an antiparallel equilibrium state [32].
+The frequency shift is usually larger for interfacial DMI rather
+than for bulk DMI.
+A cylindrical SAF was recently proposed as an alternat-
+ive to host non-reciprocal SWs (see figure 5(d)). Here, two
+concentric magnetic nanotubes with opposing vortex states
+are coupled by the interlayer and intralayer dipolar interaction
+[33]. A key advantage of the cylindrical bilayer over the planar
+one is that lateral reflections are avoided. Also, the advantage
+of the cylindrical bilayer over the isolated nanotube is that the
+latter requires large curvatures (a small radius), which may be
+challenging to fabricate.
+The SW non-reciprocity is measured by various experi-
+mental techniques [31]. In particular, DMI has been reported
+by current and field-driven DW motion, Brillouin light scatter-
+ing (BLS) spectroscopy, time-resolved magneto-optical Kerr
+effect (TRMOKE), propagating SW spectroscopy (PSWS), as
+well as spin–orbit torque (SOT) method based on a shift in
+anomalous Hall effect (AHE) [31]. Methods based on DWs
+are restricted by pinning and strain in the thin films. DMI
+measured in the creep regime is suited for low DMI con-
+stant, whereas those measured in the flow regime show bet-
+ter agreement with BLS. Besides, the requirement of know-
+ledge of exchange stiffness constant poses additional restric-
+tions on this method. BLS spectroscopy is an elegant and
+simple method for extracting the DMI constant in thin film
+heterostructures. Using this technique one can not only meas-
+ure the non-reciprocity in amplitude, frequency and linewidth
+but also the attenuation length of the SW. Very few comparat-
+ive studies of the application of various methods on the same
+samples have been performed. However, the available literat-
+ure states that BLS best suits larger DMI strengths (D) and fer-
+romagnetic film thicknesses, while domain-wall methods are
+suitable for smaller D values and SOT applies to small D but
+with higher ferromagnetic layer thicknesses. All three meth-
+ods are applicable in an intermediate range and a direct com-
+parison of the methods on the same sample is possible in this
+regime [31].
+Current and future challenges
+Magnonics works naturally at rf frequencies (from single to
+hundreds GHz) with state-of-the-art magnetic materials and
+ultra-low power consumption while keeping the dimensions
+of a device on the nanometer scale, thus making magnonics a
+promising platform for beyond-CMOS technologies. The phe-
+nomenon of SWs propagating distinctively along specific dir-
+ections allows the design of non-reciprocal (one-way) mag-
+nonic devices [38–40]. Such behavior can also lead to uni-
+directional coupling among two magnetic layers, which can
+be realized, for instance, with the aid of DMI and dissipative
+coupling (in the form of non-local damping) from the interplay
+of spin pumping and spin transfer [41]. See section 12 about
+non-Hermitian magnonics and references therein.
+To achieve high values of ∆f and pronounced non-
+reciprocity, a large interfacial DMI is needed and the film
+thickness of the state-of-the-art ferromagnet should be around
+1 nm. The heavy-metal layer that provides the SOC for the
+interfacial DMI also increments magnetic damping, a draw-
+back for magnonic applications. Dipolar systems (see figure 5)
+do not require ultrathin films or heavy metals, avoiding the
+undesired increment of damping.
+Regarding materials challenges, a general limitation of
+magnonic devices is the high intrinsic SW damping in con-
+ductive metallic magnets used in conventional spintronic
+applications. To decrease the magnetic dissipation observed in
+the ferromagnetic/heavy metal bilayers, magnetic garnet films
+9
+
+
+=== PDF PAGE 11 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 5. Illustration of dipolar non-reciprocal magnonic systems: (a), (e) magnetic bilayer. Reprinted figure with permission from [32],
+Copyright 2019 by the American Physical Society, (b), (f) magnetization-graded film. Reproduced from [34]. © IOP Publishing Ltd.
+CC BY 3.0. (c), (g) thick magnetic nanotube. Reprinted figure with permission from [35], Copyright 2022 by the American Physical Society.
+and (d), (h) cylindrical magnetic bilayer (or cylindrical synthetic antiferromagnet) [33], with the corresponding behavior of the frequency
+shift ∆f vs. the wave vector k (e)–(h). In general, the dipolar ∆f increases with the film thickness because the cooperative dipolar interaction
+becomes more relevant for large volumes. Reprinted figure with permission from [33], Copyright 2022 by the American Physical Society.
+(YIG), well-known for their low damping, have been recently
+synthesized in contact with a heavy-metal layer, where a small
+DMI constant emerges [31]. Here, the main challenge is to
+grow nanometer-thin epitaxial YIG films with smooth sur-
+faces and defect-free clean interfaces, by using liquid phase
+epitaxy classical technology. The main drawback is that the
+YIG growth requires high temperatures and an oxygen envir-
+onment which can cause significant inter-diffusion and oxida-
+tion of the metal layer, consequently leading to poor structural
+and electrical properties in both metal and YIG layers.
+Interest in magnonic metamaterials [4] is freshly renewed
+by the possibility of inducing flat bands [42] and controlling
+the non-reciprocal SW frequency dispersion and hybrid sys-
+tems composed of magnonic crystals coupled to supercon-
+ducting materials, which have been experimentally demon-
+strated by BLS and FMR, respectively [43]. Of course, there
+are challenges associated with the low temperature to achieve
+a functioning system but, at the same time, it may appear to be
+adequate for application in cryogenic temperatures.
+Non-reciprocal SWs can also be observed in chiral antifer-
+romagnet due to the broken time-reversal and spatial-inversion
+symmetry. The sign of non-reciprocity depends on the field
+direction as well as the sign of chirality index. Such chiral
+magnetic structure and the ensuing non-reciprocity may also
+arise from the competition of symmetric exchange interactions
+even in the absence of DMI [44].
+As for the efficient SW excitation and detection on the
+nanoscale, state-of-the-art spin transfer nano-oscillators (or
+spin-Hall nano-oscillators) and the inverse-spin Hall effect,
+provide the means to address the main challenges associ-
+ated with the downscaling of magnonic devices and allow for
+a straightforward integration in scalable circuits compatible
+with CMOS technology.
+As for the experimental-technical challenges, when meas-
+uring interfacial DMI by BLS on planar structures, the
+Damon–Eshbach geometry limits the measurement to only in-
+plane magnetized systems and that requires a large enough
+in-plane field to saturate samples with perpendicular mag-
+netic anisotropy (PMA). TRMOKE and PSWS measurements
+require microfabrication of antenna structures on the samples
+while delivering no additional insights to the BLS tech-
+nique. The current-induced shift in AHE is a relatively simple
+method as it does not involve complex mathematical model-
+ing. However, it requires PMA of the ferromagnetic material.
+Besides, non-square shapes of the AHE loops also lead to inac-
+curacies in determining the DMI field (HDMI).
+Advances in science and technology to meet
+challenges
+While most of the magnonic devices and functionalities have
+been demonstrated in planar 2D systems (magnon transistor,
+direction coupler), multilevel magnonics exploits the ver-
+tical (out-of-plane) dimension in multi-layered structures. It
+offers versatile coupling conditions, i.e. dipolar and interlayer
+exchange (RKKY) coupling, due to the smallest possible sep-
+aration to harness the vertical direction for propagating and
+manipulating SWs actively. This enables the transition from
+2D, where realizing multiple interconnections is topographic-
+ally impossible, to 3D architectures (section 7), thus providing
+10
+
+
+=== PDF PAGE 12 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+a possible roadmap for further scaling, permitting more func-
+tionality in a smaller space and a larger number of vertical
+interconnections between the layers [40, 45]. For example,
+combining 3D directional couplers, vertically-coupled con-
+duits with nm spacer thickness and non-reciprocal phenom-
+ena, ferromagnetic/heavy metal bilayer waveguides, will bring
+new unidirectional functionalities for future magnonic devices
+canceling cross-talk between transmitted and received sig-
+nals along magnonic conduits and interconnections. From
+the technological point of view, it requires breakthroughs in
+design and multilevel hierarchical nanofabrication processes
+and technology, including developing suitable planarization
+techniques for elements interconnections in terms of neces-
+sary flatness and the capabilities of lithographic methods to
+align the different layers with precise control of the structural
+geometry with a nm overlay precision.
+All technology developed should be suitable for industrial
+application or at least have a counterpart suitable for upscal-
+ing (e.g. planarization in the research laboratory devices is
+mainly done by thin film coating while an industrial process
+would include chemical and mechanical polishing). Moreover,
+together with validating characterization methodologies, effi-
+cient layer-selective generation and detection systems to excite
+and pick up the SW signal at different heights of the device
+should be developed.
+Regarding curved induced non-reciprocal effects, magnetic
+thin film conformally deposited on top of 1D periodically cor-
+rugated surfaces, with a half-cylinder profile, could represent
+a valid alternative to single (isolated) cylindrical nanotubes.
+This requires the combination of electron-beam fabrication of
+grooved substrate and chemical deposition methods for con-
+formal coverage of the magnetic layer with control down to the
+nm. At the same time, the complexity of 3D structures pushes
+researchers to introduce both interlayer exchange and dipolar
+coupling as well as surface curvature into theoretical mod-
+els. Furthermore, obtaining large non-reciprocal effects from
+dipolar coupling requires thicker films, where the oversimpli-
+fied picture of uniform magnetization along the thickness is
+no longer valid and the several SW modes can be excited with
+characteristic profiles along the thickness [35].
+Concluding remarks
+In this work, we have reviewed several symmetry breaking
+mechanisms to induce chirality in coupled and hybrid mag-
+netic heterostructures that induce frequency nonreciprocity for
+the SWs. Although there are several challenges to address in
+terms of novel materials, nanofabrication of complex hetero-
+structures, SW excitation and detection on the nanoscale, we
+anticipate non-reciprocal magnonics will play a pivotal role in
+the field of nanoscale microwave devices, leading to the devel-
+opment of a novel class of non-reciprocal on-chip signal pro-
+cessing devices compatible with the existing semiconductor
+technology.
+Acknowledgements
+A Barman acknowledges funding from Department of
+Science
+and
+Technology,
+Govt.
+of
+India,
+Grant
+No.
+DST/NM/TUE/QM-3/2019-1C-SNB. G Gubbiotti acknow-
+ledges financial support from the Italian Ministry of University
+and Research through the PRIN-2020 project entitled ‘The
+Italian factory of micro-magnetic modelling and spintron-
+ics,’ cod. 2020LWPKH7. G Gubbiotti also acknowledges
+the European Union - NextGenerationEU under the Italian
+Ministry of University and Research (MUR) National
+Innovation Ecosystem grant ECS00000041 – VITALITY.
+CUP: B43C22000470005. P Landeros acknowledges fund-
+ing from FONDECYT Grants 1201153 and 1241589, and
+Basal Program for Centers of Excellence, Grant AFB220001
+CEDENNA (ANID).
+11
+
+
+=== PDF PAGE 13 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+4. Amplification of SWs
+Johan Akerman, Ursula Ebels and Philipp Pirro
+Status
+The amplification of SW signals was identified early on as
+one of the most critical points for magnonics due to the finite
+lifetime of magnons. Amplification can be described as the
+increase of the spin-wave intensity at a certain location of the
+magnonic circuit by a gain factor gr relative to the unamplified
+case (relative amplification) or by the increase of the spin-
+wave intensity along the signal propagation direction (abso-
+lute amplification with gain factor ga) (compare figure 6). In
+recent years, magnonic logic (section 6) has also added the
+problem of fan out of logic elements, i.e. the ability of one ele-
+ment to deliver signals to several downstream logic elements.
+Obviously, a fan out greater than one in an extended network
+requires absolute amplification ga > 1 of the signal even in a
+dissipationless system.
+The amplification of SWs is often divided into two main
+mechanisms: on the one hand, parametric amplification based
+on a coherent, periodic modification of the magnetic energy of
+the system and, on the other hand, the use of quasi-continuous
+(DC) electronic spin currents, e.g. in spin valves or by means
+of SOTs. These two mechanisms are qualitatively different as
+the first selects a particular SW mode to be amplified, whereas
+the second provides anti-damping to all available modes. The
+most prominent example of parametric amplification is paral-
+lel pumping [46] where traditionally a dynamic Oersted field
+created by a radio frequency (RF) current of twice the fre-
+quency of the amplified SW is applied parallel to the static
+magnetisation. In the quasi-particle picture of this process,
+one microwave photon splits into two magnons under conser-
+vation of energy and momentum. As mentioned, this process
+is mode selective both in frequency and wave vector and has
+demonstrated large absolute gain ga > 1000, in macroscopic
+structures based on YIG [47]. Additionally, it conserves the
+phase of the signal and is even able to convert phase into
+intensity information (non-adiabatic parallel pumping) [46]. It
+has been successfully applied to macroscopic and nanoscopic
+systems made of insulating materials like YIG or metallic
+structures like NiFe (see figure 7(a) and applications described
+in section 9). Mode selective and phase coherent optical SW
+pumping using femtosecond laser frequency combs has also
+recently been demonstrated [48, 49]. The second mechanism,
+the spin torque amplification, uses a spin current to create
+an anti-damping like torque which can partially (strict amp-
+lification) or completely (auto-oscillation) compensate the
+Gilbert damping leading to either SW amplification [50] (see
+figure 7(b)) or SW auto-oscillations [51]. Common examples
+are the injection of spin-polarized charge currents, as in GMR
+stacks and magnetic tunnel junctions, or the injection of pure
+spin currents created by the spin Hall effect in a heavy metal
+layer adjacent to a magnetic layer or a magnonic system
+Figure 6. Amplification with different absolute gain ga. Note that
+both amplified signals have a relative gain gr larger than 1.
+(SOT-based
+amplification).
+These
+processes
+are
+only
+suitable for thin-film micro- and nanostructures because the
+required current densities are large, resulting in significant
+Joule heating.
+Current and future challenges
+The biggest challenge is to increase the energy efficiency of
+the amplification process. The energies required to amplify
+SWs can easily exceed the pure SW energy by more than
+three orders of magnitude [52], especially if electrical cur-
+rents are used. In the case of mode selective amplification,
+another challenge is the increase in selectivity of the amp-
+lification process, i.e. that only the signal-carrying mode is
+amplified and no energy is lost in the parasitic amplifica-
+tion of thermal SWs, which would also worsen the signal-
+to-noise ratio. Furthermore, for coherent magnonic systems,
+it is crucial to understand whether and how the amplifica-
+tion process affects the phase of the SWs. These two chal-
+lenges often (but not exclusively) affect spin torque-based
+amplification where the amplification of thermal SWs often
+leads to auto-oscillations and detrimental magnon scattering
+processes. A large success for SOT-based amplification was
+recently achieved in a system which, due to a particularly
+low magnon-magnon interaction and nonlinearity, reached an
+absolute amplification of SWs (ga ≈5) by means of SOTs
+(see figure 7(b)). Another challenge of this approach is that
+the used bilayers (heavy metal layer combined with magnetic
+layer) show an increased damping due to spin pumping. For
+materials with very low intrinsic damping such as YIG, this
+spin pumping induced damping effect dominates the overall
+damping and one must apply a significant charge current to
+restore the propagation length of the SWs in pure YIG, which
+of course also limits the energy efficiency of this amplification
+method.
+Advances in science and technology to meet
+challenges
+To improve the energy efficiency, novel ways and systems
+to realize the amplification schemes discussed above need
+12
+
+
+=== PDF PAGE 14 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 7. (a) Parametric spin-wave amplification in a NiFe waveguide by a localized amplifier (grey area) which uses a parallel pumping
+field at twice the SW frequency. Adapted from [46], Copyright (2017), with permission from Elsevier. (b) SW amplification by spin–orbit
+torques in a waveguide structured from a BiYIG(20 nm)/Pt(6 nm) bilayer. Reproduced from [50]. CC BY 4.0. An absolute amplification is
+achieved for DC currents larger than ≈1 mA.
+to be realized. For the parametric amplification, switching
+from RF-current-driven Oersted pumping fields to voltage-
+driven effective magnetic fields (section 2) is very prom-
+ising to strongly reduce the Ohmic losses. Possible realiz-
+ations are based on voltage controlled magnetic anisotropy,
+multiferroic materials, hybrid magnon-photon [53], magneto-
+elastic or magneto-rotational systems driven by piezo-electric
+transducers or optical pumping using short laser pulses. For
+this, new materials and hybrid systems with low damping for
+magnons (and the involved phonons and (microwave) photons)
+need to be developed which show at the same time strong
+magneto-elastic or magneto-electric coupling. From the tech-
+nological side, means to couple these systems efficiently to RF
+sources need to be implemented, which is nontrivial due to the
+different impedance. For SOT amplifiers, superradiance [54]
+and the magnonic Klein paradox [55] enable novel amplifier
+designs working in reflection. For spin torque-based amplific-
+ation, a reduction of the needed (charge) currents is neces-
+sary. This could be achieved using spin-valve structures or
+non-local spin injectors on top of the magnonic waveguide.
+These systems do not require SOC which could reduce the
+overall spin-wave damping. As spin-valves are not compatible
+with insulators, the use of low damping half metals with high
+spin polarization like Heusler alloys seem to be most prom-
+ising for this approach. In addition, emerging new methods
+to create spin currents using topological insulators, the con-
+version of orbitronic angular momentum and the predicted
+non-relativistic generation of spin currents in altermagnets
+[56] need to be explored to create higher energy efficiency
+for magnon spintronic devices. In addition, novel approaches
+to amplify magnons can be developed, e.g. the use of non-
+equilibrium magnons to realize the stimulated amplification of
+SWs [57] or the synchronisation of spintronic auto-oscillators
+to incoming spin-wave signals.
+Advanced spin-wave amplification schemes for logic oper-
+ations can be realized if the behavior of the amplification pro-
+cess itself is nonlinear, i.e. if the gain depends on the incom-
+ing spin-wave signal. In this context, magnonic bistabilitites
+[58] can provide an interesting option. If an incoming spin-
+wave signal overcomes the threshold to switch the bistability
+into its high amplitude state, the signal is amplified but the
+outgoing spin-wave intensity, frequency and phase are inde-
+pendent of the incoming signal intensity and frequency. Thus,
+this amplification process provides a build-in signal renor-
+malization which can be used to created extended magnonic
+logic circuits based on the spin-wave intensity as information
+carrier.
+Concluding remarks
+To reach energy efficient, scalable spin-wave amplification is
+one of the crucial milestones of magnonics. Several systems
+have demonstrated their potential, but a large variety of suit-
+able physical processes remain relatively unexplored, mainly
+because of technical challenges to realize complex hybrid
+devices.
+Acknowledgements
+P Pirro acknowledges funding by the European Union via the
+ERC Starting Grant ‘CoSpiN’ (101042439) and the Deutsche
+Forschungsgemeinschaft (DFG) within the CRC TRR173
+‘Spin + X (No. 268565370 (Projects B01))’.
+13
+
+
+=== PDF PAGE 15 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+5. Non-linear magnonics
+Vladislav E Demidov, Katrin Schultheiss and Gyorgy Csaba
+Status
+For many decades, dynamic magnetic nonlinearities have been
+known as the source of a large variety of fascinating phenom-
+ena. On the one hand, magnetic media constitute a unique
+model system for fundamental studies in nonlinear physics.
+On the other hand, nonlinear phenomena accompanying the
+propagation of SWs have long been considered for the imple-
+mentation of signal-processing devices. Traditional examples
+include limiters, signal-to-noise enhancers, frequency convert-
+ers, parametric amplifiers, etc. One of the most important
+advantages provided by magnetic systems is the great flexibil-
+ity in engineering the dispersion and nonlinear characteristics
+of SWs. Both can be controlled in a wide range by varying
+the orientation of the static magnetization and the direction of
+wave propagation, by balancing the contributions of the dipole
+and exchange interactions, as well as by designing magnetic
+anisotropies.
+In recent years, nonlinear magnonics has experienced a
+renaissance associated with several general advances. First,
+the efficient downscaling of spin-wave devices to the nano-
+meter scale allows a strong concentration of energy in a
+small volume making it easier to reach the nonlinear regime.
+Second, the advent of the spin-torque effect provides novel
+possibilities for highly-efficient excitation and control of high-
+frequency magnetization dynamics and SWs using direct cur-
+rents. Third, the recent progress in materials growth led to
+the preparation of high-quality nanometer-thick films of YIG,
+in which nonlinear phenomena are strongly enhanced due
+to its extremely low magnetic damping. All these develop-
+ments provide new opportunities for utilizing dynamic mag-
+netic phenomena for advanced signal processing, including
+non-Boolean data processing and neuromorphic computing
+[52, 59–63]. It is well-established that nonlinearities are essen-
+tial for computing. Today, neuromorphic computing schemes
+are promising to make a transformative difference and gener-
+ate extensive interest among researchers in various fields.
+One of the possible routes for neuromorphic computing is
+reservoir computing which relies on the internal nonlinearities
+of a system to separate patterns in a high-dimensional output
+space, where it can be solved. The functionality of the sys-
+tem is defined by the output layer, which is a linear classifier
+and is trained to a particular task [61, 62]. Alternatively, the
+internal nonlinearities of the magnonic scatterer can be trained
+to perform a particular task—the training is done by machine-
+learning methods on a numerical model of the magnetic sys-
+tem as shown in figure 8 [38, 60]. Computing with magnons
+is addressed in section 6.
+Current and future challenges
+Since dynamic non-linear phenomena are extremely diverse
+and often occur simultaneously, one of the most important
+Figure 8. Neuromorphic computing using non-linear spin-wave
+interference. (a) is the sketch of the system, (b)–(d) nonlinear
+interference patterns, classifying the input waveforms, which
+correspond to the, ei, iy vowels. Reproduced from [60]. CC BY 4.0
+under the Creative Commons Attribution 4.0 International License,
+labels added for clarity.
+challenges in non-linear magnonics is associated with max-
+imization of nonlinear effects that are important for a particu-
+lar application while minimizing unwanted non-linear effects.
+Application-relevant dynamic nonlinear magnetic phenomena
+can be roughly divided into two groups. First, increasing amp-
+litude of the dynamic magnetization is known to result in the
+modification of the spin-wave dispersion (often referred to as
+nonlinear spectral shift), in analogy to the Kerr nonlinearity
+in optics. Similar to optical systems, this phenomenon leads
+to the amplitude-dependent wavelength and velocity of SWs.
+It lies at the heart of devices utilizing nonlinear wave inter-
+ference, which is, for example, a key phenomenon for real-
+space neuromorphic computing platforms [60]. Furthermore,
+the nonlinear spectral shift can be used to control the wave
+propagation in networks of coupled waveguides [52] and to
+shape short spin-wave packets via the self-modulation effect
+[64]. Second, in the large-amplitude regime, different spin-
+wave (magnon) modes do not evolve independently from each
+other and can exchange energy and angular momentum. This
+phenomenon is often referred to as magnon–magnon inter-
+action. Taking active control of such nonlinear interactions
+via their stimulation makes them promising, for example, for
+the implementation of reservoir computing in the reciprocal
+space [62] and for the generation of new spectral components
+[65, 66]. Additionally, it has great potential for implementing
+the amplification of SWs by the transfer of energy between
+a high-intensity pump wave and a low-intensity signal wave
+(section 4).
+Although the nonlinear spectral shift and magnon-magnon
+interactions in themselves are very useful for applications, the
+14
+
+
+=== PDF PAGE 16 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+coexistence of these two phenomena leads to limitations. In
+particular, the energy losses due to nonlinear mode interac-
+tions can be considered as an additional amplitude-dependent
+damping (nonlinear damping) mechanism. This prevents the
+amplitude of a particular spin-wave mode from increasing
+above a certain level and, as a result, limits the achievable
+nonlinear spectral shift [67]. Conversely, the nonlinear spec-
+tral shift often results in strong limitations for the nonlin-
+ear interaction of spin-wave modes. Indeed, efficient interac-
+tion requires phase synchronization of the interacting modes,
+which is lost due to the spectral shift with increasing mode
+amplitudes.
+Nonlinear
+phenomena
+may
+significantly
+reduce
+the
+dynamic range of magnonic devices, as the amplitude of
+magnonic signals must remain in a certain range for com-
+putationally useful nonlinearities to occur.
+Advances in science and technology to meet
+challenges
+Traditionally, a simple approach to control the nonlinear spec-
+tral shift and the effects of nonlinear magnon-magnon inter-
+actions requires an appropriate choice of the static magnet-
+ization configuration. For example, in an extended magnetic
+film magnetized normally to the plane, nonlinear interac-
+tions become very weak while the nonlinear spectral shift
+is maximized. The minimization of mode interactions is
+due to the vanishing ellipticity of the magnetization preces-
+sion, which is known to be essential for interaction pro-
+cesses. Although this approach works well for extended
+films and large-scale structures, it becomes inefficient for
+nanostructured spin-wave waveguides. Therein, inhomogen-
+eous demagnetizing fields result in a strong variation of
+the ellipticity across the waveguide section. Therefore, addi-
+tional physical mechanisms are required to control the ellipti-
+city and ensure further developments in nano-scale nonlinear
+magnonics.
+Recently, it was shown that the ellipticity and the resulting
+nonlinear interactions can be efficiently controlled in materials
+with PMA [68]. As shown in figure 9(a), even in an in-plane
+magnetized film, an almost circular precession trajectory can
+be achieved by adjusting the strength of the anisotropy. In the
+absence of PMA, the strong ellipticity results in an efficient
+energy transfer from the initially excited spin-wave mode at
+the frequency f 0 into many other modes over a wide frequency
+range (figure 9(b)). This results in an abrupt decrease of the
+precession amplitude of the initial mode after a certain devel-
+opment time (figure 9(c)). In contrast, in systems with tailored
+PMA, this process is not observed and the initially excited
+mode remains stable (figure 9(c)).
+This example shows that the possibilities to control mag-
+netic nonlinear phenomena are far from being exhausted.
+In addition to the search for new materials, one can con-
+sider varying the shape of waveguides to optimize the spa-
+tial distribution of the demagnetizing fields and the ellipt-
+icity. Alternatively, exploiting the different time scales of
+nonlinear phenomena may allow their separation in the time
+domain.
+Figure 9. Control of nonlinear mode interactions by PMA. (a)
+Ellipticity of the magnetization precession in Py is caused by the
+dipolar anisotropy (left). The PMA reduces the ellipticity. (b)
+Fourier spectra of magnetization oscillations in Py before (time
+t = 0–50 ns) and after (t = 150–200 ns) the onset of nonlinear
+damping. (c) Temporal evolution of the free precession amplitude
+starting with a large initial amplitude at time t = 0 at T = 300 K.
+Reproduced from [68]. CC BY 4.0.
+Concluding remarks
+Magnonics offers a fertile playground to study and utilize
+nonlinear phenomena. There are several knobs to adjust the
+strength and type of these nonlinearities. This fact, combined
+with the low-power, high-frequency nature of magnons offers
+great potential for nano-scale signal processing and unconven-
+tional computing devices.
+Acknowledgements
+This work was supported in part by the DFG German
+Research Foundation—Project-ID 433682494—SFB 1459. K
+S acknowledges funding from the EU Research and Innovation
+Programme Horizon Europe under Grant Agreement No.
+101070290 (NIMFEIA).
+15
+
+
+=== PDF PAGE 17 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+6. Computing with magnonics
+Qi Wang, Florin Ciubotaru and Dmitri E Nikonov
+Status
+Due to the rapid development of AI towards a society where
+everything is intelligent and connected, humanity is now faced
+with an unaffordable energy consumption for data processing.
+Novel computing devices are important for the future devel-
+opment of AI, which needs to reduce the energy required
+for computing to avert an energy shortage [69, 70]. Many
+magnonic logic devices have been demonstrated. The first
+spin-wave logic gate was realized in the macroscale by using
+the configuration of the Mach–Zehnder interferometer [71].
+Subsequently, a series of works pushed the size of a single
+spin-wave logic device down to the nanometer scale. In most
+of the Boolean-based logic gates, the information is car-
+ried by the amplitude of the SWs, which does not fully
+exploit the wave properties of SWs. In recent years, the
+phase-encoding spin-wave majority gates [72], spin-wave-
+based integer factorization [73] and data-based search [74]
+have been demonstrated, showing the enormous potential of
+SWs in the field of unconventional computing. More recently,
+a novel field of inverse design magnonics [38, 60] has been
+proposed, in which both Boolean and neuromorphic com-
+puting building blocks have been demonstrated. This method
+paves the way for the design of complex magnonic circuits.
+Current and future challenges
+Nowadays, most spin-wave logic gates operate at wavelengths
+ranging from hundreds of nanometers to a few micrometers in
+the dipolar exchange region. In this region, the group velocity
+of the SWs is around a few kilometers per second, which cor-
+responds to an operating speed of tens of nanoseconds, i.e. a
+frequency of megahertz. Although the power consumption of
+magnonic logic gates is lower than that of electronic logic
+gates based on CMOS technology, the operating frequency is
+much slower. The most straightforward way to increase the
+operating frequency of spin-wave logic gates is to increase
+the group velocity and decrease the device size by using the
+pure exchange SWs with wavelengths of tens of nanometers.
+Although various methods have been used to excite short SWs,
+including magnonic grating couplers, magnetic vortex cores,
+parametric pumping, geometry-induced wavenumber conver-
+tors and spin Hall effect [6], most of these methods have
+drawbacks such as low excitation efficiency, selective excit-
+ation wavelengths, complex spin-wave emissions, or unreal-
+istic integration. Therefore, it remains a challenge to develop
+an on-chip method for short-wavelength spin-wave excitation
+with high efficiency (sections 2 and 8).
+In addition, an integrated magnonic circuit containing mul-
+tiple logic gates and suitable for further cascading has not yet
+been experimentally demonstrated. In general, there are two
+approaches to the realization of magnonic circuits. One is the
+development of magnonic circuits using magnetoelectric cells
+and modern spintronic structures, which act as transducers
+that convert information between magnons and electrons. This
+approach suffers from a large number of required conversions
+from spin to charge and vice versa, which have been identi-
+fied as a serious bottleneck, especially due to the relatively low
+conversion efficiencies achieved so far. The second approach
+is based on the development of all-magnon circuits in which
+one magnonic gate is directly controlled by the magnons from
+the output of another magnonic gate without any intermediate
+conversion to the electrical signal [52]. However, an efficient
+on-chip spin-wave amplifier to compensate for the damping
+loss is still under development (section 4). The current chal-
+lenges on the way to an integrated magnonic circuit are an
+efficient magnon charge transducer and a magnonic amplifier.
+Advances in science and technology to meet
+challenges
+The magnetoelectric effect offers a way to solve the prob-
+lem of high-power consumption of transducers. The magne-
+toelectric effect couples voltages to magnetic fields without
+moving electrons and is therefore predicted to enable highly
+efficient transducers. These transducers consist of piezoelec-
+tric and magnetostrictive multilayers, which are driven by an
+alternating voltage rather than an electric current and there-
+fore expected to be more energy efficient [25]. Thus, the high
+frequency pure exchange SWs are expected to be efficiently
+excited using this transducer with lateral size of a few nano-
+meters. Another completely different approach to decrease
+energy consumption is to reduce the complexity of the cir-
+cuit, thus reducing the number of the transducers to achieve
+the goal of reducing power consumption. Recently, spin-wave-
+based unconventional computing devices (section 5) dramatic-
+ally reduce the circuit complexity and circumvent some of the
+above challenges. Majority gate, spin-wave based integer fac-
+torization and data-based search are the typical representative
+of the application of unconventional computing [73–75]. The
+phase of SWs plays an important role in all of these applic-
+ations. Therefore, a full exploration of the wave properties
+(amplitude, phase, interference, diffraction, etc) of SWs will
+be key to enable magnonic devices to compete with electronic
+devices.
+In addition, theoretical studies indicate that any wave
+with nonlinearity can be used to construct neural networks,
+which has been experimentally confirmed in photonics. SWs
+have more pronounced intrinsic nonlinearity and shorter
+wavelengths compared to light. Therefore, SWs are more suit-
+able as a medium for neuromorphic computing. More import-
+antly, the method of inverse-design magnonics has been pro-
+posed, which makes it possible to design a complex neural net-
+work based on SWs [38, 52, 60]. The inverse design magnon-
+ics is a fascinating field of magnonics in which any functional-
+ity can be specified first and a feedback-based computational
+algorithm is used to obtain the device design. It has been used
+to develop highly efficient RF applications as well as Boolean
+and neuromorphic computing building blocks [38, 60]. This
+method will greatly reduce the effort of designing novel spin-
+wave devices and then enrich the library of spin-wave devices.
+16
+
+
+=== PDF PAGE 18 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 10. Magnonic computing from Boolean logic gates to inverse-design unconventional computing. Adapted from [71], with the
+permission of AIP Publishing. Adapted from [38] and [60]. CC BY 4.0.
+Concluding remarks
+In general, SWs differ from other technologies in that they
+have wavelengths ranging from micrometers down to atomic
+scales, exhibit a variety of pronounced nonlinear phenomena
+and promise lower-energy computing without charge flow.
+In conventional Boolean logic systems, magnonic comput-
+ing faces many challenges that are difficult to solve in the
+short term. Recently, it has been shown that wave-based
+computing offers tremendous potential for the application
+of unconventional computing techniques compared to elec-
+tronic logic gates based on CMOS technology. Figure 10
+shows the evolution of magnonic computing from Boolean
+logic gates to inverse-designed unconventional computing
+and the lower orange box lists three of the most import-
+ant devices for realizing of magnonic computing. In addi-
+tion, many novel physical effects have recently been found in
+the interaction of magnons and other quasi/particles (phon-
+ons, photons, etc). Further research on these interaction
+effects (part II) can in turn provide new ideas for magnonic
+computing.
+Acknowledgements
+Q
+W
+acknowledges
+support
+from
+the
+National
+Key
+Research and Development Program of China (Grant No.
+2023YFA1406600) and National Natural Science Foundation
+of China, the startup Grant of Huazhong University of Science
+and Technology (Grant No. 3034012104).
+17
+
+
+=== PDF PAGE 19 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+7. 3D magnonics
+Ping Che, Riccardo Hertel and Teruo Ono
+Status
+Three-dimensional (3D) magnonics has recently received sig-
+nificant attention as it opens a path towards miniaturized mag-
+nonic circuits with higher integration density on a chip. Via 3D
+magnonic waveguides and functional elements, charge-less
+information transmission and data processing become possible
+in all three dimensions. However, the interplay between the
+dipolar-exchange magnons and the geometry of either 3D arti-
+ficial structures or natural 3D spin systems such as a tubu-
+lar magnetic skyrmion lattice still pose fundamental phys-
+ical questions. Related theoretical and experimental invest-
+igations will be key to engineer and functionalize topolo-
+gical properties of magnons such as unidirectional propagation
+characteristics and immunity against back scattering in three
+dimensions. Research on these topics may open new path-
+ways towards dense and complex 3D networks with controlled
+nonreciprocity.
+By means of nanofabrication techniques such as two-
+photon
+lithography
+followed
+by
+thin-film
+deposition
+(figure 11) and direct writing by FEBID (focused electron
+beam induced deposition) nanostructured 3D magnetic ele-
+ments of almost arbitrary shape have been generated [76].
+Amongst them, there are prototypical 3D structures such as
+ferromagnetic buckyballs. They stimulated advancements in
+simulating spin dynamics in 3D (figures 11(b) and (c)). From
+conventional top-down nanopatterning along lateral direc-
+tions it is already known that a magnetic thin-film-element’s
+shape significantly impacts its properties. Accordingly, 3D
+magnetic nanopatterning is expected to open up vast unex-
+plored opportunities of tailoring magnetic properties through
+the careful design of the object shape into the third dimen-
+sion. So far, studies on artificially structured 3D magnetic
+nano-objects have mostly focused on the impact of surface
+curvature on magnetic textures, like vortex-type DWs in nan-
+otubes and their protection against Walker breakdown [77].
+Recent progress in 3D nanopatterning, magnetic imaging and
+micromagnetic simulations now opens promising perspect-
+ives for 3D magnonic applications, in particular in the case of
+interconnected networks of nanowires and nanotubes which
+operate as waveguides with curvature-engineered dynamics.
+Topological solitons, such as tubular magnetic skyrmions,
+form natural 3D spin structures down to the nanoscale thanks
+to the competition between, e.g. DMI, exchange interaction,
+magnetic anisotropies and field. Self-organized structures are
+good candidates for investigating 3D magnonics without chal-
+lenging nanofabrication (figure 11(d)). The topology of the
+soliton textures offers a robust protection and stable 3D mag-
+nonic band structures which provide peculiar properties. The
+solitons imprint their topology on the magnons as a novel
+engineering degree of freedom to manipulate the propaga-
+tion properties. Additionally, magnons display nonreciprocity
+when propagating along the skyrmion tubes suggesting them
+to be information transmission lines [81]. Micromagnetic sim-
+ulations further reveal new individual solitons like magnetic
+hopfions and torons (figure 11(e)), considered as twisted or
+closed skyrmion tubes can host localized SWs in their textures
+and channel magnons [82].
+Current and future challenges
+Despite important progress in 3D nanomagnetics, SW
+propagation in 3D patterned magnetic materials remains so far
+scarce. Major challenges in this domain include the efficient
+generation and readout of SWs in such networks, control over
+the SW propagation characteristics and the multiplexing and
+channeling of waves in a reconfigurable fashion. Moreover, the
+accurate modeling of such structures—an essential prerequis-
+ite for understanding and interpreting magnonic phenomena
+in 3D systems—requires efficient numerical algorithms dif-
+ferent from those traditionally applied to study thin-film or
+bulk magnetism. Because of their ability to model objects
+with complex geometric shapes, low volume occupancy and
+large size, micromagnetic finite-element-based algorithms
+with graphical-processor acceleration represent a promising
+avenue [83].
+Current excitation and detection methods of magnons in
+natural 3D spin textures mostly utilize inductive coupling in
+the near field of a planar microwave antenna and all-electrical
+spin-wave spectroscopy at gigahertz frequencies as in [81].
+The control of the magnon wavevector was realized by the lat-
+eral dimensions of antennas to which bulk chiral magnets were
+integrated. Technical difficulties of integrating impedance-
+matched nanoscale antennas limit however the wavelength of
+the magnons such that the direct observation of higher order
+minibands has not yet been achieved. New excitation mech-
+anisms and detection techniques are required to exploit fully
+the magnon band structure across the first Brillouin zone (BZ)
+in integrated circuits. Tailoring the textures as magnon wave-
+guides to realize neural networks and wave-logic circuits in
+3D is still lacking, most likely due to the complexity of tar-
+geted creation and stabilization of the topological solitons in
+high-frequency experiments.
+In 3D spintronics, a three-dimensional magnetic memory,
+the so-called race-track memory, has been proposed which
+aims at exploiting high-speed DW movement driven by
+applied electrical currents. Later, a 3D magnetic memory using
+artificial ferromagnetic materials, shown in the figure 12(a)
+[84] was proposed. This 3D spintronics scheme avoids the
+movement of DWs and concomitant emission of SWs in an
+uncontrolled manner. Each column has an alternating over-
+lapping structure of a recording layer (green), which has large
+magnetic anisotropy and is responsible for bit recording and
+an intermediate layer (yellow), which has no magnetic aniso-
+tropy and acts as an artificial DW layer. For writing, a current
+is applied to the bottom electrode to invert the magnetization
+direction of layer 1 by SOT. A DW is then generated in layer3.
+The current is then passed through the column to shift this
+DW upwards to any DW layer. The next information is then
+written by inverting the magnetization direction of layer1 by
+18
+
+
+=== PDF PAGE 20 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 11. (a) Top: Experimental realization of a 3D array of interconnected nanowire array in the form of a diamond-bond lattice. Bottom:
+Brillouin-Light Scattering measurement of spin wave frequencies in the lattice. Reproduced from [78] with permission from ACS. Further
+permission related to the material excerpted should be directed to the ACS. (b) Micromagnetic simulation of magnetic high-frequency
+oscillations in a buckyball geometry. Reproduced from [79]. CC BY 4.0 and (c) in a diamond-type 3D array. Reproduced from [80]. CC BY
+4.0. (d) Schematic illustration of the skyrmion tubes in chiral magnet Cu2OSeO3 and the counter-clockwise, breathing and clockwise
+excitation modes on skyrmion strings. Reproduced from [81]. CC BY 4.0. (e) Magnetic hopfion spin textures with linked magnetization
+isosurfaces, magnetic toron spin textures with unlinked isosurfaces and their localization of the resonant spin-wave modes (a half-disk cross
+section cut). The marks from h.1 to h.6 (t.1 to t.6) indicate the six resonant modes of a magnetic hopfion (toron, respectively) from low
+frequency to high frequency. Reprinted figure with permission from [82], Copyright (2021) by the American Physical Society.
+applying a current to the lower electrode. By repeat-
+ing this operation, any bit sequence can be stored in
+the column. Reading out can be done in batches by
+reading. Future 3D magnonic circuits might also con-
+tain
+nanocolumnar
+architectures
+consisting
+of
+engin-
+eered layer sequences. In this case, the flow of angular
+momentum by propagating magnons can be used for mag-
+netic bit writing via magnon-induced reversal and DW
+movement [85, 86]. The proposed data-writing process using
+propagating magnons is sketched in figure 12(b). Here, the
+heavy metal wire may be substituted by a magnetic metal
+with two separate antennas for magnon excitation. Magnons
+at f 1 switch the pinning layer (shown in blue) and gener-
+ate the DWs and magnons at f 2 drive the DW motion in
+the nanocolumnar cell. The variations in magnon amplitudes
+and phases can be used to readout information. Thereby, the
+19
+
+
+=== PDF PAGE 21 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 12. (a) Illustration of vertical DW motion memory with artificial ferromagnets. Left panel: memory array with perpendicularly
+arranged word line and bit line. The columns inside array are the multi-bit storage memory cells constructed with artificial ferromagnets.
+Right panel: detailed structure of one column. Reproduced from [84]. CC BY 4.0. (b) Sketch of the proposed data-writing scheme using
+propagating spin waves in the memory device. Spin waves are excited in the magnetic metal at f 1 to reverse the magnetization in the pinning
+layer with perpendicular magnetic anisotropy (blue layer) and form the DW in the cell. Spin waves at f 2 propagate through the cell and
+move the DW to achieve the write shift motion.
+distributed generation of Joule heating in 3D spintronics will
+be avoided. Combined with the developed 3D patterning and
+magnon detection techniques, the experimental exploration of
+magnon-switching 3D magnetic memory bears timely import-
+ance for both magnonics and spintronics research.
+Advances in science and technology to meet
+challenges
+Scientific advances on the topic of magnonics in 3D nano-
+structured materials have recently been achieved on the
+experimental and theoretical side. On the one hand, pion-
+eering BLS experiments on a diamond-bond lattice geo-
+metry (figure 11(a)) demonstrated the occurrence of coher-
+ent SWs in a 3D network of crescent-shaped nanowires
+[79]. On the other hand, micromagnetic simulations have
+been used to investigate the high-frequency dynamics in vari-
+ous systems of interconnected magnetic nanowires [80, 84].
+The studies put into evidence a sensitive dependence of the
+high-frequency dynamics on the magnetic configuration at the
+vertex points at which the nanowires intersect. This config-
+urational sensitivity, known from artificial spin-ice lattices,
+paves the way towards reprogrammable 3D magnonic devices
+in which SW propagation and, more generally, the dynamic
+magnetization response to a high-frequency excitation can be
+controlled by modifying the array’s static magnetic structure.
+The laminography technique based on the x-ray magnetic
+circular dichroism, combines rotational control of the samples
+and a graphics processing unit that implements the gradient-
+based arbitrary projection magnetic reconstruction algorithm
+to reconstruct spin structures inside bulk materials. Recent
+advancements on the time-resolved magnetic laminography,
+employing a pump-probe experimental setup, has visual-
+ized the magnetization dynamic of three-dimensional mag-
+netic structures in GdCo microdiscs [87]. Further advance-
+ments of this technique towards higher spatial and time res-
+olution, will improve the imaging capabilities for studying
+high-wavevector magnons in individual nanoscale magnetic
+solitons.
+20
+
+
+=== PDF PAGE 22 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Concluding remarks
+The study of high-frequency oscillations and propagating SWs
+in artificially patterned 3D magnetic materials is still in its
+early stages, but promising experimental and simulation res-
+ults indicate exciting possibilities for high-density magnonic
+applications. Further studies may lead to an expansion of the
+research on this topic towards 3D magnonic metamaterials,
+i.e. artificially patterned materials whose magnonic proper-
+ties could be fine-tuned by varying the geometric paramet-
+ers of their microstructure. The topological magnetic solitons
+offer natural hosts for 3D magnonics research. Thanks to the
+topology of the solitons, novel magnon band structures and
+propagation properties were reported. Advancement in both
+the geometry control in artificially induced magnetic solitons
+in 3D nanoarchitectures and detection techniques would lead
+to deeper understanding of the control of magnons in soliton
+systems.
+Acknowledgements
+P C acknowledge the Horizon2020 Research Framework
+Programme of the European Commission under Grant No.
+899646 (k-NET). R H acknowledges the Interdisciplinary
+Thematic Institute QMat (ANR-17-EURE-0024), as part of
+the ITI 2021–2028 program of the University of Strasbourg,
+CNRS and INSERM, supported by the IdEx Unistra (ANR-
+10-IDEX-0002)
+and
+SFRI
+STRAT’US
+(ANR-20-SFRI-
+0012) through the French Programme d’Investissement
+d’Avenir. T O acknowledge the JST, CREST Grant Number
+JPMJCR21C1, Japan.
+21
+
+
+=== PDF PAGE 23 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+8. Ultrafast magnonics
+Dmytro Afanasiev, Johan Mentink and Theo Rasing
+Status
+Ultrafast magnonics refers to the use of ultrashort pulses of
+light to launch and to control high-frequency THz coher-
+ent spin-waves (magnons) in future high-speed and energy-
+efficient nanoscale magnonic devices, see figure 13. To excite
+coherent spin-waves (SWs), it is necessary to perturb the mag-
+netic order both quickly and locally, so that the spectrum of
+the perturbation covers the frequency ω and wavevector k
+of the wave to be excited. Traditionally, excitation of coher-
+ent SWs is achieved using a direct coupling of the radio-
+frequency (RF) magnetic field component via subwavelength
+size microstrip antennas or coplanar waveguides to magnetic-
+ally ordered spins. This inductive method however is limited
+to tens of GHz and thus is not applicable to access SWs in the
+high-frequency exchange-driven THz regime of ferro-, ferri-
+and antiferromagnets. One way to resolve this problem is to
+replace the traditional RF magnetic field with a time-varied
+field of another nature, e.g. an electric field, a strain field, or
+any other field that is strongly coupled to the magnetic order,
+such as an effective optomagnetic field created by ultrashort
+optical pulses.
+Femtosecond
+(fs)
+pulses
+of
+light
+are
+the
+shortest
+(∆t < 100 fs) and thus the most broadband stimuli
+(∆t−1 > 10 THz) in experimental condensed matter physics.
+These pulses have convincingly demonstrated their unique
+ability to excite ultrafast coherent spin dynamics in prac-
+tically all classes of magnetically ordered materials [88].
+Selectively acting on microscopic magnetic interactions, such
+as the exchange interaction or magnetic anisotropy, the optical
+excitation acts akin to a pulse of ultrashort effective optomag-
+netic field. Although strongly material specific, optomagnetic
+fields can be made as large as 1 T. Such fields were shown to be
+large enough to drive spin precession with an amplitude suffi-
+cient to switch the orientation of the magnetization. Ultrashort
+optical pulses have not only a unique ability to excite and con-
+trol the phase of coherent spin precession but, once performed
+in a so-called pump-probe scheme, they also allow to track
+the spin dynamics on the most demanding fs timescale where
+traditional electric methods fail to operate.
+Current and future challenges
+Although optical excitation allows broadband excitation of
+coherent SWs across nearly the entire BZ, the large mis-
+match between the photon and magnon momentum (res-
+ulting from a group velocity difference of more than five
+orders of magnitude), leads to the excitation and detection
+of only low wavenumber (k ≃0) quasi-uniform magnons,
+see inset figure 13. These low frequency modes typically do
+not support propagation, crucial for magnonics applications.
+Consequently, optical excitation and detection of propagating
+Figure 13. Ultrafast light-driven magnonics: excitations of a pair of
+counterpropagating (±k) coherent propagating spin-waves with the
+help of an ultrashort (∆t < 100 fs) pulse of light. The left-side inset
+shows schematic dispersions of spin and light waves. A large
+momentum mismatch is seen. The right-side inset shows excitation
+of a nanoscale packet of coherent SWs in an antiferromagnet via
+absorption of light, recently reported in [26].
+short-wavelength coherent magnons is non-trivial and repres-
+ents a major challenge toward the practical integration of opto-
+magnetic methods in magnonics.
+The smallest accessible wavelength of the optically excited
+SWs is defined by the size of the illuminated volume and is
+thus diffraction limited. Subwavelength localization of opto-
+magnetic fields can be achieved by manipulating the penet-
+ration depth of light, thereby surpassing the diffraction limit,
+see right-side inset in figure 13. Indeed, the above-bandgap
+absorption of light in antiferromagnetic orthoferrite has been
+shown to confine the optomagnetic field below 50 nm, thus
+creating a highly inhomogeneous profile of the spin excit-
+ation and enabling emission of a broadband wavepacket of
+coherent THz SWs [26]. Although excitation of the SWs with
+wavelengths down to 50 nm is also anticipated, their detection
+using visible optics is challenging. The shortest-wavelength
+coherent magnons detected optically have wavelengths of
+about 125 nm and are observed using the magneto-optical
+Kerr effect. Moreover, the existing magneto-optical methods
+often operate in reciprocal space and thus are hard to apply to
+observe fine structure and real space propagation of the SW
+packets.
+An appealing alternative for the generation of high-
+frequency SWs is based on the concomitant excitation of a
+pair of counterpropagating magnons. The total momentum of
+the pair matches that of photons such that SWs across the
+whole BZ will be excited. Several experiments reported such
+coherent excitation in various antiferromagnets [89], where
+it is widely known as the two-magnon (2M) mode. Whether
+the 2M mode can support propagation and is thus suitable for
+magnonics is yet a highly debated question. Indeed, excita-
+tion of the 2M-mode is dominated by pairs of magnons at
+the edges of the BZ (k = ±kB), where their group velocity
+approaches zero. Recent theoretical work, however, shows
+that quantum effects can enhance the propagation velocity of
+the coherent 2M-mode even above the highest possible SW
+velocity [90].
+22
+
+
+=== PDF PAGE 24 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 14. Topics of future research to develop ultrafast
+light-driven nanomagnonics. (a) Optical generation of nanoscale
+wavelength magnons. (b) Various magnon detection methods with
+potential nanoscale resolution. (c) Spin-wave collision experiments
+to study the nonlinear regime of their interaction and scattering
+mechanisms. (d) Machine learning techniques to predict and explain
+quantum effects in ultrafast short-wavelength magnonics.
+Advances in science and technology to meet the
+challenges
+Figure 14 summarizes the various topics of further research to
+develop the field of ultrafast light-driven nanomagnonics and
+exploit its fundamental and practical merits.
+One obvious strategy to address the challenges of gen-
+erating short wavelength magnons is to shorten the cent-
+ral wavelength of the fs pulses, see figure 14(a). Recent
+advances in x-ray free-electron lasers have enabled generation
+of ultrashort and intense hard x-ray pulses with wavelengths
+down to nearly 1 nm. Particularly appealing for ultrafast mag-
+nonics is to employ the hard x-ray transient grating spectro-
+scopy technique, which recently has been successfully used
+for the generation and detection of submicron-wavelength
+coherent phonons [91]. Reducing the duration ∆t of light
+pulses enables the excitation of ever higher frequency 2M-
+modes, the frequency of which scales with the strength of
+the exchange interaction and thus broadens the applicability
+of optical driving magnons at the edges of the BZ to various
+magnetic systems. The dramatic progress in the thriving field
+of femtosecond and attosecond optics can easily address this
+issue. Another strategy to push ultrafast magnonics towards
+the nanoscale is to employ nanopatterning of periodic struc-
+tures, enabling the formation of a (quasi-)periodic perturbation
+pattern. The nanostructures effectively break the translational
+invariance that leads to momentum conservation between the
+photons and the short-wavelength SWs and thus do not require
+a highly demanding localization of the optomagnetic field.
+Various grating couplers were shown to be very effective for
+sub-diffraction coupling of the free-space optical fields into
+media [92]. Extending this approach to effective optomagnetic
+laser fields will enable generation of SWs with the wavelength
+limited only by the intrinsic resolution of the nanopatterning
+technique, thus offering ultrafast coherent control of magnons
+at the nanoscale. In the case of extreme ultraviolet lithography
+this limit can be set down to less than 10 nm.
+To improve the spatial resolution necessary to detect short
+wavelength SWs, time-resolved near-field imaging techniques
+offer opportunities, see figure 14(b). Magneto-optical scan-
+ning near-field optical microscopy has recently shown a poten-
+tial for sub-100 nm spatial and sub-100 fs temporal resolutions
+but has not been applied to SWs yet [93]. Another possibility
+is to use a THz near-field apertureless microscope which can
+directly probe nanoscale electric or magnetic THz fields asso-
+ciated with SWs [94]. In the most general case this requires
+a special design of the metallic tips to sense magnetic rather
+than electric near-fields—a problem which is not addressed up
+to now. To detect SWs of even shorter wavelength, x-ray cir-
+cular and linear dichroism at the L edges of magnetic ions,
+can be used. Moreover, recent advances in time-resolved res-
+onant inelastic x-ray Scattering can greatly facilitate tracking
+the spatial dynamics of 2M-modes but yet require a better tem-
+poral resolution [95]. To successfully bridge the optomagnetic
+excitation with existing magnonic logic, it is crucial to real-
+ize an electronic readout of the optically excited SWs. In both
+ferromagnets and antiferromagnets, propagating SWs can be
+associated with spin currents which can be measured electric-
+ally, e.g. via inverse spin Hall effect or tunnel magnetoresist-
+ance. Time-resolved on-chip experiments with fs optical excit-
+ation and electronic readout using an Auston switch can be
+employed to realize time-resolved readout of SW propagation.
+Finally, collision experiments in which pairs of optically
+generated THz SWs are moving toward each other hold a
+promise to reveal the conditions at which SW interactions go
+beyond a trivial superposition and thus enter the nonlinear
+regime crucial for magnon based computing, see figure 14(c).
+Moreover, collision experiments can reveal fundamental pro-
+cesses governing scattering mechanisms of THz SWs, via
+23
+
+
+=== PDF PAGE 25 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+monitoring the redistribution of their energy and momentum
+directly in the time-domain.
+This approach is particular promising in a joint endeavor
+with theory to gain understanding of the quantum aspects,
+which inevitably come into play but have largely unknown
+physical consequences. New methods inspired from machine
+learning appear very effective [90] and may be key to predict
+experimental fingerprints and develop more intuitive models
+of genuine quantum magnonics at the edge of the BZ, see
+figure 14(d).
+Concluding remarks
+Light-driven ultrafast magnonics is an emerging field with a
+high potential to push traditional magnonics into the high-
+frequency THz domain. For a long time being limited to
+uniform spin precessions, fs optical excitation has recently
+revealed its potential to drive broadband and highly nonuni-
+form THz SWs. While optomagnetically driven SWs continue
+to present practical challenges, the solutions to these obstacles
+are expected to be similar to those already discovered in tra-
+ditional magnetic-field driven magnonics and can likely be
+addressed through advances in time-resolved ultrafast tech-
+niques and nanopatterning methods. The discovery of a mag-
+netic system that can combine high efficiency of optomag-
+netic SW excitation with a long lifetime and thus low damp-
+ing is highly desirable, as it can function as an analogue of the
+much-praised yttrium iron garnet films in traditional magnon-
+ics. Rare-earth perovskite orthoferrites (RFeO3, with R repres-
+enting a rare-earth element) showing very strong optomagnetic
+effects can serve the purpose [96].
+Acknowledgements
+The authors are grateful to R Mikhaylovskiy, A Scherbakov
+D Schick and A V Kimel for fruitful discussions. Support
+from the European Union (ERC Grant No. 101078206,
+ASTRAL,
+ERC
+Grant
+No.
+856538
+(3D-MAGiC)
+and
+Horizon
+Europe
+Project
+No.
+101070290
+(NIMFEIA)),
+the
+Shell-NWO/FOM-initiative
+‘Computational
+sciences
+for energy research’ of Shell and Chemical Sciences,
+Earth
+and
+Life
+Sciences,
+Physical
+Sciences,
+and
+the
+Dutch National Science Foundation (NWO) is gratefully
+acknowledged.
+24
+
+
+=== PDF PAGE 26 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+9. Hybrid quantum magnonics
+Burkard Hillebrands, Silvia Viola Kusminskiy and Wei Zhang
+Status
+The common underlying theme of hybrid quantum magnonics
+[97] is the interference of wave functions. This can be set up
+in the purely classical domain or based on true quantum prin-
+ciples. The term ‘hybrid’ indicates that magnonic degrees of
+freedom are interfaced with other excitations, such as photons,
+phonons, plasmons, etc. In this way, the benefits of spe-
+cific properties of each subsystem can be exploited and com-
+bined. Key to this promising potential lies the highly tun-
+able excitation of magnons and versatile coupling capability
+to other dynamic media and platforms. Hybrid quantum mag-
+nonics comes in three major flavors: (i) true quantum sys-
+tems, usually operating at very low temperatures and where,
+as a rule, a cavity setup is needed in order to boost coupling
+strengths. (ii) Quantized wave systems, still in the classical
+domain, can mimic many quantum functionalities, often called
+quantum-classical analogy systems. (iii) In the continuous-
+mode regime, nonlinear properties enabling multi-magnon
+scattering processes can lead to new phenomena, such as
+magnon Bose–Einstein condensation. Often quantum mech-
+anical phenomena have a counterpart in this classical regime,
+although this does not capture the full phenomenology.
+The perspective of incorporating magnons as information
+carriers in quantum hybrid systems was triggered by the
+demonstration of coherent coupling between magnons and a
+superconducting qubit, mediated by a microwave cavity [98].
+Strong coherent coupling between magnons and microwave
+photons has been reported in several platforms, whereas coher-
+ent coupling to optical photons has been demonstrated in
+YIG resonators [97], an important step towards magnon-based
+quantum transduction. In tri-partite hybrid systems coupling
+coherently magnons, phonons and microwave photons, control
+of the phonon frequency and dissipation via magnon-induced
+dynamical effects has been reported (see figure 16(b)), a pre-
+requisite for applications such as quantum thermometry [99].
+Magnon interference effects are widely used, see e.g. [97]
+and many interference-based devices have been proposed and
+some realized. A prototype example of a quantum-classical
+analogy device is the STImulated Raman Adiabatic Passage
+device [100], as shown in figure 15. Here, the concept of
+coupling between reservoirs and dark states has been trans-
+ferred to magnon-photon degrees of freedom, when discrete
+magnon modes are coherently coupled by means of elec-
+tromagnetic fields outside the magnetic waveguides. In this
+way, ideas from quantum mechanical systems migrate to clas-
+sical systems, allowing new functionalities that work under
+ambient conditions. Along this line, the magnonic qubit cal-
+culus has recently been demonstrated numerically at room
+temperature [101]. Here, a qubit is represented by the super-
+position of two magnon Bose–Einstein condensates. Effects
+such as the magnon Josephson effect and information trans-
+port by magnon supercurrents have been realized [102].
+Figure 15. Magnonic STIRAP device as an example of a
+quantum-classical analogy device. The functionality is based on the
+electromagnetic coupling between three magnon waveguides, which
+locally is enhanced pairwise by a near-proximity region. Top panel:
+spin-wave intensity distributions for the so-called counter-intuitive
+coupling scheme, where the proximity region between the input
+waveguide and the center waveguide is located after the proximity
+region between the output and the central waveguide. Middle panel:
+intuitive coupling scheme. Bottom panel: output intensity as a
+function of the Gilbert damping of the center waveguide,
+demonstrating the pronounced insensitivity of the coupling on the
+damping in the center, so-called dark-state, waveguide in the
+counter-intuitive scheme. Adapted from [100]. CC BY 4.0.
+Current and future challenges
+Hybrid quantum magnonics has the potential to provide solu-
+tions to major challenges in information processing and sens-
+ing. Of particular advantage are potentially the wave proper-
+ties with wavelengths down to atomic distances, the nonlin-
+earity of the magnonic (sub-)systems, the (ultra-)low energy
+consumption, facile tunability with electronic and spintronic
+toolkits and the realization of long propagation lengths when
+combined with e.g. photonic or phononic degrees of freedom.
+Specific eigenstates of the system, such as Bose–Einstein con-
+densates, allow new all-magnonic computational schemes. For
+example, qubit computation at room temperature has been
+demonstrated in a quantum-classical approach, building on the
+fact that qubit computation algorithms exist that do not use
+quantum entanglement and thus can be realized at room tem-
+perature, still with polynomial scaling [74, 97]. Many device
+proposals have been made and it is currently a key challenge
+to realize them and demonstrate their practical applicability.
+The demonstration of coherent coupling of magnons both
+to microwave and optical photons shows promise for quantum
+frequency transduction. One figure of merit for operations in
+the quantum realm is the cooperativity, which is a measure
+of the strength of the magnon-photon coupling compared to
+the losses in both channels. A pressing challenge is boost-
+ing cooperativity values in order to achieve, among other
+25
+
+
+=== PDF PAGE 27 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 16. (a) Example for the design of a one-dimensional
+opto-magnonic crystal based on a thin magnetic dielectric such as
+Yttrium Iron Garnet. The array of holes with a defect in the middle
+(the absence of a hole) serves as a Bragg mirror both for optical and
+magnon modes, which can be co-localized at the defect. The small
+mode volumes combined with low losses can give rise to enhanced
+cooperativities with respect to the state of the art. Adapted from
+[103]. CC BY 4.0. (b) (left) Prototype experiment to demonstrate
+the coupling in a cavity magnon-mechanical system. A
+yttrium-iron-garnet sphere is placed in a microwave cavity. The
+Kittel mode is resonantly coupled to the cavity and off-resonantly
+coupled to a mechanical mode of the sphere. (right) By tuning the
+system to operate in the triple resonance condition, where the
+phonon mode is in resonance with the transition between the upper
+and lower polariton modes, dynamical backaction effects such as
+the magnon spring effect can be measured and controlled. Adapted
+from [99]. CC BY 4.0.
+applications, a good transduction efficiency. This is particu-
+larly challenging in the optical regime due to intrinsically low
+coupling (relying on the Verdet constant of the material) and
+difficult mode matching at the microscale. To this end, to pre-
+dict an optimal geometry is also challenging from a theory
+perspective. Proposals [103] to overcome these issues include
+the realization of photonic crystals based on magnetic dielec-
+trics (see figure 16(a)), or harnessing the coupling to phonons,
+or leveraging the magnon’s self-hybridizations in complex
+heterostructures [104].
+Another prominent challenge is to push ‘hybridized
+magnons’ toward an all-on-chip platform, which is key to cir-
+cuit application and device integration. However, this poses
+the dual challenge of achieving large coupling to microwaves
+with a small magnetic volume and having planar geomet-
+ries with low resistive loss (quality factor). One direction is
+to use superconducting coplanar resonators, which have both
+chip-compatibility and high-quality factors. Another approach
+lies in the material engineering of the magnonic counterpart,
+such as its dissipation rate. In addition, the development of
+tri-partite interactions may allow external pumping and driv-
+ing of the system via complementary, intermediate excita-
+tions, thus realizing new degrees of coupling strength and
+controllability. Finally, these efforts will be pursued in paral-
+lel with concurrent developments in on-chip photonic circuity
+and phonon device architectures.
+While the state-of-the-art technology is ripe for the real-
+ization of true quantum magnonic states [105], a challen-
+ging endeavor in view of possible competitive applications
+involving quantum state transfer and readout is to enhance the
+current magnonic lifetimes. This may require the development
+of new materials and/or structures beyond those commonly
+used in classical magnonics and to design platform-specific
+quantum protocols. A theory of magnon quantum transport
+also needs to be developed.
+Advances in science and technology to meet
+challenges
+The technological development of hybrid quantum magnon-
+ics is still in its infancy. The field requires an interdis-
+ciplinary approach combining new experimental techniques,
+materials science, quantum engineering and theory methods
+ranging from quantum information and quantum optics to con-
+densed matter. The development of powerful computational
+methods and capabilities allow to explore the design of hybrid
+magnonic devices at the microscale and to describe their
+quantum dynamics. New fabrication techniques will enable
+their implementation. Many promising device concepts have
+been proposed—the challenge now is to demonstrate their
+practical applicability.
+One major goal of hybrid magnonics is to encode, trans-
+fer and process information with magnons and magnon cir-
+cuits. With many device proposals based on magnon inter-
+ference and phase control, coherent generation and manipu-
+lation of magnons are crucial. Demonstrators of magnon logic
+circuits such as the majority gate, spin-wave amplification
+such as the magnon transistor, magnonic neurons, magnonic
+memory, magnonic transducer and more have been reported.
+A coherent magnonic network can be further augmented by
+signal transfers via Rabi-like oscillations between different
+magnon modes with preserved phase correlation and the states
+of magnon propagation can be determined by the gate control,
+a protocol that find its analogy in entangled qubit networks. By
+utilizing the dissipative coupling, it is also possible to select-
+ively converge a hybrid system to a specific ground state. On
+the way to a complete magnonic circuit board, technologies
+for long-distance information transport (‘backbone commu-
+nication’) as well as for input/output functionalities have to
+be developed, e.g. using spintronic-based rectifications, such
+as spin Hall effect, Rashba effect and magnetoresistance. If we
+consider possible applications in the field of neural networks,
+given that each neuron is connected to other neurons by about
+10 000 synapses, a corresponding magnonic network to imple-
+ment this will most likely require 3D geometries.
+It is not yet clear to what extent non-classical, quantum
+mechanical functionalities will be used in these future devel-
+opments. Promising work on this challenge has been repor-
+ted, e.g. by the demonstration of a single-shot single magnon
+26
+
+
+=== PDF PAGE 28 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+detector, which opens the door to realizing ‘quantum optics’
+with magnons [98]. Very recently, the deterministic genera-
+tion of quantum magnon states such as a Fock state has been
+demonstrated [105]. Both of these developments use a super-
+conducting qubit in order to enable detection or state prepara-
+tion. What seems to be clear is that, in order to enable applic-
+ations in the quantum regime, leveraging both on the versat-
+ility of magnonic systems and their compatibility with hybrid
+quantum systems will be required.
+Concluding remarks
+Hybrid quantum magnonics has a surprisingly large poten-
+tial for future applications in computing and sensing. Strong
+efforts are now needed to overcome the challenges of
+translating the concepts into practical devices and developing
+the corresponding technologies.
+Acknowledgements
+B H acknowledges partial funding by the DFG German
+Research
+Foundation–TRR
+173–268565370
+Spin
++
+X
+(Project B04). S V K acknowledges financial support from the
+DFG–TRR 306 QuCoLiMa through Project-ID 429529648
+(Project B05) and the Bundesministerium für Bildung und
+Forschung (BMBF) under the project QECHQS (Grant No.
+16KIS1590K). The authors would like to thank Oleksandr
+Serga and Philipp Pirro for their valuable input. W Z acknow-
+ledges U.S. National Science Foundation (NSF)-CAREER
+support under Grant No. ECCS-2246254.
+27
+
+
+=== PDF PAGE 29 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+10. Quantum sensing
+Chunhui Rita Du, Aurore Finco and Toeno van der Sar
+Status
+Quantum sensing has become one of the pillars of quantum
+science and technology. It relies on the large sensitivity of
+quantum systems to their environment to probe physical quant-
+ities. Optically-active defect spins are excellent magnetic-
+field sensors, with a sensitivity and spatial resolution that has
+enabled applications in physics, biology, geology and chem-
+istry. The most popular is the NV center in diamond, which has
+now been used for ∼15 years to study nanoscale magnetism
+[106]. In addition, the spin of the boron-vacancy (VB-) defect
+in hexagonal boron nitride (h-BN) has recently emerged as a
+sensor [107], with the asset of an easy integration in vdW het-
+erostructures. Both sensor spins are increasingly being used
+for magnonics research.
+SWs are collective, wave-like modes of the spins in
+magnetic materials, with quasi-particle excitations called
+magnons. Their intrinsically strong interactions give rise to
+a rich many-body physics that could unlock new regimes of
+spin transport. Imaging SWs with electronic sensor spins is a
+new technique, with the unique aspect that it detects the SWs
+by their microwave magnetic stray fields. The sensor spins can
+be brought within nanometer proximity to the magnetic mater-
+ial of interest, where the evanescent magnetic fields produced
+by the SWs can be large. This enables the magnetic imaging
+of both coherent SWs (e.g. excited through microwave driv-
+ing) and thermal or other incoherent magnon mixtures—even
+in very thin magnets. A similar approach could be followed
+with another type of quantum sensors: nanoscale SQUIDs, but
+no SW related experiments have been reported so far.
+The stray-field detection of SWs relies on the spin-
+dependent optical properties of the sensor spins: both the NV
+and the VB- defects (figures 17(a) and (b)) have an S = 1 elec-
+tron spin with a spin-dependent photoluminescence. Under
+laser illumination, this spin is continuously pumped into its
+ms = 0 state while emitting a bright photoluminescence. A
+resonant microwave signal, originating e.g. from a coherently
+excited SW, can drive spin rotations between the ms = 0 and
+±1 states (figure 17(c)). This is detected through a reduced
+photoluminescence (figure 17(d)). The strength of the spin-
+wave stray field directly follows from the sensor spin’s rotation
+rate. Similarly, the strength of magnetic-field fluctuations gen-
+erated by incoherent magnon mixtures (e.g. thermal magnons)
+follows from the spin relaxation rate.
+Current and future challenges
+For
+characterizing
+magnonic
+systems
+via
+spin-based
+microwave magnetometry, two situations can be distin-
+guished. In the first, the sensor-spin ESR frequency lies within
+the spin-wave energy band, causing resonant spin-wave modes
+to dominate the sensor-spin response [108]. Sweeping the ESR
+frequency relative to the spin-wave band using a magnetic bias
+field enables imaging low-frequency spin-wave modes such as
+those in YIG (figures 18(a) and (b)) or DWs [109, 110]. A chal-
+lenge for the scheme is its limitation to spin-wave frequencies
+in the low-gigahertz regime. However, the magnetic nature
+of the imaging enables probing SWs at buried interfaces, for
+instance to study spin-wave interaction with electric currents
+or spin excitations in metals. Future challenges include har-
+nessing this capability to study e.g. gate-control of spin-wave
+transport or magnetization auto-oscillations, or to shed light
+on so-called magnon ‘condensates’ that could arise under spin
+pumping by spin-Hall electrodes.
+In the second situation, the sensor-spin frequency lies
+below the spin-wave band. This situation is more typical as
+crystal or shape anisotropies of typical magnets quickly pushes
+their magnon spectrum to the tens of gigahertz. In this situ-
+ation, the sensor spins primarily pick-up spin-wave mixing
+processes that lead to longitudinal magnetization dynamics
+resonant with their ESR frequency [111, 112]. Even in the
+absence of microwave driving, the thermal spin-wave mix-
+ing products provide a probe of the magnon-band occupa-
+tion, with the proximity of the sensor spins enabling prob-
+ing weak magnets such as canted antiferromagnets [113].
+More generally, the sensitivity to longitudinal magnetization
+fluctuations has been proposed as a probe for characterizing
+the nature of magnon transport [111], where diffusive, bal-
+listic, or hydrodynamic transport should lead to a characteristic
+power-law decay of the magnetic stray fields. Finally, mix-
+ing between driven spin-wave modes enables probing magnon
+bands at frequencies that are detuned from the sensor spins
+[114]. The future challenge for expanding to other magnets
+is to deliver the required high microwave frequencies to the
+sample. We anticipate that off-resonant detection schemes will
+enable studying magnon transport in materials that are appeal-
+ing because of their tunability, such as atomically-thin vdW
+magnets.
+In addition to imaging magnon systems, the quantum nature
+of the sensor spins provides an opportunity for studying
+quantum interactions between magnons and spins. Localized
+magnon modes such as those in DWs or magnetic microbars
+have been proposed as channels for mediating spin–spin entan-
+glement (figure 18(c)) (see, e.g. [9], for an overview), with
+the potential for medium-(micron-)scale spin–spin coupling.
+This challenging scheme however requires reducing thermal
+magnons, e.g. by going to millikelvin temperatures, as well as
+positioning the spins with nanoscale precision with respect to
+the magnon field.
+Advances in science and technology to meet
+challenges
+Despite the progress made to date, several technical chal-
+lenges remain to be resolved in order to fully unlock the poten-
+tial of spin-based sensing in spintronics research. A recurring
+28
+
+
+=== PDF PAGE 30 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 17. Probing magnonics using magnetometry based on optically active spin defects. Nitrogen-vacancy centers in diamond (a) and
+boron vacancies (VB-) in hexagonal boron nitride (b) are point-like magnetic-field sensors that can be brought within nanometer proximity
+of a magnetic sample. The sensitivity to microwave magnetic stray fields enables probing a sample’s spin-wave physics. The schematics
+show the atomic structure of the lattice defects. (c) Level structure of the sensor spins, highlighting the optical response to
+microwave-induced spin transitions. (d) An optically detected electron spin resonance (ESR) spectrum of a single NV center (PL: NV
+photoluminescence). The ESR contrast is proportional to the amplitude of the microwave magnetic drive field, enabling imaging spin waves
+via their magnetic stray fields. The detection frequency is tunable by the application of an external magnetic field B.
+challenge concerns establishing nanoscale proximity between
+sensor spin and sample, required for high-resolution detection
+of weak spin-wave signals. While advanced scanning micro-
+scopy with single NV centers in patterned diamond canti-
+levers reliably provides such proximity, it remains challenging
+especially at cryogenic temperatures or other extreme experi-
+mental conditions. In comparison with spin defects embedded
+in three-dimensional solid-state-media, emergent ones hosted
+by layered vdW crystals, such as VB- centers in nanometer-
+thick h-BN, provide new opportunities. In particular, the read-
+ily established atomic-scale proximity between the sensor-
+spin host material and other materials could benefit magnetic
+studies of vdW heterostructures. For instance, understand-
+ing spin decoherence in vdW materials is an open field of
+research.
+Developing high-field, high frequency setups could expand
+the application range of spin-based sensing to a wider set
+of magnetic materials. A technical challenge is that most
+existing NVor other spin-defect-based-metrology platforms
+do not support few-tesla functionality and the associated
+tens-of-gigahertz-capable microwave electronics. Meeting
+this challenge requires developing high-frequency circuitry,
+as well as compatible spin-control and readout protocols for
+high-field magnetometry.
+Finally, SWs may be used to transmit quantum correl-
+ations between two or multiple ‘distant’ NV centers, with
+the potential for mesoscopic-scale spin–spin entanglement
+(figure 18(a)). However, an outstanding challenge for exper-
+imentally realizing this ambitious proposal is the develop-
+ment of a suitable, millikelvin NV measurement platform that
+minimizes thermally induced quantum decoherence or other
+perturbations.
+Concluding remarks
+Probing magnonic systems using magnetometry based on
+optically active sensor spins is providing an increasing range
+29
+
+
+=== PDF PAGE 31 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 18. Imaging coherent spin waves using NV sensor spins and envisioned spin–spin entanglement via a spin-wave transducer. (a) A
+scanning NV-probe enables near-field imaging of a nanoscale coherent spin wave. (b) Because the imaging is magnetic, spin-based
+spin-wave sensing enables probing spin waves underneath metals, as depicted here for a 30-um-wide, 140 nm-thick superconducting MoRe
+stripline using and ensemble of NV centers [110]. Image credit: Michael Borst. (c) Sketch of spin-wave mediated coupling between two
+sensor spins. Nanoscale positional control of the two spins, as well as a sub-Kelvin measurement platform to mitigate decoherence by
+thermal magnons, are likely required.
+of new research opportunities. These opportunities will likely
+expand into the direction of vdW magnets, as the nano-
+scale proximity of the sensor spins readily enables the
+detection of monolayer magnetic stray fields. The unique,
+magnetic nature of the imaging offers opportunities for
+probing hybrid material systems and devices such as gated
+magnon-transport layers, superconductor-magnet hybrids, or
+systems where magnons interact with nanoscale spin tex-
+tures such as skyrmions or DWs. Studies of spin transport
+parameters, controlled via spin-injection or magnetic fields,
+would benefit from the local nature of the microwave-detection
+capabilities. Finally, combining sensor spins with magnonic
+systems carries the opportunity for assessing the feasibility
+of advanced spin–spin entanglement protocols mediated by
+magnons in confined structures.
+Acknowledgements
+C R D was supported by the Air Force Office of
+Scientific
+Research
+under
+Award
+No.
+FA9550-21-1-
+0125. T V D S acknowledges funding from the Dutch
+Science Council (NWO) through the ENW-XL Grant
+OCENW.XL21.XL21.058. A F acknowledges funding from
+the European Union’s Horizon 2020 research and innovation
+program under Grant Agreement No. 964931 (TSAR).
+30
+
+
+=== PDF PAGE 32 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+11. Novel materials
+Yunqiu Kelly Luo, Yoichi Shiota and Joseph Sklenar
+Status
+Layered antiferromagnetic materials with modest interlayer
+exchange interactions have emerged as a playground for fun-
+damental investigations into magnon-magnon interactions.
+Since the experimental demonstration of two-dimensional
+magnetism in materials such as CrI3, Cr2Ge2Te6, 1T- MnSex
+and 1T-VSe2, tremendous progress has been made in expand-
+ing the list of vdW magnets that hosts intrinsic magnetic order-
+ings down to the monolayer limit. This new class of exfoli-
+atable magnetic materials [115–117], where layers of atoms
+are assembled through vdW interactions, provides opportun-
+ities for future memory, logic and communication devices.
+Their magnetic properties are highly tunable, for example, by
+applied electric fields (section 2), strain and external magnetic
+field and they can be straightforwardly integrated within com-
+plex heterostructures by mechanical assembly. SAF, consist-
+ing of two (or many) antiferromagnetically coupled ferromag-
+netic thin films, represent an alternative material system with
+qualitatively similar magnetic behavior and magnonic proper-
+ties to vdW magnets [118–120]. Because SAFs are multilayer
+structures that can be created through sputter-deposition pro-
+cesses, they can be designed with a variety of options in terms
+of materials, thickness and stacking order. Furthermore, SAFs
+are typically metallic and magnetically ordered at room tem-
+perature which makes them an attractive material platform for
+spintronic/magnonic device technologies.
+Because the strength of the interlayer exchange coup-
+ling between vdW or SAF layers is typically much weaker
+than the direct exchange or superexchange coupling in con-
+ventional three-dimensional crystal antiferromagnets, both
+optical and acoustic magnons can be excited in the giga-
+hertz range with conventional microwave electronics [115].
+In SAFs, recent experiments have demonstrated that interac-
+tions between these acoustic and optical magnon modes can be
+tuned by an application of a tilted magnetic field (figure 19(a))
+[118] or by dynamic dipolar interactions due to nonuniform
+spin precession (figure 19(b)) [120]. More recently, in layered
+hybrid perovskite antiferromagnets having qualitatively sim-
+ilar magnetic properties to CrCl3, the interlayer DMI was
+shown to generate a magnon-magnon interaction capable of
+hybridizing optical and acoustic magnons without the need
+for a symmetry-breaking external field [121]. In vdW mag-
+nets, the recent advance in the coupling of coherent magnons
+with sub-millielectronvolt energies to excitons in the electron-
+volt region, can enable direct coupling between microwave
+photons and near-infrared to visible photons [116]. Moreover,
+strong tunable interactions between excitons and hybridized
+magnons by an in-plane magnetic field (figure 19(c)) [115] and
+by strain [117] have recently been achieved ranging from fully
+uncoupled to a regime of strong magnon-magnon coupling.
+Current and future challenges
+Hybrid magnonic systems based on vdW heterostructures hold
+potential for IT due to their high tunability and versatile coup-
+lings to an array of information carriers. Compared to photons,
+magnons generally have higher damping and stronger inter-
+actions. The interactions enable magnon control, but at large
+excitation amplitudes they can also lead to strong nonlinear
+damping and instabilities, which have been the bottleneck
+for development of magnon waveguides and amplifiers. To
+address these challenges, topological magnon insulators with
+optimized sample geometries are needed to take advantages
+of the topological edge mode for long magnon propagation
+lengths. Alternatively, developing low damping materials with
+damping compensation by methods such as SOT is desired
+(section 4).
+Moreover, ‘agile’ methods to adjust magnon-magnon inter-
+actions within vdW magnets and SAFs are needed. The most
+common experimental technique for tuning the interaction
+between optical and acoustic magnons involves rotating the
+external magnetic field into an oblique orientation [115, 118].
+More agile strategies, such as electrically controlling magnon-
+magnon interactions, have been proposed. For instance, simu-
+lations have shown that the electrical modulation of magnetic
+damping in multilayers containing four or more magnetic lay-
+ers can open and close avoided energy level crossings in the
+energy spectrum (figure 20(a)) [122]. To date, this strategy has
+not yet been experimentally demonstrated.
+Fundamental to the device efforts are high quality mater-
+ials. In particular, low-damping materials at the atomically
+thin limit are essential for next-generation magnon intercon-
+nects. One promising approach is to develop high quality epi-
+taxial vdW magnetic heterostructure via molecular beam epi-
+taxy, such as 2D magnets directly grown in topological insu-
+lators to detect magnon via spin-charge interconversion [124].
+Another innovative method is to fabricate high-crystalline-
+quality oxide membranes via epitaxial growth and selective
+etching of a water-soluble sacrificial thin layer. This method
+allows freestanding single crystal membranes integrated with
+multifunctional device engineering for example using strain
+[125] to control and modulate magnons transportation.
+In addition, one of the promising features of antiferro-
+magnetic magnons is the ability to use magnon polarization.
+Because the microscopic magnetic moment in ferromagnetic
+materials can precess only in a counterclockwise direction
+with respect to the effective magnetic field, the ferromagnetic
+magnons always possess right-handed chirality. On the other
+hand, collinear antiferromagnets have magnon modes with
+both right-handed and left-handed chirality owing to the anti-
+parallel coupling between two sublattice, allowing a polariza-
+tion degree of freedom in magnonics. Although the nonlocal
+transport of magnon spin current in antiferromagnets has been
+observed, effective excitation, control and detection schemes
+of coherent antiferromagnetic magnons remains challenging
+due to their field-immunity and extremely high resonance fre-
+quency compared to ferromagnets.
+31
+
+
+=== PDF PAGE 33 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 19. (a) and (b) Microwave absorption for in-plane magnetized SAFs as functions of microwave frequency and applied magnetic field
+(a) for uniform precession (k = 0.0 µm−1) at different tilted field angle and (b) for nonuniform precession (k = 1.2 µm−1) at different
+in-plane field angle with respect to the spin wave propagating direction. The anticrossing gap between acoustic and optical modes appears
+due to the symmetry breaking by tilting the magnetization toward the out-of-plane direction or by dynamic dipolar interactions. Reprinted
+figure with permission from [118], Copyright (2020) by the American Physical Society. Reprinted figure with permission from [120],
+Copyright (2020) by the American Physical Society. (c) Evolution of an antiferromagnetic mode crossing as a function of orienting the
+in-plane applied magnetic field away from high symmetry axis (ϕ = 90◦) in vdW AFM CrSBr bulk. Reprinted with permission from [115],
+Copyright (2022) American Chemical Society.
+Advances in science and technology to meet
+challenges
+The use of damping-like and field-like SOTs (section 4) to
+drive magnetization dynamics in layered antiferromagnets
+may help to excite a wider range of modes and interactions
+in these materials. Recent work demonstrated the excitation
+of both optical and acoustic magnons in a SAF composed of
+two antiferromagnetically coupled layers that were adjacent to
+both a Ta underlayer and overlayer [119]. This work represen-
+ted the first time a spin-torque ferromagnetic resonance (ST-
+FMR) technique was used to excite magnetization dynamics
+in SAFs. Expanding this method to vdW magnets would be an
+important development since it would allow researchers to use
+an all-electrical experimental method to investigate magnon-
+magnon interactions on a layer-by-layer basis, e.g. bilayers,
+trilayers, tetralayers, etc. However, compared to SAFs, vdW
+magnets represent a larger challenge since these materials are
+both air-sensitive and often insulating. Nevertheless, there is
+potential as the ST-FMR method has been previously used to
+drive and detect the magnetization dynamics of ferromagnetic
+insulators that are adjacent to spin Hall metals. Therefore,
+the technique could potentially be applied to vdW magnets
+provided these materials are ‘encapsulated’ within conducting
+layers capable of providing the driving torques.
+VdW magnets uniquely possess strong crystalline aniso-
+tropy built into their atomic layer unit, which is critical for
+device scalability to ultra-high density. Their high tunability
+allows future development of magnon switches and modulat-
+ors controlled by electric field, strain and interface engineer.
+Undoubtedly, the investigation of vdW magnets for applica-
+tions remains in its infancy. Major challenges include, among
+others, magnetic stability at room temperature, wafer-scale
+device fabrication with high-yield, read-out mechanism with
+suitable impedance and long-term chemical stability. New
+materials discovery and new device concepts will provide the
+scientific foundation to address the fundamental length scale
+of device dimension and the speed of the device operation
+based on vdW magnets.
+The coherent spin pumping effect in heterostructures incor-
+porating bulk antiferromagnets and heavy-metals provides
+an electrical detection of the chirality of antiferromagnetic
+dynamical modes [126]. However, the broadband frequency
+measurements of such a scheme remain to be developed.
+Recently, the polarization-selective excitation of antiferro-
+magnetic resonance in perpendicularly magnetized SAFs
+32
+
+
+=== PDF PAGE 34 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 20. (a) A schematic of a tetralayer structure of CrCl3 is shown in the upper panel. The schematic illustrates how the damping of the
+surface layers A and D can be controlled relative to the interior layers B and C via the application of current induced damping-like torques
+from materials that encapsulate the tetralayer. The lower panels illustrate how an avoided energy level crossing, in the magnon energy level
+spectrum of the tetralayer, can be electrically closed provided that the damping of the surface layers is increased relative to the interior
+layers. Reprinted figure with permission from [122], Copyright (2021) by the American Physical Society. (b) Schematic illustration of the
+measurement setup and results for the polarization-selective excitation of magnetic resonance in perpendicularly magnetized synthetic
+antiferromagnets using a wideband crossed microstrip circuit. Reprinted figure with permission from [123], Copyright (2022) by the
+American Physical Society.
+using circularly-polarized microwave field has been demon-
+strated (figure 20(b)) [123]. However, direct observation
+of coherent antiferromagnetic magnon propagation, espe-
+cially in thin films, remains challenging. Since antiferromag-
+netic magnon polarization can possibly carry spin angular
+momentum with arbitrary polarization, which is not present
+in ferromagnetic magnon, vdW antiferromagnets and SAFs
+can be expected as one of the promising material platforms
+to advance antiferromagnetic magnonics.
+Concluding Remarks
+We have presented selected recent studies and our perspect-
+ives on layered antiferromagnets including vdW magnets and
+SAFs. The hybridization of distinct magnon modes enables
+researchers to create new magnon states by coherent coup-
+ling, which can potentially yield applications in devices,
+circuits
+and
+information
+processing.
+In
+addition,
+the
+antiferromagnetic magnons are appealing because they offer
+further degree of freedom of magnon polarization, provid-
+ing the spin angular momentum with arbitrary polariza-
+tion in the magnon spin current. Harnessing the full poten-
+tial of antiferromagnetic spin dynamics is still a signific-
+ant challenge. However, layered antiferromagnets exhibit
+spin dynamics like those of conventional three-dimensional
+crystal antiferromagnets with readily controllable mag-
+netization configurations. Therefore, the functionality and
+tunability of these material systems should be a strong
+advantage for further progress in the future magnonic
+devices.
+Acknowledgments
+Y S acknowledge the financial support by JSPS KAKENHI
+(Grant Nos. JP20K15161 and JP22H01946). K Y L acknow-
+ledge the Cornell Presidential Postdoctoral Fellowship. J S
+acknowledges support from the National Science Foundation
+under DMR-2328787.
+33
+
+
+=== PDF PAGE 35 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+12. Non-Hermitian physics in magnetic systems
+Tao Yu and Jinwei Rao
+Status
+Recent studies demonstrated that the dissipation, which is
+often regarded as detrimental in devices, can be exploited
+to achieve non-Hermitian topological phases or properties
+that are topologically robust to perturbations with unex-
+pected functionalities for potential applications. Magnonic
+devices are low-energy consumption instruments for repro-
+gramable logic, non-reciprocal communication and non-
+volatile memory functionalities, in which engineering of dis-
+sipation may lead to several non-Hermitian topological phases
+or properties of magnons, with spin functionalities possibly
+superior to their electronic, acoustic, optic and mechanic
+counterparts [127, 128], such as strongly enhanced magnonic
+frequency combs, magnon or spin-wave amplification, scatter-
+ing enhancement of magnons, (quantum) sensing with unpre-
+cedented sensitivity, magnon accumulation, perfect absorption
+of microwaves and magnon bound states in the continuum.
+Researchers have approached non-Hermitian magnonics
+from both theoretical and experimental perspectives. These
+progresses towards engineering dissipation have achieved
+many non-Hermitian topological phases or properties in mag-
+nonic systems, including exceptional points (EPs) [129–
+131], exceptional nodal phases [132], non-Hermitian Su–
+Schrieffer–Heeger (SSH) model [133] and non-Hermitian skin
+effect [134, 135] (refer to figure 21 for an overview). The EPs
+are singularities in the parameter space, where the eigenval-
+ues and eigenvectors of a non-Hermitian Hamiltonian mat-
+rix coalesce. Studies have developed two pathways to achieve
+such EPs with magnons. One is to manipulate either the
+photon-magnon coupling strength or the gain or loss of a sub-
+system in cavity magnonics (refer to 9 for hybrid quantum
+magnonics) [129, 130]. The other one is to design magnetic
+heterostructures with ferromagnetic and nonmagnetic metal
+layers [131]. Particularly, when the EPs are located in the
+reciprocal wave-vector space, they are referred to as the excep-
+tional nodal phase, which was predicted in magnetic junctions
+[132]. They are topologically protected, characterized by so-
+called ‘bulk Fermi arc’ (a branch cut of the complex energy),
+which disappears only when a pair of EPs annihilate by very
+strong perturbations. SSH model holds the topological edge
+state. Its generalization to the non-Hermitian magnetic sys-
+tem in terms of an array of spin-torque oscillators promises
+the topological magnonic lasing edge modes when excited by
+spin current injection [133]. Non-Hermitian skin effect prom-
+ises a macroscopic number of bulk eigenstates piling up at
+one boundary. It is predicted recently in an array of nano-
+magnets coupled dipolarly via magnetic substrate, in which
+the combination of non-reciprocity and dissipation drives all
+the modes to one edge [134]. Such non-Hermitian skin modes
+are predicted as well in a vdW ferromagnetic monolayer hon-
+eycomb lattice [135], driven by DMI and non-local mag-
+netic dissipation. Strong aggregation of magnon modes at one
+boundary significantly enhances the sensitivity in detection of
+small signals [134].
+Most predictions in the exceptional nodal phases [132],
+non-Hermitian SSH model [133] and non-Hermitian skin
+effect [134, 135] with unique functionalities beyond the
+Hermitian scenario still await the experimental confirmation
+in the future.
+Current and future challenges
+Theory: The present theoretical descriptions in magnonics
+strongly rely on a prerequisite that magnon is weakly coupled
+to other degree of freedoms, such that the coupling can be
+treated as perturbations. Approaches describing magnon sub-
+systems that are strongly coupled to environment are essential
+but present a challenge that needs to be addressed in future the-
+ory. Nonlinearities bring about additional challenges since the
+approximated non-Hermitian description is often set up in the
+linear regime. How to precisely account the non-Markovian
+memory effect in the evolution of a magnonic hybridized sys-
+tem provides another opportunity but also a challenge.
+Materials: to realize and exploit the predictions of novel
+hybridized magnon modes in non-Hermitian topological mag-
+nonics, magnetic materials with high-quality factors and pre-
+cisely controlled magnetic parameters are favorable. So far,
+the most commonly used ferromagnetic materials for these
+purposes are YIG, CoFeB and permalloy (FeNi), because
+of their excellent magnetic properties. The acoustic property
+of YIG is excellent as well and its nanostructures such as
+ultrathin films and nanowires become available only recently.
+But high-quality YIG appears to be only compatible with thick
+gadolinium-gallium-garnet substrate. VdW magnet is also the
+material choice for non-Hermitian topological phases [135],
+but the convincing magnon transport experiment remains
+wanting. Nevertheless, it appears to be difficult to globally or
+locally control the interaction and dissipation when stacking
+the magnetic films to heterostructures such as with other non-
+magnetic layers [131], e.g. copper, platinum and magnesium
+oxide, or with the magnetic nanowire array [134].
+Fabrication of devices: Loading YIG spheres of milli-
+meter size into the cavity appears on the one hand to be the
+most convenient way to implement the EPs, but it encoun-
+ters the difficulty to be fabricated in nanostructures on a chip.
+The proposal for the other non-Hermitian topological phases
+is still lacking in this approach. On the other hand, to fab-
+ricate nanoscale magnetic heterostructures to realize various
+non-Hermitian topological phases, one of the challenges is
+to precisely control the configurations of different layers or
+nanowires and to guarantee the interfacial quality between
+them. Both factors demand a very high-quality film growth
+technique. Moreover, the scalability of magnonic devices to
+larger sizes and higher frequencies is also a technical chal-
+lenge that needs to be overcome.
+Gain of magnons: the realization of gain for magnons is
+an important design parameter, but raises challenges since
+it implies ‘negative Gilbert damping’, which is, however,
+desired for EPs and other non-Hermitian topological phases in
+34
+
+
+=== PDF PAGE 36 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+Figure 21. An overview of the present status of non-Hermitian topological magnonics. Reprinted figure with permission from [130],
+Copyright (2019) by the American Physical Society.
+several cases. On the one hand, spin-polarized electrical cur-
+rents can induce spin transfer torque to magnetization, lead-
+ing to amplification of magnonic signals (section 4). On the
+other hand, with a feedback loop the output signal can be
+fed back into the input, which results in the amplification of
+SWs. However, several technical challenges follow as well. It
+is still difficult to completely overcome the damping rate of
+convenient metallic and insulating magnetic materials; both
+the excitation/detection and amplification of magnons require
+suitable electrical circuits; the nonlinear effects pose a chal-
+lenge in achieving gain in magnonic devices, because, in some
+cases, the amplification of magnons leads to the generation
+of higher harmonics or sidebands, which interferes with the
+desired signals. While research in this direction encounters
+many obstacles, even small breakthroughs can have signific-
+ant benefits in device applications.
+Advances in science and technology to meet
+challenges
+In order to progress in non-Hermitian topological magnonics,
+more experimental efforts are sorely needed. While signific-
+ant advances in material growth, micro-nano fabrication tech-
+niques and magnon gain may be challenging in the short term,
+there exist alternative methods that can help to overcome cur-
+rent technical challenges as well.
+One feasible way is to develop techniques that can inde-
+pendently manipulate the properties of ferromagnetic nano-
+structures, for example by using bias voltage (section 2),
+field gradient, thermal gradient, laser or microwave pump
+(sections 4 and 8). These external drives can excite spin
+currents or magnon flows, which can transfer energy and
+torques among different magnetic layers or spatial positions.
+By controlling the flow of these spin currents and magnons, it
+may be possible to effectively engineer the dynamics in non-
+Hermitian magnonic systems.
+The opportunity indeed arises in the nonlinear regime
+(section 5). A recent effort achieves a pump-induced magnon
+mode in a magnet when loaded in a microwave waveguide
+and driven by a strong microwave pump [136]. This magnon
+mode displays a high level of tunability when driven to the
+nonlinear regime and holds the potential to overcome cur-
+rent technological challenges [136]. Via tuning this mode,
+the giant enhancement of magnonic frequency combs at EPs
+is subsequently observed. In addition, hybrid systems based
+on cavity magnonics may offer another feasible solution.
+Magnon modes in different magnetic materials can indirectly
+couple with each other on the long range via the mediation
+of a microwave cavity [127]. In a cavity magnonic system,
+35
+
+
+=== PDF PAGE 37 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+interfacial quality that is vital for magnetic heterostructures
+becomes less important (9). Gains that may need delicate
+design in spintronic devices can easily be realized in a cavity
+magnonic system by embedding an amplifier or gain material
+in the microwave cavity. However, an awkward reality in this
+approach is that nearly all current researches on non-Hermitian
+cavity magnonics are implemented from the cavity side. The
+magnon mode is merely adopted as a tunable high-Q res-
+onance, because the direct operation techniques on magnon
+mode, especially precise controlling its dissipation and realiz-
+ation of its gain, are lacking. Given this, a significant opportun-
+ity is to develop tuning or readout techniques that can access
+the photon-magnon coupling process from the magnon side.
+Concluding remarks
+Non-Hermitian topological magnonics is an emerging field
+that seeks to realize functionalities beyond those achiev-
+able in the Hermitian scenario. In this sub-field, dissipa-
+tions, which are typically considered detrimental, can be har-
+nessed as important resources for engineering system dynam-
+ics. Recent researches have unveiled a range of novel phe-
+nomena, including EPs, exceptional nodal phases, chirality as
+generalized spin–orbit interaction, non-Hermitian SSH model
+with magnons and non-Hermitian skin effect with potential
+device applications holding new functionalities. However, due
+to various experimental obstacles, most research and prom-
+ising phenomena are still at the theoretical proposal stage.
+There are thereby high opportunities in the future experi-
+ments and device applications after an improvement in mater-
+ial growth and micro-nano fabrication techniques.
+Acknowledgements
+T Y and J W R acknowledge the financial support by
+National
+Natural
+Science
+Foundation
+of
+China
+under
+Grant Nos. 12374109 and 12204306, the Shanghai Pujiang
+Program (No. 22PJ1410700), as well as the startup Grant of
+Huazhong University of Science and Technology (Grant Nos.
+3004012185 and 3004012198).
+Data availability statement
+No new data were created or analysed in this study.
+ORCID iDs
+Benedetta Flebus https://orcid.org/0000-0002-2436-8569
+Dirk Grundler https://orcid.org/0000-0002-4966-9712
+Bivas Rana https://orcid.org/0000-0002-1076-4165
+YoshiChika Otani https://orcid.org/0000-0001-8008-1493
+Igor Barsukov https://orcid.org/0000-0003-4835-5620
+Anjan Barman https://orcid.org/0000-0002-4106-5658
+Gianluca Gubbiotti https://orcid.org/0000-0002-7006-
+0370
+Pedro Landeros https://orcid.org/0000-0002-0927-1419
+Johan Akerman https://orcid.org/0000-0002-3513-6608
+Philipp Pirro https://orcid.org/0000-0002-0163-8634
+Qi Wang https://orcid.org/0000-0002-5049-629X
+Florin Ciubotaru https://orcid.org/0000-0002-7088-2075
+Ping Che https://orcid.org/0000-0003-3317-8705
+Riccardo Hertel https://orcid.org/0000-0002-0646-838X
+Teruo Ono https://orcid.org/0000-0002-9629-0633
+Burkard Hillebrands https://orcid.org/0000-0001-8910-
+0355
+Silvia Viola Kusminskiy https://orcid.org/0000-0002-
+6373-7478
+Chunhui Rita Du https://orcid.org/0000-0001-8063-7711
+Aurore Finco https://orcid.org/0000-0002-0197-7476
+Toeno van der Sar https://orcid.org/0000-0002-6197-4808
+Yunqiu Kelly Luo https://orcid.org/0000-0002-2196-0532
+Yoichi Shiota https://orcid.org/0000-0003-1199-8438
+Joseph Sklenar https://orcid.org/0000-0003-1456-2023
+References
+[1] Chumak A V et al 2022 Advances in magnetics roadmap on
+spin-wave computing IEEE Trans. Magn. 58 1–72
+[2] Petti D, Tacchi S and Albisetti E 2022 Review on magnonics
+with engineered spin textures J. Appl. Phys. 55 293003
+[3] Yu H, Xiao J and Schultheiss H 2021 Magnetic texture based
+magnonics Phys. Rep. 905 1–59
+[4] Barman A et al 2021 The 2021 magnonics roadmap J. Phys.:
+Condens. Matter 33 413001
+[5] Maendl S, Stasinopoulos I and Grundler D 2017 Spin waves
+with large decay length and few 100 nm wavelengths in
+thin yttrium iron garnet grown at the wafer scale Appl.
+Phys. Lett. 111 012403
+[6] Cornelissen L J, Liu J, Duine R A, Ben Youssef J and van
+Wees B J 2015 Long-distance transport of magnon spin
+information in a magnetic insulator at room temperature
+Nat. Phys. 11 1022
+[7] Yuan H Y et al 2022 Quantum magnonics: when magnon
+spintronics meets quantum information science Phys. Rep.
+965 1–74
+[8] Zhang X 2023 A review of common materials for hybrid
+quantum magnonics Mater. Today Electr. 5 100044
+[9] Awschalom D D et al 2021 Quantum engineering with
+hybrid magnonic systems and materials IEEE Trans.
+Quantum Eng. 2 5500836
+[10] Casola F, Van Der Sar T and Yacoby A 2018 Probing
+condensed matter physics with magnetometry based on
+nitrogen-vacancy centres in diamond Nat. Rev. Mater.
+3 17088
+[11] Burch K S, Mandrus D and Park J-G 2018 Magnetism in
+two-dimensional van der Waals materials Nature
+563 47–52
+[12] Duine R A, Lee K-J, Parkin S S P and Stiles M D 2018
+Synthetic antiferromagnetic spintronics Nat. Phys.
+14 217–9
+Hurst H M and Flebus B 2022 Non-hermitian physics in
+magnetic systems J. Appl. Phys. 132 220902
+[13] Wang X S and Wang X R 2021 Topological magnonics J.
+Appl. Phys. 129 151101
+[14] Rana B, Fukuma Y, Miura K, Takahashi H and Otani Y 2017
+Excitation of coherent propagating spin waves in ultrathin
+CoFeB film by voltage-controlled magnetic anisotropy
+Appl. Phys. Lett. 111 052404
+[15] Chen Y-J, Lee H K, Verba R, Katine J A, Barsukov I,
+Tiberkevich V, Xiao J Q, Slavin A N and Krivorotov I N
+36
+
+
+=== PDF PAGE 38 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+2017 Parametric resonance of magnetization excited by
+electric field Nano Lett. 17 572–7
+[16] Tomasello R, Verba R, Lopez-Dominguez V, Garesci F,
+Carpentieri M, Di Ventra M, Khalili Amiri P and
+Finocchio G 2022 Antiferromagnetic parametric
+resonance driven by voltage-controlled magnetic
+anisotropy Phys. Rev. Appl. 17 034004
+[17] Deka A, Rana B, Anami R, Miura K, Takahashi H, Otani Y
+and Fukuma Y 2022 Electric field induced parametric
+excitation of exchange magnons in a CoFeB/MgO
+junction Phys. Rev. Res. 4 023139
+[18] Rana B, Choudhury S, Miura K, Takahashi H, Barman A and
+Otani Y 2019 Electric field control of spin waves in
+ultrathin CoFeB films Phys. Rev. B 100 224412
+[19] Choudhury S, Chaurasiya A K, Mondal A K, Rana B,
+Miura K, Takahashi H, Otani Y and Barman A 2020
+Voltage controlled on-demand magnonic nanochannels
+Sci. Adv. 6 eaba5457
+[20] Rana B, Akosa C A, Miura K, Takahashi H, Tatara G and
+Otani Y 2020 Nonlinear control of damping constant by
+electric field in ultrathin ferromagnetic films Phys. Rev.
+Appl. 14 014037
+[21] Rovillain P, de Sousa R, Gallais Y, Sacuto A, Méasson M A,
+Colson D, Forget A, Bibes M, Barthélémy A and
+Cazayous M 2010 Electric-field control of spin waves at
+room temperature in multiferroic BiFeO3 Nat. Mater.
+9 975–9
+[22] Sadovnikov A V, Grachev A A, Sheshukova S E,
+Sharaevskii Y P, Serdobintsev A A, Mitin D M and
+Nikitov S A 2018 Magnon straintronics: reconfigurable
+spin-wave routing in strain-controlled bilateral magnetic
+stripes Phys. Rev. Lett. 120 257203
+[23] Zhang X, Liu T, Flatté M E and Tang H X 2014 Electric-field
+coupling to spin waves in a centrosymmetric ferrite Phys.
+Rev. Lett. 113 037202
+[24] Manipatruni S, Nikonov D E, Lin C-C, Prasad B, Huang Y-L,
+Damodaran A R, Chen Z, Ramesh R and Young I A 2018
+Voltage control of unidirectional anisotropy in
+ferromagnet-multiferroic system Sci. Adv. 4 eaat4229
+[25] Cherepov S et al 2014 Electric-field-induced spin wave
+generation using multiferroic magnetoelectric cells Appl.
+Phys. Lett. 104 082403
+[26] Hortensius J R, Afanasiev D, Matthiesen M, Leenders R,
+Citro R, Kimel A V, Mikhaylovskiy R V, Ivanov B A and
+Caviglia A D 2021 Coherent spin-wave transport in an
+antiferromagnet Nat. Phys. 17 1001–6
+[27] Etesamirad A, Kharlan J, Rodriguez R, Barsukov I and
+Verba R 2023 Controlling selection rules for magnon
+scattering in nanomagnets by spatial symmetry breaking
+Phys. Rev. Appl. 19 044087
+[28] Etesamirad A, Rodriguez R, Bocanegra J, Verba R, Katine J,
+Krivorotov I N, Tyberkevych V, Ivanov B and Barsukov I
+2021 Controlling magnon interaction by a nanoscale
+switch ACS Appl. Mater. Interfaces 13 20288–95
+[29] Palmer W, Kirkwood D, Gross S, Steer M, Newman H S and
+Johnson S 2019 A bright future for integrated magnetics:
+magnetic components used in microwave and mm-wave
+systems, useful materials, and unique functionalities IEEE
+Microw. Mag. 20 36–50
+[30] Yu T, Luo Z and Bauer G E W 2023 Chirality as generalized
+spin–orbit interaction in spintronics Phys. Rep.
+1009 1–115
+[31] Kuepferling M, Casiraghi A, Soares G, Durin G,
+Garcia-Sanchez F, Chen L, Back C, Marrows C, Tacchi S
+and Carlotti G 2023 Measuring interfacial
+Dzyaloshinskii-Moriya interaction in ultrathin magnetic
+films Rev. Mod. Phys. 95 015003
+[32] Gallardo R A et al 2019 Reconfigurable spin-wave
+non-reciprocity induced by dipolar interaction in a
+coupled ferromagnetic bilayer Phys. Rev. Appl.
+12 034012
+[33] Gallardo R A, Alvarado-Seguel P and Landeros P 2022
+Unidirectional chiral magnonics in cylindrical synthetic
+antiferromagnets Phys. Rev. Appl. 18 054044
+[34] Gallardo R A, Alvarado-Seguel P, Schneider T,
+Gonzalez-Fuentes C, Roldán-Molina A, Lenz K, Lindner J
+and Landeros P 2019 Spin-wave nonreciprocity in
+magnetization-graded ferromagnetic films New J. Phys.
+21 033026
+[35] Gallardo R A, Alvarado-Seguel P and Landeros P 2022 High
+spin-wave asymmetry and emergence of radial standing
+modes in thick ferromagnetic nanotubes Phys. Rev. B
+105 104435
+[36] Matsumoto T and Hayami S 2020 Nonreciprocal magnons
+due to symmetric anisotropic exchange interaction in
+honeycomb antiferromagnets Phys. Rev. B 101 224419
+[37] Szulc K, Kharlan J, Bondarenko P, Tartakovskaya E V and
+Krawczyk M 2024 Impact of surface anisotropy on the
+spin-wave dynamics in thin ferromagnetic film Phys. Rev.
+B 109 054430
+[38] Wang Q, Chumak A V and Pirro P 2021 Inverse-design
+magnonic devices Nat. Commun. 12 2636
+[39] Chen J, Yu H and Gubbiotti G 2022 Unidirectional spin-wave
+propagation and devices J. Appl. Phys. 55 123001
+[40] Szulc K, Graczyk P, Mruczkiewicz M, Gubbiotti G and
+Krawczyk M 2020 Spin-wave diode and circulator based
+on unidirectional coupling Phys. Rev. Appl. 14 034063
+[41] Yuan H Y, Lavrijsen R and Duine R A 2023 Unidirectional
+magnetic coupling induced by chiral interaction and
+nonlocal damping Phys. Rev. B 107
+[42] Tacchi S et al 2023 Experimental observation of flat bands in
+one-dimensional chiral magnonic crystals Nano Lett.
+23 6776
+[43] Golovchanskiy I A, Abramov N N, Stolyarov V S,
+Dzhumaev P S, Emelyanova O V, Golubov A A,
+Ryazanov V V and Ustinov A V 2019
+Ferromagnet/superconductor hybrid magnonic
+metamaterials Adv. Sci. 6 1900435
+[44] Cheon S, Lee H-W and Cheong S-W 2018 Nonreciprocal
+spin waves in a chiral antiferromagnet without the
+Dzyaloshinskii-Moriya interaction Phys. Rev. B
+98 184405
+[45] Popov P A, Sharaevskaya A Y, Beginin E N, Sadovnikov A V,
+Stognij A I, Kalyabin D V and Nikitov S A 2017 Spin
+wave propagation in three-dimensional magnonic crystals
+and coupled structures J. Magn. Magn. Mater.
+476 423
+[46] Brächer T, Pirro P and Hillebrands B 2017 Parallel pumping
+for magnon spintronics: amplification and manipulation of
+magnon spin currents on the micron-scale Phys. Rep.
+699 1–34
+[47] Serga A A, Chumak A V and Hillebrands B 2010 YIG
+magnonics J. Phys. D: Appl. Phys. 43 264002
+[48] Jäckl M et al 2017 Magnon accumulation by clocked laser
+excitation as source of long-range spin waves in
+transparent magnetic films Phys. Rev. X 7 021009
+[49] Muralidhar S, Awad A A, Alemán A, Khymyn R,
+Dvornik M, Hanstorp D and Åkerman J 2020 Sustained
+coherent spin wave emission using frequency combs Phys.
+Rev. B 101 224423
+[50] Merbouche H, Divinskiy B, Gouéré D, Lebrun R, Kanj A E,
+Cros V, Bortolotti P, Anane A, Demokritov S O and
+Demidov V E 2024 True amplification of spin waves in
+magnonic nano-waveguides Nat. Commun. 15 1560
+[51] Chen T, Dumas R K, Eklund A, Muduli P K, Houshang A,
+Awad A A, Durrenfeld P, Malm B G, Rusu A and
+Akerman J 2016 Spin-torque and spin-Hall
+nano-oscillators Proc. IEEE 104 1919
+37
+
+
+=== PDF PAGE 39 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+[52] Wang Q et al 2020 A magnonic directional coupler for
+integrated magnonic half-adders Nat. Electron. 3 765
+[53] Bhoi B and Kim S-K 2020 Chapter two roadmap for
+photon-magnon coupling and its applications Solid State
+Phys. 71 39
+[54] Wang X R, Gong X and Jing K Y 2023 Spin wave
+amplification through superradiance (arXiv:2308.
+00962v1)
+[55] Harms J S, Yuan H Y and Duine R A 2022 Enhanced
+magnon spin current using the bosonic klein paradox
+Phys. Rev. Appl. 18 064026
+[56] ˇSmejkal L, Sinova J and Jungwirth T 2022 Emerging research
+landscape of altermagnetism Phys. Rev. X 12 040501
+[57] Breitbach D et al 2023 Stimulated amplification of
+propagating spin waves Phys. Rev. Lett. 131 156701
+[58] Wang Q et al 2023 Deeply nonlinear excitation of
+self-normalized short spin waves Sci. Adv. 9 eadg4609
+[59] Zahedinejad M, Awad A A, Muralidhar S, Khymyn R,
+Fulara H, Mazraati H, Dvornik M and Åkerman J 2020
+Two-dimensional mutually synchronized spin Hall
+nano-oscillator arrays for neuromorphic computing Nat.
+Nanotechnol. 15 47–52
+[60] Papp ´A, Porod W and Csaba G 2021 Nanoscale neural
+network using non-linear spin-wave interference Nat.
+Commun. 12 6244
+[61] Papp A, Csaba G and Porod W 2021 Characterization of
+nonlinear spin-wave interference by reservoir-computing
+metrics Appl. Phys. Lett. 119 112403
+[62] Körber L, Heins C, Hula T, Kim J-V, Thlang S,
+Schultheiss H, Fassbender J and Schultheiss K 2023
+Pattern recognition in reciprocal space with a
+magnon-scattering reservoir Nat. Commun.
+14 3954
+[63] Gartside J C, Stenning K D, Vanstone A, Holder H H,
+Arroo D M, Dion T, Caravelli F, Kurebayashi H and
+Branford W R 2022 Nat. Nanotechnol. 17 460–9
+[64] Merbouche H et al 2022 Giant nonlinear self-phase
+modulation of large-amplitude spin waves in microscopic
+YIG waveguides Sci. Rep. 12 7246
+[65] Hula T et al 2022 Spin-wave frequency combs Appl. Phys.
+Lett. 121 112404
+[66] Gruszecki P, Guslienko K Y, Lyubchanskii I L and
+Krawczyk M 2022 Inelastic spin-wave beam scattering by
+edge-localized spin waves in a ferromagnetic thin film
+Phys. Rev. Appl. 17 044038
+[67] Lake S R, Divinskiy B, Schmidt G, Demokritov S O and
+Demidov V E 2022 Interplay between nonlinear spectral
+shift and nonlinear damping of spin waves in ultrathin
+yttrium iron garnet waveguides Phys. Rev. Appl.
+17 034010
+[68] Divinskiy B, Urazhdin S, Demokritov S O and Demidov V E
+2019 Controlled nonlinear magnetic damping in spin-Hall
+nano-devices Nat. Commun. 10 5211
+[69] Nikonov D E and Young I A 2015 Benchmarking of
+beyond-CMOS exploratory devices for logic integrated
+circuits IEEE J. Explor. Comput. Devices Circuits 1 3–11
+[70] Tsymbal E Y and ˇZuti´c I (eds) 2019 Spintronics Handbook,
+Second Edition: Spin Transport and Magnetism: Volume
+Three: Nanoscale Spintronics and Applications 2nd edn
+(CRC Press)
+[71] Schneider T, Serga A A, Leven B, Hillebrands B, Stamps R L
+and Kostylev M P 2008 Realization of spin-wave logic
+gates Appl. Phys. Lett. 92 022505
+[72] Talmelli G et al 2020 Reconfigurable submicrometer
+spin-wave majority gate with electrical transducers Sci.
+Adv. 6 eabb4042
+[73] Balinskiy M and Khitun A 2022 Period finding and prime
+factorization using classical wave superposition J. Appl.
+Phys. 131 153901
+[74] Balynsky M, Chiang H, Gutierrez D, Kozhevnikov A,
+Filimonov Y and Khitun A 2021 Quantum computing
+without quantum computers: database search and data
+processing using classical wave superposition J. Appl.
+Phys. 130 164903
+[75] Litvinenko A, Khymyn R, González V H, Ovcharov R,
+Awad A A, Tyberkevych V, Slavin A and Åkerman J 2023
+A spinwave Ising machine Commun. Phys. 6 227
+[76] Fernández-Pacheco A, Streubel R, Fruchart O, Hertel R,
+Fischer P and Cowburn R P 2017 Three-dimensional
+nanomagnetism Nat. Commun. 8 15756
+[77] Yan M, Andreas C, Kákay A, García-Sánchez F and Hertel R
+2011 Fast domain wall dynamics in magnetic nanotubes:
+Suppression of Walker breakdown and Cherenkov-like
+spin wave emission Applied Physics Letters 99 122505
+[78] Sahoo S, May A, van Den Berg A, Mondal A K, Ladak S and
+Barman A 2021 Observation of coherent spin waves in a
+three-dimensional artificial spin ice structure Nano Lett.
+21 4629–35
+[79] Cheenikundil R, Bauer J, Goharyan M, d’Aquino M and
+Hertel R 2022 High-frequency modes in a magnetic
+buckyball nanoarchitecture APL Mater. 10 081106
+[80] Cheenikundil R, d’Aquino M and Hertel R 2023
+Defect-sensitive high-frequency modes in a
+three-dimensional artificial magnetic crystal (arXiv:2312.
+08415)
+[81] Seki S, Garst M, Waizner J, Takagi R, Khanh N D,
+Okamura Y, Kondou K, Kagawa F, Otani Y and Tokura Y
+2020 Propagation dynamics of spin excitations along
+skyrmion strings Nat. Commun. 11 256
+[82] Raftrey D and Fischer P 2021 Field-driven dynamics of
+magnetic hopfions Phys. Rev. Lett. 127 257201
+[83] Hertel R 2023 tetmag (https://github.com/R-Hertel/tetmag)
+[84] Hung Y M, Li T, Hisatomi R, Shiota Y, Moriyama T and
+Ono T 2021 Low current driven vertical domain wall
+motion memory with an artificial ferromagnet J. Magn.
+Soc. Japan 45 6–11
+[85] Baumgaertl K and Grundler D 2023 Reversal of
+nanomagnets by propagating magnons in ferrimagnetic
+yttrium iron garnet enabling nonvolatile magnon memory
+Nat. Commun. 14 1490
+[86] Fan Y, Gross M J, Fakhrul T, Finley J, Hou J T, Ngo S, Liu L
+and Ross C A 2023 Coherent magnon-induced
+domain-wall motion in a magnetic insulator channel Nat.
+Nanotechnol. 18 1000–4
+[87] Donnelly C et al 2020 Time-resolved imaging of
+three-dimensional nanoscale magnetization dynamics Nat.
+Nanotechnol. 15 356–60
+[88] Neˇmec P, Fiebig M, Kampfrath T and Kimel A V 2018
+Antiferromagnetic opto-spintronics Nat. Phys.
+14 229–41
+[89] Bossini D, Dal Conte S, Hashimoto Y, Secchi A, Pisarev R V,
+Rasing T, Cerullo G and Kimel A V 2016 Macrospin
+dynamics in antiferromagnets triggered by sub-20
+femtosecond injection of nanomagnons Nat. Commun.
+7 10645
+[90] Fabiani G, Bouman M and Mentink J 2021 Supermagnonic
+propagation in two-dimensional antiferromagnets Phys.
+Rev. Lett. 127 097202
+[91] Rouxel J R et al 2021 Hard x-ray transient grating
+spectroscopy on bismuth germanate Nat. Photon.
+15 499–503
+[92] Baumgaertl K, Gräfe J, Che P, Mucchietto A, Förster J,
+Träger N, Bechtel M, Weigand M, Schütz G and
+Grundler D 2020 Nanoimaging of ultrashort magnon
+emission by ferromagnetic grating couplers at GHz
+frequencies Nano Lett. 20 7281–6
+[93] Keatley P S, Loughran T H J, Hendry E, Barnes W L,
+Hicken R J, Childress J R and Katine J A 2017 A platform
+38
+
+
+=== PDF PAGE 40 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+for time-resolved scanning Kerr microscopy in the
+near-field Rev. Sci. Instrum. 88 123708
+[94] Cocker T, Jelic V, Hillenbrand R and Hegmann F 2021
+Nanoscale terahertz scanning probe microscopy Nat.
+Photon. 15 558–69
+[95] Dean M P et al 2016 Ultrafast energy-and
+momentum-resolved dynamics of magnetic correlations in
+the photo-doped Mott insulator Sr2IrO4 Nat. Mater.
+15 601–5
+[96] Li X, Kim D, Liu Y and Kono J 2023 Terahertz spin
+dynamics in rare-earth orthoferrites Photonics Insights
+1 R05
+[97] Lachance-Quirion D, Tabuchi Y, Gloppe A, Usami K and
+Nakamura Y 2019 Hybrid quantum systems based on
+magnonics Appl. Phys. Express 12 070101
+Li Y, Zhang W, Tyberkevych V, Kwok W-K, Hoffmann A
+and Novosad V 2020 Hybrid magnonics: Physics, circuits,
+and applications for coherent information processing J.
+Appl. Phys. 128 130902
+Pirro P, Vasyuchka V I, Serga A A and Hillebrands B 2021
+Advances in coherent magnonics Nat. Rev. Mater. 6 1114
+Yuan H Y, Cao Y, Kamra A, Duine R A and Yan P 2022
+Quantum magnonics: when magnon spintronics meets
+quantum information science Phys. Rep. 965 1
+Rameshti B Z, Viola Kusminskiy S, Haigh J A, Usami K,
+Lachance-Quirion D, Nakamura Y, Hu C-M, Tang H X,
+Bauer G E W and Blanter Y M 2022 Cavity magnonics
+Phys. Rep. 979 1
+Zhang X 2023 A review of common materials for hybrid
+quantum magnonics Mater. Today Electron. 5 100044
+[98] Tabuchi Y, Ishino S, Noguchi A, Ishikawa T, Yamazaki R,
+Usami K and Nakamura Y 2015 Coherent coupling
+between a ferromagnetic magnon and a superconducting
+qubit Science 349 405
+Lachance-Quirion D, Wolski S P, Tabuchi Y, Kono S,
+Usami K and Nakamura Y 2020 Entanglement-based
+single-shot detection of a single magnon with a
+superconducting qubit Science 367 425
+[99] Potts C A, Varga E, Bittencourt V A S V, Viola Kusminskiy S
+and Davis J P 2021 Dynamical backaction
+magnomechanics Phys. Rev. X 11 031053
+[100] Wang Q, Brächer T, Fleischhauer M, Hillebrands B and
+Pirro P 2021 Stimulated-Raman-adiabatic-passage
+mechanism in a magnonic environment Appl. Phys. Lett.
+118 182404
+[101] Mohseni M, Vasyuchka V I, L’vov V S, Serga A A and
+Hillebrands B 2022 Classical analog of qubit logic based
+on a magnon Bose–Einstein condensate Commun. Phys.
+5 196
+[102] Kreil A J E, Musiienko-Shmarova H Y, Frey P, Pomyalov A,
+L’vov V S, Melkov G A, Serga A A and Hillebrands B
+2021 Experimental observation of Josephson oscillations
+in a room-temperature Bose-Einstein magnon condensate
+Phys. Rev. B 104 144414
+Bozhko D A, Kreil A J E, Musiienko-Shmarova H Y, Serga
+A A, Pomyalov A, L’vov V S and Hillebrands B 2019
+Bogoliubov waves and distant transport of magnon
+condensate at room temperature Nat. Commun. 10 2460
+[103] Graf J, Sharma S, Huebl H and Viola Kusminskiy S 2021
+Design of an optomagnonic crystal: towards optimal
+magnon-photon mode matching at the microscale Phys.
+Rev. Res. 3 013277
+Engelhardt F, Bittencourt V A, Huebl H, Klein O and
+Kusminskiy S V 2022 Optimal broadband frequency
+conversion via a magnetomechanical transducer Phys. Rev.
+Appl. 18 044059
+[104] Inman J et al 2022 Hybrid magnonics for short-wavelength
+spin waves facilitated by a magnetic heterostructure Phys.
+Rev. Appl. 17 044034
+Sklenar J and Zhang W 2021 Self-hybridization and tunable
+magnon-magnon coupling in van der Waals synthetic
+magnets Phys. Rev. Appl. 15 044008
+Li Y et al 2020 Coherent spin pumping in a strongly coupled
+magnon-magnon hybrid system Phys. Rev.
+Lett. 124 117202
+[105] Sharma S, Bittencourt V A S V, Karenowska A D and Viola
+Kusminskiy S 2021 Spin cat states in ferromagnetic
+insulators Phys. Rev. B 103 L100403
+Xu D, Gu X K, Li H K, Weng Y C, Wang Y P, Li J, Wang H,
+Zhu S Y, You J Q 2023 Quantum control of a single
+magnon in a macroscopic spin system Phys. Rev.
+Lett. 130 193603
+[106] Rondin L, Tetienne J-P, Hingant T, Roch J-F, Maletinsky P
+and Jacques V 2014 Magnetometry with nitrogen-vacancy
+defects in diamond Rep. Prog. Phys. 77 056503
+[107] Gottscholl A et al 2020 Initialization and read-out of intrinsic
+spin defects in a van der Waals crystal at room
+temperature Nat. Mater. 19 540–5
+[108] Du C et al 2017 Control and local measurement of the spin
+chemical potential in a magnetic insulator Science
+357 195–8
+[109] Finco A et al 2021 Imaging non-collinear antiferromagnetic
+textures via single spin relaxometry Nat. Commun.
+12 767
+[110] Borst M, Vree P H, Lowther A, Teepe A, Kurdi S, Bertelli I,
+Simon B G, Blanter Y M and van der Sar T 2023
+Observation and control of hybrid
+spin-wave-Meissner-current transport modes Science
+382 430
+[111] Flebus B and Tserkovnyak Y 2018 Quantum-impurity
+relaxometry of magnetization dynamics Phys. Rev. Lett.
+121 187204
+[112] McCullian B A, Thabt A M, Gray B A, Melendez A L,
+Wolf M S, Safonov V L, Pelekhov D V, Bhallamudi V P,
+Page M R and Hammel P C 2020 Broadband
+multi-magnon relaxometry using a quantum spin sensor
+for high frequency ferromagnetic dynamics sensing Nat.
+Commun. 11 5229
+[113] Wang H et al 2022 Noninvasive measurements of spin
+transport properties of an antiferromagnetic insulator Sci.
+Adv. 8 eabg8562
+[114] Carmiggelt J J, Bertelli I, Mulder R W, Teepe A, Elyasi M,
+Simon B G, Bauer G E W, Blanter Y M and van der Sar T
+2023 Broadband microwave detection using electron spins
+in a hybrid diamond-magnet sensor chip Nat. Commun.
+14 490
+[115] Cham T M J, Karimeddiny S, Dismukes A H, Roy X,
+Ralph D C and Luo Y K 2022 Anisotropic gigahertz
+antiferromagnetic resonances of the easy-axis van
+der Waals antiferromagnet CrSBr Nano Lett.
+22 6716–23
+[116] Bae Y J et al 2022 Exciton-coupled coherent magnons in a
+2D semiconductor Nature 609 282–6
+[117] Diederich G M et al 2023 Tunable interaction between
+excitons and hybridized magnons in a layered
+semiconductor Nat. Nanotechnol. 18 23–28
+[118] Sud A, Zollitsch C W, Kamimaki A, Dion T, Khan S,
+Iihama S, Mizukami S and Kurebayashi H 2020 Tunable
+magnon-magnon coupling in synthetic antiferromagnets
+Phys. Rev. B 102 100403
+[119] Sud A, Koike Y, Iihama S, Zollitsch C, Mizukami S and
+Kurebayashi H 2021 Parity-controlled spin-wave
+excitations in synthetic antiferromagnets Appl. Phys. Lett.
+118 032403
+[120] Shiota Y, Taniguchi T, Ishibashi M, Moriyama T and Ono T
+2020 Tunable magnon-magnon coupling mediated by
+dynamic dipolar interaction in synthetic antiferromagnets
+Phys. Rev. Lett. 125 017203
+39
+
+
+=== PDF PAGE 41 ===
+J. Phys.: Condens. Matter 36 (2024) 363501
+Roadmap
+[121] Comstock A H et al 2023 Hybrid magnonics in hybrid
+perovskite antiferromagnets Nat. Commun. 14 1834
+[122] Sklenar J and Zhang W 2021 Self-hybridization and tunable
+magnon-magnon coupling in van der Waals synthetic
+magnets Phys. Rev. Appl. 15 044008
+[123] Shiota Y, Arakawa T, Hisatomi R, Moriyama T and Ono T
+2022 Polarization-selective excitation of antiferromagnetic
+resonance in perpendicularly magnetized synthetic
+antiferromagnets Phys. Rev. Appl. 18 014032
+[124] Zhou W et al 2023 Tuning the Curie temperature of a
+two-dimensional magnet/topological insulator
+heterostructure to above room temperature by epitaxial
+growth Phys. Rev. Mater. 7 104004
+[125] Xu R J et al 2020 Strain-induced room-temperature
+ferroelectricity in SrTiO3 membranes Nat. Commun.
+11 3141
+[126] Vaidya P, Morley S A, van Tol J, Liu Y, Cheng R, Brataas A,
+Lederman D and Del Barco E 2020 Subterahertz spin
+pumping from an insulating antiferromagnet Science
+368 160
+[127] Yu T, Zou J, Zeng B, Rao J W and Xia K 2024
+Non-Hermitian topological magnonics Phys. Rep.
+1062 1–86
+[128] Rao J et al 2021 Interferometric control of magnon-induced
+nearly perfect absorption in cavity magnonics Nat.
+Commun. 12 1933
+[129] Zhang D, Luo X, Wang Y-P, Li T-F and You J Q 2017
+Observation of the exceptional point in cavity
+magnon-polaritons Nat. Commun. 8 1368
+[130] Zhang X, Ding K, Zhou X, Xu J and Jin D 2019
+Experimental observation of an exceptional surface in
+synthetic dimensions with magnon polaritons Phys. Rev.
+Lett. 123 237202
+[131] Liu H, Sun D, Zhang C, Groesbeck M, Mclaughlin R and
+Vardeny Z V 2019 Observation of exceptional points in
+magnonic parity-time symmetry devices Sci. Adv.
+5 eaax9144
+[132] Bergholtz E J and Budich J C 2019 Non-Hermitian Weyl
+physics in topological insulator ferromagnet junctions
+Phys. Rev. Res. 1 012003
+[133] Flebus B, Duine R A and Hurst H M 2020 Non-Hermitian
+topology of one-dimensional spin-torque oscillator arrays
+Phys. Rev. B 102 180408
+[134] Yu T and Zeng B W 2021 Giant microwave sensitivity of a
+magnetic array by long-range chiral interaction driven skin
+effect Phys. Rev. B 105 L180401
+[135] Deng K and Flebus B 2022 Non-Hermitian skin effect in
+magnetic systems Phys. Rev. B 105 L180406
+[136] Rao J, Yao B M, Wang C, Zhang C, Yu T and Lu W 2023
+Unveiling a pump-induced magnon mode via its strong
+interaction with Walker modes Phys. Rev. Lett.
+130 046705
+40

@@ -1,0 +1,1307 @@
+[PDF PAGE 1]
+arXiv:quant-ph/0404152v2  12 May 2004
+Optimal state encoding for quantum walks and quantum communication over spin
+systems
+Henry L. Haselgrove1,2, ∗
+1School of Physical Sciences, University of Queensland, Brisbane 4072, Australia
+2Information Sciences Laboratory, Defence Science and Technology Organisation, Edinburgh 5111 Australia
+(Dated: November 6, 2018)
+Recent work has shown that a simple chain of interacting spins can be used as a medium for
+high-ﬁdelity quantum communication. We describe a scheme for quantum communication using a
+spin system that conserves z-spin, but otherwise is arbitrary. The sender and receiver are assumed
+to directly control several spins each, with the sender encoding the message state onto the larger
+state-space of her control spins. We show how to ﬁnd the encoding that maximises the ﬁdelity of
+communication, using a simple method based on the singular-value decomposition. Also, we show
+that this solution can be used to increase communication ﬁdelity in a rather diﬀerent circumstance:
+where no encoding of initial states is used, but where the sender and receiver control exactly two spins
+each and vary the interactions on those spins over time. The methods presented are computationally
+eﬃcient, and numerical examples are given for systems having up to 300 spins.
+I.
+INTRODUCTION
+Quantum communication, the transfer of a quantum
+state from one place or object to another, is an important
+task in quantum information science[1]. The problem of
+communicating quantum information is profoundly dif-
+ferent to the classical case[2, 3]. For example, quantum
+communication could not possibly be achieved by just
+measuring an unknown state in one place, and recon-
+structing in another. Rather, an entire system of source,
+target, and medium must evolve in a way that maintains
+quantum coherence.
+In this paper we consider an idealised system of inter-
+acting spin-1/2 objects, isolated from the environment.
+The aim is to use the system’s natural evolution to com-
+municate a qubit state from one part of the system to
+another.
+The motivation is that such a system could
+be used as a simple “quantum wire” in future quantum
+information-processing devices. The most obvious conﬁg-
+uration to choose is a simple one-dimensional open-ended
+chain, with interactions between nearest-neighbour spins,
+in which case we want the chain’s evolution to transfer a
+qubit state from one end to the other. The methods in
+this paper apply to this simple type of chain, and also to
+spin networks of arbitrary graph.
+A number of interesting proposals exist for quantum
+communication through spin chains.
+In [4], the 1D
+Heisenberg chain was considered, with coupling strengths
+constant over the length of the chain and with time. The
+idea was to initialise all spins in the “down” state, except
+the ﬁrst spin, which was given the state of the qubit to
+be sent. After the system was allowed to evolve, the spin
+at the far end of the chain would then contain the sent
+state, to some level of ﬁdelity. Simulations were carried
+out for a range of chain lengths, and it was shown that
+∗Electronic address: HLH@physics.uq.edu.au
+the ﬁdelity was high only for very small chains.
+In [5], a 1D spin chain with XY couplings was con-
+sidered. Here, the coupling strengths were constant over
+time, but were made to vary over the length of the chain
+in a speciﬁc way. Like [4], the ﬁrst spin was initialised
+in the state to be sent, with all other spins initialised to
+“down”. It was shown that this scheme allows a perfect
+state transfer to the far spin site, for any length of chain.
+In [6], a scheme was presented for high-ﬁdelity quan-
+tum communication over a ring of spins with nearest-
+neighbour Heisenberg couplings, using coupling strengths
+constant over the length of the ring and over time. The
+sender and receiver are located diametrically opposite to
+one another. The authors showed that excitations travel
+around the ring in a way that can be described using
+a concept from classical wave theory, the dispersion re-
+lation.
+Using this insight, they constructed a scheme
+where the sender, who controls several adjacent spins,
+constructs an initial state that is a Gaussian pulse hav-
+ing a particular group velocity chosen to minimise the
+broadening of the pulse over time. Using this state for
+the encoding of the |1⟩basis of the qubit message, and the
+all-down state as the encoding of |0⟩, an arbitrary qubit
+can be sent with high ﬁdelity over rings of any size, so
+long as the number of spins that the sender controls is at
+least the cube root of the total number.
+Motivated by the results in [6], we pose the following
+problem. Say we are given the Hamiltonian for a system
+of interacting spins, where the graph of the interactions
+is not necessarily a ring structure, but is completely ar-
+bitrary. Also, the strength and type of interaction along
+each graph edge is arbitrary (so long as total z spin is con-
+served). The sender Alice controls some given subset of
+the spins, and the receiver Bob controls some other given
+subset. How does Alice encode the qubit to be sent onto
+the spins she controls, in order to maximise the ﬁdelity
+of communication? We know from [6] that the Gaussian
+pulse provides a near-optimal ﬁdelity for the case of a
+Heisenberg ring (and is optimal in the limit of large ring
+
+
+[PDF PAGE 2]
+2
+sizes). What about other shapes of spin network? Can
+we ﬁnd a general solution?
+We provide a simple and eﬃcient method for ﬁnding
+the maximum-ﬁdelity encoding of the |1⟩message basis
+state, for a general z-spin-conserving spin system. (We
+assume that the encoding for the |0⟩basis state is ﬁxed to
+the all-down state). So, unlike the schemes in [4], [5], and
+[6], which use systems with interactions that have speciﬁc
+strengths and conform to a speciﬁc graph, our scheme
+is designed to “make the most” of whatever arbitrary
+system is given to us. We give a numerical example of our
+method, for a system of 300 spins (where Alice and Bob
+each control 20 spins), showing a near-perfect average
+ﬁdelity.
+We give a second scheme for increasing ﬁdelity, that
+does not use encoding of initial states, but relies on Alice
+and Bob dynamically controlling the interactions on their
+control spins. Here, the number of control spins is ﬁxed
+at two each for Alice and Bob. We give a straightforward
+method for deriving control functions, that give a ﬁdelity
+(and communication time) equal to the values that would
+result if Alice and Bob had instead each controlled many
+more spins (with static interactions) and used the op-
+timal initial-state encoding scheme.
+This method has
+the combined beneﬁts of being applicable to arbitrary z-
+spin-conserving spin-chains, yet having a ﬁxed two-spin
+“interface” with Alice and Bob. We give numerical exam-
+ples, and plot the derived control functions, for a 104-spin
+and a 29-spin system, showing a near-perfect ﬁdelity in
+each case.
+In the remainder of this introductory section, we brieﬂy
+describe the assumptions behind our schemes, and deﬁne
+our notation. Sec. II describes our method of deriving the
+optimal message encoding. Sec. III describes our scheme
+for increasing ﬁdelity via dynamic control. Concluding
+remarks are made in Sec. IV.
+A.
+Assumptions and notation
+The solution presented in this paper relies on two main
+assumptions, which we now list.
+Firstly, the system
+Hamiltonian must commute with Ztot, which we deﬁne
+to be the z-component of the total spin operator⃗
+σtot ≡
+Xtot, Y tot, Ztot
+≡
+X
+j⃗
+σj,
+(1)
+where⃗σj is the vector of Pauli operators (σx, σy, σz) act-
+ing on the j-th spin. The Pauli operators in the basis
+“down” | ↓⟩and “up” | ↑⟩are
+σx =
+
+0
+1
+1
+0
+
+;
+σy =
+
+0 −i
+i
+0
+
+;
+σz =
+
+1
+0
+0 −1
+
+.
+(2)
+Secondly, the spin system must be initialised to the all-
+down state | ↓⟩⊗· · · ⊗| ↓⟩, before the communication is
+carried out. Note that the schemes in [4],[5] and [6] also
+make use of these two assumptions. It could be argued
+that the ﬁrst condition is reasonable because it follows
+from rotational invariance. Of course, any external mag-
+netic ﬁeld will destroy this invariance, and in particular
+any magnetic ﬁeld which is not in the z direction will
+mean that the z-component of total spin is no longer
+conserved. The Heisenberg and XY interactions are ex-
+amples of interactions that conserve Ztot. The second
+constraint might be rather diﬃcult to achieve in prac-
+tice. One possibility would be to apply a strong polar-
+ising magnetic ﬁeld in the z direction, over the entire
+system, and let the system relax to its ground state.
+In the remainder of the paper, in place of the nota-
+tion | ↓⟩and | ↑⟩for the eigenstates of σz, we will use
+the equivalent but more convenient notation |0⟩and |1⟩.
+A computational basis state of the system is deﬁned to
+be one where each spin is in either a |0⟩state or a |1⟩
+state. Note that the computational basis states are all
+eigenstates of Ztot, and the eigenvalue has one of N + 1
+possible values, given by the number of |0⟩s minus the
+number of |1⟩s. So in a system of N spin-1/2 objects,
+we can break the state space into N + 1 subspaces of
+diﬀerent well-deﬁned z-component of total spin. We use
+H(n), n = 0, . . . , N, to denote these subspaces. H(n) is
+the eigenspace of Ztot that is spanned by the
+N
+n
+
+com-
+putational basis states that have n qubits in the |1⟩state
+and the rest in the |0⟩state.
+Since the system Hamiltonian H commutes with Ztot,
+a state in H(n) will remain in H(n) under the evolution of
+H. H(0) is one-dimensional; it is spanned by the all-zero
+state |0⟩⊗. . . ⊗|0⟩. So this state is a stationary state of
+H.
+II.
+THE OPTIMAL ENCODING SCHEME
+Say that Alice wishes to send the qubit state α|0⟩+
+β|1⟩. In our scheme, she does so by preparing the state
+α|0⟩A+β|1ENC⟩A, where |0⟩A is the all-zero state on her
+spins, and |1ENC⟩A is some state orthogonal to |0⟩A (the
+“ENC” stands for “encoded”). (Note that Alice doesn’t
+necessarily know α and β. She would presumably prepare
+the state by some unitary operation acting on her spins
+and some external spin containing the state α|0⟩+ β|1⟩.)
+We assume that the entire spin chain is initialised to the
+all-zero state, so immediately after Alice prepares the
+abovementioned state on her spins, the state of the whole
+system is
+|Ψ(0)⟩≡(α|0⟩A + β|1ENC⟩A) ⊗|0⟩¯
+A,
+(3)
+where ¯A refers to all spins that Alice does not control.
+The whole spin system is allowed to evolve for a time T ,
+giving the state |Ψ(T )⟩= e−iHT |Ψ(0)⟩. Using the fact
+that |0⟩⊗· · · ⊗|0⟩is a stationary state, |Ψ(T )⟩can be
+written (up to some global phase) as
+|Ψ(T )⟩= β
+p
+1 −CB(T )|η(T )⟩+
+|0⟩¯
+B(α|0⟩B + β
+p
+CB(T )|γ(T )⟩B),
+(4)
+
+
+[PDF PAGE 3]
+3
+for some nonnegative CB(T ), some normalised |γ(T )⟩B
+orthogonal to |0⟩B, and for some normalised |η(T )⟩that
+is orthogonal to all states of the form |0⟩¯
+B ⊗|v⟩B.
+We now show that CB(T ) can be used as a measure
+of success.
+Comparing Eqs. (3) and (4), we see that
+CB(0) = 0. If CB(T ) reaches 1 for some later T , a perfect-
+ﬁdelity quantum communication has resulted.
+This is
+because Bob will then have the state α|0⟩B + β|γ⟩B on
+the qubits he controls, which can be “decoded” by a
+unitary operation into the state α|0⟩+ β|1⟩of a sin-
+gle spin, since |0⟩B and |γ⟩B are orthogonal. If CB(T )
+is less than 1, the unitary decoding by Bob will leave
+him with a qubit state ρ that is generally diﬀerent to
+the message state. That is, the measure of state ﬁdelity
+F ≡(α|0⟩+ β|1⟩)†ρ(α|0⟩+ β|1⟩) between the message
+α|0⟩+β|1⟩and ρ, will generally be less than one whenever
+CB(T ) < 1. However, the value of F is highly dependent
+on the message state — for example, if α = 1 then F = 1
+regardless of the value of CB(T ).
+CB(T ), on the other hand, is a message-independent
+measure of the ﬁdelity of communication. Consider ¯F,
+deﬁned to be the state ﬁdelity F averaged over all mes-
+sage states.
+For encodings |1ENC⟩that belong to the
+H(1) subspace, we have
+¯F = 1
+2 + 1
+3
+p
+CB(T ) + 1
+6CB(T ),
+(5)
+which is a monotonic function of CB(T ) [6]. So, in this
+case maximising the average state ﬁdelity is equivalent
+to maximising CB(T ).
+More generally, for |1ENC⟩not
+in H(1), the expression in Eq. (5) provides a reasonably
+tight lower bound on ¯F:
+1
+2 + 1
+3
+p
+CB(T ) + 1
+6CB(T ) ≤¯F ≤1
+2 + 1
+3
+p
+CB(T ) + 1
+6
+= 2
+3 + 1
+3
+p
+CB(T ).
+(6)
+The precise value of ¯F will then depend on |η(T )⟩and
+the full speciﬁcation of Bob’s decoding unitary.
+A further argument for using CB(T ) as a measure of
+communication ﬁdelity comes from considering the sys-
+tem’s ability to transfer quantum entanglement from Al-
+ice to Bob. Suppose that Alice, instead of sending a mes-
+sage which is a pure quantum state α|0⟩+ β|1⟩, sends a
+state which is maximally entangled with some additional
+spin that Alice possesses. (The additional spin does not
+interact when the system evolves). If the communica-
+tion is perfect, the result must be that Bob’s decoded
+message becomes maximally entangled with Alice’s ad-
+ditional spin. So more generally, when the communica-
+tion is not perfect, the amount of entanglement gener-
+ated between Alice and Bob would be a good measure of
+communication ﬁdelity. In fact, the entanglement gener-
+ated, measured by the concurrence, is equal to
+p
+CB(T )
+(a proof of this fact is outlined in Appendix A). This is
+independent of |η(T )⟩, or the full speciﬁcation of Bob’s
+decoding unitary, or whether |1⟩ENC belongs to H(1).
+To recap, when the Hamiltonian commutes with Ztot
+and the state is initialized to |0⟩, the problem of achiev-
+ing a high communication ﬁdelity can be boiled down to
+choosing an appropriate initial encoding |1ENC⟩for the
+|1⟩qubit basis state. We seek a state |1ENC⟩A ⊗|0⟩¯
+A
+that has the property that it evolves to (or near to) a
+state of the form |0⟩¯
+B ⊗|γ⟩B, or in other words such that
+CB(T ) ≈1 for some T . Alice’s choice for the “encoding”
+of the |0⟩qubit basis state is ﬁxed to the all-zero state.
+With perfect ﬁdelity that basis state will evolve to the
+all-zero state on Bob’s spins. (Note that in some cases it
+may be possible to increase ﬁdelity further by allowing an
+encoding for |0⟩other than the all-zero state. We ignore
+such a possibility, in order to keep the method for ﬁnding
+the encoding simple and eﬃcient. The simpliﬁcation is
+used likewise in [7].)
+We now show that the encoding |1ENC⟩which max-
+imises CB(T ) for a given T can be found by performing
+the singular value decomposition on a modiﬁed version
+of the evolution matrix e−iHT .
+Let A be the vector subspace of states of the form
+|1ENC⟩A ⊗|0⟩¯
+A, such that A⟨0|1ENC⟩A = 0. Similarly,
+let B be the vector subspace of states of the form |0⟩¯
+B ⊗
+|γ⟩B, such that B⟨0|γ⟩B = 0. In other words, A reﬂects
+all the possible encodings that Alice could use for the |1⟩
+qubit basis state (regardless of the ﬁdelity they would
+achieve). B is the set of states that we would like some
+state in A to evolve to; a state in A that evolves to one
+in B represents an encoding for |1⟩that gives CB(T ) = 1
+and thus a perfect average ﬁdelity.
+Let PA and PB be the projectors onto the subspaces
+A and B. Let U(T ) ≡e−iHT be the time-evolution op-
+erator. From Eqs. (3) and (4), we can write
+CB(T ) = ∥PBU(T )|1ENC⟩A⊗|0⟩¯
+A ∥2,
+(7)
+where ∥·∥denotes the l2-norm. This means that for a par-
+ticular total communication time T , choosing the optimal
+initial encoding for the |1⟩state is a matter of ﬁnding the
+normalised |ψ⟩∈C2N that maximises ∥PBU(T )PA|ψ⟩∥.
+The maximum value is given by the largest singular value
+of ˜U(T ) ≡PBU(T )PA, and the corresponding optimal
+|ψ⟩is the ﬁrst right-singular-vector of ˜U(T ) [8]. Recall,
+the SVD (singular value decomposition) of ˜U(T ) is
+˜U(T ) = V SW †
+(8)
+=
+
+
+⃗
+v1⃗v2 . . .
+↓
+↓. . .
+
+
+
+
+
+
+s1
+s2
+...
+
+
+
+
+
+⃗
+w∗
+1 →⃗
+w∗
+2 →
+...
+...
+
+
+,
+where s1 ≥s2 ≥· · · ≥0 are the singular values, the
+orthonormal⃗wj are the right singular vectors, and the
+orthonormal⃗vj are the left singular vectors of ˜U(T ). Nu-
+merical packages such as Matlab have in-built routines
+for easily calculating the SVD. So, we have that CB(T )
+has its maximum value, s2
+1, when Alice chooses the initial
+state |1ENC⟩A ⊗|0⟩¯
+A =⃗w1 to encode |1⟩.
+
+
+[PDF PAGE 4]
+4
+Other parts of the decomposition could be useful as
+well. Say Alice wants to transmit two qubits simultane-
+ously to Bob. If she uses the all-down state to encode the
+|00⟩basis state, then she should use the encodings⃗w1,⃗
+w2, and⃗w3 for the other three basis states |01⟩, |10⟩, and
+|11⟩. Then, so long as s3 ≈1, the two qubits would be
+simultaneously communicated with high ﬁdelity.
+The vectors⃗wj
+and the values sj
+are also the
+eigenvectors and square-root eigenvalues respectively of
+(PB ˜U(T )PA)†PB ˜U(T )PA = PA ˜U †(T )PB ˜U(T )PA. Now,
+Ztot commutes with PA ˜U †(T )PB ˜U(T )PA because it com-
+mutes with each of PA, PB, ˜U(T ), and ˜U †(T ) separately.
+So the⃗wj will all have well-deﬁned total Z spin (or can
+be chosen to, wherever ambiguities exist because of de-
+generacies in the sj). This is important when it comes to
+calculating these solutions eﬃciently. Instead of perform-
+ing the full 2N by 2N matrix exponential and SVD, the
+calculation can be done separately for each of the smaller
+subspaces H(n), starting each calculation with the
+N
+n
+
+-
+by-
+N
+n
+
+part of the Hamiltonian that acts on the H(n)
+subspace.
+Alice can’t create a state with more than |A| qubits
+in the “one” state, where |A| is the number of spins she
+controls. So, in fact the calculation only needs to be done
+over the H(1), . . . , H(|A|) subspaces (in other words, the
+singular values corresponding to states in other subspaces
+will always be zero).
+In practice we have found that the optimal solution⃗w1
+often belongs to the H(1) subspace. (In particular, we
+calculated the optimal solution for a range of diﬀerent
+values of T for various 8 and 9-spin systems, and found
+that only for a very small minority of the values of T , for
+each system, was the solution not in the H(1) subspace ).
+A rudimentary argument for this can be made as follows.
+Looking for solutions in H(n) means optimising over Al-
+ice’s
+|A|
+n
+
+degrees of freedom (of the space A ∩H(n)),
+in order to make the ﬁnal state land in or near a
+|B|
+n
+
+-
+dimensional target space B∩H(n). This must be achieved
+despite the fact that the Hamiltonian is “trying” to move
+the state through a much larger
+N
+n
+
+-dimensional space
+H(n). Over the various values of n = 1, . . . , |A|, the di-
+mensionality of A∩H(n) and B∩H(n) as a fraction of the
+dimensionality of H(n) is largest when n = 1. In other
+words, when n = 1, the size of the target space, and
+amount of control available of the initial state, is largest
+as a fraction of the dimensionality of the entire subspace
+H(n).
+So, in general we can restrict all the calculations to
+the N-dimensional subspace H(1), and there will still be
+a good chance that we will arrive exactly at the globally-
+optimal encoding⃗w1. Ignoring solutions in the other sub-
+spaces will increase the eﬃciency of calculation consider-
+ably, especially for large chains.
+The evolution of a state in the H(1) subspace can also
+be interpreted as a continuous quantum walk of a par-
+ticle over a graph.
+( For an introduction to quantum
+walks, see for example [9] and references therein). The
+0
+50
+100
+150
+200
+250
+300
+0
+0.2
+0.4
+0.6
+0.8
+1
+Time
+FIG. 1: The largest four singular values of ˜U (1)(T ), for a
+range of communications times T . Open-ended Heisenberg
+chain, N=300, and Alice and Bob each control 20 sites.
+graph is simply the graph of interactions between spins in
+the Hamiltonian H, and the state |0⟩¯j ⊗|1⟩j corresponds
+to the particle being at vertex j of that graph. So our
+methods for increasing communication ﬁdelity are, equiv-
+alently, methods for guiding a quantum walk from one
+part of a graph to another. We point out this connec-
+tion because of the signiﬁcant interest currently in using
+quantum walks for solving computational problems (see
+for example [7, 10, 11] and references therein).
+To demonstrate the use of the SVD optimal-encoding
+technique, we now consider a numerical example. Imag-
+ine that Alice and Bob are joined by a 300-site open-
+ended chain with nearest-neighbour couplings given by
+the antiferromagnetic Heisenberg interaction, with cou-
+pling strengths all equal to 1. That is,
+H =
+299
+X
+j=1⃗
+σj ·⃗σj+1.
+(9)
+Assume that Alice and Bob control the ﬁrst and last 20
+spins respectively.
+In light of the earlier discussion, we restrict our optimi-
+sation to the H(1) subspace, and thus ignore all singular
+vectors in other subspaces. A Matlab program is used
+to carry out the following calculations. First, the 300 by
+300 matrix H(1), deﬁned to be the part of H that acts
+on H(1), is constructed. Then, the SVD of
+˜U (1)(T ) = PB∩H(1)e−iH(1)T PA∩H(1)
+(10)
+is calculated for a range of values of T .
+The optimal
+value for communication time is not known beforehand,
+so this repetition of the calculation for diﬀerent values of
+T is needed in order to ﬁnd a reasonable tradeoﬀbetween
+communication time and ﬁdelity.
+The four largest singular values, s1, . . . , s4, of ˜U (1)(T )
+are plotted in Figure 1. Over the range of T shown, s1(T )
+has its maximum of 0.99999 at T = 75.75. So, this sys-
+tem can transmit a qubit with near-perfect ﬁdelity, over
+
+
+[PDF PAGE 5]
+5
+0
+10
+20
+30
+40
+0
+0.05
+0.1
+0.15
+j (site)
+|ψj|2
+t=0 
+t=1.5 
+t=3
+t=4.5
+t=6
+. . . 
+FIG. 2: The optimal encoded state⃗w1(75.75), evolved for a
+sequence of times t.
+a time interval of 75.75. The graph shows that s2(75.75)
+and s3(75.75) are also very close to 1, so in fact two
+qubits could be transmitted simultaneously with high ﬁ-
+delity in this example, using the encodings |0⟩,⃗w1(75.75),⃗
+w2(75.75) and⃗w3(75.75) for the two-qubit basis states.
+Let’s look at the actual optimally encoded states that
+are generated in this example. We visualise a state in
+H(1) by plotting the square magnitude of the coeﬃcients
+ψj, where ψj is the coeﬃcient of the basis state that has
+the j-th spin in the |1⟩state:
+H(1) ∋|ψ⟩=
+X
+j=1,...,N
+ψj |1⟩j ⊗|0⟩¯j.
+(11)
+In Figure 2 we show the evolution of the state⃗
+w1(75.75).
+That is, we set |ψ(0)⟩=⃗w1(75.75), and
+|ψ(t)⟩= e−iH(1)t|ψ(0)⟩, and plot the magnitudes |ψj|2
+for a sequence of equally-spaced times t. As is necessar-
+ily the case, the t = 0 state has non-zero coeﬃcients only
+on Alice’s spins, j = 1 . . . 20. The state deforms itself
+into a Gaussian shape quite quickly.
+This is interest-
+ing in comparison with the results in [6]. Whilst Gaus-
+sian initial states were shown to optimise ﬁdelity on a
+Heisenberg ring, the best initial states for an open-ended
+Heisenberg chain are ones that deform into a Gaussians.
+From the total communication time in this example, the
+group velocity of the pulse is roughly 3.95 (deﬁning the
+distance between neighbouring spins to be 1). Thus, in
+the open-ended Heisenberg chain we have found the same
+phenomena that appeared in the Heisenberg ring in [6],
+notably that the system has a preferred group velocity
+that gives a minimum dispersion and thus maximum ﬁ-
+delity. This explains the fact that in Figure 1 the singular
+values drop for T greater than 75.75, and rise again to a
+near-maximum at T ≈225 ≈3 × 75.75: the high-ﬁdelity
+communication for T ≈225 is also operating at the pre-
+ferred group velocity, but the wave packet is traversing
+the chain three times, after bouncing from each end.
+Curiously, the lower solutions⃗w2(75.75) and⃗w3(75.75)
+seem to evolve into a sum of two and three Gaussians re-
+20
+30
+40
+50
+60
+70
+80
+0
+0.02
+0.04
+0.06
+0.08
+j (site)
+|ψj|2
+20
+30
+40
+50
+60
+70
+80
+0
+0.02
+0.04
+0.06
+0.08
+j (site)
+|ψj|2
+(a) 
+(b) 
+FIG. 3: The states (a)⃗w2(75.75) and (b)⃗w3(75.75) evolved
+for time=12.
+spectively (see Figure 3). Animations of these evolutions
+are available online [12].
+III.
+DYNAMIC CONTROL
+The scheme we presented in Sec. II utilises the evo-
+lution of a system having completely static interactions.
+The control that Alice and Bob have over the chain is
+only for an instant at the beginning and end of the pro-
+cedure, and so their only degrees of freedom for increasing
+the ﬁdelity lie in the encoding they use. For very long
+chains, the number of control sites needed to give a high
+ﬁdelity might become impractically large, as suggested
+by the results in [6]. In this section, we consider the ad-
+vantage that can be gained by allowing Alice and Bob to
+control their spins throughout the procedure, by modu-
+lating the strength of interactions on those spins. The
+advantages of the scheme are that the number of control
+spins are ﬁxed at four, and that suitable functions for
+Alice and Bob to use to vary the interaction strengths
+are easily derived from a simple extension of the SVD
+approach already described.
+This type of control scheme is an example of a funda-
+mental problem in quantum information processing, that
+of determining how to use the limited physical control
+that one has of a quantum system, in such a way as to
+achieve the dynamics that are required. For the task at
+hand, our method provides a practical and eﬃcient way
+of ﬁnding an appropriate dynamical control.
+A general schematic for the system is shown in Figure
+4. Alice is now in control of just two spins, labeled A1
+and A2, and, likewise, Bob controls two spins B1 and B2.
+All the other spins in the system are collectively denoted
+C. The graph of the interactions connecting Alice and
+
+
+[PDF PAGE 6]
+6
+FIG. 4:
+The general setup, whereby Alice and Bob modu-
+late a total of six parameters of the Hamiltonian in order to
+increase communication ﬁdelity.
+Bob’s spins can be arbitrary, except that A1 must directly
+couple only to A2, and B1 must directly couple only to
+B2. Like the previous scheme, we require that the system
+Hamiltonian H commutes with Ztot, and that all spins
+are initialised to |0⟩before the procedure starts. So again
+the problem is that of ﬁnding a way of sending the |1⟩
+basis state with high ﬁdelity.
+The protocol works as follows.
+At time t = 0, Al-
+ice transfers the qubit state she wishes to send onto the
+spin A1. Then she varies the coupling strength between
+A1 and A2 according to some function which we de-
+note JA(t), and varies the z magnetic ﬁeld on A1 and
+A2 according to functions BA1(t) and BA2(t).
+At the
+same time, Bob varies his coupling strength and z mag-
+netic ﬁelds according to the functions JB(t), BB1(t) and
+BB2(t). This process is continued over some time inter-
+val 0 < t < T . At t = T Bob’s spin B1 will contain the
+sent qubit state, to a level of ﬁdelity that depends on the
+six control functions.
+How do we choose the control functions in a way that
+gives us a high average communication ﬁdelity? The trick
+is to imagine a modiﬁed version of the system, where a
+number of “phantom” spins have been added to both
+Alice and Bob’s set of control spins, but all couplings are
+now ﬁxed (see Figure 5).
+The SVD method is applied to this modiﬁed system,
+to ﬁnd the optimal initial state on Alice’s extended set of
+control spins. The evolution of the encoded state through
+the modiﬁed system is then simulated on a (classical)
+computer, and the results of the simulation are used to
+derive appropriate control functions for the actual phys-
+ical system, using a method which we describe below.
+Since, over the bulk of the physical system, the initial
+state and interactions are identical to those at the cor-
+responding regions of the modiﬁed system, the problem
+reduces to ﬁnding control functions which make the state
+on A2 and B2 in the physical system evolve in the same
+way as those corresponding spins in the modiﬁed chain.
+When that is achieved, the state on the bulk of the phys-
+ical chain will evolve in the same way as in the modiﬁed
+chain, which means that we can communicate a qubit
+with the same ﬁdelity as for the optimally encoded state
+in the modiﬁed system.
+For the sake of clarity, we describe the method in detail
+for a less general conﬁguration, the 1D XY chain. The
+FIG. 5: This is a modiﬁed version of Figure (4). Calculating
+the optimal initial encoded state on this system will help Al-
+ice and Bob derive suitable control functions for their actual
+physical setup in Figure (4).
+derivation is simpler in this case because, as we shall see,
+the magnetic control is not needed. The system Hamil-
+tonian is given by
+H(t) =
+N−2
+X
+j=2
+Jj
+
+σx
+j σx
+j+1 + σy
+j σy
+j+1
+
++JA(t) (σx
+1 σx
+2 + σy
+1σy
+2)
++JB(t)
+σx
+N−1σx
+N + σy
+N−1σy
+N
+
+.
+(12)
+That is, there are some arbitrary ﬁxed Jj that specify
+the strengths of the XY couplings over the bulk of the
+chain. The strengths at the ﬁrst and last links can be
+varied over time by Alice and Bob.
+We write down a Hamiltonian ˜H of a modiﬁed system,
+where we have extended the length of the chain in both
+directions by adding NP phantom spins to both Alice
+and Bob’s sides. The new coupling strengths are chosen
+to be 1, and the two strengths that were time-varying in
+the original system are now also ﬁxed at one. So that
+we can use the same numbering system for the spins as
+in Eq. (12), we let the indices of the spins range into the
+negative in the modiﬁed system, running from 1 −NP to
+N + NP . The modiﬁed Hamiltonian is written simply as
+˜H =
+N+NP −1
+X
+j=1−NP
+Jj
+
+σx
+j σx
+j+1 + σy
+j σy
+j+1
+
+,
+(13)
+where we have extended the deﬁnition of Jj so that it
+equals 1 for j = (1 −NP ), . . . , 1 and for j = (N −
+1), . . . , (N + NP −1).
+Next, using the SVD method, we ﬁnd the best encoded
+initial state on the set of spins from index (1 −NP) to 1,
+while assuming that the target set of spins ranges from N
+to (N + NP −1). That is, we are imagining a “modiﬁed
+Alice” that controls the ﬁrst (NP + 1) spins and a “mod-
+iﬁed Bob” that controls the last (NP + 1) spins of this
+extended chain. Recall that the SVD method depends on
+a choice of total communication time T . As in the exam-
+ple earlier, we may wish to search over a range of values
+of T to ﬁnd the most suitable value. It is important for
+the procedure at hand that we restrict ourselves to states
+
+
+[PDF PAGE 7]
+7
+in the H(1) subspace (whereas before this restriction was
+just a way of making the solution much faster to com-
+pute). So, we calculate⃗w1(T ), the ﬁrst right-singular-
+vector of PB∩H(1)e−i ˜
+H(1)T PA∩H(1), where ˜H(1) is the part
+of ˜H that acts on the H(1) subspace.
+Then, we need to be able to calculate the evolution of
+the state⃗w1, over a range of times t from 0 to T . Let
+|ψ(0)⟩=⃗w1(T ), and |ψ(t)⟩= e−iH(1)t|ψ(0)⟩. As earlier,
+the evolving state is a series of complex coeﬃcients ψj(t),
+where j is the index to a spin site, ranging from (1−NP)
+to (N + NP −1). We need to know ψ1(t) and ψN(t) for
+every value of t that we wish to calculate JA(t) and JB(t)
+for.
+Similarly we use φj(t), j = 1, . . . , N to denote the evo-
+lution of the |1⟩qubit state over the original physical
+chain. Recall that in this scheme, Alice places the qubit
+state to be sent, unencoded, onto spin number 1, after
+all other spins have been initialised to zero. So, initially
+we have φj(0) = δj,1. The functions φj(t) depend on the
+control functions JA(t) and JB(t) (whereas the ψj(t) do
+not).
+The aim is to chose control functions JA(t) and JB(t)
+in such a way as to force φj(t) = ψj(t), for all the spins
+in the range j = 2, . . . , N −1, and for all t in the interval
+[0, T ]. That is, we know the way the optimal encoded
+state evolves over the modiﬁed chain, and we want to
+make the |1⟩state in the physical system evolve in exactly
+the same way, over all spins except 1 and N. In this way,
+the physical system will carry a qubit across it’s length
+with the same ﬁdelity as the encoded modiﬁed system
+does.
+The interactions on the spins from site 3 to site N −2
+are the same in the physical chain as in the modiﬁed
+chain.
+So, the diﬀerential equations for the ψj(t) are
+the same as those for the φj(t), for j = 3, . . . , N −2.
+Speciﬁcally,
+dψj(t)
+dt
+= −2i [Jj−1ψj−1(t) + Jjψj+1(t)]
+and
+dφj(t)
+dt
+= −2i [Jj−1φj−1(t) + Jjφj+1(t)] ,
+(14)
+for j = 3, . . . , N −2. Also, the initial conditions are the
+same between the ψj and the φj, for j = 2, . . . , (N −1):
+ψj(0) = φj(0) = 0 .
+It follows that if we can use our control functions to
+force dφ2(t)
+dt
+= dψ2(t)
+dt
+, and dψN−1(t)
+dt
+= dφN−1(t)
+dt
+, over the
+time range t = 0, . . . , T , then we will have ψj(t) = φj(t)
+for all t in that time range, and for all j = 2, . . . , N −1,
+as desired.
+Now,
+dψ2(t)
+dt
+= −2i [ψ1(t) + J2ψ3(t)]
+(15)
+and
+dφ2(t)
+dt
+= −2i [JA(t)φ1(t) + J2φ3(t)] .
+(16)
+So, assuming that at time t φj(t) = ψj(t) for j =
+2, . . . , N −1, then dφ2(t)
+dt
+= dψ2(t)
+dt
+by setting
+JA(t) = ψ1(t)
+φ1(t) ,
+(17)
+and dφN−1(t)
+dt
+= dψN−1(t)
+dt
+by setting
+JB(t) = ψN(t)
+φN(t).
+(18)
+Thus, the practical task of numerically calculating
+JA(t) and JB(t) involves simulating the evolution of both
+the φj and ψj states on the original and modiﬁed systems
+respectively, over the time interval [0, T ], and evaluating
+Eqs. (17) and (18).
+The functions JA(t) and JB(t) must of course be real-
+valued, for the Hamiltonian to be Hermitian. Equations
+(17) and (18) will indeed be real for the XY chain. The
+expressions for the dφj
+dt are all given by a purely imagi-
+nary linear combination of the nearest-neighbour values
+φj−1 and φj+1. Then, considering the initial conditions,
+φj(0) = δ1,j, it’s clear that the φj(t) are real for odd j
+and imaginary for even j, for all values of t. The val-
+ues ψj(t) also have this property of alternating real and
+imaginary values. Again, the time derivatives of ψj(t)
+are purely imaginary linear combinations of the values
+ψj−1(t) and ψj+1(t). Thus, by performing the change of
+variables
+ψ′
+j(t) =
+
+ψj(t)
+if j is odd, and
+iψj(t)
+if j is even,
+(19)
+the diﬀerential equations for ψ′
+j(t) will all have real
+coeﬃcients.
+So, the entries of the evolution matrix
+e−i ˜
+H(1)T must be real, after that change of variables.
+Thus, so must be the entries of PB∩H(1)e−i ˜
+H(1)T PA∩H(1).
+So,⃗
+w(T ),
+which
+is
+the
+right-singular
+vector
+of
+PB∩H(1)e−i ˜
+H(1)T PA∩H(1), will also have all real coeﬃ-
+cients with respect to the changed variables. Changing
+variables back, the initial encoded state ψj(0) =⃗wj(T )
+will thus have the property of having real values for odd
+j and imaginary values for even j, and so will ψj(t) for all
+t. So, Eqs. (17) and (18) will be real-valued as required.
+Eqs. (17) and (18) will never be inﬁnite. In fact, |JA(t)|
+and |JB(t)| will be at most 1. This is a simple conse-
+quence of conservation of probability. Since ψj(t) = φj(t)
+over the bulk of the chain (j = 2, . . . , N −1) and Alice
+and Bob’s sides only interact via the bulk of the chain
+for both the physical and modiﬁed systems, we have that
+1
+X
+j=1−NP
+|ψj|2 = |φ1|2, and
+(20)
+N+NP
+X
+j=N
+|ψj|2 = |φN|2,
+(21)
+from which it follows that |ψ1(t)| ≤|φ1(t)| and |ψN(t)| ≤
+|φN(t)|.
+So, |JA(t)| ≤1 and |JB(t)| ≤1, if they are
+
+
+[PDF PAGE 8]
+8
+0
+5
+10
+15
+20
+25
+30
+35
+−1
+−0.5
+0
+0.5
+1
+t
+JB(t) 
+JA(t) 
+FIG. 6: Control functions for a 104-spin XY chain, where the
+non-controlled coupling strengths all have the same strength,
+1.
+deﬁned. If JA(t) (or JB(t)) is undeﬁned (0/0), it means
+that the requirement of
+dφ2(t)
+dt
+=
+dψ2(t)
+dt
+( respectively
+dφN−1(t)
+dt
+= dψN−1(t)
+dt
+) is satisﬁed regardless of the value
+of JA(t) (respectively JB(t)) for that t, in which case the
+value of the control function can be chosen arbitrarily at
+that time.
+We now plot the derived control functions JA(t) and
+JB(t) for two simple example XY chain systems.
+We
+used numerical integration in these examples, in calcu-
+lating the evolution of the φj(t) due to the time-varying
+Hamiltonian. We divided the total evolution into a num-
+ber of discrete time steps, where the approximation was
+made that the Hamiltonian remains constant throughout
+each step. The value of JA(t) and JB(t) for a step was
+calculated from the state of the system at the previous
+step. We used 2000 time steps, which gave a ﬁnal ﬁdelity
+in the physical chain within two signiﬁcant ﬁgures of the
+correct value given by the evolution of the static modiﬁed
+system.
+The ﬁrst example is a chain 104 spins long (ie. 100
+non-controlled spins, plus the four control spins), with
+all the non-controlled coupling strengths set to the same
+value, 1.
+The control functions were derived by using
+a modiﬁed chain 144 spins long (that is, 20 phantom
+spins added to each side) with all coupling strengths set
+to 1, and the total communication time T chosen to be
+36. Figure (6) shows that the resulting JA(t) and JB(t)
+are quite simple and well behaved. The ﬁdelity measure
+CB(T ) is 1.0, to 6 decimal places. This can be compared
+with the ﬁdelity in the same 104-spin system but without
+the time-dependent control, that is with JA(t) and JB(t)
+ﬁxed at 1: over the time interval 0 < t < 1000, the value
+of CB(t) is at most 0.2809.
+The second example is an XY chain 29 spins long,
+but where the non-controlled coupling strengths are ran-
+domly sampled uniformly from the interval [0.95, 1.05].
+This is as if the chain has been manufactured with ran-
+0
+5
+10
+15
+20
+0
+0.5
+1
+t
+JB(t) 
+JA(t) 
+FIG. 7: Control functions for a 29-spin XY chain, where the
+non-controlled coupling strengths were chosen randomly from
+the interval [0.95, 1.05].
+dom imperfections in the coupling strengths, but these
+coupling strengths have been somehow measured after
+the manufacturing process and are known to Alice and
+Bob. (A shorter chain was chosen in this example, com-
+pared with the previous example, in order that a near-
+perfect ﬁdelity would still result. We have observed that
+when random couplings are used, the achievable ﬁdelity
+will decrease as a function of the chain length). We de-
+rived control functions using a modiﬁed system with 25
+phantom spins added to each side, where the new arbi-
+trary coupling strengths are set to 1. The communica-
+tion time T was chosen to be 19.5.
+Figure (7) shows
+control functions which are a little more complicated in
+this case, but still rather smooth. The ﬁdelity measure is
+CB(T ) = 0.99625. In comparison, in the non-controlled
+version of this system, with JA(t) = JB(t) = 1, the
+value of CB(t) does not exceed 0.496 over the interval
+0 < t < 1000. Animations of both examples are available
+online [12].
+What about a system that is not simply an XY chain,
+but any conﬁguration conforming to Figure (4) and con-
+serving Ztot? Then, the ideas and methods are almost
+the same, but with the added complication that we need
+control the z magnetic ﬁelds on Alice and Bob’s qubits as
+well as controlling JA(t) and JB(t). The are two reasons
+why the magnetic control is needed, which we explain
+for Alice’s side. First, the simple phase relation between
+ψ1(t) and φ1(t) that we saw in the XY chain does not
+occur in general. So, BA1(t) is chosen simply to keep
+φ1(t) in constant relative phase to the ψ1(t). Second, the
+type of interaction that the JA(t) is modulating may con-
+tain it’s own magnetic-ﬁeld-like interactions (that is, non-
+equal diagonal elements in the Hamiltonian) that need to
+be cancelled by BA1(t) and BA2(t). General expressions
+for BA1(t) and BA2(t) are straightforward to derive, but
+not particularly illuminating, so will not be given here.
+
+
+[PDF PAGE 9]
+9
+IV.
+CONCLUSION
+We have considered the problem of communicating a
+quantum state over an arbitrary Ztot-conserving spin sys-
+tem. Our ﬁrst scheme used a static system Hamiltonian,
+and utilised the fact that the sender and receiver con-
+trol several spins each, to increase ﬁdelity by performing
+state encoding.
+We showed that choosing the optimal
+state encoding is a simple matter of performing a SVD
+on a modiﬁed evolution matrix.
+We have also shown that if the sender and receiver
+have control of just two spins each, but can vary the in-
+teractions on these four spins over time, then they can
+achieve a ﬁdelity that is equal to if they each controlled
+many more spins on a static system and used the optimal
+state encoding. We have given a practical method of de-
+riving suitable control functions. The advantage of this
+scheme is the “ﬁxed interface” that Alice and Bob have
+with the chain. That is, if the chain is altered, the only
+change that Alice and Bob need make is to their con-
+trol functions, rather than to the number of spins they
+control.
+It should be noted that the systems we have considered
+are idealised to a high degree. In particular, we haven’t
+considered the eﬀects of external noise, or the eﬀect of
+having a Hamiltonian that only approximately commutes
+with Ztot, or the case where Alice and Bob have only
+an approximate knowledge of the system Hamiltonian.
+These issues will be the subject of future work by the
+author.
+Acknowledgements
+I would like to thank Tobias Osborne and Michael
+Nielsen for their detailed comments on the original
+manuscript, and for helpful and enlightening discussions
+relating to this work.
+APPENDIX A
+Here we outline a proof of the claim in Sec. II regard-
+ing the connection between CB(T ) and the system’s abil-
+ity to transmit entanglement from Alice to Bob. This
+connection helps establish CB(T ) as a good measure of
+communication ﬁdelity.
+Proposition. Suppose that Alice sends a state which is
+maximally entangled with some additional spin that Al-
+ice possesses.
+(After the maximally entangled state is
+created, the additional spin is assumed to not interact
+during the remainder of the communication procedure).
+Then, after the communication procedure of Sec. II is
+carried out, the entanglement (measured by concurrence)
+between Alice’s additional spin and Bob’s decoded mes-
+sage, equals
+p
+CB(T ).
+Proof: Note that it doesn’t matter which maximally-
+entangled state is used — all such states are equivalent up
+to a local unitary on the additional spin, and such a local
+unitary could not possibly aﬀect the way entanglement
+is transferred through the system.
+Let the additional spin “+” and the spin “M” con-
+taining the message have the maximally entangled state
+1
+√
+2(|0⟩+|0⟩M +|1⟩+|1⟩M). Thus, after Alice performs her
+encoding, the entire state is:
+|Φ(0)⟩=
+1
+√
+2 [|0⟩+|0⟩A|0⟩¯
+A + |1⟩+|1ENC⟩A|0⟩¯
+A] . (A1)
+After the system evolves for time T , the state becomes
+|Φ(T )⟩=
+1
+√
+2
+h
+|0⟩+|0⟩¯
+B|0⟩B + |1⟩+(
+p
+1 −CB(T )|η(T )⟩
++
+p
+CB(T )|0⟩¯
+B|γ(T )⟩B)
+i
+.
+(A2)
+Then Bob performs a decoding unitary, denoted Udec, on
+the spins he controls. Udec is deﬁned to act as follows:
+Udec|0⟩B = |0⟩B and Udec|γ(T )⟩B = |0 . . . 01⟩B, where
+|0 . . . 01⟩B is the |1⟩state on spin N and the all-zero
+state on Bob’s other spins.
+After Bob’s decoding, the
+joint state of Alice’s additional spin and Bob’s decoded
+spin is:
+ρ+/N = tr+/N(Udectr ¯
+B(|Φ(T )⟩⟨Φ(T )|)U †
+dec)
+= 1
+2
+h
+(1 −CB(T ))|1⟩⟨1| ⊗˜ρ + CB(T )|11⟩⟨11|
++|00⟩⟨00| +
+p
+CB(T )(|00⟩⟨11|
++|11⟩⟨00|)
+i
+,
+(A3)
+where ˜ρ ≡tr+/N(Udectr ¯
+B(|η(T )⟩⟨η(T )|)U †
+dec), and where
+tr(·)(·) is the partial trace performed over the spins indi-
+cated.
+Concurrence is a measure of entanglement between two
+qubits [13]. The value of concurrence for a density matrix
+ρ+/N is equal to
+E(ρ+/N) = max{0,
+p
+λ1 −
+p
+λ2 −
+p
+λ3 −
+p
+λ4}, (A4)
+where the λjs are the eigenvalues, in nonincreasing or-
+der, of the matrix ρ+/N(σy ⊗σy)ρ∗
++/N(σy ⊗σy), where
+∗represents complex conjugation in the computational
+basis. It can be shown that
+λ1 = 1
+4
+p
+˜ρ11CB(T ) + 1 −˜ρ11 +
+p
+CB(T )
+2
+λ2 = 1
+4
+p
+˜ρ11CB(T ) + 1 −˜ρ11 −
+p
+CB(T )
+2
+λ3 = 0
+λ4 = 0,
+(A5)
+where ˜ρ11 = ⟨0|˜ρ|0⟩. Thus, using the fact that CB(T ) and
+˜ρ11 each lie in the interval [0, 1], we have
+E(ρ+/N) =
+p
+CB(T ),
+(A6)
+as required.
+
+
+[PDF PAGE 10]
+10
+[1] D. P. DiVincenzo, Fortschritte der physik — progress of
+physics 48, 771 (2000), arXiv:quant-ph/0002077.
+[2] J. Preskill, Physics 229: Advanced mathematical meth-
+ods of physics — Quantum computation and information
+(California Institute of Technology, Pasadena, CA, 1998),
+http://www.theory.caltech.edu/people/preskill/ph229/.
+[3] M. A. Nielsen and I. L. Chuang, Quantum computation
+and quantum information (Cambridge University Press,
+Cambridge, 2000).
+[4] S.
+Bose,
+Phys.
+Rev.
+Lett.
+91,
+207901
+(2003),
+arXiv:quant-ph/0212041.
+[5] M. Christandl, N. Datta, A. Ekert, and A. J. Landahl,
+arXiv:quant-ph/0309131 (2003).
+[6] T. J. Osborne and N. Linden, arXiv:quant-ph/0312141
+(2003).
+[7] T. J. Osborne and S. Severini, arXiv:quant-ph/043127
+(2004).
+[8] R. A. Horn and C. R. Johnson, Topics in matrix analysis
+(Cambridge University Press, Cambridge, 1991).
+[9] J. Kempe, Contemp. Physics 44, 307 (2003).
+[10] A. Ambainis, arXiv:quant-ph/0311001 (2003).
+[11] A. M. Childs, R. Cleve, E. Deotto, E. Farhi, S. Gutmann,
+and D. A. Spielman, in Proc. 35th Annual ACM Sympo-
+sium on Theory of Computing (ACM, New York, 2003),
+pp. 59–68.
+[12] H. L. Haselgrove (2004), online animations available at
+http://www.physics.uq.edu.au/people/hlh/comms.
+[13] W. K. Wootters, Phys. Rev. Lett. 80, 2245 (1998).

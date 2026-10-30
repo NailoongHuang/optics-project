@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "symbolic": {
+    "status": "passed",
+    "assumptions": "qx,qy real; eta>0; dimensionless Euclidean graph R=(qx,qy,e)",
+    "reference": "https://mathworld.wolfram.com/GaussianCurvature.html, Monge patch equation (15)",
+    "fundamental_form_residual": "0",
+    "curvature": "eta*cos(q_x)*cos(q_y)/(eta**2*sin(q_y)**2 + sin(q_x)**2 + 1)**2",
+    "hessian": "Matrix([[cos(q_x), 0], [0, eta*cos(q_y)]])",
+    "zero_locus": "qx=pi/2+n*pi OR qy=pi/2+m*pi, n,m integers",
+    "crossing_gradient": "Matrix([[1], [eta]])",
+    "crossing_cubic_coefficients": [
+      "-1/6",
+      "-eta/6"
+    ],
+    "distinction": "The Hessian controls quadratic spectral phase; its eigenvalues are not the graph surface principal curvatures in general."
+  },
+  "cases": [
+    {
+      "case": "A_eta1",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 9.00283077956507e-30,
+      "max_center_error": 5.684341886080802e-14,
+      "max_variance_error": 2.5579538487363607e-13,
+      "enlarged_box_amplitude_L2": 9.368043490454853e-15,
+      "passed": true
+    },
+    {
+      "case": "B_eta1",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 7.578306879180872e-19,
+      "max_center_error": 5.684341886080802e-14,
+      "max_variance_error": 5.258016244624741e-13,
+      "enlarged_box_amplitude_L2": 9.360653672639474e-13,
+      "passed": true
+    },
+    {
+      "case": "C_eta1",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 1.515663639207762e-18,
+      "max_center_error": 8.526512829121202e-14,
+      "max_variance_error": 7.194245199571014e-14,
+      "enlarged_box_amplitude_L2": 1.3242882636360106e-12,
+      "passed": true
+    },
+    {
+      "case": "A_eta03",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 6.661338147750939e-16,
+      "max_edge_mass": 3.87893557488445e-30,
+      "max_center_error": 5.684341886080802e-14,
+      "max_variance_error": 3.836930773104541e-13,
+      "enlarged_box_amplitude_L2": 7.282967501337628e-15,
+      "passed": true
+    },
+    {
+      "case": "B_eta03",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 7.578304077187631e-19,
+      "max_center_error": 8.526512829121202e-14,
+      "max_variance_error": 1.2523315717771766e-13,
+      "enlarged_box_amplitude_L2": 9.358159972356792e-13,
+      "passed": true
+    },
+    {
+      "case": "C_eta03",
+      "N": 512,
+      "larger_N": 1024,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 7.578304355662907e-19,
+      "max_center_error": 8.526512829121202e-14,
+      "max_variance_error": 1.0802470029602773e-13,
+      "enlarged_box_amplitude_L2": 9.359991482460943e-13,
+      "passed": true
+    },
+    {
+      "case": "C_sigma4",
+      "N": 1024,
+      "larger_N": 1536,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 1.806619532220724e-28,
+      "max_center_error": 2.8421709430404007e-13,
+      "max_variance_error": 1.1013412404281553e-13,
+      "enlarged_box_amplitude_L2": 8.935861005622033e-14,
+      "passed": true
+    },
+    {
+      "case": "C_sigma6",
+      "N": 1024,
+      "larger_N": 1536,
+      "max_norm_error": 1.1102230246251565e-15,
+      "max_edge_mass": 1.7937217579230181e-28,
+      "max_center_error": 2.2737367544323206e-13,
+      "max_variance_error": 9.769962616701378e-14,
+      "enlarged_box_amplitude_L2": 9.046624738245605e-14,
+      "passed": true
+    },
+    {
+      "case": "C_sigma8",
+      "N": 1024,
+      "larger_N": 1536,
+      "max_norm_error": 8.881784197001252e-16,
+      "max_edge_mass": 1.8899628427659134e-28,
+      "max_center_error": 2.8421709430404007e-13,
+      "max_variance_error": 1.0857981180834031e-13,
+      "enlarged_box_amplitude_L2": 9.121228945723743e-14,
+      "passed": true
+    }
+  ],
+  "gaussian_curvature_finite_difference_max_error": 2.3085122702326544e-10,
+  "curvature_periodicity_error": 1.1102230246251565e-16,
+  "random_seed": 20261020,
+  "coordinate_convention": "R=(qx,qy,e), q=ka, e=epsilon/Jx",
+  "interpretation": "Hessian eigenvalues control quadratic spectral phase. Curvature zero alone does not imply H=0 or packet preservation."
+}

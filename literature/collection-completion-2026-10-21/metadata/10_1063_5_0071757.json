@@ -1,0 +1,582 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2025-07-30T11:19:37Z",
+      "timestamp": 1753874377087,
+      "version": "3.41.2"
+    },
+    "reference-count": 30,
+    "publisher": "AIP Publishing",
+    "issue": "18",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "SFB 1459"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "SFB 1459"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "TRR227 TP B02"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "TRR227 TP B02"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "pubs.aip.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>We study, experimentally and by micromagnetic simulations, the propagation of spin waves in 100-nm thick YIG waveguides, where the width linearly decreases from 2 to 0.5 μm over a transition region with varying lengths between 2.5 and 10 μm. We show that this geometry results in a downconversion of the wavelength, enabling efficient generation of waves with wavelengths down to 350 nm. We also find that this geometry leads to a modification in the group velocity, allowing for almost-dispersionless propagation of spin-wave pulses. Moreover, we demonstrate that the influence of energy concentration outweighs that of damping in these YIG waveguides, resulting in an overall increase in the spin-wave intensity during propagation in the transition region. These findings can be utilized to improve the efficiency and functionality of magnonic devices that use spin waves as an information carrier.</jats:p>",
+    "DOI": "10.1063/5.0071757",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2021-11-01T11:22:54Z",
+      "timestamp": 1635765774000
+    },
+    "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Efficient geometrical control of spin waves in microscopic YIG waveguides"
+    ],
+    "prefix": "10.1063",
+    "volume": "119",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6911-6421",
+        "authenticated-orcid": false,
+        "given": "S. R.",
+        "family": "Lake",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institut für Physik, Martin-Luther-Universität Halle-Wittenberg 1 , 06120 Halle, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6833-7035",
+        "authenticated-orcid": false,
+        "given": "B.",
+        "family": "Divinskiy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Applied Physics, University of Muenster 2 , 48149 Muenster, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4151-6543",
+        "authenticated-orcid": false,
+        "given": "G.",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institut für Physik, Martin-Luther-Universität Halle-Wittenberg 1 , 06120 Halle, Germany"
+          },
+          {
+            "name": "Interdisziplinäres Zentrum für Materialforschung 3 , , 06120 Halle, Germany"
+          },
+          {
+            "name": "Martin-Luther-Universität Halle-Wittenberg 3 , , 06120 Halle, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-4201",
+        "authenticated-orcid": false,
+        "given": "S. O.",
+        "family": "Demokritov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Applied Physics, University of Muenster 2 , 48149 Muenster, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7840-5679",
+        "authenticated-orcid": false,
+        "given": "V. E.",
+        "family": "Demidov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Applied Physics, University of Muenster 2 , 48149 Muenster, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "317",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2023061815450739000_c1",
+        "doi-asserted-by": "publisher",
+        "first-page": "2927",
+        "DOI": "10.1002/adma.200900809",
+        "volume": "21",
+        "year": "2009",
+        "journal-title": "Adv. Mater."
+      },
+      {
+        "key": "2023061815450739000_c2",
+        "doi-asserted-by": "publisher",
+        "first-page": "264001",
+        "DOI": "10.1088/0022-3727/43/26/264001",
+        "volume": "43",
+        "year": "2010",
+        "journal-title": "J. Phys. D: Appl. Phys."
+      },
+      {
+        "key": "2023061815450739000_c3",
+        "doi-asserted-by": "publisher",
+        "first-page": "107",
+        "DOI": "10.1016/j.physrep.2011.06.003",
+        "volume": "507",
+        "year": "2011",
+        "journal-title": "Phys. Rep."
+      },
+      {
+        "key": "2023061815450739000_c4",
+        "doi-asserted-by": "publisher",
+        "first-page": "453",
+        "DOI": "10.1038/nphys3347",
+        "volume": "11",
+        "year": "2015",
+        "journal-title": "Nat. Phys."
+      },
+      {
+        "key": "2023061815450739000_c5",
+        "doi-asserted-by": "publisher",
+        "first-page": "232503",
+        "DOI": "10.1063/1.2945000",
+        "volume": "92",
+        "year": "2008",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c6",
+        "doi-asserted-by": "publisher",
+        "first-page": "024431",
+        "DOI": "10.1103/PhysRevB.78.024431",
+        "volume": "78",
+        "year": "2008",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061815450739000_c7",
+        "doi-asserted-by": "publisher",
+        "first-page": "054417",
+        "DOI": "10.1103/PhysRevB.79.054417",
+        "volume": "79",
+        "year": "2009",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061815450739000_c8",
+        "doi-asserted-by": "publisher",
+        "first-page": "082507",
+        "DOI": "10.1063/1.3631756",
+        "volume": "99",
+        "year": "2011",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c9",
+        "doi-asserted-by": "publisher",
+        "first-page": "042410",
+        "DOI": "10.1063/1.4738887",
+        "volume": "101",
+        "year": "2012",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c10",
+        "doi-asserted-by": "publisher",
+        "first-page": "020408(R)",
+        "DOI": "10.1103/PhysRevB.92.020408",
+        "volume": "92",
+        "year": "2015",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061815450739000_c11",
+        "doi-asserted-by": "publisher",
+        "first-page": "232402",
+        "DOI": "10.1063/1.5127881",
+        "volume": "115",
+        "year": "2019",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c12",
+        "doi-asserted-by": "publisher",
+        "first-page": "173907",
+        "DOI": "10.1063/1.5099358",
+        "volume": "126",
+        "year": "2019",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2023061815450739000_c13",
+        "doi-asserted-by": "publisher",
+        "first-page": "054038",
+        "DOI": "10.1103/PhysRevApplied.13.054038",
+        "volume": "13",
+        "year": "2020",
+        "journal-title": "Phys. Rev. Appl."
+      },
+      {
+        "key": "2023061815450739000_c14",
+        "doi-asserted-by": "publisher",
+        "first-page": "060501",
+        "DOI": "10.1063/5.0061528",
+        "volume": "119",
+        "year": "2021",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.physrep.2020.12.004",
+        "volume": "905",
+        "year": "2021",
+        "journal-title": "Phys. Rep."
+      },
+      {
+        "key": "2023061815450739000_c16",
+        "doi-asserted-by": "publisher",
+        "first-page": "0800215",
+        "DOI": "10.1109/TMAG.2014.2388196",
+        "volume": "51",
+        "year": "2015",
+        "journal-title": "IEEE Trans. Mag."
+      },
+      {
+        "key": "2023061815450739000_c17",
+        "doi-asserted-by": "publisher",
+        "first-page": "152405",
+        "DOI": "10.1063/1.4759039",
+        "volume": "101",
+        "year": "2012",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c18",
+        "doi-asserted-by": "publisher",
+        "first-page": "082408",
+        "DOI": "10.1063/1.4819157",
+        "volume": "103",
+        "year": "2013",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c19",
+        "doi-asserted-by": "publisher",
+        "first-page": "20827",
+        "DOI": "10.1038/srep20827",
+        "volume": "6",
+        "year": "2016",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2023061815450739000_c20",
+        "doi-asserted-by": "publisher",
+        "first-page": "6848",
+        "DOI": "10.1038/srep06848",
+        "volume": "4",
+        "year": "2014",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2023061815450739000_c21",
+        "doi-asserted-by": "publisher",
+        "first-page": "092408",
+        "DOI": "10.1063/1.4976708",
+        "volume": "110",
+        "year": "2017",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c22",
+        "doi-asserted-by": "publisher",
+        "first-page": "738",
+        "DOI": "10.1038/s41467-018-03199-8",
+        "volume": "9",
+        "year": "2018",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "2023061815450739000_c23",
+        "doi-asserted-by": "publisher",
+        "first-page": "388",
+        "DOI": "10.1039/C5NR06808H",
+        "volume": "8",
+        "year": "2016",
+        "journal-title": "Nanoscale"
+      },
+      {
+        "key": "2023061815450739000_c24",
+        "doi-asserted-by": "publisher",
+        "first-page": "4220",
+        "DOI": "10.1021/acs.nanolett.0c00657",
+        "volume": "20",
+        "year": "2020",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "2023061815450739000_c25",
+        "doi-asserted-by": "publisher",
+        "first-page": "1900644",
+        "DOI": "10.1002/pssb.201900644",
+        "volume": "257",
+        "year": "2020",
+        "journal-title": "Phys. Status Solidi B"
+      },
+      {
+        "key": "2023061815450739000_c26",
+        "doi-asserted-by": "publisher",
+        "first-page": "172406",
+        "DOI": "10.1063/1.4948252",
+        "volume": "108",
+        "year": "2016",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061815450739000_c27",
+        "doi-asserted-by": "publisher",
+        "first-page": "257201",
+        "DOI": "10.1103/PhysRevLett.123.257201",
+        "volume": "123",
+        "year": "2019",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "2023061815450739000_c28",
+        "doi-asserted-by": "publisher",
+        "first-page": "041002",
+        "DOI": "10.1103/PhysRevApplied.10.041002",
+        "volume": "10",
+        "year": "2018",
+        "journal-title": "Phys. Rev. Appl."
+      },
+      {
+        "key": "2023061815450739000_c29",
+        "doi-asserted-by": "publisher",
+        "first-page": "107133",
+        "DOI": "10.1063/1.4899186",
+        "volume": "4",
+        "year": "2014",
+        "journal-title": "AIP Adv."
+      },
+      {
+        "key": "2023061815450739000_c30",
+        "doi-asserted-by": "publisher",
+        "first-page": "024028",
+        "DOI": "10.1103/PhysRevApplied.16.024028",
+        "volume": "16",
+        "year": "2021",
+        "journal-title": "Phys. Rev. Appl."
+      }
+    ],
+    "container-title": [
+      "Applied Physics Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.aip.org/aip/apl/article-pdf/doi/10.1063/5.0071757/13762615/182401_1_online.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://pubs.aip.org/aip/apl/article-pdf/doi/10.1063/5.0071757/13762615/182401_1_online.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2023-06-18T15:45:14Z",
+      "timestamp": 1687103114000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.aip.org/apl/article/119/18/182401/40531/Efficient-geometrical-control-of-spin-waves-in"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ]
+    },
+    "references-count": 30,
+    "journal-issue": {
+      "issue": "18",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1063/5.0071757",
+    "relation": {},
+    "ISSN": [
+      "0003-6951",
+      "1077-3118"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0003-6951"
+      },
+      {
+        "type": "electronic",
+        "value": "1077-3118"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          1
+        ]
+      ]
+    },
+    "article-number": "182401"
+  }
+}

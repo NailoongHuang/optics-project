@@ -1,0 +1,519 @@
+{
+  "id": "https://openalex.org/W7125413486",
+  "doi": "https://doi.org/10.1103/7zfd-p48s",
+  "title": "Spatiotemporal diffractive magnonics in two-dimensional magnetic systems",
+  "display_name": "Spatiotemporal diffractive magnonics in two-dimensional magnetic systems",
+  "publication_year": 2026,
+  "publication_date": "2026-01-22",
+  "ids": {
+    "openalex": "https://openalex.org/W7125413486",
+    "doi": "https://doi.org/10.1103/7zfd-p48s"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1103/7zfd-p48s",
+    "doi": "https://doi.org/10.1103/7zfd-p48s",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1103/7zfd-p48s",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4210237713",
+      "display_name": "Physical review. B./Physical review. B",
+      "issn_l": "2469-9950",
+      "issn": [
+        "2469-9950",
+        "2469-9969",
+        "2469-9977"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-a",
+        "jufo-2",
+        "norway-2",
+        "poland-140",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320261",
+      "host_organization_name": "American Physical Society",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320261"
+      ],
+      "host_organization_lineage_names": [
+        "American Physical Society"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Physical Review B",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5054801329",
+        "display_name": "Xuefeng Zhao",
+        "orcid": "https://orcid.org/0000-0001-8603-900X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-8603-900X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I126520041",
+          "display_name": "University of Science and Technology of China",
+          "ror": "https://ror.org/04c4dkn09",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I126520041",
+            "https://openalex.org/I19820366"
+          ]
+        }
+      ],
+      "countries": [
+        "CN"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Xuefeng Zhao",
+      "raw_affiliation_strings": [
+        "University of Science and Technology of China"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-8603-900X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Science and Technology of China",
+          "institution_ids": [
+            "https://openalex.org/I126520041"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5054024978",
+        "display_name": "Nan Gao",
+        "orcid": "https://orcid.org/0000-0001-9349-5556",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-9349-5556"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I126520041",
+          "display_name": "University of Science and Technology of China",
+          "ror": "https://ror.org/04c4dkn09",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I126520041",
+            "https://openalex.org/I19820366"
+          ]
+        }
+      ],
+      "countries": [
+        "CN"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Nan Gao",
+      "raw_affiliation_strings": [
+        "Hefei Comprehensive National Science Center",
+        "University of Science and Technology of China"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-9349-5556",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Hefei Comprehensive National Science Center",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "University of Science and Technology of China",
+          "institution_ids": [
+            "https://openalex.org/I126520041"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I126520041"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 5.4408,
+  "has_fulltext": false,
+  "cited_by_count": 2,
+  "citation_normalized_percentile": {
+    "value": 0.93783114,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 96,
+    "max": 97
+  },
+  "biblio": {
+    "volume": "113",
+    "issue": "5",
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10049",
+    "display_name": "Magnetic properties of thin films",
+    "score": 0.9926999807357788,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3107",
+      "display_name": "Atomic and Molecular Physics, and Optics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/31",
+      "display_name": "Physics and Astronomy"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10049",
+      "display_name": "Magnetic properties of thin films",
+      "score": 0.9926999807357788,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11682",
+      "display_name": "Advanced Condensed Matter Physics",
+      "score": 0.002300000051036477,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3104",
+        "display_name": "Condensed Matter Physics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10382",
+      "display_name": "Quantum and electron transport phenomena",
+      "score": 0.000699999975040555,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/magnonics",
+      "display_name": "magnonics",
+      "score": 0.9049999713897705
+    },
+    {
+      "id": "https://openalex.org/keywords/two-dimensional-magnetic-systems",
+      "display_name": "two-dimensional magnetic systems",
+      "score": 0.753000020980835
+    },
+    {
+      "id": "https://openalex.org/keywords/spin-waves",
+      "display_name": "spin waves",
+      "score": 0.453000009059906
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.5318999886512756
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.38830000162124634
+    },
+    {
+      "id": "https://openalex.org/C158971709",
+      "wikidata": "https://www.wikidata.org/wiki/Q1651720",
+      "display_name": "Magnonics",
+      "level": 5,
+      "score": 0.3732999861240387
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 0.31130000948905945
+    },
+    {
+      "id": "https://openalex.org/C44280652",
+      "wikidata": "https://www.wikidata.org/wiki/Q104837",
+      "display_name": "Phase (matter)",
+      "level": 2,
+      "score": 0.26460000872612
+    },
+    {
+      "id": "https://openalex.org/C28719098",
+      "wikidata": "https://www.wikidata.org/wiki/Q44946",
+      "display_name": "Point (geometry)",
+      "level": 2,
+      "score": 0.25049999356269836
+    },
+    {
+      "id": "https://openalex.org/C2779343474",
+      "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+      "display_name": "Context (archaeology)",
+      "level": 2,
+      "score": 0.23929999768733978
+    },
+    {
+      "id": "https://openalex.org/C207114421",
+      "wikidata": "https://www.wikidata.org/wiki/Q133900",
+      "display_name": "Diffraction",
+      "level": 2,
+      "score": 0.22679999470710754
+    },
+    {
+      "id": "https://openalex.org/C18762648",
+      "wikidata": "https://www.wikidata.org/wiki/Q42213",
+      "display_name": "Work (physics)",
+      "level": 2,
+      "score": 0.22619999945163727
+    },
+    {
+      "id": "https://openalex.org/C115260700",
+      "wikidata": "https://www.wikidata.org/wiki/Q11408",
+      "display_name": "Magnetic field",
+      "level": 2,
+      "score": 0.219200000166893
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1103/7zfd-p48s",
+      "doi": "https://doi.org/10.1103/7zfd-p48s",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1103/7zfd-p48s",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4210237713",
+        "display_name": "Physical review. B./Physical review. B",
+        "issn_l": "2469-9950",
+        "issn": [
+          "2469-9950",
+          "2469-9969",
+          "2469-9977"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "dongbi-a",
+          "jufo-2",
+          "norway-2",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320261",
+        "host_organization_name": "American Physical Society",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320261"
+        ],
+        "host_organization_lineage_names": [
+          "American Physical Society"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Physical Review B",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G4465636862",
+      "display_name": null,
+      "funder_award_id": "62171426",
+      "funder_id": "https://openalex.org/F4320321001",
+      "funder_display_name": "National Natural Science Foundation of China"
+    },
+    {
+      "id": "https://openalex.org/G5484296243",
+      "display_name": null,
+      "funder_award_id": "YSBR-029",
+      "funder_id": "https://openalex.org/F4320321133",
+      "funder_display_name": "Chinese Academy of Sciences"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320321001",
+      "display_name": "National Natural Science Foundation of China",
+      "ror": "https://ror.org/01h0zpd94"
+    },
+    {
+      "id": "https://openalex.org/F4320321133",
+      "display_name": "Chinese Academy of Sciences",
+      "ror": "https://ror.org/034t30j35"
+    },
+    {
+      "id": "https://openalex.org/F4320335832",
+      "display_name": "USTC Center for Micro- and Nanoscale Research and Fabrication",
+      "ror": null
+    }
+  ],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 68,
+  "referenced_works": [
+    "https://openalex.org/W592795041",
+    "https://openalex.org/W1484940324",
+    "https://openalex.org/W1666853924",
+    "https://openalex.org/W1746904668",
+    "https://openalex.org/W1964430523",
+    "https://openalex.org/W1966913447",
+    "https://openalex.org/W1968777969",
+    "https://openalex.org/W1969517721",
+    "https://openalex.org/W1975377300",
+    "https://openalex.org/W1977206389",
+    "https://openalex.org/W1980689058",
+    "https://openalex.org/W2006281269",
+    "https://openalex.org/W2009137829",
+    "https://openalex.org/W2011703445",
+    "https://openalex.org/W2014908657",
+    "https://openalex.org/W2017700703",
+    "https://openalex.org/W2018311990",
+    "https://openalex.org/W2018555400",
+    "https://openalex.org/W2023178948",
+    "https://openalex.org/W2030468762",
+    "https://openalex.org/W2051505329",
+    "https://openalex.org/W2053201987",
+    "https://openalex.org/W2086860422",
+    "https://openalex.org/W2093283551",
+    "https://openalex.org/W2094307853",
+    "https://openalex.org/W2107971449",
+    "https://openalex.org/W2141586044",
+    "https://openalex.org/W2142805504",
+    "https://openalex.org/W2156257671",
+    "https://openalex.org/W2232959467",
+    "https://openalex.org/W2345173482",
+    "https://openalex.org/W2412669504",
+    "https://openalex.org/W2553803509",
+    "https://openalex.org/W2566076131",
+    "https://openalex.org/W2567285821",
+    "https://openalex.org/W2735911783",
+    "https://openalex.org/W2782719914",
+    "https://openalex.org/W2787226197",
+    "https://openalex.org/W2898449596",
+    "https://openalex.org/W2899892324",
+    "https://openalex.org/W2902483977",
+    "https://openalex.org/W2904688725",
+    "https://openalex.org/W2913957496",
+    "https://openalex.org/W2963281320",
+    "https://openalex.org/W2991755489",
+    "https://openalex.org/W2992642190",
+    "https://openalex.org/W3009346489",
+    "https://openalex.org/W3084908907",
+    "https://openalex.org/W3095394159",
+    "https://openalex.org/W3100550362",
+    "https://openalex.org/W3101392531",
+    "https://openalex.org/W3133966277",
+    "https://openalex.org/W3151391132",
+    "https://openalex.org/W3173215401",
+    "https://openalex.org/W4211212552",
+    "https://openalex.org/W4247365710",
+    "https://openalex.org/W4254297188",
+    "https://openalex.org/W4296640300",
+    "https://openalex.org/W4309134186",
+    "https://openalex.org/W4321499228",
+    "https://openalex.org/W4381597457",
+    "https://openalex.org/W4385723241",
+    "https://openalex.org/W4390985338",
+    "https://openalex.org/W4393403318",
+    "https://openalex.org/W4399123516",
+    "https://openalex.org/W4400682141",
+    "https://openalex.org/W4402943277",
+    "https://openalex.org/W4407320015"
+  ],
+  "related_works": [],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-10-14T16:39:01.820549",
+  "created_date": "2026-01-23T00:00:00"
+}

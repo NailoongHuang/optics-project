@@ -1,0 +1,17 @@
+[
+  {
+    "t": 0.0,
+    "real_peak_over_initial": 1.0,
+    "probability_peak_over_initial": 1.0
+  },
+  {
+    "t": 9.0,
+    "real_peak_over_initial": 0.7463666860347843,
+    "probability_peak_over_initial": 0.9998209753414073
+  },
+  {
+    "t": 15.0,
+    "real_peak_over_initial": 0.9823620108714386,
+    "probability_peak_over_initial": 0.9995030677009578
+  }
+]

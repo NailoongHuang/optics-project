@@ -1,0 +1,369 @@
+{
+  "status": "passed",
+  "checks_count": 27,
+  "conventions": {
+    "a": 1,
+    "hbar": 1,
+    "Jx": 1,
+    "S": 0.5,
+    "h": 0,
+    "psi": "normalized one-magnon amplitude after removing common E_F phase"
+  },
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0"
+  },
+  "pilot_limitations": [
+    {
+      "N": 256,
+      "sigma": 10,
+      "q0": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "tau": 60,
+      "edge_mass": 4.0580166278068936e-08,
+      "width_error": 2.1417374540533274e-08,
+      "resolution": "Expanded Gaussian validation to N=384 and compared N=768."
+    }
+  ],
+  "results": [
+    {
+      "test": "independent_sparse_real_space_exponential",
+      "N": 12,
+      "eta": 0.37,
+      "tau": 4.3,
+      "l2_error": 3.404276148170018e-15,
+      "threshold": 1e-11,
+      "seed": 20261019
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.0,
+      "tau": 0.0,
+      "l2_error": 0.0,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 0.0
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.0,
+      "tau": 0.2,
+      "l2_error": 8.378747596965854e-17,
+      "width_error": 2.7755575615628914e-17,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 9.92403473208309e-34
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.0,
+      "tau": 7.0,
+      "l2_error": 8.891759512236707e-16,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 5.06102039780431e-32
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.0,
+      "tau": 45.0,
+      "l2_error": 5.661224672120918e-15,
+      "width_error": 3.552713678800501e-15,
+      "norm_error": 0.0,
+      "edge_mass": 2.9880645100727214e-30
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.3,
+      "tau": 0.0,
+      "l2_error": 0.0,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 0.0
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.3,
+      "tau": 0.2,
+      "l2_error": 1.2904353611863312e-16,
+      "width_error": 2.7755575615628914e-17,
+      "norm_error": 1.1102230246251565e-16,
+      "edge_mass": 2.9643519004901876e-33
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.3,
+      "tau": 7.0,
+      "l2_error": 1.1942574545368839e-15,
+      "width_error": 8.881784197001252e-16,
+      "norm_error": 0.0,
+      "edge_mass": 1.366052002465442e-31
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 0.3,
+      "tau": 45.0,
+      "l2_error": 7.39858208455367e-15,
+      "width_error": 1.7763568394002505e-15,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 5.381720084667154e-30
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.0,
+      "tau": 0.0,
+      "l2_error": 0.0,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 0.0
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.0,
+      "tau": 0.2,
+      "l2_error": 1.8196555766290134e-16,
+      "width_error": 2.7755575615628914e-17,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 6.324464441364282e-33
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.0,
+      "tau": 7.0,
+      "l2_error": 1.6522790845967592e-15,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 2.790678613233292e-31
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.0,
+      "tau": 45.0,
+      "l2_error": 1.0352358616147821e-14,
+      "width_error": 7.105427357601002e-15,
+      "norm_error": 0.0,
+      "edge_mass": 1.34396125879616e-29
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.7,
+      "tau": 0.0,
+      "l2_error": 0.0,
+      "width_error": 0.0,
+      "norm_error": 0.0,
+      "edge_mass": 0.0
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.7,
+      "tau": 0.2,
+      "l2_error": 1.7451188909888432e-16,
+      "width_error": 2.7755575615628914e-17,
+      "norm_error": 0.0,
+      "edge_mass": 4.272973786016488e-33
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.7,
+      "tau": 7.0,
+      "l2_error": 4.073878615753678e-15,
+      "width_error": 0.0,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 6.779271629602963e-31
+    },
+    {
+      "test": "bessel_complex_amplitude_and_ballistic_width",
+      "N": 256,
+      "eta": 1.7,
+      "tau": 45.0,
+      "l2_error": 2.6520483371529317e-14,
+      "width_error": 0.0,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 4.907576527374222e-26
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 3.0,
+      "eta": 1.0,
+      "q0": [
+        0.7,
+        0.0
+      ],
+      "tau": 60.0,
+      "velocity_error": 5.551115123125783e-16,
+      "center_error": 8.88178419700125e-16,
+      "width_error": 5.329070518200751e-15,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 1.1860210701002494e-30,
+      "doubled_box_l2_error": 2.3241361966037623e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 3.0,
+      "eta": 0.3,
+      "q0": [
+        0.7,
+        0.7
+      ],
+      "tau": 60.0,
+      "velocity_error": 5.551115123125783e-16,
+      "center_error": 7.105427357601002e-15,
+      "width_error": 8.881784197001252e-16,
+      "norm_error": 4.440892098500626e-16,
+      "edge_mass": 1.2159771991738781e-30,
+      "doubled_box_l2_error": 2.3137297501104637e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 3.0,
+      "eta": 1.0,
+      "q0": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "tau": 60.0,
+      "velocity_error": 1.1102230246251565e-15,
+      "center_error": 1.4210854715202004e-14,
+      "width_error": 4.75175454539567e-14,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 2.824409272353882e-29,
+      "doubled_box_l2_error": 1.039425974138073e-14
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 6.0,
+      "eta": 1.0,
+      "q0": [
+        0.7,
+        0.0
+      ],
+      "tau": 60.0,
+      "velocity_error": 5.551115123125783e-16,
+      "center_error": 4.440892098500625e-16,
+      "width_error": 8.881784197001252e-15,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 1.2903555683111917e-30,
+      "doubled_box_l2_error": 2.2755329122712047e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 6.0,
+      "eta": 0.3,
+      "q0": [
+        0.7,
+        0.7
+      ],
+      "tau": 60.0,
+      "velocity_error": 6.661338147750939e-16,
+      "center_error": 7.105427357601002e-15,
+      "width_error": 8.881784197001252e-16,
+      "norm_error": 4.440892098500626e-16,
+      "edge_mass": 1.4185207815372589e-30,
+      "doubled_box_l2_error": 2.3382941753550923e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 6.0,
+      "eta": 1.0,
+      "q0": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "tau": 60.0,
+      "velocity_error": 1.1102230246251565e-15,
+      "center_error": 3.552713678800501e-14,
+      "width_error": 7.105427357601002e-15,
+      "norm_error": 4.440892098500626e-16,
+      "edge_mass": 2.24883392437944e-29,
+      "doubled_box_l2_error": 9.272412719186426e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 10.0,
+      "eta": 1.0,
+      "q0": [
+        0.7,
+        0.0
+      ],
+      "tau": 60.0,
+      "velocity_error": 6.661338147750939e-16,
+      "center_error": 7.105427357601002e-15,
+      "width_error": 3.552713678800501e-15,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 1.329478533301848e-30,
+      "doubled_box_l2_error": 2.2043563197416244e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 10.0,
+      "eta": 0.3,
+      "q0": [
+        0.7,
+        0.7
+      ],
+      "tau": 60.0,
+      "velocity_error": 7.771561172376096e-16,
+      "center_error": 3.552713678800501e-15,
+      "width_error": 5.329070518200751e-15,
+      "norm_error": 6.661338147750939e-16,
+      "edge_mass": 1.5887174155840315e-30,
+      "doubled_box_l2_error": 2.3725126582428473e-15
+    },
+    {
+      "test": "gaussian_analytic_moments_and_doubled_box",
+      "N": 384,
+      "N_large": 768,
+      "sigma": 10.0,
+      "eta": 1.0,
+      "q0": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "tau": 60.0,
+      "velocity_error": 1.2212453270876722e-15,
+      "center_error": 4.263256414560601e-14,
+      "width_error": 3.552713678800501e-15,
+      "norm_error": 2.220446049250313e-16,
+      "edge_mass": 1.4809695446974608e-29,
+      "doubled_box_l2_error": 8.308694292813922e-15
+    },
+    {
+      "test": "plane_wave_and_zero_mode",
+      "plane_wave_l2_error": 1.703913380878502e-15,
+      "zero_mode_l2_error": 0.0
+    }
+  ]
+}

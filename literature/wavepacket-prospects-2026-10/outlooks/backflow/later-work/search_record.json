@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-21",
+  "sources": ["Web search discovery", "Official arXiv latest abstract/version records", "Official arXiv HTML and versioned PDFs", "APS original publication metadata"],
+  "queries": [
+    "\"Quantum backflow in biased tight-binding systems\"",
+    "\"General Quantum Backflow in Realistic Wave Packets\"",
+    "\"quantum backflow\" \"disorder\" lattice",
+    "\"quantum backflow\" experiment 2026 Gaussian",
+    "\"quantum backflow\" \"2026\" \"experimental\"",
+    "\"optical backflow\" \"2026\"",
+    "\"Quantum Correlations Enable Nonlocal Manipulation\"",
+    "\"quantum backflow\" \"dephasing\"",
+    "site:arxiv.org \"Nonlocal Manipulation of Backflow\"",
+    "site:arxiv.org \"quantum backflow\" \"2026\" \"disorder\"",
+    "\"quantum backflow\" \"decoherence\" probability current",
+    "\"quantum backflow\" \"finite resolution\"",
+    "\"backflow\" \"site disorder\"",
+    "\"quantum backflow\" \"lattices\" \"2023\"",
+    "\"2511.16867\" \"2026\" \"Gaussian\"",
+    "\"2511.10155\" \"2026\" \"experiment\"",
+    "site:arxiv.org \"2511.16867\"",
+    "site:arxiv.org \"2511.10155\"",
+    "site:arxiv.org \"quantum backflow\" \"2026\" \"measurement\" -\"information\" -\"energy\""
+  ],
+  "screening": {
+    "included": "Probability-current backflow, realistic state preparation, physical measurement and directly relevant limitations.",
+    "excluded": ["Information backflow/non-Markovianity as a different observable", "Neural backflow ansatz", "Thermodynamic energy backflow", "Classical scattering-induced reverse transport without the positive-velocity comparison", "Secondary summaries used as scientific evidence"],
+    "deduplication": "One record per arXiv base identifier or DOI; latest version inspected where available."
+  },
+  "source_identity_checks": [
+    "2602.12767 official abstract shows v2, 2026-05-21, PRA 113 063304, DOI 10.1103/3b4f-6nfr.",
+    "2607.10281 official abstract shows v1, 2026-07-11; no journal reference inspected.",
+    "2309.02245 official abstract shows v2, 2024-03-04, Phys. Scr.99 045104, DOI10.1088/1402-4896/ad2be7."
+  ],
+  "download_verification": "Two new versioned PDFs were opened, text extracted with page markers, and hashes/page counts written to downloads.json.",
+  "stopping_condition": "Stopped after specific updated experimental-preparation outlook and latest quantum-optical manipulation result were verified, with noise and quantum-hardware baselines identified. Further generic queries increasingly returned unrelated information or energy backflow.",
+  "limitations": "No citation-index exhaustive forward-citation search was available; absence of an exact later Gaussian-lattice example is not a novelty proof."
+}

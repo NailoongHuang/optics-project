@@ -1,0 +1,18 @@
+[
+  {
+    "query": "all:\"space-time\" AND (all:\"spin-wave\" OR all:magnon)",
+    "url": "https://export.arxiv.org/api/query?search_query=all%3A%22space-time%22+AND+%28all%3A%22spin-wave%22+OR+all%3Amagnon%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+    "date": "2026-10-21",
+    "status": "retrieved",
+    "file": "raw/arxiv-search-1.xml",
+    "bytes": 40886
+  },
+  {
+    "query": "all:\"spin wave\" AND (all:nondiffracting OR all:\"spectral correlation\")",
+    "url": "https://export.arxiv.org/api/query?search_query=all%3A%22spin+wave%22+AND+%28all%3Anondiffracting+OR+all%3A%22spectral+correlation%22%29&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
+    "date": "2026-10-21",
+    "status": "retrieved",
+    "file": "raw/arxiv-search-2.xml",
+    "bytes": 3967
+  }
+]

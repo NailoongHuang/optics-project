@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-20",
+  "language": "English primary literature; Chinese assessment",
+  "scope": "Uniform cosine-band single-excitation packets near ka=pi/2, higher-order dispersion, and spin-chain transport applications",
+  "sources_used": [
+    "Web search discovery",
+    "Official arXiv version histories and PDFs",
+    "APS and IOP publisher records",
+    "Nature Physics full text via publisher and PMC"
+  ],
+  "queries": [
+    "Gaussian wave packet spin chain pi/2 dispersion quantum communication Osborne Linden",
+    "spin chain Gaussian wavepacket cubic dispersion N 1/3 quantum state transfer",
+    "Heisenberg chain nonspreading Gaussian wave packets pi/2",
+    "\"Gaussian\" \"spin chain\" \"π/2\"",
+    "\"Ballistic quantum state transfer\" Banchi arxiv",
+    "\"spin chain\" \"wave packet\" \"third\" dispersion",
+    "Haselgrove \"Optimal state encoding\" arxiv",
+    "\"Time independent universal computing with spin chains\" arxiv",
+    "\"Precision is not limited by the second law\" arxiv authors",
+    "\"Optimal dynamics for quantum-state\" Banchi 2011",
+    "\"spin chain\" \"wave packet\" \"inflection\" 2024 2025 2026",
+    "\"Gaussian wavepacket\" \"pi/2\" spin",
+    "\"magnon\" \"cubic dispersion\" wavepacket",
+    "\"spin chain\" \"nonspreading\" \"wave packet\"",
+    "site:journals.aps.org \"Controlled quantum-state transfer\" \"032331\"",
+    "site:journals.aps.org \"99%-fidelity\" \"052319\""
+  ],
+  "citation_chasing": [
+    "Banchi 2013 references 44 and 45 -> Osborne-Linden 2004 and Haselgrove 2005",
+    "Thompson 2016 Theorem 4.1 -> direct cubic-dispersion error bound",
+    "Meier 2025 body and Supplementary C3b -> current application and scaling"
+  ],
+  "deduplication": "By DOI and arXiv base ID; versions count as one paper",
+  "exclusions": [
+    "Flat bands and stationary localization are not evidence of propagating low-spreading packets",
+    "Nonlinear spin solitons and externally confined Gaussian revivals have different mechanisms",
+    "Electron orbital packets, Stern-Gerlach beams, and atomic internal-spin packets are not direct magnetic single-magnon precedents",
+    "Long-range coupling designs with exactly linear bands change the Hamiltonian and do not establish this nearest-neighbor effect"
+  ],
+  "stopping_condition": "Stopped after direct earliest cosine-band precedent, quantitative error-bound treatment, encoding/control/engineering benchmarks, and a verified 2025 application were covered; broad variants increasingly returned other systems",
+  "limitations": "Bounded multi-source topic search, not exhaustive citation index coverage or a novelty certificate. No configured Semantic Scholar/OpenAlex adapter was used. Relevant passages were inspected; not every page of every paper was closely read."
+}

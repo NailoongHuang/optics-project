@@ -1,0 +1,936 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T17:06:52Z",
+      "timestamp": 1790874412195,
+      "version": "4.1.0"
+    },
+    "reference-count": 45,
+    "publisher": "American Physical Society (APS)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              11
+            ]
+          ],
+          "date-time": "2026-03-11T00:00:00Z",
+          "timestamp": 1773187200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "529812702"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "529812702"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100019216",
+        "name": "and",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "433682494"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "433682494"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100019216",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. Applied"
+    ],
+    "accepted": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          17
+        ]
+      ]
+    },
+    "abstract": "<jats:p>We study experimentally the nonlinear propagation of short pulses of forward volume spin waves in out-of-plane magnetized nanometer-thick yttrium iron garnet (YIG) films. We show that nonlinearity of the spin system can efficiently counteract dispersion broadening of the pulses, leading to the formation of envelope solitons. We demonstrate that in microscopic YIG systems, microwave powers of the order of 1 mW are sufficient to reach the soliton formation threshold. At powers slightly above this threshold, we achieve transmission of 3-ns spin-wave pulses over distances of up to 50 µm without increase in their temporal width. Our results demonstrate a promising way towards high-rate transmission of information in microscopic spin-wave circuits unaffected by detrimental dispersion effects.</jats:p>",
+    "DOI": "10.1103/wt14-t3dj",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2026-02-17T21:32:17Z",
+      "timestamp": 1771363937000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Nonlinear suppression of dispersion broadening of ultrashort spin-wave pulses in thin yttrium iron garnet films"
+    ],
+    "prefix": "10.1103",
+    "volume": "25",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0214-6850",
+        "authenticated-orcid": true,
+        "given": "K.O.",
+        "family": "Nikolaev",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Applied Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3620-2128",
+        "authenticated-orcid": true,
+        "given": "D.",
+        "family": "Raskhodchikov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5716-4039",
+        "authenticated-orcid": true,
+        "given": "J.",
+        "family": "Bensmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0238-0364",
+        "authenticated-orcid": true,
+        "given": "I.V.",
+        "family": "Borisenko",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Applied Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8238-4690",
+        "authenticated-orcid": true,
+        "given": "E.",
+        "family": "Lomonte",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1464-3715",
+        "authenticated-orcid": true,
+        "given": "L.",
+        "family": "Jin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          },
+          {
+            "name": "Kirchhoff-Institute for Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/038t36y30",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "Heidelberg University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8856-3347",
+        "authenticated-orcid": true,
+        "given": "R.",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Kern",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S.",
+        "family": "Michaelis de Vasconcellos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2368-2548",
+        "authenticated-orcid": true,
+        "given": "R.",
+        "family": "Bratschitsch",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-4201",
+        "authenticated-orcid": true,
+        "given": "S.O.",
+        "family": "Demokritov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Applied Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4569-4213",
+        "authenticated-orcid": true,
+        "given": "W.H.P.",
+        "family": "Pernice",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Physics and Center for Nanotechnology"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          },
+          {
+            "name": "Kirchhoff-Institute for Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/038t36y30",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "Heidelberg University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7840-5679",
+        "authenticated-orcid": true,
+        "given": "V.E.",
+        "family": "Demidov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Applied Physics"
+          },
+          {
+            "id": [
+              {
+                "id": "https://ror.org/00pd74e08",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Münster"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "wt14-t3djCc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-3697(57)90010-0",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc2R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1142/1686",
+        "type": "book",
+        "volume-title": "Nonlinear Phenomena and Chaos in Magnetic Materials",
+        "author": "P. E. Wigen",
+        "year": "1994"
+      },
+      {
+        "key": "wt14-t3djCc3R1",
+        "volume-title": "Magnetization Oscillations and Waves",
+        "author": "A. G. Gurevich",
+        "year": "1996",
+        "type": "book"
+      },
+      {
+        "key": "wt14-t3djCc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.13.034057",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-021-26711-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-023-39452-y",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42005-023-01348-0",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc8R1",
+        "volume-title": "Nonlinear Fiber Optics",
+        "author": "G. P. Agrawal",
+        "year": "2019",
+        "type": "book"
+      },
+      {
+        "key": "wt14-t3djCc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.89.237202",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.77.054425",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.94.020401",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.16.024028",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0077195",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.19.064085",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.22.044083",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc16R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-662-03057-8",
+        "type": "book",
+        "volume-title": "Waves Called Solitons: Concepts and Experiments",
+        "author": "M. Remoissenet",
+        "year": "1994"
+      },
+      {
+        "key": "wt14-t3djCc17R1",
+        "first-page": "413",
+        "type": "journal-article",
+        "volume": "38",
+        "author": "B. A. Kalinikos",
+        "year": "1983",
+        "journal-title": "JETP Lett."
+      },
+      {
+        "key": "wt14-t3djCc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.59.481",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.49.12773",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.55.15018",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.71.174440",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.187202",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4759039",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4819157",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep20827",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0019328",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-021-93700-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.21.040503",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41563-025-02282-y",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevX.9.041036",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.126.097202",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-022-10822-8",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.adg4609",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc34R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-024-46108-y",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc35R1",
+        "first-page": "350",
+        "type": "journal-article",
+        "volume": "57",
+        "author": "A. K. Zvezdin",
+        "year": "1983",
+        "journal-title": "Phys. JETP"
+      },
+      {
+        "key": "wt14-t3djCc36R1",
+        "unstructured": "See Supplemental Material at http://link.aps.org/supplemental/10.1103/wt14-t3dj.",
+        "type": "other"
+      },
+      {
+        "key": "wt14-t3djCc37R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMAG.2014.2388196",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc38R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4899186",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc39R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-024-45783-1",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc40R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/imamat/1.3.269",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc41R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.1699503",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc42R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0015269",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc43R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.17.034010",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc44R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-019-13246-7",
+        "type": "journal-article"
+      },
+      {
+        "key": "wt14-t3djCc45R1",
+        "unstructured": "V. E. Demidov, Data associated with “Nonlinear suppression of dispersion broadening of ultrashort spin-wave pulses in thin YIG films”, Zenodo (2025), https://doi.org/10.5281/zenodo.17550363",
+        "type": "dataset"
+      }
+    ],
+    "container-title": [
+      "Physical Review Applied"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/wt14-t3dj",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/wt14-t3dj/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T16:41:36Z",
+      "timestamp": 1790872896000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/wt14-t3dj"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          11
+        ]
+      ]
+    },
+    "references-count": 45,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/wt14-t3dj",
+    "relation": {},
+    "ISSN": [
+      "2331-7019"
+    ],
+    "issn-type": [
+      {
+        "value": "2331-7019",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-11-07",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "Published by the American Physical Society. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright_statement",
+        "label": "Copyright statement",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "2026",
+        "name": "copyright_year",
+        "label": "Copyright year",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "creative_commons_license",
+        "label": "Creative Commons license",
+        "group": {
+          "name": "licenses",
+          "label": "Licenses"
+        }
+      },
+      {
+        "value": "©2026 The authors",
+        "name": "copyright_holder",
+        "label": "Copyright holder",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      }
+    ],
+    "article-number": "034035"
+  }
+}

@@ -1,0 +1,5536 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 15,
+    "db_response_time_ms": 28,
+    "page": null,
+    "per_page": 200,
+    "next_cursor": null,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get works where it cites (W3198487091) and published through 2026-10-21",
+      "x_new_oql": "get works through 2026-10-21 citing (W3198487091)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "referenced_works",
+            "value": "W3198487091"
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2026-10-21"
+          }
+        ]
+      },
+      "url": "/works?filter=referenced_works:W3198487091,to_publication_date:2026-10-21&per_page=200&cursor=%2A"
+    },
+    "cost_usd": 0.0001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4416850709",
+      "doi": "https://doi.org/10.1038/s41467-025-65289-8",
+      "title": "Observation of space-time surface plasmon polaritons",
+      "publication_date": "2025-12-01",
+      "abstract_inverted_index": {
+        "Surface": [
+          0
+        ],
+        "plasmon": [
+          1
+        ],
+        "polaritons": [
+          2
+        ],
+        "(SPPs)": [
+          3
+        ],
+        "at": [
+          4,
+          85
+        ],
+        "metal-dielectric": [
+          5,
+          87
+        ],
+        "interfaces": [
+          6
+        ],
+        "provide": [
+          7
+        ],
+        "strong": [
+          8
+        ],
+        "out-of-plane": [
+          9
+        ],
+        "confinement": [
+          10
+        ],
+        "enabling": [
+          11
+        ],
+        "nano-scale": [
+          12
+        ],
+        "sensing": [
+          13,
+          142
+        ],
+        "and": [
+          14,
+          40,
+          76,
+          95,
+          108,
+          115,
+          134,
+          143
+        ],
+        "imaging,": [
+          15
+        ],
+        "yet": [
+          16
+        ],
+        "diffraction": [
+          17,
+          25
+        ],
+        "causes": [
+          18
+        ],
+        "spatial": [
+          19,
+          27
+        ],
+        "delocalization.": [
+          20
+        ],
+        "Conventional": [
+          21
+        ],
+        "strategies": [
+          22
+        ],
+        "to": [
+          23,
+          31,
+          80
+        ],
+        "combat": [
+          24
+        ],
+        "through": [
+          26
+        ],
+        "structuring": [
+          28
+        ],
+        "are": [
+          29
+        ],
+        "inapplicable": [
+          30
+        ],
+        "dimensionally": [
+          32
+        ],
+        "restricted": [
+          33
+        ],
+        "SPPs,": [
+          34
+        ],
+        "except": [
+          35
+        ],
+        "for": [
+          36,
+          123
+        ],
+        "nonlocalized": [
+          37
+        ],
+        "cosine": [
+          38
+        ],
+        "plasmons": [
+          39,
+          42
+        ],
+        "Airy": [
+          41
+        ],
+        "that": [
+          43,
+          57
+        ],
+        "follow": [
+          44
+        ],
+        "curved": [
+          45
+        ],
+        "trajectories.": [
+          46
+        ],
+        "Here": [
+          47
+        ],
+        "we": [
+          48,
+          89
+        ],
+        "demonstrate": [
+          49
+        ],
+        "space-time": [
+          50
+        ],
+        "SPPs": [
+          51,
+          56
+        ],
+        "(ST-SPPs),": [
+          52
+        ],
+        "ultrashort": [
+          53
+        ],
+        "(16-fs)": [
+          54
+        ],
+        "diffraction-free": [
+          55,
+          116
+        ],
+        "propagate": [
+          58
+        ],
+        "rectilinearly": [
+          59
+        ],
+        "via": [
+          60
+        ],
+        "precise": [
+          61
+        ],
+        "sculpting": [
+          62
+        ],
+        "of": [
+          63
+        ],
+        "their": [
+          64
+        ],
+        "spatiotemporal": [
+          65,
+          113
+        ],
+        "spectra.": [
+          66
+        ],
+        "By": [
+          67
+        ],
+        "synthesizing": [
+          68
+        ],
+        "a": [
+          69,
+          86
+        ],
+        "spatiotemporally": [
+          70,
+          125
+        ],
+        "structured": [
+          71,
+          126
+        ],
+        "field": [
+          72,
+          79,
+          105
+        ],
+        "in": [
+          73,
+          106,
+          140
+        ],
+        "free": [
+          74
+        ],
+        "space": [
+          75,
+          107
+        ],
+        "coupling": [
+          77
+        ],
+        "the": [
+          78,
+          91,
+          103,
+          111,
+          129
+        ],
+        "an": [
+          81
+        ],
+        "axially": [
+          82
+        ],
+        "invariant": [
+          83
+        ],
+        "ST-SPP": [
+          84,
+          92
+        ],
+        "surface,": [
+          88
+        ],
+        "control": [
+          90
+        ],
+        "group": [
+          93
+        ],
+        "velocity": [
+          94
+        ],
+        "propagation": [
+          96
+        ],
+        "characteristics.": [
+          97
+        ],
+        "Time-resolved": [
+          98
+        ],
+        "two-photon": [
+          99
+        ],
+        "fluorescence": [
+          100
+        ],
+        "microscopy": [
+          101
+        ],
+        "reconstructs": [
+          102
+        ],
+        "surface-bound": [
+          104
+        ],
+        "time,": [
+          109
+        ],
+        "verifying": [
+          110
+        ],
+        "predicted": [
+          112
+        ],
+        "wavefront": [
+          114
+        ],
+        "propagation.": [
+          117
+        ],
+        "Our": [
+          118
+        ],
+        "work": [
+          119
+        ],
+        "opens": [
+          120
+        ],
+        "new": [
+          121
+        ],
+        "avenues": [
+          122
+        ],
+        "combining": [
+          124
+        ],
+        "light": [
+          127
+        ],
+        "with": [
+          128,
+          132
+        ],
+        "field-localization": [
+          130
+        ],
+        "associated": [
+          131
+        ],
+        "nanophotonics,": [
+          133
+        ],
+        "may": [
+          135
+        ],
+        "thus": [
+          136
+        ],
+        "enable": [
+          137
+        ],
+        "novel": [
+          138
+        ],
+        "applications": [
+          139
+        ],
+        "surface-enhanced": [
+          141
+        ],
+        "nonlinear": [
+          144
+        ],
+        "optical": [
+          145
+        ],
+        "interactions.": [
+          146
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41467-025-65289-8",
+        "doi": "https://doi.org/10.1038/s41467-025-65289-8",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41467-025-65289-8",
+        "pdf_url": "https://www.nature.com/articles/s41467-025-65289-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-a",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4312184421",
+      "doi": "https://doi.org/10.1002/lpor.202200119",
+      "title": "Canceling and Inverting Normal and Anomalous Group‐Velocity Dispersion Using Space‐Time Wave Packets",
+      "publication_date": "2022-12-22",
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Angular": [
+          1
+        ],
+        "dispersion": [
+          2,
+          7,
+          24,
+          44,
+          61,
+          71,
+          101,
+          129
+        ],
+        "can": [
+          3
+        ],
+        "counterbalance": [
+          4,
+          47
+        ],
+        "normal": [
+          5
+        ],
+        "group‐velocity": [
+          6
+        ],
+        "(GVD)": [
+          8
+        ],
+        "that": [
+          9,
+          124
+        ],
+        "increases": [
+          10
+        ],
+        "the": [
+          11,
+          20,
+          26,
+          35,
+          39,
+          54,
+          69,
+          91,
+          104,
+          114,
+          119,
+          127,
+          131
+        ],
+        "wave‐vector": [
+          12,
+          55
+        ],
+        "length": [
+          13
+        ],
+        "in": [
+          14,
+          30,
+          51,
+          68,
+          89
+        ],
+        "a": [
+          15
+        ],
+        "dispersive": [
+          16
+        ],
+        "medium.": [
+          17
+        ],
+        "By": [
+          18,
+          38
+        ],
+        "tilting": [
+          19
+        ],
+        "wave": [
+          21,
+          28,
+          81
+        ],
+        "vector,": [
+          22
+        ],
+        "angular": [
+          23,
+          43,
+          60,
+          100
+        ],
+        "reduces": [
+          25,
+          53
+        ],
+        "axial": [
+          27
+        ],
+        "number": [
+          29
+        ],
+        "this": [
+          31
+        ],
+        "case": [
+          32
+        ],
+        "to": [
+          33,
+          46,
+          66,
+          85,
+          123
+        ],
+        "match": [
+          34
+        ],
+        "pre‐GVD": [
+          36
+        ],
+        "value.": [
+          37
+        ],
+        "same": [
+          40
+        ],
+        "token,": [
+          41
+        ],
+        "however,": [
+          42
+        ],
+        "fails": [
+          45
+        ],
+        "anomalous": [
+          48,
+          70
+        ],
+        "GVD,": [
+          49
+        ],
+        "which": [
+          50
+        ],
+        "contrast": [
+          52
+        ],
+        "length.": [
+          56
+        ],
+        "Consequently,": [
+          57
+        ],
+        "GVD‐cancellation": [
+          58
+        ],
+        "via": [
+          59
+        ],
+        "has": [
+          62
+        ],
+        "not": [
+          63
+        ],
+        "been": [
+          64
+        ],
+        "demonstrated": [
+          65
+        ],
+        "date": [
+          67
+        ],
+        "regime.": [
+          72
+        ],
+        "Here,": [
+          73
+        ],
+        "structed": [
+          74
+        ],
+        "femtosecond": [
+          75
+        ],
+        "pulsed": [
+          76,
+          105
+        ],
+        "beams,": [
+          77
+        ],
+        "known": [
+          78
+        ],
+        "as": [
+          79
+        ],
+        "‘space‐time’": [
+          80
+        ],
+        "packets,": [
+          82
+        ],
+        "are": [
+          83
+        ],
+        "designed": [
+          84
+        ],
+        "realize": [
+          86
+        ],
+        "dispersion‐cancellation": [
+          87
+        ],
+        "symmetrically": [
+          88
+        ],
+        "either": [
+          90
+        ],
+        "normal‐": [
+          92
+        ],
+        "or": [
+          93
+        ],
+        "anomalous‐GVD": [
+          94
+        ],
+        "regimes": [
+          95
+        ],
+        "by": [
+          96,
+          112,
+          118,
+          126
+        ],
+        "virtue": [
+          97
+        ],
+        "of": [
+          98,
+          130
+        ],
+        "non‐differentiable": [
+          99
+        ],
+        "inculcated": [
+          102
+        ],
+        "into": [
+          103
+        ],
+        "field.": [
+          106
+        ],
+        "Furthermore,": [
+          107
+        ],
+        "GVD‐inversion": [
+          108
+        ],
+        "is": [
+          109
+        ],
+        "also": [
+          110
+        ],
+        "verified": [
+          111
+        ],
+        "reversing": [
+          113
+        ],
+        "GVD": [
+          115
+        ],
+        "sign": [
+          116
+        ],
+        "experienced": [
+          117
+        ],
+        "field": [
+          120
+        ],
+        "with": [
+          121
+        ],
+        "respect": [
+          122
+        ],
+        "dictated": [
+          125
+        ],
+        "chromatic": [
+          128
+        ],
+        "medium": [
+          132
+        ],
+        "itself.": [
+          133
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1002/lpor.202200119",
+        "doi": "https://doi.org/10.1002/lpor.202200119",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1002/lpor.202200119",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lpor.202200119",
+        "source": {
+          "id": "https://openalex.org/S95928045",
+          "display_name": "Laser & Photonics Review",
+          "issn_l": "1863-8880",
+          "issn": [
+            "1863-8880",
+            "1863-8899"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-3",
+            "norway-1",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Laser &amp; Photonics Reviews",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4315865130",
+      "doi": "https://doi.org/10.1364/oe.482358",
+      "title": "Temporal effect of the spin-to-orbit conversion in tightly focused femtosecond optical fields",
+      "publication_date": "2023-01-13",
+      "abstract_inverted_index": {
+        "Spin": [
+          0
+        ],
+        "and": [
+          1,
+          66,
+          150,
+          159,
+          176
+        ],
+        "orbital": [
+          2,
+          52
+        ],
+        "angular": [
+          3
+        ],
+        "momenta": [
+          4
+        ],
+        "are": [
+          5,
+          85,
+          96
+        ],
+        "two": [
+          6,
+          27
+        ],
+        "of": [
+          7,
+          19,
+          43,
+          54,
+          63,
+          108,
+          141,
+          156,
+          185
+        ],
+        "the": [
+          8,
+          15,
+          41,
+          89,
+          109,
+          122,
+          139,
+          145,
+          154,
+          169,
+          178
+        ],
+        "most": [
+          9
+        ],
+        "fundamental": [
+          10,
+          166
+        ],
+        "physical": [
+          11
+        ],
+        "quantities": [
+          12,
+          28
+        ],
+        "that": [
+          13,
+          48,
+          121
+        ],
+        "describe": [
+          14
+        ],
+        "complex": [
+          16
+        ],
+        "dynamic": [
+          17
+        ],
+        "behaviors": [
+          18
+        ],
+        "optical": [
+          20,
+          46,
+          64,
+          91,
+          116
+        ],
+        "fields.": [
+          21,
+          117
+        ],
+        "A": [
+          22
+        ],
+        "strong": [
+          23
+        ],
+        "coupling": [
+          24
+        ],
+        "between": [
+          25
+        ],
+        "these": [
+          26
+        ],
+        "leads": [
+          29
+        ],
+        "to": [
+          30,
+          51,
+          72,
+          153
+        ],
+        "many": [
+          31
+        ],
+        "intriguing": [
+          32,
+          105
+        ],
+        "spatial": [
+          33
+        ],
+        "topological": [
+          34
+        ],
+        "phenomena,": [
+          35
+        ],
+        "where": [
+          36
+        ],
+        "one": [
+          37
+        ],
+        "remarkable": [
+          38
+        ],
+        "example": [
+          39
+        ],
+        "is": [
+          40,
+          151
+        ],
+        "generation": [
+          42
+        ],
+        "a": [
+          44,
+          126
+        ],
+        "helicity-dependent": [
+          45
+        ],
+        "vortex": [
+          47
+        ],
+        "converts": [
+          49
+        ],
+        "spin": [
+          50
+        ],
+        "degrees": [
+          53
+        ],
+        "freedom.": [
+          55
+        ],
+        "The": [
+          56,
+          118
+        ],
+        "spin-to-orbit": [
+          57,
+          110
+        ],
+        "conversion": [
+          58,
+          111,
+          123
+        ],
+        "occurs": [
+          59
+        ],
+        "inherently": [
+          60
+        ],
+        "in": [
+          61,
+          76,
+          82,
+          124,
+          182
+        ],
+        "lots": [
+          62
+        ],
+        "processes": [
+          65
+        ],
+        "has": [
+          67
+        ],
+        "attracted": [
+          68
+        ],
+        "increasing": [
+          69
+        ],
+        "attention": [
+          70
+        ],
+        "due": [
+          71
+        ],
+        "its": [
+          73
+        ],
+        "crucial": [
+          74
+        ],
+        "applications": [
+          75,
+          181
+        ],
+        "spin-orbit": [
+          77,
+          170
+        ],
+        "photonics.": [
+          78
+        ],
+        "However,": [
+          79
+        ],
+        "current": [
+          80
+        ],
+        "researches": [
+          81
+        ],
+        "this": [
+          83,
+          100
+        ],
+        "area": [
+          84
+        ],
+        "mainly": [
+          86
+        ],
+        "focused": [
+          87,
+          128
+        ],
+        "on": [
+          88,
+          132
+        ],
+        "monochromatic": [
+          90
+        ],
+        "fields": [
+          92,
+          143
+        ],
+        "whose": [
+          93
+        ],
+        "temporal": [
+          94,
+          106,
+          135
+        ],
+        "properties": [
+          95
+        ],
+        "naturally": [
+          97
+        ],
+        "neglected.": [
+          98
+        ],
+        "In": [
+          99
+        ],
+        "work,": [
+          101
+        ],
+        "we": [
+          102
+        ],
+        "demonstrate": [
+          103
+        ],
+        "an": [
+          104
+        ],
+        "evolution": [
+          107
+        ],
+        "induced": [
+          112
+        ],
+        "by": [
+          113
+        ],
+        "tightly-focused": [
+          114
+        ],
+        "femtosecond": [
+          115
+        ],
+        "results": [
+          119
+        ],
+        "indicate": [
+          120
+        ],
+        "such": [
+          125
+        ],
+        "polychromatic": [
+          127
+        ],
+        "field": [
+          129
+        ],
+        "obviously": [
+          130
+        ],
+        "depends": [
+          131
+        ],
+        "time.": [
+          133
+        ],
+        "This": [
+          134,
+          162
+        ],
+        "effect": [
+          136
+        ],
+        "originates": [
+          137
+        ],
+        "from": [
+          138
+        ],
+        "superposition": [
+          140
+        ],
+        "local": [
+          142
+        ],
+        "at": [
+          144
+        ],
+        "focus": [
+          146
+        ],
+        "with": [
+          147
+        ],
+        "different": [
+          148
+        ],
+        "frequencies": [
+          149
+        ],
+        "sensitive": [
+          152
+        ],
+        "settings": [
+          155
+        ],
+        "pulse": [
+          157
+        ],
+        "width": [
+          158
+        ],
+        "central": [
+          160
+        ],
+        "wavelength.": [
+          161
+        ],
+        "work": [
+          163
+        ],
+        "can": [
+          164
+        ],
+        "provide": [
+          165
+        ],
+        "insights": [
+          167
+        ],
+        "into": [
+          168
+        ],
+        "dynamics": [
+          171
+        ],
+        "within": [
+          172
+        ],
+        "ultrafast": [
+          173
+        ],
+        "wave": [
+          174
+        ],
+        "packets,": [
+          175
+        ],
+        "possesses": [
+          177
+        ],
+        "potential": [
+          179
+        ],
+        "for": [
+          180
+        ],
+        "spin-controlled": [
+          183
+        ],
+        "manipulations": [
+          184
+        ],
+        "light.": [
+          186
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/oe.482358",
+        "doi": "https://doi.org/10.1364/oe.482358",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1364/oe.482358",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S178776955",
+          "display_name": "Optics Express",
+          "issn_l": "1094-4087",
+          "issn": [
+            "1094-4087"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Optics Express",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4382395197",
+      "doi": "https://doi.org/10.1103/physreva.107.063517",
+      "title": "Transverse spin angular momentum of a space-time surface plasmon polariton wave packet",
+      "publication_date": "2023-06-28",
+      "abstract_inverted_index": {
+        "In": [
+          0,
+          43
+        ],
+        "addition": [
+          1
+        ],
+        "to": [
+          2,
+          30,
+          38,
+          127
+        ],
+        "longitudinal": [
+          3
+        ],
+        "spin": [
+          4,
+          77,
+          132,
+          145,
+          178,
+          193
+        ],
+        "angular": [
+          5
+        ],
+        "momentum": [
+          6
+        ],
+        "(SAM)": [
+          7
+        ],
+        "along": [
+          8
+        ],
+        "the": [
+          9,
+          35,
+          39,
+          45,
+          60,
+          85,
+          122,
+          140,
+          144,
+          153,
+          157,
+          162
+        ],
+        "axis": [
+          10,
+          40
+        ],
+        "of": [
+          11,
+          13,
+          41,
+          47,
+          84,
+          143,
+          156,
+          188,
+          192
+        ],
+        "propagation": [
+          12,
+          166
+        ],
+        "light,": [
+          14
+        ],
+        "spatially": [
+          15,
+          71
+        ],
+        "structured": [
+          16,
+          72
+        ],
+        "electromagnetic": [
+          17
+        ],
+        "fields": [
+          18,
+          69
+        ],
+        "such": [
+          19
+        ],
+        "as": [
+          20
+        ],
+        "evanescent": [
+          21,
+          68
+        ],
+        "waves": [
+          22
+        ],
+        "and": [
+          23,
+          115,
+          134,
+          147,
+          161,
+          180,
+          195
+        ],
+        "focused": [
+          24
+        ],
+        "beams": [
+          25
+        ],
+        "have": [
+          26
+        ],
+        "recently": [
+          27
+        ],
+        "been": [
+          28,
+          56
+        ],
+        "found": [
+          29,
+          126
+        ],
+        "possess": [
+          31
+        ],
+        "transverse": [
+          32
+        ],
+        "SAM": [
+          33,
+          46
+        ],
+        "in": [
+          34,
+          59,
+          190
+        ],
+        "direction": [
+          36
+        ],
+        "perpendicular": [
+          37
+        ],
+        "propagation.": [
+          42
+        ],
+        "particular,": [
+          44
+        ],
+        "surface": [
+          48,
+          87
+        ],
+        "plasmon": [
+          49,
+          88
+        ],
+        "polaritons": [
+          50
+        ],
+        "(SPPs)": [
+          51
+        ],
+        "with": [
+          52,
+          70,
+          111,
+          129,
+          165
+        ],
+        "spatial": [
+          53,
+          106,
+          113,
+          141,
+          154
+        ],
+        "structure": [
+          54,
+          114,
+          155
+        ],
+        "has": [
+          55
+        ],
+        "extensively": [
+          57
+        ],
+        "studied": [
+          58
+        ],
+        "last": [
+          61
+        ],
+        "decade": [
+          62
+        ],
+        "after": [
+          63
+        ],
+        "it": [
+          64
+        ],
+        "became": [
+          65
+        ],
+        "clear": [
+          66
+        ],
+        "that": [
+          67,
+          96
+        ],
+        "energy": [
+          73,
+          116
+        ],
+        "flow": [
+          74,
+          117
+        ],
+        "generate": [
+          75
+        ],
+        "three-dimensional": [
+          76,
+          131,
+          177
+        ],
+        "texture.": [
+          78
+        ],
+        "Here": [
+          79
+        ],
+        "we": [
+          80
+        ],
+        "present": [
+          81
+        ],
+        "numerical": [
+          82
+        ],
+        "calculations": [
+          83
+        ],
+        "space-time": [
+          86
+        ],
+        "polariton": [
+          89
+        ],
+        "(ST-SPP)": [
+          90
+        ],
+        "wave": [
+          91,
+          109,
+          170
+        ],
+        "packet,": [
+          92
+        ],
+        "a": [
+          93
+        ],
+        "plasmonic": [
+          94
+        ],
+        "bullet": [
+          95
+        ],
+        "propagates": [
+          97
+        ],
+        "at": [
+          98
+        ],
+        "an": [
+          99
+        ],
+        "arbitrary": [
+          100
+        ],
+        "group": [
+          101,
+          123
+        ],
+        "velocity": [
+          102,
+          124
+        ],
+        "while": [
+          103
+        ],
+        "maintaining": [
+          104
+        ],
+        "its": [
+          105
+        ],
+        "distribution.": [
+          107
+        ],
+        "ST-SPP": [
+          108,
+          169
+        ],
+        "packets": [
+          110
+        ],
+        "complex": [
+          112
+        ],
+        "density": [
+          118,
+          150
+        ],
+        "distribution": [
+          119,
+          142
+        ],
+        "determined": [
+          120,
+          151
+        ],
+        "by": [
+          121,
+          152
+        ],
+        "are": [
+          125
+        ],
+        "propagate": [
+          128
+        ],
+        "accompanying": [
+          130
+        ],
+        "texture": [
+          133,
+          146
+        ],
+        "finite": [
+          135
+        ],
+        "topological": [
+          136,
+          148,
+          181,
+          197
+        ],
+        "charge": [
+          137,
+          149,
+          182
+        ],
+        "density.": [
+          138
+        ],
+        "Furthermore,": [
+          139
+        ],
+        "SPP": [
+          158
+        ],
+        "is": [
+          159,
+          167
+        ],
+        "controllable,": [
+          160
+        ],
+        "deformation": [
+          163
+        ],
+        "associated": [
+          164
+        ],
+        "negligible.": [
+          168
+        ],
+        "packets,": [
+          171
+        ],
+        "which": [
+          172
+        ],
+        "can": [
+          173,
+          184
+        ],
+        "stably": [
+          174
+        ],
+        "transport": [
+          175
+        ],
+        "customizable": [
+          176
+        ],
+        "textures": [
+          179
+        ],
+        "densities,": [
+          183
+        ],
+        "be": [
+          185
+        ],
+        "excellent": [
+          186
+        ],
+        "subjects": [
+          187
+        ],
+        "observation": [
+          189
+        ],
+        "studies": [
+          191
+        ],
+        "photonics": [
+          194
+        ],
+        "optical": [
+          196
+        ],
+        "materials.": [
+          198
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physreva.107.063517",
+        "doi": "https://doi.org/10.1103/physreva.107.063517",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physreva.107.063517",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S164566984",
+          "display_name": "Physical Review A",
+          "issn_l": "0556-2791",
+          "issn": [
+            "0556-2791",
+            "1050-2947",
+            "1094-1622",
+            "1538-4446",
+            "2469-9926",
+            "2469-9934",
+            "2469-9942"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "ki-jl-1",
+            "norway-2",
+            "poland-100",
+            "poland-70",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review A",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4404471049",
+      "doi": "https://doi.org/10.1088/2040-8986/ad93e5",
+      "title": "Synthesis and characterization of space-time light sheets: a tutorial",
+      "publication_date": "2024-11-18",
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Space-time": [
+          1
+        ],
+        "wave": [
+          2
+        ],
+        "packets": [
+          3
+        ],
+        "(STWPs)": [
+          4
+        ],
+        "are": [
+          5,
+          31,
+          44,
+          65
+        ],
+        "a": [
+          6,
+          32,
+          56
+        ],
+        "new": [
+          7
+        ],
+        "class": [
+          8
+        ],
+        "of": [
+          9,
+          34,
+          59,
+          62,
+          93
+        ],
+        "pulsed": [
+          10
+        ],
+        "optical": [
+          11,
+          28
+        ],
+        "beams": [
+          12
+        ],
+        "with": [
+          13
+        ],
+        "many": [
+          14
+        ],
+        "unique": [
+          15,
+          91
+        ],
+        "and": [
+          16,
+          22,
+          71
+        ],
+        "intriguing": [
+          17
+        ],
+        "attributes,": [
+          18
+        ],
+        "including": [
+          19
+        ],
+        "propagation": [
+          20
+        ],
+        "invariance": [
+          21
+        ],
+        "tunable": [
+          23
+        ],
+        "group": [
+          24
+        ],
+        "velocity": [
+          25
+        ],
+        "in": [
+          26
+        ],
+        "linear": [
+          27
+        ],
+        "media.": [
+          29
+        ],
+        "STWPs": [
+          30,
+          63
+        ],
+        "form": [
+          33
+        ],
+        "spatiotemporally": [
+          35
+        ],
+        "structured": [
+          36,
+          50
+        ],
+        "light,": [
+          37
+        ],
+        "so": [
+          38
+        ],
+        "their": [
+          39
+        ],
+        "synthesis": [
+          40,
+          61
+        ],
+        "poses": [
+          41
+        ],
+        "challenges": [
+          42
+        ],
+        "that": [
+          43,
+          64
+        ],
+        "not": [
+          45
+        ],
+        "shared": [
+          46
+        ],
+        "by": [
+          47
+        ],
+        "conventional": [
+          48
+        ],
+        "monochromatic": [
+          49
+        ],
+        "light": [
+          51,
+          78,
+          95
+        ],
+        "fields.": [
+          52
+        ],
+        "We": [
+          53,
+          80
+        ],
+        "present": [
+          54
+        ],
+        "here": [
+          55
+        ],
+        "detailed": [
+          57
+        ],
+        "description": [
+          58
+        ],
+        "the": [
+          60,
+          74,
+          83,
+          90
+        ],
+        "localized": [
+          66
+        ],
+        "along": [
+          67,
+          73
+        ],
+        "one": [
+          68
+        ],
+        "transverse": [
+          69
+        ],
+        "dimension": [
+          70
+        ],
+        "uniform": [
+          72
+        ],
+        "other;": [
+          75
+        ],
+        "i.e.": [
+          76
+        ],
+        "space-time": [
+          77,
+          94
+        ],
+        "sheets.": [
+          79,
+          96
+        ],
+        "also": [
+          81
+        ],
+        "describe": [
+          82
+        ],
+        "main": [
+          84
+        ],
+        "characterization": [
+          85
+        ],
+        "schemes": [
+          86
+        ],
+        "needed": [
+          87
+        ],
+        "for": [
+          88
+        ],
+        "benchmarking": [
+          89
+        ],
+        "properties": [
+          92
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1088/2040-8986/ad93e5",
+        "doi": "https://doi.org/10.1088/2040-8986/ad93e5",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1088/2040-8986/ad93e5",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S128936867",
+          "display_name": "Journal of Optics",
+          "issn_l": "0150-536X",
+          "issn": [
+            "0150-536X",
+            "2040-8978",
+            "2040-8986",
+            "2056-7162"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-c",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320083",
+          "host_organization_name": "IOP Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320083",
+            "https://openalex.org/P4310311669"
+          ],
+          "host_organization_lineage_names": [
+            "IOP Publishing",
+            "Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Optics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4409569836",
+      "doi": "https://doi.org/10.1364/ol.562773",
+      "title": "Universal structure of propagation-invariant optical pulses",
+      "publication_date": "2025-04-18",
+      "abstract_inverted_index": {
+        "Space–time": [
+          0,
+          49
+        ],
+        "structuring": [
+          1
+        ],
+        "of": [
+          2,
+          8,
+          18,
+          24,
+          63
+        ],
+        "light—where": [
+          3
+        ],
+        "spatial": [
+          4
+        ],
+        "and": [
+          5,
+          13,
+          53,
+          78
+        ],
+        "temporal": [
+          6
+        ],
+        "degrees": [
+          7
+        ],
+        "freedom": [
+          9
+        ],
+        "are": [
+          10,
+          32,
+          59
+        ],
+        "deliberately": [
+          11
+        ],
+        "coupled": [
+          12
+        ],
+        "controlled—is": [
+          14
+        ],
+        "an": [
+          15,
+          40,
+          73
+        ],
+        "emerging": [
+          16
+        ],
+        "area": [
+          17
+        ],
+        "optics": [
+          19
+        ],
+        "that": [
+          20,
+          69,
+          79
+        ],
+        "enables": [
+          21
+        ],
+        "novel": [
+          22
+        ],
+        "configurations": [
+          23
+        ],
+        "electromagnetic": [
+          25
+        ],
+        "fields.": [
+          26
+        ],
+        "Of": [
+          27
+        ],
+        "particular": [
+          28
+        ],
+        "importance": [
+          29
+        ],
+        "for": [
+          30,
+          86
+        ],
+        "applications": [
+          31
+        ],
+        "optical": [
+          33
+        ],
+        "pulses": [
+          34
+        ],
+        "whose": [
+          35
+        ],
+        "peak": [
+          36
+        ],
+        "intensity": [
+          37
+        ],
+        "travels": [
+          38
+        ],
+        "at": [
+          39
+        ],
+        "arbitrary,": [
+          41
+        ],
+        "tunable": [
+          42
+        ],
+        "velocity": [
+          43
+        ],
+        "while": [
+          44
+        ],
+        "maintaining": [
+          45
+        ],
+        "its": [
+          46
+        ],
+        "spatiotemporal": [
+          47,
+          75
+        ],
+        "profile.": [
+          48
+        ],
+        "wave": [
+          50
+        ],
+        "packets": [
+          51
+        ],
+        "(STWPs)": [
+          52
+        ],
+        "the": [
+          54
+        ],
+        "ideal": [
+          55
+        ],
+        "flying": [
+          56
+        ],
+        "focus": [
+          57
+        ],
+        "(FF)": [
+          58
+        ],
+        "two": [
+          60
+        ],
+        "prominent": [
+          61
+        ],
+        "realizations": [
+          62,
+          71
+        ],
+        "these": [
+          64,
+          70
+        ],
+        "pulses.": [
+          65,
+          89
+        ],
+        "Here,": [
+          66
+        ],
+        "we": [
+          67
+        ],
+        "show": [
+          68
+        ],
+        "share": [
+          72
+        ],
+        "identical": [
+          74
+        ],
+        "field": [
+          76
+        ],
+        "structure": [
+          77,
+          81
+        ],
+        "this": [
+          80
+        ],
+        "represents": [
+          82
+        ],
+        "a": [
+          83
+        ],
+        "universal": [
+          84
+        ],
+        "solution": [
+          85
+        ],
+        "constant-velocity,": [
+          87
+        ],
+        "propagation-invariant": [
+          88
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/ol.562773",
+        "doi": "https://doi.org/10.1364/ol.562773",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1364/ol.562773",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S134390580",
+          "display_name": "Optics Letters",
+          "issn_l": "0146-9592",
+          "issn": [
+            "0146-9592",
+            "1071-2763",
+            "1539-4794"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-2",
+            "medline",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Optics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4411489609",
+      "doi": "https://doi.org/10.1364/ol.566908",
+      "title": "Long-distance axial spectral encoding using space-time wave packets",
+      "publication_date": "2025-06-20",
+      "abstract_inverted_index": {
+        "Space-time": [
+          0
+        ],
+        "wave": [
+          1,
+          97
+        ],
+        "packets": [
+          2
+        ],
+        "(STWPs)": [
+          3
+        ],
+        "are": [
+          4
+        ],
+        "pulsed": [
+          5
+        ],
+        "optical": [
+          6
+        ],
+        "beams": [
+          7
+        ],
+        "whose": [
+          8
+        ],
+        "spatiotemporal": [
+          9
+        ],
+        "structure": [
+          10
+        ],
+        "enables": [
+          11
+        ],
+        "propagation": [
+          12,
+          20,
+          34,
+          72
+        ],
+        "invariance.": [
+          13
+        ],
+        "However,": [
+          14
+        ],
+        "STWPs": [
+          15
+        ],
+        "allow": [
+          16
+        ],
+        "for": [
+          17,
+          48,
+          105,
+          109
+        ],
+        "a": [
+          18,
+          82
+        ],
+        "unique": [
+          19
+        ],
+        "configuration": [
+          21
+        ],
+        "that": [
+          22
+        ],
+        "we": [
+          23
+        ],
+        "call": [
+          24
+        ],
+        "axial": [
+          25,
+          42,
+          84
+        ],
+        "spectral": [
+          26,
+          43,
+          107
+        ],
+        "encoding,": [
+          27
+        ],
+        "in": [
+          28,
+          52,
+          62,
+          75,
+          111
+        ],
+        "which": [
+          29
+        ],
+        "the": [
+          30,
+          33,
+          63,
+          65,
+          76,
+          78,
+          92,
+          96,
+          103
+        ],
+        "spectrum": [
+          31,
+          67,
+          79
+        ],
+        "on": [
+          32
+        ],
+        "axis": [
+          35
+        ],
+        "changes": [
+          36,
+          80
+        ],
+        "with": [
+          37,
+          71
+        ],
+        "distance.": [
+          38
+        ],
+        "We": [
+          39,
+          57
+        ],
+        "demonstrate": [
+          40
+        ],
+        "here": [
+          41
+        ],
+        "encoding": [
+          44
+        ],
+        "over": [
+          45
+        ],
+        "distances": [
+          46
+        ],
+        "extending": [
+          47
+        ],
+        "hundreds": [
+          49
+        ],
+        "of": [
+          50,
+          91
+        ],
+        "meters": [
+          51
+        ],
+        "an": [
+          53,
+          88
+        ],
+        "open-field": [
+          54
+        ],
+        "laser": [
+          55
+        ],
+        "range.": [
+          56
+        ],
+        "verify": [
+          58
+        ],
+        "two": [
+          59
+        ],
+        "distinct": [
+          60
+        ],
+        "configurations:": [
+          61
+        ],
+        "first,": [
+          64
+        ],
+        "on-axis": [
+          66
+        ],
+        "blue-shifts": [
+          68
+        ],
+        "or": [
+          69
+        ],
+        "red-shifts": [
+          70
+        ],
+        "distance;": [
+          73
+        ],
+        "and": [
+          74,
+          113
+        ],
+        "second,": [
+          77
+        ],
+        "at": [
+          81
+        ],
+        "fixed": [
+          83
+        ],
+        "position": [
+          85
+        ],
+        "by": [
+          86
+        ],
+        "altering": [
+          87
+        ],
+        "internal": [
+          89
+        ],
+        "parameter": [
+          90
+        ],
+        "STWP": [
+          93
+        ],
+        "without": [
+          94
+        ],
+        "modifying": [
+          95
+        ],
+        "packet": [
+          98
+        ],
+        "spectrum.": [
+          99
+        ],
+        "These": [
+          100
+        ],
+        "results": [
+          101
+        ],
+        "indicate": [
+          102
+        ],
+        "potential": [
+          104
+        ],
+        "using": [
+          106
+        ],
+        "measurements": [
+          108
+        ],
+        "ranging": [
+          110
+        ],
+        "LIDAR": [
+          112
+        ],
+        "sensing": [
+          114
+        ],
+        "applications.": [
+          115
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/ol.566908",
+        "doi": "https://doi.org/10.1364/ol.566908",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1364/ol.566908",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S134390580",
+          "display_name": "Optics Letters",
+          "issn_l": "0146-9592",
+          "issn": [
+            "0146-9592",
+            "1071-2763",
+            "1539-4794"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-2",
+            "medline",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Optics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4391035365",
+      "doi": "https://doi.org/10.1364/josaa.508044",
+      "title": "Exciting space-time surface plasmon polaritons by irradiating a nanoslit structure",
+      "publication_date": "2024-01-19",
+      "abstract_inverted_index": {
+        "Space-time": [
+          0
+        ],
+        "(ST)": [
+          1
+        ],
+        "wave": [
+          2,
+          25,
+          102
+        ],
+        "packets": [
+          3,
+          26
+        ],
+        "are": [
+          4,
+          134
+        ],
+        "propagation-invariant": [
+          5
+        ],
+        "pulsed": [
+          6
+        ],
+        "optical": [
+          7
+        ],
+        "beams": [
+          8
+        ],
+        "that": [
+          9,
+          55,
+          97,
+          126,
+          133
+        ],
+        "travel": [
+          10,
+          148
+        ],
+        "freely": [
+          11,
+          63
+        ],
+        "in": [
+          12,
+          104,
+          119,
+          136
+        ],
+        "dielectrics": [
+          13
+        ],
+        "at": [
+          14,
+          47,
+          150,
+          158
+        ],
+        "a": [
+          15,
+          48,
+          114,
+          159
+        ],
+        "tunable": [
+          16,
+          160
+        ],
+        "group": [
+          17,
+          161
+        ],
+        "velocity": [
+          18
+        ],
+        "without": [
+          19,
+          154
+        ],
+        "diffraction": [
+          20,
+          155
+        ],
+        "or": [
+          21,
+          156
+        ],
+        "dispersion.": [
+          22
+        ],
+        "Because": [
+          23
+        ],
+        "ST": [
+          24,
+          101
+        ],
+        "maintain": [
+          27
+        ],
+        "these": [
+          28
+        ],
+        "characteristics": [
+          29,
+          60
+        ],
+        "even": [
+          30
+        ],
+        "when": [
+          31
+        ],
+        "only": [
+          32
+        ],
+        "one": [
+          33
+        ],
+        "transverse": [
+          34
+        ],
+        "dimension": [
+          35
+        ],
+        "is": [
+          36,
+          74
+        ],
+        "considered,": [
+          37
+        ],
+        "they": [
+          38
+        ],
+        "can": [
+          39,
+          107,
+          140
+        ],
+        "realize": [
+          40
+        ],
+        "surface-bound": [
+          41,
+          131
+        ],
+        "waves": [
+          42
+        ],
+        "(e.g.,": [
+          43
+        ],
+        "surface": [
+          44
+        ],
+        "plasmon": [
+          45
+        ],
+        "polaritons": [
+          46
+        ],
+        "metal-dielectric": [
+          49,
+          152
+        ],
+        "interface,": [
+          50
+        ],
+        "which": [
+          51,
+          147
+        ],
+        "we": [
+          52,
+          95
+        ],
+        "call": [
+          53
+        ],
+        "ST-SPPs)": [
+          54
+        ],
+        "have": [
+          56
+        ],
+        "the": [
+          57,
+          68,
+          81,
+          120,
+          151
+        ],
+        "same": [
+          58
+        ],
+        "unique": [
+          59
+        ],
+        "as": [
+          61,
+          144
+        ],
+        "their": [
+          62,
+          77,
+          84
+        ],
+        "propagating": [
+          64
+        ],
+        "counterparts.": [
+          65
+        ],
+        "However,": [
+          66
+        ],
+        "because": [
+          67
+        ],
+        "spatiotemporal": [
+          69
+        ],
+        "spectral": [
+          70
+        ],
+        "structure": [
+          71
+        ],
+        "of": [
+          72
+        ],
+        "ST-SPPs": [
+          73,
+          132
+        ],
+        "key": [
+          75
+        ],
+        "to": [
+          76,
+          110
+        ],
+        "propagation": [
+          78
+        ],
+        "invariance": [
+          79
+        ],
+        "on": [
+          80
+        ],
+        "metal": [
+          82,
+          121
+        ],
+        "surface,": [
+          83
+        ],
+        "excitation": [
+          85,
+          128
+        ],
+        "methodology": [
+          86,
+          129
+        ],
+        "must": [
+          87
+        ],
+        "be": [
+          88,
+          108,
+          142
+        ],
+        "considered": [
+          89,
+          143
+        ],
+        "carefully.": [
+          90
+        ],
+        "Using": [
+          91
+        ],
+        "finite-difference": [
+          92
+        ],
+        "time-domain": [
+          93
+        ],
+        "simulations,": [
+          94
+        ],
+        "show": [
+          96
+        ],
+        "an": [
+          98,
+          111
+        ],
+        "appropriately": [
+          99
+        ],
+        "synthesized": [
+          100
+        ],
+        "packet": [
+          103
+        ],
+        "free": [
+          105
+        ],
+        "space": [
+          106
+        ],
+        "coupled": [
+          109
+        ],
+        "ST-SPP": [
+          112
+        ],
+        "via": [
+          113
+        ],
+        "single": [
+          115
+        ],
+        "nanoscale": [
+          116
+        ],
+        "slit": [
+          117
+        ],
+        "inscribed": [
+          118
+        ],
+        "surface.": [
+          122
+        ],
+        "Our": [
+          123
+        ],
+        "calculations": [
+          124
+        ],
+        "confirm": [
+          125
+        ],
+        "this": [
+          127
+        ],
+        "yields": [
+          130
+        ],
+        "localized": [
+          135
+        ],
+        "all": [
+          137
+        ],
+        "dimensions": [
+          138
+        ],
+        "(and": [
+          139
+        ],
+        "thus": [
+          141
+        ],
+        "plasmonic": [
+          145
+        ],
+        "\"bullets\"),": [
+          146
+        ],
+        "rigidly": [
+          149
+        ],
+        "interface": [
+          153
+        ],
+        "dispersion": [
+          157
+        ],
+        "velocity.": [
+          162
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/josaa.508044",
+        "doi": "https://doi.org/10.1364/josaa.508044",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1364/josaa.508044",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S130108588",
+          "display_name": "Journal of the Optical Society of America A",
+          "issn_l": "1084-7529",
+          "issn": [
+            "1084-7529",
+            "1520-8532"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-c",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of the Optical Society of America A",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4400003262",
+      "doi": "https://doi.org/10.1063/5.0201756",
+      "title": "Light bullet generation via stimulated Brillouin scattering",
+      "publication_date": "2024-06-01",
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "propose": [
+          1
+        ],
+        "an": [
+          2,
+          51
+        ],
+        "all-optical": [
+          3
+        ],
+        "approach": [
+          4
+        ],
+        "to": [
+          5
+        ],
+        "generating": [
+          6
+        ],
+        "space–time": [
+          7,
+          68
+        ],
+        "wave": [
+          8,
+          41,
+          48,
+          69
+        ],
+        "packets": [
+          9
+        ],
+        "in": [
+          10,
+          61
+        ],
+        "a": [
+          11,
+          27,
+          38,
+          62,
+          67
+        ],
+        "multimode": [
+          12
+        ],
+        "slab": [
+          13
+        ],
+        "waveguide": [
+          14
+        ],
+        "via": [
+          15
+        ],
+        "the": [
+          16,
+          33,
+          43,
+          57,
+          84
+        ],
+        "multilevel": [
+          17
+        ],
+        "interband": [
+          18,
+          53
+        ],
+        "stimulated": [
+          19
+        ],
+        "Brillouin": [
+          20
+        ],
+        "scattering": [
+          21
+        ],
+        "process.": [
+          22,
+          45
+        ],
+        "Two": [
+          23
+        ],
+        "pump": [
+          24
+        ],
+        "sources": [
+          25
+        ],
+        "and": [
+          26,
+          77
+        ],
+        "single-mode": [
+          28,
+          39
+        ],
+        "signal": [
+          29,
+          58
+        ],
+        "are": [
+          30
+        ],
+        "fed": [
+          31
+        ],
+        "into": [
+          32
+        ],
+        "waveguide.": [
+          34,
+          85
+        ],
+        "The": [
+          35,
+          46
+        ],
+        "pumps": [
+          36
+        ],
+        "generate": [
+          37
+        ],
+        "acoustic": [
+          40,
+          47
+        ],
+        "through": [
+          42,
+          83
+        ],
+        "electrostrictive": [
+          44
+        ],
+        "then": [
+          49
+        ],
+        "induces": [
+          50
+        ],
+        "indirect": [
+          52
+        ],
+        "photonic": [
+          54
+        ],
+        "transition": [
+          55
+        ],
+        "from": [
+          56
+        ],
+        "wave,": [
+          59
+        ],
+        "resulting": [
+          60
+        ],
+        "light": [
+          63
+        ],
+        "bullet,": [
+          64
+        ],
+        "that": [
+          65,
+          71
+        ],
+        "is,": [
+          66
+        ],
+        "packet": [
+          70
+        ],
+        "does": [
+          72
+        ],
+        "not": [
+          73
+        ],
+        "change": [
+          74
+        ],
+        "its": [
+          75
+        ],
+        "spatial": [
+          76
+        ],
+        "temporal": [
+          78
+        ],
+        "shape": [
+          79
+        ],
+        "as": [
+          80
+        ],
+        "it": [
+          81
+        ],
+        "propagates": [
+          82
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0201756",
+        "doi": "https://doi.org/10.1063/5.0201756",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1063/5.0201756",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210226744",
+          "display_name": "APL Photonics",
+          "issn_l": "2378-0967",
+          "issn": [
+            "2378-0967"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-1",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320061",
+          "host_organization_name": "AIP Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320061",
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "AIP Publishing",
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "APL Photonics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4412479544",
+      "doi": "https://doi.org/10.1364/josaa.566252",
+      "title": "Optical spatiotemporal Fourier synthesis: tutorial",
+      "publication_date": "2025-07-16",
+      "abstract_inverted_index": {
+        "Fourier": [
+          0,
+          11,
+          25,
+          34,
+          52,
+          75,
+          164
+        ],
+        "synthesis": [
+          1,
+          165
+        ],
+        "is": [
+          2,
+          13,
+          124
+        ],
+        "one": [
+          3
+        ],
+        "of": [
+          4,
+          7,
+          40,
+          73,
+          105,
+          109,
+          132,
+          168
+        ],
+        "the": [
+          5,
+          27,
+          33,
+          37,
+          41,
+          54,
+          70,
+          78,
+          106
+        ],
+        "foundations": [
+          6
+        ],
+        "physical": [
+          8,
+          47
+        ],
+        "optics.": [
+          9
+        ],
+        "Spatial": [
+          10
+        ],
+        "optics": [
+          12,
+          76
+        ],
+        "a": [
+          14,
+          67,
+          103,
+          127,
+          145,
+          162
+        ],
+        "basis": [
+          15
+        ],
+        "for": [
+          16,
+          61
+        ],
+        "understanding": [
+          17
+        ],
+        "optical": [
+          18,
+          90,
+          171
+        ],
+        "imaging,": [
+          19
+        ],
+        "microscopy,": [
+          20
+        ],
+        "and": [
+          21,
+          80,
+          149,
+          154
+        ],
+        "holography.": [
+          22
+        ],
+        "In": [
+          23,
+          97
+        ],
+        "conventional": [
+          24
+        ],
+        "optics,": [
+          26,
+          53
+        ],
+        "complex": [
+          28,
+          55
+        ],
+        "spatial": [
+          29,
+          38,
+          79,
+          122
+        ],
+        "field": [
+          30,
+          42,
+          72
+        ],
+        "distribution": [
+          31
+        ],
+        "in": [
+          32,
+          46,
+          50,
+          118,
+          141
+        ],
+        "plane": [
+          35
+        ],
+        "constitutes": [
+          36
+        ],
+        "spectrum": [
+          39,
+          57
+        ],
+        "to": [
+          43,
+          86,
+          174
+        ],
+        "be": [
+          44,
+          59
+        ],
+        "realized": [
+          45
+        ],
+        "space.": [
+          48
+        ],
+        "Analogously,": [
+          49
+        ],
+        "temporal": [
+          51,
+          56,
+          81
+        ],
+        "can": [
+          58
+        ],
+        "manipulated": [
+          60,
+          84
+        ],
+        "ultrafast": [
+          62
+        ],
+        "pulse-shaping.": [
+          63
+        ],
+        "We": [
+          64,
+          160
+        ],
+        "present": [
+          65
+        ],
+        "here": [
+          66
+        ],
+        "tutorial": [
+          68
+        ],
+        "on": [
+          69,
+          102
+        ],
+        "emerging": [
+          71
+        ],
+        "spatiotemporal": [
+          74,
+          163
+        ],
+        "whereby": [
+          77
+        ],
+        "spectra": [
+          82
+        ],
+        "are": [
+          83
+        ],
+        "jointly": [
+          85
+        ],
+        "produce": [
+          87
+        ],
+        "spatiotemporally": [
+          88,
+          111
+        ],
+        "structured": [
+          89,
+          112,
+          158
+        ],
+        "fields": [
+          91,
+          117,
+          133,
+          172
+        ],
+        "that": [
+          92,
+          138
+        ],
+        "display": [
+          93
+        ],
+        "unique": [
+          94
+        ],
+        "propagation": [
+          95
+        ],
+        "characteristics.": [
+          96
+        ],
+        "this": [
+          98,
+          175
+        ],
+        "tutorial,": [
+          99
+        ],
+        "we": [
+          100
+        ],
+        "focus": [
+          101
+        ],
+        "subset": [
+          104,
+          131
+        ],
+        "overall": [
+          107
+        ],
+        "class": [
+          108
+        ],
+        "nonseparable": [
+          110
+        ],
+        "fields,": [
+          113
+        ],
+        "namely": [
+          114
+        ],
+        "cylindrically": [
+          115
+        ],
+        "symmetric": [
+          116
+        ],
+        "which": [
+          119
+        ],
+        "each": [
+          120
+        ],
+        "radial": [
+          121
+        ],
+        "frequency": [
+          123
+        ],
+        "associated": [
+          125
+        ],
+        "with": [
+          126
+        ],
+        "single": [
+          128
+        ],
+        "wavelength.": [
+          129
+        ],
+        "This": [
+          130
+        ],
+        "comprises": [
+          134
+        ],
+        "propagation-invariant": [
+          135
+        ],
+        "wave": [
+          136,
+          152
+        ],
+        "packets": [
+          137,
+          153
+        ],
+        "travel": [
+          139
+        ],
+        "rigidly": [
+          140
+        ],
+        "linear": [
+          142
+        ],
+        "media": [
+          143
+        ],
+        "at": [
+          144
+        ],
+        "tunable": [
+          146
+        ],
+        "group": [
+          147
+        ],
+        "velocity": [
+          148
+        ],
+        "includes": [
+          150
+        ],
+        "space-time": [
+          151
+        ],
+        "other": [
+          155
+        ],
+        "closely": [
+          156
+        ],
+        "related": [
+          157
+        ],
+        "fields.": [
+          159
+        ],
+        "describe": [
+          161
+        ],
+        "system": [
+          166
+        ],
+        "capable": [
+          167
+        ],
+        "preparing": [
+          169
+        ],
+        "arbitrary": [
+          170
+        ],
+        "belonging": [
+          173
+        ],
+        "subclass.": [
+          176
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/josaa.566252",
+        "doi": "https://doi.org/10.1364/josaa.566252",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1364/josaa.566252",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S130108588",
+          "display_name": "Journal of the Optical Society of America A",
+          "issn_l": "1084-7529",
+          "issn": [
+            "1084-7529",
+            "1520-8532"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-c",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of the Optical Society of America A",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4414976666",
+      "doi": "https://doi.org/10.1016/j.scib.2025.10.001",
+      "title": "Propagation-invariant spatiotemporal vortices",
+      "publication_date": "2025-10-09",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1016/j.scib.2025.10.001",
+        "doi": "https://doi.org/10.1016/j.scib.2025.10.001",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1016/j.scib.2025.10.001",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306542128",
+          "display_name": "中国科学通报：英文版",
+          "issn_l": "2095-9273",
+          "issn": [
+            "2095-9273",
+            "2095-9281"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [
+            "dongbi-a",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Science Bulletin",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4410613380",
+      "doi": "https://doi.org/10.1103/ymls-2lkq",
+      "title": "Spectral reorganization of space-time wave packets in the presence of normal group-velocity dispersion",
+      "publication_date": "2025-05-22",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1103/ymls-2lkq",
+        "doi": "https://doi.org/10.1103/ymls-2lkq",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/ymls-2lkq",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S164566984",
+          "display_name": "Physical Review A",
+          "issn_l": "0556-2791",
+          "issn": [
+            "0556-2791",
+            "1050-2947",
+            "1094-1622",
+            "1538-4446",
+            "2469-9926",
+            "2469-9934",
+            "2469-9942"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "ki-jl-1",
+            "norway-2",
+            "poland-100",
+            "poland-70",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review A",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4404962428",
+      "doi": "https://doi.org/10.1063/5.0232156",
+      "title": "Abrupt X-to-O-wave structural field transition in presence of anomalous dispersion",
+      "publication_date": "2024-12-01",
+      "abstract_inverted_index": {
+        "All": [
+          0
+        ],
+        "linear,": [
+          1
+        ],
+        "propagation-invariant,": [
+          2
+        ],
+        "paraxial": [
+          3
+        ],
+        "pulsed": [
+          4
+        ],
+        "beams": [
+          5
+        ],
+        "are": [
+          6
+        ],
+        "spatiotemporally": [
+          7
+        ],
+        "X-shaped": [
+          8,
+          158
+        ],
+        "(conical": [
+          9
+        ],
+        "waves)": [
+          10
+        ],
+        "in": [
+          11,
+          19,
+          35,
+          42,
+          50,
+          60,
+          102,
+          107,
+          150,
+          169,
+          203
+        ],
+        "the": [
+          12,
+          20,
+          36,
+          62,
+          72,
+          82,
+          108,
+          116,
+          121,
+          126,
+          142,
+          151,
+          170,
+          175,
+          183,
+          200
+        ],
+        "absence": [
+          13
+        ],
+        "of": [
+          14,
+          22,
+          38,
+          64,
+          75,
+          94,
+          120,
+          129,
+          174
+        ],
+        "group-velocity": [
+          15
+        ],
+        "dispersion": [
+          16
+        ],
+        "(GVD)": [
+          17
+        ],
+        "or": [
+          18,
+          118
+        ],
+        "presence": [
+          21,
+          37
+        ],
+        "normal": [
+          23
+        ],
+        "GVD.": [
+          24,
+          122
+        ],
+        "It": [
+          25
+        ],
+        "is": [
+          26,
+          47,
+          69,
+          163
+        ],
+        "known,": [
+          27
+        ],
+        "however,": [
+          28
+        ],
+        "that": [
+          29,
+          46,
+          139
+        ],
+        "such": [
+          30
+        ],
+        "conical": [
+          31,
+          58
+        ],
+        "waves": [
+          32,
+          59
+        ],
+        "become": [
+          33
+        ],
+        "O-shaped": [
+          34,
+          155
+        ],
+        "anomalous": [
+          39,
+          109
+        ],
+        "GVD,": [
+          40
+        ],
+        "resulting": [
+          41
+        ],
+        "a": [
+          43,
+          65,
+          76,
+          95,
+          130,
+          136
+        ],
+        "field": [
+          44,
+          86,
+          99
+        ],
+        "profile": [
+          45
+        ],
+        "circularly": [
+          48
+        ],
+        "symmetric": [
+          49
+        ],
+        "space": [
+          51
+        ],
+        "and": [
+          52,
+          205
+        ],
+        "time.": [
+          53
+        ],
+        "To": [
+          54
+        ],
+        "date,": [
+          55
+        ],
+        "experiments": [
+          56
+        ],
+        "generating": [
+          57
+        ],
+        "which": [
+          61
+        ],
+        "wavelength": [
+          63,
+          74
+        ],
+        "high-energy": [
+          66
+        ],
+        "pump": [
+          67
+        ],
+        "laser": [
+          68
+        ],
+        "tuned": [
+          70
+        ],
+        "across": [
+          71,
+          135
+        ],
+        "zero-dispersion": [
+          73
+        ],
+        "nonlinear": [
+          77,
+          204
+        ],
+        "medium": [
+          78
+        ],
+        "have": [
+          79
+        ],
+        "not": [
+          80
+        ],
+        "revealed": [
+          81
+        ],
+        "expected": [
+          83
+        ],
+        "X-to-O-wave": [
+          84,
+          97
+        ],
+        "structural": [
+          85,
+          98
+        ],
+        "transition.": [
+          87
+        ],
+        "We": [
+          88
+        ],
+        "report": [
+          89
+        ],
+        "here": [
+          90
+        ],
+        "an": [
+          91,
+          147,
+          154,
+          157,
+          166
+        ],
+        "unambiguous": [
+          92
+        ],
+        "observation": [
+          93
+        ],
+        "fixed-central-wavelength": [
+          96
+        ],
+        "transition": [
+          100,
+          149,
+          162
+        ],
+        "occurring": [
+          101
+        ],
+        "linear": [
+          103
+        ],
+        "dispersion-free": [
+          104
+        ],
+        "wave": [
+          105,
+          132
+        ],
+        "packets": [
+          106
+        ],
+        "GVD": [
+          110
+        ],
+        "regime,": [
+          111
+        ],
+        "without": [
+          112
+        ],
+        "needing": [
+          113
+        ],
+        "to": [
+          114,
+          156,
+          186
+        ],
+        "change": [
+          115,
+          168
+        ],
+        "sign": [
+          117
+        ],
+        "magnitude": [
+          119
+        ],
+        "Instead,": [
+          123
+        ],
+        "by": [
+          124
+        ],
+        "tuning": [
+          125
+        ],
+        "group": [
+          127
+        ],
+        "velocity": [
+          128,
+          185
+        ],
+        "space–time": [
+          131
+        ],
+        "packet": [
+          133
+        ],
+        "(STWP)": [
+          134
+        ],
+        "threshold": [
+          137
+        ],
+        "value": [
+          138
+        ],
+        "we": [
+          140,
+          145
+        ],
+        "call": [
+          141
+        ],
+        "“escape": [
+          143
+        ],
+        "velocity,”": [
+          144
+        ],
+        "observe": [
+          146
+        ],
+        "abrupt": [
+          148,
+          167
+        ],
+        "STWP": [
+          152
+        ],
+        "from": [
+          153,
+          177
+        ],
+        "spatiotemporal": [
+          159,
+          172,
+          180
+        ],
+        "profile.": [
+          160
+        ],
+        "This": [
+          161
+        ],
+        "associated": [
+          164,
+          171
+        ],
+        "with": [
+          165
+        ],
+        "spectrum": [
+          173
+        ],
+        "STWP:": [
+          176
+        ],
+        "closed": [
+          178
+        ],
+        "elliptical": [
+          179
+        ],
+        "spectra": [
+          181,
+          189
+        ],
+        "below": [
+          182
+        ],
+        "escape": [
+          184
+        ],
+        "open": [
+          187
+        ],
+        "hyperbolic": [
+          188
+        ],
+        "above": [
+          190
+        ],
+        "it.": [
+          191
+        ],
+        "These": [
+          192
+        ],
+        "results": [
+          193
+        ],
+        "may": [
+          194
+        ],
+        "furnish": [
+          195
+        ],
+        "new": [
+          196
+        ],
+        "opportunities": [
+          197
+        ],
+        "for": [
+          198
+        ],
+        "engineering": [
+          199
+        ],
+        "phase-matching": [
+          201
+        ],
+        "conditions": [
+          202
+        ],
+        "quantum": [
+          206
+        ],
+        "optics.": [
+          207
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0232156",
+        "doi": "https://doi.org/10.1063/5.0232156",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1063/5.0232156",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210226744",
+          "display_name": "APL Photonics",
+          "issn_l": "2378-0967",
+          "issn": [
+            "2378-0967"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-1",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320061",
+          "host_organization_name": "AIP Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320061",
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "AIP Publishing",
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "APL Photonics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4413217592",
+      "doi": "https://doi.org/10.1364/ol.571482",
+      "title": "Bending space-time wave packets",
+      "publication_date": "2025-08-11",
+      "abstract_inverted_index": {
+        "Optical": [
+          0
+        ],
+        "beams": [
+          1,
+          37
+        ],
+        "with": [
+          2,
+          49,
+          74,
+          146,
+          174
+        ],
+        "certain": [
+          3
+        ],
+        "asymmetric": [
+          4
+        ],
+        "profiles,": [
+          5,
+          41
+        ],
+        "such": [
+          6
+        ],
+        "as": [
+          7
+        ],
+        "the": [
+          8,
+          29,
+          82,
+          95,
+          107,
+          111,
+          154,
+          161
+        ],
+        "Airy": [
+          9
+        ],
+        "beam,": [
+          10
+        ],
+        "can": [
+          11
+        ],
+        "depart": [
+          12
+        ],
+        "from": [
+          13
+        ],
+        "rectilinear": [
+          14
+        ],
+        "propagation": [
+          15,
+          50,
+          83,
+          112
+        ],
+        "and": [
+          16,
+          44
+        ],
+        "instead": [
+          17
+        ],
+        "travel": [
+          18,
+          45
+        ],
+        "along": [
+          19,
+          46,
+          110,
+          133
+        ],
+        "curved": [
+          20,
+          99,
+          134
+        ],
+        "(typically": [
+          21
+        ],
+        "parabolic)": [
+          22
+        ],
+        "trajectories.": [
+          23
+        ],
+        "Here": [
+          24
+        ],
+        "we": [
+          25,
+          128
+        ],
+        "show": [
+          26
+        ],
+        "that": [
+          27,
+          38,
+          136,
+          150
+        ],
+        "sculpting": [
+          28
+        ],
+        "spatiotemporal": [
+          30
+        ],
+        "spectrum": [
+          31,
+          121
+        ],
+        "of": [
+          32,
+          85,
+          153,
+          163
+        ],
+        "optical": [
+          33
+        ],
+        "pulses": [
+          34
+        ],
+        "yields": [
+          35
+        ],
+        "self-accelerating": [
+          36
+        ],
+        "have": [
+          39
+        ],
+        "symmetric": [
+          40,
+          130
+        ],
+        "remain": [
+          42
+        ],
+        "diffraction-free,": [
+          43
+        ],
+        "power-law": [
+          47
+        ],
+        "curves": [
+          48
+        ],
+        "distance": [
+          51
+        ],
+        "having": [
+          52
+        ],
+        "arbitrary": [
+          53
+        ],
+        "positive": [
+          54
+        ],
+        "exponent": [
+          55
+        ],
+        "(integer": [
+          56
+        ],
+        "or": [
+          57,
+          141
+        ],
+        "fractional).": [
+          58
+        ],
+        "We": [
+          59
+        ],
+        "build": [
+          60
+        ],
+        "upon": [
+          61
+        ],
+        "propagation-invariant": [
+          62
+        ],
+        "space-time": [
+          63
+        ],
+        "wave": [
+          64
+        ],
+        "packets": [
+          65
+        ],
+        "(STWPs),": [
+          66
+        ],
+        "in": [
+          67,
+          81,
+          94
+        ],
+        "which": [
+          68,
+          114
+        ],
+        "each": [
+          69,
+          123
+        ],
+        "spatial": [
+          70,
+          120,
+          156
+        ],
+        "frequency": [
+          71
+        ],
+        "is": [
+          72,
+          88,
+          101,
+          151
+        ],
+        "associated": [
+          73
+        ],
+        "a": [
+          75,
+          91,
+          117
+        ],
+        "single": [
+          76
+        ],
+        "wavelength.": [
+          77,
+          124
+        ],
+        "A": [
+          78,
+          98
+        ],
+        "linear": [
+          79
+        ],
+        "tilt": [
+          80,
+          93,
+          108
+        ],
+        "path": [
+          84
+        ],
+        "an": [
+          86,
+          147
+        ],
+        "STWP": [
+          87
+        ],
+        "produced": [
+          89,
+          103
+        ],
+        "by": [
+          90
+        ],
+        "corresponding": [
+          92
+        ],
+        "spectral": [
+          96
+        ],
+        "domain.": [
+          97
+        ],
+        "trajectory": [
+          100
+        ],
+        "then": [
+          102
+        ],
+        "through": [
+          104
+        ],
+        "locally": [
+          105
+        ],
+        "changing": [
+          106
+        ],
+        "direction": [
+          109
+        ],
+        "axis,": [
+          113
+        ],
+        "requires": [
+          115
+        ],
+        "associating": [
+          116
+        ],
+        "prescribed": [
+          118
+        ],
+        "finite-bandwidth": [
+          119
+        ],
+        "to": [
+          122,
+          160
+        ],
+        "Using": [
+          125
+        ],
+        "this": [
+          126
+        ],
+        "approach,": [
+          127
+        ],
+        "realize": [
+          129
+        ],
+        "STWPs": [
+          131,
+          167
+        ],
+        "traveling": [
+          132
+        ],
+        "trajectories": [
+          135
+        ],
+        "follow": [
+          137
+        ],
+        "linear,": [
+          138
+        ],
+        "quadratic,": [
+          139
+        ],
+        "cubic,": [
+          140
+        ],
+        "even": [
+          142
+        ],
+        "square-root": [
+          143
+        ],
+        "power": [
+          144
+        ],
+        "laws": [
+          145
+        ],
+        "acceleration": [
+          148
+        ],
+        "rate": [
+          149
+        ],
+        "independent": [
+          152
+        ],
+        "beam": [
+          155
+        ],
+        "scale.": [
+          157
+        ],
+        "These": [
+          158
+        ],
+        "novel,": [
+          159
+        ],
+        "best": [
+          162
+        ],
+        "our": [
+          164
+        ],
+        "knowledge,": [
+          165
+        ],
+        "bending": [
+          166
+        ],
+        "open": [
+          168
+        ],
+        "new": [
+          169
+        ],
+        "avenues": [
+          170
+        ],
+        "for": [
+          171
+        ],
+        "realizing": [
+          172
+        ],
+        "target-avoidance": [
+          173
+        ],
+        "electromagnetic": [
+          175
+        ],
+        "waves.": [
+          176
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1364/ol.571482",
+        "doi": "https://doi.org/10.1364/ol.571482",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1364/ol.571482",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S134390580",
+          "display_name": "Optics Letters",
+          "issn_l": "0146-9592",
+          "issn": [
+            "0146-9592",
+            "1071-2763",
+            "1539-4794"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-2",
+            "medline",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310315679",
+          "host_organization_name": "Optica Publishing Group",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315679"
+          ],
+          "host_organization_lineage_names": [
+            "Optica Publishing Group"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Optics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W7152730933",
+      "doi": "https://doi.org/10.1002/lpor.202503213",
+      "title": "Full‐Span Reversible Space‐Time Birefringence",
+      "publication_date": "2026-04-08",
+      "abstract_inverted_index": {
+        "ABSTRACT": [
+          0
+        ],
+        "Birefringence,": [
+          1
+        ],
+        "the": [
+          2,
+          36,
+          81,
+          91,
+          96,
+          135,
+          154,
+          164
+        ],
+        "polarization‐dependent": [
+          3
+        ],
+        "splitting": [
+          4
+        ],
+        "of": [
+          5,
+          77,
+          83,
+          95,
+          108,
+          134,
+          157,
+          167
+        ],
+        "light": [
+          6,
+          84,
+          98
+        ],
+        "in": [
+          7,
+          61,
+          86,
+          160,
+          174
+        ],
+        "anisotropic": [
+          8,
+          161
+        ],
+        "crystals,": [
+          9
+        ],
+        "enables": [
+          10
+        ],
+        "diverse": [
+          11
+        ],
+        "optical": [
+          12,
+          19,
+          37,
+          87,
+          137,
+          146,
+          176,
+          178
+        ],
+        "phenomena": [
+          13
+        ],
+        "and": [
+          14,
+          23,
+          139,
+          180,
+          187
+        ],
+        "advanced": [
+          15
+        ],
+        "functionalities": [
+          16
+        ],
+        "such": [
+          17,
+          44
+        ],
+        "as": [
+          18,
+          45
+        ],
+        "communication,": [
+          20
+        ],
+        "nonlinear": [
+          21
+        ],
+        "optics,": [
+          22
+        ],
+        "quantum": [
+          24,
+          181
+        ],
+        "optics.": [
+          25
+        ],
+        "However,": [
+          26
+        ],
+        "conventional": [
+          27,
+          122
+        ],
+        "methods": [
+          28
+        ],
+        "for": [
+          29,
+          152
+        ],
+        "controlling": [
+          30
+        ],
+        "birefringence": [
+          31,
+          82,
+          109,
+          123,
+          170
+        ],
+        "typically": [
+          32
+        ],
+        "rely": [
+          33
+        ],
+        "on": [
+          34
+        ],
+        "engineering": [
+          35
+        ],
+        "crystal": [
+          38
+        ],
+        "structure": [
+          39
+        ],
+        "or": [
+          40,
+          50,
+          67
+        ],
+        "applying": [
+          41
+        ],
+        "external": [
+          42
+        ],
+        "stimuli": [
+          43
+        ],
+        "electric": [
+          46
+        ],
+        "fields,": [
+          47
+        ],
+        "mechanical": [
+          48
+        ],
+        "stress,": [
+          49
+        ],
+        "thermal": [
+          51
+        ],
+        "variations,": [
+          52
+        ],
+        "which": [
+          53
+        ],
+        "are": [
+          54
+        ],
+        "often": [
+          55
+        ],
+        "constrained": [
+          56
+        ],
+        "by": [
+          57
+        ],
+        "limited": [
+          58
+        ],
+        "tunability,": [
+          59
+        ],
+        "challenges": [
+          60
+        ],
+        "integration": [
+          62
+        ],
+        "with": [
+          63,
+          121
+        ],
+        "compact": [
+          64
+        ],
+        "photonic": [
+          65
+        ],
+        "devices,": [
+          66
+        ],
+        "slow": [
+          68
+        ],
+        "response": [
+          69
+        ],
+        "time.": [
+          70
+        ],
+        "Here,": [
+          71
+        ],
+        "we": [
+          72
+        ],
+        "introduce": [
+          73
+        ],
+        "a": [
+          74,
+          111,
+          149
+        ],
+        "new": [
+          75
+        ],
+        "degree": [
+          76
+        ],
+        "freedom": [
+          78
+        ],
+        "to": [
+          79,
+          130
+        ],
+        "manipulate": [
+          80
+        ],
+        "propagation": [
+          85
+        ],
+        "crystals": [
+          88
+        ],
+        "through": [
+          89,
+          128
+        ],
+        "programming": [
+          90
+        ],
+        "spatiotemporal": [
+          92
+        ],
+        "spectral": [
+          93
+        ],
+        "phase": [
+          94
+        ],
+        "incident": [
+          97
+        ],
+        "wave.": [
+          99
+        ],
+        "We": [
+          100
+        ],
+        "demonstrate": [
+          101
+        ],
+        "that": [
+          102,
+          119,
+          184
+        ],
+        "this": [
+          103,
+          168
+        ],
+        "approach": [
+          104
+        ],
+        "achieves": [
+          105
+        ],
+        "continuous": [
+          106
+        ],
+        "tuning": [
+          107
+        ],
+        "across": [
+          110
+        ],
+        "spectrum": [
+          112
+        ],
+        "more": [
+          113
+        ],
+        "than": [
+          114,
+          118
+        ],
+        "100": [
+          115
+        ],
+        "times": [
+          116
+        ],
+        "broader": [
+          117
+        ],
+        "achievable": [
+          120
+        ],
+        "tuning,": [
+          124
+        ],
+        "spanning": [
+          125
+        ],
+        "from": [
+          126
+        ],
+        "positive": [
+          127
+        ],
+        "zero": [
+          129
+        ],
+        "negative": [
+          131
+        ],
+        "values,": [
+          132
+        ],
+        "irrespective": [
+          133
+        ],
+        "crystal's": [
+          136
+        ],
+        "sign": [
+          138
+        ],
+        "without": [
+          140
+        ],
+        "inherent": [
+          141
+        ],
+        "physical": [
+          142
+        ],
+        "limitations.": [
+          143
+        ],
+        "This": [
+          144
+        ],
+        "unique": [
+          145
+        ],
+        "behavior": [
+          147
+        ],
+        "provides": [
+          148
+        ],
+        "versatile": [
+          150
+        ],
+        "platform": [
+          151
+        ],
+        "investigating": [
+          153
+        ],
+        "complex": [
+          155
+        ],
+        "dynamics": [
+          156
+        ],
+        "wave": [
+          158
+        ],
+        "flow": [
+          159
+        ],
+        "media,": [
+          162
+        ],
+        "while": [
+          163
+        ],
+        "broad": [
+          165
+        ],
+        "tunability": [
+          166
+        ],
+        "space‐time": [
+          169
+        ],
+        "will": [
+          171
+        ],
+        "spur": [
+          172
+        ],
+        "innovations": [
+          173
+        ],
+        "ultrafast": [
+          175
+        ],
+        "manipulation,": [
+          177
+        ],
+        "computation,": [
+          179
+        ],
+        "information": [
+          182
+        ],
+        "processing—applications": [
+          183
+        ],
+        "demand": [
+          185
+        ],
+        "rapid": [
+          186
+        ],
+        "flexible": [
+          188
+        ],
+        "device": [
+          189
+        ],
+        "reconfiguration.": [
+          190
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1002/lpor.202503213",
+        "doi": "https://doi.org/10.1002/lpor.202503213",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1002/lpor.202503213",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S95928045",
+          "display_name": "Laser & Photonics Review",
+          "issn_l": "1863-8880",
+          "issn": [
+            "1863-8880",
+            "1863-8899"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-3",
+            "norway-1",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Laser &amp; Photonics Reviews",
+        "raw_type": "journal-article"
+      }
+    }
+  ],
+  "group_by": []
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "key": "openalex",
+    "url": "https://api.openalex.org/works/https://doi.org/10.1103/7zfd-p48s",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://api.openalex.org/works/https://doi.org/10.1103/7zfd-p48s",
+    "bytes": 12036,
+    "saved_file": "openalex.response",
+    "json_file": "openalex.json",
+    "status": "retrieved"
+  },
+  {
+    "key": "semantic-scholar",
+    "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1103/7zfd-p48s?fields=title,authors,year,openAccessPdf,externalIds,url",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1103/7zfd-p48s?fields=title,authors,year,openAccessPdf,externalIds,url",
+    "bytes": 437,
+    "saved_file": "semantic-scholar.response",
+    "json_file": "semantic-scholar.json",
+    "status": "retrieved"
+  },
+  {
+    "key": "crossref",
+    "url": "https://api.crossref.org/works/10.1103/7zfd-p48s",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://api.crossref.org/works/10.1103/7zfd-p48s",
+    "bytes": 13025,
+    "saved_file": "crossref.response",
+    "json_file": "crossref.json",
+    "status": "retrieved"
+  },
+  {
+    "key": "openaire",
+    "url": "https://api.openaire.eu/search/publications?doi=10.1103%2F7zfd-p48s&format=json",
+    "date": "2026-10-21",
+    "status": "transport-failed",
+    "error": "curl: (35) schannel: next InitializeSecurityContext failed: CRYPT_E_REVOCATION_OFFLINE (0x80092013) - The revocation function was unable to check revocation because the revocation server was offline.\r\n"
+  },
+  {
+    "key": "author-orcid",
+    "url": "https://pub.orcid.org/v3.0/0000-0001-8603-900X/works",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://pub.orcid.org/v3.0/0000-0001-8603-900X/works",
+    "bytes": 37897,
+    "saved_file": "author-orcid.response",
+    "json_file": "author-orcid.json",
+    "status": "retrieved"
+  },
+  {
+    "key": "corresponding-author-orcid",
+    "url": "https://pub.orcid.org/v3.0/0000-0001-9349-5556/works",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://pub.orcid.org/v3.0/0000-0001-9349-5556/works",
+    "bytes": 50192,
+    "saved_file": "corresponding-author-orcid.response",
+    "json_file": "corresponding-author-orcid.json",
+    "status": "retrieved"
+  },
+  {
+    "key": "aps-supplemental",
+    "url": "https://journals.aps.org/prb/supplemental/10.1103/7zfd-p48s",
+    "date": "2026-10-21",
+    "http_status": 401,
+    "effective_url": "https://journals.aps.org/prb/supplemental/10.1103/7zfd-p48s",
+    "bytes": 45176,
+    "saved_file": "aps-supplemental.response",
+    "status": "access-unavailable"
+  },
+  {
+    "key": "author-homepage",
+    "url": "https://faculty.ustc.edu.cn/gaonan/zh_CN/zdylm/937828/list/index.htm",
+    "date": "2026-10-21",
+    "http_status": 200,
+    "effective_url": "https://faculty.ustc.edu.cn/gaonan/zh_CN/zdylm/937828/list/index.htm",
+    "bytes": 578,
+    "saved_file": "author-homepage.response",
+    "status": "retrieved"
+  }
+]

@@ -1,0 +1,1958 @@
+
+=== PDF PAGE 1 ===
+Searching for Bloch wave packets with almost definite momentum direction
+Arseni Goussev1, 2 and Gregory V. Morozov3
+1Section of Mathematics, University of Geneva, Rue du Conseil-G´en´eral 7-9, 1205 Gen`eve, Switzerland
+2Quantum Physics Corner Ltd, 20–22 Wenlock Road, London N1 7GU, United Kingdom
+3Scottish Universities Physics Alliance (SUPA), School of Computing, Engineering and Physical Sciences,
+University of the West of Scotland, Paisley PA1 2BE, United Kingdom
+(Dated: September 29, 2025)
+The motion of a quantum particle in a one-dimensional periodic potential can be described in
+terms of Bloch wave packets. Like free-particle wave packets, they can propagate without attenua-
+tion. Here, we examine this similarity more closely by investigating whether Bloch wave packets can
+maintain a definite – or nearly definite – momentum direction, a property inherent to free-particle
+wave packets. This question is particularly relevant to the feasibility of using solid-state-based sys-
+tems in the search for the first experimental realization of quantum backflow, a quantum interference
+effect in which a particle’s probability density flows in a direction opposite to its momentum.
+I.
+INTRODUCTION
+When a quantum particle moves through a periodic
+potential, its behavior differs fundamentally from that of
+a classical particle. According to the celebrated Bloch
+theory, a perfectly periodic potential becomes effectively
+transparent to a quantum matter wave of suitable energy,
+allowing it to propagate “without attenuation because
+of the coherent constructive interference of the scattered
+waves” [1]. As Kittel states it, “matter waves can propa-
+gate freely in a periodic structure,” and “Bloch functions
+can be assembled into wave packets to represent electrons
+that propagate freely through the potential field of the
+ion cores” [2]. This free-particle-like motion of an elec-
+tron through the periodic potential of a crystal is crucial
+for understanding the electrical properties of solids, such
+as the emergence of ballistic transport in mesoscopic sys-
+tems [3, 4].
+The resemblance between quantum parti-
+cle propagation in periodic potentials and in free space
+suggests that mesoscopic systems could be used to ex-
+plore quantum backflow – a classically impossible effect
+in which the probability density of a particle moves in a
+direction opposite to its momentum [5].
+Quantum backflow is typically considered for a free
+particle on a line. In the original formulation of the ef-
+fect, the particle is prepared in a quantum state with
+a definite momentum direction, assumed to be positive
+for concreteness. Since free-space evolution conserves the
+momentum direction, any measurement of the particle’s
+momentum at a later time is guaranteed to yield a posi-
+tive value, albeit of a random magnitude. Quantum back-
+flow then manifests as the emergence of a negative prob-
+ability current at certain points in space and time, mean-
+ing that despite having positive momentum, the particle
+can locally move in the negative direction.
+The physical mechanism behind quantum backflow
+rests on the idea that interference among positive-
+momentum components within a quantum state can pro-
+duce a negative probability current.
+In principle, the
+effect can occur not only in states composed exclusively
+of positive-momentum components but also in those con-
+taining a small fraction of negative momentum, provided
+their contribution remains negligible compared to the
+interference-induced negative flux.
+This reasoning has
+enabled researchers to investigate quantum backflow in
+superpositions of Gaussian wave packets that include a
+minor admixture of negative momentum components [6–
+8].
+A promising approach to exploring quantum backflow
+in states with arbitrary momentum distributions was pro-
+posed in Ref. [9], introducing an alternative definition
+of the effect based on a finite-precision joint probability
+density function for a particle’s position and momentum.
+This formulation allows one to determine the threshold
+of negative probability current compatible with classical
+mechanical evolution. Any excess of negative current be-
+yond this threshold is then attributed to quantum back-
+flow. However, it has been shown that this new criterion
+is highly sensitive to the choice of the phase-space prob-
+ability density function and can, in some cases, yield re-
+sults inconsistent with the original definition of quantum
+backflow for positive-momentum states [10].
+Although quantum backflow was first recognized as
+a distinct phenomenon over three decades ago [11], it
+has yet to be experimentally demonstrated. Significant
+progress has been achieved in laboratory studies of its op-
+tical analog [12–15], but no experiment has successfully
+observed quantum backflow with massive particles, such
+as electrons or atoms. (An experimental scheme utilizing
+Bose-Einstein condensates was proposed in Refs. [7, 8],
+but to our knowledge, it has never been realized in a labo-
+ratory.) The challenge lies in the fact that quantum back-
+flow is inherently weak – according to theory, less than
+4% of the total probability can be transported against the
+particle’s momentum [11, 16, 17] – as well as in the ex-
+otic nature of the theoretical backflow-maximizing state,
+which is spatially unbounded and has infinite mean en-
+ergy [6].
+(Some of these difficulties can be mitigated
+by considering quantum backflow in a circular geometry
+[18].) Identifying favorable physical systems is therefore
+crucial for making the first experimental observation of
+the effect possible, as well as for exploring potential tech-
+nological applications.
+arXiv:2504.12489v2  [quant-ph]  26 Sep 2025
+
+
+=== PDF PAGE 2 ===
+2
+A compelling strategy to realizing quantum backflow
+experimentally is to use electrically charged particles
+moving along an effectively one-dimensional channel, as
+proposed in Ref. [11]. Since the electric current is pro-
+portional to the probability current, detecting a cur-
+rent (divided by charge) flowing opposite to the par-
+ticle’s momentum would serve as experimental confir-
+mation of quantum backflow.
+In this regard, an elec-
+tronic wave packet propagating ballistically through a
+mesoscopic quantum wire presents an appealing experi-
+mental scenario. (Ref. [19] reviews various experimental
+methods for the generation and manipulation of single-
+electron wave packets in mesoscopic systems.) This raises
+a crucial question:
+does the dynamics of an electron
+in the periodic potential of a crystal lattice allow for
+time-dependent states with positive momentum, which
+are desirable for accessing quantum backflow physics? In
+other words, do there exist normalizable superpositions of
+Bloch waves [20] – henceforth referred to as Bloch wave
+packets – whose momentum maintains a definite direc-
+tion at all times?
+If not, what is the highest possible
+probability that a momentum measurement performed
+on a Bloch wave packet yields a positive value? More-
+over, does this probability remain constant, as in the
+free-particle case, or does it change in time as the parti-
+cle moves through the crystal? These questions are the
+focus of the present study.
+While the properties of stationary Bloch waves in one-
+dimensional periodic potentials have been extensively
+studied [21–24], time-dependent Bloch wave packets have
+received relatively little attention. Nonetheless, some im-
+portant differences between the motion of Bloch wave
+packets and that of free particles have been investigated.
+Kroemer first observed that the propagation of a single-
+band Bloch wave packet with a narrow quasi-momentum
+distribution is not uniform but rather “similar to the mo-
+tion of a caterpillar”: the wave packet undergoes peri-
+odic shape variations superimposed on an average veloc-
+ity, equal to the group velocity [25]. The origin of these
+shape variations was later elucidated by Churchill, who
+showed that a narrow-quasi-momentum wave packet can
+be expressed as a discrete superposition of “subpackets”
+with distinct but constant shapes, all propagating at the
+same group velocity while having different phase veloci-
+ties [26]. Additional insights and methods for analyzing
+the instantaneous shape, position, and velocity of various
+features of Bloch wave packet envelopes are discussed in
+Refs. [27, 28].
+In this paper, we identify and explore another key
+difference between Bloch wave packets and free-particle
+wave packets: unlike the latter, the former cannot main-
+tain a definite momentum direction.
+Specifically, we
+show that Bloch wave packets composed of Bloch waves
+from a single allowed energy band can never have a defi-
+nite momentum direction, even instantaneously. In con-
+trast, those involving multiple energy bands may attain a
+definite direction at certain times but cannot maintain it
+indefinitely. Then, considering the case of a cosine poten-
+tial, we examine how its amplitude affects the maximum
+probability of the particle’s momentum being positive.
+Overall, our findings suggest that in studying quantum
+backflow in systems with periodic potentials – such as
+an electron in a ballistic quantum wire – it is essential
+to adopt a formulation that permits backflowing states
+to include an admixture of negative momentum compo-
+nents. For instance, the state may be constructed so that
+the fraction of negative momentum is small compared to
+the interference-induced negative probability transfer, or
+a phase-space-based formulation akin to that examined
+in Refs. [9, 10] may be employed. We further argue that
+single-band, as opposed to multiple-band, Bloch wave
+packets are better suited for studies of quantum backflow,
+as they more closely resemble free-particle wave packets:
+the fraction of negative momentum components remains
+constant during time evolution, rather than varying over
+time.
+The paper is organized as follows. Section II presents
+an intuitive argument suggesting that a one-dimensional
+quantum particle in a non-constant potential is unlikely
+to maintain a definite momentum direction. A more rig-
+orous analysis follows in Sections III and IV. In partic-
+ular, Section III introduces the concept of a Bloch wave
+packet and establishes the notation used throughout the
+paper. Section IV examines the probability that a parti-
+cle in a periodic potential has positive momentum. We
+demonstrate that when a wave packet consists solely of
+Bloch waves from the same energy band, this probabil-
+ity remains constant but strictly less than one. However,
+if the wave packet contains contributions from different
+energy bands, the probability oscillates over time, with
+its time average still falling below one.
+Section V ex-
+plores a specific case in which the periodic potential has
+a cosinusoidal form. We determine how the least upper
+bound on the probability of positive momentum depends
+on the potential amplitude and derive analytical approx-
+imations for this dependence in the weak- and strong-
+potential regimes.
+Finally, Section VI summarizes our
+findings and discusses their implications in the context
+of the quantum backflow problem.
+II.
+PRELIMINARY CONSIDERATIONS
+We begin by presenting some preliminary considera-
+tions to clarify what it means for the momentum of a one-
+dimensional particle to have a definite direction, which,
+for concreteness, we take to be positive. Using Dirac no-
+tation, we denote the particle’s state at time t = 0 by
+|Ψ0⟩, assuming it is normalized to unity, ⟨Ψ0|Ψ0⟩= 1.
+We then introduce the projection operator onto the sub-
+space of positive momenta,
+ˆP+ =
+Z ∞
+0
+dp |p⟩⟨p| ,
+(1)
+where |p⟩represents the eigenstate of the momentum op-
+erator corresponding to the eigenvalue p. At t = 0, the
+
+
+=== PDF PAGE 3 ===
+3
+particle’s momentum is positive with certainty (and thus
+has a definite direction) if and only if
+ˆP+|Ψ0⟩= |Ψ0⟩.
+(2)
+Clearly, any state of the form |Ψ0⟩=
+R ∞
+0
+dp φ(p)|p⟩,
+where φ(p) is a complex-valued function, satisfying
+R ∞
+0
+dp |φ(p)|2 = 1 to ensure normalization, fulfills Eq. (2)
+and represents a positive-momentum particle. It is there-
+fore always possible to construct a quantum state with
+positive momentum at a given instant.
+In order for the particle’s momentum to remain posi-
+tive (with certainty) throughout its time evolution, |Ψ0⟩
+has to satisfy
+ˆP+ ˆU(t)|Ψ0⟩= ˆU(t)|Ψ0⟩
+(3)
+for all t, where ˆU(t) is the evolution operator.
+Differ-
+entiating both sides of the last equation n times with
+respect to t, applying the Schr¨odinger equation
+d
+dt ˆU(t) =
+−i
+ℏˆH ˆU(t), where
+ˆH is the system’s Hamiltonian, and
+evaluating the result at t = 0, we obtain the following
+set of conditions:
+ˆP+ ˆHn|Ψ0⟩= ˆHn|Ψ0⟩,
+n ≥1 .
+(4)
+Here,
+the Hamiltonian
+ˆH is assumed to be time-
+independent.
+Then, using Eq. (2), we replace |Ψ0⟩in
+the right-hand side of Eq. (4) by ˆP+|Ψ0⟩to obtain
+[ ˆP+, ˆHn]|Ψ0⟩= 0 ,
+n ≥1 ,
+(5)
+where [·, ·] denotes the commutator.
+Any quantum state |Ψ0⟩representing a particle with
+positive momentum at all times must satisfy Eqs. (2) and
+(5). For a free particle, the infinite set of equations (5)
+is trivially fulfilled by any state since the Hamiltonian ˆH
+consists solely of the kinetic term, which commutes with
+the projection operator ˆP+. As a result, any free-particle
+state that has positive momentum at t = 0 will retain
+this property throughout its time evolution.
+However,
+for a particle in a periodic potential, the commutators
+[ ˆP+, ˆHn] are generally nonzero.
+This implies that for
+|Ψ0⟩to represent a state with positive momentum at all
+times, it must belong to the intersection of the null spaces
+of infinitely many operators: ( ˆP+ −1), [ ˆP+, ˆH], [ ˆP+, ˆH2],
+[ ˆP+, ˆH3], . . .. Since these operators are generally distinct,
+it is reasonable to expect that their null spaces have an
+empty intersection, implying that the desired positive-
+momentum state |Ψ0⟩does not exist.
+This simple argument provides an intuitive basis for
+expecting the non-existence of states with a definite mo-
+mentum direction in a general periodic potential, but it
+does not constitute a proof. More importantly, it offers
+no insight into how close the probability of finding the
+particle with positive momentum can be to one. In the
+following sections, we undertake a detailed analysis of
+these questions.
+III.
+BLOCH WAVE PACKETS
+To set the stage for our study, we first define the con-
+cept of a Bloch wave packet and establish the notation
+used throughout the paper.
+We consider a quantum particle of mass µ in a
+one-dimensional periodic potential V (x) with period L,
+i.e. V (x + L) = V (x). Throughout the paper, we assume
+that the periodic potential has a finite – though possibly
+very large – number of nonzero Fourier coefficients. More
+concretely, we take
+V (x) =
+N
+X
+n=−N
+Vneinqx ,
+(6)
+where
+q = 2π
+L
+(7)
+is the period of the corresponding reciprocal lattice.
+Here, the Fourier coefficients Vn satisfy V−n = V ∗
+n to
+ensure that V (x) is a real-valued function, and N is such
+that V−N = V ∗
+N̸ = 0.
+The form given by Eq. (6) is
+quite general and encompasses a wide range of physically
+meaningful periodic potentials.
+The time-independent Schr¨odinger equation, that de-
+termines stationary states F (j)(x, κ) and energies E(j)(κ)
+of the particle, reads
+
+−ℏ2
+2µ
+∂2
+∂x2 + V (x)
+
+F (j)(x, κ) = E(j)(κ)F (j)(x, κ) .
+(8)
+According to the Bloch theorem [1, 2, 21], the station-
+ary states – known as (Floquet-)Bloch waves – can be
+expressed as the product of a plane wave eiκx and an
+L-periodic function of x, i.e.
+F (j)(x, κ) = eiκx
++∞
+X
+n=−∞
+f (j)
+n (κ)einqx .
+(9)
+Here, f (j)
+n (κ) are the Fourier expansion coefficients of the
+periodic part of the Bloch wave, while ℏκ represents the
+quasi-momentum, which, without loss of generality, can
+be restricted to the first Brillouin zone, −q/2 < κ ≤q/2.
+The superscript j = 0, 1, 2, . . . labels the allowed energy
+bands in order of increasing energy.
+The substitution of Eq. (9) into Eq. (8) gives rise to
+the following eigenproblem:
++∞
+X
+m=−∞
+ ℏ2
+2µ(κ + nq)2δm,n + Vn−m
+
+f (j)
+m (κ)
+= E(j)(κ)f (j)
+n (κ) .
+(10)
+Solving this eigenproblem for every quasi-momentum ℏκ
+on the interval −q/2 < κ ≤q/2, one obtains the eigen-
+values E(0)(κ) < E(1)(κ) < . . . [29], representing the al-
+
+
+=== PDF PAGE 4 ===
+4
+lowed energy bands, along with the corresponding eigen-
+vectors {f (0)
+n (κ)}+∞
+n=−∞, {f (1)
+n (κ)}+∞
+n=−∞, . . ., which de-
+termine the Bloch waves F (0)(x, κ), F (1)(x, κ), . . .. We
+normalize the eigenvectors according to
++∞
+X
+n=−∞
+f (j)
+n (κ)
+
+2
+= 1
+2π ,
+(11)
+for all κ and j. This choice of the normalization condition
+for the Fourier coefficients entails the following normal-
+ization condition for the Bloch waves (see Appendix A
+for a proof):
+Z +∞
+−∞
+dx F (j)(x, κ)∗F (j′)(x, κ′) = δ(κ −κ′)δj,j′ .
+(12)
+A Bloch wave packet Ψ(x, t) is a normalizable super-
+position of Bloch waves corresponding to different quasi-
+momenta and energy bands. In general,
+Ψ(x, t) =
+∞
+X
+j=0
+Z q/2
+−q/2
+dκ ϕ(j)(κ)e−iE(j)(κ)t/ℏF (j)(x, κ) ,
+(13)
+where ϕ(j)(κ) is a generally complex-valued function, rep-
+resenting the quasi-momentum amplitude in the jth en-
+ergy band. Wave packets of this form satisfy the time-
+dependent Schr¨odinger equation, iℏ∂Ψ
+∂t
+= −ℏ2
+2µ
+∂2Ψ
+∂x2 +
+V (x)Ψ, and represent quantum states of a moving par-
+ticle.
+In this study, we assume that every amplitude
+function ϕ(j)(κ) has its support in the open interval
+−q/2 < κ < q/2. In other words, we do not consider
+wave packets involving Bloch waves F (j)(x, q/2) coming
+from the Brillouin zone boundary [30].
+The Bloch wave normalization condition (12) im-
+plies
+R +∞
+−∞dx |Ψ(x, t)|2 = P∞
+j=0
+R q/2
+−q/2 dκ
+ϕ(j)(κ)
+2. This
+means that normalizing the Bloch wave packet Ψ(x, t) to
+unity is equivalent to requiring that the quasi-momentum
+amplitude ϕ(j)(κ) satisfy
+∞
+X
+j=0
+Z q/2
+−q/2
+dκ
+ϕ(j)(κ)
+
+2
+= 1 .
+(14)
+IV.
+MOMENTUM POSITIVITY
+We now turn to the question of momentum positivity
+for Bloch wave packets.
+Do there exist particle states
+in which a momentum measurement, performed at any
+instant, is guaranteed to yield a positive value? If such
+states existed – analogous to those in free space – they
+would correspond to particles with a well-defined mo-
+mentum direction. However, as we show below, no Bloch
+wave packet can sustain a definite momentum direction
+throughout its propagation in periodic potentials with
+non-overlapping allowed energy bands.
+We start by expanding the Bloch wave packet Ψ, given
+by Eq. (13), in terms of plane waves
+1
+√
+2πeikx, which are
+the eigenstates of the momentum operator p = −iℏ∂
+∂x,
+Ψ(x, t) =
+Z +∞
+−∞
+dk φ(k, t) eikx
+√
+2π .
+(15)
+Here, φ(k, t) plays the role of a time-dependent momen-
+tum wave function and is given by the inverse Fourier
+transform of Ψ(x, t):
+φ(k, t) =
+Z +∞
+−∞
+dx Ψ(x, t)e−ikx
+√
+2π .
+(16)
+Substituting Eq. (13) into the last expression and calcu-
+lating the integral over x, we find (see Appendix B)
+φ(k, t) =
+∞
+X
+j=0
+φ(j)(k, t) ,
+(17)
+where
+φ(j)(k, t) =
+√
+2πϕ(j)(k −nq)f (j)
+n (k −nq)
+× e−iE(j)(k−nq)t/ℏ
+n=[k/q]
+(18)
+is the momentum wave function contribution from the
+jth allowed energy band, and [·] denotes rounding to the
+nearest integer.
+If a momentum measurement is performed at time t on
+a Bloch wave packet in the state Ψ(x, t), the outcome ℏk
+is obtained with probability density |φ(k, t)|2. Therefore,
+the probability that the particle’s momentum is positive
+at time t is given by
+P+(t) =
+Z ∞
+0
+dk |φ(k, t)|2 .
+(19)
+In what follows, we show that no Bloch wave packets
+satisfy P+(t) = 1 for all t, implying that a particle in
+a periodic potential cannot have a definite momentum
+direction at all times.
+Our argument proceeds in two
+stages: first, for wave packets composed of Bloch waves
+from a single allowed energy band, and then for those
+occupying multiple bands.
+A.
+Single-band wave packets
+We first consider wave packets that are superpositions
+of Bloch waves from the same allowed energy band. That
+is, we take
+ϕ(j)(κ) = ϕ(κ)δj,J
+(20)
+for some fixed J.
+The function ϕ(κ) is the quasi-
+momentum amplitude in the Jth energy band and sat-
+isfies the normalization condition [c.f. Eq. (14)]
+Z q/2
+−q/2
+dκ |ϕ(κ)|2 = 1 .
+(21)
+
+
+=== PDF PAGE 5 ===
+5
+It follows from Eqs. (17) and (18) that
+|φ(k, t)|2 = 2π
+ϕ(k −nq)f (J)
+n (k −nq)
+
+2
+n=[k/q]
+.
+(22)
+Then, substituting the last expression into Eq. (19)
+and carrying out straightforward manipulations (see Ap-
+pendix C for details), we obtain
+P+ =
+Z q/2
+−q/2
+dκ Λ(κ)|ϕ(κ)|2
+(23)
+with
+Λ(κ) = 2π
+f (J)
+0
+(κ)
+
+2
+Θ(κ) + 2π
+∞
+X
+n=1
+f (J)
+n (κ)
+
+2
+,
+(24)
+where Θ(·) is the Heaviside step function.
+Let us make the following observations. First, P+ is
+independent of time, meaning that the probability of the
+particle’s momentum being positive remains constant as
+it moves through the periodic potential. This situation
+is fully analogous to the free-particle scenario. Second,
+by comparing Eq. (24) with Eq. (11), we observe that
+0 ≤Λ(κ) ≤1 for all κ. Combined with the normalization
+condition (21), this implies that 0 ≤P+ ≤1.
+We now take this a step further and show that
+Λ(κ) < 1
+(25)
+for all κ.
+We prove this statement by contradiction.
+To this end, we assume that there exists an eigenvector
+{f (J)
+n (κ)}+∞
+n=−∞, satisfying Eq. (10) for j = J and some
+fixed κ, such that Λ(κ) = 1, which, in view of Eq. (24),
+is equivalent to
+f (J)
+0
+(κ)
+
+2
+Θ(κ) +
+∞
+X
+n=1
+f (J)
+n (κ)
+
+2
+= 1
+2π .
+(26)
+Additionally, the eigenvector has to satisfy the normal-
+ization condition (11). Conditions (11) and (26) can be
+simultaneously fulfilled only if
+f (J)
+n (κ) = 0
+for
+n ≤−1 .
+(27)
+In view of Eq. (27), the eigenproblem (10) reduces to
+N−1
+X
+m=0
+Vn−mf (J)
+m (κ) = 0
+for
+−N ≤n ≤−1
+(28)
+and
+∞
+X
+m=0
+" ℏ2(κ + nq)2
+2µ
+−E(J)(κ)
+
+δm,n
++ Vn−m
+#
+f (J)
+m (κ) = 0
+for
+n ≥0 .
+(29)
+It follows from Eq. (28) that
+f (J)
+n (κ) = 0
+for
+0 ≤n ≤N −1 .
+(30)
+Subsequently, from Eqs. (29) and (30), we get
+f (J)
+n (κ) = 0
+for
+n ≥N .
+(31)
+(Details of the calculations leading to Eqs. (30) and (31)
+are presented in Appendix D.) Combining Eqs. (27), (30),
+and (31), we find that f (J)
+n (κ) = 0 for all n, violating both
+the normalization condition (11) and assumption (26).
+Hence, we arrive at a contradiction, proving that Λ(κ)
+cannot equal unity and thus establishing that Λ(κ) < 1
+for all κ.
+It then follows from Eqs. (23) and (25) that P+ <
+R q/2
+−q/2 dκ |ϕ(κ)|2. Subsequently, using the normalization
+condition, Eq. (21), we arrive at
+P+ < 1 .
+(32)
+This result implies that a single-band Bloch wave packet
+propagating through a periodic potential with a finite
+number of Fourier coefficients cannot have a well-defined
+momentum direction even instantaneously.
+B.
+Multiple-band wave packets
+We now consider normalized superpositions of Bloch
+waves from more than one allowed energy band.
+The
+substitution of Eqs. (17) and (18) into Eq. (19) yields
+P+(t) = P + eP(t) ,
+(33)
+with
+P =
+X
+j
+Z ∞
+0
+dk
+φ(j)(k, t)
+
+2
+(34)
+and
+eP(t) =
+X
+j
+X
+j′̸=j
+Z ∞
+0
+dk φ(j)(k, t)∗φ(j′)(k, t) .
+(35)
+In the rest of this section, we do not explicitly state the
+summation limits to keep the notation uncluttered; how-
+ever, they are clear, as both indices run from zero to
+infinity, with j′ skipping j.
+The first term, P, is a sum of (time-independent)
+single-band contributions of the type investigated in
+Sec. IV A, each of which satisfies
+R ∞
+0
+dk
+φ(j)(k, t)
+2 <
+R q/2
+−q/2 dκ
+ϕ(j)(κ)
+2. Therefore, taking into account the
+normalization condition (14), we conclude that P < 1.
+The second term, eP(t), is an interference term involv-
+ing Bloch waves from different energy bands. Substitut-
+ing Eq. (18) into Eq. (35) and following steps similar to
+
+
+=== PDF PAGE 6 ===
+6
+those in Appendix C, we obtain
+eP(t) =
+X
+j
+X
+j′̸=j
+Z q/2
+−q/2
+dκ Λ(j,j′)(κ)ϕ(j)(κ)∗ϕ(j′)(κ)
+× exp
+ i
+ℏ
+h
+E(j)(κ) −E(j′)(κ)
+i
+t
+
+(36)
+with
+Λ(j,j′)(κ) = 2πf (j)
+0 (κ)∗f (j′)
+0
+(κ)Θ(κ)
++ 2π
+∞
+X
+n=1
+f (j)
+n (κ)∗f (j′)
+n
+(κ) .
+(37)
+Since Λ(j,j′)(κ)∗= Λ(j′,j)(κ), the function eP(t) is real-
+valued. Assuming, as before, that there is no overlap be-
+tween allowed energy bands, we observe that eP(t) is com-
+posed of sine and cosine functions of time with nonzero
+frequencies. Consequently, its time average is zero, im-
+plying that there are moments at which the function is
+non-positive: eP(t) ≤0 for some t.
+Finally, from Eq. (33) and the fact that P < 0 and
+eP(t) ≤0 for some t, we conclude that
+P+(t) < 1
+for some t .
+(38)
+This result implies that no multiple-band Bloch wave
+packet can maintain a definite momentum direction at
+all times. While the probability of positive momentum
+may reach unity at certain instants, it must inevitably
+decrease, remaining below one on average.
+V.
+COSINE POTENTIAL
+To examine how large P+ can be depending on the
+details of the periodic potential, we analyze an example
+scenario where the potential is given by a cosine function,
+V (x) = A cos(qx) ,
+(39)
+with an amplitude A > 0. We consider the case where
+the wave packet Ψ consists only of Bloch waves from the
+lowest allowed energy band, i.e. J = 0. The Fourier coef-
+ficients of this potential [c.f. Eq. (6)] are Vn = (A/2)δ|n|,1,
+and the eigenproblem (10) can be written (for j = J = 0)
+as
++∞
+X
+m=−∞
+
+(z + n)2δm,n + αδ|n−m|,1
+
+f (0)
+m (z)
+= ε(z)f (0)
+n (z) ,
+(40)
+where we have introduced the dimensionless quasi-
+momentum z = κ/q (so that −1/2 < z < 1/2), dimen-
+sionless lowest band energy ε(z) = 2µE(0)(κ)/(ℏq)2, and
+dimensionless parameter
+α = µA
+ℏ2q2
+(41)
+quantifying the potential strength.
+We solve Eq. (40) numerically by truncating the tridi-
+agonal matrix on the left-hand side and diagonalizing it
+using the eigh tridiagonal function from the Python
+SciPy package. The diagonalization is performed on a
+grid of z points ranging from −1/2 to 1/2. The result-
+ing eigenvectors, {f (0)
+n (z)}, are then normalized for every
+value of z in accordance with Eq. (11). The results pre-
+sented below were obtained using truncated matrices of
+size 201 × 201 (corresponding to the index m in Eq. (40)
+ranging from −100 to 100), but we have verified that in-
+creasing the matrix size does not produce any noticeable
+changes in the results.
+−0.50
+−0.25
+0.00
+0.25
+0.50
+κ/q
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Λ
+α = 0.01
+α = 0.1
+α = 1
+α = 10
+FIG. 1. Dependence of Λ on z = κ/q for four different poten-
+tial strengths, α = 0.01, 0.1, 1, and 10.
+Equipped with the eigenvectors {f (0)
+n (z)}, we compute
+the function Λ(z), defined in Eq. (24), for J = 0, namely
+Λ(z) = 2π
+f (0)
+0 (z)
+
+2
+Θ(z) + 2π P∞
+n=1
+f (0)
+n (z)
+
+2
+. Figure 1
+shows Λ(z) for four different potential strength, α = 0.01,
+0.1, 1, and 10. Having explored the function Λ(z) for a
+wide range of α values, including the ones presented in
+Fig. 1, we conclude that
+sup
+z Λ = Λ(0+) = 2π
+∞
+X
+n=0
+f (0)
+n (0)
+
+2
+.
+(42)
+Taking
+into
+account
+the
+normalization
+condition,
+2π P+∞
+n=−∞
+f (0)
+n (0)
+
+2
+= 1, and the fact that f(0)
+−n(0) =
+f (0)
+n (0), which follows from Eq. (40), we obtain that
+2π
+∞
+X
+n=0
+f (0)
+n (0)
+
+2
+= 1
+2 + π
+f (0)
+0 (0)
+
+2
+.
+(43)
+One can see from Eqs. (23) and (21) that supϕ P+ =
+supz Λ. Utilizing this fact, along with Eqs. (42) and (43),
+we conclude that, for a given α, the largest attainable
+
+
+=== PDF PAGE 7 ===
+7
+value of P+ is given by
+sup P+ = 1
+2 + π
+f (0)
+0 (0)
+
+2
+.
+(44)
+0
+2
+4
+6
+8
+10
+α
+0.7
+0.8
+0.9
+1.0
+sup P+
+exact
+1
+2 +
+1
+2√π α−1/4
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+α
+0.90
+0.95
+1.00
+sup P+
+exact
+1 −α2
+FIG. 2. The largest attainable value of P+ (blue solid curve)
+as a function of the potential strength α. Additionally, the top
+panel shows the strong-potential asymptotics (orange dashed
+curve), while the bottom panel presents the weak-potential
+perturbative approximation (green dash-dotted curve).
+Figure 2 presents the dependence of sup P (blue solid
+curve) on the potential strength α. The top panel dis-
+plays this dependence over the broad interval 0 < α < 10,
+while the bottom panel provides a magnified view for
+0 < α < 0.5. Additionally, the following two analytical
+approximations are included. The top panel shows the
+strong-potential approximation (orange dashed curve),
+sup P+ ≃1
+2 +
+1
+2√π α−1/4
+(α ≫1) ,
+(45)
+derived in Appendix E. As we see from Eq. (45), sup P+
+decays to 1
+2 as α tends to infinity, and the decay is rel-
+atively slow, sup P+ −1
+2 ∼α−1/4.
+The bottom panel
+presents the weak-potential approximation (green dash-
+dotted curve),
+sup P+ ≃1 −α2
+(α ≪1) ,
+(46)
+derived in Appendix F by using the second-order pertur-
+bation theory.
+The results presented in Fig. 2 support our claim that
+the momentum of a single-band wave packet propagating
+in a periodic potential can never have a definite direction
+at any instant. Moreover, we observe that the least upper
+bound on the probability of the particle having positive
+momentum decreases monotonically with increasing po-
+tential amplitude, approaching a saturation value of 1/2
+in the infinite-amplitude limit.
+VI.
+DISCUSSION AND CONCLUSION
+We examined the momentum of a one-dimensional
+quantum particle propagating through a periodic poten-
+tial and investigated the probability P+ of it being pos-
+itive. We demonstrated that P+ can never remain equal
+to one at all times, implying that the particle cannot
+propagate through the potential while maintaining a def-
+inite momentum direction. When the particle’s state is
+a superposition of Bloch waves from a single allowed en-
+ergy band, P+ remains constant over time and is strictly
+less than one. However, if the state includes contribu-
+tions from multiple energy bands, P+ oscillates in time
+(around an average value smaller than one) and can, in
+principle, reach one at certain instants.
+Our mathematical analysis involves three assumptions.
+First, the periodic potential is assumed to have a finite
+(though possibly very large) number of nonzero Fourier
+components, as given in Eq. (6). Second, the allowed en-
+ergy bands are assumed to be non-overlapping. Third,
+we consider only Bloch wave packets that do not include
+contributions from stationary states at the Brillouin zone
+boundary. Although we cannot, strictly speaking, rule
+out the possibility that relaxing some (or all) of these
+assumptions could allow for Bloch wave packets with a
+definite momentum direction, we consider this unlikely in
+any realistic physical system. Indeed, the first assump-
+tion is not physically restrictive, as any real-world peri-
+odic potential can be represented by a finite number of
+Fourier components. Examples of potentials V (x) out-
+side the scope of our analysis include functions that con-
+tain jump discontinuities or exhibit a fractal structure.
+As for the other two assumptions, allowing neighboring
+energy bands to touch at the center or edges of the Bril-
+louin zone (the only way bands can overlap in one di-
+mension [21]), or including a finite number of states from
+the Brillouin zone boundary, would merely introduce a fi-
+nite number of isolated Bloch waves. Such isolated states
+would contribute to the positive-momentum probability
+P+, which is an integral quantity, only as a set of mea-
+sure zero, and thus are unlikely to be sufficient to achieve
+P+ = 1 at all times.
+In general, the maximal value of P+ depends on the
+specific form of the periodic potential and the energy
+bands accessible to the particle’s wave packet. We inves-
+tigated this dependence for a wave packet constrained to
+the lowest energy band of a cosine-shaped potential. In
+this scenario, we computed the least upper bound on P+
+as a function of the (dimensionless) potential amplitude
+α and found that sup P+ decreases monotonically with
+
+
+=== PDF PAGE 8 ===
+8
+increasing α, ultimately saturating at 1/2 in the limit
+of an infinitely strong potential. In the weak-amplitude
+regime, the decay is quadratic [Eq. (46)], whereas in the
+strong-amplitude regime, it follows an algebraic decay
+with an exponent of −1/4 [Eq. (45)].
+Our analysis of the cosine potential scenario also re-
+veals that the wave packets maximizing P+ are those
+composed of Bloch waves with small positive quasi-
+momenta – indeed, the function Λ(κ) in Fig. 1 attains its
+supremum as κ →0+. In this quasi-momentum region,
+the energy dispersion relation is approximately parabolic,
+resembling that of a free particle.
+This reinforces the
+well-known principle that, for a lowest-energy-band wave
+packet to propagate in a free-particle-like manner, it
+should be formed near the bottom of the band. However,
+it is crucial to emphasize that, regardless of how close a
+Bloch wave packet is to the bottom of the band, it will
+never possess a definite momentum direction – unlike a
+free-particle wave packet, which can.
+The findings of this paper provide valuable guidance
+for future explorations of the quantum backflow effect
+in mesoscopic systems.
+We identify two main strate-
+gies for studying quantum backflow in periodic poten-
+tials. The first involves selecting systems with shallow
+potentials, which, as our findings suggest, allow for wave
+packets with an almost well-defined momentum direction.
+By ensuring that the fraction of negative-momentum
+components remains small compared to the interference-
+induced negative probability flux throughout the exper-
+iment, one can access the backflow effect. In this con-
+text, quantum states confined to a single energy band ap-
+pear preferable to multiple-band states, as the positive-
+momentum probability P+ associated with the former re-
+mains constant during time evolution. The second strat-
+egy is to forgo the requirement of momentum positivity
+altogether and instead adopt a phase-space-based formu-
+lation of quantum backflow, similar to that examined in
+Refs. [9, 10]. However, given the challenges associated
+with the current phase-space approach, as highlighted in
+Ref. [10], we believe that further theoretical development
+is needed in this direction.
+ACKNOWLEDGMENTS
+The authors would like to thank Cosimo Gorini for
+valuable discussions.
+Appendix A: Derivation of Eq. (12)
+This section provides a derivation of the normalization
+condition for Bloch waves, given by Eq. (12). Starting
+from Eq. (9), we write
+Z +∞
+−∞
+dx F (j)(x, κ)∗F (j′)(x, κ′)
+=
+Z +∞
+−∞
+dx
+ 
+e−iκx
++∞
+X
+m=−∞
+f (j)
+m (κ)∗e−imqx
+!
+×
+ 
+eiκ′x
++∞
+X
+n=−∞
+f (j′)
+n
+(κ′)einqx
+!
+=
+X
+m,n
+f (j)
+m (κ)∗f (j′)
+n
+(κ′)
+Z +∞
+−∞
+dx ei[κ′−κ+(n−m)q]x
+= 2π
+X
+m,n
+f (j)
+m (κ)∗f (j′)
+n
+(κ′)δ
+ κ −κ′ + (m −n)q
+
+= 2π
++∞
+X
+n=−∞
++∞
+X
+s=−∞
+f (j)
+n+s(κ)∗f (j′)
+n
+(κ′)δ(κ −κ′ + sq) .
+Since both κ and κ′ are restricted to the first Brillouin
+zone, κ, κ′ ∈(−q/2, q/2], their separation is smaller than
+the reciprocal lattice period, |κ −κ′| < q.
+Therefore,
+the delta-function δ(κ −κ′ + sq) vanishes for all s̸ = 0,
+yielding
+Z +∞
+−∞
+dx F (j)(x, κ)∗F (j′)(x, κ′)
+= 2πδ(κ −κ′)
++∞
+X
+n=−∞
+f (j)
+n (κ)∗f (j′)
+n
+(κ) .
+For the case when j′̸ = j, the eigenvectors {f (j)
+n (κ)}+∞
+n=−∞
+and {f (j′)
+n
+(κ)}+∞
+n=−∞correspond to different energy bands
+(and so to distinct eigenvalues, E(j)(κ) and E(j′)(κ), re-
+spectively), which implies their orthogonality. Hence,
+Z +∞
+−∞
+dx F (j)(x, κ)∗F (j′)(x, κ′)
+= 2πδ(κ −κ′)δj,j′
++∞
+X
+n=−∞
+f (j)
+n (κ)
+
+2
+.
+Finally, making use of the normalization condition (11),
+we arrive at the desired result, given by Eq. (12).
+Appendix B: Derivation of Eqs. (17) and (18)
+Here, we provided details of the calculation leading to
+Eqs. (17) and (18). Substituting Eq. (13) into Eq. (16),
+we have
+φ(k, t) =
+∞
+X
+j=0
+Z q/2
+−q/2
+dκ ϕ(j)(κ)e−iE(j)(κ)t/ℏ
+×
+Z +∞
+−∞
+dx F (j)(x, κ)e−ikx
+√
+2π .
+
+
+=== PDF PAGE 9 ===
+9
+Then, using Eq. (9), we rewrite the last integral as
+Z +∞
+−∞
+dx F (j)(x, κ)e−ikx
+√
+2π
+=
+1
+√
+2π
++∞
+X
+n=−∞
+f (j)
+n (κ)
+Z +∞
+−∞
+dx ei(κ+nq−k)x
+=
+√
+2π
++∞
+X
+n=−∞
+f (j)
+n (κ)δ(κ + nq −k) .
+In view of this, the momentum wave function becomes
+φ(k, t) =
+√
+2π
+∞
+X
+j=0
++∞
+X
+n=−∞
+Z q/2
+−q/2
+dκ ϕ(j)(κ)f (j)
+n (κ)e−iE(j)(κ)t/ℏδ
+ κ −(k −nq)
+
+=
+√
+2π
+∞
+X
+j=0
++∞
+X
+n=−∞
+ϕ(j)(k −nq)f (j)
+n (k −nq)e−iE(j)(k−nq)t/ℏ
+ 1
+if |k −nq| < q/2
+0
+otherwise
+=
+√
+2π
+∞
+X
+j=0
+ϕ(j)(k −nq)f (j)
+n (k −nq)e−iE(j)(k−nq)t/ℏ
+
+n=[k/q]
+,
+where [·] denotes rounding to the nearest integer. The
+last expression for φ coincides with the one given by
+Eqs. (17) and (18).
+Appendix C: Derivation of Eqs. (23) and (24)
+Below we provide the calculation details leading to
+Eqs. (23) and (24). Substituting Eq. (22) into Eq. (19)
+and representing the integral over the semi-infinite k axis
+as a infinite sum of finite-interval integrals, we get
+P+ =
+Z q/2
+0
+dk 2π
+ϕ(k)f (J)
+0
+(k)
+
+2
++
+∞
+X
+n=1
+Z nq+q/2
+nq−q/2
+dk 2π
+ϕ(k −nq)f (J)
+n (k −nq)
+
+2
+=
+Z q/2
+−q/2
+dk Θ(k)2π
+ϕ(k)f (J)
+0
+(k)
+
+2
++
+∞
+X
+n=1
+Z q/2
+−q/2
+dk 2π
+ϕ(k)f (J)
+n (k)
+
+2
+= 2π
+Z q/2
+−q/2
+dk
+ f (J)
+0
+(k)
+
+2
+Θ(k)
++
+∞
+X
+n=1
+f (J)
+n (k)
+
+2
+!
+|ϕ(k)|2 ,
+which constitutes the desired expression.
+Appendix D: Derivation of Eqs. (30) and (31)
+A straightforward way to demonstrate that Eq. (30)
+follows from Eq. (28) is to rewrite the latter in the matrix
+form:
+
+
+
+
+
+
+
+
+
+V−N . . . V−3
+V−2
+V−1
+...
+...
+...
+...
+...
+0
+. . . V−N V−N+1 V−N+2
+0
+. . .
+0
+V−N
+V−N+1
+0
+. . .
+0
+0
+V−N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f (J)
+N−1
+...
+f (J)
+2
+f (J)
+1
+f (J)
+0
+
+
+
+
+
+
+
+
+
+
+= 0 .
+Hereinafter, for the sake of notational brevity, we have
+omitted the κ dependence of the coefficients f (J)
+n (κ). The
+matrix in the left-hand side of this last equation is non-
+singular, as its determinant is (V−N)N̸ = 0. Therefore,
+the equation is satisfied only by the zero vector, implying
+Eq. (30).
+The proof of Eq. (31) proceeds by induction. To this
+end, we observe that if f (J)
+0
+= f (J)
+1
+= . . . = f (J)
+ℓ−1 = 0,
+for any ℓ≥N, then Eq. (29) yields f(J)
+ℓ
+= 0. Indeed,
+writing Eq. (29) for n = ℓ−N ≥0,
+∞
+X
+m=0
+" 
+ℏ2 κ + (ℓ−N)q
+2
+2µ
+−E(J)
+!
+δm,ℓ−N
++ Vℓ−N−m
+#
+f (J)
+m
+= 0 ,
+
+
+=== PDF PAGE 10 ===
+10
+taking into account that f(J)
+0
+= . . . = f (J)
+ℓ−1 = 0,
+∞
+X
+m=ℓ
+Vℓ−N−mf (J)
+m
+= 0 ,
+and, recognizing the fact that Vn = 0 for all n < −N, we
+arrive at
+V−Nf (J)
+ℓ
+= 0 .
+Since V−N̸ = 0, this implies f (J)
+ℓ
+= 0.
+Thus, by the
+principle of induction, we obtain Eq. (31).
+Appendix E: Derivation of Eq. (45)
+Here, we derive the large-α asymptotic approximation
+for sup P+, as given by Eq. (45).
+We begin by notic-
+ing that the zero-quasi-momentum Bloch wave F (0)(x, 0)
+is an L-periodic function [see Eq. (9)], which, over the
+one-period interval 0 < x < L, can be approximated by
+ground state of the harmonic expansion of V (x) around
+x = L/2. Thus, using, in the vicinity of x = L/2, the
+quadratic expansion
+V (x) ≃V ( L
+2 ) + V ′′( L
+2 )
+2
+ x −L
+2
+2
+= −A + µω2
+2
+ x −L
+2
+2
+with
+ω =
+s
+Aq2
+µ
+= ℏq2
+µ
+√α ,
+we write, for 0 < x < L, that
+F (0)(x, 0) ≃C exp
+"
+−µω
+2ℏ
+
+x −L
+2
+2#
+= C exp
+
+−
+√α
+2 q2  x −L
+2
+2
+,
+where C > 0 is a normalization constant. The latter is
+determined from the normalization condition
+Z L
+0
+dx
+F (0)(x, 0)
+
+2
+= 1
+q .
+The validity of this normalization condition follows
+straightforwardly from Eqs. (9) and (11):
+Z L
+0
+dx
+F (0)(x, 0)
+
+2
+=
+Z L
+0
+dx
++∞
+X
+m=−∞
+f (0)
+m (0)∗e−imqx
+×
++∞
+X
+n=−∞
+f (0)
+n (0)einqx
+=
+X
+m,n
+f (0)
+m (0)∗f (0)
+n (0)
+Z L
+0
+dx ei(n−m)qx
+=
+X
+m,n
+f (0)
+m (0)∗f (0)
+n (0)Lδmn
+= L
+∞
+X
+n=−∞
+f (0)
+n (0)
+
+2
+= L 1
+2π = 1
+q .
+Hence,
+C2
+Z L
+0
+dx exp
+"
+−√αq2
+
+x −L
+2
+2#
+= 1
+q .
+For large α, we extend the integration interval to the
+entire line, thus obtaining C2p
+π/(√αq2) ≃1/q, or
+C ≃α1/8
+π1/4 .
+Therefore, we arrive at the following (normalized) large-
+α approximation for the lowest-allowed-band zero-quasi-
+momentum Bloch wave on the interval 0 < x < L:
+F (0)(x, 0) ≃α1/8
+π1/4 exp
+"
+−
+√α
+2 q2
+
+x −L
+2
+2#
+.
+We now calculate the n = 0 Fourier coefficient of
+F (0)(x, 0) [see Eq. (9)]:
+f (0)
+0 (0) = 1
+L
+Z L
+0
+dx F (0)(x, 0)
+≃α1/8
+π1/4
+1
+L
+Z +∞
+−∞
+dx exp
+"
+−
+√α
+2 q2
+
+x −L
+2
+2#
+= α1/8
+π1/4
+1
+L
+s
+2π
+√αq2 =
+1
+√
+2π3/4 α−1/8 .
+Finally, substituting this expression for f(0)
+0 (0) into
+Eq. (44), we obtain the sought result, Eq. (45).
+Appendix F: Derivation of Eq. (46)
+Below we derive Eq. (46), approximating sup P+ in the
+weak-amplitude limit. Our strategy is to find a small-α
+perturbative expression for the Fourier coefficient f(0)
+0 (0)
+and then use Eq. (44) to obtain sup P+.
+
+
+=== PDF PAGE 11 ===
+11
+For convenience, we carry out the calculation using
+scaled Fourier coefficients
+g(j)
+n
+≡
+√
+2πf (j)
+n (0) ,
+in terms of which the normalization condition (11) reads
+P+∞
+n=−∞
+g(j)
+n
+
+2
+= 1. Since we assume throughout this
+paper that there is no overlap between different allowed
+energy bands, the vectors g(j) and g(j′) with j′̸ = j are
+mutually orthogonal. Combined with the normalization
+condition, this leads to the orthonormality condition
++∞
+X
+n=−∞
+h
+g(j)
+n
+i∗
+g(j′)
+n
+= δj,j′ .
+Written for vectors g(j), the eigenproblem (10) takes
+the form
+(H + U)g(j) = ε(j)g(j) ,
+where H is the unperturbed (diagonal) matrix with ele-
+ments
+Hmn = n2δmn ,
+U is the perturbation matrix with elements
+Umn = αδ|m−n|,1 ,
+and ε(j) = 2µE(j)(0)/(ℏq)2 is the corresponding dimen-
+sionless eigenvalue. To the second order in the perturba-
+tion parameter α, we write
+g(j) ≃g(j)|0 + g(j)|1 + g(j)|2 .
+where the unperturbed eigenvector g(j)|0 has elements
+g(j)
+n |0 = δj,n.
+The first and second order corrections,
+g(j)|1 and g(j)|2 respectively, are given by [31]
+g(j)|1 =
+X
+m̸=j
+Umj
+j2 −m2 g(m)|0
+and
+g(j)|2 =
+X
+m̸=j
+X
+n̸=j
+UmnUnj
+(j2 −m2)(j2 −n2)g(m)|0 −
+X
+m̸=j
+UjjUmj
+(j2 −m2)2 g(m)|0 −g(j)|0
+2
+X
+m̸=j
+|Umj|2
+(j2 −m2)2 .
+Evaluating these expressions for j = 0, we get
+g(0)
+0 |1 =
+X
+m̸=0
+Um0
+−m2 g(m)
+0
+|0 =
+X
+m̸=0
+αδ|m|,1
+−m2 δm0 = 0
+and
+g(0)
+0 |2 =
+X
+m̸=0
+X
+n̸=0
+UmnUn0
+(−m2)(−n2)g(m)
+0
+|0 −
+X
+m̸=0
+U00Um0
+(−m2)2 g(m)
+0
+|0 −g(0)
+0 |0
+2
+X
+m̸=0
+|Um0|2
+(−m2)2
+=
+X
+m̸=0
+X
+n̸=0
+αδ|m−n|,1αδ|n|,1
+(−m2)(−n2) δm0 −
+X
+m̸=0
+αδ0,1αδ|m|,1
+(−m2)2
+δm0 −1
+2
+X
+m̸=0
+ αδ|m|,1
+2
+(−m2)2
+= −1
+2
+X
+m̸=0
+ αδ|m|,1
+2
+(−m2)2
+= −1
+2
+
+α2
+(−12)2 +
+α2
+(−(−1)2)2
+
+= −α2 .
+Therefore, up to the terms of order α2, we have g(0)
+0
+≃
+1 −α2, or, equivalently,
+f (0)
+0 (0) ≃1 −α2
+√
+2π .
+Finally, substituting this expression into Eq. (44) and
+discarding terms of order higher than α2, we obtain the
+sought result.
+
+
+=== PDF PAGE 12 ===
+12
+[1] N. W. Ashcroft and N. D. Mermin, Solid State Physics
+(Holt-Saunders, Philadelphia, 1976).
+[2] C. Kittel, Introduction to Solid State Physics, 8th ed.
+(Wiley, Hoboken, NJ, 2004).
+[3] D. F. Holcomb, “Quantum electrical transport in samples
+of limited dimensions,” Am. J. Phys. 67, 278 (1999).
+[4] R. A. Jalabert, “Mesoscopic transport and quantum
+chaos,” Scholarpedia 11, 30946 (2016).
+[5] The body of literature on quantum backflow is sub-
+stantial, and a full review is beyond our scope. Some
+of the key theoretical developments can be found in
+Refs. [11, 16, 32]. For an accessible introduction, we re-
+fer the reader to Ref. [33], while Refs. [34, 35] provide a
+comprehensive list of more recent advancements in the
+field.
+[6] J. M. Yearsley, J. J. Halliwell, R. Hartshorn,
+and
+A. Whitby, “Analytical examples, measurement models,
+and classical limit of quantum backflow,” Phys. Rev. A
+86, 042116 (2012).
+[7] M. Palmero, E. Torrontegui, J. G. Muga, and M. Mod-
+ugno, “Detecting quantum backflow by the density of
+a Bose-Einstein condensate,” Phys. Rev. A 87, 053618
+(2013).
+[8] S. Mardonov, M. Palmero, M. Modugno, E. Y. Sherman,
+and J. G. Muga, “Interference of spin-orbit–coupled
+Bose-Einstein condensates,” EPL (Europhys. Lett.) 106,
+60004 (2014).
+[9] M. Miller, W. C. Yuan, R. Dumke,
+and T. Paterek,
+“Experiment-friendly formulation of quantum backflow,”
+Quantum 5, 379 (2021).
+[10] M. Barbier and A. Goussev, “On the experiment-friendly
+formulation of quantum backflow,” Quantum 5, 536
+(2021).
+[11] A. J. Bracken and G. F. Melloy, “Probability backflow
+and a new dimensionless quantum number,” J. Phys. A:
+Math. Gen. 27, 2197 (1994).
+[12] Y. Eliezer, T. Zacharias, and A. Bahabad, “Observation
+of optical backflow,” Optica 7, 72 (2020).
+[13] A. Daniel, B. Ghosh, B. Gorzkowski, and R. Lapkiewicz,
+“Demonstrating backflow in classical two beams’ interfer-
+ence,” New J. Phys. 24, 123011 (2022).
+[14] B. Ghosh, A. Daniel, B. Gorzkowski, and R. Lapkiewicz,
+“Azimuthal backflow in light carrying orbital angular mo-
+mentum,” Optica 10, 1217 (2023).
+[15] Z.-F. Zhang, P.-F. Huang, S.-C. Dong, Y.-X. Rong, J.-
+S. Xu, Y.-J. Gu,
+and Y. Xiao, “Observation of single-
+photon azimuthal backflow with weak measurement,”
+Opt. Lett. 50, 333 (2025).
+[16] S. P. Eveson, C. J. Fewster, and R. Verch, “Quantum In-
+equalities in Quantum Mechanics,” Ann. Henri Poincar´e
+6, 1 (2005).
+[17] M. Penz, G. Gr¨ubl, S. Kreidl, and P. Wagner, “A new
+approach to quantum backflow,” J. Phys. A: Math. Gen.
+39, 423 (2006).
+[18] A. Goussev, “Quantum backflow in a ring,” Phys. Rev.
+A 103, 022217 (2021).
+[19] C. B¨auerle, D. C. Glattli, T. Meunier, F. Portier,
+P. Roche, P. Roulleau, S. Takada, and X. Waintal, “Co-
+herent control of single electrons: a review of current
+progress,” Rep. Prog. Phys. 81, 056503 (2018).
+[20] For any periodic potential, the set of all Bloch waves
+forms a complete basis [21]. This implies that every nor-
+malized wave packet capable of propagating through the
+periodic potential can be represented as a superposition
+of Bloch waves.
+[21] A. A. Cottey, “Floquet’s theorem and band theory in one
+dimension,” Am. J. Phys. 39, 1235 (1971).
+[22] M. S. P. Eastham, The Spectral Theory of Periodic
+Differential Equations (Scottish Academic Press, Edin-
+burgh, 1973).
+[23] G. V. Morozov and D. W. L. Sprung, “Floquet-Bloch
+waves in one-dimensional photonic crystals,” EPL (Eu-
+rophys. Lett.) 96, 54005 (2011).
+[24] J.
+P.
+Ruz-Cuen
+and
+J.
+C.
+Guti´errez-Vega,
+“Flo-
+quet–Bloch eigenwaves and bandgaps in a di-periodic po-
+tential,” J. Opt. Soc. Am. B 38, 2742 (2021).
+[25] H. Kroemer, “On the group velocity of Bloch waves,”
+Proc. IEEE 63, 988 (1975).
+[26] J. N. Churchill, “On the periodic variations in the shape
+of moving Bloch waves,” Proc. IEEE 65, 489 (1977).
+[27] J.
+N.
+Churchill,
+“InstantaneousVelocity
+for
+Bloch
+wavepackets,” Proc. IEEE 65, 1406 (1977).
+[28] J. N. Churchill and F. E. Holmstrom, “Motion of Bloch
+wave packets,” Phys. Scr. 35, 859 (1987).
+[29] Throughout this paper, we assume that all allowed en-
+ergy bands are separated by nonzero band gaps. That is,
+we do not consider exotic periodic potentials where cer-
+tain band gaps vanish at specific quasi-momentum val-
+ues.
+[30] At the zone boundary, not all solutions to the time-
+independent Schr¨odinger equation have the Bloch wave
+structure [21, 36–39], and the inclusion of the zone
+boundary in the support of the amplitudes ϕ(j)(κ) may
+require modifying the normalization condition (14).
+[31] L. D. Landau and L. M. Lifshitz, Quantum Mechan-
+ics:
+Non-Relativistic Theory, 3rd ed. (Butterworth-
+Heinemann, Oxford, 1981).
+[32] M. V. Berry, “Quantum backflow, negative kinetic en-
+ergy, and optical retro-propagation,” J. Phys. A: Math.
+Theor. 43, 415302 (2010).
+[33] J. M. Yearsley and J. J. Halliwell, “An introduction to
+the quantum backflow effect,” J. Phys. Conf. Ser. 442,
+012055 (2013).
+[34] A. J. Bracken, “Probability flow for a free particle: new
+quantum effects,” Phys. Scr. 96, 045201 (2021).
+[35] M. Barbier and A. Goussev, “Quantum backflow for two
+identical particles,” New J. Phys. 27, 033011 (2025).
+[36] G. Allen, “Band Structures of One-Dimensional Crystals
+with Square-Well Potentials,” Phys. Rev. 91, 531 (1953).
+[37] A. A. Cottey, “Solutions of Schr¨odinger’s equation at a
+band edge in a one dimensional crystal,” J. Phys. C: Solid
+State Phys. 5, 2583 (1972).
+[38] A. I. Mogilner and P. D. Loly, “Vanishing gaps in
+1D bandstructures,” J. Phys. A: Math. Gen. 25, L855
+(1992).
+[39] A. Ibrahim, D. W. L. Sprung, and G. V. Morozov, “Con-
+struction and Floquet–Bloch analysis of analytically solv-
+able Hill equations with smooth potentials,” J. Opt. Soc.
+Am. B 35, 1223 (2018).

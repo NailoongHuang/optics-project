@@ -1,0 +1,3680 @@
+
+=== PDF PAGE 1 ===
+zc 
+מכון ויצמן למדע
+ 
+Weizmann Institute of Science
+ 
+ 
+ 
+ 
+ 
+חבור לשם קבלת התואר
+ 
+דוקטור לפילוסופיה
+ 
+ 
+מאת
+ 
+חגי איזנברג
+ 
+ 
+ 
+Thesis for the degree 
+Philosophy Doctor 
+ 
+by 
+Hagai Eisenberg 
+ 
+ 
+ 
+Nonlinear Effects in Waveguide Arrays 
+ 
+תופעות אי-ליניאריות במערכים של מוליכי-גלים
+ 
+ 
+כסלו
+ תש
+ ג '' ס
+ 
+מוגש למועצה המדעית של
+ 
+מכון ויצמן למדע
+ 
+רחובות
+,
+ ישראל
+ 
+ 
+ 
+November 2002 
+ 
+Submitted to the Council of the 
+Weizmann Institute of Science 
+Rehovot, Israel 
+ 
+
+
+=== PDF PAGE 2 ===
+i
+Preface
+Solitons are not a new phenomena. They were already observed about 170 years
+ago as a stable water levitation in a narrow and shallow canal. It was not until
+the beginning of the 1970’s that this phenomenon was associated with optics,
+following the introduction of lasers and the discovery of nonlinear self-focusing of
+intense beams during the previous decade. Two forms of optical solitary waves
+have been proposed. The ﬁrst are optical spatial solitons that appear as beams
+whose diﬀraction is exactly compensated by self-focusing. The second form are
+optical temporal solitons, realized by light pulses whose broadening due to chro-
+matic dispersion is exactly balanced by self-phase modulation. Both nonlinear
+eﬀects are results of the Kerr nonlinearity. Various categories of optical solitons
+were introduced since their ﬁrst proposal. They are diﬀerent from each other by
+their dimensionality, the nonlinearity which forms the solitons, other nonlinear
+eﬀects that accompany their creation, coherence and other factors.
+During the last six years, I had the opportunity to study two branches of
+the soliton tree. In my M.Sc. work I began researching numerically the self-
+focusing of spatiotemporal pulses, and towards the end of my Ph.D. period I
+revisited this phenomena, but from an experimental point of view. However,
+the main trunk of my thesis stems from a diﬀerent direction. Thanks to the
+fruitful collaboration that our group has with Prof.
+Stewart Aitchison from
+Glasgow (now in Toronto) and his resourceful student Dr. Roberto Morandotti,
+I concentrated mainly on waveguide arrays. We were the ﬁrst to demonstrate
+Discrete Solitons, and performed many experiments in this ﬁeld. Our interest
+in waveguide arrays grew and ﬂourished also towards some linear eﬀects that
+occur in such waveguides.
+This thesis is organized as follows: We start in the ﬁrst chapter by describing
+some theoretical background about dynamics of discrete linear and nonlinear
+optical ﬁelds. The next chapter includes our experimental results with discrete
+solitons. In the third chapter, three works about linear dynamics in various
+designs of waveguide arrays are presented. We conclude with a report of the
+spatiotemporal focusing experiment in a slab waveguide, which we also refer to
+as the Kerr light-bullets experiment.
+I was truly lucky to meet Prof. Yaron Silberberg at about the same time as
+he arrived at the Weizmann Institute. I was his ﬁrst M.Sc. student and I can
+not compare my knowledge at the day I entered his lab to this day when I’m
+leaving him. He enriched me with a wide variety of scientiﬁc approaches and
+methods which will serve me for many years. For that, I try to thank him here.
+Two weeks after the oﬃcial starting date of my Ph.D., another tree was
+planted.
+My wife Helen and I were married and the help and support that
+she gave me along my Ph.D. period is invaluable and can not be expressed by
+words. Meanwhile, two young twigs came out of our modest tree, namely Eran
+and Hillel. Their contribution to this work is questionable although their overall
+
+
+=== PDF PAGE 3 ===
+eﬀect is most positive.
+I wish to thank many of my colleagues who contributed to the work that
+is described in this work, and primarily to our group’s long-term collaborators
+Stewart Aitchison and Roberto Morandotti. The spatiotemporal focusing work
+was an enjoyable collaboration with Shimshon Bar-Ad. I enjoyed and learned
+from many discussions with Yaron’s other students such as Yaniv Bar-Ad and
+Dvir Yelin. Among the many others who contributed to diﬀerent phases of this
+work are Ulf Peschel and Daniel Mandelik. Financial support from the Israeli
+Ministry of Science and Sports through the Eshkol fellowship helped to fund
+this work.
+ii
+
+
+=== PDF PAGE 4 ===
+Contents
+1
+Discrete Optics
+1
+1.1
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.2
+Discrete Diﬀraction . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.3
+The Diﬀraction Relation . . . . . . . . . . . . . . . . . . . . . . .
+4
+1.4
+Nonlinear Excitations – Discrete Solitons
+. . . . . . . . . . . . .
+7
+1.5
+Dynamics of Light in a Waveguide Array
+. . . . . . . . . . . . .
+8
+2
+Nonlinear Experiments
+11
+2.1
+Experimental Considerations
+. . . . . . . . . . . . . . . . . . . .
+11
+2.2
+Experimental Setup
+. . . . . . . . . . . . . . . . . . . . . . . . .
+12
+2.3
+Demonstration of Discrete Solitons . . . . . . . . . . . . . . . . .
+14
+2.4
+Discrete Solitons from Various Excitations . . . . . . . . . . . . .
+16
+2.5
+Studies of Discrete Soliton Dynamics . . . . . . . . . . . . . . . .
+20
+2.6
+Self-Defocusing Under Anomalous
+Diﬀraction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+2.7
+Interaction with a Linear Defect State . . . . . . . . . . . . . . .
+27
+3
+Linear Eﬀects in Inhomogeneous Arrays
+31
+3.1
+Bloch Oscillations
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+3.2
+Anderson Localization . . . . . . . . . . . . . . . . . . . . . . . .
+34
+3.3
+Diﬀraction Management . . . . . . . . . . . . . . . . . . . . . . .
+37
+4
+Kerr Spatiotemporal Self-Focusing
+43
+4.1
+Experimental Results . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+4.2
+Numerical Model . . . . . . . . . . . . . . . . . . . . . . . . . . .
+50
+A Diﬀraction Curves
+53
+B Spatiotemporal BPM Code
+59
+Bibliography
+63
+Index
+68
+Epilog
+69
+iii
+
+
+=== PDF PAGE 5 ===
+iv
+
+
+=== PDF PAGE 6 ===
+Chapter 1
+Discrete Optics
+1.1
+Introduction
+Optics deals with continuous objects. The optical electro-magnetic ﬁelds are
+continuous functions. Optical elements like mirrors and lenses can be presented
+as continuous operators. Discrete optical ﬁelds, which have values only at spe-
+ciﬁc locations, are somewhat unnatural. Nevertheless, there are situations where
+optical systems can be described by discrete ﬁelds. In particular, the interaction
+of several coupled modes is usually approximated by a discrete set of coupled
+mode equations [1]. One such case is that of coupled one-dimensional waveg-
+uide array [2, 3]. In a waveguide array, large number (inﬁnite in principal) of
+one-dimensional single-mode waveguides (e.g. optical ﬁbers) are laid one near
+the other such that their individual modes overlap. The transversal propagating
+ﬁeld is now described by an inﬁnite set of complex amplitudes of the individual
+modes.
+The problem of light propagation in an inﬁnite coupled array of waveguides
+was treated ﬁrst theoretically by Jones [2], and later demonstrated by Yariv and
+co-workers [3], who fabricated such an array in GaAs. The nonlinear problem
+was discussed only years later by Christodoulides and Joseph [4]. They showed
+that the equations describing propagation in a nonlinear Kerr array are formally
+a discrete version of the nonlinear Schr¨odinger equation (NLSE), and that they
+may have solitary solutions equivalent to the NLSE solitons.
+The study of
+the discrete nonlinear Schr¨odinger equation (DNLSE) became quite popular in
+the early 90’s and many of the properties of discrete solitons were discovered
+then. Among the topics investigated were instabilities and solitary solutions of
+discrete structures [5–7], phenomena of steering and switching [8–10], nonlinear
+dynamics in non-uniform arrays [11–14], temporal eﬀects in discrete solitons
+[15–18], dark solitary solutions [19,20], vector discrete solitons [21] and discrete
+soliton bound states (“twisted modes”) [22,23].
+It should be noted that similar discrete equations appear in other area of
+physics. In particular, in the context of energy transport in molecular systems
+1
+
+
+=== PDF PAGE 7 ===
+2
+CHAPTER 1. DISCRETE OPTICS
+Figure 1.1: A scheme describing light coupling in a waveguide array
+[24], localized modes in molecular systems such as long proteins [25], polarons in
+one dimensional ionic crystals [26], and localized modes of nonlinear mechanical
+[27] and electrical lattices [28]. The broader area of discrete nonlinear equations
+and discrete breathers has been reviewed recently [29].
+The study of discrete optical solitons has remained primarily a theoreti-
+cal area until recently, when several experimental studies have been reported
+by our group. Experiments in GaAs waveguides demonstrated the formation
+of discrete solitons [30] and later studied many of their properties [12, 31, 32].
+These studies led to a renewed interest in the linear properties of discrete optical
+structures. For example, recent reports on optical realization of Bloch oscilla-
+tions in waveguide arrays [33–36], and engineering of diﬀraction using discrete
+optics [37].
+Although we will not discuss any speciﬁc applications of the structures or
+phenomena described here, it is obvious that these waveguide arrays oﬀer several
+advantages as compared with the more familiar nonlinear slab waveguides. Let
+us just mention the inherent compatibility with ﬁber and waveguide devices for
+input or output, and the possibility to engineer the strength of diﬀraction for a
+particular power requirement.
+This chapter is organized as follows: we begin by analyzing the basic phe-
+nomena that are related to propagation of light in an inﬁnite set of coupled
+optical waveguides. This broadening of spatial light distributions as a result of
+discrete diﬀraction is formulated. We discuss this linear phenomenon ﬁrst, and
+
+
+=== PDF PAGE 8 ===
+1.2. DISCRETE DIFFRACTION
+3
+then proceed to discuss nonlinear structures, when discrete diﬀraction is accom-
+panied by the optical Kerr eﬀect. This combination leads to the formation of
+discrete solitons and to their dynamic properties. This theoretical section is not
+exhaustive, and the reader is referred to the bibliographic list for more detailed
+publications on this topic.
+1.2
+Discrete Diﬀraction
+Consider an inﬁnite uniform array of identical single mode waveguides.
+We
+denote the set of amplitudes of the modes of the individual waveguides as {En},
+where n is the waveguide index, n = 0 being the central waveguide. The overlap
+between nearest-neighbors modes has a dominant eﬀect on propagation.
+It
+results in a phase sensitive linear coupling between the waveguides, leading to
+power exchange among them (see Fig. 1.1).
+The basic linear set of equations, which describes the light propagation in
+waveguide arrays using coupled-mode theory formulation is [1]:
+idEn
+dz
+= βEn + C (En−1 + En+1) .
+(1.1)
+z is the spatial coordinate in the direction of propagation, β is the propagation
+constant of the individual waveguides and C is the coupling coeﬃcient. If only
+two waveguides are coupled, an arrangement known as an optical directional
+coupler [1], light is completely transferred from one waveguide to the other
+after propagating a distance of zc = π/2C, the coupling length.
+There is a
+known mathematical solution for this inﬁnite set of equations [2]. In the case of
+a unity amplitude single input into the central waveguide and no power in the
+rest, the electrical ﬁeld evolution is given by:
+En = (i)n Jn (2Cz) ,
+(1.2)
+where Jn (x) is the nth order Bessel function. Because the evolution equations
+are linear, any other solution can be constructed from this solution by a linear
+superposition. The single input linear evolution is depicted in Fig. 1.2. Notice
+how most of the light is concentrated in two distinct lobes.
+An interesting limit of (1.1) is when the excitation is varying slowly between
+neighboring waveguides (En+1 −En ≪En) [4,38]. Applying the transformation
+En = An exp [i (2C + β) z], we get propagation equations of the form:
+idAn
+dz
+= C (An−1 −2An + An+1) .
+(1.3)
+Changing the discrete coordinate n to a continuous one, x = nd where d is the
+distance between the centers of two adjacent waveguides, we notice that the
+right-hand side of (1.3) is a discrete version of a second derivative, hence:
+i∂A
+∂z = Cd2 ∂2A
+∂x2 .
+(1.4)
+
+
+=== PDF PAGE 9 ===
+4
+CHAPTER 1. DISCRETE OPTICS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/HQJWK>&RXSOLQJ/HQJWKV@
+:DYHJXLGH1XPEHU
+Figure 1.2: Solution for a linearly coupled array of 41 waveguides, when light is
+injected into the central waveguide, with E0 = 1. The intensity is shown in gray
+scale. The scale is chosen such that the peak intensity for every propagation
+distance along the waveguide is represented by black.
+The energy is spread
+mainly into two lobes. The number of central peaks is an indication to how
+many coupling lengths the light has propagated
+Equation (1.4) describes, under the assumption of paraxiallity, propagation of
+light in free two-dimensional space. We identify the coupling terms in (1.1) as
+the cause for discrete diﬀraction. Note, however, that in paraxial diﬀraction
+the coeﬃcient of the right-hand side is 1/2k, with k the wavenumber in the
+medium. Hence, we see one possible advantage of discrete optics: it enables
+the engineering of the magnitude of the diﬀraction, normally ﬁxed at a given
+wavelength, through the design of the array and the coeﬃcient C. We shall see
+in the next section even more possibilities for diﬀraction manipulation.
+1.3
+The Diﬀraction Relation
+In order to understand diﬀraction in discrete systems, it is worthwhile to exam-
+ine ﬁrst the continuous case. Just as chromatic dispersion results from diﬀerent
+phases accumulated by diﬀerent frequency components, diﬀraction results from
+diﬀerent phases accumulated by the various spatial frequency components [37].
+
+
+=== PDF PAGE 10 ===
+1.3. THE DIFFRACTION RELATION
+5
+These components are the Fourier components of the beam proﬁle:
+eE (kx) =
+∞
+Z
+−∞
+E (x) exp (ikxx) dx ,
+(1.5)
+where we deﬁne x as the transverse dimension and z as the propagation di-
+mension. The third direction, y, is omitted for simplicity, but can be added in
+a straightforward manner. Each of the spatial components denoted by kx is a
+plane wave [39] which accumulates optical phase diﬀerently while propagating.
+The amount of phase gained by each kx component after propagating distance z
+is φ (kx) = kz (kx)·z. A group of transverse components centered at kx is trans-
+versely shifted by an amount of ∆x =
+∂φ
+∂kx = ∂kz
+∂kx z. The beam broadens because
+of the divergence between the diﬀerent displacements ∆x(kx). The propagation
+direction in real space of the power contained in each component, the Poynting
+vector, points perpendicular to the kz(kx) curve at kx [40]. We deﬁne the func-
+tion kz(kx) as the diﬀraction relation and the divergence D = 1
+z
+∂2φ
+∂k2
+x = ∂2kz
+∂k2
+x as
+diﬀraction, in analogy to the deﬁnition of dispersion. More about the uses of
+diﬀraction relations can be found in appendix A.
+The diﬀraction relation for a speciﬁc system can be derived from the evolu-
+tion
+equation
+by
+assuming
+a
+plane
+wave
+solution
+of
+the
+form
+E (⃗r) = E0 exp
+³
+i⃗k ·⃗r
+´
+where⃗k is a vector in spatial frequency space whose
+components are kx and kz. For a scalar propagation in free two-dimensional
+space, according to the standard time-independent wave equation, the diﬀrac-
+tion relation is:
+kz (kx) =
+p
+k2 −k2x ,
+(1.6)
+where k = 2πn0
+λ0
+is the wavenumber in the medium and λ0 is the wavelength
+in vacuum. The half-circular diﬀraction relation for forward propagating free
+space beams is depicted in Fig. 1.3(a). There are a few useful observations that
+can be made from this graph:
+1. A beam can not have propagating components where kx > k. This re-
+sults in a maximal resolution for a speciﬁc wavelength. For example, the
+minimal spot size of a focused beam.
+2. Light can propagate in all π forward angles.
+For any direction, there
+is always a point on the diﬀraction curve, where the Poynting vector is
+directed along it.
+3. The diﬀraction value around any component of kx is always negative
+(Dcont < 0).
+This fact will have important implications for nonlinear
+evolution.
+Let us now consider the diﬀraction relation for the discrete propagation
+equation [40,41]. We apply the same plane wave solution and the result is:
+kz (kx) = β + 2C cos (kxd) .
+(1.7)
+
+
+=== PDF PAGE 11 ===
+6
+CHAPTER 1. DISCRETE OPTICS
+S
+S
+S
+
+S
+S
+S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E
+N]N
+N[G
+D
+N[N
+N]N
+Figure 1.3: Spatial diﬀraction curves showing phase vs. spatial frequency for (a)
+continuous and (b) discrete models. The arrows mark the largest possible angle
+of energy propagation for each model. Only in the discrete case, an inversion of
+curvature (beyond kxd = π/2) leads to anomalous diﬀraction
+The discrete diﬀraction relation is presented in Fig. 1.3(b). This relation is
+periodic, hence there are inﬁnite number of components kx propagating for
+each kz, spaced equally by 2π/d. Therefore, we should use a modiﬁed function
+base to span the beam proﬁles, where each component contains all of these
+equidistant plane waves.
+These are the Floquet–Bloch wave functions
+[42]
+E (⃗r) = E0
+∞
+P
+m=−∞
+Γm exp
+h
+i
+³⃗
+k + 2πm
+d bkx
+´
+·⃗r
+i
+, where Γm is a factor related to
+the individual waveguide mode shape. In a true discrete system, there is only
+meaning for values of⃗r = (nd, z) and Γm becomes always unity. We note the
+similarities between the optical discrete model and the tight binding model of
+electrons in crystals. The assumption of single-mode waveguide is equivalent to
+a system of atoms with one S-level electron.
+Let us examine the properties of the discrete diﬀraction curve and its diﬀer-
+ences from the continuous case:
+1. There is a maximal angle of propagation to the z-direction αmax = 2Cd.
+
+
+=== PDF PAGE 12 ===
+1.4. NONLINEAR EXCITATIONS – DISCRETE SOLITONS
+7
+Even if the input light contains spatial frequencies beyond this angle, they
+will propagate at a smaller angle.
+2. The meaningful range of kx is 2π/d.
+Beyond this range, i.e.
+the ﬁrst
+Brillouin zone, any kx has an equivalent value that is inside it, sharing the
+same Floquet–Bloch wave function. It is convenient to choose −π/d <
+kx < π/d.
+3. The curvature of the discrete diﬀraction curve, or the diﬀraction value, is
+negative for |kx| < π/2d, zero for |kx| = π/2d and positive for π/2d <
+|kx| < π/d.
+This is in contrast with the continuous case, where zero
+and positive values of diﬀraction are impossible. We deﬁne the regime of
+positive diﬀraction as the anomalous diﬀraction regime.
+4. The diﬀraction curve has a maximum value as well as a minimum, while
+the continuous relation has no minimum.
+1.4
+Nonlinear Excitations – Discrete Solitons
+Consider now propagation of light in a Kerr-like nonlinear waveguide array.
+The Kerr eﬀect is the linear dependency of the refractive index on the local light
+intensity in a dielectric material [1]. The refractive index varies as n = n0 +n2I
+where n0 is the refractive index at low intensities, I is the light intensity and
+n2 is the material nonlinear parameter, proportional to the nonlinear electrical
+susceptibility term χ(3).
+Equation (1.1) is now modiﬁed to be [4]:
+idEn
+dz
+= βEn + C (En−1 + En+1) + γ |En|2 En ,
+(1.8)
+where γ = k0n2
+Aeff and Aeﬀis the common eﬀective area of the waveguide modes.
+This equation is known as the Discrete Nonlinear Schr¨odinger Equation
+(DNLSE). The Kerr nonlinearity in the presence of continuous diﬀraction (or
+dispersion) may lead to the formation of spatial (or temporal) solitons [43–46].
+These are stable light beams (or pulses), propagating without diﬀraction (or dis-
+persion). Unlike its continuous counterpart, the DNLSE is not integrable, and
+therefore it does not posses exact soliton solutions. However, numerical and
+analytic studies show that it does have solitary-wave solutions that propagate
+without diﬀraction. In particular, for a wide excitation, one can use the analogy
+with the continuous case to derive an approximate shape distribution [4]:
+En (z) = A0 exp [i (2C + β) z] / cosh (nd/w0) ,
+(1.9)
+where w0 is the width constant of the light distribution, assumed to be much
+larger than d. The amplitude is given by A0 =
+q
+2Cd2
+γw2
+0 . Narrow solitary wave
+solutions are also possible, but they deviate from this shape function. It is quite
+
+
+=== PDF PAGE 13 ===
+8
+CHAPTER 1. DISCRETE OPTICS
+obvious that at very high powers, all the light is concentrated in a single waveg-
+uide, increasing its index of refraction so that it is completely decoupled from its
+neighbors. Although, formally speaking, all of these solutions are solitary waves,
+we shall use the term discrete solitons to describe all nonlinear non-diﬀracting
+waves.
+Before we move to discuss other properties of discrete solitons, it is worth-
+while to discuss how one may infer their existence from the diﬀraction relations.
+The eﬀect of the Kerr nonlinearity on the diﬀraction relations is similar for
+continuous and discrete cases. These relations are, respectively:
+kz (kx)
+=
+s
+k2
+·
+1 +
+³
+n2I0
+n0
+´2¸
+−k2x ,
+(1.10a)
+kz (kx)
+= β + 2C cos (kxd) + γI0 .
+(1.10b)
+Here I0 is a measure of the optical power contained in the beam and it is
+proportional to
+¯¯E0¯¯2. In both cases the light intensity shifts the excited modes
+upward along the kz axis.
+There is a useful phenomenological way of understanding paraxial solitary
+waves [29]. As discussed above, diﬀraction results from the curvature of the
+diﬀraction relation. In the presence of signiﬁcant nonlinear Kerr eﬀect the wave
+increases its eﬀective propagation constant, and, eventually, shifts it out of the
+diﬀraction zone, eliminating the option for beam broadening. For diﬀraction
+to happen, the beam spatial components have to be able to radiate along the
+bx-axis. When they are outside the linear spectrum, this radiation is eliminated.
+It is now clear that in continuous homogeneous media, where the diﬀraction
+curve has a maximum, bright solitons are possible only when n2 > 0. Negative
+values of n2 will only lower the value of the propagating kz frequencies, and
+actually enhance the rate of diﬀraction.
+In contrast, the discrete diﬀraction curve has both negative and positive cur-
+vatures, which enable the formation of bright discrete solitons for both positive
+and negative n2 [4,6,29,30,32,47,48]. Furthermore, this curve is limited both
+from top and bottom to the range {β −2C < kz < β + 2C} resulting in more
+options for solitary waves. For example, in a positive n2 material, an excitation
+experiencing positive curvature at the optical band bottom, and therefore non-
+linear defocusing, can still be solitary if enough power is supplied such that it
+is pushed upward enough so it emerges out of the optical band. In fact, any ex-
+citation in any type of material will be eventually solitary in the discrete optics
+case because of the bounded band.
+1.5
+Dynamics of Light in a Waveguide Array
+When we consider the dynamics of light in a waveguide array, it is important
+to understand the direction of energy ﬂow.
+It is easy to show that in the
+two waveguides coupler the phase relation between the two individual modes
+is always ±π/2 and that power is always ﬂowing from the mode, whose phase
+
+
+=== PDF PAGE 14 ===
+1.5. DYNAMICS OF LIGHT IN A WAVEGUIDE ARRAY
+9
+is retarded relative to the other.
+Similarly, from the linear solution for the
+propagation of a single waveguide input, we ﬁnd that the same phase relation
+between waveguides of ±π/2 occurs in an inﬁnite waveguide array. At the outer
+regimes of the diﬀracting light, power transfer is outwards, while in the center, a
+more complex phase structure evolves. For diﬀerent input conditions this phase
+structure disappears, but power still ﬂows out from waveguides, which their
+phase is retarded relative to their neighbors.
+This is not the case for discrete solitons. By deﬁnition, the phase across
+a soliton is ﬂat. A ﬂat phase front results in no power coupling, therefore no
+diﬀraction, exactly what we expect from a soliton. The Kerr eﬀect is the cause
+of this ﬂatness, by increasing the refractive index of some waveguides, hence
+accelerating their phase evolution.
+Continuous solitons possess two fundamental geometrical symmetries of
+space. Under rotations of the axes and translation of their origin, exactly the
+same mathematical solution is reproduced. On the other hand, for discrete op-
+tics both symmetries are broken due to the direction and position of the array
+waveguides [7]. Rotational symmetry is gone all together while translational
+symmetry is reduced.
+There is still option to translate solutions to other z
+values, while in the x direction only a discrete translational symmetry is left
+because of the periodicity d in that direction. Nevertheless, discrete solitons can
+be centered either on a waveguide or exactly in between two adjacent waveg-
+uides [6]. Even more, solutions of discrete solitons that propagate with an angle
+to the bz-axis do exist [8–10]. The discrete nature though, is still reﬂected in
+some new discreteness-induced eﬀects [31].
+In order to learn about the eﬀect of launching discrete solitons centered at
+diﬀerent lateral positions, we look at the generalized Hamiltonian of (1.8):
+Hdisc =
+X
+n
+h
+C |En −En−1|2 −γ
+2 |En|4i
+.
+(1.11)
+The ﬁrst term is a generalized kinetic energy term and the second is an inter-
+action energy term. Plotting Hdisc as a function of the lateral center of the
+soliton beam shows an oscillating function. The Hamiltonian minima are when
+the soliton center is on a waveguide site and its maxima are when the soliton is
+centered between two adjacent waveguides. This discreteness induced periodic
+potential is known from solid state physics as the Peierls–Nabarro (PN) poten-
+tial [7]. It is a result of the combination of nonlinearity and discreteness. The
+depth between the minima and maxima points is power dependent. Solitons
+experiencing this potential will be stable for small lateral shift when centered
+on a site and unstable if centered in between two sites.
+If a discrete soliton which is wider than one waveguide is excited, it can
+be forced to hop sideways while propagating in the z direction [8–10]. A linear
+phase gradient across its proﬁle such as φn = n∆φ will allow the light distribution
+to keep its solitary properties, but the soliton will also move away from the
+retarded phase side. This is understood when examining the direction of energy
+ﬂow. However, increasing the power of the excitation leads to a new, discreteness
+
+
+=== PDF PAGE 15 ===
+10
+CHAPTER 1. DISCRETE OPTICS
+induced eﬀect. At high power the waveguides that contain light are decoupled
+from their neighborhood. Therefore, a discrete soliton will be locked at high
+powers to its input waveguides and will not travel sideways anymore [9,10,31].
+The power dependence of the propagation angle is called discrete soliton power
+steering. It can be also thought of as interplay between the PN potential and
+the generalized kinetic energy of the soliton.
+
+
+=== PDF PAGE 16 ===
+Chapter 2
+Nonlinear Experiments in
+Waveguide Arrays
+While many have contributed to the theoretical understanding of discrete soli-
+tons, the experimental studies have been carried out primarily at our group at
+the Weizmann Institute, in close collaboration with the Aitchison group at the
+University of Glasgow. In the following chapter we shall review these results.
+2.1
+Experimental Considerations
+Two ways were proposed in the past for realizing an optical discrete system. One
+is to form the array by patterning a slab planar waveguide [2,3]. The other is a
+multi-core optical ﬁber where the cores are arranged in a circular shape [8,49].
+There are a few advantages for each of the conﬁgurations.
+Slab waveguides
+can be made from a variety of materials while optical ﬁbers are typically made
+of glass variants. There are many standard techniques for patterning planar
+conﬁgurations, while multi-core ﬁbers are not so common and easy to make.
+Integrating arrays with other elements is easier on a planar layout.
+On the
+other hand, very long ﬁbers can be formed compared to only a few centimeters of
+planar waveguides. The periodic boundary conditions that are achieved with the
+circular layout of multi-core ﬁbers are very attractive as it can better simulate
+an inﬁnite array.
+In our experiments, we chose to work with waveguide arrays that were etched
+of a planar slab waveguide made of AlGaAs [50]. There are a few reasons for
+this choice. AlGaAs is an eﬀective nonlinear material, about 500 times more
+nonlinear then fused silica glass [51]. This enables us to use short waveguides, a
+few millimeters long, and modest optical powers. Working at the communication
+standard wavelength of 1.5 µm, we are below the half of the band gap. Thus,
+not only linear absorption is minimized but nonlinear two-photon absorption as
+well. The technology for fabricating AlGaAs waveguides is quite advanced and
+waveguides of relatively low loss are possible.
+11
+
+
+=== PDF PAGE 17 ===
+12
+CHAPTER 2. NONLINEAR EXPERIMENTS
+x40 Obj.
+x25 Obj.
+Sample
+λ/2
+Polarizer
+Det.
+1
+B.S. 1/99%
+Cylindric
+Telescope
+Variable
+Filter
+Aperture
+Focused Laser Beam
+Figure 2.1: The experimental setup. Inset: Schematic drawing of the sample.
+The sample consists of a Al0.18Ga0.82As core layer and Al0.24Ga0.76As cladding
+layers grown on top of a GaAs substrate.
+A few samples were tested with
+diﬀerent separations d between the waveguides centers
+There are some details we should be aware of, though. Coupling light into
+AlGaAs is relatively ineﬀective due to its high linear refractive index. With
+index of 3.3, almost 30 percents are reﬂected back at the input facet.
+Nor-
+mal dispersion is also a factor, broadening an initial pulse of about 100 fs after
+propagating a typical sample length of 6 mm by about a factor of two. At the
+highest peak intensities of our experiments, three-photon absorption starts to
+play a role as well.
+2.2
+Experimental Setup
+We shall review now experiments performed in our group which demonstrate
+some of the properties of discrete solitons. Our light source was a commer-
+cial optical parametric oscillator (Spectra-Physics OPAL), pumped by a 810 nm
+Ti:Sapphire (Tsunami).
+4 nJ pulses were produced at a repetition rate of
+80 MHz. Their average power is 300 mW while each has a peak power of about
+40 kW. The pulse length is about 100 fs and the wavelength is tunable between
+1450 nm to 1570 nm. We usually worked at a wavelength of 1530 nm in order to
+minimize both two- and three-photon absorption.
+The AlGaAs waveguides are patterned by either photolithography or
+electron–beam lithography. The core–clad index diﬀerence is achieved by dif-
+ferent Aluminum concentration. The waveguides are typically 4 µm wide and
+
+
+=== PDF PAGE 18 ===
+2.2. EXPERIMENTAL SETUP
+13
+Figure 2.2: Images of the output facet of a sample with d=8 µm for diﬀerent
+powers. (a) Peak power 70 W. Linear features are demonstrated: Two main
+lobes and a few secondary peaks in between. (b) Peak power 320 W. Interme-
+diate power, the distribution is narrowing. (c) Peak power 500 W. A discrete
+soliton is formed
+6 mm long. The separation between waveguide centers is varied from 8 µm to
+11 µm in order to have samples of diﬀerent coupling lengths. The larger the
+distance the smaller the coupling. The individual waveguide mode shapes are
+somewhat oval. Arrays of 41 and 61 identical waveguides were made, in order
+that the light will experience an eﬀective inﬁnite system and will not reach the
+array borders.
+The experimental system is described in (Fig. 2.1); the power of the input
+is tuned using a variable ﬁlter. A beam sampler picks up a small part of the
+power to an input power detector.
+The beam is shaped into an oval shape
+through cylindrical optics in order to match the individual waveguide mode or,
+alternatively, into a wider beam if input into a few waveguides is needed. The
+light is coupled into the sample through a 40× input objective. A glass window,
+1 mm thick, is inserted in front of the input objective. By rotating this window,
+small parallel translations of the beam are transformed by the objective to small
+variation in the angle of incidence at the focal plane, enabling a phase gradient
+across the beam. After propagating along the sample, the light is collected from
+the output facet by a second objective. A second beam splitter is sending some
+of the power to an output power detector. The output objective and another
+lens image the light from the output facet onto an IR sensitive camera. At the
+extra focal plane which is formed in between the objective and the lens, a slit
+can be inserted in order to sample diﬀerent parts of the image for spectra and
+auto-correlation measurements. Finally, a computer captures the camera image
+and the other data for further analysis.
+
+
+=== PDF PAGE 19 ===
+14
+CHAPTER 2. NONLINEAR EXPERIMENTS
+
+
+
+
+
+
+
+
+
+
+D
+/RZ3RZHU
+
+
+
+
+
+
+
+
+
+
+
+E
++LJK3RZHU
+1RUPDOL]HG3RZHU>$8@
+3RVLWLRQ>:DYHJXLGH1XPEHU@
+
+
+
+
+
+
+
+
+
+
+
+
+F
+/RZ3RZHU
+
+
+
+
+
+
+
+
+
+
+
+
+
+G
++LJK3RZHU
+1RUPDOL]HG3RZHU>$8@
+3RVLWLRQ>:DYHJXLGH1XPEHU@
+Figure 2.3: Single waveguide excitation: Experimental and numerical results
+for samples with d=11 µm, total propagation distance of 1.9 coupling lengths
+(a,b) and 9 µm, total propagation distance of 3.0 coupling lengths (c,d). Both
+experimental results (solid line) and numerical results (vertical lines) are shown.
+The integrated power is normalized to unity
+2.3
+Demonstration of Discrete Solitons
+We ﬁrst describe the basic experiments for the observation of discrete soli-
+tons [30]. We used a 6 mm long sample of 41 waveguides. Light was injected into
+a single central waveguide, as was described before. The ﬁrst observation is pre-
+sented in Fig. 2.2 as the output facet images that were captured by the camera.
+At low power, a wide distribution is obtained, covering about 35 waveguides.
+This distribution matches what is expected from a 4.2 coupling-lengths long
+sample (see Fig. 1.2). When the power is increased, we ﬁrst see the light dis-
+tribution converging to form a bell-shape. Launching even more power leads to
+the formation of a conﬁned distribution around the input waveguide, a discrete
+soliton.
+Transverse cross-sections of the output proﬁle for two samples of diﬀerent
+coupling lengths are compared in Fig. 2.3. Figures 2.3(a,b) are from a 1.9 cou-
+pling lengths long sample at low and high powers, respectively. Figures 2.3(c,d)
+are from a 3.0 coupling lengths long sample at low and high powers, respec-
+tively. The diﬀerence in the coupling length is obtained by varying the distance
+d between adjacent waveguides in the two samples (from 11 µm to 9 µm). The
+solid curves correspond to the experimentally measured proﬁles, while the height
+
+
+=== PDF PAGE 20 ===
+2.3. DEMONSTRATION OF DISCRETE SOLITONS
+15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+F
+
+
+3HDN3RZHU>:@
+3RVLWLRQ>$8@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+D
+3RVLWLRQ>$8@
+3HDN3RZHU>:@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E
+3RVLWLRQ>$8@
+3HDN3RZHU>:@
+
+Figure 2.4: Single waveguide excitation: Output light distributions as a function
+of the input peak power. Vertical cross-sections are the diﬀerent power proﬁles
+corresponding to each input power.
+The three frames (a–c) are taken from
+samples of 1.9, 3.0 and 4.2 coupling lengths, respectively
+of the vertical lines stands for the light intensity in each respective waveguide
+according to a numerical solution of Eqs. 1.8. The agreement between the ex-
+periment and the numerical solution is good, both at low and at high powers.
+At low power, most of the light energy is pushed out to the proﬁle wings, while
+characteristic secondary narrow peaks appear in between. The number of these
+secondary peaks is an indicator to the amount of coupling lengths propagated.
+When the power is increased (estimated to about 900 W at peak power), light
+is conﬁned to the vicinity of the central input waveguide.
+It is interesting to check the power dependency of the visibility between
+adjacent peaks in Figs. 2.2 and 2.3. We deﬁne the visibility of the nth mode as
+a function of the intensity values I(x) = |E(x)|2 at the center of two waveguide
+modes and the intensity value in between them:
+Vn = 1 −
+2I
+£¡
+n + 1
+2
+¢
+d
+¤
+I [nd] + I [(n + 1) d] .
+(2.1)
+The mode visibility has a minimal value when the light is in-phase between
+waveguides n and n + 1. It is maximal when the light is completely out-of-
+phase and the intensity is equal in both waveguides. Checking the experimental
+results of Figs. 2.2 and 2.3 we observe a visibility of about half for all the linear
+
+
+=== PDF PAGE 21 ===
+16
+CHAPTER 2. NONLINEAR EXPERIMENTS
+cases. This is in a good agreement with the π/2 phase relation predicted by
+the solution of Eqs. 1.8. The visibility is degraded because of launching light
+distribution that does not match exactly the central waveguide mode and due to
+cross-talk between the pixels of the IR camera. When the power is increased, the
+soliton formation forces a smoother phase relation between light in neighboring
+waveguides and the mode visibility decreases.
+In order to demonstrate a power stability regime of the discrete soliton, we
+present in Fig. 2.4(a–c) power evolutions of the output proﬁles for the two cases
+of Figs. 2.3 and for the case of Fig. 2.2. Each vertical slice is a power cross-
+section at a respective power. At low power, the light distribution is broad and
+most of the light is far from the input waveguide. As the power is increased,
+light is gradually conﬁned to the center. The important fact to note is that after
+achieving a certain distribution width, the focusing process almost arrests, and
+only a slight variation of the width with power is observed. It occurs at about
+600 W for all the samples.
+2.4
+Formation of Discrete Solitons from Various
+Excitations
+Until now, we only described discrete solitons that were formed by launch-
+ing light into a single waveguide. This is equivalent to exciting uniformly all
+available spatial frequencies, because a single waveguide represents a discrete
+δ-function excitation. The single waveguide excitation is the case where the
+discrete nature of the waveguide array is most pronounced. As can be seen in
+Fig. 1.3, the continuous and discrete diﬀraction curves have the same curvature
+for small spatial frequencies. Only when high enough frequencies are excited in
+the array, discreteness can be pronounced.
+Solitons are not aﬀected by such considerations. They are formed in a contin-
+uous slab waveguide as well as in an array, as long as enough power is supplied.
+We present here the results for excitation with various beam widths and shapes.
+As the launched beam becomes wider and smoother, the narrower is the excited
+spatial frequency range and the beam experiences diﬀraction to a smaller extent.
+To launch wide input ﬁelds, we used arrays with power splitters as in-
+put channels. The power splitters were multiple Y-junctions, which split the
+launched power from one waveguide, almost equally into several waveguides.
+The output of the splitter was injected into the waveguide array such that each
+splitter branch is coupled into one waveguide. As a result, the launched light
+distribution is a discrete rectangular function. It is narrower in its frequency
+content, but due to the sharp distribution edges, it still contains all of the high
+spatial frequencies.
+Figure 2.5 presents the results for low and high power when the power was
+split into three and ﬁve waveguides.
+The output proﬁles for a three waveg-
+uides input are plotted on Figs. 2.5(a,b) and for ﬁve on Figs. 2.5(c,d). The
+array spacing is 9 µm for both samples, which results in 3.0 coupling-lengths
+
+
+=== PDF PAGE 22 ===
+2.4. DISCRETE SOLITONS FROM VARIOUS EXCITATIONS
+17
+F
+/RZ3RZHU
+3RZHU
+G
+
+3RVLWLRQ
++LJK3RZHU
+D
+
+/RZ3RZHU
+3RZHU
+E
+
+3RVLWLRQ
++LJK3RZHU
+Figure 2.5: Wide excitation by power splitting: Output proﬁles, as seen on
+the IR camera, of three waveguides wide (a,b) and ﬁve waveguides wide (c,d)
+excitations. All the samples are of 3.0 coupling lengths
+propagation. In the linear low power cases, we see less expansion than in the
+single waveguide input case due to reduced diﬀraction of the light. In the single
+input case the light occupied about 20 waveguides after propagating through
+the sample, while for the three and ﬁve waveguides excitation, it expands only
+to about 17 and 11 waveguides, respectively. For low power, we still see the
+character of discreteness: some power concentration at the edges and a peaky
+nature at its center due to out-of-phase relations between the light in neigh-
+boring waveguides. Increasing the power causes both distributions to become
+somewhat narrower. There is a strong eﬀect on the waveguide phases. They
+are locked together by the nonlinearity as a discrete soliton is formed, and the
+mode visibility is degraded.
+It is also possible to launch a broad light distribution without any sharp
+features to avoid excitation of high spatial frequencies.
+These distributions
+extent over a limited range of frequencies are associated with a limited excitation
+around the center of the diﬀraction curve, and therefore should behave much like
+in a continuous system. We inject the light directly into the array after shaping
+the input beam into a wide ellipse by cylindrical optics. The beam overlaps a
+few waveguides and the relative power in each of them varies smoothly according
+to the beam gaussian proﬁle. The results of two such experiments are presented
+in Fig. 2.6. Beams covering about two and three waveguides were tested and
+their output proﬁles as a function of input power are shown in Figs. 2.6(a) and
+2.6(b), respectively. As before, we observe the formation of discrete solitons.
+However, they now behave more like regular continuous solitons as their proﬁle
+
+
+=== PDF PAGE 23 ===
+18
+CHAPTER 2. NONLINEAR EXPERIMENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E
+3RZHU>$8@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+D
+3RZHU>$8@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+ F
+3RZHU>$8@
+3RVLWLRQ>PP@
+Figure 2.6: Wide excitation by a wide smooth beam: Output light distributions
+as a function of the input peak power as in Fig. 2.3. (a) A two waveguides wide
+excitation. (b) A three waveguides wide excitation. (c) A three waveguides
+wide excitation of a continuous slab waveguide
+is bell-shaped and only their width is changing as the power is increased. As
+with continuous one-dimensional solitons, less power is required to form a wider
+soliton, therefore the minimal width is reached for weaker intensities than in
+the single waveguide input case.
+Wide discrete solitons exhibit an interesting eﬀect at a power of twice their
+formation power.
+Instead of just becoming narrower, when there is enough
+power for the formation of two solitary beams, the discrete soliton breaks into
+two. This result has been explained for the continuous case as an instability of
+the second soliton [52]. The cause for this instability in our case is probably
+a perturbation to the soliton shape by two- and three-photon absorption. The
+splitting of a three waveguides wide discrete soliton and of a continuous soliton
+of a similar width in a planar slab waveguide are compared in Figs. 2.6(b) and
+2.6(c), respectively. The two cases are clearly very similar, and a three waveg-
+uides excitation is almost indistinguishable from a continuous soliton. Recall
+that a single waveguide excites all the frequencies of the Brillouin zone (see Fig.
+1.3(b)), between −π and π, while a two waveguides wide input would excite only
+half of this range (−π/2 to π/2) which has only one curvature sign. It is not
+surprising then that by launching a light distribution which is three waveguides
+wide (−π/3 to π/3), even less spectrum is generated, hence the behavior is very
+
+
+=== PDF PAGE 24 ===
+2.4. DISCRETE SOLITONS FROM VARIOUS EXCITATIONS
+19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3RZHU>$8@
+:DYHJXLGH1XPEHU
+Figure 2.7: Nonlinear contraction of power into a single waveguide
+similar to continuum.
+Using speciﬁc conditions of wide excitation and very weak coupling between
+the waveguides, we achieved contraction of most of the light into a single central
+waveguide. The output distribution as a function of input power is depicted in
+Fig. 2.7. By increasing the power, the distribution narrows until all the light is
+concentrated in a single waveguide. By further increasing the power, the light
+couples again into more waveguides. This is explained by nonlinear two-photon
+attenuation and self-phase modulation induced broadening, which are enhanced
+at the large intensities that are obtained when all the power is concentrated in
+one waveguide.
+In all of the experiments described above, the main reason for diﬀerences
+between the results and the predictions of simple coupled-mode theory (CMT)
+[1] is the temporal evolution of the pulsed input ﬁeld [15,17]. In order to examine
+the pulse eﬀects on the results, we recorded temporal auto-correlation traces of
+a discrete soliton. A slit was used to select light from the soliton center or from
+its wing, a few waveguides away from the input center. A comparison between
+the two results, together with the input pulse auto-correlation are shown in Fig.
+2.8(a). The pulse length at the soliton center is doubled due to the normal
+dispersion of AlGaAs and the nonlinear eﬀect of Self-Phase Modulation (SPM)
+[53]. At the soliton wing, there is an evidence for temporal splitting. The reason
+for this splitting is the depletion of light from the wings when the stronger
+spatial focusing occurred near the peak of the pulse. To illustrate this pulse
+shape, we draw a top view of the pulse in Fig. 2.8(b). The spectral broadening
+of the pulse center is a measurement for the importance of SPM on the temporal
+evolution. In Fig. 2.8(c) the spectra of the input pulse and the output pulse
+center are compared. The diﬀerence in widths is clear and we can estimate from
+the oscillatory proﬁle of the output spectrum that SPM introduced a nonlinear
+phase shift of about 3π/2.
+
+
+=== PDF PAGE 25 ===
+20
+CHAPTER 2. NONLINEAR EXPERIMENTS
+    
+
+
+
+
+
+
+
+
+
+
+
+ D
+IV
+IV
+,QSXW3XOVH
+&HQWHU$&
+:LQJ$&
+,QWHQVLW\>$8@
+'HOD\>I6@
+
+
+
+
+
+
+
+
+F
+,QWHQVLW\
+:DYHOHQJWK>QP@
+,QSXW3XOVH
+&HQWHU$&
+
+
+E
+:LQJ
+&HQWHU
+7LPH
+6SDFH
+
+
+Figure 2.8: (a) Temporal auto-correlation of a discrete soliton: the input pulse
+(solid line), the output pulse center (thick dashed line) and the output pulse
+wing (thin dashed line). (b) The output pulse sketch. (c) A comparison between
+the spectra of the input (solid line) and the output (dashed line) pulses
+2.5
+Studies of Discrete Soliton Dynamics
+We divide the experiments involving dynamics of discrete solitons in waveguide
+arrays into two categories [31]. In one type of experiments, a phase gradient is
+applied along the proﬁle of the input beam, thus giving it transverse kinetic en-
+ergy (the ﬁrst term in (1.11)) and forcing the soliton to move across the array.
+In the other kind of experiments, the beam is launched along the waveguide
+direction while its input position is scanned in between two adjacent waveg-
+uides. The experiments of the ﬁrst category examine the rotational symmetry
+breaking in discrete systems, while those of the second category investigate the
+translational symmetry breaking.
+We recorded the output light distribution for various input angles at the
+power required for launching a soliton.
+Rotating a glass window positioned
+
+
+=== PDF PAGE 26 ===
+2.5. STUDIES OF DISCRETE SOLITON DYNAMICS
+21
+
+
+
+
+
+
+
+
+
+
+D
+$QJOH>UDG@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+E
+$QJOH>UDG@
+:DYHJXLGH1XPEHU
+Figure 2.9: Discrete soliton power steering: Output light distributions as a
+function of the input angle of (a) two and (b) three waveguides wide initial
+beams. In the two waveguides wide case, the locking for angles smaller than
+0.01 radian is very clear
+
+
+
+
+
+
+
+
+
+
+D
+$QJOH>UDG@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+E
+$QJOH>UDG@
+:DYHJXLGH1XPEHU
+Figure 2.10: Repeating the experiments of Fig. 2.9 for a two-soliton excitation.
+The symmetry of the soliton splitting is broken
+in front of the input objective controls the input angle. The results for two-
+and three-waveguides wide excitations are presented in Figs. 2.9(a) and 2.9(b),
+respectively. Imposing a phase gradient across a single waveguide input has
+no meaning because phase diﬀerence between diﬀerent waveguides is required
+for beam steering. Hence a beam coupled to a single guide always move along
+the waveguides. In the other extreme, the continuous case of a slab waveguide,
+we expect the output center to move linearly with input angle changes. In the
+intermediate cases of discrete solitons that extends over a few guides, power
+dependent locking [9] is expected due to the PN potential [7]. In Fig. 2.9(a)
+we note that although small angles are imposed on the input beam, its output
+center position does not change. Only beyond a critical angle where the kinetic
+energy overcomes the PN energy barrier, the soliton starts to move across the
+array. As the input beam becomes broader, the shallower PN potential allows
+the escape of the discrete soliton at a smaller angle. The smaller locking region
+
+
+=== PDF PAGE 27 ===
+22
+CHAPTER 2. NONLINEAR EXPERIMENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+ D
+,QSXW3RVLWLRQ>PP@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+
+
+E
+,QSXW3RVLWLRQ>PP@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+
+
+F
+,QSXW3RVLWLRQ>PP@
+:DYHJXLGH1XPEHU
+Figure 2.11: Discrete soliton translation induced steering: (a–c) Output light
+distributions as a function of the input position for one, two and three waveg-
+uide excitation, respectively. Ampliﬁed oscillations of the output position are
+observed. The oscillations are clearly induced by discreteness as they disappear
+as the excitation becomes wider
+in Fig. 2.9(b) compared to Fig. 2.9(a) demonstrates this eﬀect.
+An interesting result was obtained when the last experiment was repeated
+with input power which was enough for a second soliton. At a zero angle, the
+soliton brakes into two, as was shown in Figs. 2.6(a–c). When a tilt is intro-
+duced, symmetry is broken and more power goes to one of the two parts. The
+transition of power between the two parts for a two waveguides wide excitation
+is clearly seen in Fig. 2.10(a). In the case of a wider three waveguides beam
+(Fig. 2.10(b)), the splitting is even suppressed at large tilts. A single soliton is
+formed and its center depends linearly on the input angle.
+Results from experiments of the second kind, with beams with ﬂat phase
+fronts, are presented in Figs. 2.11 and 2.12. In these experiments the beam
+is launched along the waveguides direction while its input position is scanned
+transversally across the array. The sample is positioned on top of a piezo-driven
+stage and by changing the voltage on the piezo-electric element from zero to
+1000 V, the sample is shifted by 12 µm. First, the power was ﬁxed such that a
+single soliton has been formed. Output proﬁles for three diﬀerent input widths
+of one, two and three waveguides are shown in Figs. 2.11(a–c), respectively. We
+
+
+=== PDF PAGE 28 ===
+2.5. STUDIES OF DISCRETE SOLITON DYNAMICS
+23
+
+
+
+
+
+
+
+
+
+
+
+
+D
+,QSXW3RVLWLRQ>PP@
+:DYHJXLGH1XPEHU
+
+
+
+
+
+
+
+
+
+
+
+
+E
+,QSXW3RVLWLRQ>PP@
+:DYHJXLGH1XPEHU
+Figure 2.12: Repeating the experiments of Fig. 2.11 for a two-soliton excitation
+power. (a,b) Results for inputs of two and three waveguides width, respectively.
+The symmetry of the soliton splitting is broken
+observed an ampliﬁcation of the lateral translation of the beam, which is induced
+by discreteness. The nonlinear beam is interacting with the PN potential and
+as a result it is deﬂected into large angles. The deﬂection angle passes zero
+when the beam is centered on a waveguide (position zero in Fig. 2.11(a)) and
+exactly in the middle between two waveguides at ±4.5 µm, as can be expected
+from symmetry reasons. These two states correspond to the two extrema of
+the PN potential. In all other input positions, a non-uniform division of the
+power between two waveguides occurs.
+After a short propagation distance,
+the waveguide containing more power acquires more phase shift than the other
+one.
+The nonlinearly induced phase diﬀerence between the two waveguides
+causes propagation in an angle towards the waveguide containing more light, as
+we demonstrated before when we tilted the beam deliberately. The diﬀerence
+between the stable minima and the unstable maxima of the PN potential is
+manifested in the fast crossing of the output distribution at ±4.5 µm compared
+to the slow crossing around zero translation. For wider beams, the PN potential
+is shallower and the eﬀect is reduced. The eﬀect of a two waveguides wide input
+is small (Fig. 2.11(b)) while there is none for the three waveguides wide input
+(Fig. 2.11(c)).
+The eﬀect of input translation on the case where there is enough power for
+two-solitons is similar to the eﬀect of input rotation. As before, symmetry be-
+tween the two parts of the beam is broken. Translation has a periodic eﬀect
+because of the periodicity of the array. Therefore, light is repeatedly concen-
+trating into one beam part and then into the other. Figures 2.12(a,b) present
+these results for the two and three waveguides wide inputs, respectively.
+
+
+=== PDF PAGE 29 ===
+24
+CHAPTER 2. NONLINEAR EXPERIMENTS
+Figure 2.13: Experimental results showing both nonlinear self-focusing and self-
+defocusing in an array of waveguides, for slightly diﬀerent initial conditions.
+(a) The input beam, ∼35 µm wide at FWHM. (b) Light distribution at the
+output facet for normal diﬀraction in the linear regime.
+The beam slightly
+broadens through discrete diﬀraction. (c) At high power (Ipeak ∼150 W), the
+ﬁeld shrinks and evolves into a discrete bright soliton. (d) For an anomalous
+diﬀraction condition, when the beam is injected at an angle of 2.6 ± 0.4◦inside
+the array, it broadens slightly as in (b). Note the dark lines between the optical
+modes resulting from the π-phase ﬂips between adjacent waveguides. (e) When
+the power is increased (Ipeak ∼100 W), the distribution broadens signiﬁcantly
+due to self-defocusing
+2.6
+Self-Defocusing Under Anomalous
+Diﬀraction
+The relation between the nonlinear eﬀects and the diﬀraction properties was
+discussed above. For self-focusing to occur in a positive n2 medium, a negative
+curvature, i.e. normal diﬀraction, is required. In the case of discrete diﬀrac-
+tion, where the diﬀraction sign can be inverted, we expect a richer spectrum of
+nonlinear eﬀects. In particular, at the bottom of the diﬀraction curve, where
+the diﬀraction sign is inverted, as the input beam intensity is increased, the
+excited kx modes are pushed up into the spectral band, resulting in a stronger
+broadening of the beam. This eﬀect, called self-defocusing, could be otherwise
+observed only in negative n2 material with slow nonlinear response [6].
+Applying tilts to the input beam launches diﬀerent groups of kx modes.
+Because of the high refractive index of AlGaAs (n0 ≈3.3) the angle inside
+the slab waveguide is much smaller then in air.
+The actual angle of energy
+propagation inside the array may still be diﬀerent, determined by the slope
+of the discrete diﬀraction relation [32]. Thus, for a beam around kx = π/d
+energy is propagating with a zero angle to the waveguides, just like for kx = 0.
+
+
+=== PDF PAGE 30 ===
+2.6. SELF-DEFOCUSING UNDER ANOMALOUS
+DIFFRACTION
+25
+F
+E
+G
+
+
+
+
+
+
+ D
+3RZHU>$8@
+
+
+
+
+
+
+
+
+
+
+
+
+
+3RZHU>$8@
+3RVLWLRQ>PP@
+
+
+
+
+
+
+
+3RVLWLRQ>PP@
+Figure 2.14: Comparison between cross-sections of the experimental results of
+Fig. 2.13 (solid line) and numerical solutions of coupled mode theory (solid
+circles, each represents the power in a single waveguide). (a,b) Normal discrete
+diﬀraction condition, low and high power, respectively. (c,d) Anomalous diﬀrac-
+tion condition, low and high power, respectively. Note the diﬀerence between
+nonlinear focusing (b) and defocusing (d)
+Results for beams that were launched at angles corresponding to these two
+cases are presented in Fig. 2.13. Figure 2.13(a) shows an image of the input
+beam. Figures 2.13(b,c) are images of the output facet when kx = 0 for low
+and high input powers, respectively. As can be seen, in this condition of normal
+diﬀraction, self-focusing which leads to the formation of bright solitons occurs.
+Figures 2.13(d,e) are again for low and high power, but when kx = π/d and
+the diﬀraction is anomalous. The maximal mode visibility in this case is an
+indication for the π phase jumps between adjacent guides. When low optical
+power is injected, the beam is slightly broadened to the same extent as in the
+normal case. The diﬀerence is obvious when the power is increased. Instead of
+focusing, which is expected in such positive n2 material, the light distribution
+expands considerably. Cross-sections of the results are compared to a numerical
+integration of Eqs. 1.8 (see Fig. 2.14). The experimental results prove to be in
+a very good agreement with this simple theory.
+In the anomalous diﬀraction regime we should expect to observe dark soli-
+tons. A dark soliton is a constant illumination in space, with a central dark
+notch which is a result of a π phase ﬂip [54]. At low powers, the dark zone
+broadens due to diﬀraction. If the right conditions are fulﬁlled, a stable dark
+
+
+=== PDF PAGE 31 ===
+26
+CHAPTER 2. NONLINEAR EXPERIMENTS
+Figure 2.15: Generation of a dark discrete solitary wave in the case of anoma-
+lous diﬀraction. (a) The input proﬁle, ∼40 µm wide at FWHM. (b) For nor-
+mal diﬀraction at low power, a notch is visible in the output proﬁle. (c) The
+beam evolves into two repulsive bright solitons when the intensity is increased
+(Ipeak ∼250 W). (d) For anomalous diﬀraction (beam tilt=2.0 ± 0.4◦in this ar-
+ray), the “dark” notch is initially present in the output proﬁle (linear case). (e)
+When the power is increased (Ipeak ∼250 W), the notch slightly narrows and
+becomes more marked . As a result of anomalous diﬀraction, the dark localiza-
+tion is self-sustained in a defocusing bright background, and does not disappear
+when the beam broadens nonlinearly
+notch in a constant background is formed at suﬃciently high power – a dark
+soliton.
+Dark solitons can be formed in two cases: the ﬁrst is when diﬀraction is
+normal and n2 is negative and the second is when diﬀraction is anomalous and
+n2 is positive. As we have the right conditions for the second options, we tried
+to launch discrete dark solitons in our samples of waveguide arrays [19,20]. A π
+phase mask was applied on the beam right before entering the sample. The shape
+of the input beam with the dark notch is presented in Fig. 2.15(a). As in Fig.
+2.13, we show results of normal incidence (kx = 0) in Figs. 2.15(b,c) and results
+of the anomalous diﬀraction condition (kx = π/d) in Figs. 2.15(d,e). In the nor-
+mal regime, the low power notch (Fig. 2.15(b)) is broader than one waveguide
+and somewhat blurred. At power that is suﬃcient to form a bright soliton (Fig.
+2.15(c)), the notch defocuses and becomes broader and more pronounced, while
+the ﬁnite bright background is focusing, as is expected in this regime. On the
+other hand, in the anomalous case the dark notch is preserved with power (Fig.
+2.15(e)) while the ﬁnite bright background undergoes self-defocusing.
+These
+results are not a discrete dark soliton in a strictly manner because the back-
+ground is not a constant illumination. Even more, in some of the results (Figs.
+2.15(b–d)) the bright and dark widths are on a comparable scale. Nevertheless,
+they show some signiﬁcant hints for this solitary phenomenon.
+
+
+=== PDF PAGE 32 ===
+2.7. INTERACTION WITH A LINEAR DEFECT STATE
+27
+D
+
+1RUPDOL]HG3RZHU
+
+
+
+
+
+E
+
+
+:DYHJXLGH1XPEHU
+F
+1RUPDOL]HG3RZHU
+
+
+
+
+
+G
+
+:DYHJXLGH1XPEHU
+Figure 2.16: Experimental results of the defect sample for (a) low and (b) high
+power input. Numerical simulations for the same conditions are presented in
+(c) and (d), respectively
+2.7
+Nonlinear Interaction of a Linear Defect
+State with Discrete Diﬀraction
+There is a well-known way to form a linearly localized state in a discrete
+system. In an inﬁnite coupled array, when one waveguide has its propagation
+constant changed to β +∆β, a conﬁned mode around this site is created [11,12].
+Usually, changing the propagation constant β would also aﬀect the coupling
+constant to become C + ∆C. The conﬁned defect mode would have the shape:
+En (z) = E0
+ρ|n|
+µ
+1 + ∆C
+C
+¶
+exp (iβdefectz) ,
+(2.2)
+where the defect mode propagation constant is βdefect = β + (ρ + 1/ρ) C and
+the transversal decay rate ρ is deﬁned as:
+ρ = ∆β
+2C −
+sµ∆β
+2C
+¶2
++ 2
+µ
+1 + ∆C
+C
+¶2
+−1 .
+(2.3)
+When light is launched into such a linear mode, the high power result de-
+pends on the value of βdefect compared to the discrete band {β −2C < kz <
+β + 2C}. If the defect mode is above the band (βdefect > β + 2C), then the
+Kerr eﬀect will just raise it higher, without any dramatic consequences. When
+βdefect is in the band, the usual self-focusing is expected, similarly to the discrete
+soliton case. More interesting case is when the linear defect mode is below the
+
+
+=== PDF PAGE 33 ===
+28
+CHAPTER 2. NONLINEAR EXPERIMENTS
+Figure 2.17: Interaction of a discrete soliton with defects. The soliton is injected
+exactly on the defect, which is represented by a dashed line; (a-b) attractive
+case, experimental results and simulations; (c-d) repulsive defect, experimental
+results and simulations
+band (βdefect < β −2C). In the linear regime there is conﬁnement, as outlined
+before. As the injected power increases, the mode propagation constant enters
+the optical band, interacting linearly with it and enabling the dispersion of en-
+ergy into more waveguides. It is the opposite eﬀect of nonlinear self-focusing,
+but in this case, without the inversion of diﬀraction.
+We tested a sample of waveguide array with a separation of d=9 µm. Each
+waveguide was 4 µm wide except for the central waveguide (n = 0) which was
+2.5 µm wide. This diﬀerence caused a local change of the parameters such that
+∆β = −1.5C and ∆C = 0.3C, resulting in a conﬁned linear defect mode below
+the optical band (βdefect = β −2.9C). The calculated decay rate is negative
+ρ = −2.5, forming π phase jumps between adjacent waveguides. The conﬁned
+mode which was obtained by launching low power light only into the central
+waveguide is presented in Fig. 2.16(a). The π phase jumps give rise to the strong
+
+
+=== PDF PAGE 34 ===
+2.7. INTERACTION WITH A LINEAR DEFECT STATE
+29
+visibility of the three central waveguide modes. The weak wings are formed
+because the input light did not overlap completely the defect mode, therefore
+leading to radiation evolving through usual discrete diﬀraction. As the power is
+increased (Fig. 2.16(b)), The defect mode starts to interact with the diﬀraction
+band, and light is escaping out. The light distribution is becoming wider from
+about three waveguides to about seven. The same results are demonstrated
+numerically in Figs. 2.16(c,d).
+Next, we checked the eﬀects of the two types of defects, i.e. attractive and
+repulsive, on the transport of angled discrete solitons [55].
+An input beam,
+12 µm wide was injected at the soliton power on the site of a defect. The beam
+angle was scanned in order to observe the defect eﬀect on the soliton. The results
+are presented in Fig.
+2.17.
+Figures 2.17(a-b) are respectively experimental
+and numerical results for an attractive defect whose eﬀective index is above
+the diﬀraction band. Respectively, ﬁgures 2.17(c-d) are for a repulsive defect
+whose eﬀective index is below the band, like the one described in the previous
+experiment. The eﬀect on the soliton steering is clear. The attractive defect
+enhances the power locking of the soliton to its origin by linearly deepening the
+PN potential. It is now even harder for a discrete soliton to start travelling
+across the array. On the other hand, a repulsive defect releases the soliton by
+linearly ﬂattening the blocking PN potential. At zero angle input, the beam
+nonlinear broadening is evident. Compare this broadening to the enhancement
+in conﬁnement at the same angle for the attractive defect case. The comparison
+to the numerical results in both cases is remarkably good.
+
+
+=== PDF PAGE 35 ===
+30
+CHAPTER 2. NONLINEAR EXPERIMENTS
+
+
+=== PDF PAGE 36 ===
+Chapter 3
+Linear Eﬀects in
+Inhomogeneous Arrays
+Even though nonlinear optical solitons were the motivation for this research,
+they drove us to other territories. We were appealed by the option to check
+situations where diﬀraction is not as in continuous everyday media. Engineering
+the free parameters of waveguide arrays opens new possibilities for even linear
+optics.
+In this chapter, three schemes of altering the regular array structure are
+presented. The consequences of such diﬀraction control on nonlinear dynamics
+are discussed.
+We start with a linear index chirp and the resulting optical
+Bloch oscillations. The next section deals with randomization and its eﬀect on
+localization. Finally, we suggest a recipe for creating a waveguide of any desired
+diﬀraction relation.
+3.1
+Bloch Oscillations
+The eﬀect of Bloch oscillations is known for many years [56]. It is manifested
+by electron oscillations in a crystal lattice under a linear cross-potential of an
+electrical ﬁeld. The cause for the periodic behavior is an interplay between the
+accelerating ﬁeld and the discreteness of the atomic lattice. Due to discrete-
+ness, electrons experience a periodic dispersion relation and a Brillouin zone is
+deﬁned [42]. As the electrons are accelerated, they approach the border of the
+Brillouin zone. When they pass this border, they emerge from the other zone
+side, eﬀectively returning to their origin.
+A better understanding of this phenomenon can be achieved by examining
+the eigen-states of this system.
+It appears that the non-localized Floquet–
+Bloch states of the free discrete lattice, transform into localized states under
+the application of the linear potential – the Wannier–Stark states. Moreover,
+these localized states are energetically equally spaced, known as the Wannier–
+Stark ladder. Therefore, for any initial excitation of this system spanned by this
+31
+
+
+=== PDF PAGE 37 ===
+32
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+
+
+
+
+
+
+
+
+D
+3RVLWLRQPP
+/HQJWKPP
+
+
+
+
+
+
+
+
+E
+3RVLWLRQPP
+/HQJWKPP
+Figure 3.1: Results at low power input for the Bloch oscillations experiment.
+Subsequent outputs are from samples whose length diﬀer by 3 mm. (a) A single
+waveguide input 3 µm wide and (b) a wide input of 20 µm. The output power
+distribution is shown as a function of the propagation length. The optical ﬁeld
+is reforming to its input after 12 mm
+set of functions, there must be a certain time of evolution when all the functions
+accumulate a phase which is an integer multiple of 2π. This is the time when
+the initial excitation will be recovered.
+Recently, the equivalence between electrons in atomic lattices and optical
+waveguide arrays has been pointed out. Each single mode waveguide represents
+an S-level atom within the tight binding approximation. The coupling between
+neighboring atoms is replaced by the overlap of the waveguide evanescent modes.
+Furthermore, if an eﬀective linear cross-potential can be applied, Bloch oscilla-
+tions were predicted [33]. The implementation of a linear potential is by a linear
+change in the refractive index. The two balancing causes for the deﬂection of an
+optical excitation are Snell’s refraction and Bragg’s reﬂection. The equations of
+motion are identical to Eqs. 1.1, except for a waveguide dependent propagation
+constant:
+β →βn = β0 + nδβ .
+(3.1)
+In order to apply the required linear cross-section of refractive index, a few
+methods have been proposed. One method is to apply a voltage gradient across
+an array that is made of an electro-optical material [33]. The linear electrical
+ﬁeld induces a proportional index change through the electro-optic eﬀect. The
+slope of the index change is voltage dependent. Another method, which was
+used in one experimental realization [36], is to apply a temperature gradient
+across a thermo-optically active material. Again, the temperature changes the
+refractive index, resulting in the desired index change.
+
+
+=== PDF PAGE 38 ===
+3.1. BLOCH OSCILLATIONS
+33
+
+
+
+
+
+
+
+
+ D
+:DYHJXLGH1XPEHU
+/HQJWK>PP@
+
+
+
+
+
+
+
+
+ E
+:DYHJXLGH1XPEHU
+/HQJWKPP
+Figure 3.2: Numerical results at low power input. (a) A single waveguide in-
+put 3 µm wide and (b) a wide input of 20 µm. Results compare well with the
+experiments (Fig. 3.1)
+Two other methods to form a linear index gradient by structural patterning
+of the arrays were suggested. One idea is to induce an eﬀective index slope
+by using a regular array of curved waveguides [34]. Under a transformation
+that straiten the waveguides, the curvature transforms into the desired eﬀective
+potential. Another idea, the one that was used by us, is to construct the array
+such that each waveguide has a diﬀerent width [35].
+The width determines
+the waveguide eﬀective index, and if designed well, a gradual increase in the
+waveguide widths may lead to a linear increase in their eﬀective indices. As
+the individual mode shape is changing with the width too, attention has to be
+given to the separation between every two waveguides in order to keep constant
+coupling.
+We fabricated arrays of 25 waveguides with width variation between 2 to
+3.4 µm. The waveguide spacing was respectively changed between 6.6 to 3.3 µm.
+The coupling constant was C = 1240 m−1 and the propagation constant step
+was δβ = 520 m−1. Samples of diﬀerent lengths between 3 to 18 mm were cut
+with a step of 3mm.
+The samples were tested in a similar way to previous
+experiments such as in the demonstration of discrete solitons. The two basic
+linear observations are presented in Fig. 3.1. In Fig. 3.1(a), a single waveg-
+uide input (an excitation of all the spatial frequencies in the Brillouin zone) is
+diﬀracting and reforming after propagation of 12 mm. A wide input (a narrow
+frequency excitation, see Fig. 3.1(b)) is oscillating transversely with the same
+period. The wide beam is accelerated towards the higher index zone (wider
+waveguides). Near the edge of the Brillouin zone the phase diﬀerence between
+adjacent waveguides is close to π, as is proven by the high visibility of the
+individual waveguide modes. The experimental results can be compared to a
+numerical integration of the equations of motion (See Fig. 3.2).
+
+
+=== PDF PAGE 39 ===
+34
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+
+
+
+
+
+
+
+
+/HQJWKPP
+E
+3RVLWLRQPP
+/HQJWKPP
+
+
+
+
+
+
+
+
+3RVLWLRQPP
+
+D
+Figure 3.3: High power experimental ﬁeld evolution (about 2000 W peak power).
+Results were taken with the same parameters as in Fig. 3.1
+As the oscillations depend strongly on the exact phase relations between the
+diﬀerent modes, any perturbation on the optical phase will destroy this behavior.
+Such a perturbation can happen due to random scatterers in the light path.
+The nonlinear Kerr eﬀect can also change the phase of individual waveguides
+according to the amount of optical power they carry.
+There is an analogy
+between the two eﬀects [57]. In the presence of this eﬀect, no reformation of
+the light distribution can occur. Experimental results from the same sample,
+but for high power input, are presented in Fig. 3.3. Because of the Kerr eﬀect
+the waveguides that contain power have higher index. This index change make
+them resonate with the waveguide to their right (the wider waveguide) and
+generally we can observe a tendency of light coupling towards this direction.
+Bloch oscillations are destroyed. The next section provides another connection
+between random scattering and nonlinearity.
+3.2
+Anderson Localization
+Looking further at the similarities between atomic crystals and optical waveg-
+uide arrays, we examined the eﬀect of randomness on nonlinear localization [58].
+It is well known that as random elastic scatterers are added to a crystal, the non-
+localized electron wave-functions (the Bloch states) are becoming localized [59].
+As a result, an initial excitation would ﬁnd it more diﬃcult to transport along
+the crystal. Above a certain threshold of the amount of randomness, transport
+becomes impossible and the crystal behaves like an insulator [60]. This eﬀect is
+called Anderson localization.
+Scattering centers could be introduced in crystals by growth defects. The
+equivalent of a crystal defect in the waveguide array case was already described
+in section 2.6. A waveguide defect changes only the phase of the light that is
+passing through it, thus behaving like an elastic scatterer. Filling the whole
+
+
+=== PDF PAGE 40 ===
+3.2. ANDERSON LOCALIZATION
+35
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+Localization Parameter
+Output Peak Power [W]
+Figure 3.4: The dependency of localization in random arrays as a function of
+randomness and nonlinearity. In all arrays, localization is becoming larger as
+the input power is increased. Output from longer eﬀective length arrays is less
+localized (coupling lengths of 3.82, 5.15 and 7.30 are presented by solid circles,
+solid triangles and solid rectangles, respectively). Random arrays are clearly
+conﬁning light better than the regular array (3.84 coupling lengths, open circles).
+Note how the localization in the regular array is less aﬀected by nonlinearity
+array with such defects would be realized by randomly changing the width of
+all the waveguides. The optical super modes of the array are becoming more
+localized as more randomness is introduced. Now, any localized input light is
+spanned by a limited number of modes, thus preventing the light from evolving
+into more distant waveguides, as would happen in a regular periodic array.
+As was shown before, the nonlinear Kerr eﬀect also results in localization.
+We were interested in examining the interplay between these two phenomena.
+Four types of arrays were fabricated: three arrays of random widths and one
+with a constant width. The regular array had 4 µm wide waveguides, spaced by
+4.5 µm. Comparing light propagation in this array with a coupled-mode theory
+simulation [1], the eﬀective propagation length of this sample was calculated to
+be 3.84 coupling lengths. Then, using beam propagation method (BPM)1 [61],
+the eﬀective indices of the sample were ﬁt. All the random arrays waveguide
+widths were distributed evenly over the range of 2.5–4.5 µm. The waveguide
+spacing were 2,3 and 4 µm. Eﬀective length were calculated for the three random
+samples by assuming the average width of 3.5 µm, the diﬀerent spacing and the
+calculated eﬀective indices. The lengths are 7.30, 5.15 and 3.82 coupling lengths
+1FreeBPM, a freeware windows application that was developed during this Ph.D. work, is
+available at http://www.freebpm.com
+
+
+=== PDF PAGE 41 ===
+36
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+0
+100
+200
+300
+400
+500
+600
+4
+6
+8
+10
+12
+Translation [Waveguides]
+Output Peak Power [W]
+Figure 3.5: The dependency of lateral translation of a tilted beam in random
+arrays as a function of randomness and nonlinearity. In all arrays, translation
+is becoming smaller as the input power is increased (power steering). Output
+from longer eﬀective length arrays is more translated (symbols represent the
+same parameters as in ﬁgure 3.4). Random arrays are better ‘insulators’ than
+the regular array
+for the 2,3 and 4 µm samples, respectively. All arrays had 61 waveguides.
+Like in the previous experiment of Bloch oscillations, we checked the evolu-
+tion of two types of input. The ﬁrst is a narrow, single waveguide input, which
+excites all spatial frequencies.
+Such an input should experience the largest
+amount of diﬀraction and spread over the largest possible extent. As random
+arrays would give a random behavior, and therefore random output light distri-
+butions, ten output proﬁles of input at diﬀerent positions across the array, were
+averaged for every measurement. The full width at half the maximum or a gaus-
+sian ﬁt methods for estimating the width of a function are not suitable in this
+case because of the irregular light distributions (not bell-shaped) of even regular
+arrays. Thus, we calculated the amount of broadening for each distribution by
+deﬁning a localization parameter L:
+L =
+P
+n
+I2
+n
+P
+n
+In
+2 .
+(3.2)
+L is becoming larger as light occupies smaller number of waveguides. It is unity
+at the input, and decreasing thereafter. Any localization process should result
+with increase of the localization parameter.
+
+
+=== PDF PAGE 42 ===
+3.3. DIFFRACTION MANAGEMENT
+37
+The measurements of the localization parameter at various input powers and
+in the four diﬀerent arrays are summarized in ﬁgure 3.4. We observe all types of
+expected behavior. In general, light is becoming more localized as optical power
+is increased, while the opposite happens as it propagates further. Randomness
+is a localizing factor for all intensities, as the light from the random array of
+3.82 coupling lengths (solid circles) is much more conﬁned then that from the
+regular 3.84 coupling lengths array (open circles). More intriguing is the fact
+that the sum of the two localization mechanisms is greater then its constituents.
+All the random arrays show a faster localization with increasing power than the
+regular array.
+A second type of input condition was checked in order to explore the trans-
+port properties of light across the random arrays. A tilted wide beam of a few
+waveguides width was allowed to propagate while hopping across the array. Its
+angle was tuned to the kxd = π/2 condition (see ﬁgure 3.5) where the largest
+lateral shift should occur. The amount of lateral translation was measured by
+the center of mass of the output distribution:
+X =
+P
+n
+nIn
+P
+n
+In
+.
+(3.3)
+These results are reproducing all the expected features. As the input in-
+tensity is raised, power steering (see section 2.5) limits the amount of beam
+translation. Randomness proves to be an insulation factor because the beam
+translated more in the regular array then in its random counterpart. The results
+at high intensity should be regarded with care, as at these conditions the beams
+tend to scatter considerably in the random arrays. A consequence of this is that
+high power locks the beam more eﬃciently in the regular array.
+This experiment had an underlying fault: a small number of couples of
+adjacent waveguides were too close to each other. As a result, a couple like that
+has one mode instead of two, therefore behaving like a single waveguide. The
+results still hold in general, as the occurrence of this problem was quit rare.
+3.3
+Diﬀraction Management
+The existence of a periodic diﬀraction relation in waveguide arrays suggests new
+possibilities in linear and nonlinear beam manipulation. After showing many
+nonlinear phenomena in this discrete optical system, we have investigated some
+linear properties. In particular, the most novel linear property is the diﬀraction
+sign inversion in the π/2 < |kxd| < π regime [62]. Recently, a similar eﬀect was
+shown to happen also in photonic crystals [63].
+The diﬀraction of linear light beams is analogues to the eﬀect of dispersion
+on the temporal evolution of optical signals. In fact, we already used terms
+which were taken from dispersion theory, e.g., the anomalous diﬀraction. One
+important task in ﬁber optics research is dispersion control. The ﬁber index
+proﬁle can be engineered in order to achieve certain amount of dispersion, or
+
+
+=== PDF PAGE 43 ===
+38
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+even to reverse its sign [64]. In the last years, fast development of new ideas in
+dispersion control [65–67] was motivated by its importance to optical commu-
+nication. We borrowed a central scheme used in dispersion control in order to
+design planar waveguides of engineered spatial diﬀraction.
+Because dispersion and diﬀraction are linear operations, the two diﬀerent
+operators are commutative, thus aﬀecting the system through their sum. The
+outcome of propagating through two diﬀerent regimes of dispersion do not de-
+pend on which was ﬁrst.
+If both lengths are equal, the overall experienced
+dispersion is the average of the two. Dispersion management uses a set of dif-
+ferent length ﬁbers with diﬀerent dispersion properties [65]. The lengths are
+designed such that by travelling through all ﬁbers, optical pulses experience a
+pre-deﬁned overall dispersion.
+It is the existence of anomalous diﬀraction in waveguide arrays that enables
+a similar design of diﬀraction.
+Diﬀraction management is even more math-
+ematically straightforward, as discrete diﬀraction curves, under coupled-mode
+theory, are always cosine functions. By fabricating a planar waveguide composed
+of sections of diﬀerent patterns of arrays, it is possible to engineer diﬀraction.
+Light would travel through such structures the same way as travelling through
+a waveguide of averaged homogenous diﬀraction of the form:
+⟨kz⟩(kx) · L
+=
+X
+i
+k(i)
+z (kx) · li = kL +
+X
+i
+2liCi cos (kxdi + θi) ,
+(3.4)
+L
+=
+X
+i
+li
+θi = kdi sin (αi) ,
+(3.5)
+where li is the length of the ith section and k(i)
+z (kx) is its diﬀraction relation.
+The array section’s coupling constant, waveguide separation and angle to the
+bz-axis are Ci, di and αi, respectively. By using 0 and π/2 values for θ, any arbi-
+trary periodic function can be spanned by its sine and cosine Fourier elements.
+For example, a periodic triangular diﬀraction relation is spanned by the series
+P
+n
+cos[(2n−1)kxd]
+(2n−1)2
+. In such an ideal array, light power is allowed to propagate in
+only two directions while experiencing no diﬀraction. A reasonable approxima-
+tion for such a function can be obtained by alternating only two kinds of arrays
+with separation ratio of d1/d2 = 3 and length ratio of l1/l2 = 9C2/C1.
+In order to demonstrate diﬀraction management, we fabricated waveguides
+of engineered reduced diﬀraction, no diﬀraction and anomalous diﬀraction. The
+waveguides were made of only two kinds of equal length, alternating sections.
+All of the two section parameters were identical except for α, their angle with
+the bz-axis. This angle had constant absolute value, but alternating sign. As α
+is becoming larger, diﬀraction is reduced, until it is zero when α = arcsin
+¡ π
+kd
+¢
+.
+Beyond this point, diﬀraction becomes anomalous.
+We fabricated such zigzag arrays of angles corresponding to θ = 0, π/4,
+π/2, 3π/4 and π. The advantage of such zigzag conﬁguration over just a tilted
+array is the symmetric cancellation of the diﬀraction high orders. For example,
+although a tilted array of θ = π/2 has a zero diﬀraction at zero incident angle,
+higher derivatives of the diﬀraction curve still exist and can contribute to an
+
+
+=== PDF PAGE 44 ===
+3.3. DIFFRACTION MANAGEMENT
+39
+θ=π
+θ=3π/4
+θ=π/2
+θ=π/4
+θ=0
+-100 -75
+-50
+-25
+0
+25
+50
+75
+100
+θ=π
+θ=3π/4
+θ=π/2
+θ=π/4
+θ=0
+Position [µm]
+-14-12-10 -8 -6 -4 -2 0
+2
+4
+6
+8 10 12 14
+ Position [Waveguide Number]
+Figure 3.6: Output intensity proﬁles after propagation of a 5 µm wide input
+through zigzag arrays.
+Upper graph: Experimental results for various tilt
+angles. Lower graph: calculated output by beam propagation method (con-
+tinuous lines) and coupled-mode theory (vertical bars). Inset: a sketch of the
+waveguides
+
+
+=== PDF PAGE 45 ===
+40
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+θ=π
+θ=3π/4
+θ=π/2
+θ=π/4
+θ=0
+-100
+-75
+-50
+-25
+0
+25
+50
+75
+100
+θ=π
+θ=3π/4
+θ=π/2
+θ=π/4
+θ=0
+Position [µm]
+-12 -10 -8
+-6
+-4
+-2
+0
+2
+4
+6
+8
+10 12
+ Position [Waveguide Number]
+θ=0
+π/4
+π/2
+3π/4
+π
+20
+30
+40
+50
+ w0 [µm]
+Figure 3.7: Same as Fig. 3.6 for a 21 µm wide input. Inset: widths for the
+experimental output proﬁles
+
+
+=== PDF PAGE 46 ===
+3.3. DIFFRACTION MANAGEMENT
+41
+asymmetric broadening of an initial beam [68]. In the zigzag array of the same
+angle, light in any angle experiences no diﬀraction whatsoever.
+The results of propagation of narrow, single waveguide input in these arrays
+are described in the upper part of Fig. 3.6. Zero zigzag angle is simply a plain
+straight array. At the zero diﬀraction case (θ = π/2), light is barely coupled
+into other than the input waveguide. Beyond this angle, the broadening is a
+result of anomalous diﬀraction. Some light is scattered at the sharp turns and
+the desired eﬀect is reduced. This ﬂaw may be corrected by arrays of smoother
+corners. The lower part of 3.6 compares numerical results of propagation in
+the arrays. We used simulations of two kinds: a coupled-mode based numerical
+solution [1] and a beam propagation method [61] solution. The BPM is more
+realistic as it considers more details, and therefore more consistent with the
+experiments.
+The output distributions from a wider input that covers several waveguides
+are presented in Fig. 3.7 in a similar way. Although a broader beam is aﬀected
+less by diﬀraction, some broadening is measured. The inset of Fig. 3.7 proves
+that the array of designed zero diﬀraction induces the minimal beam broadening.
+Some of the potential applications of nonlinear beams in such designed
+waveguides are already demonstrated by the results presented in section 2.6.
+The idea of dispersion managed solitons [66, 67] can be applied in the space
+domain to produce diﬀraction managed solitons. Reference [69], that was pub-
+lished as a consequence of this work, discusses this situation.
+
+
+=== PDF PAGE 47 ===
+42
+CHAPTER 3. LINEAR EFFECTS IN INHOMOGENEOUS ARRAYS
+
+
+=== PDF PAGE 48 ===
+Chapter 4
+Kerr Spatiotemporal
+Self-Focusing
+The propagation of intense ultrashort light pulses has received a lot of attention
+over the last decade. It is inﬂuenced by the interplay of various physical mecha-
+nisms, the most important being diﬀraction, material dispersion, the nonlinear
+Kerr eﬀect and nonlinear absorption [70]. One of the most intriguing cases is
+when diﬀraction and dispersion have the same sign and magnitude. Measures to
+these magnitudes are the typical propagation lengths it takes a pulse to expand.
+The diﬀraction and dispersion lengths are deﬁned respectively as:
+LDif = k0L2
+0
+LDis = T 2
+0
+β2
+.
+(4.1)
+β2 =
+∂2k
+∂ω2 is the material chromatic dispersion while L0 and T0 are the pulse
+initial width and length, respectively. In the linear regime, equal diﬀraction
+and dispersion lengths results in a pulse that expands uniformly in space and
+time.
+At high light intensity in a nonlinear medium, the Kerr nonlinearity
+simultaneously compensates for both eﬀects by self-focusing in space and self-
+phase modulation (SPM) in the time domain. Consequently, pulses undergo
+spatiotemporal contraction and may form optical light bullets [71]. Such a case
+occurs in materials with positive Kerr coeﬃcient and anomalous dispersion.
+Basic analysis of the propagation of multi-dimensional pulses, involving the
+slowly varying envelope approximation, predicts instability [71]. Such pulses
+are categorized as ‘1+2’ and ‘1+3’ cases, depending on whether diﬀraction is
+limited to one dimension, as in a planar waveguide, or to two as in a bulk
+medium. A pulse having power beyond a critical value is predicted to contract
+to a singular solution. However, such mathematical collapse is usually avoided
+in experiments because of other eﬀects which become signiﬁcant, e.g., higher
+order nonlinearities such as multi-photon absorption [72] and saturation of the
+Kerr nonlinearity [73]. Light bullets are solitary light pulses that propagate
+43
+
+
+=== PDF PAGE 49 ===
+44
+CHAPTER 4. KERR SPATIOTEMPORAL SELF-FOCUSING
+while retaining their shape in all dimensions. They are a combination of the
+well known spatial and temporal solitons.
+4.1
+Experimental Results
+Recently, a few experiments attempted to demonstrate simultaneous spatiotem-
+poral focusing. Nevertheless, all the nonlinearities used were other than Kerr.
+Liu et al. [74] used the cascading of quadratic nonlinearity to create a bound
+pair of fundamental and second harmonic pulses, co-propagating while balancing
+each other’s spatiotemporal shape. In another experiment [75], the balancing
+of normal dispersion by its higher orders and the Kerr nonlinearity, was shown
+to form stable three dimensional pulses in a bulk media.
+Pulse splitting in
+the normal dispersion regime, where self-phase modulation broadens the pulse
+temporally, was also demonstrated experimentally [76].
+We studied experimentally the propagation of intense ultrashort pulses in
+the ‘1+2’ case, i.e., in a planar glass waveguide, where the Kerr nonlinearity is
+predominant [77]. The nonlinear behavior in the diﬀerent regimes of anomalous,
+zero and normal dispersion was compared [78]. Only in the anomalous case the
+pulses focus simultaneously in space and time. Nevertheless, we did not observe
+the predicted catastrophic collapse [71].
+In fact, beyond a certain power at
+which the spatial and temporal proﬁles are the narrowest, the pulses start to
+expand. We present numerical studies showing that the main causes for this
+behavior are multi-photon absorption [72] and intra-pulse Raman scattering
+[79,80]. Based on this model, we believe that after the pulse reaches its minimal
+size, it propagates in a way that resembles the propagation of light bullets.
+However, our results also suggest that such pulses can not propagate indeﬁnitely,
+since the same eﬀects that arrest their collapse eventually cause their expansion.
+This is the ﬁrst time that spatiotemporal focusing has been experimentally
+observed in a Kerr medium.
+In the experiment we coupled transform limited 60 fs pulses, with peak pow-
+ers up to 20 MW, from a Spectra Physics OPA 800 optical parametric ampliﬁer,
+into planar glass waveguides. We used a combination of microscope objective
+and cylindrical lenses to achieve an elliptical beam, about 170 µm wide, with a
+ﬂat phase-front at the input facet of the sample. This combination also enables
+matching of the beam size, and thereby the diﬀraction length, to the dispersion
+length of such pulses in glass. The single-mode waveguide was 3 cm long, con-
+sisting of a 4 µm thick germanium–boron doped silica slab waveguide deposited
+by ﬂame hydrolysis deposition on an oxidized silicon wafer with a 14 µm thick
+layer of SiO2.
+The output facet of the sample was imaged onto an infrared
+camera. A portion of the output beam was directed to a spectrometer. Another
+portion of the beam was directed to a non-colinear autocorrelator. The 100 µm
+thick BBO nonlinear crystal used in our autocorrelator enables accurate mea-
+surement of pulse durations down to 10 fs. The glass in the optical path to the
+autocorrelator introduced a systematic error to the pulse width measurements,
+which we estimate to be smaller than 10 fs. An aperture, placed in an image
+
+
+=== PDF PAGE 50 ===
+4.1. EXPERIMENTAL RESULTS
+45
+-250 -200 -150 -100
+-50
+0
+50
+100
+150
+200
+250
+-300
+-200
+-100
+0
+100
+200
+300
+-250 -200 -150 -100
+-50
+0
+50
+100
+150
+200
+250
+Position [µm]
+-300
+-200
+-100
+0
+100
+200
+300
+Power
+(d)
+(b)
+(c)
+(a)
+Time [fs]
+Figure 4.1: Normalized (a) Spatial proﬁles and (b) temporal autocorrelation
+traces of the light pulses in the anomalous dispersion regime, emerging from the
+sample. The proﬁles are arranged so that results at higher input powers are
+plotted sequentially upwards. Spatial and temporal contraction are obtained
+simultaneously for peak powers of 600 kW. For a comparison with the numerical
+results, see (c) for spatial proﬁles and (d) for on-axis temporal autocorrelation
+traces
+plane of the output facet, allowed temporal and spectral characterization of the
+central part of the output beam. We repeated the experiment at three diﬀer-
+ent wavelengths, 1.52 µm (anomalous dispersion), 1.30 µm (zero dispersion) and
+1.04 µm (normal dispersion).
+The results for the anomalous dispersion case, with the laser tuned to
+1.52 µm, are shown in Fig.
+4.1.
+Figure 4.1(a) shows the beam spatial pro-
+ﬁle at the output facet for diﬀerent values of power.
+As the power of the
+incoming beam is increased, the beam width ﬁrst contracts to about 20 µm,
+then remains nearly unchanged as the power is increased. Eventually, the beam
+slightly broadens while breaking up into ﬁlaments which broaden and merge.
+The corresponding autocorrelation traces (Fig. 4.1(b)) also show a contraction
+by a factor of nearly two. The narrow pulse which is formed (20 µm × 30 fs)
+seems to be stable for a range of input intensities. It is important to note that
+the temporal proﬁle and the spatial cross-section evolve simultaneously, reach-
+ing their minimum values at the same power. This can be clearly seen in Fig.
+4.3, where the beam parameters are plotted as a function of the peak power.
+
+
+=== PDF PAGE 51 ===
+46
+CHAPTER 4. KERR SPATIOTEMPORAL SELF-FOCUSING
+-300
+-200
+-100
+0
+100
+200
+300
+-250 -200 -150 -100
+-50
+0
+50
+100
+150
+200
+250
+Power
+(d)
+(c)
+(b)
+(a)
+-200
+-100
+0
+100
+200
+Time [fs]
+-200
+-100
+0
+100
+200
+Position [µm]
+Figure 4.2: Experimental results for the zero dispersion regime, displayed as in
+Fig. 4.1
+Both parameters exhibit a shallow minimum around 600 kW. This value should
+be compared with a value of 160 kW for which collapse is theoretically predicted
+for the parameters of our experiment [71].
+The pulse does not collapse and no damage was observed, as would be ex-
+pected for a pure Kerr nonlinearity and anomalous dispersion model. As we
+discuss below, numerical simulations suggest that this is due to the signiﬁcance
+of multi-photon absorption and Stimulated Raman Scattering (SRS). These
+processes account for the higher than expected power required to induce spa-
+tiotemporal contraction, as well as for the eventual expansion of the pulses.
+We attribute the ﬁlamentation of the beam at high powers to instability due
+to imperfections in the input beam proﬁle. Simulations suggest that even with
+a smoother proﬁle, ﬁlamentation occurs at high power because of instabilities
+induced by nonlinear absorption [81].
+When the laser was tuned to the zero dispersion regime of glass, a completely
+diﬀerent pulse evolution was observed (see Fig. 4.2). The spatial focusing, al-
+though still present, is remarkably unstable.
+Beyond a short stage of beam
+focusing, its proﬁle breaks into multiple fragments, even before reaching mini-
+mal width as in the anomalous case. There is no stability power range whatso-
+ever. The temporal pulse evolution diﬀer even more from the anomalous case.
+No temporal contraction occurs at all. In this case, the result of nonlinearity
+is pulse broadening. Because initially all frequencies are laid around the zero
+
+
+=== PDF PAGE 52 ===
+4.1. EXPERIMENTAL RESULTS
+47
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0
+25
+50
+75
+100
+125
+150
+Input
+175
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0
+25
+50
+Input
+75
+100
+125
+150
+175
+Pulse Spatial Width [µm]
+Input Peak Power [MW]
+ 1520 µm
+ 1300 µm
+ 1040 µm
+(b)
+(a)
+Pulse Temporal Length [fs]
+Input Peak Power [MW]
+Figure 4.3: A comparison of the output pulses (a) spatial and (b) temporal
+widths in the three diﬀerent dispersion regimes. The pulses contract tempo-
+rally only in the anomalous dispersion regime (rectangles), while in the zero
+(circles) and normal (triangles) dispersion regimes there is nonlinear temporal
+broadening. In the zero dispersion case, temporal broadening occurs only after
+self-phase modulation creates enough spectrum at wavelengths far away from
+the zero dispersion wavelength
+dispersion zone, pulse broadening is possible only after a short stage when tem-
+poral frequencies are created nonlinearly in the pulse. At the same time when
+the beam experiences ﬁlamentation, it also splits temporally. This is shown as
+the multi-peak autocorrelation, because three peaks in an autocorrelation cor-
+respond to two peaks in the time domain. A qualitative veriﬁcation of these
+results is given by the numerical simulations, as compared in Figs. 4.2(c,d).
+The experimental results when the laser wavelength was tuned to the normal
+dispersion regime of glass, resembled qualitatively the behavior seen near the
+zero dispersion point.
+A summarized comparison of the pulse evolution in the three diﬀerent dis-
+persion regimes is presented in Fig. 4.3. The measured spatial and temporal
+widths for the three diﬀerent wavelengths are presented in Figs.
+4.3(a) and
+4.3(b), respectively. Spatial width data is presented only for input powers be-
+low which ﬁlamentation does not occur. Evidently, spatial self-focusing is ob-
+served in all three cases, but temporal contraction only occurs in the case of
+anomalous dispersion. Rather than becoming shorter, a signiﬁcant increase of
+the pulse duration is observed for normal dispersion [53]. For zero dispersion,
+no pulse broadening occurs initially, as was shown before. Yet, as the pulse
+spectrum expands through self-phase modulation at higher powers (see Fig. 4.5
+below), most of the energy in the pulse is pushed out of the zero dispersion
+regime, and the pulse begins to broaden. As a result, the spatial contraction is
+eﬀectively one-dimensional in the normal and zero dispersion regimes, while it
+is two-dimensional in the anomalous dispersion regime. The higher power which
+is needed to achieve spatial contraction in the anomalous dispersion regime is
+
+
+=== PDF PAGE 53 ===
+48
+CHAPTER 4. KERR SPATIOTEMPORAL SELF-FOCUSING
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+4
+6
+8
+10
+12
+14
+IInput/IOutput
+Input Peak Power [MW]
+Figure 4.4: Losses in the sample. Only in the case of anomalous dispersion
+are intensities high enough for nonlinear absorption achieved. The background
+linear loss (about 7) is due to the in and out coupling to the waveguide
+consistent with its higher dimensionality [71]. Simultaneous spatial–temporal
+contraction results in higher intensities, leading to stronger multi-photon ab-
+sorption and also contributes to the increased power requirement. Indeed, as
+shown in Fig. 4.4, only in the anomalous case we observed signiﬁcant nonlinear
+loss.
+There is an asymmetry between the compression achieved in space and in
+time, as seen in Fig.
+4.3(a,b).
+We attribute it to the wavelength limit on
+spatial and temporal focusing. The spot–size limit for focusing is about one
+wavelength. The minimal beam width that was observed in our experiment is
+about 20 times wider than the wavelength in the medium. On the other hand, in
+the time domain the minimal pulse length of 30 fs contains only about 6 optical
+cycles. Thus, higher orders of dispersion become important and aﬀect the rate
+of compression.
+Figure 4.5 shows the measured spectra as a function of increasing power.
+The spectra for anomalous, zero and normal dispersion are plotted in Figs.
+4.5(a), 4.5(b) and 4.5(c), respectively.
+In all three cases the spectra at low
+power closely resemble those of the respective input pulses, while at high power
+they broaden considerably through self-phase modulation. In the anomalous
+dispersion regime the broadening is accompanied by a pronounced Raman self-
+frequency shift towards longer wavelengths [82,83]. Stimulated Raman Scatter-
+
+
+=== PDF PAGE 54 ===
+4.1. EXPERIMENTAL RESULTS
+49
+1.3
+1.4
+1.5
+1.6
+1.7
+1.8
+1.9
+(f)
+(e)
+(d)
+(a)
+(b)
+(c)
+Wavelength [µm]
+1.0
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+Wavelength [µm]
+0.90
+0.95
+1.00
+1.05
+1.10
+1.15
+1.20
+Wavelength [µm]
+0.98
+1.00
+1.02
+1.04
+1.06
+1.08
+1.10
+1.12
+1.0
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+1.4
+1.5
+1.6
+1.7
+1.8
+Figure 4.5: Spectra recorded for (a) anomalous, (b) zero and (c) normal dis-
+persion for increasing input power. Numerical results are compared in (d–f),
+respectively
+ing (SRS) happens when a photon is scattered on an optical phonon, losing some
+energy and thus its wavelength is red-shifted. In contrast, near zero dispersion
+(Fig. 4.5(b)) a Stokes Raman scattering wing appears together with an anti-
+Stokes component [84]. The generation of anti-Stokes frequencies is unique to
+this regime because all three frequencies (input signal, Stokes and anti-Stokes)
+propagate with nearly the same group velocity. In the case of normal dispersion
+(Fig. 4.5(c)) the spectra are only characterized by a symmetric broadening, the
+signature of SPM alone. SRS is absent due to mismatch between the delayed
+nonlinear polarization which is mainly behind the pulse and the long wavelength
+Raman frequencies that travel faster towards its front. The diﬀerence in this
+mismatch between anomalous and normal dispersion pulse propagation is plot-
+ted in Fig. 4.6. The data presented in Fig. 4.5(a) was taken with a longer 5 cm
+sample, but this has only a small eﬀect on the emerging spectra.
+
+
+=== PDF PAGE 55 ===
+50
+CHAPTER 4. KERR SPATIOTEMPORAL SELF-FOCUSING
+Anomalous Dispersion
+Normal Dispersion
+Figure 4.6: The reason Raman eﬀects are dominant in the anomalous regime.
+The pulse (solid line) induces a delayed nonlinear polarization response (dashed
+line) which overlaps longer wavelengths of the pulse only in the anomalous case
+4.2
+Numerical Model
+We compare these experimental results to numerical simulations. The numer-
+ical model is based on a modiﬁed nonlinear Schr¨odinger equation for the ﬁeld
+amplitude E [53]:
+i∂E
+∂z = −1
+2k
+∂2E
+∂x2 + 1
+2β2
+∂2E
+∂t2 +k n2
+n0
+E
+∞
+Z
+0
+R(t′) |E(t −t′)|2 dt′−iαn
+2 |E|2(n−1) E .
+(4.2)
+In this equation, k is the vacuum wavenumber, β2 the dispersion param-
+eter, n2 the Kerr coeﬃcient and αn an n-photon absorption parameter.
+R(t) = finstδ(t) + fdelayhR(t) includes the instantaneous and delayed parts
+of the Kerr nonlinearity.
+The delayed nonlinear response is known to ap-
+proximate the Raman eﬀect in silica [79] and may be written in the form
+hR(t) = exp(−t/τ2) sin(t/τ1) where τ1 = 12.2 fs and τ2 = 32 fs are the non-
+linear polarization oscillations and decay typical time scales, respectively. The
+last term in the equation describes multi-photon absorption [72].
+We chose
+n = 6 because six-photon absorption is expected to be the dominant term in
+glass for 1520 nm light.
+A typical solution procedure is carried as follows. A typical complex grid of
+256x512 in the space and time directions is initialized three times. One matrix
+is to contain the current scalar electrical ﬁeld data, while the two others contain
+the current and previous material polarization. An initial pulse is written into
+the electrical ﬁeld matrix and the program starts to propagate it.
+In every
+step, the following calculations are performed. First, the 2-dimensional data
+matrix is Fourier transformed to frequency space. The dispersion and diﬀraction
+eﬀects are added as linear operations in this space. Then, the data matrix is
+transformed back to the real coordinate space. Here, nonlinear absorption is
+calculated. Consequently, the new nonlinear polarization is calculated at every
+
+
+=== PDF PAGE 56 ===
+4.2. NUMERICAL MODEL
+51
+point using the previous step polarization and the current step electrical ﬁeld
+by:
+P NL
+new = P NL
+old exp
+·µ i
+τ1
+−1
+τ2
+¶
+· dt
+¸
++ τ1 ·
+µ 1
+τ 2
+1
++ 1
+τ 2
+2
+¶
+|E|2dt .
+(4.3)
+Now, the eﬀects of the instantaneous and delayed Kerr nonlinearity are intro-
+duced as a nonlinear phase shift to the electrical ﬁeld:
+Enew = Eold exp
+£
+ik0n2
+¡
+0.2 · Im{P NL
+new} + 0.7 · |E|2¢
+dt
+¤
+.
+(4.4)
+The respective weights of instantaneous and delayed responses are taken from
+Ref. [79]. At the end of each step, some data is stored on the disk and the
+process starts over again. A typical simulation required 120000 steps. For main
+snippets from the original code, see Appendix B.
+The model reproduced our experimental results quite well. First, we ob-
+tained spatial self-focusing in all the three regimes, as expected. In the time
+domain there is contraction only for the anomalous dispersion case, where for a
+large range of input intensities, after a transient length of about 1 cm, the pulse
+propagates with an almost stable spatiotemporal proﬁle resembling a light–
+bullet. The zero and normal dispersion cases result in temporal broadening and
+eventually in pulse splitting, as predicted numerically [85] and recently observed
+experimentally [76]. Many features of the experiments were reproduced by the
+simulations. In particular, we obtained all the spectral features: self-frequency
+shift and spectral broadening in the anomalous case, Stokes and anti-Stokes
+scattering in the zero dispersion case and only spectral broadening due to self-
+phase modulation in the normal case. The spatial and temporal evolution for
+the anomalous and zero dispersion cases are presented in Figs. 4.1(c–d) and
+4.3(c–d), respectively. The spectral evolution for all three cases is presented in
+Fig. 4.5. The good agreement between numerical simulations and our observa-
+tions suggests that we have a good understanding of the dominant processes in
+these experiments.
+
+
+=== PDF PAGE 57 ===
+52
+CHAPTER 4. KERR SPATIOTEMPORAL SELF-FOCUSING
+
+
+=== PDF PAGE 58 ===
+Appendix A
+Diﬀraction Curves
+The concept of diﬀraction curves was introduced in section 1.3 in order to present
+and explain discrete diﬀraction. It provides a much more general tool for under-
+standing linear optics and also some nonlinear eﬀects. Its graphical nature can
+illustrate some basic principles while describing others in a precise geometrical
+manner. One known example where this approach is regularly used is in de-
+scribing phase matching in non-centrosymmetric crystals by index surfaces [1].
+Everything that will be shown here is applicable either in free propagation or
+under discrete optics conditions. Other situations, such as managed diﬀraction,
+are relevant as well.
+For the sake of simplicity, we discuss in this appendix the free propagation
+case.
+As explained before, the diﬀraction curve that relates longitudinal to
+transverse spatial frequencies is a semi-circle. Actually, a whole circle describes
+the situation better by including backward propagating plane waves. Each point
+on the curve corresponds to a particular plane wave, whose Poynting vector (the
+direction of energy ﬂow) is aligned perpendicular to the curve at that point.
+The diﬀraction of narrow optical beams is now illustrated in a straight for-
+ward way. The proﬁle of a conﬁned beam contains a band of spatial frequencies,
+the narrower the beam the wider is this band. Assuming a symmetric proﬁle,
+the packet is propagating along the Poynting vector of its central frequency (see
+Fig. A.1(a)). Nevertheless, other components of the beam are directed else-
+where, causing the beam to diverge. It is clear that as more components are
+included, as in a narrower beam, they are directed in a larger range of angles,
+resulting in a faster divergence of the beam energy.
+The passage of light through an interface between two diﬀerent materials
+is a basic problem in linear optics.
+We divide the problem into two parts,
+following the approach of Ref. [39]. The kinematic properties of the problem
+are the speciﬁc angles of the incident, transmitted and reﬂected waves (i ,t
+and r, respectively). The dynamic properties are the relations between their
+amplitude, phase and polarization. The basic conservation law that governs the
+kinematic properties is the phase continuity of the electromagnetic ﬁeld across
+the interface. The other conserved ﬁelds that determine the dynamic properties
+53
+
+
+=== PDF PAGE 59 ===
+54
+APPENDIX A. DIFFRACTION CURVES
+kz
+kx
+kz
+kx
+i
+r
+(a)
+(b)
+θi
+θr
+Figure A.1: (a) Diﬀraction of a conﬁned optical beam (b) Plane wave reﬂection
+from a mirror surface
+kz
+kx
+i
+r
+kz
+kx
+t
+i
+r
+nt
+ni
+(a)
+(b)
+Figure A.2: (a) Plane wave refraction at the interface between two dielectric
+materials (b) The critical angle for total internal reﬂection
+are the interface normal components of⃗D and⃗B and its parallel components of⃗
+E and⃗H.
+Phase continuity along an interface is equivalent to conservation of the par-
+allel component of k. If we assume, without loss of generality, the interface to
+lie along the bx-axis, the conserved component is kx. Therefore, the only possible
+new plane waves after such interface crossing should have the same kx compo-
+nent. It is now trivial to show that by hitting a mirror (Fig. A.1(b)), the only
+possible scattered waves are reﬂected at the incident angle θr = θi.
+When the interface is between two transparent materials of diﬀerent refrac-
+tive indices, more waves are possible. Notice how the circle radius that describes
+the diﬀraction curve depends linearly on the material index. Thus, the passage
+introduces a second circle of a diﬀerent radius (Fig. A.2(a)). We focus here on
+the case where ni > nt. The opposite case is a simple extension. The backward
+
+
+=== PDF PAGE 60 ===
+55
+kz
+kx
+t
+r
+i
+ni
+nt
+(a)
+(b)
+kz
+kx
+ky
+Figure A.3: (a) Beam refraction at a uniaxial crystal (b) Diﬀraction in the same
+crystal. The curvatures of kz(kx) and kz(ky) are diﬀerent, resulting in beam
+deformation
+wave in the new material is forbidden by inﬁnity boundary condition, but two
+other waves are still possible. First, the reﬂected wave back into the incident
+material, as in the mirror case.
+The other is the transmitted wave into the
+new material. By conserving kx while transferring to the inner circle, we see
+how the new transmitted wave has a new angle of propagation. Figure A.2(a)
+is a geometrical representation of Snell’s law. Beyond a certain angle, there
+is no projection to the smaller circle, as presented in Fig. A.2(b). This angle
+is the critical angle above which Total Internal Reﬂection (TIR) occurs. It is
+geometrically trivial to show that the critical angle satisﬁes sin θi = nt/ni. On
+the other hand, a projection from the smaller circle to the larger, corresponding
+to a transition between low to high index materials, always exists. No TIR is
+possible in this case.
+The diﬀraction relation approach generalizes the Snell’s law, resulting in a
+very useful tool. In the context of this work, it can describe in a very simple
+way the deﬂection of a beam in a waveguide array due to sudden changes in the
+array parameters. Such changes can also occur on entering from and exiting the
+array to the continuum. A more common example for using it, though still quite
+a complex situation, is with refraction and diﬀraction in non-centrosymmetric
+crystals. For example, imagine an optical beam entering a uniaxial crystal. The
+polarization is in the plane of incidence, as is the crystal extraordinary axis
+(see Fig. A.3). In such a case, the light experiences a diﬀerent refractive index
+(therefore a diﬀerent k-number and phase) in every direction. The results are
+nontrivial. The beam would be deﬂected less (or more) than predicted by Snell
+because the diﬀraction slope is not perpendicular to the vector that connects it
+to the origin. More precisely, when the crystal is positive and the extraordinary
+axis is along the bz-axis or when the crystal is negative and the extraordinary axis
+is along the bx-axis, deﬂection will be reduced. In the other two cases, the beam
+deﬂection will be higher than expected by just implying Snell’s law.
+Notice
+
+
+=== PDF PAGE 61 ===
+56
+APPENDIX A. DIFFRACTION CURVES
+kz
+kx
+i
+r
+kz
+kx
+t
+i
+r
+nt
+ni
+(a)
+(b)
+t’
+i’
+r’
+i’
+t’
+r’
+t
+Figure A.4: (a) Vector deﬁnitions for the geometrical Fresnel relation represen-
+tation (b) The Brewster angle for a polarization within the incidence plane
+that the phase fronts will be still pointing in the Snell’s direction, resulting in
+a mismatch between the phase vector and the Poynting vector.
+Diﬀraction in uniaxial crystals is peculiar too.
+One consequence of this
+situation is that the curvatures of the diﬀraction relation, when the beam is
+on the bz-axis, diﬀer between the bx and by (out-of-plane) directions. Thus, an
+initially circular beam diﬀracts diﬀerently in the two dimensions. The result
+of such propagation is an elliptical deformation of the circular symmetric beam
+shape. Moreover, if the polarization is not linear and/or not aligned along a
+major axis, the two polarization components will diﬀract diﬀerently, leading to
+a complex polarization structure across the beam proﬁle.
+The dynamic properties of the interface crossing situation can also be derived
+geometrically from plots of the same kind (see Fig. A.4(a)). The justiﬁcation
+for this derivation is less established though.
+Nevertheless, its simplicity is
+interestingly appealing. The problem is traditionally divided into two cases.
+The ﬁrst is when the polarization of the incident light is perpendicular to the
+plane deﬁned by the vectors i, t and r, i.e., the plane of incidence. In this case,
+we write the Fresnel relations using these vectors and then derive back the usual
+form:
+Er
+Ei
+= [⃗i −⃗t]z
+[⃗t −⃗r]z
+= ni cos θi −nt cos θt
+ni cos θi + nt cos θt
+,
+(A.1)
+Et
+Ei
+= −[⃗i −⃗r]z
+[⃗r −⃗t]z
+=
+2ni cos θi
+ni cos θi + nt cos θt
+.
+(A.2)
+[⃗v]z designates a projection of⃗v on the bz-axis.
+Although this projection is
+not necessary here because all vectors have the same kx component, It will be
+required in the next case. Notice how the Fresnel relations are reconstructed
+using a simple and symmetrical form. It is very easy now to check that the two
+
+
+=== PDF PAGE 62 ===
+57
+boundary conditions are fulﬁlled by simple vector algebra.
+Ei = Et −Er ,
+(A.3)
+Ei = nt
+ni
+cos θt
+cos θi
+Et + Er .
+(A.4)
+In order to write down the Fresnel relations for light polarization within
+the plane of incidence, we deﬁne some new vectors, marked by a tag (see Fig.
+A.4(a)). The principle is that a tagged vector is the intersection of the untagged
+vector with the circle of the other refractive index. Using this set of vectors, it
+is easy to show that the Fresnel relations can be written and derived back by:
+Er
+Ei
+= [⃗i′ −⃗t′]z
+[⃗t′ −⃗r′]z
+= nt cos θi −ni cos θt
+nt cos θi + ni cos θt
+,
+(A.5)
+Et
+Ei
+= −[⃗i −⃗r]z
+[⃗r′ −⃗t′]z
+=
+2ni cos θi
+nt cos θi + ni cos θt
+.
+(A.6)
+Here again, the boundary conditions are veriﬁed vectorially:
+Ei = nt
+ni
+Et −Er ,
+(A.7)
+Ei = cos θt
+cos θi
+Et + Er .
+(A.8)
+The case of parallel polarization is known for the possibility of no reﬂected
+wave. The speciﬁc angle of incidence when all the light is passing through the
+interface is called the Brewster angle. We can see now in a geometrical way
+that in order for this to happen,⃗i′ and⃗t′ have to have the same height, or kz
+components (see Fig. A.4(b)). It is possible to show geometrically that this
+condition can occur only when θi + θt = π/2, or equivalently tan θi = nt/ni.
+Beyond this angle, the reﬂection experiences a phase reversal as [i’-t’]z becomes
+negative.
+Diﬀraction curves can also describe the basic operation of some optical el-
+ements, such as gratings and prisms. Figure A.5(a) demonstrates the Bragg
+condition for scattering a plane wave oﬀa grating with period of 2π/∆K. The
+only possible angle is when the sum of the two vectors⃗i1 and ∆K falls on an
+allowed plane wave of the same diﬀraction curve. For example, the i2 wave can
+not be scattered by this grating. A diﬀerent wavelength, having another curve
+radius, will have Bragg’s condition fulﬁlled at another angle. In a more realistic
+case, a wide spectrum (with a range of curve radii) optical beam (having a range
+of kx) is described as diﬀracting from a ﬁnite grating (thus of not well deﬁned
+∆K) in Fig. A.5(b). The properties of the diﬀracted beam can be derived from
+the intersection of all possibilities with the diﬀraction curve.
+A prism is described as refraction at two consecutive angled interfaces. We
+recall that the possible k vectors after crossing an interface are those that con-
+serve the parallel k component. Thus, as depicted in Fig. A.5(c), a plane wave
+i is ﬁrst refracted into t1 of the higher index. When exiting the prism glass, it
+is refracted again into t2. It is now possible to show geometrically (Fig. A.5(d))
+
+
+=== PDF PAGE 63 ===
+58
+APPENDIX A. DIFFRACTION CURVES
+kz
+kx
+i1
+t
+∆K
+i
+t
+kz
+kx
+i2
+kz
+kx
+kz
+kx
+t1
+i
+t2
+enter
+exit
+i
+t1
+t2
+t1
+i
+t2
+(a)
+(b)
+(c)
+(d)
+Figure A.5: (a) Bragg’s condition for grating diﬀraction of plane waves. (b) A
+conﬁned polychromatic beam diﬀracting on a ﬁnite grating. (c) A monochro-
+matic plane wave passing through a prism. (d) Two wavelengths spatially dis-
+persed in a prism
+the diﬀerence in refraction of two wavelengths, initially having the same angle
+of propagation. When the index (curve radius) dependency on wavelength is
+only of ∝1/λ, the two wavelengths are not separated.
+This can be proven
+easily by triangles similarity. It is only when the index of refraction changes
+quadratically with wavelength (dispersive glass), that the two plane waves are
+angularly separated at the prism output.
+
+
+=== PDF PAGE 64 ===
+Appendix B
+Spatiotemporal BPM Code
+Here is an edited code from the simulation that was used in the planar glass
+spatiotemporal focusing experiment. The code is in the C computer language.
+A few parts are omitted such as some of the function bodies.
+#define SIGN(a) ((a>=0) ? 1 : -1)
+#define NX 256
+#define NX2 512
+#define NY 512
+#define NZ 120000
+#define AREA 131072
+#define DIM 2
+#define C 3e8
+void fourn(double data[],unsigned long nn[],int ndim,int isign);
+void phase(double [],double);
+inline double power(double []);
+double xposition(int);
+double tposition(int);
+void GetInitials(char *,double []);
+void error(int,char *);
+double grid_width,grid_length,z_length,beam_width,pulse_length,
+intensity,confocal_length,input_angle,input_center,wavelength,
+k0,n0,dn,n2,beta2,alpha6,
+omega2,tau1=12.2e-15,tau2=32e-15,
+*Pnl[2],*Ptemp;
+int intervals=12;
+59
+
+
+=== PDF PAGE 65 ===
+60
+APPENDIX B. SPATIOTEMPORAL BPM CODE
+int main(int argc, char *argv[]){
+double *data,temp,dz,dt,kx,w,td,tdr,pd[4],
+expr,sini,cosi,dz_const,dt_const;
+long i,j,k,z,p,td1,td2;
+unsigned long nn[DIM]={NX,NY}, nn2[1]={NY};
+if(argc!=2) error(1,"");
+// Memory allocation
+data=(double *)malloc(sizeof(double)*2*NX*NY);
+center=(double *)malloc(sizeof(double)*2*NY);
+Pnl[0]=(double *)malloc(sizeof(double)*2*NX*NY);
+Pnl[1]=(double *)malloc(sizeof(double)*2*NX*NY);
+if (!Pnl[1]) error(4,"");
+GetInitials(argv[1],data);
+// Pre-calculating constants
+dz=z_length/(NZ-0);
+dt=dz*n0/C;
+td=dt/(grid_length/NY);
+expr=exp(-dt/tau2), sini=sin(dt/tau1), cosi=cos(dt/tau1);
+td1=(int)td;
+td2=td1+1;
+tdr=td-td1;
+confocal_length=k0/2*beam_width*beam_width;
+omega2=(tau1*tau1+tau2*tau2)/tau1/tau1/tau2/tau2;
+dz_const=dz*k0*n2/(4e-6*grid_width/NX);
+dt_const=dt*tau1*omega2;
+pd[3]=0;
+// Start from scratch
+for(i=0;i<2*NX*NY;i++)
+Pnl[0][i]=Pnl[1][i]=0;
+// The main loop
+for(z=0;z<NZ;z++){
+// Fourier transform
+fourn(data-1,nn-1,DIM,-1);
+// Dispersion and non-paraxial diffraction:
+for(j=0;j<NX;j++){
+kx=(double)j;
+if (kx>=NX/2) kx-=NX;
+
+
+=== PDF PAGE 66 ===
+61
+kx*=(2*PI/grid_width);
+for(i=0;i<NY;i++){
+w=(double)i;
+if (w>=NY/2) w-=NY;
+w*=(2*PI/grid_length);
+if(abs(kx)<=k0*n0)
+phase(&data[2*(j*NY+i)]
+,(sqrt(k0*k0*n0*n0-kx*kx)+0.5*w*w*beta2)*dz);
+}
+}
+// Inverse Fourier transform
+fourn(data-1,nn-1,DIM,1);
+// Nonlinear absorbsion
+for(i=0;i<NY;i++)
+for(j=0;j<NX;j++){
+data[2*(j*NY+i)]/=AREA;
+data[2*(j*NY+i)+1]/=AREA;
+temp=pow(power(&data[2*(j*NY+i)]),5);
+data[2*(j*NY+i)]*=
+exp(-dz*alpha6/2/(4e-6*grid_width/NX)*temp);
+data[2*(j*NY+i)+1]*=
+exp(-dz*alpha6/2/(4e-6*grid_width/NX)*temp);
+}
+// Raman scattering:
+for(j=0;j<NX;j++)
+for(i=0;i<NY-td2;i++){
+pd[2]=power(&data[2*(j*NY+i)]);
+Pnl[0][2*(j*NY+i)]=
+expr*(Pnl[1][2*(j*NY+i+td1)]*cosi
+-Pnl[1][2*(j*NY+i+td1)+1]*sini)+dt_const*pd[2];
+Pnl[0][2*(j*NY+i)+1]=
+expr*(Pnl[1][2*(j*NY+i+td1)]*sini
++Pnl[1][2*(j*NY+i+td1)+1]*cosi);
+phase(&data[2*(j*NY+i)],dz_const
+*(0.2*Pnl[0][2*(j*NY+i)+1]+0.7*pd[2]));
+}
+Ptemp=Pnl[0]; Pnl[0]=Pnl[1]; Pnl[1]=Ptemp;
+}
+}
+
+
+=== PDF PAGE 67 ===
+62
+APPENDIX B. SPATIOTEMPORAL BPM CODE
+void GetInitials(char *fname,double data[]){
+char str[256];
+long i,j;
+double val;
+FILE *wgfile;
+// Open parameters file
+.
+.
+.
+// Initializing Beam
+for(i=0;i<NX;i++)
+for(j=0;j<NY;j++){
+data[2*(i*NY+j)]=sqrt(intensity*sqrt(2/PI)/beam_width)
+*exp(-xposition(i)*xposition(i)
+/(beam_width*beam_width)
+-tposition(j)*tposition(j)
+/(pulse_length*pulse_length));
+data[2*(i*NY+j)+1]=0;
+}
+}
+void phase(double ar[],double phi) {
+double temp;
+double cosphi=cos(phi),sinphi=sin(phi);
+temp=ar[0]*cosphi-ar[1]*sinphi;
+ar[1]=ar[0]*sinphi+ar[1]*cosphi;
+ar[0]=temp;
+}
+inline double power(double com[]){
+return(com[0]*com[0]+com[1]*com[1]);
+}
+double xposition(int i){
+return(grid_width*((double)(i+0.5)/(NX-1)-0.5));
+}
+double tposition(int i){
+return(grid_length*((double)(i+0.5)/(NY-1)-0.5));
+}
+
+
+=== PDF PAGE 68 ===
+Bibliography
+[1] A. Yariv, Quantum Electronics, 3rd edn. (John Wiley & Sons, New York
+1988)
+[2] A.L. Jones, J. Opt. Soc. Am. 55, 261 (1965)
+[3] S. Somekh, E. Garmire, A. Yariv, H.L. Garvin and R.G. Hunsperger, Appl.
+Phys. Lett. 22, 46 (1973)
+[4] D.N. Christodoulides and R.I. Joseph, Opt. Lett. 13, 794 (1988)
+[5] Y.S. Kivshar and M. Peyrard, Phys. Rev. A 46, 3198 (1992)
+[6] Y.S. Kivshar, Opt. Lett. 18, 1147 (1993)
+[7] Y.S. Kivshar and D.K. Campbell, Phys. Rev. E 48, 3077 (1993)
+[8] W. Kr´olikowsky, U. Trutschel, M. Cronin-Golomb and C. Schmidt-
+Hattenberger, Opt. Lett. 19, 320 (1994)
+[9] A.B. Aceves, C. De Angelis, S. Trillo and S. Wabnitz, Opt. Lett. 19, 332
+(1994)
+[10] A.B. Aceves, C. De Angelis, T. Peschel, R. Muschall, F. Lederer, S. Trillo
+and S. Wabnitz, Phys. Rev. E 53, 1172 (1996)
+[11] W. Kr´olikowsky and Y.S. Kivshar, J. Opt. Soc. Am. B 13, 876 (1996)
+[12] U. Peschel, R. Morandotti, J.S. Aitchison, H.S. Eisenberg and Y. Silber-
+berg, Appl. Phys. Lett. 75, 1348 (1999)
+[13] R. Muschall, C. Schmidt-Hattenberger and F. Lederer, Opt. Lett. 19,
+323 (1994)
+[14] I. Relke, Phys. Rev. E 57, 6105 (1998)
+[15] A.B. Aceves, C. De Angelis, A.M. Rubenchik and S.K. Turitsyn, Opt. Lett.
+19, 329 (1994)
+[16] A.B. Aceves, C. De Angelis, G.G. Luther and A.M. Rubenchik, Opt. Lett.
+19, 1186 (1994)
+63
+
+
+=== PDF PAGE 69 ===
+64
+BIBLIOGRAPHY
+[17] A.B. Aceves, C. De Angelis, G.G. Luther, A.M. Rubenchik and S.K. Tu-
+ritsyn, Physica D 87, 262 (1995)
+[18] A.B. Aceves, G.G. Luther, C. De Angelis, A.M. Rubenchik and S.K. Tu-
+ritsyn, Phys. Rev. Lett. 75, 73 (1995)
+[19] Y.S. Kivshar, W. Kr´olikowsky, and O.A. Chubycalo, Phys. Rev. E 50,
+5020 (1994)
+[20] M. Johansson and Y. Kivshar, Phys. Rev. Lett. 82, 85 (1999)
+[21] S. Darmanyan, A. Kobyakov, E. Schmidt and F. Lederer, Phys. Rev. E 57,
+3520 (1998)
+[22] S. Darmanyan, A. Kobyakov and F. Lederer, JEPT 86, 682 (1998)
+[23] Yu.S. Kivshar, A.R. Champneys, D. Cai and A.R. Bishop, Phys. Rev. B
+58, 5423 (1998)
+[24] W.P. Su, J.R. Schieﬀer, and A.J. Heeger, Phys. Rev. Lett. 42, 1698 (1979)
+[25] A.S. Davydov, Phys. Scr. 20, 387 (1979)
+[26] T. Holstein, Ann. Phys. 8, 325 (1959); Mol. Cryst. Liq. Cryst. 77, 235
+(1981)
+[27] B. Denardo, B. Galvin, A. Greenﬁeld, A. Larraza, S. Putterman, and
+W. Wright, Phys. Rev. Lett. 68, 1730 (1992)
+[28] P. Marquii, J.M. Bilbaut, and M. Remoissenet, Phys. Rev. E 51, 6127
+(1995)
+[29] S. Flach and C.R. Willis, Phys. Rep. 295, 182 (1998)
+[30] H.S. Eisenberg, Y. Silberberg, R. Morandotti, A.R. Boyd and J.S. Aitchi-
+son, Phys. Rev. Lett. 81, 3383 (1998)
+[31] R. Morandotti, U. Peschel, J.S. Aitchison, H.S. Eisenberg and Y. Silber-
+berg, Phys. Rev. Lett. 83, 2726 (1999)
+[32] R. Morandotti, H.S. Eisenberg, Y. Silberberg, M. Sorel and J.S. Aitchison,
+Phys. Rev. Lett. 86, 3296 (2001)
+[33] U. Peschel, T. Pertsch, and F. Lederer, Opt. Lett. 23, 1701 (1998)
+[34] G. Lenz, I. Talanina and C.M. de Sterke, Phys. Rev. Lett 83, 963 (1999)
+[35] R. Morandotti, U. Peschel, J.S. Aitchison, H.S. Eisenberg and Y. Silber-
+berg, Phys. Rev. Lett. 83, 4756 (1999)
+[36] T. Pertsch, P. Dannberg, W. Elﬂein, A. Br¨auer and F. Lederer, Phys. Rev.
+Lett. 83, 4752 (1999)
+
+
+=== PDF PAGE 70 ===
+BIBLIOGRAPHY
+65
+[37] H.S. Eisenberg, Y. Silberberg, R. Morandotti, and J.S. Aitchison, Phys.
+Rev. Lett. 85, 1863 (2000)
+[38] S. Kawakami and H.A. Haus, J. Light. Tech. 4, 160 (1986)
+[39] J.D. Jackson, Classical Electrodynamics, 3rd edn. (John Wiley & Sons, New
+York, 1998)
+[40] P.St.J. Russell, Appl. Phys. B 39, 231 (1986)
+[41] P.St.J. Russell, Phys. Rev. A 33, 3232 (1986)
+[42] N.W. Ashcroft and N.D. Mermin, Solid State Physics (Holt, Rinehart &
+Winston, New York 1976)
+[43] V.E. Zakharov and A.B. Shabat, Zh. Eksp. Teor. Fiz. 61, 118 (1971)
+[V.E. Zakharov and A.B. Shabat, Sov. Phys. JEPT 34, 62 (1972)]
+[44] A. Barthelemy, S. Maneuf and C. Froehly, Opt. Commun. 55, 201 (1985)
+[45] J.S. Aitchison, Y. Silberberg, A.M. Weiner, D.E. Leaird, M.K. Oliver,
+J.L. Jackel, E.M. Vogel and P.W.E. Smith, J. Opt. Soc. Am. B 8, 1290
+(1990)
+[46] L.F. Mollenauer, R.H. Stolen and J.P. Gordon, Phys. Rev. Lett. 45, 1095
+(1980)
+[47] A.C. Scott and L. Macneil, Phys. Lett. A 98, 87 (1983)
+[48] A.B. Aceves, C. De Angelis, A.M. Rubenchik and S.K. Turitsyn, Opt. Lett.
+19, 329 (1994)
+[49] C. Schmidt-Hattenberger, U. Trutschel, R. Muschall and F. Lederer, Opt.
+Comm. 82, 461 (1991)
+[50] P. Millar, J.S. Aitchison, J.U. Kang, G.I. Stegeman, A. Villeneuve,
+G.T. Kennedy and W. Sibbett, J. Opt. Soc. Am. B 14, 3224 (1997)
+[51] J.S. Aitchison, D.C. Hutchings, J.U. Kang, G.I. Stegeman and A. Vil-
+leneuve, IEEE J. Quant. Elect. 33, 341 (1997)
+[52] Y. Silberberg, Opt. Lett. 15, 1005 (1990)
+[53] G.P. Agrawal, Nonlinear Fiber Optics (Academic Press, San Diego 1995)
+[54] G.A. Swartzlander Jr., D.R. Andersen, J.J. Regan, Y. Hin, and A.E. Ka-
+plan, Phys. Rev. 66, 1583 (1991)
+[55] R. Morandotti, H.S. Eisenberg, D. Mandelik, Y. Silberberg, D. Modotto,
+M. Sorel and J. S. Aitchison, submitted
+[56] C. Zener, Proc. R. Soc. London Ser. A 145, 523 (1932)
+
+
+=== PDF PAGE 71 ===
+66
+BIBLIOGRAPHY
+[57] P. Nozieres and D. Pines, The Theory of Quantum Liquids, Vol. II (Addison
+Wesley, Redwood City, CA, 1990)
+[58] K. Staliunas, cond-mat 0205061 (2002)
+[59] P.W. Anderson, Phys. Rev. 109, 1492 (1958)
+[60] N.F. Mott, Phil. Mag. 26, 1015 (1972)
+[61] M.D. Feit and J.A. Fleck, Appl. Opt. 17, 3990 (1978).
+[62] T. Pertsch, T. Zentgraf, U. Peschel, A. Braeuer and F. Lederer, Phys. Rev.
+Lett. 88, 093901 (2002)
+[63] H. Kosaka, T. Kawashima, A. Tomita, M. Notomi, T. Tamamura, T. Sato
+and S. Kawakami, Appl. Phys. Lett. 74, 1212 (1999)
+[64] L.G. Cohen, C. Lin and W.G. French, Electron. Lett. 15, 334 (1979)
+[65] C. Lin, H. Kogelnik and L.G. Cohen, Opt. Lett. 5, 476 (1980)
+[66] F.M. Knox, W. Forysiak and N.J. Doran, J. Lightwave Technol. 13, 1955
+(1995)
+[67] I.R. Gabitov and S.K. Turitsyn, Opt. Lett. 21, 327 (1996)
+[68] M. Miyagi and S. Nishida, Apl. Opt. 18, 678 (1979).
+[69] M.J. Ablowitz and Z. Musslimani, Phys. Rev. Lett. 87, 254102-1 (2001)
+[70] R.W. Boyd, Nonlinear Optics (Academic Press, San Diego, 1992)
+[71] Y. Silberberg, Opt. Lett. 15, 1282 (1990)
+[72] A.L. Dyshko, V.N. Lugovoi and A.M. Prokhorov, Sov. Phys. JETP 34,
+1235 (1972)
+[73] J.H. Marburger and E. Dawes, Phys. Rev. Lett. 21, 556 (1968)
+[74] X. Liu, L.J. Qian and F.W. Wise, Phys. Rev. Lett. 82, 4631 (1999)
+[75] I.G. Koprinkov, A. Suda, P. Wang and K. Midorikawa, Phys. Rev. Lett.
+84, 3847 (2000)
+[76] J.K. Ranka, R.W. Schirmer and A.L. Gaeta, Phys. Rev. Lett. 77, 3783
+(1996)
+[77] H.S. Eisenberg, R. Morandotti, Y. Silberberg, S. Bar-Ad, D. Ross and J.S.
+Aitchison, Phys. Rev. Lett. 87, 043902-1 (2001)
+[78] A. Hasegawa and F. Tappert, App. Phys. Lett. 23, 142 (1973); A. Hasegawa
+and F. Tappert, App. Phys. Lett. 23, 171 (1973)
+
+
+=== PDF PAGE 72 ===
+BIBLIOGRAPHY
+67
+[79] K.J. Blow and D. Wood, J. Quant. Elect. 25, 2665 (1989)
+[80] R.J. Hawkins and C.R. Menyuk, Opt. Lett. 18, 1999 (1993)
+[81] Y. Silberberg, Opt. Lett. 15, 1005 (1990)
+[82] F.M. Mitschke and L.F. Mollenauer, Opt. Lett. 11, 659 (1986)
+[83] J.P. Gordon, Opt. Lett. 11, 662 (1986)
+[84] P. Beaud, W. Hodel, B. Zysset and H.P. Weber, J. Quant. Elect. QE-23,
+1938 (1987)
+[85] P. Chernev and V. Petrov, Opt. Lett. 17, 172 (1992); J.E. Rothenberg,
+Opt. Lett. 17, 583 (1992)
+
+
+=== PDF PAGE 73 ===
+Index
+AlGaAs, 11, 12, 19, 24
+Anderson Localization, 34
+Bessel function, 3
+Bloch oscillations, 31
+Brewster angle, 57
+Brillouin zone, 7, 31
+Catastrophic collapse, 43
+Coupled-mode theory, 3, 19, 35, 41
+Coupling length, 3
+Dark soliton, 25
+Diﬀraction, 53
+anomalous, 24–26, 38
+discrete, 3–8
+linear, 3, 37
+nonlinear, 7
+length, 43, 44
+management, 37
+relation, 53
+continuous, 5
+discrete, 6
+nonlinear, 8
+Discrete soliton, 8, 14
+Dispersion, 37, 43
+length, 43, 44
+Floquet–Bloch wave function, 6, 31
+Fresnel relations, 56
+Kerr eﬀect, 7
+Light bullets, 43, 44
+Localization parameter, 36
+Mode visibility, 15, 25, 33
+Multi-core ﬁber, 11
+Multi-photon absorption, 43, 44, 46,
+48
+Peierls–Nabarro potential, 9, 21, 23
+Power steering, 21, 29, 37
+Pulse splitting, 44, 51
+Raman scattering, 44, 49
+Self-defocusing, 24–25
+Self-phase modulation, 19, 43
+Snell’s law, 55
+Spatial frequency, 5
+Two-photon absorption, 11, 12, 18
+Uniaxial crystal, 55
+Wannier–Stark states, 31
+68
+
+
+=== PDF PAGE 74 ===
+Epilog
+To oblivion I shall disperse
+said blue photon while he was depressed
+No you won’t, said his friend
+I will not let us spread
+Let’s cheer up by the soliton dance
+H.E.
+69
+
+
+=== PDF PAGE 75 ===
+תופעות אי-ליניאריות במערכים של מוליכי-גלים
+ 
+ 
+תקציר 
+ 
+סוליטונים אופטיים נחקרים כבר כשלושים שנה
+.
+ במהלך השנים הועלו הצעות לדוגמאות שונות של סוליטונים 
+כאלה
+. 
+חלקן אף הודגמו במעבדות במשך השנים
+. 
+סוליטונים אופטיים מתחלקים לשתי משפחות ראשיות
+. 
+הראשונה היא של סוליטונים במימד הזמן הנקראים סוליטונים זמניים
+. 
+אלו הם פולסים של אור הנעים ללא 
+ההתרחבות שנובעת באופן ר
+גיל מנפיצת הצבע
+. 
+הסוג השני הוא של סוליטונים מרחביים 
+–
+ קרני אור המתקדמות 
+ללא דיפרקציה 
+)
+התפשטות
+( 
+בכיוון הניצב לתנועתן
+. 
+הגורם המייצב בשני המקרים האלו הוא אחד 
+–
+ֶ עוצמת אור 
+גבוהה הגורמת לאפקט הק
+ר
+ האי-ליניארי
+. 
+תחום חדש שנחקר בעבודה זו הוא אופטיקה בדידה
+. 
+באופן מס
+ורתי
+, 
+שדות אופטיים הם רציפים
+. 
+לדוגמא
+, 
+החתך של עוצמתה של קרן אור הוא פונקציה רציפה
+. 
+ישנם מקרים בהם האור מאולץ לנוע במספר בדיד של 
+אופנים המצומדים בינהם
+. 
+במקרים כאלו
+, 
+התאור המלא של השדה האופטי הוא על-ידי אוסף בדיד של עוצמות
+. 
+מקרה כזה המתקשר לעבודה זו הוא של מ
+ערך מוליכי-גלים חד-מימדיים
+, 
+ַהמו
+נ
+חים בקרבה כזו אחד לשני כך 
+שהאור מצומד בין כל שני מוליכי-גלים שכנים
+. 
+אור המוכנס למוליך גלים אחד יתפזר ויתפשט בין שאר הערוצים 
+ככל שיתקדם במערך
+. 
+להתפשטות זה יש קרבה גדולה באופן מתמטי לתופעת הדיפרקציה הגורמת להתפשטות 
+שדות
+ רציפים
+. 
+לכן אנו מכנים אותה דיפרקציה בדידה
+. ֶ
+אפקט הק
+ר
+ האי-ליניארי יכול למנוע גם את התרחבות התפלגות האור הבדידה כתוצאה מהדיפרקציה הבדידה
+. 
+כתוצאה מתקדמים במערך מוליכי-הגלים סוליטונים מרחביים בדידים
+. 
+אנו היינו הראשונים להדגים היווצרות 
+של סוליטונים כאלו בדגם ע
+שוי אלומיניום-גליום-ארסניד
+. 
+בהמשך חקרנו את התכונות של סוליטונים כאלה 
+בתנועה לרוחב המערך
+. 
+בתנועה כזו באות לידי ביטוי התוצאות של שבירת סימטרית ההסחה על-ידי מבנה המערך
+. 
+עוד תופעה שנבדקה על-ידנו היא השפעת פגם במבנה המערך על סוליטון בדיד
+. 
+הראנו גם שבתנאים מסוימ
+ים ניתן 
+לעורר במערך מוליכי-הגלים התפלגות אור שתורחב באופן אי-ליניארי במקום שתמוקד
+. 
+ ההבנה שהשגנו על אופטיקה בדידה במהלך העבודה עם סוליטונים בדידים הובילה אותנו לערוך מספר ניסויים
+אחרים במערכי מוליכי-גלים
+. 
+הראנו את תנודות בלוך במערך שלרוחבו פוטנציאל ליניארי
+.
+ בדקנו את השפעתם של 
+פיזורים אקראיים 
+)
+מיקום אנדרסון
+( 
+על תופעת המיקוד האי-ליניארי
+. 
+בנוסף הצענו שיטה לתכנון מוליכי-
+ גלים
+בעלי תכונות דיפרקציה כלשהן בעזרת הצמדת מספר מערכים שונים
+. 
+ פולסים של אור המציגים יציבות בשני המימדים
+)
+הזמן והמרחב
+( 
+נקראים קליעי-אור
+. 
+בפולסים
+ אלו
+, 
+אור 
+המרוכז בנפח קטן שאינו משתנה מתקדמים באופן יציב
+. 
+במהלך העבודה המוצגת כאן
+, 
+ֶהדגמנו תופעה זו בפעם 
+הראשונה במוליך גלים משטחי עשוי סיליקה באמצעות אפקט הק
+. ר
+הראנו שהתופעות הנוספות השולטות 
+בהתפתחות פולסים כאלו הן בליעה אי-
+ ָליניארית ופיזור
+. ןמַר
+כמו כן נ
+כתבה תוכנה שדימתה באופן חישובי את 
+ההתפתחות של פולסים אלו ושחזרה את כל התופעות החשובות שנצפו
+. 

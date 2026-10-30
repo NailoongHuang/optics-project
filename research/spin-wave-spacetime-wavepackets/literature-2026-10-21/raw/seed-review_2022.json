@@ -1,0 +1,1667 @@
+{
+  "id": "https://openalex.org/W4225162092",
+  "doi": "https://doi.org/10.1364/aop.450016",
+  "title": "Space-time wave packets",
+  "display_name": "Space-time wave packets",
+  "publication_year": 2022,
+  "publication_date": "2022-04-29",
+  "ids": {
+    "openalex": "https://openalex.org/W4225162092",
+    "doi": "https://doi.org/10.1364/aop.450016"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1364/aop.450016",
+    "doi": "https://doi.org/10.1364/aop.450016",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1364/aop.450016",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S191306374",
+      "display_name": "Advances in Optics and Photonics",
+      "issn_l": "1943-8206",
+      "issn": [
+        "1943-8206"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-b",
+        "jufo-3",
+        "poland-200",
+        "russia-white-list-1"
+      ],
+      "host_organization": "https://openalex.org/P4310315679",
+      "host_organization_name": "Optica Publishing Group",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310315679"
+      ],
+      "host_organization_lineage_names": [
+        "Optica Publishing Group"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Advances in Optics and Photonics",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5042564747",
+        "display_name": "Мurat Yessenov",
+        "orcid": "https://orcid.org/0000-0001-6850-1803",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-6850-1803"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Murat Yessenov",
+      "raw_affiliation_strings": [
+        "University of Central Florida",
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-6850-1803",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Central Florida",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5079504589",
+        "display_name": "Layton A. Hall",
+        "orcid": "https://orcid.org/0000-0001-6820-9757",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-6820-9757"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Layton A. Hall",
+      "raw_affiliation_strings": [
+        "University of Central Florida",
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-6820-9757",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Central Florida",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5077694862",
+        "display_name": "Kenneth L. Schepler",
+        "orcid": "https://orcid.org/0000-0001-9658-2305",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-9658-2305"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Kenneth L. Schepler",
+      "raw_affiliation_strings": [
+        "University of Central Florida",
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-9658-2305",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Central Florida",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5006550826",
+        "display_name": "Ayman F. Abouraddy",
+        "orcid": "https://orcid.org/0000-0002-4987-5495",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-4987-5495"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I106165777",
+          "display_name": "University of Central Florida",
+          "ror": "https://ror.org/036nfer12",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Ayman F. Abouraddy",
+      "raw_affiliation_strings": [
+        "University of Central Florida",
+        "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-4987-5495",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Central Florida",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        },
+        {
+          "raw_affiliation_string": "CREOL, The College of Optics and Photonics, University of Central Florida, Orlando, Florida 32816, USA",
+          "institution_ids": [
+            "https://openalex.org/I106165777"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5006550826",
+    "https://openalex.org/A5042564747",
+    "https://openalex.org/A5077694862",
+    "https://openalex.org/A5079504589"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I106165777"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 14.2103,
+  "has_fulltext": false,
+  "cited_by_count": 167,
+  "citation_normalized_percentile": {
+    "value": 0.99654966,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 98,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "14",
+    "issue": "3",
+    "first_page": "455",
+    "last_page": "455"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10490",
+    "display_name": "Orbital Angular Momentum in Optics",
+    "score": 0.9843999743461609,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3107",
+      "display_name": "Atomic and Molecular Physics, and Optics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/31",
+      "display_name": "Physics and Astronomy"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10490",
+      "display_name": "Orbital Angular Momentum in Optics",
+      "score": 0.9843999743461609,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10566",
+      "display_name": "Laser-Matter Interactions and Applications",
+      "score": 0.012400000356137753,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10846",
+      "display_name": "Photonic Crystal and Fiber Optics",
+      "score": 0.0003000000142492354,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/space-time-wave-packets",
+      "display_name": "space-time wave packets",
+      "score": 0.9990000128746033
+    },
+    {
+      "id": "https://openalex.org/keywords/propagation-invariance",
+      "display_name": "propagation invariance",
+      "score": 0.7549999952316284
+    },
+    {
+      "id": "https://openalex.org/keywords/group-velocity-control",
+      "display_name": "group velocity control",
+      "score": 0.6570000052452087
+    },
+    {
+      "id": "https://openalex.org/keywords/angular-dispersion",
+      "display_name": "angular dispersion",
+      "score": 0.7519999742507935
+    },
+    {
+      "id": "https://openalex.org/keywords/talbot-effect",
+      "display_name": "Talbot effect",
+      "score": 0.7120000123977661
+    },
+    {
+      "id": "https://openalex.org/keywords/spatiotemporal-optical-vortices",
+      "display_name": "spatiotemporal optical vortices",
+      "score": 0.9729999899864197
+    },
+    {
+      "id": "https://openalex.org/keywords/transverse-orbital-angular-momentum",
+      "display_name": "transverse orbital angular momentum",
+      "score": 0.9380000233650208
+    },
+    {
+      "id": "https://openalex.org/keywords/tunable-dispersion",
+      "display_name": "tunable dispersion",
+      "score": 0.5870000123977661
+    },
+    {
+      "id": "https://openalex.org/keywords/ultrafast-optics",
+      "display_name": "ultrafast optics",
+      "score": 0.5479999780654907
+    },
+    {
+      "id": "https://openalex.org/keywords/beam-optics",
+      "display_name": "beam optics",
+      "score": 0.8519999980926514
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.6145767569541931
+    },
+    {
+      "id": "https://openalex.org/C106978608",
+      "wikidata": "https://www.wikidata.org/wiki/Q1412691",
+      "display_name": "Wave packet",
+      "level": 2,
+      "score": 0.5964437127113342
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.58917236328125
+    },
+    {
+      "id": "https://openalex.org/C181341577",
+      "wikidata": "https://www.wikidata.org/wiki/Q217361",
+      "display_name": "Group velocity",
+      "level": 2,
+      "score": 0.4715849459171295
+    },
+    {
+      "id": "https://openalex.org/C102519508",
+      "wikidata": "https://www.wikidata.org/wiki/Q6520159",
+      "display_name": "Fourier transform",
+      "level": 2,
+      "score": 0.45928192138671875
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.15249985456466675
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1364/aop.450016",
+      "doi": "https://doi.org/10.1364/aop.450016",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1364/aop.450016",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S191306374",
+        "display_name": "Advances in Optics and Photonics",
+        "issn_l": "1943-8206",
+        "issn": [
+          "1943-8206"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "dongbi-b",
+          "jufo-3",
+          "poland-200",
+          "russia-white-list-1"
+        ],
+        "host_organization": "https://openalex.org/P4310315679",
+        "host_organization_name": "Optica Publishing Group",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310315679"
+        ],
+        "host_organization_lineage_names": [
+          "Optica Publishing Group"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Advances in Optics and Photonics",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [
+    {
+      "id": "https://metadata.un.org/sdg/16",
+      "score": 0.75,
+      "display_name": "Peace, justice, and strong institutions"
+    }
+  ],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G141174884",
+      "display_name": null,
+      "funder_award_id": "N00014- 20-1-2789",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    },
+    {
+      "id": "https://openalex.org/G1851310322",
+      "display_name": null,
+      "funder_award_id": "N00014-17-1-2458",
+      "funder_id": "https://openalex.org/F4320337345",
+      "funder_display_name": "Office of Naval Research"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320337345",
+      "display_name": "Office of Naval Research",
+      "ror": "https://ror.org/00rk2pe57"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 464,
+  "referenced_works": [
+    "https://openalex.org/W101743774",
+    "https://openalex.org/W1476954456",
+    "https://openalex.org/W1488722834",
+    "https://openalex.org/W1495836024",
+    "https://openalex.org/W1526718490",
+    "https://openalex.org/W1528293730",
+    "https://openalex.org/W1552173428",
+    "https://openalex.org/W1563280507",
+    "https://openalex.org/W1563810080",
+    "https://openalex.org/W1615425580",
+    "https://openalex.org/W1705421740",
+    "https://openalex.org/W1762969555",
+    "https://openalex.org/W1876194503",
+    "https://openalex.org/W1905131413",
+    "https://openalex.org/W1920068563",
+    "https://openalex.org/W1965378512",
+    "https://openalex.org/W1966419265",
+    "https://openalex.org/W1966795171",
+    "https://openalex.org/W1968744290",
+    "https://openalex.org/W1970238141",
+    "https://openalex.org/W1970948880",
+    "https://openalex.org/W1971001556",
+    "https://openalex.org/W1971020364",
+    "https://openalex.org/W1971403169",
+    "https://openalex.org/W1971780827",
+    "https://openalex.org/W1973156763",
+    "https://openalex.org/W1973419918",
+    "https://openalex.org/W1973722164",
+    "https://openalex.org/W1974419684",
+    "https://openalex.org/W1974691446",
+    "https://openalex.org/W1975322392",
+    "https://openalex.org/W1975498945",
+    "https://openalex.org/W1975728314",
+    "https://openalex.org/W1977719343",
+    "https://openalex.org/W1977741779",
+    "https://openalex.org/W1978354571",
+    "https://openalex.org/W1978423583",
+    "https://openalex.org/W1980841218",
+    "https://openalex.org/W1981289976",
+    "https://openalex.org/W1981411009",
+    "https://openalex.org/W1981484387",
+    "https://openalex.org/W1982777704",
+    "https://openalex.org/W1982908017",
+    "https://openalex.org/W1983141168",
+    "https://openalex.org/W1983339621",
+    "https://openalex.org/W1985504848",
+    "https://openalex.org/W1985513406",
+    "https://openalex.org/W1985607358",
+    "https://openalex.org/W1986139138",
+    "https://openalex.org/W1986144597",
+    "https://openalex.org/W1986628558",
+    "https://openalex.org/W1987476778",
+    "https://openalex.org/W1988307086",
+    "https://openalex.org/W1988622166",
+    "https://openalex.org/W1990490595",
+    "https://openalex.org/W1992960941",
+    "https://openalex.org/W1992988254",
+    "https://openalex.org/W1993772491",
+    "https://openalex.org/W1994429214",
+    "https://openalex.org/W1994554237",
+    "https://openalex.org/W1994795223",
+    "https://openalex.org/W1995483036",
+    "https://openalex.org/W1996125235",
+    "https://openalex.org/W1996357346",
+    "https://openalex.org/W1997360942",
+    "https://openalex.org/W1997699966",
+    "https://openalex.org/W1998223336",
+    "https://openalex.org/W1998574687",
+    "https://openalex.org/W1999969239",
+    "https://openalex.org/W2000029525",
+    "https://openalex.org/W2000039767",
+    "https://openalex.org/W2000651240",
+    "https://openalex.org/W2002082979",
+    "https://openalex.org/W2002762157",
+    "https://openalex.org/W2003557375",
+    "https://openalex.org/W2003569319",
+    "https://openalex.org/W2004258701",
+    "https://openalex.org/W2004547832",
+    "https://openalex.org/W2005001891",
+    "https://openalex.org/W2005081692",
+    "https://openalex.org/W2008579828",
+    "https://openalex.org/W2009242694",
+    "https://openalex.org/W2010694664",
+    "https://openalex.org/W2012707371",
+    "https://openalex.org/W2012825345",
+    "https://openalex.org/W2013086522",
+    "https://openalex.org/W2013674306",
+    "https://openalex.org/W2013791251",
+    "https://openalex.org/W2013870019",
+    "https://openalex.org/W2014076227",
+    "https://openalex.org/W2014116836",
+    "https://openalex.org/W2014708259",
+    "https://openalex.org/W2017080453",
+    "https://openalex.org/W2017469274",
+    "https://openalex.org/W2017825297",
+    "https://openalex.org/W2017986009",
+    "https://openalex.org/W2018018817",
+    "https://openalex.org/W2019726330",
+    "https://openalex.org/W2020338841",
+    "https://openalex.org/W2020777189",
+    "https://openalex.org/W2021180905",
+    "https://openalex.org/W2021463376",
+    "https://openalex.org/W2021822457",
+    "https://openalex.org/W2022071597",
+    "https://openalex.org/W2022267562",
+    "https://openalex.org/W2022300283",
+    "https://openalex.org/W2022568576",
+    "https://openalex.org/W2022959887",
+    "https://openalex.org/W2023407353",
+    "https://openalex.org/W2023609339",
+    "https://openalex.org/W2023800238",
+    "https://openalex.org/W2023955630",
+    "https://openalex.org/W2024210956",
+    "https://openalex.org/W2024722670",
+    "https://openalex.org/W2024786641",
+    "https://openalex.org/W2027362627",
+    "https://openalex.org/W2027417826",
+    "https://openalex.org/W2027634254",
+    "https://openalex.org/W2028632528",
+    "https://openalex.org/W2028879812",
+    "https://openalex.org/W2029549956",
+    "https://openalex.org/W2029573677",
+    "https://openalex.org/W2031512275",
+    "https://openalex.org/W2031918086",
+    "https://openalex.org/W2031926087",
+    "https://openalex.org/W2032220776",
+    "https://openalex.org/W2032298961",
+    "https://openalex.org/W2032924388",
+    "https://openalex.org/W2033045383",
+    "https://openalex.org/W2033323989",
+    "https://openalex.org/W2034091809",
+    "https://openalex.org/W2034257833",
+    "https://openalex.org/W2035843956",
+    "https://openalex.org/W2036149681",
+    "https://openalex.org/W2036686389",
+    "https://openalex.org/W2036925560",
+    "https://openalex.org/W2038037097",
+    "https://openalex.org/W2038159077",
+    "https://openalex.org/W2038808444",
+    "https://openalex.org/W2040567803",
+    "https://openalex.org/W2040686822",
+    "https://openalex.org/W2040957662",
+    "https://openalex.org/W2042194743",
+    "https://openalex.org/W2042599780",
+    "https://openalex.org/W2043149304",
+    "https://openalex.org/W2044040098",
+    "https://openalex.org/W2044767608",
+    "https://openalex.org/W2045471690",
+    "https://openalex.org/W2045796941",
+    "https://openalex.org/W2046032629",
+    "https://openalex.org/W2048756212",
+    "https://openalex.org/W2049089763",
+    "https://openalex.org/W2049120918",
+    "https://openalex.org/W2049372582",
+    "https://openalex.org/W2050163657",
+    "https://openalex.org/W2050830265",
+    "https://openalex.org/W2051184286",
+    "https://openalex.org/W2051860620",
+    "https://openalex.org/W2052767485",
+    "https://openalex.org/W2053009519",
+    "https://openalex.org/W2053107549",
+    "https://openalex.org/W2053153631",
+    "https://openalex.org/W2054080335",
+    "https://openalex.org/W2054097083",
+    "https://openalex.org/W2055252822",
+    "https://openalex.org/W2055291660",
+    "https://openalex.org/W2055750257",
+    "https://openalex.org/W2056071962",
+    "https://openalex.org/W2056194713",
+    "https://openalex.org/W2056921062",
+    "https://openalex.org/W2057199542",
+    "https://openalex.org/W2058373580",
+    "https://openalex.org/W2059151147",
+    "https://openalex.org/W2059677526",
+    "https://openalex.org/W2062098757",
+    "https://openalex.org/W2062160909",
+    "https://openalex.org/W2063014249",
+    "https://openalex.org/W2063270442",
+    "https://openalex.org/W2064720431",
+    "https://openalex.org/W2067516559",
+    "https://openalex.org/W2067770889",
+    "https://openalex.org/W2068530796",
+    "https://openalex.org/W2068882092",
+    "https://openalex.org/W2068941137",
+    "https://openalex.org/W2070615791",
+    "https://openalex.org/W2070885252",
+    "https://openalex.org/W2071910284",
+    "https://openalex.org/W2073090437",
+    "https://openalex.org/W2073156168",
+    "https://openalex.org/W2073558759",
+    "https://openalex.org/W2074716455",
+    "https://openalex.org/W2075157531",
+    "https://openalex.org/W2076369784",
+    "https://openalex.org/W2077076337",
+    "https://openalex.org/W2077482796",
+    "https://openalex.org/W2078805237",
+    "https://openalex.org/W2080327804",
+    "https://openalex.org/W2081279071",
+    "https://openalex.org/W2082179695",
+    "https://openalex.org/W2082734091",
+    "https://openalex.org/W2082785025",
+    "https://openalex.org/W2083100538",
+    "https://openalex.org/W2083925018",
+    "https://openalex.org/W2084076151",
+    "https://openalex.org/W2084367169",
+    "https://openalex.org/W2085907283",
+    "https://openalex.org/W2086353721",
+    "https://openalex.org/W2086442438",
+    "https://openalex.org/W2087124282",
+    "https://openalex.org/W2087315595",
+    "https://openalex.org/W2087465345",
+    "https://openalex.org/W2087619165",
+    "https://openalex.org/W2087942750",
+    "https://openalex.org/W2088721086",
+    "https://openalex.org/W2088911595",
+    "https://openalex.org/W2089389494",
+    "https://openalex.org/W2090477307",
+    "https://openalex.org/W2090632801",
+    "https://openalex.org/W2090633739",
+    "https://openalex.org/W2090881275",
+    "https://openalex.org/W2090905492",
+    "https://openalex.org/W2090970739",
+    "https://openalex.org/W2090996324",
+    "https://openalex.org/W2091004986",
+    "https://openalex.org/W2091761640",
+    "https://openalex.org/W2092307835",
+    "https://openalex.org/W2092605188",
+    "https://openalex.org/W2094055587",
+    "https://openalex.org/W2094365491",
+    "https://openalex.org/W2097089851",
+    "https://openalex.org/W2097251387",
+    "https://openalex.org/W2100423540",
+    "https://openalex.org/W2100730056",
+    "https://openalex.org/W2102925984",
+    "https://openalex.org/W2103514302",
+    "https://openalex.org/W2104790106",
+    "https://openalex.org/W2105491022",
+    "https://openalex.org/W2106287602",
+    "https://openalex.org/W2106693271",
+    "https://openalex.org/W2107452313",
+    "https://openalex.org/W2107780815",
+    "https://openalex.org/W2108105483",
+    "https://openalex.org/W2110116747",
+    "https://openalex.org/W2110157402",
+    "https://openalex.org/W2111807670",
+    "https://openalex.org/W2113015072",
+    "https://openalex.org/W2115441422",
+    "https://openalex.org/W2115657697",
+    "https://openalex.org/W2118009531",
+    "https://openalex.org/W2119036194",
+    "https://openalex.org/W2120209807",
+    "https://openalex.org/W2120583949",
+    "https://openalex.org/W2124391690",
+    "https://openalex.org/W2126853480",
+    "https://openalex.org/W2130337193",
+    "https://openalex.org/W2130754242",
+    "https://openalex.org/W2131313345",
+    "https://openalex.org/W2136510514",
+    "https://openalex.org/W2137004164",
+    "https://openalex.org/W2145777690",
+    "https://openalex.org/W2148815117",
+    "https://openalex.org/W2150344772",
+    "https://openalex.org/W2151951962",
+    "https://openalex.org/W2152137232",
+    "https://openalex.org/W2153126824",
+    "https://openalex.org/W2153533045",
+    "https://openalex.org/W2155975468",
+    "https://openalex.org/W2157202713",
+    "https://openalex.org/W2159798643",
+    "https://openalex.org/W2160426850",
+    "https://openalex.org/W2161186512",
+    "https://openalex.org/W2161419338",
+    "https://openalex.org/W2163786038",
+    "https://openalex.org/W2163802574",
+    "https://openalex.org/W2164503427",
+    "https://openalex.org/W2165485874",
+    "https://openalex.org/W2165995642",
+    "https://openalex.org/W2167579516",
+    "https://openalex.org/W2170929047",
+    "https://openalex.org/W2170942231",
+    "https://openalex.org/W2172222388",
+    "https://openalex.org/W2195344204",
+    "https://openalex.org/W2217614605",
+    "https://openalex.org/W2223394699",
+    "https://openalex.org/W2229509186",
+    "https://openalex.org/W2262076862",
+    "https://openalex.org/W2270244810",
+    "https://openalex.org/W2273177387",
+    "https://openalex.org/W2290539512",
+    "https://openalex.org/W2303900520",
+    "https://openalex.org/W2304261318",
+    "https://openalex.org/W2315541935",
+    "https://openalex.org/W2331422430",
+    "https://openalex.org/W2336039769",
+    "https://openalex.org/W2346270534",
+    "https://openalex.org/W2409129582",
+    "https://openalex.org/W2413096312",
+    "https://openalex.org/W2466928390",
+    "https://openalex.org/W2472707847",
+    "https://openalex.org/W2475533810",
+    "https://openalex.org/W2484856740",
+    "https://openalex.org/W2487201144",
+    "https://openalex.org/W2550557946",
+    "https://openalex.org/W2557418847",
+    "https://openalex.org/W2557883529",
+    "https://openalex.org/W2562725870",
+    "https://openalex.org/W2563024511",
+    "https://openalex.org/W2565795960",
+    "https://openalex.org/W2600172587",
+    "https://openalex.org/W2607985258",
+    "https://openalex.org/W2608947614",
+    "https://openalex.org/W2616775304",
+    "https://openalex.org/W2625563333",
+    "https://openalex.org/W2734354662",
+    "https://openalex.org/W2739104627",
+    "https://openalex.org/W2746454554",
+    "https://openalex.org/W2746551234",
+    "https://openalex.org/W2748474656",
+    "https://openalex.org/W2754379600",
+    "https://openalex.org/W2756720740",
+    "https://openalex.org/W2765544924",
+    "https://openalex.org/W2766751816",
+    "https://openalex.org/W2768444774",
+    "https://openalex.org/W2768629706",
+    "https://openalex.org/W2788215311",
+    "https://openalex.org/W2790676859",
+    "https://openalex.org/W2790878691",
+    "https://openalex.org/W2794151539",
+    "https://openalex.org/W2802629815",
+    "https://openalex.org/W2804679076",
+    "https://openalex.org/W2807449206",
+    "https://openalex.org/W2883938747",
+    "https://openalex.org/W2887404872",
+    "https://openalex.org/W2890048266",
+    "https://openalex.org/W2890865217",
+    "https://openalex.org/W2894285241",
+    "https://openalex.org/W2895611968",
+    "https://openalex.org/W2896347213",
+    "https://openalex.org/W2896511809",
+    "https://openalex.org/W2898567873",
+    "https://openalex.org/W2907962860",
+    "https://openalex.org/W2908156496",
+    "https://openalex.org/W2911893218",
+    "https://openalex.org/W2911896410",
+    "https://openalex.org/W2912366456",
+    "https://openalex.org/W2912667078",
+    "https://openalex.org/W2913511407",
+    "https://openalex.org/W2921377254",
+    "https://openalex.org/W2924233221",
+    "https://openalex.org/W2928252620",
+    "https://openalex.org/W2930617098",
+    "https://openalex.org/W2936481435",
+    "https://openalex.org/W2941804958",
+    "https://openalex.org/W2942512315",
+    "https://openalex.org/W2942639464",
+    "https://openalex.org/W2943670829",
+    "https://openalex.org/W2944326512",
+    "https://openalex.org/W2944911819",
+    "https://openalex.org/W2945474950",
+    "https://openalex.org/W2952145847",
+    "https://openalex.org/W2954061716",
+    "https://openalex.org/W2954171316",
+    "https://openalex.org/W2954484573",
+    "https://openalex.org/W2954772328",
+    "https://openalex.org/W2962884030",
+    "https://openalex.org/W2964112749",
+    "https://openalex.org/W2969882476",
+    "https://openalex.org/W2971995836",
+    "https://openalex.org/W2972252919",
+    "https://openalex.org/W2977307918",
+    "https://openalex.org/W2977610416",
+    "https://openalex.org/W2978174540",
+    "https://openalex.org/W2979845500",
+    "https://openalex.org/W2980102083",
+    "https://openalex.org/W2980528958",
+    "https://openalex.org/W2990329885",
+    "https://openalex.org/W2990504206",
+    "https://openalex.org/W2995093304",
+    "https://openalex.org/W2995498582",
+    "https://openalex.org/W2995622876",
+    "https://openalex.org/W2996848990",
+    "https://openalex.org/W2999686083",
+    "https://openalex.org/W3002275193",
+    "https://openalex.org/W3002960149",
+    "https://openalex.org/W3004159673",
+    "https://openalex.org/W3004528345",
+    "https://openalex.org/W3008371404",
+    "https://openalex.org/W3009403637",
+    "https://openalex.org/W3010855663",
+    "https://openalex.org/W3011300781",
+    "https://openalex.org/W3012102185",
+    "https://openalex.org/W3012450501",
+    "https://openalex.org/W3014932893",
+    "https://openalex.org/W3031532092",
+    "https://openalex.org/W3034971256",
+    "https://openalex.org/W3036227607",
+    "https://openalex.org/W3037760338",
+    "https://openalex.org/W3040872755",
+    "https://openalex.org/W3040892576",
+    "https://openalex.org/W3042216194",
+    "https://openalex.org/W3048562959",
+    "https://openalex.org/W3076061142",
+    "https://openalex.org/W3088745377",
+    "https://openalex.org/W3093451364",
+    "https://openalex.org/W3093954985",
+    "https://openalex.org/W3094418367",
+    "https://openalex.org/W3100321221",
+    "https://openalex.org/W3100859268",
+    "https://openalex.org/W3100908427",
+    "https://openalex.org/W3102357199",
+    "https://openalex.org/W3103235999",
+    "https://openalex.org/W3103704612",
+    "https://openalex.org/W3107954729",
+    "https://openalex.org/W3110682755",
+    "https://openalex.org/W3111232143",
+    "https://openalex.org/W3111750282",
+    "https://openalex.org/W3116947846",
+    "https://openalex.org/W3126564984",
+    "https://openalex.org/W3127764829",
+    "https://openalex.org/W3128756120",
+    "https://openalex.org/W3129403371",
+    "https://openalex.org/W3131893921",
+    "https://openalex.org/W3132703763",
+    "https://openalex.org/W3134385760",
+    "https://openalex.org/W3135179482",
+    "https://openalex.org/W3136277203",
+    "https://openalex.org/W3136966596",
+    "https://openalex.org/W3138617260",
+    "https://openalex.org/W3146825638",
+    "https://openalex.org/W3153205763",
+    "https://openalex.org/W3154976488",
+    "https://openalex.org/W3157375297",
+    "https://openalex.org/W3158116057",
+    "https://openalex.org/W3159263647",
+    "https://openalex.org/W3167506175",
+    "https://openalex.org/W3171824054",
+    "https://openalex.org/W3173867892",
+    "https://openalex.org/W3182996742",
+    "https://openalex.org/W3186203094",
+    "https://openalex.org/W3189020219",
+    "https://openalex.org/W3192190577",
+    "https://openalex.org/W3192296033",
+    "https://openalex.org/W3195423322",
+    "https://openalex.org/W3195621892",
+    "https://openalex.org/W3197591291",
+    "https://openalex.org/W3199347995",
+    "https://openalex.org/W3200380448",
+    "https://openalex.org/W3200776672",
+    "https://openalex.org/W3202975444",
+    "https://openalex.org/W3205210816",
+    "https://openalex.org/W3207919138",
+    "https://openalex.org/W3208897288",
+    "https://openalex.org/W3209110134",
+    "https://openalex.org/W3211577470",
+    "https://openalex.org/W3212397829",
+    "https://openalex.org/W4200630171",
+    "https://openalex.org/W4205444510",
+    "https://openalex.org/W4211200453",
+    "https://openalex.org/W4214571231",
+    "https://openalex.org/W4226215661",
+    "https://openalex.org/W4245419912",
+    "https://openalex.org/W4283582511",
+    "https://openalex.org/W4299125978",
+    "https://openalex.org/W6947790353"
+  ],
+  "related_works": [
+    "https://openalex.org/W4391375266",
+    "https://openalex.org/W2935759653",
+    "https://openalex.org/W3105167352",
+    "https://openalex.org/W54078636",
+    "https://openalex.org/W2954470139",
+    "https://openalex.org/W1501425562",
+    "https://openalex.org/W2902782467",
+    "https://openalex.org/W3084825885",
+    "https://openalex.org/W3197591291",
+    "https://openalex.org/W4210791671"
+  ],
+  "abstract_inverted_index": {
+    "Space-time": [
+      0
+    ],
+    "wave": [
+      1,
+      37,
+      202
+    ],
+    "packets": [
+      2,
+      38
+    ],
+    "(STWPs)": [
+      3
+    ],
+    "constitute": [
+      4
+    ],
+    "a": [
+      5,
+      61,
+      99,
+      119,
+      175,
+      191,
+      213,
+      265
+    ],
+    "broad": [
+      6
+    ],
+    "class": [
+      7
+    ],
+    "of": [
+      8,
+      30,
+      57,
+      79,
+      130,
+      146,
+      184,
+      193,
+      215,
+      233
+    ],
+    "pulsed": [
+      9
+    ],
+    "optical": [
+      10,
+      31,
+      197,
+      208
+    ],
+    "fields": [
+      11,
+      198
+    ],
+    "that": [
+      12,
+      114
+    ],
+    "are": [
+      13,
+      24,
+      68,
+      164,
+      210
+    ],
+    "rigidly": [
+      14
+    ],
+    "transported": [
+      15
+    ],
+    "in": [
+      16,
+      27,
+      47,
+      91,
+      118,
+      140,
+      169
+    ],
+    "linear": [
+      17
+    ],
+    "media": [
+      18
+    ],
+    "without": [
+      19
+    ],
+    "diffraction": [
+      20
+    ],
+    "or": [
+      21,
+      33
+    ],
+    "dispersion,": [
+      22,
+      90
+    ],
+    "and": [
+      23,
+      50,
+      76,
+      137,
+      187,
+      206,
+      244,
+      250,
+      255
+    ],
+    "therefore": [
+      25
+    ],
+    "propagation-invariant": [
+      26
+    ],
+    "the": [
+      28,
+      55,
+      74,
+      82,
+      131,
+      143,
+      152,
+      182,
+      230,
+      236,
+      246
+    ],
+    "absence": [
+      29
+    ],
+    "nonlinearities": [
+      32
+    ],
+    "waveguiding": [
+      34
+    ],
+    "structures.": [
+      35
+    ],
+    "Such": [
+      36
+    ],
+    "exhibit": [
+      39
+    ],
+    "unique": [
+      40
+    ],
+    "characteristics,": [
+      41,
+      217
+    ],
+    "such": [
+      42,
+      122
+    ],
+    "as": [
+      43,
+      123,
+      200
+    ],
+    "controllable": [
+      44
+    ],
+    "group": [
+      45,
+      132,
+      221
+    ],
+    "velocities": [
+      46,
+      222
+    ],
+    "free": [
+      48
+    ],
+    "space": [
+      49
+    ],
+    "exotic": [
+      51
+    ],
+    "refractive": [
+      52
+    ],
+    "phenomena.": [
+      53
+    ],
+    "At": [
+      54
+    ],
+    "root": [
+      56
+    ],
+    "these": [
+      58
+    ],
+    "behaviors": [
+      59,
+      113
+    ],
+    "is": [
+      60,
+      85,
+      96
+    ],
+    "fundamental": [
+      62
+    ],
+    "feature": [
+      63
+    ],
+    "underpinning": [
+      64
+    ],
+    "STWPs:": [
+      65
+    ],
+    "their": [
+      66,
+      241
+    ],
+    "spectra": [
+      67
+    ],
+    "not": [
+      69
+    ],
+    "separable": [
+      70
+    ],
+    "with": [
+      71,
+      87,
+      98,
+      125
+    ],
+    "respect": [
+      72
+    ],
+    "to": [
+      73,
+      223
+    ],
+    "spatial": [
+      75,
+      94
+    ],
+    "temporal": [
+      77
+    ],
+    "degrees": [
+      78
+    ],
+    "freedom.": [
+      80
+    ],
+    "Indeed,": [
+      81
+    ],
+    "spatiotemporal": [
+      83,
+      109,
+      170,
+      207
+    ],
+    "structure": [
+      84,
+      110
+    ],
+    "endowed": [
+      86
+    ],
+    "non-differentiable": [
+      88
+    ],
+    "angular": [
+      89,
+      226
+    ],
+    "which": [
+      92
+    ],
+    "each": [
+      93
+    ],
+    "frequency": [
+      95
+    ],
+    "associated": [
+      97
+    ],
+    "single": [
+      100
+    ],
+    "prescribed": [
+      101
+    ],
+    "wavelength.": [
+      102
+    ],
+    "Furthermore,": [
+      103,
+      190
+    ],
+    "controlled": [
+      104
+    ],
+    "deviation": [
+      105
+    ],
+    "from": [
+      106,
+      116,
+      219
+    ],
+    "this": [
+      107,
+      269
+    ],
+    "particular": [
+      108
+    ],
+    "yields": [
+      111
+    ],
+    "novel": [
+      112,
+      194
+    ],
+    "depart": [
+      115
+    ],
+    "propagation-invariance": [
+      117
+    ],
+    "precise": [
+      120
+    ],
+    "manner,": [
+      121
+    ],
+    "acceleration": [
+      124
+    ],
+    "an": [
+      126,
+      262
+    ],
+    "arbitrary": [
+      127
+    ],
+    "axial": [
+      128
+    ],
+    "distribution": [
+      129
+    ],
+    "velocity,": [
+      133
+    ],
+    "tunable": [
+      134,
+      220
+    ],
+    "dispersion": [
+      135
+    ],
+    "profiles,": [
+      136
+    ],
+    "Talbot": [
+      138
+    ],
+    "effects": [
+      139
+    ],
+    "space–time.": [
+      141
+    ],
+    "Although": [
+      142
+    ],
+    "basic": [
+      144
+    ],
+    "concept": [
+      145
+    ],
+    "STWPs": [
+      147,
+      254
+    ],
+    "has": [
+      148,
+      157
+    ],
+    "been": [
+      149
+    ],
+    "known": [
+      150
+    ],
+    "since": [
+      151
+    ],
+    "1980s,": [
+      153
+    ],
+    "only": [
+      154
+    ],
+    "very": [
+      155
+    ],
+    "recently": [
+      156
+    ],
+    "rapid": [
+      158
+    ],
+    "experimental": [
+      159,
+      238
+    ],
+    "development": [
+      160,
+      232
+    ],
+    "emerged.": [
+      161
+    ],
+    "These": [
+      162
+    ],
+    "advances": [
+      163
+    ],
+    "made": [
+      165
+    ],
+    "possible": [
+      166
+    ],
+    "by": [
+      167
+    ],
+    "innovations": [
+      168
+    ],
+    "Fourier": [
+      171
+    ],
+    "synthesis,": [
+      172,
+      243
+    ],
+    "thereby": [
+      173
+    ],
+    "opening": [
+      174
+    ],
+    "new": [
+      176,
+      237,
+      248
+    ],
+    "frontier": [
+      177
+    ],
+    "for": [
+      178,
+      240,
+      253,
+      268
+    ],
+    "structured": [
+      179,
+      196,
+      258
+    ],
+    "light": [
+      180
+    ],
+    "at": [
+      181
+    ],
+    "intersection": [
+      183
+    ],
+    "beam": [
+      185
+    ],
+    "optics": [
+      186
+    ],
+    "ultrafast": [
+      188
+    ],
+    "optics.": [
+      189
+    ],
+    "plethora": [
+      192
+    ],
+    "spatiotemporally": [
+      195,
+      257
+    ],
+    "(such": [
+      199
+    ],
+    "flying-focus": [
+      201
+    ],
+    "packets,": [
+      203
+    ],
+    "toroidal": [
+      204
+    ],
+    "pulses,": [
+      205
+    ],
+    "vortices)": [
+      209
+    ],
+    "now": [
+      211
+    ],
+    "providing": [
+      212
+    ],
+    "swath": [
+      214
+    ],
+    "surprising": [
+      216
+    ],
+    "ranging": [
+      218
+    ],
+    "transverse": [
+      224
+    ],
+    "orbital": [
+      225
+    ],
+    "momentum.": [
+      227
+    ],
+    "We": [
+      228
+    ],
+    "review": [
+      229
+    ],
+    "historical": [
+      231
+    ],
+    "STWPs,": [
+      234
+    ],
+    "describe": [
+      235
+    ],
+    "approaches": [
+      239
+    ],
+    "efficient": [
+      242
+    ],
+    "enumerate": [
+      245
+    ],
+    "various": [
+      247
+    ],
+    "results": [
+      249
+    ],
+    "potential": [
+      251
+    ],
+    "applications": [
+      252
+    ],
+    "other": [
+      256
+    ],
+    "fields,": [
+      259
+    ],
+    "before": [
+      260
+    ],
+    "casting": [
+      261
+    ],
+    "eye": [
+      263
+    ],
+    "on": [
+      264
+    ],
+    "future": [
+      266
+    ],
+    "roadmap": [
+      267
+    ],
+    "field.": [
+      270
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 26
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 56
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 39
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 40
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 6
+    }
+  ],
+  "updated_date": "2026-10-17T09:40:24.721904",
+  "created_date": "2025-10-10T00:00:00"
+}

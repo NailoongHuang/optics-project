@@ -1,0 +1,414 @@
+{
+  "created_date": "2026-10-21",
+  "source_root_used": "C:\\Users\\xuanm\\Desktop\\optics",
+  "sources": [
+    {
+      "relative_path": "figures/midterm-report/curvature-design/design_data.npz",
+      "sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84"
+    },
+    {
+      "relative_path": "figures/midterm-report/common.py",
+      "sha256": "628585a31530a5615f5ddb35c4d3e3a4b6d1af9c3035a5c8b2e4cd04a560cc39"
+    },
+    {
+      "relative_path": "code/spin_wave_2d.py",
+      "sha256": "09482691799eb8dcae9bdc4395fd47ba06390b5fcc5a62ced4c36c7cdec13acb"
+    },
+    {
+      "relative_path": "research/wavepacket-prospects/demos/finite-source-caustic/results.json",
+      "sha256": "2d6c65561fa96bd6595b282967661337f919965dff422e4b19a8317b7e7365fb"
+    },
+    {
+      "relative_path": "research/wavepacket-prospects/demos/backflow-resolution/results.json",
+      "sha256": "101edd9fb3254ae98b66c5a0d494fbdd84d018f7f66d370b9421cc4cc250b828"
+    }
+  ],
+  "selections": {
+    "packet_tracking": [
+      {
+        "case": "A",
+        "time_hbar_over_Jx": 180,
+        "rms_x_a": 12.924143020562596,
+        "rms_y_a": 12.924143020562596,
+        "peak_probability_over_initial": 0.2159698161030233
+      },
+      {
+        "case": "B",
+        "time_hbar_over_Jx": 180,
+        "rms_x_a": 6.064309240565158,
+        "rms_y_a": 12.924143020562603,
+        "peak_probability_over_initial": 0.45845495224080784
+      },
+      {
+        "case": "C",
+        "time_hbar_over_Jx": 180,
+        "rms_x_a": 6.064309240565157,
+        "rms_y_a": 6.064309240565156,
+        "peak_probability_over_initial": 0.9731959170343497
+      }
+    ],
+    "phase_probability": [
+      {
+        "t_hbar_over_Jx": 0,
+        "real_absolute_peak_over_initial": 1.0,
+        "probability_peak_over_initial": 1.0
+      },
+      {
+        "t_hbar_over_Jx": 9,
+        "real_absolute_peak_over_initial": 0.7463666860347843,
+        "probability_peak_over_initial": 0.9998209753414073
+      },
+      {
+        "t_hbar_over_Jx": 15,
+        "real_absolute_peak_over_initial": 0.9823620108714386,
+        "probability_peak_over_initial": 0.9995030677009578
+      }
+    ],
+    "caustic_comparison": {
+      "damping_scan": [
+        {
+          "gamma_over_omegaM": 0.0,
+          "higher": {
+            "norm": 1.0000000000000004,
+            "peak": 0.05396478839781723,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.801348715646824,
+            "rms": 7.137763743570071,
+            "receiving_power": 0.9585656343597245,
+            "edge_power": 4.714317755931654e-27
+          },
+          "ordinary": {
+            "norm": 1.0000000000000004,
+            "peak": 0.03396899754464438,
+            "peak_position": 10.602875205865551,
+            "fwhm": 23.65710957119258,
+            "rms": 49.49215306248864,
+            "receiving_power": 0.5903801472684218,
+            "edge_power": 4.346156178823525e-23
+          },
+          "peak_ratio": 1.5886482468872687
+        },
+        {
+          "gamma_over_omegaM": 1e-06,
+          "higher": {
+            "norm": 0.9578917341377537,
+            "peak": 0.0516902557004209,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.80204890257889,
+            "rms": 7.138104365801263,
+            "receiving_power": 0.9181908927828375,
+            "edge_power": 4.516200533059419e-27
+          },
+          "ordinary": {
+            "norm": 0.9685406456260937,
+            "peak": 0.03288271353710844,
+            "peak_position": 10.602875205865551,
+            "fwhm": 23.662385538166845,
+            "rms": 49.54625431472312,
+            "receiving_power": 0.5716299420678483,
+            "edge_power": 4.224004562010419e-23
+          },
+          "peak_ratio": 1.5719583373825878
+        },
+        {
+          "gamma_over_omegaM": 3e-06,
+          "higher": {
+            "norm": 0.8789371756948958,
+            "peak": 0.0474255096721002,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.803499198974976,
+            "rms": 7.1388337863756135,
+            "receiving_power": 0.8424868161303963,
+            "edge_power": 4.1453105043019796e-27
+          },
+          "ordinary": {
+            "norm": 0.9085682720585905,
+            "peak": 0.03081341492296809,
+            "peak_position": 10.602875205865551,
+            "fwhm": 23.672958204756704,
+            "rms": 49.65441587575662,
+            "receiving_power": 0.5358993727077976,
+            "edge_power": 4.0009749037366736e-23
+          },
+          "peak_ratio": 1.53911891267688
+        },
+        {
+          "gamma_over_omegaM": 1e-05,
+          "higher": {
+            "norm": 0.6505677277401004,
+            "peak": 0.03509104308459224,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.809098621695277,
+            "rms": 7.141891144734,
+            "receiving_power": 0.6235212325333372,
+            "edge_power": 3.071199987578233e-27
+          },
+          "ordinary": {
+            "norm": 0.7265049539152798,
+            "peak": 0.024545227867242173,
+            "peak_position": 10.602875205865551,
+            "fwhm": 23.710180030720256,
+            "rms": 50.03253404816319,
+            "receiving_power": 0.4275544379807153,
+            "edge_power": 3.4033229165231413e-23
+          },
+          "peak_ratio": 1.4296482914882371
+        },
+        {
+          "gamma_over_omegaM": 3e-05,
+          "higher": {
+            "norm": 0.2758861266542371,
+            "peak": 0.014861346448123588,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.829562530168456,
+            "rms": 7.154911663045495,
+            "receiving_power": 0.2642988317501951,
+            "edge_power": 1.3056501956105752e-27
+          },
+          "ordinary": {
+            "norm": 0.38380653823470523,
+            "peak": 0.012822391186479749,
+            "peak_position": 10.602875205865551,
+            "fwhm": 23.818388533822027,
+            "rms": 51.108614663908995,
+            "receiving_power": 0.22433271685286932,
+            "edge_power": 2.5754689030728014e-23
+          },
+          "peak_ratio": 1.1590152126846485
+        },
+        {
+          "gamma_over_omegaM": 0.0001,
+          "higher": {
+            "norm": 0.013982755548322937,
+            "peak": 0.0007468892753522541,
+            "peak_position": 0.39269908169872414,
+            "fwhm": 17.95239742220614,
+            "rms": 7.248788640176217,
+            "receiving_power": 0.013353422572769138,
+            "edge_power": 6.645606813660248e-29
+          },
+          "ordinary": {
+            "norm": 0.04151396685397246,
+            "peak": 0.001328964332874586,
+            "peak_position": 10.210176124166829,
+            "fwhm": 24.217337271750914,
+            "rms": 54.80991240044542,
+            "receiving_power": 0.023573232024009315,
+            "edge_power": 1.3167488138368931e-23
+          },
+          "peak_ratio": 0.562008518119303
+        }
+      ],
+      "selected_detuning": [
+        {
+          "relative_frequency_detuning": -0.005,
+          "norm": 1.0000000000000004,
+          "peak": 0.053622755248174614,
+          "peak_position": 28.274333882308138,
+          "fwhm": 17.862074060350217,
+          "rms": 7.240092891336569,
+          "receiving_power": 0.026071764881728614,
+          "edge_power": 5.36388129632409e-27
+        },
+        {
+          "relative_frequency_detuning": 0.0,
+          "norm": 1.0000000000000004,
+          "peak": 0.05396478839781723,
+          "peak_position": 0.39269908169872414,
+          "fwhm": 17.801348715646824,
+          "rms": 7.137763743570071,
+          "receiving_power": 0.9585656343597245,
+          "edge_power": 4.714317755931654e-27
+        },
+        {
+          "relative_frequency_detuning": 0.005,
+          "norm": 1.0000000000000004,
+          "peak": 0.0532932827913841,
+          "peak_position": -27.881634800609415,
+          "fwhm": 17.95348937817863,
+          "rms": 7.310012201853864,
+          "receiving_power": 0.02871718628716832,
+          "edge_power": 4.753221092703235e-27
+        }
+      ],
+      "normalization": "equal scalar input norm, not calibrated microwave power",
+      "distance_z_over_d": 10000
+    },
+    "backflow_detection": {
+      "prepared_half_site_comparison": [
+        {
+          "preparation": "single_gaussian",
+          "N": 1024,
+          "cut": 0,
+          "start": 0.0,
+          "end": 1.0,
+          "psf_sigma_a": 0.5,
+          "left_before": 0.5000000000000002,
+          "left_after": 0.4343346048940532,
+          "left_probability_increase": -0.06566539510594704,
+          "negative_velocity_weight": 4.8426624812095375e-31,
+          "certified_margin": -0.06566539510594704,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 2.220446049250313e-16,
+          "initial_centroid_a": 0.5,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06625991104305702,
+          "endpoint_edge_mass": 1.2296062725745485e-32,
+          "shots_per_ensemble_5sigma_known_negative_weight": null,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": null,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": null
+        },
+        {
+          "preparation": "resolution_aware",
+          "N": 1024,
+          "cut": 0,
+          "start": 0.0,
+          "end": 1.0,
+          "psf_sigma_a": 0.5,
+          "left_before": 0.4883158661954051,
+          "left_after": 0.495065926030542,
+          "left_probability_increase": 0.006750059835136879,
+          "negative_velocity_weight": 0.0011292580739317905,
+          "certified_margin": 0.0056208017612050885,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 0.49999999999999956,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.12814297512723485,
+          "endpoint_edge_mass": 9.889732474883025e-33,
+          "shots_per_ensemble_5sigma_known_negative_weight": 371230.40739536274,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": 372122.984963804,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": 396417.38586517033
+        },
+        {
+          "psf_sigma_a": 0.5,
+          "component_weights": [
+            0.5000000007471351,
+            0.49999999925286476
+          ],
+          "initial_centroid_a": 0.5,
+          "initial_rms_a": 6.0,
+          "preparation": "incoherent mixture of the same two normalized carrier states",
+          "left_before": 0.5000000000000001,
+          "left_after": 0.48339962166596695,
+          "left_probability_increase": -0.01660037833403319,
+          "negative_velocity_weight": 0.0011292580739317892,
+          "certified_margin": -0.017729636407964974
+        }
+      ],
+      "natural_event_scan": [
+        {
+          "N": 4096,
+          "cut": 843,
+          "start": 863.666661775626,
+          "end": 864.6700074368066,
+          "psf_sigma_a": 0.0,
+          "left_before": 0.010399007971991493,
+          "left_after": 0.01043252795524257,
+          "left_probability_increase": 3.3519983251076996e-05,
+          "negative_velocity_weight": 2.824507236699982e-31,
+          "certified_margin": 3.3519983251076996e-05,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 4.440892098500626e-16,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06649038006690544,
+          "endpoint_edge_mass": 2.1345497647751857e-29,
+          "shots_per_ensemble_5sigma_known_negative_weight": 458676478.5869792,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": 458676478.5869792,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": 458676478.5869792
+        },
+        {
+          "N": 4096,
+          "cut": 843,
+          "start": 863.666661775626,
+          "end": 864.6700074368066,
+          "psf_sigma_a": 0.125,
+          "left_before": 0.010399015398348782,
+          "left_after": 0.010432522637709352,
+          "left_probability_increase": 3.350723936056989e-05,
+          "negative_velocity_weight": 2.824507236699982e-31,
+          "certified_margin": 3.350723936056989e-05,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 4.440892098500626e-16,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06649038006690544,
+          "endpoint_edge_mass": 2.1345497647751857e-29,
+          "shots_per_ensemble_5sigma_known_negative_weight": 459025206.2641261,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": 459025206.2641261,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": 459025490.0240044
+        },
+        {
+          "N": 4096,
+          "cut": 843,
+          "start": 863.666661775626,
+          "end": 864.6700074368066,
+          "psf_sigma_a": 0.25,
+          "left_before": 0.0104043424845188,
+          "left_after": 0.010428708256834457,
+          "left_probability_increase": 2.4365772315656023e-05,
+          "negative_velocity_weight": 2.824507236699982e-31,
+          "certified_margin": 2.4365772315656023e-05,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 4.440892098500626e-16,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06649038006690544,
+          "endpoint_edge_mass": 2.1345497647751857e-29,
+          "shots_per_ensemble_5sigma_known_negative_weight": 867753651.7900289,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": 867753651.7900289,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": 868130360.9851866
+        },
+        {
+          "N": 4096,
+          "cut": 843,
+          "start": 863.666661775626,
+          "end": 864.6700074368066,
+          "psf_sigma_a": 0.375,
+          "left_before": 0.010420423897631781,
+          "left_after": 0.010417203999703962,
+          "left_probability_increase": -3.21989792781939e-06,
+          "negative_velocity_weight": 2.824507236699982e-31,
+          "certified_margin": -3.21989792781939e-06,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 4.440892098500626e-16,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06649038006690544,
+          "endpoint_edge_mass": 2.1345497647751857e-29,
+          "shots_per_ensemble_5sigma_known_negative_weight": null,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": null,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": null
+        },
+        {
+          "N": 4096,
+          "cut": 843,
+          "start": 863.666661775626,
+          "end": 864.6700074368066,
+          "psf_sigma_a": 0.5,
+          "left_before": 0.010437424174130206,
+          "left_after": 0.010405472908104561,
+          "left_probability_increase": -3.195126602564477e-05,
+          "negative_velocity_weight": 2.824507236699982e-31,
+          "certified_margin": -3.195126602564477e-05,
+          "negative_weight_rule": "continuous_bloch",
+          "norm_error": 4.440892098500626e-16,
+          "initial_centroid_a": 4.440892098500626e-16,
+          "initial_rms_a": 6.0,
+          "initial_peak_probability": 0.06649038006690544,
+          "endpoint_edge_mass": 2.1345497647751857e-29,
+          "shots_per_ensemble_5sigma_known_negative_weight": null,
+          "shots_per_ensemble_5sigma_estimated_negative_weight": null,
+          "shots_per_ensemble_5sigma_blurred_binary_detector": null
+        }
+      ],
+      "comparison_note": "Left: common prepared geometry. Right: separate natural-tail event. Do not compare these panels as equal-resource enhancement."
+    }
+  },
+  "display": {
+    "spatial_maps": "actual lattice values, nearest display, centroid-relative windows",
+    "normalization": "fixed initial maxima for lattice maps; no per-frame rescaling",
+    "output": "PNG at 240 dpi plus editable SVG geometry"
+  }
+}

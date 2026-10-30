@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/nlrgoi","index":19,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/x8ne9oni","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"载波、包络与初始频谱","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/a5cfe947","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/b6lw7e5s","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C01　n = r/a，σ 以格点数计，σ = 4，η = 1","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/kvexkjm9","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"20","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lwnedonu","kind":"textbox","position":{"left":63,"top":128,"width":1148,"height":57},"text":"ψ₀(n) ∝ exp[−(nₓ²+nᵧ²)/(4σ²)] exp(i q₀·n)","style":{"fontSize":30,"typeface":"Cambria","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/32tg7m90","kind":"image","position":{"left":43,"top":200,"width":1192,"height":290},"fit":"contain","alt":"c01-carrier-envelope-spectrum"},
+{"id":"sh/za5wbe5o","kind":"textbox","position":{"left":60,"top":510,"width":550,"height":34},"text":"σ 是初始概率 RMS 宽度","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8zyxo3ml","kind":"textbox","position":{"left":60,"top":553,"width":550,"height":140},"text":"载波只改变相位与频谱。\n初始位置概率包络保持相同。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/907yh8nq","kind":"textbox","position":{"left":665,"top":510,"width":550,"height":34},"text":"相位决定频谱位置","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/9w3ylwnm","kind":"textbox","position":{"left":665,"top":553,"width":550,"height":140},"text":"频谱中心移到 q₀。\n平均速度与传播方向随之改变。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,51 @@
+{
+  "source": "Wartelle et al., arXiv:2301.01220v1",
+  "dispersion_location": "PDF p.2, Eq.(4)",
+  "model_assumptions": [
+    "Linear small-amplitude spin waves in a soft isotropic ferromagnetic thin film",
+    "Negligible thickness-mode mixing",
+    "Lowest thickness mode only",
+    "In-plane equilibrium magnetization and applied field"
+  ],
+  "variables": {
+    "nu": "omega/(gamma0*Ms)",
+    "h": "Ha/Ms",
+    "eta": "lex/d",
+    "r": "k*d",
+    "phi": "angle of wave vector relative to the applied field",
+    "lex": "sqrt(2*A/(mu0*Ms^2))"
+  },
+  "xi": "1 - (1-exp(-r))/r, for r>0",
+  "dispersion": "nu^2=(h+eta^2*r^2)*(1+h+eta^2*r^2)-xi(r)*(1-xi(r)+h+eta^2*r^2)*cos(phi)^2+xi(r)*(1-xi(r))",
+  "contour_parameterization_inference": {
+    "C_r": "[(h+eta^2*r^2)*(1+h+eta^2*r^2)+xi*(1-xi)-nu^2]/[xi*(1-xi+h+eta^2*r^2)]",
+    "validity": "r>0 and 0<=C_r<=1 in the first quadrant",
+    "kx_d": "r*sqrt(C_r)",
+    "ky_d": "r*sqrt(1-C_r)",
+    "status": "Algebraic rearrangement of the published dispersion, not an additional empirical model."
+  },
+  "higher_order_near_point": {
+    "location": "PDF pp.12-13, Section III.D and Fig.13",
+    "h": 1.15e-21,
+    "eta": 0.10253664614147,
+    "nu": 0.315279504,
+    "r_caustic_approximately": 0.725904,
+    "phi_degrees_approximately": 42.75,
+    "group_direction_degrees_approximately": 118.36,
+    "important_limit": "The authors explicitly state that the hand-refined Fig.13 parameters are close to, but not exactly at, the mathematical higher-order critical point. Their precise local caustic position is sensitive to eta."
+  },
+  "ordinary_comparison_from_paper": {
+    "location": "Fig.13 inset and PDF p.13 text",
+    "h": 1.15e-21,
+    "eta": 0.10253664614147,
+    "nu": 0.2995155288,
+    "relation": "nu=0.95*nu1",
+    "source_result": "A small frequency change restores a quadratic variation of apparent wavelength around the ordinary caustic."
+  },
+  "scalar_demo_boundary": [
+    "Use finite spectral support and explicitly normalize a common modal-power measure.",
+    "Hold propagation distance and damping fixed for comparison; do not renormalize output peaks individually.",
+    "A contour integral using this band tests coherent geometric focusing only.",
+    "Without the tensor susceptibility, realistic antenna field and material-specific normalization, it does not predict absolute magnetic amplitude or solve the complete experimental outlook."
+  ]
+}

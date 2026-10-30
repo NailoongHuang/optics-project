@@ -1,0 +1,198 @@
+\documentclass[UTF8,11pt,a4paper,fontset=fandol]{ctexart}
+\usepackage[left=24mm,right=24mm,top=23mm,bottom=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{xcolor,fancyhdr,needspace}
+\usepackage[unicode,colorlinks=true,linkcolor=black,urlcolor=blue!45!black]{hyperref}
+\definecolor{ink}{HTML}{183B4E}
+\hypersetup{pdftitle={从库仑交换到二维铁磁体的单磁子色散},pdfauthor={},pdfsubject={自旋二分之一铁磁体的单翻转运动方程与色散}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{ink}二维铁磁体的单磁子色散}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.3em}
+\linespread{1.18}
+\allowdisplaybreaks[1]
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\id}{\mathbb I}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries\color{ink}从库仑交换到二维铁磁体的单磁子色散}\\[0.65em]
+{\small 两电子矩阵、单翻转子空间与运动方程}
+\end{center}
+\vspace{0.3em}
+
+两电子之间的库仑相互作用为
+\begin{equation}
+v(\mathbf r_1-\mathbf r_2)=
+\frac{e^2}{4\pi\varepsilon_0|\mathbf r_1-\mathbf r_2|},
+\end{equation}
+其二次量子化形式为
+\begin{equation}
+\hat V=\frac12\sum_{\sigma,\tau}
+\int d^3r_1\,d^3r_2\,
+\hat\psi^\dagger_\sigma(\mathbf r_1)
+\hat\psi^\dagger_\tau(\mathbf r_2)
+v(\mathbf r_1-\mathbf r_2)
+\hat\psi_\tau(\mathbf r_2)\hat\psi_\sigma(\mathbf r_1).
+\end{equation}
+取 $\hbar=1$，以 $x$ 轴为自旋量子化轴，$\uparrow,\downarrow$ 分别表示沿 $+x,-x$ 的自旋态。取两个正交归一轨道 $a,b$，各占据一个电子，场算符展开为
+$\hat\psi_\sigma(\mathbf r)=\phi_a(\mathbf r)f_{a\sigma}+\phi_b(\mathbf r)f_{b\sigma}$。
+在基底
+\begin{equation}
+\bigl\{
+\ket{\uparrow_a\uparrow_b},\
+\ket{\uparrow_a\downarrow_b},\
+\ket{\downarrow_a\uparrow_b},\
+\ket{\downarrow_a\downarrow_b}
+\bigr\},\qquad
+\ket{\sigma_a\tau_b}=f^\dagger_{a\sigma}f^\dagger_{b\tau}\ket{0}
+\label{eq:pairbasis}
+\end{equation}
+下，$\hat V$ 的矩阵为
+\begin{equation}
+V_{ab}=
+\begin{pmatrix}
+D-K&0&0&0\\
+0&D&-K&0\\
+0&-K&D&0\\
+0&0&0&D-K
+\end{pmatrix},
+\label{eq:coulombmatrix}
+\end{equation}
+其中直接积分与交换积分分别为
+\begin{align}
+D&=\int d^3r_1\,d^3r_2\,
+|\phi_a(\mathbf r_1)|^2\,v(\mathbf r_1-\mathbf r_2)\,
+|\phi_b(\mathbf r_2)|^2, \label{eq:direct}\\
+K&=\int d^3r_1\,d^3r_2\,
+\phi_a^*(\mathbf r_1)\phi_b^*(\mathbf r_2)\,
+v(\mathbf r_1-\mathbf r_2)\,
+\phi_b(\mathbf r_1)\phi_a(\mathbf r_2). \label{eq:exchange}
+\end{align}
+
+在同一基底下，
+\begin{equation}
+\mathbf S_a\cdot\mathbf S_b
+=\frac14
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&2&0\\
+0&2&-1&0\\
+0&0&0&1
+\end{pmatrix},
+\label{eq:dotmatrix}
+\end{equation}
+因而
+\begin{equation}
+\boxed{
+V_{ab}=\left(D-\frac K2\right)\id_4
+-2K\,\mathbf S_a\cdot\mathbf S_b.
+}
+\label{eq:pairspin}
+\end{equation}
+
+对最近邻键求和，略去常数项，令 $J_{ij}=2K_{ij}$，得到海森堡哈密顿量
+\begin{equation}
+H=-\sum_{\langle ij\rangle}J_{ij}\,\mathbf S_i\cdot\mathbf S_j.
+\label{eq:latticeH}
+\end{equation}
+对于无外场的二维正方晶格，取水平、竖直方向的铁磁交换分别为 $J_x,J_y>0$，则
+\begin{equation}
+H=-J_x\sum_{\langle ij\rangle_x}\mathbf S_i\cdot\mathbf S_j
+-J_y\sum_{\langle ij\rangle_y}\mathbf S_i\cdot\mathbf S_j.
+\label{eq:squareH}
+\end{equation}
+每条键计一次，晶格常数为 $a$，格点数为 $\mathcal N$，采用周期边界。
+
+全极化基态为
+\begin{equation}
+\ket{F}=\ket{\uparrow_1\uparrow_2\cdots\uparrow_{\mathcal N}}.
+\end{equation}
+每条键上 $\mathbf S_i\cdot\mathbf S_j$ 的值为 $1/4$，两个方向各有 $\mathcal N$ 条键，因此
+\begin{equation}
+H\ket{F}=E_F\ket{F},\qquad
+\boxed{E_F=-\frac{\mathcal N}{4}(J_x+J_y).}
+\label{eq:EF}
+\end{equation}
+
+单翻转子空间的基底为
+\begin{equation}
+\ket{i}=
+\ket{\uparrow_1\cdots\uparrow_{i-1}\downarrow_i
+\uparrow_{i+1}\cdots\uparrow_{\mathcal N}}.
+\label{eq:oneflip}
+\end{equation}
+对连接 $i$ 与其邻居 $j$ 的键，将 $\ket{\downarrow_i\uparrow_j}$ 代入矩阵 \eqref{eq:dotmatrix}，得到
+\begin{equation}
+-J_{ij}\mathbf S_i\cdot\mathbf S_j\ket{i}
+=\frac{J_{ij}}4\ket{i}-\frac{J_{ij}}2\ket{j}.
+\label{eq:bondaction}
+\end{equation}
+其余键的贡献与全极化态相同。对所有键求和，
+\begin{equation}
+H\ket{i}=E_F\ket{i}
++\frac12\sum_{j\text{ 邻接 }i}J_{ij}
+\bigl(\ket{i}-\ket{j}\bigr).
+\label{eq:Haction}
+\end{equation}
+因此单翻转子空间在时间演化下封闭。初始只翻转格点 $i_0$，写成
+\begin{equation}
+\ket{\Psi(t)}=\sum_i c_i(t)\ket{i},\qquad
+c_i(0)=\delta_{i,i_0}.
+\end{equation}
+代入薛定谔方程 $i\partial_t\ket{\Psi}=H\ket{\Psi}$，比较各 $\ket{i}$ 的系数，得到
+\begin{equation}
+\boxed{
+i\dot c_i
+=E_Fc_i+\frac12\sum_{j\text{ 邻接 }i}J_{ij}(c_i-c_j).
+}
+\label{eq:EOMgeneral}
+\end{equation}
+写出正方晶格的四个邻居，
+\begin{equation}
+\boxed{
+\begin{aligned}
+i\dot c_i={}&(E_F+J_x+J_y)c_i\\
+&-\frac{J_x}{2}
+(c_{i+\mathbf e_x}+c_{i-\mathbf e_x})
+-\frac{J_y}{2}
+(c_{i+\mathbf e_y}+c_{i-\mathbf e_y}),
+\end{aligned}
+}
+\label{eq:EOMsquare}
+\end{equation}
+其中 $i\pm\mathbf e_x,i\pm\mathbf e_y$ 表示水平、竖直方向的相邻格点。
+
+取平面波模式
+\begin{equation}
+c_i(t)=\frac1{\sqrt{\mathcal N}}
+\exp\!\left[i\mathbf k\cdot\mathbf r_i-iE_{\mathbf k}t\right],
+\label{eq:planewave}
+\end{equation}
+其中 $\mathbf r_i$ 为格点位置，$\mathbf k=(k_x,k_y)$ 为周期边界允许的波矢。将
+\begin{equation}
+c_{i\pm\mathbf e_x}=e^{\pm ik_xa}c_i,\qquad
+c_{i\pm\mathbf e_y}=e^{\pm ik_ya}c_i,\qquad
+i\dot c_i=E_{\mathbf k}c_i
+\end{equation}
+代入 \eqref{eq:EOMsquare}，得到
+\begin{equation}
+\begin{aligned}
+E_{\mathbf k}
+&=E_F+J_x+J_y
+-\frac{J_x}{2}(e^{ik_xa}+e^{-ik_xa})
+-\frac{J_y}{2}(e^{ik_ya}+e^{-ik_ya})\\
+&=E_F+J_x(1-\cos k_xa)+J_y(1-\cos k_ya).
+\end{aligned}
+\end{equation}
+相对全极化基态的单磁子激发能为
+\begin{equation}
+\boxed{
+E_{\mathbf k}-E_F
+=J_x(1-\cos k_xa)+J_y(1-\cos k_ya).
+}
+\end{equation}
+\end{document}

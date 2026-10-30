@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>波包研究方向 · 最小验证 Demo</title>
+<style>
+:root{color-scheme:light;--ink:#172d3c;--muted:#556878;--line:#dce4e8;--paper:#f3f6f7;--blue:#12667e;--accent:#bd583d}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:16px/1.75 "Microsoft YaHei","Segoe UI",sans-serif;background:var(--paper)}
+header{padding:34px max(24px,calc((100vw - 1460px)/2));background:#fff;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.15em;color:var(--blue);font-weight:700}
+h1{font-size:30px;line-height:1.3;margin:10px 0 12px;font-weight:650}header p{margin:0;max-width:1000px;color:var(--muted)}
+a{color:var(--blue);text-underline-offset:3px}a:hover{color:#0c4557}
+.layout{display:grid;grid-template-columns:255px minmax(0,1fr);max-width:1460px;margin:24px auto;gap:24px;padding:0 24px}
+aside{position:sticky;top:20px;align-self:start}
+.tabs{display:grid;gap:10px}.tab{text-align:left;border:1px solid var(--line);background:#fff;padding:15px 16px;border-radius:9px;cursor:pointer;color:var(--ink);font:inherit}
+.tab:hover{border-color:#8eb0bf}.tab[aria-selected=true]{border-color:var(--blue);box-shadow:inset 4px 0 var(--blue);background:#edf5f7}
+.tab small{display:block;color:var(--muted);font-size:12px}.tab strong{display:block;font-size:15px}
+.aside-note{font-size:13px;color:var(--muted);padding:16px 4px}.aside-links{display:grid;gap:8px;font-size:14px}
+main{min-width:0}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}
+.tag{display:inline-block;padding:3px 10px;border-radius:20px;background:#e7f1f3;color:#22566a;font-size:12px;font-weight:700}
+h2{font-size:25px;line-height:1.4;margin:12px 0 10px}.verdict{font-size:17px;max-width:1000px;margin:0 0 22px}
+.context{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.context>div{padding:15px 17px;border:1px solid var(--line);border-radius:8px}
+.label{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.04em}
+.context p{margin:5px 0 0;font-size:14px}.context a{font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.metric{padding:14px 16px;background:#f4f7f8;border-radius:8px}.metric strong{display:block;font-size:23px;line-height:1.35}.metric span{display:block;font-size:12px;color:var(--muted);margin-top:5px}
+.toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:22px 0 12px}
+button.mode{border:1px solid var(--line);background:white;color:var(--ink);border-radius:6px;padding:8px 15px;font:inherit;font-size:14px;cursor:pointer}
+button.mode[aria-pressed=true]{background:var(--blue);color:white;border-color:var(--blue)}
+.figure{margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:white}
+.figure img{display:block;width:100%;height:auto;cursor:zoom-in}
+figcaption{padding:12px 16px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.scope{border-left:3px solid var(--accent);padding:7px 14px;margin:21px 0;color:#5c443c;background:#fbf5f1;font-size:14px}
+.evidence{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}.evidence p{font-size:14px;margin:8px 0}
+ul{padding-left:20px;margin:9px 0}li{margin:7px 0;font-size:14px}
+.files{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;border-top:1px solid var(--line);padding-top:18px;margin-top:22px}
+footer{font-size:12px;color:var(--muted);max-width:1460px;padding:0 24px 32px;margin:auto}
+dialog{max-width:96vw;width:1400px;border:0;border-radius:10px;padding:16px;box-shadow:0 15px 70px #0005}dialog::backdrop{background:#14212acf}
+dialog img{width:100%;height:auto}dialog button{float:right;position:sticky;top:0;padding:8px 14px;border:1px solid var(--line);background:white;border-radius:6px;cursor:pointer;font:inherit}
+.error{padding:30px;background:#fff0ed}
+@media(max-width:850px){.layout{grid-template-columns:1fr;margin:16px auto;padding:0 14px;gap:14px}aside{position:static}.tabs{grid-template-columns:1fr 1fr}.aside-note{padding:8px 0}.aside-links{display:flex;flex-wrap:wrap}.panel{padding:18px}.context,.evidence{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr 1fr}h1{font-size:25px}h2{font-size:22px}header{padding:25px 20px}}
+@media(max-width:500px){.metrics{grid-template-columns:1fr}.metric strong{font-size:21px}.tabs{grid-template-columns:1fr}.tab{padding:10px 14px}.context{gap:10px}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">SOURCE → QUESTION → CONTROL → EVIDENCE</div>
+<h1>波包研究方向与最小验证</h1>
+<p id="intro"></p>
+</header>
+<div class="layout">
+<aside>
+<nav class="tabs" role="tablist" aria-label="选择最小测试" id="tabs"></nav>
+<div class="aside-note">可切换结果图与动画；点击图像可放大。所有图来自保存的计算数据。</div>
+<div class="aside-links"><a href="README.md" target="_blank">完整研究笔记</a><a href="gallery_manifest.json" target="_blank">目录与来源</a></div>
+</aside>
+<main id="main" role="tabpanel" aria-live="polite"></main>
+</div>
+<footer id="footer"></footer>
+<dialog id="zoom"><button id="closezoom" type="button">关闭</button><img id="zoomimg" alt="放大的结果图"></dialog>
+<script id="manifest" type="application/json">{"intro": "从论文明确留下的问题出发，完成四个有对照、有限参数范围和数值核验的最小测试。这里展示的是研究可行性证据，不是已完成的实验器件或新颖性证明。", "footer": "2026-10-21 · 图像与 GIF 已校验；受环境策略限制，HTML 未做自动浏览器交互实测。原动画与讲义保留；模型范围在各项说明中明确列出。", "demos": [{"id": "finite-source-caustic", "shortTitle": "有限源高阶 caustic", "title": "高阶聚焦的收益，能否经得住损耗和接收误差？", "status": "优先继续 · 有条件增强", "verdict": "同一有限输入角谱下，近高阶点有明确几何优势；但慢群速增加损耗，轻微频偏也可能把波束移出固定接收窗。应优化实际收到的信号，而非只追求全局峰值。", "question": "Wartelle 2023 把高阶 caustic 相比普通点的幅度增强及有限实验幅度预测留作后续问题。", "test": "使用论文实际偶极—交换等频线和 Fig.13 参数，保持输入标量范数、横向谱宽与传播距离相同；固定接收窗为 ±2 倍初始 RMS。比较三组并扫描损耗与频偏。", "sources": [{"label": "Wartelle 2023 · §III.D / Fig.13", "url": "https://arxiv.org/html/2301.01220v1"}, {"label": "论文记录", "url": "https://doi.org/10.1103/PhysRevB.107.144431"}], "metrics": [{"value": "1.589 ×", "label": "无损时近高阶／普通峰值，z = 10⁴d"}, {"value": "0.562 ×", "label": "Γ/ωM = 10⁻⁴ 时的峰值比"}, {"value": "0.959 → 约 0.03", "label": "±0.5% 频偏后的固定窗标量权重"}], "summary": "demos/finite-source-caustic/summary.png", "animation": "demos/finite-source-caustic/demo.gif", "summaryCaption": "比较使用相同输入标量范数。d 是膜厚；峰值比不是实际磁化率或微波功率增益。右下显示损耗足以反转无损优势。", "animationCaption": "沿传播距离演示三种等频线位置的有限角谱传播，使用共同色标／纵轴。它是单色波束截面演化，不是整个二维短脉冲的保形。", "scope": "实际色散上的归一化标量角谱子测试。未包含完整动态磁化率、真实天线耦合和材料标定；近高阶参数是论文数值近似点。", "checks": ["核对等频线残差、群速度方向及角谱分支的单调性。", "检查 Parseval 范数、FFT 盒尺寸及采样收敛；较小盒的失败记录保留。", "同时报告峰值、主瓣宽和固定接收窗权重，避免只看最亮点。"], "next": "优先把实际磁化率、阻尼和有限接收孔径纳入同一优化目标。关键问题是有误差时的接收收益，不是理想高阶点的发散幅度。", "results": "demos/finite-source-caustic/results.json", "report": "demos/finite-source-caustic/report.txt", "script": "demos/finite-source-caustic/run.py"}, {"id": "backflow-resolution", "shortTitle": "有限分辨率反流", "title": "数学上的反流，能否成为可认证的测量信号？", "status": "有条件继续 · 检测成本较高", "verdict": "原自然 Gaussian 拖尾在半格点模糊下失去认证。受空间预算约束的两载波相干制备可保留正见证，但检测仍需要大量重复测量；分辨率感知再优化只带来约 0.91% 的增益。", "question": "Paterek–Goussev 2026 明确提出平滑空间测量窗对 general backflow 的影响；Chen–Tang 2026 指出强反流的细密度条纹给成像带来困难。", "test": "固定截面、时间窗、初始中心和 RMS 宽度，比较单 Gaussian、相干两载波和非相干混合。见证扣除负群速度谱权重，并扫描已知 Gaussian PSF。", "sources": [{"label": "Paterek–Goussev 2026 · Discussion", "url": "https://arxiv.org/html/2511.10155v2"}, {"label": "Chen–Tang 2026 · Conclusion", "url": "https://arxiv.org/html/2602.12767v2"}], "metrics": [{"value": "+0.005621", "label": "PSF = 0.5a 的一般反流见证"}, {"value": "−0.01773", "label": "同载波非相干混合的否定对照"}, {"value": "约 39.6 万 / 组", "label": "给定二元计数模型的 5σ 估计，共三组"}], "summary": "demos/backflow-resolution/summary.png", "animation": "demos/backflow-resolution/demo.gif", "summaryCaption": "自然拖尾与新制备实验采用不同几何，分开显示。右上同一制备比较中，只有扣除负速度权重后仍为正的值才认证这里的反流。", "animationCaption": "显示同一冻结态的概率、模糊成像和固定窗概率变化。超过负速度谱权重才违反指定的经典弹道粒子零假设。", "scope": "自由余弦晶格的测量子测试。计数估计未包含技术噪声与 PSF 标定误差；a 尚未映射到具体材料。该判据不排除所有经典相干波动类比。", "checks": ["概率增量与加权键流积分一致；周期另一端贡献可忽略。", "连续 Bloch 谱积分和盒尺寸加倍均通过，有限 DFT 端点误差另行披露。", "冻结设计后检查载波、相位、幅度误差；保留非相干和普通左行对照。", "补充更紧的 PSF 经典界改变了冻结态排序；原判据下的 0.91% 优势不能推广。"], "next": "研究受限制备与实际探测分辨率的认证边界。补充测量界把最佳冻结态的估计降到约 25 万次／组，但需要速度分辨测量和已知 PSF。详情见完整研究笔记；没有按新目标重新优化。", "results": "demos/backflow-resolution/results.json", "report": "demos/backflow-resolution/report.txt", "script": "demos/backflow-resolution/run.py"}, {"id": "loss-aware-pulse", "shortTitle": "受限损耗补偿", "title": "补偿损耗改善了相干匹配，但代价是什么？", "status": "条件性方案 · 未见额外鲁棒优势", "verdict": "损耗补偿提高复场保真度，却降低绝对目标权重。强度形状本来已很接近目标；公平训练对照也没有建立 ensemble 设计的额外优势。", "question": "Casulleras 2023 提出在逆传播中加入波长相关损耗；2026 年逆设计展望强调系统容差和激发端设计。", "test": "在共同输入谱范数、有限带宽和峰值预算下，对比忽略损耗、正则补偿、同样训练选参数的名义模型、ensemble 和 matched filter；使用独立留出误差。", "sources": [{"label": "Casulleras 2023 · Conclusion", "url": "https://arxiv.org/html/2209.06608v1"}, {"label": "Vilsmeier 2026 · §4.1–4.2", "url": "https://arxiv.org/html/2607.07324v1"}], "metrics": [{"value": "0.799 → 0.953", "label": "名义复场保真度 F"}, {"value": "0.0771 → 0.0459", "label": "绝对目标权重 Q 的代价"}, {"value": "0.9834 → 0.9836", "label": "强度形状重叠几乎不变"}], "summary": "demos/loss-aware-pulse/overview.png", "animation": "demos/loss-aware-pulse/demo.gif", "summaryCaption": "形状与输出权重分别报告。仅右上形状对比面板归一化，左侧仍显示绝对目标权重，不能据归一化曲线推断效率提升。", "animationCaption": "比较不同预补偿输入到目标时刻的传播。演示是目标平面匹配，不声称中途一直保持同一形状。", "scope": "线性谱传递 surrogate；输入预算是无量纲平方范数，不是已标定的微波能量。未完成真实天线阻抗、因果驱动波形和 YIG 器件映射。", "checks": ["包含 matched-filter 绝对重叠上界与相同训练选 λ 的名义模型。", "留出成功率 86.25% 与 85% 只差 2/160 样本；两者均未达到 95% 目标。", "无损极限、单调损耗、FFT 范数、网格加倍及强损耗失败情形均记录。"], "next": "仅在接收任务需要复场／相位匹配时优先考虑。下一步需要测得的传递函数和真实驱动约束；若目标只是强度包络，本次没有显示值得付出输出代价的优势。", "results": "demos/loss-aware-pulse/results.json", "report": "demos/loss-aware-pulse/report.txt", "script": "demos/loss-aware-pulse/run.py"}, {"id": "transport-disorder", "shortTitle": "两类无序的公平对照", "title": "误差类型的差异，还是散射预算的差异？", "status": "闭合否定性基准 · 降低优先级", "verdict": "相同矩阵扰动范数下，onsite 与 bond 无序看似有明显差别；匹配最低阶后向散射强度后，接收概率差基本消失，没有支持额外的新保护机制。", "question": "Meier 2025 正式版预期裸 qubit 频率无序与耦合误差影响相近，但没有给出频率无序的直接数值对照。", "test": "固定 Gaussian、160a 传播距离、接收窗与干净到达时刻，用 64 个配对实现对比两类预算，并加入物理 Heisenberg 相关无序和离带中心控制。", "sources": [{"label": "Meier 2025 · Stability under perturbations", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/"}], "metrics": [{"value": "0.6710 / 0.4757", "label": "同 Frobenius 预算：onsite / bond 接收概率"}, {"value": "0.6710 / 0.6711", "label": "同后向散射预算：两者几乎重合"}, {"value": "−0.000085", "label": "匹配后配对均差；95% CI 跨过零"}], "summary": "demos/transport-disorder/born_matched_control.png", "animation": "demos/transport-disorder/demo.gif", "summaryCaption": "匹配散射强度后，配对均差的 95% 区间为约 [−0.00213, 0.00196]。这不证明严格等价，也没有支持新的带中心保护。", "animationCaption": "单个固定无序实现的传播例子使用共同 Frobenius 预算。它展示初始差异；不能替代结果图中匹配后向散射强度的集合对照。", "scope": "XY／cavity bulk 输运子测试，不是完整量子时钟的精度或熵验证。随机 Heisenberg 交换同时改变对角和跃迁项，已单独处理。", "checks": ["64 个配对实现和置信区间；不逐次优化接收时间或归一化幸存信号。", "匹配 Born 后向散射的控制关闭了主要差异。", "Hermiticity、干净 FFT、独立本征分解、概率守恒与盒尺寸检查通过。"], "next": "保留为后续器件研究的校准基准，不优先作为新物理方向。它说明首先需要定义合理的误差资源，而不是只给两类噪声相同数字。", "results": "demos/transport-disorder/results.json", "report": "demos/transport-disorder/report.txt", "script": "demos/transport-disorder/run.py"}]}</script>
+<script>
+const data=JSON.parse(document.getElementById('manifest').textContent);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let active=null,mode='summary';
+document.getElementById('intro').textContent=data.intro;
+document.getElementById('footer').textContent=data.footer;
+const tabs=document.getElementById('tabs');
+data.demos.forEach((d,i)=>{
+ const b=document.createElement('button');b.className='tab';b.type='button';b.setAttribute('role','tab');b.id='tab-'+d.id;
+ b.innerHTML=`<small>DEMO ${String(i+1).padStart(2,'0')} · ${esc(d.status)}</small><strong>${esc(d.shortTitle)}</strong>`;
+ b.onclick=()=>select(d.id);tabs.append(b);
+});
+function select(id){
+ active=data.demos.find(d=>d.id===id)||data.demos[0];mode='summary';
+ document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',String(b.id==='tab-'+active.id)));
+ history.replaceState(null,'','#'+active.id);render();
+}
+function render(){
+ const d=active, sources=d.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(' · ');
+ document.getElementById('main').setAttribute('aria-labelledby','tab-'+d.id);
+ document.getElementById('main').innerHTML=`<article class="panel">
+ <span class="tag">${esc(d.status)}</span><h2>${esc(d.title)}</h2><p class="verdict">${esc(d.verdict)}</p>
+ <div class="context"><div><div class="label">作者留下的问题</div><p>${esc(d.question)}</p><p>${sources}</p></div>
+ <div><div class="label">本轮最小测试</div><p>${esc(d.test)}</p></div></div>
+ <div class="metrics">${d.metrics.map(m=>`<div class="metric"><strong>${esc(m.value)}</strong><span>${esc(m.label)}</span></div>`).join('')}</div>
+ <div class="toolbar"><button class="mode" type="button" data-mode="summary" aria-pressed="${mode==='summary'}">结果图</button>
+ <button class="mode" type="button" data-mode="animation" aria-pressed="${mode==='animation'}">播放动画</button></div>
+ <figure class="figure"><img id="demo-image" src="${esc(mode==='animation'?d.animation:d.summary)}" alt="${esc(d.title)}">
+ <figcaption>${esc(mode==='animation'?d.animationCaption:d.summaryCaption)}</figcaption></figure>
+ <div class="scope"><strong>结论适用范围：</strong>${esc(d.scope)}</div>
+ <div class="evidence"><div><div class="label">对照与核验</div><ul>${d.checks.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div>
+ <div><div class="label">是否值得继续</div><p>${esc(d.next)}</p></div></div>
+ <div class="files"><a href="${esc(d.results)}" target="_blank">原始结果 JSON</a><a href="${esc(d.report)}" target="_blank">该测试说明</a><a href="${esc(d.script)}" target="_blank">复现脚本</a></div>
+ </article>`;
+ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;render()});
+ document.getElementById('demo-image').onclick=()=>{document.getElementById('zoomimg').src=document.getElementById('demo-image').src;document.getElementById('zoom').showModal()};
+}
+document.getElementById('closezoom').onclick=()=>document.getElementById('zoom').close();
+window.addEventListener('hashchange',()=>select(location.hash.slice(1)));
+select(location.hash.slice(1));
+</script>
+</body></html>

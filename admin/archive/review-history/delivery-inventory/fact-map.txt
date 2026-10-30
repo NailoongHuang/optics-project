@@ -1,0 +1,310 @@
+FINAL REPORT FACT MAP
+Prepared for the plain-Chinese PDF and organized delivery on 2026-10-21.
+This file is an editorial/source map, not the report itself.
+
+1. Suggested main line
+
+这项工作从一个简单问题出发：在一排排相邻自旋之间，一个局部激发怎样向外传播？
+先把模型和色散关系理顺，再把传播过程画出来；随后比较哪些初始波包散得更慢，
+解释动画里的明暗变化，并检查文献中哪些结果已经有人做过。
+最后从论文留下的具体问题里选出四个方向，各做了一次小规模、带对照的试算。
+现在已经有了推导、可运行代码、数据、动画和文献，可以据此选择下一步，而不只停留在一张好看的图上。
+
+Suggested reader-facing conclusion:
+最值得继续的是让更窄的波束真正给接收器带来更多信号；
+反流的检测也值得研究，但测量要求较高。
+损耗补偿要看任务是否需要保留相位；无序比较目前更适合作为校准基准。
+
+2. Work stages and the few facts that matter
+
+A. Model and derivation
+Plain explanation:
+模型把每个位置上的自旋与相邻位置连接起来。只翻转一个自旋时，
+激发可以在这些位置之间移动；色散关系告诉我们不同波长的成分怎样积累相位。
+后续模拟直接从这条色散关系出发。
+Current source:
+  Note/single_magnon_derivation/main.tex
+  Note/single_magnon_derivation/main.pdf
+  Note/single_magnon_derivation/review.md
+The accepted PDF is 2 pages; the current review record is dated 2026-10-20.
+The report need not reproduce the Coulomb-to-spin algebra; one final dispersion formula is enough.
+
+B. Simulation
+Plain explanation:
+先给每个格点一个初始振幅，再把它分解成不同波长的模式。
+每个模式按自己的能量演化，最后叠加回格点。这给出每个时刻的概率分布。
+Current one-magnon figures use exact Fourier evolution, not the early real-spin RK4 animation.
+Useful source:
+  figures/midterm-report/common.py
+  figures/midterm-report/THEORY.md
+  figures/midterm-report/notation/README.md
+The early general solver remains useful:
+  code/spin_wave_2d.py
+  code/test_spin_wave_2d.py
+but it should not be used to describe the method of the later one-magnon movies.
+
+C. Why choose the two-direction crossing
+Plain explanation:
+波包由一小段波长组成。如果这些成分跑得不一样快，波包就会拉开。
+只让一个方向的二阶色散消失，只能减弱那个方向的展宽；
+两个方向同时满足条件，波包就能更久地保持紧凑。
+Minimal numbers:
+  Same initial RMS width 6a, Jy=Jx, t=180 hbar/Jx:
+  A ordinary point: widths (12.924a,12.924a).
+  B one-direction point: (6.064a,12.924a).
+  C crossing: (6.064a,6.064a).
+Later:
+  At t=4320 hbar/Jx, C widths are about 21.975a and the shifted-state overlap is 0.404.
+  The crossing delays deformation; it does not stop it permanently.
+Optional lifetime numbers, only if needed:
+  F first reaches 0.9 at A/B/C = 62.9/91.2/1127.1 hbar/Jx for initial width 6a.
+  Initial-width scaling across 4a,6a,8a,12a is about sigma^2 for A/B and sigma^3 for C.
+Source:
+  figures/midterm-report/wavepacket-audit/tracking/results.json
+
+D. The red-blue flicker
+Plain explanation:
+红蓝图显示的是复振幅的一部分。相位在转动时，颜色会变浅、变深甚至换色，
+但概率包络不一定同时改变。把实部和概率放在一起看，就能分清这两种变化。
+Minimal numbers:
+  t=9 hbar/Jx: real absolute peak / initial = 0.7464,
+  probability peak / initial = 0.99982.
+The movie’s sparse time samples make the phase variation look slower.
+Avoid adding the entire checkerboard/cos-sin derivation to the report.
+Source:
+  figures/midterm-report/crossing-diagnostics/dynamics/results.json
+  figures/midterm-report/crossing-diagnostics/phase_probability_comparison.png
+
+E. What literature changed
+Plain explanation:
+查到的论文表明，选择 ka=pi/2 附近的波包来减弱展宽，是已有的方法。
+早期自旋链研究已经讨论了剩余的三阶色散，二维光学阵列也做过两个方向的比较。
+因此，下一步应围绕真实的制备、损耗和接收问题提出新任务，而不是把“曲率为零”重新命名。
+Direct sources:
+  Osborne & Linden 2004; Chen et al. 2007; Longhi 2009; Thompson et al. 2016.
+Recent value:
+  Meier et al. 2025 uses related low-spreading transport in a quantum-clock task.
+Keep the literature comparison short in the body. Full titles/versions belong in the paper index.
+
+F. Four minimum tests
+
+F1. Finite-source directional beam
+Reader wording:
+更窄、更亮的波束，只有落进接收器才有用。
+试算中近高阶点在无损时更集中，但传播损耗和轻微频偏都可能把这个优势吃掉。
+Numbers worth keeping:
+  Equal scalar input norm and initial width, z=10000d:
+  peak ratio 1.589; receiver-window integrals 0.9586 vs 0.5904.
+  At Gamma/omega_M=1e-4, peak ratio reverses to 0.562.
+  Frequency shift +/-0.5% gives receiver-window integrals about 0.026/0.029.
+Report implication:
+  优先把天线、损耗和接收器放进同一个计算，比较实际收到的信号。
+Source:
+  research/wavepacket-prospects/demos/finite-source-caustic/results.json
+  .../report.txt
+
+F2. Detecting backflow
+Reader wording:
+反流不是整团波包倒着走，而是很小一部分概率短暂流回去。
+原来那一点自然拖尾太细，模糊成像很容易把它淹没。
+重新准备相干叠加可以保留信号，但检测次数仍然不少。
+Numbers worth keeping:
+  Old natural tail: sharp-window signal 3.35e-5; at blur width 0.5a the same event is not certified.
+  A prepared two-carrier state has positive general witness about 0.00562 at blur 0.5a.
+  With the tighter, PSF-aware classical bound, a frozen state needs about 250000 samples per ensemble,
+  for three independent ensembles in the stated counting model.
+Report implication:
+  先问仪器能不能分辨，再优化波形；不用把更大的负流峰值直接当成更好的实验方案。
+Do not compare the original late tail and new local preparation as equal-resource gain.
+Source:
+  research/wavepacket-prospects/demos/backflow-resolution/results.json
+  .../supplemental_bound_results.json
+
+F3. Loss compensation
+Reader wording:
+提前补偿损耗，能让到达的振幅和相位更接近目标，但需要付出信号强度的代价。
+如果只关心包络强度，本例的收益很小。
+Minimal numbers:
+  Complex-field overlap F 0.799 -> 0.953.
+  Absolute target weight Q 0.0771 -> 0.0459.
+  Intensity-shape overlap 0.98336 -> 0.98360.
+Do not present ensemble design as a demonstrated improvement:
+  same-training nominal success 86.25%, ensemble 85%, only 2/160 samples apart.
+Source:
+  research/wavepacket-prospects/demos/loss-aware-pulse/results.json
+
+F4. Comparing disorder
+Reader wording:
+起初，两类误差看起来造成很不一样的损失。
+但把它们对波的反射作用调到相同后，差别几乎消失。
+这次对照排除了一个看似新鲜的解释，也让后续比较更可靠。
+Minimal numbers:
+  Receiver probability: onsite 0.6710;
+  bond with same matrix-norm budget 0.4757;
+  bond with same leading backscatter strength 0.6711.
+Do not use Frobenius/Born terminology in the main narrative; explain once as error budget / reflection strength.
+Source:
+  research/wavepacket-prospects/demos/transport-disorder/results.json
+
+3. Current deliverables to call out in the package
+
+Theory:
+  Note/single_magnon_derivation/main.pdf (current)
+  Note/toy_model/ and Note/toy_model_EOM/ (historical)
+
+Presentation:
+  presentations/midterm/output/中期报告_统一符号与传播优化版.pptx (current, 19 slides)
+  presentations/midterm/output/中期报告_统一符号与传播优化版_预览.pdf
+  The README says 中期报告_能带曲率与波包设计.pptx and 中期报告_单磁子传播.pptx
+  are stable aliases of the same verified release. Files explicitly named 18页优化版 are historical.
+
+Main figure/data route:
+  figures/midterm-report/common.py
+  figures/midterm-report/curvature-design/
+  figures/midterm-report/notation/
+  figures/midterm-report/wavepacket-audit/
+  figures/midterm-report/crossing-diagnostics/
+
+New research/demo entry:
+  research/wavepacket-prospects/README.md
+  research/wavepacket-prospects/index.html
+  research/wavepacket-prospects/demos/*/run.py
+
+4. Figure recommendations (9 primary; use 6-8 in a short report)
+
+1. Model picture, optional small opening illustration:
+   figures/midterm-report/notation/g_lattice.png
+   831 x 886. Shows neighboring links and one marked site.
+
+2. Most important original comparison:
+   figures/midterm-report/notation/g07_final_probability.png
+   2478 x 792. Three panels A/B/C at the same time; directly shows width differences.
+   Use a wide single-page figure. Caption must state common initial width and t=180 hbar/Jx.
+
+3. Best explanation of flicker:
+   figures/midterm-report/crossing-diagnostics/phase_probability_comparison.png
+   1952 x 1600. Same times, real part above and probability below, with time sampling trace.
+   If the report is short, use the image with a short caption and omit the long phase formula.
+
+4. Optional quantitative lifetime summary:
+   figures/midterm-report/wavepacket-audit/tracking/lifetime_scaling.png
+   1920 x 768. Supports sigma^2 vs sigma^3. Avoid calling the axes an experimental law.
+
+5. Optional long-time reality check:
+   figures/midterm-report/wavepacket-audit/tracking/crossing_profiles.png
+   1920 x 1120. Shows actual profile developing side lobes; useful if omitting plot 4.
+
+6. Main finite-source result:
+   research/wavepacket-prospects/demos/finite-source-caustic/summary.png
+   1920 x 1350. Four panels; best as a full-width figure.
+   A simpler alternative for the receiver point:
+   research/wavepacket-prospects/demos/finite-source-caustic/detuning.png
+   1725 x 660. This is the alternative to plot 6, not an extra required plot.
+
+7. Backflow demo end frame:
+   research/wavepacket-prospects/demos/backflow-resolution/demo_frame_50.png
+   1150 x 430. Less dense than the four-panel summary; pair with an ordinary-language explanation.
+
+8. Loss-compensation tradeoff:
+   research/wavepacket-prospects/demos/loss-aware-pulse/overview.png
+   2000 x 1392. Dense; a three-row table of F/Q may read better if space is tight.
+
+9. Best negative/control result:
+   research/wavepacket-prospects/demos/transport-disorder/born_matched_control.png
+   1376 x 784. Three bars clearly close the argument; labels can be explained in the caption.
+
+All listed paths were checked to exist and image dimensions read from the files.
+
+5. Shortlist of references for the PDF (10 core + 2 optional)
+
+Core:
+1. Osborne, T. J.; Linden, N. Propagation of quantum information through a spin system.
+   Physical Review A 69, 052315 (2004). DOI 10.1103/PhysRevA.69.052315.
+   https://arxiv.org/abs/quant-ph/0312141
+   Role: direct single-excitation Gaussian / pi/2 / cubic-spreading precedent.
+
+2. Chen, H.; Chen, X.; Xia, Y. The peculiarities of discrete diffraction in two-dimensional optical waveguide arrays.
+   Optics Communications 271, 382-385 (2007). DOI 10.1016/j.optcom.2006.10.031.
+   Role: direct one-direction / two-direction comparison.
+
+3. Longhi, S. Discrete diffraction and shape-invariant beams in optical waveguide arrays.
+   Physical Review A 79, 033847 (2009). DOI 10.1103/PhysRevA.79.033847.
+   https://arxiv.org/abs/1001.0997
+   Role: width evolution and finite-time self-collimation.
+
+4. Divinskiy, B. et al. Dispersionless propagation of ultra-short spin-wave pulses in ultrathin yttrium iron garnet waveguides.
+   Physical Review Applied 16, 024028 (2021). DOI 10.1103/PhysRevApplied.16.024028.
+   https://arxiv.org/abs/2108.08054
+   Role: direct magnetic pulse experiment.
+
+5. Wartelle, A. et al. Caustic spin wave beams in soft, thin films: properties and classification.
+   Physical Review B 107, 144431 (2023). DOI 10.1103/PhysRevB.107.144431.
+   https://arxiv.org/abs/2301.01220
+   Role: the finite-source higher-order-beam question.
+
+6. Casulleras, S. et al. Generation of Spin-Wave Pulses by Inverse Design.
+   Physical Review Applied 19, 064085 (2023). DOI 10.1103/PhysRevApplied.19.064085.
+   https://arxiv.org/abs/2209.06608
+   Role: loss-aware pulse-design outlook.
+
+7. Meier, F. et al. Precision is not limited by the second law of thermodynamics.
+   Nature Physics 21, 1147-1152 (2025). DOI 10.1038/s41567-025-02929-2.
+   https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/
+   Role: recent application and the specific disorder expectation; use final published version.
+
+8. Torres Arvizu, F. R.; Ortega, A.; Larralde, H. Quantum backflow in biased tight-binding systems.
+   Physical Review A 113, 032218 (2026). DOI 10.1103/v49b-zz68.
+   https://arxiv.org/abs/2511.16867
+   Role: direct lattice-backflow precedent.
+
+9. Paterek, T.; Goussev, A. General Quantum Backflow in Realistic Wave Packets.
+   Physical Review Letters 136, 090202 (2026). DOI 10.1103/tm9s-pkg5.
+   https://arxiv.org/abs/2511.10155
+   Role: smooth-window/general-backflow outlook.
+
+10. Chen, Y.; Tang, Y. Preparing Quantum Backflow States by Large Momentum Transfer.
+    Physical Review A 113, 063304 (2026). DOI 10.1103/3b4f-6nfr.
+    https://arxiv.org/abs/2602.12767
+    Role: preparation and density-resolution issue; current version v2.
+
+Optional:
+11. Thompson, K. et al. Time independent universal computing with spin chains: quantum plinko machine.
+    New Journal of Physics 18, 073044 (2016). DOI 10.1088/1367-2630/18/7/073044.
+    Role: explicit cubic-dispersion error bound.
+
+12. Vilsmeier, F. et al. Perspectives on inverse design for AI magnonics.
+    arXiv:2607.07324v1 (2026), PREPRINT.
+    https://arxiv.org/abs/2607.07324
+    Role: recent tolerance/excitation research priorities; not new experimental data.
+
+6. Matters to state once, not repeatedly
+
+- The front half studies the single-magnon square-lattice model. The four later tests use
+  separately stated simplified models borrowed from the relevant papers. One short transition
+  paragraph is enough; do not burden every page with repeated model disclaimers.
+- A red-blue real-amplitude picture is not a probability picture. This is central to the
+  flicker story and deserves one clear side-by-side explanation.
+- The original low-spreading mechanism already has direct prior work. State this plainly,
+  then explain what remains useful; do not repeat "not novel" in every paragraph.
+- Finite-source caustic values are normalized scalar calculations, not measured microwave gain.
+  One sentence beside the result is enough.
+- The loss experiment's F is phase-sensitive. Saying simply "the packet shape improved"
+  would be wrong because its intensity shape barely changed.
+- Whole-model evidence should be reported as "we computed / compared / verified", not
+  "experimentally observed". Source experiments can be identified separately.
+- code/README.md still says all Note files are historical; this blanket line is stale.
+  The current single_magnon_derivation is newer and accepted. Do not propagate the stale classification.
+- HTML browser interaction was blocked by environment policy, but the scientific GIFs were
+  decoded and figures reviewed. Put that operational detail in the index/QA record, not the main story.
+- Do not turn this report into a log of tool calls, failed preview servers, review counts,
+  hashes, matrix-norm terminology, or every parameter scan. Those remain in the package index.
+
+7. Editing guidance for the parent writer
+
+Prefer: “接收器实际收到多少” over “有限接收窗标量权重优化”.
+Prefer: “不同波长跑得是否一样快” over repeated “速度协方差／谱矩”.
+Prefer: “图中颜色的变化” over “相位敏感可视化伪象”.
+Prefer: “相同反射能力的误差” over unexplained “Born-matched Frobenius-budget baseline”.
+Prefer: “约25万次一组，需三组” over a long list of counting estimators.
+Use at most one model equation, one result table for A/B/C, and the few figures that establish the main point.
+The comprehensive references, method definitions and numerical controls can remain in linked records.

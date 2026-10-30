@@ -1,0 +1,1007 @@
+{
+  "scope": "Fixed-distance bulk transport; not full clock precision, entropy, or first-arrival statistics.",
+  "units": "a=hbar=J=1; clean hopping is -J/2 and clean bulk diagonal is J",
+  "source_anchor": {
+    "paper": "Meier et al., Precision is not limited by the second law of thermodynamics",
+    "doi": "10.1038/s41567-025-02929-2",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/",
+    "location": "Published Methods: Stability under perturbations, second paragraph; published PDF page 9 including cover.",
+    "explicit_unperformed_expectation": "Bare-qubit frequency disorder is expected to affect performance comparably to coupling imperfections; numerics there address coupling disorder and amplitude damping.",
+    "our_subtest": "Compare fixed-distance Gaussian bulk reception under matched Hamiltonian-error budgets."
+  },
+  "parameters": {
+    "N": 1024,
+    "sigma_a": 6.0,
+    "initial_center_a": -160.0,
+    "distance_a": 160.0,
+    "receiver_center_a": 0,
+    "receiver_half_width_a": 12.0,
+    "primary_confirmatory_draws": 64,
+    "off_center_control_draws": 32,
+    "strengths": [
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "seed_base": 2026102100,
+    "demo_seed": 2026102100,
+    "demo_strength": 0.05,
+    "design_selection": "Parameters and demo seed fixed before ensemble; no fitting, per-realization timing selection, or test-set tuning."
+  },
+  "budget": {
+    "definition": "E[Tr((delta H)^2)]/N = w^2",
+    "onsite_std": "w",
+    "bond_hopping_std": "w sqrt[N/(2(N-1))]",
+    "heisenberg_exchange_std": "w sqrt[N/(N-1)]",
+    "pairing": "Models share an iid Gaussian coordinate-indexed sequence within each seed. Their marginal disorder laws are correct. Pairwise CIs use per-seed differences.",
+    "interpretation": "Equal Frobenius variance does not imply equal backscattering strength. This defines a reproducible comparison, not universal disorder equivalence."
+  },
+  "clean_baselines": {
+    "band_center": {
+      "q0": 1.5707963267948966,
+      "arrival_time": 160.55652117902466,
+      "mean_velocity": 0.9965337989703693,
+      "norm": 1.0000000000000002,
+      "receiver_probability": 0.9621324796993227,
+      "fidelity_to_clean_evolution": 1.0000000000000004,
+      "fidelity_to_rigid_translation": 0.998586845183558,
+      "centroid": -4.440892098500626e-14,
+      "participation_sites": 21.446166917830574,
+      "left_edge_probability": 3.180659053225252e-30,
+      "right_edge_probability": 3.357486364358148e-30
+    },
+    "off_center_control": {
+      "q0": 0.7,
+      "arrival_time": 249.2271236256598,
+      "mean_velocity": 0.6419846992268814,
+      "norm": 1.0,
+      "receiver_probability": 0.5388929882374952,
+      "fidelity_to_clean_evolution": 1.0,
+      "fidelity_to_rigid_translation": 0.6029703850202374,
+      "centroid": -4.3520742565306136e-14,
+      "participation_sites": 59.97292454702514,
+      "left_edge_probability": 8.212422575070682e-30,
+      "right_edge_probability": 7.406248706932115e-30
+    }
+  },
+  "summaries": [
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.02,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.9069753134533606,
+        "standard_error": 0.0023799236677443316,
+        "ci95": [
+          0.9022194155000024,
+          0.9117312114067188
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.937294412215235,
+        "standard_error": 0.0026354238171328,
+        "ci95": [
+          0.9320279379547338,
+          0.9425608864757362
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.9359287844848762,
+        "standard_error": 0.00265777962203553,
+        "ci95": [
+          0.9306176357130771,
+          0.9412399332566752
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.00039967374389780205,
+        "standard_error": 2.4045101504336925e-06,
+        "ci95": [
+          0.0003948687137792878,
+          0.0004044787740163163
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.02,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.8558199066413781,
+        "standard_error": 0.004499100745602981,
+        "ci95": [
+          0.8468291712165543,
+          0.8648106420662018
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.883134337202724,
+        "standard_error": 0.004997623384085696,
+        "ci95": [
+          0.8731473837780559,
+          0.8931212906273922
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.8818288148590786,
+        "standard_error": 0.00503958332410719,
+        "ci95": [
+          0.8717580111851038,
+          0.8918996185330534
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.0003996624578139614,
+        "standard_error": 2.3895186310349114e-06,
+        "ci95": [
+          0.0003948873858564557,
+          0.0004044375297714671
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.02,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.906242823578463,
+        "standard_error": 0.0023580726435266934,
+        "ci95": [
+          0.9015305914126945,
+          0.9109550557442314
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.9362453132510382,
+        "standard_error": 0.002615935100298101,
+        "ci95": [
+          0.9310177840835094,
+          0.941472842418567
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.9348725720047002,
+        "standard_error": 0.0026372111429604898,
+        "ci95": [
+          0.9296025260585348,
+          0.9401426179508656
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.0004011728120310847,
+        "standard_error": 2.3652179236762657e-06,
+        "ci95": [
+          0.0003964463011623057,
+          0.00040589932289986373
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.05,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.6710195665329081,
+        "standard_error": 0.010368964803016098,
+        "ci95": [
+          0.6502988437830705,
+          0.6917402892827457
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.6731830678619155,
+        "standard_error": 0.01105309867116588,
+        "ci95": [
+          0.6510952126668426,
+          0.6952709230569885
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.6722030131353194,
+        "standard_error": 0.011129480055391883,
+        "ci95": [
+          0.6499625219234538,
+          0.6944435043471849
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.002497960899361263,
+        "standard_error": 1.5028188440210582e-05,
+        "ci95": [
+          0.0024679294611205486,
+          0.0025279923376019774
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.05,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.4757181520896132,
+        "standard_error": 0.014546004059533896,
+        "ci95": [
+          0.4466502824457753,
+          0.5047860217334511
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.47361572679421854,
+        "standard_error": 0.015401804804659747,
+        "ci95": [
+          0.4428376758250762,
+          0.5043937777633608
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.47315509053474153,
+        "standard_error": 0.01550987402826925,
+        "ci95": [
+          0.4421610804546616,
+          0.5041491006148214
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.0024978903613372587,
+        "standard_error": 1.4934491443968206e-05,
+        "ci95": [
+          0.002468046161602848,
+          0.0025277345610716694
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.05,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.66572914876602,
+        "standard_error": 0.010285408619605373,
+        "ci95": [
+          0.6451753997250702,
+          0.6862828978069697
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.665255328934381,
+        "standard_error": 0.010852425793519858,
+        "ci95": [
+          0.6435684864864925,
+          0.6869421713822695
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.6642886615232724,
+        "standard_error": 0.010922601587467077,
+        "ci95": [
+          0.6424615839412355,
+          0.6861157391053092
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.00250733007519428,
+        "standard_error": 1.4782612022976667e-05,
+        "ci95": [
+          0.0024777893822644113,
+          0.0025368707681241486
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.1,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.25113555302273327,
+        "standard_error": 0.013439175217894868,
+        "ci95": [
+          0.22427950432677393,
+          0.2779916017186926
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.22712905285962962,
+        "standard_error": 0.01254919827741813,
+        "ci95": [
+          0.20205148116573352,
+          0.2522066245535257
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.22717612975049728,
+        "standard_error": 0.012606962750933112,
+        "ci95": [
+          0.20198312496725884,
+          0.2523691345337357
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.009991843597445052,
+        "standard_error": 6.011275376084233e-05,
+        "ci95": [
+          0.009871717844482195,
+          0.01011196935040791
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.1,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.07709102204493277,
+        "standard_error": 0.008996442445941461,
+        "ci95": [
+          0.059113066366753494,
+          0.09506897772311206
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.06795209571407546,
+        "standard_error": 0.00815611245679178,
+        "ci95": [
+          0.05165340552231,
+          0.08425078590584091
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.0684958693614979,
+        "standard_error": 0.00822798996466922,
+        "ci95": [
+          0.0520535434316456,
+          0.0849381952913502
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.009991561445349035,
+        "standard_error": 5.973796577587282e-05,
+        "ci95": [
+          0.009872184646411392,
+          0.010110938244286678
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.1,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.2326448430030335,
+        "standard_error": 0.013041562974679994,
+        "ci95": [
+          0.2065833589728931,
+          0.2587063270331739
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.20317271989287009,
+        "standard_error": 0.011791885759711818,
+        "ci95": [
+          0.17960851650646498,
+          0.2267369232792752
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.20324449518241078,
+        "standard_error": 0.011845012854062557,
+        "ci95": [
+          0.17957412576945825,
+          0.2269148645953633
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.01002932030077712,
+        "standard_error": 5.913044809190667e-05,
+        "ci95": [
+          0.009911157529057645,
+          0.010147483072496594
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.2,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.010247842968764362,
+        "standard_error": 0.0017608298129520165,
+        "ci95": [
+          0.006729105365063135,
+          0.01376658057246559
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.006375911945979438,
+        "standard_error": 0.0011605876779539497,
+        "ci95": [
+          0.004056662535974054,
+          0.008695161355984821
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.006434692486153254,
+        "standard_error": 0.001168899170314223,
+        "ci95": [
+          0.004098833883995486,
+          0.008770551088311021
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.03996737438978021,
+        "standard_error": 0.0002404510150433693,
+        "ci95": [
+          0.03948687137792878,
+          0.04044787740163164
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.2,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.0002244808858687894,
+        "standard_error": 0.00010556813241696204,
+        "ci95": [
+          1.3519806861776046e-05,
+          0.00043544196487580274
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.00012763716355024184,
+        "standard_error": 6.216190761493258e-05,
+        "ci95": [
+          3.4165033628932872e-06,
+          0.00025185782373759037
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.0001378493375888881,
+        "standard_error": 6.641538221658968e-05,
+        "ci95": [
+          5.1287866584659024e-06,
+          0.00027056988851931034
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.03996624578139614,
+        "standard_error": 0.0002389518631034913,
+        "ci95": [
+          0.03948873858564557,
+          0.04044375297714671
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "band_center",
+      "q0": 1.5707963267948966,
+      "strength_w": 0.2,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.004955786268827021,
+        "standard_error": 0.001127446448096846,
+        "ci95": [
+          0.0027027643220740873,
+          0.007208808215579954
+        ],
+        "n": 64
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.002420320132247286,
+        "standard_error": 0.0005852302915709235,
+        "ci95": [
+          0.0012508307138898755,
+          0.0035898095506046966
+        ],
+        "n": 64
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.002430997477968347,
+        "standard_error": 0.0005910483505061664,
+        "ci95": [
+          0.0012498815965618654,
+          0.0036121133593748286
+        ],
+        "n": 64
+      },
+      "realized_budget": {
+        "mean": 0.04011728120310848,
+        "standard_error": 0.00023652179236762668,
+        "ci95": [
+          0.03964463011623058,
+          0.04058993228998638
+        ],
+        "n": 64
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.05,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.21673821462114334,
+        "standard_error": 0.009325482247176069,
+        "ci95": [
+          0.19771876818389675,
+          0.23575766105838994
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.3386429899507748,
+        "standard_error": 0.013042209404373789,
+        "ci95": [
+          0.3120432284998368,
+          0.3652427514017128
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.21526213130238261,
+        "standard_error": 0.009920517488673055,
+        "ci95": [
+          0.1950291024890232,
+          0.23549516011574204
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.0025057211604554326,
+        "standard_error": 2.2100892169675883e-05,
+        "ci95": [
+          0.0024606460936980215,
+          0.0025507962272128437
+        ],
+        "n": 32
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.05,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.09612023332183245,
+        "standard_error": 0.0069912951352480044,
+        "ci95": [
+          0.08186139288576835,
+          0.11037907375789655
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.1267895020900211,
+        "standard_error": 0.008922386271465802,
+        "ci95": [
+          0.10859217531542388,
+          0.14498682886461833
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.08649174008092929,
+        "standard_error": 0.007108378388484594,
+        "ci95": [
+          0.07199410677554133,
+          0.10098937338631725
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.0025063953417630547,
+        "standard_error": 2.1991515203533203e-05,
+        "ci95": [
+          0.0024615433507988176,
+          0.002551247332727292
+        ],
+        "n": 32
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.05,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.5108001462215006,
+        "standard_error": 0.0020695596940935165,
+        "ci95": [
+          0.5065792513972769,
+          0.5150210410457243
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.9366765300876223,
+        "standard_error": 0.0022373701760526167,
+        "ci95": [
+          0.9321133835289966,
+          0.941239676646248
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.5674288731306661,
+        "standard_error": 0.0023695871325953174,
+        "ci95": [
+          0.5625960683113301,
+          0.5722616779500022
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.002514280423326207,
+        "standard_error": 2.1765095774245443e-05,
+        "ci95": [
+          0.0024698902178325274,
+          0.0025586706288198862
+        ],
+        "n": 32
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.1,
+      "kind": "onsite",
+      "receiver_probability": {
+        "mean": 0.02289513283644872,
+        "standard_error": 0.002542807584298561,
+        "ci95": [
+          0.017709042576673037,
+          0.028081223096224406
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.019076036070550747,
+        "standard_error": 0.002301933683092557,
+        "ci95": [
+          0.014381211371170669,
+          0.023770860769930825
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.015981568300265554,
+        "standard_error": 0.002147821767821464,
+        "ci95": [
+          0.011601056924330774,
+          0.020362079676200334
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.01002288464182173,
+        "standard_error": 8.840356867870353e-05,
+        "ci95": [
+          0.009842584374792086,
+          0.010203184908851375
+        ],
+        "n": 32
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.1,
+      "kind": "bond",
+      "receiver_probability": {
+        "mean": 0.001834886223257423,
+        "standard_error": 0.00030048426231700547,
+        "ci95": [
+          0.0012220445298313848,
+          0.002447727916683461
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.0007266654968584268,
+        "standard_error": 0.00014629910930194587,
+        "ci95": [
+          0.0004282864962412903,
+          0.0010250444974755635
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.0008066771376019832,
+        "standard_error": 0.00018802607647112386,
+        "ci95": [
+          0.0004231954263659667,
+          0.0011901588488379996
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.010025581367052219,
+        "standard_error": 8.796606081413281e-05,
+        "ci95": [
+          0.00984617340319527,
+          0.010204989330909168
+        ],
+        "n": 32
+      }
+    },
+    {
+      "protocol": "off_center_control",
+      "q0": 0.7,
+      "strength_w": 0.1,
+      "kind": "heisenberg",
+      "receiver_probability": {
+        "mean": 0.4300437078574849,
+        "standard_error": 0.006316216863110637,
+        "ci95": [
+          0.417161698634815,
+          0.4429257170801548
+        ],
+        "n": 32
+      },
+      "fidelity_to_clean_evolution": {
+        "mean": 0.7551014373514815,
+        "standard_error": 0.008584758704319632,
+        "ci95": [
+          0.737592706539953,
+          0.77261016816301
+        ],
+        "n": 32
+      },
+      "fidelity_to_rigid_translation": {
+        "mean": 0.46655785312094683,
+        "standard_error": 0.006740659307573898,
+        "ci95": [
+          0.45281018782557275,
+          0.4803055184163209
+        ],
+        "n": 32
+      },
+      "realized_budget": {
+        "mean": 0.010057121693304827,
+        "standard_error": 8.706038309698177e-05,
+        "ci95": [
+          0.00987956087133011,
+          0.010234682515279545
+        ],
+        "n": 32
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "protocol": "band_center",
+      "strength_w": 0.02,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.051155406811982586,
+        "standard_error": 0.0021405957808111925,
+        "ci95": [
+          0.046877767478038734,
+          0.05543304614592644
+        ],
+        "n": 64
+      },
+      "within_five_percentage_point_equivalence_margin": false
+    },
+    {
+      "protocol": "band_center",
+      "strength_w": 0.05,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.1953014144432948,
+        "standard_error": 0.004556818442940178,
+        "ci95": [
+          0.1861953394038612,
+          0.20440748948272838
+        ],
+        "n": 64
+      },
+      "within_five_percentage_point_equivalence_margin": false
+    },
+    {
+      "protocol": "band_center",
+      "strength_w": 0.1,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.17404453097780048,
+        "standard_error": 0.006163763029262772,
+        "ci95": [
+          0.16172723342193424,
+          0.18636182853366673
+        ],
+        "n": 64
+      },
+      "within_five_percentage_point_equivalence_margin": false
+    },
+    {
+      "protocol": "band_center",
+      "strength_w": 0.2,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.010023362082895573,
+        "standard_error": 0.0016867572816776308,
+        "ci95": [
+          0.006652646621527087,
+          0.01339407754426406
+        ],
+        "n": 64
+      },
+      "within_five_percentage_point_equivalence_margin": true
+    },
+    {
+      "protocol": "off_center_control",
+      "strength_w": 0.05,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.12061798129931088,
+        "standard_error": 0.0027104401331037725,
+        "ci95": [
+          0.11509000220219326,
+          0.1261459603964285
+        ],
+        "n": 32
+      },
+      "within_five_percentage_point_equivalence_margin": false
+    },
+    {
+      "protocol": "off_center_control",
+      "strength_w": 0.1,
+      "onsite_minus_bond_receiver": {
+        "mean": 0.021060246613191294,
+        "standard_error": 0.0023630549997766593,
+        "ci95": [
+          0.016240764166572535,
+          0.025879729059810053
+        ],
+        "n": 32
+      },
+      "within_five_percentage_point_equivalence_margin": true
+    }
+  ],
+  "validation": {
+    "clean_limits": [
+      {
+        "kind": "onsite",
+        "clean_FFT_L2_error": 3.172704578092093e-14,
+        "hermiticity_max_error": 0.0
+      },
+      {
+        "kind": "bond",
+        "clean_FFT_L2_error": 3.172704578092093e-14,
+        "hermiticity_max_error": 0.0
+      },
+      {
+        "kind": "heisenberg",
+        "clean_FFT_L2_error": 1.698910149965845e-14,
+        "hermiticity_max_error": 0.0
+      }
+    ],
+    "independent_eigendecomposition_L2_error": 4.2238138476974585e-14,
+    "box_enlargement": [
+      {
+        "kind": "onsite",
+        "N": 1024,
+        "larger_N": 2048,
+        "same_physical_disorder_coefficients": true,
+        "amplitude_L2_error": 2.4062015621904364e-14
+      },
+      {
+        "kind": "bond",
+        "N": 1024,
+        "larger_N": 2048,
+        "same_physical_disorder_coefficients": true,
+        "amplitude_L2_error": 9.724638055723004e-70
+      },
+      {
+        "kind": "heisenberg",
+        "N": 1024,
+        "larger_N": 2048,
+        "same_physical_disorder_coefficients": true,
+        "amplitude_L2_error": 1.507985376600424e-14
+      }
+    ],
+    "heisenberg_graph_laplacian_row_sum_error": 2.220446049250313e-16,
+    "evolution": "Direct scipy expm_multiply; no integration time-step discretization.",
+    "boundary_note": "Physical open Heisenberg diagonal is 1/2 at the ends; XY diagonal is 1. Source and receiver are far from both ends."
+  },
+  "max_ensemble_norm_error": 4.550804177938517e-13,
+  "max_ensemble_edge_probability": 4.3964991157332676e-24,
+  "runtime_seconds": 19.22679960000096,
+  "born_matched_control": {
+    "scope": "One added diagnostic control, q0=pi/2, onsite w=.05, same 64 seeds and geometry.",
+    "onsite_std": 0.05,
+    "bond_std": 0.025012215979228897,
+    "bond_expected_frobenius_budget": 0.0012500000000000002,
+    "onsite_expected_frobenius_budget": 0.0025000000000000005,
+    "variance_of_backscatter_matrix_element": "onsite: w^2/N; bond: 4(N-1)*std_bond^2/N^2 = w^2/N",
+    "important": "This control matches leading Born backscattering, not total Hamiltonian perturbation budget. It is not a disorder-free or exact scattering-equivalence theorem.",
+    "bond_receiver_probability": {
+      "mean": 0.6711048702629525,
+      "standard_error": 0.010657887910959837,
+      "ci95": [
+        0.6498067807528398,
+        0.6924029597730652
+      ],
+      "n": 64
+    },
+    "bond_fidelity_to_clean_evolution": {
+      "mean": 0.6824008216341653,
+      "standard_error": 0.011621894874047203,
+      "ci95": [
+        0.6591763179264427,
+        0.7056253253418878
+      ],
+      "n": 64
+    },
+    "onsite_minus_bond_receiver": {
+      "mean": -8.530373004450326e-05,
+      "standard_error": 0.0010253288833800185,
+      "ci95": [
+        -0.002134260007120315,
+        0.0019636525470313085
+      ],
+      "n": 64
+    },
+    "onsite_minus_bond_fidelity_to_clean_evolution": {
+      "mean": -0.009217753772249747,
+      "standard_error": 0.0016890796582821896,
+      "ci95": [
+        -0.012593110132942125,
+        -0.005842397411557369
+      ],
+      "n": 64
+    },
+    "max_norm_error": 4.218847493575595e-15
+  }
+}

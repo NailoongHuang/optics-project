@@ -1,0 +1,50 @@
+Candidate 1 — Resource-constrained loss-aware pulse inverse design
+
+Author anchor: Casulleras et al., PRApplied 19,064085(2023), arXiv2209.06608v1 PDF p6 Conclusion, explicitly proposes wavelength-dependent loss in backward propagation. Vilsmeier et al., arXiv2607.07324v1 PDF pp9-10 Sections4.1-4.2 adds a current robust-design and excitation-optimization agenda.
+
+Question:
+Does including the known spectral attenuation improve useful pulse delivery when source energy, spectral access and transfer-function error are held fixed?
+
+Minimal forward model:
+Use a single linear band with a finite spectral/antenna transfer H_a(k). The transfer to the target is G_theta(k)=H_a(k) exp[-gamma_theta(k) T] exp[-i epsilon_theta(k) T]. A finite source aperture may instead be represented by a small matrix, retaining the same linear constrained-control problem. This is a reduced model, not a material-calibrated LLG calculation.
+
+Baselines:
+1. Loss-blind phase/backward design using the nominal dispersion.
+2. Regularized loss-aware inversion.
+3. Matched-filter excitation for fixed-energy absolute target overlap.
+Use identical source energy/peak limits and target definitions. Do not renormalize each delivered pulse before reporting delivered energy.
+
+Why baseline 3 matters:
+For an unconstrained linear operator and a fixed input L2 norm, u proportional to G^dagger times target maximizes absolute target overlap. Plain inverse propagation instead targets exact shape, potentially at large energy cost. Comparing only normalized shape fidelity would hide this tradeoff.
+
+Closed decision:
+Report a Pareto curve of normalized shape fidelity and absolute target-mode energy, plus required source energy. An alternative decision is the minimum source energy needed to meet a prespecified shape threshold such as F>=0.95. Select regularization on a training/validation uncertainty set and evaluate a separate held-out set of damping/dispersion errors. If loss-aware inversion never improves the chosen constrained objective, or becomes unstable under small held-out mismatch, do not call it a promising robust improvement.
+
+Bounded controls:
+Zero loss should recover the lossless baseline; spectrally constant loss should not distort the normalized shape. With a perfect model and no resource constraints, exact inversion is an algebraic identity, not a research finding. Increase spectral resolution once and compare the forward propagation independently at representative points.
+
+Demo:
+One panel for source spectrum, one for delivered target profile without individual peak normalization, one for the fidelity/energy Pareto curve, and one held-out parameter-error map.
+
+
+Candidate 2 — Finite-source advantage of higher-order caustics
+
+Author anchor: Wartelle et al., PRB107,144431(2023), SectionIII.D PDFp13 explicitly leaves the higher-order-versus-ordinary amplitude enhancement unquantified; conclusion PDFp15 asks for finite amplitude prediction. Wagle et al., PRB113,L060405(2026), already evaluates finite-source ordinary-caustic amplitudes, narrowing rather than preserving the entire original gap.
+
+Question:
+At equal injected spectral power and finite aperture, does a higher-order caustic deliver a stronger, narrower and sufficiently detuning-tolerant signal than an ordinary caustic?
+
+Minimal forward model:
+Prefer the same Kalinikos–Slavin band and the ordinary/higher-order points reported by Wartelle. Compute finite spectral-weight response at fixed distance and damping. A canonical scalar contour integral is a useful exploratory demo only if explicitly labeled as such; it does not solve the tensor susceptibility or material-amplitude problem.
+
+Controls:
+Same total source spectral power, same spectral aperture, propagation distance, damping and receiver window. Never independently normalize both peaks to one. Compare a regular noncaustic point as a negative control. Sweep source width and a small frequency detuning.
+
+Metrics:
+Peak intensity, FWHM or finite-window RMS width, integrated intensity inside a fixed receiver aperture, and worst-case degradation over the detuning interval.
+
+Closed decision:
+Select a receiver metric before optimization. If the higher-order advantage disappears with equal resources, moves entirely into broad sidelobes, or exists only in an impractically narrow detuning window, the demo does not support a robust device advantage.
+
+Boundary:
+The quoted literature gap concerns quantitative magnetic amplitudes. A scalar normal-form demonstration establishes only finite-bandwidth wave-interference behavior. It is not evidence that the full physical open question has been solved or that the result is novel.

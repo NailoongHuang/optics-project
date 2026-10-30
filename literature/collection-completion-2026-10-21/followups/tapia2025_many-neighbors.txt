@@ -1,0 +1,983 @@
+=== PDF PAGE 1 ===
+Academic Editor: Christos Volos
+Received: 19 May 2025
+Revised: 18 June 2025
+Accepted: 23 June 2025
+Published: 1 July 2025
+Citation: Tapia-Valerdi, M.A.;
+Ramos-Prieto, I.; Soto-Eguibar, F.;
+Moya-Cessa, H.M. Waveguide Arrays:
+Interaction to Many Neighbors.
+Dynamics 2025, 5, 25. https://
+doi.org/10.3390/dynamics5030025
+Copyright: © 2025 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license
+(https://creativecommons.org/
+licenses/by/4.0/).
+Article
+Waveguide Arrays: Interaction to Many Neighbors
+Marco A. Tapia-Valerdi
+, Irán Ramos-Prieto
+, Francisco Soto-Eguibar
+and Héctor M. Moya-Cessa *
+Instituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla,
+Puebla 72840, Mexico; mvalerdi@inaoep.mx (M.A.T.-V.); iran@inaoep.mx (I.R.-P.); feguibar@inaoep.mx (F.S.-E.)
+* Correspondence: hmmc@inaoep.mx
+Abstract
+We present an analytical framework for describing light propagation in infinite waveguide
+arrays, incorporating a generalized long-range coupling to achieve a more realistic model.
+We demonstrate that the resulting solution can be expressed in terms of generalized Bessel-
+like functions. Additionally, by applying the concept of eigenstates, we borrow from
+quantum mechanics a basis given in terms of phase states that allows the analysis of
+the transition from the discrete to the continuum limit, obtaining a relationship between
+the field amplitudes and the Fourier series coefficients of a given function. We apply
+our findings to different coupling functions, providing new insights into the propagation
+dynamics of these systems.
+Keywords:
+waveguide array; dynamics in waveguide arrays; interaction to many
+neighbors; long range coupling; generalized Bessel functions; Fourier series coefficients
+1. Introduction
+The interaction between particles mediated by a field cannot be entirely captured by a
+distance action, which offers only an approximate description. A more refined approach
+considers two-body, three-body, and higher-order m-body interactions as successive cor-
+rections to this approximation. The relative magnitudes of these interaction terms can be
+systematically analyzed for different types of classical and quantum fields, such as the elec-
+tromagnetic [1]. Quantum long-range systems have recently attracted significant interest,
+driven not only by the need to explore the fundamental physics of nonlocal interactions
+and their influence on the balance between local and long-distance properties but also by
+their potential in quantum technology applications. Their collective nature improves the
+distribution of entanglement and gives rise to unique dynamical scaling effects, as they
+facilitate the generation of highly entangled or correlated dynamical states [2–4]. Never-
+theless, the exponential growth of the Hilbert space with system size makes it inherently
+difficult to efficiently simulate the quantum physics of an interacting many-body system
+using classical computers. Recognizing this limitation, Feynman proposed a controllable
+quantum device as an alternative, allowing for an efficient study of the dynamics of another
+quantum system, and since then, quantum simulation has emerged as an independent and
+rapidly evolving field of research [5]. Significant progress in experimental techniques and
+theoretical frameworks has driven intensive research in quantum simulation across diverse
+physical platforms. Among them, atomic, molecular, and optical systems, ranging from
+trapped ions and cold atoms to arrays of evanescently coupled waveguides, have garnered
+significant attention [6–13].
+Coupled optical waveguide arrays and periodic photonic lattices have been the focus of
+intense research because of the diverse physical phenomena that emerge from the interplay
+Dynamics 2025, 5, 25
+https://doi.org/10.3390/dynamics5030025
+
+
+=== PDF PAGE 2 ===
+Dynamics 2025, 5, 25
+2 of 11
+of discreteness, periodicity, nonlinearity, and boundary effects. Beyond their fundamental
+interest, these structures enable the control and manipulation of light propagation, allow-
+ing their use in the fabrication of photonic integrated devices [14–17] and facilitating the
+observation of phenomena such as Bloch oscillations, Anderson localization, and quantum
+walks, among others [18–24]. However, in these structures, coupling is generally assumed
+to occur only between nearest-neighbor waveguides, while interactions with more distant
+waveguides are typically neglected under the assumption that the coupling strength decays
+exponentially with distance. However, second-order couplings can play a significant role in
+the structure of the waveguide array, as seen in the two-dimensional zigzag waveguide lat-
+tice, where an exact solution can be found [25–27]. Moreover, higher-order couplings have
+been observed in circular and helical waveguide arrays [28–30], and their advantages have
+been extensively documented in the literature, particularly in applications such as quantum
+state modeling, photon-number correlations, and harmonic and Bloch oscillations [31–37].
+The structure of this article is as follows. Section 2 begins by analyzing an infinite
+waveguide array where interactions extend beyond nearest neighbors. By employing
+phase states, we derive an exact solution, which closely relates to the case of first-neighbor
+interactions in an infinite array. In Section 3, we introduce an alternative approach based on
+operational methods to solve the same system. In Section 4, we extend the waveguide-array
+interactions to an infinite number of neighbors, which allows the approximation of the
+discrete solutions as continuous functions and computes the evolution of the amplitude for
+different coupling functions. Finally, in Section 5, we summarize our findings and present
+concluding remarks.
+2. Interaction with N Neighbors
+In coupled mode theory [38,39], the propagation of an optical field through a waveg-
+uide array with long-range evanescent coupling without frontiers is governed by the
+following set of coupled first-order ordinary differential equations:
+i
+dEj(z)
+dz
+=
+N
+∑
+k=0
+gk
+
+Ej+k + Ej−k
+
+= 2g0Ej + g1
+Ej+1 + Ej−1
+ + g2
+Ej+2 + Ej−2
+ + · · · + gN
+Ej+N + Ej−N
+
+,
+j ∈Z.
+(1)
+In this context, z represents the propagation distance, while gk; k = 0, 1, 2, . . . , N de-
+notes a set of N + 1 real and non-negative coupling constants. The index j ranges across all
+integers from −∞to ∞.
+This framework can also be viewed as the problem of solving the Schrödinger-like
+equation i d|ψ(z)⟩
+dz
+= ˆH |ψ(z)⟩with the Hamiltonian
+ˆH =
+N
+∑
+k=0
+gk( ˆVk + ˆV†k),
+(2)
+where the operators ˆV and ˆV† are the generalized London operators defined as [40,41]
+ˆV =
+∞
+∑
+n=−∞
+|n⟩⟨n + 1| ,
+ˆV† =
+∞
+∑
+n=−∞
+|n + 1⟩⟨n| ,
+(3)
+which is in the infinite Hilbert space commute. The sum in the Hamiltonian (2) may define
+either a polynomial for finite N or a function in the limit N →∞.
+If we denote the solution of the Schrödinger-type equation associated with the
+Hamiltonian (2) as |ψ(z)⟩, it is easy to demonstrate that the solutions of system (1)
+are given by Ej(z) = ⟨j|ψ(z)⟩,
+j ∈Z.
+Using operational methods [42], we solve
+the Schrödinger-like equation derived from the Hamiltonian (2) and subsequently ob-
+tain the solution for the infinite system in (1). Taking into account an arbitrary initial
+
+
+=== PDF PAGE 3 ===
+Dynamics 2025, 5, 25
+3 of 11
+condition |ψ(0)⟩, the formal solution of the Schrödinger-like equation is expressed as
+|ψ(z)⟩= exp
+
+−iz ∑N
+k=0 gk( ˆVk + ˆV†k)
+
+|ψ(0)⟩; to solve this equation, we introduce the
+phase states [43–45] defined as
+|Φ⟩=
+1
+√
+2π
+∞
+∑
+n=−∞
+einΦ|n⟩,
+(4)
+in such a way that it is easy to prove that ˆVk|Φ⟩= eikΦ|Φ⟩, and that ˆV†k|Φ⟩= e−ikΦ|Φ⟩.
+The phase states defined above form a complete basis, so the unity operator may be written
+as ˆI = R 2π
+0
+|Φ⟩⟨Φ|dΦ, and the initial condition may be given in terms of phase states as
+|ψ(0)⟩=
+Z 2π
+0
+Cψ(0)(Φ)|Φ⟩dΦ,
+(5)
+with Cψ(0)(Φ) = ⟨Φ|ψ(0)⟩.
+Given that ˆV and ˆV† commute, the propagation of an arbitrary field can be formulated
+applying the operators and carrying out some algebraic steps, and we get the following:
+|ψ(z)⟩=
+Z 2π
+0
+Cψ(0)(Φ) exp
+ 
+−2iz
+N
+∑
+k=0
+gk cos(kΦ)
+!
+|Φ⟩dΦ,
+(6)
+and in order to find the amplitudes Ej that are the solutions of the system (1), we project
+the above expression over the state |j⟩and use the fact that ⟨j|Φ⟩=
+1
+√
+2π exp(ijΦ) to obtain
+⟨j|ψ(z)⟩=
+1
+√
+2π
+Z 2π
+0
+Cψ(0)(Φ) exp
+ 
+−2iz
+N
+∑
+k=0
+gk cos(kΦ)
+!
+exp(ijΦ)dΦ.
+(7)
+We now take as initial condition |ψ(0)⟩= |m⟩, where m is an integer and thus
+Cψ(0)(Φ) = ⟨Φ|m⟩=
+1
+√
+2π exp(−imΦ), which substituted in Equation (7) gives
+Ej(z) = ⟨j|ψ(z)⟩= 1
+2π
+Z 2π
+0
+exp
+ 
+−2iz
+N
+∑
+k=0
+gk cos(kΦ)
+!
+exp(i(j −m)Φ)dΦ.
+(8)
+Although the above integral can be efficiently solved using numerical methods to
+determine the evolution of the amplitude in each waveguide along the propagation direc-
+tion, an exact solution can also be obtained following Dattoli’s studies [46–48], so that we
+proceed to introduce generalized Bessel functions with N variables {x1, x2, x3, . . . , xN} and
+N −1 parameters {s1, s2, s3, . . . , sN−1} (GBF-N) by means of integral representation:
+Jn(x1, . . . , xN; s1, . . . , sN−1) =
+i
+2π
+H
+1
+tn+1 exp
+"
+x1
+2
+
+t −1
+t
+
++ x2
+2
+
+s1t2 −
+1
+s1t2
+
++ x3
+2
+
+s2t3 −
+1
+s2t3
+
++ · · · + xN
+2
+
+sN−1tN −
+1
+sN−1tN
+#
+dt
+(9)
+where the contour of integration encircles the origin once counterclockwise [47].
+Changing the variable in the integral from t to i exp(−iΦ), making sk = (−i)k,
+k = 1, 2, 3, . . . , N −1, and identifying xk →−2gkz, k = 1, 2, 3, . . . , N, we arrive at
+Jn
+
+−2gkz, k = 1, 2, . . . , N; sk = (−i)k, k = 1, 2, . . . , N −1
+
+=
+1
+2πin
+R 2π
+0
+exp
+
+−2iz
+N
+∑
+k=1
+gk cos(kΦ)
+
+exp(inΦ)dΦ.
+(10)
+Thus, from Equation (8), we can write
+
+
+=== PDF PAGE 4 ===
+Dynamics 2025, 5, 25
+4 of 11
+Ej(z) = exp(−2ig0z)ij−mJj−m
+
+−2gkz, k = 1, 2, 3, . . . , N; sk = (−i)k, k = 1, 2, 3, . . . , N −1
+
+.
+(11)
+Structurally, this result is analogous to the infinite case of an optical field propagating in
+a waveguide array with nearest-neighbor evanescent coupling, differing only in the substi-
+tution of Bessel functions with GBF-N. Moreover, it is easy to show that for N = 1, solution
+(11) reduces to that case, and for N = 2, we obtain the solution for the next-nearest-neighbor
+evanescent coupling, following the recursion of the N-variables and N −1-parameters gen-
+eralized Bessel functions of integer order n (GBF-N) Jn(x1, x2, x3, . . . , xN; s1, s2, . . . , sN−1) as
+Jn(x1, x2, . . . , xN; s1, s2, . . . , sN−1) =
+∞
+∑
+l=−∞
+sl
+N−1Jn−Nl(x1, x2, . . . , xN−1; s1, s2, . . . , sN−2)Jl(xN),
+(12)
+with Jn(x1, x2; s1) the 2-variables and 1-parameter generalized Bessel functions of integer
+order (GBF2-1) defined by the series representation
+Jn(x1, x2; s1) =
+∞
+∑
+l=−∞
+sl
+1Jn−2l(x1)Jl(x2),
+n ∈Z,
+(13)
+with Jl(z) being the ordinary Bessel functions of the first kind [47,48] and {s1, s2, . . . , sN−1}
+a set of complex number parameters.
+3. Interaction with N Neighbors Using the Generating Function of the
+Generalized Bessel Functions of N Variables and N −1 Parameters
+The previous result may also be obtained using the generating function of (GBF-N).
+Consider the interaction up to N neighbors, with N being a finite non-negative integer.
+The Hamiltonian in that case is the one exposed in Equation (2), which we reproduce
+here for ease of reading, ˆH = ∑N
+k=0 gk( ˆVk + ˆV†k). The propagator corresponding to this
+Hamiltonian is
+ˆU(z) = exp
+"
+−iz
+N
+∑
+k=0
+gk
+
+ˆVk + ˆV†k#
+;
+(14)
+as ˆV ˆV† = ˆI, we can cast (14) as
+ˆU(z) = exp
+"
+−z
+N
+∑
+k=0
+gk
+
+i ˆV†k −
+1
+i ˆV†k
+#
+.
+(15)
+We now introduce the generalized Bessel functions with N variables {x1, x2, x3, . . . , xN}
+and N −1 parameters {s1, s2, s3, . . . , sN−1} (GBF-N) by means of the generating function
+∞
+∑
+n=−∞
+tnJn(x1, x2, x3, . . . , xN; s1, s2, . . . , sN−1) =
+exp
+ x1
+2
+
+t −1
+t
+
++ x2
+2
+
+s1t2 −
+1
+s1t2
+
++ · · · + xN
+2
+
+sN−1tN −
+1
+sN−1tN
+
+.
+(16)
+If we identify t →
+i ˆV†, xk
+→−2gkz,
+k =
+1, 2, 3, . . . , N and sk
+→(−i)k,
+k = 1, 2, 3, . . . , N −1 in Equation (15), we obtain
+ˆU(z) = exp(−2ig0z)
+∞
+∑
+n=−∞
+inJn(−2gkz, k = 1, 2, 3, . . . , N; (−i)k, k = 1, 2, 3, . . . , N −1) ˆV†n,
+(17)
+and we have the solution to our problem for an initial condition |ψ(0)⟩as
+|ψ(z)⟩= exp(−2ig0z)
+∞
+∑
+n=−∞
+inJn(−2gkz, k = 1, 2, . . . , N; (−i)k, k = 1, 2, . . . , N −1) ˆV†n |ψ(0)⟩.
+(18)
+
+
+=== PDF PAGE 5 ===
+Dynamics 2025, 5, 25
+5 of 11
+Let us take |ψ(0)⟩= |m⟩with m as an integer; as ˆV†n |m⟩= |m + n⟩,
+|ψ(z)⟩= exp(−2ig0z)
+∞
+∑
+n=−∞
+inJn(−2gkz, k = 1, 2, 3, . . . , N; (−i)k, k = 1, 2, 3, . . . , N −1) |m + n⟩,
+(19)
+and finally, we arrive at
+Ej(z) = exp(−2ig0z)ij−mJj−m(−2gkz, k = 1, 2, 3, . . . , N; (−i)k, k = 1, 2, 3, . . . , N −1)
+(20)
+which is the solution to our problem in Equation (11).
+Figure 1 presents the intensity distribution in the waveguides as a function of the
+propagation distance z, described by Equation (11) for different values of N. The assump-
+tion g1 > g2 > g3 > g4 is physically justified by the natural decrease in the coupling
+strength as light propagates through the array. Panel (a) illustrates the interaction limited
+to first-neighbor coupling (N = 1) with g1 = 0.8. Panel (b) extends this to second-neighbor
+interactions (N = 2), incorporating g1 = 0.8 and g2 = 0.6. In panel (c), the third-neighbor
+coupling (N = 3) is considered, adding g3 = 0.4. Finally, panel (d) considers up to fourth-
+neighbor interactions (N = 4), where the coupling constants are g1 = 0.8, g2 = 0.6, g3 = 0.4,
+and g4 = 0.2. It should be noted that in actual photonic systems, the evanescent coupling
+strength between the waveguides tends to decrease exponentially as distance increases.
+However, Figure 1 employs linearly decreasing values for gk to illustrate a potential light
+behavior within the array, as the variances would be too small in a specific physical model
+to be noticed in a graphic; nevertheless, that does not mean that in a properly designed ex-
+perimental setup these intensity variations cannot be measured. This configuration can be
+achieved using the femtosecond laser writing technique [49,50]. A remarkable observation
+is that the propagation pattern does not simply broaden; rather, it undergoes qualitative
+changes due to higher-order coupling effects. In particular, while the side lobes exhibit
+increased divergence, the main portion of the propagating light remains increasingly con-
+centrated around the initially excited waveguide as higher-order coupling effects become
+more pronounced.
+-10
+0
+10
+Waveguide number
+∞←j →−∞
+(a)
+(b)
+0
+20
+40
+60
+80
+100
+Propagation distance z
+-10
+0
+10
+Waveguide number
+∞←j →−∞
+(c)
+0
+20
+40
+60
+80
+100
+Propagation distance z
+(d)
+Figure 1. The evolution of the squared amplitude modulus in each waveguide is shown for an infinite
+waveguide array governed by Equation (11), considering interactions up to the fourth neighbor.
+In panels (a–d), the central waveguide (j = 0) is initially excited. The coupling constants decrease
+progressively, taking the values g1 = 0.8, g2 = 0.6, g3 = 0.4, and g4 = 0.2.
+Using the fourth-order Runge–Kutta method, Figure 2 demonstrates that the analytical
+results agree closely with the numerical simulations presented above, showing an excellent
+match between both approaches. To keep the presentation focused, we display only two
+
+
+=== PDF PAGE 6 ===
+Dynamics 2025, 5, 25
+6 of 11
+plots. Panel (a) shows how the intensity evolves in the central waveguide (j = 0) along
+the propagation direction z; the solid blue curve represents the analytical result, while
+the black dots indicate the numerical data. Panel (b) provides a snapshot of the intensity
+distribution across all waveguides at a fixed propagation distance (z = 100). Here, the
+solid blue bars correspond to the analytical results, and the black diagonal lines represent
+the numerical results.
+Figure 2. The Schrödinger equation with the Hamiltonian of Equation (2) is numerically solved
+and compared with the analytical solution in Equation (11), accounting for interactions to third
+neighbors (N = 3). The coupling parameters are chosen as g1 = 0.8, g2 = 0.6, and g3 = 0.4.
+Panel (a) shows how the intensity evolves in the central waveguide (j = 0) along the propagation
+direction z; the solid blue curve represents the analytical result, while the black dots indicate the
+numerical data. Panel (b) provides a snapshot of the intensity distribution across all waveguides at a
+fixed propagation distance (z = 100). Here, the solid blue bars correspond to the analytical results,
+and the black diagonal lines represent the numerical results.
+4. From Discrete to Continuous Models
+Now, we examine the transition from the discrete regime to the continuum limit. As
+mentioned in Section 2, in the limit N →∞, the sum in the Hamiltonian (2) can define a func-
+tion. To illustrate this, we assume a propagator of the form ˆU(z) = exp
+−iz
+
+f
+ ˆV
+ + f
+ ˆV†
+,
+where f (.) is an arbitrary well-behaved function and admits a Taylor series expansion
+of the form f (x) = ∑∞
+k=0 akxk. Comparison of this last expression with the propagator
+in Equation (14) makes it clear that we can directly identify the set ak, k = 0, 1, 2, . . . , ∞
+with the set gk, k = 0, 1, 2, . . . , ∞; thus, we may obtain an analytical and exact solution to
+the system of equations for the waveguides. Given this identification of the as with the
+gs, we must impose certain requirements on the properties of the former: they must be
+non-negative (zero or positive) and must decay rapidly enough to ensure that the series
+converges, allowing the gs to behave like interaction constants. Hence, one can easily verify
+that the propagation of an arbitrary state in terms of phase states is given by
+|ψ(z)⟩=
+Z 2π
+0
+Cψ(Φ) exp
+
+−iz
+h
+f
+ ˆV
+ + f
+
+ˆV†i
+|Φ⟩dΦ.
+(21)
+
+
+=== PDF PAGE 7 ===
+Dynamics 2025, 5, 25
+7 of 11
+Using the fact that the operators ˆV, ˆV† commute and the fact that ˆVk|Φ⟩= eikΦ|Φ⟩
+and ˆV†k|Φ⟩= e−ikΦ|Φ⟩, we can apply the operator to obtain
+|ψ(z)⟩=
+Z 2π
+0
+Cψ(Φ) exp
+
+−iz
+h
+f
+
+eiΦ
++ f
+
+e−iΦi
+|Φ⟩dΦ.
+(22)
+Next, we project the above state on the bra ⟨l|, with l an integer, and we can write
+⟨l| ψ(z)⟩=
+1
+√
+2π
+Z 2π
+0
+Cψ(Φ) exp
+
+−iz
+h
+f
+
+eiΦ
++ f
+
+e−iΦi
+eilΦdΦ,
+l ∈Z.
+(23)
+Finally, taking |ψ(0)⟩= |m⟩, with m being an integer, as an initial condition, we get
+El(z) = ⟨l| ψ(z)⟩= 1
+2π
+Z 2π
+0
+exp
+
+−iz
+h
+f
+
+eiΦ
++ f
+
+e−iΦi
+ei(l−m)ΦdΦ,
+l ∈Z.
+(24)
+It is crucial to emphasize that the functions El(z) in Equation (24) are precisely the
+Fourier series coefficients of exp
+−iz
+
+f
+eiΦ + f
+e−iΦ
+. By expanding in the phase basis,
+we directly obtain these coefficients, leading to a solution expressed as a Fourier series.
+Essentially, this process corresponds to performing a Fourier transform of the function
+that defines the coupling between the waveguides, providing both a mathematical and a
+physical interpretation of the system’s evolution.
+In the next subsections, we analyze particular functions from Equation (24) that allow
+an explicit computation of the coefficients El.
+4.1. Natural Logarithm Function
+We now examine the case where the function is given by f (x) = −ln(1 −αx), result-
+ing in the coupling constants in Propagator (14) being g0 = 0 and gk = αk
+k . Under this
+assumption, Equation (24) can be rewritten as
+El(z) = 1
+2π
+Z 2π
+0
+h
+1 + α2 −2α cos (Φ)
+iiz
+ei(l−m)ΦdΦ,
+l ∈Z.
+(25)
+4.2. Exponential Function
+Considering the function f (x) = exp(αx), we find that the propagator coefficients
+in (14) are given by gk = αk
+k! . Consequently, Equation (24) can be expressed as
+El(z) = 1
+2π
+Z 2π
+0
+exp
+
+−iz
+h
+exp
+
+αeiΦ
++ exp
+
+αe−iΦi
+ei(l−m)ΦdΦ,
+l ∈Z.
+(26)
+4.3. Polylogarithm Function
+Consider the polylogarithm function, defined as Lin(x) = ∑∞
+k=1
+xk
+kn . Since this function
+is explicitly given by its Taylor series, the coefficients ak, and consequently the coupling
+coefficients gk = 1
+kn , are inherently determined. It is also important to note that all the coeffi-
+cients in the Taylor series expansion of the polylogarithm function are positive. Substituting
+Li2(x) into (24), simplifying the expressions, and evaluating the integral, we obtain
+El(z) = (−1)3/4
+2√z
+exp
+
+i
+6
+h 3(l−m)2
+z
++ 6π(l −m) + π2z
+i
+×
+h
+erf
+
+1
+2(1 + i) l−m+πz
+√z
+
++ erf
+
+1
+2(1 + i) m−l+πz
+√z
+i
+,
+l ∈Z.
+(27)
+
+
+=== PDF PAGE 8 ===
+Dynamics 2025, 5, 25
+8 of 11
+4.4. Quadratic Polynomial
+Consider a second-degree polynomial f (x) = g0 + g1x + g2x2, and from Equation (24),
+we have
+El(z) = exp(−2ig0z)
+2π
+Z 2π
+0
+exp(−2iz[g1 cos(Φ) + g2 cos(2Φ)])ei(l−m)ΦdΦ,
+l ∈Z. (28)
+Now using the Jacobi–Anger expansion [51] eiz cos θ = ∑∞
+n=−∞inJn(z)einθ, the above
+equation may be written as
+El(z) = exp(−2ig0z)
+2π
+Z 2π
+0
+∞
+∑
+n1,n2=−∞
+in1+n2 Jn1(−2g1z)Jn2(−2g2z)en1Φ+2n2ΦdΦ,
+l ∈Z,
+(29)
+and integrated to obtain El(z) = exp(−2ig0z) ∑∞
+n2=−∞im−l−n2 Jm−l−2n2(−2g1z)Jn2(−2g2z);
+finally, we can recognize the generalized Bessel functions with two variables and one
+parameter (GBF2-1) making s →−i, to obtain
+El(z) = im−l exp(−2izg0)Jm−l(−2g1z, −2g2z; −i),
+l ∈Z.
+(30)
+Equation (24) reveals that when f (x) is a polynomial of degree N, the resulting
+equation coincides with (8), which describes the interaction with multiple neighbors;
+additionally, this equation can be rewritten using the generalized Bessel functions (GBF-N).
+Thus, the integral of the exponential of an arbitrary polynomial admits a solution in terms
+of these functions.
+4.5. Geometric Series
+Finally, we analyze the case where f (x) =
+α
+1−x = ∑∞
+k=0 αxk, leading to constant and
+equal coupling coefficients gk. Substituting this expression into Equation (24), we obtain
+El(z) = exp(−iz)
+2π
+Z 2π
+0
+ei(l−m)ΦdΦ =
+
+
+
+exp(−iz),
+l = m,
+0,
+l̸ = m.
+(31)
+Figure 3 illustrates the light intensity distribution as a function of the propagation
+distance z for different coupling functions applied in Equation (24). Panels (a) and (b) corre-
+spond to cases where the coupling is defined by natural logarithm and exponential functions,
+respectively, leading to a slight concentration of light in the central waveguide. Panel (c) exhibits
+a propagation pattern similar to that observed under nearest-neighbor interactions. Finally,
+panel (d) describes a nonphysical configuration with zero losses, highlighting the tendency
+of light to remain localized in the central region.
+As in the previous section, Schrödinger’s equation is numerically solved using the
+fourth-order Runge–Kutta method. Figure 4 shows a strong agreement between the numer-
+ical and analytical results. To avoid overwhelming the reader with excessive figures, we
+only present the case in which the function in Equation (24) is defined as f (x) = exp(αx).
+Panel (a) illustrates the intensity evolution in the central waveguide (j = 0) along the
+propagation direction z; the solid blue curve represents the analytical result, while the
+black dots denote the numerical data. Panel (b) displays the intensity distribution at a
+fixed distance z = 100, where blue bars and black diagonal lines indicate analytical and
+numerical results, respectively.
+
+
+=== PDF PAGE 9 ===
+Dynamics 2025, 5, 25
+9 of 11
+-10
+0
+10
+Waveguide number
+∞←j →−∞
+(a)
+(b)
+0
+20
+40
+60
+80
+100
+Propagation distance z
+-10
+0
+10
+Waveguide number
+∞←j →−∞
+(c)
+0
+20
+40
+60
+80
+100
+Propagation distance z
+(d)
+Figure 3. The intensity evolution of the field in an infinite waveguide array described by Equation (24)
+is shown for different functions when the central waveguide is illuminated; (a) corresponds to (25)
+with α = 0.8, (b) corresponds to (26) with the same parameter value, (c) represents (27), and
+(d) illustrates (26) again with α = 0.8.
+Figure 4. The numerical solution of the Schrödinger equation, using the Hamiltonian defined in
+Equation (2) is obtained in the limit N →∞and compared against the semi-analytical expression of
+Equation (26) with the parameter α = 0.8. Panel (a) illustrates the intensity evolution in the central
+waveguide (j = 0) along the propagation direction z; the solid blue curve represents the analytical
+result, while the black dots denote the numerical data. Panel (b) displays the intensity distribution at
+a fixed distance z = 100, where blue bars and black diagonal lines indicate analytical and numerical
+results, respectively.
+5. Conclusions
+This work investigates the complex dynamics in waveguide arrays by extending the
+analysis beyond nearest-neighbor interactions to include higher-order couplings. We de-
+rive an analytical expression in terms of a generalized Bessel-like function, structurally
+analogous to the first-neighbor case in an infinite array. Our results show that, for suffi-
+ciently strong higher-order coupling, a significant fraction of the propagating light remains
+localized around the initially excited waveguide. Finally, we discuss the passage from
+discrete to continuous formulations relating the field amplitudes and the Fourier-series
+
+
+=== PDF PAGE 10 ===
+Dynamics 2025, 5, 25
+10 of 11
+coefficients of a specified function and illustrate these concepts with figures depicting
+intensity distributions under varied coupling scenarios.
+Author Contributions: All authors contributed equally to each of the requirements necessary for
+the elaboration of this manuscript. All authors have read and agreed to the published version of
+the manuscript.
+Funding: This research received no external funding.
+Data Availability Statement: No new data were created or analysed in this study.
+Acknowledgments: Marco Antonio Tapia Valerdi thanks the Secretariat of Science, Humanities, Tech-
+nology and Innovation (SECIHTI) and the National Institute of Astrophysics, Optics and Electronics
+(INAOE) for the doctoral scholarship.
+Conflicts of Interest: The authors declare no conflict of interest.
+References
+1.
+Heitler, W. The Quantum Theory of Radiation; Dover Books on Physics, Dover Publications: Garden City, NY, USA, 1984.
+2.
+Gyongyosi, L.; Imre, S. A Survey on quantum computing technology. Comp. Sci. Rev. 2019, 31, 51–71. [CrossRef]
+3.
+Fedida, S.; Serafini, A. Tree-level entanglement in quantum electrodynamics. Phys. Rev. D 2023, 107, 116007. [CrossRef]
+4.
+Vidal, G. Efficient Classical Simulation of Slightly Entangled Quantum Computations. Phys. Rev. Lett. 2003, 91, 147902. [CrossRef]
+[PubMed]
+5.
+Feynman, R.P. Simulating physics with computers. In Feynman and Computation; CRC Press: Boca Raton, FL, USA, 2018;
+pp. 133–153.
+6.
+Blatt, R.; Wineland, D. Entangled states of trapped atomic ions. Nature 2008, 453, 1008–1015. [CrossRef]
+7.
+Monroe, C.; Campbell, W.C.; Duan, L.M.; Gong, Z.X.; Gorshkov, A.V.; Hess, P.W.; Islam, R.; Kim, K.; Linke, N.M.; Pagano, G.; et al.
+Programmable quantum simulations of spin systems with trapped ions. Rev. Mod. Phys. 2021, 93, 025001. [CrossRef]
+8.
+Bloch, I.; Dalibard, J.; Zwerger, W. Many-body physics with ultracold gases. Rev. Mod. Phys. 2008, 80, 885–964. [CrossRef]
+9.
+Mivehvar, F.; Piazza, F.; Donner, T.; Ritsch, H. Cavity QED with quantum gases: New paradigms in many-body physics. Adv.
+Phys. 2021, 70, 1–153. [CrossRef]
+10.
+Bohrdt, A.; Homeier, L.; Reinmoser, C.; Demler, E.; Grusdt, F. Exploration of doped quantum magnets with ultracold atoms. Ann.
+Phys. 2021, 435, 168651. [CrossRef]
+11.
+Christodoulides, D.N.; Lederer, F.; Silberberg, Y. Discretizing light behaviour in linear and nonlinear waveguide lattices. Nature
+2003, 424, 817–823. [CrossRef]
+12.
+Barral, D.; Walschaers, M.; Bencheikh, K.; Parigi, V.; Levenson, J.A.; Treps, N.; Belabas, N. Quantum state engineering in arrays of
+nonlinear waveguides. Phys. Rev. A 2020, 102, 043706. [CrossRef]
+13.
+Urzúa, A.R.; Ramos-Prieto, I.; Moya-Cessa, H.M. Integrated optical wave analyzer using the discrete fractional Fourier transform.
+J. Opt. Soc. Am. B 2024, 41, 2358–2365. [CrossRef]
+14.
+Yang, Y.; Guo, Y.; Huang, Y.; Pu, M.; Wang, Y.; Ma, X.; Li, X.; Luo, X. Crosstalk reduction of integrated optical waveguides with
+nonuniform subwavelength silicon strips. Sci. Rep. 2020, 10, 4491. [CrossRef] [PubMed]
+15.
+Huang, H.; Chen, H.; Liu, H.; Zhang, Z.; Feng, X.; Chen, J.; Wu, H.; Deng, J.; Liang, W.; Lin, W. High-intensity spatial-mode
+steerable frequency up-converter toward on-chip integration. Opto-Electron. Sci. 2024, 3, 230036. [CrossRef]
+16.
+Ha, Y.; Wang, L.; Guo, Y.; Pu, M.; Zou, F.; Li, X.; Fan, Y.; Ma, X.; Luo, X. High-fidelity mode scaling via topological-optimized
+on-chip metalens for compact photonic interconnection. Light Adv. Manuf. 2023, 4, 1. [CrossRef]
+17.
+Huang, H.; Balˇcytis, A.; Dubey, A.; Boes, A.; Nguyen, T.G.; Ren, G.; Tan, M.; Mitchell, A. Spatio-temporal isolator in lithium
+niobate on insulator. Opto-Electron. Sci. 2023, 2, 220022. [CrossRef]
+18.
+Rai, A.; Das, S.; Agarwal, G. Quantum entanglement in coupled lossy waveguides. Opt. Express 2010, 18, 6241–6254. [CrossRef]
+19.
+Perez-Leija, A.; Szameit, A.; Ramos-Prieto, I.; Moya-Cessa, H.; Christodoulides, D.N. Generalized Schrödinger cat states and their
+classical emulation. Phys. Rev. A 2016, 93, 053815. [CrossRef]
+20.
+Perets, H.B.; Lahini, Y.; Pozzi, F.; Sorel, M.; Morandotti, R.; Silberberg, Y. Realization of quantum walks with negligible
+decoherence in waveguide lattices. Phys. Rev. Lett. 2008, 100, 170506. [CrossRef]
+21.
+Peruzzo, A.; Lobino, M.; Matthews, J.C.; Matsuda, N.; Politi, A.; Poulios, K.; Zhou, X.Q.; Lahini, Y.; Ismail, N.; Wörhoff, K.; et al.
+Quantum walks of correlated photons. Science 2010, 329, 1500–1503. [CrossRef]
+22.
+Biggerstaff, D.N.; Heilmann, R.; Zecevik, A.A.; Gräfe, M.; Broome, M.A.; Fedrizzi, A.; Nolte, S.; Szameit, A.; White, A.G.; Kassal, I.
+Enhancing coherent transport in a photonic network using controllable decoherence. Nat. Commun. 2016, 7, 11282. [CrossRef]
+
+
+=== PDF PAGE 11 ===
+Dynamics 2025, 5, 25
+11 of 11
+23.
+Lahini, Y.; Avidan, A.; Pozzi, F.; Sorel, M.; Morandotti, R.; Christodoulides, F.D.N.; Silberberg, Y. Anderson localization and
+nonlinearity in one-dimensional disordered photonic lattices. Phys. Rev. Lett. 2008, 100, 013906. [CrossRef] [PubMed]
+24.
+Peschel, U.; Pertsch, T.; Lederer, F. Optical Bloch oscillations in waveguide arrays. Opt. Lett. 1998, 23, 1701. [CrossRef] [PubMed]
+25.
+Efremidis, N.K.; Christodoulides, D.N. Discrete solitons in nonlinear zigzag optical waveguide arrays with tailored diffraction
+properties. Phys. Rev. E 2002, 65, 056607. [CrossRef] [PubMed]
+26.
+Szameit, A.; Pertsch, T.; Nolte, S.; Tünnermann, A.; Lederer, F. Long-range interaction in waveguide lattices. Phys. Rev. A 2008,
+77, 043804. [CrossRef]
+27.
+Tapia-Valerdi, M.A.; Ramos-Prieto, I.; Soto-Eguibar, F.; Moya-Cessa, H.M. Waveguide arrays interaction to second neighbors:
+Exact solution. arXiv 2025, arXiv:2501.12550.
+28.
+Stockhofe, J.; Schmelcher, P. Bloch dynamics in lattices with long-range hopping. Phys. Rev. A 2015, 91, 023606. [CrossRef]
+29.
+Longhi, S.; Marangoni, M.; Lobino, M.; Ramponi, R.; Laporta, P.; Cianci, E.; Foglietti, V. Observation of Dynamic Localization in
+Periodically Curved Waveguide Arrays. Phys. Rev. Lett. 2006, 96, 243901. [CrossRef]
+30.
+Anuradha, T.; Patra, A.; Gupta, R.; Rai, A.; Sen(De), A. Production of genuine multimode entanglement in circular waveguides
+with long-range coupling. Phys. Rev. A 2024, 109, 032411. [CrossRef]
+31.
+Gordon, R. Harmonic oscillation in a spatially finite array waveguide. Opt. Lett. 2004, 29, 2752. [CrossRef]
+32.
+Wang, G.; Huang, J.P.; Yu, K.W. Nontrivial Bloch oscillations in waveguide arrays with second-order coupling. Opt. Lett. 2010,
+35, 1908–1910. [CrossRef]
+33.
+Qi, F.; Feng, Z.; Wang, Y.; Xu, P.; Zhu, S.; Zheng, W. Photon-number correlations in waveguide lattices with second order coupling.
+J. Opt. 2014, 16, 125007. [CrossRef]
+34.
+Román-Ancheyta, R.; Ramos-Prieto, I.; Perez-Leija, A.; Busch, K.; León-Montiel, R.d.J. Dynamical Casimir effect in stochastic
+systems: Photon harvesting through noise. Phys. Rev. A 2017, 96, 032501. [CrossRef]
+35.
+Villegas-Martínez, B.; Moya-Cessa, H.; Soto-Eguibar, F. Modeling displaced squeezed number states in waveguide arrays. Phys.
+A Stat. Mech. Its Appl. 2022, 608, 128265. [CrossRef]
+36.
+Dreisow, F.; Wang, G.; Heinrich, M.; Keil, R.; Tünnermann, A.; Nolte, S.; Szameit, A. Observation of anharmonic Bloch oscillations.
+Opt. Lett. 2011, 36, 3963–3965. [CrossRef]
+37.
+Ramos-Prieto, I.; Uriostegui, K.; Récamier, J.; Soto-Eguibar, F.; Moya-Cessa, H.M. Kapitza–Dirac photonic lattices. Opt. Lett. 2021,
+46, 4690–4693. [CrossRef]
+38.
+Yariv, A. Coupled-mode theory for guided-wave optics. IEEE J. Quantum Electron. 1973, 9, 919–933. [CrossRef]
+39.
+Marcuse, D. Coupled Mode Theory of Round Optical Fibers. Bell Syst. Tech. J. 1973, 52, 817–842. [CrossRef]
+40.
+London, F. Über die Jacobischen transformationen der quantenmechanik. Z. Phys. 1926, 37, 915–925. [CrossRef]
+41.
+Susskind, L.; Glogower, J. Quantum mechanical phase and time operator. Phys. Phys. Fiz. 1964, 1, 49–61. [CrossRef]
+42.
+Stoler, D. Operator methods in physical optics. J. Opt. Soc. Am. 1981, 71, 334. [CrossRef]
+43.
+Carruthers, P.; Nieto, M.M. Phase and Angle Variables in Quantum Mechanics. Rev. Mod. Phys. 1968, 40, 411–440. [CrossRef]
+44.
+Vogel, W. Quantum Optics, 3rd ed.; Includes Bibliographical References and Index; Wiley-VCH: Weinheim, Germany, 2006.
+45.
+Gerry, C.; Knight, P. Introductory Quantum Optics; Cambridge University Press: Cambridge, UK, 2004. [CrossRef]
+46.
+Dattoli, G.; Giannessi, L.; Mezi, L.; Torre, A. Theory of generalized Bessel functions. Il Nuovo C. B (1971–1996) 1990, 105, 327–348.
+[CrossRef]
+47.
+Dattoli, G.; Torre, A.; Lorenzutta, S.; Maino, G.; Chiccoli, C. Theory of generalized Bessel functions.-II. Il Nuovo C. B (1971–1996)
+1991, 106, 21–51. [CrossRef]
+48.
+Dattoli, G.; Chiccoli, C.; Lorenzutta, S.; Maino, G.; Richetta, M.; Torre, A. Generating functions of multivariable generalized Bessel
+functions and Jacobi-elliptic functions. J. Math. Phys. 1992, 33, 25–36. [CrossRef]
+49.
+Szameit, A.; Dreisow, F.; Pertsch, T.; Nolte, S.; Tünnermann, A. Control of directional evanescent coupling in fs laser written
+waveguides. Opt. Express 2007, 15, 1579–1587. [CrossRef]
+50.
+Szameit, A.; Blömer, D.; Burghoff, J.; Pertsch, T.; Nolte, S.; Tünnermann, A. Hexagonal waveguide arrays written with fs-laser
+pulses. Appl. Phys. B 2006, 82, 507–512. [CrossRef]
+51.
+Gradshteyn, I.; Ryzhik, I. Table of Integrals, Series, and Products; Academic Press: Cambridge, MA, USA, 2014.
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

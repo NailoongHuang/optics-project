@@ -1,0 +1,4 @@
+Independent research-report audit completed on 2026-10-21 (Asia/Shanghai).
+The reviewer read the complete report, both numerical scripts/results, and the branch literature records. No conclusion-changing physical, numerical, or citation mismatch was found. Fifteen local links and eight core bibliographic entries were checked.
+Three located suggestions were accepted and applied by the author: state Jy=Jx for the width/lifetime scan; state |d| << 1 for the small-detuning expansion; describe the backflow evidence as a small set of representative events rather than one event. The author read back these edits and refreshed the report hash in audit-index.json.
+Evidence boundaries remain: this is a bounded topic search, not a proof of novelty; the matched Gaussian backflow implementation has not been established as novel; no material-specific experiment was modeled.

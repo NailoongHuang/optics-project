@@ -1,0 +1,270 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T20:05:21Z",
+      "timestamp": 1791662721818,
+      "version": "4.3.4"
+    },
+    "reference-count": 11,
+    "publisher": "American Physical Society (APS)",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2004,
+              5,
+              14
+            ]
+          ],
+          "date-time": "2004-05-14T00:00:00Z",
+          "timestamp": 1084492800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Phys. Rev. A"
+    ],
+    "DOI": "10.1103/physreva.69.052315",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          5,
+          14
+        ]
+      ],
+      "date-time": "2004-05-14T13:46:41Z",
+      "timestamp": 1084542401000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 223,
+    "title": [
+      "Propagation of quantum information through a spin system"
+    ],
+    "prefix": "10.1103",
+    "volume": "69",
+    "author": [
+      {
+        "given": "Tobias J.",
+        "family": "Osborne",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Noah",
+        "family": "Linden",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2004,
+          5,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "PhysRevA.69.052315Cc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.87.137901"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc2R1",
+        "doi-asserted-by": "crossref",
+        "first-page": "012305",
+        "DOI": "10.1103/PhysRevA.66.012305",
+        "volume": "66",
+        "author": "C. H. Bennett",
+        "year": "2002",
+        "journal-title": "Phys. Rev. A",
+        "ISSN": "https://id.crossref.org/issn/1050-2947",
+        "issn-type": "print"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc3R1",
+        "doi-asserted-by": "crossref",
+        "first-page": "040301",
+        "DOI": "10.1103/PhysRevA.65.040301",
+        "volume": "65",
+        "author": "J. L. Dodd",
+        "year": "2002",
+        "journal-title": "Phys. Rev. A",
+        "ISSN": "https://id.crossref.org/issn/1050-2947",
+        "issn-type": "print"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.65.032301"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.91.207901"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.69.034304"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.92.087201"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc9R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/9781118032954",
+        "volume-title": "Linear and Nonlinear Waves",
+        "author": "G. B. Whitham",
+        "year": "1999"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc10R1",
+        "volume-title": "Classical Electrodynamics",
+        "author": "J. D. Jackson",
+        "year": "1999"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc11R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/0471221147",
+        "volume-title": "Fiber-optic Communication Systems",
+        "author": "G. P. Agrawal",
+        "year": "2002"
+      },
+      {
+        "key": "PhysRevA.69.052315Cc12R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-1-4612-0869-3",
+        "volume-title": "Interacting Electrons and Quantum Magnetism",
+        "author": "A. Auerbach",
+        "year": "1994"
+      }
+    ],
+    "container-title": [
+      "Physical Review A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.aps.org/article/10.1103/PhysRevA.69.052315",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.69.052315/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          5,
+          17
+        ]
+      ],
+      "date-time": "2018-05-17T22:31:40Z",
+      "timestamp": 1526596300000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/PhysRevA.69.052315"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          5,
+          14
+        ]
+      ]
+    },
+    "references-count": 11,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2004,
+            5
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/physreva.69.052315",
+    "relation": {},
+    "ISSN": [
+      "1050-2947",
+      "1094-1622"
+    ],
+    "issn-type": [
+      {
+        "value": "1050-2947",
+        "type": "print"
+      },
+      {
+        "value": "1094-1622",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          5,
+          14
+        ]
+      ]
+    },
+    "article-number": "052315"
+  }
+}

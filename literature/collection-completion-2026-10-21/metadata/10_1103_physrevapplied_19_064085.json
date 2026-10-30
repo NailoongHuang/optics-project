@@ -1,0 +1,527 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2026-06-17T02:41:32Z",
+      "timestamp": 1781664092004,
+      "version": "3.54.5"
+    },
+    "reference-count": 48,
+    "publisher": "American Physical Society (APS)",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              30
+            ]
+          ],
+          "date-time": "2023-06-30T00:00:00Z",
+          "timestamp": 1688083200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100002428",
+        "name": "Austrian Science Fund",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "I 4917-N"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "I 4917-N"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100002428",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "H2020-MSCA-IF",
+        "award": [
+          "101025758"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "101025758"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. Applied"
+    ],
+    "DOI": "10.1103/physrevapplied.19.064085",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2023-06-30T14:33:23Z",
+      "timestamp": 1688135603000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Generation of Spin-Wave Pulses by Inverse Design"
+    ],
+    "prefix": "10.1103",
+    "volume": "19",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0009-759X",
+        "authenticated-orcid": true,
+        "given": "S.",
+        "family": "Casulleras",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5790-4575",
+        "authenticated-orcid": true,
+        "given": "S.",
+        "family": "Knauer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5049-629X",
+        "authenticated-orcid": true,
+        "given": "Q.",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4006-3391",
+        "authenticated-orcid": true,
+        "given": "O.",
+        "family": "Romero-Isart",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5515-0848",
+        "authenticated-orcid": true,
+        "given": "A.V.",
+        "family": "Chumak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7639-0856",
+        "authenticated-orcid": true,
+        "given": "C.",
+        "family": "Gonzalez-Ballestero",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          30
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "PhysRevApplied.19.064085Cc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-648x/abec1a"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMAG.2022.3149664"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7567/1882-0786/ab248d"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphys3347"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41578-021-00332-w"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42005-019-0189-6"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-6463/ac31f4"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physrep.2020.12.004"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.0c00657"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.16.024028"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42005-018-0056-x"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.abb4042"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41928-020-00485-6"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphys3325"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-021-22897-4"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.105.075410"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PRXQuantum.2.040314"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.abd3556"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.1c02654"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-6463/aa93ba"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.81.140404"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-021-26711-z"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/lmag.2022.3209647"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0045570"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4899186"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-017-01870-0"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphoton.2008.249"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/10/1/013002"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.27.018706"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22331/q-2021-06-10-474"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.97.050505"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.123.260503"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc34R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevX.12.041014"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc35R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.107.013705"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc36R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4955030"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc37R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.16.054033"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc40R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.126.103602"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc41R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.81.3769"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc42R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.92.117203"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc43R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.94.167202"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc44R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.5041426"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc45R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0123471"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc46R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.5042417"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc48R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-20314-w"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc49R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0019328"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc50R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0070796"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc51R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0082724"
+      },
+      {
+        "key": "PhysRevApplied.19.064085Cc52R1",
+        "volume-title": "Spin Waves: Theory and Applications",
+        "author": "D. Stancil",
+        "year": "2009"
+      }
+    ],
+    "container-title": [
+      "Physical Review Applied"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/PhysRevApplied.19.064085",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevApplied.19.064085/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2023-06-30T14:33:35Z",
+      "timestamp": 1688135615000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/PhysRevApplied.19.064085"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          30
+        ]
+      ]
+    },
+    "references-count": 48,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            6
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/physrevapplied.19.064085",
+    "relation": {},
+    "ISSN": [
+      "2331-7019"
+    ],
+    "issn-type": [
+      {
+        "value": "2331-7019",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          30
+        ]
+      ]
+    },
+    "article-number": "064085"
+  }
+}

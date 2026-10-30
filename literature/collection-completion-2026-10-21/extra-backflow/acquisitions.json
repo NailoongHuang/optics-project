@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Different routes to the classical limit of backflow",
+    "authors": [
+      "S. V. Mousavi",
+      "S. Miret-Artes"
+    ],
+    "year": 2022,
+    "doi": "10.1088/1751-8121/aca36e",
+    "arxiv": "2211.09057v1",
+    "file": "2211.09057v1.pdf",
+    "source_url": "https://arxiv.org/pdf/2211.09057v1",
+    "version": "arXiv 2211.09057v1",
+    "pages": 24,
+    "sha256": "3187ad4eac94896bb56c35501b41c1d704e5ce3864979062e743b4e25e5c7ed3",
+    "bytes": 646801,
+    "status": "downloaded-and-readable",
+    "first_page_excerpt": "Diﬀerent routes to the classical limit of backﬂow\nS. V. Mousavi\nDepartment of Physics, University of Qom, Ghadir Blvd., Qom 371614-6611, Iran\nE-mail: vmousavi@qom.ac.ir\nS. Miret-Art´es\nInstituto de F´ısica Fundamental, Consejo Superior de Investigaciones Cient´ıﬁcas,\nSerrano 123, 28006 Madrid, Spain\nE-mail: s.miret@iff.csic.es\nOctober 2022\nAbstract.\nDecoherence is a well established process for the emergence of classical mechanics\nin open quantum systems.\nHowever,\nit can have two diﬀerent origins or\nmechanisms depending on the dynamics one is considering, speaking then about\nintrinsic decoherence for isolated systems and environmental decoherence due to\ndissipation/ﬂuctuations for open systems.\nThis second mechanism can not be\nconsidered for backﬂow since no thermal ﬂuctuation terms can be added in the\nformalism in order to keep an important requirement for the occurrence of this eﬀect:\nonly contributions of positive momenta along time should be maintained. The purpose\nof this work is "
+  },
+  {
+    "title": "Simulating quantum backflow on a quantum computer",
+    "authors": [
+      "Arseni Goussev",
+      "Jaewoo Joo"
+    ],
+    "year": 2024,
+    "doi": "10.1088/1402-4896/ad2be7",
+    "arxiv": "2309.02245v2",
+    "file": "2309.02245v2.pdf",
+    "source_url": "https://arxiv.org/pdf/2309.02245v2",
+    "version": "arXiv 2309.02245v2",
+    "pages": 8,
+    "sha256": "dd0342e1f0fea9a556afc919d4e257879ec4cd4c59d437ee2876d4a58a011571",
+    "bytes": 687786,
+    "status": "downloaded-and-readable",
+    "first_page_excerpt": "Simulating quantum backflow on a quantum computer\nArseni Goussev∗and Jaewoo Joo\nSchool of Mathematics and Physics, University of Portsmouth, Portsmouth PO1 3HF, United Kingdom\n(Dated: March 5, 2024)\nQuantum backflow is a counterintuitive effect in which the probability density of a free particle\nmoves in the direction opposite to the particle’s momentum. If the particle is electrically charged,\nthen the effect can be viewed as the contrast between the direction of electric current and that of\nthe momentum. To date, there has been no direct experimental observation of quantum backflow.\nHowever, the effect has been simulated numerically (using classical computers) and optically (using\nclassical light).\nIn this study, we present the first simulation of quantum backflow using a real\nquantum computer.\nI.\nINTRODUCTION\nImagine a bead of mass M and electric charge Q con-\nstrained to move without friction along a rigid ring of\nradius R (Fig. 1). Suppose the bead moves freely (i.e.,\nFIG. 1. A pa"
+  }
+]

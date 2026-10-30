@@ -1,0 +1,1051 @@
+=== PDF PAGE 1 ===
+Beyond the universal Dyson singularity for 1-D chains with hopping
+disorder
+Akshay Krishnaa,b, R. N. Bhatta
+aDepartment of Electrical Engineering, Princeton University, Princeton NJ 08544, USA
+bKLA Corporation, 2350 Green Road Suite 100, Ann Arbor, MI, 48105, USA
+Abstract
+We study a simple non-interacting nearest neighbor tight-binding model in one dimension with disorder,
+where the hopping terms are chosen randomly. This model exhibits a well-known singularity at the band
+center both in the density of states and localization length. If the probability distribution of the hopping
+terms is well-behaved, then the singularities exhibit universal behavior, the functional form of which was
+ﬁrst discovered by Freeman Dyson in the context of a chain of classical harmonic oscillators. We show here
+that this universal form can be violated in a tunable manner if the hopping elements are chosen from a
+divergent probability distribution. We also demonstrate a connection between a breakdown of universality
+in this quantum problem and an analogous scenario in the classical domain – that of random walks and
+diﬀusion with anomalous exponents.
+1. Introduction
+The question “How do particles move?” is a central one in physics, and one that has played a key role in
+the development of modern physics over the centuries. The work of Galileo and Newton on ballistic motion
+in the classical domain was perhaps the progenitor of the study of transport. In the early twentieth century,
+the study of transport broadened in two orthogonal directions. The ﬁrst was the extension of transport from
+perfect translationally invariant systems to random systems. This was accompanied by developments in the
+theory of diﬀusion, random walks and Brownian motion. Second, the discovery of quantum mechanics led
+to a revolution in the theory of transport at the very smallest scales. In time, quantum mechanical and
+semi-classical transport came to be the backbone of a new area of solid state physics, distinct from the
+cornerstone provided by Bloch’s theorem.
+The combination of simultaneous randomness and quantumness was ﬁrst studied in 1958 by Philip
+Anderson in a tight-binding model of spinless electrons in a three-dimensional lattice [1], where he found
+the surprising fact that electrons could localize in such conditions. In time, it was realized that disorder
+generically induces a quantum phase transition from a metallic phase to an insulating one [2] . This metal-
+insulator transition is accompanied by an alteration in the nature of the eigenstates of the Hamiltonian – from
+extended Bloch-like states in the metallic phase to localized states with exponentially decaying envelopes in
+the insulating phase. As the disorder is ramped up and the transition is crossed, conductance drops and the
+transmission coeﬃcients go to zero.
+Our current understanding of Anderson transitions is built on the scaling theory of localization [3, 4, 5],
+and its applicability to the canonical universality classes in various dimensions. These universality classes
+are based on the existence of three discrete symmetries, namely, time-reversal, particle-hole and sublattice
+(chiral) symmetry [6]. The Hamiltonian of the standard Anderson model consists of two kinds of terms –
+a random uncorrelated on-site potential, and a constant nearest neighbor hopping term from discretizing
+the kinetic energy on a lattice. This Hamiltonian lies in the orthogonal symmetry class, as it obeys time-
+reversal and U(1) spin-rotation symmetry. For this symmetry class, the lower critical dimension is two.
+Hence, in d = 1 and d = 2 dimensions, inﬁnitesimally small disorder causes Anderson localization of the
+entire spectrum.
+Preprint submitted to Annals of Physics
+July 20, 2021
+arXiv:2107.08518v1  [cond-mat.dis-nn]  18 Jul 2021
+
+
+=== PDF PAGE 2 ===
+However, in the last few decades, many tight-binding models in one dimension have been developed that
+do not obey this standard picture. These models often involve signiﬁcant modiﬁcations to the Anderson
+Hamiltonian that push it into a diﬀerent symmetry class and lead to more complicated behavior. Examples
+of such modiﬁcations include: introducing correlations in the disorder [7, 8, 9, 10], adding long-range hopping
+[11], and truncating the Hilbert space [12].
+In this paper, we discuss another such modiﬁcation: the model with pure nearest-neighbor hopping
+disorder with no on-site potential. The only non-zero matrix elements of the Hamiltonian are along the ﬁrst
+diagonals above and below the principal diagonal, and hence it is also known as the oﬀ-diagonal disorder
+model [13, 14].
+One consequence of having no (or a constant) on-site potential is that the Hamiltonian becomes bipartite
+– every odd numbered site is only coupled to even-numbered sites, and vice versa. Technically, this is a form
+of sublattice (chiral) symmetry, and leads to an exact pairing of states in the spectrum. Every eigenstate
+|ψ+⟩with energy E is accompanied by another eigen state |ψ−⟩with energy −E, such that |ψ+⟩+ |ψ−⟩has
+support only on even-numbered sites, and |ψ+⟩−|ψ−⟩has support only on odd sites. For this reason, in
+the rest of the paper, we assume E ≥0 without any loss of generality.
+2. The disordered hopping model
+The problem we study traces its genesis to Freeman Dyson’s work on a classical one-dimensional chain
+of random harmonic oscillators with Poisson distributed couplings [15]. He found a peculiar singularity
+in the distribution function of the frequencies of normal modes of vibration of this model. In 1970, Smith
+mapped that the problem onto the nearest neighbor spin-1/2 XY chain with random couplings whose squares
+have a generalized Poisson distribution. He showed that the low temperature thermodynamic behavior of
+this system has a very similar singularity [16]. Applying the Jordan-Wigner transformation [17] converts
+the XY model to a spinless fermionic chain with nearest neighbor coupling.
+This model was shown to
+have a singular density of states at the center of the band [13]. Soon after, Eggarter and Riedinger found
+that any well-behaved distribution1 of hoppings [14, 18] led to a density of states divergence of the form
+ρ(E) ∼1/|E ln3 |E||.
+This divergence in the density of states is accompanied by a divergence in the
+localization length, ξ(E) ∼| ln |E||. The state at zero energy is not conventionally extended, however, and
+decays with an envelope ψ(r) ∼exp
+
+−
+p
+r/r0
+
+[19, 20]. This band center anomaly is well documented in
+the literature [21, 22, 23, 24, 25, 26, 27]. In spite of its simplicity and long history, this model remains an
+active topic of research, with many new results in the past decade [28, 29, 30, 31]. In honor of Freeman
+Dyson’s pioneering work of 1953, we refer to this universal behavior as the ‘Dyson’ singularity.
+Like in previous studies, our Hamiltonian is that of spinless fermions hopping on a one-dimensional
+lattice, with nearest neighbor hopping
+H =
+X
+i
+ti(c†
+ici+1 + c†
+i+1ci).
+(1)
+The fermionic creation and annihilation operator on site i are denoted by c†
+i and ci respectively, and the
+hopping terms ti are non-negative. The key feature of our study is that the ti are independent identically-
+distributed random variables drawn from a probability distribution that is not well-behaved. The ‘not-well-
+behavedness’ of the hoppings is made more concrete by specifying that their probability distribution to be
+of the form
+p(t) ≃
+(
+b0
+t| ln t|α0+1 ,
+t →0+
+b∞
+t| ln t|α∞+1 ,
+t →+∞.
+(2)
+1We use the term ‘well-behaved’ somewhat loosely to encompass commonly occurring distributions in physics such as
+Gaussian, Poisson, and box distributions, and more generally distributions whose all moments are ﬁnite. Past studies of this
+model in the literature have implicitly conﬁned themselves to such cases only.
+2
+
+
+=== PDF PAGE 3 ===
+The index α0 > 0 controls the strength of the divergence at the origin, and α∞> 0 controls the thickness
+of the tail of the distribution at large values. The coeﬃcients b0 and b∞are non-negative scale factors that
+cannot both be zero simultaneously. In our recent paper [32], we only considered the case where bα∞= 0, so
+that the ‘not-well-behavedness’ of the distribution came solely from the form of its divergence at the origin.
+In that case, all moments of the hopping t are ﬁnite (if the distribution does not have fat power-law tails at
+inﬁnity). However, that requirement can be relaxed to extend the non-universal results described in [32] to
+a broader class of distributions, as we discuss here.
+The logarithm of the hoppings (u ≡ln t) is a frequently occurring quantity in the ensuing discussion. Its
+distribution is found by a simple change of variable from Eq. (2), and is given by simple power laws
+p(u) ≃
+(
+b0
+|u|α0+1 ,
+u →−∞
+b∞
+uα∞+1 ,
+u →+∞.
+(3)
+These power-law tails lead to divergences in the moments of u, and are the root cause of non-universal
+behavior we see in this model. In particular, let the variance of u be denoted σ2
+u. This may be inﬁnite if
+α0 < 2 or α∞< 2.
+While the case of inﬁnitesimally small hopping (t →0 or u →−∞) is a physically realistic condition that
+may occur when nearest neighbors are very weakly coupled (for instance if the inter-nuclear spacing between
+atoms r →∞), the opposite limit (t →∞) is probably more mathematical in nature. Large hoppings can
+be realized when the eﬀective mass is low, or the inter-nuclear separation very small, however, a divergent
+hopping would be precluded by the existence of a length-scale cut-oﬀ.
+3. The zero energy state
+The Schrodinger equation for the Hamiltonian (2) may be written in terms of the on-site wave function
+amplitudes ψi as
+tiψi+1 + ti−1ψi−1 = Eψi.
+(4)
+At E = 0, this allows us to solve the recurrence relation above very simply for the wave function amplitude
+ψ2n = (−1)n
+
+
+
+
+2n
+Q
+i odd
+ti
+2n
+Q
+i even
+ti
+
+
+
+ψ0.
+(5)
+The rate of growth of the wave function’s envelope can be determined by
+ln
+
+ψ2n
+ψ0
+ =
+2n
+X
+i odd
+ln ti −
+2n
+X
+i even
+ln ti =
+2n
+X
+i odd
+ui −
+2n
+X
+i even
+ui.
+(6)
+The statistical properties of the wave function envelope in the long-chain limit (n →∞) can be de-
+termined by appealing to the central limit theorem (CLT) and its generalized version [33, 34]. The CLT
+speciﬁes that the form of the limiting distribution for sums of random variables is a Gaussian N(µ, σ2), with
+some mean µ and standard deviation σ, so long as each of the random variables has ﬁnite variance. When
+the variance is inﬁnite, as is the case when α0, α∞< 2, then the generalized CLT provides the functional
+form of the limiting distributions in terms of the L´evy alpha-stable distributions. These distributions are a
+family of normalized probability density functions that do not generally have closed form expressions [35],
+except for a few special cases. The L´evy alpha-stable distributions are usually denoted by S(α, β, γ, δ),
+where the four parameters, namely, α ∈(0, 2], β ∈[−1, 1], γ ∈(0, ∞) and δ ∈(−∞, ∞) specify the stability,
+3
+
+
+=== PDF PAGE 4 ===
+0.00
+0.25
+0.50
+0.75
+1.00
+×107
+−2000
+−1500
+−1000
+−500
+0
+log10 |ψ2
+i |
+α0 = ∞
+ψ(x) ∼e−√x
+0.00
+0.25
+0.50
+0.75
+1.00
+×107
+−10000
+−8000
+−6000
+−4000
+−2000
+0
+α0 = 3.0
+ψ(x) ∼e−√x
+0.00
+0.25
+0.50
+0.75
+1.00
+×107
+−40000
+−30000
+−20000
+−10000
+0
+α0 = 2.0
+ψ(x) ∼e−
+√
+x ln x
+0.00
+0.25
+0.50
+0.75
+1.00
+site index i
+×107
+−250000
+−200000
+−150000
+−100000
+−50000
+0
+log10 |ψ2
+i |
+α0 = 1.5
+ψ(x) ∼e−x2/3
+0.00
+0.25
+0.50
+0.75
+1.00
+site index i
+×107
+−2.0
+−1.5
+−1.0
+−0.5
+0.0
+×107
+α0 = 1.0
+ψ(x) ∼e−x
+0.00
+0.25
+0.50
+0.75
+1.00
+site index i
+×107
+−3.0
+−2.5
+−2.0
+−1.5
+−1.0
+−0.5
+0.0
+×1013
+α0 = 0.5
+ψ(x) ∼e−x2
+Figure 1: Examples of wave functions at energy E = 0 on a system with N = 107 sites. The underlying realization of the
+N −1 random hoppings is the same for all sub-plots, i.e. their quantile functions are identical, before transforming them to
+the form in Eq. (2)). We set α∞= 0 in all cases above. The probability densities are chosen such that the hoppings t have
+a median value 1 for all choices of α0. Note the vertical axis is the log of wave function probability density, and its dynamic
+range increases rapidly as α is made smaller.
+skewness, scale and location respectively. Applying the CLT or generalized CLT to Eq. (6), it follows that
+lim
+n→∞
+1
+√
+2n ln
+
+ψ2n
+ψ0
+
+dist.
+−−−→
+N(0, σ2
+u),
+if α0 > 2 and α∞> 2.
+(7)
+lim
+n→α
+1
+(2n)1/α ln
+
+ψ2n
+ψ0
+
+dist.
+−−−→
+S (α, 0, γ(α), 0) ,
+otherwise.
+(8)
+The notation
+dist.
+−−−→denotes that, mathematically speaking, this is a convergence in distribution, not
+pointwise convergence [33]. In the case where one or both of α0 and α∞are smaller than 2, the variance
+of u, denoted by σ2
+u, is inﬁnite, and the properties of system are controlled by the smaller of the two. We
+denote this parameter as α ≡min(α0, α∞). The scale parameter γ(α) is
+γ(α) =
+ 
+πb
+2α sin
+ πα
+2
+
+Γ(α)
+! 1
+α
+,
+where
+b ≡
+
+
+
+
+
+b0,
+if a0 < a∞,
+b∞,
+if a0 > a∞,
+b0 + b∞,
+if a0 = a∞.
+(9)
+The results in Eqs. (7) and (8) establish the nature of the wave function envelope – it decays as a
+4
+
+
+=== PDF PAGE 5 ===
+stretched exponential
+ψ(r) ≃
+
+
+
+
+
+
+
+exp
+
+−
+
+r
+r0
+1/2
+,
+if α0 > 2 and α∞> 2.
+exp
+
+−
+
+r
+r0
+1/α
+otherwise.
+(10)
+The length scale r0 is not constant – it varies from one realization of disorder to the next, in accordance
+with the limiting Gaussian or alpha-stable distribution that it belongs to. One case worth pointing out
+is α = 1, when the wave function decay is neither sub-exponential, nor super-exponential. In this case,
+the distribution of r0 is given by the positive part of S(1, 0, π, 0), which is better known in physics as the
+Cauchy-Lorentz distribution.
+In Fig. 1, we show examples of wave functions at zero energy for a variety of values of the parameter α.
+It is apparent that for α > 2, the wave function envelope decays less steeply than it does for α < 2. For
+α < 2, the wave function envelope also has sharp discontinuities.
+4. Density of states and localization lengths
+In this section, we explore another eﬀect of the varying the α0, α∞parameters in the hoppings – that
+on the density of states ρ(E) and integrated density of states N(E), deﬁned as
+N(E) ≡
+E
+Z
+−E
+ρ(E′) dE′.
+(11)
+Our technique here closely follows that of Eggarter and Riedinger [14]. They map the quantum Hamiltonian
+to a classical random walk as follows.
+Corresponding to the on-site wave function amplitudes ψi, the ‘self-energies’ are deﬁned as
+∆i ≡ti−1
+ψi−1
+ψi
+.
+(12)
+In terms of these self-energies, the Schr¨odinger equation, Eq. (4), becomes
+∆i+1 =
+t2
+i
+E −∆i
+,
+(13)
+∆i+2 =
+ti+1
+ti
+2
+∆i
+"
+1 −E
+∆i
+1 + E∆i
+t2
+i (1 −E
+∆i )
+#
+.
+(14)
+The self-energies are useful because they are directly related to the integrated density of states. Let f+ be
+the fraction of positive self-energies in the sequence {∆0, ∆1, · · · ∆i, · · · }. It was shown by Schmidt in 1957
+[36] that
+N(E) = 2f+ −1.
+(15)
+When E = 0, it follows from Eq. (13) that ∆i∆i+1 < 0, so the signs of the self-energies are alternately
+positive and negative. Further, the term in the square brackets of Eq. (14) may be ignored, and by taking
+the logarithm of both sides, Eq. (14) may be interpreted as a discrete-time random walk
+ln ∆i+2 = 2 (ui+1 −ui) + ln ∆i,
+(16)
+where ui ≡ln ti. In the continuum limit, this is the Langevin equation
+dx
+dt = Wαζα(t),
+(17)
+5
+
+
+=== PDF PAGE 6 ===
+where the mapping (ln ∆, i) 7→(x, t) converts a quantum problem of self-energies on a discrete lattice to
+that of a classical particle’s position as a function of time. The particle’s x(t) is governed by a unit-strength
+delta-correlated noise process ζα(t). The scale factor Wα is a dimension-full quantity that depends on the
+moments of the distribution of ui.
+When α > 2, ζα(t) has ﬁnite variance, and the stochastic process above is Brownian motion. The scale
+factor is twice the variance of ui, Wα = 2σu. This directly corresponds to the case originally studied by
+Eggarter and Riedinger. In this case, the Fokker-Planck equation corresponding to Eq. (17) is Fick’s law of
+diﬀusion [37],
+∂
+∂tp(x, t) = W 2
+α
+2
+∂2
+∂x2 p(x, t),
+(18)
+where p(x, t) is the probability density for the particle’s position x at time t. The fundamental solution to
+this partial diﬀerential equation is a Gaussian kernel whose variance is proportional to time, leading to the
+well-known ⟨x2⟩∝t behavior.
+But when α < 2, the noise process ζα(t) has inﬁnite variance, and is referred to as ‘symmetric white
+alpha-stable noise’ [38].
+Such a stochastic process is known as a L´evy ﬂight [39], and unlike Brownian
+motion, can show discontinuous jumps. It does not map to the Fokker-Planck equation (Eq. (18)) above,
+and also possesses diﬀerent scaling properties from that of a regular diﬀusive random walk. In this situation,
+the scale factor depends on the parameters of the tails of the noise distribution, Wα = 2γ(α).
+How does the random walk picture change when the energy is non-zero? It turns out it still holds, so
+long as E is small. In the regime
+E ≪∆i ≪˜t2/E,
+(19)
+the terms in both the numerator and denominator of the square brackets of Eq. (14) are small. Here ˜t denotes
+a typical value of t. The constraints enforced by Eq. (19) can be interpreted as boundary conditions for the
+random walk – when ∆i is large (comparable to ˜t2/E), the denominator in the square brackets ensures that
+∆i+1 remains upper-bounded, and when ∆i is smaller than E, then by Eq. (13), the alternating sequence of
+the sign of the ∆i’s is terminated by two consecutive positive values, with ∆i+1 ≃˜t2/E > 0. A new random
+walk then begins from this site.
+The particle executes Brownian motion or a L´evy ﬂight on a ﬁnite portion of the x-axis. The domain is
+bounded on the right by an inﬁnite potential barrier at xmax = ln
+˜t2/E
+
+, and on the left by an absorbing
+boundary at xmin = ln E. The particle commences its motion from a point just below xmax, and ends its
+motion when it reaches xmin. Every iteration of this process corresponds to a single excess positive self
+energy in the alternating-sign sequence of {∆0, ∆1, · · · ∆i, · · · }. The integrated density of states, which by
+Eq. (15) is equal to the fraction of excess positive self-energies (2f+ −1), is therefore inversely proportional
+to the mean time the particle spends moving freely in the interval [xmin, xmax], i.e.
+N(E) =
+1
+TFP(α, xmax, xmin).
+(20)
+In the language of random walks, the quantity TFP(α, xmax, xmin) is known as the mean ﬁrst passage
+time. It quantiﬁes how long, on average, a particle under the inﬂuence of a stochastic process Eq. (17) and
+released at an initial position next to an inﬁnite potential barrier xmax, survives before being absorbed at
+xmin. The scale-invariance of this process implies that
+TFP(α) =
+
+
+
+
+
+
+
+
+
+τα
+xmax −xmin
+Wα
+2
+,
+α > 2 (Brownian motion),
+τα
+xmax −xmin
+Wα
+α
+,
+α < 2 (L´evy ﬂight)
+(21)
+where xmax −xmin = 2 ln
+˜t/E
+
+is the length of the random walk, and τα is the mean ﬁrst passage time for
+the stochastic process Eq. (17) with unit strength over a unit interval, and is a number of order one.
+6
+
+
+=== PDF PAGE 7 ===
+0.0
+0.5
+1.0
+1.5
+2.0
+noise index α
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+mean ﬁrst passage time τα
+Figure 2: The mean ﬁrst passage time τα of the stochastic process in Eq. (17) with unit noise on a unit interval is calculated by
+numerical simulations. We discretize the Langevin equation with a time-step ∆t = 10−4 and average over N = 105 trajectories
+for each value of α. The error bars are smaller than the width of the points. For α > 2 (not shown), τα = 1. In Appendix A,
+we discuss an alternative scheme leading towards obtaining this curve using analytic methods. This term is a dimensionless
+quantity that appears in the pre-factor for both the density of states N(E) (Eq. (22)) and localization length ξ(E) (Eq. (26)).
+For the Gaussian process in the case of Brownian motion (α > 2), the Fokker-Planck equation in Eq.
+(18) can be Laplace transformed in the time domain and integrated twice in space to obtain τα = 1 (see
+Appendix A for details). However, for the L´evy ﬂight (α < 2), it is not so easy to obtain the ﬁrst passage
+time analytically [40, 41, 42, 43].
+Nevertheless, it is fairly straightforward to compute τα by numerical
+simulations [32] (see Fig. 2).
+We note that there appears to be a discontinuity in τα at α = 2, since above τα appears to approach 1/2
+as α →2 from below, but it is equal to a constant value of 1 for all values of α > 2. This discontinuity is of
+no major consequence; it is simply an artifact of the conventions used. The Levy alpha stable distribution
+S(α = 2, 0, γ = 1, 0) corresponds to a Gaussian with variance 2. For α > 2, we have considered a standard
+normal distribution with variance 1.
+The desired result for the integrated density of states follows immediately as
+N(E) =
+
+
+
+
+
+
+
+σ2
+u
+| ln E|2 ,
+α > 2,
+[γ(α)]α
+τα| ln E|α ,
+α < 2.
+(22)
+The density of states ρ(E) is intimately connected with another quantity of interest – the localization
+length ξ(E) via the Thouless relation [44]
+1
+ξ(E) =
+∞
+Z
+−∞
+dE′ ρ(E′) ln |E −E′| −µu,
+(23)
+where µu ≡⟨u⟩= ⟨ln t⟩is the mean logarithm of the hopping terms. This quantity is divergent when α < 1.
+For exponentially decaying wave functions with an envelope of the form ψ(r) ∼exp(−r/ξ), the localiza-
+tion length ξ is a measure of how quickly the real-space probability amplitude attenuates. The localization
+length is usually energy-dependent. As discussed in Sec. 3, when α > 1, the state at zero energy is sub-
+exponentially localized, so ξ(0) →∞, and we obtain the sum rule
+∞
+Z
+0
+dE ρ(E) ln(E) = µu
+2 .
+(24)
+7
+
+
+=== PDF PAGE 8 ===
+Theodorou and Cohen [13] showed that one can combine Eqs. (23) and (24), to obtain the leading behavior
+of the localization length at non-zero energy.
+1
+ξ(E) = 2
+E
+Z
+0
+dE′ ρ(E′) ln
+ E
+E′
+
+=
+E
+Z
+0
+dE′ N(E′)
+E′
+,
+(25)
+so that using Eq. (22),
+ξ(E) =
+
+
+
+
+
+
+
+1
+σ2u
+| ln E|,
+α > 2
+(α −1)τα
+[γ(α)]α | ln E|α−1,
+1 < α < 2.
+(26)
+For α < 1, the Thouless relation suggests that ξ(E) = 0 since µu = ∞. We conclude that all the wave
+functions, across the entire spectrum, show a super-exponential decay.
+5. Conclusion
+This paper describes a non-interacting spinless fermionic system with random nearest neighbor hopping.
+This model exhibits exact sub-lattice symmetry, even in the presence of disorder, and it is this exact
+symmetry that is largely responsible for its peculiar behavior. The salient feature of our work is that the
+disordered hopping matrix elements t are drawn from a probability density with a tunable sharp divergence
+of the form 1/t| ln t|α0+1 as t →0, or a fat tail of the form 1/t| ln t|α∞+1 at t →∞. The parameter that
+controls the properties of the system is α ≡min(α0, α∞) By extending an already known mapping between
+this quantum model and a classical discrete time random walk, we have been able to draw an exact parallel
+between the breakdown of universality and the violation of Fick’s law of diﬀusion.
+In the classical case, a fat-tailed noise process leads to super-diﬀusive behavior, with an anomalous
+exponent ⟨|x|m ∼tm/α⟩, for moments m < α. In the disordered hopping model, a choice of hopping terms
+such that there is a large probability of either an exponentially small or a very large hopping term causes
+three major changes – (i) the state at zero-energy decays as exp
+−(r/r0)1/α
+, which is super-exponential
+for α < 1, (ii) the density of states shows a non-trivial logarithmic divergence at small energies, and (iii)
+the localization length also diverges non-trivially as the energy tends to zero. Each of these three behaviors
+is tunable, depending on the divergence parameter 0 < α < 2 of the hopping distribution. When α > 2,
+we recover the previously known universal results that apply to all well-behaved distributions of hopping.
+Table 1 summarizes our systematic exploration of the entire parameter regime and encapsulates the central
+results of this paper.
+While we have written our results in the language of an electronic model, the conclusions are directly
+applicable to the magnetic properties of spin-1/2 chains, as detailed in our earlier work [32]. The breakdown
+of universal low-temperature susceptibility directly follows from modiﬁed form of the density of states. Our
+work also has strong connections with the strong-disorder renormalization group [45, 46, 47]. While the
+inﬁnite disorder ﬁxed point was believed to be the only important one, Fisher [46] suspected that certain
+cases, where the couplings are dominated by weak links, would not behave universally. Our investigation
+demonstrates the speciﬁc nature of this universality violation, and show the existence of an entire line of
+ﬁxed points for 0 < α < 2. One interesting feature is that this behavior can be triggered in two opposite
+kinds of situations – either by having extremely weak or extremely strong nearest neighbor couplings.
+In our earlier work [32], we backed up our analytical predictions with two kinds of numerical analysis on
+systems of very large sizes (N > 107 sites). Correlation functions obtained from transfer matrix calculations
+veriﬁed the functional form of the zero-energy state as well as the precise distribution of length scales r0.
+Strong-disorder renormalization group computations with ensemble averaging over hundreds of realizations
+corroborated our predictions for the density of states and the localization length to high precision, including
+the numerical pre-factors. One peculiar feature of our model is the presence of extremely large variations in
+8
+
+
+=== PDF PAGE 9 ===
+0 < α < 1
+1 < α < 2
+α > 2
+statistics of the logarithm of hoppings u ≡ln t
+mean µu
+∞
+ﬁnite
+ﬁnite
+variance σ2
+u
+∞
+∞
+ﬁnite
+wave function of the band-center state (E = 0)
+ψ(r)
+e−(r/ro)1/α
+e−(r/r0)1/α
+e−√
+r/r0
+decay envelope
+super-exponential
+sub-exponential
+sub-exponential
+distribution of
+1
+r0
+S(α, 0, γ(α), 0)
+S(α, 0, γ(α), 0)
+N(0, σ2
+u)
+integrated density of states N(E) as E →0
+N(E)
+bα
+| ln E|α
+bα
+| ln E|α
+bα
+| ln E|2
+pre-factor bα
+[γ(α)]α
+τα
+[γ(α)]α
+τα
+σ2
+u
+spatial proﬁle and localization length ξ(E) at non-zero energy
+decay envelope
+super-exponential
+exponential
+exponential
+ξ(E)
+0
+(α −1)τα
+[γ(α)]α | ln E|α−1
+| ln E|
+σ2u
+Table 1: Summary of key ﬁndings. The hopping distribution p(t) (Eq. (2)) is parametrized by two exponents – α0 and α∞.
+However, the only quantity that matters is α ≡min(α0, α∞). For α > 2, we recover the universal ‘Dyson’ behavior, but for
+α < 2, there is a variety of non-trivial physics. The scale factor γ(α) referred to above is deﬁned in Eq. (9), and the constant
+τα is plotted in Fig. 2. [A slightly more detailed version of this table is in Ref. [32]]
+the hopping terms, over several thousands of orders of magnitude. This meant that the energies approached
+as small 10−108. Our numerical calculations carefully implemented the arithmetic to avoid ﬂoating point
+errors over the full dynamic range of calculations.
+From an experimental point of view, it might seem that such hoppings are challenging to realize in
+practice. Nevertheless, it may be possible to construct such nearest neighbor couplings in synthetic lattices.
+This may be achieved by distributing a chain of atoms randomly in a contrived potential of the appropriate
+form.
+The potential can be found by inverting the Schr¨odinger equation, and is of the form V (r) =
+V0 +
+ce2br −ebr
+, for r > 0, where V0, c and b are positive constants [32]. For negative b, this potential is
+known as the Morse potential [48], used in studying the vibrations of diatomic molecules.
+One of the most remarkable and counter-intuitive aspects of disorder is universality. Disorder can ensue
+from a number of causes, such as positional randomness, crystallographic defects, impurity dopants and so
+on. However, the eﬀect disorder has on quantum systems usually depends not on the origin or nature of
+disorder, but rather on the dimensionality and symmetries of the system. It is this universality that makes
+simple theoretical models so powerful and applicable to real-world problems. However, in this study, we
+have uncovered a non-trivial breakdown of universality that is driven purely by the choice of a probability
+distribution with fat tails. This is similar to the origin of anomalous diﬀusion seen in L´evy ﬂights and other
+kinds of non-Brownian stochastic processes. Anomalous transport, L´evy ﬂights, super-diﬀusion and allied
+topics are currently topics of great interest in the ﬁeld of classical non-equilibrium statistical mechanics and
+mathematical physics [49], with applications to ﬁelds as diverse as biophysics [50], ecology [51] and ﬁnance
+[52]. In this context, it would be of interest to examine other quantum condensed matter systems where
+extreme value statistics and eﬀects of large deviations cause a breakdown of universal behavior.
+9
+
+
+=== PDF PAGE 10 ===
+6. Acknowledgments
+This work was supported by US Department of Energy, Division of Basic energy Sciences through Grant
+No. DE-SC0002140. RNB acknowledges the hospitality of the Aspen Center for Physics (supported by
+NSF), and of the Institute for Advanced Study, Princeton at diﬀerent stages of the work.
+After we submitted this manuscript, we learned that a similar approach had been used by Karevski et
+al [53] in the case of quantum magnets with broad disorder distributions. We thank the referee for pointing
+out this work, whose existence we were unaware of.
+Appendix A. The mean ﬁrst passage time
+It is known that under fairly general conditions, there is a correspondence between stochastic diﬀerential
+equations and Fokker-Planck equations.
+This correspondence states that for any normalized stochastic
+diﬀerential equation with unit Gaussian noise ζ(t)
+dx
+dt = f(x, t) + g(x, t)ζ(t),
+(A.1)
+the probability density p(x, t) evolves in accordance with the Fokker-Planck equation (FPE)
+∂
+∂tp(x, t) = −∂
+∂x (f(x, t)p(x, t)) + 1
+2
+∂2
+∂x2
+g2(x, t)p(x, t)
+
+(A.2)
+For our situation in Sec. 4 (when α > 2), the inﬁnite potential barrier to the left of the origin can be
+modeled by a piecewise constant force ﬁeld f(x, t) = Fθ(−x), where the constant F →+∞, and θ(x) is the
+Heaviside step function. The noise is additive, so g(x, t) can just be taken to be a constant. This simpliﬁes
+the FPE considerably,
+∂
+∂tp(x, t) = −F ∂
+∂x (θ(−x)p(x, t)) + g2
+2
+∂2
+∂x2 p(x, t).
+(A.3)
+In our system, we have the initial condition p(x, t = 0) = δ(x), the absorbing boundary at x0 implies
+p(x0, t) = 0. The other spatial boundary condition is p(x = −∞, t) = 0.
+A quantity called the survival probability ps(t) can be deﬁned as the integral of p(x, t) over all space,
+and is the probability that the particle has not yet been absorbed at time t. Common sense suggests that
+ps(t) monotonically decreases to zero from its initial value of ps(t = 0) = 1.
+The probability the particle ﬁrst gets absorbed between time t and t+∆t is the diﬀerence in the survival
+probabilities at the two times, i.e. ps(t) −ps(t + ∆t). The mean ﬁrst passage time τ is the average of this
+quantity; thus
+τ = lim
+∆t→0
+X
+t
+t (ps(t) −ps(t + ∆t)) =
+∞
+Z
+0
+dt t
+
+−dps(t)
+dt
+
+(A.4)
+=
+∞
+Z
+0
+dt ps(t) =
+x0
+Z
+−∞
+dx
+∞
+Z
+0
+dt p(x, t) =
+x0
+Z
+−∞
+dx ˜p(x, s = 0),
+(A.5)
+where ˜p(x, s) ≡
+∞
+R
+0
+dt e−stp(x, t) is the unilateral Laplace transform. Calling q(x) ≡˜p(x, s = 0) for conve-
+nience, so that the mean ﬁrst passage time is just a deﬁnite integral of a single-variable function,
+τ =
+x0
+Z
+−∞
+dx q(x)
+(A.6)
+10
+
+
+=== PDF PAGE 11 ===
+Taking the unilateral Laplace transform in time of Eq. (A.3), and setting s = 0, we end up reducing a
+partial diﬀerential equation to an ordinary diﬀerential equation
+−δ(x) = −F d
+dx (θ(−x)q(x)) + g2
+2
+d2
+dx2 q(x),
+which when integrated once,
+(A.7)
+−θ(x) = −Fθ(−x)q(x) + g2
+2
+d
+dxq(x)
+(A.8)
+The solution to this ODE (with boundary conditions q(−∞) = q(x0) = 0) is
+q(x) =
+
+
+
+
+
+
+
+2x0
+g2 exp
+2Fx
+g2
+
+,
+−∞< x < 0
+2(x0 −x)
+g2
+,
+0 < x < x0.
+(A.9)
+And it follows by doing the integral in (A.6),
+τ = x0
+F + x2
+0
+g2 .
+(A.10)
+For the random walk in Sec. 4, we set F →∞, and x0 and g are normalized to 1, so τα = 1 ∀α > 2.
+When 0 < α < 2, the situation is diﬀerent. For a symmetric L´evy noise process, Eq. (A.2) is replaced
+by the generalized Fokker-Planck equation [54],
+∂
+∂tp(x, t) = −∂
+∂x (f(x, t)p(x, t)) +
+∂α
+∂|x|α (gα(x, t)p(x, t)) ,
+(A.11)
+implying that the diﬀerential equation (A.7) to be solved becomes
+−δ(x) = −F d
+dx (θ(−x)q(x)) + gα dα
+d|x|α q(x).
+(A.12)
+In Eq. (A.11),
+dα
+d|x|α denotes the Riesz fractional derivative [55], which is deﬁned in terms of the Fourier
+transform as
+dα
+d|x|α f(x) ≡
+∞
+Z
+−∞
+dk
+2π |k|αe−ikx
+∞
+Z
+−∞
+dx′f(x′)eikx′.
+(A.13)
+The solution to Eq. (A.12) should enable one to ﬁnd the mean ﬁrst passage time τα for the L´evy noise
+case. This provides the foundation for an alternative method to obtain the curve in Fig. 2. However, we are
+unable to proceed and obtain a closed-form expression for τα.
+11
+
+
+=== PDF PAGE 12 ===
+References
+[1] P. W. Anderson, Absence of diﬀusion in certain random lattices, Phys. Rev. 109 (1958) 1492–1505.
+[2] N. Mott, W. Twose, The theory of impurity conduction, Advances in Physics 10 (1961) 107–163.
+[3] E. Abrahams, P. W. Anderson, D. C. Licciardello, T. V. Ramakrishnan,
+Scaling theory of localization: Absence of
+quantum diﬀusion in two dimensions, Phys. Rev. Lett. 42 (1979) 673–676.
+[4] P. A. Lee, T. V. Ramakrishnan, Disordered electronic systems, Rev. Mod. Phys. 57 (1985) 287–337.
+[5] F. Evers, A. D. Mirlin, Anderson transitions, Rev. Mod. Phys. 80 (2008) 1355–1417.
+[6] C.-K. Chiu, J. C. Y. Teo, A. P. Schnyder, S. Ryu, Classiﬁcation of topological quantum matter with symmetries, Rev.
+Mod. Phys. 88 (2016) 035005.
+[7] D. H. Dunlap, H.-L. Wu, P. W. Phillips, Absence of localization in a random-dimer model, Phys. Rev. Lett. 65 (1990)
+88–91.
+[8] F. A. B. F. de Moura, M. L. Lyra, Delocalization in the 1D Anderson model with long-range correlated disorder, Phys.
+Rev. Lett. 81 (1998) 3735–3738.
+[9] F. M. Izrailev, A. A. Krokhin, Localization and the mobility edge in one-dimensional potentials with correlated disorder,
+Phys. Rev. Lett. 82 (1999) 4062–4065.
+[10] F. A. de Moura, M. L. Lyra,
+Correlation-induced metal-insulator transition in the one-dimensional Anderson model,
+Physica A: Statistical Mechanics and its Applications 266 (1999) 465 – 470.
+[11] C. Zhou, R. N. Bhatt, One-dimensional chain with random long-range hopping, Phys. Rev. B 68 (2003) 045101.
+[12] A. Krishna, R. N. Bhatt, Eﬀect of hilbert space truncation on Anderson localization, Phys. Rev. B 97 (2018) 174205.
+[13] G. Theodorou, M. H. Cohen, Extended states in a one-demensional system with oﬀ-diagonal disorder, Phys. Rev. B 13
+(1976) 4597–4601.
+[14] T. P. Eggarter, R. Riedinger, Singular behavior of tight-binding chains with oﬀ-diagonal disorder, Phys. Rev. B 18 (1978)
+569–575.
+[15] F. J. Dyson, The dynamics of a disordered linear chain, Phys. Rev. 92 (1953) 1331–1338.
+[16] E. R. Smith, One-dimensional X-Y model with random coupling constants. I. thermodynamics, Journal of Physics C:
+Solid State Physics 3 (1970) 1419–1432.
+[17] E. Lieb, T. Schultz, D. Mattis, Two soluble models of an antiferromagnetic chain, Annals of Physics 16 (1961) 407–466.
+[18] D. Dhar, Central peak in the density of states of a disordered linear chain, Physica A: Statistical Mechanics and its
+Applications 102 (1980) 370 – 378.
+[19] L. Fleishman, D. C. Licciardello, Fluctuations and localization in one dimension, Journal of Physics C: Solid State Physics
+10 (1977) L125–L126.
+[20] C. M. Soukoulis, E. N. Economou, Oﬀ-diagonal disorder in one-dimensional systems, Phys. Rev. B 24 (1981) 5698–5702.
+[21] A. D. Stone, J. D. Joannopoulos, Probability distribution and new scaling law for the resistance of a one-dimensional
+Anderson model, Phys. Rev. B 24 (1981) 3592–3595.
+[22] T. A. L. Ziman, Localization and spectral singularities in random chains, Phys. Rev. Lett. 49 (1982) 337–340.
+[23] S. N. Evangelou,
+Spectral singularities and localisation in one- and quasi-one-dimensional systems with oﬀ-diagonal
+disorder, Journal of Physics C: Solid State Physics 19 (1986) 4291–4302.
+[24] H. E. Roman, C. Wiecko, Near band centre states for one-dimensional oﬀ-diagonal disordered systems, Zeitschrift f¨ur
+Physik B Condensed Matter 69 (1987) 81–85.
+[25] P. Markoˇs, The one dimensional Anderson model with oﬀdiagonal disorder: band centre anomaly, Zeitschrift f¨ur Physik
+B Condensed Matter 73 (1988) 17–21.
+[26] H. E. Roman, Multifractal analysis of eigenstates in systems with oﬀ-diagonal disorder, Phys. Rev. B 38 (1988) 2948–2951.
+[27] M. Inui, S. A. Trugman, E. Abrahams, Unusual properties of midband states in systems with oﬀ-diagonal disorder, Phys.
+Rev. B 49 (1994) 3190–3196.
+[28] H. Javan Mard, J. A. Hoyos, E. Miranda, V. Dobrosavljevi´c, Strong-disorder renormalization-group study of the one-
+dimensional tight-binding model, Phys. Rev. B 90 (2014) 125141.
+[29] Q. Zhao, J. Gong, From disordered quantum walk to physics of oﬀ-diagonal disorder, Phys. Rev. B 92 (2015) 214205.
+[30] G. De Tomasi, S. Roy, S. Bera, Generalized dyson model: Nature of the zero mode and its implication in dynamics, Phys.
+Rev. B 94 (2016) 144202.
+[31] G. T. Stamatiou, S. N. Evangelou, A fast approach to Anderson localization for even-n Dyson insulator, arXiv:2007.04053
+(2020).
+[32] A. Krishna, R. N. Bhatt, Beyond universal behavior in the one-dimensional chain with random nearest-neighbor hopping,
+Phys. Rev. B 101 (2020) 224203.
+[33] B. Gnedenko, A. Kolmogorov, Limit distributions for sums of independent random variables, Addison-Wesley series in
+statistics, Addison-Wesley, 1968.
+[34] M. Shintani, K. Umeno, Super generalized central limit theorem —limit distributions for sums of non-identical random
+variables with power laws—, Journal of the Physical Society of Japan 87 (2018) 043003.
+[35] E. C. Rocha, M. G. E. da Luz, E. P. Raposo, G. M. Viswanathan, Why L´evy α-stable distributions lack general closed-form
+expressions for arbitrary α, Phys. Rev. E 100 (2019) 010103.
+[36] H. Schmidt, Disordered one-dimensional crystals, Phys. Rev. 105 (1957) 425–441.
+[37] V. Balakrishnan, Elements of Nonequilibrium Statistical Mechanics, Ane Books, 2008.
+[38] A. Janicki, A. Weron, Can one see α-stable variables and processes?, Statist. Sci. 9 (1994) 109–126.
+[39] R. Klages, G. Radons, I. M. Sokolov, Anomalous transport: foundations and applications, John Wiley & Sons, 2008.
+12
+
+
+=== PDF PAGE 13 ===
+[40] T. Koren, M. A. Lomholt, A. V. Chechkin, J. Klafter, R. Metzler, Leapover lengths and ﬁrst passage time statistics for
+l´evy ﬂights, Phys. Rev. Lett. 99 (2007) 160602.
+[41] B. Dybiec, E. Gudowska-Nowak, E. Barkai, A. A. Dubkov, L´evy ﬂights versus l´evy walks in bounded domains, Phys.
+Rev. E 95 (2017) 052102.
+[42] R. Metzler,
+Brownian motion and beyond: ﬁrst-passage, power spectrum, non-gaussianity, and anomalous diﬀusion,
+Journal of Statistical Mechanics: Theory and Experiment 2019 (2019) 114003.
+[43] V. V. Palyulin, G. Blackburn, M. A. Lomholt, N. W. Watkins, R. Metzler, R. Klages, A. V. Chechkin, First passage and
+ﬁrst hitting times of l´evy ﬂights and l´evy walks, New Journal of Physics 21 (2019) 103028.
+[44] D. J. Thouless, A relation between the density of states and range of localization for one dimensional random systems,
+Journal of Physics C: Solid State Physics 5 (1972) 77–81.
+[45] D. S. Fisher, Random transverse ﬁeld ising spin chains, Phys. Rev. Lett. 69 (1992) 534–537.
+[46] D. S. Fisher, Random antiferromagnetic quantum spin chains, Phys. Rev. B 50 (1994) 3799–3821.
+[47] R. H. McKenzie, Exact results for quantum phase transitions in random XY spin chains, Phys. Rev. Lett. 77 (1996)
+4804–4807.
+[48] P. M. Morse, Diatomic molecules according to the wave mechanics. II. vibrational levels, Phys. Rev. 34 (1929) 57–64.
+[49] F. A. Oliveira, R. M. S. Ferreira, L. C. Lapas, M. H. Vainstein, Anomalous diﬀusion: A basic mechanism for the evolution
+of inhomogeneous systems, Frontiers in Physics 7 (2019) 18.
+[50] F. Matth¨aus, M. Jagodiˇc, J. Dobnikar, E. coli superdiﬀusion and chemotaxis—search strategy, precision, and motility,
+Biophysical Journal 97 (2009) 946 – 957.
+[51] G. M. Viswanathan, Fish in L´evy-ﬂight foraging, Nature 465 (2010) 1018–1019.
+[52] M. Mariani, Y. Liu, Normalized truncated Levy walks applied to the study of ﬁnancial indices, Physica A: Statistical
+Mechanics and its Applications 377 (2007) 590 – 598.
+[53] Karevski, D., Lin, Y-C., Rieger, H., Kawashima, N., Igl´oi, F., Random quantum magnets with broad disorder distribution,
+Eur. Phys. J. B 20 (2001) 267–276.
+[54] Denisov, S. I., Horsthemke, W., H¨anggi, P., Generalized fokker-planck equation: Derivation and exact solutions, Eur.
+Phys. J. B 68 (2009) 567–575.
+[55] R. Herrmann, Fractional calculus: an introduction for physicists, World Scientiﬁc, 2014.
+13

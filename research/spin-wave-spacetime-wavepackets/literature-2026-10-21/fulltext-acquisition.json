@@ -1,0 +1,42 @@
+[
+  {
+    "key": "electron_2026_2610.08391v1",
+    "source_url": "https://arxiv.org/pdf/2610.08391v1",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 7,
+    "bytes": 1254804,
+    "sha256": "edd73ef5615f3d0c932242543c70fe3f0439d938c580063595171fc28685fd20",
+    "pdf": "pdfs/electron_2026_2610.08391v1.pdf",
+    "extracted": "extracted/electron_2026_2610.08391v1.txt"
+  },
+  {
+    "key": "spp_2020_2003.02105v1",
+    "source_url": "https://arxiv.org/pdf/2003.02105v1",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 14,
+    "bytes": 4677453,
+    "sha256": "791d595c2fb4555a003a65cf7e6e81827c26f1b5ef8559cb19fd0934e7ebe155",
+    "pdf": "pdfs/spp_2020_2003.02105v1.pdf",
+    "extracted": "extracted/spp_2020_2003.02105v1.txt"
+  },
+  {
+    "key": "magnonics_roadmap_2024",
+    "source_url": "https://iris.cnr.it/retrieve/4fa5b9dc-a22e-4411-a421-464851833b9f/Flebus_2024_J._Phys.__Condens._Matter_36_363501.pdf",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 41,
+    "bytes": 5888563,
+    "sha256": "7e083bb82a5ff493f684d8ff0618cae669796860b1b06319eb8abb660892979c",
+    "pdf": "pdfs/magnonics_roadmap_2024.pdf",
+    "extracted": "extracted/magnonics_roadmap_2024.txt"
+  },
+  {
+    "key": "ultrafast_caustic_2013",
+    "source_url": "https://link.aps.org/pdf/10.1103/PhysRevLett.110.097201",
+    "accessed": "2026-10-21",
+    "status": "unavailable",
+    "error": "The response is not a PDF"
+  }
+]

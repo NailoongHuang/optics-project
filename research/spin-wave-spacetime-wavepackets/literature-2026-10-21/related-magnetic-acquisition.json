@@ -1,0 +1,31 @@
+[
+  {
+    "key": "spin_cherenkov_2013",
+    "source_url": "https://juser.fz-juelich.de/record/201750/files/PhysRevB.88.220412.pdf",
+    "accessed": "2026-10-21",
+    "status": "unavailable",
+    "error": "The response is not a PDF"
+  },
+  {
+    "key": "magnon_cherenkov_2026_preprint",
+    "source_url": "https://assets-eu.researchsquare.com/files/rs-5971617/v1_covered_ec4e449c-db89-4961-9d7d-e6db0d9637fe.pdf?c=1769508459",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 22,
+    "bytes": 11081862,
+    "sha256": "4438116b7f1398b2ebffe0c195d62ce36f11561af99630a773a12f1816324317",
+    "pdf": "pdfs/magnon_cherenkov_2026_preprint.pdf",
+    "extracted": "extracted/magnon_cherenkov_2026_preprint.txt"
+  },
+  {
+    "key": "demultiplexer_2020",
+    "source_url": "https://d-nb.info/1260882446/34",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 6,
+    "bytes": 907583,
+    "sha256": "82486f5898fd544ec71cd7ff306755d94f16491f114f8e62676c3062b948f716",
+    "pdf": "pdfs/demultiplexer_2020.pdf",
+    "extracted": "extracted/demultiplexer_2020.txt"
+  }
+]

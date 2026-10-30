@@ -1,0 +1,14 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/8gh2fn","index":30,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/r618fmto","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"附录：长波二次近似的适用范围","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/s7ap8ra9","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/t83qhcbu","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 A08、A09　轴向能量近似","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/e9c7ahsf","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"31","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/al03ixwb","kind":"image","position":{"left":44,"top":148,"width":780,"height":375},"fit":"contain","alt":"a08-long-wave-approximation"},
+{"id":"sh/gbu9cral","kind":"textbox","position":{"left":881,"top":166,"width":335,"height":34},"text":"相对能量误差","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1c3qlwb6","kind":"textbox","position":{"left":881,"top":209,"width":335,"height":140},"text":"1%：q ≈ 0.3454\n5%：q ≈ 0.7633","style":{"fontSize":27,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2dcre1sb","kind":"textbox","position":{"left":881,"top":371,"width":335,"height":34},"text":"传播时的限制","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3yl8n6tw","kind":"textbox","position":{"left":881,"top":414,"width":335,"height":140},"text":"同样的能量误差会随时间积累为相位误差。主模拟保留完整余弦能带。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/zuxonq5o","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/ytonelo3","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"长波近似便于理解局部机制，其使用范围由波矢与传播时间共同约束。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,632 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          27
+        ]
+      ],
+      "date-time": "2026-05-27T14:03:45Z",
+      "timestamp": 1779890625420,
+      "version": "3.53.1"
+    },
+    "reference-count": 38,
+    "publisher": "AIP Publishing",
+    "issue": "26",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "268565370"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "268565370"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "pubs.aip.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ]
+    },
+    "abstract": "<jats:p>We perform micromagnetic simulations to investigate the propagation of spin-wave beams through spin-wave optical elements. Despite spin-wave propagation in magnetic media being strongly anisotropic, we use axicons to excite spin-wave Bessel–Gaussian beams and gradient-index lenses to focus spin waves in analogy to conventional optics with light in isotropic media. Moreover, we demonstrate spin-wave Fourier optics using gradient-index lenses. Our results are valid for all three possible external magnetic field orientations and thus contribute to the growing field of spin-wave optics.</jats:p>",
+    "DOI": "10.1063/5.0018519",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ],
+      "date-time": "2020-06-29T10:38:15Z",
+      "timestamp": 1593427095000
+    },
+    "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+    "source": "Crossref",
+    "is-referenced-by-count": 24,
+    "title": [
+      "Optical elements for anisotropic spin-wave propagation"
+    ],
+    "prefix": "10.1063",
+    "volume": "116",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3111-783X",
+        "authenticated-orcid": false,
+        "given": "M.",
+        "family": "Vogel",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK) 1 , Erwin-Schrödinger-Str., 56, 67663 Kaiserslautern, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0163-8634",
+        "authenticated-orcid": false,
+        "given": "P.",
+        "family": "Pirro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK) 1 , Erwin-Schrödinger-Str., 56, 67663 Kaiserslautern, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8910-0355",
+        "authenticated-orcid": false,
+        "given": "B.",
+        "family": "Hillebrands",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK) 1 , Erwin-Schrödinger-Str., 56, 67663 Kaiserslautern, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2389-5532",
+        "authenticated-orcid": false,
+        "given": "G.",
+        "family": "von Freymann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and State Research Center OPTIMAS, Technische Universität Kaiserslautern (TUK) 1 , Erwin-Schrödinger-Str., 56, 67663 Kaiserslautern, Germany"
+          },
+          {
+            "name": "Fraunhofer-Institute for Industrial Mathematics ITWM 2 , Fraunhofer-Platz 1, 67663 Kaiserslautern, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "317",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2023061719401591700_c1",
+        "doi-asserted-by": "publisher",
+        "first-page": "22367",
+        "DOI": "10.1038/srep22367",
+        "article-title": "Microwave excitation of spin wave beams in thin ferromagnetic films",
+        "volume": "6",
+        "year": "2016",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2023061719401591700_c2",
+        "doi-asserted-by": "publisher",
+        "first-page": "037204",
+        "DOI": "10.1103/PhysRevLett.117.037204",
+        "article-title": "Snell's law for spin waves",
+        "volume": "117",
+        "year": "2016",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "2023061719401591700_c3",
+        "doi-asserted-by": "publisher",
+        "first-page": "e246",
+        "DOI": "10.1038/am.2016.25",
+        "article-title": "Fiber optics for spin waves",
+        "volume": "8",
+        "year": "2016",
+        "journal-title": "NPG Asia Mater."
+      },
+      {
+        "key": "2023061719401591700_c4",
+        "doi-asserted-by": "publisher",
+        "first-page": "140410",
+        "DOI": "10.1103/PhysRevB.94.140410",
+        "article-title": "Magnetic Snell's law and spin-wave fiber with Dzyaloshinskii-Moriya interaction",
+        "volume": "94",
+        "year": "2016",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061719401591700_c5",
+        "doi-asserted-by": "publisher",
+        "first-page": "33169",
+        "DOI": "10.1038/srep33169",
+        "article-title": "Design and construction of a spin-wave lens",
+        "volume": "6",
+        "year": "2016",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2023061719401591700_c6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1109/LMAG.2018.2872127",
+        "article-title": "Lens design for computing with anisotropic spin waves",
+        "volume": "9",
+        "year": "2018",
+        "journal-title": "IEEE Magn. Lett."
+      },
+      {
+        "key": "2023061719401591700_c7",
+        "doi-asserted-by": "publisher",
+        "first-page": "232407",
+        "DOI": "10.1063/1.4971829",
+        "article-title": "Reconfigurable heat-induced spin wave lenses",
+        "volume": "109",
+        "year": "2016",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061719401591700_c8",
+        "unstructured": "J. Gräfe, M. Decker, K. Keskinbora, M. Noske, P. Gawronski, H. Stoll, C. H. Back, E. J. Goering, and G. Schütz, “X-ray microscopy of spin wave focusing using a Fresnel zone plate,” arXiv:1707.03664 (2017)."
+      },
+      {
+        "key": "2023061719401591700_c9",
+        "doi-asserted-by": "publisher",
+        "first-page": "212404",
+        "DOI": "10.1063/1.5049470",
+        "article-title": "A Luneburg lens for spin waves",
+        "volume": "113",
+        "year": "2018",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061719401591700_c10",
+        "doi-asserted-by": "publisher",
+        "first-page": "100401",
+        "DOI": "10.1103/PhysRevB.96.100401",
+        "article-title": "Excitation and tailoring of diffractive spin-wave beams in NiFe using nonuniform microwave antennas",
+        "volume": "96",
+        "year": "2017",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061719401591700_c11",
+        "doi-asserted-by": "publisher",
+        "first-page": "760",
+        "DOI": "10.1063/1.4932349",
+        "article-title": "Graded-index magnonics",
+        "volume": "41",
+        "year": "2015",
+        "journal-title": "Low Temp. Phys."
+      },
+      {
+        "key": "2023061719401591700_c12",
+        "doi-asserted-by": "publisher",
+        "first-page": "020408",
+        "DOI": "10.1103/PhysRevB.92.020408",
+        "article-title": "Towards graded-index magnonics: Steering spin waves in magnonic networks",
+        "volume": "92",
+        "year": "2015",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061719401591700_c13",
+        "doi-asserted-by": "publisher",
+        "first-page": "094424",
+        "DOI": "10.1103/PhysRevB.97.094424",
+        "article-title": "Spin-wave beam propagation in ferromagnetic thin films with graded refractive index: Mirage effect and prospective applications",
+        "volume": "97",
+        "year": "2018",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "2023061719401591700_c14",
+        "doi-asserted-by": "publisher",
+        "first-page": "11099",
+        "DOI": "10.1038/s41598-018-29191-2",
+        "article-title": "Control of spin-wave propagation using magnetisation gradients",
+        "volume": "8",
+        "year": "2018",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2023061719401591700_c15",
+        "doi-asserted-by": "publisher",
+        "first-page": "123202",
+        "DOI": "10.1088/0953-8984/26/12/123202",
+        "article-title": "Review and prospects of magnonic crystals and devices with reprogrammable band structure",
+        "volume": "26",
+        "year": "2014",
+        "journal-title": "J. Phys."
+      },
+      {
+        "key": "2023061719401591700_c16",
+        "doi-asserted-by": "publisher",
+        "first-page": "487",
+        "DOI": "10.1038/nphys3325",
+        "article-title": "Optically reconfigurable magnetic materials",
+        "volume": "11",
+        "year": "2015",
+        "journal-title": "Nat. Phys."
+      },
+      {
+        "key": "2023061719401591700_c17",
+        "doi-asserted-by": "publisher",
+        "first-page": "244001",
+        "DOI": "10.1088/1361-6463/aa6a65",
+        "article-title": "Magnonic crystals for data processing",
+        "volume": "50",
+        "year": "2017",
+        "journal-title": "J. Phys. D"
+      },
+      {
+        "key": "2023061719401591700_c18",
+        "doi-asserted-by": "publisher",
+        "first-page": "137204",
+        "DOI": "10.1103/PhysRevLett.101.137204",
+        "article-title": "Formation of guided spin-wave bullets in ferrimagnetic film stripes",
+        "volume": "101",
+        "year": "2008",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "2023061719401591700_c19",
+        "doi-asserted-by": "publisher",
+        "first-page": "602",
+        "DOI": "10.1063/1.5041426",
+        "article-title": "Bullets and droplets: Two-dimensional spin-wave solitons in modern magnonics (review article)",
+        "volume": "44",
+        "year": "2018",
+        "journal-title": "Low Temp. Phys."
+      },
+      {
+        "key": "2023061719401591700_c20",
+        "first-page": "1",
+        "article-title": "Optically-inspired computing based on spin waves",
+        "year": "2016"
+      },
+      {
+        "key": "2023061719401591700_c21",
+        "doi-asserted-by": "publisher",
+        "first-page": "17C741",
+        "DOI": "10.1063/1.4868921",
+        "article-title": "Spin-wave based realization of optical computing primitives",
+        "volume": "115",
+        "year": "2014",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2023061719401591700_c22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1471",
+        "DOI": "10.1016/j.physleta.2017.02.042",
+        "article-title": "Perspectives of using spin waves for computing and signal processing",
+        "volume": "381",
+        "year": "2017",
+        "journal-title": "Phys. Lett. A"
+      },
+      {
+        "key": "2023061719401591700_c23",
+        "doi-asserted-by": "publisher",
+        "first-page": "107133",
+        "DOI": "10.1063/1.4899186",
+        "article-title": "The design and verification of MuMax3",
+        "volume": "4",
+        "year": "2014",
+        "journal-title": "AIP Adv."
+      },
+      {
+        "key": "2023061719401591700_c24",
+        "doi-asserted-by": "publisher",
+        "first-page": "3453",
+        "DOI": "10.1063/1.1703018",
+        "article-title": "Propagation of magnetostatic spin waves at microwave frequencies in a normally-magnetized disk",
+        "volume": "36",
+        "year": "1965",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "2023061719401591700_c25",
+        "doi-asserted-by": "publisher",
+        "first-page": "389",
+        "DOI": "10.1070/PU2006v049n04ABEH005807",
+        "article-title": "Properties of backward electromagnetic waves and negative reflection in ferrite films",
+        "volume": "49",
+        "year": "2006",
+        "journal-title": "Phys.-Usp."
+      },
+      {
+        "key": "2023061719401591700_c26",
+        "doi-asserted-by": "publisher",
+        "first-page": "375",
+        "DOI": "10.1070/PU2008v051n04ABEH006460",
+        "article-title": "The properties of isofrequency dependences and the laws of geometrical optics",
+        "volume": "51",
+        "year": "2008",
+        "journal-title": "Phys.-Usp."
+      },
+      {
+        "key": "2023061719401591700_c27",
+        "doi-asserted-by": "publisher",
+        "first-page": "264002",
+        "DOI": "10.1088/0022-3727/43/26/264002",
+        "article-title": "YIG magnonics",
+        "volume": "43",
+        "year": "2010",
+        "journal-title": "J. Phys. D"
+      },
+      {
+        "key": "2023061719401591700_c28",
+        "doi-asserted-by": "publisher",
+        "first-page": "022508",
+        "DOI": "10.1063/1.2963027",
+        "article-title": "Scattering of backward spin waves in a one-dimensional magnonic crystal",
+        "volume": "93",
+        "year": "2008",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061719401591700_c29",
+        "doi-asserted-by": "publisher",
+        "first-page": "262508",
+        "DOI": "10.1063/1.3279138",
+        "article-title": "Spin-wave propagation in a microstructured magnonic crystal",
+        "volume": "95",
+        "year": "2009",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061719401591700_c30",
+        "doi-asserted-by": "publisher",
+        "first-page": "205005",
+        "DOI": "10.1088/0022-3727/42/20/205005",
+        "article-title": "A current-controlled, dynamic magnonic crystal",
+        "volume": "42",
+        "year": "2009",
+        "journal-title": "J. Phys. D"
+      },
+      {
+        "key": "2023061719401591700_c31",
+        "doi-asserted-by": "publisher",
+        "first-page": "202403",
+        "DOI": "10.1063/1.4807721",
+        "article-title": "A micro-structured ion-implanted magnonic crystal",
+        "volume": "102",
+        "year": "2013",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "2023061719401591700_c32",
+        "doi-asserted-by": "publisher",
+        "first-page": "491",
+        "DOI": "10.1016/0030-4018(87)90276-8",
+        "article-title": "Bessel-Gauss beams",
+        "volume": "64",
+        "year": "1987",
+        "journal-title": "Opt. Commun."
+      },
+      {
+        "key": "2023061719401591700_c33",
+        "doi-asserted-by": "publisher",
+        "first-page": "239",
+        "DOI": "10.1016/S0030-4018(01)01479-1",
+        "article-title": "Optical micromanipulation using a Bessel light beam",
+        "volume": "197",
+        "year": "2001",
+        "journal-title": "Opt. Commun."
+      },
+      {
+        "key": "2023061719401591700_c34",
+        "doi-asserted-by": "publisher",
+        "first-page": "1499",
+        "DOI": "10.1103/PhysRevLett.58.1499",
+        "article-title": "Diffraction-free beams",
+        "volume": "58",
+        "year": "1987",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "2023061719401591700_c35",
+        "doi-asserted-by": "publisher",
+        "first-page": "145",
+        "DOI": "10.1038/nature01007",
+        "article-title": "Simultaneous micromanipulation in multiple planes using a self-reconstructing light beam",
+        "volume": "419",
+        "year": "2002",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2023061719401591700_c36",
+        "volume-title": "Fundamentals of Photonics",
+        "year": "2008",
+        "edition": "2nd ed"
+      },
+      {
+        "key": "2023061719401591700_c37",
+        "doi-asserted-by": "publisher",
+        "first-page": "1501",
+        "DOI": "10.1080/09500348714551401",
+        "article-title": "Image and Fourier transform formation by GRIN lenses: Pupil effect",
+        "volume": "34",
+        "year": "1987",
+        "journal-title": "J. Mod. Opt."
+      },
+      {
+        "key": "2023061719401591700_c38",
+        "first-page": "1505",
+        "article-title": "Magnon spintronics",
+        "volume-title": "Handbook of Spintronics",
+        "year": "2015"
+      }
+    ],
+    "container-title": [
+      "Applied Physics Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.aip.org/aip/apl/article-pdf/doi/10.1063/5.0018519/14533514/262404_1_online.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://pubs.aip.org/aip/apl/article-pdf/doi/10.1063/5.0018519/14533514/262404_1_online.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2023-06-17T19:40:25Z",
+      "timestamp": 1687030825000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.aip.org/apl/article/116/26/262404/38726/Optical-elements-for-anisotropic-spin-wave"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ]
+    },
+    "references-count": 38,
+    "journal-issue": {
+      "issue": "26",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            29
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1063/5.0018519",
+    "relation": {},
+    "ISSN": [
+      "0003-6951",
+      "1077-3118"
+    ],
+    "issn-type": [
+      {
+        "value": "0003-6951",
+        "type": "print"
+      },
+      {
+        "value": "1077-3118",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          29
+        ]
+      ]
+    },
+    "article-number": "262404"
+  }
+}

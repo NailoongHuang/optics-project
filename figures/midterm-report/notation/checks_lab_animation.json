@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "items": [
+    {
+      "id": "g14_lab_probability_animation",
+      "title": "固定坐标中的波包传播",
+      "caption": "固定x,y实验室坐标，x/a,y/a范围均为-35至225；三组初宽6a，Jy=Jx，t=0至180hbar/Jx。虚线为实际概率质心轨迹。P0固定为共同初始峰值，不逐帧重标度。",
+      "files": {
+        "gif": "g14_lab_probability_animation.gif"
+      },
+      "frames": 61,
+      "min_mass_in_view": 0.9999999988732283,
+      "laboratory_limits_a": [
+        -35,
+        225
+      ],
+      "local_inset": false
+    },
+    {
+      "id": "g15_lab_real_animation",
+      "title": "固定坐标中的波包传播",
+      "caption": "固定x,y实验室坐标，x/a,y/a范围均为-35至225；三组初宽6a，Jy=Jx，t=0至180hbar/Jx。虚线为实际概率质心轨迹。左上附随质心移动的载波局部放大，主图仍为固定坐标。",
+      "files": {
+        "gif": "g15_lab_real_animation.gif"
+      },
+      "frames": 61,
+      "min_mass_in_view": 0.9999999988732283,
+      "laboratory_limits_a": [
+        -35,
+        225
+      ],
+      "local_inset": true
+    }
+  ]
+}

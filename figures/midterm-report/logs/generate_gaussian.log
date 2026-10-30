@@ -1,0 +1,22 @@
+c01-carrier-envelope-spectrum
+c02-space-bandwidth
+c03-zero-carrier-spreading
+c04-moving-gaussian
+c05-carrier-directions
+c06-centroid-velocity
+c07-comoving-marginals
+c08-width-comparison
+c09-rms-exact-moments
+c10-anisotropy-direction
+c11-anisotropy-width
+c12-spectrum-phase
+c13-extension-inflection
+c14-extension-cubic-distortion
+c15-animation-carrier
+c16-animation-directions
+c18-animation-anisotropy
+c17-animation-width
+C group complete: 14 static figures, 4 animations, data and numerical checks.
+
+'created' timestamp seems very low; regarding as unix timestamp
+'modified' timestamp seems very low; regarding as unix timestamp

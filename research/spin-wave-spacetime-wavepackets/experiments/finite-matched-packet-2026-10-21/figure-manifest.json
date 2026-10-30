@@ -1,0 +1,38 @@
+[
+  {
+    "id": "construction",
+    "caption": "主组 delta=0.04。谱图使用对数色标，两个初态使用相同绝对概率色标；图中空间范围为裁剪窗口。",
+    "files": {
+      "png": "construction.png",
+      "svg": "construction.svg",
+      "pdf": "construction.pdf"
+    }
+  },
+  {
+    "id": "comparison",
+    "caption": "主组：归一化、初始纵横 RMS 和平均速度匹配。密度与尺寸在 u*t 为整数的时刻评估；无逐帧峰值重归一化。",
+    "files": {
+      "png": "comparison.png",
+      "svg": "comparison.svg",
+      "pdf": "comparison.pdf"
+    }
+  },
+  {
+    "id": "snapshots",
+    "caption": "完整色散传播的固定速度随动图。所有面板使用同一概率色标；标题报告裁剪框内权重，完整分布另存 NPZ。",
+    "files": {
+      "png": "snapshots.png",
+      "svg": "snapshots.svg",
+      "pdf": "snapshots.pdf"
+    }
+  },
+  {
+    "id": "tradeoffs",
+    "caption": "固定沿线谱窗 s=0.35，改变谱厚度；每一点均用各自实测初宽重新构造和搜索高斯基线。",
+    "files": {
+      "png": "tradeoffs.png",
+      "svg": "tradeoffs.svg",
+      "pdf": "tradeoffs.pdf"
+    }
+  }
+]

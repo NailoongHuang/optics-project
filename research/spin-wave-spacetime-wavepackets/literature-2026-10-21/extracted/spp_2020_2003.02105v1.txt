@@ -1,0 +1,1347 @@
+=== PDF PAGE 1 ===
+Space–Time Surface Plasmon Polaritons: A New Propagation-Invariant Surface Wave
+Packet
+Kenneth L. Schepler,1 Murat Yessenov,1 Yertay Zhiyenbayev,1, ∗and Ayman F. Abouraddy1, †
+1CREOL, The College of Optics & Photonics, University of Central Florida, Orlando, FL 32816, USA
+We introduce the unique class of propagation-invariant surface plasmon polaritons (SPPs) repre-
+senting pulsed surface wave packets propagating along unpatterned metal-dielectric interfaces and
+are localized in all dimensions – with potentially subwavelength transverse spatial widths.
+The
+characteristic features of such linear diﬀraction-free, dispersion-free ‘plasmonic bullets’ stem from
+tight spatio-temporal correlations incorporated into the SPP spectral support domain, and we thus
+call them ‘space-time’ SPPs.
+We show that the group velocity of space-time SPP wave pack-
+ets can be readily tuned to subluminal, superluminal, and even negative values by tailoring the
+spatio-temporal ﬁeld structure independently of any material properties. We present an analyt-
+ical framework and numerical simulations for the propagation of space-time SPPs in comparison
+with traditional pulsed SPPs whose spatial and temporal degrees of freedom are separable, thereby
+verifying the propagation-invariance of the former.
+I.
+INTRODUCTION
+Surface plasmon polaritons (SPPs) are surface waves
+conﬁned to the interface between a dielectric and a
+metal below its plasmon resonance frequency [1–6]. How-
+ever, the spatial proﬁle of the SPP undergoes diﬀrac-
+tive spreading along the unbounded transverse dimen-
+sion upon free propagation, which mars the prospect of
+strongly conﬁning SPPs in all dimensions.
+Moreover,
+SPPs are intrinsically dispersive, such that the temporal
+width of a broadband SPP pulse increases with propa-
+gation. The combined eﬀect on a Gaussian SPP wave
+packet of diﬀractive and dispersive spreading in space
+and time is highlighted in Fig. 1a. We aim here to pro-
+pose a new propagation-invariant SPP wave packet that
+is localized in all dimensions.
+A potential avenue to combat SPP diﬀractive spread-
+ing is to rely on particularly shaped proﬁles correspond-
+ing to so-called ‘diﬀraction-free’ beams, such as Bessel
+[7], Mathieu [8], or Weber [9] beams. However, none of
+these are useful for producing diﬀraction-free SPPs be-
+cause they fundamentally require for their realization two
+transverse dimensions [10]. For example, an optical ﬁeld
+whose distribution conforms to a Bessel function in one
+dimension diﬀracts, in contrast to its two-dimensional
+counterpart that does not. Indeed, it is now understood
+that the dimensionality of the transverse proﬁle of an op-
+tical ﬁeld plays a critical role in the prospect of achiev-
+ing diﬀraction-free behavior. Self-similar SPP propaga-
+tion requires that a one-dimensional (1D) diﬀraction-free
+spatial proﬁle be identiﬁed beyond the trivial cases of
+plane or cosine waves [11] that are not localized. However
+Berry proved that there are no 1D diﬀraction-free opti-
+cal beams, except for 1D Airy beams that travel along a
+curved trajectory rather than a straight line [12–17]. This
+∗Current address:
+Nazarbayev University, Nur-Sultan, Kaza-
+khstan
+† Corresponding author: raddy@creol.ucf.edu
+beam proﬁle has been recently proposed for plasmonic
+platforms and called ‘Airy plasmons’ [18], which have
+been realized in a variety of settings [19–24]. The current
+state-of-the-art therefore suggests that – fundamentally –
+no avenues exist for producing localized, diﬀraction-free
+SPPs that travel in a straight line because of the unavoid-
+able restrictions imposed by the reduced-dimensionality
+intrinsic to plasmonic surface waves.
+Berry’s formulation, however, presumed monochro-
+matic ﬁelds [12–14]. If one relaxes the monochromaticity
+constraint by considering ﬁnite-bandwidth optical pulses,
+it can be shown that 1D propagation-invariant pulsed
+beams (or wave packets) of arbitrary proﬁle that travel
+in a straight line can indeed be synthesized [25–27]. By
+structuring the spatio-temporal spectrum of the ﬁeld
+such that each spatial frequency is precisely associated
+with one wavelength [28–30], the 1D wave packet is ren-
+dered diﬀraction-free and dispersion-free independently
+of the characteristics of the medium. Such ‘space-time’
+(ST) wave packets have been recently synthesized in free
+space [31, 32] and a host of their intriguing features
+have been observed, such as self-healing [33], control-
+lable group velocities in free space [34] and in dielectrics
+[35], long-distance propagation [36, 37], omni-resonance
+in planar cavities [38], and anomalous refraction at di-
+electric interfaces [39]. Indeed, using this methodology,
+ST Airy wave packets have been observed that travel in
+straight lines, and accelerate instead in space-time [40].
+These ST light sheets are 1D versions of previously stud-
+ied localized wave packets [41–44].
+Here we propose a new class of surface wave packets
+for plasmonic platforms that we call ‘space-time’ surface
+plasmon polaritons (ST-SPPs). They are conﬁned in the
+direction normal to the metal-dielectric interface in the
+same manner as traditional SPPs, but are diﬀraction-
+free in the unbounded transverse dimension by virtue of
+their intrinsic spatio-temporal structure [27, 31, 45–51].
+Furthermore, despite being pulsed solutions, they are
+nevertheless inherently immune to dispersive spreading
+[52, 53].
+These surface-conﬁned propagation-invariant
+arXiv:2003.02105v1  [physics.optics]  4 Mar 2020
+
+
+=== PDF PAGE 2 ===
+2
+FIG. 1: Conceptual depiction of the propagation of (a)
+a traditional Gaussian SPP wave packet in comparison
+with (b) a ST-SPP along a metal-dielectric interface.
+Both are pulsed wave packets that are localized along z,
+are strongly conﬁned at the interface along y, and are
+initially localized along the transverse dimension x. We
+plot the inital spatio-temporal intensity
+I(x, y=0, z =0; t) and after propagation along z (the
+ﬁeld is conﬁned to the interface along y). The
+traditional SPP in (a) undergoes diﬀractive and
+dispersive spreading, whereas the ST-SPP in (b) is
+immune to both.
+pulsed SPPs are localized in all dimensions and are
+transported rigidly along the metal-dielectric interface,
+thereby constituting linear ‘plasmonic bullets’. In princi-
+ple, ST-SPPs may take on an arbitrary spatio-temporal
+proﬁle, and may assume any transverse spatial extent
+and pulse width. Although free-space ST wave packets
+cannot achieve subwavelength transverse widths, such di-
+mensions can indeed be realized in ST-SPPs because of
+the intrinsic dispersion of the SPP light-cone in compar-
+ison to that of free space.
+Unlike Airy plasmons, ST-
+SPPs travel in a straight line while retaining similar self-
+healing characteristics. Furthermore, the group velocity
+of ST-SPPs can assume arbitrary values, above (superlu-
+minal) or below (subluminal) that of a traditional SPP, or
+even negative values (backward propagation) by appro-
+priately varing the ﬁeld spatio-temporal structure. We
+show through analysis and simulations that ST-SPPs cir-
+cumvent the two deleterious eﬀects highlighted in Fig. 1a
+that are unavoidably associated with traditional SPPs:
+diﬀractive spreading in the transverse dimension, and ax-
+ial dispersive broadening of ultrashort pulsed SPPs. In
+contrast, as shown in Fig. 1b, both these eﬀects are neu-
+tralized when utilizing ST-SPPs. These results may help
+unlock the latent potential of plasmonics in its simplest
+structural embodiment at a metal-dielectric interface, in-
+cluding the realization of large ﬁeld enhancements and
+the potential for backward phase-matching [54].
+The paper is organized as follows.
+First, we review
+the formulation of ST wave packets in unbounded media
+and that of ﬁnite-transverse-width SPPs. We then in-
+troduce the theory of ST-SPPs that combines these two
+disparate concepts – emphasizing the spectral represen-
+tation of ST-SPPs on the SPP light-cone and their clas-
+siﬁcation according to group velocity. Next, we present
+simulations contrasting the propagation of SPPs and ST-
+SPPs launched with the same initial spatial and temporal
+widths (including subwavelength spatial widths), verify-
+ing the propagation-invariance of ST-SPPs. After com-
+menting on the impact of plasmonic losses and dispersion,
+we propose a pathway to synthesizing ST-SPPs and sug-
+gest avenues for further investigations before presenting
+our conclusions.
+II.
+SPACE-TIME WAVE PACKETS
+By expanding a pulsed optical ﬁeld propagating in a
+dielectric of refractive index n into monochromatic plane
+waves ei(kxx+kyy+kzz−ωt), the envelope ψ(x, y, z; t) of the
+wave packet E(x, y, z; t) = ei(nkoz−ωot)ψ(x, y, z; t) can be
+expressed as follows [55]:
+ψ(x, y, z; t)=
+ZZZ
+dkxdkydΩeψ(kx, ky, Ω)ei(kxx+kyy+(kz−nko)z−Ωt) ;
+(1)
+where kx, ky, and kz are the components of the wave
+vector (assumed all to be real) along the Cartesian coor-
+dinates x, y, and z (the propagation direction), ω is the
+temporal (angular) frequency, the spatio-temporal spec-
+trum eψ(kx, ky, Ω) is the three-dimensional Fourier trans-
+form of ψ(x, y, 0; t), ωo is the carrier frequency, ko =ωo/c
+the corresponding wave number, c is the speed of light
+in vacuum, and Ω= ω −ωo is the frequency measured
+with respect to ωo. The wave-vector components satisfy
+the dispersion relationship k2
+x + k2
+y + k2
+z =n2( ω
+c )2, which
+corresponds geometrically to the surface of a hyper-cone
+(referred to hereon as the ‘light-cone’). A monochromatic
+plane wave corresponds to a point on the surface of the
+light-cone, so that the spatio-temporal spectral support
+for a traditional pulsed beam is represented by an ex-
+tended domain on the surface of the light-cone.
+Propagation-invariant ST wave packets have a con-
+straint imposed on the support domain of their spatio-
+temporal spectrum [28]: Ω= (kz −nko) c tan θ, which
+corresponds to a hyperplane P(θ) tilted an angle θ with
+respect to the kz-axis. The ST wave packet is thus con-
+ﬁned to the intersection of the light-cone with P(θ). The
+envelope of the ST wave packet becomes
+ψ(x, y, z; t)=
+ZZ
+dkxdky eψ(kx, ky)ei(kxx+kyy)e−iΩ(t−z/ev) = ψ(x, y, 0; t −z/ev),
+(2)
+such that the wave packet is now propagation-invariant,
+traveling rigidly at a group velocity ev=c tan θ (group in-
+dex en=cot θ) that is independent of the refractive index
+and depends only on θ, which we denote the spectral tilt
+angle. Note that θ is not a physical angle, but a math-
+ematical description of the spatio-temporal spectral cor-
+
+
+=== PDF PAGE 3 ===
+3
+relations introduced into the ST wave packet [36, 56, 57].
+The reduced-dimensionality spectrum eψ(kx, ky) is the
+two-dimensional Fourier transform of ψ(x, y, 0; 0). The
+frequency Ωin Eq. 2 is no longer an independent vari-
+able as it is in Eq. 1; rather, Ω=Ω(kx, ky; θ) is determined
+by the hypercurve representing the intersection of P(θ)
+with the light-cone.
+A crucial aspect of ST wave packets for the develop-
+ment of ST-SPPs can be seen in Eq. 2: the propagation-
+invariance of the ST wave packet is independent of
+dimensionality [27], in contradistinction to traditional
+monochromatic diﬀraction-free beams that require two
+transverse dimensions for their realization [10]. Conse-
+quently, 1D ST wave packets can be constructed by hold-
+ing the ﬁeld uniform along y (that is, ky = 0) and drop-
+ping the integral over ky in Eq. 2; eψ(kx, ky)→eψ(kx). In
+this case, the dispersion relationship k2
+x+k2
+z =n2( ω
+c )2 cor-
+responds to a light-cone in three-dimensional (kx, kz, ω
+c )-
+space, and P(θ) becomes a plane, rather than a hyper-
+plane, that intersects with the light-cone in a conic sec-
+tion. The ‘luminal’ condition en = n, or ev = c/n, corre-
+sponds to a spectral plane P(arctan 1
+n) that is tangential
+to the light-cone. The subluminal condition en > n, or
+ev<c/n, corresponds to P(θ< arctan 1
+n) intersecting with
+the light-cone in an ellipse. The superluminal condition
+en < n, or ev > c/n, corresponds to P(θ > arctan 1
+n) inter-
+secting with the light-cone in a hyperbola, a parabola,
+or an ellipse, depending on the value of θ [56]. Nega-
+tive group velocities ev < 0 are obtained when θ > 90◦,
+corresponding to backward propagation (without violat-
+ing relativistic causality [56–61]). These features have all
+been conﬁrmed experimentally in free space [34, 57] and
+dielectrics [35, 39]. We demonstrate below that similar
+control can be exercised on ST-SPPs.
+III.
+THEORY OF ST-SPP WAVE PACKETS
+A.
+Traditional SPP wave packets of ﬁnite
+transverse spatial width
+We brieﬂy review the formulation of traditional SPPs
+of ﬁnite transverse spatial width to set the stage for
+ST-SPPs. The coordinate system for SPPs is shown in
+Fig. 1a, where z is the propagation direction along the
+metal-dielectric interface, y is the direction of conﬁne-
+ment normal to the interface, and x is the transverse
+coordinate deﬁning the SPP width.
+Implementing the
+boundary conditions at the interface for TM polariza-
+tion yields the SPP dispersion relationship k2
+x + k2
+z =
+( ω
+c )2 ϵm(ω)ϵd
+ϵm(ω)+ϵd , which corresponds geometrically to a mod-
+iﬁed SPP light-cone (Fig. 2a); here ϵd and ϵm are the
+relative permittivities of the dielectric and metal, respec-
+tively. We make use of the Drude model for the metal
+permittivity, the real part of which is ϵm(ω) = 1−
+ω2
+p
+ω2+Γ2 ,
+so that the SPP light-cone becomes
+k2
+x + k2
+z =
+ω
+c
+2
+ϵd
+1 + ϵd
+ω2 −ω2
+p + Γ2
+ω2 −ω′2
+p + Γ2 ,
+(3)
+where ωp is the metal plasmon resonance frequency, Γ
+is the damping rate, ω′
+p = ωp/√1 + ϵd, ω < ωSPP, where
+ω2
+SPP =ω′2
+p −Γ2 is the maximum admissible frequency for
+the SPP, and the curved light-line (when kx =0) indicates
+that the SPP is dispersive. Throughout, we make use of
+the parameters for gold in Table I [62].
+The spectral support domain of a monochromatic SPP
+is the circle at the intersection of the SPP light-cone with
+a horizontal iso-frequency plane ω=ωo (Fig. 2a-c). Such
+a SPP undergoes diﬀractive spreading. A pulsed SPP of
+ﬁnite spatial and temporal extents is represented by a 2D
+spectral support domain on the surface of the SPP light-
+cone (Fig. 2d-f). The spatio-temporal spectrum (Fig. 2f)
+is typically separable with respect to the spatial and tem-
+poral degrees of freedom, kx and ω, respectively, and the
+SPP thereby undergoes both diﬀractive and dispersive
+spreading.
+B.
+ST-SPP wave packets
+Unlike the 2D spectral support domain for a pulsed
+SPP wave packets (Fig. 2d-f), the support domain for
+a ST-SPP has a reduced dimensionality corresponding
+to the intersection of the SPP light-cone with a tilted
+spectral plane P(θ) described by the equation Ω=(kz −
+k′
+o)c tan θ (Fig. 3a). The wave number k′
+o corresponds
+to the frequency ωoand lies on the SPP light-line (k′
+o̸ =
+ωo
+c ).
+We exclude negative axial wave numbers kz < 0
+because they violate causal excitation and propagation
+[63], and include only points on the surface of the SPP
+light-cone (others correspond to evanescent waves) [56].
+Consequently, the spectral projection onto the (kz, ω
+c )-
+plane is restricted to a straight line that is tilted by an
+angle θ with respect to the kz-axis, as in the case of
+freely propagating ST wave packets [56].
+Within this
+framework, the frequency ωo occurs at kx =0 on the SPP
+light-line and corresponds either to the maximum or the
+minimum frequency in the pulse spectrum (see below).
+The envelope for the electric and magnetic ﬁeld com-
+ponents of the ST-SPP in the dielectric are thus given
+by:
+ψ(d)
+x (x, y, z; t)
+=
+Z
+dkx eEo(kx)kx
+kz
+ei(kxx+kydy)e−iΩ(kx;θ)(t−z/ev)
+(4)
+ψ(d)
+y (x, y, z; t)
+=
+−
+Z
+dkx eEo(kx)k2
+x + k2
+z
+kzkyd
+ei(kxx+kydy)e−iΩ(kx;θ)(t−z/ev),
+(5)
+
+
+=== PDF PAGE 4 ===
+4
+FIG. 2: Monochromatic and pulsed SPPs of ﬁnite transverse spatial extent and their spectral representation on the
+SPP light-cone in (kx, kz, ω
+c )-space. (a) The spectral support domain for a monochromatic SPP lies along the
+intersection of the SPP light-cone with a horizontal iso-frequency plane ω= ωo. (b) Spectral projection for the
+monochromatic SPP onto the (kz, ω
+c )-plane and (c) onto the (kx, ω
+c )-plane. (d) Spectral support domain for a pulsed
+SPP on the SPP light-cone, and its projection (e) onto the (kz, ω
+c )-plane and (f) onto the (kx, ω
+c )-plane, depicted as
+2D domains. The spatial and temporal spectral degrees of freedom are separable; ∆kx is the spatial bandwidth and
+∆ω is the temporal bandwidth. The thin dotted blue curves are the SPP light-lines, the dashed red lines are the
+dielectric light-lines, and the thick black solid lines are the projected SPP spectral support domains.
+ψ(d)
+z (x, y, z; t) =
+Z
+dkx eEo(kx)ei(kxx+kydy)e−iΩ(kx;θ)(t−z/ev),
+(6)
+ξ(d)
+x (x, y, z; t) =
+Z
+dkx eHo(kx)ei(kxx+kydy)e−iΩ(kx;θ)(t−z/ev),
+(7)
+ξ(d)
+y (x, y, z; t) = 0,
+(8)
+ξ(d)
+z (x, y, z; t) =
+−
+Z
+dkx eHo(kx)kx
+kz
+ei(kxx+kydy)e−iΩ(kx;θ)(t−z/ev);
+(9)
+where ψ(d)
+j
+(x, y, z; t) is the envelope of the electric
+ﬁeld component E(d)
+j
+(x, y, z; t), ξ(d)
+j
+(x, y, z; t) is the en-
+velope of the magnetic ﬁeld component H(d)
+j
+(x, y, z; t),
+j = x, y, z, eEo(kx) is the spatial spectrum of the ST-
+SPP electric-ﬁeld components, eHo(kx) is the correspond-
+ing spatial spectrum for the magnetic ﬁeld components,
+eEo =
+ηo
+√
+ϵd+ϵm(ω)
+eHo, ηo is the impedance of free space, kyd
+is the y-component of the wave vector in the dielectric
+and is given by the usual expression kyd = ω
+c
+ϵd
+√
+ϵd+ϵm(ω).
+The equations for the ﬁeld components in the metal take
+on a similar form with kyd replaced by kym = ω
+c
+ϵm(ω)
+√
+ϵd+ϵm(ω).
+We take y>0 in the dielectric and y<0 in the metal (kyd
+is a negative imaginary number and kym positive imagi-
+nary).
+Instead of the spatial and temporal frequencies kx
+and Ω, respectively, being independent variables as in
+Eq. 1 and Fig. 2, they are now dependent variables,
+Ω=Ω(kx; θ). After eliminating kz from the SPP disper-
+sion relationship in Eq. 3 by substituting the equation
+for the spectral plane P(θ), we obtain the relationship
+Ω(kx; θ) that describes the spectral support domain for
+the ST-SPP:
+k2
+x =
+ω
+c
+2
+ϵd
+1 + ϵd
+ω2 −ω2
+p + Γ2
+ω2 −ω′2
+p + Γ2 −
+
+k′
+o + ω −ωo
+c
+cot θ
+2
+,
+(10)
+which diﬀers signiﬁcantly from its free-space counterpart
+that is a standard conic section [56]. We evaluate Ω(kx; θ)
+numerically, which is then the basis for the synthesis of
+the ST-SPP [31, 32].
+In general, this formulation is a spatio-temporal exten-
+sion of Fourier optics implemented in the plasmonics con-
+
+
+=== PDF PAGE 5 ===
+5
+text. The only independent variables are kx and θ that
+together dictate Ω(kx; θ), which in turn determines kz,
+kyd, and kym. Although the ST-SPP has a ﬁnite spatial
+bandwdith and may have a narrow transverse proﬁle, it
+nevertheless propagates at the metal-dielectric interface
+self-similarly because all the electric and magnetic ﬁeld
+components, in both the dielectric and the metal, now
+take the general form:
+ψ(d)
+x (x, y, z; t) = ψ(d)
+x (x, y, 0; t −z/ev).
+(11)
+The ST-SPP therefore propagates rigidly at a group ve-
+locity ev =
+∂ω
+∂kz = c tan θ (group index en = cot θ), and
+the ST-SPP is thus free of dispersion and diﬀraction
+(Fig. 1b). It is critical to appreciate that the internal
+degree of freedom θ of the ST-SPP determines the group
+velocity independently of the material properties and the
+ﬁeld proﬁle.
+The spatial proﬁle at the pulse center is
+ψ(d)
+x (x, 0, 0; 0) =
+R
+dkx eEo(kx) kx
+kz eikxx, and the temporal
+proﬁle at the ST-SPP center is eEo(kx). ψ(d)
+x (0, 0, 0; t) =
+R
+dkx eEo(kx) kx
+kz e−iΩ(kx;θ)t, both of which are thus deter-
+mined by the spatial spectrum eEo(kx) and Ω(kx; θ). The
+ST-SPP proﬁle can thus take on a Gaussian rather than
+an Airy proﬁle, and can even take on an Airy proﬁle while
+avoiding self-acceleration [40].
+C.
+Deﬁning subluminal and superluminal ST-SPPs
+The equations for the ﬁeld components given take the
+same form for all values of θ. In contrast to the free-space
+light-cone, the surface of the SPP light-cone is not con-
+vex, so that P(θ) may intersect with the SPP light-cone
+in two disjoint sections in some cases (as speciﬁed below).
+Moreover, this lack of convexity and the existence of an
+upper frequency limit ω < ωSPP impact the delineation
+of the ‘subluminal’ and ‘superliminal’ regimes, and limit
+the exploitable bandwidth for ST-SPPs.
+We take the ‘luminal’ ST-SPP to be that whose group
+index enL has the same value of the group index of a
+traditional extended SPP enSPP at the same frequency
+ω = ωo, enL = enSPP. By ﬁrst selecting a point (kz, ω
+c ) =
+(k′
+o, ωo
+c ) on the SPP light-line, the luminal ST-SPP has
+its spectral support in the plane P(θL) that is tangential
+to the SPP light-cone at ωo (Fig. 3b),
+cot θL = ck′
+o
+ωo
++ ωo
+ck′o
+
+ϵd
+1 + ϵd
+ωoωp
+ω2o −ω2p + Γ2
+2
+.
+(12)
+The luminal group velocity is evL = c tan θL, and the lu-
+minal group index is enL = cot θL; see Fig. 4a for a plot
+of θL(ωo). The spatio-temporal spectrum of the luminal
+ST-SPP has two branches above and below ωo having
+maximum temporal bandwidths of ∆ωmax = ωSPP −ωo
+and ∆ωmax = evLk′
+o, respectively (Fig. 3b). These values
+determine the minimum pulse widths attainable with lu-
+minal ST-SPPs.
+The luminal condition at a given ωo separates the sub-
+luminal and superluminal regimes. The subluminal range
+for ST-SPPs (ev = c tan θ < evL) corresponds to spectral
+tilt angles in the range 0 < θ < θL, ωo in this case is the
+maximum frequency in the spectrum, and the maximum
+bandwidth is ∆ωmax = evk′
+o (Fig. 3c).
+The superlumi-
+nal span of ST-SPPs (ev > evL) corresponds to spectral
+tilt angles in the range θL < θ < 180◦, with positive-ev
+values spanning θL < θ < 90◦(Fig. 3d), and negative-ev
+values spanning 90◦< θ < 180◦(Fig. 3e).
+Here ωo is
+the minimum frequency in the ST-SPP spectrum. For
+superluminal positive-ev, the maximum temporal band-
+width is ∆ωmax = ωSPP −ωo, which is independent of
+θ (Fig. 3d).
+There are two regimes for superluminal
+negative-ev (Fig. 3e): for 90◦<θ<θc, ∆ωmax =ωSPP −ωo
+independently of θ; and for θc <θ <180◦, ∆ωmax =|ev|k′
+o.
+Here θc is the spectral tilt angle corresponding to P(θc)
+passing through the point (kz, ω
+c ) = (0, ωSPP
+c
+), such that
+tan θc = −ωSPP−ωo
+ck′o
+(Fig. 3e). Subluminal and superlu-
+minal ST-SPPs can be distinguished in the (kx, ω
+c )-plane
+because their spectral representations have opposite-sign
+curvatures.
+For any spectral tilt angle θ smaller than the open-
+ing angle for the dielectric light-cone, the plane P(θ) in-
+tersects with the SPP light-cone in two disjoint sections
+(Fig. 4a,b). Although both sections are associated with
+the same θ, and thus support two ST-SPPs having the
+same group velocity ev=c tan θ, nevertheless the ST-SPP
+in the lower-frequency-section is subluminal, whereas the
+ST-SPP in the higher-frequency-section is superluminal.
+This is because subluminal and superluminal values of ev
+are determined with respect to that of a traditional SPP
+at the same frequency (Fig. 4b).
+D.
+Subwavelength transverse spatial width for
+ST-SPPs
+By virtue of the strong spatio-temporal correlations
+intrinsic to the ST-SPP spectral support domain, as-
+sociated with ∆ωmax is a maximum spatial bandwidth
+∆kmax
+x
+that determines the minimum transverse spatial
+width ∆xmin. In contrast to free-space ST wave packets
+that do not support subwavelength ∆x, we show here
+that ST-SPPs admit such a possibility.
+We obtain ∆kmax
+x
+by substituting in Eq. 10 the min-
+imum temporal frequency ωmin = ωo −∆ωmax for sub-
+luminal ST-SPPs, or the maximum temporal frequency
+ωmax =ωo + ∆ωmax for superluminal ST-SPPs. We plot
+∆kmax
+x
+in Fig. 4c as a function of ωo and θ. We normal-
+ize ∆kmax
+x
+with respect to ko =ωo/c (the free-space wave
+vector) to easily identify the regions in the (ωo, θ) pa-
+rameter space that correspond to subwavelength ∆xmin,
+whereupon ∆kmax
+x
+/ko > 1. Two discontinuities are clear
+in Fig. 4c: the ﬁrst occurs at θ = θL (because of the
+mismatch in the temporal bandwidths of the upper and
+lower branches of luminal ST-SPPs), and the other at
+θ = θc. There are indeed large regions in Fig. 4c where
+
+
+=== PDF PAGE 6 ===
+6
+FIG. 3: (a) Three-dimensional spectral representation of the support domain for a ST-SPP at the intersection of the
+SPP light-cone with a tilted spectral plane P(θ). (b) Representation of the support domain of luminal ST-SPPs
+projected onto the (kz, ω
+c )-plane (left) and onto the (kx, ω
+c )-plane (right). (c) Same as (b) for subluminal ST-SPPs.
+(d) Same as (b) for superluminal ST-SPPs with positive-ev. (e) Same as (b) for negative-ev ST-SPPs. In (b-e), the
+thin dotted blue curves are the SPP light-lines, the thin dashed red lines are the dielectric light-lines, and the thick
+black curves are the projected ST-SPP spectral support domains.
+
+
+=== PDF PAGE 7 ===
+7
+FIG. 4: (a) The luminal spectral tilt angle θL separates the subluminal and superluminal regimes. Subluminal and
+superluminal ST-SPPs can share the same value of θ=θo when associated with diﬀerent values of ωo. (b) Spectral
+projection onto the (kz, ω
+c )-plane showing a spectral plane P(θo) intersecting with the SPP light-line in two points:
+lower-frequency ω(1)
+o
+and higher-frequency ω(2)
+o . Below ω(1)
+o , P(θo) deﬁnes a subluminal ST-SPP; above ω(2)
+o , P(θo)
+deﬁnes a superluminal ST-SPP. (c) The normalized maximum spatial bandwidth ∆kmax
+x
+/ko (corresponding to the
+maximum temporal bandwidth ∆ωmax) as a function of θ and ωo. (d) Same as (c) but for a temporal bandwidth
+∆ω=0.05ωo. In (c) and (d), we make use of two diﬀerent color scales for ∆kx <ko (blue to white, on a linear scale),
+and for ∆kx >ko (white to red, on a logarithmic scale). (e) Plot of ∆x against θ for diﬀerent ∆λ when λo =800 nm.
+Subwavelength ∆x occurs below the dashed horizontal line. (f) Same as (e) for λo =400 nm.
+∆kmax
+x
+/ko >1, indicating the potential for subwavelength
+widths for ST-SPPs. In fact, ∆kmax
+x
+is formally inﬁnite
+between θL and θc because the SPP light-line levels oﬀ
+when ω →ωSPP. A more realistic scenario is to consider
+a ﬁnite temporal bandwidth ∆ω that is a small fraction
+of ωo as in typical pulsed laser systems. In Fig. 4d we
+plot ∆kx/ko for ∆ω=0.05ωo and ﬁnd that whole regions
+in (ωo, θ) space retain the possibility of subwavelength
+transverse widths, ∆kx/ko > 1. More explicitly, we plot
+∆x for the ST-SPP versus θ for λo = 2πc/ωo = 800 nm
+(Fig. 4e) and λo =400 nm (Fig. 4f), for bandwidths in the
+range ∆λ = 10 −40 nm. Subwavelength spatial widths
+∆x<λo are realized over some range of θ even for band-
+widths as small as ∆λ = 10 nm, and the useful range of
+θ expands for larger ∆λ. This indicates the feasibility
+of utilizing available laser systems to realize plasmonic
+bullets with subwavelength transverse localization along
+x on the same length scale as the SPP localization along
+y in the dielectric.
+E.
+Spectral uncertainty and propagation length of
+ST-SPPs
+The model we have presented so far contains an ide-
+alization: we have assumed that each spatial frequency
+kx is associated with a single temporal frequency ω.
+This exact correlation results in indeﬁnite propagation-
+
+
+=== PDF PAGE 8 ===
+8
+invariance along z, but requires inﬁnite energy for its
+realization [64]. Realistic experimental resources lead to
+a ﬁnite ‘fuzziness’ in the association between kx and ω,
+which we term the ‘spectral uncertainty’ δω (δλ on a
+wavelength scale); typically, δλ ≪∆λ [57].
+Each spa-
+tial frequency kx is therefore no longer associated with
+a single temporal frequency ω, but rather with a narrow
+bandwidth δω centered at the ideal ω value. We have re-
+cently shown that the propagation distance Lmax of a ST
+wave packet is given by Lmax ∼c
+δω
+1
+|1−cot θ| in free space
+[57], which also provides an adequate estimate in other
+materials. In general, Lmax in most cases is signiﬁcantly
+larger than the absorption lengths of SPPs as determined
+by optical losses in the metal, which relaxes the need for
+achieving a small spectral uncertainty for ST-SPPs.
+The equations for the electric and magnetic ﬁeld com-
+ponents of the ST-SPP must be modiﬁed to accommo-
+date this spectral uncertainty. We ﬁrst replace the purely
+spatial spectrum eEo(kx) with a spatio-temporal spec-
+trum of the form eEo(kx)eh(Ω−Ω(kx; θ)), where eh(Ω) is
+a narrow function of width equal to the spectral uncer-
+tainty δω. As such, the envelope of the x-component of
+the electric ﬁeld in the dielectric becomes:
+ψ(d)
+x (x, y, z; t) =
+ZZ
+dkxdΩeEo(kx)eh(Ω−Ω(kx; θ))kx
+kz
+ei(kxx+kydy)e−iΩ(kx;θ)(t−z/vg),
+(13)
+with similar modiﬁcations to be made for the remaining
+ﬁeld components in the dielectric and metal. These are
+the equations we utilized in our simulations.
+IV.
+SIMULATIONS OF THE PROPAGATION
+OF ST-SPPS
+To verify our theoretical model, we simulated the prop-
+agation of SPPs and ST-SPPs of equal initial (z =0) spa-
+tial and temporal widths at the interface between gold
+and air (ϵd = 1).
+The parameters used in our simula-
+tions are provided in Table I, including: (1) parameters
+that are held equal for SPPs and ST-SPPs, which in-
+clude the optical carrier wavelength λo, bandwidth ∆λ
+(initial pulse width ∆T), and spatial bandwidth ∆kx (ini-
+tial transverse spatial width ∆x); (2) relevant material
+parameters of gold [62]; and (3) parameters unique to
+ST-SPPs, namely, the spectral tilt angle θ and the spec-
+tral uncertainty δλ. The widths ∆λ, ∆T, and ∆x are
+FHWM and ∆kx is the HWHM of the relevant inten-
+sity distributions.
+The pulse parameters selected cor-
+respond to those for a generic mode-locked Ti:sapphire
+laser. Throughout, we take the intensity I(x, y, z; t) to
+be the sum of the squared amplitudes of the ﬁeld compo-
+nents along x, y, and z. Overall, the behavior of the ST-
+SPPs are largely unaﬀected by shifting the wavelength or
+changing the selected material parameters, and our ﬁnd-
+ings are generic characteristics of all ST-SPPs. In the
+TABLE I: SPP and ST-SPP Simulation Parameters.
+Parameter
+Symbol Value Units
+carrier wavelength
+λo
+800
+nm
+spectral bandwidth
+∆λ
+10
+nm
+pulse width
+∆T
+94
+fs
+spatial bandwidth
+∆kx
+0.586 rad/µm
+transverse spatial width ∆x
+3.2
+µm
+plasma frequency [62]
+ωp
+12.84 rad*PHz
+damping rate [62]
+Γ
+72.93 rad*THz
+dielectric constant
+ϵd
+1
+—
+spectral uncertainty
+δλ
+10
+pm
+spectral tilt angle
+θ
+38
+◦
+following we ignore the optical losses to isolate the im-
+pact of introducing spatio-temporal spectral correlations
+on the axial evolution of ST-SPPs, and then subsequently
+consider the impact of losses.
+A.
+Propagation of traditional SPP wave packets
+We assume for the traditional SPP a generic Gaus-
+sian spatio-temporal spectrum that is separable with re-
+spect to the spatial and temporal frequencies, eψ(kx, Ω)∝
+exp
+
+−2 ln 2
+k2
+x
+(∆kx)2
+
+exp
+
+−2 ln 2
+Ω2
+(∆Ω)2
+
+, where ∆Ωand
+∆kx are the FWHM of the spatial and temporal spectra
+(Table I), as depicted in Fig. 5a-i. This form of eψ(kx, Ω)
+results in a wave packet that separates at z = 0 into a
+product of a Gaussian pulse of width ∆T ≈94 fs and a
+Gaussian transverse spatial proﬁle of width ∆x ≈3 µm
+(Fig. 5a-ii). The widths ∆T and ∆x are both FWHM
+of the intensity proﬁle I(x, y = 0, z = 0; t). Propagation
+along the gold surface leads to diﬀraction along x with a
+Rayleigh range zR =25 µm, and dispersive broadening is
+negligible here over multiple Rayleigh ranges (see below);
+see Fig. 5a-iii where we plot the axial dynamics of the
+time-averaged intensity I(x, z) =
+R
+dt I(x, y = 0, z; t). To
+highlight the diﬀractive broadening of the spatial proﬁle,
+we plot in Fig. 5-iv sections through I(x, z) comparing
+the initial intensity proﬁle at z =0 with those at z =2zR,
+6zR, and 20zR. | eψ(kx, λ)|2
+B.
+Propagation of ST-SPP wave packets
+To facilitate comparison with the preceding tradi-
+tional Gaussian SPP wave packet, we design the spatio-
+temporal spectrum of the ST-SPP (Fig. 5b-i) such that
+the spatial width at the pulse center is ∆x ≈3 µm, and
+the pulse width at x=0 is ∆T ≈94 fs. We calculate the
+ideal spectral trajectory Ω(kx; θ) from Eq. 10 and then
+add the ﬁnite spectral uncertainty, which is modelled as a
+Gaussian distribution with FWHM δλ≪∆λ that we con-
+volve with Ω(kx; θ). To realize the target values for ∆x
+
+
+=== PDF PAGE 9 ===
+9
+FIG. 5: Axial dynamics of traditional SPPs and ST-SPPs (all at λo =800 nm). (a) A traditional SPP with Gaussian
+spatial and temporal spectra such that ∆x≈3 µm. (b) A ST-SPP with ∆≈3 µm. (c) A traditional SPP with
+Gaussian spatial and temporal spectra such that ∆x≈400 nm. (d) A ST-SPP with ∆x≈400 nm. Column (i) shows
+the spatio-temporal spectral intensity, I(x, y=0, z =0; t); column (ii) shows the intensity proﬁle I(x, y=0, z =0; t);
+column (iii) shows the time-averaged intensity I(x, z)=
+R
+dt I(x, y=0, x; t); and column (iv) shows sections through
+(iii) at diﬀerent axial positions. The Rayleigh range in (a) and (b) is zR =25 µm, and in (c) and (d) z′
+R =700 nm. In
+column (i) we plot the projected marginal distributions for the spatial and temporal spectra.
+and ∆T for the ST-SPP, we take the projected temporal
+spectrum to be a Gaussian distribution that is truncated
+at λo =800 nm (in the vicinity of kx =0), select θ =38◦,
+and reduce the amplitude of the spatial spectrum in the
+vicinity of kx = 0 to avoid a van-Hove-like singularity at
+the spectral edge [65] (Fig. 5b-i).
+The spatio-temporal spectrum projected onto the
+(kx, λ)-plane (as shown in Fig. 1b) resembles in its basic
+features the spectral structures utilized in previous ex-
+perimental demonstrations of free-space ST wave pack-
+ets [31, 56]. We plot in Fig. 5b-ii the spatio-temporal
+intensity proﬁle at z = 0, where the characteristic X-
+shaped proﬁle associated with ST wave packets is clear
+(as shown also in Fig. 1b).
+The proﬁle consists of an
+intense central peak at x=0 and t=0 from which decay-
+ing tails extend. Consequently, the time-averaged inten-
+sity in Fig. 5b-iii comprises a narrow central peak atop
+a broad background representing the integration of the
+
+
+=== PDF PAGE 10 ===
+10
+intensity tails. Over an axial distance of 100 µm (4zR for
+the preceding Gaussian SPP), the ST-SPP has undergone
+no change. Indeed, the axial intensity drops only at much
+larger distances (Fig. 5b-iv) that far exceed the plasmon
+decay length, so that we can consider the ST-SPP to be
+propagation-invariant for all practical purposes.
+C.
+Propagation of subwavelength-width ST-SPPs
+As discussed above, ST-SPPs can be realized with sub-
+wavelength ∆x. Indeed, because the SPP light-cone ex-
+tends below the dielectric light-line, even a traditional
+monochromatic SPP can be produced with subwave-
+length ∆x, but such a SPP will diﬀract very rapidly
+(e.g., the eﬀective Rayleigh range when ∆x = 400 nm
+is z′
+R =500 nm) – whereas the ST-SPP will not. We ver-
+ify this in the simulations plotted in Fig. 5c,d where we
+compare the axial dynamics for a Gaussian SPP (Fig. 5c)
+with a ST-SPP (Fig. 5d) of equal widths ∆x = 400 nm
+at λo = 800 nm.
+The parameters of this simulations
+are as follows: ∆λ = 50 nm, ∆T = 36 fs, θ = 15◦, and
+∆kx ≈4.1 rad/µm (the same ∆x for the ST-SPP can
+be achieved with larger ∆T by decreasing θ). The ini-
+tial proﬁle of the Gaussian SPP broadens after propa-
+gating a few microns (Fig. 5c-iii,iv), whereas the ST-SPP
+(Fig. 5d-i,ii) maintains its proﬁle over a much larger prop-
+agation distance (Fig. 5d-iii,iv). Indeed, the propagation
+distance is dictated by the spectral uncertainty δλ and
+θ, almost independently of ∆x [57]. Therefore, in light
+of the typical plasmon decay lengths, the ST-SPP can be
+considered propagation-invariant for any ∆x, even for
+subwavelength widths.
+We summarize the axial dynamics of the on-axis in-
+tensity and spatial width ∆x in Fig. 6a-c.
+Figure 6a
+displays the results for the Gaussian SPP of initial width
+∆x≈3 µm, which behaves in step with a Gaussian beam
+in free space. The peak intensity of the ST-SPP with
+∆x ≈3 µm decays over distances that exceed those for
+the Gaussian SPP by a factor of ≈300 (reaching 1/e of
+its initial value until z = 2100zR; Fig. 6b). Surprisingly,
+the width ∆x does not increase accordingly. Instead, en-
+ergy leaks into the tails of the X-shaped spatio-temporal
+proﬁle (thereby contributing to the background in the
+time-averaged intensity), while leaving the central peak
+almost unchanged. Similar behavior is observed for the
+ST-SPP with ∆x=400 nm (except that z′
+R <zR; Fig. 6c).
+D.
+Eﬀect of SPP losses and dispersion
+We now examine the eﬀect of optical losses inherent
+to SPPs due to the dissipative electronic dynamics in
+the metal by utilizing the imaginary part of the metal
+permittivity in the Drude model, Im {ϵm(ω)} =
+ω2
+pΓ
+ω(ω2+Γ2).
+The narrow bandwidth considered here (∆λ = 10 nm)
+allows us to ignore the frequency dependence of ϵm, so
+that the intensity absorption coeﬃcient is α ≈84 µm−1.
+The general features of the previous results are unaﬀected
+except for an overall drop in intensity with propagation
+distance.
+Two phenomena contribute to the decay of
+the on-axis intensity of a SPP: absorption and diﬀractive
+spreading – whereas the corresponding decay of a ST-
+SPP results solely from absorption.
+The decay length
+for a SPP due to diﬀraction drops quadratically with
+∆x, and can indeed become smaller than the absorption
+length.
+We plot in Fig. 6d the on-axis intensity for the Gaus-
+sian SPP and the ST-SPP with ∆x ≈3 µm in presence
+and absence of losses (the intensity remains essentially
+100% for the ST-SPP in absence of losses). At this ∆x,
+the decay length due to diﬀraction is smaller that that
+due to absorption.
+Consequently, the axial decay rate
+of the ST-SPP in presence of losses is lower than that
+of the traditional SPP of equal ∆x in absence of losses
+(of course, the decay rate increases further for the SPP
+in presence of both diﬀraction and losses). This point
+is further emphasized by considering the subwavelngth
+width of ∆x=400 nm: the SPP decays very rapidly due
+to diﬀractive spreading, and optical losses therefore have
+virtually no eﬀect; whereas the decay rate of the sub-
+wavelength ST-SPP in presence of losses coincides with
+the ST-SPP having ∆x ≈3 µm.
+Therefore, ST-SPPs
+have an unsurpassed advantage in presence of losses with
+respect to traditional SPPs as ∆x decreases, and dra-
+matically so in the subwavelength domain.
+Traditional SPPs are subject to intrinsic GVD due to
+the curvature of the SPP light-cone, which is further af-
+fected by the wavelength-dependence of ϵm and ϵd. The
+dispersion length LD of the SPP is determined by ϵd, ϵm,
+λo, and the bandwidth ∆λ. For a pulse width of 100-fs
+at λo = 800 nm at a gold-air interface, LD ∼6 cm. For
+the subwavelength SPP with ∆x=400 nm (Fig. 5c), the
+bandwidth is ∆λ=50 nm and LD ∼2.4 mm. In contrast,
+in all cases, the ST-SPP is immune to GVD.
+The conﬁnement of the ST-SPP along x does not aﬀect
+its localization along y. Indeed, the evanescent ST-SPP
+ﬁelds in the metal and dielectric are indistinguishable
+from those of a SPP having the same initial spatial and
+temporal widths (Fig. 6e). Finally, localization within
+the dielectric can be matched by localization along x in
+the subwavelength regime, as is clear from the transverse
+intensity proﬁle shown in Fig. 6f, thereby conﬁrming the
+potential for realizing a propagation-invariant SPP that
+is localized in all dimensions.
+V.
+DISCUSSION
+A.
+Preparation of ST-SPPs
+One potential approach to launching ST-SPPs is to
+start from free-space ST wave packets prepared in the
+form of a light sheet, and then couple the optical
+ﬁeld to the metal-dielectric interface via the standard
+
+
+=== PDF PAGE 11 ===
+11
+FIG. 6: (a) Evolution of the on-axis time-averaged intensity I(0, z) for the SPP with ∆x≈3 µm (Fig. 5a); (b) for a
+ST-SPP with ∆x≈3 µm (Fig. 5b); and (c) for a ST-SPP with ∆x≈400 nm (Fig. 5c). (d) Axial evolution of I(0, z)
+for SPPs and ST-SPPs of widths ∆x≈3 µm and ∆x≈400 nm in presence and absence of plasmonic losses. For the
+SPP with ∆x≈400 nm, the plots in presence and absence of losses coincide. For ST-SPPs, there is no observable
+decay in absence of losses over the plotted length scale, and in presence of losses the two curves for ∆x=3 µm and
+∆x=400 nm coincide. (e) Plots of the plasmon localization along y, I(x=0, y, z =0; t=0), for a SPP and a ST-SPP
+with ∆x≈3 µm. (f) Transverse intensity proﬁle I(x, y, z =0; t=0) when ∆x=400 nm.
+Kretschmann conﬁguration [3, 4]. The ST pulsed light
+sheet can be prepared by the spatio-temporal spectral-
+phase modulation strategy we recently introduced [31,
+32]. Brieﬂy, a diﬀraction grating resolves the spectrum
+of a plane-wave pulse in space, and a spatial light mod-
+ulator impresses upon the wave front a two-dimensional
+phase distribution in which each wavelength is assigned a
+prescribed spatial frequency Ω(kx; θ) in accordance with
+Eq. 10 – which diﬀers from the corresponding free-space
+relationship in which Ω(kx; θ) is a conic section.
+The
+modulated spectrum is then reconstituted by a grating,
+thereby producing the ST wave packet in the form of a
+light sheet that is localized along x and uniform along y.
+Because the temporal frequencies ω and the spatial fre-
+quencies kx are invariant across interfaces parallel to the
+x-axis, this ST light sheet can couple to a SPP. Reaching
+ultrabroad temporal bandwidths (ultrashort pulses) and
+strong transverse conﬁnement (large spatial bandwidth)
+runs up against the technical limitations of spatial light
+modulators.
+However, lithographically inscribed phase
+plates can be used to circumvent these restrictions [66].
+This procedure can produce ST-SPPs of spatial widths
+of a few microns [31], and new approaches are needed for
+realizing subwavelength ST-SPPs.
+B.
+Other avenues of research
+Other plasmonic conﬁgurations may be envisioned in
+which longer propagation distances are possible, which
+then stand to beneﬁt from the propagation-invariance of
+ST-SPPs more so than the metal-dielectric-interface sce-
+nario studied here, where attenuation in the metal dom-
+inates, such as dielectric-metal-dielectric systems where
+the propagation length can be increased by an order of
+magnitude [67] and metal-dielectric-metal conﬁgurations
+[68]. A unique feature of ST-SPPs is the ready access to
+negative group velocities [69] at the metal-dielectric in-
+terface, which paves the way to convenient realization
+of backward phase-matching [54] by spatio-temporally
+structuring the optical ﬁeld rather than relying on a
+structured plasmonic platform.
+It has been recently elucidated that the enhancement
+in propagation distance of a ST wave packet over that
+of a traditional wave packet is determined by the ‘degree
+of classical entanglement’ [70–74] of the ﬁeld’s spatio-
+temporal spectrum as determined by the spectral uncer-
+tainty δλ [57, 74]. Because long propagation distances
+are not required in plasmonic settings, we can increase
+δλ, which alleviates the strict requirements in spatio-
+
+
+=== PDF PAGE 12 ===
+12
+temporal spectral synthesis while reducing the back-
+ground in the time-averaged intensity, thus enhancing
+the ﬁeld transverse localization.
+Another possibility is to create incoherent [75, 76] ST-
+SPPs using LEDs (light-emitting diodes) or superlumi-
+nescent diodes, both of which have been exploited re-
+cently in producing incoherent free-space ST wave pack-
+ets [77, 78].
+This may help reduce the complexity of
+laser-based SPP sensing systems. Yet another opportu-
+nity is to utilize the omni-resonance of certain broadband
+ST wave packets in which their full bandwidth resonates
+with narrow-linewidth cavity structures [38]. Moreover,
+we have recently veriﬁed a host of unexpected phenomena
+regarding changes in the group velocity that occur upon
+the refraction of ST wave packets at planar interfaces be-
+tween two dielectrics (such as group-velocity invariance
+and group-delay cancellation), which can be put to the
+service of ST-SPPs [39].
+Finally, we investigated here a family of ST-SPPs
+at a metal-dielectric interface resulting from restricting
+the spectral support of SPPs to the intersection of the
+SPP light-cone with the tilted spectral plane given by
+Ω=(kz−k′
+o)c tan θ. Other families of ST-SPPs can be en-
+visioned, such as X-wave SPPs where the spectral plane
+passes through the origin (kx, kz, ω
+c )=(0, 0, 0) and is thus
+given by ω=kzc tan θ [79, 80]. In this case, the group ve-
+locities are always superluminal and positive-valued, see
+Fig. 7. Other possibilities include SPP analogs of Brit-
+tingham’s focus-wave modes [81–83]. The realization of
+SPPs in these two families require synthesizing 1D ver-
+sions of them, which was achieved recently [56]. Indeed,
+the full classiﬁcation of free-space ST light sheets [56] can
+have corresponding ST-SPP analogs.
+VI.
+CONCLUSIONS
+We have presented a novel propagation-invariant sur-
+face wave packet that is localized in all dimensions:
+space-time surface plasmon polaritons that travel in a
+straight line at a metal-dielectric interface.
+The wave
+packet is localized in the direction normal to the inter-
+face by the usual SPP conﬁnement; is localized parallel
+to the interface by ST conﬁnement that prevents diﬀrac-
+tive spreading no matter how narrow the SPP width; and
+is localized axially by means of the pulse width, and ST
+conﬁnement prevents dispersive spreading. Although we
+made use of the Drude modal for the metal permittivity,
+the results are wholly independent of the speciﬁcs of this
+model. Adopting a diﬀerent model modiﬁes the surface
+of the SPP light-cone, which then provides a new spec-
+tral support domain for the ST-SPP at the intersection
+with the tilted spectral plane.
+We have veriﬁed through analysis and numerical sim-
+ulations the propagation-invariance of ST-SPPs over dis-
+tances relevant for SPPs, which can extend to other plas-
+monic conﬁgurations in which longer propagation dis-
+tances are accessible. Moreover, we demonstrated that
+the group velocity of the ST-SPP can be readily con-
+trolled independently of the material properties to re-
+alize subluminal, superluminal, and negative values by
+varying its spatio-temporal spectral structure. Further-
+more, we showed that the ST-SPP can be localized to
+subwavelength dimensions in the transverse spatial di-
+mension – on the same scale as the localized evanes-
+cent plasmon ﬁeld in the dielectric – without aﬀecting
+access to arbitrary group velocities or extended propaga-
+tion distances. At the heart of this new class of surface
+waves is a fundamental principle: by introducing tight
+spatio-temporal correlations into the wave packet spec-
+trum, unprecedented control over its propagation charac-
+teristics at the surface can be achieved, including tunable
+group velocities in the subluminal, superluminal, and
+even negative-velocity regimes. These results may ﬁnd
+applications in new nonlinear plasmonic phase-matching
+conﬁgurations that beneﬁt from the additional ﬁeld en-
+hancement resulting from localization in all dimensions,
+and the controllable group velocity at the interface.
+ACKNOWLEDGMENTS
+This work was supported by the U.S. Oﬃce of Naval
+Research (ONR) under contract N00014-17-1-2458.
+[1] A. Otto, Z. Phys. 216, 398 (1968).
+[2] E. N. Economou, Phys. Rev. 182, 539 (1969).
+[3] E. Kretschmann, Z. Phys. 241, 313 (1971).
+[4] H. Raether, Surface Plasmons on Smooth and Rough Sur-
+faces and on Gratings (Spring, Berlin, 1988).
+[5] S. A. Maier, Plasmonics: Fundamentals and Applications
+(Springer, Boston, 2007).
+[6] J. Zhang, L. Zhang, and W. Xu, J. Phys. D 45, 113001
+(2012).
+[7] J. Durnin, J. J. Miceli,
+and J. H. Eberly, Phys. Rev.
+Lett. 58, 1499 (1987).
+[8] J. C. Guti´errez-Vega, R. M. Rodr´ıguez-Dagnino, M. A.
+Meneses-Nava, and S. Ch´avez-Cerda, Am. J. Phys. 71,
+233 (2003).
+[9] M. A. Bandres, J. C. Guti´errez-Vega,
+and S. Ch´avez-
+Cerda, Opt. Lett. 29, 44 (2004).
+[10] U. Levy, S. Derevyanko, and Y. Silberberg, Prog. Opt.
+61, 237 (2016).
+[11] J. Lin, J. Dellinger, P. Genevet, B. Cluzel, F. Fornel, and
+F. Capasso, Phys. Rev. Lett. 109, 093904 (2012).
+[12] M. V. Berry and N. L. Balazs, Am. J. Phys. 47, 264
+(1979).
+[13] K. Unnikrishnan and A. R. P. Rau, Am. J. Phys. 64,
+1034 (1996).
+[14] G. A. Siviloglou and D. N. Christodoulides, Opt. Lett.
+32, 979 (2007).
+
+
+=== PDF PAGE 13 ===
+13
+FIG. 7: X-wave ST-SPPs. (a) The SPP light-cone intersecting with a tilted spectral plane P(θ) passing through the
+origin. (b) Spectral projection of the X-wave ST-SPP onto the (kz, ω
+c )-plane and (c) onto the (kx, ω
+c )-plane. The
+thin blue dotted curves are the SPP light-lines, the thin dashed red lines are the dielectric light-lines, and the thick
+black lines are the projected spectral support domains of the X-wave ST-SPP.
+[15] G. A. Siviloglou, J. Broky, A. Dogariu,
+and D. N.
+Christodoulides, Phys. Rev. Lett. 99, 213901 (2007).
+[16] Y. Hu, G. A. Siviloglou, P. Zhang, N. K. Efremidis, D. N.
+Christodoulides,
+and Z. Chen, “Self-accelerating Airy
+beams: Generation, control, and applications,” in Non-
+linear Photonics and Novel Optical Phenomena, edited
+by Z. Chen and R. Morandotti (Springer New York, New
+York, NY, 2012) pp. 1–46.
+[17] N. K. Efremidis, Z. Chen, M. Segev,
+and D. N.
+Christodoulides, Optica 6, 686 (2019).
+[18] A. Salandrino and D. N. Christodoulides, Opt. Lett. 35,
+2082 (2010).
+[19] A. Minovich, A. E. Klein, N. Janunts, T. Pertsch, D. N.
+Neshev, and Y. S. Kivshar, Phys. Rev. Lett. 107, 116802
+(2011).
+[20] P. Zhang, S. Wang, Y. Liu, X. Yin, C. Lu, Z. Chen, and
+X. Zhang, Opt. Lett. 36, 3191 (2011).
+[21] L. Li, T. Li, S. M. Wang, C. Zhang, and S. N. Zhu, Phys.
+Rev. Lett. 107, 126804 (2011).
+[22] S. Wang, X. Wang,
+and Y. Zhang, Opt. Express 25,
+23589 (2017).
+[23] X. Yin, L. Chen,
+and X. Li, Opt. Express 26, 23251
+(2018).
+[24] A. E. Minovich, A. E. Klein, D. N. Neshev, T. Pertsch,
+Y. S. Kivshar,
+and D. N. Christodoulides, Laser Pho-
+tonics Rev. 8, 221 (2014).
+[25] M. Dallaire, N. McCarthy, and M. Pich´e, Opt. Express
+17, 18148 (2009).
+[26] O. Jedrkiewicz, Y.-D. Wang, G. Valiulis, and P. Di Tra-
+pani, Opt. Express 21, 25000 (2013).
+[27] H. E. Kondakci and A. F. Abouraddy, Opt. Express 24,
+28659 (2016).
+[28] R. Donnelly and R. Ziolkowski, Proc. R. Soc. Lond. A
+440, 541 (1993).
+[29] P. Saari and K. Reivelt, Phys. Rev. E 69, 036612 (2004).
+[30] S. Longhi, Opt. Express 12, 935 (2004).
+[31] H. E. Kondakci and A. F. Abouraddy, Nat. Photon. 11,
+733 (2017).
+[32] M. Yessenov, B. Bhaduri, H. E. Kondakci,
+and A. F.
+Abouraddy, Opt. Photon. News 30, 34 (2019).
+[33] H. E. Kondakci and A. F. Abouraddy, Opt. Lett. 43,
+3830 (2018).
+[34] H. E. Kondakci and A. F. Abouraddy, Nat. Commun.
+10, 929 (2019).
+[35] B. Bhaduri, M. Yessenov, and A. F. Abouraddy, Optica
+6, 139 (2019).
+[36] B. Bhaduri, M. Yessenov,
+and A. F. Abouraddy, Opt.
+Express 26, 20111 (2018).
+[37] B. Bhaduri, M. Yessenov, D. Reyes, J. Pena, M. Meem,
+S. R. Fairchild, R. Menon, M. C. Richardson, and A. F.
+Abouraddy, Opt. Lett. 44, 2073 (2019).
+[38] A. Shiri, M. Yessenov, R. Aravindakshan,
+and A. F.
+Abouraddy, arXiv:1912.00092 (2019).
+[39] B. Bhaduri,
+M. Yessenov,
+and A. F. Abouraddy,
+arXiv:1912.13341 (2019).
+[40] H. E. Kondakci and A. F. Abouraddy, Phys. Rev. Lett.
+120, 163901 (2018).
+[41] K. Reivelt and P. Saari, arxiv:physics/0309079 (2003).
+[42] A. P. Kiselev, Opt. Spectrosc. 102, 603 (2007).
+[43] J. Turunen and A. T. Friberg, Prog. Opt. 54, 1 (2010).
+[44] H. E. Hern´andez-Figueroa, E. Recami, and M. Zamboni-
+Rached, eds., Non-diﬀracting Waves (Wiley-VCH, 2014).
+[45] K. J. Parker and M. A. Alonso, Opt. Express 24, 28669
+(2016).
+[46] M. A. Porras, Opt. Lett. 42, 4679 (2017).
+[47] N. K. Efremidis, Opt. Lett. 42, 5038 (2017).
+[48] L. J. Wong and I. Kaminer, ACS Photon. 4, 1131 (2017).
+[49] L. J. Wong and I. Kaminer, ACS Photon. 4, 2257 (2017).
+[50] M. A. Porras, Phys. Rev. A 97, 063803 (2018).
+[51] H. E. Kondakci, N. S. Nye, D. N. Christodoulides, and
+A. F. Abouraddy, ACS Photon. 6, 475 (2019).
+[52] H. S˜onajalg and P. Saari, Opt. Lett. 21, 1162 (1996).
+[53] H. S˜onajalg, M. R¨atsep, and P. Saari, Opt. Lett. 22, 310
+(1997).
+[54] S. Lan, L. Kang, D. T. Schoen, S. P. Rodrigues, Y. Cui,
+M. L. Brongersma,
+and W. Cai, Nat. Mater. 14, 807
+(2015).
+[55] B. E. A. Saleh and M. C. Teich, Fundamentals of Pho-
+tonics (Wiley, 2019).
+[56] M. Yessenov, B. Bhaduri, H. E. Kondakci,
+and A. F.
+Abouraddy, Phys. Rev. A 99, 023856 (2019).
+[57] M. Yessenov, B. Bhaduri, L. Mach, D. Mardani, H. E.
+Kondakci, M. A. Alonso, G. A. Atia,
+and A. F.
+Abouraddy, Opt. Express 27, 12443 (2019).
+
+
+=== PDF PAGE 14 ===
+14
+[58] A. M. Shaarawi and I. M. Besieris, J. Phys. A 33, 7255
+(2000).
+[59] P. Saari, Phys. Rev. A 97, 063824 (2018).
+[60] P. Saari, O. Rebane, and I. Besieris, Phys. Rev. A 100,
+013849 (2019).
+[61] P. Saari and I. Besieris, Phys. Rev. A 101, 023812 (2020).
+[62] R. L. Olmon, B. Slovick, T. W. Johnson, D. Shelton, S.-
+H. Oh, G. D. Boreman, and M. B. Raschke, Phys. Rev.
+B 86 (2012).
+[63] A. M. Shaarawi, R. W. Ziolkowski,
+and I. M. Besieris,
+J. Math. Phys. 36, 5565 (1995).
+[64] A. Sezginer, J. Appl. Phys. 57, 678 (1985).
+[65] R. Gilmore, Elementary Quantum Mechanics in One Di-
+mension (John Hopkins Univ. Press, Baltimore, 2004).
+[66] H. E. Kondakci, M. Yessenov, M. Meem, D. Reyes,
+D. Thul, S. R. Fairchild, M. Richardson, R. Menon, and
+A. F. Abouraddy, Opt. Express 26, 13628 (2018).
+[67] P. Berini, Adv. Opt. Photon. 1, 484 (2009).
+[68] B. Dastmalchi, P. Tassin, T. Koschny, and C. M. Souk-
+oulis, Adv. Opt. Mater. 4, 177 (2016).
+[69] E. Feigenbaum, N. Kaminski,
+and M. Orenstein, Opt.
+Express 17, 18934 (2009).
+[70] X.-F. Qian and J. H. Eberly, Opt. Lett. 36, 4110 (2011).
+[71] K. H. Kagalwala, G. Di Giuseppe, A. F. Abouraddy, and
+B. E. A. Saleh, Nat. Photon. 7, 72 (2013).
+[72] S. Berg-Johansen, F. T¨oppel, B. Stiller, P. Banzer,
+M. Ornigotti, E. Giacobino, G. Leuchs, A. Aiello,
+and
+C. Marquardt, Optica 2, 864 (2015).
+[73] A. Aiello, F. T¨oppel, C. Marquardt, E. Giacobino, and
+G. Leuchs, New J. Phys. 17, 043024 (2015).
+[74] H. E. Kondakci, M. A. Alonso,
+and A. F. Abouraddy,
+Opt. Lett. 44, 2645 (2019).
+[75] A. Norrman, S. A. Ponomarenko, and A. T.Friberg, Eu-
+rophys. Lett. 116, 64001 (2016).
+[76] Y. Chen, A. Norrman, S. A. Ponomarenko,
+and A. T.
+Friberg, Phys. Rev. A 97, 041801(R) (2018).
+[77] M. Yessenov, B. Bhaduri, H. E. Kondakci, M. Meem,
+R. Menon, and A. F. Abouraddy, Optica 6, 598 (2019).
+[78] M. Yessenov and A. F. Abouraddy, Opt. Lett. 44, 5125
+(2019).
+[79] J.-Y. Lu and J. F. Greenleaf, IEEE Trans. Ultrason. Fer-
+roelec. Freq. Control 39, 19 (1992).
+[80] P. Saari and K. Reivelt, Phys. Rev. Lett. 79, 4135 (1997).
+[81] J. N. Brittingham, J. Appl. Phys. 54, 1179 (1983).
+[82] K. Reivelt and P. Saari, J. Opt. Soc. Am. A 17, 1785
+(2000).
+[83] K. Reivelt and P. Saari, Phys. Rev. E 66, 056611 (2002).
+FIG. 8: Graphical TOC Entry

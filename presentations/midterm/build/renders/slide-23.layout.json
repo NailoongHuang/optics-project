@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/r5hmmb","index":22,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/lovuh07q","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"共动坐标把展宽从整体移动中分离出来","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ylkvmloz","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/jmdcfqpk","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C07　q₀ = (0.7,0)，σ = 4，η = 1","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8rmdsf61","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"23","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/8b2983u1","kind":"image","position":{"left":44,"top":125,"width":1192,"height":365},"fit":"contain","alt":"c07-comoving-marginals"},
+{"id":"sh/6p4vq5ov","kind":"textbox","position":{"left":59,"top":500,"width":551,"height":34},"text":"只减去质心位移","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7qdcjapg","kind":"textbox","position":{"left":59,"top":543,"width":551,"height":140},"text":"每条曲线都在各自的共动坐标中显示，峰值与宽度没有重新归一化。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ov2tgb6x","kind":"textbox","position":{"left":665,"top":500,"width":550,"height":34},"text":"两个方向分别展宽","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/pwbu9g7i","kind":"textbox","position":{"left":665,"top":543,"width":550,"height":140},"text":"τ = 60 时 σₓ = 6.970a，σᵧ = 8.449a。不同方向的曲率导致不同速度方差。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

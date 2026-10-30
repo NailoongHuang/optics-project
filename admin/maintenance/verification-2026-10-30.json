@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-30",
+  "scope": "Repository consolidation; no research simulations rerun",
+  "regression": {
+    "command": "python -m unittest discover -s code -v",
+    "passed": true,
+    "tests": 10
+  },
+  "python_syntax": {
+    "parsed_files": 60,
+    "errors": []
+  },
+  "checks": {
+    "routine": {
+      "passed": true,
+      "tracked_files": 1384,
+      "live_documents_checked": 51,
+      "local_links_checked": 594,
+      "workstation_links": [
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/AGENTS.md"
+        },
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/personal-setup/PROFILE.md"
+        },
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/personal-setup/MEMORY.md"
+        }
+      ],
+      "captured_source_pages": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/apollaro_2012_abstract.html",
+          "origin": "https://arxiv.org/abs/1203.5516"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/banchi_2013_abstract.html",
+          "origin": "https://arxiv.org/abs/1309.0069"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/gong_brumer_2007_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0702265"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0404152"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/meier_2025_abstract.html",
+          "origin": "https://arxiv.org/abs/2407.07948"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0312141"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/thompson_2016_abstract.html",
+          "origin": "https://arxiv.org/abs/1511.05656"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1703.05548.html",
+          "origin": "https://arxiv.org/abs/1703.05548"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1711.04027.html",
+          "origin": "https://arxiv.org/abs/1711.04027"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1906.02301.html",
+          "origin": "https://arxiv.org/abs/1906.02301"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2108.08054.html",
+          "origin": "https://arxiv.org/abs/2108.08054"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2109.00782.html",
+          "origin": "https://arxiv.org/abs/2109.00782"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2111.02236.html",
+          "origin": "https://arxiv.org/abs/2111.02236"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2201.08297.html",
+          "origin": "https://arxiv.org/abs/2201.08297"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2301.01220.html",
+          "origin": "https://arxiv.org/abs/2301.01220"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2404.15011.html",
+          "origin": "https://arxiv.org/abs/2404.15011"
+        },
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/2607.07324_abstract.html",
+          "origin": "https://arxiv.org/abs/2607.07324"
+        }
+      ],
+      "preservation": {},
+      "consolidation_baseline_checked": false,
+      "local_archive_checked": false,
+      "errors": []
+    },
+    "consolidation_and_local_archive": {
+      "passed": true,
+      "tracked_files": 1384,
+      "live_documents_checked": 51,
+      "local_links_checked": 594,
+      "workstation_links": [
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/AGENTS.md"
+        },
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/personal-setup/PROFILE.md"
+        },
+        {
+          "source": "AGENTS.md",
+          "target": "C:/Users/xuanm/.codex/personal-setup/MEMORY.md"
+        }
+      ],
+      "captured_source_pages": [
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/apollaro_2012_abstract.html",
+          "origin": "https://arxiv.org/abs/1203.5516"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/banchi_2013_abstract.html",
+          "origin": "https://arxiv.org/abs/1309.0069"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/gong_brumer_2007_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0702265"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0404152"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/meier_2025_abstract.html",
+          "origin": "https://arxiv.org/abs/2407.07948"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/osborne_linden_2004_abstract.html",
+          "origin": "https://arxiv.org/abs/quant-ph/0312141"
+        },
+        {
+          "path": "literature/cosine-lattice-wavepacket-audit/spin-chain/thompson_2016_abstract.html",
+          "origin": "https://arxiv.org/abs/1511.05656"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1703.05548.html",
+          "origin": "https://arxiv.org/abs/1703.05548"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1711.04027.html",
+          "origin": "https://arxiv.org/abs/1711.04027"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/1906.02301.html",
+          "origin": "https://arxiv.org/abs/1906.02301"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2108.08054.html",
+          "origin": "https://arxiv.org/abs/2108.08054"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2109.00782.html",
+          "origin": "https://arxiv.org/abs/2109.00782"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2111.02236.html",
+          "origin": "https://arxiv.org/abs/2111.02236"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2201.08297.html",
+          "origin": "https://arxiv.org/abs/2201.08297"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2301.01220.html",
+          "origin": "https://arxiv.org/abs/2301.01220"
+        },
+        {
+          "path": "literature/linear-spin-wave-packets/metadata/2404.15011.html",
+          "origin": "https://arxiv.org/abs/2404.15011"
+        },
+        {
+          "path": "literature/wavepacket-prospects-2026-10/outlooks/magnon-design/2607.07324_abstract.html",
+          "origin": "https://arxiv.org/abs/2607.07324"
+        }
+      ],
+      "preservation": {
+        "edited_with_original_retained": 13,
+        "preserved_or_deduplicated": 2572,
+        "removed_cache": 32,
+        "external_archive": 1
+      },
+      "consolidation_baseline_checked": true,
+      "local_archive_checked": true,
+      "errors": []
+    }
+  }
+}

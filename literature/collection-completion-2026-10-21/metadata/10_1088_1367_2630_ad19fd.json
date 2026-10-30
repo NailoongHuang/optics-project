@@ -1,0 +1,1125 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          8
+        ]
+      ],
+      "date-time": "2026-05-08T11:09:20Z",
+      "timestamp": 1778238560043,
+      "version": "3.51.4"
+    },
+    "reference-count": 68,
+    "publisher": "IOP Publishing",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              22
+            ]
+          ],
+          "date-time": "2024-01-22T00:00:00Z",
+          "timestamp": 1705881600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 21,
+        "URL": "http://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              22
+            ]
+          ],
+          "date-time": "2024-01-22T00:00:00Z",
+          "timestamp": 1705881600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 21,
+        "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "12104282"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "12104282"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100017596",
+        "name": "Natural Science Basic Research Program of Shaanxi Province",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "2021JQ-522"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2021JQ-522"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100017596",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100012226",
+        "name": "Fundamental Research Funds for the Central Universities",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "JZ2023HGTA0172"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "JZ2023HGTA0172"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100012226",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "iopscience.iop.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "New J. Phys."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Quantum state transfer (QST) plays a central role in the field of quantum computation and communication, but its quality will be deteriorated by the ubiquitous variations and noise in quantum systems. Here we propose robust and nonadiabatic protocols for transmitting quantum state across a strongly coupled spin chain, especially in the presence of unwanted disorders in the couplings. To this end, we approximately map the low-energy subspaces of the odd-size Heisenberg chain to a two-level system, and derive the sensitivity of the final fidelity with respect to systematic deviations or time-varying fluctuations. Subsequently, leveraging the flexibility of the inverse-engineering technique, we optimize the state-transfer robustness concerning these perturbations individually. The resulting schemes allow for more stable QST than the original accelerated schemes and only require manipulating the two boundary couplings instead of the whole system, which open up the possibility of fast and robust information transfer in spin-based quantum systems.</jats:p>",
+    "DOI": "10.1088/1367-2630/ad19fd",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          2
+        ]
+      ],
+      "date-time": "2024-01-02T22:28:10Z",
+      "timestamp": 1704234490000
+    },
+    "page": "013041",
+    "update-policy": "https://doi.org/10.1088/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "Inverse engineering for robust state transport along a spin chain via low-energy subspaces"
+    ],
+    "prefix": "10.1088",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Yunlan",
+        "family": "Ji",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ze",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ran",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yuchen",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Fangzhou",
+        "family": "Jin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5377-2886",
+        "authenticated-orcid": true,
+        "given": "Hui",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5260-2976",
+        "authenticated-orcid": true,
+        "given": "Xinhua",
+        "family": "Peng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "266",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "njpad19fdbib1",
+        "author": "Nielsen",
+        "year": "2000"
+      },
+      {
+        "key": "njpad19fdbib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "DOI": "10.1080/00107510701342313",
+        "article-title": "Quantum communication through spin chain dynamics: an introductory overview",
+        "volume": "48",
+        "author": "Bose",
+        "year": "2007",
+        "journal-title": "Contemp. Phys."
+      },
+      {
+        "key": "njpad19fdbib3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.91.207901",
+        "article-title": "Quantum communication through an unmodulated spin chain",
+        "volume": "91",
+        "author": "Bose",
+        "year": "2003",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib4",
+        "author": "Nikolopoulos",
+        "year": "2014"
+      },
+      {
+        "key": "njpad19fdbib5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.71.100501",
+        "article-title": "Solid-state quantum communication with Josephson arrays",
+        "volume": "71",
+        "author": "Romito",
+        "year": "2005",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "njpad19fdbib6",
+        "doi-asserted-by": "publisher",
+        "first-page": "2180",
+        "DOI": "10.1126/science.1116955",
+        "article-title": "Coherent manipulation of coupled electron spins in semiconductor quantum dots",
+        "volume": "309",
+        "author": "Petta",
+        "year": "2005",
+        "journal-title": "Science"
+      },
+      {
+        "key": "njpad19fdbib7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.92.207901",
+        "article-title": "Effective quantum spin systems with trapped ions",
+        "volume": "92",
+        "author": "Porras",
+        "year": "2004",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib8",
+        "doi-asserted-by": "publisher",
+        "first-page": "435",
+        "DOI": "10.1038/nphys2652",
+        "article-title": "Fractional spinon excitations in the quantum Heisenberg antiferromagnetic chain",
+        "volume": "9",
+        "author": "Mourigal",
+        "year": "2013",
+        "journal-title": "Nat. Phys."
+      },
+      {
+        "key": "njpad19fdbib9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms13070",
+        "article-title": "Quantum spin transistor with a Heisenberg spin chain",
+        "volume": "7",
+        "author": "Marchukov",
+        "year": "2016",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "njpad19fdbib10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.92.187902",
+        "article-title": "Perfect state transfer in quantum spin networks",
+        "volume": "92",
+        "author": "Christandl",
+        "year": "2004",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.72.034303",
+        "article-title": "Unmodulated spin chains as universal quantum wires",
+        "volume": "72",
+        "author": "Wójcik",
+        "year": "2005",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.230503",
+        "article-title": "Efficient multiqubit entanglement via a spin bus",
+        "volume": "98",
+        "author": "Friesen",
+        "year": "2007",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.80.042315",
+        "article-title": "Universal existence of exact quantum state transmissions in interacting media",
+        "volume": "80",
+        "author": "Wu",
+        "year": "2009",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.87.062309",
+        "article-title": "Routing quantum information in spin chains",
+        "volume": "87",
+        "author": "Paganelli",
+        "year": "2013",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.92.062305",
+        "article-title": "Quantum state transfer in a disordered one-dimensional lattice",
+        "volume": "92",
+        "author": "Ashhab",
+        "year": "2015",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.98.012334",
+        "article-title": "Interplay between speed and fidelity in off-resonant quantum-state-transfer protocols",
+        "volume": "98",
+        "author": "Almeida",
+        "year": "2018",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.022601",
+        "article-title": "Almost exact state transfer in a spin chain via pulse control",
+        "volume": "102",
+        "author": "Wang",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.106.052411",
+        "article-title": "Arbitrary entangled state transfer via a topological qubit chain",
+        "volume": "106",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.126.017701",
+        "article-title": "Long-distance superexchange between semiconductor quantum-dot electron spins",
+        "volume": "126",
+        "author": "Qiao",
+        "year": "2021",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physleta.2022.128362",
+        "article-title": "Almost perfect quantum state transfer on isotropic and anisotropic Heisenberg spin chains with tailored site dependent exchange couplings",
+        "volume": "449",
+        "author": "Serra",
+        "year": "2022",
+        "journal-title": "Phys. Lett. A"
+      },
+      {
+        "key": "njpad19fdbib21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/ac86e7",
+        "article-title": "Quantum transfer of interacting qubits",
+        "volume": "24",
+        "author": "Apollaro",
+        "year": "2022",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.77.012303",
+        "article-title": "Adiabatic quantum transport in a spin chain with a moving potential",
+        "volume": "77",
+        "author": "Balachandran",
+        "year": "2008",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0957-4484/20/40/405402",
+        "article-title": "Coherent tunneling adiabatic passage with the alternating coupling scheme",
+        "volume": "20",
+        "author": "Jong",
+        "year": "2009",
+        "journal-title": "Nanotechnology"
+      },
+      {
+        "key": "njpad19fdbib24",
+        "doi-asserted-by": "publisher",
+        "first-page": "161",
+        "DOI": "10.1016/j.aop.2014.05.020",
+        "article-title": "Coherent transfer by adiabatic passage in two-dimensional lattices",
+        "volume": "348",
+        "author": "Longhi",
+        "year": "2014",
+        "journal-title": "Ann. Phys."
+      },
+      {
+        "key": "njpad19fdbib25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.102.155404",
+        "article-title": "Coherent transport of spin by adiabatic passage in quantum dot arrays",
+        "volume": "102",
+        "author": "Gullans",
+        "year": "2020",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "njpad19fdbib26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.91.134303",
+        "article-title": "Adiabatic many-body state preparation and information transfer in quantum dot arrays",
+        "volume": "91",
+        "author": "Farooq",
+        "year": "2015",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "njpad19fdbib27",
+        "doi-asserted-by": "publisher",
+        "first-page": "2156",
+        "DOI": "10.1038/s41467-021-22416-5",
+        "article-title": "Adiabatic quantum state transfer in a semiconductor quantum-dot spin chain",
+        "volume": "12",
+        "author": "Kandel",
+        "year": "2021",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "njpad19fdbib28",
+        "doi-asserted-by": "publisher",
+        "first-page": "553",
+        "DOI": "10.1038/s41586-019-1566-8",
+        "article-title": "Coherent spin-state transfer via Heisenberg exchange",
+        "volume": "573",
+        "author": "Kandel",
+        "year": "2019",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "njpad19fdbib29",
+        "doi-asserted-by": "publisher",
+        "first-page": "859",
+        "DOI": "10.1134/S0021364023601057",
+        "article-title": "Robust and fast quantum state transfer on superconducting circuits",
+        "volume": "117",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "JETP Lett."
+      },
+      {
+        "key": "njpad19fdbib30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.93.062338",
+        "article-title": "Shortcut to nonadiabatic quantum state transmission",
+        "volume": "93",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.96.021801",
+        "article-title": "Shortcuts to adiabaticity in the presence of a continuum: applications to itinerant quantum state transfer",
+        "volume": "96",
+        "author": "Baksic",
+        "year": "2017",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.97.012333",
+        "article-title": "Quantum state transfer in spin chains via shortcuts to adiabaticity",
+        "volume": "97",
+        "author": "Huang",
+        "year": "2018",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.98.062118",
+        "article-title": "Adiabatic speedup in a non-Markovian quantum open system",
+        "volume": "98",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib34",
+        "doi-asserted-by": "publisher",
+        "first-page": "2795",
+        "DOI": "10.1016/j.physleta.2018.07.032",
+        "article-title": "Acceleration of adiabatic quantum state transfer in a spin chain under zero-energy-change pulse control",
+        "volume": "382",
+        "author": "Chen",
+        "year": "2018",
+        "journal-title": "Phys. Lett. A"
+      },
+      {
+        "key": "njpad19fdbib35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/abea43",
+        "article-title": "Fast and robust magnon transport in a spin chain",
+        "volume": "23",
+        "author": "Kiely",
+        "year": "2021",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.95.012317",
+        "article-title": "Superadiabatic quantum state transfer in spin chains",
+        "volume": "95",
+        "author": "Agundez",
+        "year": "2017",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib37",
+        "doi-asserted-by": "publisher",
+        "first-page": "888",
+        "DOI": "10.1016/j.scib.2019.05.018",
+        "article-title": "Floquet-engineered quantum state transfer in spin chains",
+        "volume": "64",
+        "author": "Zhou",
+        "year": "2019",
+        "journal-title": "Sci. Bull."
+      },
+      {
+        "key": "njpad19fdbib38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevResearch.2.033475",
+        "article-title": "Fast and robust quantum state transfer in a topological Su-Schrieffer-Heeger chain with next-to-nearest-neighbor interactions",
+        "volume": "2",
+        "author": "D’Angelis",
+        "year": "2020",
+        "journal-title": "Phys. Rev. Res."
+      },
+      {
+        "key": "njpad19fdbib39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.105.052422",
+        "article-title": "Counterdiabatic transfer of a quantum state in a tunable Heisenberg spin chain via the variational principle",
+        "volume": "105",
+        "author": "Ji",
+        "year": "2022",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/RevModPhys.91.045001",
+        "article-title": "Shortcuts to adiabaticity: concepts, methods and applications",
+        "volume": "91",
+        "author": "Guéry-Odelin",
+        "year": "2019",
+        "journal-title": "Rev. Mod. Phys."
+      },
+      {
+        "key": "njpad19fdbib41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/ab1437",
+        "article-title": "Focus on shortcuts to adiabaticity",
+        "volume": "21",
+        "author": "del Campo",
+        "year": "2019",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib42",
+        "doi-asserted-by": "publisher",
+        "first-page": "369",
+        "DOI": "10.1038/s41586-021-03557-5",
+        "article-title": "Correlated charge noise and relaxation errors in superconducting qubits",
+        "volume": "594",
+        "author": "Wilen",
+        "year": "2021",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "njpad19fdbib43",
+        "doi-asserted-by": "publisher",
+        "first-page": "1297",
+        "DOI": "10.1126/science.aad9958",
+        "article-title": "Quantum spin dynamics and entanglement generation with hundreds of trapped ions",
+        "volume": "352",
+        "author": "Bohnet",
+        "year": "2016",
+        "journal-title": "Science"
+      },
+      {
+        "key": "njpad19fdbib44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.80.052319",
+        "article-title": "Information propagation through quantum chains with fluctuating disorder",
+        "volume": "80",
+        "author": "Burrell",
+        "year": "2009",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.102.110501",
+        "article-title": "Quantum communication beyond the localization length in disordered spin chains",
+        "volume": "102",
+        "author": "Allcock",
+        "year": "2009",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.84.022311",
+        "article-title": "Robustness of spin-coupling distributions for perfect quantum state transfer",
+        "volume": "84",
+        "author": "Zwick",
+        "year": "2011",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.83.012325",
+        "article-title": "Effect of perturbations on information transfer in spin chains",
+        "volume": "83",
+        "author": "Ronke",
+        "year": "2011",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.85.224418",
+        "article-title": "Effect of randomness on quantum data buses of Heisenberg spin chains",
+        "volume": "85",
+        "author": "Oh",
+        "year": "2012",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "njpad19fdbib49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.105.032612",
+        "article-title": "Combating the effects of disorder in quantum state transfer",
+        "volume": "105",
+        "author": "Keele",
+        "year": "2022",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/16/6/065021",
+        "article-title": "Optimized dynamical control of state transfer through noisy spin chains",
+        "volume": "16",
+        "author": "Zwick",
+        "year": "2014",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/aaa9e5",
+        "article-title": "Noise resistant quantum control using dynamical invariants",
+        "volume": "20",
+        "author": "Levy",
+        "year": "2018",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevResearch.4.043138",
+        "article-title": "Optimal control in disordered quantum systems",
+        "volume": "4",
+        "author": "Coopmans",
+        "year": "2022",
+        "journal-title": "Phys. Rev. Res."
+      },
+      {
+        "key": "njpad19fdbib53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.105.013311",
+        "article-title": "Robustness of enhanced shortcuts to adiabaticity in lattice transport",
+        "volume": "105",
+        "author": "Whitty",
+        "year": "2022",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.84.022330",
+        "article-title": "Heisenberg spin bus as a robust transmission line for quantum-state transfer",
+        "volume": "84",
+        "author": "Oh",
+        "year": "2011",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.82.140403",
+        "article-title": "Even-odd effects of Heisenberg chains on long-range interaction and entanglement",
+        "volume": "82",
+        "author": "Oh",
+        "year": "2010",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "njpad19fdbib56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/14/9/093040",
+        "article-title": "Optimally robust shortcuts to population inversion in two-level quantum systems",
+        "volume": "14",
+        "author": "Ruschhaupt",
+        "year": "2012",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "njpad19fdbib57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.88.033406",
+        "article-title": "Fast and robust population transfer in two-level quantum systems with dephasing noise and/or systematic frequency errors",
+        "volume": "88",
+        "author": "Lu",
+        "year": "2013",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.97.062317",
+        "article-title": "Fast and robust control of two interacting spins",
+        "volume": "97",
+        "author": "Yu",
+        "year": "2018",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1209/0295-5075/134/10001",
+        "article-title": "Exact classical noise master equations: applications and connections",
+        "volume": "134",
+        "author": "Kiely",
+        "year": "2021",
+        "journal-title": "Europhys. Lett."
+      },
+      {
+        "key": "njpad19fdbib60",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.1103/PhysRevA.60.91",
+        "article-title": "Non-Markovian quantum-state diffusion: perturbation approach",
+        "volume": "60",
+        "author": "Yu",
+        "year": "1999",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.89.063414",
+        "article-title": "Fast shuttling of a trapped ion in the presence of noise",
+        "volume": "89",
+        "author": "Lu",
+        "year": "2014",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.97.053402",
+        "article-title": "Fast shuttling of a particle under weak spring-constant noise of the moving trap",
+        "volume": "97",
+        "author": "Lu",
+        "year": "2018",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "njpad19fdbib63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.111.260501",
+        "article-title": "Driving at the quantum speed limit: optimal control of a two-level system",
+        "volume": "111",
+        "author": "Hegerfeldt",
+        "year": "2013",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib64",
+        "doi-asserted-by": "publisher",
+        "first-page": "19",
+        "DOI": "10.1140/epjqt/s40507-022-00138-x",
+        "article-title": "Quantum optimal control in quantum technologies. Strategic report on current status, visions and goals for research in Europe",
+        "volume": "9",
+        "author": "Koch",
+        "year": "2022",
+        "journal-title": "EPJ Quantum Technol."
+      },
+      {
+        "key": "njpad19fdbib65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.87.062117",
+        "article-title": "Transitionless quantum driving for spin systems",
+        "volume": "87",
+        "author": "Takahashi",
+        "year": "2013",
+        "journal-title": "Phys. Rev. E"
+      },
+      {
+        "key": "njpad19fdbib66",
+        "doi-asserted-by": "publisher",
+        "first-page": "E3909",
+        "DOI": "10.1073/pnas.1619826114",
+        "article-title": "Minimizing irreversible losses in quantum systems by local counterdiabatic driving",
+        "volume": "114",
+        "author": "Sels",
+        "year": "2017",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "njpad19fdbib67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.109.100403",
+        "article-title": "Multiple Schrödinger pictures and dynamics in shortcuts to adiabaticity",
+        "volume": "109",
+        "author": "Ibá nez",
+        "year": "2012",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "njpad19fdbib68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.116.230503",
+        "article-title": "Speeding up adiabatic quantum state transfer by using dressed states",
+        "volume": "116",
+        "author": "Baksic",
+        "year": "2016",
+        "journal-title": "Phys. Rev. Lett."
+      }
+    ],
+    "container-title": [
+      "New Journal of Physics"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd",
+        "content-type": "text/html",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          22
+        ]
+      ],
+      "date-time": "2024-01-22T06:20:02Z",
+      "timestamp": 1705904402000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1088/1367-2630/ad19fd"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            22
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1088/1367-2630/ad19fd",
+    "relation": {},
+    "ISSN": [
+      "1367-2630"
+    ],
+    "issn-type": [
+      {
+        "value": "1367-2630",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Inverse engineering for robust state transport along a spin chain via low-energy subspaces",
+        "name": "article_title",
+        "label": "Article Title"
+      },
+      {
+        "value": "New Journal of Physics",
+        "name": "journal_title",
+        "label": "Journal Title"
+      },
+      {
+        "value": "paper",
+        "name": "article_type",
+        "label": "Article Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by IOP Publishing Ltd on behalf of the Institute of Physics and Deutsche Physikalische Gesellschaft",
+        "name": "copyright_information",
+        "label": "Copyright Information"
+      },
+      {
+        "value": "2023-06-21",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2024-01-02",
+        "name": "date_accepted",
+        "label": "Date Accepted",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2024-01-22",
+        "name": "date_epub",
+        "label": "Online publication date",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      }
+    ]
+  }
+}

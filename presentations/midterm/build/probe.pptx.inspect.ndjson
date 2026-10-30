@@ -1,0 +1,13 @@
+{"kind":"deck","id":"pr/p8tbcb","name":"Deck"}
+{"kind":"layout","id":"ly/ml4jq58v","editable":false,"name":"Master","type":"master"}
+{"kind":"layout","id":"ly/3ql8vq9c","editable":false,"name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","id":"ly/7i1sfit4","editable":false,"name":"Section Header","type":"sectionHeader","placeholders":[{"name":"title","type":"title"}]}
+{"kind":"layout","id":"ly/yd83mt43","editable":false,"name":"Title and Body","type":"tx","placeholders":[{"name":"title","type":"title"},{"name":"body","type":"body"}]}
+{"kind":"layout","id":"ly/be5kzmdc","editable":false,"name":"Title and Two Column","type":"twoColTx","placeholders":[{"name":"title","type":"title"},{"name":"Left column","type":"body"},{"name":"Right column","type":"body"}]}
+{"kind":"layout","id":"ly/rihsb254","editable":false,"name":"Title and One Column","type":"tx","placeholders":[{"name":"title","type":"title"},{"name":"body","type":"body"}]}
+{"kind":"layout","id":"ly/tszytg3i","editable":false,"name":"Blank","type":"blank"}
+{"kind":"slide","id":"sl/2j1agr","slideIndex":0,"layout":{"id":"ly/tszytg3i","name":"Blank"},"title":"自旋激发的传播与展宽","textShapes":2,"backgroundColor":"rgba(255,255,255,1)"}
+{"kind":"textbox","id":"sh/nutkb6d8","slideIndex":0,"position":{"left":55,"top":35,"width":1150,"height":70},"text":"自旋激发的传播与展宽","geometry":"rect","lineWidth":0,"style":{"fontSize":42,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"}}
+{"kind":"textbox","id":"sh/8v2l4ret","slideIndex":0,"position":{"left":60,"top":140,"width":400,"height":200},"text":"相同的初始概率包络\n载波决定波矢分布\n交换强度控制传播速度","geometry":"rect","lineWidth":0,"style":{"fontSize":26,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"}}
+{"kind":"chart","id":"ch/1w76t4r6","slideIndex":0,"position":{"left":520,"top":140,"width":700,"height":450},"name":"","chartType":"scatter","title":"质心随时间变化"}
+{"kind":"notes","id":"nt/2j1agr","slideIndex":0,"text":""}

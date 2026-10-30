@@ -1,0 +1,18 @@
+{
+  "id": "loss-aware-pulse",
+  "title": "有限驱动预算下补偿波长相关损耗",
+  "source_origin": "Casulleras2023 Conclusion p6; Vilsmeier2026 Sections4.1-4.2",
+  "summary": "复场匹配可以改善，但以绝对输出权重为代价；ensemble方法未胜过同样训练选参的名义模型。",
+  "demo": "demo.gif",
+  "poster": "overview.png",
+  "frames": [
+    "demo_frame_00.png",
+    "demo_frame_30.png",
+    "demo_frame_60.png"
+  ],
+  "results": "results.json",
+  "report": "report.txt",
+  "reproduce": "python run.py",
+  "status": "closed-minimal-test",
+  "claim_scope": "Dimensionless band-limited linear transfer surrogate; not calibrated YIG/antenna microwave energy."
+}

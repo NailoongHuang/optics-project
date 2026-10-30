@@ -1,0 +1,11 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/1frw86","index":17,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/8jylo3a9","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"局域返回概率的相干振荡","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/nipkfy94","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/mxgjmtsj","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 B10　固定单磁子数态，η = 1 与 0.3","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lw72dory","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"18","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/9kr6lsb2","kind":"image","position":{"left":45,"top":136,"width":1188,"height":377},"fit":"contain","alt":"b10-return-probability"},
+{"id":"sh/zupkbe9s","kind":"textbox","position":{"left":57,"top":540,"width":1140,"height":55},"text":"P₀₀ 随时间降低并出现振荡，ΣP 始终为 1。","style":{"fontSize":26,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/ytwji9s7","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/dsn294rm","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"局部概率减少表示激发向外传播，当前模型没有引入阻尼或磁子损失。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "slides": 19,
+  "unchanged_native_chart_count": 5,
+  "forbidden_aliases_absent": true,
+  "embedded_gifs_match_fixed_lab_assets": true,
+  "min_probability_in_fixed_view": 0.9999999988732283,
+  "numerical_source_unchanged_sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84"
+}

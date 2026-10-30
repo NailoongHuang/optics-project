@@ -1,0 +1,127 @@
+{
+  "source": "Our analytic refinement of the same classical null; not attributed as an authors' theorem or novelty claim.",
+  "hypothesis": "Classical joint f(x,q)>=0, conserved q, straight trajectories x(t2)=x(t1)+v(q)*Delta_t, v(q)=sin(q), known Gaussian left-window PSF.",
+  "derivation": "For v<0, maximizing W_l(x+v*Delta_t)-W_l(x) over initial x puts the detector boundary at the midpoint of the displacement, and gives erf(|v|*Delta_t/(2*sqrt(2)*l)). For v>=0 the gain is nonpositive. Integrating the negative-velocity maxima yields C_l.",
+  "formula": "C_l=integral_(sin(q)<0) rho(q)*erf(|sin(q)|*Delta_t/(2*sqrt(2)*l)) dq; B_tight=Delta<W>-C_l.",
+  "limits": "As l->0, C_l->P(v<0). For |v|*Delta_t << l, C_l is approximately Delta_t*<|v| 1_(v<0)>/(sqrt(2*pi)*l). This is a measurement bound, not a continuum Bracken-Melloy bound.",
+  "scope": "Frozen coefficients, same source envelope, cut and time window as base test. Only PSF points already present in the original test are evaluated. No reoptimization, new state family, or altered main demo.",
+  "noise_model": "Independent blurred binary left/right position readouts at t1 and t2 have variances p1(1-p1) and p2(1-p2). A third independent velocity-resolved ensemble estimates g(v)=1_(v<0)*erf(...), with variance <g^2>-<g>^2. The shot count assumes velocity resolution sufficient to compute g, known PSF, no calibration or technical noise, and a normal-approximation 5-sigma threshold.",
+  "records": {
+    "sharp_optimized": [
+      {
+        "psf_sigma_a": 0.0,
+        "time_interval": 1.0,
+        "left_probability_increase": 0.040284375715823106,
+        "original_sign_bound": 0.0015298028724948921,
+        "original_witness": 0.038754572843328214,
+        "tighter_classical_bound": 0.0015298028724953089,
+        "tighter_witness": 0.0387545728433278,
+        "weighted_velocity_variance": 0.001527462575666614,
+        "weighted_velocity_second_moment": 0.0015298028724953089,
+        "quadrature_256_vs_512_bound_error": 4.172009959724221e-16,
+        "shots_per_each_of_three_ensembles_5sigma": 8332.426445601866,
+        "original_sign_test_shots_per_ensemble": 8332.426445601679
+      },
+      {
+        "psf_sigma_a": 0.5,
+        "time_interval": 1.0,
+        "left_probability_increase": 0.007099901211959747,
+        "original_sign_bound": 0.0015298028724948921,
+        "original_witness": 0.0055700983394648546,
+        "tighter_classical_bound": 2.904585447140893e-05,
+        "tighter_witness": 0.007070855357488338,
+        "weighted_velocity_variance": 1.0336046197662102e-06,
+        "weighted_velocity_second_moment": 1.0344482814281844e-06,
+        "quadrature_256_vs_512_bound_error": 1.5009423825346202e-18,
+        "shots_per_each_of_three_ensembles_5sigma": 249937.75741770727,
+        "original_sign_test_shots_per_ensemble": 403993.4076968383
+      },
+      {
+        "psf_sigma_a": 1.0,
+        "time_interval": 1.0,
+        "left_probability_increase": -0.014520666267509807,
+        "original_sign_bound": 0.0015298028724948921,
+        "original_witness": -0.0160504691400047,
+        "tighter_classical_bound": 1.4528069569763537e-05,
+        "tighter_witness": -0.01453519433707957,
+        "weighted_velocity_variance": 2.587310310408841e-07,
+        "weighted_velocity_second_moment": 2.58942095846308e-07,
+        "quadrature_256_vs_512_bound_error": 7.504711912673101e-19,
+        "shots_per_each_of_three_ensembles_5sigma": null,
+        "original_sign_test_shots_per_ensemble": null
+      },
+      {
+        "psf_sigma_a": 2.0,
+        "time_interval": 1.0,
+        "left_probability_increase": -0.015336084261578453,
+        "original_sign_bound": 0.0015298028724948921,
+        "original_witness": -0.016865887134073346,
+        "tighter_classical_bound": 7.264678278152318e-06,
+        "tighter_witness": -0.015343348939856605,
+        "weighted_velocity_variance": 6.47034232959821e-08,
+        "weighted_velocity_second_moment": 6.475619884646716e-08,
+        "quadrature_256_vs_512_bound_error": 3.7438856268640075e-19,
+        "shots_per_each_of_three_ensembles_5sigma": null,
+        "original_sign_test_shots_per_ensemble": null
+      }
+    ],
+    "resolution_aware": [
+      {
+        "psf_sigma_a": 0.0,
+        "time_interval": 1.0,
+        "left_probability_increase": 0.039826966299036815,
+        "original_sign_bound": 0.0011292580739317905,
+        "original_witness": 0.03869770822510502,
+        "tighter_classical_bound": 0.001129258073932108,
+        "tighter_witness": 0.03869770822510471,
+        "weighted_velocity_variance": 0.0011279828501345672,
+        "weighted_velocity_second_moment": 0.001129258073932108,
+        "quadrature_256_vs_512_bound_error": 3.174543961037557e-16,
+        "shots_per_each_of_three_ensembles_5sigma": 8350.447676969252,
+        "original_sign_test_shots_per_ensemble": 8350.44767696911
+      },
+      {
+        "psf_sigma_a": 0.5,
+        "time_interval": 1.0,
+        "left_probability_increase": 0.006750059835136879,
+        "original_sign_bound": 0.0011292580739317905,
+        "original_witness": 0.0056208017612050885,
+        "tighter_classical_bound": 2.0954930005564082e-05,
+        "tighter_witness": 0.006729104905131315,
+        "weighted_velocity_variance": 7.30626939720758e-07,
+        "weighted_velocity_second_moment": 7.310660488122961e-07,
+        "quadrature_256_vs_512_bound_error": 1.1011428314305904e-18,
+        "shots_per_each_of_three_ensembles_5sigma": 275966.4600941529,
+        "original_sign_test_shots_per_ensemble": 396417.38586517033
+      },
+      {
+        "psf_sigma_a": 1.0,
+        "time_interval": 1.0,
+        "left_probability_increase": -0.014947820798941303,
+        "original_sign_bound": 0.0011292580739317905,
+        "original_witness": -0.016077078872873095,
+        "tighter_classical_bound": 1.0481031079611339e-05,
+        "tighter_witness": -0.014958301830020913,
+        "weighted_velocity_variance": 1.8288156211037777e-07,
+        "weighted_velocity_second_moment": 1.8299141412286956e-07,
+        "quadrature_256_vs_512_bound_error": 5.47183283926278e-19,
+        "shots_per_each_of_three_ensembles_5sigma": null,
+        "original_sign_test_shots_per_ensemble": null
+      },
+      {
+        "psf_sigma_a": 2.0,
+        "time_interval": 1.0,
+        "left_probability_increase": -0.015803383103342616,
+        "original_sign_bound": 0.0011292580739317905,
+        "original_witness": -0.01693264117727441,
+        "tighter_classical_bound": 5.240961769690833e-06,
+        "tighter_witness": -0.015808624065112308,
+        "weighted_velocity_variance": 4.5734474100990954e-08,
+        "weighted_velocity_second_moment": 4.5761941781262315e-08,
+        "quadrature_256_vs_512_bound_error": 2.752857078576476e-19,
+        "shots_per_each_of_three_ensembles_5sigma": null,
+        "original_sign_test_shots_per_ensemble": null
+      }
+    ]
+  }
+}

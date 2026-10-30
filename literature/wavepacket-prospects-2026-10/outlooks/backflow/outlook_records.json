@@ -1,0 +1,142 @@
+{
+  "search_date_local": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Explicit author outlooks and narrowly closed follow-up tests for quantum backflow; source extraction only, no simulations in this branch.",
+  "sources": [
+    {
+      "id": "paterek_goussev_2026",
+      "title": "General quantum backflow in realistic wave packets",
+      "doi": "10.1103/tm9s-pkg5",
+      "version": "2511.10155v2",
+      "url": "https://arxiv.org/html/2511.10155v2",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/backflow/2511.10155v2.pdf",
+      "locations": [
+        "Discussion, PDF p.4; HTML lines 120-128"
+      ],
+      "short_quote": "uses a smoothed spatial window rather than a sharp one",
+      "explicit_author_outlooks": [
+        "Determine how general backflow changes when the spatial probability measurement is smoothed.",
+        "Ensure experimental violations do not originate from failure of dynamical assumptions such as force-free motion.",
+        "Understand the relation between the standard and generalized dimensionless backflow constants.",
+        "Explore general backflow and reentry beyond free-particle evolution when motion direction is preserved."
+      ],
+      "important_completed_work_not_a_gap": "The paper already derives general backflow for arbitrary momentum distributions, works out two-Gaussian examples, and proves backflow/overflow mutual incompatibility. Standard positive-momentum smoothing is acknowledged as known prior work.",
+      "local_adaptation_status": "Applying the question to cosine-lattice velocities and finite detector windows is our proposed adaptation, not a result in this continuum paper. Its numerical continuum constants must not be transplanted.",
+      "sha256": "129f81ff5de973145cd3649de1012d61b46e7fa8f0101b16c51f3d42c75689ab"
+    },
+    {
+      "id": "torres_arvizu_2026",
+      "title": "Quantum backflow in biased tight-binding systems",
+      "doi": "10.1103/v49b-zz68",
+      "version": "2511.16867v2",
+      "url": "https://arxiv.org/html/2511.16867v2",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/backflow/2511.16867v2.pdf",
+      "locations": [
+        "Section VII Conclusions and outlook, PDF pp.20-21; especially final paragraph p.21"
+      ],
+      "short_quote": "one-dimensional SSH models",
+      "explicit_author_outlooks": [
+        "Extend the analysis to SSH models, arrival-time distributions, Bloch packets in periodic potentials, disordered systems, and quantum walks.",
+        "Construct packets from nonnegative-momentum eigenstates in these systems; the authors identify this prerequisite as challenging.",
+        "Use stronger discrete backflow to broaden possible experimental detection approaches."
+      ],
+      "important_completed_work_not_a_gap": "The paper already solves instantaneous and time-integrated backflow optimization in biased/unbiased infinite and periodic nearest-neighbor chains.",
+      "local_adaptation_status": "Finite-resolution preparation-aware optimization or a controlled two-band SSH example are proposed tests; neither is an author-reported result in this source.",
+      "sha256": "df57c4e383fc351bf5e0716bd7ccd75e3dffaaa114ff6440c8ce5004fe0ba6b8"
+    },
+    {
+      "id": "chen_tang_2026",
+      "title": "Preparing Quantum Backflow States by Large Momentum Transfer",
+      "authors": [
+        "Yuchong Chen",
+        "Yijun Tang"
+      ],
+      "doi": "10.1103/3b4f-6nfr",
+      "version": "2602.12767v2",
+      "url": "https://arxiv.org/abs/2602.12767v2",
+      "local_source": "literature/wavepacket-prospects-2026-10/outlooks/backflow/later-work/2602.12767v2.pdf",
+      "sha256": "71dd05ed3324f033df7e2b15f0d0270e53431ec86aef3f48cdb1733ac3f0d4d7",
+      "locations": [
+        "Conclusion, PDF p.9; source text lines939-979"
+      ],
+      "short_quote": "stronger backflow is accompanied by a shorter density-modulation length scale",
+      "explicit_author_outlooks": [
+        "Adapt LMT-based atom-interferometric preparation to the general-backflow framework for realistic wave packets.",
+        "Investigate fluorescence or absorption density measurements at multiple evolution times as a route to the generalized position-measurement witness."
+      ],
+      "important_completed_work_not_a_gap": "The paper already proposes the LMT protocol, analyzes adjustable arm amplitudes/momentum separation and a critical-density signature, and identifies the stronger-current versus finer-fringe tradeoff. It is a preparation/theory proposal, not a completed matter-wave backflow observation.",
+      "local_adaptation_status": "A cosine-lattice PSF/witness test transfers the detection question; it does not reproduce the cold-atom LMT protocol or its dimensional parameters."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "B1",
+      "title": "Detector-resolved general backflow under simple state preparation",
+      "priority_reason": "Explicit author follow-up with a directly measurable witness and a small, falsifiable local test.",
+      "source_gap": "Paterek-Goussev Discussion p.4 explicitly leaves smoothed-window general backflow open; Chen-Tang v2 Conclusion p.9 proposes linking LMT preparation to generalized multitime density measurements and highlights the fine-fringe detection tradeoff.",
+      "observation": "Existing pi/2 Gaussian gives a sharp-cut event only about 3.35e-5 of probability, potentially lost by finite resolution.",
+      "hypothesis": "Optimizing the experimentally resolved probability witness, instead of sharp-cut current or peak backflow, can trade ideal magnitude for robustness to detector width.",
+      "model": "Homogeneous one-dimensional cosine band; no force, loss, disorder or nonlinear interaction. Use present exact FFT solver.",
+      "state_families": [
+        "Existing single Gaussian as baseline",
+        "Strict positive-velocity projection as a control",
+        "A normalized two-Gaussian coherent superposition with unrestricted velocity signs; separately record negative-velocity weight"
+      ],
+      "witness": "Delta_w = sum_n W_w(n-b)[P_n(t2)-P_n(t1)] - P(v<0), with W_w monotone decreasing and 0<=W_w<=1; w=0 is a sharp cut.",
+      "classical_bound": "For any classical ensemble with conserved velocity sign, a monotone bounded left-window can increase by at most the initial negative-velocity probability. Thus Delta_w<=0 remains the null.",
+      "minimal_parameters": "Initial sigma=4 or6 sites; detector widths w/a=0,0.25,0.5,1,2,4; one fixed event from existing trace plus a bounded two-Gaussian search. Freeze selected state before comparing held-out widths and small parameter perturbations.",
+      "baselines": [
+        "Same normalized state with sharp detector",
+        "Same state and time window with each smoothed detector",
+        "State optimized for sharp witness versus state optimized for a chosen finite detector width",
+        "Incoherent mixture of the two packets to remove cross interference"
+      ],
+      "closed_checks": [
+        "Direct probability difference equals time-integrated weighted current",
+        "N doubling and fixed-cut boundary-flux check",
+        "Negative-velocity weight included rather than ignored",
+        "Grid/time-search refinement of event extrema",
+        "Report normalization, initial spatial RMS width, preparation complexity and detector width for every comparison",
+        "For an explicit independent-position-sampling model, estimate shot requirements from the variance of the fixed detector response; do not claim the same noise model for classical optical intensity detection."
+      ],
+      "falsifier": "If no positive resolved witness survives the chosen finite resolution and preparation budget, this route fails for that domain; a larger sharp-cut value alone is not success.",
+      "demo": "Show the two measured density snapshots, the detector response window, the sharp and resolved witnesses, and an incoherent-control trace.",
+      "novelty_boundary": "Standard positive-spectrum smoothing is known. A lattice Gaussian subtest is only a detector-feasibility demonstration; a full general-backflow tradeoff and prior-art comparison would still be needed."
+    },
+    {
+      "id": "B2",
+      "title": "Construct and test a positive-group-velocity SSH packet",
+      "priority_reason": "The tight-binding paper explicitly names SSH and the positive-sector construction prerequisite.",
+      "source_gap": "Torres Arvizu et al. Section VII p.21.",
+      "hypothesis": "A band-resolved spectral projector gives a controlled positive-velocity state, permitting an unambiguous fixed-cut backflow test in the SSH chain.",
+      "model": "Two-site unit-cell SSH Hamiltonian with real intracell/intercell hopping; compare uniform chain t1=t2 with dimerized t1/t2 ratios and keep bandwidth or maximum speed normalization explicit.",
+      "minimal_parameters": "Ncell=128 then256; ratios t1/t2=0.7,1,1/0.7; one Gaussian spectral width and one fixed finite time window. Use full Bloch spinors and numerical group-velocity sign projectors.",
+      "baselines": [
+        "Uniform-chain representation",
+        "Single-band positive-velocity packet",
+        "Incoherent band mixture if an interband superposition is tested",
+        "Swap unit-cell definition and physical cut consistently"
+      ],
+      "closed_checks": [
+        "Nonpositive-velocity spectral weight is removed",
+        "Direct site continuity holds for both bond types",
+        "Fixed-cut integrated current agrees with probability change",
+        "N doubling and gap/velocity normalization checks"
+      ],
+      "falsifier": "If any negative transfer disappears after a proper velocity projection or comes from boundary reflection, it is not the intended free-propagation backflow.",
+      "demo": "Plot band/velocity selection, two-sublattice packet evolution and the measured cut flux.",
+      "novelty_boundary": "This first test would validate a construction, not establish topological enhancement. Exchanging t1 and t2 changes the unit-cell/cut relation; bulk backflow differences cannot be called topological without additional invariant controls."
+    }
+  ],
+  "not_selected_for_minimal_demo": [
+    {
+      "question": "Exact relation between generalized and standard backflow constants",
+      "reason": "Explicit fundamental outlook, but numerical toy examples would not resolve the analytic relation; poor fit for a short closed demo."
+    },
+    {
+      "question": "Disorder robustness interpreted as strict free backflow",
+      "reason": "Disorder changes velocity sign and causes ordinary reflection; the witness must first be reformulated. A bare disorder simulation risks a false positive."
+    }
+  ],
+  "time_sensitive_caution": "A July2026 entangled-photon transverse-momentum backflow report exists (2607.10281v1). Do not repeat March2026 wording that backflow has never been observed without distinguishing optical/transverse analogs from the longitudinal matter-wave probability dynamics at issue."
+}

@@ -1,0 +1,761 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          10
+        ]
+      ],
+      "date-time": "2026-07-10T02:06:31Z",
+      "timestamp": 1783649191578,
+      "version": "3.55.0"
+    },
+    "reference-count": 50,
+    "publisher": "MDPI AG",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2025-12-01T00:00:00Z",
+          "timestamp": 1764547200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Dynamics"
+    ],
+    "abstract": "<jats:p>We provide an analytical framework for describing the propagation of light in waveguide arrays, considering both infinite and semi-infinite cases. The interaction up to second neighbors is taken into account, which provides a more realistic setup. We show that these solutions follow a distinctive structural pattern. This pattern reflects a transition from conventional Bessel functions to the lesser-known one-parameter generalized Bessel functions, offering new insights into the propagation dynamics in these systems.</jats:p>",
+    "DOI": "10.3390/dynamics5040051",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2025-12-04T16:07:38Z",
+      "timestamp": 1764864458000
+    },
+    "page": "51",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Waveguide Arrays Interaction to Second Neighbors: Semi-Infinite Case"
+    ],
+    "prefix": "10.3390",
+    "volume": "5",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5249-4810",
+        "authenticated-orcid": false,
+        "given": "Marco A.",
+        "family": "Tapia-Valerdi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Instituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla, Puebla 72840, Mexico"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8838-3541",
+        "authenticated-orcid": false,
+        "given": "Irán",
+        "family": "Ramos-Prieto",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Instituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla, Puebla 72840, Mexico"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6770-8914",
+        "authenticated-orcid": false,
+        "given": "Francisco",
+        "family": "Soto-Eguibar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Instituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla, Puebla 72840, Mexico"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1444-0261",
+        "authenticated-orcid": false,
+        "given": "Héctor M.",
+        "family": "Moya-Cessa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Instituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla, Puebla 72840, Mexico"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.1038/nature01936",
+        "article-title": "Discretizing light behaviour in linear and nonlinear waveguide lattices",
+        "volume": "424",
+        "author": "Christodoulides",
+        "year": "2003",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "043706",
+        "DOI": "10.1103/PhysRevA.102.043706",
+        "article-title": "Quantum state engineering in arrays of nonlinear waveguides",
+        "volume": "102",
+        "author": "Barral",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "170506",
+        "DOI": "10.1103/PhysRevLett.100.170506",
+        "article-title": "Realization of quantum walks with negligible decoherence in waveguide lattices",
+        "volume": "100",
+        "author": "Perets",
+        "year": "2008",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1500",
+        "DOI": "10.1126/science.1193515",
+        "article-title": "Quantum walks of correlated photons",
+        "volume": "329",
+        "author": "Peruzzo",
+        "year": "2010",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ref_5",
+        "doi-asserted-by": "crossref",
+        "first-page": "013906",
+        "DOI": "10.1103/PhysRevLett.100.013906",
+        "article-title": "Anderson localization and nonlinearity in one-dimensional disordered photonic lattices",
+        "volume": "100",
+        "author": "Lahini",
+        "year": "2008",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "first-page": "30001",
+        "DOI": "10.1051/epjap/2013130240",
+        "article-title": "Optical waveguide arrays: Quantum effects and PT symmetry breaking",
+        "volume": "63",
+        "author": "Joglekar",
+        "year": "2013",
+        "journal-title": "Eur. Phys. J. Appl. Phys."
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "6241",
+        "DOI": "10.1364/OE.18.006241",
+        "article-title": "Quantum entanglement in coupled lossy waveguides",
+        "volume": "18",
+        "author": "Rai",
+        "year": "2010",
+        "journal-title": "Opt. Express"
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "first-page": "053815",
+        "DOI": "10.1103/PhysRevA.93.053815",
+        "article-title": "Generalized Schrödinger cat states and their classical emulation",
+        "volume": "93",
+        "author": "Szameit",
+        "year": "2016",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "first-page": "11282",
+        "DOI": "10.1038/ncomms11282",
+        "article-title": "Enhancing coherent transport in a photonic network using controllable decoherence",
+        "volume": "7",
+        "author": "Biggerstaff",
+        "year": "2016",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "first-page": "043041",
+        "DOI": "10.1088/1367-2630/18/4/043041",
+        "article-title": "Universal quantum computation in waveguide QED using decoherence free subspaces",
+        "volume": "18",
+        "author": "Paulisch",
+        "year": "2016",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "032501",
+        "DOI": "10.1103/PhysRevA.96.032501",
+        "article-title": "Dynamical Casimir effect in stochastic systems: Photon harvesting through noise",
+        "volume": "96",
+        "author": "Busch",
+        "year": "2017",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "ref_12",
+        "doi-asserted-by": "crossref",
+        "first-page": "4690",
+        "DOI": "10.1364/OL.437829",
+        "article-title": "Kapitza–Dirac photonic lattices",
+        "volume": "46",
+        "author": "Uriostegui",
+        "year": "2021",
+        "journal-title": "Opt. Lett."
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "5435",
+        "DOI": "10.1364/OL.503837",
+        "article-title": "Exact solution for the interaction of two decaying quantized fields",
+        "volume": "48",
+        "year": "2023",
+        "journal-title": "Opt. Lett."
+      },
+      {
+        "key": "ref_14",
+        "doi-asserted-by": "crossref",
+        "first-page": "2358",
+        "DOI": "10.1364/JOSAB.533919",
+        "article-title": "Integrated optical wave analyzer using the discrete fractional Fourier transform",
+        "volume": "41",
+        "year": "2024",
+        "journal-title": "J. Opt. Soc. Am. B"
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1833",
+        "DOI": "10.1016/j.optcom.2010.12.005",
+        "article-title": "Classical analogues to quantum nonlinear coherent states in photonic lattices",
+        "volume": "284",
+        "author": "Christodoulides",
+        "year": "2011",
+        "journal-title": "Opt. Commun."
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "411",
+        "DOI": "10.1038/s42254-020-0195-3",
+        "article-title": "Tools for quantum simulation with ultracold atoms in optical lattices",
+        "volume": "2",
+        "author": "Fukuhara",
+        "year": "2020",
+        "journal-title": "Nat. Rev. Phys."
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "245503",
+        "DOI": "10.1103/PhysRevLett.114.245503",
+        "article-title": "Observation of Localized States in Lieb Photonic Lattices",
+        "volume": "114",
+        "author": "Vicencio",
+        "year": "2015",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1002/lpor.201500061",
+        "article-title": "Laser written circuits for quantum photonics",
+        "volume": "9",
+        "author": "Meany",
+        "year": "2015",
+        "journal-title": "Laser Photonics Rev."
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "first-page": "056607",
+        "DOI": "10.1103/PhysRevE.65.056607",
+        "article-title": "Discrete solitons in nonlinear zigzag optical waveguide arrays with tailored diffraction properties",
+        "volume": "65",
+        "author": "Efremidis",
+        "year": "2002",
+        "journal-title": "Phys. Rev. E"
+      },
+      {
+        "key": "ref_20",
+        "doi-asserted-by": "crossref",
+        "first-page": "043804",
+        "DOI": "10.1103/PhysRevA.77.043804",
+        "article-title": "Long-range interaction in waveguide lattices",
+        "volume": "77",
+        "author": "Szameit",
+        "year": "2008",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "ref_21",
+        "doi-asserted-by": "crossref",
+        "first-page": "1908",
+        "DOI": "10.1364/OL.35.001908",
+        "article-title": "Nontrivial Bloch oscillations in waveguide arrays with second-order coupling",
+        "volume": "35",
+        "author": "Wang",
+        "year": "2010",
+        "journal-title": "Opt. Lett."
+      },
+      {
+        "key": "ref_22",
+        "doi-asserted-by": "crossref",
+        "first-page": "3963",
+        "DOI": "10.1364/OL.36.003963",
+        "article-title": "Observation of anharmonic Bloch oscillations",
+        "volume": "36",
+        "author": "Dreisow",
+        "year": "2011",
+        "journal-title": "Opt. Lett."
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "first-page": "125007",
+        "DOI": "10.1088/2040-8978/16/12/125007",
+        "article-title": "Photon-number correlations in waveguide lattices with second order coupling",
+        "volume": "16",
+        "author": "Qi",
+        "year": "2014",
+        "journal-title": "J. Opt."
+      },
+      {
+        "key": "ref_24",
+        "doi-asserted-by": "crossref",
+        "first-page": "026602",
+        "DOI": "10.1103/PhysRevE.74.026602",
+        "article-title": "Tunneling escape in optical waveguide arrays with a boundary defect",
+        "volume": "74",
+        "author": "Longhi",
+        "year": "2006",
+        "journal-title": "Phys. Rev. E"
+      },
+      {
+        "key": "ref_25",
+        "doi-asserted-by": "crossref",
+        "first-page": "461",
+        "DOI": "10.1109/JQE.2004.841615",
+        "article-title": "Photonic crystal waveguide analysis using interface boundary conditions",
+        "volume": "41",
+        "author": "Istrate",
+        "year": "2005",
+        "journal-title": "IEEE J. Quantum Electron."
+      },
+      {
+        "key": "ref_26",
+        "doi-asserted-by": "crossref",
+        "first-page": "276",
+        "DOI": "10.1016/S0167-2789(03)00226-4",
+        "article-title": "Discrete spatial solitons in a diffraction-managed nonlinear waveguide array: A unified approach",
+        "volume": "184",
+        "author": "Ablowitz",
+        "year": "2003",
+        "journal-title": "Phys. D Nonlinear Phenom."
+      },
+      {
+        "key": "ref_27",
+        "doi-asserted-by": "crossref",
+        "first-page": "3404",
+        "DOI": "10.1364/OE.11.003404",
+        "article-title": "Tailoring guided modes in waveguide arrays",
+        "volume": "11",
+        "author": "Trompeter",
+        "year": "2003",
+        "journal-title": "Opt. Express"
+      },
+      {
+        "key": "ref_28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tapia-Valerdi, M., Ramos-Prieto, I., Soto-Eguibar, F., and Moya-Cessa, H. (2025). Waveguide Arrays: Interaction to Many Neighbors. Dynamics, 5.",
+        "DOI": "10.20944/preprints202505.1458.v1"
+      },
+      {
+        "key": "ref_29",
+        "doi-asserted-by": "crossref",
+        "first-page": "103901",
+        "DOI": "10.1103/PhysRevLett.123.103901",
+        "article-title": "Third-Harmonic Generation in Photonic Topological Metasurfaces",
+        "volume": "123",
+        "author": "Smirnova",
+        "year": "2019",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_30",
+        "doi-asserted-by": "crossref",
+        "first-page": "155329",
+        "DOI": "10.1103/PhysRevB.72.155329",
+        "article-title": "Third-harmonic generation in cylindrical parabolic quantum wires with an applied electric field",
+        "volume": "72",
+        "author": "Wang",
+        "year": "2005",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "first-page": "106601",
+        "DOI": "10.1103/PhysRevLett.120.106601",
+        "article-title": "Nonadiabatic Breaking of Topological Pumping",
+        "volume": "120",
+        "author": "Privitera",
+        "year": "2018",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_32",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1038/s41467-021-27773-9",
+        "article-title": "Asymmetric topological pumping in nonparaxial photonics",
+        "volume": "13",
+        "author": "Cheng",
+        "year": "2022",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "first-page": "100076",
+        "DOI": "10.1016/j.revip.2022.100076",
+        "article-title": "A brief review of topological photonics in one, two, and three dimensions",
+        "volume": "9",
+        "author": "Lan",
+        "year": "2022",
+        "journal-title": "Rev. Phys."
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "915",
+        "DOI": "10.1007/BF01397484",
+        "article-title": "Über die Jacobischen transformationen der quantenmechanik",
+        "volume": "37",
+        "author": "London",
+        "year": "1926",
+        "journal-title": "Z. Phys."
+      },
+      {
+        "key": "ref_35",
+        "first-page": "49",
+        "article-title": "Quantum mechanical phase and time operator",
+        "volume": "1",
+        "author": "Susskind",
+        "year": "1964",
+        "journal-title": "Phys. Phys. Fiz."
+      },
+      {
+        "key": "ref_36",
+        "unstructured": "Arfken, G., Weber, H., and Harris, F. (2011). Mathematical Methods for Physicists: A Comprehensive Guide, Elsevier Science."
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "first-page": "349",
+        "DOI": "10.1142/S0219749911007319",
+        "article-title": "Modeling non-linear coherent states in fiber array",
+        "volume": "9",
+        "year": "2011",
+        "journal-title": "Int. J. Quantum Inf."
+      },
+      {
+        "key": "ref_38",
+        "doi-asserted-by": "crossref",
+        "first-page": "036616",
+        "DOI": "10.1103/PhysRevE.73.036616",
+        "article-title": "Method of images in optical discrete systems",
+        "volume": "73",
+        "author": "Makris",
+        "year": "2006",
+        "journal-title": "Phys. Rev. E"
+      },
+      {
+        "key": "ref_39",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1007/BF02723125",
+        "article-title": "Theory of generalized Bessel functions.-ii",
+        "volume": "106",
+        "author": "Dattoli",
+        "year": "1991",
+        "journal-title": "Il Nuovo C. B (1971–1996)"
+      },
+      {
+        "key": "ref_40",
+        "doi-asserted-by": "crossref",
+        "first-page": "063905",
+        "DOI": "10.1103/PhysRevLett.92.063905",
+        "article-title": "Nonlinear Band Gap Transmission in Optical Waveguide Arrays",
+        "volume": "92",
+        "author": "Khomeriki",
+        "year": "2004",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ref_41",
+        "doi-asserted-by": "crossref",
+        "first-page": "147",
+        "DOI": "10.1038/nature01452",
+        "article-title": "Observation of two-dimensional discrete solitons in optically induced nonlinear photonic lattices",
+        "volume": "422",
+        "author": "Fleischer",
+        "year": "2003",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ref_42",
+        "doi-asserted-by": "crossref",
+        "first-page": "4626",
+        "DOI": "10.1364/OL.567606",
+        "article-title": "Nonlinearity-induced band gap transmission in dispersive and flat-band photonic lattices",
+        "volume": "50",
+        "author": "Tetarwal",
+        "year": "2025",
+        "journal-title": "Opt. Lett."
+      },
+      {
+        "key": "ref_43",
+        "doi-asserted-by": "crossref",
+        "first-page": "052330",
+        "DOI": "10.1103/PhysRevA.85.052330",
+        "article-title": "Dynamics of nonclassical light in integrated nonlinear waveguide arrays and generation of robust continuous-variable entanglement",
+        "volume": "85",
+        "author": "Rai",
+        "year": "2012",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "ref_44",
+        "doi-asserted-by": "crossref",
+        "first-page": "1921",
+        "DOI": "10.1109/JQE.1987.1073271",
+        "article-title": "Power-dependent attenuation of TE waves propagating in optical nonlinear waveguiding structures",
+        "volume": "23",
+        "author": "Jakubczyk",
+        "year": "1987",
+        "journal-title": "IEEE J. Quantum Electron."
+      },
+      {
+        "key": "ref_45",
+        "doi-asserted-by": "crossref",
+        "first-page": "230036-1",
+        "DOI": "10.29026/oes.2024.230036",
+        "article-title": "High-intensity spatial-mode steerable frequency up-converter toward on-chip integration",
+        "volume": "3",
+        "author": "Huang",
+        "year": "2024",
+        "journal-title": "Opto-Electron. Sci."
+      },
+      {
+        "key": "ref_46",
+        "doi-asserted-by": "crossref",
+        "first-page": "220022",
+        "DOI": "10.29026/oes.2023.220022",
+        "article-title": "Spatio-temporal isolator in lithium niobate on insulator",
+        "volume": "2",
+        "author": "Huang",
+        "year": "2023",
+        "journal-title": "Opto-Electron. Sci."
+      },
+      {
+        "key": "ref_47",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang, Y., Guo, Y., Huang, Y., Pu, M., Wang, Y., Ma, X., Li, X., and Luo, X. (2020). Crosstalk reduction of integrated optical waveguides with nonuniform subwavelength silicon strips. Sci. Rep., 10.",
+        "DOI": "10.1038/s41598-020-61149-1"
+      },
+      {
+        "key": "ref_48",
+        "doi-asserted-by": "crossref",
+        "first-page": "240003-1",
+        "DOI": "10.29026/oes.2024.240003",
+        "article-title": "Three-dimensional multichannel waveguide grating filters",
+        "volume": "3",
+        "author": "Yin",
+        "year": "2024",
+        "journal-title": "Opto-Electron. Sci."
+      },
+      {
+        "key": "ref_49",
+        "doi-asserted-by": "crossref",
+        "first-page": "1579",
+        "DOI": "10.1364/OE.15.001579",
+        "article-title": "Control of directional evanescent coupling in fs laser written waveguides",
+        "volume": "15",
+        "author": "Szameit",
+        "year": "2007",
+        "journal-title": "Opt. Express"
+      },
+      {
+        "key": "ref_50",
+        "doi-asserted-by": "crossref",
+        "first-page": "507",
+        "DOI": "10.1007/s00340-005-2127-4",
+        "article-title": "Hexagonal waveguide arrays written with fs-laser pulses",
+        "volume": "82",
+        "author": "Szameit",
+        "year": "2006",
+        "journal-title": "Appl. Phys. B"
+      }
+    ],
+    "container-title": [
+      "Dynamics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2673-8716/5/4/51/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2025-12-04T16:34:02Z",
+      "timestamp": 1764866042000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2673-8716/5/4/51"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          1
+        ]
+      ]
+    },
+    "references-count": 50,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "dynamics5040051"
+    ],
+    "URL": "https://doi.org/10.3390/dynamics5040051",
+    "relation": {},
+    "ISSN": [
+      "2673-8716"
+    ],
+    "issn-type": [
+      {
+        "value": "2673-8716",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          1
+        ]
+      ]
+    }
+  }
+}

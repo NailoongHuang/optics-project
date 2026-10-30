@@ -1,0 +1,110 @@
+[
+  {
+    "id": "meier2025",
+    "title": "Precision is not limited by the second law of thermodynamics",
+    "doi": "10.1038/s41567-025-02929-2",
+    "published_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/",
+    "local_published_pdf": "meier2025_published.pdf",
+    "arxiv": "2407.07948v1",
+    "read_scope": "Published Main, Outlook, Methods Stability under perturbations, Extended Data Figs.2-3; compared with preprint Outlook p.6.",
+    "explicit_items": [
+      {
+        "location": "Published PDF p.9, Methods, Stability under perturbations, second paragraph",
+        "quote": "such as disorder in the bare qubit frequencies",
+        "paraphrase": "The authors identify bare-frequency disorder as an additional platform-dependent error and expect effects comparable to coupling errors, but do not numerically test that case.",
+        "status": "An explicit untested expectation, not a claimed established result."
+      },
+      {
+        "location": "Published PDF p.6, last Outlook paragraph",
+        "quote": "currently constrained by photon-detection fidelity",
+        "paraphrase": "Microwave photon counting is proposed as a readout route, with detector fidelity identified as a limitation.",
+        "status": "Implementation limitation; a realistic readout model is not supplied."
+      },
+      {
+        "location": "Published PDF p.3, Main before Theoretical description",
+        "paraphrase": "Passive photon shaping and receiver matching are presented as possible applications of the preparation ramp.",
+        "status": "Application prospect; arbitrary target-waveform matching is not demonstrated."
+      }
+    ],
+    "already_done": "The final published version already analyzes coupling disorder and amplitude damping, unlike the early preprint. These cannot be presented as wholly unperformed outlook work.",
+    "version_evidence": "Published PDF pp.5-6 Outlook, p.9 Methods, pp.12-13 Extended Data.",
+    "quoted_words_total": 15
+  },
+  {
+    "id": "haselgrove2005",
+    "title": "Optimal state encoding for quantum walks and quantum communication over spin systems",
+    "doi": "10.1103/PhysRevA.72.062326",
+    "url": "https://arxiv.org/pdf/quant-ph/0404152v2",
+    "local_source": "../../../cosine-lattice-wavepacket-audit/spin-chain/haselgrove_2005_text.txt",
+    "location": "PDF p.9, IV Conclusion, final paragraph",
+    "quote": "only an approximate knowledge of the system Hamiltonian",
+    "explicit_open_at_publication": [
+      "External noise",
+      "Approximate rather than exact conservation of total Z spin",
+      "Sender and receiver have only approximate Hamiltonian knowledge"
+    ],
+    "current_status": "Historically explicit; generic robust transfer is now well studied, so a new constraint-specific comparison is needed.",
+    "quoted_words_total": 9
+  },
+  {
+    "id": "osborne2004",
+    "title": "Propagation of quantum information through a spin system",
+    "doi": "10.1103/PhysRevA.69.052315",
+    "url": "https://arxiv.org/pdf/quant-ph/0312141v1",
+    "location": "PDF p.7, last two paragraphs",
+    "quote": "a full analysis needs to be done",
+    "explicit_open_at_publication": [
+      "Extension from rings to open linear chains",
+      "Full error-robustness analysis",
+      "Using two- and higher-excitation sectors to increase qubit rate"
+    ],
+    "current_status": "These are historical outlooks; open-chain and robust-transfer work now exist.",
+    "quoted_words_total": 7
+  },
+  {
+    "id": "thompson2016",
+    "title": "Time independent universal computing with spin chains: quantum plinko machine",
+    "doi": "10.1088/1367-2630/18/7/073044",
+    "url": "https://arxiv.org/pdf/1511.05656v3",
+    "location": "PDF pp.12-13, Section 6 Conclusion",
+    "quote": "analyze the scattering of our Gaussian packets",
+    "explicit_open_at_publication": [
+      "Waveforms with less dispersion than the Gaussian choice",
+      "Gaussian-packet scattering as a simpler controlled-phase interaction"
+    ],
+    "current_status": "Not resolved by the present one-magnon propagator; a two-excitation calculation and gate-error analysis would be required. This search did not establish current novelty.",
+    "quoted_words_total": 8
+  },
+  {
+    "id": "ji2024",
+    "title": "Inverse engineering for robust state transport along a spin chain via low-energy subspaces",
+    "doi": "10.1088/1367-2630/ad19fd",
+    "url": "https://inspirehep.net/files/93a936faae11104f1437e94ef2b4b47b",
+    "local_pdf": "ji2024_robust_transport.pdf",
+    "read_scope": "Abstract, Introduction pp.1-2, Section3 model of systematic and time-varying coupling errors.",
+    "relevance": "A primary modern counterexample to treating generic robust spin-chain transport as unperformed. It uses boundary control and low-energy subspaces, not the same finite-window encoding test."
+  },
+  {
+    "id": "oneil2017",
+    "title": "Sensitivity and Robustness of Quantum Spin-1/2 Rings to Parameter Uncertainty",
+    "doi": "10.1109/CDC.2017.8264584",
+    "url": "https://arxiv.org/abs/1708.09649",
+    "fulltext": "https://ee.usc.edu/~jonckhee/pdf/CDC2017.pdf",
+    "read_scope": "Author PDF introduction and problem formulation.",
+    "relevance": "Studies coupling uncertainty and bias spillage for optimized static controls. A different control architecture from launch-state-only robust encoding."
+  },
+  {
+    "id": "krishna2021",
+    "title": "Beyond the universal Dyson singularity for 1-D chains with hopping disorder",
+    "url": "https://arxiv.org/pdf/2107.08518",
+    "read_scope": "PDF pp.1-2 Introduction and model.",
+    "relevance": "Pure hopping disorder preserves sublattice symmetry and has a known band-center anomaly. This supplies a physical discriminator for the untested frequency-disorder expectation, not a new mechanism."
+  },
+  {
+    "id": "krapivsky2011",
+    "title": "Dynamics of a quantum particle in low-dimensional disordered systems with extended states",
+    "url": "https://arxiv.org/pdf/1101.2101",
+    "read_scope": "Abstract and introductory formulation.",
+    "relevance": "Off-diagonal-disorder wavepacket dynamics is an established subject. No detailed quantitative claim imported here."
+  }
+]

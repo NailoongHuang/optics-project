@@ -1,0 +1,3258 @@
+[PDF PAGE 1]
+Time Independent Universal Computing with Spin
+Chains: Quantum Plinko Machine
+K F Thompson1, C Gokler2, S Lloyd3, and P W Shor4
+1 School of Engineering and Applied Sciences, Harvard University, Cambridge MA
+02138, USA
+2 School of Engineering and Applied Sciences, Harvard University, Cambridge MA
+02138, USA
+3 Department of Mechanical Engineering, Room 3-160 Massachusetts Institute of
+Technology 77 Massachusetts Ave. Cambridge, MA 02139, USA
+4 Department of Mathematics, Room 2-375 Massachusetts Institute of Technology 77
+Massachusetts Ave. Cambridge, MA 02139, USA
+E-mail: kft@seas.harvard.edu
+Abstract.
+We present a scheme for universal quantum computing using XY
+Heisenberg spin chains. Information is encoded into packets propagating down these
+chains, and they interact with each other to perform universal quantum computation.
+A circuit using g gate blocks on m qubits can be encoded into chains of length
+O(g3+δm3+δ) for all δ > 0 with vanishingly small error.
+PACS numbers: 03.65.Aa, 03.67.Ac, 03.67.Hk
+arXiv:1511.05656v3  [quant-ph]  5 Jan 2016
+
+
+[PDF PAGE 2]
+Time Independent Universal Computing with Spin Chains
+2
+1. Introduction
+Heisenberg spin chains have many applications in quantum computing.
+Primarily
+they are used as quantum “wires” that can communicate a state from one part of
+a quantum computer to another [1–9].
+This is an attractive approach to quantum
+communication becuase it could avoid the problem of converting “stationary” qubits into
+“ﬂying” qubits. Certain types of quantum systems are easy to control and manipulate
+(NMR), while other types of quantum systems are more diﬃcult to control (photons),
+but are less susceptible to error during transmission. Mechanisms are designed to convert
+“stationary” qubits and “ﬂying” qubits for purposes of communication between diﬀerent
+parts of a quantum computer [10]. The beneﬁt of having a spin chain as a quantum wire
+is that it allows one to directly communicate the information, without converting it to
+another form. Of particular interest are schemes where information can be transmitted
+passively, with no control on the overall system, or control only over a small portion of
+the system [3,4,7–9,11]. For a comprehensive review of this area, please see [12].
+We are particularly interested in the results of [7]. In this paper, the author shows
+that we can initialize the quantum state of a spin chain to form a Gaussian packet. If
+the “momentum” of these packets are chosen carefully, they will propagate around the
+chain in a near dispersion free fashion. Then, up to some approximation, the spin chain
+acts like a wire for quantum information. We will leverage this result in our scheme, as
+well as provide a new proof that these packets are dispersion free.
+There are a number of researchers interested in using these spin chains to implement
+universal quantum computation [5, 13–17]. In many of these papers, time dependent
+control on the system is needed to implement computations. Taking a few examples,
+Burgarth has shown that any unitary on a spin chain can be implemented using controls
+on only the ﬁrst two qubits [14], while Benjamin has given a scheme for universal
+computing using some “always on” interactions, and a time independent “switch” [2].
+Of particular interest to us is the result [16]. In this paper, Childs et al. have given a
+time independent Hamiltonian (for a multiparticle quantum walk) that implements any
+quantum computation with asymptotically vanishing error.
+We provide a construction similar to that of Childs et al. using Heisenberg spin
+chains. This approach provides an encoding of any standard qubit space [C2]⊗n into
+a superposition of wavepackets propagating on periodic spin chains of size N. A time
+independent Hamiltonian can then be used to implement any circuit (up to some small
+error dependent on N) on the encoded information.
+In contrast with [16], we use
+very large but very weak gates. This is advantageous because it allows a simpliﬁed
+perturbative analysis as well as better error scaling. If we let g be the number of gate
+blocks and m be the number of qubits, we achieve vanishing error for N = O(m3+δg3+δ)
+for all δ > 0. Our result is not directly comparable with [16], since our controlled phase
+gate cannot be written as a multiparticle walk interaction, but we believe that this
+result shows a perturbative approach may be more useful for the problem of universal
+computation with a multiparticle quantum walk.
+
+
+[PDF PAGE 3]
+Time Independent Universal Computing with Spin Chains
+3
+2. Background
+In this work, we have set coupling constants and ℏto 1. All of our results hold with
+these constants included, they have been removed for notational simplicity. Also note
+that the number of encoded qubits will always be denoted m, and the number of gate
+blocks will always be denoted g.
+Consider a periodic chain of distinguishable spin 1/2 particles. Numbering the sites
+from 0 to N-1, the Hilbert space is the span of all possible spin conﬁgurations of the
+system. All such vectors have the form |a0, ..., aN−1⟩where ai ∈{↓, ↑}. The ﬁrst arrow
+in the string represents the state of spin 0, the second represents the state of spin 1, the
+third represents the state of spin 2, etc. Deﬁne the jth excitation subspace to be the
+subspace spanned by vectors with exactly j ↑while the rest are ↓. The 0th excitation
+subspace is 1 dimensional |↓↓... ↓⟩, and we will call this the vacuum state. For the
+single excitation subspace, deﬁne |x⟩to be the vector where all spins are down except
+at position x which is up: |↓↓... ↓↑↓... ↓⟩.
+On this ring, we are interested in the nearest neighbor XY Hamiltonian. Letting
+the Pauli matrices be deﬁned as they usually are:
+X = 1
+2
+" ↑
+↓
+↑
+0
+1
+↓
+1
+0
+#
+Y = 1
+2
+" ↑
+↓
+↑
+0
+−i
+↓
+i
+0
+#
+Z = 1
+2
+" ↑
+↓
+↑
+1
+0
+↓
+0
+−1
+#
+(1)
+we deﬁne the nearest neighbor Hamiltonian to be:
+H = H1
+ring = 2
+N−1
+X
+j=0
+XjXj+1 + YjYj+1 =
+X
+j
+
+
+↑↑
+↑↓
+↓↑
+↓↓
+↑↑
+0
+0
+0
+0
+↑↓
+0
+0
+1
+0
+↓↑
+0
+1
+0
+0
+↓↓
+0
+0
+0
+0
+
+
+(2)
+where Xj is acting on the jth site, meaning that Xj = I ⊗... ⊗I ⊗X ⊗I ⊗... ⊗I, and
+where the Nth site is understood to be the same as site 0 (periodicity).
+The ﬁrst thing to notice is that the vacuum state |vac⟩has energy 0. It is not
+actually the ground state of the system, some states have negative energy. The second
+thing to notice is that the total number of excitations is conserved. More formally,
+the operator Ztot = PN−1
+j=0 Zj commutes with the Hamiltonian, so the Hamiltonian
+can be diagonalized with eigenvectors of Ztot. In particular, the Hamiltonian can be
+diagonalized in subspaces with some constant number of excitations (eigenspaces of
+Ztot). The full set of eigenstates has been well studied [18], however we will be interested
+in the single excitation eigenvectors. For p ∈{0, 1, ..., N −1} they are of the form:
+|p⟩m =
+1
+√
+N
+N−1
+X
+x=0
+e
+2πipx
+N
+|x⟩
+(3)
+with eigenvalue E(p) = 2 cos
+ 2πp
+N
+
+. Since these states are orthonormal, and since there
+are N of them, they constitute a basis for the single excitation subspace. Consequently,
+
+
+[PDF PAGE 4]
+Time Independent Universal Computing with Spin Chains
+4
+we can expand any vector in this space as a linear combination of this basis or a linear
+combination of the standard computational basis:
+|ψ⟩=
+N−1
+X
+x=0
+Ax |x⟩=
+N−1
+X
+p=0
+ap |p⟩m
+(4)
+It is easy to see that the coeﬃcients are related via the the ﬁnite Fourier transform:
+ap = F[A](p) =
+1
+√
+N
+N−1
+X
+x=0
+Axe−2πipx
+N andAx = F−1[a](x) =
+1
+√
+N
+N−1
+X
+p=0
+ape
+2πipx
+N
+(5)
+We can interpret these states as momentum (scattering) states in the discrete
+setting, and take the derivative of the energy function to obtain the group velocity
+for a packet narrowly distributed around some value p0. We think about these chains
+in the continuous limit, so 2πp
+N ≈k. In this case:
+vg(p) = dE
+dk = −2 sin
+2πp
+N
+
+(6)
+There are two things to notice about this expression. The ﬁrst is that packets travel at
+constant velocity, and the second is that near p0 = N/4 the group velocity is constant
+up to second order, so we expect these packets to propagate around the chain in a near
+dispersion free fashion [7].
+For our waveforms, we will use a ﬁnite (N-periodic) Gaussian [19]. On our chain
+this is deﬁned as:
+G∆x =
+1
+p
+∆x√π
+N−1
+X
+x=0
+∞
+X
+α=−∞
+e−(αN+x−x0)
+2∆x2
+|x⟩
+(7)
+Let ∆x and ∆p be positive real numbers that satisfy 2π∆x∆p = N. The packets we
+have deﬁned (approximately) satisfy a discrete Heisenberg relation:
+1
+p
+∆x√π
+N−1
+X
+x=0
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+|x⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+(8)
+This state represents a Gaussian packet centered at position x0 mod N on the chain
+and with momentum centered at p0 mod N. We expect this packet to approximately
+translate on the ring with speed vg(p0). After some time t, we expect the packets position
+to be approximately x0 −vg(p0)t. For technical reasons, we will assume throughout the
+paper that p0 = N/4 is an integer, while x0 ∈[0, N −1] may not be an integer.
+We will also make use of some well known results on universality.
+Suppose we
+have a system of n qubits. It is known that if we can perform an arbitrary single qubit
+gate on any of the qubits and a controlled phase between any two qubits, then we can
+implement any unitary on the system [20]. It is also known [20] that (up to an overall
+phase) we can write any single qubit unitary on a system in the form:
+U = eiθ3Zeiθ2Xeiθ1Z
+(9)
+We will use these two facts to show our scheme is universal.
+
+
+[PDF PAGE 5]
+Time Independent Universal Computing with Spin Chains
+5
+3. Description of Scheme
+To illustrate our basic idea, consider a Z gate on a single encoded qubit, simulating a
+quantum circuit on one qubit. We will encode our circuit using the “dual rail” encoding.
+In this encoding each logical qubit corresponds to two rails, a 0 rail and a 1 rail. We
+will encode the |0⟩state into a packet propagating down chain 0 and the vacuum state
+on the other chain, and encode the |1⟩state into a packet propagating down chain 1
+with a vacuum on the other chain. Any superposition of these states is then realized as
+a superposition of packets propagating along the rails.
+Now imagine the Hamiltonian on the chain 1 has an additional term with adds a
+small extra phase per unit time. Let the Hamiltonian for this chain be:
+N−1
+X
+j=0
+XjXj+1 + YjYj+1 + Φ
+
+Zj + 1
+2Ij
+
+(10)
+where I is the standard identity matrix, and Φ << 1. Now an encoded |0⟩state will be
+unaﬀected by the extra term, since the extra term acts as 0 on the vacuum state. On
+chain 1, however, the momentum states are still diagonal with eigenvalues 2 cos
+ 2πp
+N
+
++Φ.
+The encoded |1⟩state will gain an extra phase of Φ per unit time. After some time t, the
+|1⟩state has gained an extra phase eiΦt. Eﬀectively, we are implementing an encoded
+eiθZ operation on the encoded qubit.
+Figure 1:
+Dual rail encoding of a
+computational basis state
+Suppose now that the chain is very
+long and that only a portion of the chain
+has the added term causing the encoded Z
+gate. We expect that when the packets are
+well localized outside the gate, they will
+not “see” the added potential. So, up to
+some approximation, they will propagate
+along the chain without gaining extra
+phase until they reach the edge of the
+virtual gate.
+Now, if the gate is much
+larger than the packet and the packet is
+well localized inside the gate, we expect
+it will appear to the packet as though the
+gate spans the whole chain (again up to
+some approximation). The remaining issue is the “transient” regime where the packet
+is transitioning from outside the gate to being inside the gate. Fortunately, provided
+the gate strength is weak (Φ << 1) we can employ a bound from [21] to show that the
+transient regime has a very small eﬀect on the propagating packets.
+Note that for this gate, and for the gates that follow, the gate Hamiltonian only
+commutes with the ring Hamiltonian when the gate spans the entire ring. When the
+gate is located in someregion of the qubit ring, [Hring, Hgate] is some small operator
+supported at the edges of the gate.
+
+
+[PDF PAGE 6]
+Time Independent Universal Computing with Spin Chains
+6
+3.1. Encoding
+Now we generalize some of the previous discussion to the simulation of many qubits.
+Much like in the previous section, a dual rail encoding [20] [16] is employed. Consider a
+computation with g gates on m qubits. Given 2 rails for each qubit let one correspond
+to the “0” rail and the other to the “1” rail. Let us index the rails with two numbers.
+The ﬁrst number is a 0 or 1 depending on whether we are talking about the 0 or the
+1 rail. The second number indicates identiﬁes the speciﬁc qubit. The 0 rail for the jth
+qubit would be denoted (0, j). For Pauli operators, we will use the superscript to denote
+which rail the Pauli operator acts on, and a subscript to denote which site on the rail
+the Pauli operator acts on. A Pauli operator acting on the 0th rail of the 3rd qubit at
+the 5th site will be denoted X(0,3)
+5
+. The nearest neighbor Hamiltonian for all 2m chains
+can then be written as:
+H = H2m
+rings =
+1
+X
+a=0
+m
+X
+b=1
+N−1
+X
+c=0
+X(a,b)
+c
+X(a,b)
+c+1 + Y(a,b)
+c
+Y(a,b)
+c+1
+(11)
+Now, let us encode computational basis states into Gaussian packet on the
+appropriate rails centered around p0 = N/4. The state |01⟩would be encoded as (see
+ﬁg. 1):
+|ψ⟩=
+ N−1
+X
+p1=0
+∞
+X
+α=−∞
+e−2πip1x0
+N
+e
+−(αN+p1−p0)2
+2∆p2
+|p1⟩m
+!
+⊗|vac⟩⊗|vac⟩⊗
+ N−1
+X
+p2=0
+∞
+X
+α=−∞
+e−2πip2x0
+N
+e
+−(αN+p2−p0)2
+2∆p2
+|p2⟩m
+!
+(12)
+A superposition of {|00⟩, |01⟩, |10⟩|11⟩} would be encoded as a superposition of the
+packets previously described.
+Packets will propagate down the chains and interact
+weakly with sets of gates and with each other. We will describe methods for performing
+encoded CPHASE operations, as well as eiθZ and eiθX in the following sections, thereby
+giving a scheme for universal computation.
+3.2. Z Gate
+The Z gate has already been described, we will recap the discussion here brieﬂy. Our
+Z gate consists of a very long but very weak interaction placed on the 1 rail. For each
+point inside the gate we add an extra term Z + 1
+2I. Locally, the momentum eigenstates
+are still diagonal, so this has the eﬀect of adding an additional phase of Φ per unit time.
+If the gate is extended to the whole chain, we would be able to write the energy as
+2 cos
+ 2πp
+N
+
++ Φ.
+The packets travel at constant velocity (the group velocity of the packet), so the
+time a packet spends inside a gate is roughly proportional to the size of the gate. If we
+ignore the transient regime, and we assume that a localized packet does not “see” the
+outside of the gate, then the overall phase gained from a gate is ≈gate length ∗Φ. For
+
+
+[PDF PAGE 7]
+Time Independent Universal Computing with Spin Chains
+7
+computational universality, we need to show how to add any phase to our packet. So,
+we need the gate strength Φ to be at least Ω
+
+1
+gate length
+
+.
+3.3. X Gate
+Again consider one encoded qubit and 2 rails. Connect each point j on the 0 rail to its
+adjacent point on the 1 rail with a coupling of the form 2Φ(X0
+jX1
+j + Y0
+jY1
+j), where the
+qubit has not explicitly been designated since there is only one. The full Hamiltonian
+will then have the form:
+H = H2
+ring +
+N−1
+X
+j=0
+2Φ(X0
+jX1
+j + Y0
+jY1
+j)
+(13)
+The extra interaction term commutes with the ring Hamiltonian, so there is a basis which
+diagonalizes both. The relevant (single excitation) states are |±, p⟩= |p⟩m ⊗|vac⟩±
+|vac⟩⊗|p⟩m with energy E(|±, p⟩) = 2 cos
+ 2πp
+N
+
+± Φ. We can construct encoded |±⟩
+states by taking appropriate linear combinations of the aforementioned states. Assuming
+that the packets are centered at 0 these have the form:
+|±⟩=
+X
+α,p
+e
+−(αN+p−p0)2
+2∆p2
+|±, p⟩
+(14)
+An encoded |+⟩state gains an extra phase of Φ per unit time, and an encoded |−⟩
+state gains an extra phase of −Φ per unit time. This type of gate creates a relative
+phase between encoded |±⟩states and thus implements an encoded eiθX gate.
+The
+same scaling analysis applies. We need (gate strength) ≥(gate length) to implement
+some constant phase.
+3.4. Controlled Z Gate
+Now imagine we have two encoded qubits and we are interested in performing a
+controlled phase operation. Connect each site on the (1, 1) rail with every other site on
+the (1, 2) rail with an interaction of the form
+Hint = Φ(Z + 1
+2I) ⊗(Z + 1
+2I) =
+
+
+↑↑
+↑↓
+↓↑
+↓↓
+↑↑
+1
+0
+0
+0
+↑↓
+0
+0
+0
+0
+↓↑
+0
+0
+0
+0
+↓↓
+0
+0
+0
+0
+
+
+(15)
+In other words, the new Hamiltonian is:
+H = H4
+ring + Φ
+N−1
+X
+i≤j=0
+(Z(1,1)
+i
++ I(1,1)
+i
+) ⊗(Z(1,2)
+j
++ I(1,2)
+j
+)
+(16)
+Just as in the phase gates, the momentum states are still diagonal. Ordering the
+rails (0, 1), (1, 1), (1, 2), (0, 2), momentum states of the form |vac⟩⊗|p1⟩⊗|p2⟩⊗|vac⟩have
+eigenvalues 2 cos
+ 2πp1
+N
+
++2 cos
+ 2πp2
+N
+
++Φ. The other momentum states are unchanged. In
+
+
+[PDF PAGE 8]
+Time Independent Universal Computing with Spin Chains
+8
+(a) Our proposed X and Z gates
+(b) Our proposed CPHASE gate
+Figure 2: Proposed Gates
+other words, the encoded |11⟩state gains an extra phase of Φ per unit time, and nothing
+happens to the other encoded states. We can thus perform an encoded controlled phase
+operation on our qubits.
+It may be unclear how exactly to implement a gate like this. After all, needing
+to connect every point on one rail to every other point on the other rail is a very non
+local interaction. It is hard to see exactly how to truncate the Hamiltonian so that
+a localized packet will only “see” this interaction. For this we use the following (see
+ﬁg. 2b). Connect each point on the (1, 1) rail with the point adjacent to it and to the
+points on the rail (1, 2) that are a distance (packet size)*(some fractional power of N
+away). If the packets are well localized, they should not “see” any missing interactions.
+3.5. Gate Blocks
+Our gate blocks will be deﬁned in the following way. Given a description of some circuit
+using phase and single qubit gates on m qubits, partition the gates into operations that
+can be done simultaneously. If the circuit is on four qubits and the ﬁrst gates are an x
+gate on the ﬁrst qubit, a controlled phase gate on qubits 2 and 3 and a z gate on qubit
+4, we would group these operations together, since they can be done simultaneously.
+Our ﬁrst gate block then would consist of these virtual operations on the rails (see
+ﬁg. 3a). Immediately after this, place the second group of simultaneous operations,
+block 2 ﬁg. 3b, and proceed until the entire circuit has been applied.
+By varying Φ we can have the gates discussed implement encoded eiθX, eiθZ, and
+eiθ(Z+ 1
+2 I)⊗(Z+ 1
+2 I) operations for any θ. We can therefore accomplish universal computing
+
+
+[PDF PAGE 9]
+Time Independent Universal Computing with Spin Chains
+9
+(a) Block 1: the ﬁrst group of operations
+(b) The composition of two blocks
+Figure 3: Gate Blocks
+in this way.
+4. Description of Bounds
+In this section we will provide a statement of our bounds, as well as a brief description
+of our strategy for obtaining them. Formal proofs can be found in the appendix.
+As was mentioned already, there are three aspects of our scheme to worry about.
+The ﬁrst is that our packets are designed to be dispersion free up to second order, but
+still do in fact have some small higher order dispersion. In our ﬁnal scaling, we will take
+∆p ≈N 2/3. Since the full range of p is {0, ..., N −1} in the limit of large N, the spread
+in momentum will be a vanishingly small fraction of the allowed values of p. So, in the
+limit of large N we expect the group velocity to get closer and closer to being constant,
+and thus the packets to get closer and closer to being dispersion free. The bound we
+obtain is:
+Theorem 4.1 (Dispersion Result). Given a single ring with nearest neighbor XY
+couplings H1
+ring = 2
+N−1
+X
+j=0
+XjXj+1 + YjYj+1. Let U2t translate the the packets a distance
+2t (time multiplied by the group velocity of the packet). Then if |ψ⟩is a wavepacket
+centered at x0 in x space and p0 = N/4 in p space,
+|ψ⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+we have:
+(e−iHringt −U2t) |ψ⟩
+ = O
+t∆p3
+N 3
+
+
+
+[PDF PAGE 10]
+Time Independent Universal Computing with Spin Chains
+10
+We can see from this result that if the packet has a spread N 2/3−ε in momentum
+space (N 1/3+ε in x space), the packet will make it all the way around the chain with
+vanishingly small dispersion in the limit of large N. If ∆p = N 2/3−ε and the packet
+completes a revolution of the chain (2t = N), then the packet is dispersion free up to
+an error O
+
+(N2/3−ε)3
+N3
+
+= O
+1
+N3ε
+
+. We will need the following theorem proven in [22]
+and [16] to extend this analysis to multiple chains:
+Theorem 4.2 (Linear Propagation of Error). Let U1, ..., Un and V1, ..., Vn be unitary
+operators. Then for any |ψ⟩,
+
+
+ 1
+Y
+i=n
+Ui −
+1
+Y
+i=n
+Vi
+!
+|ψ⟩
+
+ ≤
+n
+X
+j=1
+
+(Uj −Vj)
+1
+Y
+i=j−1
+Ui |ψ⟩
+
+
+(17)
+Using the two above theorems, we can ﬁnd the eﬀect of dispersion on m rings.
+Corollary 4.1. Suppose that we have m rings with Hamiltonian Hm
+ring and a tensor
+product |ψ⟩of m packets all centered at some position x0 on the rings. Suppose p0 = N/4
+for each packet and let U2t be the unitary that translates all the packets a distance 2t.
+Then we have that,
+e−iHm
+ringt −U2t
+
+|ψ⟩
+ = O
+mt∆p3
+N 3
+
+(18)
+This easily extends to a superposition in the dual rail encoding. In this case exactly the
+same scaling holds with Hm
+ring replaced with H2m
+ring
+The next important bound concerns the “transient” regime, where a superposition
+of packets is entering or leaving a gate. In this regime, a packet is not really localized
+within any particular gate block. Formally, we treat this situation by showing that we
+can ignore these interactions. If the gate strength is weak enough, we can translate the
+packets from outside to inside the gate without picking up much error. Note that by
+skipping over a portion of the gate, we are losing out on some of the phase implemented
+by that particular gate block. However, the error associated with the lost phase is the
+same order as the error accumulated from skipping over the transient region. As a result,
+it will be negligible in the ﬁnal scaling (see appendix). For the analysis, we employ a
+sensitivity result [21].
+Theorem 4.3 (Matrix Exponential). Let A and E be skew Hermitian complex matrices,
+and let t be a real scalar. It holds that:
+e(A+E)t −eAt ≤||E||te||E||t
+(19)
+where the norm used is the standard operator norm (largest eigenvalue)
+The result we obtain is:
+Corollary 4.2 (Bound for Transient Regime). Let H2m
+ring be the ring Hamiltonian, and
+let ˆH be the gate Hamiltonian. Then if |ψ⟩is a superposition of packets in the dual rail
+encoding, it holds that:
+
+
+
+e−i(H2m
+ring+ ˆH)t −U2t
+
+|ψ⟩
+
+ = O
+
+mtΦ + mt∆p3
+N 3
+
+(20)
+
+
+[PDF PAGE 11]
+Time Independent Universal Computing with Spin Chains
+11
+Proof. see appendix.
+The main result of this paper is an error bound on the gates themselves.
+We
+show that, up to some approximation, the gates translate the packets, as well as add
+a phase. We show this by approximating the circuit Hamiltonian with a Trotterized
+Hamiltonian [23], and bound each of the elements in the Trotterization that correspond
+to gates that are “far away” from the packets. With only the remaining (current) gates
+left, we can again approximate with a Trotterization and show that the Hamiltonian
+eﬀectively translates the packets and adds a phase. The main result is:
+Theorem 4.4. Suppose we have a superposition of packets localized inside some gate
+block. Suppose the packets remain localized to a distance d for all 2t′ such that 0 ≤2t′ ≤
+2t. Suppose in addition to the current gates, there are k = O(poly(N)) additional gates
+corresponding to gates before or after the current ones with Hamiltonians H1, H2, ...,
+Hk. Then for suﬃciently high degree polynomials n(N) = N q1 and n′(N) = N q2:
+e−i(Hcurrent+H1+...+Hk)t −U p
+2t
+
+|ψ⟩
+ = O
+
+poly(N)e−
+d2
+2∆x2 +
+(21)
+mt∆p3
+N 3
++ m2t2
+nn′ + t2m2
+n′
+
+(22)
+Proof. See appendix
+Note that the dominant term is the mt∆p3
+N3
+dispersion. Essentially we show that for
+localized packets, we can completely ignore the terms that are far away from the packet
+center.
+5. Circuit Error Bound
+The total error scaling from the whole circuit must be analyzed.
+In each step,
+Theorem 4.2 will be implicitly applied. Suppose there are two adjacent gate blocks,
+and the ﬁrst one applies a unitary (phases on some basis) on the encoded information
+and a translation across the gate up to an error e1, while the other one applies a unitary
+and a translation up to e2. Then, the combination of the gate blocks applies a the net
+unitary and the full translation, up to an error e1 + e2 according to Theorem 4.2.
+The basic strategy is as follows. We will initialize our packets outside the ﬁrst gate
+block, some distance Θ(d) away from the entrance. We will then use the transient bound
+to move the packets a distance Θ(d) inside the gate block. Next, we will use our Trotter
+bound to show that the packets approximately propagate through the gate region and
+pick up the appropriate phase. From here, we will use the transient bound to translate
+the packets into the next block and repeat.
+There are several important parameters that need to be speciﬁed in our analysis.
+Let the length of the packets be Θ(N 1/3+ε), the truncation length d = Θ(N 1/3+ε1), the
+Trotterization n, and the length of the gate Θ(N 1/3+ε2). In order for our analysis to
+make sense, it must be true that ε < ε1 < ε2, since the packet must ﬁt inside the
+truncated region. It will be argued that sections of the size of the truncation region can
+
+
+[PDF PAGE 12]
+Time Independent Universal Computing with Spin Chains
+12
+Figure 4: Relevant Length Scales
+be ignored, so it must be that ε1 < ε2 otherwise we would be arguing that our gates can
+be ignored. In the scaling analysis, let Φ = Θ
+1
+N1/3+ε2
+
+, for reasons already discussed.
+We will apply the transient bound over an interval O(N 1/3+ε1) at most O(g) times.
+The Trotter bound is needed once per gate. The time interval (assuming the gate is
+O(N 1/3+ε2) long) is O(N 1/3+ε2), and we will need it O(g) times as well. Assuming n and
+n′ are large enough polynomials is N, we can ignore terms with denominator n and n′.
+O
+
+poly(N)e−
+d2
+2∆x2 + N 1/3+ε2mg∆p3
+N 3
++ mgN 1/3+ε1Φ + mgN 1/3+ε1∆p3
+N 3
+
+(23)
+Since we are assuming that ε1 > ε, the ﬁrst term will be exponentially small,
+independent of how big the polynomial in front of it is.
+Once we substitute Φ =
+Θ
+1
+N1/3+ε2
+
+, the remaining terms are:
+O
+
+mg
+N 2/3+3ε−ε2 +
+mg
+N ε2−ε1
+
+(24)
+The best scaling with respect to both m and g is easily seen to be is obtained when
+ε = 0, ε1 > 0 and ε2 = 1/3. In this case, we can obtain error O
+
+1
+(mg)δ/3−ε1
+
+with
+N = Ω(m3+δg3+δ) for any δ > 0.
+6. Conclusion
+There are a number of features to notice in our scheme. First, note from our bounds
+that we are eﬀectively only limited by the dispersion of the packets. It is conceivable
+that if we choose waveforms with even less dispersion that the result could be improved.
+Second, there is a close analogy between our scheme and standard optical quantum
+computing approaches [24]. Our CPHASE gate is eﬀectively a nonlinear material that
+adds phase onto the overall quantum state if two photons are present. We even use dual
+rail encoding, which is standard in many of these optical schemes.
+We have provided a scheme for universal quantum computation using spin chains.
+Given any quantum circuit written as single qubit and CPHASE gates, we have
+
+
+[PDF PAGE 13]
+Time Independent Universal Computing with Spin Chains
+13
+provided a time independent Hamiltonian that simulates the circuit, with asymptotically
+negligible error.
+In contrast to other known schemes [16], we use weak gates that
+slowly eﬀect our propagating packets over a long period of time. This allows a simple
+perturbative analysis to succeed in analyzing the error scaling.
+It would be interesting to analyze the scattering of our Gaussian packets. If we could
+scatter the packets oﬀone another to implement a controlled phase, we would be able to
+use our scheme as a universal quantum computer without resorting to our complicated
+CPHASE gates. If our analysis carried through, we could explicitly demonstrate better
+scaling for universal computation using multiparticle quantum walks.
+Of independent interest is the approximate Heisenberg relation,
+and the
+approximately dispersion free result. While these concepts have been noted by other
+authors [7,19], we have provided a powerful new application for them. These may allow
+for the construction of other interesting schemes using propagating Gaussian packets on
+qubit rings.
+References
+[1] Bayat A and Bose S 2010 Phys. Rev. A 81(1) 012304 URL http://link.aps.org/doi/10.1103/
+PhysRevA.81.012304
+[2] Benjamin S C 2001 Phys. Rev. A 64(5) 054303 URL http://link.aps.org/doi/10.1103/
+PhysRevA.64.054303
+[3] Burgarth D and Bose S 2005 New Journal of Physics 7 135 URL http://stacks.iop.org/
+1367-2630/7/i=1/a=135
+[4] Burgarth D and Bose S 2005 Phys. Rev. A 71(5) 052315 URL http://link.aps.org/doi/10.
+1103/PhysRevA.71.052315
+[5] Fitzsimons J and Twamley J 2006 Phys. Rev. Lett. 97(9) 090502 URL http://link.aps.org/
+doi/10.1103/PhysRevLett.97.090502
+[6] Gong J and Brumer P 2007 Phys. Rev. A 75(3) 032331 URL http://link.aps.org/doi/10.
+1103/PhysRevA.75.032331
+[7] Osborne T J and Linden N 2004 Phys. Rev. A 69(5) 052315 URL http://link.aps.org/doi/
+10.1103/PhysRevA.69.052315
+[8] Wójcik A, Łuczak T, Kurzyński P, Grudka A, Gdala T and Bednarska M 2005 Phys. Rev. A 72(3)
+034303 URL http://link.aps.org/doi/10.1103/PhysRevA.72.034303
+[9] Christandl M, Datta N, Ekert A and Landahl A J 2004 Phys. Rev. Lett. 92(18) 187902 URL
+http://link.aps.org/doi/10.1103/PhysRevLett.92.187902
+[10] Kosaka H, Shigyou H, Mitsumori Y, Rikitake Y, Imamura H, Kutsuwa T, Arai K and Edamatsu K
+2008 Phys. Rev. Lett. 100(9) 096602 URL http://link.aps.org/doi/10.1103/PhysRevLett.
+100.096602
+[11] Burgarth D, Giovannetti V and Bose S 2007 Phys. Rev. A 75(6) 062327 URL http://link.aps.
+org/doi/10.1103/PhysRevA.75.062327
+[12] Bose
+S
+2007
+Contemporary
+Physics
+48
+13–30
+(Preprint
+http://dx.doi.org/10.1080/
+00107510701342313) URL http://dx.doi.org/10.1080/00107510701342313
+[13] Burgarth D, Bose S, Bruder C and Giovannetti V 2009 Phys. Rev. A 79(6) 060305 URL
+http://link.aps.org/doi/10.1103/PhysRevA.79.060305
+[14] Burgarth D, Maruyama K, Murphy M, Montangero S, Calarco T, Nori F and Plenio M B 2010
+Phys. Rev. A 81(4) 040303 URL http://link.aps.org/doi/10.1103/PhysRevA.81.040303
+[15] Kempe J and Whaley K B 2002 Phys. Rev. A 65(5) 052330 URL http://link.aps.org/doi/10.
+1103/PhysRevA.65.052330
+
+
+[PDF PAGE 14]
+Time Independent Universal Computing with Spin Chains
+14
+[16] Childs A M, Gosset D and Webb Z 2013 Science 339 791–794 (Preprint http://www.sciencemag.
+org/content/339/6121/791.full.pdf)
+URL
+http://www.sciencemag.org/content/339/
+6121/791.abstract
+[17] Janzing D 2007 Phys. Rev. A 75(1) 012307 URL http://link.aps.org/doi/10.1103/PhysRevA.
+75.012307
+[18] Bethe H 1931 Zeitschrift für Physik 71 205–226 ISSN 0044-3328 URL http://dx.doi.org/10.
+1007/BF01341708
+[19] Cotfas N and Dragoman D 2012 Journal of Physics A: Mathematical and Theoretical 45 425305
+URL http://stacks.iop.org/1751-8121/45/i=42/a=425305
+[20] Nielsen M A and Chuang I L 2011 Quantum Computation and Quantum Information:
+10th
+Anniversary Edition 10th ed (Cambridge University Press) ISBN 9781107002173
+[21] Loan C V 1977 SIAM Journal on Numerical Analysis 14 971–981 (Preprint http://dx.doi.org/
+10.1137/0714065) URL http://dx.doi.org/10.1137/0714065
+[22] Kitaev A Y, Shen A H and Vyalyi M N 2002 Classical and Quantum Computation (Graduate
+Studies in Mathematics) (Amer Mathematical Society) ISBN 9780821832295
+[23] Lloyd
+S
+1996
+Science
+273
+1073–1078
+(Preprint
+http://www.sciencemag.org/content/
+273/5278/1073.full.pdf)
+URL
+http://www.sciencemag.org/content/273/5278/1073.
+abstract
+[24] Ralph T and Pryde G (Preprint arXiv:1103.6071)
+[25] Cooley J, Lewis P and Welch P 1969 Audio and Electroacoustics, IEEE Transactions on 17 77–85
+ISSN 0018-9278
+[26] Kato T 1995 Perturbation Theory for Linear Operators (Classics in Mathematics) 2nd ed
+(Springer) ISBN 9783540586616
+[27] Chase B A and Landahl A J (Preprint arXiv:0802.1207)
+[28] Cappellaro P, Viola L and Ramanathan C 2011 Phys. Rev. A 83(3) 032304 URL http://link.
+aps.org/doi/10.1103/PhysRevA.83.032304
+[29] Bao N, Hayden P, Salton G and Thomas N 2015 New Journal of Physics 17 093028 URL
+http://stacks.iop.org/1367-2630/17/i=9/a=093028
+[30] Lloyd S and Terhal B (Preprint arXiv:1509.01278)
+Appendix
+The appendix will be structured as follows. In section section 6.1 we will go over the
+basic theorems and deﬁnitions needed for our bounds. These are all well known theorems
+already, we are merely stating them for convenience and completeness.
+section 6.2
+contains a number of useful properties of the Gaussian packets we have deﬁned. Namely,
+we show that they satisfy a discrete approximate Heisenberg relation, and that they are
+approximately normalized. section 6.3 will cover our dispersion results. In this section
+we prove some of the theorems of the paper, using mostly theorems from section 6.1.
+In section 6.4 we will leverage our dispersion result, and the well known technique of
+Trotterization to get our ﬁnal bounds.
+6.1. Basic Theory
+6.1.1. Conventions
+It is important to start with a few conventions that will be followed throughout this
+paper. We will always use the standard 2-norm for vectors (|| |ψ⟩|| =
+p
+⟨ψ|ψ⟩), and
+
+
+[PDF PAGE 15]
+Time Independent Universal Computing with Spin Chains
+15
+the standard operator norm for matrices:
+||A|| = max
+|ψ⟩∈Cn
+||A |ψ⟩||
+|| |ψ⟩||
+(25)
+If A maps a particular subspace W to itself, we can deﬁne
+||A||W = max
+|ψ⟩∈W
+||A |ψ⟩||
+|| |ψ⟩||
+(26)
+It is clear that each operator norm is compatible with the 2-norm. In other words,
+||A |ψ⟩|| ≤||A|| || |ψ⟩||
+and if |ψ⟩∈W
+||A |ψ⟩|| ≤||A||W || |ψ⟩||
+6.1.2. Well Known Theorems
+Several theorems will be needed in the proofs that follow. First, we will need a
+simple result bounding the sum of a function deﬁned over a discrete set of values:
+Theorem 6.1. Let f be a positive smooth function deﬁned on R with one global maximum
+fmax and no other local maximum. Then:
+N−1
+X
+j=0
+f(j) ≤
+Z ∞
+−∞
+f(x)dx + fmax
+(27)
+and
+N−1
+X
+j=0
+f(j) ≥
+Z ∞
+−∞
+f(x)dx −
+Z −1
+−∞
+f(x)dx −
+Z ∞
+N
+f(x)dx −fmax
+(28)
+Proof. For the upper bound, let k be the ﬁrst integer such that f(k + 1) < f(k). Write
+the sum as:
+k−1
+X
+j=0
+f(j) +
+N−1
+X
+j=k+1
+f(j) + f(k) =
+k−1
+X
+j=0
+f(j) +
+N−2
+X
+j=k
+f(j + 1) + f(k)
+(29)
+The sum is bounded above by the function, and f(k) ≤fmax so
+≤
+Z ∞
+−∞
+f(x)dx + fmax
+(30)
+For the lower bound, let k be deﬁned similarly.
+N−1
+X
+j=0
+f(j) =
+k−1
+X
+j=−1
+f(j + 1) +
+N−1
+X
+j=k
+f(j) + fmax −fmax
+(31)
+The sum combined with fmax must be greater than the integral of the function, minus
+the tails, so we have the desired inequality.
+
+
+[PDF PAGE 16]
+Time Independent Universal Computing with Spin Chains
+16
+Figure 5: Upper Bound
+Figure 6: Lower Bound
+We will use this theorem to bound the dispersion present when our packets propagate
+around the chain in section 6.3.
+The following simple theorem will be an important tool in much of our analysis. It
+can be used to bound the superposition over orthogonal quantum states, when a bound
+on each basis state is known.
+Theorem 6.2. Let {|xi⟩} be a set of states, containing p elements, with the same norm.
+Let ⟨xi|xj⟩≤δije2.
+Then if P
+j |βj|2 = 1 we have:
+
+
+X
+j
+βj |xj⟩
+
+ ≤e
+(32)
+Proof.
+ X
+k
+β∗
+k ⟨xk|
+! X
+j
+βj |xj⟩
+!
+≤
+X
+k
+|βk|2e2 = e2
+(33)
+The most important concept for us is the so called linear propagation of error. It
+is used repeatedly in almost every theorem in this paper:
+Theorem 6.3 (Linear Propagation of Error). Let U1, ..., Un and V1, ..., Vn be unitary
+operators. Then for any |ψ⟩,
+
+
+ 1
+Y
+i=n
+Ui −
+1
+Y
+i=n
+Vi
+!
+|ψ⟩
+
+ ≤
+n
+X
+j=1
+
+(Uj −Vj)
+1
+Y
+i=j−1
+Ui |ψ⟩
+
+
+(34)
+Proof of this can be found in [16,22]. The following sensitivity result will be useful in
+the transient regime:
+
+
+[PDF PAGE 17]
+Time Independent Universal Computing with Spin Chains
+17
+Theorem 6.4 (Matrix Exponential). Let A and E be skew Hermitian complex matrices,
+and let t be a real scalar. It holds that:
+e(A+E)t −eAt ≤||E||te||E||t
+(35)
+Proof. Found in [26] and [21]
+We will make heavy use of the ﬁnite Fourier transform, as it provides a link between
+the position and momentum bases for states in the discrete Hilbert space. Given some
+N periodic sequence {Ax | x ∈[0, N −1]}, we deﬁne its discrete ﬁnite Fourier transform
+as another N periodic sequence ap = F[A](p) satisfying:
+ap = F[A](p) =
+1
+√
+N
+N−1
+X
+x=0
+Axe−2πipx
+N
+(36)
+This transformation acts as a bijection between x sequences and p sequences, the inverse
+can be written as:
+Ax = F−1[a](x) =
+1
+√
+N
+N−1
+X
+p=0
+ape
+2πipx
+N
+(37)
+For us, this transformation is important because it provides a way to express a
+particular quantum state in either the position (|x⟩) or the momentum basis (|p⟩m). If
+we suppose that a particular quantum state has some expression in terms of either basis:
+|ψ⟩=
+N−1
+X
+x=0
+Ax |x⟩=
+N−1
+X
+p=0
+ap |p⟩m
+(38)
+then we can see that the coeﬃcients are related by a discrete Fourier transform. If we
+take the inner product of either side with ⟨p′|m for some ﬁxed p′, then we can derive
+eq. (36). If we instead take ⟨x′| for some ﬁxed x′, then we can derive eq. (37).
+6.1.3. Deﬁnitions
+Our proposed scheme takes place in the dual rail subspace V . Suppose the rails are listed
+bit by bit, always starting with the rail corresponding to the 0th bit: 01110212...0m1m.
+The dual rail subspace V is then the span of all the basis states that are consistent with
+the dual rail encoding. So each pair of rails has exactly one excitation, either on the 0
+rail or on the 1 rail. We would write one of these states as |ψ0
+1⟩|ψ1
+1⟩|ψ0
+2⟩|ψ1
+2⟩... |ψ0
+m⟩|ψ1
+m⟩
+where either |ψ0
+j⟩= |x⟩and |ψ⟩= |vac⟩or |ψ0
+j⟩= |vac⟩and |ψ1
+j⟩= |x⟩. All of our gates
+will maintain this subspace, and we will start in a superposition of states in this space.
+Operator norms are by default || ||V .
+It is important to describe a relevant basis decomposition, denoted in this paper
+as RBD. At some point we will have a superposition of packets inside a particular gate
+block. Say we have four qubits, and we are performing an X gate on the ﬁrst one, a Z
+gate on the second one, and a CPHASE on the last two. This means that the packets are
+
+
+[PDF PAGE 18]
+Time Independent Universal Computing with Spin Chains
+18
+well localized inside a gate block that is implementing these operations on the respective
+qubits. The RBD is a way to write our superposition of packets:
+|ψ⟩=
+X
+i
+ci |ψi⟩
+(39)
+such that each |ψi⟩is diagonal given the current gates. In other words, of the current
+gates were extended to the whole chain, and the other gates were removed, then each
+|ψi⟩would be some set of packets that move around our qubit rings and acquire a phase.
+In the case we are considering, this basis would include the encoded state |+⟩|0⟩|1⟩|1⟩,
+which would have the form:
+
+|packet⟩|vac⟩+ |vac⟩|packet⟩
+
+|packet⟩|vac⟩
+
+|vac⟩|packet⟩
+
+|vac⟩|packet⟩
+
+(40)
+The X gate would add some phase to this state per unit time, as well as the CPHASE
+gate.
+We will also need to make use of the standard computational basis decomposition
+(CBD). In this case we are merely writing the state |ψ⟩as some superposition over the
+encoded computational basis. We will write |ψ⟩= P
+i ci |ψi⟩where each |ψi⟩is some
+encoded computational basis state. In our running example, one such state would be
+the encoded |0⟩|1⟩|1⟩|0⟩state, which would have the form:
+
+|packet⟩|vac⟩
+
+|vac⟩|packet⟩
+
+|vac⟩|packet⟩
+
+|packet⟩|vac⟩
+
+(41)
+One more concept is needed before we begin our proofs. We need to describe what
+it means for our set of packets to be localized to at least a distance d. Suppose we have
+some undesirable interaction Hamiltonian Hb. Hb will be made up of 1-local and 2-
+local interactions corresponding to one and two qubit gates (CPHASE). We say the our
+superposition of packets “is localized to at least a distance d” if all 1-local interactions are
+at least a distance d from our packets (mod N), and all undesirable 2-local interactions
+have at least one leg that is a distance d away from our packets (mod N).
+Said more explicitly, suppose the packets are centered at some position x0 ∈
+[0, N −1] on the chain, suppose that the undesirable 1-local interactions occur at some
+positions A = {xi} ∈[0, N−1] on the chain, and that the undesirable 2-local interactions
+occur at positions B = {(xi, xj)} ∈[0, N −1] on the chain. The packets “being localized
+to a distance d” means that for all xi ∈A,
+xi −x0 mod N ≥d
+(42)
+and that for all (xi, xj) ∈B
+(xi −x0) mod N ≥d
+or
+(xj −x0) mod N ≥d
+(43)
+6.2. Uncertainty and Normalization
+6.2.1. Approximate Heisenberg
+We can switch back and forth between the momentum representation and the position
+representation for our packets and will show not that they are exactly the same, but
+
+
+[PDF PAGE 19]
+Time Independent Universal Computing with Spin Chains
+19
+that they are the same up to an exponentially small error. Suppose at some point in
+the computation there is some superposition of packets in the dual rail encoding and
+that they are written in the CBD. We show below that a particular basis state in the
+decomposition can be switched from momentum to position or vice versa, and then use
+Theorem 6.2 from the last section to apply this to the whole superposition. To prove
+that we can switch between position and momentum, we will ﬁrst show that we can
+switch for a single packet on a single qubit ring. Then, we can extend this to a tensor
+product of m packets and ﬁnally to a superposition in the dual rail encoding. Note that
+the following proof is contained in [19]. We provide it here for completeness, and to
+verify that the proof still works for the case we are interested in (x0 ∈[0, N −1] a real
+number and p0 = N/4 an integer).
+Theorem 6.5. Let p0 = N/4 (an integer), and let x0 ∈[0, N −1] (not necessarily an
+integer). Let ∆x, ∆p be positive real numbers satisfying 2π∆x∆p = N. It holds (up to
+exponentially small in N corrections) that:
+1
+p
+∆x√π
+N−1
+X
+x=0
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+|x⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+(44)
+Proof. Deﬁne G∆x : R →C such that
+G∆x(x) =
+1
+p
+∆x√π
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+(45)
+G∆x has a Fourier expansion
+G∆x(x) =
+∞
+X
+l=−∞
+ale
+2πilx
+N
+(46)
+with
+al = 1
+N
+Z N
+0
+e
+−2πilx
+N
+1
+p
+∆x√π
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+dx =
+(47)
+1
+N
+p
+∆x√π
+Z N
+0
+e−2πilx
+N
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+dx
+(48)
+Using the substitution t = αN + x −x0.
+=
+1
+N
+p
+∆x√π
+∞
+X
+α=−∞
+Z (α+1)N−x0
+αN−x0
+e−2πil(t−αN+x0)
+N
+e
+2πip0(t−αN+x0)
+N
+e−
+t2
+2∆x2 dt (49)
+=
+1
+N
+p
+∆x√π
+∞
+X
+α=−∞
+Z (α+1)N−x0
+αN−x0
+e−2πilt
+N e2πilαe−2πilx0
+N
+e
+2πip0t
+N
+e−2πip0αe
+2πip0x0
+N
+e−
+t2
+2∆x2 dt
+(50)
+
+
+[PDF PAGE 20]
+Time Independent Universal Computing with Spin Chains
+20
+Assuming p0 = N/4 is an integer,
+=
+1
+N
+p
+∆x√π
+e−2πilx0
+N
+e
+2πip0x0
+N
+Z ∞
+−∞
+e
+2πi(l−p0)t
+N
+e−
+t2
+2∆x2 dt
+(51)
+Up to an irrelevant global phase
+=
+√
+2π∆x
+N
+p
+∆x√π
+e−2πilx0
+N
+e
+−(l−p0)2
+2∆p2
+=
+1
+√
+N
+1
+p
+∆p√π
+e
+−2πilx0
+N
+e
+−(l−p0)2
+2∆p2
+(52)
+So, G∆x(x) has the form
+1
+√
+N
+1
+p
+∆p√π
+∞
+X
+l=−∞
+e
+2πilx
+N e
+−2πilx0
+N
+e
+−(l−p0)2
+2∆p2
+(53)
+when x is an integer, this can be rewritten as:
+G∆x(x) =
+1
+√
+N
+N−1
+X
+p=0
+e
+2πipx
+N
+1
+p
+∆p√π
+∞
+X
+α=−∞
+e−2πiαx0e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+(54)
+We have found a p sequence for which the inverse Fourier transform is the x sequence.
+They must be Fourier pairs.
+Note that we have proven
+1
+p
+∆x√π
+N−1
+X
+x=0
+∞
+X
+α=−∞
+e
+2πip0x
+N
+e−(αN+x−x0)2
+2∆x2
+|x⟩=
+(55)
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πiαx0e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+(56)
+The state on the right hand side is exponentially close to the state given in the statement
+of the theorem‡.
+The only diﬀerence is the extra phase e−2πiαx0, but the |α| ≥1
+contributions are exponentially small since p0 = N/4, and ∆p ∼N 1−ε.
+For more
+explicit examples see our normalization proof below.
+With the analysis of a single packet on a single rail in hand, we can show the
+analogous result for a tensor product on some set of rails. Let |ψx⟩be the position
+packet, and let |ψp⟩be the momentum packet, and suppose we are interested in the
+tensor of m packets: |ψx
+1⟩|ψx
+2⟩... |ψx
+m⟩. We know that |ψx⟩= |ψp⟩+ |ε⟩for ε = ⟨ε|ε⟩
+exponentially small in N. We are interested in bounding:
+|||ψx
+1⟩|ψx
+2⟩... |ψx
+m⟩−|ψp
+1⟩|ψp
+2⟩... |ψp
+m⟩|| =
+(57)
+||(|ψp
+1⟩+ |ε⟩)(|ψp
+2⟩+ |ε⟩)...(|ψp
+m⟩+ |ε⟩) −|ψp
+1⟩|ψp
+2⟩... |ψp
+m⟩||
+(58)
+Using the triangle inequality,
+≤
+m
+X
+k=1
+ 
+m
+k
+!q
+⟨ψp|ψp⟩m−k εk
+(59)
+‡ Note that if x0 was an integer, we would have exact equality. However, we need the proof to be valid
+when x0 is not an integer, since we will move our packets in very small steps.
+
+
+[PDF PAGE 21]
+Time Independent Universal Computing with Spin Chains
+21
+Given the results of the following section, this sum is exponentially small.
+So far it has been shown that the tensor product of m packets can be switched from
+momentum to position or vice versa while only incurring an exponentially small error.
+We need to extend this to the case where we have a superposition over sets of packets
+in the dual rail encoding. Suppose we have some state written in the CBD:
+|ψ⟩=
+X
+j
+cj |ψj⟩
+(60)
+where each |ψ⟩is the tensor product of m packets on their appropriate rails and
+m vacuum states.
+|ψp
+j⟩is used to denote a tensor of packets in the momentum
+representation, and |ψx
+j ⟩denotes a tensor of these packets in the position representation.
+We wish to bound the diﬀerence
+
+
+X
+i
+ci (|ψx
+i ⟩−|ψp
+i ⟩)
+
+ =
+
+
+X
+i
+ci |ηi⟩
+
+
+(61)
+Observe that ⟨ηi|ηj⟩≤δij ⟨ηi|ηi⟩, so we can use Theorem 6.2, and bound the sum with
+a bound on each state in the sum. We have already shown ⟨ηi|ηi⟩is exponentially small
+with N, so the sum must also be exponentially small with N.
+So, we have that a
+superposition of Gaussian packets in the dual rail encoding written in the position basis
+is exponentially close to that same Gaussian written in the momentum basis assuming
+2π∆x∆p = N
+6.2.2. Approximate Normalization
+Next we demonstrate that our packets so deﬁned
+are very close to being normalized in the limit of large N. This is important, since
+the real physical state will be normalized, and we will work mostly with slightly
+unnormalized states. First we will show that a single packet on a single rail is very
+nearly normalized, next that a tensor product of such packets is nearly normalized, and
+ﬁnally that a superposition must also be nearly normalized.
+Theorem 6.6 (Approximate Normalization). Deﬁne
+|ψ⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πix0p
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩
+(62)
+We have that,
+| ⟨ψ|ψ⟩| = 1 + O
+ 1
+∆p
+
+(63)
+Proof.
+⟨ψ|ψ⟩=
+1
+∆p√π
+ N−1
+X
+p′=0
+∞
+X
+α′=−∞
+e
+2πix0p
+N
+e
+−(α′N+p−p0)2
+2∆p2
+⟨p′|
+! N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πix0p
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩
+!
+(64)
+
+
+[PDF PAGE 22]
+Time Independent Universal Computing with Spin Chains
+22
+=
+1
+∆p√π
+∞
+X
+α,α′=−∞
+N−1
+X
+p=0
+e
+−(αN+p−p0)2
+2∆p2
+e
+−(α′N+p−p0)2
+2∆p2
+(65)
+=
+1
+∆p√π
+ N−1
+X
+p=0
+e
+−(p−p0)2
+∆p2
++ 2
+N−1
+X
+p=0
+e
+−(N+p−p0)2
+2∆p2
+e
+−(p−p0)2
+2∆p2
++
+X
+|α|,|α′|≥1
+N−1
+X
+p=0
+e
+−(αN+p−p0)2
+2∆p2
+e
+−(α′N+p−p0)2
+2∆p2
+
+(66)
+We assume that p0 = N/4. Then,
+≤
+1
+∆p√π
+ N−1
+X
+p=0
+e
+−(p−p0)2
+∆p2
++ 2e
+−
+9
+16 N2
+2∆p2
+N−1
+X
+p=0
+e
+−(p−p0)2
+2∆p2
++
+X
+|α|,|α′|≥1
+N−1
+X
+p=0
+e
+−(αN+p−p0)2
+2∆p2
+e
+−(α′N+p−p0)2
+2∆p2
+
+(67)
+Assuming ∆p = N 1−ε the second and third terms are exponentially small, and can be
+ignored. Dropping the small terms and applying Theorem 6.1, we get to leading order
+≤
+1
+∆p√π
+
+1 +
+Z ∞
+−∞
+e
+−(p−p0)2
+∆p2 dp
+
+≤1 +
+1
+∆p√π
+(68)
+To derive the lower bound, we start from equation (67), drop the small terms and
+apply Theorem 6.1 to get:
+⟨ψ|ψ⟩≥
+1
+∆p√π
+
+∆p√π −
+Z −1
+−∞
+e
+−(p−p0)2
+∆p2 dp +
+Z ∞
+N
+e
+−(p−p0)2
+∆p2 dp −1
+
+(69)
+We can upper bound the two integrals (which corresponds to a lower bound on the
+negative integrals) and show that they are exponentially small with the observation
+that e−x2 ≤e−x. The ﬁnal asymptotic bound is
+⟨ψ|ψ⟩≥1 −
+1
+∆p√π
+(70)
+So, now suppose we have a tensor of packets in the momentum representation. We
+can write the normalization constant (up to exponentially small corrections) as:
+p
+⟨ψp
+1|ψp
+1⟩⟨ψp
+2|ψp
+2⟩... ⟨ψp
+m|ψp
+m⟩≤
+s
+1 + 1
+∆p
+m
+=
+
+1 +
+m
+X
+k=1
+ 
+m
+k
+!  1
+∆p
+k 1/2
+=
+s
+1 + O
+ m
+∆p
+
+(71)
+In our ﬁnal scaling,
+m
+∆p ≈
+1
+N1/3 so we expect tensor products of these packets to be very
+near normalized.
+
+
+[PDF PAGE 23]
+Time Independent Universal Computing with Spin Chains
+23
+Just as in the last section, one more step is needed.
+We need to check that a
+superposition over tensors of these packets will be nearly normalized. Let us write the
+state in the CBD |ψ⟩= P
+i ci |ψi⟩. Then, if ⟨ψi|ψi⟩is the same for all i and P
+i |ci|2 = 1
+⟨ψ|ψ⟩= ⟨ψi|ψi⟩
+(72)
+so the superposition is oﬀfrom normalization by the same factor that the tensor of
+packets is.
+There is one more important observation one should keep in mind as we continue
+with the proofs. We need to observe that the “translation unitary” is well deﬁned. If we
+look at the states
+|φ1⟩=
+1
+p
+∆p√π
+X
+α,p
+e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+(73)
+and
+|φ2⟩=
+1
+p
+∆p√π
+X
+α,p
+e−2πip(x0+2t)
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+(74)
+it is not hard to see that ⟨φ1|φ1⟩= ⟨φ2|φ2⟩. These states are un-normalized, but have
+the same vector norm. We deﬁne U x0
+2t to be the unitary that moves |φ1⟩to |φ2⟩and maps
+the all spin down vector to itself. One can then expand this unitary to be a unitary
+acting on the full set of states, it does not matter for us what the unitary does to the
+rest of the states. In most of the paper the x0 will not be explicitly written. Note that
+t can very well be a small real number, not necessarily an integer mod N.
+6.3. Dispersion and Transience
+Here we will derive our dispersion bounds. The essential idea is to write our state in
+the momentum basis. In this basis, the ring Hamiltonian is diagonal, so the exact time
+evolution of the quantum state can be described and the energy function can be taylor
+expanded. The ﬁrst order term will lead to translation of the packets, and the higher
+order terms will constitute some remainder whose eﬀect we need to bound.
+We make use of the same type of argument as the previous sections. A single packet
+on a single rail propagates around the chain while only picking up a (polynomially) small
+error, which is extended to multiple chains in the dual rail encoding.
+Theorem 6.7 (Dispersion Result). Given a single ring with nearest neighbor XY
+couplings H1
+ring = 2
+N−1
+X
+j=0
+XjXj+1 + YjYj+1. Let U2t translate the the packets a distance
+2t (time multiplied by the group velocity of the packet). Then if |ψ⟩is a wavepacket
+centered at x0 in x space and p0 = N/4 in p space,
+|ψ⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e−2πipx0
+N
+e
+−(αN+p−p0)2
+2∆p2
+|p⟩m
+
+
+[PDF PAGE 24]
+Time Independent Universal Computing with Spin Chains
+24
+we have:
+(e−iHringt −U2t) |ψ⟩
+ = O
+t∆p3
+N 3
+
+Proof. Let |ψ⟩be a packet centered at x0 in x space and N/4 in p space. Time evolving,
+we get:
+e−iH1
+ringt |ψ⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e
+−(αN+p−p0)2
+2∆p2
+e−i2πpx0
+N
+e−2it cos[ 2πp
+N ] |p⟩
+(75)
+We let ep = p −p0, and expand the energy function around p0 = N/4 to obtain:
+cos
+2πp
+N
+
+= 2π
+N ep −
+2π
+N
+3 1
+3!ep3 +
+2π
+N
+5 1
+5!ep5 −... = 2π
+N ep + R(p)
+(76)
+The state becomes:
+e−iHt |ψ⟩= e−4πitp0
+N
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e
+−(αN+p−p0)2
+2∆p2
+e−i2πp(x0+2t)
+N
+e−2itR(p) |p⟩
+(77)
+If it were not for the remainder term R(p), this would exactly be the translated state
+we are interested in |ψ2t⟩(up to an irrelevant global phase). Subtracting the two gives
+e−iHt |ψ⟩−|ψ2t⟩=
+1
+p
+∆p√π
+N−1
+X
+p=0
+∞
+X
+α=−∞
+e
+−(αN+p−p0)2
+2∆p2
+e−i2πp(x0+2t)
+N
+(e−2itR(p) −1) |p⟩
+(78)
+We want to bound the size of this state and show that it is (polynomially) small. The
+terms with |α| ≥1 are negligible, since they lead to exponentially small contributions.
+Dropping these terms and calculating the norm of this state, we get:
+||U |ψ⟩−|ψt⟩||2 =
+1
+∆p√π
+N−1
+X
+p=0
+e
+−(p−p0)2
+∆p2 (e2itR(p) −1)(e−2itR(p) −1)
+(79)
+=
+1
+∆p√π
+N−1
+X
+p=0
+e
+−(p−p0)2
+∆p2
+sin [tR(p)]2 ≤
+1
+∆p√π
+
+
+⌈N/2⌉
+X
+p=0
+e
+−(p−p0)2
+∆p2
+sin [tR(p)]2 +
+N−1
+X
+p=⌈N/2⌉+1
+e
+−(p−p0)2
+∆p2
+
+
+(80)
+Recall that p0 = N/4, so each term in the second sum can be bounded by e
+−(p−p0)2
+∆p2
+evaluated at N/2. This combined with the fact that sin(θ)2 ≤θ2 gives:
+≤
+1
+∆p√π
+N/2
+X
+p=0
+e
+−(p−p0)2
+∆p2
+[tR(p)]2 +
+N
+2∆p√πe
+−(N/4)2
+∆p2
+(81)
+Assuming ∆p is O(N 1−ε) the second term can be dropped (again it is exponentially
+small). For the ﬁrst sum, observe that R(p) is an alternating convergent series whose
+magnitude (term by term) is decreasing (We split up the sum PN−1
+p=0 into two sums so
+
+
+[PDF PAGE 25]
+Time Independent Universal Computing with Spin Chains
+25
+that we can guarantee that the series is term by term decreasing). So it must be smaller
+in magnitude than its ﬁrst element.
+≤
+1
+∆p√π
+N/2
+X
+p=0
+e
+−(p−p0)2
+∆p2
+"
+t
+2π
+N
+3 1
+3!ep3
+#2
+(82)
+We are summing a positive function. Applying Theorem 6.1 and dropping unimportant
+constants gives:
+≤
+t2
+∆pN 6
+Z ∞
+−∞
+e
+−ep2
+∆p2 ep6dp + ∆p6
+
+=
+t2
+∆pN 6
+
+∆p7 + ∆p6
+(83)
+to leading order
+= t2∆p6
+N 6
+(84)
+Each packet picks up a phase of e−4πi∆tp0
+N
+over a time interval ∆t. In the dual rail
+encoding each basis state is the tensor of m packets, so every state picks up a phase of
+e−4πim∆tp0
+N
+. Overall phase does not eﬀect measurement statistics, so this can be ignored.
+The corollary that extends this result to multiple rails is a simple consequence of
+Theorem 6.3:
+Corollary 6.1. Suppose that we have m rings with Hamiltonian Hm
+ring and a tensor
+product |ψ⟩of m packets all centered at some position x0 on the rings. Suppose p0 = N/4
+for each packet and let U2t be the unitary that translates all the packets a distance 2t.
+Then we have that,
+e−iHm
+ringt −U2t
+
+|ψ⟩
+ = O
+mt∆p3
+N 3
+
+(85)
+Proof. Letting Hj be the nearest neighbor ring Hamiltonian for the jth rail, the full
+Hamiltonian decomposes as Hm
+rings = H1 + ... + Hm. Since [Hi, Hj] = 0, e−i(H1+...+Hm)t =
+e−iH1te−iH2t...e−iHmt. Let Uj translate ring j a distance 2t while acting as identity on the
+others. Then, U2t = U1U2...Um. If we let Vj = e−iHjt then directly applying Theorem 4.2
+we have
+e−iHm
+ringst −U1U2...Um
+
+|ψ⟩
+ = O
+mt∆p3
+N 3
+
+(86)
+The same kind of analysis can be applied to bound the dispersion when we have a
+superposition in the dual rail encoding. Suppose we have such a superposition written
+in the CBD: P
+i ci |ψi⟩. We are interested in bounding:
+X
+i
+ci
+
+e−iH2m
+ringst −U2t
+
+|ψi⟩=
+X
+i
+ci |ηi⟩
+(87)
+Suppose a particular |ψi⟩is supported on some ﬁxed set of rails. Each ring Hamiltonian
+H1
+ring moves excitation to diﬀerent partitions on the rail, but does not move excitations
+
+
+[PDF PAGE 26]
+Time Independent Universal Computing with Spin Chains
+26
+between rails. It follows that e−iH2m
+ringt |ψi⟩is supported on the same set of rails as |ψi⟩.
+Clearly the same property holds for U2t, so we can conclude that ⟨ηi|ηj⟩= 0 when
+i̸ = j. Theorem 6.2 implies that a superposition can be bounded just as a single tensor
+of packets.
+So, we have shown that we can move a superposition of packets around the chain,
+while accruing error at most O
+
+mt∆p3
+N3
+
+. Notice that we could have also included a
+Hamiltonian which commutes with all of the rail Hamiltonians. Say we had a set of
+gates that were extended to the whole chain. Each of the gates would commute with the
+ring Hamiltonian, and, as long as they act on separate rings, they would also commute
+with each other. In this case the resulting time evolution would just be translation and
+phase added to the packets.
+6.3.1. Transient Regime
+As described in the paper, we need bounds on the so called “transient regime”, where our
+packets are not well localized to any particular gate block. We can leverage the fact that
+the the interactions are weak, so if the transient regime is small we expect to see very
+little eﬀect on the packets. For this, we use a result that bounds the matrix exponential
+of a complex Hermitian matrix when we add another small complex Hermitian matrix
+to it. Suppose we have two complex matrices A and E and suppose that E is small (in
+operator norm). Then, the result is that e(A+E)t is very nearly eAt, up to an error of
+O(||E||t). We will need to deﬁne U p
+2t. This is simply the translation unitary, with some
+added phase on the relevant basis states, depending on the current gate.
+Now we will prove our transient bound:
+Corollary 6.2 (Bound for Transient Regime). Let H2m
+ring be the ring Hamiltonian, and
+let ˆH be the gate Hamiltonians. Suppose Φ is the maximum gate strength. Then if |ψ⟩
+is a superposition of packets it holds that:
+
+
+
+e−i(H2m
+ring+ ˆH)t −U p
+2t
+
+|ψ⟩
+
+ = O
+
+mtΦ + +mt∆p3
+N 3
+
+(88)
+Proof. H2m
+ring and ˆH map V →V . Since |ψ⟩is nearly normalized, it holds upto a constant
+multiple that: 
+
+
+e−i(H2m
+ring+ ˆH)t −e−iH2m
+ringt
+|ψ⟩
+
+ ≤
+
+e−i(H2m
+ring+ ˆH)t −e−iH2m
+ringt
+
+V
+(89)
+applying Theorem 4.3 gives ≤|| ˆH||V te|| ˆH||V t
+In order to evaluate || ˆH||V , consider the standard basis for V. These are all spin
+conﬁgurations with exactly one excitation per every set of two rails corresponding to a
+qubit. ˆH is the sum of 1-local and 2-local terms. On any particular basis state |x⟩∈V ,
+at most m of these terms act on |x⟩to produce something that is nonzero. Further, if
+two of these computational basis states are orthogonal before action by ˆH, they will still
+be orthogonal after action by ˆH. We have therefore met the conditions required to apply
+Theorem 6.2 (For two basis states |x⟩and |x′⟩we have that ⟨x′| ˆH† ˆH|x⟩≤(mΦ)2δx,x′)
+and can thus conclude: || ˆH|| ≤mΦ.
+
+
+[PDF PAGE 27]
+Time Independent Universal Computing with Spin Chains
+27
+Applying Theorem 4.3 to eq. (89), up to dispersion, we can ignore the eﬀect of the
+packets entering the gates up to an error of || ˆHt||V = O(Φmt). Applying our previous
+result on dispersion, Corollary 6.1, we get an additional error of
+mt∆p3
+N 3
+=
+mt
+N 1+3ε
+(90)
+Now we need to show that the phase we are ignoring (we are skipping over a portion
+of the gate with width t) is small. Let us write |ψ⟩in the RBD. The lost phase is on
+the order of at most eimtΦ for each of these states, and our error vectors are orthogonal
+so we can apply Theorem 6.2
+||(eimtΦ −1)|| = |sin mtΦ| ≈mtΦ
+(91)
+The lost phase is of the same order as the error calculated using Theorem 4.3.
+6.4. Trotterization
+We will ﬁrst show that a “far away” Hamiltonian produces an exponentially small vector
+when acting on a packet:
+Theorem 6.8. Let |ψ⟩be a superposition of packets in the dual rail encoding on m rails
+located at some ﬁxed position x0. Let H be an “undesireable” Hamiltonian containing
+a polynomial number of interaction terms that are all at least a distance d away.
+Suppose that H is made up of gate interactions described in the paper, and that all
+these interactions have polynomial strength. Then, we have
+||H |ψ⟩|| = O
+
+poly(N)e−
+d2
+2∆x2
+
+(92)
+Proof. Let H = P
+j Hj. Then
+||H |ψ⟩|| ≤
+X
+j
+||Hj |ψ⟩||
+(93)
+There are three cases to consider. Hj must be from an X gate (XX + YY between 0
+and 1 rails), a Z gate (I+Z on a particular 1 rail), or a CPHASE gate ((I+Z)⊗(I+Z)
+between 1 rails). If Hj comes from an X gate, say it is on the ﬁrst qubit, then write the
+superposition in the RBD. Write the state as
+X
+i∈[0,2m−1−1]
+c+,i |+, i⟩+ c−,i |−, i⟩
+(94)
+where {+, −, i} stands for the encodings of these states into packets.
+It is easy to check that ⟨+, i|H†
+jHj|−, i⟩= 0 so we can apply Theorem 6.2 to the
+states {Hj |±, i⟩} and bound the superposition by a bound on each basis state. We can
+write a basis state explicitly as
+"
+1
+p
+∆x√π
+X
+α,x
+e−(αN+x−x0)2
+2∆x2
+e
+2πip0x
+N
+|ex⟩
+#
+⊗...
+(95)
+
+
+[PDF PAGE 28]
+Time Independent Universal Computing with Spin Chains
+28
+where |ex⟩= |x⟩|vac⟩±|vac⟩|x⟩
+√
+2
+Since |ψi⟩is a tensor product of packets which are all nearly normalized,
+||Hj |ψi⟩|| = O
+ 
+
+1
+p
+∆x√π
+X
+α,x
+e−(αN+x−x0)2
+2∆x2
+e
+2πip0x
+N
+Hj |ex⟩
+!
+
+(96)
+Hj |ex⟩will be 0 unless (x −x0) mod N ≥d.
+So, up to exponentially small
+contributions (dropping |α| ≥1), this is
+O
+ ΦN
+√
+∆x
+e−
+d2
+2∆x2
+
+(97)
+The same analysis applies if Hj is from a Z or CPHASE gate. In the Z gate case |ex⟩is
+either |x⟩|vac⟩or |vac⟩|x⟩. In the CPHASE case, (suppose the CPHASE gate is on the
+ﬁrst two qubits), we have to write down the tensor product of two packets:
+"
+1
+p
+∆x√π
+X
+α,x
+e−(αN+x−x0)2
+2∆x2
+e
+2πip0x
+N
+|ex1⟩
+# "
+1
+p
+∆x√π
+X
+α,x
+e−(αN+x−x0)2
+2∆x2
+e
+2πip0x
+N
+|ex2⟩
+#
+...
+(98)
+where each |exi⟩is |x⟩|vac⟩or |vac⟩|x⟩. Then we have that Hj |ex1⟩|ex2⟩is zero unless
+ex1 or ex2 is at least a distance d away.
+The resulting upper bound is the same,
+O
+
+poly(N)e−
+d2
+2∆x2
+
+although this time the polynomial ∼N 2Φ
+Figure 7:
+Packets are localized to
+a distance d for the whole time
+evolution if they do not see any
+interactions in eH
+Now we can proceed to our bounds
+based on Trotterization [23].
+In the
+previous sections we covered how the ring
+Hamiltonians with some gate Hamiltonian
+on top can in eﬀect propagate the packets
+and place some uniform phase on them.
+We assumed that the gate Hamiltonians
+spanned the entire qubit ring. Clearly this
+is not the setup we have in mind. We want
+to have localized gates that implement
+encoded unitaries on our spin chains, and
+we want to send our pulses through a
+number of these gates to implement some
+quantum circuit.
+In this section we will show that our local gates very nearly
+approximate gates that span the entire chain assuming that our packets are well
+localized. We will break up the proof into two separate theorems.
+First we will assume that the packets are localized inside a particular gate block,
+and that there are no other gate blocks. We will then use this result to treat the more
+important case, where the packets are localized inside some gate block, and we are in
+the process of evaluating a quantum circuit.
+
+
+[PDF PAGE 29]
+Time Independent Universal Computing with Spin Chains
+29
+Suppose we have some superposition of packets located at some position x0, and
+suppose they are localized to at least a distance d. We will denote the Hamiltonian
+corresponding only to the current local gates as the “current Hamiltonian” Hcurrent.
+In the following theorem we will make the assumption that the packets remain
+localized to a distance d for 0 ≤2t′ ≤2t. In the proof, we will have some undesirable
+interactions eH. This means that all of the interactions in eH are at least a distance
+d away from x0 + 2t′ where 0 ≤2t′ ≤2t. While the packet is moving, each of the
+“bad” interactions remains at least a distance d away. Let us be more concrete for the
+CPHASE case, since this may be the most confusing part of the result.
+Figure 8: The closest missing interac-
+tion
+Assume there are two encoded qubits,
+and we are implementing a CPHASE
+gate on them.
+Suppose the CPHASE
+gate is set of so that every point on the
+ﬁrst 1 rail is connected to the nearest
+3N 1/3+ε1 points on the second 1 rail. Let
+the packet be localized at some point
+x0 inside the CPHASE gate, suppose x0
+is at least a distance 3N 1/3+ε1 for the
+gate entrance.
+The “closest” missing 2-
+local interaction (the interaction where
+the farthest subsystem is closest to the
+packets) is the interaction between the
+two 1 rails that places the packets exactly
+in the middle (see ﬁgure).
+In this case
+the missing interaction could have length
+3N 1/3+ε1 + 1, so this interaction is at least a distance ∼1.5N 1/3+ε1
+Notice that as the packet traverses the gate, this missing interaction always stays at
+least a distance ∼1.5N 1/3+ε1 from the center of the packets. Each missing interaction
+can be thought of in this way. Each missing interaction must be at least a distance
+1.5N 1/3+ε1 from the packet center at any given time. As one subsystem for the 2-local
+interaction draws closer, the other one moves away. In the following proof, eH will be
+made up of interactions of this form.
+Theorem 6.9. Suppose we have a superposition of packets |ψ⟩over 2m rails inside a
+particular gate block. Suppose that for all 2t′ satisfying 0 ≤2t′ ≤2t, the translated
+packets are localized to at least a distance d (see ﬁg. 7). Deﬁne Hcurrent to be the sum of
+the current gate Hamiltonian and the rail Hamiltonians. Let U p
+2t translate the packets a
+distance 2t, as well as add an appropriate phase given the gate. Then a suﬃciently high
+degree positive polynomial n(N) = N q1:
+e−iHcurrentt −U p
+2t
+
+|ψ⟩
+ = O
+
+poly(N)e−
+d2
+2∆x2 + mt∆p3
+N 3
++ m2t2
+n
+
+(99)
+Proof. Let H be the Hamiltonian obtained when the current gate Hamiltonians are
+
+
+[PDF PAGE 30]
+Time Independent Universal Computing with Spin Chains
+30
+Figure 9: Pictorial representations of the relevant Hamiltonians for the
+proof. In this circuit, we are implenting a CPHASE operation on the ﬁrst
+two registers and an X operation on the last one. Note that the red lines
+are negative interaction terms.
+extended to the whole chain.
+Deﬁne eH so that Hcurrent = H + eH.
+eH contains
+negative correction terms that must be added to produce the actual dynamics (see
+ﬁg. 9). Assuming ||H||V ≥|| eH||V , if we Trotterize n times, it holds that:
+
+
+
+e−i(H+ e
+H)t −
+
+e−iHt/ne−i e
+Ht/nn
+|ψ0⟩
+
+ = O
+t2||H||2
+V e2||H||V t/n
+n
+
+(100)
+H consists of the ring Hamiltonian, and the extended gate Hamiltonians. Hrings has
+eigenvalues 2 cos(2πp
+N ), so ||H2m
+rings||V ≤2m. If n is a large enough degree polynomial,
+e||H||t/n →1, so the above expression is:
+O
+m2t2
+n
+
+(101)
+Now we want to show that this Trotterization applies a phase and translates the
+packets, up to some approximation. We want to bound:
+
+
+
+e−iHt/ne−i e
+Ht/nn
+−U p
+2t
+
+|ψ0⟩
+
+
+(102)
+Let |ψ2t′⟩for 2t′ ≤2t be the same superposition, except translated and with added
+phase appropriate for the current gates. We need bounds on
+
+
+
+e−iHt/n −U p
+2t/n
+
+|ψ2t′⟩
+
+
+(103)
+and on
+
+
+
+e−i e
+Ht/n −I
+
+|ψ2t′⟩
+
+
+(104)
+
+
+[PDF PAGE 31]
+Time Independent Universal Computing with Spin Chains
+31
+The distinction between the momentum basis and the position basis is important
+here. eq. (103) is bounded using the momentum basis, and eq. (104) is bounded in the
+position basis. Each time we switch from one to the other, we will incur some small
+error. However, we will only need to switch n = poly(N) times, so we will only incur
+an exponentially small error.
+First recall that we have already shown that e−iHt/n is exactly U p
+2t/n on relevant
+basis states, up to dispersion (by Theorem 6.7). So, we can write:
+
+
+
+e−iHt/n −U p
+2t/n
+
+|ψ2t′⟩
+
+ = O
+mt∆p3
+nN 3
+
+(105)
+Now we must treat the
+
+(e−i e
+Ht/n −I) |ψ2t′⟩
+
+ term. Suppose that |ψ2t′⟩is written
+in the RBD:
+|ψ⟩=
+X
+i
+ci |ψi⟩
+Once again we can verify that
+⟨ψi|
+
+e−i e
+Ht −I
+† 
+e−i e
+Ht −I
+
+|ψj⟩= 0
+when i̸ = j, so we can bound the superposition with a bound on each relevant
+computational basis state.
+So now suppose that |ψ2t′⟩is a computational basis state, and that it is at least a
+distance d from the interactions in eH. Suppose also that there are | eH| = poly(N) many
+interactions in eH, all with only polynomial strength. We can bound eq. (104):
+
+
+
+e−i e
+Ht/n −I
+
+|ψ2t′⟩
+
+ =
+
+
+∞
+X
+p=1
+[−i eHt/n]p
+p!
+|ψ2t′⟩
+
+ =
+
+
+∞
+X
+p=1
+[−i eHt/n]p
+p!
+|ψ2t′⟩
+
+
+V
+(106)
+≤|| eH |ψ2t′⟩||V
+∞
+X
+p=1
+(t/n)p(|| eH||V )p−1
+p!
+= || eH |ψ2t′⟩||V
+|| eH||V
+∞
+X
+p=1
+(t/n)p(|| eH||V )p
+p!
+(107)
+= || eH |ψ⟩2t′ ||V
+|| eH||V
+
+e|| e
+H||V t/n −1
+
+= O
+
+poly(N)e| e
+H|Φt/ne−
+d2
+2∆x2
+
+(108)
+by Theorem 6.8. Applying Theorem 6.3 again, we get that:
+
+
+
+e−iHt/ne−i e
+Ht/nn
+−U p
+2t
+
+|ψ0⟩
+
+ = O
+
+poly(N)epoly(N)Φt/ne−
+d2
+2∆x2 + mt∆p3
+N
+
+(109)
+We will assume n is a large enough polynomial in N that epoly(N)Φt/n is small. The
+added e−
+d2
+2∆x2 will always bring this term to zero in the limit of large N. Adding in the
+trotterization term,
+e−iHcurrentt −U p
+2t
+
+|ψ0⟩
+ = O
+
+poly(N)e−
+d2
+2∆x2 + mt∆p3
+N 3
++ m2t2
+n
+
+(110)
+
+
+[PDF PAGE 32]
+Time Independent Universal Computing with Spin Chains
+32
+We will use this result to construct the following theorem, which treats the case we
+are interested in.
+Theorem 6.10. Suppose we have a superposition of packets localized inside some gate
+block. Suppose the packets remain localized to a distance d for all 2t′ such that 0 ≤2t′ ≤
+2t. Suppose in addition to the current gates, there are k = O(poly(N)) additional gates
+corresponding to gates before or after the current ones with Hamiltonians H1, H2, ...,
+Hk. Then for suﬃciently high degree polynomials n(N) = N q1 and n′(N) = N q2:
+e−i(Hcurrent+H1+...+Hk)t −U p
+2t
+
+|ψ⟩
+ = O
+
+poly(N)e−
+d2
+2∆x2 +
+(111)
+mt∆p3
+N 3
++ m2t2
+nn′ + t2m2
+n′
+
+(112)
+Proof. Note that the extra gate Hamiltonians commute with each other, since they act
+on diﬀerent subsystems. So, just like last time, assuming that ||Hcurrent||V ≥k||Hj||V ,
+it holds that:
+
+
+
+e−i(Hcurrent+H1+...+Hk)t −
+
+e−iHcurrentt/n′e−i(H1+H2+...+Hk)t/n′n′
+|ψ⟩
+
+
+(113)
+=
+
+
+
+e−i(Hcurrent+H1+...+Hk)t −
+
+e−iHcurrentt/n′e−iH1t/n′e−iH2t/n′...e−iHkt/n′n′
+|ψ⟩
+
+
+(114)
+≤
+
+
+
+e−i(Hcurrent+H1+...+Hk)t −
+
+e−iHcurrentt/n′e−iH1t/n′e−iH2t/n′...e−iHkt/n′n′
+
+V
+(115)
+= O
+t2||Hcurrent||2
+V e2||Hcurrent||V t/n′
+n′
+
+(116)
+which can be seen by writing out the matrix exponentials and bounding terms of second
+order in t/n′
+||Hcurrent|| is at most 2m, so this term is O
+
+t2m2emt/n′
+n′
+
+. We will eventually choose
+mt/n′ →0 so this can be written as O
+
+t2m2
+n′
+
+.
+Now we want to show that these extra gate Hamiltonians can be ignored. We want
+to bound the diﬀerence:
+
+
+
+e−iHcurrentt/n′e−iH1t/n′...e−iHkt/n′n′
+−U p
+2t
+
+|ψ0⟩
+
+
+(117)
+which can be written as:
+
+
+
+e−iHcurrentt/n′e−iH1t/n′...e−iHkt/n′n′
+−
+
+U p
+2t/n′II...I
+n′
+|ψ0⟩
+
+
+(118)
+From Theorem 6.9, we know that:
+
+
+
+e−iHcurrentt/n′ −U p
+2t/n′
+
+|ψ2t′⟩
+
+ = O
+
+poly(N)e−
+d2
+2∆x2 + mt∆p3
+n′N 3 + m2t2
+n′2n
+
+(119)
+and just like in the proof of Theorem 6.9:
+
+
+
+e−iHjt/n′ −I
+
+|ψ2t′⟩
+
+ ≤||Hj |ψ⟩||V
+||Hj||V
+
+e||Hj||V t/n′ −1
+
+(120)
+
+
+[PDF PAGE 33]
+Time Independent Universal Computing with Spin Chains
+33
+Assuming n and n′ are large enough
+
+
+
+e−iHjt/n′ −I
+
+|ψ2t′⟩
+
+ = O
+
+poly(N)e−
+d2
+2∆x2
+
+(121)
+Applying Theorem 6.3,
+
+
+
+e−iHt/n′e−iH1t/n′...e−iHkt/n′n′
+−U p
+2t
+
+|ψ0⟩
+
+ =
+O
+
+poly(N)e−
+d2
+2∆x2 + mt∆p3
+N 3
++ m2t2
+nn′
+
+(122)
+which then implies:
+e−i(H+H1+...+Hk)t −U p
+2t
+
+|ψ0⟩
+ =
+O
+
+poly(N)e−
+d2
+2∆x2 + mt∆p3
+N 3
++ m2t2
+nn′ + t2m2
+n′
+
+(123)
+6.5. Big Picture
+For clarity, we will include a note here on how exactly one would use these trotter
+theorems to derive our error bounds. Suppose we have a quantum circuit with g gate
+blocks on m qubits. Suppose our quantum circuit is designed to act on input |0⟩⊗m,
+and let U denote the circuit unitary. Construct a spin network as described in the body
+of the paper to simulate this quantum circuit on a set of spin chains. Let us say that
+each gate block has the same size on our spin rings (we can always make the interaction
+strength weaker if need be). Denote the Hamiltonian for this spin network H, and let T
+be the total time required for our packets to translate through the gate blocks, assuming
+they travel at the the group velocity.
+Further, let |f
+ψ0⟩be the quantum state corresponding to Gaussian packets initialized
+just outside the gate blocks centered on momentum N/4 heading toward the gate blocks.
+Lastly, let Ucircuit be the encoded circuit unitary. Ucircuit sends |f
+ψ0⟩to the packet encoding
+of U |0⟩⊗m, placed after all the gates.
+Our end goal is to show that
+Error =
+
+
+e−iHT −Ucircuit
+
+|f
+ψ0⟩
+
+
+(124)
+is small. First, we must replace |f
+ψ0⟩by the slightly unnormalized set of packets used in
+our proofs. Let |ψ0⟩be such an unnormalized state. We have:
+
+
+e−iHT −Ucircuit
+
+(|f
+ψ0⟩+ |ψ0⟩−|ψ0⟩)
+
+ ≤
+e−iHT −Ucircuit
+
+|ψ0⟩
+ +
+
+|f
+ψ0⟩−|ψ0⟩
+
+ =
+e−iHT −Ucircuit
+
+|ψ0⟩
+ + O
+r m
+∆p
+
+(125)
+Our strategy is to break up eiHT and Ucircuit into small pieces and apply Theorem 6.3.
+Suppose that it takes t1 for the packets to translate through the ﬁrst block, t2 for
+the packets to translate through the second block, etc. Let us break up Ucircuit into
+
+
+[PDF PAGE 34]
+Time Independent Universal Computing with Spin Chains
+34
+UgUg−1...U1 where each Ui translates the packets from the beginning of gate block i to
+the end of gate block i as well as applies an appropriate phase. More precisely, let us
+say that each Ui translates the packets so that they are centered on the ﬁrst interactions
+for the next block. eq. (124) can then be written as
+e−iHtge−iHtg−1...e−iHt1 −UgUg−1...U1
+
+|ψ0⟩
+ ≤
+g
+X
+j=1
+
+(e−iHtj −Uj)
+jY
+k=1
+Uk |ψ0⟩
+
+
+(126)
+We can break up Uj further into two transient regions and the interior region, and break
+up tj into three diﬀerent times accordingly.
+=
+g
+X
+j=1
+
+
+
+e−iHttrans
+j
+e−iHtint
+j e−iHttrans
+j
+−U trans
+j
+U int
+j U trans
+j
+
+jY
+k=1
+Uk |ψ0⟩
+
+
+(127)
+Now we can leverage Theorem 6.3 to upper bound this quantity further:
+≤
+g
+X
+j=1
+
+
+
+e−iHttrans
+j
+−U trans
+j
+
+U int
+j U trans
+j
+jY
+k=1
+Uk |ψ0⟩
+
+ +
+
+
+
+e−iHtint
+j −U int
+j
+
+U trans
+j
+jY
+k=1
+Uk |ψ0⟩
+
+ +
+
+
+
+e−iHttrans
+j
+−U trans
+j
+
+jY
+k=1
+Uk |ψ0⟩
+
+
+(128)
+The ﬁrst and third terms are similar, so they are taken care of in the same way
+using the transient bound. Deﬁne V trans
+j
+to be the translation operator without the
+added phase from the gate. The third term, for instance, can be written as
+
+
+
+e−iHttrans
+j
+−U trans
+j
++ V trans
+j
+−V trans
+j
+
+jY
+k=1
+Uk |ψ0⟩
+
+ ≤
+(129)
+
+
+
+e−iHttrans
+j
+−V trans
+j
+
+jY
+k=1
+|ψ0⟩
+
+ +
+
+
+V trans
+j
+−U trans
+j
+
+jY
+k=1
+Uk |ψ0⟩
+
+
+(130)
+The ﬁrst term is exactly our transient bound and the second term is the “lost phase”
+(see the proof of the transient bound), both of which have the same order.
+The second term is exactly the Trotter theorem. We let H = H1 + H2 and rewrite
+the second term in equation (128) as:
+
+
+h
+e−iH1tint
+j /ne−iH2tint
+j /nn
+−
+
+e−iH1tint
+j /ne−iH2tint
+j /nn
++ e−iHtint
+j −U int
+j
+i
+jY
+k=1
+Uk |ψ0⟩
+
+ (131)
+≤
+
+
+
+e−iH1tint
+j /ne−iH2tint
+j /nn
+−e−iHtint
+j
+
+ +
+
+
+h
+e−iH1tint
+j /ne−iH2tint
+j /nn
+−U int
+j
+i
+jY
+k=1
+Uk |ψ0⟩
+
+
+(132)
+The ﬁrst term is bounded using the standard Trotter type bound, the second term is
+bounded using Theorem 6.3 and the fact that the “bad” interactions are far away from
+the packets at every point in time.

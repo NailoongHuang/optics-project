@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "engine": "SymPy 1.14.0",
+  "assumptions": [
+    "real wavevectors, target velocity and offset",
+    "eta>0",
+    "arccos branch is physical only where its argument is in [-1,1]"
+  ],
+  "results": {
+    "crossing_velocity": "[1, eta]",
+    "crossing_hessian": "[[0, 0], [0, 0]]",
+    "third_derivative_x": "-1",
+    "third_derivative_y": "-eta",
+    "crossing_residual_identity": "0",
+    "isotropic_curve_energy": "2",
+    "isotropic_curve_matching_residual": "0",
+    "isotropic_curve_spectral_phase": "0",
+    "axis_arccos_branch_residual": "0",
+    "fixed_y_level_function_second_derivative": "cos(x)",
+    "anisotropic_cubic_slope_residual": "0",
+    "anisotropic_energy_linear_coefficient": "1 - eta**(2/3)",
+    "fidelity_quadratic_coefficient_residual": "0",
+    "fidelity_cubic_coefficient": "0"
+  },
+  "failures": [],
+  "scope": "Exact algebra only; Fubini, Fourier uniqueness, monotonicity and finite-norm conclusions require the written proofs."
+}

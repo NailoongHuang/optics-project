@@ -1,0 +1,49 @@
+{
+  "search_dates_local": [
+    "2026-10-20",
+    "2026-10-21"
+  ],
+  "timezone": "Asia/Shanghai",
+  "scope": "Six original A/B/C packets, long-time exact propagation, width scaling, carrier detuning, probability current, and bounded primary-literature comparison",
+  "source_inputs": [
+    {
+      "path": "figures/midterm-report/common.py",
+      "sha256": "628585a31530a5615f5ddb35c4d3e3a4b6d1af9c3035a5c8b2e4cd04a560cc39",
+      "bytes": 5428
+    },
+    {
+      "path": "figures/midterm-report/curvature-design/chart_data.json",
+      "sha256": "77a03ea5f705541de93e968e86069f2f8671b19e913f4165d47a2c56b4026ea3",
+      "bytes": 136651
+    },
+    {
+      "path": "figures/midterm-report/curvature-design/design_data.npz",
+      "sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84",
+      "bytes": 72447121
+    }
+  ],
+  "deliverables": [
+    {
+      "path": "literature/cosine-lattice-wavepacket-audit/README.md",
+      "sha256": "1850ff0e59ba488e6e4a7df2ced3076d1d3cf67afc46fbbd56a665dad57ec049",
+      "bytes": 16996
+    },
+    {
+      "path": "figures/midterm-report/wavepacket-audit/tracking/results.json",
+      "sha256": "338f674826326da1e82f4bab25f0de92d51b34f5e6a6b8acb3d8c195f8500405",
+      "bytes": 49788
+    },
+    {
+      "path": "figures/midterm-report/wavepacket-audit/robustness/results.json",
+      "sha256": "2bbfd53f4fa0860a33808767e9d68cf647d8631db65c1a8300e1a28fd698de52",
+      "bytes": 9838
+    }
+  ],
+  "literature_record_paths": [
+    "literature/cosine-lattice-wavepacket-audit/spin-chain/papers.json",
+    "literature/cosine-lattice-wavepacket-audit/discrete-optics/search_records.json",
+    "literature/cosine-lattice-wavepacket-audit/magnonics/papers.json",
+    "literature/cosine-lattice-wavepacket-audit/backflow/search_record.json"
+  ],
+  "original_files_modified": false
+}

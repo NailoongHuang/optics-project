@@ -1,0 +1,1075 @@
+=== PDF PAGE 1 ===
+Simulating quantum backflow on a quantum computer
+Arseni Goussev∗and Jaewoo Joo
+School of Mathematics and Physics, University of Portsmouth, Portsmouth PO1 3HF, United Kingdom
+(Dated: March 5, 2024)
+Quantum backflow is a counterintuitive effect in which the probability density of a free particle
+moves in the direction opposite to the particle’s momentum. If the particle is electrically charged,
+then the effect can be viewed as the contrast between the direction of electric current and that of
+the momentum. To date, there has been no direct experimental observation of quantum backflow.
+However, the effect has been simulated numerically (using classical computers) and optically (using
+classical light).
+In this study, we present the first simulation of quantum backflow using a real
+quantum computer.
+I.
+INTRODUCTION
+Imagine a bead of mass M and electric charge Q con-
+strained to move without friction along a rigid ring of
+radius R (Fig. 1). Suppose the bead moves freely (i.e.,
+FIG. 1. A particular manifestation of the quantum backflow
+effect.
+in the absence of any external forces other than the con-
+straint force) in the counterclockwise direction, so that
+the time derivative of the azimuthal angle θ is non-
+negative, dθ/dt ≥0. The laws of classical physics guaran-
+tee that, at every point of the ring, momentum density
+and electric current density are both nonnegative, i.e.,
+both are either zero or point tangentially to the ring in
+the direction of increasing θ. Interestingly, the situation
+can be drastically different if the motion of the bead is
+governed by the laws of quantum mechanics: There are
+quantum states of the bead for which its instantaneous
+momentum and electric current point in the opposite di-
+rections (Fig. 1). This counterintuitive scenario is one
+particular manifestation of a broad class of phenomena
+concerned with the classically forbidden flow of probabil-
+ity commonly referred to as quantum backflow (QB).
+QB was first mentioned in the context of the arrival
+time problem in quantum mechanics [1, 2]. The first in-
+depth analysis of QB for a free particle on a line was car-
+ried out by Bracken and Melloy [3]. In particular, they
+∗Corresponding author. Email: arseni.goussev@port.ac.uk
+showed that the effect is weak: Only a small amount of
+probability – less than 4% [4] – can be transported in the
+direction opposite to the particle’s momentum. Interest-
+ingly, QB can be significantly more pronounced for rota-
+tional motion. Thus, the classically forbidden probability
+transfer can reach values up to approximately 0.116816
+in the case of a particle rotating on a ring (Fig. 1) [5]
+and can be arbitrarily high in two-dimensional systems
+[6–8]. Recently, the problem of QB on a ring has also
+been considered for the case of a massless Dirac fermion
+[9]. The literature on QB is substantial, and reviewing it
+goes beyond the scope of the present paper. The reader
+is referred to Ref. [10] for an elementary introduction and
+to Refs. [9, 11] for an extensive list of references to more
+recent results in the area.
+As of today, QB has not been observed experimentally.
+A promising experimental scheme that could lead to the
+observation of QB in Bose-Einstein condensates was pro-
+posed in Ref. [12], but, to our knowledge, has never been
+realized in practice.
+While a direct experimental observation of QB remains
+an open challenge, there has been exciting progress in
+simulating the QB effect using classical light [13–15].
+The simulations utilize the analogy between the dynam-
+ics of quantum particles and the transverse spreading of
+light beams. In this analogy, the momentum and prob-
+ability current of a quantum particle are represented by
+the transverse wave vector and Poynting vector of the
+light beam, respectively. Thus, the optical experiments
+reported in Refs. [13, 14] can be regarded as simulat-
+ing QB for a particle on a line, whereas the experiment
+in Ref. [15] is the optics counterpart of QB for a two-
+dimensional rotational motion.
+In this paper, we demonstrate how QB for a parti-
+cle on a ring (Fig. 1) can be simulated using a quantum
+computer. The demonstration involves the following two
+steps: (i) we use N qubits to encode a particle state
+|ψ⟩comprised of 2N eigenstates with non-negative an-
+gular momentum, and (ii) pass |ψ⟩through a quantum
+circuit designed to compute the probability (or electric)
+current at a given point on the ring. A negative read-
+out is a manifestation of QB. Theoretical results derived
+in this paper are applicable to the case of arbitrary N,
+whereas the actual experimental demonstration, utilizing
+the IBM-Q quantum computer [16], is performed for the
+arXiv:2309.02245v2  [quant-ph]  4 Mar 2024
+
+=== PDF PAGE 2 ===
+2
+cases of N = 1 and N = 2.
+The paper is organized as follows. In Sec. II, we spec-
+ify the system and formulate the QB effect. In Sec. III,
+we introduce a finite-dimensional probability current op-
+erator and derive its decomposition in terms of sums of
+tensor products of one-qubit operators. This decomposi-
+tion is what makes the following quantum-computer sim-
+ulation of QB possible. In Sec. IV, we construct a con-
+crete example, valid for arbitrary N, of a quantum state
+exhibiting QB. We later use this state in our quantum
+simulation. Section V presents an experimental simula-
+tion of QB performed on the IBM-Q quantum computer.
+In Sec. VI we summarize our work and make conclud-
+ing remarks. Throughout the paper, we set the particle
+mass and electric charge, the ring radius, and the Planck
+constant equal to unity, i.e. M = Q = R = ℏ= 1.
+II.
+QUANTUM BACKFLOW FOR CIRCULAR
+MOTION
+The Hamiltonian of the particle-on-a-ring system
+(Fig. 1) is ˆH =
+1
+2 ˆL2, where ˆL = −i d
+dθ is the angular
+momentum operator. Stationary states |m⟩that simul-
+taneously diagonalize ˆH and ˆL, namely
+ˆH|m⟩= m2
+2 |m⟩,
+ˆL|m⟩= m|m⟩,
+are given by
+⟨θ|m⟩= eimθ
+√
+2π
+(m ∈Z) .
+(1)
+The states are orthonormal,
+⟨m|n⟩=
+Z π
+−π
+dθ ⟨m|θ⟩⟨θ|n⟩= δmn ,
+and form a complete basis.
+Now suppose that the particle is in a state |ψ⟩given
+by a superposition of 2N stationary states of the lowest
+possible energy and non-negative angular momentum:
+|ψ⟩=
+2N−1
+X
+m=0
+am|m⟩.
+(2)
+The expansion coefficients am satisfy the normalization
+condition,
+2N−1
+X
+m=0
+|am|2 = 1 .
+(3)
+By construction, any angular momentum measurement
+performed on |ψ⟩is guaranteed to return a non-negative
+result. However, the probability (or electric) current
+J = Re
+
+⟨ψ|θ⟩
+
+−i d
+dθ
+
+⟨θ|ψ⟩
+
+θ=θ0
+(4)
+at some fixed point θ = θ0 on the ring can be negative.
+This is the essence of the QB effect.
+III.
+CURRENT OPERATOR
+We now introduce a probability current operator and
+derive its representation in terms of tensor products of
+one-qubit gates. Without any loss of generality, and in
+order to simplify the calculations to follow, we set θ0 = 0.
+Then, substituting Eq. (2) into Eq. (4) and making use
+of and Eq. (1), we obtain
+J = 1
+2π Re
+2N−1
+X
+m,n=0
+a∗
+mnan
+= 1
+4π
+2N−1
+X
+m,n=0
+a∗
+m(m + n)an .
+(5)
+Alternatively, J can be written as
+J = 1
+4π ⟨ψ| ˆ
+JN|ψ⟩,
+where the operator
+ˆ
+JN =
+2N−1
+X
+m,n=0
+|m⟩(m + n)⟨n|
+(6)
+represents the (scaled) probability current at θ0 = 0 for
+quantum states in the 2N-dimensional subspace of the
+Hilbert space spanned by |0⟩, |1⟩, . . ., |2N −1⟩.
+In the rest of this section, we show how the operator
+ˆ
+JN, for any N = 1, 2, 3, . . ., can be decomposed into a
+sum of tensor products of the following two-dimensional
+operators: the identity operator ˆI and the Pauli gates
+ˆX and ˆZ. The main result of this section is given by
+Eq. (17). This decomposition is essential for one’s ability
+to simulate QB on a quantum computer.
+A.
+N = 1 case
+We begin by considering the N = 1 case. In the matrix
+representation defined by
+|0⟩=
+
+1
+0
+
+,
+|1⟩=
+
+0
+1
+
+,
+the current operator reads
+ˆ
+J1 =
+
+0 1
+1 2
+
+.
+(7)
+Clearly, ˆ
+J1 can be decomposed as
+ˆ
+J1 = ˆI + ˆX −ˆZ ,
+(8)
+where
+ˆI =
+
+1 0
+0 1
+
+,
+ˆX =
+
+0 1
+1 0
+
+,
+ˆZ =
+
+1
+0
+0 −1
+
+.
+
+=== PDF PAGE 3 ===
+3
+B.
+N = 2 case
+We now turn to the N = 2 case. Writing
+|0⟩=
+
+
+
+1
+0
+0
+0
+
+
+,
+|1⟩=
+
+
+
+0
+1
+0
+0
+
+
+,
+|2⟩=
+
+
+
+0
+0
+1
+0
+
+
+,
+|3⟩=
+
+
+
+0
+0
+0
+1
+
+
+,
+we have
+ˆ
+J2 =
+
+
+
+0 1 2 3
+1 2 3 4
+2 3 4 5
+3 4 5 6
+
+
+.
+The last matrix can be rewritten as follows:
+ˆ
+J2 =
+
+ˆ
+J1
+ˆ
+J1 + 2 ˆC1
+ˆ
+J1 + 2 ˆC1
+ˆ
+J1 + 4 ˆC1
+
+,
+(9)
+where ˆ
+J1 is given by Eqs. (7) and (8), and
+ˆC1 =
+
+1 1
+1 1
+
+.
+Then,
+ˆ
+J2 =
+
+1 1
+1 1
+
+⊗ˆ
+J1 +
+
+0 2
+2 4
+
+⊗ˆC1
+= ˆC1 ⊗ˆ
+J1 + 2 ˆ
+J1 ⊗ˆC1 .
+(10)
+Noticing that
+ˆ
+J1 = ˆC1 −ˆZ ,
+(11)
+we find
+ˆ
+J2 = 3 ˆC1 ⊗ˆC1 −ˆC1 ⊗ˆZ −2 ˆZ ⊗ˆC1 .
+(12)
+Finally, using
+ˆC1 = ˆI + ˆX ,
+(13)
+we arrive at the following decomposition:
+ˆ
+J2 = 3(ˆI+ ˆX)⊗(ˆI+ ˆX)−(ˆI+ ˆX)⊗ˆZ−2 ˆZ⊗(ˆI+ ˆX) . (14)
+C.
+General case
+We now generalize the method of Sec. III B to con-
+struct an explicit decomposition of ˆ
+JN, for arbitrary N.
+To this end, we first write ˆJN, defined by Eq. (6), in
+the matrix form. Following the convention adopted in
+Secs. III A and III B, we take |m⟩to be represented by
+the 2N-dimensional column vector with the nth element
+equal to δmn. Then,
+ˆ
+JN =
+
+
+
+
+
+0
+1
+2
+· · ·
+2N −1
+1
+2
+3
+· · ·
+2N
+2
+3
+4
+· · ·
+2N + 1
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+2N −1 2N 2N + 1 · · · 2N+1 −2
+
+
+
+
+.
+Since the last matrix can be written as
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+· · ·
+2N−1 −1
+0 + 2N−1
+1 + 2N−1
+· · · (2N−1 −1) + 2N−1
+1
+2
+· · ·
+2N−1
+1 + 2N−1
+2 + 2N−1
+· · ·
+2N−1 + 2N−1
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+2N−1 −1
+2N−1
+· · ·
+2N −2
+(2N−1 −1) + 2N−1 2N−1 + 2N−1 · · ·
+(2N −2) + 2N−1
+0 + 2N−1
+1 + 2N−1
+· · · (2N−1 −1) + 2N−1
+0 + 2N
+1 + 2N
+· · ·
+(2N−1 −1) + 2N
+1 + 2N−1
+2 + 2N−1
+· · ·
+2N−1 + 2N−1
+1 + 2N
+2 + 2N
+· · ·
+2N−1 + 2N
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+· · ·
+(2N−1 −1) + 2N−1 2N−1 + 2N−1 · · ·
+(2N −2) + 2N−1
+(2N−1 −1) + 2N
+2N−1 + 2N
+· · ·
+(2N −2) + 2N
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+it is easy to see that [cf. Eq. (9)]
+ˆ
+JN =
+ 
+ˆ
+JN−1
+ˆ
+JN−1 + 2N−1 ˆCN−1
+ˆ
+JN−1 + 2N−1 ˆCN−1
+ˆ
+JN−1 + 2N ˆCN−1
+!
+,
+(15)
+where ˆCN−1 is the 2N−1×2N−1 matrix of ones. It follows
+from Eq. (15) that
+ˆ
+JN = ˆC1 ⊗ˆ
+JN−1 + 2N−1 ˆ
+J1 ⊗ˆCN−1 .
+(16)
+Substituting
+ˆCN−1 = ˆC1 ⊗ˆC1 ⊗· · · ⊗ˆC1
+|
+{z
+}
+N−1 times
+= ˆC⊗(N−1)
+1
+into Eq. (16), we get the following recurrence relation
+[cf. Eq. (10)]:
+ˆ
+JN = ˆC1 ⊗ˆ
+JN−1 + 2N−1 ˆ
+J1 ⊗ˆC⊗(N−1)
+1
+.
+
+=== PDF PAGE 4 ===
+4
+It is straightforward to verify that the solution to this
+recurrence relation is [cf. Eq. (10)]
+ˆ
+JN =
+N−1
+X
+n=0
+2n ˆC⊗(N−1−n)
+1
+⊗ˆ
+J1 ⊗ˆC⊗n
+1
+.
+Substituting Eq. (11) into the last expression, and using
+PN−1
+n=0 2n = 2N −1, we obtain [cf. Eq. (12)]
+ˆ
+JN = (2N −1) ˆC⊗N
+1
+−
+N−1
+X
+n=0
+2n ˆC⊗(N−1−n)
+1
+⊗ˆZ ⊗ˆC⊗n
+1
+.
+Finally, using Eq. (13), we arrive at the following explicit
+decomposition of ˆ
+JN [cf. Eq. (14)]:
+ˆ
+JN = (2N −1)(ˆI + ˆX)⊗N
+−
+N−1
+X
+n=0
+2n(ˆI + ˆX)⊗(N−1−n) ⊗ˆZ ⊗(ˆI + ˆX)⊗n .
+(17)
+Equation (17) constitutes the main result of this section.
+IV.
+EXAMPLE OF A BACKFLOWING STATE
+Decomposition (17) allows us to devise a quantum
+computing circuit for measuring the probability current
+at a fixed point on the ring. What we also need for a
+quantum simulation of QB is a quantum state that would
+give rise to a substantially negative probability current.
+In this section, we present an explicit example of such a
+state.
+Consider the state |ψ⟩defined by Eq. (2) with
+am =
+3m −2(2N −1)
+p
+(2N+1 + 1)(2N −1)2N−1 .
+(18)
+The state is normalized.
+Indeed,
+using identities
+P2N−1
+m=0 m = (2N −1)2N−1 and P2N−1
+m=0 m2 = 1
+3(2N+1 −
+1)(2N −1)2N−1, it is straightforward to verify that the
+normalization condition (3) is fulfilled.
+Now, substituting Eq. (18) into Eq. (5) and performing
+a straightforward calculation, taking into account that
+P2N−1
+m=0 m3 = 22N−2(2N −1)2, we find
+J = −1
+4π
+2N(2N −1)
+2N+1 + 1 .
+Clearly J < 0, for all N ≥1, meaning that |ψ⟩, defined
+by Eq. (18) exhibits QB. In particular,
+J = −1
+10π ≃−0.031831
+for
+N = 1
+(19)
+and
+J = −3
+9π ≃−0.106103
+for
+N = 2 .
+(20)
+For the purpose of clarity, we would like to point out
+that the state defined by Eq. (18) is not the only state
+exhibiting negative probability current (see Ref. [5] for
+other examples of backflowing states.) Nor is it the state
+maximizing the backflow probability transfer [5].
+The
+main reasons we use the state given by Eq. (18) in our
+study are its simplicity – specifically, the fact that the
+expansion coefficients have a simple linear dependence
+on the quantum number m – and its generality, as the
+state gives rise to negative probability current for any N.
+It is also interesting to note that, for the state de-
+fined by Eq. (18), J →−∞as N →∞. This example
+shows that, just as in the particle-on-a-line case [3], the
+instantaneous probability current for non-negative angu-
+lar momentum states in a ring is unbounded from below.
+V.
+IMPLEMENTATION OF QUANTUM
+BACKFLOW ON A QUANTUM COMPUTER
+Equipped with the decomposition (17) and the explicit
+backflowing state example (18), we proceed to simulating
+QB on the IBM-Q quantum computer [16]. The quantum
+FIG. 2. Quantum circuits for computing ⟨ˆVk⟩≡⟨ψ|ˆVk|ψ⟩for
+(a) N = 1 and (b) N = 2.
+circuits used in our simulation are schematically shown
+in Figs. 2(a) and 2(b) for the cases of N = 1 and N = 2,
+respectively.
+The angular momentum states |m⟩, with
+m = 0, . . . , 2N −1, of the particle on the ring are rep-
+resented by system qubits that are denoted by S in the
+N = 1 case, and by S1 and S2 in the N = 2 case. More
+specifically, we have
+|0⟩= |0⟩S
+and
+|1⟩= |1⟩S
+for N = 1, and
+|0⟩= |0⟩S1|0⟩S2 = |00⟩
+|1⟩= |0⟩S1|1⟩S2 = |01⟩
+|2⟩= |1⟩S1|0⟩S2 = |10⟩
+|3⟩= |1⟩S1|1⟩S2 = |11⟩
+(21)
+
+=== PDF PAGE 5 ===
+5
+for N = 2.
+The simulation consists of the following four stages.
+First, we prepare the system qubit(s) in state |0⟩S for
+N = 1, and in states |0⟩S1 and |0⟩S2 for N = 2. Second,
+we apply a set of gates to the system qubit(s) to create
+the target input state |ψ⟩, Eq. (2), with the expansion
+coefficients given by Eq. (18). Third, we act with single-
+qubit gates ˆUk for N = 1, and with ˆUk1 and ˆUk2 for
+N = 2, on |ψ⟩to obtain a new state |ψ2⟩. The gates ˆUk,
+ˆUk1, and ˆUk2 are to be defined below. Finally, the qubits
+of |ψ2⟩are measured in the ˆZ basis and the measurement
+outcome probabilities are used to compute the expecta-
+tion value of operators ˆVk. As we explain in detail below,
+the operators ˆVk are elementary N-qubit gates allowing
+one to represent the current operator as
+ˆ
+JN = λ0 ˆI⊗N +
+KN
+X
+k=1
+λk ˆVk
+(22)
+with K1 = 2, K2 = 7, and λk’s being some real numbers.
+We now provide further details of the outlined sim-
+ulation procedure and present the experimental results,
+separately in the N = 1 and N = 2 case.
+A.
+N = 1 case
+Here we detail the experimental procedure, schemat-
+ically illustrated in Fig. 2(a).
+Hereinafter, we use the
+notation ⟨·⟩= ⟨ψ| · |ψ⟩, with |ψ⟩given by Eqs. (2) and
+(18).
+Let us rewrite Eq. (8) as ˆ
+J1 = ˆI + ˆV1−ˆV2 with ˆV1 = ˆX
+and ˆV2 = ˆZ. This representation corresponds to Eq. (22)
+with N = 1, K1 = 2, λ0 = λ1 = 1 and λ2 = −1. Conse-
+quently, we have
+⟨ˆ
+J1⟩= 1 + ⟨ˆV1⟩−⟨ˆV2⟩.
+(23)
+The following procedure allows us to experimentally mea-
+sure ⟨ˆV1⟩and ⟨ˆV2⟩.
+We first initialize the system qubit, S, in state |0⟩S. We
+then transform |0⟩S into the desired backflowing state
+|ψ⟩=
+1
+√
+5 (−2|0⟩S + |1⟩S)
+≃−0.894427|0⟩S + 0.447214|1⟩S ,
+whose expansion coefficients are obtained from Eq. (18)
+by setting N = 1 and m = 0, 1. The transformation is
+achieved by acting on |0⟩S with the Y -rotation operator
+ˆRy(α) ≡exp
+
+−i α
+2 ˆY
+
+:
+|ψ⟩= ˆRy(α)|0⟩S
+with α ≃5.35589. Next, we apply gate ˆUk to the system
+qubit to obtain
+|ψ2⟩= ˆUk|ψ⟩.
+(24)
+Here, ˆU1 is the Hadamard gate,
+ˆU1 = ˆHd ≡
+1
+√
+2( ˆX + ˆZ) ,
+and ˆU2 is the identity operator,
+ˆU2 = ˆI .
+This choice of the transformations ˆU1 and ˆU2 allows us to
+experimentally determine the sought expectation values
+⟨ˆV1⟩and ⟨ˆV2⟩by measuring |ψ2⟩in the ˆZ basis. This
+works as follows.
+The probabilities that the measurement will collapse
+|ψ2⟩onto |0⟩S and |1⟩S are given by
+P0 = ⟨ψ2|0⟩S⟨0|ψ2⟩,
+P1 = ⟨ψ2|1⟩S⟨1|ψ2⟩,
+respectively, and so
+P0 −P1 = ⟨ψ2| ˆZ|ψ2⟩.
+For k = 1, we have
+|ψ2⟩= ˆU1|ψ⟩= ˆHd|ψ⟩,
+which means that
+P0 −P1 = ⟨ψ| ˆHd ˆZ ˆHd|ψ⟩= ⟨ψ| ˆX|ψ⟩= ⟨ˆV1⟩,
+where we have used the identity ˆX = ˆHd ˆZ ˆHd. For k = 2,
+we have
+|ψ2⟩= ˆU2|ψ⟩= |ψ⟩,
+implying that
+P0 −P1 = ⟨ψ| ˆZ|ψ⟩= ⟨ˆV2⟩.
+This is how, by measuring the difference P0 −P1 in the
+quantum circuit shown in Fig. 2(a), we can evaluate the
+expectation values ⟨ˆVk⟩experimentally.
+We used the IBM-Q machine named ibmq−osaka [16]
+to perform 8000 projective measurements for each ⟨ˆVk⟩.
+The measurement results are P0 ≃0.095757 and P1 ≃
+0.904243 for k = 1, implying ⟨ˆV1⟩≃−0.808487, and
+P0 ≃0.793382, P1 ≃0.206618 for k = 2, implying ⟨ˆV2⟩≃
+0.586764. Thus, in view of Eq. (23), the experimentally
+obtained value of probability current in the N = 1 case
+is
+J = 1
+4π ⟨ˆ
+J1⟩≃−0.031453 .
+The experimental value is negative, signifying QB, and is
+reasonably close to the theoretical one, given by Eq. (19).
+The relative error is approximately 2.2%.
+
+=== PDF PAGE 6 ===
+6
+B.
+N = 2 case
+The quantum circuit used for simulating QB in the
+N = 2 case is shown in Fig. 2(b). It utilizes two system
+qubits, S1 and S2, and seven two-qubit operators ˆVk,
+with k = 1, . . . , 7. According to Eq. (14), the (scaled)
+probability current operator
+ˆ
+J2 can be represented by
+Eq. (22) with N = 2, K2 = 7, ˆV1 = ˆI ⊗ˆX, ˆV2 = ˆX ⊗ˆI,
+ˆV3 = ˆZ ⊗ˆI, ˆV4 = ˆI ⊗ˆZ, ˆV5 = ˆX ⊗ˆX ˆV6 = ˆZ ⊗ˆX,
+ˆV7 = ˆX ⊗ˆZ, and λ0 = λ1 = λ2 = λ5 = 3, λ3 = λ6 = −2,
+λ4 = λ7 = −1. Thus, the expectation value of ˆ
+J2 reads
+⟨ˆ
+J2⟩= 3+3⟨ˆV1⟩+3⟨ˆV2⟩−2⟨ˆV3⟩−⟨ˆV4⟩+3⟨ˆV5⟩−2⟨ˆV6⟩−⟨ˆV7⟩.
+(25)
+The expectation values ⟨ˆVk⟩, k = 1, . . . , 7, are measured
+as follows.
+We begin by initializing the system qubits in the |00⟩
+state [see Eq. (21)]. Then, we apply to |00⟩a sequence of
+one- and two-qubit transformations aiming to generate
+the following (entangled) backflowing state:
+|ψ⟩=
+1
+√
+6(−2|00⟩−|01⟩+ |11⟩)
+≃−0.816497|00⟩−0.408248|01⟩+ 0.408248|11⟩.
+The expansion coefficients of |ψ⟩are obtained from
+Eq. (18) by setting N = 2 and m = 0, 1, 2, 3. In partic-
+ular, the overlap probabilities between |ψ⟩and the basis
+states |00⟩, |01⟩, |10⟩, and |11⟩are |⟨00|ψ⟩|2 ≃0.66667,
+|⟨01|ψ⟩|2 = |⟨11|ψ⟩|2 ≃0.166667, and |⟨10|ψ⟩|2 = 0, re-
+spectively.
+Experimentally, the transformation from |00⟩to |ψ⟩
+is performed via successive application of three opera-
+tors [17, 18]: an ˆRy gate, a CNOT gate CXS1,S2, and a
+controlled- ˆRy gate. Thus, as illustrated in Fig. 2(b),
+|ψ⟩= CRS2,S1(α1) CXS1,S2
+
+ˆRy(α0) ⊗ˆI
+
+|00⟩
+with α0
+≃7.51414 and α1
+≃4.7124.
+In the ac-
+tual experiment, carried out on ibmq−osaka [16], the
+controlled-rotation gate CRS2,S1(α1) was realized by
+ˆRy(±α1/2) and two CNOT gates [19].
+The accuracy
+of the experimental state preparation can be charac-
+terized by following probabilities of the overlap be-
+tween |ψ⟩and the two-qubit basis states: |⟨00|ψ⟩|2 ≃
+0.655584, |⟨01|ψ⟩|2 ≃0.171429, |⟨10|ψ⟩|2 ≃0.002444,
+and |⟨11|ψ⟩|2
+≃
+0.170543,
+which are to be com-
+pared against the corresponding theoretical values stated
+above.
+Once the backflowing state |ψ⟩has been prepared,
+the rest of the simulation follows the same steps as in
+the N = 1 case. The transformation from |ψ⟩to |ψ2⟩
+[see Fig. 2(b)] is performed by means of two single-qubit
+gates, ˆUk1 and ˆUk2:
+|ψ2⟩= ˆUk1 ⊗ˆUk2|ψ⟩
+[cf. Eq. (24) in the N = 1 case]. The single-qubit gate
+pairs { ˆUk1, ˆUk2} are {ˆI, ˆHd} for k = 1 and k = 6, { ˆHd, ˆI}
+for k = 2 and k = 7, {ˆI, ˆI} for k = 3 and k = 4, and
+{ ˆHd, ˆHd} for k = 5. For each k, |ψ2⟩is measured in the
+ˆZ basis to obtain the probabilities
+P00 = ⟨ψ2|00⟩⟨00|ψ2⟩,
+P01 = ⟨ψ2|01⟩⟨01|ψ2⟩,
+P10 = ⟨ψ2|10⟩⟨10|ψ2⟩,
+P11 = ⟨ψ2|11⟩⟨11|ψ2⟩,
+which are then used to calculate the desired expectation
+values ⟨ˆV1⟩, ⟨ˆV2⟩, . . ., ⟨ˆV7⟩. For k = 1,
+P00 −P01 + P10 −P11
+= (P00 + P10) −(P01 + P11)
+= ⟨ψ2|
+
+ˆI ⊗|0⟩S2⟨0|
+
+ψ2⟩−⟨ψ2|
+
+ˆI ⊗|1⟩S2⟨1|
+
+ψ2⟩
+= ⟨ψ2|
+
+ˆI ⊗ˆZ
+
+ψ2⟩
+= ⟨ψ|
+
+ˆI ⊗ˆHd
+
+ˆI ⊗ˆZ
+
+ˆI ⊗ˆHd
+
+|ψ⟩
+= ⟨ψ|
+
+ˆI ⊗( ˆHd ˆZ ˆHd)
+
+|ψ⟩
+= ⟨ψ|ˆI ⊗ˆX|ψ⟩
+= ⟨ˆV1⟩.
+The other expectation values are obtained in a similar
+way. The resulting expressions are as follows:
+for k = 2 ,
+P00 + P01 −P10 −P11 = ⟨ˆV2⟩,
+for k = 3 ,
+P00 + P01 −P10 −P11 = ⟨ˆV3⟩,
+for k = 4 ,
+P00 −P01 + P10 −P11 = ⟨ˆV4⟩,
+for k = 5 ,
+P00 −P01 −P10 + P11 = ⟨ˆV5⟩,
+for k = 6 ,
+P00 −P01 −P10 + P11 = ⟨ˆV6⟩,
+for k = 7 ,
+P00 −P01 + P10 −P11 = ⟨ˆV7⟩.
+Each expectation value ⟨ˆVk⟩, for k = 1, . . . , 7, was ob-
+tained by performing 8000 two-qubit independent mea-
+surements on the ibmq−osaka machine [16].
+The ex-
+pectation value results from the experiments are ⟨ˆV1⟩≃
+0.625005, ⟨ˆV2⟩≃−0.313760, ⟨ˆV3⟩≃0.654026, ⟨ˆV4⟩≃
+0.316057, ⟨ˆV5⟩≃−0.646405, ⟨ˆV6⟩≃0.659897, and
+⟨ˆV7⟩≃0.342302.
+Thus, in view of Eq. (25), the ex-
+perimentally obtained value of probability current in the
+N = 2 case is
+J = 1
+4π ⟨ˆ
+J2⟩≃−0.102789 .
+The experimental value is negative, signifying QB, and is
+very close to the theoretical one, given by Eq. (20). The
+relative error is approximately 3.1%.
+VI.
+CONCLUSION
+In this paper, we report a quantum simulation of QB
+within a circular geometry.
+The system under consid-
+eration – a particle moving freely in a circular ring –
+
+=== PDF PAGE 7 ===
+7
+is well-suited for the simulation, as its discrete angular
+momentum eigenstates can be effectively modeled using
+qubits.
+More specifically, N-qubit circuits can be em-
+ployed to simulate QB for quantum states that are su-
+perpositions of 2N angular momentum eigenstates. We
+explicitly design such circuits for the cases when N = 1
+and N = 2, and subsequently implement them on the
+IBM-Q quantum computer.
+Our quantum simulations
+demonstrate negative probability current for quantum
+states comprised solely of non-negative angular momen-
+tum states, thereby confirming the presence of QB. The
+simulated probability current values are reasonably close
+to the corresponding theoretical values.
+The quantum simulations presented in this paper have
+thus far been limited to one and two qubits, i.e., to the
+cases of N = 1 and N = 2, due to us having access only to
+noisy quantum devices. Nonetheless, we have established
+a comprehensive theoretical framework for simulating QB
+with an arbitrary number of qubits (i.e., for any value of
+N). To elaborate, a quantum simulation of QB involves
+two main stages: (i) the preparation of a backflowing
+state, and (ii) the subsequent measurement of probabil-
+ity current. Concerning (i), we have devised a specific ex-
+ample of a backflowing state valid for arbitrary N; this
+example is detailed by Eqs. (2) and (18).
+As for (ii),
+we have derived a universally applicable decomposition
+of the probability current operator, given by Eq. (17),
+which can be readily employed to construct a current-
+measuring circuit for arbitrary N. In light of these find-
+ings, our theoretical results provide a clear pathway for
+simulating QB using any number of qubits.
+The exploration of novel applications for quantum
+computing has been an active area of research [20–22].
+The study reported in the present paper expands the
+domain of potential applications of quantum computing
+and uncovers new connections between different areas of
+quantum physics.
+ACKNOWLEDGMENTS
+JJ acknowledges the support from the Basic Sci-
+ence
+Research
+Program
+through
+the
+National
+Re-
+search Foundation of Korea (NRF) funded by the Min-
+istry of Education,
+Science and Technology (NRF-
+2021M3H3A1038085) and the Institute for Information
+& communications Technology Promotion (IITP) grant
+funded by the Korea government(MSIP) (No. 2019-0-
+00003, Research and Development of Core technologies
+for Programming, Running, Implementing and Validat-
+ing of Fault-Tolerant Quantum Computing System).
+We acknowledge the utilization of IBM Quantum ser-
+vices in conducting this work. The views expressed are
+those of the authors and do not reflect the official policy
+or position of IBM or the IBM Quantum team.
+[1] G. R. Allcock, “The time of arrival in quantum mechanics
+III. The measurement ensemble,” Ann. Phys. (N. Y). 53,
+311 (1969).
+[2] J. Kijowski, “On the time operator in quantum mechan-
+ics and the Heisenberg uncertainty relation for energy
+and time,” Rep. Math. Phys. 6, 361 (1974).
+[3] A. J. Bracken and G. F. Melloy, “Probability backflow
+and a new dimensionless quantum number,” J. Phys. A:
+Math. Gen. 27, 2197 (1994).
+[4] The numerical estimate of this bound, commonly referred
+to as the Bracken-Melloy constant, has later been im-
+proved [23, 24] and currently stands at 0.0384517. Re-
+cently, the first analytical bound has been reported in
+Ref. [25], according to which the value of the Bracken-
+Melloy constant lies between 0.0315 and 0.0725.
+[5] A. Goussev, “Quantum backflow in a ring,” Phys. Rev.
+A 103, 022217 (2021).
+[6] P. Strange, “Large quantum probability backflow and the
+azimuthal angle–angular momentum uncertainty relation
+for an electron in a constant magnetic field,” Eur. J.
+Phys. 33, 1147 (2012).
+[7] V. D. Paccoia, O. Panella, and P. Roy, “Angular momen-
+tum quantum backflow in the noncommutative plane,”
+Phys. Rev. A 102, 062218 (2020).
+[8] M. Barbier, A. Goussev, and S. C. L. Srivastava, “Un-
+bounded quantum backflow in two dimensions,” Phys.
+Rev. A 107, 032204 (2023).
+[9] L. Di Bari, V. D. Paccoia, O. Panella,
+and P. Roy,
+“Quantum backflow for a massless Dirac fermion on a
+ring,” Phys. Lett. A 474, 128831 (2023).
+[10] J. M. Yearsley and J. J. Halliwell, “An introduction to
+the quantum backflow effect,” J. Phys. Conf. Ser. 442,
+012055 (2013).
+[11] A. J. Bracken, “Probability flow for a free particle: new
+quantum effects,” Phys. Scr. 96, 045201 (2021).
+[12] M. Palmero, E. Torrontegui, J. G. Muga, and M. Mod-
+ugno, “Detecting quantum backflow by the density of
+a Bose-Einstein condensate,” Phys. Rev. A 87, 053618
+(2013).
+[13] Y. Eliezer, T. Zacharias, and A. Bahabad, “Observation
+of optical backflow,” Optica 7, 72 (2020).
+[14] A. Daniel, B. Ghosh, B. Gorzkowski, and R. Lapkiewicz,
+“Demonstrating backflow in classical two beams’ interfer-
+ence,” New J. Phys. 24, 123011 (2022).
+[15] B. Ghosh, A. Daniel, B. Gorzkowski, and R. Lapkiewicz,
+“Azimuthal backflow in light carrying orbital angular mo-
+mentum,” arXiv:2304.13124.
+[16] IBM Quantum, https://quantum-computing.ibm.com.
+[17] M. Lubasch, J. Joo, P. Moinier, M. Kiffner,
+and
+D. Jaksch, “Variational quantum algorithms for nonlin-
+ear problems,” Phys. Rev. A 101, 010301(R) (2020).
+[18] J. Joo and H. Moon, “Quantum variational PDE solver
+with machine learning,” arXiv:2109.09216.
+[19] M. A. Nielsen and I. L. Chuang, Quantum Computation
+and Quantum Information (Cambridge University Press,
+Cambridge, 2000).
+[20] R. Gerritsma, G. Kirchmair, F. Z¨ahringer, E. Solano,
+R. Blatt, and C. F. Roos, “Quantum simulation of the
+
+=== PDF PAGE 8 ===
+8
+Dirac equation,” Nature 463, 68 (2010).
+[21] R. D. Somma, “Quantum simulations of one dimensional
+quantum systems,” arXiv:1503.06319.
+[22] C. W. Bauer et al., “Quantum Simulation for High En-
+ergy Physics,” arXiv:2204.03381.
+[23] S. P. Eveson, C. J. Fewster, and R. Verch, “Quantum In-
+equalities in Quantum Mechanics,” Ann. Henri Poincar´e
+6, 1 (2005).
+[24] M. Penz, G. Gr¨ubl, S. Kreidl, and P. Wagner, “A new
+approach to quantum backflow,” J. Phys. A: Math. Gen.
+39, 423 (2006).
+[25] D. Trillo, T. P. Le, and M. Navascu´es, “Quantum advan-
+tages for transportation tasks - projectiles, rockets and
+quantum backflow,” npj Quantum Inf. 9, 69 (2023).

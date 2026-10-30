@@ -1,0 +1,1476 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 1422713,
+    "items": [
+      {
+        "DOI": "10.2139/ssrn.6573454",
+        "title": [
+          "Correlation driven spin-density-wave phase in metallic d-wave altermagnetic KV2Se2O"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-0664-7911",
+            "authenticated-orcid": true,
+            "given": "Lei",
+            "family": "Bocheng",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Aolin",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3082-0400",
+            "authenticated-orcid": true,
+            "given": "Yun-Peng",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7904-3430",
+            "authenticated-orcid": true,
+            "given": "Fangping",
+            "family": "Ouyang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Metallic altermagnets offer advantages for exploring physical phenomena related to low-energy quasiparticle excitations and for applications in spintronics. The emergence of spin-density-wave (SDW) order in a recently synthesized metallic altermagnet KV2Se2O was reported, but the underlying mechanism remains unexplored. The charge and magnetic disproportionation in perovskites are often attributed to the electronic correlation effect. In this work, we carry out first-principles calculations and find that the SDW phase emerges spontaneously with a Hubbard correction higher than the critical value of U = 2 eV. This scenario is unchanged with K vacancies or alkali-metal substitutions. Our findings highlight the potential of metallic altermagnets for realizing emergent quantum phenomena.</jats:p>",
+        "URL": "https://doi.org/10.2139/ssrn.6573454",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1063/9.0000175",
+        "title": [
+          "Spin wave spectral probing of degenerate microstates in building-block of square artificial spin ice"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7383-2586",
+            "authenticated-orcid": false,
+            "given": "Nimisha",
+            "family": "Arora",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physics, Indian Institute of Technology, Delhi , Hauz Khas, New Delhi 110016, India"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3799-6919",
+            "authenticated-orcid": false,
+            "given": "Pintu",
+            "family": "Das",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, Indian Institute of Technology, Delhi , Hauz Khas, New Delhi 110016, India"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:p>We have investigated the spin wave modes of dipolar coupled, highly shape anisotropic magnetic nanoislands forming square artificial spin ice system by performing micromagnetic simulations using MuMax3 in combination with Matlab coding. Here, artificial spin ice is considered to be formed by the four identical square ring-type structure of elliptical shaped nanoislands of permalloy. Our results demonstrate a direct relation between the spin wave modes generated and the micro-states formed in the system. Thus, we show that single ring type structure may alone be adequately used to understand the spin wave modes of square artificial spin ice.</jats:p>",
+        "URL": "https://doi.org/10.1063/9.0000175",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1007/bf02931713",
+        "title": [
+          "Correlation-induced spectral changes dependent upon spatiotemporal interference effects"
+        ],
+        "author": [
+          {
+            "given": "Yoshihiro",
+            "family": "Ohtsuka",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Michiyuki",
+            "family": "Kamada",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Satoshi",
+            "family": "Tanaka",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1996,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1007/bf02931713",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1103/physrevb.85.121101",
+        "title": [
+          "Spectral properties of one-dimensional spiral spin density wave states"
+        ],
+        "author": [
+          {
+            "given": "Dirk",
+            "family": "Schuricht",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2012,
+              3,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevb.85.121101",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.31223/osf.io/e9hcq",
+        "title": [
+          "Spatiotemporal correlation analysis of noise-derived seismic body waves with ocean wave climate and microseism sources"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-9012-4853",
+            "authenticated-orcid": false,
+            "given": "Lei",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Pierre",
+            "family": "Boue",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Lise",
+            "family": "Retailleau",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Michel",
+            "family": "Campillo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              11,
+              29
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.31223/osf.io/e9hcq",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1109/whc.2019.8816149",
+        "title": [
+          "Spatiotemporal Haptic Effects from a Single Actuator via Spectral Control of Cutaneous Wave Propagation"
+        ],
+        "author": [
+          {
+            "given": "Bharat",
+            "family": "Dandu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yitian",
+            "family": "Shao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew",
+            "family": "Stanley",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yon",
+            "family": "Visell",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/whc.2019.8816149",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.2514/6.2009-3577",
+        "title": [
+          "Detection of Wave Propagation by Nonstationary Cross-Correlation and Cross-Spectral Density Phase"
+        ],
+        "author": [
+          {
+            "given": "A. Albert",
+            "family": "Ortiz",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Texas"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Frank",
+            "family": "Lu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Texas"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2009,
+              6,
+              14
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2514/6.2009-3577",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1063/1.1335616",
+        "title": [
+          "Spin correlation function of benzene and naphthalene from spin-coupled wave functions"
+        ],
+        "author": [
+          {
+            "given": "B.",
+            "family": "Bomfleur",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institut für Physikalische Chemie der Universität München, Butenandtstr, 5-13, Haus E, 81377 München, Germany"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Voitländer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institut für Physikalische Chemie der Universität München, Butenandtstr, 5-13, Haus E, 81377 München, Germany"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "M.",
+            "family": "Sironi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dipartimento di Chimica Fisica ed Elettrochimica, Università di Milano, Via Golgi 19, 20133 Milano, Italy"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "M.",
+            "family": "Raimondi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dipartimento di Chimica Fisica ed Elettrochimica, Università di Milano, Via Golgi 19, 20133 Milano, Italy"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2001,
+              1,
+              22
+            ]
+          ]
+        },
+        "abstract": "<jats:p>In this paper we report on the calculation of the spin correlation function describing the dipolar spin–spin interaction for benzene and naphthalene in their lowest excited triplet state. Spin-coupled wave functions were used. The spin correlation function measures the contributions to the 〈3Sz2–S2〉 expectation value arising from electrons located at different points. An alternation of positive and negative correlation dependent on the separation of the unpaired electrons is found. The results are used to analyze and interpret the zero-field splitting parameter D of these molecules in terms of different contributions. The relationship between the spin correlation function and the sequence of the zero-field levels as well as the value of the parameter D and its dependence from molecular size is discussed.</jats:p>",
+        "URL": "https://doi.org/10.1063/1.1335616",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/j.optcom.2015.01.072",
+        "title": [
+          "The spectral maps of dynamic speckle patterns: A new perspective to look at the motion-induced spatiotemporal cross-correlation"
+        ],
+        "author": [
+          {
+            "given": "Dake",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "James",
+            "family": "Ranger",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2015,
+              6
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.optcom.2015.01.072",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1063/1.340524",
+        "title": [
+          "Chaos in spin clusters: Correlation functions and spectral properties"
+        ],
+        "author": [
+          {
+            "given": "Niraj",
+            "family": "Srivastava",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physics, The University of Rhode Island, Kingston, Rhode Island 028801-0817"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Charles",
+            "family": "Kaufman",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, The University of Rhode Island, Kingston, Rhode Island 028801-0817"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Gerhard",
+            "family": "Müller",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, The University of Rhode Island, Kingston, Rhode Island 028801-0817"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1988,
+              4,
+              15
+            ]
+          ]
+        },
+        "abstract": "<jats:p>We investigate dynamic correlation functions for a pair of exchange-coupled classical spins with biaxial exchange and/or single-site anisotropy. This represents a Hamiltonian system with two degrees of freedom for which we have previously established the integrability criteria. We discuss the impact of (non-)integrability on the autocorrelation functions and their spectral properties. We point out the role of long-time anomalies caused by low-flux cantori, which dominate the convergence properties of time averages and determine the long-time asymptotic behavior of autocorrelation functions in nonintegrable cases.</jats:p>",
+        "URL": "https://doi.org/10.1063/1.340524",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/j.jallcom.2026.189491",
+        "title": [
+          "Correlation-driven spin-density-wave phase in metallic d-wave altermagnetic KV2Se2O"
+        ],
+        "author": [
+          {
+            "given": "Bocheng",
+            "family": "Lei",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Aolin",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yunpeng",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7904-3430",
+            "authenticated-orcid": false,
+            "given": "Fangping",
+            "family": "Ouyang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.jallcom.2026.189491",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1103/physrevb.8.414",
+        "title": [
+          "Singular Behavior of the Spectral-Weight Function of the Spin-Pair Correlation Function"
+        ],
+        "author": [
+          {
+            "given": "Tohru",
+            "family": "Morita",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Tsuyoshi",
+            "family": "Horiguchi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1973,
+              7,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevb.8.414",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1103/physrevlett.105.096401",
+        "title": [
+          "Electron Correlation and Spin Density Wave Order in Iron Pnictides"
+        ],
+        "author": [
+          {
+            "given": "Sen",
+            "family": "Zhou",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Ziqiang",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              8,
+              23
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevlett.105.096401",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1063/1.1659040",
+        "title": [
+          "Spin-Wave Correlation Effects in CrBr3"
+        ],
+        "author": [
+          {
+            "given": "Richard",
+            "family": "Silberglitt",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Physics Department, University of California, Santa Barbara, California 93106"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "C. H.",
+            "family": "Cobb",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Physics Department, University of California, Santa Barbara, California 93106"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "V.",
+            "family": "Jaccarino",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Physics Department, University of California, Santa Barbara, California 93106"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1970,
+              3,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:p>A first-order (self-consistent) renormalized spin-wave theory has been used to fit the temperature dependence of the magnetization M (T, 0) in the hexagonal ferromagnet CrBr3. However, this theory appears incapable of simultaneously explaining M (T, O) and new measurements we have made of M (T0, H). Reexamining the first-order theory we find that (a) self-consistency corrections are negligible because of the low magnon density and (b) an equally satisfactory fit to M (T, O) can be obtained from a rectangular model with appropriately chosen intralayer JT and interlayer JL exchange constants and reciprocal-lattice volume. This is possible because JT is so large that there is little thermal excitation beyond the kx2+ky2 part of the spectrum. Since large kz magnons are present due to the smallness of JL, this is a strongly interacting system for which correlation effects are known to be important. Using the rectangular model we have treated spin-wave interactions to all orders via the t-matrix and find deviations of up to 40% from the first-order renormalization. Since the first-order renormalization effects on M (T, O) were shown to be large, we may infer from our calculations that the first-order fitting of one thermodynamic function was fortuitous and was made possible by the multiparameter character of the theory.</jats:p>",
+        "URL": "https://doi.org/10.1063/1.1659040",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1186/s13661-026-02345-2",
+        "title": [
+          "Spatiotemporal variable-order fractional modeling of long wave interactions: a spectral tau method with Mittag–Leffler-type memory"
+        ],
+        "author": [
+          {
+            "given": "W. A.",
+            "family": "Hashem",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mofida",
+            "family": "Zaki",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              24
+            ]
+          ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The long-wave interactions described by the generalized Hirota–Satsuma (GHS) coupled KdV system are studied here through a memory dependent model in which the time fractional order varies in both space and time. The fractional derivative is taken in the Atangana Baleanu Caputo (ABC) sense, whose Mittag Leffler kernel is non singular and captures the nonlocal nature of the dynamics. To solve this model, a fully spectral tau scheme is developed: Jacobi polynomials approximate the spatial behaviour, their shifted counterparts handle the temporal direction, and three purpose built operational matrices carry the computational load. These matrices act on the variable order ABC derivative, on the integer-order spatial derivatives, and on the space time Kronecker products generated by the nonlinear terms, so that the original fractional system collapses into a nonlinear algebraic one that requires no node-based evaluation. The scheme is supported by a complete theoretical treatment that covers approximation estimates in weighted Sobolev spaces, a stability result for the algebraic system, and a convergence theorem accompanied by an explicit error bound. Two test problems illustrate these findings, exhibiting exponential decay of the error and delivering better accuracy than a recent Chebyshev Gauss Lobatto collocation method even with fewer basis functions.</jats:p>",
+        "URL": "https://doi.org/10.1186/s13661-026-02345-2",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/0370-2693(83)91116-4",
+        "title": [
+          "On spectral properties of parton correlation functions and multiparton wave functions"
+        ],
+        "author": [
+          {
+            "given": "A.V.",
+            "family": "Radyushkin",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1983,
+              11
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/0370-2693(83)91116-4",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1615/telecomradeng.v54.i2.20",
+        "title": [
+          "Integral Transforms of Wave Processes and Their Spectral-Correlation Characteristics"
+        ],
+        "author": [
+          {
+            "given": "Valerii Konstantinovich",
+            "family": "Volosyuk",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2000
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1615/telecomradeng.v54.i2.20",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1109/spin.2018.8474148",
+        "title": [
+          "Quadrature Modulation Using Radio Frequency Wave Correlation In Multiport Network"
+        ],
+        "author": [
+          {
+            "given": "Chetan",
+            "family": "Pathak",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Karun",
+            "family": "Rawat",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/spin.2018.8474148",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1103/physrevb.48.6668",
+        "title": [
+          "Spin-wave spectral properties of the Mott-Hubbard antiferromagnet: The intermediate-coupling regime"
+        ],
+        "author": [
+          {
+            "given": "Avinash",
+            "family": "Singh",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1993,
+              9,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevb.48.6668",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.5611/hamon.23.1_14",
+        "title": [
+          "Spin Density Wave and Bond Nematic Correlation in One-Dimensional Frustrated Ferromagnetic Chain"
+        ],
+        "author": [
+          {
+            "given": "Masato",
+            "family": "Hagihala",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Neutron Science Laboratory, ISSP, the University of Tokyo"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Takatsugu",
+            "family": "Masuda",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Neutron Science Laboratory, ISSP, the University of Tokyo"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.5611/hamon.23.1_14",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/j.ijleo.2015.11.207",
+        "title": [
+          "Positive rotation wave magnetic field's effect and control on thermal quantum correlation of inhomogeneous Heisenberg spin chain"
+        ],
+        "author": [
+          {
+            "given": "Zhihong",
+            "family": "Huang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              3
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.ijleo.2015.11.207",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.7868/s3034590125120071",
+        "title": [
+          "Spectral characteristics of coupled magnonic structures under spin-wave damping compensation"
+        ],
+        "author": [
+          {
+            "given": "O.S.",
+            "family": "Temnaya",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "S.A.",
+            "family": "Nikitov",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "abstract": "<jats:p>The magnetization dynamics in two dipolarly coupled ferromagnet–normal metal (FM–NM) structures is investigated under symmetric and asymmetric compensation of intrinsic spin-wave damping mediated by the spin Hall effect. Within the framework of a linear model of complex amplitudes, the spectral characteristics of the normal modes are analyzed, including their degeneracy at an exceptional point in the asymmetric case. It is demonstrated that asymmetric compensation leads to a transition from a two-frequency to a single-frequency regime at the exceptional point, accompanied by a narrowing of the spectral linewidth, whereas symmetric compensation preserves the two-frequency regime. The results are of relevance for the development of magnonic devices such as filters and sensors.</jats:p>",
+        "URL": "https://doi.org/10.7868/s3034590125120071",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1364/aoipm.1994.wpl.43",
+        "title": [
+          "Wave Dynamics and Spectral Correlation in Random Media"
+        ],
+        "author": [
+          {
+            "given": "A. Z.",
+            "family": "Genack",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "W.",
+            "family": "Polkosnik",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "A. A.",
+            "family": "Lisyansky",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "N.",
+            "family": "Garcia",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "P.",
+            "family": "Sebbah",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "abstract": "<jats:p>We present measurements of the microwave field transmitted through an ensemble of random dielectric samples. We compare the field correlation function with frequency shift with the intensity correlation function and relate it to the dynamic measurement of the time of flight distribution. Finally, we present measurements of the total phase accumulated by the wave in passing through random samples.</jats:p>",
+        "URL": "https://doi.org/10.1364/aoipm.1994.wpl.43",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.31546/jcccvt.1007",
+        "title": [
+          "Rate-Dependent Repolarization Dynamics: Correlation between Electrocardiographic T Wave and U Wave"
+        ],
+        "author": [
+          {
+            "given": "Toru",
+            "family": "Maruyama",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              4,
+              6
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.31546/jcccvt.1007",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.4310/maa.2016.v23.n1.a2",
+        "title": [
+          "A spectral representation for spin-weighted spheroidal wave operators with complex aspherical parameter"
+        ],
+        "author": [
+          {
+            "given": "Felix",
+            "family": "Finster",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Fakultät für Mathematik, Universität Regensburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Joel",
+            "family": "Smoller",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Mathematics, University of Michigan, Ann Arbor, Mich., U.S.A."
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.4310/maa.2016.v23.n1.a2",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1201/9780429066535-6",
+        "title": [
+          "Localized and Propagating Spin Wave Modes Excited in Magnetic Nano-Structures by Spin-Polarized Current"
+        ],
+        "author": [
+          {
+            "given": "Andrei",
+            "family": "Slavin",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Vasil",
+            "family": "Tiberkevich",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              5,
+              8
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1201/9780429066535-6",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1016/j.jpcs.2008.06.050",
+        "title": [
+          "Spectral function and dynamical spin correlation function in the ––– model"
+        ],
+        "author": [
+          {
+            "given": "T.",
+            "family": "Tohyama",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2008,
+              12
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.jpcs.2008.06.050",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1201/9781315110820-11",
+        "title": [
+          "Current-Induced Spin Wave Doppler Shift"
+        ],
+        "author": [
+          {
+            "given": "Matthieu",
+            "family": "Bailleul",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jean-Yves",
+            "family": "Chauleau",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1201/9781315110820-11",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1785/0119990156",
+        "title": [
+          "Correlation of Microearthquake Body-Wave Spectral Amplitudes"
+        ],
+        "author": [
+          {
+            "given": "B.",
+            "family": "Lund",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2002,
+              8,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1785/0119990156",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1103/physrevb.81.155102",
+        "title": [
+          "Effect of thermal fluctuations of spin density wave order parameter on the quasiparticle spectral function"
+        ],
+        "author": [
+          {
+            "given": "M.",
+            "family": "Khodas",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "A. M.",
+            "family": "Tsvelik",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2010,
+              4,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevb.81.155102",
+        "type": "journal-article"
+      }
+    ],
+    "items-per-page": 30,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

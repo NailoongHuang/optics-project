@@ -1,0 +1,785 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          22
+        ]
+      ],
+      "date-time": "2025-11-22T13:55:49Z",
+      "timestamp": 1763819749232,
+      "version": "3.45.0"
+    },
+    "reference-count": 44,
+    "publisher": "IOP Publishing",
+    "issue": "47",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              11,
+              29
+            ]
+          ],
+          "date-time": "2022-11-29T00:00:00Z",
+          "timestamp": 1669680000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 4,
+        "URL": "https://publishingsupport.iopscience.iop.org/iop-standard/v1"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              11,
+              29
+            ]
+          ],
+          "date-time": "2022-11-29T00:00:00Z",
+          "timestamp": 1669680000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 4,
+        "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+      }
+    ],
+    "funder": [
+      {
+        "name": "University of Qom"
+      },
+      {
+        "DOI": "10.13039/501100024239",
+        "name": "Fundación Humanismo y Ciencia",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100024239",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "iopscience.iop.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Phys. A: Math. Theor."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          25
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Decoherence is a well established process for the emergence of classical mechanics in open quantum systems. However, it can have two different origins or mechanisms depending on the dynamics one is considering, speaking then about intrinsic decoherence for isolated systems and environmental decoherence due to dissipation/fluctuations for open systems. This second mechanism can not be considered for backflow since no thermal fluctuation terms can be added in the formalism in order to keep an important requirement for the occurrence of this effect: only contributions of positive momenta along time should be maintained. The purpose of this work is to analyze the backflow effect in the light of the underlying intrinsic decoherence and the dissipative dynamics. For this goal, we first deal with the Milburn approach where a mean frequency of the unitary evolution steps undergone for the system is assumed. A comparative analysis is carried out in terms of the Lindblad master equation. Second, the so-called quantum-to-classical transition wave equation is analyzed from a linear scaled Schrödinger equation which is derived and expressed in terms of a continuous parameter covering from the quantum to the classical regime as well as all in-between dynamical non-classical regimes. This theoretical analysis is inspired by the Wentzel–Kramers–Brillouin approximation. And third, in order to complete our analysis, the transition wave equation formalism is also applied to dissipative backflow within the Caldirola–Kanai approach where the dissipative dynamics comes from an effective Hamiltonian. In all the cases treated here, backflow is gradually suppressed as the intrinsic decoherence process is developing, paying a special attention to the classical limit. The route to classicality is not unique.</jats:p>",
+    "DOI": "10.1088/1751-8121/aca36e",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          16
+        ]
+      ],
+      "date-time": "2022-11-16T17:27:32Z",
+      "timestamp": 1668619652000
+    },
+    "page": "475302",
+    "update-policy": "https://doi.org/10.1088/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Different routes to the classical limit of backflow"
+    ],
+    "prefix": "10.1088",
+    "volume": "55",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-1460-8781",
+        "authenticated-orcid": true,
+        "given": "S V",
+        "family": "Mousavi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4056-376X",
+        "authenticated-orcid": true,
+        "given": "S",
+        "family": "Miret-Artés",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "266",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          29
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "aaca36ebib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "253",
+        "DOI": "10.1016/0003-4916(69)90251-6",
+        "type": "journal-article",
+        "volume": "53",
+        "author": "Allcock",
+        "year": "1969",
+        "journal-title": "Ann. Phys."
+      },
+      {
+        "key": "aaca36ebib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "286",
+        "DOI": "10.1016/0003-4916(69)90252-8",
+        "type": "journal-article",
+        "volume": "53",
+        "author": "Allcock",
+        "year": "1969",
+        "journal-title": "Ann. Phys."
+      },
+      {
+        "key": "aaca36ebib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "311",
+        "DOI": "10.1016/0003-4916(69)90253-X",
+        "type": "journal-article",
+        "volume": "53",
+        "author": "Allcock",
+        "year": "1969",
+        "journal-title": "Ann. Phys."
+      },
+      {
+        "key": "aaca36ebib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2197",
+        "DOI": "10.1088/0305-4470/27/6/040",
+        "type": "journal-article",
+        "volume": "27",
+        "author": "Bracken",
+        "year": "1994",
+        "journal-title": "J. Phys. A: Math. Gen."
+      },
+      {
+        "key": "aaca36ebib3",
+        "doi-asserted-by": "publisher",
+        "first-page": "423",
+        "DOI": "10.1088/0305-4470/39/2/012",
+        "type": "journal-article",
+        "volume": "39",
+        "author": "Penz",
+        "year": "2006",
+        "journal-title": "J. Phys. A: Math. Gen."
+      },
+      {
+        "key": "aaca36ebib4",
+        "doi-asserted-by": "publisher",
+        "first-page": "726",
+        "DOI": "10.1002/andp.199851007-818",
+        "type": "journal-article",
+        "volume": "7",
+        "author": "Melloy",
+        "year": "1998",
+        "journal-title": "Ann. Phys., Lpz."
+      },
+      {
+        "key": "aaca36ebib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "505",
+        "DOI": "10.1023/A:1018724313788",
+        "type": "journal-article",
+        "volume": "28",
+        "author": "Melloy",
+        "year": "1998",
+        "journal-title": "Found. Phys."
+      },
+      {
+        "key": "aaca36ebib6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/S0217732318501869",
+        "type": "journal-article",
+        "volume": "33",
+        "author": "Su",
+        "year": "2018",
+        "journal-title": "Mod. Phys. Lett. A"
+      },
+      {
+        "key": "aaca36ebib7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1402-4896/ab265c",
+        "type": "journal-article",
+        "volume": "94",
+        "author": "Ashfaque",
+        "year": "2019",
+        "journal-title": "Phys. Scr."
+      },
+      {
+        "key": "aaca36ebib8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1751-8121/ac65c1",
+        "type": "journal-article",
+        "volume": "55",
+        "author": "Bialynicki-Birula",
+        "year": "2022",
+        "journal-title": "J. Phys. A: Math. Theor."
+      },
+      {
+        "key": "aaca36ebib9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-6596/442/1/012055",
+        "type": "journal-article",
+        "volume": "442",
+        "author": "Yearsley",
+        "year": "2013",
+        "journal-title": "J. Phys.: Conf. Ser."
+      },
+      {
+        "key": "aaca36ebib10",
+        "doi-asserted-by": "publisher",
+        "first-page": "177",
+        "DOI": "10.1063/1.2219361",
+        "type": "journal-article",
+        "volume": "844",
+        "author": "Grübl",
+        "year": "2006",
+        "journal-title": "AIP Conf. Proc."
+      },
+      {
+        "key": "aaca36ebib11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.99.043626",
+        "type": "journal-article",
+        "volume": "99",
+        "author": "Goussev",
+        "year": "2019",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevResearch.2.033206",
+        "type": "journal-article",
+        "volume": "2",
+        "author": "Goussev",
+        "year": "2020",
+        "journal-title": "Phys. Rev. Res."
+      },
+      {
+        "key": "aaca36ebib13",
+        "doi-asserted-by": "publisher",
+        "first-page": "379",
+        "DOI": "10.22331/q-2021-01-11-379",
+        "type": "journal-article",
+        "volume": "5",
+        "author": "Miller",
+        "year": "2021",
+        "journal-title": "Quantum"
+      },
+      {
+        "key": "aaca36ebib14",
+        "doi-asserted-by": "publisher",
+        "first-page": "536",
+        "DOI": "10.22331/q-2021-09-07-536",
+        "type": "journal-article",
+        "volume": "5",
+        "author": "Barbier",
+        "year": "2021",
+        "journal-title": "Quantum"
+      },
+      {
+        "key": "aaca36ebib15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1147",
+        "DOI": "10.1088/0143-0807/33/5/1147",
+        "type": "journal-article",
+        "volume": "33",
+        "author": "Strange",
+        "year": "2012",
+        "journal-title": "Eur. J. Phys."
+      },
+      {
+        "key": "aaca36ebib16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.062218",
+        "type": "journal-article",
+        "volume": "102",
+        "author": "Paccoia",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.103.022217",
+        "type": "journal-article",
+        "volume": "103",
+        "author": "Goussev",
+        "year": "2021",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "year": "2022",
+        "author": "Paccoia",
+        "key": "aaca36ebib18",
+        "type": "preprint"
+      },
+      {
+        "key": "aaca36ebib19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/S0219749916500325",
+        "type": "journal-article",
+        "volume": "14",
+        "author": "Albarelli",
+        "year": "2016",
+        "journal-title": "Int. J. Quant. Inf."
+      },
+      {
+        "key": "aaca36ebib20",
+        "doi-asserted-by": "publisher",
+        "first-page": "324",
+        "DOI": "10.1140/epjp/s13360-020-00336-5",
+        "type": "journal-article",
+        "volume": "135",
+        "author": "Mousavi",
+        "year": "2020",
+        "journal-title": "Eur. Phys. J. Plus"
+      },
+      {
+        "key": "aaca36ebib21",
+        "type": "journal-article",
+        "volume": "19",
+        "author": "Mousavi",
+        "year": "2020",
+        "journal-title": "Results Phys."
+      },
+      {
+        "key": "aaca36ebib22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.023334",
+        "type": "journal-article",
+        "volume": "102",
+        "author": "Barbier",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib23",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1364/OPTICA.371494",
+        "type": "journal-article",
+        "volume": "7",
+        "author": "Eliezer",
+        "year": "2020",
+        "journal-title": "Optica"
+      },
+      {
+        "key": "aaca36ebib24",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.physrep.2019.10.001",
+        "type": "journal-article",
+        "volume": "831",
+        "author": "Schlosshauer",
+        "year": "2019",
+        "journal-title": "Phys. Rep."
+      },
+      {
+        "key": "aaca36ebib25",
+        "doi-asserted-by": "publisher",
+        "first-page": "4429",
+        "DOI": "10.1098/rsta.2012.0162",
+        "type": "journal-article",
+        "volume": "370",
+        "author": "Stamp",
+        "year": "2012",
+        "journal-title": "Phil. Trans. R. Soc. A"
+      },
+      {
+        "key": "aaca36ebib26",
+        "doi-asserted-by": "publisher",
+        "first-page": "5401",
+        "DOI": "10.1103/PhysRevA.44.5401",
+        "type": "journal-article",
+        "volume": "44",
+        "author": "Milburn",
+        "year": "1991",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.89.032118",
+        "type": "journal-article",
+        "volume": "89",
+        "author": "Richardson",
+        "year": "2014",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib28",
+        "doi-asserted-by": "publisher",
+        "first-page": "76",
+        "DOI": "10.1016/j.aop.2018.04.009",
+        "type": "journal-article",
+        "volume": "393",
+        "author": "Mousavi",
+        "year": "2018",
+        "journal-title": "Ann. Phys."
+      },
+      {
+        "key": "aaca36ebib29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/2399-6528/aab521",
+        "type": "journal-article",
+        "volume": "2",
+        "author": "Mousavi",
+        "year": "2018",
+        "journal-title": "J. Phys. Commun."
+      },
+      {
+        "key": "aaca36ebib30",
+        "doi-asserted-by": "publisher",
+        "first-page": "1100",
+        "DOI": "10.1103/PhysRev.125.1100",
+        "type": "journal-article",
+        "volume": "125",
+        "author": "Schiller",
+        "year": "1962",
+        "journal-title": "Phys. Rev."
+      },
+      {
+        "key": "aaca36ebib31",
+        "doi-asserted-by": "publisher",
+        "first-page": "78",
+        "DOI": "10.1007/s10701-022-00598-2",
+        "type": "journal-article",
+        "volume": "52",
+        "author": "Mousavi",
+        "year": "2022",
+        "journal-title": "Found. Phys."
+      },
+      {
+        "key": "aaca36ebib32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.86.042116",
+        "type": "journal-article",
+        "volume": "86",
+        "author": "Yearsley",
+        "year": "2012",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "aaca36ebib33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1402-4896/abdd54",
+        "type": "journal-article",
+        "volume": "96",
+        "author": "Bracken",
+        "year": "2021",
+        "journal-title": "Phys. Scr."
+      },
+      {
+        "year": "2012",
+        "author": "Krane",
+        "key": "aaca36ebib34",
+        "type": "book"
+      },
+      {
+        "key": "aaca36ebib35",
+        "doi-asserted-by": "publisher",
+        "first-page": "1469",
+        "DOI": "10.3390/e23111469",
+        "type": "journal-article",
+        "volume": "23",
+        "author": "Khani",
+        "year": "2021",
+        "journal-title": "Entropy"
+      },
+      {
+        "year": "2007",
+        "author": "Schlosshauer",
+        "key": "aaca36ebib36",
+        "type": "book"
+      },
+      {
+        "key": "aaca36ebib37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-6596/237/1/012010",
+        "type": "journal-article",
+        "volume": "237",
+        "author": "Chatzidimitriou-Dreismann",
+        "year": "2010",
+        "journal-title": "J. Phys.: Conf. Ser."
+      },
+      {
+        "key": "aaca36ebib38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1140/epjp/s13360-022-02367-6",
+        "type": "journal-article",
+        "volume": "137",
+        "author": "Mousavi",
+        "year": "2022",
+        "journal-title": "Eur. Phys. J. Plus"
+      },
+      {
+        "key": "aaca36ebib39",
+        "doi-asserted-by": "publisher",
+        "first-page": "4697",
+        "DOI": "10.1103/PhysRevD.55.4697",
+        "type": "journal-article",
+        "volume": "55",
+        "author": "Halliwell",
+        "year": "1997",
+        "journal-title": "Phys. Rev. D"
+      },
+      {
+        "key": "aaca36ebib40",
+        "doi-asserted-by": "publisher",
+        "first-page": "597",
+        "DOI": "10.1119/1.1970870",
+        "type": "journal-article",
+        "volume": "32",
+        "author": "Rosen",
+        "year": "1964",
+        "journal-title": "Am. J. Phy."
+      },
+      {
+        "key": "aaca36ebib41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1751-8113/46/47/475303",
+        "type": "journal-article",
+        "volume": "46",
+        "author": "Halliwell",
+        "year": "2013",
+        "journal-title": "J. Phys. A: Math. Theor."
+      },
+      {
+        "key": "aaca36ebib42",
+        "doi-asserted-by": "publisher",
+        "first-page": "654",
+        "DOI": "10.1140/epjp/s13360-020-00655-7",
+        "type": "journal-article",
+        "volume": "135",
+        "author": "Mousavi",
+        "year": "2020",
+        "journal-title": "Eur. Phys. J. Plus"
+      }
+    ],
+    "container-title": [
+      "Journal of Physics A: Mathematical and Theoretical"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e",
+        "content-type": "text/html",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          22
+        ]
+      ],
+      "date-time": "2025-11-22T13:51:47Z",
+      "timestamp": 1763819507000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1088/1751-8121/aca36e"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          25
+        ]
+      ]
+    },
+    "references-count": 44,
+    "journal-issue": {
+      "issue": "47",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            29
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            25
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1088/1751-8121/aca36e",
+    "relation": {},
+    "ISSN": [
+      "1751-8113",
+      "1751-8121"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "1751-8113"
+      },
+      {
+        "type": "electronic",
+        "value": "1751-8121"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          25
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Different routes to the classical limit of backflow",
+        "name": "article_title",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Physics A: Mathematical and Theoretical",
+        "name": "journal_title",
+        "label": "Journal Title"
+      },
+      {
+        "value": "paper",
+        "name": "article_type",
+        "label": "Article Type"
+      },
+      {
+        "value": "© 2022 IOP Publishing Ltd. All rights, including for text and data mining, AI training, and similar technologies, are reserved.",
+        "name": "copyright_information",
+        "label": "Copyright Information"
+      },
+      {
+        "value": "2022-08-08",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2022-11-16",
+        "name": "date_accepted",
+        "label": "Date Accepted",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2022-11-29",
+        "name": "date_epub",
+        "label": "Online publication date",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      }
+    ]
+  }
+}

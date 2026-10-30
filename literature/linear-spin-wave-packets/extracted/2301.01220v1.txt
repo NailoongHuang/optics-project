@@ -1,0 +1,2143 @@
+=== PDF PAGE 1 ===
+Caustic spin wave beams in soft, thin ﬁlms: properties and classiﬁcation
+Alexis Wartelle,∗Franz Vilsmeier, Takuya Taniguchi, and Christian H. Back
+Fakult¨at fur Physik, Technische Universit¨at M¨unchen, Garching, Germany
+(Dated: January 4, 2023)
+In the context of wave propagation, caustics are usually deﬁned as the envelope of a ﬁnite-extent
+wavefront; folds and cusps in a caustic result in enhanced wave amplitudes. Here, we tackle a related
+phenomenon, namely the existence of well-deﬁned beams originating solely from the geometric
+properties of the corresponding dispersion relation. This directional emission, termed caustic beam,
+is enabled by a stationary group velocity direction, and has been observed ﬁrst in the case of
+phonons. We propose an overview of this “focusing” eﬀect in the context of spin waves excited
+in soft, thin ferromagnetic ﬁlms. Based on an analytical dispersion relation, we provide tools for
+a systematic survey of caustic spin wave beams. Our theoretical approach is validated by time-
+resolved microscopy experiments using the magneto-optical Kerr eﬀect. Then, we identify two cases
+of particular interest both from fundamental and applicative perspectives. Indeed, both of them
+enable broadband excitations (in terms of wave vectors) to result in narrowband beams of low
+divergence.
+I.
+INTRODUCTION
+The collective motion of magnetic moments in a ma-
+terials, referred to as spin waves, has shown remarkable
+properties from a fundamental perspective.
+Examples
+range from anisotropic dispersion in thin ﬁlms [1], rel-
+evant for the ﬁeld of magnonics, to Bose-Einstein con-
+densation of magnons [2], through restricted-relativity-
+like bounded domain wall velocities [3].
+Applications
+of magnetization dynamics also abound, starting with
+the inﬁnite-wavelength ferromagnetic resonance (FMR)
+[4] and going all the way towards sub-micrometer wave-
+lengths, which are currently viewed as promising alterna-
+tive information carriers in the ﬁelds of magnonics [5]. In
+addition to the absence of Joule heating and the potential
+device downscaling (using small wavelengths), spin wave
+interference is an appealing prospect [6] as it allows logic
+operations through the design of the propagation lines.
+Several experimental techniques are readily available
+for the study of spin waves [1], especially in the case
+of thin ﬁlms or patterned elements thereof.
+Among
+them, micro-/phase-resolved Brillouin Light Scattering
+(BLS) [7], Time-Resolved Magneto-Optical Kerr Eﬀect
+(TR-MOKE) microscopy [8], and time-resolved Scan-
+ning Transmission X-ray Microscopy (TR-STXM) with
+magnetic sensitivity through X-ray Magnetic Circular
+Dichroism (XMCD [9]) [10] have demonstrated outstand-
+ing imaging capabilities. Nevertheless, the usually very
+small amplitudes of magnetization precession associated
+to spin waves as well as their attenuation lengths (typi-
+cally on the micrometer scale) pose a signiﬁcant challenge
+both for fundamental investigations and for applications.
+To be of practical use, spin waves must be harnessed
+via a power-eﬃcient strategy: some approaches like Win-
+ter’s magnons rely on channeling along domain walls [11],
+∗alexis.wartelle@ens-lyon.org; Present address: Universit´e Greno-
+ble Alpes, CNRS, Grenoble INP, SIMaP, 38000 Grenoble, France
+others rely on careful control of spin wave scattering [12].
+Another possibility would take advantage of caustic spin
+wave beams (CSWBs), i.e.
+spin wave beams of well-
+deﬁned propagation direction, narrow angular width and
+higher power compared to e.g. Damon-Eshbach-type [13]
+spin waves.
+Furthermore, caustics in soft, thin ferro-
+magnetic ﬁlms can be very diﬀerent from the well-known
+acoustical or optical caustics, which originate from inho-
+mogeneous media [14–16], : here, spin wave caustics can
+arise in perfectly homogeneous ﬁlms in broad ranges of
+conditions solely because of suﬃcient anisotropies in their
+dispersion relation. The latter indeed allows the direc-
+tion of the group velocity to be stationary around some
+wave vectors, leading to well-deﬁned directions of wave
+propagation associated to signiﬁcantly stronger emission.
+In the context of phonon propagation, such phenomena
+have been referred to as “focussing” [17], and they have
+been observed and investigated since 1969 [17–21].
+By contrast, caustics in ferromagnetic ﬁlms were re-
+ported for the ﬁrst time ca. 30 years later [22]. There
+has been quite a few reports since then [23–31] but, to
+the best of our knowledge, there exists to date no sys-
+tematic survey of the properties of spin wave caustics,
+not even focusing on a certain type of systems e.g. ul-
+trathin ﬁlms with perpendicular anisotropy, or soft thin
+ﬁlms.
+In this work, we restrict ourselves to the latter
+and give an overview of caustics in soft thin ﬁlms, as well
+as tools to further investigate them. Moreover, we high-
+light two special cases which seem particularly appealing
+notably for application in magnonics.
+II.
+MODEL
+A.
+General considerations
+Our starting point is the model derived by Kalinikos
+and Slavin [32] for spin waves in soft ferromagnetic
+thin ﬁlms.
+These excitations correspond to a time-
+and space-dependent magnetization −→
+M(⃗r, t), yet its norm
+arXiv:2301.01220v1  [cond-mat.mes-hall]  3 Jan 2023
+
+
+=== PDF PAGE 2 ===
+2
+Ms = ||−→
+M(⃗r, t)|| the spontaneous magnetization is uni-
+form.
+As a result, it is simpler to consider the re-
+duced magnetization −→
+m(⃗r, t) = −→
+M(⃗r, t)/Ms with norm
+1.
+We focus on the linear regime i.e.
+the deviation
+δ−→
+m(⃗r, t) = −→
+m(⃗r, t) −−→
+m0(⃗r, t) from the equilibrium mag-
+netization (when no excitation is applied) −→
+m0 is such that
+||δ−→
+m|| ≪1. Under the assumption of negligible mode
+mixing and of a perfectly isotropic ferromagnetic mate-
+rial, one may write the dispersion relation of a thin ﬁlm
+as:
+ω2 =
+h
+γ0Ha + 2Aγ0
+µ0Ms
+k2ih
+γ0
+
+Ms + Ha
+
++ 2Aγ0
+µ0Ms
+k2i
+−γ2
+0M 2
+s · ξ(kd)
+h
+1 −ξ(kd) + Ha
+Ms
++ 2Aγ0
+µ0M 2s
+k2i
+cos2 ϕ
++γ2
+0M 2
+s · ξ(kd) · [1 −ξ(kd)]
+(1)
+where ω is the spin wave angular frequency, γ0 = µ0|γ|
+with γ = qe/(2me) the electron’s gyromagnetic ratio
+(qe = −e and me being the electron’s charge and mass,
+respectively) and µ0 the permeability of vacuum, A is the
+micromagnetic exchange constant for the soft ferromag-
+netic material of interest, Ms its spontaneous magnetiza-
+tion, k the spin wave’s wavenumber corresponding to its
+wave vector −→k , Ha = ||−→
+Ha|| the strength of the externally
+applied magnetic ﬁeld −→
+Ha from which ϕ = angle
+−→
+Ha, −→k
+
+the wavefront angle is deﬁned, d the ﬁlm thickness, and
+ξ is the function whose values are deﬁned as:
+ξ(u) = 1 −1 −e−u
+|u|
+.
+(2)
+As a consequence of the ferromagnetic material’s soft-
+ness, in the absence of excitation, the equilibrium mag-
+netization conﬁguration in our thin ﬁlm is the single-
+domain state, with a corresponding reduced magnetiza-
+tion −→
+m0 exactly along the applied ﬁeld. The orientations
+of −→
+m0, −→
+Ha, and −→k are illustrated in Fig. 1, which also
+highlights the natural wavelength λ0 = 2π/||−→k || of the
+spin wave as well as the unit vectors −→
+ex, −→
+ey and −→
+ez.
+Here, we focus on spin waves with no amplitude node
+across the ﬁlm thickness, i.e. we do not consider per-
+pendicular standing spin waves (PSSWs). However, we
+do note that the latter may play a role in experiments
+performed on suﬃciently thick ﬁlms where a realistic an-
+tenna for instance could excite them due to its inhomo-
+geneous magnetic ﬁeld.
+We introduce the following quantities:
+the Larmor
+angular frequencies associated to magnetization ωM =
+γ0Ms and to the applied magnetic ﬁeld ωH = γ0Ha, the
+material’s dipolar-exchange length lex =
+p
+2A/(µ0M 2s ).
+We then rewrite the equation as:
+−
+→
+ex
+−
+→
+k
+−→
+Ha
+−→
+m0
+φ
+λ0= 2π
+||−
+→
+k||
+= 2π
+k
+0
+δmz
+−
+→
+ez
+−
+→
+ey
+FIG. 1. Schematic representation of a spin plane wave prop-
+agating in a soft thin ﬁlm.
+The grey scale codes the local
+perpendicular component of the dynamic component of mag-
+netization, δmz.
+ω2
+ω2
+M
+=
+ ωH
+ωM
++ l2
+exk2
+ 
+1 + ωH
+ωM
++ l2
+exk2
+
+−ξ(kd)
+h
+1 −ξ(kd) + ωH
+ωM
++ l2
+exk2i
+cos2 ϕ
++ξ(kd)
+h
+1 −ξ(kd)
+i
+(3)
+Introducing the reduced frequency ν = ω/ωM and ap-
+plied ﬁeld h = ωH/ωM = Ha/Ms, and normalizing both
+the dipolar-exchange length and wavenumber to the ﬁlm
+thickness d using η = lex/d and ˜k = kd, we arrive at:
+ν2 =
+
+h + η2˜k2
+1 + h + η2˜k2
+−ξ(˜k)
+h
+1 −ξ(˜k) + h + η2˜k2i
+cos2 ϕ
++ξ(˜k)
+h
+1 −ξ(˜k)
+i
+(4)
+With this, it is clear that any given experiment of spin
+wave excitation corresponds to a speciﬁc value of the di-
+mensionless triplet (η, ν, h). In other words: they are
+the only independent parameters within this model.
+For a value of (η, ν, h), the solution to (4) is the pos-
+sibly empty set of accessible dimensionless wave vectors
+−→k d.
+The existence and properties of spin wave caus-
+tics depend on the geometrical characteristics of this set,
+which is why we are ﬁrst going to review several of its
+general properties.
+Keeping in mind that we focus on applied ﬁelds below
+the ferromagnetic resonance ﬁeld at the excitation fre-
+quency, we actually always have a non-empty solution,
+which is usually a closed curve winding around the ori-
+gin in wave-vector space. This is the so-called slowness
+curve, in reference to the fact that at ﬁxed frequency
+k ∝1/||−→
+vp|| where −→
+vp is the phase velocity [33], oriented
+of course along the wave vector. Considering the parity
+of the cosine function and its antisymmetry for the re-
+ﬂection ϕ →π −ϕ, we may restrict our analysis to only
+the quadrant ϕ ∈[0, π/2] and deduce the others using
+mirror symmetries.
+
+
+=== PDF PAGE 3 ===
+3
+One can also parametrize the slowness curve using a
+curvilinear abscissa: we deﬁne it to be zero for the lowest
+dimensionless wavenumber ˜kmin at ϕ = π/2. One can in-
+deed show that the reduced wavenumber solving Eq. (4)
+at ϕ = π/2 (resp. 0) is minimum (resp. maximum) on
+the quadrant ϕ ∈[0, π/2]. Thus, at the largest dimen-
+sionless wavenumber ˜kmax = ˜k(ϕ = 0), the correspond-
+ing curvilinear abscissa sM corresponds to the length of
+the slowness curve in the quadrant ϕ ∈[0, π/2] i.e. one
+fourth of the whole length of this curve.
+Another important geometrical aspect of the slowness
+curve that is central to the present work is the local
+normal to it. Considering its deﬁnition as a constant-
+frequency intercept of the dispersion relation in wave-
+vector space, by nature, the frequency gradient −→
+∇−
+→
+k ω is
+perpendicular to the slowness curve. As a result, the di-
+rection of the group velocity of spin waves −→
+vg = −→
+∇−
+→
+k ω can
+be directly read from the direction of the local normal to
+the slowness curve. In our notations, we point out that:
+−→
+∇−
+→
+k ω ≡
+X
+β=x,y,z
+∂ω
+∂kβ
+· −→
+eβ
+where
+kβ = −→k · −→
+eβ.
+In the following,
+we will use the angle θV
+=
+angle(−→
+Ha, −→
+vg).
+We point out that in the present case,
+phase and group velocities need not be collinear:
+on
+the contrary, there can be diﬀerences between θV and
+ϕ much larger than in cases of light propagation through
+anisotropic media [34]. Fig. 2 illustrates this on the ex-
+ample of a slowness curve reconstructed for a vanishing
+reduced applied ﬁeld.
+B.
+Distinctive features of dispersion relation
+caustics
+Typically, caustics in inhomogeneous media occur
+when a wavefront folds onto itself; in this situation, there
+exists a surface (or a line in 2D wave propagation) such
+that across it the number of rays passing through a point
+in space changes by an even number [15, 16]: this is the
+caustic. Equivalently, it can be viewed as the set of the
+local extrema of positions on the ray bundle on the wave-
+front, for all the wavefronts along the wave propagation.
+It is this extremal nature that grants these caustics large
+and localized intensities compared to other points on the
+ray bundle.
+In a geometrical optics approach, the in-
+tensity diverges as an initially ﬁnite-sized portion of the
+wavefront shrinks to a vanishing area [15]. A wave op-
+tics treatment however reveals that the intensity remains
+ﬁnite due to interferences: illumination proﬁles across
+caustics can in principle be determined by taking into
+account the variations of phase as a function of distance
+to the caustic [14].
+Such an approach has been used by Schneider et al.
+[26] for spin wave caustics excited by the scattering of
+a spin wave travelling in a waveguide terminating into a
+θV
+φ0
+−
+→
+k0d
+a)
+b)
+c)
+FIG. 2.
+a) Exemplary slowness curve for (ν, h, η)
+=
+(0.2873, 10−20, 0.15). As can be clearly seen in the polar plot
+of kd = ˜k(ϕ), the direction (ϕ0 =32.00°) of the phase veloc-
+ity −→
+vp and that (θV =108.9°) of the group velocity −→
+vg at the
+point −→
+k0d are very diﬀerent.
+b) Radiation pattern (δmz is
+grey-coded) of a hypothetical source exciting only wavenum-
+bers very close to ||−→
+k0||d. c) Plane wave corresponding to the
+carrier wave vector −→
+k0d (red lines are guides to the eye).
+full permalloy (Ni80Fe20) ﬁlm. However, this is a very
+diﬀerent situation compared to the above. Indeed, the
+wavefront does not fold onto itself due to spatial varia-
+tions of medium properties, rather, its extent is deter-
+mined almost exclusively (owing to the sub-wavelength
+source size) by the characteristics of spin wave propaga-
+tion. The latter are determined by the anisotropic spin
+wave dispersion relation, which allows caustics to form
+thanks to the possibility of stationary group velocity di-
+rection i.e. a beam with a well-deﬁned propagation direc-
+tion yet comprising a range of wave vectors in the vicinity
+of a carrier. More precisely, caustics correspond to local
+extrema of the group velocity direction; in other words, a
+caustic spin wave beam implies the existence of a caustic
+point ˜kc on the slowness curve such that:
+dθV
+d˜k
+˜kc
+= 0.
+(5)
+The CSWB has then a carrier wavenumber ˜kc, corre-
+sponding to a central wavefront angle ϕc = ϕ(˜kc) and a
+
+
+=== PDF PAGE 4 ===
+4
+beam direction θV,c = θV(˜kc).
+Coming back to the wavefront extent, rays from wave
+vectors not close enough to the carrier cannot play a role
+in the caustic wave amplitude simply because of diﬀer-
+ences in propagation direction.
+More speciﬁcally, the
+experimental data presented by Schneider et al.
+sug-
+gests that beam divergences of 2° or less can be obtained.
+Thus, there seems to be a contradiction between the cu-
+bic dispersion which is assumed to deﬁne the beam pro-
+ﬁle and the measurements. The question of the CSWB’s
+proﬁle goes however beyond the scope of this work. Nev-
+ertheless, it is clear from the low beam divergences ob-
+served in many experimental reports [23, 27, 35] that only
+small, almost straight parts of the slowness curve must
+contribute to CSWB.
+In fact, integrating the contribution of wave vectors all
+the way to inﬁnity as done in [26] neglects the geometric
+impossibility for them to create waves travelling from the
+point source to a far-away point on the caustic. To put it
+diﬀerently: for geometrical reasons, caustics originating
+solely from anisotropies in the dispersion relation and
+excited by a point-like source naturally restrict the range
+of relevant wave vectors, in contrast to the case of caustics
+due to inhomogeneities in the propagation medium.
+We wish to emphasize the above by reminding that in
+most cases [15, 36], caustics are treated on the basis of
+wave propagation in an isotropic or weakly anisotropic
+medium. One consequence is the fact that the ﬂow of
+power, i.e. the group velocity, is along the wave vector
+or close to parallel to it [14]. While this remains a rea-
+sonable approximation for slightly anisotropic media (as
+in usual crystal optics), in the case of perfectly soft but
+fully polarized thin ferromagnetic ﬁlms this collinearity
+may break down dramatically, as was illustrated in Fig.
+2. Therefore, even small changes in wave vector may re-
+sult in drastic changes in group velocity direction. By
+contrast, large changes in wave vectors do not necessar-
+ily lead to strong variations in the apparent wavelength
+λ which we deﬁne as:
+λ = 2π · ||−→
+vg||
+−→k · −→
+vg
+=
+2π
+−→k · −→
+eg
+=
+λ0(ϕ)
+cos (θV −ϕ),
+(6)
+where we have introduced −→
+eg as a unit vector along the
+group velocity. The apparent wavelength is simply the
+spatial period measured along the beam direction. Since
+large diﬀerences θV −ϕ can easily be obtained (cf. Fig.
+2, where cos (θV −ϕ0) ≃0.227), and more importantly
+since the projection ˜k(ϕ) cos (θV −ϕ) may remain almost
+constant over signiﬁcant portions of the slowness curve,
+one should consider notions such as propagation-induced
+phase or spectral breadth [37] of a spin wave beam care-
+fully.
+III.
+RESULTS AND DISCUSSION
+A.
+Limit of model applicability: thick ﬁlms
+We start by providing an example of situation where
+the model we use cannot be fully trusted, so as to high-
+light its limitations. In Fig. 3 we show a case where the
+reconstructed slowness curve splits into two separate con-
+nected components above a certain threshold frequency.
+˜k
+FIG. 3. Slowness curves for η = 0.015, h = 10−20, and ν =
+0.331 (dashed blue line) resp. ν = 0.333 (full red line).
+Such a behaviour has been described by Kreisel et al.
+[38]: the model chosen for spin wave dispersion predicts
+a local maximum in the ω(k, ϕ = π/2) vs. wavenumber
+curve, but this extremum is not reproduced by a formal
+approach not based on the thin-ﬁlm approximation [39],
+and designed to tackle the dipole-exchange regime. The
+maximum’s presence leads to an additional pair of so-
+lutions in terms of wavenumber in a certain frequency
+range, corresponding to a splitting of the slowness curve
+into two separate components.
+Clearly, results obtained within our approach about
+caustics deep in the dipole-exchange regime are not trust-
+worthy. Empirically, we see the slowness curve splitting
+into separate components for values of η up to ca. 0.075;
+for the sake of comparison, the thinnest ﬁlms investigated
+by Kreisel et al. feature η < 0.035 according to literature
+data on yttrium iron garnet (YIG) [40]. Nevertheless, the
+absence of this splitting is no proof that the reconstructed
+slowness curve is accurate, and we shall remain cautious
+in discussing results concerning CSWBs with wavenum-
+bers in the dipole-exchange regime. Finally, we note that
+promising theoretical developments such as the dipole-
+exchange dispersion relations recently derived by Harms
+and Duine [39] could eventually allow a more accurate
+treatment of caustics in the dipole-exchange regime.
+
+
+=== PDF PAGE 5 ===
+5
+B.
+General features
+Let us have a look at a ﬁrst example of frequency and
+ﬁeld map of caustic properties in Fig. 4. In the presented
+graphs, the red color means that either the corresponding
+(h, ν) point was not investigated because its reduced ﬁeld
+is above the reduced FMR ﬁeld hFMR, or because no
+caustic points were found there.
+First of all, one can see that there is indeed a portion
+of the (h, ν) plane where no caustic points exist. This
+occurs for frequencies above a certain νm(h, η). Then,
+going down in reduced frequency, there appears to be an
+oblique boundary between two regions of the map. Above
+it, ˜kc quickly enters the dipole-exchange regime, which we
+will only present but not discuss quantitatively as it cor-
+responds to a situation where our model is less reliable.
+Below the boundary, the reduced caustic wavenumber is
+much smaller than 1. Correspondingly, a boundary which
+we will label νb(h, η) appears at the same position on the
+plot of ϕc; this angle also seems close to constant over
+much of the region below the boundary. In both cases,
+its sharpness decreases towards low h, and at vanishing
+reduced ﬁeld the transitions in ˜kc or ϕc are both smooth.
+All these features are represented on a simpliﬁed repre-
+sentation of the map of ˜kc shown as inset on the ϕc map,
+including the point (hc, νc) at which the sharp boundary
+seems to end. A zoomed-in view on (hc,νc) is shown in
+the inset of Fig. 4.b).
+In the following, we will refer to the lowest reduced
+ﬁeld at which this boundary is sharp as hc and denote
+νc = νb(hc, η).
+As we shall see in more details, this
+abrupt boundary corresponds to a change in the num-
+ber of caustic points by two. The lowest point (hc, νc)
+is actually a cusp in the domain of existence of the two
+additional caustic points. We point out that for all re-
+duced ﬁelds and frequencies, the maps shown in Fig. 4
+displays the lowest caustic wavenumber respectively the
+associated wavefront angle.
+Before moving on to discussing the low-frequency
+pocket, its boundary and the existence of additional caus-
+tic points, and ﬁnally the threshold frequency for the ab-
+sence of caustic points, we stress that the behaviour of
+caustics strongly depends on η. As an example, we show
+in Fig. 5 ﬁeld and frequency maps for η = 0.09, 0.3, 0.6
+(from left to right). At the lowest value, the boundary
+νb extends all the way to h = 0, whereas the two other
+maps do not display such a sharp behaviour. In addition
+to the expected changes in range of values for ˜kc, one can
+see that the overall shape of the domain of existence of
+CSWBs also changes. From here on, we will call this area
+D. From η = 0.09 to 0.3, we see that D has expanded in
+the vertical direction at low h. In even thinner ﬁlms, for
+η = 0.6, the average slope of νm(h, η) has not changed
+much, yet νm(0, η) has decreased; as a result, D shrinks
+vertically.
+By contrast, even if the caustic group velocity direction
+displays a similar wealth of features as the caustic wave-
+front angle and reduced wavenumber, the jumps across
+the boundary νb are much less signiﬁcant when they ex-
+ist. An example of this is shown in Fig. 6, which shows
+maps for θV,c at the same values of η as in Fig. 5.
+In a certain range of reduced dipolar-exchange length,
+we ﬁnd that there may actually be more than one caustic
+point on the slowness curve. Empirically, we observe that
+the additional caustic points may exist for ˜kc < 1. When
+this inequality holds, the number of caustic points is ei-
+ther equal to one or to three; two being possible but only
+on a 1D curve in the ﬁeld and frequency plane; this curve
+includes the aforementioned boundary νb. Qualitatively,
+this is due to the fact that in the corresponding range
+of ﬁeld and frequency, when dθV/d˜k crosses 0, it does so
+with a local behaviour somewhat reminiscent of a poly-
+nomial of the type P(˜k; a, b) = (˜k −˜kc)3 +a·(˜k −˜kc)+b,
+where a and b are real parameters. If a > 0, there ex-
+ists only one root, whereas if a < 0 and |b| is suﬃciently
+small, there exists three distinct roots.
+The domain in the ﬁeld and frequency plane with these
+three roots will be referred to as D3 from now on, by
+contrast with D1 = D \ D3 in which there is only one
+caustic point instead of three. We will now describe D3
+using the P(˜k; a, b) approximant to dθV/d˜k for the sake
+of simplicity.
+Let us start with Fig. 7, which displays the same ﬁeld
+and frequency map for ˜kc as in Fig. 4 along with the
+maps for the two other reduced caustic wavenumbers.
+The two additional solutions can be shown to coincide on
+the rounded boundary of D3 to the lower left, which will
+be referred to as ∂D3,l. Entering D3 through this bound-
+ary by increasing ν corresponds to the situation where |b|
+becomes small enough to allow the two additional caustic
+points (with respect to the one with lowest ˜kc), thanks to
+a being negative enough. Increasing h on the other hand
+mostly decreases a: upon crossing ∂D3,l, a pair of caus-
+tic points with higher ˜kc’s appears. Of course, exactly on
+∂D3,l the two additional roots of dθ/d˜k are identical.
+Starting from inside D3, if one increases the reduced
+frequency, eventually the caustic point with the interme-
+diate value of ˜kc merges with the one featuring the small-
+est reduced wavenumber.
+This happens on the other
+boundary of D3, which we will call ∂D3,u from now on.
+This situation corresponds to ν = νb(h, η). Just above
+this boundary, the value of b is low enough so that only
+one root of dθ/d˜k remains. That is the reason for the dis-
+continuity in ˜kc in Fig. 4: the lowest caustic wavenumber
+jumps to what was the highest of the three ˜kc’s below
+νb. Experimentally, this could imply that SW excitation
+around this threshold wavenumber would have marked
+changes in intensity as a function of frequency.
+Based on the above, since the two boundaries other
+than ferromagnetic resonance each imply that a diﬀer-
+ent pair of caustic points coincide, we can infer that on
+the cusped intersection of ∂D3,l and ∂D3,u, there exists a
+single caustic point corresponding to three of them coin-
+ciding on the slowness curve. This is precisely the point
+(hc, νc) from the inset in Fig. 4.
+It is important to note that while a purely math-
+
+
+=== PDF PAGE 6 ===
+6
+φc (◦)
+˜kc
+0
+0.15
+0.31
+0.46 0.62
+h
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+0.15
+0.31
+0.46 0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+89.98
+83.40
+55.60
+34.37
+2.40
+4.66
+0
+0.19 0
+h
+0
+0.25
+0.48
+ν
+0.74
+1.5
+Low-
+frequency
+pocket
+νm(h, η)
+h
+ν
+0
+0.62
+νb(h, η)
+νc
+hc
+a)
+b)
+h
+1.0
+FIG. 4. Frequency and ﬁeld maps for a value of η = 0.12. For high enough ﬁelds, a sharp upturn in both properties can be seen
+for reduced frequencies above ca. 0.42. We remind the reader that ﬁelds above ferromagnetic resonance are not considered.
+Only few level curves are displayed for the sake of clarity. a) Caustic wavefront angle ϕc, with a schematic representation of
+the map’s distinctive features as inset. b) Normalized wavenumber ˜kc = kcd; a zoomed-in view on the area where the upturn’s
+sharpness drastically changes.
+0
+0.21
+0.41 0.62
+h
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+˜kc
+0
+0.21
+0.41 0.62
+h
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+0.21
+0.41 0.62
+h
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+1.25
+2.50
+3.75
+5.00
+6.19
+0
+˜kc
+0.350
+0.700
+1.05
+1.40
+1.69
+0
+˜kc
+0.125
+0.250
+0.375
+0.500
+0.611
+0
+a)
+b)
+c)
+η = 0.09
+η = 0.3
+η = 0.6
+FIG. 5. Examples of ﬁeld and frequency maps for a) η = 0.09, b) η = 0.3, and c) η = 0.6; only the reduced caustic wavenumber
+is shown.
+
+
+=== PDF PAGE 7 ===
+7
+ematical analysis yields well-deﬁned, separate caustic
+points, experimentally the distinction between close caus-
+tic points may well be impossible.
+In fact, there ex-
+ists no straightforward experimental signature of dθV/d˜k
+crossing 0, and portions of the slowness curve where this
+derivative is small but non-zero can behave similarly to
+an actual caustic point, as was noted by Gallardo et al.
+[41]. Nevertheless, the presence of more than one caustic
+point constrains a slowness curve to be almost straight in
+their vicinities; this should then favour marked caustics.
+C.
+Low-frequency pocket
+The low-frequency regime is important as it corre-
+sponds to a well established domain of validity of our
+theoretical model as well as wavelengths which can still
+be excited and detected reasonably easily in experiments.
+1.
+Analytics
+As could be seen in Fig.5, the shape or even the
+existence of the low-frequency pocket strongly depends
+on the chosen value of η.
+Nevertheless, we can in-
+vestigate the behaviour of caustics there by taking the
+limit ν →0.
+In order to remain below ferromagnetic
+resonance, we also take the limit h →0.
+Assum-
+ing h = 0 simpliﬁes the computation of the quantity
+tan θV = tan ϕ · [1 + f(˜k, ν, η)], where f is a function
+given in the Supplementary Materials. We can then dif-
+ferentiate this with respect to ˜k, take the limit ν →0 and
+Taylor-expand the derivative; the details are provided in
+the Supplementary Materials. Eventually, we ﬁnd that:
+˜kc(ν →0) = 3ν2 + O(ν4).
+(7)
+It was expected that the caustic wavenumber goes to
+zero; we can furthermore show that the lowest reduced
+wavenumber on the slowness curve (still in zero applied
+ﬁeld) i.e. the Damon-Eshbach wavenumber goes to zero
+as:
+˜kmin(ν →0) = 2ν2 + O(ν4)
+(8)
+which proves that CSWBs exist down to vanishing re-
+duced frequencies, regardless of their values. In this limit,
+the associated caustic wavefront angle is such that:
+cos ϕc =
+1
+√
+3 + O(ν2).
+(9)
+From the latter, we also get the CSWB direction θV,c:
+tan θV (˜kc, h →0, ν →0) = −2
+√
+2 + O(ν2)
+(10)
+The strength of this result lies with its independence on
+η; this is not surprising as in the limit we are considering,
+the CSWB’s wavelength diverges which means it must
+be much larger than both the ﬁlm thickness d and the
+dipolar-exchange length lex, however large they may be.
+The numerical values for the limits of ϕc and θV,c are ca.
+54.74° and 109.5°, respectively.
+2.
+Comparison with literature
+We present in Table I a comparison between experi-
+mental reports on caustics and predictions we make for
+the same conditions, focusing on the CSWB direction.
+Whenever there are three caustic points, the indicated
+predicted value for θV,c is the closest found across all
+three caustic points.
+We ﬁnd a reasonable agreement in quite a few cases,
+generally for the larger values of η (i.e. for thinner ﬁlms)
+with the notable exception of the report by Sebastian et
+al. [28]. However, in this case, the theoretical dispersion
+relation that we use may not be accurate any more due
+to the strong lateral conﬁnement of spin waves.
+Furthermore, we ﬁnd much larger discrepancies in sev-
+eral cases. For instance, if we consider the excitation of a
+caustic-like beam by Gieniusz et al. [43] at 4.62 GHz and
+under an induction of 98 mT in a 4.5 µm thick YIG ﬁlm,
+our model predicts a caustic point at reduced wavenum-
+ber 13.2, with a beam direction 169°. However, the rele-
+vant reduced wavenumbers in this experiment are in the
+range of a few percents [43], and the measured beam di-
+rection is 128°. The origin of this strong disagreement is
+easily understood by observing the derivative dθV/d˜k in
+this case. As Fig. 8 reveals, there exists a local minimum
+at ˜k ≃0.0659 for dθV/d˜k deep in the dipolar-dominated
+regime. Moreover, the associated group velocity direc-
+tion is 128°, and past the next local maximum, similar
+values of dθV/d˜k are reached again only for ˜k ≃0.9.
+This illustrates the impossibility to distinguish a close-
+to-straight slowness curve from a true caustic point from
+measurements alone.
+Discrepancies may also arise due to the source’s non-
+ideal excitation eﬃciency, for instance if it is too direc-
+tional. This is illustrated by the excitation of caustic-
+like spin wave beams by K¨orner et al. [44]. One of the
+reported TR-MOKE measurements deals with a 60 nm
+thin permalloy ﬁlm driven at an excitation frequency of
+16.08 GHz, under 160 mT applied induction; the authors
+observe twin beams with a wavefront angle of 65°, a beam
+direction 114°, and a reduced wavenumber of 0.314. Yet,
+the expected caustic spin wave beams in these condi-
+tions should feature a reduced wavenumber of 1.7063, a
+beam direction 138.62°, not to mention a wavefront angle
+of 53.27°. In this case, it appears that the excited spin
+waves simply correspond to the rather narrow portion of
+the slowness curve that could be excited by the authors’
+tapered coplanar waveguide segments [45]. Indeed, at the
+measured wavefront angle of 65°, in the authors’ experi-
+
+
+=== PDF PAGE 8 ===
+8
+TABLE I. Comparison between reports on CSWBs and our predictions for the beam direction θV,c.
+Ref. Excitation method
+Material (thickness in nm) Predicted θV,c Measured θV,c
+h
+ν
+η
+[28] Edge modes of a waveg-
+uide and nonlinearities
+Co2Mn0.6Fe0.4Si (30)
+113°
+123°
+3.81·10−2 0.287
+0.15
+[42] Corners of slotline termi-
+nation and scattering oﬀ
+a defect
+YIG (235)
+123°
+124°, 122°
+0.126
+0.427 7.36·10−2
+[35] Corners
+of
+slotline
+termination
+YIG (245)
+119°
+118°
+0.126
+0.427 7.06·10−2
+[43] Spin wave scattering oﬀ
+antidots
+YIG (4.5·103)
+169°
+128°
+0.557
+0.939 3.84·10−3
+[27] Collapsing
+spin-wave
+bullet
+YIG (5·103)
+137°
+137°
+1.040
+1.442 3.46·10−3
+[22] Spin wave scattering oﬀ
+a defect
+YIG (7·103)
+139°
+135°
+2.47·10−3 1.616 2.47·10−3
+mental conditions, the expected reduced wavenumber is
+about 0.28 (which falls rather far from zeroes in the an-
+tenna’s expected excitation eﬃciency [46]), and the beam
+direction 120.2°. We do not have an explanation for the
+remaining deviation in beam direction, though.
+3.
+Experimental results
+We now present results from experiments we have
+carried out in order to validate our theoretical ap-
+proach. Our aim here is to measure CSWBs and compare
+their properties with our predictions.
+In order to ac-
+cess CSWBs experimentally, the reciprocal-space Fourier
+components of its magnetic ﬁeld must span a broad range
+of wave vectors. The ideal situation where all wave vec-
+tors are accessible corresponds to an unrealistic point
+source, which can obviously not correspond to any high-
+frequency antenna. As a result, we choose a compromise
+between ease of fabrication, and broad-band excitation
+eﬃciency, namely a half-ring shaped stripline antenna.
+This design allows for a spin wave excitation of the slow-
+ness curve within ϕ ∈[0, π], i.e.
+twice the quadrant
+previously investigated. Of course, this excitation is not
+uniform because of the microwave antenna dimensions on
+the order of a micrometer.
+Our experiments were carried out using Time-Resolved
+Magneto-Optical Kerr Eﬀect (TR-MOKE) microscopy.
+Here, the dynamic out-of plane component of the mag-
+netization δmz is spatially mapped in the xy-plane at a
+ﬁxed phase between the microwave excitation frequency
+and the laser probing pulses. This enables direct imag-
+ing of the spin wave propagation in the magnetic ﬁlm.
+The wavenumber resolution of the set-up lies within the
+dipolar-dominated regime. Indeed, our spatial resolution
+r is about 0.29 µm (see Supplementary Materials), so that
+for a ﬁlm thickness t ∼100 nm, the largest accessible re-
+duced wavenumbers are 2π/(2r) · t ∼1.
+It shall be noted that the position of the microwave an-
+tenna in the resulting Kerr images is extracted from the
+topography image which is acquired simultaneously and
+is proportional to the reﬂectivity of the sample. Further
+information on TR-MOKE can be found in the Supple-
+mentary Materials. These experiments were performed
+on a 200 nm thick YIG ﬁlm grown on a gadolinium gal-
+lium garnet (GGG) substrate using liquid phase epitaxy.
+Considering this materials’ parameters [40], if not stated
+otherwise, η = 0.087 for all measurements. On top of
+the YIG ﬁlm the 2 µm to 3 µm wide microwave antenna
+was patterned by optical lithography with subsequent Ar-
+presputtering and electron-beam-induced evaporation of
+Cr(5 nm)/Au(100 nm to 220 nm). During the measure-
+ment the external bias ﬁeld −→
+Ha was always kept ﬁxed
+such that it aligned with the legs of the antenna structure
+along the x-direction. A sketch of the measurement ge-
+ometry can be found in Fig. 9. At this stage, we point out
+one complication resulting from this design. When driv-
+ing the antenna with a microwave ﬁeld, the legs them-
+selves excite spin waves in the Damon-Eshbach geometry
+[13]. These modes are not of interest for the generation
+of CSWBs, but due to the relatively long attenuation
+length in YIG [35] they may propagate to the tip of the
+antenna and interfere with the spin waves excited by the
+half-ring. In order to suppress this eﬀect, two diﬀerent
+approaches where applied. Either the length of the an-
+tenna was set to 50 µm and the YIG between the legs and
+tip was etched away, or the antenna was patterned to be
+1 mm long in the ﬁrst place.
+The ﬁrst Kerr image shown in Fig. 10.a) was ob-
+tained at a constant microwave frequency f =1.44 GHz
+and an external ﬁeld µ0Ha =5 mT.
+This corresponds
+to h = 0.028, ν = 0.292. The width of the waveguide
+was 2 µm and the distance between the legs and the tip
+was 1 mm. In the spatial map, two spin wave beams with
+well-deﬁned propagation directions are visible; moreover,
+the phase and group velocities are clearly non-collinear
+to each other. Here, beam II stems from the waveguide
+excitation in the quadrant ϕ ∈[π/2, π]. The beam angles
+
+
+=== PDF PAGE 9 ===
+9
+0
+0.21 0.41 0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+a)
+b)
+c)
+0
+0.21 0.41 0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+0.21 0.41 0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+η = 0.09
+η = 0.3
+η = 0.6
+θV,c (◦)
+90.00
+95.25
+111.1
+127.0
+142.9
+153.5
+90.00
+95.25
+104.8
+114.3
+123.8
+128.1
+90.00
+95.00
+104.5
+114.0
+123.5
+128.0
+θV,c (◦)
+θV,c (◦)
+θV,c (◦)
+h
+h
+h
+FIG. 6. Examples of ﬁeld and frequency maps for the CSWB direction θV,c, at a) η = 0.09, b) η = 0.3, and c) η = 0.6.
+0
+0.21
+0.41
+0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+˜kc
+a)
+b)
+c)
+0
+0.21
+0.41
+0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+0.21
+0.41
+0.62
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+1.17
+2.35
+3.52
+4.66
+0.150
+0.300
+0.450
+0.555
+0
+0
+0.200
+0.400
+0.600
+0.800
+0.826
+˜kc
+˜kc
+h
+h
+h
+FIG. 7. Field and frequency maps for η = 0.12, looking at the three reduced caustic wavenumbers. Note the distinct grey
+scales for each graph. a) Lowest ˜kc in the presence of several caustic points, and single value for ˜kc otherwise. b) Intermediate
+value for ˜kc if several caustic points exist. c) Largest reduced caustic wavenumber.
+
+
+=== PDF PAGE 10 ===
+10
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+˜k
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+dθV/d˜k
+FIG. 8. Calculated derivative of the group velocity direction
+with respect to the reduced wavenumber in the 4.62 GHz spin
+wave excitation described by Gieniusz et al. [43].
+YIG film
+2 µm
+−
+→
+k
+x
+y
+z
+−→
+Ha
+FIG. 9. Schematic of the measurement geometry. The half-
+ring shaped antenna excites spin wave propagation within a
+broad angular spectrum.
+of beams I and II with respect to the positive x direction
+are found to be 119.00◦(beam I) and 64.28◦(beam II)
+which results in eﬀective beam directions of θI = 119.00◦
+and θII = 180◦−64.28◦= 115.72◦, respectively.
+The
+discrepancy between θI and θII simply originates from
+a small misalignment of the external ﬁeld with respect
+to the waveguide legs. Since −→
+Ha is not fully parallel to
+the x-axis, the slowness curve is rotated by a small an-
+gle αH = (θI −θII)/2 ≈1.64◦in our frame of reference.
+Keeping this in mind, we extract an average beam direc-
+tion θV,e = 117.36◦, a wavefront angle ϕe = 50.66◦and
+a reduced wavenumber ˜ke = 0.211. These experimental
+ﬁndings are in good agreement with our theoretical ap-
+proach; indeed, values of θV,c = 115.05◦, ϕc = 51.29◦and
+˜kc = 0.223 are predicted for a CSWB in our experimental
+conditions.
+We can obtain further insight in reciprocal space with
+30
+20
+10
+10
+20
+30
+x (µm)
+y (µm)
+0
+0
+˜kx
+0
+0.2
+-0.2
+0
+˜ky
+|FT(δmz)|2
+(arb. u.)
+δmz (arb. u.)
+0
+0.4
+0.8
+-0.4
+-0.8
+a)
+b)
+FIG. 10. Measurement data obtained for η = 0.087, h = 0.028
+and ν = 0.292.
+a) Kerr image acquired from TR-MOKE.
+Two spin wave beams highlighted in yellow and red propa-
+gate from the tip of the antenna.
+b) Squared modulus of
+the Fourier transform (FT) of the Kerr image and expected
+slowness curve (blue).
+The yellow and red points and ar-
+rows indicate the expected caustic points and their respective
+group velocity directions. Caustic points I and II correspond
+to beams I and II in the Kerr image.
+the Fourier-transformed (FT) data shown in Fig. 10.b).
+Generally speaking, the FT data allows for a direct ob-
+servation of the slowness curve in ˜k-space. In order to re-
+duce spectral leakage, a Hanning windowing was applied;
+the latter provides a good trade-oﬀbetween frequency
+and amplitude accuracy. We see that the chosen antenna
+structure indeed excites a wide range of wave vector di-
+rections. The gaps in the spectrum arise from the ﬁnite
+antenna dimensions, as previously mentioned. We ﬁnd a
+good agreement between the slowness curve (blue curve)
+derived from our model (and corrected by the external
+ﬁeld angle αH). More importantly, this graph conﬁrms
+that the antenna structure grants access to the expected
+caustic points (yellow and red points) since the Fourier
+magnitude is still suﬃciently large in that region. To con-
+clude, caustic points I and II can be assigned to beams I
+and II from the Kerr image.
+We may now turn to the additional caustic points pre-
+dicted by our model. The chosen triplet (η, h, ν) is an ele-
+ment of the D3 set, and we would expect two further caus-
+tic points θV,c,2 = 113.74◦, ϕc,2 = 33.00◦, ˜kc,2 = 0.662
+and θV,c,3 = 114.02◦, ϕc,3 = 28.78◦, ˜kc,3 = 1.227. These
+reduced wave vectors could actually be resolved by our
+experimental set-up where ˜kres ≈2.2.
+The reciprocal
+space image in Fig. 10.b), however, displays a very low
+amplitude for ˜k ≳0.55 meaning that the microwave an-
+tenna cannot excite the other caustic points very eﬃ-
+ciently.
+Hence, only the low frequency pocket can be
+accessed.
+Further Kerr images were taken for the same ν, but
+
+
+=== PDF PAGE 11 ===
+11
+for diﬀerent h values.
+The h values were chosen such
+that they lie beneath the expected FMR ﬁeld hFMR ≈
+0.078778. A selection of the resulting Kerr images is il-
+lustrated in the upper part of Fig. 11. In each of them,
+twin spin wave beams are apparent. An overview of all
+the beam properties for the corresponding h values is
+plotted in the lower part of Fig. 11. Here, the relevant pa-
+rameters from every individual beam are extracted with
+image processing and bootstrapping least squares regres-
+sion procedures. An example on how one set of experi-
+mental data points is obtained can be found in the Sup-
+plementary Materials. The reasonable, sometimes even
+very good agreement between predicted and experimen-
+tal values of θV,c and ˜kc strongly suggests true CSWBs.
+The deviation of the beam directions is mostly within the
+range of the external ﬁeld angle. The larger discrepancy
+between predicted and measured wavefront angles ϕc is
+attributed to the narrowness of the CSWB.
+b1)
+b2)
+b3)
+a1)
+a2)
+a3)
+h = 0.0341
+h = 0.0398
+h = 0.0511
+Theory
+Experiment
+θV,c (◦)
+φc (◦)
+˜kc
+30
+42
+54
+0.10
+0.18
+0.26
+110
+113
+116
+119
+122
+0.025
+0.030
+0.035
+0.040
+0.045
+0.050
+0.055
+0.060
+h
+30
+20
+10
+0
+10
+20
+30
+x (µm)
+y (µm)
+30
+20
+10
+0
+x (µm)
+30
+20
+10
+0
+x (µm)
+0
+0
+0
+0
+FIG. 11. Measurement data obtained for η = 0.087 and ν =
+0.292. Upper part: acquired Kerr images for reduced ﬁelds of
+a1) h = 0.0341, a2) h = 0.0398, and a3) h = 0.0511,. b1-3)
+comparison between experiment and theoretical predictions
+of caustic point properties θV,c, ˜kc, ϕc. The error bars are
+the standard deviations from a bootstrapping ﬁt procedure.
+Beam-like features which do not coincide with a caus-
+tic point were detected as well. This time, the measure-
+ments were conducted with the 50 µm antennna struc-
+ture and partially etched ﬁlm. The width of the antenna
+was 3 µm.
+The resulting Kerr map for f =1.84 GHz
+(ν = 0.372) and µ0Ha =5 mT (h = 0.028) is shown
+in the left upper half of Fig. 12.
+In this geometry, a
+Damon Eshbach-like mode propagating from the YIG
+edge could not be fully suppressed; it is visible as a
+plane wave background. Our procedure to analyze spin
+wave beams yields θV,e = 136.33◦, ϕe = 68.97◦and
+˜ke = 0.522, whereas our model predicts a caustic point
+with θV,c = 121.39◦, ϕc = 35.84◦and ˜kc = 1.564.
+The origin of the experimentally observed beams may
+be twofold.
+Firstly, a close-to-straight slowness curve
+similar to the case of Gieniusz et al. [43] is predicted to
+exist within relatively close distance to ˜ke. The dθV/d˜k
+plot in Fig. 12.b) displays almost a constant behaviour
+between 0.6 ≲˜k ≲1.2 (marked with green dashed lines).
+The proximity of the experimental caustic point to a
+straight-to-close slowness curve is also illustrated in the
+FT data in the lower part of Fig. 12. Here, the dashed
+green semicircle represents the lower bound of ˜k = 0.6
+and the extracted beam points are highlighted in yellow.
+For this portion of the slowness curve, group velocity
+directions of up to 121.39◦are predicted. This beam di-
+rection, however, is still in stark contrast with the mea-
+surement result. Moreover, the calculated slowness curve
+(blue curve) deviates signiﬁcantly from the FT data. The
+diﬀerence between reciprocal space image and our model
+may show the limit of the model applicability, since a ﬁlm
+with η = 0.087 may not be considered a thin ﬁlm any-
+more. This results in predictions which are less reliable
+at higher ν values. A second possible origin of the beams
+is the excitation eﬃciency of the microwave antenna as
+there are many gaps in the FFT spectrum. The beams
+appear to be located close to some of them, and hence,
+may correspond to the excitation of only a small portion
+of the slowness curve within this region.
+|FT(δmz)|2
+(arb. u.)
+c)
+Theory
+Fit data
+˜kx
+0
+1.2
+0.8
+0
+˜ky
+0.8
+-0.8
+-1.6
+-1.6
+0.4
+30
+20
+10
+10
+20
+30
+y (µm)
+0
+0
+δmz (arb. u.)
+0
+a)
+b)
+dθV/d˜k
+0
+0
+0.2
+0.4
+0.6
+0.8
+1.6
+x (µm)
+˜k
+FIG. 12.
+a) Kerr image with twin beams obtained with
+η = 0.087 h = 0.028 and ν = 0.372. b) Calculated derivative
+of the group velocity direction with respect to the reduced
+wavenumber. Dashed green lines highlight close-to-straight
+slowness curve.
+c) FT of Kerr image.
+The experimentally
+observed beam parameters are depicted in yellow, the calcu-
+lated slowness curve in blue and the calculated caustic points
+in red. Dashed green semicircle illustrates lower limit of close-
+to-straight portion of slowness curve.
+
+
+=== PDF PAGE 12 ===
+12
+D.
+Caustic point of higher order
+Based on the conclusions from section III B, we know
+that the intersection of ∂D3,l and ∂D3,u there exists a sin-
+gle caustic point on the slowness curve; in the schematic
+discussion from the above based on the approximant
+P(˜k; a, b), it corresponds to a = 0 and b = 0, which
+means that dθV/d˜k ∼(˜k −˜kc)3 around this point. To
+put it diﬀerently: at this intersection, corresponding to
+the cusp seen in Fig. 7, the caustic point is not a simple
+extremum for θV on the slowness curve but an undulation
+point, in the vicinity of which θV −θV,c ∼(˜k −˜kc)4.
+The existence of such an undulation point is of par-
+ticular interest since the higher order in the dependence
+of θV on ˜k implies a ﬂatter extremum in group veloc-
+ity direction and therefore the possibility of larger por-
+tions of the slowness curve contributing to the CSWB.
+Moreover, as was discussed in Sec. II.II B, this does not
+necessarily mean an increase in spectral breadth of the
+CSWB since the latter depends on the apparent wave-
+length. In order to evidence this, we show in Fig. 13
+how the group velocity direction as well as the natural
+and apparent wavelengths vary around a caustic point
+very close to one of higher order, here the one such that
+its corresponding critical ﬁeld hc is zero. The considered
+slowness curve corresponds to h = h1 = 1.15 · 10−21,
+ν = ν1 = 0.315279504, η = η1 = 0.10253664614147.
+Let us brieﬂy outline how the coordinates νc,0 =
+νc(hc = 0) and ηc,0 = ηc(hc = 0) were found with a
+good accuracy. More details can be found in the Sup-
+plementary Materials. The starting point was a rough,
+hand-performed search for a value of η bringing the cusp
+of D3 to lie on the ordinate axis in a ﬁeld and fre-
+quency map. This yielded a starting point of η(0)
+c,0 = 0.10
+and ν(0)
+c,0 = 0.31.
+In these conditions, a caustic point
+was found for ˜k(0)
+c,0 ≃0.73.
+We then began an itera-
+tive procedure using appropriate Taylor expansions of
+the dispersion relation and of an exact expression for
+θV(h = 0, η, ν, ˜k, ϕ). Updating these at each step with
+the new solutions found by looking for the undulation
+point allows to converge to numerical values which we
+assimilate to the intersection of ∂D3,l and ∂D3,u.
+Over three iterations, the relative changes in the esti-
+mates steadily decrease in absolute value, from at most
+5% in the ﬁrst step to at most 5 · 10−6 in the last one,
+which provides the following guesses : ˜k(g)
+c,0 = 0.731717,
+η(g)
+c,0 = 0.1025366, ν(g)
+c,0 = 0.3152796. The latter can be
+compared with e.g. the hand-reﬁned values used for Fig.
+13: ν = ν1 = 0.315279504, η = η1 = 0.10253664614147,
+corresponding to ˜kc = 0.725904. It must be noted that
+the somewhat larger relative diﬀerence in terms of ˜kc,0 is
+due to the very steep dependence of ˜kc(ν, η, h →0) on η.
+We do emphasize that the exact location (νc,0,ηc,0) is nec-
+essarily diﬀerent from (ν1, η1) but close enough to high-
+light the qualitatively diﬀerent behaviour of several char-
+acteristics of the slowness curve. Finally, we note that for
+˜k
+˜k
+˜k
+φ
+˜kc
+φc
+0
+1
+2
+3
+4
+0 ◦
+15 ◦
+30 ◦
+45 ◦
+60 ◦
+75 ◦
+90 ◦
+b)
+0.04
+0.02
+0
+-0.02
+-0.04
+−0.04
+0.5
+2.0
+0
+0.5
+1.5
+1.0
+2.0
+0.04
+θV/θV,c−1
+λ0/λ0,c−1
+λ/λc−1
+a)
+FIG. 13.
+a) Plots of the relative deviations from the fol-
+lowing caustic point properties as a function of ˜k: its group
+velocity direction θV, its natural wavelength λ0 = 2π/˜k
+and its apparent wavelength λ = 2π/[˜k cos (θV −ϕ)]. Main
+graph:
+h = h1 = 1.15 · 10−21, ν = ν1 = 0.315279504,
+η = η1 = 0.10253664614147, which are extremely close to
+the values of νc and η for which hc = 0. Inset: same h and
+η = η1, ν = 0.95 · ν1 = 0.2995155288. b) Slowness curve for
+ν1, η1 and h1; ˜kc ≃0.7259. The slowness curve at ν2 is not
+shown for clarity, as it is very similar to the other one.
+
+
+=== PDF PAGE 13 ===
+13
+the parameters from Fig. 13, θV,c =118.36°, ϕc ≃42.75°,
+λ0,c = 84.41lex = 8.655d, and λc ≃339.7lex = 34.83d.
+We now examine the properties of the caustic point of
+higher order in more detail. From Fig. 13, the depen-
+dence of θV,c and the apparent wavelength λ on ˜k (in
+blue and green, respectively) clearly appears to be quar-
+tic rather than quadratic around the caustic point, which
+is where the deviations in natural wavelength (in red) go
+through 0. Its much steeper behaviour is easily under-
+stood by looking at the corresponding slowness curve in
+Fig. 13.b): around ˜kc it is not only almost straight but
+the angle γ between
+−→˜k and d
+−→˜k /ds is low, γ ≃14.38°.
+Hence, since d(˜k2)/ds is large, λ0 ∝1/˜k varies fast.
+By contrast, one can show that in the Taylor expansion
+of λ in (s−sc)/˜kc around λc, the ﬁrst coeﬃcient is always
+exactly zero at a caustic point. We stress again that this
+is caused by an unchanging projection of −→k on −→
+eg across
+the caustic point. If it is of higher order, it may be shown
+(see Supplementary Materials) that in this term, the con-
+tributions due to the second- and third-order variations
+of ϕ and to those of ˜k cancel out. To put it diﬀerently, the
+projection k · cos (θV −ϕ) is now constant up to fourth
+order in (s −sc)/˜kc. On the other hand, if the consid-
+ered caustic point is a regular extremum for θV, the term
+∝(s −sc)2 will be non-zero.
+To summarize the above paragraph: for geometrical
+reasons, the caustic point of higher order suppresses the
+quadratic and cubic variations of the apparent wave-
+length around λc. Hence, λ has then a markedly quartic
+behaviour at a caustic point of higher order. Further-
+more, we point out that even a small oﬀset in frequency
+makes it display a clearly quadratic behaviour. This is
+shown in the inset of Fig. 13, showing the same relative
+variations for the slowness curve at h = h1 = 1.15·10−21,
+η = η1 = 0.10253664614147, but ν = 0.95 · ν1 =
+0.2995155288.
+We have thus shown that in a suﬃciently close vicin-
+ity of a higher-order caustic point, a broadband excita-
+tion in terms of wavenumber can result in a narrowband
+CSWB with a very well-deﬁned direction. As a result,
+this phenomenon is expected to be extremely favourable
+in experiments, since any realistic antenna cannot have
+an arbitrarily narrow excitation eﬃciency as a function
+of wavenumber. Provided that its design yields AC mag-
+netic ﬁelds with Fourier components in the (broad) range
+of interest and with phases in a given interval of width
+< π, all the corresponding spin waves will coherently add
+in a beam with very small spectral breadth.
+In other
+words: in such a situation, counter-intuitively, exciting
+additional wave vectors with diﬀerent wavenumbers does
+not average out the carrier wave’s amplitude but rather
+increase it. This naturally prompts the question of how
+much stronger the emission from a caustic point of higher
+order would be with respect to that of a regular caustic
+point, and more generally, of the spin wave amplitude
+enhancement due to the caustics. This, however, goes
+beyond the scope of the present manuscript.
+To conclude this section, we point out that the reduced
+ﬁeld hc(η) corresponding to the caustic point of higher
+order decreases as a function of reduced dipolar-exchange
+length. Thus, this feature is expected to exist only for
+η < ηc,0 ≃0.1025366.
+E.
+Merged caustic spin wave beams
+We now move on to the topic of the threshold fre-
+quency νm(h, η) corresponding to the upper boundary
+of D, i.e. above which there are no caustic points any
+more.
+As was shown in Fig.
+6, the CSWB direction
+θV,c goes to π/2 as ν →νm(h, η).
+This is illustrated
+in Fig. 14, where we show a slowness curve for η1, h1,
+and ν2 = 0.71836419052. We stress again that νm(h, η)
+is strictly speaking an inﬁnitely narrow boundary and
+therefore ν2̸ = νm(h1, η1), but in these conditions, we
+ﬁnd a unique caustic point on the slowness curve, with
+π/2 −ϕc ≃0.32 µrad, and θV,c is equal to π/2 (within
+numerical precision). Moreover, at ν′
+2 = ν2 + δν, where
+δν = 1 · 10−11, we do not ﬁnd any caustic point on the
+slowness curve.
+As a result, we take the slowness curve at (ν2, h1, η1)
+to be assimilable to the one at (νm(h1, η1), h1, η1). Its
+very straight aspect around ϕ = π/2 is somewhat rem-
+iniscent of the one seen in the discussion of the caus-
+tic point of higher order. To illustrate this in more de-
+tail, Fig. 14.b) displays the relative deviations in group
+velocity direction θV, natural wavelength and apparent
+wavelength around the caustic point at ϕc.
+We point
+out that in the present case, the deviations are plotted
+against the curvilinear abscissa s normalized to the slow-
+ness curve’s length sM instead of ˜k as in Fig. 13. This
+choice is motivated by (i) the fact that in this case, to
+lowest order ˜k −˜kc = O(s2) instead of O(s −sc) as be-
+fore, and (ii) the much smaller relative diﬀerence between
+the smallest and largest normalized wavenumbers ˜km re-
+spectively ˜kM: ˜km ≃5.17 and ˜kM ≃7.91, compared
+to ˜km ≃0.240 and ˜kM ≃5.66 before. (i) implies that
+for (ν2, h1, η1), ˜k cannot serve as a meaningful abscissa
+along the curve since d˜k/ds = 0, which was not the case
+for (ν1, h1, η1), while (ii) shows that the slowness curve
+for (ν2, h1, η1) is much closer to a fourth of a circle than
+that for (ν1, h1, η1); as a matter of fact, for (ν2, h1, η1),
+we ﬁnd that 1 −[π/2 · (˜km + ˜kM)/2]/sM = 3.7%. There-
+fore, s/sM provides a better feeling for how much of the
+slowness curve contributes to the CSWB.
+From the graph, it seems that the apparent wavelength
+has once more a quartic behaviour around the caustic
+point. We show in the Supplementary Materials that this
+is indeed the case: in the conditions where ν = νm(h, η),
+to the lowest non-zero order, θV(s →0) −π/2 varies
+with an s3 dependence around s = 0, and the lowest-
+order variations in ˜k and ϕ (around ˜km and π/2) cancel
+each other out in the projection ˜k · cos (θV −ϕ).
+As a result, a caustic point at νm(h, η) is such that
+
+
+=== PDF PAGE 14 ===
+14
+0
+-0.02
+-0.04
+-0.06
+-0.08
+-0.10
+-0.12
+-0.14
+0
+0.1
+0.2
+0.3
+0.4
+s/sM
+φ
+0 ◦
+15 ◦
+30 ◦
+45 ◦
+60 ◦
+75 ◦
+90 ◦
+˜k
+0
+2
+4
+8
+6
+a)
+b)
+θV/θV,c−1
+λ0/λ0,c−1
+λ/λc−1
+FIG. 14. a) Slowness curve at (ν2 = 0.71836419052, h1, η1).
+b) Relative deviations in group velocity direction θV (blue),
+natural wavelength λ0 (red) and apparent wavelength λ
+(green), as a function of curvilinear abscissa along the slow-
+ness curve normalized by its total length sM.
+an excitation from a suitable, moderately directional an-
+tenna would be eﬀectively narrowband, and weakly di-
+vergent around the group velocity direction θV,c = π/2.
+This orientation is itself also advantageous in practice:
+as long as the used antenna can excite suﬃciently high
+wavenumbers, the CSWB direction becomes in this case
+simply perpendicular to the applied ﬁeld. Moreover, ow-
+ing to the symmetries of the dispersion relation, the
+CSWB beneﬁts from the part of the slowness curve at
+ϕ ≳π/2, which also feature θV ≃π/2. That is why large
+spin wave amplitudes can be expected, as eﬀectively two
+CSWB have merged at this particular frequency. We note
+that this merging phenomenon has already been observed
+in simulations by Kim et al. [29] in perpendicularly mag-
+netized ultrathin ﬁlms and by Gallardo et al. [41] in syn-
+thetic antiferromagnets. For the sake of completeness, let
+us comment on what happens from an analytical point of
+view when the two caustic points just below and above
+ϕ = π/2 coincide. It must be kept in mind that they
+respectively correspond to a maximum and a minimum
+for θV, temporarily considered for ϕ ∈[0, π]. Thus, when
+they do coincide at ϕc = π/2, strictly speaking there is
+no caustic point any more.
+To put it diﬀerently: be-
+low νm(h, η), over ϕ ∈[0, π], θV increases up to the ﬁrst
+caustic point where it reaches θV,c > π/2, decreases until
+the second one (for ϕ > π/2) where it reaches π −θV,c,
+then increases again to reach π when ϕ = π. Exactly
+at νm(h, η), it is monotonously increasing with an inﬂex-
+ion point, and above νm(h, η), it is strictly monotonously
+increasing.
+In order to go beyond the particular case presented
+here, we now investigate the evolution of νm(h →0, η) =
+νm,0(η) as a function of reduced dipolar-exchange length
+η.
+Similarly to the caustic point of higher order, the
+evolutions as a function of reduced ﬁeld quickly become
+cumbersome. This is why we focus on the νm,0(η), which
+is both the lowest frequency at which CSWBs merge and
+a threshold frequency that is easier to reach in experi-
+ments owing to the vanishing applied ﬁeld, provided that
+the studied ﬁlm is soft enough.
+We do keep in mind that below a certain limit in terms
+of reduced dipolar-exchange length, the model we use
+loses its validity.
+However, it has been shown that at
+suﬃciently high frequency [38], the analytical dispersion
+relation derived by Kalinikos and Slavin describes spin
+waves once more with a good accuracy.
+Fig.
+15 displays the numerically determined depen-
+dence of νm0 on η, as well as that of λm/lex the wave-
+length of the corresponding CSWB, normalized by the
+dipolar-exchange length. The procedure to ﬁnd ﬁrst a
+coarse estimate of this curve (before reﬁning it with ac-
+tual ﬁeld and frequency maps) is described in the Supple-
+mentary Materials. We point out that in the case of the
+merged CSWBs, the apparent and natural wavelengths
+are equal since θV,c = ϕc = π/2. The minimum value
+of η in these graphs corresponds to the smallest one we
+used such that the slowness curve (in vanishing ﬁelds)
+has only one connected component. While we may not
+expect our ﬁndings to hold at the lowest η’s, we do expect
+their accuracy to improve as η increases; it should be suf-
+ﬁcient at least for η > 1 since in this case the considered
+ferromagnetic ﬁlm can truly be considered thin.
+If we think about searching for the merged CSWBs,
+Fig. 15.b) indicates that for realistic values of η = lex/d,
+the CSWBs’ apparent wavelengths λ are only about one
+order of magnitude larger than the material’s dipolar-
+exchange length, typically λ ≲25lex. This is in stark
+contrast with the case of the caustic point of higher
+order in vanishing ﬁeld, where the natural wavelength
+was λ0,HO ≃84lex, and the apparent wavelength λHO ≃
+334lex. As a result, it seems that while caustic points
+of higher order may readily be excited by antennas cre-
+ated with even conventional electron beam lithography,
+in the case of the merged CSWB achieving a suﬃcient
+excitation eﬃciency at the proper wavevectors should
+
+
+=== PDF PAGE 15 ===
+15
+a)
+b)
+FIG. 15. a) νm,0(η) as a function of reduced dipolar-exchange
+length η.
+b) The corresponding reduced wavelength ˜λm =
+(2π/˜k)/η = λ/lex = λ0/lex. Here, natural and apparent wave-
+lengths coincide as phase and group velocities are collinear.
+prove quite challenging.
+For instance, even the low-
+magnetization, low-damping and rather soft ferrimagnet
+YIG features lex =17.3 nm [40], meaning that high-end
+antennas with a characteristic periodicity down to about
+200 nm would be required in this easiest of cases.
+IV.
+CONCLUSIONS
+We have focused on some properties displayed by spin
+wave caustics in soft, thin ferromagnetic ﬁlms. On the
+theoretical side, our approach relied on the analytical
+dispersion relation established by Kalinikos and Slavin.
+We could show that many reports on CSWBs in the lit-
+erature can be interpreted within this frame, although
+the absence of characteristic signs of a true CSWB may
+still cause some ambiguity. Following up on most stud-
+ies, we have performed time-resolved magneto-optical
+Kerr-eﬀect-based microscopy on samples designed for the
+study of CSWBs. Despite the large thickness of the fer-
+romagnetic material, our measurements are in very good
+agreement with our predictions, thus validating the ap-
+proach. Furthermore, we have speciﬁcally highlighted the
+large misalignment between phase and group velocities in
+this case, and succeeded in observing narrow CSWBs.
+Just at the boundary of the dipolar-dominated regime
+accessible in our experiments, we have predicted the ex-
+istence of a special caustic point. We refer to it as caustic
+point of higher order because it corresponds to an undu-
+lation point for the group velocity direction rather than
+a quadratic extremum.
+This conﬁguration was shown
+to be of particular interest because the apparent wave-
+length also featured a quartic behaviour, which implies
+a low spectral breadth for the CSWB even in the case
+of a broadband excitation. Although we focused on the
+special value ηc of reduced dipolar-exchange length such
+that the caustic point of higher order occurs at vanish-
+ing applied ﬁelds, we stress that this phenomenon would
+appear at non-zero ﬁelds for η < ηc, as long as the dis-
+persion relation we use is valid.
+Finally, we have investigated the merging of CSWBs.
+Once again, we have studied in detail the case of van-
+ishing applied ﬁelds, yet the merging may occur for any
+ﬁeld value, provided that the excitation frequency is large
+enough. In terms of model validity, it must be recalled
+that while vanishing values of η are problematic for the
+chosen dispersion relation, the merging always occurs
+at frequencies close to the exchange-dominated regime.
+The discrepancies between the actual spin wave disper-
+sion and the model by Kalinikos and Slavin decrease in
+this frequency range [39]. As a result, our claim is that
+the merging frequencies νm0 obtained for low η may be
+slightly inaccurate yet the phenomenology should remain
+the same as for larger η, where we expect our predictions
+to be more reliable. As the CSWBs merge, a very sig-
+niﬁcant portion of the slowness curve contributes to spin
+wave emission around θV = ϕ = π/2. Therefore, this
+conﬁguration appears promising in terms of channelling
+strong spin wave beams with short wavelengths, as low
+as ∼15lex.
+One of the most important questions remaining un-
+addressed so far concerns the quantiﬁcation and predic-
+tion of the enhancement of amplitude associated with
+CSWBs. More precisely, the crucial distinction between
+natural and apparent wavelength as well as the inad-
+equacy of the usual Huygens-Fresnel approach (due to
+the strong non-collinearity between phase and group ve-
+locities) in the construction of CSWBs calls for alterna-
+tive evaluations of their amplitudes. We intend to clar-
+ify these points and to go beyond the usually described
+amplitude divergence so as to reconcile the theoretically
+vanishing curvature (on the slowness curve) and experi-
+mentally ﬁnite amplitudes.
+[1] H. Yu, J. Xiao, and H. Schultheiss, Magnetic texture
+based magnonics, Physics Reports 905, 1 (2021).
+[2] B. Divinskiy, H. Merbouche, V. E. Demidov, K. O.
+Nikolaev, L. Soumah, D. Gou´er´e, R. Lebrun, V. Cros,
+J. Ben Youssef, P. Bortolotti, A. Anane, and S. O.
+Demokritov, Evidence for spin current driven bose-
+einstein condensation of magnons, Nature Communica-
+tions 12, 10.1038/s41467-021-26790-y (2021).
+[3] D. Bouzidi and H. Suhl, Motion of a bloch domain wall,
+Physical Review Letters 65, 2587 (1990).
+[4] D. D. Stancil and A. Prabhakar, Spin waves - Theory and
+applications (Springer New York, NY, 2009).
+[5] A.
+V.
+Chumak,
+Fundamentals
+of
+magnon-
+based
+computing,
+ArXiv
+e-prints
+(2019),
+arXiv:http://arxiv.org/abs/1901.08934v1.
+[6] D. Petti, S. Tacchi, and E. Albisetti, Review on magnon-
+ics with engineered spin textures, Journal of Physics D:
+Applied Physics 55, 293003 (2022).
+
+
+=== PDF PAGE 16 ===
+16
+[7] D. Seo, S. Hwang, B. Kim, Y. Yang, S. Yoon, and
+B. K. Cho, Tunable asymmetric spin wave excitation and
+propagation in a magnetic system with two rectangular
+blocks, Scientiﬁc Reports 11, 10.1038/s41598-021-02967-
+9 (2021).
+[8] Y. Au, M. Dvornik, T. Davison, E. Ahmad, P. S. Keat-
+ley, A. Vansteenkiste, B. V. Waeyenberge, and V. V.
+Kruglyak, Direct excitation of propagating spin waves by
+focused ultrashort optical pulses, Physical Review Let-
+ters 110, 097201 (2013).
+[9] St¨ohr, J. and Siegmann, H. C., Magnetism: From Fun-
+damentals to Nanoscale Dynamics (Springer Berlin Hei-
+delberg, 2006).
+[10] V. Sluka, T. Schneider, R. A. Gallardo, A. K´akay,
+M. Weigand, T. Warnatz, R. Mattheis, A. Rold´an-
+Molina,
+P.
+Landeros,
+V.
+Tiberkevich,
+A.
+Slavin,
+G. Sch¨utz, A. Erbe, A. Deac, J. Lindner, J. Raabe,
+J. Fassbender, and S. Wintz, Emission and propaga-
+tion of 1d and 2d spin waves with nanoscale wavelengths
+in anisotropic spin textures, Nature Nanotechnology 14,
+328 (2019).
+[11] F. G. Aliev,
+A. A. Awad,
+D. Dieleman,
+A. Lara,
+V. Metlushko, and K. Y. Guslienko, Localized domain-
+wall excitations in patterned magnetic dots probed by
+broadband ferromagnetic resonance, Physical Review B
+84, 144406 (2011).
+[12] M. Golebiewski, P. Gruszecki, M. Krawczyk, and A. E.
+Serebryannikov, Spin-wave talbot eﬀect in thin ferromag-
+netic ﬁlm, Physical Review B 102 (2020).
+[13] R. W. Damon and J. R. Eshbach, Magnetostatic modes
+of a ferromagnet slab, Journal of Physics and Chemistry
+of Solids 19, 308 (1961).
+[14] Y. A. Kravtsov and Y. I. Orlov, Geometrical Optics of
+Inhomogeneous Media, Springer Series on Wave Phenom-
+ena, Vol. 6 (Springer-Verlag Berlin Heidelberg, 1990).
+[15] Y. A. Kravtsov and Y. I. Orlov, Caustics, Catastrophes
+and Wave Fields, Springer Series on Wave Phenomena,
+Vol. 15 (Springer, Berlin, Heidelberg, 1993).
+[16] T. Poston and I. Stewart, Catastrophe Theory and Its Ap-
+plications, Surveys and reference works in mathematics,
+Vol. 2 (Dover Publications, 1996).
+[17] G. A. Northrop and J. P. Wolfe, Ballistic phonon imaging
+in germanium, Physical Review B 22, 6196 (1980).
+[18] B. Taylor, H. J. Maris, and C. Elbaum, Phonon focusing
+in solids, Physical Review Letters 23, 416 (1969).
+[19] H. J. Maris, Enhancement of heat pulses in crystals due
+to elastic anisotropy, The Journal of the Acoustical So-
+ciety of America 50, 812 (1971).
+[20] A. G. Every, Eﬀects of ﬁrst-order spatial dispersion on
+phonon focusing: Application to quartz, Physical Review
+B 36, 1448 (1987).
+[21] H. J. Maris, Phonon focusing, in Nonequilibrium phonons
+in nonmetallic crystals, Modern Problems in Condensed
+Matter Sciences, Vol. 16, edited by W. Eisenmenger and
+A. A. Kaplyanskii (North Holland, 1986) pp. 51–90.
+[22] O. B¨uttner, M. Bauer, S. O. Demokritov, B. Hillebrands,
+Y. S. Kivshar, V. Grimalsky, Y. Rapoport, and A. N.
+Slavin, Linear and nonlinear diﬀraction of dipolar spin
+waves in yttrium iron garnet ﬁlms observed by space- and
+time-resolved brillouin light scattering, Physical Review
+B 61, 11576 (2000).
+[23] V. Veerakumar and R. E. Camley, Magnon focusing in
+thin ferromagnetic ﬁlms, Physical Review B 74, 214401
+(2006).
+[24] R. Khomeriki, Self-focusing magnetostatic beams in thin
+magnetic ﬁlms, The European Physical Journal B 41,
+219 (2004).
+[25] V. E. Demidov, S. O. Demokritov, D. Birt, B. O’Gorman,
+M. Tsoi, and X. Li, Radiation of spin waves from the open
+end of a microscopic magnetic-ﬁlm waveguide, Physical
+Review B 80, 10.1103/physrevb.80.014429 (2009).
+[26] T. Schneider, A. A. Serga, A. V. Chumak, C. W.
+Sandweg, S. Trudel, S. Wolﬀ, M. P. Kostylev, V. S.
+Tiberkevich, A. N. Slavin, and B. Hillebrands, Non-
+diﬀractive subwavelength wave beams in a medium with
+externally controlled anisotropy, Physical Review Letters
+104, 10.1103/physrevlett.104.197203 (2010).
+[27] M. P. Kostylev, A. A. Serga, and B. Hillebrands, Radi-
+ation of caustic beams from a collapsing bullet, Physi-
+cal Review Letters 106, 10.1103/physrevlett.106.134101
+(2011).
+[28] T. Sebastian, T. Br¨acher, P. Pirro, A. A. Serga, B. Hille-
+brands, T. Kubota, H. Naganuma, M. Oogane, and
+Y. Ando, Nonlinear Emission of Spin-Wave Caustics from
+an Edge Mode of a Microstructured Co2Mn0.6Fe0.4Si
+Waveguide, Physical Review Letters 110, 10.1103/phys-
+revlett.110.067201 (2013).
+[29] J.-V. Kim, R. L. Stamps, and R. E. Camley, Spin wave
+power ﬂow and caustics in ultrathin ferromagnets with
+the dzyaloshinskii-moriya interaction, Physical Review
+Letters 117, 10.1103/physrevlett.117.197204 (2016).
+[30] F. Heussner, A. A. Serga, T. Br¨acher, B. Hillebrands,
+and P. Pirro, A switchable spin-wave signal splitter for
+magnonic networks, Applied Physics Letters 111, 122401
+(2017).
+[31] S. Muralidhar, R. Khymyn, A. A. Awad, A. Alem´an,
+D. Hanstorp, and J. ˚Akerman, Femtosecond laser pulse
+driven caustic spin wave beams, Physical Review Letters
+126, 037204 (2021).
+[32] B. A. Kalinikos and A. N. Slavin, Theory of dipole-
+exchange spin wave spectrum for ferromagnetic ﬁlms
+with mixed exchange boundary conditions, Journal of
+Physics C: Solid State Physics 19, 7013 (1986).
+[33] M. Lax and V. Narayanamurti, Phonon magniﬁcation
+and the gaussian curvature of the slowness surface in
+anisotropic media: Detector shape eﬀects with applica-
+tion to GaAs, Physical Review B 22, 4876 (1980).
+[34] Even for markedly anisotropic dielectrics the diﬀerences
+in refractive indices lead to maximal angles between
+phase and group velocities below 10° [? ].
+[35] I. Bertelli, J. J. Carmiggelt, T. Yu, B. G. Simon, C. C.
+Pothoven, G. E. W. Bauer, Y. M. Blanter, J. Aarts, and
+T. van der Sar, Magnetic resonance imaging of spin-wave
+transport and interference in a magnetic insulator, Sci-
+ence Advances 6, eabd3556 (2020).
+[36] L. B. Felsen and N. Marcuvitz, Radiation and Scattering
+of Waves, IEEE Press Series on Electromagnetic Wave
+Theory (Wiley-IEEE Press, 1994).
+[37] We deﬁne the spectral breadth of a non-monochromatic
+beam with well-deﬁned propagation direction and negli-
+gible divergence as ∆λ/λcar., where λcar. is the carrier’s
+mean apparent wavelength, and ∆λ is the beam’s stan-
+dard deviation in apparent wavelength.
+[38] A. Kreisel, F. Sauli, L. Bartosch, and P. Kopietz, Mi-
+croscopic spin-wave theory for yttrium-iron garnet ﬁlms,
+The European Physical Journal B 71, 59 (2009).
+[39] J. S. Harms and R. A. Duine, Theory of the dipole-
+exchange spin wave spectrum in ferromagnetic ﬁlms with
+
+
+=== PDF PAGE 17 ===
+17
+in-plane magnetization revisited, Journal of Magnetism
+and Magnetic Materials 557, 169426 (2022).
+[40] S. Klingler, A. V. Chumak, T. Mewes, B. Khodadadi,
+C. Mewes, C. Dubs, O. Surzhenko, B. Hillebrands, and
+A. Conca, Measurements of the exchange stiﬀness of
+YIG ﬁlms using broadband ferromagnetic resonance tech-
+niques, Journal of Physics D: Applied Physics 48, 015001
+(2014).
+[41] R. A. Gallardo, P. Alvarado-Seguel, A. K´akay, J. Lind-
+ner, and P. Landeros, Spin-wave focusing induced by
+dipole-dipole interaction in synthetic antiferromagnets,
+Physical Review B 104, 174417 (2021).
+[42] I. Bertelli, B. G. Simon, T. Yu, J. Aarts, G. E. W.
+Bauer, Y. M. Blanter, and T. van der Sar, Imaging spin-
+wave damping underneath metals using electron spins in
+diamond, Advanced Quantum Technologies 4, 2100094
+(2021).
+[43] R. Gieniusz, H. Ulrichs, V. D. Bessonov, U. Guzowska,
+A. I. Stognii, and A. Maziewski, Single antidot as a pas-
+sive way to create caustic spin-wave beams in yttrium
+iron garnet ﬁlms, Applied Physics Letters 102, 102409
+(2013).
+[44] H. S. K¨orner, J. Stigloher, and C. H. Back, Excitation
+and tailoring of diﬀractive spin-wave beams in NiFe using
+nonuniform microwave antennas, Physical Review B 96,
+10.1103/physrevb.96.100401 (2017).
+[45] We point out that the segment perpendicular to the ta-
+pered waveguide segments was at an angle of about 60°
+with respect to the applied ﬁeld in these experiments [46].
+[46] H. S. K¨orner, Time-resolved Kerr microscopy of spin
+waves propagating in magnetic nanostructures, Ph.D.
+thesis, Universit¨at Regensburg (2019).

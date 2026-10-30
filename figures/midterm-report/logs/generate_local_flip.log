@@ -1,0 +1,3 @@
+Generated 13 figures and 4 animations.
+{'probability_max_abs_error': 5.551115123125783e-16, 'amplitude_l2_error': 1.4581102181306477e-14, 'N256_N512_amplitude_l2_error': 1.0030936629912633e-14, 'width_x_error': np.float64(7.105427357601002e-15), 'width_y_error': np.float64(7.105427357601002e-15), 'edge_mass': 1.9155688936068897e-29, 'norm_error': 4.440892098500626e-16, 'centroid_abs': 3.552713678800501e-15}
+

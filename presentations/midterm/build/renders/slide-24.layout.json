@@ -1,0 +1,13 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/q3vegt","index":23,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/gb2lcra9","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"速度方差决定无啁啾 Gaussian 的展宽","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/fat43mto","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/e9k3ahs3","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C09　完整色散下的数值宽度与谱矩关系","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/pgvm9wbq","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"24","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"ch/w3qhsve5","kind":"chart","position":{"left":44,"top":147,"width":793,"height":417},"chartType":"scatter","title":"概率 RMS 宽度随时间变化"},
+{"id":"sh/ned47mt0","kind":"textbox","position":{"left":875,"top":165,"width":350,"height":112},"text":"Var[n(τ)] = Var[n(0)]\n                 + τ² Var(u)","style":{"fontSize":28,"typeface":"Cambria","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2d4nehsf","kind":"textbox","position":{"left":885,"top":335,"width":335,"height":34},"text":"物理解释","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/5krmxcbm","kind":"textbox","position":{"left":885,"top":378,"width":335,"height":140},"text":"不同波矢的群速度不同。\n速度差随传播时间积累，\n形成包络宽度的增长。","style":{"fontSize":24,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/4jil47a1","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/61kze98j","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"这里使用完整余弦色散的谱矩，不把结果限制为二阶抛物线近似。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,488 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          16
+        ]
+      ],
+      "date-time": "2026-03-16T13:26:37Z",
+      "timestamp": 1773667597830,
+      "version": "3.50.1"
+    },
+    "reference-count": 61,
+    "publisher": "American Physical Society (APS)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              3,
+              30
+            ]
+          ],
+          "date-time": "2009-03-30T00:00:00Z",
+          "timestamp": 1238371200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Phys. Rev. A"
+    ],
+    "DOI": "10.1103/physreva.79.033847",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2009-03-31T07:41:11Z",
+      "timestamp": 1238485271000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 15,
+    "title": [
+      "Discrete diffraction and shape-invariant beams in optical waveguide arrays"
+    ],
+    "prefix": "10.1103",
+    "volume": "79",
+    "author": [
+      {
+        "given": "Stefano",
+        "family": "Longhi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          30
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "PhysRevA.79.033847Cc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01936"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physrep.2008.04.004"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.85.1863"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.88.093901"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.95.053902"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2735953"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.23.001701"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.83.4756"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc8R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.83.4752"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.83.963"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1134/1.1828630"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc10R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.31.001651"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc10R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.023901"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc10R4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.053903"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/JOSAB.24.002632"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0030-4018(03)01172-6"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc12R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.optcom.2004.11.075"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.30.002137"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc13R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.243901"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc13R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.74.155116"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc13R4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.15.003212"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc13R5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.16.003474"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.74.066609"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc14R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.15.009547"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc14R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physleta.2008.02.078"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.15.009737"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.87.254102"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc16R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.78.031801"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.73.036616"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc17R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.74.026602"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc17R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.75.053814"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.93.113902"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.063901"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.073901"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.32.002668"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.173903"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc18R6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.123903"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.100.203904"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc19R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.101.203902"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.123502"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc20R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTQE.2002.806693"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc20R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.173902"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc20R4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmat1568"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc21R1",
+        "volume-title": "Principles of the Theory of Solids",
+        "author": "J. M. Ziman",
+        "year": "1979"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc22R1",
+        "volume-title": "Quantum-Theoretical Formalism for Inhomogeneous Graded-IndexWaveguides",
+        "author": "S. G. Krivoshlykov",
+        "year": "1994"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1119/1.12300"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1119/1.16396"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.16.000196"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1464-4266/2/3/320"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.69.056608"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc23R6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1070/QE2005v035n11ABEH012788"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc24R1",
+        "volume-title": "Asymptotics and Special Functions",
+        "author": "F. W. J. Olver",
+        "year": "1974"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1119/1.18583"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc25R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.84.1061"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2999624"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc27R1",
+        "volume-title": "Lasers",
+        "author": "A. E. Siegman",
+        "year": "1986"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.64.033424"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physleta.2003.08.038"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/38/15/010"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.29.000468"
+      },
+      {
+        "key": "PhysRevA.79.033847Cc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.34.3625"
+      }
+    ],
+    "container-title": [
+      "Physical Review A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.aps.org/article/10.1103/PhysRevA.79.033847",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.79.033847/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2017-04-05T18:09:18Z",
+      "timestamp": 1491415758000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/PhysRevA.79.033847"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          30
+        ]
+      ]
+    },
+    "references-count": 61,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            3
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/physreva.79.033847",
+    "relation": {},
+    "ISSN": [
+      "1050-2947",
+      "1094-1622"
+    ],
+    "issn-type": [
+      {
+        "value": "1050-2947",
+        "type": "print"
+      },
+      {
+        "value": "1094-1622",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          30
+        ]
+      ]
+    },
+    "article-number": "033847"
+  }
+}

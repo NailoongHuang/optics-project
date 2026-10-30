@@ -1,0 +1,8 @@
+# Versions observed in the scientific Python environment.
+numpy==2.5.2
+scipy==1.18.0
+matplotlib==3.11.1
+pillow==12.3.0
+sympy==1.14.0
+mpmath==1.3.0
+pymupdf==1.28.2

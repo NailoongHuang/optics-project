@@ -1,0 +1,1050 @@
+=== PDF PAGE 1 ===
+Perspectives on inverse design for AI magnonics
+Franz Vilsmeier
+∗1, Florian Bruckner
+1, Claas Abert
+1, Dieter Suess
+1, and Andrii V.
+Chumak
+†1
+1Faculty of Physics, University of Vienna, Vienna, Austria
+July 9, 2026
+Abstract
+Inverse design—specifying a desired functionality and letting a computational algorithm find the
+optimal structure—has emerged as a powerful paradigm for magnonic device engineering. In
+this article, we survey the rapidly growing field of inverse-design magnonics, organising it along
+two axes: the design variables (topology, material parameters, and magnetic field landscape)
+and the algorithmic toolbox (gradient-free, gradient-based, and neural-network-based methods)
+together with the differentiable micromagnetic solvers that enable them. We then identify open
+frontiers that we consider most promising for the next phase of the field: sensitivity analysis
+and robust design to bridge the gap between simulation and experiment; input shaping and
+transducer optimisation; the incorporation of nonlinear spin-wave effects as an explicit design
+resource; spatially structured amplification; self-adapting media and machine-learning-based
+design; and the long-term vision of a universal, reconfigurable magnonic platform. We argue
+that magnonics and artificial intelligence are converging from two directions—machine-learning
+tools for designing magnonic devices, and magnonic devices as hardware for neuromorphic
+computation—and propose the term AI magnonics to describe this emerging paradigm.
+1 Introduction
+Spin waves—the collective excitations of ordered magnetic materials—and their quanta, magnons,
+have emerged as promising carriers for wave-based information processing [1–4]. Operating at
+frequencies from the GHz to the THz range and exhibiting wavelengths down to the nanometre
+scale, they combine intrinsic nonlinearity with low energy dissipation and offer a route to on-chip
+computing without charge flow. The conventional approach to designing magnonic devices—propose
+a geometry based on physical intuition, simulate its spin-wave response, and refine iteratively—
+has produced notable results, from nanoscale directional couplers [5,6] and majority gates [7] to
+all-magnonic repeaters [8], cascaded nonlinear magnonic circuits [9, 10], and magnon-scattering
+reservoirs [11]. However, magnonic devices involve many coupled degrees of freedom, and the
+underlying physics is sufficiently complex that many high-performing configurations lie beyond
+the reach of manual parameter studies. As the field moves toward exploiting nonlinear spin-wave
+dynamics for neuromorphic and unconventional computing, this design complexity grows further.
+How to systematically design structures that exploit this rich physics remains a central open challenge.
+∗franz.vilsmeier@univie.ac.at
+†andrii.chumak@univie.ac.at
+1
+arXiv:2607.07324v1  [cond-mat.mes-hall]  8 Jul 2026
+
+
+=== PDF PAGE 2 ===
+Specifications
+Design
+Target performance
+a.
+Materials
+Constraints
+Domain
+✓
+intuition
+✓
+?
+b.
+Materials
+Constraints
+Domain
+✓
+?
+optimisation
+✓
+Figure 1. Inverse design as a paradigm shift in magnonics. Both workflows share the same
+three elements—a set of specifications, a device geometry, and a target performance (shown as a
+dartboard). (a) In direct design, a researcher converts the specifications into a geometry guided by
+physical intuition, and the resulting performance is only evaluated afterwards, with no guarantee
+that it meets the target (the dart may miss). (b) In inverse design, the target performance is instead
+prescribed up front and an optimisation algorithm works backward to the device geometry (note the
+reversed arrow), reliably reaching the target, often through non-intuitive geometries that outperform
+hand-designed devices. Check marks and question marks indicate which stages are determined versus
+left uncertain in each workflow.
+Inverse design addresses this bottleneck: the desired device functionality is specified as an objective
+function, and a computational algorithm finds the optimal structure automatically. Crucially, inverse
+design is not merely a faster route to familiar devices: by navigating a high-dimensional design space
+that defies physical intuition, it reaches high-performing solutions that manual design could never
+find. Fig. 1 illustrates the paradigm shift from direct to inverse design. More broadly, inverse design
+is an instance of an inverse problem—inferring unknown causes from desired effects—a concept
+familiar from fields as diverse as medical imaging and geophysics [12]. Computational approaches to
+inverse design have been applied in structural mechanics [13–15], photonics [16–19], phononics and
+acoustics [20,21], and electromagnetic device engineering [22,23]. Among these, photonics represents
+the most mature ecosystem. Magnonics, however, offers a richer set of design variables: beyond
+geometry, the saturation magnetisation Ms, the anisotropy constant Ku, and the Gilbert damping
+α can in principle be tuned independently, and a reconfigurable external field landscape provides
+an additional design variable with no photonic analogue. Furthermore, spin-wave propagation is
+inherently nonreciprocal and governed by the nonlinear Landau–Lifshitz–Gilbert (LLG) equation,
+properties that arise naturally and without the need for special media.
+Inverse-design magnonics emerged in 2021 with two independent foundational works.
+Wang et al. [24] introduced binary-pixel topology optimisation to the field and demonstrated inverse-
+designed spin-wave routers and demultiplexers in simulation. Papp et al. [25] developed a spin-wave
+neural network in which nanomagnets placed on top of a continuous magnetic film serve as trainable
+scattering elements, exploiting nonlinear spin-wave interference for pattern recognition—specifically,
+the recognition of spoken vowels. The field has since advanced rapidly: magnonic filters optimised
+via particle swarm optimisation (PSO) [26], level-set topology optimisation [27], temporal pulse
+2
+
+
+=== PDF PAGE 3 ===
+design [28], field-free inverse-designed demultiplexers [29], and dedicated differentiable micromagnetic
+solvers that share their computational paradigm with neural network training [30] have been
+reported. Inverse-designed spin-wave lenses [31], a universal inverse-design RF device [32,33], and
+inverse-designed logic gates [34] have been realised experimentally—all within four years of the
+founding works. Table 1 summarises the inverse-design magnonic demonstrations reported to date.
+Table 1. Summary of inverse-design magnonic demonstrations. For each published study,
+we list the optimised design variable, the algorithm employed, the target functionality, whether the
+demonstration was simulation-based (S) or experimental (E), and the key result.
+Year Reference
+Design variable
+Algorithm Objective
+S/E Key result
+2021 Wang et al. [24]
+Geometry (binary)
+DBS
+Routing, demux
+S
+First magnonic ID
+2021 Papp et al. [25]
+Nanomagnet states
+Backprop
+Pattern recog.
+S
+SW neural network
+2022 Kiechle et al. [31]
+Material params.
+Backprop
+SW lens
+E
+Inverse-designed SW lens
+2022 Yan et al. [26]
+Magnonic crystal
+PSO
+Bandpass filter
+S
+PSO-optimised filter
+2023 Casulleras et al. [28] Input pulse
+Analytical
+Target pulse
+S
+Temporal ID
+2025 Zenbaa et al. [32]
+Field landscape
+DS, GA
+Notch filter, demux
+E
+First ID on exp. platform
+2025 Zenbaa et al. [34]
+Field landscape
+DS
+Logic gates
+E
+Boolean logic
+2025 Voronov et al. [27]
+Geometry (level-set) Adjoint
+Hysteresis, demux
+S
+Level-set topo. opt.
+2025 Chen et al. [29]
+Geometry (binary)
+Monte Carlo Demux, mux
+S
+Field-free ID (VCMA bias)
+2025 Abert et al. [30]
+—
+Diff. solver
+General-purpose
+S
+Adjoint-based ID solver
+DBS: direct binary search; GA: genetic algorithm; PSO: particle swarm optimisation; DS: direct search; Topo. opt.:
+topology optimisation; VCMA: voltage-controlled magnetic anisotropy; SW: spin wave; ID: inverse design; S: simulation; E:
+experimental.
+In this article, we survey the current state of the art and, based on our experience in the field,
+identify what we consider the most promising open frontiers—from input shaping and nonlinear
+design to amplification and self-adapting systems—culminating in the long-term vision of a universal,
+reconfigurable magnonic platform. Table 2 provides an overview of the content of this article.
+2 The design space: topology, material, and field
+This section surveys what can be optimised in an inverse-design magnonic device; Sec. 3 then
+addresses how. Five design variables can be distinguished: three are established and discussed here,
+while two further ones—input shaping and nonlinear effects—carry substantial untapped potential
+and are treated as open perspectives in Sec. 4. These design variables differ fundamentally in their
+character: some produce permanent modifications and are fixed once fabricated, while others are
+reconfigurable and can be adapted in situ. They also differ in their parameterisation: topology is
+inherently discrete (material present or absent), whereas material parameters and field landscapes
+are continuously tunable. Fig. 2 provides a schematic overview of all five design variables. Each of
+these design variables comprises many individual degrees of freedom—the pixels of a topology or the
+cells of a field landscape—whose number sets the dimensionality of the optimisation (Sec. 4.6).
+2.1 Topology and geometry
+The most direct analogue to photonic inverse design is topology optimisation: determining where
+magnetic material is present or absent [16,18]. Two approaches have been explored in magnonics.
+Binary pixel grids [24,26,29] discretise the design region into cells that are either filled or empty,
+producing staircase-like boundaries. Level-set methods [27] instead represent the device boundary
+as a smooth, continuous surface, yielding geometries more compatible with standard lithographic
+fabrication. Using these representations, inverse-designed spin-wave routers, demultiplexers, and
+3
+
+
+=== PDF PAGE 4 ===
+Table 2. Overview of inverse-design magnonics literature. Papers are grouped by the section
+in which they are primarily discussed and organised by class; a paper may appear in more than one
+class if it contributes to multiple topics.
+Class
+Description
+Key references
+Sec. 2 — Design space: topology, material, and field
+Topology
+Binary or level-set material distribution opti-
+mised for target SW response
+[24,26,27,29]
+Material parameters
+Spatially varying Ms, Ku, α via ion irradiation
+or laser processing
+[31,35–50]
+Field landscape
+Reconfigurable external or stray-field patterns
+steering SW propagation
+[25,32,34,51–60]
+Sec. 3 — Algorithmic toolbox
+Gradient-free
+Genetic algorithms, PSO, direct search, ana-
+lytical inversion; no derivative required
+[24,26,28,29,32,34]
+Gradient-based
+Adjoint method, backpropagation through dif-
+ferentiable solvers; scales to thousands of pa-
+rameters
+[25,27,31]
+NN-based
+Neural networks as surrogate models, inverse-
+mapping or generative tools (no magnonic
+demonstration yet)
+[61–69]
+Differentiable solvers
+Auto-differentiable micromagnetic frameworks
+enabling backpropagation; AI-assisted genera-
+tion of scientific solver code
+[30,70–76]
+Sec. 4 — Perspectives and outlook
+Robust design
+Sensitivity analysis and fabrication-aware op-
+timisation (first magnonic checks reported;
+systematic study in preparation)
+[24,25,31,77–80]
+Input shaping
+Optimised excitation waveforms, antenna ge-
+ometry, and transducer efficiency
+[28,81–89]
+Nonlinear design
+Inverse design exploiting nonlinear SW dy-
+namics
+[8–10, 24, 25, 34, 90–
+93]
+Amplification
+Spin-torque and parametric amplification as
+an active design variable
+[94–97]
+Self-adapting systems
+Reconfigurable media, neuromorphic hard-
+ware, and reservoir computing
+[9–11,25,32,34,46,47,
+54,55,98,99]
+4
+
+
+=== PDF PAGE 5 ===
+Topology
+Material
+parameters
+Field
+landscape
+Input
+shaping
+Nonlinear
+eﬀects
+ρ ∈{0, 1}
+Ms, Ku (x, y)
+Bext(x, y)
+hrf(x, t)
+f (|m|2)
+Established design variables
+Open perspectives
+Figure 2. Design variables in inverse-design magnonics. From left to right: topology (binary
+or level-set material distribution), material parameters (spatially varying Ms, Ku, α), and magnetic
+field landscape (reconfigurable stray-field or current-loop patterns) constitute the three established
+design variables. Input shaping (excitation waveforms and antenna geometry) and nonlinear effects
+(frequency shifts or multi-magnon interactions as a design resource) are discussed as open perspectives
+in Sec. 4.
+bandpass filters have been demonstrated in simulation [24,26,27]. Chen et al. [29] further showed
+that voltage-controlled magnetic anisotropy (VCMA) can replace the external bias field, enabling
+field-free topology optimisation and cascading of inverse-designed components into a magnonic half
+adder. The optimisation algorithms employed are discussed in Sec. 3. Topology optimisation is
+inherently non-reconfigurable, and any fabricated device would be limited by the minimum feature
+size of the lithographic technique—on the order of 100 nm for electron-beam lithography. To date,
+however, all topology-optimised magnonic devices remain at the simulation stage; no experimental
+realisation has yet been demonstrated.
+2.2 Material parameters
+Rather than removing material, one can spatially vary the magnetic properties—Ms, Ku, or α—to
+create an effective refractive-index landscape for spin waves. These modifications are generally
+permanent. A rich fabrication toolbox is available for this purpose. Ion irradiation—using Ga+
+focused ion beam (FIB), He+, or Si implantation—tunes Ms and Ku through strain-induced magne-
+toelastic effects, with α adjustable almost independently using He+ ions [35–39]. These techniques
+have enabled gradient-index spin-wave lenses and prisms [36], dispersion-tuned waveguides for
+large magnonic networks [37], and magnetoelastic spin-wave routing [38, 39]. Laser-based phase
+nanoengineering [40,41] provides complementary capabilities, exploiting local 405 nm irradiation of
+yttrium iron garnet (YIG) to either crystallise amorphous films or amorphise crystalline films, both
+defining ferrimagnetic waveguide channels within a paramagnetic matrix [42,43]. Controlled melting
+and recrystallisation of crystalline YIG instead creates a strained phase with up to 30-fold enhanced
+perpendicular magnetic anisotropy, enabling direct-write three-dimensional magnonic crystals [44],
+while direct-write laser annealing of metallic magnetic films produces continuous two-dimensional
+gradients in Ms, Ku, and interlayer exchange coupling [45]. Reconfigurable alternatives include
+VCMA, which tunes Ku electrically via magneto-electric coupling [46,47], and thermoplasmonic
+modulation of Ms [48–50].
+Material parameters were first employed as a design variable by Kiechle et al. [31], who predicted
+the ion-irradiation pattern for a target spin-wave lens and validated the result experimentally via
+Ga+ FIB on YIG.
+5
+
+
+=== PDF PAGE 6 ===
+2.3 Magnetic field landscape
+A third design variable leaves the magnetic medium untouched and instead shapes its magnetic
+environment. A spatially inhomogeneous bias field modifies the local spin-wave dispersion and
+can thereby steer, filter, or redirect propagating spin waves. Several mechanisms are available at
+different length scales. At the millimetre scale, DC current-loop grids placed above a continuous YIG
+film provide a fully software-defined field landscape [32,34]. At the micro- to nanoscale, patterned
+magnetic overlayers offer finer control: CoFeB nanostripes on YIG define spin-wave nanochannels [51],
+and artificial spin ice provides writable stray-field landscapes [52,53]. Nanomagnets whose state can
+be reversed by propagating magnons enable non-volatile magnon memory [54,55]. Domain walls [56]
+and skyrmion arrays [57] constitute reconfigurable spin-wave nanochannels and dynamic magnonic
+crystals, while MEMS-integrated permanent micromagnets that can be physically repositioned
+relative to the waveguide offer a further path to miniaturised field control [58,59]. A monolithic
+extension of this approach integrates the magnonic waveguide directly onto a suspended piezoelectric
+bridge, where voltage-induced strain controls spin-wave propagation via magnetoelastic coupling [60].
+Papp et al. [25] used nanomagnet stray fields as trainable design parameters in a spin-wave
+neural network, optimising the magnetisation states to perform pattern recognition—one of the two
+foundational demonstrations of inverse-design magnonics and the first to exploit the field landscape as
+a design variable. Zenbaa et al. [32,34] demonstrated the first experimental inverse-design magnonic
+devices using this design variable: with a 7 × 7 current-loop grid, they optimised notch filters,
+demultiplexers, and logic gates directly on the physical hardware, without requiring simulation. This
+in-situ approach provides inherent robustness to fabrication imperfections, since the field pattern
+can be re-optimised to compensate for manufacturing tolerances—a significant advantage over static
+structural designs that must bridge the simulation-to-experiment gap.
+3 The algorithmic toolbox
+Having established what can be optimised, we now turn to how. The design space is typically high-
+dimensional and the objective landscape non-convex. This non-convexity is intrinsic to magnonics:
+the nonlinearity of the underlying LLG dynamics produces a rugged landscape with many local optima,
+so the distinction between local and global optimisation is not a technicality but a central design
+consideration. Gradient-based methods are local optimisers—they follow the objective downhill to
+the nearest minimum—and are far more efficient when applicable, scaling to thousands of parameters,
+yet they offer no guarantee of reaching the global optimum and may settle into suboptimal designs.
+Gradient-free methods explore the landscape more globally and can escape local minima, at the cost
+of an evaluation count that grows rapidly with dimensionality. Gradient-based methods require a
+differentiable forward model; gradient-free methods provide an alternative when this condition is not
+met or when the design space is inherently discrete. In addition, Casulleras et al. [28] demonstrated
+that for certain problems—specifically temporal pulse design—the inverse problem can be solved
+analytically via direct inversion of the forward transfer function, bypassing iterative optimisation
+entirely. Neural-network-based approaches have not yet been demonstrated in magnonics and are
+discussed briefly below; the broader artificial intelligence (AI) frontier is treated as a perspective in
+Sec. 4. Fig. 3 gives a schematic overview of the three classes of optimisation algorithm.
+6
+
+
+=== PDF PAGE 7 ===
+a. Gradient-free
+b. Gradient-based
+c. Neural-network-based
+Figure 3. The algorithmic toolbox of inverse-design magnonics. (a) Gradient-free methods
+evaluate a population of candidate designs (grey) directly, iteratively converging on the best candidate
+found (red) without using any derivative information—for example direct binary search [24], genetic
+algorithms, and direct search [32]. (b) Gradient-based methods follow the gradient of the objective
+downhill across a non-convex landscape, converging to a minimum (red) while risking entrapment in
+local minima; examples include the adjoint method [27] and backpropagation through a differentiable
+solver [25,30,31]. (c) Neural-network-based methods employ a trained network—as a differentiable
+surrogate or a generative model—whose forward and backward passes accelerate or replace the
+forward simulation; these are well established in photonics but not yet demonstrated in magnonics.
+3.1 Optimisation algorithms
+3.1.1 Gradient-free methods
+Gradient-free methods explore the design space without computing derivatives, evaluating candidate
+designs directly and using heuristic rules to guide the search toward better solutions. Two families
+have been employed in magnonics. Single-candidate strategies iteratively modify one design and
+retain each change that improves the objective—flipping individual pixels (direct binary search [24]),
+altering several pixels at random (Monte Carlo search [29]), or stepping through the parameters
+one at a time (direct search [32]). Population-based strategies instead maintain many candidates
+in parallel: genetic algorithms evolve them through selection, crossover, and mutation [32], while
+PSO guides them toward the best designs found so far [26]. These methods are the natural choice
+for discrete design spaces, such as binary-pixel topology grids, where gradients are not defined,
+and have been the approach of choice for experimental inverse design in magnonics to date [32,34].
+The principal limitation is scaling: the number of required evaluations grows rapidly with the
+dimensionality of the design space, restricting gradient-free approaches to design spaces of moderate
+dimensionality.
+3.1.2 Gradient-based methods
+For the continuous design variables—material parameters and field landscapes—gradient information
+is directly available and provides an efficient means of navigating high-dimensional landscapes. Topol-
+ogy, while inherently discrete, becomes accessible to gradient-based methods through a continuous
+parameterisation such as the level-set method. The procedure can be pictured as descending a hilly
+landscape: from the current position, one takes a step along the locally steepest downhill direction
+and repeats until the terrain flattens (Fig. 3(b)). At each iteration, the gradient of the objective func-
+tion with respect to all design parameters provides exactly this direction, and the design is updated
+accordingly. The approach scales efficiently to thousands of parameters. Papp et al. [25,70] intro-
+duced gradient-based inverse design to magnonics using the differentiable solver SpinTorch (Sec. 3.2),
+7
+
+
+=== PDF PAGE 8 ===
+optimising nanomagnet states for spin-wave pattern recognition via backpropagation through the
+time-stepped LLG equation. Kiechle et al. [31] used the same framework to design the ion-irradiation
+pattern for a spin-wave lens and validated the result experimentally. Voronov et al. [27] applied the
+adjoint method [17] via NeuralMag (Sec. 3.2) to level-set topology optimisation, demonstrating the
+approach on both the shape-dependent hysteresis of a Stoner–Wohlfarth particle and a magnonic
+demultiplexer, converting the binary topology problem into a continuous one. A well-known caveat
+is convergence to local minima—the descent ends in the nearest valley, which need not be the
+deepest—a risk that grows as devices are driven into the strongly nonlinear regime (Sec. 4.3).
+Multi-start (random-restart) optimisation, basin hopping, continuation methods that ramp up
+the nonlinearity gradually, and hybrid approaches that alternate gradient descent with heuristic
+perturbations represent promising directions for mitigating this. Computationally, these workflows
+share their infrastructure—backpropagation, loss functions, and optimisers—with neural network
+training (Sec. 3.2), providing a natural bridge to the neural-network-based approaches discussed
+next.
+3.1.3 Neural-network-based approaches
+A qualitatively different strategy is to let AI perform the design task itself, employing a neural network
+as a surrogate forward model whose differentiability enables gradient-based inverse search [61,62],
+or as a generative model that maps a target specification to a candidate design [64]. Tandem
+architectures that chain a forward surrogate with an inverse network address the non-uniqueness
+of the inverse mapping [63]. A complementary hybrid strategy pairs a neural network surrogate
+with a gradient-free optimiser such as PSO or an evolutionary algorithm, combining global search
+with fast evaluation [65,66]. All of these approaches are well established in photonics but have not
+yet been demonstrated in magnonics. The principal challenges are the cost of generating training
+data—each sample requires a full micromagnetic simulation—and generalisation beyond the training
+distribution. The differentiable solvers discussed in Sec. 3.2 provide a compatible infrastructure: they
+operate in the same frameworks (PyTorch, JAX), generate data with gradient information, and can
+serve as teacher models for neural network surrogates. Further approaches, including physics-driven
+generative adversarial networks for topology optimisation [67] and reinforcement learning [68], have
+shown considerable promise in photonics (see [69] for a comprehensive review); we discuss these as
+an open frontier in Sec. 4.
+3.2 Micromagnetic simulation as the inverse-design engine
+The forward model—the simulation that predicts spin-wave behaviour for a given design—is the
+computational engine of the inverse-design loop. Standard micromagnetic solvers such as MuMax3
+and OOMMF solve the LLG equation accurately but are implemented as standalone tools without
+automatic differentiation, restricting their use to gradient-free optimisation. The development of
+differentiable micromagnetic solvers has therefore been a critical enabling step:
+• SpinTorch [70] implements backpropagation through time in PyTorch, originally developed
+for spin-wave neural networks.
+• magnum.np [71] provides a general-purpose, GPU-accelerated solver built on PyTorch with
+automatic differentiation, achieving performance competitive with MuMax3.
+• NeuralMag [30] is an open-source nodal finite-difference solver built specifically for inverse
+design: it implements different strategies for gradient computations in the time domain,
+8
+
+
+=== PDF PAGE 9 ===
+including the adjoint method and backpropagation with checkpointing through the diffrax
+library [100]. Its nodal discretisation is naturally suited to continuous parameterisations such as
+level-set boundaries and material gradients, and it supports both PyTorch and JAX backends.
+Simulation time remains the primary constraint on the complexity of inverse-design problems that
+can be tackled—a single evaluation may take seconds to hours depending on the device size and
+physics involved, and a full optimisation requires hundreds to thousands of evaluations. We note
+that the in-situ approach of Sec. 2.3 requires no micromagnetic simulation at all: the physical device
+itself provides the spin-wave response, and each evaluation is a direct measurement [32]. SpinTorch,
+magnum.np, and NeuralMag all borrow the computational infrastructure of machine learning—
+automatic differentiation, GPU-accelerated tensor operations, and gradient-based optimisation loops—
+but apply it to the governing physics rather than to a learned model. This shared infrastructure makes
+the magnonic inverse-design ecosystem natively compatible with neural-network-based approaches:
+the same frameworks, training loops, and data pipelines can serve both physics-based optimisation
+and the training of neural network surrogates or generative models.
+Beyond their role as the forward engine of optimisation, these solvers are themselves software
+artefacts—and the way scientific software is written is beginning to change. Large language models
+(LLMs) and agentic coding tools can increasingly generate, extend, and even discover numerical code:
+program-search systems have found improved algorithms for open mathematical problems [72] and
+for matrix multiplication [73], LLM-driven frameworks now synthesise and refine partial differential
+equation solvers [74], and autonomous agents can carry out end-to-end computational studies from
+code to manuscript [75]. For inverse-design magnonics, which relies on custom differentiable solvers
+rather than turnkey packages, such tools lower the barrier to implementing new physics terms,
+porting solvers across frameworks and hardware, and generating performance-critical kernels. These
+capabilities carry a clear caveat: AI-generated scientific code can harbour silent errors, and most
+research code is insufficiently tested, so verification against established solvers and reproducibility
+safeguards remain essential [76]. Used judiciously, AI-assisted programming is poised to accelerate
+development of the very simulation infrastructure on which inverse-design magnonics depends—part
+of the broader transformation of computational science by AI that underpins the field’s tooling.
+4 Perspectives and outlook
+The preceding sections have established the design space, the algorithmic toolbox, and the enabling
+simulation infrastructure. We now identify, based on our assessment of the field, the frontiers we
+consider most promising for the next phase of inverse-design magnonics: five concrete directions,
+the open questions and fundamental limits that remain, and the long-term vision of a universal
+magnonic platform.
+4.1 Sensitivity analysis and robust design
+The near-term milestone for the field is the fabrication of the first topology-optimised magnonic
+device, bridging the simulation results of Wang et al. [24] and Voronov et al. [27] to experiment.
+Inverse-designed devices are optimised for a specific set of parameters; real fabrication inevitably
+introduces deviations in feature size, material properties (Ms, Ku, α), and field homogeneity.
+Quantifying how device performance degrades under such perturbations—from the simulation side
+by sweeping parameters around the optimum, and from the experimental side by characterising
+multiple fabricated samples—is essential for establishing whether an inverse-designed structure can
+be realised at all. Such checks have already been reported, but only in isolated and largely qualitative
+9
+
+
+=== PDF PAGE 10 ===
+form. In simulation, Wang et al. [24] found their demultiplexer to tolerate finite temperature
+and a fabrication-induced enlargement of the etched voids, while Papp et al. [25] reported the
+nanomagnet states to be insensitive to switching errors; experimentally, Kiechle et al. [31] traced
+the reduced quality of their fabricated spin-wave lens to fabrication-induced deviations in the local
+magnetisation. A systematic sensitivity analysis—particularly a dedicated experimental tolerance
+study—remains absent, although a first numerical step in this direction is in preparation [77]. In
+photonics, robust optimisation—which targets worst-case or average performance over a distribution
+of parameter perturbations—and fabrication-aware regularisation via erosion and dilation filters are
+well established [78–80]. Field-landscape inverse design [32] offers built-in robustness through in-situ
+re-optimisation, but static structural designs must bridge the simulation-to-experiment gap without
+this safety net. Establishing fabrication tolerances for each design variable and incorporating them
+into the optimisation loop is an essential next step.
+4.2 Input shaping and excitation
+Casulleras et al. [28] showed that for temporal pulse design the inverse problem can be solved
+analytically in the linear regime. We see considerably more potential, however, in the spatial side
+of the excitation: antenna geometry and transducer design. The shape of the excitation antenna
+controls beam collimation, focusing, and diffraction [81–86], yet all layouts have been designed
+manually. Transducer efficiency is a closely related constraint: recent work has established system-
+level models [87], scaling rules [88], and micromagnetic approaches to computing the spin-wave
+resistance [89], all using manual parameter sweeps rather than systematic optimisation. Applying
+inverse design to the excitation—from antenna shape to transducer impedance matching—could
+substantially improve the efficiency of spin-wave injection, which remains one of the key practical
+bottlenecks in magnonic circuits.
+4.3 Nonlinear effects
+Nonlinearity has been part of magnonic inverse design from the very beginning: the founding works
+demonstrated a power-dependent spin-wave switch [24] and a spin-wave neural network whose
+computational power rises sharply in the nonlinear regime [25]. In both cases, however, nonlinearity
+was exploited rather than designed: the optimisation acted on the structure while the nonlinear
+physics was taken as given.
+More fundamentally, nonlinearity is necessary for entire classes of functionality. Linear interference,
+however richly it connects inputs and outputs, acts as a single linear layer on the input amplitudes:
+it cannot realise linearly non-separable functions such as XOR, let alone the multilayer mappings
+underlying neuromorphic computation [25]. The field-landscape platform of Sec. 2.3 confirms this
+experimentally: linear operation yields RF components such as notch filters and demultiplexers [32],
+whereas Boolean logic gates and a half-adder required driving the spin waves into the nonlinear
+regime [34].
+This added capability has a concrete physical origin. At large precession angles the static
+magnetisation is reduced; in the out-of-plane geometry this lowers the demagnetising field and shifts
+the spin-wave dispersion upward—by more than 2 GHz in nanoscale YIG waveguides at a precession
+angle of about 55◦[90,92]—while in-plane geometries show the opposite sign [101–104]. Because
+the reduction of the static magnetisation follows the local wave amplitude, the interference pattern
+imprints a spatially non-uniform modulation on the medium: the wave reshapes the very landscape
+through which it propagates. The reachable space of device behaviours thus grows without any
+added design parameters, and the excitation amplitude becomes a design knob in its own right.
+10
+
+
+=== PDF PAGE 11 ===
+Magnonics offers a richer nonlinear landscape than photonics: beyond the amplitude-dependent
+frequency shift, spin waves support three- and four-magnon scattering [101,105] and parametric
+amplification (Sec. 4.4), compared with the single Kerr nonlinearity of photonics [17]. For inverse
+design, the key distinction is between deterministic and stochastic effects. Deterministic effects—
+chiefly the frequency shift—are reproducible and fully captured by the LLG equation; they have
+enabled threshold switching in a directional coupler [91], bistable switching in an all-magnonic
+repeater [8], and cascaded magnonic threshold neurons (Sec. 4.5) [9]. Stochastic effects, by contrast,
+produce outputs that differ even for identical inputs; in magnonics they typically stem from thermal
+fluctuations, with multi-magnon scattering and the noise-induced switching between bistable spin-
+wave states as prominent examples. Such stochasticity need not be detrimental: precisely this
+switching provides the entropy source of a magnonic true-random-number generator [93].
+The open frontier is to incorporate nonlinearity explicitly into the optimisation loop—designing
+not just the structure but the nonlinear operating point, for example, by co-optimising the device
+geometry and the excitation amplitude to target a specific regime. For deterministic nonlinearities,
+the forward model remains fully predictive and gradient-based optimisation applies. Stochastic
+effects may instead require gradient-free or statistical approaches, a qualitatively different algorithmic
+challenge with no direct photonic analogue.
+4.4 Amplification
+Propagation loss limits the length and complexity of magnonic circuits. Two amplification mechanisms
+have recently been demonstrated at the nanoscale: spin-orbit-torque amplification in BiYIG/Pt
+waveguides [94], achieving up to a fivefold intensity increase, and parametric pumping at 2f in YIG
+nanowaveguides at zero bias field [95], with gains exceeding two orders of magnitude—following
+the earlier parametric generation of spin waves in such nanoconduits [96]. Four-wave mixing of a
+propagating pump wave can moreover generate spontaneously oscillating magnon modes, which
+amplify weak signals with gains of up to 40 dB in a YIG delay line [97]. For inverse design, the
+key point is that these amplification centres are not scatterers—they do not redirect spin waves—
+but spatially localisable gain elements whose placement can itself be engineered. A structured
+arrangement could amplify selectively along chosen paths or restore the signal amplitude at specific
+nodes; jointly optimising the passive structure and the gain distribution would then integrate
+amplification and signal processing into a single element that can be cascaded with subsequent
+blocks.
+4.5 Self-adapting and learning systems
+Two frontiers emerge where magnonics meets machine learning: a self-adapting medium whose
+physical structure reconfigures in response to its own spin waves—and can itself perform neuromorphic
+computation—and machine-learning-based design tools that learn to propose better structures from
+data.
+4.5.1 Self-adapting media and neuromorphic hardware
+The key idea is that propagating spin waves can modify the medium itself, creating a feedback
+loop. Nanomagnets reversible by propagating magnons [54,55] provide non-volatile magnon memory.
+Domain walls [56] and skyrmion arrays [57] can be displaced by spin-wave momentum transfer to
+form writable channels. Nonlinear effects (Sec. 4.3) allow the spin-wave amplitude to modify the
+effective field landscape dynamically. VCMA offers a complementary, electrically gated route to
+reconfiguration [46,47], in which the spin-wave medium is reshaped with the periodic assistance of
+11
+
+
+=== PDF PAGE 12 ===
+an applied electric field—a quasi-self-adapting scheme. Papp et al.’s [25] spin-wave neural network,
+in which nanomagnet states are optimised offline via backpropagation through the physics, already
+provides a prototype for trainable magnonic hardware, exploiting nonlinear spin-wave interference
+for pattern recognition. Combined with nanomagnets writable by propagating magnons [54, 55],
+such a system could in principle update its configuration through its own signals. Recent work
+has extended this neuromorphic direction: Guo et al. [9] realised cascaded nonlinear magnonic
+threshold neurons—with programmable weighting, tunable firing thresholds, and self-normalised
+output—and integrated seven of them into a network performing reconfigurable pattern recognition,
+while Breitbach et al. [10] realised an all-magnonic neuron with thresholded firing, fading memory,
+and cascaded triggering. In simulation, Fripp et al. [98, 99] proposed a neuron concept based
+on nonlinear resonant scattering from a permalloy disk above a YIG film, and extended it to a
+magnonic full adder by training a linear readout layer on the spin-wave interference patterns of a
+multi-disk array. Physical reservoir computing offers a complementary route, exploiting intrinsic
+magnonic nonlinearity without optimising the device structure: Körber et al. [11] showed that
+three-magnon scattering in a magnetic vortex disk can serve as a reservoir for temporal pattern
+recognition. Nonlinear feedback—routing part of the output back to the input—is a further avenue
+toward increased autonomy of magnonic devices. Energy efficiency adds a decisive argument for this
+direction: while the power draw of AI systems is growing rapidly, spin-wave circuits are projected to
+operate at attojoule-scale energies. Numerical benchmarking of a magnonic half-adder estimates
+about 25 aJ per operation—roughly tenfold below a comparable 7-nm CMOS implementation at
+similar footprint [6].
+4.5.2 Machine-learning-based design
+Neural-network-based design tools that are well established in photonics [69] have not yet been
+transferred to magnonics. Forward surrogate networks trained on micromagnetic data could accelerate
+design-space exploration by orders of magnitude compared to full simulation [61,62], while generative
+models could propose candidate designs that are subsequently refined by adjoint optimisation [64,67].
+The compatible infrastructure of the differentiable solvers described in Sec. 3.2 provides a natural
+on-ramp for this transition. Reinforcement learning [68], which requires no pre-collected training
+data and learns a design policy through direct interaction with the simulation environment, is a
+particularly promising yet unexplored direction for magnonics. A further, more speculative extension
+concerns the design tools themselves: the AI coding assistants now able to generate and refine
+numerical solvers (Sec. 3.2) could increasingly automate the construction of magnonic design pipelines,
+so that AI contributes not only the proposed structures but the software that produces them.
+Together, these two directions—machine-learning tools that design magnonic devices, and
+magnonic devices that themselves compute—mark a convergence of magnonics and artificial intelli-
+gence that we term AI magnonics (Fig. 4); we return to its implications in Sec. 4.7.
+4.6 Open questions and fundamental limits
+The rapid progress surveyed above should not obscure how much remains genuinely unknown, and we
+believe the field is best served by stating these unknowns plainly. A central open question concerns
+scale: how does the complexity of a realisable function grow as the design space is enlarged from N to
+2N or N2 parameters? Cascading inverse-designed blocks has yielded a magnonic half adder [29], but
+does the same paradigm extend to substantially larger circuits—a multi-bit adder, for instance—or
+does performance degrade faster than added degrees of freedom can compensate (Sec. 4.4)?
+Even this is subtler than it sounds, because the number of degrees of freedom is neither measured
+12
+
+
+=== PDF PAGE 13 ===
+AI
+magnonics
+design tool
+hardware
+AI magnonıcs
+From AI-designed magnonics to magnonic hardware for AI
+Figure 4. AI magnonics: the convergence of inverse design and neuromorphic magnonics.
+In the emerging AI magnonics paradigm, the two fields converge from two directions—machine-
+learning tools design the device, while the magnonic spin-wave medium itself performs neuromorphic
+computation, depicted here as two interpenetrating lobes—an artificial neural network and a
+propagating spin-wave medium—that meet and fuse at the point where the two disciplines converge
+(from AI-designed magnonics to magnonic hardware for AI ).
+consistently nor always indicative of the same thing. Reported counts span more than four orders of
+magnitude—from five geometry parameters [26] to of order 105 material cells [31]—yet are not directly
+comparable: the count of independent parameters differs from the number of reachable configurations
+(the 49-loop field device spans up to ∼10162 states, of which ∼1087 were used in practice [32,34]). A
+discretisation grid bounds the configuration space in either case, but the meaningful count depends
+on the parameterisation: each cell may be an independent parameter (pixel topologies [24,29]) or
+merely the resolution onto which a lower-dimensional boundary representation is rendered (level-set
+methods [27]).
+A related question concerns footprint. In CMOS, processing capacity scales with area: a full
+adder occupies roughly twice the footprint of a half adder. Inverse design promises a different
+trade-off, accommodating greater functional complexity by making a structure of fixed size internally
+more intricate rather than larger [32]—but how far can this intricacy be pushed? Diffraction sets
+the bound: the smallest usable feature scales with the spin-wave wavelength. Here magnonics is
+particularly well placed: spin-wave wavelengths have been demonstrated down to about 50 nm [106]
+and are in principle tunable to their fundamental limit, the lattice constant, where frequencies rise
+into the THz range.
+Further questions cut across the frontiers above. Can stochastic nonlinearities be exploited
+by design rather than opportunistically (Sec. 4.3)? Can the five design variables and the gain
+distribution (Sec. 4.4) be co-optimised within a single optimisation loop? And, most fundamentally,
+is inverse design truly universal, or do certain classes of functionality lie beyond its reach? We regard
+these less as caveats than as important research questions of the coming years.
+4.7 The universal magnonic device
+A striking feature of inverse design is its universality as a method. The same procedure—specify
+a target as an objective function, then let an optimiser find the structure—has already produced
+functionally unrelated devices spanning wave optics, RF signal routing and filtering, Boolean logic,
+and neuromorphic pattern recognition (Table 1); from one case to the next, only the objective function
+13
+
+
+=== PDF PAGE 14 ===
+is swapped. The same universality extends across physical domains: magnon-phonon coupling for
+surface acoustic wave devices, magnon-photon interfaces for microwave-to-optical transduction, and
+magnon-superconductor hybrid systems are regimes where intuitive design is particularly difficult,
+if not impossible, and inverse design may prove most valuable. It also invites standardisation: a
+library of validated inverse-design building blocks—routers, filters, logic gates—could enable modular
+magnonic circuit design, and common benchmark problems would facilitate fair comparison.
+More broadly, the convergence of Sec. 4.5—AI magnonics (Fig. 4)—points beyond the individual
+frontiers discussed above: a paradigm in which machine-learning algorithms design magnonic devices
+that themselves perform neuromorphic computation, closing the loop between artificial intelligence
+and the physical platform it optimises. This convergence culminates in the long-range vision of a
+universal magnonic device. Whereas modular circuits assemble many specialised blocks, the universal
+device is a single reconfigurable platform, reprogrammable for any functionality via software-defined
+field landscapes or non-volatile magnetic textures at the nanoscale. In practice, such a platform
+would be trained once for a whole set of functionalities and shipped with it: switching then reduces
+to reloading a stored configuration, trading the slow one-time training (minutes to hours) for
+reconfiguration on nanosecond timescales [32].
+The trajectory of mainstream artificial intelligence offers a suggestive analogy: many capabilities
+of large language models—multilingual fluency among them—were never explicitly programmed,
+but emerged once a general machine-learning infrastructure was scaled. Inverse-design magnonics is
+built on that same infrastructure (Sec. 3.2), now applied to a physical spin-wave medium rather
+than a purely digital model. We anticipate that this convergence could transform spin-wave science
+from a field of device demonstrations into a systematic engineering discipline.
+Acknowledgments
+The authors acknowledge fruitful discussions with members of the Physics of Functional Materials
+and the Nanomagnetism and Magnonics groups at the University of Vienna.
+Funding
+This research was funded in whole or in part by the Austrian Science Fund (FWF) [grant DOIs
+10.55776/PIN1434524 and 10.55776/PAT3864023]. For open access purposes, the authors have
+applied a CC BY public copyright license to any author-accepted manuscript version arising from
+this submission.
+Conflict of interest
+The authors declare no conflict of interest.
+Author contributions
+F.V.: conceptualisation, visualisation, writing – original draft. F.B.: writing – review & editing.
+C.A.: writing – review & editing. D.S.: funding acquisition, supervision, writing – review & editing.
+A.C.: conceptualisation, funding acquisition, supervision, writing – review & editing. All authors
+discussed the content and contributed to revising the manuscript.
+14
+
+
+=== PDF PAGE 15 ===
+Data availability
+No new data were created or analysed in this study.
+References
+[1] A. V. Chumak, V. I. Vasyuchka, A. A. Serga, and B. Hillebrands, “Magnon spintronics,” Nature
+Physics, vol. 11, pp. 453–461, 2015.
+[2] A. Barman, G. Gubbiotti, S. Ladak, A. O. Adeyeye, M. Krawczyk, J. Gräfe, C. Adelmann,
+S. Cotofana, A. Naeemi, V. I. Vasyuchka, B. Hillebrands, S. A. Nikitov, H. Yu, D. Grundler,
+A. V. Sadovnikov, A. A. Grachev, S. E. Sheshukova, J.-Y. Duquesne, M. Marangolo, G. Csaba,
+W. Porod, V. E. Demidov, S. O. Demokritov, H. Schultheiss, et al., “The 2021 magnonics
+roadmap,” Journal of Physics: Condensed Matter, vol. 33, no. 41, p. 413001, 2021.
+[3] A. V. Chumak, P. Kabos, M. Wu, C. Abert, C. Adelmann, A. O. Adeyeye, J. Akerman, F. G.
+Alber, G. E. W. Bauer, M. Becherer, et al., “Advances in magnetics roadmap on spin-wave
+computing,” IEEE Transactions on Magnetics, vol. 58, no. 6, p. 0800172, 2022.
+[4] B. Flebus and A. in Magnonics Collaboration, “The 2024 magnonics roadmap,” Journal of
+Physics: Condensed Matter, vol. 36, no. 36, p. 363501, 2024. 34 co-authors; includes section on
+inverse design.
+[5] Q. Wang, P. Pirro, R. Verba, A. Slavin, B. Hillebrands, and A. V. Chumak, “Reconfigurable
+nanoscale spin-wave directional coupler,” Science Advances, vol. 4, no. 1, p. e1701517, 2018.
+[6] Q. Wang, M. Kewenig, M. Schneider, R. Verba, F. Kohl, B. Heinz, M. Geilen, M. Mohseni,
+B. Lägel, F. Ciubotaru, C. Adelmann, C. Dubs, S. D. Cotofana, O. V. Dobrovolskiy, T. Brächer,
+P. Pirro, and A. V. Chumak, “A magnonic directional coupler for integrated magnonic half-
+adders,” Nature Electronics, vol. 3, pp. 765–774, 2020.
+[7] G. Talmelli, T. Devolder, N. Trager, J. Forster, S. Wintz, M. Weigand, H. Stoll, M. Heyns,
+G. Schütz, I. P. Radu, J. Gräfe, F. Ciubotaru, and C. Adelmann, “Reconfigurable submicrom-
+eter spin-wave majority gate with electrical transducers,” Science Advances, vol. 6, no. 51,
+p. eabb4042, 2020.
+[8] Q. Wang, R. Verba, K. Davídková, B. Heinz, S. Tian, Y. Rao, M. Guo, X. Guo, C. Dubs, P. Pirro,
+and A. V. Chumak, “All-magnonic repeater based on bistability,” Nature Communications,
+vol. 15, p. 7577, 2024.
+[9] M. Guo, X. Jing, K. Davídková, R. Verba, Z. Zhou, X. Guo, C. Dubs, C. Gao, Y. Rao, K. Cai,
+J. Li, P. Pirro, A. V. Chumak, and Q. Wang, “Integrated magnonic neural circuits based on
+nonlinear wave neurons,” 2026. arXiv:2606.11703.
+[10] D. Breitbach, M. Bechberger, H. Mortada, B. Heinz, R. Verba, Q. Wang, C. Dubs, M. Car-
+pentieri, G. Finocchio, D. Rodrigues, A. A. Hamadeh, and P. Pirro, “An all-magnonic neuron
+with tunable fading memory,” 2026. arXiv:2509.18321.
+[11] L. Körber, C. Heins, T. Hula, J.-V. Kim, S. Thlang, H. Schultheiss, K. Schultheiss, and
+J. Fassbender, “Pattern recognition in reciprocal space with a magnon-scattering reservoir,”
+Nature Communications, vol. 14, p. 3954, 2023.
+15
+
+
+=== PDF PAGE 16 ===
+[12] A. Tarantola, Inverse Problem Theory and Methods for Model Parameter Estimation. SIAM,
+2005.
+[13] M. P. Bendsøe and N. Kikuchi, “Generating optimal topologies in structural design using a
+homogenization method,” Computer Methods in Applied Mechanics and Engineering, vol. 71,
+no. 2, pp. 197–224, 1988.
+[14] O. Sigmund and K. Maute, “Topology optimization approaches: a comparative review,”
+Structural and Multidisciplinary Optimization, vol. 48, no. 6, pp. 1031–1055, 2013.
+[15] N. Aage, E. Andreassen, B. S. Lazarov, and O. Sigmund, “Giga-voxel computational morpho-
+genesis for structural design,” Nature, vol. 550, pp. 84–86, 2017.
+[16] J. S. Jensen and O. Sigmund, “Topology optimization for nano-photonics,” Laser & Photonics
+Reviews, vol. 5, no. 2, pp. 308–321, 2011.
+[17] T. W. Hughes, M. Minkov, I. A. D. Williamson, and S. Fan, “Adjoint method and inverse
+design for nonlinear nanophotonic devices,” ACS Photonics, vol. 5, pp. 4781–4787, Dec. 2018.
+[18] A. Y. Piggott, J. Lu, K. G. Lagoudakis, J. Petykiewicz, T. M. Babinec, and J. Vučković, “Inverse
+design and demonstration of a compact and broadband on-chip wavelength demultiplexer,”
+Nature Photonics, vol. 9, pp. 374–377, 2015.
+[19] S. Molesky, Z. Lin, A. Y. Piggott, W. Jin, J. Vučković, and A. W. Rodriguez, “Inverse design
+in nanophotonics,” Nature Photonics, vol. 12, pp. 659–670, Oct. 2018.
+[20] O. Sigmund and J. S. Jensen, “Systematic design of phononic band-gap materials and structures
+by topology optimization,” Philosophical Transactions of the Royal Society of London. Series
+A, vol. 361, no. 1806, pp. 1001–1019, 2003.
+[21] H. W. Dong, C. Shen, Z. Liu, S. D. Zhao, Z. Ren, C. X. Liu, X. He, S. A. Cummer, Y. S. Wang,
+D. Fang, and L. Cheng, “Inverse design of phononic meta-structured materials,” Materials
+Today, vol. 80, pp. 824–855, 2024.
+[22] F. Bruckner, C. Abert, G. Wautischer, C. Huber, C. Vogler, M. Hinze, and D. Suess, “Solving
+large-scale inverse magnetostatic problems using the adjoint method,” Scientific Reports, vol. 7,
+Jan. 2017.
+[23] F. Lucchini, R. Torchio, V. Cirimele, P. Alotto, and P. Bettini, “Topology optimization for
+electromagnetics: A survey,” IEEE Access, vol. 10, pp. 98593–98611, 2022.
+[24] Q. Wang, A. V. Chumak, and P. Pirro, “Inverse-design magnonic devices,” Nature Communi-
+cations, vol. 12, May 2021.
+[25] Á. Papp, W. Porod, and G. Csaba, “Nanoscale neural network using non-linear spin-wave
+interference,” Nature Communications, vol. 12, Nov. 2021.
+[26] Z. R. Yan, Y. W. Xing, and X. F. Han, “Inverse design of magnonic filter,” Journal of Magnetism
+and Magnetic Materials, vol. 563, p. 169976, Dec. 2022.
+[27] A. A. Voronov, M. Cuervo Santos, F. Bruckner, D. Suess, A. V. Chumak, and C. Abert, “Inverse-
+design topology optimization of magnonic devices using level-set method,” npj Spintronics,
+vol. 3, May 2025.
+16
+
+
+=== PDF PAGE 17 ===
+[28] S. Casulleras, S. Knauer, Q. Wang, O. Romero-Isart, A. V. Chumak, and C. Gonzalez-Ballestero,
+“Generation of spin-wave pulses by inverse design,” Physical Review Applied, vol. 19, June 2023.
+[29] Z. Chen, G. J. Lim, C. C. I. Ang, T. Jin, F. Tan, B. W. H. Cheng, and W. S. Lew, “Voltage-
+controlled half adder via magnonic inverse design,” Applied Physics Letters, vol. 126, p. 132406,
+2025.
+[30] C. Abert, F. Bruckner, A. Voronov, M. Lang, S. A. Pathak, S. Holt, R. Kraft, R. Allayarov,
+P. Flauger, S. Koraltan, T. Schrefl, A. Chumak, H. Fangohr, and D. Suess, “Neuralmag:
+an open-source nodal finite-difference code for inverse micromagnetics,” npj Computational
+Materials, vol. 11, June 2025.
+[31] M. Kiechle, L. Maucha, V. Ahrens, C. Dubs, W. Porod, G. Csaba, M. Becherer, and Á. Papp,
+“Experimental demonstration of a spin-wave lens designed with machine learning,” IEEE
+Magnetics Letters, vol. 13, p. 1–5, 2022.
+[32] N. Zenbaa, C. Abert, F. Majcen, M. Kerber, R. O. Serha, S. Knauer, Q. Wang, T. Schrefl,
+D. Suess, and A. V. Chumak, “A universal inverse-design magnonic device,” Nature Electronics,
+Jan. 2025.
+[33] M. Wu, “Fast magnonic device development with inverse design,” Nature Electronics, Feb.
+2025.
+[34] N. Zenbaa, F. Majcen, C. Abert, F. Bruckner, N. J. Mauser, T. Schrefl, Q. Wang, D. Suess,
+and A. V. Chumak, “Realization of inverse-design magnonic logic gates,” Science Advances,
+vol. 11, May 2025.
+[35] W. T. Ruane, S. P. White, J. T. Brangham, K. Y. Meng, D. V. Pelekhov, F. Y. Yang, and
+P. C. Hammel, “Controlling and patterning the effective magnetization in y3fe5o12 thin films
+using ion irradiation,” AIP Advances, vol. 8, Dec. 2017.
+[36] M. Kiechle, Á. Papp, S. Mendisch, V. Ahrens, M. Golibrzuch, G. H. Bernstein, W. Porod,
+G. Csaba, and M. Becherer, “Spin-wave optics in YIG realized by ion-beam irradiation,” Small,
+vol. 19, Feb. 2023.
+[37] J. Bensmann, R. Schmidt, K. O. Nikolaev, D. Raskhodchikov, S. Choudhary, R. Bhardwaj,
+S. Taheriniya, A. Varri, S. Niehues, A. El Kadri, J. Kern, W. H. P. Pernice, S. O. Demokritov,
+V. E. Demidov, S. Michaelis de Vasconcellos, and R. Bratschitsch, “Dispersion-tunable low-loss
+implanted spin-wave waveguides for large magnonic networks,” Nature Materials, vol. 24,
+p. 1920–1926, July 2025.
+[38] J. Greil, M. Kiechle, Á. Papp, P. Neumann, Z. Kovács, J. Volk, F. Schulz, S. Wintz, M. Weigand,
+G. Csaba, and M. Becherer, “The effect of ga-ion irradiation on sub-micron-wavelength spin
+waves in yttrium-iron-garnet films,” Nanotechnology, vol. 36, p. 135301, Feb. 2025.
+[39] F. Naunheimer, J. Greil, V. Ahrens, L. Maucha, Á. Papp, G. Csaba, and M. Becherer, “Estab-
+lishing the magnetoelastic origin of spin-wave routing through focused ion beam patterning,”
+2026. arXiv:2602.10797.
+[40] E. Albisetti, D. Petti, M. Pancaldi, M. Madami, S. Tacchi, J. Curtis, W. P. King, Á. Papp,
+G. Csaba, W. Porod, P. Vavassori, E. Riedo, and R. Bertacco, “Nanopatterning reconfigurable
+magnetic landscapes via thermally assisted scanning probe lithography,” Nature Nanotechnology,
+vol. 11, pp. 545–551, Mar. 2016.
+17
+
+
+=== PDF PAGE 18 ===
+[41] V. Levati, D. Girardi, N. Pellizzi, M. Panzeri, M. Vitali, D. Petti, and E. Albisetti, “Phase
+nanoengineering via thermal scanning probe lithography and direct laser writing,” Advanced
+Materials Technologies, vol. 8, no. 16, p. 2300166, 2023.
+[42] A. Del Giacco, F. Maspero, V. Levati, M. Vitali, E. Albisetti, D. Petti, L. Brambilla,
+V. Polewczyk, G. Vinai, G. Panaccione, R. Silvani, M. Madami, S. Tacchi, R. Dreyer, S. R.
+Lake, G. Woltersdorf, G. Schmidt, and R. Bertacco, “Patterning magnonic structures via laser
+induced crystallization of yittrium iron garnet,” Advanced Functional Materials, vol. 34, Feb.
+2024.
+[43] P. Florio, M. Vitali, V. Levati, R. M. Ishola, L. Ciaccarini Mavilla, N. Lecis, C. Dubs,
+R. Bertacco, M. Madami, S. Tacchi, D. Petti, and E. Albisetti, “Programmable integrated
+magnonic meshes,” 2026. arXiv:2605.00290.
+[44] V. Levati, M. Vitali, A. Del Giacco, N. Pellizzi, R. Silvani, L. Ciaccarini Mavilla, M. Madami,
+I. Biancardi, D. Girardi, M. Panzeri, P. Florio, M. Cocconcelli, D. Breitbach, P. Pirro, L. Rovatti,
+N. Lecis, F. Maspero, R. Bertacco, G. Corrielli, R. Osellame, V. Russo, A. Li Bassi, S. Tacchi,
+D. Petti, and E. Albisetti, “Three-dimensional nanoscale control of magnetism in crystalline
+yttrium iron garnet,” Nature Communications, vol. 16, Oct. 2025.
+[45] L. J. Riddiford, J. A. Brock, K. Murawska, J. Wisser, X. Huang, N. A. Shepelin, H. T.
+Nembach, A. Hrabec, and L. J. Heyderman, “Two-dimensional gradients in magnetic properties
+created with direct-write laser annealing,” Nature Communications, vol. 16, Dec. 2025.
+[46] S. Dutta, S.-C. Chang, N. Kani, D. E. Nikonov, S. Manipatruni, I. A. Young, and A. Naeemi,
+“Non-volatile clocked spin wave interconnect for beyond-cmos nanomagnet pipelines,” Scientific
+Reports, vol. 5, May 2015.
+[47] B. Rana and Y. Otani, “Towards magnonic devices based on voltage-controlled magnetic
+anisotropy,” Communications Physics, vol. 2, Aug. 2019.
+[48] M. Vogel, A. V. Chumak, E. H. Waller, T. Langner, V. I. Vasyuchka, B. Hillebrands, and
+G. von Freymann, “Optically reconfigurable magnetic materials,” Nature Physics, vol. 11,
+p. 487–491, May 2015.
+[49] N. Kuznetsov, H. Qin, L. Flajsman, and S. van Dijken, “Optical control of spin waves in hybrid
+magnonic-plasmonic structures,” Science Advances, vol. 11, no. 2, p. eads2420, 2025.
+[50] N. Kuznetsov, H. Qin, L. Flajsman, and S. van Dijken, “Dynamic magnonic crystals based on
+spatiotemporal plasmon excitation,” Advanced Materials, vol. 37, no. 33, p. 2502474, 2025.
+[51] H. Qin, R. B. Hollaender, L. Flajsman, and S. van Dijken, “Low-loss nanoscopic spin-wave
+guiding in continuous yttrium iron garnet films,” Nano Letters, vol. 22, pp. 5294–5300, 2022.
+[52] J. Li, W.-B. Xu, W.-C. Yue, Z. Yuan, T. Gao, T.-T. Wang, Z.-L. Xiao, Y.-Y. Lyu, C. Li,
+C. Wang, F. Ma, S. Dong, Y. Dong, H. Wang, P. Wu, W.-K. Kwok, and Y.-L. Wang, “Writable
+spin wave nanochannels in an artificial-spin-ice-mediated ferromagnetic thin film,” Applied
+Physics Letters, vol. 120, no. 13, p. 132404, 2022.
+[53] R. Sultana, A. K. Mondal, V. S. Bhat, K. Stenning, Y. Li, D. M. Arroo, A. Vasdev, M. R.
+McCarter, L. E. De Long, J. T. Hastings, J. C. Gartside, and M. B. Jungfleisch, “Ice sculpting:
+An artificial spin ice tutorial on controlling microstate and geometry for magnonics and
+neuromorphic computing,” Journal of Applied Physics, vol. 138, p. 061101, Aug. 2025.
+18
+
+
+=== PDF PAGE 19 ===
+[54] K. Baumgaertl and D. Grundler, “Reversal of nanomagnets by propagating magnons in ferri-
+magnetic yttrium iron garnet enabling nonvolatile magnon memory,” Nature Communications,
+vol. 14, Mar. 2023.
+[55] A. Nizet, M. Xu, S. S. Joglekar, A. Mucchietto, and D. Grundler, “Perspective on nonvolatile
+magnon-signal storage and in-memory computation for low-power consuming magnonics,”
+Applied Physics Letters, vol. 126, Apr. 2025.
+[56] K. Wagner, A. Kakay, K. Schultheiss, A. Henschke, T. Sebastian, and H. Schultheiss, “Magnetic
+domain walls as reconfigurable spin-wave nanochannels,” Nature Nanotechnology, vol. 11,
+pp. 432–436, 2016.
+[57] F. Ma, Y. Zhou, H. B. Braun, and W. S. Lew, “Skyrmion-based dynamic magnonic crystal,”
+Nano Letters, vol. 15, pp. 4029–4036, 2015.
+[58] M. Cocconcelli, S. Tacchi, R. Erdélyi, F. Maspero, A. Del Giacco, A. Plaza, O. Koplak,
+A. Cattoni, R. Silvani, M. Madami, Á. Papp, G. Csaba, F. Kohl, B. Heinz, P. Pirro, and
+R. Bertacco, “Tuning magnonic devices with on-chip permanent micromagnets,” Physical
+Review Applied, vol. 22, p. 064063, 2024.
+[59] M. Cocconcelli, F. Maspero, A. Micelli, A. Toniato, A. Del Giacco, N. Pellizzi, A. E. Plaza,
+A. Cattoni, M. Madami, R. Silvani, C. Adelmann, A. A. Hamadeh, P. Pirro, S. Tacchi,
+F. Ciubotaru, and R. Bertacco, “Standalone integrated magnonic devices,” Advanced Materials,
+vol. 37, no. 40, p. 2503493, 2025.
+[60] M. Cocconcelli, A. Angotti, P. Florio, N. Pellizzi, F. Maspero, and R. Bertacco, “Monolithic
+piezo-magnonic-mems for efficient modulation of rf signals,” 2026. arXiv:2603.28411.
+[61] J. Peurifoy, Y. Shen, L. Jing, Y. Yang, F. Cano-Renteria, B. G. DeLacy, J. D. Joannopoulos,
+M. Tegmark, and M. Soljačić, “Nanophotonic particle simulation and inverse design using
+artificial neural networks,” Science Advances, vol. 4, no. 6, p. eaar4206, 2018.
+[62] Y. Deng, S. Ren, K. Fan, J. M. Malof, and W. J. Padilla, “Neural-adjoint method for the
+inverse design of all-dielectric metasurfaces,” Optics Express, vol. 29, no. 5, pp. 7526–7534,
+2021.
+[63] D. Liu, Y. Tan, E. Khoram, and Z. Yu, “Training deep neural networks for the inverse design
+of nanophotonic structures,” ACS Photonics, vol. 5, no. 4, pp. 1365–1369, 2018.
+[64] C. Yeung, B. Pham, Z. Tsai, K. T. Fountaine, and A. P. Raman, “DeepAdjoint: An all-in-one
+photonic inverse design framework integrating data-driven machine learning with optimization
+algorithms,” ACS Photonics, vol. 10, no. 4, pp. 884–891, 2023.
+[65] Z. Ma and Y. Li, “Parameter extraction and inverse design of semiconductor lasers based on
+the deep learning and particle swarm optimization method,” Optics Express, vol. 28, no. 15,
+pp. 21971–21981, 2020.
+[66] R. S. Hegde, “Photonics inverse design: Pairing deep neural networks with evolutionary
+algorithms,” IEEE Journal of Selected Topics in Quantum Electronics, vol. 26, no. 1, pp. 1–8,
+2020.
+[67] J. Jiang and J. A. Fan, “Global optimization of dielectric metasurfaces using a physics-driven
+neural network,” Nano Letters, vol. 19, no. 8, pp. 5366–5372, 2019.
+19
+
+
+=== PDF PAGE 20 ===
+[68] I. Sajedian, T. Badloe, and J. Rho, “Optimisation of colour generation from dielectric nanos-
+tructures using reinforcement learning,” Optics Express, vol. 27, no. 4, pp. 5874–5883, 2019.
+[69] W. Ma, Z. Liu, Z. A. Kudyshev, A. Boltasseva, W. Cai, and Y. Liu, “Deep learning for the
+design of photonic structures,” Nature Photonics, vol. 15, pp. 77–90, 2021.
+[70] Á. Papp, W. Porod, and G. Csaba, “SpinTorch: a PyTorch-based differentiable micromagnetic
+framework for spin-wave neural networks,” 2021. Software available at https://github.com/
+adamopapp/spintorch.
+[71] F. Bruckner, S. Koraltan, C. Abert, and D. Suess, “magnum.np: a PyTorch based GPU enhanced
+finite difference micromagnetic simulation framework for inverse magnetics,” Scientific Reports,
+vol. 13, p. 12054, 2023.
+[72] B. Romera-Paredes, M. Barekatain, A. Novikov, M. Balog, M. P. Kumar, E. Dupont, F. J. R.
+Ruiz, J. S. Ellenberg, P. Wang, O. Fawzi, P. Kohli, and A. Fawzi, “Mathematical discoveries
+from program search with large language models,” Nature, vol. 625, no. 7995, pp. 468–475,
+2024.
+[73] A. Novikov, N. V˜u, M. Eisenberger, E. Dupont, P.-S. Huang, A. Z. Wagner, S. Shirobokov,
+B. Kozlovskii, F. J. R. Ruiz, A. Mehrabian, M. P. Kumar, A. See, S. Chaudhuri, G. Holland,
+A. Davies, S. Nowozin, P. Kohli, and M. Balog, “AlphaEvolve: A coding agent for scientific
+and algorithmic discovery,” 2025. arXiv:2506.13131.
+[74] S. Li, T. Marwah, J. Shen, W. Sun, A. Risteski, Y. Yang, and A. Talwalkar, “CodePDE: An
+inference framework for LLM-driven PDE solver generation,” 2025. arXiv:2505.08783.
+[75] C. Lu, C. Lu, R. T. Lange, Y. Yamada, S. Hu, J. Foerster, D. Ha, and J. Clune, “Towards
+end-to-end automation of AI research,” Nature, vol. 651, no. 8107, pp. 914–919, 2026.
+[76] G. O’Brien, “Threats to scientific software from over-reliance on AI code assistants,” Nature
+Computational Science, vol. 5, no. 9, pp. 701–703, 2025.
+[77] A. A. Voronov et al., “Robustness of inverse-designed magnonic devices,” 2026. in preparation.
+[78] E. W. Wang, D. Sell, T. Phan, and J. A. Fan, “Robust design of topology-optimized metasur-
+faces,” Optical Materials Express, vol. 9, p. 469, Jan. 2019.
+[79] A. Y. Piggott, J. Petkov, J. Lu, T. M. Babinec, H. Mabuchi, and J. Vučković, “Fabrication-
+constrained nanophotonic inverse design,” Scientific Reports, vol. 7, p. 1786, 2017.
+[80] M. F. Schubert, A. K. C. Cheung, I. A. D. Williamson, A. Spyra, and D. H. Alexander, “Inverse
+design of photonic devices with strict foundry fabrication constraints,” ACS Photonics, vol. 9,
+no. 7, pp. 2327–2336, 2022.
+[81] P. Gruszecki, M. Kasprzak, A. E. Serebryannikov, M. Krawczyk, and W. Śmigaj, “Microwave
+excitation of spin wave beams in thin ferromagnetic films,” Scientific Reports, vol. 6, p. 22367,
+2016.
+[82] H. S. Körner, J. Stigloher, and C. H. Back, “Excitation and tailoring of diffractive spin-wave
+beams in NiFe using nonuniform microwave antennas,” Physical Review B, vol. 96, p. 100401(R),
+2017.
+20
+
+
+=== PDF PAGE 21 ===
+[83] A. Wartelle, F. Vilsmeier, T. Taniguchi, and C. H. Back, “Caustic spin wave beams in soft
+thin films: Properties and classification,” Physical Review B, vol. 107, Apr. 2023.
+[84] L. Temdie, V. Castel, M. B. Jungfleisch, R. Bernard, H. Majjad, D. Stoeffler, Y. Henry,
+M. Bailleul, and V. Vlaminck, “Probing spin wave diffraction patterns of curved antennas,”
+Physical Review Applied, vol. 21, p. 014032, 2024.
+[85] L. Temdie, V. Castel, C. Dubs, G. Pradhan, J. Solano, H. Majjad, R. Bernard, Y. Henry,
+M. Bailleul, and V. Vlaminck, “High wave vector non-reciprocal spin wave beams,” AIP
+Advances, vol. 13, p. 025207, 2023.
+[86] D. Wagle, D. Stoeffler, L. Temdie, M. Taghipour Kaffash, V. Castel, H. Majjad, R. Bernard,
+Y. Henry, M. Bailleul, M. B. Jungfleisch, and V. Vlaminck, “Shaping nonreciprocal caustic
+spin-wave beams,” Physical Review B, vol. 113, p. L060405, 2026.
+[87] D. A. Connelly, G. Csaba, H. R. O. Aquino, G. H. Bernstein, A. Orlov, W. Porod, and
+J. Chisum, “Efficient electromagnetic transducers for spin-wave devices,” Scientific Reports,
+vol. 11, p. 18378, 2021.
+[88] R. Erdélyi, G. Csaba, L. Maucha, F. Kohl, B. Heinz, J. Greil, M. Becherer, P. Pirro, and
+Á. Papp, “Design rules for low-insertion-loss magnonic transducers,” Scientific Reports, vol. 15,
+p. 9806, 2025.
+[89] F. Bruckner, K. Davídková, C. Abert, A. V. Chumak, and D. Suess, “Micromagnetic simulation
+and optimization of spin-wave transducers,” Scientific Reports, vol. 15, p. 19993, 2025.
+[90] Q. Wang, R. Verba, B. Heinz, M. Schneider, O. Wojewoda, K. Davídková, K. Levchenko,
+C. Dubs, N. J. Mauser, M. Urbánek, P. Pirro, and A. V. Chumak, “A deeply nonlinear
+excitation of self-normalized short spin waves,” Science Advances, vol. 9, p. eadg4609, 2023.
+[91] X. Ge, R. Verba, P. Pirro, A. V. Chumak, and Q. Wang, “Deeply nonlinear magnonic directional
+coupler,” Nano Letters, vol. 25, pp. 13490–13495, 2025.
+[92] K. Szulc, M. Guo, O. Wojewoda, H. Wang, D. Pavelka, J. Klíma, J. Krčma, X. Han, Q. Wang,
+and M. Urbánek, “Polarization-resolved measurement of forward volume spin waves by micro-
+focused brillouin light scattering,” Applied Physics Letters, vol. 128, May 2026.
+[93] M. Guo, Z. Zhou, D. Slobodianiuk, R. Verba, K. Davídková, X. Guo, X. Jing, Y. Wang,
+B. Heinz, Y. Rao, C. Dubs, C. Wan, X. Han, A. V. Chumak, P. Pirro, and Q. Wang, “True
+random number generation through stochastic magnonic bistability,” 2026. arXiv:2604.19356.
+[94] H. Merbouche, B. Divinskiy, D. Gouéré, R. Lebrun, A. El Kanj, V. Cros, P. Bortolotti,
+A. Anane, S. O. Demokritov, and V. E. Demidov, “True amplification of spin waves in
+magnonic nano-waveguides,” Nature Communications, vol. 15, p. 1560, 2024.
+[95] K. O. Nikolaev, S. R. Lake, B. Das Mohapatra, G. Schmidt, S. O. Demokritov, and V. E. Demi-
+dov, “Highly efficient coherent amplification of zero-field spin waves in YIG nanowaveguides,”
+Science Advances, vol. 11, p. eadx2018, 2025.
+[96] B. Heinz, M. Mohseni, A. Lentfert, R. Verba, M. Schneider, B. Lägel, K. Levchenko, T. Brächer,
+C. Dubs, A. V. Chumak, and P. Pirro, “Parametric generation of spin waves in nanoscaled
+magnonic conduits,” Physical Review B, vol. 105, Apr. 2022.
+21
+
+
+=== PDF PAGE 22 ===
+[97] Y. Li, C. Kiehl, J. Lim, C. Abbott, P. K. Pal, A. J. Szymczak, J. Li, R. Divan, C. L. Chang,
+C. Phatak, D. A. Bozhko, A. Hoffmann, and V. Novosad, “Magnonic spontaneous oscillation
+induced by parametric pumping,” Nature Communications, vol. 17, p. 5918, July 2026.
+[98] K. G. Fripp, A. V. Shytov, and V. V. Kruglyak, “Resonant nanoscale magnonic neurons,” Appl.
+Phys. Lett., vol. 128, p. 212402, 2026.
+[99] K. G. Fripp, Y. Wang, O. Kyriienko, A. V. Shytov, and V. V. Kruglyak, “Magnonic full adder
+based on 2D chiral magnonic resonators,” 2026. arXiv:2603.00258.
+[100] P. Kidger, On Neural Differential Equations. PhD thesis, University of Oxford, 2021.
+[101] V. S. L’vov, Wave Turbulence Under Parametric Excitation. Springer, 1994.
+[102] P. Krivosik and C. E. Patton, “Hamiltonian formulation of nonlinear spin-wave dynamics:
+Theory and applications,” Physical Review B, vol. 82, Nov. 2010.
+[103] S. R. Lake, B. Divinskiy, G. Schmidt, S. O. Demokritov, and V. E. Demidov, “Interplay between
+nonlinear spectral shift and nonlinear damping of spin waves in ultrathin yttrium iron garnet
+waveguides,” Physical Review Applied, vol. 17, Mar. 2022.
+[104] Y. M. Bunkov, P. M. Vetoshko, T. R. Safin, and M. S. Tagirov, “Inverse “foldover” resonance
+in an yttrium iron garnet film,” JETP Letters, vol. 117, pp. 313–316, Feb. 2023.
+[105] A. A. Serga, A. V. Chumak, and B. Hillebrands, “YIG magnonics,” Journal of Physics D:
+Applied Physics, vol. 43, no. 26, p. 264002, 2010.
+[106] C. Liu, J. Chen, T. Liu, F. Heimbach, H. Yu, Y. Xiao, J. Hu, M. Liu, H. Chang, T. Stueckler,
+S. Tu, Y. Zhang, Y. Zhang, P. Gao, Z. Liao, D. Yu, K. Xia, N. Lei, W. Zhao, and M. Wu,
+“Long-distance propagation of short-wavelength spin waves,” Nature Communications, vol. 9,
+p. 738, Feb. 2018.
+22

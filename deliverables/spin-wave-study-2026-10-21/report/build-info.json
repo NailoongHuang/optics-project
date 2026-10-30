@@ -1,0 +1,11 @@
+{
+  "source": "report.md",
+  "output": "自旋波研究整理报告.pdf",
+  "planned_sections": 9,
+  "engine": "ReportLab",
+  "fonts": [
+    "simsun.ttc",
+    "simhei.ttf",
+    "arial.ttf"
+  ]
+}

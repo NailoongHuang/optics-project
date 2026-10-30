@@ -1,0 +1,68 @@
+Lattice backflow literature assessment
+Search completed 2026-10-21, Asia/Shanghai
+
+The new local negative-current observation should be compared first with
+Torres Arvizu, Ortega and Larralde, Physical Review A 113, 032218 (2026),
+DOI 10.1103/v49b-zz68, arXiv:2511.16867v2.
+
+This is direct model-level prior art. Their hopping Hamiltonian has a real
+nearest-neighbor limit: set their bias epsilon=0 and hopping tau=J/2.
+Adding the irrelevant constant J gives the current project's dispersion
+J(1-cos k). The article explicitly includes the zero-bias case.
+
+The relevant locations in the versioned arXiv PDF are:
+- Section II, Eqs. (1)-(5), PDF pages 4-5: nearest-neighbor model and cosine band.
+- Section III, Eqs. (6)-(7), PDF page 5: local continuity and bond current.
+- Section IV, Eqs. (18)-(26), PDF pages 7-8: their momentum is mass times the
+  velocity operator; its eigenvalues are proportional to sin(k+xi).
+- Section V.3, Eqs. (55)-(56), PDF page 13: explicit unbiased-chain bounds.
+- Section VI, Eqs. (57)-(58), PDF page 14: fixed-cut time-integrated backflow.
+- Section VII, PDF pages 20-21: comparison of instantaneous and integrated
+  backflow, including the infinite-chain and periodic-chain limits.
+
+For the spin/magnon model, it is clearer to describe the tested restriction
+as positive group velocity, rather than to identify the crystal wave number
+with a particle's canonical momentum. At zero bias their positive-velocity
+sector is 0<k<pi in lattice units, matching the proposed spectral projection.
+
+The full text optimizes spectra or considers two-plane-wave examples. It does
+not discuss Gaussian initial envelopes or Airy tails. This bounded search did
+not find an exact published example of a single Gaussian centered at pi/2
+developing negative bond current specifically through its trailing oscillatory
+tail. That is a narrower unresolved comparison, not evidence of novelty.
+Lattice quantum backflow itself is established prior art.
+
+A useful criterion source is Paterek and Goussev, Physical Review Letters 136,
+090202 (2026), DOI 10.1103/tm9s-pkg5, arXiv:2511.10155v2. Its Eqs. (1)-(3),
+PDF page 2, compare the probability increase on one side of a fixed cut with
+the total negative-momentum weight. It treats arbitrary momentum distributions,
+including superpositions of two Gaussians. Its physical model is continuum
+free-particle evolution, so its numerical bound must not be transplanted to a
+cosine lattice. For our model, the analogous useful diagnostic is to compare
+the measured negative transfer with the initial negative-velocity spectral
+weight, or to project the latter away and repeat the calculation.
+
+Goussev and Morozov, Physical Review A 112, 032223 (2025),
+DOI 10.1103/k9km-k3dm, arXiv:2504.12489v2, provides a separate caution.
+Section IV, especially IV.A and Eqs. (15)-(24), PDF pages 4-5, distinguishes
+the crystal quasi-momentum of Bloch waves from canonical momentum in a
+continuous periodic potential. A single-band Bloch packet has a time-independent
+but nonzero negative-canonical-momentum admixture. This does not invalidate
+the velocity-sector definition used in the tight-binding article; the two
+models and observables are different.
+
+Recommended conclusion for the current audit:
+- A validated negative local bond current is an additional physical feature,
+  separate from the gauge-dependent Re(psi) movie flicker.
+- Confirm it with a fixed-cut probability-transfer calculation, strict
+  positive-velocity projection and enlarged-box checks.
+- Call it an example of lattice quantum backflow if those checks pass.
+- Do not describe the mechanism as a new effect. A possible follow-up question
+  is the preparation simplicity and scaling of backflow from a single smooth
+  Gaussian near an inflection point, but this still needs a dedicated prior-art
+  comparison and a quantitative advantage over existing optimized states.
+
+Three versioned primary-source PDFs and text extractions are saved here.
+Download identity, page count, size and SHA-256 are recorded in downloads.json.
+The institutional accepted Bloch PDF returned HTTP 503 during terminal retrieval;
+its official arXiv v2 was successfully used instead.

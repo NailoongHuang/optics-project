@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/yjwmzk","index":0,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/2lkf2hkb","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"二维铁磁体中的单磁子传播","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/pobydc3m","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/on2x4721","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"中期报告　理论来源：单磁子推导 PDF　模拟：均匀最近邻交换模型","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/badgfmls","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"01","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"sh/q94f6hk7","kind":"textbox","position":{"left":58,"top":154,"width":620,"height":124},"text":"库仑交换与线性波包动力学","style":{"fontSize":47,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/xcvyhw3y","kind":"textbox","position":{"left":61,"top":294,"width":590,"height":48},"text":"基本物理图像与数值模拟","style":{"fontSize":29,"typeface":"Microsoft YaHei","color":"#246B9A","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/hkzy5sv6","kind":"image","position":{"left":695,"top":146,"width":550,"height":385},"fit":"contain","alt":"a03-anisotropic-surface"},
+{"id":"im/al4fytwb","kind":"image","position":{"left":58,"top":411,"width":612,"height":88},"fit":"contain","alt":"原理公式 39"},
+{"id":"sh/6t0fudk3","kind":"textbox","position":{"left":60,"top":552,"width":1140,"height":63},"text":"由微观交换确定传播算符，再用局域激发与波包解释它的动力学。","style":{"fontSize":27,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

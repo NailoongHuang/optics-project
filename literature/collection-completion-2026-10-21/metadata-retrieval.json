@@ -1,0 +1,192 @@
+[
+  {
+    "doi": "10.1002/lpor.202100634",
+    "status": "failed",
+    "reason": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/j.aop.2021.168537",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1016%2Fj.aop.2021.168537"
+  },
+  {
+    "doi": "10.1016/j.optcom.2006.10.031",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1016%2Fj.optcom.2006.10.031"
+  },
+  {
+    "doi": "10.1038/s41563-025-02282-y",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1038%2Fs41563-025-02282-y"
+  },
+  {
+    "doi": "10.1038/s41567-025-02929-2",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1038%2Fs41567-025-02929-2"
+  },
+  {
+    "doi": "10.1063/5.0018519",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1063%2F5.0018519"
+  },
+  {
+    "doi": "10.1063/5.0071757",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1063%2F5.0071757"
+  },
+  {
+    "doi": "10.1088/0953-8984/11/17/305",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F0953-8984%2F11%2F17%2F305"
+  },
+  {
+    "doi": "10.1088/1367-2630/18/7/073044",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F1367-2630%2F18%2F7%2F073044"
+  },
+  {
+    "doi": "10.1088/1367-2630/ad19fd",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F1367-2630%2Fad19fd"
+  },
+  {
+    "doi": "10.1088/1402-4896/ad2be7",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F1402-4896%2Fad2be7"
+  },
+  {
+    "doi": "10.1088/1742-5468/2011/02/P02031",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F1742-5468%2F2011%2F02%2FP02031"
+  },
+  {
+    "doi": "10.1088/1751-8121/aca36e",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1088%2F1751-8121%2Faca36e"
+  },
+  {
+    "doi": "10.1103/3b4f-6nfr",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2F3b4f-6nfr"
+  },
+  {
+    "doi": "10.1103/PhysRevA.69.052315",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevA.69.052315"
+  },
+  {
+    "doi": "10.1103/PhysRevA.72.062326",
+    "status": "failed",
+    "reason": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1103/PhysRevA.75.032331",
+    "status": "failed",
+    "reason": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1103/PhysRevA.77.043804",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevA.77.043804"
+  },
+  {
+    "doi": "10.1103/PhysRevA.79.033847",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevA.79.033847"
+  },
+  {
+    "doi": "10.1103/PhysRevA.85.052319",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevA.85.052319"
+  },
+  {
+    "doi": "10.1103/PhysRevApplied.16.024028",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevApplied.16.024028"
+  },
+  {
+    "doi": "10.1103/PhysRevApplied.19.064085",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevApplied.19.064085"
+  },
+  {
+    "doi": "10.1103/PhysRevB.107.144431",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2FPhysRevB.107.144431"
+  },
+  {
+    "doi": "10.1103/PhysRevLett.104.197203",
+    "status": "failed",
+    "reason": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1103/PhysRevLett.85.1863",
+    "status": "failed",
+    "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+  },
+  {
+    "doi": "10.1103/PhysRevLett.88.093901",
+    "status": "failed",
+    "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+  },
+  {
+    "doi": "10.1103/k9km-k3dm",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2Fk9km-k3dm"
+  },
+  {
+    "doi": "10.1103/qz9q-bp9j",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2Fqz9q-bp9j"
+  },
+  {
+    "doi": "10.1103/tm9s-pkg5",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2Ftm9s-pkg5"
+  },
+  {
+    "doi": "10.1103/v49b-zz68",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2Fv49b-zz68"
+  },
+  {
+    "doi": "10.1103/wt14-t3dj",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1103%2Fwt14-t3dj"
+  },
+  {
+    "doi": "10.1109/CDC.2017.8264584",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1109%2FCDC.2017.8264584"
+  },
+  {
+    "doi": "10.1109/LMAG.2015.2494558",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1109%2FLMAG.2015.2494558"
+  },
+  {
+    "doi": "10.1140/epjp/i2013-13137-6",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1140%2Fepjp%2Fi2013-13137-6"
+  },
+  {
+    "doi": "10.1364/OL.42.005038",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1364%2FOL.42.005038"
+  },
+  {
+    "doi": "10.1364/OL.564441",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.1364%2FOL.564441"
+  },
+  {
+    "doi": "10.3390/dynamics5030025",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.3390%2Fdynamics5030025"
+  },
+  {
+    "doi": "10.3390/dynamics5040051",
+    "status": "saved",
+    "url": "https://api.crossref.org/works/10.3390%2Fdynamics5040051"
+  }
+]

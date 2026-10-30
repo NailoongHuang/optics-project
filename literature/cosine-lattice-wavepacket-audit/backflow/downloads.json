@@ -1,0 +1,26 @@
+[
+  {
+    "file": "2511.16867v2.pdf",
+    "url": "https://arxiv.org/pdf/2511.16867v2",
+    "pages": 28,
+    "bytes": 1769558,
+    "sha256": "df57c4e383fc351bf5e0716bd7ccd75e3dffaaa114ff6440c8ce5004fe0ba6b8",
+    "first_page_title": "Quantum backflow in biased tight-binding systems"
+  },
+  {
+    "file": "2511.10155v2.pdf",
+    "url": "https://arxiv.org/pdf/2511.10155v2",
+    "pages": 21,
+    "bytes": 1119030,
+    "sha256": "129f81ff5de973145cd3649de1012d61b46e7fa8f0101b16c51f3d42c75689ab",
+    "first_page_title": "General quantum backflow in realistic wave packets"
+  },
+  {
+    "file": "2504.12489v2.pdf",
+    "url": "https://arxiv.org/pdf/2504.12489v2",
+    "pages": 12,
+    "bytes": 536331,
+    "sha256": "5553c9d06b4eb043bc02c693291a76ecabe602516d3025ad83529f934f1e02ea",
+    "first_page_title": "Searching for Bloch wave packets with almost definite momentum direction"
+  }
+]

@@ -1,0 +1,448 @@
+{
+  "saved_initial_product_max_error": 8.358856444525733e-17,
+  "ranges": {
+    "norm": [
+      0.9999999999999996,
+      1.0000000000000013
+    ],
+    "probability_peak_over_initial": [
+      0.9678729593412229,
+      0.9999999999999992
+    ],
+    "absolute_amplitude_peak_over_initial": [
+      0.9838053462658265,
+      0.9999999999999996
+    ],
+    "real_absolute_peak_over_initial": [
+      0.6983156214038991,
+      0.9999999999999996
+    ],
+    "rephased_real_absolute_peak_over_initial": [
+      0.9838053462658265,
+      0.9999999999999996
+    ],
+    "real_L2_squared": [
+      0.4999999999999998,
+      0.5000000000000006
+    ],
+    "real_L1_over_abs_L1": [
+      0.5,
+      0.70710671838234
+    ],
+    "cx": [
+      -4.440892098500626e-16,
+      179.37608381466652
+    ],
+    "cy": [
+      -4.440892098500626e-16,
+      179.37608381466652
+    ],
+    "wx": [
+      6.0,
+      6.064309240565159
+    ],
+    "wy": [
+      6.0,
+      6.064309240565159
+    ],
+    "cos2t": [
+      -0.999999999545659,
+      1.0
+    ],
+    "sin2t": [
+      -0.9999903395061709,
+      0.9999999998864147
+    ],
+    "real_carrier_peak_factor": [
+      0.7074047428073262,
+      1.0
+    ],
+    "max_imaginary_demodulated_envelope": [
+      2.5015558572493797e-17,
+      1.305884252358661e-14
+    ],
+    "even_parity_probability": [
+      0.49999999999999983,
+      0.5000000000000006
+    ]
+  },
+  "representative": [
+    {
+      "t": 0.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9999999999999992,
+      "absolute_amplitude_peak_over_initial": 0.9999999999999996,
+      "real_absolute_peak_over_initial": 0.9999999999999996,
+      "rephased_real_absolute_peak_over_initial": 0.9999999999999996,
+      "real_L2_squared": 0.5,
+      "real_L1_over_abs_L1": 0.5,
+      "cx": -4.440892098500626e-16,
+      "cy": -4.440892098500626e-16,
+      "wx": 6.0,
+      "wy": 6.0,
+      "cos2t": 1.0,
+      "sin2t": 0.0,
+      "real_carrier_peak_factor": 1.0,
+      "max_imaginary_demodulated_envelope": 2.5015558572493797e-17,
+      "even_parity_probability": 0.5
+    },
+    {
+      "t": 0.39269908169872414,
+      "norm": 1.0,
+      "probability_peak_over_initial": 0.9957841373793462,
+      "absolute_amplitude_peak_over_initial": 0.9978898423069283,
+      "real_absolute_peak_over_initial": 0.7056146743724037,
+      "rephased_real_absolute_peak_over_initial": 0.9978898423069283,
+      "real_L2_squared": 0.5000000000000001,
+      "real_L1_over_abs_L1": 0.7071067811865474,
+      "cx": 0.39133790773740484,
+      "cy": 0.39133790773740484,
+      "wx": 6.0000003077296515,
+      "wy": 6.0000003077296515,
+      "cos2t": 0.7071067811865476,
+      "sin2t": 0.7071067811865476,
+      "real_carrier_peak_factor": 0.7071067811865476,
+      "max_imaginary_demodulated_envelope": 1.938041954726798e-16,
+      "even_parity_probability": 0.5
+    },
+    {
+      "t": 0.7853981633974483,
+      "norm": 1.0,
+      "probability_peak_over_initial": 0.9986554794917393,
+      "absolute_amplitude_peak_over_initial": 0.9993275136269087,
+      "real_absolute_peak_over_initial": 0.9954491345720754,
+      "rephased_real_absolute_peak_over_initial": 0.9993275136269087,
+      "real_L2_squared": 0.5,
+      "real_L1_over_abs_L1": 0.5000000000000001,
+      "cx": 0.7826758154748101,
+      "cy": 0.7826758154748101,
+      "wx": 6.000001230918513,
+      "wy": 6.000001230918513,
+      "cos2t": 6.123233995736766e-17,
+      "sin2t": 1.0,
+      "real_carrier_peak_factor": 1.0,
+      "max_imaginary_demodulated_envelope": 2.1204345933458703e-16,
+      "even_parity_probability": 0.5
+    },
+    {
+      "t": 3.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9999801011904754,
+      "absolute_amplitude_peak_over_initial": 0.9999900505457419,
+      "real_absolute_peak_over_initial": 0.960160733480019,
+      "rephased_real_absolute_peak_over_initial": 0.9999900505457419,
+      "real_L2_squared": 0.5000000000000003,
+      "real_L1_over_abs_L1": 0.6197928924246459,
+      "cx": 2.989601396911107,
+      "cy": 2.989601396911107,
+      "wx": 6.000017959384354,
+      "wy": 6.000017959384354,
+      "cos2t": 0.960170286650366,
+      "sin2t": -0.27941549819892586,
+      "real_carrier_peak_factor": 0.960170286650366,
+      "max_imaginary_demodulated_envelope": 4.358685355298669e-16,
+      "even_parity_probability": 0.5000000000000003
+    },
+    {
+      "t": 6.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9999204155369746,
+      "absolute_amplitude_peak_over_initial": 0.9999602069767449,
+      "real_absolute_peak_over_initial": 0.8438203792322884,
+      "rephased_real_absolute_peak_over_initial": 0.9999602069767449,
+      "real_L2_squared": 0.5000000000000001,
+      "real_L1_over_abs_L1": 0.6902134383664633,
+      "cx": 5.979202793822214,
+      "cy": 5.979202793822214,
+      "wx": 6.000071837214878,
+      "wy": 6.000071837214878,
+      "cos2t": 0.8438539587324921,
+      "sin2t": -0.5365729180004349,
+      "real_carrier_peak_factor": 0.8438539587324921,
+      "max_imaginary_demodulated_envelope": 4.320988764320953e-16,
+      "even_parity_probability": 0.5000000000000001
+    },
+    {
+      "t": 9.0,
+      "norm": 1.0,
+      "probability_peak_over_initial": 0.9998209753414063,
+      "absolute_amplitude_peak_over_initial": 0.9999104836641161,
+      "real_absolute_peak_over_initial": 0.7463666860347836,
+      "rephased_real_absolute_peak_over_initial": 0.9999104836641161,
+      "real_L2_squared": 0.5,
+      "real_L1_over_abs_L1": 0.7056519775078783,
+      "cx": 8.968804190733321,
+      "cy": 8.968804190733321,
+      "wx": 6.000161632523995,
+      "wy": 6.000161632523995,
+      "cos2t": 0.6603167082440802,
+      "sin2t": -0.7509872467716762,
+      "real_carrier_peak_factor": 0.7509872467716762,
+      "max_imaginary_demodulated_envelope": 7.75404774990394e-16,
+      "even_parity_probability": 0.49999999999999994
+    },
+    {
+      "t": 12.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9996818343627095,
+      "absolute_amplitude_peak_over_initial": 0.9998409045256699,
+      "real_absolute_peak_over_initial": 0.9002031230581304,
+      "rephased_real_absolute_peak_over_initial": 0.9998409045256699,
+      "real_L2_squared": 0.5000000000000001,
+      "real_L1_over_abs_L1": 0.6648786846718108,
+      "cx": 11.958405587644432,
+      "cy": 11.958405587644432,
+      "wx": 6.000287343699172,
+      "wy": 6.000287343699172,
+      "cos2t": 0.424179007336997,
+      "sin2t": -0.9055783620066238,
+      "real_carrier_peak_factor": 0.9055783620066238,
+      "max_imaginary_demodulated_envelope": 7.456046494724861e-16,
+      "even_parity_probability": 0.5000000000000002
+    },
+    {
+      "t": 15.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9995030677009573,
+      "absolute_amplitude_peak_over_initial": 0.9997515029750931,
+      "real_absolute_peak_over_initial": 0.9823620108714377,
+      "rephased_real_absolute_peak_over_initial": 0.9997515029750931,
+      "real_L2_squared": 0.5,
+      "real_L1_over_abs_L1": 0.5711415369902227,
+      "cx": 14.94800698455554,
+      "cy": 14.94800698455554,
+      "wx": 6.000448968483065,
+      "wy": 6.000448968483065,
+      "cos2t": 0.15425144988758405,
+      "sin2t": -0.9880316240928618,
+      "real_carrier_peak_factor": 0.9880316240928618,
+      "max_imaginary_demodulated_envelope": 9.28031004209382e-16,
+      "even_parity_probability": 0.5
+    },
+    {
+      "t": 30.0,
+      "norm": 1.0000000000000009,
+      "probability_peak_over_initial": 0.9980189474996483,
+      "absolute_amplitude_peak_over_initial": 0.999008982692172,
+      "real_absolute_peak_over_initial": 0.9514691226673648,
+      "rephased_real_absolute_peak_over_initial": 0.999008982692172,
+      "real_L2_squared": 0.5000000000000002,
+      "real_L1_over_abs_L1": 0.6286118007586864,
+      "cx": 29.89601396911108,
+      "cy": 29.89601396911108,
+      "wx": 6.001795672419871,
+      "wy": 6.001795672419871,
+      "cos2t": -0.9524129804151563,
+      "sin2t": -0.3048106211022167,
+      "real_carrier_peak_factor": 0.9524129804151563,
+      "max_imaginary_demodulated_envelope": 1.810573167581476e-15,
+      "even_parity_probability": 0.5000000000000002
+    },
+    {
+      "t": 60.0,
+      "norm": 1.0,
+      "probability_peak_over_initial": 0.9921798459356627,
+      "absolute_amplitude_peak_over_initial": 0.9960822485797358,
+      "real_absolute_peak_over_initial": 0.8109912118729293,
+      "rephased_real_absolute_peak_over_initial": 0.9960822485797358,
+      "real_L2_squared": 0.5000000000000002,
+      "real_L1_over_abs_L1": 0.6973960773694378,
+      "cx": 59.79202793822216,
+      "cy": 59.79202793822216,
+      "wx": 6.00717946909459,
+      "wy": 6.00717946909459,
+      "cos2t": 0.8141809705265618,
+      "sin2t": 0.5806111842123143,
+      "real_carrier_peak_factor": 0.8141809705265618,
+      "max_imaginary_demodulated_envelope": 3.634968426925965e-15,
+      "even_parity_probability": 0.5000000000000002
+    },
+    {
+      "t": 90.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9890518289767505,
+      "absolute_amplitude_peak_over_initial": 0.9945108490995714,
+      "real_absolute_peak_over_initial": 0.7954877395088554,
+      "rephased_real_absolute_peak_over_initial": 0.9945108490995714,
+      "real_L2_squared": 0.5000000000000002,
+      "real_L1_over_abs_L1": 0.6998063523958442,
+      "cx": 89.68804190733323,
+      "cy": 89.68804190733323,
+      "wx": 6.016141757081609,
+      "wy": 6.016141757081609,
+      "cos2t": -0.5984600690578581,
+      "sin2t": -0.8011526357338304,
+      "real_carrier_peak_factor": 0.8011526357338304,
+      "max_imaginary_demodulated_envelope": 6.4117530331564245e-15,
+      "even_parity_probability": 0.5000000000000002
+    },
+    {
+      "t": 120.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9870135422441944,
+      "absolute_amplitude_peak_over_initial": 0.9934855521064181,
+      "real_absolute_peak_over_initial": 0.9352674252696463,
+      "rephased_real_absolute_peak_over_initial": 0.9934855521064181,
+      "real_L2_squared": 0.5000000000000003,
+      "real_L1_over_abs_L1": 0.6356132302281055,
+      "cx": 119.58405587644434,
+      "cy": 119.58405587644434,
+      "wx": 6.0286665769178365,
+      "wy": 6.0286665769178365,
+      "cos2t": 0.32578130553514806,
+      "sin2t": 0.9454451549211168,
+      "real_carrier_peak_factor": 0.9454451549211168,
+      "max_imaginary_demodulated_envelope": 7.197649725087047e-15,
+      "even_parity_probability": 0.5000000000000003
+    },
+    {
+      "t": 150.0,
+      "norm": 1.0,
+      "probability_peak_over_initial": 0.9815972175040925,
+      "absolute_amplitude_peak_over_initial": 0.9907558818922513,
+      "real_absolute_peak_over_initial": 0.9839299093117916,
+      "rephased_real_absolute_peak_over_initial": 0.9907558818922513,
+      "real_L2_squared": 0.5,
+      "real_L1_over_abs_L1": 0.5109262295412028,
+      "cx": 149.48006984555542,
+      "cy": 149.48006984555542,
+      "wx": 6.044731783706137,
+      "wy": 6.044731783706137,
+      "cos2t": -0.022096619278683942,
+      "sin2t": -0.9997558399011495,
+      "real_carrier_peak_factor": 0.9997558399011495,
+      "max_imaginary_demodulated_envelope": 7.506183271429571e-15,
+      "even_parity_probability": 0.5000000000000001
+    },
+    {
+      "t": 180.0,
+      "norm": 1.0000000000000004,
+      "probability_peak_over_initial": 0.9731959170343489,
+      "absolute_amplitude_peak_over_initial": 0.9865069270077879,
+      "real_absolute_peak_over_initial": 0.9421680771362381,
+      "rephased_real_absolute_peak_over_initial": 0.9865069270077879,
+      "real_L2_squared": 0.5000000000000002,
+      "real_L1_over_abs_L1": 0.6213034072112076,
+      "cx": 179.37608381466652,
+      "cy": 179.37608381466652,
+      "wx": 6.064309240565159,
+      "wy": 6.064309240565159,
+      "cos2t": -0.2836910914865273,
+      "sin2t": 0.9589157234143065,
+      "real_carrier_peak_factor": 0.9589157234143065,
+      "max_imaginary_demodulated_envelope": 1.2170944133508934e-14,
+      "even_parity_probability": 0.5000000000000002
+    }
+  ],
+  "checks": [
+    {
+      "t": 0.0,
+      "product_max_error": 8.965214317155807e-17,
+      "demodulated_envelope_imaginary_max": 1.0985976402814803e-16,
+      "real_factorization_max_error": 1.0985976402814803e-16,
+      "real_peak_formula_error": 4.440892098500626e-16,
+      "real_L2_formula_error": 5.551115123125783e-16,
+      "rephasing_probability_max_error": 0.0,
+      "rephased_real_peak_formula_error": 4.440892098500626e-16
+    },
+    {
+      "t": 0.39269908169872414,
+      "product_max_error": 7.473417450352271e-17,
+      "demodulated_envelope_imaginary_max": 1.545133192472215e-16,
+      "real_factorization_max_error": 1.0755285551056204e-16,
+      "real_peak_formula_error": 4.440892098500626e-16,
+      "real_L2_formula_error": 3.3306690738754696e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 6.661338147750939e-16
+    },
+    {
+      "t": 0.7853981633974483,
+      "product_max_error": 8.231973706628786e-17,
+      "demodulated_envelope_imaginary_max": 1.99083975853884e-16,
+      "real_factorization_max_error": 1.1810559366049292e-16,
+      "real_peak_formula_error": 2.220446049250313e-16,
+      "real_L2_formula_error": 5.551115123125783e-16,
+      "rephasing_probability_max_error": 3.28429327576129e-47,
+      "rephased_real_peak_formula_error": 0.0
+    },
+    {
+      "t": 3.0,
+      "product_max_error": 8.794209704646572e-17,
+      "demodulated_envelope_imaginary_max": 1.7112120732556443e-16,
+      "real_factorization_max_error": 1.0928757898653885e-16,
+      "real_peak_formula_error": 2.220446049250313e-16,
+      "real_L2_formula_error": 1.1102230246251565e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 2.220446049250313e-16
+    },
+    {
+      "t": 9.0,
+      "product_max_error": 7.911556306605241e-17,
+      "demodulated_envelope_imaginary_max": 3.8714997231599917e-16,
+      "real_factorization_max_error": 2.914335439641036e-16,
+      "real_peak_formula_error": 6.661338147750939e-16,
+      "real_L2_formula_error": 5.551115123125783e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 3.3306690738754696e-16
+    },
+    {
+      "t": 60.0,
+      "product_max_error": 9.309503074677274e-17,
+      "demodulated_envelope_imaginary_max": 1.8032785427019916e-15,
+      "real_factorization_max_error": 1.2073675392798577e-15,
+      "real_peak_formula_error": 3.4416913763379853e-15,
+      "real_L2_formula_error": 2.220446049250313e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 2.220446049250313e-16
+    },
+    {
+      "t": 90.0,
+      "product_max_error": 1.8670653977139894e-16,
+      "demodulated_envelope_imaginary_max": 3.0832477899629856e-15,
+      "real_factorization_max_error": 2.463307335887066e-15,
+      "real_peak_formula_error": 4.6629367034256575e-15,
+      "real_L2_formula_error": 3.3306690738754696e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 1.1102230246251565e-16
+    },
+    {
+      "t": 180.0,
+      "product_max_error": 3.4668438902251707e-16,
+      "demodulated_envelope_imaginary_max": 5.605021627787205e-15,
+      "real_factorization_max_error": 5.374173328576148e-15,
+      "real_peak_formula_error": 4.9960036108132044e-15,
+      "real_L2_formula_error": 2.220446049250313e-16,
+      "rephasing_probability_max_error": 1.734723475976807e-18,
+      "rephased_real_peak_formula_error": 6.661338147750939e-16
+    }
+  ],
+  "comparison_widths": {
+    "A_eta1": {
+      "initial_wx": 6.0,
+      "final_wx": 12.924143020562596,
+      "final_wy": 12.924143020562596,
+      "vvar": [
+        0.004044242988146808,
+        0.004044242988146809
+      ]
+    },
+    "B_eta1": {
+      "initial_wx": 6.000000000000001,
+      "final_wx": 6.064309240565158,
+      "final_wy": 12.924143020562603,
+      "vvar": [
+        2.394588164209508e-05,
+        0.004044242988146809
+      ]
+    },
+    "C_eta1": {
+      "initial_wx": 6.0,
+      "final_wx": 6.064309240565157,
+      "final_wy": 6.064309240565156,
+      "vvar": [
+        2.3945881642095076e-05,
+        2.394588164209508e-05
+      ]
+    }
+  }
+}

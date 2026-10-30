@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-21",
+  "scope": "Author-stated unfinished work in magnetic pulse inverse design and caustic-wave amplitude prediction; bounded follow-up search.",
+  "records": [
+    {
+      "id": "casulleras2023_losses",
+      "title": "Generation of Spin-Wave Pulses by Inverse Design",
+      "authors": "S. Casulleras et al.",
+      "publication": "Physical Review Applied 19, 064085 (2023)",
+      "doi": "10.1103/PhysRevApplied.19.064085",
+      "primary_url": "https://arxiv.org/pdf/2209.06608v1",
+      "metadata_url": "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.19.064085",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/magnonics/2209.06608v1_inverse-design.pdf",
+      "read_scope": "Complete six-page main text of the versioned preprint, especially method p.2, error attribution p.4, finite antenna constraints p.5, conclusion p.6. Publisher metadata verified; publisher PDF access failed.",
+      "location": "PDF p.6, CONCLUSION, final paragraph before the general application sentence.",
+      "short_quote": "including wavelength-dependent spin wave losses in the backward propagation step",
+      "quote_words": 10,
+      "author_explicit": "The authors explicitly propose refining their inverse design by including wavelength-dependent losses during backward propagation. They do not perform that refinement in this version.",
+      "existing_result": "Their backward model assumes low losses. On p.4 they attribute an approximately four-percent shape-generation error in one example to the neglected frequency-dependent losses.",
+      "already_done_do_not_relabel_as_gap": "Self-compressing pulses, rectangular target pulses, the antenna-width/fidelity tradeoff, and weak dipolar-pulse compression have already been demonstrated numerically.",
+      "followup_status": "Targeted searches did not identify a direct published completion of this exact loss-aware pulse-inversion refinement by the search cutoff. This is not proof of novelty; regularized linear inversion itself is established mathematics.",
+      "minimal_test_candidate": "Resource-constrained loss-aware pulse design, with held-out transfer-function uncertainty."
+    },
+    {
+      "id": "vilsmeier2026_robust_excitation",
+      "title": "Perspectives on inverse design for AI magnonics",
+      "authors": "F. Vilsmeier, F. Bruckner, C. Abert, D. Suess, A. V. Chumak",
+      "publication": "arXiv:2607.07324v1 (2026), perspective article",
+      "primary_url": "https://arxiv.org/html/2607.07324v1",
+      "local_source": "2607.07324v1_perspectives.pdf",
+      "read_scope": "Official HTML Sections 4.1-4.2 and surrounding discussion; downloaded PDF pp.9-10 verified. Metadata and version history inspected.",
+      "location": "PDF pp.9-10, Sections 4.1 Sensitivity analysis and robust design and 4.2 Input shaping and excitation.",
+      "short_quote": "incorporating them into the optimisation loop",
+      "quote_words": 6,
+      "author_explicit": "The authors identify systematic fabrication sensitivity and robust optimization as unfinished work, with one numerical study in preparation. They also propose systematically optimizing antenna geometry and transduction rather than relying on manual parameter sweeps.",
+      "existing_result": "The article surveys existing designs and reports no new data. Prior sensitivity checks exist, and experimental field-landscape devices already permit in-situ reoptimization.",
+      "our_inference": "A transfer-function uncertainty ensemble and finite-source controls are a tractable reduced test of this agenda. Such a test does not establish performance of a material-specific micromagnetic device.",
+      "followup_status": "The current perspective itself explicitly states the gap. A bounded fresh search did not identify a later full systematic experimental tolerance study; no universal absence claim is made."
+    },
+    {
+      "id": "wartelle2023_higher_order_amplitude",
+      "title": "Caustic spin wave beams in soft, thin films: properties and classification",
+      "authors": "A. Wartelle, F. Vilsmeier, T. Taniguchi, C. H. Back",
+      "publication": "Physical Review B 107, 144431 (2023)",
+      "doi": "10.1103/PhysRevB.107.144431",
+      "primary_url": "https://arxiv.org/pdf/2301.01220v1",
+      "local_source": "literature/linear-spin-wave-packets/spin-wave/2301.01220v1_caustic-classification.pdf",
+      "location": "PDF p.13, Section III.D; PDF p.15, concluding paragraph.",
+      "author_explicit": "The higher-order caustic's amplitude enhancement relative to usual caustics is explicitly placed outside the paper's scope. The conclusion calls for quantitative amplitude predictions reconciling the formal zero-curvature divergence with finite observed amplitudes.",
+      "our_inference": "A fair finite-source comparison must keep source spectral power, aperture, propagation distance and damping fixed, and inspect both peak and receiver-integrated intensity.",
+      "followup_status": "Wagle 2026 partly closes the broad amplitude-prediction problem for ordinary caustic-like beams. The inspected follow-up does not provide the proposed equal-resource ordinary-versus-higher-order comparison.",
+      "minimal_test_candidate": "Finite-source ordinary-versus-higher-order caustic response under aperture and detuning changes."
+    },
+    {
+      "id": "wagle2026_partial_closure",
+      "title": "Shaping non-reciprocal caustic spin-wave beams",
+      "authors": "D. Wagle et al.",
+      "publication": "Physical Review B 113, L060405 (2026)",
+      "doi": "10.1103/qz9q-bp9j",
+      "primary_url": "https://arxiv.org/pdf/2404.15011v4",
+      "local_source": "literature/linear-spin-wave-packets/spin-wave/2404.15011v4_nonreciprocal-caustic-beams.pdf",
+      "location": "PDF p.2 Eq.(1); PDF p.5 Fig.4 and discussion.",
+      "already_done": "The near-field model incorporates a finite excitation spectrum, susceptibility and damping and evaluates amplitude versus frequency and magnetic field. It is therefore incorrect to label all finite caustic-amplitude prediction as still undone.",
+      "remaining_narrow_question": "The read sections do not compare ordinary and higher-order caustics under equal excitation resources.",
+      "author_outlook_strength": "The conclusion points generally toward interference-based devices; it is a weaker source of a precise unperformed test than Wartelle's explicit statement."
+    },
+    {
+      "id": "divinskiy2021_not_selected",
+      "title": "Dispersionless propagation of ultra-short spin-wave pulses in ultrathin yttrium iron garnet waveguides",
+      "authors": "B. Divinskiy et al.",
+      "publication": "Physical Review Applied 16, 024028 (2021)",
+      "doi": "10.1103/PhysRevApplied.16.024028",
+      "primary_url": "https://arxiv.org/pdf/2108.08054v1",
+      "location": "PDF pp.10-11, Fig.6 and conclusion.",
+      "assessment": "Thickness tuning of the optimum low-dispersion frequency and wavelength is already evaluated in the paper. Its high-speed-circuit outlook is too general to define a distinct minimal test, so it is not selected as an unfinished-work direction."
+    }
+  ],
+  "download_verification": {
+    "file": "2607.07324v1_perspectives.pdf",
+    "pdf_pages": 22,
+    "bytes": 3705724,
+    "sha256": "e6939a8061da9dbe1b1fd848951d3922528ab804f23c038a7c4fa5c1ef825576",
+    "method": "Official arXiv PDF downloaded with normal certificate validation; opened and all-page text extracted with PyMuPDF."
+  }
+}

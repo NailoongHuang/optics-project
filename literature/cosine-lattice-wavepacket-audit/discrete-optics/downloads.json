@@ -1,0 +1,22 @@
+[
+  {
+    "id": "chen2007",
+    "url": "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf",
+    "final_url": "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf",
+    "path": "chen2007_two-dimensional-discrete-diffraction.pdf",
+    "bytes": 343373,
+    "sha256": "39148a97cd66d100cb12ef63170de42d51135fb132ae8d08be195af2af0c228b",
+    "pages": 4,
+    "first_page_excerpt": "The peculiarities of discrete diﬀraction in two-dimensional\noptical waveguide arrays\nHongyun Chen, Xianfeng Chen *, Yuxing Xia\nDepartment of Physics, Shanghai Jiao Tong University, 800 Dongchuan Road, Shanghai 200240, China\nReceived 11 July 2006; received in revised form 4 September 2006; accepted 16 October 2006\nAbstract\nThe fundamental peculiarities of discrete diﬀraction in the two-dimensional waveguide arrays were studied. The discrete diﬀraction\nproperties of such arrays can be eﬀectively altered, depending upon the input conditions. By slightly changing the input conditions, light\ncan ex"
+  },
+  {
+    "id": "longhi2009",
+    "url": "https://arxiv.org/pdf/1001.0997v1",
+    "final_url": "https://arxiv.org/pdf/1001.0997v1",
+    "path": "longhi2009_1001.0997v1_discrete-diffraction.pdf",
+    "bytes": 327199,
+    "sha256": "f54bbdd9296466a877f9fd17c9d32a29278a82aa95797ca5d355c20b441610d2",
+    "pages": 14,
+    "first_page_excerpt": "arXiv:1001.0997v1  [physics.optics]  6 Jan 2010\nDiscrete diﬀraction and shape-invariant beams in optical waveguide arrays\nStefano Longhi\nDipartimento di Fisica and Istituto di Fotonica e Nanotecnologie del CNR,\nPolitecnico di Milano, Piazza L. da Vinci 32, I-20133 Milano, Italy\nGeneral properties of linear propagation of discretized light in homogeneous and curved waveguide\narrays are comprehensively investigated and compared to those of paraxial diﬀraction in continuous\nmedia. In particular, general laws describing beam spreading, beam decay and discrete far-ﬁeld\npatterns in homogeneous array"
+  }
+]

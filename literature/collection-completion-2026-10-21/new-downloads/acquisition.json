@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "Bounded lawful full-text retrieval for three previously discussed original papers whose PDFs were not in the project.",
+  "downloaded_count": 0,
+  "records": [
+    {
+      "id": "eisenberg2000",
+      "title": "Diffraction Management",
+      "authors": ["H. S. Eisenberg", "Y. Silberberg", "R. Morandotti", "J. S. Aitchison"],
+      "year": 2000,
+      "journal": "Physical Review Letters",
+      "volume": "85",
+      "pages": "1863-1866",
+      "doi": "10.1103/PhysRevLett.85.1863",
+      "official_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.1863",
+      "status": "original_pdf_not_obtained",
+      "file": null,
+      "reason": "Publisher PDF returned HTTP 401. The author's publication record and institutional publications list provided citation/abstract but no available original PDF in this bounded search.",
+      "attempts": [
+        {"url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.85.1863", "result": "HTTP 401 Unauthorized"},
+        {"url": "https://openscholar.huji.ac.il/hagai/publications/diffraction-management-textbar-phys-rev-lett", "result": "Search index exposes citation to APS; direct retrieval returned HTTP 404"},
+        {"url": "https://www.weizmann.ac.il/complex/silberberg/publications", "result": "Institutional publication and abstract verified; no original PDF located"}
+      ],
+      "related_existing_material": {
+        "path": "literature/cosine-lattice-wavepacket-audit/discrete-optics/eisenberg_thesis.pdf",
+        "title": "Nonlinear Effects in Waveguide Arrays",
+        "year": 2002,
+        "type": "author doctoral thesis",
+        "note": "This is related primary author material, not the 2000 PRL original article."
+      }
+    },
+    {
+      "id": "pertsch2002",
+      "title": "Anomalous Refraction and Diffraction in Discrete Optical Systems",
+      "authors": ["T. Pertsch", "T. Zentgraf", "U. Peschel", "A. Bräuer", "F. Lederer"],
+      "year": 2002,
+      "journal": "Physical Review Letters",
+      "volume": "88",
+      "article_number": "093901",
+      "doi": "10.1103/PhysRevLett.88.093901",
+      "official_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.88.093901",
+      "status": "original_pdf_not_obtained",
+      "file": null,
+      "reason": "The publisher PDF was not accessible. The author's university repository explicitly states that no full text has been uploaded.",
+      "attempts": [
+        {"url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.88.093901", "result": "PDF not accessible through the web tool"},
+        {"url": "https://ris.uni-paderborn.de/record/1744", "result": "Metadata verified; repository states 'No fulltext has been uploaded.'"},
+        {"url": "https://openalex.org/W2058312008", "result": "Record identifies open access status as closed"},
+        {"query": "site:arxiv.org \"Anomalous Refraction and Diffraction\"", "result": "No matching original preprint located"}
+      ]
+    },
+    {
+      "id": "kiseliev1999",
+      "title": "Non-linear spin dynamics in ferromagnetic films and Schrödinger's equation in the vicinity of the zero-dispersion point",
+      "authors": ["V. V. Kiseliev", "A. P. Tankeyev", "A. V. Kobelev", "A. G. Shagalov"],
+      "year": 1999,
+      "journal": "Journal of Physics: Condensed Matter",
+      "volume": "11",
+      "issue": "17",
+      "pages": "3461-3474",
+      "doi": "10.1088/0953-8984/11/17/305",
+      "official_url": "https://doi.org/10.1088/0953-8984/11/17/305",
+      "status": "original_pdf_not_obtained",
+      "file": null,
+      "reason": "Publisher retrieval did not succeed. A publicly displayed author-uploaded text was found on ResearchGate, but its direct PDF download returned HTTP 403. The text view was not repackaged as an original PDF.",
+      "attempts": [
+        {"url": "https://iopscience.iop.org/article/10.1088/0953-8984/11/17/305/pdf", "result": "Publisher PDF retrieval failed"},
+        {"url": "https://www.researchgate.net/publication/231100867_Non-linear_spin_dynamics_in_ferromagnetic_films_and_Schrodinger%27s_equation_in_the_vicinity_of_the_zero-dispersion_point", "result": "Author-uploaded full text and first-page identity visible through web extraction"},
+        {"url": "https://www.researchgate.net/profile/Alexandr-Kobelev/publication/231100867_Non-linear_spin_dynamics_in_ferromagnetic_films_and_Schrodinger%27s_equation_in_the_vicinity_of_the_zero-dispersion_point/links/0c960516d2d597080a000000/Non-linear-spin-dynamics-in-ferromagnetic-films-and-Schroedingers-equation-in-the-vicinity-of-the-zero-dispersion-point.pdf", "result": "HTTP 403 Forbidden; no further download workarounds attempted"}
+      ]
+    }
+  ],
+  "notes": [
+    "No invalid PDF files were left in this directory.",
+    "No paywall, login, CAPTCHA, or access-control bypass was attempted.",
+    "These missing originals should be listed separately from downloaded papers in the final library."
+  ]
+}

@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/1mciy0","index":7,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/zelkryhw","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"交换耦合把翻转振幅传给相邻格点","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/kfu103ih","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/lg32t8z2","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"原理 PDF 第 4–5 页，式 (28)、(34)、(35)","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/mhcj2d0n","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"08","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/upgj2ps3","kind":"image","position":{"left":70,"top":140,"width":715,"height":90},"fit":"contain","alt":"原理公式 28"},
+{"id":"im/hcr2d4re","kind":"image","position":{"left":60,"top":282,"width":1160,"height":177},"fit":"contain","alt":"原理公式 35"},
+{"id":"tb/sry5wn6t","kind":"table","position":{"left":65,"top":487,"width":1145,"height":150},"text":"项\t系数\t物理含义\n原格点振幅\t基态能量 + Jₓ + Jᵧ\t共同相位与交换对角能量\n相邻格点振幅\t−Jₓ/2、−Jᵧ/2\t连接相邻翻转位置","rows":3,"cols":3},
+{"id":"sh/u5w36d0j","kind":"textbox","position":{"left":890,"top":153,"width":290,"height":34},"text":"单条交换键","style":{"fontSize":26,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/v65kzih4","kind":"textbox","position":{"left":890,"top":201,"width":299,"height":72},"text":"保留原位置，也产生相邻位置的振幅。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

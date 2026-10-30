@@ -1,0 +1,264 @@
+{
+  "units": "a=Jx=hbar=1; sigma is initial probability RMS width in a",
+  "model": "epsilon=1-cos(qx)+eta*(1-cos(qy)); unchanged source Hamiltonian",
+  "probability_current": "jx=Im(conj(psi_mn)*psi_(m+1,n)); jy=eta Im(conj(psi_mn)*psi_(m,n+1))",
+  "continuity": "d|psi|^2/dtau=jx_(m-1,n)-jx_mn+jy_(m,n-1)-jy_mn",
+  "factorization": {
+    "full_2d_product_Linf": 3.433175098891678e-16,
+    "x_marginal_current_Linf": 6.938893903907228e-17,
+    "y_marginal_current_Linf": 5.551115123125783e-17
+  },
+  "current_trace_checks": {
+    "max_norm_error": 4.440892098500626e-16,
+    "max_continuity_error": 2.42861286636753e-17,
+    "max_global_phase_error": 2.7755575615628914e-17,
+    "max_total_current_drift": 3.3306690738754696e-16
+  },
+  "representative_currents": [
+    {
+      "case": "ordinary",
+      "t": 0.0,
+      "norm": 1.0000000000000002,
+      "centroid": -4.440892098500626e-16,
+      "width": 6.000000000000001,
+      "total_current": 0.6419846992268814,
+      "minimum_current": -5.7777898331617076e-34,
+      "minimum_current_bond": 2044,
+      "sum_negative_current": 1.7651822889140028e-32,
+      "continuity_max_error": 4.553649124439119e-18,
+      "global_phase_current_max_error": 1.3877787807814457e-17
+    },
+    {
+      "case": "ordinary",
+      "t": 180.0,
+      "norm": 1.0,
+      "centroid": 115.55724586083863,
+      "width": 12.924143020562589,
+      "total_current": 0.6419846992268813,
+      "minimum_current": -1.51000362006885e-22,
+      "minimum_current_bond": -22,
+      "sum_negative_current": 7.2468611630350235e-22,
+      "continuity_max_error": 5.366800753803247e-18,
+      "global_phase_current_max_error": 6.938893903907228e-18
+    },
+    {
+      "case": "ordinary",
+      "t": 432.0,
+      "norm": 1.0000000000000002,
+      "centroid": 277.33739006601274,
+      "width": 28.120327228179804,
+      "total_current": 0.6419846992268813,
+      "minimum_current": -6.940835523753705e-21,
+      "minimum_current_bond": -13,
+      "sum_negative_current": 7.838354882804677e-20,
+      "continuity_max_error": 1.6127507315721878e-18,
+      "global_phase_current_max_error": 1.734723475976807e-18
+    },
+    {
+      "case": "ordinary",
+      "t": 864.0,
+      "norm": 1.0000000000000002,
+      "centroid": 554.6747801320255,
+      "width": 55.27215586241993,
+      "total_current": 0.6419846992268813,
+      "minimum_current": -7.419228714348266e-21,
+      "minimum_current_bond": -13,
+      "sum_negative_current": 1.673390252487039e-19,
+      "continuity_max_error": 1.3315357930837601e-18,
+      "global_phase_current_max_error": 1.734723475976807e-18
+    },
+    {
+      "case": "ordinary",
+      "t": 1200.0,
+      "norm": 1.0000000000000002,
+      "centroid": 770.3816390722578,
+      "width": 76.54874200750399,
+      "total_current": 0.6419846992268814,
+      "minimum_current": -6.0369961888980956e-21,
+      "minimum_current_bond": -15,
+      "sum_negative_current": 1.8905294115994449e-19,
+      "continuity_max_error": 6.2680438096818225e-19,
+      "global_phase_current_max_error": 8.673617379884035e-19
+    },
+    {
+      "case": "crossing",
+      "t": 0.0,
+      "norm": 1.0000000000000002,
+      "centroid": -4.440892098500626e-16,
+      "width": 6.000000000000001,
+      "total_current": 0.9965337989703693,
+      "minimum_current": -2.2498782118930236e-34,
+      "minimum_current_bond": 509,
+      "sum_negative_current": 1.2334648867624208e-32,
+      "continuity_max_error": 1.2576745200831851e-17,
+      "global_phase_current_max_error": 1.3877787807814457e-17
+    },
+    {
+      "case": "crossing",
+      "t": 180.0,
+      "norm": 1.0000000000000004,
+      "centroid": 179.3760838146665,
+      "width": 6.064309240565151,
+      "total_current": 0.9965337989703693,
+      "minimum_current": -2.6331536419642395e-08,
+      "minimum_current_bond": 155,
+      "sum_negative_current": 2.6387831666065056e-08,
+      "continuity_max_error": 2.211772431870429e-17,
+      "global_phase_current_max_error": 1.3877787807814457e-17
+    },
+    {
+      "case": "crossing",
+      "t": 432.0,
+      "norm": 1.0000000000000002,
+      "centroid": 430.5026011551995,
+      "width": 6.361515245252056,
+      "total_current": 0.9965337989703693,
+      "minimum_current": -1.6198955400842208e-06,
+      "minimum_current_bond": 411,
+      "sum_negative_current": 2.1522592744782598e-06,
+      "continuity_max_error": 6.7220534694101275e-18,
+      "global_phase_current_max_error": 2.0816681711721685e-17
+    },
+    {
+      "case": "crossing",
+      "t": 864.0,
+      "norm": 1.0000000000000004,
+      "centroid": 861.0052023103991,
+      "width": 7.339993519227199,
+      "total_current": 0.9965337989703694,
+      "minimum_current": -4.5710695591204564e-05,
+      "minimum_current_bond": 843,
+      "sum_negative_current": 5.017371883104607e-05,
+      "continuity_max_error": 4.7704895589362195e-18,
+      "global_phase_current_max_error": 1.3877787807814457e-17
+    },
+    {
+      "case": "crossing",
+      "t": 1200.0,
+      "norm": 1.0000000000000002,
+      "centroid": 1195.8405587644431,
+      "width": 8.39536000208542,
+      "total_current": 0.9965337989703692,
+      "minimum_current": -2.9481063679180714e-05,
+      "minimum_current_bond": 1178,
+      "sum_negative_current": 4.7334569230278864e-05,
+      "continuity_max_error": 5.204170427930421e-18,
+      "global_phase_current_max_error": 6.938893903907228e-18
+    }
+  ],
+  "fixed_cut_backflow_events": [
+    {
+      "N": 4096,
+      "sigma_a": 6.0,
+      "q0": 1.5707963267948966,
+      "cut_bond": [
+        155,
+        156
+      ],
+      "positive_velocity_projection": true,
+      "excluded_spectral_weight": 1.0298722404458372e-31,
+      "initial_state_L2_change": 4.327539190227144e-16,
+      "start": 179.8853145696856,
+      "end": 180.82931398727894,
+      "integrated_cut_flux": -2.9907605792039137e-08,
+      "quadrature_error_estimate": 3.320411256173454e-22,
+      "min_current": -4.853398112632054e-08,
+      "min_current_time": 180.27426103414007,
+      "right_probability_change": -2.990760583632124e-08,
+      "left_probability_change": 2.990760579224641e-08,
+      "other_periodic_cut_integrated_flux": 1.1323660188213196e-31,
+      "continuity_integral_error": 4.428210162395657e-17,
+      "spectral_mean_velocity": 0.9965337989703693
+    },
+    {
+      "N": 4096,
+      "sigma_a": 6.0,
+      "q0": 1.5707963267948966,
+      "cut_bond": [
+        843,
+        844
+      ],
+      "positive_velocity_projection": true,
+      "excluded_spectral_weight": 1.0298722404458372e-31,
+      "initial_state_L2_change": 4.327539190227144e-16,
+      "start": 863.666661775626,
+      "end": 864.6700074368066,
+      "integrated_cut_flux": -3.3519983251925824e-05,
+      "quadrature_error_estimate": 3.721465719133768e-19,
+      "min_current": -5.019788365134098e-05,
+      "min_current_time": 864.1475759580964,
+      "right_probability_change": -3.351998325118455e-05,
+      "left_probability_change": 3.3519983251080465e-05,
+      "other_periodic_cut_integrated_flux": 2.3129952152921646e-31,
+      "continuity_integral_error": 7.412758015919174e-16,
+      "spectral_mean_velocity": 0.9965337989703693
+    },
+    {
+      "N": 8192,
+      "sigma_a": 6.0,
+      "q0": 1.5707963267948966,
+      "cut_bond": [
+        155,
+        156
+      ],
+      "positive_velocity_projection": true,
+      "excluded_spectral_weight": 1.0497720984213215e-31,
+      "initial_state_L2_change": 4.492366291846702e-16,
+      "start": 179.88531456968497,
+      "end": 180.82931398727948,
+      "integrated_cut_flux": -2.9907605792047455e-08,
+      "quadrature_error_estimate": 3.3204112561743774e-22,
+      "min_current": -4.853398112629081e-08,
+      "min_current_time": 180.27426103425748,
+      "right_probability_change": -2.9907605614276633e-08,
+      "left_probability_change": 2.990760579212131e-08,
+      "other_periodic_cut_integrated_flux": 7.862104527748313e-33,
+      "continuity_integral_error": 1.7777082142931457e-16,
+      "spectral_mean_velocity": 0.9965337989703693
+    },
+    {
+      "N": 8192,
+      "sigma_a": 6.0,
+      "q0": 1.5707963267948966,
+      "cut_bond": [
+        843,
+        844
+      ],
+      "positive_velocity_projection": true,
+      "excluded_spectral_weight": 1.0497720984213215e-31,
+      "initial_state_L2_change": 4.492366291846702e-16,
+      "start": 863.6666617756262,
+      "end": 864.6700074368066,
+      "integrated_cut_flux": -3.3519983251928515e-05,
+      "quadrature_error_estimate": 3.7214657191340667e-19,
+      "min_current": -5.0197883651340496e-05,
+      "min_current_time": 864.1475759581003,
+      "right_probability_change": -3.3519983251517615e-05,
+      "left_probability_change": 3.351998325153149e-05,
+      "other_periodic_cut_integrated_flux": 1.918346546570758e-31,
+      "continuity_integral_error": 4.108990708448501e-16,
+      "spectral_mean_velocity": 0.9965337989703693
+    }
+  ],
+  "detuning_crossover": [
+    {
+      "sigma_a": 4,
+      "crossover_delta_q": 0.088158350488774
+    },
+    {
+      "sigma_a": 6,
+      "crossover_delta_q": 0.05885738795291925
+    },
+    {
+      "sigma_a": 8,
+      "crossover_delta_q": 0.044165407202993605
+    },
+    {
+      "sigma_a": 12,
+      "crossover_delta_q": 0.02945425817923386
+    }
+  ],
+  "max_detuning_formula_error": 1.0842021724855044e-18,
+  "max_moment_width_error": 8.881784197001252e-15,
+  "interpretation": "Coordinate factorization does not imply absence of entanglement between spin partitions. The small fixed-cut backflow is phase invariant and survives positive-velocity projection. It is distinct from global-phase-sensitive Re(psi) pulsing. No novelty claim is made."
+}

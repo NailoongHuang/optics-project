@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "sources": [
+    "Existing verified local versioned arXiv full texts",
+    "Official arXiv abstract, HTML and versioned PDF",
+    "Original APS publication metadata",
+    "University of Vienna official publication and research records"
+  ],
+  "queries": [
+    "\"Generation of Spin-Wave Pulses by Inverse Design\" losses",
+    "\"spin-wave\" \"inverse design\" \"losses\" pulse 2024 2025 2026",
+    "\"Casulleras\" \"pulse\" \"2025\"",
+    "\"spin wave\" \"pulse engineering\" \"damping\" inverse",
+    "\"Perspectives on inverse design for AI magnonics\"",
+    "\"Casulleras\" \"wavelength-dependent\"",
+    "\"spin-wave pulses\" \"inverse design\" 2024 2025 2026 -scribd -researchgate",
+    "\"spin wave pulse\" \"regularization\"",
+    "\"spin-wave\" \"pulse\" \"loss-aware\"",
+    "\"spin-wave\" \"inverse design\" \"frequency-dependent\"",
+    "\"spin-wave pulses\" \"losses\" \"backward\"",
+    "\"Vilsmeier\" \"robust\" \"magnonic\" 2026",
+    "Wartelle Vilsmeier caustic amplitude finite higher-order uniform asymptotic 2024 2025 2026",
+    "Wagle caustic spin wave amplitude frequency magnetic field"
+  ],
+  "included_new_source": "arXiv:2607.07324v1, Perspectives on inverse design for AI magnonics",
+  "followup_findings": [
+    "The 2026 perspective still identifies robust design and excitation optimization as open frontiers, while acknowledging isolated earlier sensitivity checks and current work in preparation.",
+    "Wagle2026 partially addresses finite ordinary-caustic amplitude prediction; the inspected text does not provide the same-budget ordinary-versus-higher-order comparison.",
+    "No direct loss-aware pulse-inversion completion was identified in this bounded query set; no claim of universal absence or novelty follows."
+  ],
+  "retrieval_limits": [
+    "APS PDF endpoint for Casulleras2023 failed. Author claims are located in the official arXiv v1 main text; journal metadata was checked separately.",
+    "Search snippets from Scribd and ResearchGate were discovery leads only and were not used as primary scientific evidence.",
+    "This is a bounded outlook audit, not a systematic all-records review."
+  ]
+}

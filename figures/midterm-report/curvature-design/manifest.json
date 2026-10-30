@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "id": "g00_cover",
+      "title": "能带与零曲率轨迹",
+      "caption": "无量纲扩展能带。绿色线为kappa_G=0的解析轨迹，黑虚线是中心第一布里渊区边界。",
+      "files": {
+        "png": "g00_cover.png",
+        "svg": "g00_cover.svg",
+        "pdf": "g00_cover.pdf"
+      }
+    },
+    {
+      "id": "g01_multibz_eta1",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "eta=1；范围kx a,ky a属于[-3pi,3pi]，共3×3个布里渊区。左侧为完整能带，灰度越深能量越大。右侧红正蓝负，颜色深浅表示曲率绝对值，色标范围±1。绿色为解析零曲率轨迹；黑虚线框住中心第一布里渊区。曲率针对无量纲图面(qx,qy,e)，不是Berry曲率。",
+      "files": {
+        "png": "g01_multibz_eta1.png",
+        "svg": "g01_multibz_eta1.svg",
+        "pdf": "g01_multibz_eta1.pdf"
+      }
+    },
+    {
+      "id": "g02_multibz_eta03",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "eta=0.3；范围kx a,ky a属于[-3pi,3pi]，共3×3个布里渊区。左侧为完整能带，灰度越深能量越大。右侧红正蓝负，颜色深浅表示曲率绝对值，色标范围±0.3。绿色为解析零曲率轨迹；黑虚线框住中心第一布里渊区。曲率针对无量纲图面(qx,qy,e)，不是Berry曲率。",
+      "files": {
+        "png": "g02_multibz_eta03.png",
+        "svg": "g02_multibz_eta03.svg",
+        "pdf": "g02_multibz_eta03.pdf"
+      }
+    },
+    {
+      "id": "g03_zero_locus_band",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "eta=1；范围kx a,ky a属于[-3pi,3pi]，共3×3个布里渊区。左侧为严格零曲率线上的能量，线外留空。右侧红正蓝负，颜色深浅表示曲率绝对值，色标范围±1。绿色为解析零曲率轨迹；黑虚线框住中心第一布里渊区。曲率针对无量纲图面(qx,qy,e)，不是Berry曲率。",
+      "files": {
+        "png": "g03_zero_locus_band.png",
+        "svg": "g03_zero_locus_band.svg",
+        "pdf": "g03_zero_locus_band.pdf"
+      }
+    },
+    {
+      "id": "g04_candidates",
+      "title": "三类候选中心",
+      "caption": "A=(0.7,0.7)，B=(pi/2,0.7)，C=(pi/2,pi/2)。绿色为零曲率线，颜色对应e。三组初态只改变载波中心，统一初始概率RMS宽度6a。",
+      "files": {
+        "png": "g04_candidates.png",
+        "svg": "g04_candidates.svg",
+        "pdf": "g04_candidates.pdf"
+      }
+    },
+    {
+      "id": "g05_spectral_support",
+      "title": "有限频谱与零曲率轨迹",
+      "caption": "背景是各候选点附近的实际曲率，同一色标±0.3。等高线为实际FFT初始谱功率的0.1、0.5、0.9相对峰值；sigma=6a，谱RMS宽度约1/12。有限带宽会覆盖曲率不为零的邻域。",
+      "files": {
+        "png": "g05_spectral_support.png",
+        "svg": "g05_spectral_support.svg",
+        "pdf": "g05_spectral_support.pdf"
+      }
+    },
+    {
+      "id": "formula_curvature_general",
+      "title": "曲率解析公式",
+      "caption": "qx=kxa，qy=kya，e=epsilon/Jx，eta>0；下标x,y指对无量纲q求偏导。",
+      "files": {
+        "png": "formula_curvature_general.png",
+        "svg": "formula_curvature_general.svg",
+        "pdf": "formula_curvature_general.pdf"
+      }
+    },
+    {
+      "id": "formula_curvature_model",
+      "title": "曲率解析公式",
+      "caption": "qx=kxa，qy=kya，e=epsilon/Jx，eta>0；下标x,y指对无量纲q求偏导。",
+      "files": {
+        "png": "formula_curvature_model.png",
+        "svg": "formula_curvature_model.svg",
+        "pdf": "formula_curvature_model.pdf"
+      }
+    },
+    {
+      "id": "formula_zero",
+      "title": "曲率解析公式",
+      "caption": "qx=kxa，qy=kya，e=epsilon/Jx，eta>0；下标x,y指对无量纲q求偏导。",
+      "files": {
+        "png": "formula_zero.png",
+        "svg": "formula_zero.svg",
+        "pdf": "formula_zero.pdf"
+      }
+    },
+    {
+      "id": "g06_initial_carriers",
+      "title": "相同概率包络，不同载波",
+      "caption": "三组sigma=6a，总概率1，初始相位在包络中心固定为实正。色标以共同初始振幅峰值A0固定。初始概率完全相同，载波中心不同。",
+      "files": {
+        "png": "g06_initial_carriers.png",
+        "svg": "g06_initial_carriers.svg",
+        "pdf": "g06_initial_carriers.pdf"
+      }
+    },
+    {
+      "id": "g07_final_probability",
+      "title": "同初宽波包的末态对照",
+      "caption": "sigma=6a，eta=1，tau=180，三组均在各自概率质心坐标中显示；不缩放宽度，不逐图重标峰值。虚线是初始半径2sigma的轮廓。普通点两个方向展宽，零曲率线点保留一个方向的展宽，交点两个方向的展宽都较弱。",
+      "files": {
+        "png": "g07_final_probability.png",
+        "svg": "g07_final_probability.svg",
+        "pdf": "g07_final_probability.pdf"
+      }
+    },
+    {
+      "id": "g08_final_real",
+      "title": "同初宽波包的末态对照",
+      "caption": "sigma=6a，eta=1，tau=180，三组均在各自概率质心坐标中显示；不缩放宽度，不逐图重标峰值。实部按固定整体相位约定展示，不表示横向磁化。",
+      "files": {
+        "png": "g08_final_real.png",
+        "svg": "g08_final_real.svg",
+        "pdf": "g08_final_real.pdf"
+      }
+    },
+    {
+      "id": "g10_anisotropic_design",
+      "title": "同一零曲率线点的交换比对照",
+      "caption": "B=(pi/2,0.7)，相同sigma=6a和tau=180，只改变eta。零曲率线位置不变，但剩余y方向二阶色散系数为eta cos0.7，因而y向展宽与群速度都改变。比较固定时间，非固定传播距离。",
+      "files": {
+        "png": "g10_anisotropic_design.png",
+        "svg": "g10_anisotropic_design.svg",
+        "pdf": "g10_anisotropic_design.pdf"
+      }
+    },
+    {
+      "id": "g09_higher_order_limit",
+      "title": "有限带宽下的高阶形变",
+      "caption": "交点中心(pi/2,pi/2)，独立控制sigma=4a，N=1024，tau至360。左图不按峰值归一化，右图固定另一个分量于pi/2，精确残差sin(delta q)-delta q。与主比较sigma=6a不同，不直接作同初宽性能比较。",
+      "files": {
+        "png": "g09_higher_order_limit.png",
+        "svg": "g09_higher_order_limit.svg",
+        "pdf": "g09_higher_order_limit.pdf"
+      }
+    },
+    {
+      "id": "g12_phase_budget",
+      "title": "频谱内相对平移态的残余相位",
+      "caption": "tau=180；delta e=e(q)-u_mean dot q-C，C是谱平均。等高线是同一初态频谱。所有面板固定色标±3rad，超出值饱和。完整复态F由实际频谱的相位叠加计算，不由色标或曲率近似推断。",
+      "files": {
+        "png": "g12_phase_budget.png",
+        "svg": "g12_phase_budget.svg",
+        "pdf": "g12_phase_budget.pdf"
+      }
+    },
+    {
+      "id": "g11_probability_animation",
+      "title": "三组初步设计的传播动画",
+      "caption": "A/B/C同初宽6a、同时间0至180；共动坐标只减去各自概率质心。固定初始相位约定与色标。Repsi不是横向自旋均值；概率均为实际单磁子翻转概率。",
+      "files": {
+        "gif": "g11_probability_animation.gif"
+      },
+      "frames": 61
+    },
+    {
+      "id": "g13_real_animation",
+      "title": "三组初步设计的传播动画",
+      "caption": "A/B/C同初宽6a、同时间0至180；共动坐标只减去各自概率质心。固定初始相位约定与色标。Repsi不是横向自旋均值；概率均为实际单磁子翻转概率。",
+      "files": {
+        "gif": "g13_real_animation.gif"
+      },
+      "frames": 61
+    }
+  ],
+  "parameters": {
+    "main_N": 512,
+    "main_sigma_a": 6,
+    "main_tmax": 180,
+    "control_N": 1024,
+    "control_sigma_a": [
+      4,
+      6,
+      8
+    ],
+    "control_tmax": 360,
+    "phase": "Only E_F common phase removed; no per-frame rephasing",
+    "normalization": "sum |psi|^2=1; A0 and P0 fixed at initial values",
+    "dynamics": "Complete cosine band, exact Fourier phases on a periodic lattice; no time-step integration"
+  },
+  "source_model": "../common.py and code/spin_wave_2d.py",
+  "curvature_source": "https://mathworld.wolfram.com/GaussianCurvature.html"
+}

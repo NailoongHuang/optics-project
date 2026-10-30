@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "scope": "Explicit outlook and untested expectation extraction for spin-chain transport and ring-clock papers; recent-work check, not exhaustive novelty search.",
+  "queries": [
+    "\"Precision is not limited by the second law\" \"dephasing\"",
+    "\"ring clock\" \"photon\" \"Meier\" 2026",
+    "\"ring clock\" \"detector\" quantum 2025 2026",
+    "\"spin chain\" \"Hamiltonian uncertainty\" \"robust\" state transfer",
+    "\"spin chain\" \"robust\" \"encoding\" \"uncertainty\"",
+    "\"Gaussian packets\" \"scattering\" \"spin\"",
+    "\"quantum plinko\" \"2025\"",
+    "\"passive photon shaping\" \"Meier\"",
+    "\"Inverse engineering for robust state transport along a spin chain\"",
+    "\"Sensitivity and Robustness of Quantum Spin-1/2 Rings to Parameter Uncertainty\"",
+    "\"wave packet\" \"spin chain\" \"scattering\" \"controlled phase\"",
+    "\"Precision is not limited\" \"2026\"",
+    "\"off-diagonal disorder\" \"wave packet\" \"band center\"",
+    "\"random hopping\" \"band centre\" dynamics",
+    "\"onsite\" \"off-diagonal disorder\" \"wavepacket\"",
+    "\"Beyond the universal Dyson singularity\"",
+    "\"Dynamics of a quantum particle in low-dimensional disordered systems\""
+  ],
+  "sources": [
+    "Published primary PMC/Nature text",
+    "Official arXiv version records/PDF",
+    "Author and institutional PDFs",
+    "IOP/APS metadata and primary records"
+  ],
+  "not_promoted": [
+    "Conference-talk abstract about ongoing experimental quantum-clock activity",
+    "Unrelated relativistic ring clock",
+    "False-vacuum kink scattering as an exact match for magnon Gaussian gate",
+    "Generic robust transport as an unworked topic"
+  ],
+  "main_correction": "Final Meier2025 paper supersedes preprint outlook: coupling-disorder and amplitude-damping stability were added before publication.",
+  "search_limit": "No exact follow-up settling the selected finite-window encoding or frequency-vs-bond packet benchmark was established; absence in this bounded search is not novelty evidence."
+}

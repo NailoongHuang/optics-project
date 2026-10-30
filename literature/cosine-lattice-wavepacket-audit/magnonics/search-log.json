@@ -1,0 +1,52 @@
+{
+  "search_started": "2026-10-20",
+  "coverage_cutoff": "2026-10-20",
+  "language": "English discovery queries; Chinese interpretation for the user",
+  "engines": ["web search discovery", "official arXiv abstract and full-text pages", "APS, Optica and Nature publisher records", "Crossref public API for the 1999 historical lead"],
+  "local_corpus": "literature/linear-spin-wave-packets: metadata, extracted full text, and prior query log",
+  "queries": [
+    "\"Dispersionless propagation\" \"spin-wave\" pulses Divinskiy 2021",
+    "\"Caustic spin wave beams\" \"classification\" Wartelle 2023",
+    "\"spin wave\" \"third order dispersion\" wave packet",
+    "\"spin wave\" \"zero dispersion\" pulses 2025 2026",
+    "\"Non-linear spin dynamics\" \"zero-dispersion\"",
+    "\"spin wave\" \"Airy\" \"2025\"",
+    "\"spin wave\" \"zero-dispersion point\" third order",
+    "\"spin-wave\" \"higher-order dispersion\" pulse",
+    "\"Non-linear spin dynamics in ferromagnetic films\" IOP",
+    "\"Kiseliev\" \"3461\" \"1999\"",
+    "\"Magnetically tunable Airy-like beam\"",
+    "\"spin-wave\" \"Airy\" site:arxiv.org",
+    "\"spin waves\" \"Airy\"",
+    "\"magnon\" \"dispersionless\" \"2025\"",
+    "\"spin-wave pulses\" \"dispersion\" \"2026\"",
+    "\"spin-wave\" \"self-accelerating\"",
+    "\"spin wave\" \"zero dispersion\" -soliton -solitons -nonlinear -non-linear",
+    "\"magnonic\" \"Hessian\" wave packet",
+    "\"spin-wave\" \"Gaussian curvature\"",
+    "\"spin-wave packets\" \"inflection\"",
+    "\"Generation of spin-wave pulses by inverse design\"",
+    "\"Spectrum evolution and chirping of laser-induced spin wave packets\"",
+    "\"Dispersion-tunable low-loss implanted spin-wave waveguides\""
+  ],
+  "citation_chasing": [
+    "Nikolaev 2026 references 5-11: led to Casulleras 2023 inverse pulse design and Filatov 2022 chirping.",
+    "Nikolaev 2026 reference 25: led to Bensmann 2025 implanted waveguide dispersion control.",
+    "Wartelle 2023 Sections II and III.D: followed distinction between slowness-curve geometry and higher-order caustics.",
+    "Klos 2015 references and monochromatic scope checked against its isofrequency-contour analysis."
+  ],
+  "deduplication": "Deduplicated by DOI or base arXiv identifier. Journal publication and arXiv versions count as one work.",
+  "screening": [
+    "Kept direct magnetic pulse experiments, linear source engineering, and contour-based collimation as distinct evidence classes.",
+    "Kept nonlinear pulse experiments only as mechanism controls.",
+    "Excluded unrelated flat-band localization, curved real-space substrates, Airy functions in bound-state spectra, and nonmagnetic atomic spin-wave uses.",
+    "Did not use unverified third-party summaries to establish paper-specific scientific conclusions."
+  ],
+  "access_limits": [
+    "IOP 1999 publisher article and PDF inaccessible through web tool; Crossref metadata saved.",
+    "Dai 2021 Optica record accessible at abstract level only.",
+    "Nikolaev 2026 arXiv HTML endpoint returned 404; official PDF was accessible and inspected.",
+    "No subscription Scopus/Web of Science search or exhaustive coverage claim."
+  ],
+  "stopping_condition": "Stopped after a direct linear pulse experiment, linear inverse design, two complementary caustic analyses, a current caustic experiment, and a current nonlinear-pulse control were verified; further broad variants returned mainly unrelated curvature or flat-band topics."
+}

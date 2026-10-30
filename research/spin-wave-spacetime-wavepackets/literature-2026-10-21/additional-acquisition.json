@@ -1,0 +1,24 @@
+[
+  {
+    "key": "spp_2020_2003.02105v2",
+    "source_url": "https://arxiv.org/pdf/2003.02105v2",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 14,
+    "bytes": 4410821,
+    "sha256": "68caea3e42d7c9be7d1fb58b1313dcc2709d4deee2cc1140c3ecf02ec9ddfecc",
+    "pdf": "pdfs/spp_2020_2003.02105v2.pdf",
+    "extracted": "extracted/spp_2020_2003.02105v2.txt"
+  },
+  {
+    "key": "spp_experiment_2025",
+    "source_url": "https://www.nature.com/articles/s41467-025-65289-8.pdf",
+    "accessed": "2026-10-21",
+    "status": "downloaded-and-readable",
+    "pages": 12,
+    "bytes": 2737301,
+    "sha256": "ce7e9c64c68af51ba7b9cbf3c1533238ccbb2a9c7b91b40d6ef31f5566782f47",
+    "pdf": "pdfs/spp_experiment_2025.pdf",
+    "extracted": "extracted/spp_experiment_2025.txt"
+  }
+]

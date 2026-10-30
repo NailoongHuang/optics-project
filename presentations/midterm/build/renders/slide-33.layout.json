@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/mfkkc2","index":32,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/6pwbahcf","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"附录：零二阶曲率后的高阶形变","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/tsna5wb6","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/sretcral","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C14　独立示例 σ = 2，q₀ = (π/2,π/2)","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/jm5sz2to","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"33","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/by5sr21k","kind":"image","position":{"left":44,"top":125,"width":1192,"height":365},"fit":"contain","alt":"c14-extension-cubic-distortion"},
+{"id":"sh/5ona1cbu","kind":"textbox","position":{"left":59,"top":500,"width":551,"height":34},"text":"残余色散","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/knet87u9","kind":"textbox","position":{"left":59,"top":543,"width":551,"height":140},"text":"扣除常数和线性项后，sin δq − δq 的首项为 −δq³/6。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3ipcb6t8","kind":"textbox","position":{"left":665,"top":500,"width":550,"height":34},"text":"有限频宽的后果","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/2hgbi1sn","kind":"textbox","position":{"left":665,"top":543,"width":550,"height":140},"text":"相位差仍会积累，产生偏斜与尾部。本页 σ = 2，与前面的 σ = 3 对照不同。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

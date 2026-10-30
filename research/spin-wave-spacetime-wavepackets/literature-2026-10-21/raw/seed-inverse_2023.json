@@ -1,0 +1,1312 @@
+{
+  "id": "https://openalex.org/W4382678972",
+  "doi": "https://doi.org/10.1103/physrevapplied.19.064085",
+  "title": "Generation of Spin-Wave Pulses by Inverse Design",
+  "display_name": "Generation of Spin-Wave Pulses by Inverse Design",
+  "publication_year": 2023,
+  "publication_date": "2023-06-30",
+  "ids": {
+    "openalex": "https://openalex.org/W4382678972",
+    "doi": "https://doi.org/10.1103/physrevapplied.19.064085"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1103/physrevapplied.19.064085",
+    "doi": "https://doi.org/10.1103/physrevapplied.19.064085",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1103/physrevapplied.19.064085",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S2764453006",
+      "display_name": "Physical Review Applied",
+      "issn_l": "2331-7019",
+      "issn": [
+        "2331-7019",
+        "2331-7043"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "listed_in": [
+        "cwts-core",
+        "dongbi-a",
+        "jufo-2",
+        "norway-2",
+        "poland-140",
+        "russia-white-list-1",
+        "vabb-shw"
+      ],
+      "host_organization": "https://openalex.org/P4310320261",
+      "host_organization_name": "American Physical Society",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320261"
+      ],
+      "host_organization_lineage_names": [
+        "American Physical Society"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Physical Review Applied",
+    "raw_type": "journal-article"
+  },
+  "volume": null,
+  "type": "article",
+  "indexed_in": [
+    "arxiv",
+    "crossref",
+    "datacite"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://arxiv.org/pdf/2209.06608",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5075519844",
+        "display_name": "Silvia Casulleras",
+        "orcid": "https://orcid.org/0000-0002-0009-759X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-0009-759X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I138211613",
+          "display_name": "Austrian Academy of Sciences",
+          "ror": "https://ror.org/03anc3s24",
+          "country_code": "AT",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I138211613"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I190249584",
+          "display_name": "Universität Innsbruck",
+          "ror": "https://ror.org/054pv6659",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I190249584"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I3132079568",
+          "display_name": "Institute for Quantum Optics and Quantum Information Innsbruck",
+          "ror": "https://ror.org/056hzt889",
+          "country_code": "AT",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "S. Casulleras",
+      "raw_affiliation_strings": [
+        "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+        "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-0009-759X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I190249584"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5020466103",
+        "display_name": "Sebastian Knauer",
+        "orcid": "https://orcid.org/0000-0002-5790-4575",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-5790-4575"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I129774422",
+          "display_name": "University of Vienna",
+          "ror": "https://ror.org/03prydq77",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "S. Knauer",
+      "raw_affiliation_strings": [
+        "Faculty of Physics, University of Vienna, Vienna 1090, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-5790-4575",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Faculty of Physics, University of Vienna, Vienna 1090, Austria",
+          "institution_ids": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5027062486",
+        "display_name": "Qi Wang",
+        "orcid": "https://orcid.org/0000-0002-5049-629X",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-5049-629X"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I129774422",
+          "display_name": "University of Vienna",
+          "ror": "https://ror.org/03prydq77",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Q. Wang",
+      "raw_affiliation_strings": [
+        "Faculty of Physics, University of Vienna, Vienna 1090, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-5049-629X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Faculty of Physics, University of Vienna, Vienna 1090, Austria",
+          "institution_ids": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5046700502",
+        "display_name": "Oriol Romero‐Isart",
+        "orcid": "https://orcid.org/0000-0003-4006-3391",
+        "observed_orcids": [
+          "https://orcid.org/0000-0003-4006-3391"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I138211613",
+          "display_name": "Austrian Academy of Sciences",
+          "ror": "https://ror.org/03anc3s24",
+          "country_code": "AT",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I138211613"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I190249584",
+          "display_name": "Universität Innsbruck",
+          "ror": "https://ror.org/054pv6659",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I190249584"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I3132079568",
+          "display_name": "Institute for Quantum Optics and Quantum Information Innsbruck",
+          "ror": "https://ror.org/056hzt889",
+          "country_code": "AT",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "O. Romero-Isart",
+      "raw_affiliation_strings": [
+        "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+        "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0003-4006-3391",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I190249584"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5035015128",
+        "display_name": "Andrii V. Chumak",
+        "orcid": "https://orcid.org/0000-0001-5515-0848",
+        "observed_orcids": [
+          "https://orcid.org/0000-0001-5515-0848"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I129774422",
+          "display_name": "University of Vienna",
+          "ror": "https://ror.org/03prydq77",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "A.V. Chumak",
+      "raw_affiliation_strings": [
+        "Faculty of Physics, University of Vienna, Vienna 1090, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-5515-0848",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Faculty of Physics, University of Vienna, Vienna 1090, Austria",
+          "institution_ids": [
+            "https://openalex.org/I129774422"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5029085921",
+        "display_name": "Carlos Gonzalez-Ballestero",
+        "orcid": "https://orcid.org/0000-0002-7639-0856",
+        "observed_orcids": [
+          "https://orcid.org/0000-0002-7639-0856"
+        ]
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I138211613",
+          "display_name": "Austrian Academy of Sciences",
+          "ror": "https://ror.org/03anc3s24",
+          "country_code": "AT",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I138211613"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I190249584",
+          "display_name": "Universität Innsbruck",
+          "ror": "https://ror.org/054pv6659",
+          "country_code": "AT",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I190249584"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I3132079568",
+          "display_name": "Institute for Quantum Optics and Quantum Information Innsbruck",
+          "ror": "https://ror.org/056hzt889",
+          "country_code": "AT",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        }
+      ],
+      "countries": [
+        "AT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "C. Gonzalez-Ballestero",
+      "raw_affiliation_strings": [
+        "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+        "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-7639-0856",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Institute for Quantum Optics and Quantum Information of the Austrian Academy of Sciences, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I138211613",
+            "https://openalex.org/I3132079568"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institute for Theoretical Physics, University of Innsbruck, Innsbruck 6020, Austria",
+          "institution_ids": [
+            "https://openalex.org/I190249584"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 4,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5075519844"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I138211613",
+    "https://openalex.org/I190249584",
+    "https://openalex.org/I3132079568"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.1453,
+  "has_fulltext": true,
+  "cited_by_count": 10,
+  "citation_normalized_percentile": {
+    "value": 0.7558818,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 93,
+    "max": 97
+  },
+  "biblio": {
+    "volume": "19",
+    "issue": "6",
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10049",
+    "display_name": "Magnetic properties of thin films",
+    "score": 0.9951000213623047,
+    "subfield": {
+      "id": "https://openalex.org/subfields/3107",
+      "display_name": "Atomic and Molecular Physics, and Optics"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/31",
+      "display_name": "Physics and Astronomy"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10049",
+      "display_name": "Magnetic properties of thin films",
+      "score": 0.9951000213623047,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11682",
+      "display_name": "Advanced Condensed Matter Physics",
+      "score": 0.000699999975040555,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3104",
+        "display_name": "Condensed Matter Physics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10382",
+      "display_name": "Quantum and electron transport phenomena",
+      "score": 0.000699999975040555,
+      "subfield": {
+        "id": "https://openalex.org/subfields/3107",
+        "display_name": "Atomic and Molecular Physics, and Optics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/31",
+        "display_name": "Physics and Astronomy"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/inverse-design",
+      "display_name": "inverse design",
+      "score": 0.9610000252723694
+    },
+    {
+      "id": "https://openalex.org/keywords/magnonic-waveguides",
+      "display_name": "magnonic waveguides",
+      "score": 0.9950000047683716
+    },
+    {
+      "id": "https://openalex.org/keywords/stripline-antenna",
+      "display_name": "stripline antenna",
+      "score": 0.6899999976158142
+    },
+    {
+      "id": "https://openalex.org/keywords/exchange-spin-waves",
+      "display_name": "exchange spin waves",
+      "score": 0.6420000195503235
+    },
+    {
+      "id": "https://openalex.org/keywords/pulse-shaping",
+      "display_name": "pulse shaping",
+      "score": 0.578000009059906
+    },
+    {
+      "id": "https://openalex.org/keywords/magnonic-circuits",
+      "display_name": "magnonic circuits",
+      "score": 0.7229999899864197
+    },
+    {
+      "id": "https://openalex.org/keywords/pulse-fidelity",
+      "display_name": "pulse fidelity",
+      "score": 0.4729999899864197
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C200687136",
+      "wikidata": "https://www.wikidata.org/wiki/Q11233438",
+      "display_name": "Waveguide",
+      "level": 2,
+      "score": 0.6360440850257874
+    },
+    {
+      "id": "https://openalex.org/C44221107",
+      "wikidata": "https://www.wikidata.org/wiki/Q4431229",
+      "display_name": "Spin wave",
+      "level": 3,
+      "score": 0.6049407720565796
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.5863586068153381
+    },
+    {
+      "id": "https://openalex.org/C207467116",
+      "wikidata": "https://www.wikidata.org/wiki/Q4385666",
+      "display_name": "Inverse",
+      "level": 2,
+      "score": 0.5742259621620178
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.4995725154876709
+    },
+    {
+      "id": "https://openalex.org/C2780167933",
+      "wikidata": "https://www.wikidata.org/wiki/Q1550652",
+      "display_name": "Pulse (music)",
+      "level": 3,
+      "score": 0.49863457679748535
+    },
+    {
+      "id": "https://openalex.org/C42704618",
+      "wikidata": "https://www.wikidata.org/wiki/Q910917",
+      "display_name": "Spin (aerodynamics)",
+      "level": 2,
+      "score": 0.4883844256401062
+    },
+    {
+      "id": "https://openalex.org/C173523689",
+      "wikidata": "https://www.wikidata.org/wiki/Q215589",
+      "display_name": "Dipole",
+      "level": 2,
+      "score": 0.4806560277938843
+    },
+    {
+      "id": "https://openalex.org/C80587232",
+      "wikidata": "https://www.wikidata.org/wiki/Q1976384",
+      "display_name": "Stripline",
+      "level": 2,
+      "score": 0.47933802008628845
+    },
+    {
+      "id": "https://openalex.org/C177562468",
+      "wikidata": "https://www.wikidata.org/wiki/Q182893",
+      "display_name": "Dispersion (optics)",
+      "level": 2,
+      "score": 0.4729433059692383
+    },
+    {
+      "id": "https://openalex.org/C30475298",
+      "wikidata": "https://www.wikidata.org/wiki/Q909554",
+      "display_name": "Computational physics",
+      "level": 1,
+      "score": 0.3289720416069031
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.2517644762992859
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 0.14354479312896729
+    },
+    {
+      "id": "https://openalex.org/C82217956",
+      "wikidata": "https://www.wikidata.org/wiki/Q184207",
+      "display_name": "Ferromagnetism",
+      "level": 2,
+      "score": 0.08143272995948792
+    },
+    {
+      "id": "https://openalex.org/C94915269",
+      "wikidata": "https://www.wikidata.org/wiki/Q1834857",
+      "display_name": "Detector",
+      "level": 2,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C97355855",
+      "wikidata": "https://www.wikidata.org/wiki/Q11473",
+      "display_name": "Thermodynamics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C2524010",
+      "wikidata": "https://www.wikidata.org/wiki/Q8087",
+      "display_name": "Geometry",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.1103/physrevapplied.19.064085",
+      "doi": "https://doi.org/10.1103/physrevapplied.19.064085",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1103/physrevapplied.19.064085",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S2764453006",
+        "display_name": "Physical Review Applied",
+        "issn_l": "2331-7019",
+        "issn": [
+          "2331-7019",
+          "2331-7043"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "listed_in": [
+          "cwts-core",
+          "dongbi-a",
+          "jufo-2",
+          "norway-2",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
+        ],
+        "host_organization": "https://openalex.org/P4310320261",
+        "host_organization_name": "American Physical Society",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320261"
+        ],
+        "host_organization_lineage_names": [
+          "American Physical Society"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Physical Review Applied",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:arXiv.org:2209.06608",
+      "doi": null,
+      "is_oa": true,
+      "landing_page_url": "http://arxiv.org/abs/2209.06608",
+      "pdf_url": "https://arxiv.org/pdf/2209.06608",
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "text"
+    },
+    {
+      "id": "doi:10.48550/arxiv.2209.06608",
+      "doi": "https://doi.org/10.48550/arxiv.2209.06608",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.48550/arxiv.2209.06608",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400194",
+        "display_name": "arXiv (Cornell University)",
+        "issn_l": "2331-8422",
+        "issn": [
+          "2331-8422"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": false,
+        "listed_in": [],
+        "host_organization": "https://openalex.org/I205783295",
+        "host_organization_name": "Cornell University",
+        "host_organization_lineage": [
+          "https://openalex.org/I205783295"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": null,
+      "is_accepted": false,
+      "is_published": null,
+      "raw_source_name": null,
+      "raw_type": "Preprint"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:arXiv.org:2209.06608",
+    "doi": null,
+    "is_oa": true,
+    "landing_page_url": "http://arxiv.org/abs/2209.06608",
+    "pdf_url": "https://arxiv.org/pdf/2209.06608",
+    "source": {
+      "id": "https://openalex.org/S4306400194",
+      "display_name": "arXiv (Cornell University)",
+      "issn_l": "2331-8422",
+      "issn": [
+        "2331-8422"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": false,
+      "listed_in": [],
+      "host_organization": "https://openalex.org/I205783295",
+      "host_organization_name": "Cornell University",
+      "host_organization_lineage": [
+        "https://openalex.org/I205783295"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "text"
+  },
+  "sustainable_development_goals": [],
+  "sustainable_development_goals_aurora": [],
+  "study_designs": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G264617820",
+      "display_name": null,
+      "funder_award_id": "I 4917-N",
+      "funder_id": "https://openalex.org/F4320321181",
+      "funder_display_name": "Austrian Science Fund"
+    },
+    {
+      "id": "https://openalex.org/G3345895242",
+      "display_name": null,
+      "funder_award_id": "H2020-MSCA",
+      "funder_id": "https://openalex.org/F4320332999",
+      "funder_display_name": "Horizon 2020 Framework Programme"
+    },
+    {
+      "id": "https://openalex.org/G4135300038",
+      "display_name": "Non-Reciprocal 3D Architectures for Magnonic Functionalities",
+      "funder_award_id": "I 4917",
+      "funder_id": "https://openalex.org/F4320321181",
+      "funder_display_name": "Austrian Science Fund"
+    },
+    {
+      "id": "https://openalex.org/G7749976260",
+      "display_name": null,
+      "funder_award_id": "101025758",
+      "funder_id": "https://openalex.org/F4320332999",
+      "funder_display_name": "Horizon 2020 Framework Programme"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320321181",
+      "display_name": "Austrian Science Fund",
+      "ror": "https://ror.org/013tf3c58"
+    },
+    {
+      "id": "https://openalex.org/F4320332999",
+      "display_name": "Horizon 2020 Framework Programme",
+      "ror": "https://ror.org/00k4n6c32"
+    }
+  ],
+  "has_content": {
+    "pdf": true,
+    "grobid_xml": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4382678972.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4382678972.grobid-xml"
+  },
+  "referenced_works_count": 50,
+  "referenced_works": [
+    "https://openalex.org/W779704277",
+    "https://openalex.org/W1506607187",
+    "https://openalex.org/W1552692389",
+    "https://openalex.org/W1565712888",
+    "https://openalex.org/W1972868664",
+    "https://openalex.org/W2012025476",
+    "https://openalex.org/W2025539253",
+    "https://openalex.org/W2142805504",
+    "https://openalex.org/W2143777514",
+    "https://openalex.org/W2167366302",
+    "https://openalex.org/W2281916821",
+    "https://openalex.org/W2765239562",
+    "https://openalex.org/W2769821810",
+    "https://openalex.org/W2806851088",
+    "https://openalex.org/W2868860325",
+    "https://openalex.org/W2890772642",
+    "https://openalex.org/W2913069042",
+    "https://openalex.org/W2929206880",
+    "https://openalex.org/W2952103360",
+    "https://openalex.org/W2966730373",
+    "https://openalex.org/W2986506584",
+    "https://openalex.org/W3016411609",
+    "https://openalex.org/W3018452691",
+    "https://openalex.org/W3036827847",
+    "https://openalex.org/W3093299173",
+    "https://openalex.org/W3103114523",
+    "https://openalex.org/W3109238698",
+    "https://openalex.org/W3111492864",
+    "https://openalex.org/W3111771041",
+    "https://openalex.org/W3113377346",
+    "https://openalex.org/W3119774682",
+    "https://openalex.org/W3123540196",
+    "https://openalex.org/W3124579275",
+    "https://openalex.org/W3125438587",
+    "https://openalex.org/W3133966277",
+    "https://openalex.org/W3135462834",
+    "https://openalex.org/W3138857931",
+    "https://openalex.org/W3160685890",
+    "https://openalex.org/W3180797509",
+    "https://openalex.org/W3186687265",
+    "https://openalex.org/W3193338769",
+    "https://openalex.org/W3203632415",
+    "https://openalex.org/W3209232797",
+    "https://openalex.org/W3211020500",
+    "https://openalex.org/W3216020201",
+    "https://openalex.org/W4211212552",
+    "https://openalex.org/W4220861956",
+    "https://openalex.org/W4283812914",
+    "https://openalex.org/W4308887836",
+    "https://openalex.org/W4313560678"
+  ],
+  "related_works": [
+    "https://openalex.org/W2913338163",
+    "https://openalex.org/W4244314632",
+    "https://openalex.org/W3208341329",
+    "https://openalex.org/W2993110820",
+    "https://openalex.org/W2154720362",
+    "https://openalex.org/W3040898857",
+    "https://openalex.org/W2066955528",
+    "https://openalex.org/W1869138063",
+    "https://openalex.org/W2971896589",
+    "https://openalex.org/W2070408380"
+  ],
+  "abstract_inverted_index": {
+    "The": [
+      0,
+      31,
+      93
+    ],
+    "development": [
+      1
+    ],
+    "of": [
+      2,
+      33,
+      111,
+      138
+    ],
+    "fast": [
+      3
+    ],
+    "magnonic": [
+      4,
+      61,
+      129,
+      140
+    ],
+    "information-processing": [
+      5
+    ],
+    "devices": [
+      6
+    ],
+    "requires": [
+      7,
+      95
+    ],
+    "operating": [
+      8
+    ],
+    "with": [
+      9,
+      55,
+      86
+    ],
+    "short": [
+      10
+    ],
+    "spin-wave": [
+      11,
+      35,
+      53,
+      78
+    ],
+    "pulses,": [
+      12,
+      17
+    ],
+    "but,": [
+      13
+    ],
+    "the": [
+      14,
+      16,
+      18,
+      136
+    ],
+    "shorter": [
+      15
+    ],
+    "more": [
+      19,
+      127
+    ],
+    "affected": [
+      20
+    ],
+    "they": [
+      21
+    ],
+    "are": [
+      22
+    ],
+    "by": [
+      23
+    ],
+    "information": [
+      24,
+      146
+    ],
+    "loss": [
+      25
+    ],
+    "due": [
+      26
+    ],
+    "to": [
+      27,
+      50,
+      105,
+      126,
+      135
+    ],
+    "broadening": [
+      28
+    ],
+    "and": [
+      29,
+      37,
+      76,
+      99,
+      118,
+      144
+    ],
+    "dispersion.": [
+      30
+    ],
+    "capability": [
+      32
+    ],
+    "engineering": [
+      34
+    ],
+    "pulses": [
+      36,
+      54,
+      79
+    ],
+    "controlling": [
+      38
+    ],
+    "their": [
+      39
+    ],
+    "propagation": [
+      40
+    ],
+    "could": [
+      41,
+      133
+    ],
+    "solve": [
+      42
+    ],
+    "this": [
+      43
+    ],
+    "problem.": [
+      44
+    ],
+    "Here,": [
+      45
+    ],
+    "we": [
+      46,
+      70
+    ],
+    "provide": [
+      47
+    ],
+    "a": [
+      48,
+      56
+    ],
+    "method": [
+      49,
+      94
+    ],
+    "generate": [
+      51
+    ],
+    "linear": [
+      52
+    ],
+    "desired": [
+      57
+    ],
+    "spatial-temporal": [
+      58
+    ],
+    "profile": [
+      59
+    ],
+    "in": [
+      60,
+      83
+    ],
+    "waveguides": [
+      62,
+      85
+    ],
+    "based": [
+      63
+    ],
+    "on": [
+      64
+    ],
+    "inverse": [
+      65
+    ],
+    "design.": [
+      66
+    ],
+    "As": [
+      67
+    ],
+    "relevant": [
+      68
+    ],
+    "examples,": [
+      69
+    ],
+    "theoretically": [
+      71
+    ],
+    "predict": [
+      72
+    ],
+    "that": [
+      73
+    ],
+    "both": [
+      74
+    ],
+    "rectangular": [
+      75
+    ],
+    "self-compressing": [
+      77
+    ],
+    "can": [
+      80,
+      122
+    ],
+    "be": [
+      81,
+      124
+    ],
+    "generated": [
+      82
+    ],
+    "state-of-the-art": [
+      84
+    ],
+    "fidelities": [
+      87
+    ],
+    "$\\ensuremath{\\gtrsim}96\\mathrm{%}$": [
+      88
+    ],
+    "using": [
+      89
+    ],
+    "narrow": [
+      90
+    ],
+    "stripline": [
+      91
+    ],
+    "antennas.": [
+      92
+    ],
+    "minimal": [
+      96
+    ],
+    "computational": [
+      97
+    ],
+    "overhead": [
+      98
+    ],
+    "is": [
+      100
+    ],
+    "universal,": [
+      101
+    ],
+    "i.e.,": [
+      102
+    ],
+    "it": [
+      103
+    ],
+    "applies": [
+      104
+    ],
+    "arbitrary": [
+      106
+    ],
+    "targeted": [
+      107
+    ],
+    "pulse": [
+      108
+    ],
+    "shapes,": [
+      109
+    ],
+    "type": [
+      110
+    ],
+    "waves": [
+      112
+    ],
+    "(exchange": [
+      113
+    ],
+    "or": [
+      114
+    ],
+    "dipolar),": [
+      115
+    ],
+    "waveguide": [
+      116,
+      119
+    ],
+    "materials,": [
+      117
+    ],
+    "geometries.": [
+      120
+    ],
+    "It": [
+      121
+    ],
+    "also": [
+      123
+    ],
+    "extended": [
+      125
+    ],
+    "complex": [
+      128
+    ],
+    "structures.": [
+      130
+    ],
+    "Our": [
+      131
+    ],
+    "results": [
+      132
+    ],
+    "lead": [
+      134
+    ],
+    "utilization": [
+      137
+    ],
+    "large-scale": [
+      139
+    ],
+    "circuits": [
+      141
+    ],
+    "for": [
+      142
+    ],
+    "classical": [
+      143
+    ],
+    "quantum": [
+      145
+    ],
+    "processing.": [
+      147
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-10-16T09:59:22.235173",
+  "created_date": "2025-10-10T00:00:00"
+}

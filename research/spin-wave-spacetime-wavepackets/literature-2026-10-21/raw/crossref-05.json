@@ -1,0 +1,2316 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 1449217,
+    "items": [
+      {
+        "DOI": "10.1063/1.4955030",
+        "title": [
+          "All electrical propagating spin wave spectroscopy with broadband wavevector capability"
+        ],
+        "author": [
+          {
+            "given": "F.",
+            "family": "Ciubotaru",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "imec 1 , Kapeldreef 75, B-3001 Leuven, Belgium"
+              },
+              {
+                "name": "KU Leuven 2 , , Kasteelpark Arenberg 10, B-3001 Leuven, Belgium"
+              },
+              {
+                "name": "Departement Electrotechniek (ESAT) 2 , , Kasteelpark Arenberg 10, B-3001 Leuven, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "T.",
+            "family": "Devolder",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "CNRS, Univ. Paris-Sud 3 Centre de Nanosciences et de Nanotechnologies, , , 91405 Orsay, France"
+              },
+              {
+                "name": "Université Paris-Saclay 3 Centre de Nanosciences et de Nanotechnologies, , , 91405 Orsay, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3609-2042",
+            "authenticated-orcid": false,
+            "given": "M.",
+            "family": "Manfrini",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "imec 1 , Kapeldreef 75, B-3001 Leuven, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "C.",
+            "family": "Adelmann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "imec 1 , Kapeldreef 75, B-3001 Leuven, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "I. P.",
+            "family": "Radu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "imec 1 , Kapeldreef 75, B-3001 Leuven, Belgium"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              4
+            ]
+          ]
+        },
+        "abstract": "<jats:p>We developed an all electrical experiment to perform the broadband phase-resolved spectroscopy of propagating spin waves in micrometer sized thin magnetic stripes. The magnetostatic surface spin waves are excited and detected by scaled down to 125 nm wide inductive antennas, which award ultra broadband wavevector capability. The wavevector selection can be done by applying an excitation frequency above the ferromagnetic resonance. Wavevector demultiplexing is done at the spin wave detector thanks to the rotation of the spin wave phase upon propagation. A simple model accounts for the main features of the apparatus transfer functions. Our approach opens an avenue for the all electrical study of wavevector-dependent spin wave properties including dispersion spectra or non-reciprocal propagation.</jats:p>",
+        "URL": "https://doi.org/10.1063/1.4955030",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1063/5.0068075",
+        "title": [
+          "Spin wave wavevector up-conversion in Y-shaped Permalloy structures"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-2089-9717",
+            "authenticated-orcid": false,
+            "given": "H. J. Jason",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physics and Astronomy, Georgia Southern University 1 , Statesboro, Georgia 30460, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Aron",
+            "family": "Guerrero",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics and Astronomy, Georgia Southern University 1 , Statesboro, Georgia 30460, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4747-7378",
+            "authenticated-orcid": false,
+            "given": "Katherine E.",
+            "family": "Nygren",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, Colorado State University 2 , Fort Collins, Colorado 80523, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Mitchell",
+            "family": "Swyt",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, Colorado State University 2 , Fort Collins, Colorado 80523, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-0879-0038",
+            "authenticated-orcid": false,
+            "given": "Kristen S.",
+            "family": "Buchanan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, Colorado State University 2 , Fort Collins, Colorado 80523, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              25
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Spin waves in micrometer-sized, patterned Y-shaped Permalloy structures were studied using micro-focus Brillouin light scattering (BLS) with a magnetic field applied in-plane. For in-plane magnetized thin films and microstrips, the dispersion relations depend on the angle of the magnetization with respect to the microstrip axis. BLS measurements show that spin waves generated in the two arms that form the top of the Y structure can be channeled into a longer magnetic microstrip that forms the base when the applied field is oriented perpendicular to the long axis of the base. In this configuration, the base supports surface spin waves. A comparison of the BLS data with micromagnetic simulations reveals that low-k spin waves generated by a microstrip antenna in the arms are converted to higher-k spin waves in the base, which may be useful for nanomagnonic applications.</jats:p>",
+        "URL": "https://doi.org/10.1063/5.0068075",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1016/bs.aiep.2022.07.006",
+        "title": [
+          "Spin wave physics: The nonlinear spin wave-electromagnetic interaction and implications for high frequency devices"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/bs.aiep.2022.07.006",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1093/acprof:oso/9780199556984.003.0008",
+        "title": [
+          "Double wavevector encoding"
+        ],
+        "author": [
+          {
+            "given": "Paul T.",
+            "family": "Callaghan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2011,
+              9,
+              15
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1093/acprof:oso/9780199556984.003.0008",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1016/j.ssc.2013.11.014",
+        "title": [
+          "Spin transport and wavevector-dependent spin filtering through magnetic graphene superlattice"
+        ],
+        "author": [
+          {
+            "given": "F.",
+            "family": "Sattari",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "E.",
+            "family": "Faizabadi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.ssc.2013.11.014",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1002/admt.201900710",
+        "title": [
+          "Wavevector and Frequency Multiplexing Performed by a Spin‐Decoupled Multichannel Metasurface"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2288-2879",
+            "authenticated-orcid": false,
+            "given": "He‐Xiu",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Guangwei",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical and Computer Engineering National University of Singapore  Singapore 117583 Singapore"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Menghua",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical and Computer Engineering National University of Singapore  Singapore 117583 Singapore"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shiwei",
+            "family": "Tang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics Faculty of Science Ningbo University  Ningbo 315211 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yanzhao",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Chaohui",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yongjun",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information and Communication Engineering University of Electronic Science and Technology  Chengdu 611731 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xiaohui",
+            "family": "Ling",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Engineering Hengyang Normal University  Hengyang 421002 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Haiwen",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Electronic and Information Engineering Xi'an Jiaotong University  Xi'an 710049 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jiafeng",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical Engineering and Electronics University of Liverpool  Liverpool L69 3GJ UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              12
+            ]
+          ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Achieving kaleidoscopic wavefront controls with a thin flat plate is pivotal for increasing data capacity yet still challenging in integrated optics. An anisotropic metasurface provides an efficient recipe primarily for linear polarization, but is less efficient for multiple functionalities at arbitrary spin states. Here, a strategy of realizing a spin‐decoupled high‐capacity multifunctional metasurface by multiplexing the frequency and wavevector degree of freedom (DoF) is reported. By integrating both geometric and dynamic phases in split ring resonators and crossbars in a chessboard configuration, the inherent limitation of spin‐flipped Pancharatnam–Berry phases can be completely decoupled between two spin states. Such released extraordinary DoF unprecedentedly increases the capability to yield kaleidoscopic wavefront control. To verify the significance, two proof‐of‐concept metadevices that are nearly impossible in conventional metasurfaces are experimentally demonstrated with four‐port wavefront manipulations, exhibiting spin‐, frequency‐, and wavevector‐dependent anomalous reflections, lensing, orbital angular momentum generation, and wavevector‐multiplexed vortex scattering, along with two‐dimensional holograms. Both numerical and experimental results illustrate quad‐distinct functionalities with up to ten channel beams and ≈93% efficiency, because of the completely suppressed crosstalk among different operation modes, angular wavevectors, and spins. The finding in triple‐DoF multiplexing is expected to generate great interest in electromagnetic integration with emerging DoFs.</jats:p>",
+        "URL": "https://doi.org/10.1002/admt.201900710",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1201/b14841-19",
+        "title": [
+          "Nonlinear Optical Frequency Conversion Using Quasi-Phase Matching"
+        ],
+        "author": [
+          {
+            "given": "Kailash C.",
+            "family": "Rustagi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              19
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1201/b14841-19",
+        "type": "book-chapter"
+      },
+      {
+        "DOI": "10.1109/lawp.2022.3178608",
+        "title": [
+          "Rectangular Waveguide-Fed Surface-Wave Frequency-Scanning Antenna Utilizing Wavevector Mismatch"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-0959-6966",
+            "authenticated-orcid": false,
+            "given": "Luyi",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Shaanxi Key Laboratory of Deep Space Exploration Intelligent Information Technology, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0137-4421",
+            "authenticated-orcid": false,
+            "given": "Hongyu",
+            "family": "Shi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Shaanxi Key Laboratory of Deep Space Exploration Intelligent Information Technology, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3151-1690",
+            "authenticated-orcid": false,
+            "given": "Xiaoming",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information and Communications Engineering, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jianjia",
+            "family": "Yi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information and Communications Engineering, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Liang",
+            "family": "Dong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Yunnan Observatories, Chinese Academy of Sciences, Kunming, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0393-8251",
+            "authenticated-orcid": false,
+            "given": "Haiwen",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Shaanxi Key Laboratory of Deep Space Exploration Intelligent Information Technology, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4690-2718",
+            "authenticated-orcid": false,
+            "given": "Anxue",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Yunnan Observatories, Chinese Academy of Sciences, Kunming, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhuo",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Electronic Materials Research Laboratory, Key Laboratory of the Ministry of Education, Xi&#x0027;an Jiaotong University, Xi&#x0027;an, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/lawp.2022.3178608",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1002/pssb.201900219",
+        "title": [
+          "Small Wavevector–Dependent Spin Susceptibility in Weyl Semimetals"
+        ],
+        "author": [
+          {
+            "given": "Z.",
+            "family": "Okvátovity",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Theoretical Physics and MTA-BME Lendület Topology and Correlation Research Group Budapest University of Technology and Economics  1521 Budapest Hungary"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "F.",
+            "family": "Simon",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics and MTA-BME Lendület Spintronics Research Group (PROSPIN) Budapest University of Technology and Economics  1521 Budapest Hungary"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5984-3761",
+            "authenticated-orcid": false,
+            "given": "B.",
+            "family": "Dóra",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Theoretical Physics and MTA-BME Lendület Topology and Correlation Research Group Budapest University of Technology and Economics  1521 Budapest Hungary"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              16
+            ]
+          ]
+        },
+        "abstract": "<jats:sec><jats:label/><jats:p>A detailed derivation of the off‐diagonal spin–spin correlation functions of 3D Weyl semimetals in the static <jats:italic>ω</jats:italic> = 0 limit for small wavevectors at zero temperature is presented. The real part of the spin correlation function is evaluated analytically and follows  behavior, with <jats:italic>W</jats:italic> and <jats:italic>μ</jats:italic> being the high‐energy cutoff and chemical potential, respectively. Its imaginary part grows linearly with <jats:italic>μ</jats:italic>. These quantities are also evaluated using brute force numerical integration, and the numerical data agree convincingly with the analytical result. This work provides the starting point to determine the Knight shift of Weyl semimetals from the hyperfine coupling through the wavevector‐dependent susceptibility.</jats:p></jats:sec>",
+        "URL": "https://doi.org/10.1002/pssb.201900219",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1142/s2010324716500089",
+        "title": [
+          "Modified High Frequency Radial Spin Wave Mode Spectrum in a Chirality-Controlled Nanopillar"
+        ],
+        "author": [
+          {
+            "given": "J. E.",
+            "family": "Kolthammer",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physics and Astronomy, University of Victoria, Victoria, British Columbia V8W 3P6, Canada"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "J.",
+            "family": "Rudge",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics and Astronomy, University of Victoria, Victoria, British Columbia V8W 3P6, Canada"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "B. C.",
+            "family": "Choi",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics and Astronomy, University of Victoria, Victoria, British Columbia V8W 3P6, Canada"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Y. K.",
+            "family": "Hong",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical and Computer Engineering, University of Alabama, Tuscaloosa, Alabama 35487, USA"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              9
+            ]
+          ]
+        },
+        "abstract": "<jats:p> Circular magnetic spin valve nanopillars in a dual vortex configuration have dynamic characteristics strongly dependent on the interlayer dipole coupling. We report here on frequency domain properties of such nanopillars obtained by micromagnetic simulations. After the free layer is chirality switched with spin transfer torque, a radial spin wave eigenmode spectrum forms in the free layer with unusually large edge amplitude. The structure of these modes indicate a departure from the magnetostatic processes typically observed experimentally and treated analytically in low aspect ratio isolated disks. Our findings give new details of dynamic chirality control and relxation in nanopillars and raise potential signatures for experiments. </jats:p>",
+        "URL": "https://doi.org/10.1142/s2010324716500089",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1002/admt.202070005",
+        "title": [
+          "Multiplexed Metasurfaces: Wavevector and Frequency Multiplexing Performed by a Spin‐Decoupled Multichannel Metasurface (Adv. Mater. Technol. 1/2020)"
+        ],
+        "author": [
+          {
+            "given": "He‐Xiu",
+            "family": "Xu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Guangwei",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical and Computer Engineering National University of Singapore  Singapore 117583 Singapore"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Menghua",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical and Computer Engineering National University of Singapore  Singapore 117583 Singapore"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shiwei",
+            "family": "Tang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics Faculty of Science Ningbo University  Ningbo 315211 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yanzhao",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Chaohui",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Science and Technology Air force Engineering University  Xi'an 710051 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yongjun",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information and Communication Engineering University of Electronic Science and Technology  Chengdu 611731 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xiaohui",
+            "family": "Ling",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Physics and Electronic Engineering Hengyang Normal University  Hengyang 421002 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Haiwen",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Electronic and Information Engineering Xi'an Jiaotong University  Xi'an 710049 China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jiafeng",
+            "family": "Zhou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electrical Engineering and Electronics University of Liverpool  Liverpool L69 3GJ UK"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1002/admt.202070005",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1088/0305-4608/14/5/019",
+        "title": [
+          "Wavevector-dependent spin susceptibility of nickel above the Curie temperature"
+        ],
+        "author": [
+          {
+            "given": "H",
+            "family": "Hasegawa",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1984,
+              5
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1088/0305-4608/14/5/019",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.36227/techrxiv.16616059.v1",
+        "title": [
+          "Multi-frequency Data Parallel Spin Wave Logic Gates"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7507-5993",
+            "authenticated-orcid": false,
+            "given": "Abdulqader",
+            "family": "Mahmoud",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Delft University of Technology"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1449-5732",
+            "authenticated-orcid": false,
+            "given": "Frederic",
+            "family": "Vanderveken",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4831-3159",
+            "authenticated-orcid": false,
+            "given": "Christoph",
+            "family": "Adelmann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7088-2075",
+            "authenticated-orcid": false,
+            "given": "Florin",
+            "family": "Ciubotaru",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Said",
+            "family": "Hamdioui",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7132-2291",
+            "authenticated-orcid": false,
+            "given": "Sorin",
+            "family": "Cotofana",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              9,
+              24
+            ]
+          ]
+        },
+        "abstract": "<jats:p>By their very nature, Spin Waves (SWs) with different frequencies can\npropagate through the same waveguide without affecting each other, while\nonly interfering with their own species. Therefore, more SW encoded data\nsets can coexist, propagate, and interact in parallel, which opens the\nroad towards hardware replication free parallel data processing. In this\npaper, we take advantage of these features and propose a novel data\nparallel spin wave based computing approach. To explain and validate the\nproposed concept, byte-wide 2-input XOR and 3-input Majority gates are\nimplemented and validated by means of Object Oriented MicroMagnetic\nFramework (OOMMF) simulations. Furthermore, we introduce an optimization\nalgorithm meant to minimize the area overhead associated with\nmultifrequency operation and demonstrate that it diminishes the\nbyte-wide gate area by 30% and 41% for XOR and Majority\nimplementations, respectively. To get inside on the practical\nimplications of our proposal we compare the byte-wide gates with\nconventional functionally equivalent scalar SW gate based\nimplementations in terms of area, delay, and power consumption. Our\nresults indicate that the area optimized 8-bit 2-input XOR and 3-input\nMajority gates require 4.47x and 4.16x less area, respectively, at the\nexpense of 5% and 7% delay increase, respectively, without inducing\nany power consumption overhead. Finally, we discuss factors that are\nlimiting the currently achievable parallelism to 8 for phase based gate\noutput detection and demonstrate by means of OOMMF simulations that this\ncan be increased 16 for threshold based detection based gates.</jats:p>",
+        "URL": "https://doi.org/10.36227/techrxiv.16616059.v1",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.36227/techrxiv.16616059",
+        "title": [
+          "Multi-frequency Data Parallel Spin Wave Logic Gates"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-7507-5993",
+            "authenticated-orcid": false,
+            "given": "Abdulqader",
+            "family": "Mahmoud",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1449-5732",
+            "authenticated-orcid": false,
+            "given": "Frederic",
+            "family": "Vanderveken",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4831-3159",
+            "authenticated-orcid": false,
+            "given": "Christoph",
+            "family": "Adelmann",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7088-2075",
+            "authenticated-orcid": false,
+            "given": "Florin",
+            "family": "Ciubotaru",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Said",
+            "family": "Hamdioui",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7132-2291",
+            "authenticated-orcid": false,
+            "given": "Sorin",
+            "family": "Cotofana",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              9,
+              24
+            ]
+          ]
+        },
+        "abstract": "<jats:p>By their very nature, Spin Waves (SWs) with different frequencies can propagate through the same waveguide without affecting each other, while only interfering with their own species. Therefore, more SW encoded data sets can coexist, propagate, and interact in parallel, which opens the road towards hardware replication free parallel data processing. In this paper, we take advantage of these features and propose a novel data parallel spin wave based computing approach. To explain and validate the proposed concept, byte-wide 2-input XOR and 3-input Majority gates are implemented and validated by means of Object Oriented MicroMagnetic Framework (OOMMF) simulations. Furthermore, we introduce an optimization algorithm meant to minimize the area overhead associated with multifrequency operation and demonstrate that it diminishes the byte-wide gate area by 30% and 41% for XOR and Majority implementations, respectively. To get inside on the practical implications of our proposal we compare the byte-wide gates with conventional functionally equivalent scalar SW gate based implementations in terms of area, delay, and power consumption. Our results indicate that the area optimized 8-bit 2-input XOR and 3-input Majority gates require 4.47x and 4.16x less area, respectively, at the expense of 5% and 7% delay increase, respectively, without inducing any power consumption overhead. Finally, we discuss factors that are limiting the currently achievable parallelism to 8 for phase based gate output detection and demonstrate by means of OOMMF simulations that this can be increased 16 for threshold based detection based gates.</jats:p>",
+        "URL": "https://doi.org/10.36227/techrxiv.16616059",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1364/fio.2014.fth4d.3",
+        "title": [
+          "Analysis of Leaky-Wave Microphotonic Structures with a Complex-Wavevector Photonic Band Structure Solver"
+        ],
+        "author": [
+          {
+            "given": "Jelena",
+            "family": "Notaros",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Miloš A.",
+            "family": "Popović",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1364/fio.2014.fth4d.3",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.21203/rs.3.rs-577652/v1",
+        "title": [
+          "Frequency multiplication by collective nano-scale spin wave dynamics"
+        ],
+        "author": [
+          {
+            "given": "Georg",
+            "family": "Woltersdorf",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Martin Luther University Halle-Wittenberg"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Rouven",
+            "family": "Dreyer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Martin Luther University Halle-Wittenberg"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Niklas",
+            "family": "Liebing",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Martin Luther University Halle-Wittenberg"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Chris",
+            "family": "Körner",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Martin Luther University Halle-Wittenberg"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Martin",
+            "family": "Wagener",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "ETH Zuerich"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              4
+            ]
+          ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n        <jats:p>Frequency multiplication is a process where harmonic multiples of the input frequency are generated. It is usually achieved in non-linear electronic circuits or transmission lines. Such elements enable the up-conversion of electronic signals to GHz frequencies and are essential for frequency synthesizers and communication devices. Circuits based on the propagation and interaction of spin waves are a promising alternative to conventional electronics. Unfortunately, these systems usually require direct driving in the GHz range as magnonic frequency up-conversion is restricted to a few harmonics only. Here we show that the ferromagnetic material itself can act as a six octave spanning frequency multiplier. By studying low frequency magnetic excitations in a continuous ferromagnetic layer we show that the non-linearity of magnetization dynamics combined with disorder in the ferromagnet leads to the emergence of a dynamic phase generating high harmonics. The demonstrated broad band frequency multiplication opens exciting perspectives for magnonic and spintronic applications since the frequency is up-converted from MHz into GHz frequencies within the magnetic medium itself. Due to the ease at which magnetic media can be structured and modified spatially (and reversibly) we anticipate that a tailored non-linear dynamic phase can be engineered e.g. to stabilize magnetic solitons.</jats:p>",
+        "URL": "https://doi.org/10.21203/rs.3.rs-577652/v1",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.1063/5.0228219",
+        "title": [
+          "Coherent spin wave excitation with radio-frequency spin–orbit torque"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-1450-4643",
+            "authenticated-orcid": false,
+            "given": "Nathaniel",
+            "family": "Morrison",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physics, University of California 1 , Berkeley, California 94720, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4544-5746",
+            "authenticated-orcid": false,
+            "given": "Hossein",
+            "family": "Taghinejad",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, University of California 1 , Berkeley, California 94720, USA"
+              },
+              {
+                "name": "Kavli Energy NanoSciences Institute, University of California 2 , Berkeley, California 94720, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7657-7688",
+            "authenticated-orcid": false,
+            "given": "James",
+            "family": "Analytis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, University of California 1 , Berkeley, California 94720, USA"
+              },
+              {
+                "name": "Kavli Energy NanoSciences Institute, University of California 2 , Berkeley, California 94720, USA"
+              },
+              {
+                "name": "Lawrence Berkeley National Laboratory 3 , Berkeley, California 94720, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0539-1501",
+            "authenticated-orcid": false,
+            "given": "Eric Y.",
+            "family": "Ma",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Physics, University of California 1 , Berkeley, California 94720, USA"
+              },
+              {
+                "name": "Lawrence Berkeley National Laboratory 3 , Berkeley, California 94720, USA"
+              },
+              {
+                "name": "Department of EECS, University of California 4 , Berkeley, California 94720, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              16
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Spin waves, collective perturbations of magnetic moments, are both fundamental probes for magnetic physics and promising candidates for energy-efficient signal processing and computation. Traditionally, coherent propagating spin waves have been generated by radio frequency (RF) inductive Oersted fields from current-carrying electrodes. An alternative mechanism, spin–orbit torque (SOT), offers more localized excitation through interfacial spin accumulation but has been mostly limited to DC to kHz frequencies. SOT driven by RF currents, with potentially enhanced pumping efficiency and unique spin dynamics, remains largely unexplored, especially in magnetic insulators. Here, we conduct a comprehensive theoretical and computational investigation into the generation of coherent spin waves via RF-SOT in the prototypical yttrium iron garnet. We characterize the excitation of forward volume, backward volume, and surface modes in both linear and nonlinear regimes, employing single and interdigitated electrode configurations. We reveal and explain several unique and surprising features of RF-SOT compared to inductive excitation, including higher efficiency, distinct mode selectivity, and directional symmetry, a ∼3π/4 phase offset, reduced anharmonic distortion in the nonlinear regime, and the absence of second harmonic generation. These insights position RF-SOT as a promising new mechanism for future magnonic and spintronic applications.</jats:p>",
+        "URL": "https://doi.org/10.1063/5.0228219",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1109/euma.1994.337229",
+        "title": [
+          "On the Frequency Characteristics of Spin-Wave Convolver"
+        ],
+        "author": [
+          {
+            "given": "P.A.",
+            "family": "Kolodin",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "M.P.",
+            "family": "Kostylev",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "N.G.",
+            "family": "Kovshikov",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1994,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/euma.1994.337229",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1080/00268979600100861",
+        "title": [
+          "Wavevector- and frequency-dependent dielectric constant of the Stockmayer fluid"
+        ],
+        "author": [
+          {
+            "given": "Igor P.",
+            "family": "Omelyan",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1996,
+              4,
+              20
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1080/00268979600100861",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1088/0953-8984/2/36/013",
+        "title": [
+          "Wavevector and spin-flop transitions in cubic FeGe"
+        ],
+        "author": [
+          {
+            "given": "M L",
+            "family": "Plumer",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1990,
+              9,
+              10
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1088/0953-8984/2/36/013",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1080/00268979809482196",
+        "title": [
+          "Longitudinal wavevector- and frequency-dependent dielectric constant of the TIP4P water model"
+        ],
+        "author": [
+          {
+            "given": "IGOR",
+            "family": "OMELYAN",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1998,
+              1,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1080/00268979809482196",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1088/0305-4608/14/8/529",
+        "title": [
+          "Wavevector-dependent spin susceptibility of iron above the Curie temperature"
+        ],
+        "author": [
+          {
+            "given": "H",
+            "family": "Hasegawa",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1984,
+              8
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1088/0305-4608/14/8/529",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1109/rfic.2009.5135582",
+        "title": [
+          "A low power mm-wave oscillator using power matching techniques"
+        ],
+        "author": [
+          {
+            "given": "Lianming",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Patrick",
+            "family": "Reynaert",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Michiel",
+            "family": "Steyaert",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2009,
+              6
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/rfic.2009.5135582",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1109/icmmt52847.2021.9618299",
+        "title": [
+          "Impedance matching optimization design of high frequency and high power ground wave radar transceiver"
+        ],
+        "author": [
+          {
+            "given": "Xi",
+            "family": "Xia",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xiaofan",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Zheng",
+            "family": "Pei",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Shenjian",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              23
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/icmmt52847.2021.9618299",
+        "type": "proceedings-article"
+      },
+      {
+        "DOI": "10.1103/physrevb.102.174413",
+        "title": [
+          "Highly nonlinear frequency-dependent spin-wave resonance excited via spin-vorticity coupling"
+        ],
+        "author": [
+          {
+            "given": "Yuki",
+            "family": "Kurimune",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1303-7614",
+            "authenticated-orcid": true,
+            "given": "Mamoru",
+            "family": "Matsuo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sadamichi",
+            "family": "Maekawa",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-7262-0124",
+            "authenticated-orcid": true,
+            "given": "Yukio",
+            "family": "Nozaki",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              11,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1103/physrevb.102.174413",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1080/00268979650026802",
+        "title": [
+          "Wavevector- and frequency-dependent dielectric constant of the Stockmayer fluid"
+        ],
+        "author": [
+          {
+            "given": "IGOR P.",
+            "family": "OMELYAN",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1996,
+              4,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1080/00268979650026802",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1142/s2010324719500097",
+        "title": [
+          "Tuning Resonance Frequency of Spin Wave Localized in an Isolated Skyrmion by Magnetoelectric Couplings"
+        ],
+        "author": [
+          {
+            "given": "Rongzhi",
+            "family": "Zhao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              },
+              {
+                "name": "School of Materials Science and Engineering, Northeastern University, Shenyang 110819, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Wenchao",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Chenglong",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              },
+              {
+                "name": "School of Materials Science and Engineering, Northeastern University, Shenyang 110819, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Luyang",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Materials Science and Engineering, State Key Laboratory of Silicon Materials, Key Laboratory of Novel Materials for Information, Technology of Zhejiang Province, Zhejiang University, Hangzhou 310027, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jian",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xianguo",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xuefeng",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              },
+              {
+                "name": "School of Materials Science and Engineering, Northeastern University, Shenyang 110819, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Mi",
+            "family": "Yan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Advanced Magnetic Materials, Hangzhou Dianzi University, Hangzhou 310012, P. R. China"
+              },
+              {
+                "name": "School of Materials Science and Engineering, State Key Laboratory of Silicon Materials, Key Laboratory of Novel Materials for Information, Technology of Zhejiang Province, Zhejiang University, Hangzhou 310027, P. R. China"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              5,
+              20
+            ]
+          ]
+        },
+        "abstract": "<jats:p> Understanding the dynamic behavior of an isolated skyrmion with external perturbations has been obstructed due to the difficulty in experimentally observing such an instantaneous phenomenon within picoseconds. Herein, we theoretically investigated the spin-transfer-torque-induced dynamics of an isolated skyrmion excited by external nanosecond-pulse perturbations. It is found that a redshift of the resonant frequency appears under a pulse polarized current with [Formula: see text][Formula: see text]A/m<jats:sup>2</jats:sup> and [Formula: see text][Formula: see text]GHz, while a blueshift is presented under a combined perturbation of the pulse polarized current and an out-of-plane ac magnetic field. The physic origins of the redshift and the blueshift are ascribed to the increased average energy of system from [Formula: see text][Formula: see text]J to [Formula: see text][Formula: see text]J and integer multiple (twofold and fourfold) oscillation frequencies of total energy, respectively. The present study could thus provide an insight to the micromagnetic dynamics of skyrmion under the magnetoelectric couplings. </jats:p>",
+        "URL": "https://doi.org/10.1142/s2010324719500097",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.1088/1361-648x/aac152",
+        "title": [
+          "Resonant magneto-acoustic switching: influence of Rayleigh wave frequency and wavevector"
+        ],
+        "author": [
+          {
+            "given": "P",
+            "family": "Kuszewski",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "I S",
+            "family": "Camara",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "N",
+            "family": "Biarrotte",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "L",
+            "family": "Becerra",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J",
+            "family": "von Bardeleben",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "W",
+            "family": "Savero Torres",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1892-9726",
+            "authenticated-orcid": false,
+            "given": "A",
+            "family": "Lemaître",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "C",
+            "family": "Gourdon",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "J-Y",
+            "family": "Duquesne",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4723-2955",
+            "authenticated-orcid": false,
+            "given": "L",
+            "family": "Thevenard",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              5,
+              21
+            ]
+          ]
+        },
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    We show on in-plane magnetized thin films that magnetization can be switched efficiently by 180 degrees using large amplitude Rayleigh waves travelling along the hard or easy magnetic axis. Large characteristic filament-like domains are formed in the latter case. Micromagnetic simulations clearly confirm that this multi-domain configuration is compatible with a resonant precessional mechanism. The reversed domains are in both geometries several hundreds of\n                    <jats:inline-formula/>\n                    , much larger than has been shown using spin transfer torque- or field-driven precessional switching. We show that surface acoustic waves can travel at least 1 mm before addressing a given area, and can interfere to create magnetic stripes that can be positioned with a sub-micronic precision.\n                  </jats:p>",
+        "URL": "https://doi.org/10.1088/1361-648x/aac152",
+        "type": "journal-article"
+      },
+      {
+        "DOI": "10.2139/ssrn.4887090",
+        "title": [
+          "Spin-Wave Resonance Frequency and Quantum Fluctuation of the (Anti)Ferri-(Anti)Ferrimagnetic Double-Layer Superlattice"
+        ],
+        "author": [
+          {
+            "given": "Shuangshuang",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Fan",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xin",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2139/ssrn.4887090",
+        "type": "posted-content"
+      },
+      {
+        "DOI": "10.2139/ssrn.4876876",
+        "title": [
+          "Spin-Wave Resonance Frequency and Quantum Fluctuation of the (Anti)Ferri-(Anti)Ferrimagnetic Double-Layer Superlattice"
+        ],
+        "author": [
+          {
+            "given": "Shuangshuang",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Fan",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xin",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.2139/ssrn.4876876",
+        "type": "posted-content"
+      }
+    ],
+    "items-per-page": 30,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

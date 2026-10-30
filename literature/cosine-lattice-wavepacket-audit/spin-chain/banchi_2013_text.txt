@@ -1,0 +1,1828 @@
+[PDF PAGE 1]
+EPJ manuscript No.
+(will be inserted by the editor)
+Ballistic quantum state transfer in spin chains: general theory for
+quasi-free models and arbitrary initial states
+Leonardo Banchi1,2,3
+1 Department of Physics and Astronomy, University College London, Gower St., London WC1E 6BT, United Kingdom
+2 Dipartimento di Fisica, Universit`a di Firenze, Via G. Sansone 1, I-50019 Sesto Fiorentino (FI), Italy
+3 INFN Sezione di Firenze, via G.Sansone 1, I-50019 Sesto Fiorentino (FI), Italy
+November 8, 2018
+Abstract. Ballistic quantum-information transfer through spin chains is based on the idea of making the
+spin dynamics ruled by collective excitations with linear dispersion relation. Unlike perfect state transfer
+schemes, a ballistic transmission requires only a minimal engineering of the interactions; in fact, for most
+practical purposes, the optimization of the couplings to the ends of the chain is suﬃcient to obtain an almost
+perfect transmission. In this work we review diﬀerent ballistic quantum-state transfer protocols based on
+the dynamics of quasi-free spin chains, and further generalize them both at zero and ﬁnite temperature.
+In particular, besides presenting novel analytical results for XX, XY, and Ising spin models, it is shown
+how, via a complete control on the ﬁrst and last two qubits of the chain, destructive thermal eﬀects can
+be cancelled, leading to a high-quality state transmission irrespective of the temperature.
+PACS. 03.67.Hk Quantum Communication – 75.45.+j Quantum tunneling in magnetic systems – 75.10.Jm
+Quantized spin models
+1 Introduction
+The development of novel experimental techniques capable of accessing and manipulating single quantum objects [1,
+2,3,4,5] has recently triggered a multifaceted interest towards the design of quantum devices and their components.
+Amongst them, a fundamental role is played by the channels used for connecting distant quantum information units,
+as they must supply high-quality quantum-state and entanglement transfer within the device.
+When the quantum information is embodied in physical objects that one can move, the channel can simply be
+a path through which the carriers go undisturbed, as optical photons do through optical ﬁbers. However this is not
+always the case, as many proposals for the realization of quantum devices are based on localized qubit, that need being
+connected by a further physical object, playing the role of a wire. In this paper we focus on this latter situation and,
+in particular, on the case of a wire made by a one-dimensional sequence of localized quantum systems, each statically
+interacting with its (nearest) neighbours. We further assume that the wire can be assembled with physical objects of
+the same type of those realizing the information units, so as to actually make reference to a network of qubits. In
+this setup, the transmission occurs thanks to the coherent collective dynamics of the components, rather than via a
+subsequent application of swapping gates. This feature was indeed one of the main motivation for introducing spin
+chains as many-body quantum wires [6,7].
+Quantum spin chains have a complex dynamics, featuring diﬀerent phenomena, ranging from the spreading of the
+wave-function on diﬀerent sites to the scattering between elementary excitations [8]. Consequently, if no control on
+these many-body phenomena is possible, a spin chain generally behaves as a very low-quality transmission channel
+for long distances [6,9,10]. In order to increase the transfer capabilities of a spin-chain data-bus diﬀerent solutions
+have been proposed. Some are based on the idea of engineering the bus itself, by the speciﬁc design of its internal
+interactions [11,12,13]; others use the idea of intervening on the initialization process [10], by preparing the bus in a
+conﬁguration found to serve the purpose; and still others use local or global dynamical control on the chain [14,15].
+In any case, a tough external action on the physical system is required. An alternative approach is that considering
+a data-bus made by a uniform spin chain which is weakly coupled to the external qubits [16,17,18]. In this setup,
+the transmission quality of quantum states and entanglement can be made arbitrarily high, provided the interaction
+between the bus and the qubits is arbitrarily small (see also [19,20] for a related approach using strong magnetic
+ﬁelds). This proposal theoretically leads to near-to-perfect state transfer, meanwhile being experimentally feasible.
+arXiv:1309.0069v2  [quant-ph]  15 Oct 2013
+
+
+[PDF PAGE 2]
+2
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+However, due to the weak couplings involved, the transmission times are very long, and the system can be exposed to
+severe decoherence eﬀects.
+In [21,22,23,24,25] a diﬀerent approach has been proposed, based on the intuition that excitations characterized by
+a linear dispersion relation are substantially transmitted coherently along a chain. It is shown that, by properly tuning
+the interactions between the information units placed at the two ends of the transmitting chain, and the chain itself,
+one can induce a dynamics which is ruled by excitations with linear dispersion, i.e. essentially ballistic. As a result, by
+means of a minimal static optimization of the couplings, the information ﬂows coherently through the one-dimensional
+wire, allowing a fast, high-quality, quantum-states and entanglement transfer, even in the limit of an inﬁnite-length
+chain, i.e., in principle, over macroscopic distances. This recipe can be actually implemented in all quasi-free models:
+a special emphasis is here given to spin- 1
+2 XX and XY chains, but the same arguments can be applied with little eﬀort
+to other many-body systems, such as chains of (Majorana) fermions or excitonic systems.
+In this paper we present a systematic analysis of minimally engineered models for state transmission. We review
+some previous ﬁndings obtained for XX and XY models [21,22,23,24] and we extend them with new analytical results
+and applications. Moreover, we introduce a two-qubit encoding protocol for achieving, in principle, a ballistic quantum
+information transfer even at room temperature. In Section 2 we present the necessary formalism for evaluating the
+transmission quality when the dynamics is generated by quasi-free Hamiltonians. We introduce the optimal average
+ﬁdelity as a measure of the transmission quality and we show the relation with the optimization of a fermion quantum
+walk on a line. In Section 3 we review the optimal ballistic dynamics in the XX model and set up the necessary formalism
+for understanding the state transmission as a wave-packet travelling in one dimension. In Section 4 we extend the
+results to XY models: even if the resulting dynamics does not conserve the number of fermions in the initial state,
+we show that the evolution can still be described, approximately, as that of a wave-packet whose dynamics can be
+made coherent with a minimal engineering. In Section 5 we propose a protocol for transferring states irrespective of
+the initial state of the spin-chain data-bus. This method requires only the ability to perform gates and measurements
+on the ﬁrst two and last two qubits of the chain. Possible experimental realizations are discussed in Section 6 and
+conclusions are drawn in Section 7.
+2 State transfer in quasi-free Hamiltonians
+We consider state transmission in quasi-free models and, in particular, one-dimensional spin- 1
+2 chains whose Hamilto-
+nian can be mapped into a quadratic fermionic model:
+H =
+N
+X
+n,m=1
+
+c†
+nAnmcm + 1
+2(c†
+nBnmc†
+m −cnB∗
+nmcm)
+
+,
+(1)
+where N is the length of the chain, c†
+n and cn are the creation and annihilation operators on site n, and {cn, c†
+m} = δnm.
+An important class of quasi-free models is deﬁned by the XY spin-1/2 chain whose Hamiltonian reads
+H =
+N−1
+X
+n=1
+jn + γn
+2
+σx
+nσx
+n+1 + jn −γn
+2
+σy
+nσy
+n+1
+
++
+N
+X
+n=1
+hnσz
+n ,
+(2)
+where σα
+n are the Pauli spin operators acting on site n. The above Hamiltonian describes N spins in a one-dimensional
+lattice; each spin interacts with a (local) magnetic ﬁeld hn and is coupled with its nearest neighbours via an anisotropic
+exchange interaction in the XY plane. The mapping between the spin Hamiltonian (2) and the fermion Hamiltonian (1)
+is realized by the Jordan-Wigner transformation cn = Qn−1
+m=1 (−σz
+m) (σx
+n −iσy
+n)/2. The corresponding hopping matrices
+entering in Hamiltonian (1) read
+A =
+
+
+
+
+
+
+
+
+h1 j1
+j1 h2 j2
+j2 h3
+j3
+...
+jN−2 hN−1 jN−1
+jN−1
+hN
+
+
+
+
+
+
+
+
+,
+B =
+
+
+
+
+
+
+
+
+0 −γ1
+γ1
+0
+−γ2
+γ2
+0
+−γ3
+...
+γN−2
+0
+−γN−1
+γN−1
+0
+
+
+
+
+
+
+
+
+.
+(3)
+The dynamics of the chain is completely speciﬁed in the Heisenberg representation by the time-evolved creation and
+annihilation operators cn(t) = e+iHtcne−iHt that can be written as [10]
+cn(t) =
+N
+X
+m=1
+
+Unm(t)cm + Vnm(t)c†
+m
+
+,
+(4)
+
+
+[PDF PAGE 3]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+3
+for some N ×N dynamical matrices U(t) and V (t) which are obtained with a suitable transformation (see Appendix A)
+of the matrices A and B. Although the Jordan-Wigner mapping is non-local, the above equation (4) completely describe
+the dynamics of the boundaries of the spin chain. For instance, as c1(t) = σ−
+1 (t) it is possible to obtain all the possible
+observables on the ﬁrst site. Indeed, ρ1(t) = (1 + r1(t) · σ1)/2, with the Bloch vector elements
+rx
+1(t) = ⟨c†
+1(t) + c1(t)⟩,
+ry
+1(t) = −i⟨c†
+1(t) −c1(t)⟩,
+rz
+1(t) = 2⟨c†
+1(t)c1(t)⟩−1 ,
+(5)
+where the expectation values are taken over the initial (t = 0) state |Ψin⟩. The state of the opposite spin ρN(t) =
+(1 + rN(t) · σN)/2, can be obtained in a similar way: the Wigner-string appearing in the mapping between cN(t) and
+σ−
+N(t) can be written in terms of the parity Π = exp
+
+iπ PN
+n=1 c†
+ncn
+
+≡QN
+n=1 (−σz
+n) which is a constant of motion.
+Thereby one obtains σ−
+N(t) = ΠcN(t) and
+rx
+N(t) = ⟨c†
+N(t)Π + ΠcN(t)⟩,
+ry
+N(t) = −i⟨c†
+N(t)Π −ΠcN(t)⟩,
+rz
+N(t) = 2⟨c†
+N(t)cN(t)⟩−1 .
+(6)
+We focus on the quantum state transmission from the ﬁrst qubit, sitting at site 1, to the one sitting at the opposite
+end of the chain, i.e. at site N. Hereafter these two qubits are referred to as the sender and receiver. Moreover, we
+call ˜Γ the chain composed by the spins localized in positions 2, . . . , N. The internal chain acts as a noisy quantum
+channel which, in general, may alter, disperse or localize the state to be transferred. This noisy quantum channel can
+be described by a mapping ρ1(0) →ρN(t). If the sender is not initially entangled with the rest of the system, namely
+if |Ψin⟩= |Ψ1(0)⟩⊗|Ψ ˜
+Γ (0)⟩, then the mapping takes the form of a simple linear relation between the initial and ﬁnal
+Bloch vectors
+rN(t) = D(t) r1(0) + d(t) .
+(7)
+The latter equation describes a qubit-to-qubit quantum channel [26], provided that D(t) and d(t) satisfy some con-
+straints [27,28]. In quasi-free quantum channels the 3 × 3 matrix D(t) only depends on UN1(t) and VN1(t), while d(t)
+depends on U(t), V (t) and |Ψ ˜
+Γ (0)⟩[10]. The matrix elements Unm(t) and Vnm(t) describe the probability amplitude
+that a particle or a hole goes from site m to site n after a time t. Due to the relation between fermionic operators and
+spin ones at the boundaries, we show in the following that the transmission quality depends only on u1(t) = |UN1(t)|
+and v1(t) = |VN1(t)|, provided that the initial state of the chain has a deﬁnite parity.
+As a ﬁgure of merit for the transfer quality we use the optimal average transmission ﬁdelity which is a measures of
+the ﬁdelity between the initial state and the transmitted one. Before introducing this quantity, let us comment on a
+diﬀerent strategy for quantum information transfer based on the teleportation protocol. Quantum teleportation allows
+the state transmission from the sender to the receiver not by directly injecting particles through quantum channels,
+but rather using local operations, classical communication, and an initially shared entangled state. In a spin chain
+setup, remote entanglement generation can be obtained by ﬁrst creating entanglement locally, say between the spin
+1 and a near auxiliary spin 0, and then sending “half of the state” (the state of spin 1) to the remote part (the spin
+N). If the “half-state” is perfectly transferred, then the result is a maximally entangled state between 0 and N at the
+transmission time, that is remote entanglement. However, the spin chain acts generally as a noisy quantum channel,
+and the resulting state is not maximally entangled. When the two remote parts share an entangled state, which is not
+maximally entangled, the ﬁdelity of teleportation is not perfect [29,30]. One can show [30,9] that the average ﬁdelity
+of state transmission is equivalent to the ﬁdelity of the above protocol consisting of two steps: entanglement sharing
+and quantum teleportation. Owing to this equivalence, we only study quantum state transmission without considering
+the problem of entanglement transmission.
+Quantifying the ability of a quantum channel to reliably transfer quantum information is a subject of active
+research [31]. Most ﬁgures of merit require the solution of complicated variational problems and are in general diﬃcult
+to evaluate. Here we focus on a simpler quantity which does not measure the worst case scenario but rather the average
+transmission quality. An average state transmission ﬁdelity can be deﬁned as
+R
+dψ1⟨ψ1|ρN(t)|ψ1⟩, and measures the
+ﬁdelity between the initial state |ψ1⟩of the sender and the (evolved) state of the receiver. If a perfect transfer is
+obtained for every initial state at a certain time t∗then
+R
+dψ1⟨ψ1|ρN(t∗)|ψ1⟩= 1. However, in a spin chain setup, the
+external magnetic ﬁeld may rotate the state |ψ1⟩during the transmission. This eﬀect is independent on the initial state
+and it is easily estimated and corrected via a local counter-rotation R. For this reason, in [10] the optimal transmission
+ﬁdelity
+F(t) =
+max
+R∈SU(2)
+Z
+dψ1⟨ψ1|R†ρN(t)R|ψ1⟩= 1
+2 + δ1(t) + δ2(t) + sign[det D(t)]δ3(t)
+6
+,
+(8)
+has been introduced as a ﬁgure of merit for the transmission quality. In the above expression, δi(t) are the singular
+values of D(t) sorted in decreasing order. The optimal counter-rotation R which maximizes the average ﬁdelity cancels
+
+
+[PDF PAGE 4]
+4
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+the eﬀects of the spin precession and it is independent on the particular initial state: it depends only on the model
+Hamiltonian, and as such can be estimated a priori.
+For quasi-free one-dimensional spin models one obtains
+F(t) = 1
+2 + 1
+6
+u2
+1(t) −v2
+1(t)
+ + p
+3 max{u1(t), v1(t)} ,
+(9)
+where p = |⟨exp(iπ PN
+n=2 c†
+ncn)⟩| = |⟨QN
+n=2 (−σz
+n)⟩| is the expectation value of the parity in the initial state |Ψ ˜
+Γ ⟩of
+˜Γ. When |Ψ ˜
+Γ ⟩has a deﬁnite parity, p = 1 and the transmission quality only depends on the dynamical amplitudes
+u1(t) and v1(t). Several initial states that are experimentally achievable [2,32,33] have a deﬁnite parity, notably the
+ground state, the fully polarized state, and the N´eel state. On the other hand, when the chain ˜Γ is in a thermal
+state with some inverse temperature β, then p = Q
+k tanh(β ˜Ek/2) where ˜Ek refers to the energy eigenvalues ˜Γ. For
+this reason, the transmission quality can be signiﬁcantly suppressed above a certain temperature threshold. In the
+worst case scenario, when p = 0, the ﬁdelity is always lower than the classical value [30], i.e. F < 2/3, and there
+is no beneﬁt in using a quantum data-bus. The non-local Wigner-string operator introduces entanglement between
+the boundary qubit N and the bulk which strongly suppresses the quality of transmission. In this regime the gap of
+the Hamiltonian sets the temperature threshold below which the initial state can be considered as the ground state,
+so with p ≃1. However, special attention is needed before trying to use a gapped Hamiltonian for increasing the
+maximum temperature. Indeed, known formulas for the Hamiltonian gap are usually obtained in the thermodynamic
+limit and for closed boundary conditions. It is important to stress that in open ﬁnite chains there could be some
+diﬀerences: for instance, the XY Hamiltonian is gapped for closed boundary conditions but there is an out-of-band
+mode in open chains which has exponentially small energy and makes the open XY Hamiltonian gapless [34]. However,
+taking into account features speciﬁcally arising from open boundary conditions, ﬁnite systems have generally a ﬁnite
+gap. Therefore, given a suﬃciently low temperature, the initial state can be considered a pure state with deﬁnite parity.
+In sections 3 and 4 this approximation is assumed, while the constraints on the initial state are relaxed in Section 5.
+3 Ballistic quantum information transfer with XX models
+3.1 Perfect state transmission
+In this section we study the state transmission in XX models, where γn = 0, the number of fermions in the initial
+states is conserved, and V (t) = 0. We show how to make an XX spin chain a perfect mirror via a suitable engineering
+of the coupling strengths jn. Then we introduce a minimal engineering scheme where all the couplings are uniform
+jn = j = 1 (j sets the energy scale) except at the boundaries, j1 = jN−1̸ = j.
+Hamiltonians acting as perfect dynamical mirrors have been introduced in [35,36]. With ad-hoc engineering of all
+the interactions, one can perfectly transfer not only the states between the ends of the chain, but also whatever state
+in position x to the position N −x+1, N being the length of the chain. In order to understand what are the dynamical
+features of these chains let us consider an arbitrary initial state with M < N spins in the state |1⟩and N −M spins
+in the state |0⟩. This state can be written as
+|ψ⟩=
+X
+{m1<m2<···<mM}
+ψ({mn})σ+
+m1σ+
+m2 · · · |0⟩=
+X
+{m1<···<mM}
+ψ({mn})c†
+m1c†
+m2 · · · |0⟩,
+(10)
+where |0⟩= |00 · · ·⟩is the vacuum of the Fermi operators and where the ordering m1 < m2 < · · · < mM is required
+for removing the action of the Wigner string. After a certain time t,
+|ψ(t)⟩=
+X
+{m1<···<mM}
+X
+{ℓn}
+ψ({mn})U ∗
+m1ℓ1(t)U ∗
+m2ℓ2(t) c†
+ℓ1c†
+ℓ2 · · · |0⟩
+=
+X
+{m1<···<mM}
+ψ({mn})
+X
+{ℓ1<···<ℓM}
+det{U ∗
+mj,ℓk(t)}σ+
+ℓ1σ+
+ℓ2 · · · |0⟩,
+(11)
+where det{U ∗
+mj,ℓk(t)} = P
+π(−1)π Q
+j U ∗
+mπ(j)ℓj(t) and the π’s refer to the permutation of the indices {ℓn}. In the
+last equality we have chosen a proper order of the indices for mapping the many-fermion state back to the spin
+representation. A perfect transmission occurs if at a certain time t∗it is
+U(t∗) = eiαX ,
+Xnm ≡δn,N−m+1 ,
+(12)
+
+
+[PDF PAGE 5]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+5
+where X is the reﬂection operator and α an arbitrary phase. If this is the case |ψ(t∗)⟩becomes
+|ψmirrored⟩=
+X
+{m1<···<mM}
+eiα{mn} ψ({N + 1 −mn}) σ+
+m1σ+
+m2 · · · |0⟩,
+(13)
+with a phase α{mn} = π
+2 ¯n(¯n −1) −¯nα, where ¯n is the number of fermions in the state. The phase α{mn} can be
+made constant in every sector with a deﬁnite parity by choosing, e.g., α = π/2. In the XX model this can be done for
+instance with a proper choice of the magnetic ﬁeld. Nevertheless, when |ψ⟩is a superposition of states with diﬀerent
+parities, non-trivial eﬀects can occur and the dynamics can generate an entangling gate [37,38].
+An XX spin chain generates a dynamical mirror operator if Eq. (12) is satisﬁed. We now analyse what are the
+Hamiltonians whose dynamics satisfy Eq. (12) for some t∗. In the XX model, as B = 0 in Eq. (1), U(t) = e−itA; so
+the ﬁrst requirement for perfect transmission is that the hopping matrix A and the reﬂection matrix X have to be
+diagonal in the same basis, i.e.
+[A, X] = 0 .
+(14)
+The above condition requires a mirror-symmetric Hamiltonian. Indeed, the hopping matrix A has to be symmetric
+with respect to the “anti-diagonal”, a property called persymmetry in the mathematical literature [39]: jn = jN−n
+and hn = hN−n+1. Furthermore, calling ωk the eigenvalues of A, Eq. (12) forces the existence of a time t∗such that
+e−iωkt∗is proportional to the eigenvalues of X. If the energy eigenvalues ωk are sorted in increasing order, then one
+can show [37] that Eq. (12) requires the following condition
+e−iωkt∗= eiα(-1)k ,
+(15)
+where (−1)k are the eigenvalues of X. When the matrix A is persymmetric and the condition (15) holds, then perfect
+transmission is obtained between sites which are at the same distance from the opposite boundaries: the XX chain
+acts as a perfect dynamical mirror. Condition (15) can be solved numerically using inverse eigenvalue techniques, i.e.
+algorithms giving an Hamiltonian with the required spectrum [40,41]. Moreover, several analytic solutions of (15) have
+been found [12]. The simplest amongst these [42] requires no magnetic ﬁelds, hn = 0, and a full engineering of the
+couplings according to the law jn ∝
+p
+n(N −n).
+To the best of the author’s knowledge, all perfect state transfer schemes are based on fully engineered chains. These
+approaches are thus overwhelmingly complicated in an experimental perspective, as an experimentalist should be able
+to perform a ﬁne tuning of the interactions according to, e.g., the law jn ∝
+p
+n(N −n). Moreover, the dependence on
+N of the coupling strengths avoids scalability: when the transmission distances are varied, all the nearest-neighbour
+interactions have to be changed as well.
+In the next sections diﬀerent models are introduced where the condition (15), though not exactly satisﬁed for
+each k, is accurately fulﬁlled by those modes which are relevant for the dynamics. Although condition (15) sets the
+fundamental requirement for achieving perfect state transmission with fully engineered models, it is also one of the
+main building blocks for ballistic quantum state transmission with minimally engineered models.
+3.2 Minimal-engineered models and wave-like dynamics
+Transferring quantum states from sender to receiver does not require the full mirror inversion of the whole chain. What
+is really needed is the swap of the boundary states irrespective of what happens to the rest of the chain. Therefore,
+condition (12) is overblown. The only requirement is that u1(t∗) = |U1N(t∗)| ≃1 for some transfer time t∗which
+should be as short as possible, i.e. t∗= O (N/maxj |jn|). How can this goal be accomplished and the unnecessary
+hypotheses relaxed? First of all it is known that the mirror-symmetry of the Hamiltonian, i.e. Eq.(14), is still a
+necessary prerequisite for the transmission between site 1 to N [12]. We thus consider mirror-symmetric Hamiltonians
+and write the spectral decomposition of the hopping matrix A as A = OωOT . Then one can show [22] that
+u1(t) =
+
+X
+k
+O2
+1k(−1)ke−iωkt
+ ,
+(16)
+where the identity O1k = ±(−1)kONk, which is a property of persymmetric matrices [39], has been used. The above
+equation shows that a high quality transmission can be obtained when the condition (15) is approximately satisﬁed
+by the modes k which mainly inﬂuence the dynamics, namely those for which O2
+1k is signiﬁcantly diﬀerent from zero.
+This requirement can be fulﬁlled with a minimal engineering of the interactions. Minimally engineered models are a
+deviation from the uniform case and the resulting hopping matrix A is quasi-uniform [43]; therefore, the model can be
+diagonalized and its features expressed by means of shifted quasi-momenta q ≈πk/N +ηk, where k = 1, . . . , N and the
+
+
+[PDF PAGE 6]
+6
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+shifts ηk = O(N −1) depend on the parameters of the non-uniform part of the Hamiltonian. Using the quasi-momentum
+q as an alternative index for k, one realizes that
+u1(t) ≈
+
+X
+q
+ϱ(q)ei[Nq−ωqt]
+ .
+(17)
+where ϱ(q) = O2
+1q. The above equation models a wave packet in momentum space which evolves with an energy ωq that,
+being the model quasi-uniform, can be interpreted as a dispersion relation. Although ωq can be a complicated function,
+a ballistic coherent quantum information transmission is obtained by designing the wave-packet in momentum space
+in such a way that ϱ(q) is peaked around the inﬂection point of the dispersion relation, i.e. where ω ≈vq for some
+group velocity v. Indeed, in this case u1(t≃N/v) ≈P
+q ϱ(q) = 1.
+A “wave-packet encoding” scheme suitable for quantum communication has been proposed also in [44,45]. However,
+in that case the wave-packet is created in real space by encoding the state to be transferred into a wave-packet over
+multiple sites of the chain. Classical wave dynamics theory is then exploited for designing the optimal shape of the
+packet so as to minimize the dispersion. On the other hand, the minimal-engineering approach does not require the
+control of multiple sites for the encoding, as the wave-packet is not formed in the site-space but rather in the quasi-
+momentum space. Indeed, the non-uniform interactions make the system not diagonalizable by a Fourier transform,
+and the resulting wave-packet shape ϱ(q) can be tuned, as shown below, by acting on the non-uniform part of the
+Hamiltonian.
+In [21,22] the simplest Hamiltonian suitable for high-quality ballistic quantum state transmission has been found.
+The model consists of an XX spin chain with no applied magnetic ﬁeld, hn = 0, and
+jn = 1, for n = 2, . . . , N −2 ,
+j1 = jN−1̸ = 1 .
+(18)
+This particular choice of minimal couplings is natural for applications. Consider for instance a potential implementation
+in a quantum device: sites 1 and N are part of two distant quantum registers, while the rest of the chain models the
+physical medium for connecting them. When the sender’s state has to be transferred to the receiver, the interaction
+j1 is switched on and the (many-body) dynamics of the chain is then used for mediating the transmission. As in a
+potential application the couplings j1 = jN−1 must be controllable, it is natural to require that they could also be
+switched on and set to a speciﬁcally tuned value which is diﬀerent from the other couplings of the chain. The XX
+model with non-uniform interactions (18) can be solved analytically: the dispersion relation reads
+ωq = cos q ,
+(19)
+where the quasi-momentum q takes N discrete values qk in the interval (0, π):
+qk = πk + 2ϕqk
+N+1
+,
+ϕq = q −cot−1cot q
+∆
+
+∈
+−π
+2 , π
+2
+
+,
+∆=
+j2
+1
+2 −j2
+1
+.
+(20)
+The corresponding shape of the wave-packet ϱ(q), namely the density of the excitations, is
+ϱ(q) =
+1
+N+1−2ϕ′q
+∆(1+∆)
+∆2 + cot2 q .
+(21)
+Eqs.(19) and (21) show a peculiar property of this quasi-uniform XX chain: the dispersion relation is almost linear
+around the zero-energy zone and the density of the excitations ϱ(q) is peaked around this zone. The width of this peak
+is described by ∆and decreases for decreasing j1.
+In the limit of very weak j1 only the zero-energy modes are involved in the dynamics [17,46,16,18]. In this regime
+the dynamics is basically a resonant transmission mediated by one mode. Indeed, when j1 ≪1 one can use perturbation
+theory for tracing out the oﬀ-resonant modes and obtain an eﬀective Hamiltonian acting on the boundaries [17]. The
+strength of the resulting long-distance eﬀective interaction is very weak (much weaker than j1) and consequently the
+resulting transmission times are very long and non ballistic.
+On the other hand, a coherent ballistic transmission must be a non-perturbative phenomenon. When j1 increases,
+more and more normal modes are involved and resulting dynamics emulates a wave packet, as in Eq.(17). The funda-
+mental observation is that a narrow ϱ(q) is not the only requisite. Indeed, as the model is not translationally invariant,
+the phase-shifts in the quasi-momenta can alter the dispersion relation for very weak j1. The explicit calculation of
+the group velocity of the wave-packet around the linear zone reads [22]
+v ∝∂kωqk = π
+t∗
+h
+1 +
+
+2 1−∆2
+t∗∆3 −1
+2
+
+cos2qk + (cos4qk)
+i
+,
+(22)
+
+
+[PDF PAGE 7]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+7
+where t∗= N+1 + 2 (1−∆)/∆is the arrival time. Being the wave-packet peaked around the linear zone, the ﬁrst
+non-linearity comes from the cubic terms of ωq and depends on both N and j1. The dispersive term can be minimized
+via an optimal choice of j1 = O(N −1/6). This is the reason for the existence of a non-weak optimal value [21] ensuring
+a coherent ballistic transmission.
+From a quantitative point of view it is found that the optimal values jopt
+1
+are not those minimizing the dispersive
+term in (22). Indeed those optimal values come from a trade-oﬀof two competing requirements
+1. jopt
+1
+< jw
+1 , where jw
+1 represent the optimal coupling for making the width of the wave packet signiﬁcantly diﬀerent
+from zero only around the linear zone.
+2. jopt
+1
+> jℓ
+1 where jℓ
+1 represents the threshold below which the “linear zone” is no more linear, as shown in Eq. (22).
+These two competing eﬀects cannot be eﬃciently managed via a single parameter j1: the optimal coupling is a
+compromise, and is found to scale as jopt
+1
+= O(N −1/6). When the optimal coupling is used the obtained transmission
+ﬁdelity is above 95% for N ≈100 and F > 90% even in the thermodynamic limit [21,22]. The advantages of the
+coherent ballistic dynamics are evident: only the couplings j1 need to be controlled, there is no need for engineering,
+nor for controlling many qubits for encoding a wave-packet and, thanks to the non-weak couplings, transmission times
+are fast.
+The two competing constraints discussed above are a general feature of minimally-engineered models and in [24] it
+has been shown that they can be overcome by introducing another optimally tuned value j2 = jN−2. We will discuss
+this point in detail in Section 5, while in the next section we study how to induce a ballistic quantum information
+transfer in particle non-conserving models.
+4 Minimal engineering of the XY model
+We have shown that the problem of transferring a quantum state in an XX spin chain is equivalent to the transmission
+of a fermion in one dimension and we have optimized such transmission using minimal requirements. The main
+guideline of the optimization procedure is to tune the interactions such that the travelling fermion generates a wave-
+packet whose shape in the quasi-momentum space can be controlled by the boundary couplings. By tuning that shape
+around the linear zone of the dispersion relation a coherent ballistic dynamics occurs. In this section we extend this
+approach to the XY spin model, whose Hamiltonian can be mapped into the fermionic Hamiltonian (1). Unlike the
+XX case, the total magnetization along the z direction is not a constant of motion and, as B̸ = 0, the dynamics
+does not conserve the number of fermions in the initial state. Nonetheless the model can still be diagonalized by a
+canonical Bogoliubov transformation, and written into a set of independent (non-interacting) fermionic modes. With
+some technical modiﬁcations the minimal optimization procedure can be applied even in this case.
+As in the previous section, before introducing the simplest engineering, we state some general comments about the
+properties that an XY Hamiltonian should satisfy in order to act as a (quasi) perfect quantum state transmitter. For
+the sake of simplicity, we consider γn = γ jn. An XY spin chain acts as a perfect mirror if U(t∗) = eiαX, for some
+α and V (t∗) = 0 at the transmission time t∗; models where this condition occurs have been studied in the literature
+[13,47], and are known to require the full engineering of the couplings jn, plus a further control on the local magnetic
+ﬁeld hn.
+Proceeding as in the XX case we here study how the conditions required for a perfect mirroring of the whole chain
+can be reduced if one rather aims at obtaining a high quality state transmission. In Appendix A, and in particular in
+Appendix A.1, we analyse the role of the symmetries. It is shown that the mirror-symmetry is a fundamental condition
+both for operating as a perfect dynamical mirror and for transferring states between sender and receiver. Therefore,
+we assume the mirror-symmetry also for the XY spin chain. Due to this symmetry, as shown in Appendix A.2, it is
+U1N(t) =
+X
+k
+"Wk1 + skWkN
+2
+2
+sk e−iωkt −
+Wk1 −skWkN
+2
+2
+skeiωkt
+#
+,
+(23a)
+V1N(t) =
+X
+k
+W 2
+kN −W 2
+k1
+4
+
+sk
+e−iωkt −e−iωkt
+,
+(23b)
+where W is an orthogonal matrix required to deﬁne the canonical transformation that diagonalizes the Hamiltonian,
+ωk are the corresponding energies, and sk = (−1)k. It turns out that Wk1 ≃±(−1)kWkN. These relations are exact
+in the XX case and are true, though with some approximation, also in the XY case in the most relevant cases, namely
+when it is found UN1(t∗) ≈1 and VN1(t∗) ≈0 at the transmission time t∗. Consequently, the approximated evolution
+operator u1(t) = |UN1(t)| is
+u1(t) ≈
+
+X
+k
+ϱ(k)ei(πk−ωkt)
+ ,
+ϱ(k) = W 2
+k1 .
+(24)
+
+
+[PDF PAGE 8]
+8
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+0.0
+0.4
+0.8
+1.2
+1.6
+0
+π/2
+π
+k
+q
+(cos k −h)2 + (γ sin k)2
+Ek for h1 = 0.85
+20ρ(k) for h1 = 0.85
+20ρ(k) for h1 = 1.3
+Fig. 1. Dispersion relation, energies ωk and density of excitations for N = 100, γ = h = 0.5 and j1 = jN−1 = 0.48. The peak
+of the density ϱ(k) can be controlled by the local magnetic ﬁeld: it turns out that the energy value of the peak is basically given
+by h1 = hN, i.e. by the local energy. The seemingly bad agreement between ωk and the dispersion relation, in the left side, is
+due to the numerical increasing ordering of the eigen-energies ωk.
+The above equation proves that, due to the mirror symmetry, the dynamics can be described as a wave-like evolution
+travelling from sender to receiver also in the XY case. Although approximated, Eq. (24) has the same form of Eq. (16),
+which is valid for the XX case. The diﬀerence stems from the shape of the wave-packet in the momentum space
+ϱ(k) = W 2
+1k which is slightly more complicated because of the diﬀerent diagonalization procedure (see Appendix A.2).
+In the following we investigate how one can obtain an almost perfect transmission in XY chains. Some numerical
+ﬁndings about XY spin chains that operate as coherent ballistic channels have already been obtained in [23,21].
+The achievement of a coherent dynamics in the XY model begins, as in the XX case, with the analysis of the
+dispersion relation in the inﬁnite chain limit,
+ωk =
+q
+(h−cos k)2 + γ2 sin2 k ,
+(25)
+displayed in Fig. 1. One can easily spot the existence of a region of linearity in the neighborhood of the inﬂection
+point(s) k0, where ωk ≈ωk0 + v(k −k0). It turns out that a local magnetic ﬁeld h1 ≃ωk0 allows the peak of ϱ(k) to
+be centered around k0 (see e.g. Fig. 1). The physical reason behind the possibility of changing the peak position via
+h1 is more clear in the weak coupling limit. Indeed, when j1 ≪1 only the modes which are almost resonant with the
+local energy h1 of the external qubits are involved in the dynamics. On the other hand, when j1 increases more modes
+come into play and the peak is found to widen without changing its position. An optimal width can be determined
+numerically by ﬁnding the optimal coupling jopt
+1
+. An optimal coupling is indeed expected to emerge, as in the XX
+case, from a compromise between making ϱ(k) peaked around k0 and minimising the non-linearities introduced in ωk
+around k0 by the non-uniform interactions.
+There are two main diﬀerences between XX and XY models. The ﬁrst one is that, in the latter case, the region of
+linear dispersion depends on the parameters (γ and h): it sensibly shrinks as the anisotropy γ increases (which might
+make the bus useless) and can be extended by increasing the ﬁeld h. For example, in the “extreme” case of the Ising
+chain (γ = 1), when h = 0 the dispersion relation becomes ﬂat and does not allow for propagation. This explains the
+observation [9] that in such limit no entanglement propagation takes place: indeed, a vanishing group velocity means
+that nothing can be transmitted over the chain. However, a wide linear region can yet be obtained by applying a ﬁnite
+magnetic ﬁeld h and one can act on the latter parameter so as to fulﬁl the conditions for optimal dynamics. The second
+important diﬀerence is the need for an extra parameter, i.e. the local magnetic ﬁeld. In the XX case (say for h = 0)
+we have seen that the inﬂection point k0 = π/2 corresponds to ωk0 = 0. There is no need for an extra local magnetic
+ﬁeld because ϱ(k) is already peaked around the mode with zero energy, which is notably also the center of the linear
+zone. On the other hand, the dispersion relation of the XY model (25) is gapped and ωk0̸ = 0. Unlike the XX case,
+when the XY model is considered, one has to switch on a local magnetic ﬁeld h1 ≃ωk0 in order to increase the average
+energy of the initial state and make ϱ(k) peaked around the linear zone. In XY models the analytical expressions are
+more complicated as the Hamiltonian cannot be expressed in terms of symmetric quasi-uniform tridiagonal matrices
+[43], so the optimal parameters have to be found numerically [23,21]. In the following we analyse the transmission in
+an Ising model (γ = 1) where, on the other hand, some analytical calculations can be performed.
+
+
+[PDF PAGE 9]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+9
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+0
+0.5
+1
+1.5
+j1
+h1
+0.5
+0.6
+0.7
+0.8
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+0
+0.5
+1
+1.5
+j1
+h1
+0.6
+0.7
+0.8
+0.9
+Fig. 2. Contour plot of the ﬁdelity of transmission F(t∗) for N = 50, γ = 1, h = 0.5 (left) and h = 1.5 (right). The transmission
+times have been obtained by maximizing the F(t) for ballistic times, i.e. when t ≈N/v, being v = min{h, h−1} the group velocity
+around the linear zone. The plots show the optimal value of j1 and h1 and the corresponding high ﬁdelity.
+0.5
+0.6
+0.7
+0.8
+0.9
+F(t∗)
+0.0
+0.25
+0.5
+0.75
+1.0
+1.25
+1.5
+1.75
+2.0
+h
+0.2
+0.4
+0.6
+0.8
+1.0
+jopt
+1
+0.0
+0.5
+1.0
+1.5
+2.0
+Fig. 3. Transmission ﬁdelity for diﬀerent h, N = 50, γ = 1 and h1 = h. The inset shows the corresponding optimal values jopt
+1
+.
+4.1 Ising case
+The Ising chain with non-uniform interactions can be analytically diagonalized: the matrix Z ZT , being Z = A −B
+(see Eq. (1) and appendix A), is a quasi-uniform tridiagonal matrix with non-uniform corners. Thanks to the results
+of [43] one can show that for N ≫1 the eigenvalues of ZT Z are ω2
+k = 1+h2 −2h cos k, i.e. the square of the dispersion
+relation (25). Taking the quasi-momentum operator k as an alternative index one can show that
+ϱ(k) ∝
+j2
+1 sin2k
+[(2−j2
+1) cos k −x]2 + j4
+1 sin2k ,
+x = 1 + h2 −h2
+1 −j2
+1
+h
+.
+(26)
+The peak of ϱ(k) is obtained for k0 = cos−1
+x
+2−j2
+1 , while the energy of the mode k0 is
+ωk0 =
+p
+1 + h2 −2h cos k0 =
+s
+2h2
+1 + (1 −h2)j2
+1
+2 −j2
+1
+,
+(27)
+and the width of the peak is given by
+∆=
+j2
+1
+p
+(2 −j2
+1)2 −x2 .
+(28)
+In the limit j1 →0 the resonant mode is the one with energy |h1|, as expected; however, for ﬁnite j1, a shift is
+observed. Moreover, it turns out that |WkN| = h1
+ωk |Wk1|; when h1 ≃ωk0, as we are interested in the neighbourhood of
+the resonant mode, we can neglect the prefactor and consider |Wk1| ≃|WkN|: this is an analytical proof of the validity
+of the approximated formula (24).
+For making the optimal dynamics to emerge, the position of the peak must be centered around the linear zone of
+the dispersion relation ¯ω =
+p
+|1 −h2|, i.e. ωk0 = ¯ω. This condition is satisﬁed by setting
+h1 =
+(p
+(1 −j2
+1)(1 −h2)
+for
+|h| ≤1 ,
+√
+h2 −1
+for
+|h| ≥1 ,
+(29)
+
+
+[PDF PAGE 10]
+10
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+and the corresponding width is
+∆= max{|h|, 1}
+p
+|1 −h2|
+j2
+1
+2 −j2
+1
+.
+(30)
+The above reasoning cannot be applied at the “critical” value h = 1, as it predicts h1 = 0. However, h1 = 0 corresponds
+to WkN = 0, u1(t) = v1(t) and yields a very low transmission ﬁdelity. Notice that the width ∆has a prefactor, as
+compared with the XX case, which is greater than 1. The optimal j1 is then expected to be smaller than the XX
+counterpart.
+In Fig. 2 we plot F(t∗) for diﬀerent parameters and show that the ﬁdelity for the optimal values of j1 and h1
+exceeds 95% for a chain of 50 spins when h = 1.5 while it is slightly lower for h = 0.5. In both cases the optimal values
+are quite in agreement with the estimate (29), although the latter has been obtained after diﬀerent approximations.
+The above analysis has been obtained by looking only at the density of the excitations, without considering the
+perturbations of the dispersion relation due to the local non-homogeneous coupling j1 and magnetic ﬁeld h1. However,
+these non-homogeneous terms introduce a shift in the quasi-momenta [43] that alters the dispersion relation. In the
+XX case, we have seen that this eﬀect can transform the linear zone into a dispersive one. In principle, even the
+opposite could happen: the quasi-momenta shift due to the non-homogeneous interactions might linearize ωk around a
+certain k0, ultimately making the dynamics more coherent. We have numerically observed that the phase shift mostly
+aﬀects ωk around the peak k0 of ϱ(k). Therefore, we have performed a numerical simulation without considering the
+optimization of h1: even if the resulting ϱ(k) is not peaked around the linear zone, the subsequent optimization of
+j1 can slightly linearize ωk around k0. The results of the numerical analysis with h1 = h are shown in Fig. (3). As
+expected, the transmission ﬁdelity is lower compared to the case where even the position of k0 is optimized via h1.
+Nonetheless, for h > 0.6 the transfer quality is considerably high.
+5 Minimal encoding for reliable transmission regardless of temperature and initial state
+The minimal engineering scheme introduced in the previous section has the advantage of requiring only the ability
+to address the boundary qubits and to switch on the couplings between the boundaries and the bulk to an optimal
+non-perturbative value. With these minimal requirements an XY spin chain acts as a reliable transmission channel
+with fast transmission times t∗= O(N/j). Depending on the physical implementation, the optimal dynamics can be
+improved if one can address and manipulate the couplings between two further qubits, i.e. if one can operate locally on
+the qubits 1, 2, N −1, N. In [24] indeed it has been shown that the two constraints for obtaining the optimal dynamics
+discussed in Section 3.2 can be better satisﬁed by tuning a second parameter j2 = jN−2. Provided that the initial
+state of the chain ˜Γ has a deﬁnite parity, by properly tuning j1 = O(N −1/3) and j2 = O(N −1/6) one obtains a ﬁdelity
+higher than 99% for N →∞. This two-coupling engineering is not just a step towards the full engineering of the chain:
+the need for a further parameter arises from the requirement that two constraints have to be satisﬁed.
+The ability to address four qubits (two on the left and two on the right) also permits one to disentangle the
+transmission from the initial state of the internal chain [48] and then make the transmission independent of |Ψ ˜
+Γ (0)⟩.
+Although XY models are quasi-free, the spin operator σ−
+N = Π cN is non-local in the fermionic picture because of the
+parity operator Π. The latter makes the transmission strongly dependent on the initial state of the bulk [22]: if |Ψ ˜
+Γ (0)⟩
+does not have a deﬁnite parity, then there is a destructive interference which strongly suppresses the transmission. With
+a suitable four-qubit protocol, such a destructive interference is cancelled. Similar schemes have also been proposed
+for achieving quantum state transfer in systems at high (inﬁnite) temperature [18,49,50,51].
+We brieﬂy discuss here the protocol introduced in [48], while in the following section we extend this algorithm to
+make it suitable for ballistic state transfer schemes. Consider the initial state ρ1(0) = (1 + r1 · σ)/2, parametrized by
+the Bloch vector r1. This state can be encoded onto the state ρ12(0) of qubits 1 and 2 in two diﬀerent ways (±)
+ρ±
+12(0) = I±,12 + rx
+1σx
+±,12 + ry
+1σy
+±,12 + rz
+1σz
+±,12
+2
+,
+(31)
+ρ−
+12(0) = 1
+2
+
+
+
+0
+0
+0
+0
+0 1 + rz
+1
+rx
+1 −iry
+1 0
+0 rx
+1 + iry
+1
+1 −rz
+1
+0
+0
+0
+0
+0
+
+
+,
+ρ+
+12(0) = 1
+2
+
+
+
+1 + rz
+1
+0 0 rx
+1 −iry
+1
+0
+0 0
+0
+0
+0 0
+0
+rx
+1 + iry
+1 0 0 1 −rz
+1
+
+
+,
+(32)
+where the above matrices are written in the computational basis |αβ⟩, α, β ∈{0, 1}, and where ± concerns the parity
+of the two-qubit state: ρ+
+12 (respectively ρ−
+12) refers to the state encoded into the subspace where σz
+1σz
+2 is positive
+
+
+[PDF PAGE 11]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+11
+C±
+D±
+j1
+j2
+j2
+j1
+· · ·
+· · ·
+Fig. 4. Schematic representation of the state transfer protocol with the two-qubit encoding. With the proper coding operation
+C± and decoding operation D± one can make the result of the transmission independent of the initial state of the spins
+2, · · · , N −1. The couplings jn = j are uniform except that at the boundaries where they take the value j1 and j2.
+(negative). The operators encoding the qubits according to the above formulae read
+I±,12 = 1 ± σz
+1σz
+2
+2
+,
+σx
+±,12 = σx
+1σx
+2 ∓σy
+1σy
+2
+2
+,
+(33)
+σy
+±,12 = σy
+1σx
+2 ± σx
+1σy
+2
+2
+,
+σz
+±,12 = σz
+1 ± σz
+2
+2
+.
+(34)
+When perfect state-transfer Hamiltonians are used [48] the state ρ±
+12 is perfectly transferred to the opposite end; at the
+transmission time t∗one obtains ρN,N−1(t∗) = ρ±
+12. The encoded state (31) is local in the fermionic picture and the
+transmitted state depends only on the operators cN(t∗) and cN−1(t∗), as well as on their Hermitian conjugate; having
+mapped the evolution into the transmission of two fermions the parity is automatically removed. Nevertheless, when
+the quality of transmission is not perfect, the transmitted state ρN,N−1(t∗) may not have a deﬁnite two-qubit parity,
+making the decoding procedure more intricate. In the following part we discuss how to evaluate the transmission
+ﬁdelity for this protocol.
+5.1 Fidelity of transmission for two-qubit encoding state transfer
+Before discussing the ﬁgure of merit for the transmission quality let us comment on the operations needed for eﬀectively
+realising the two-qubit encoding. If the initial state of qubit 2 is |0⟩(respectively |1⟩) then the encoding of the initial
+state into ρ−
+12 (respectively ρ+
+12) is obtained simply using the CNOT gate: CNOT = 1+σz
+2
+⊗1 + 1−σz
+2
+⊗σx. In order
+to better illustrate the decoding procedure, without loss of generality we assume that the initial state of qubit 2 is
+the completely mixed state; diﬀerent initial states can be tackled in a similar way. Let C± be the quantum operation
+realising the encoding, i.e.
+ρ±
+12 = C±
+
+ρ1(0) ⊗12
+2
+
+,
+=⇒
+σα
+±,12 = C±
+σα
+1 ⊗12
+
+/2 .
+(35)
+Such a quantum operation cannot be a unitary gate, as the eigenvalues of the input and output operators are diﬀerent
+(two eigenvalues of ρ±
+12 are null). Let us consider for instance the preparation of ρ+
+12: One can measure σz
+2, ﬂip the
+state of qubit 2 depending on the result, and then apply the unitary CNOT gate. Another possibility, which does not
+involve measurements, is to apply a local completely positive map P such that P
+
+ρ1 ⊗ρ2
+
+= ρ1 ⊗|1⟩⟨1| and then apply
+a CNOT gate. In this particular case the encoding reads
+C+
+ρ
+
+=
+2
+X
+i=1
+CNOT (1 ⊗Ai) ρ
+
+1 ⊗A†
+i
+
+CNOT
+(36)
+where we have chosen a particular set of Kraus operators realising the map P: A1 = 1+σz
+2
+, and A2 = σ−.
+We now investigate the necessary decoding quantum operation. As shown in Section 2, in order to evaluate the
+transmission ﬁdelity one has to obtain the matrix elements Dαβ(t) which deﬁne the linear relation between the initial
+Bloch vector, with elements rβ
+1 (0), and the ﬁnal evolved Bloch vector, whose elements rα
+N(t) = ⟨σα
+N(t)⟩describe the
+state of the last qubit at time t. After having applied the encoding (36) we suppose that the elements Dαβ(t) can be
+made independent of the parity, and in general independent of |Ψ ˜
+Γ (0)⟩, via a suitable decoding quantum operation
+D±. Let us write rα
+N(t) explicitly:
+rα
+N(t) = Tr[σα
+Nρ(t)] = Tr
+
+σα
+ND±
+N,N−1
+
+e−iHtC±
+12
+
+ρ(0)]eiHt
+≡Tr
+
+eiHt ˜D
+±
+N,N−1
+
+σα
+N ⊗1
+
+e−iHt C±
+12
+
+ρ(0)]
+
+,
+(37)
+where ˜D is the dual quantum operation, i.e. if D[ρ] = P
+i DiρD†
+i then ˜D[ρ] = P
+i D†
+i ρDi. The subscripts in the above
+equation are used when we want to make explicit on which qubit the codes act; moreover we frequently switch from the
+
+
+[PDF PAGE 12]
+12
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+Heisenberg to the Schr¨odinger picture. In principle it would be tempting to set ˜D± = C±. Indeed, if this were possible
+then ˜D±
+N,N−1
+
+σα
+N ⊗1
+
+= σα
+±,N,N−1, namely one could write rα
+N(t) = ⟨σα
+±,N,N−1(t)⟩and make the map independent of
+the parity of the chain. However, this is not feasible in general: For instance if one sets ˜D+ = C+ with the encoding
+(36), then the physical operation D+, which is the real operation performed onto the state, would not be a physical
+trace-preserving completely positive map. One could implement the decoding by measuring the qubit N −1, in a way
+similar to what has been described for realising the encoding operation. However, in this case the mapping is not
+linear, as in Eq. (7), and it may be much more complicated to obtain the transmission ﬁdelity.
+We consider here a simple decoding procedure. We do not claim that this is the optimal procedure, and we argue
+that, for increasing the ﬁdelity, one could ﬁnd a better combination of local encoding/decoding protocols such that
+the encoded and decoded two-qubit states depend only on pairs of local fermionic operators and not on the parity.
+Here we assume that the initial state is encoded into the state ρ+
+12. As for the decoding operation, we simply apply
+the CNOT gate to the qubits N and N −1. With a long but straightforward calculation one can evaluate the matrix
+D(t) which describes the transmission channel (see Section 2)
+D(t) =
+
+
+ℜ[UN,1(t)UN−1,2(t) −U 2
+N−1,2] ℑ[UN,1(t)UN−1,2(t) −U 2
+N−1,2] ℜ[(UN,1(t) + UN−1,2(t))U ∗
+N−1,2]
+−ℑ[UN,1(t)UN−1,2(t) −U 2
+N−1,2] ℜ[UN,1(t)UN−1,2(t) −U 2
+N−1,2] ℑ[(−UN,1(t) + UN−1,2(t))U ∗
+N−1,2]
+0
+0
+|UN,1(t)|2 + |UN−1,1|2
+
+, (38)
+where we have used the property U1,N−1 = U2,N which follows from mirror symmetry. Note that det D(t) > 0 for every
+time t. On the other hand, mappings such that det D(t) < 0 are not suitable for transferring quantum information,
+as the resulting ﬁdelity is always lower than the classical value [52]. The ﬁnal analytical expression for the optimal
+transmission ﬁdelity Fe for the two qubit protocol is rather complicated. An approximated formula can be obtained
+assuming the optimal dynamics: as the aim of the optimal dynamics is to maximise |U1,N(t∗)| one can assume that
+|U1,N−1(t∗)| ≈0. Thanks to this approximation one obtains
+Fe(t∗) ≃1
+2 + u1(t∗)
+u1(t∗) + 2u2(t∗)
+6
+
+,
+u1(t) = |U1,N(t)| ,
+u2(t) = |U2,N−1(t)| .
+(39)
+The above expression shows that the maximization of u1(t∗) is, as expected, not enough for the two-qubit encoding
+protocol: since two states have to be transferred to the opposite side, the state of qubit 1 to qubit N and the state of
+qubit 2 to qubit N-1, one also has to ﬁnd a proper scheme for maximizing u2(t∗) at the same time. In the following
+section we will use a minimally engineered chain for achieving this goal.
+5.2 Minimal engineering for two-qubit state transfer
+We have shown that, thanks to the two-qubit encoding, an XX spin chain can be used as reliable communication
+channel irrespective of the initial state of the chain, provided that it is able to transfer the state of qubits 1 and 2
+to the state of qubits N and N −1 at the same transmission time t∗(see also [49] for a diﬀerent, time dependent
+protocol). As the spin chain has to swap only the states of the four boundary qubits, irrespective of what happens
+to the bulk qubits, it turns out that the full engineering of the chain is, again, not required. We ﬁrst use a minimal
+scheme, namely we use a setup which does not require further experimental control in addition to that needed for the
+encoding and decoding procedures. We show that the ﬁdelity of transmission exceeds 89% in the inﬁnite chain limit.
+Moreover, by introducing a further parameter we can achieve a transmission ﬁdelity higher than 99% for chains where
+N ≲500.
+The encoding/decoding procedure illustrated in Section 5.1 avoids the destructive interference between the state to
+be transferred and the excitations inside the bulk. The price to be paid is the full control of the ﬁrst two and last two
+qubits of the chain, as illustrated in Fig. 4. We argue accordingly that no more complications are introduced in requiring
+that the couplings j1 = jN−1 and j2 = jN−2 can be switched on and set to a particularly tuned value, while the rest of
+the qubits are permanently coupled with a homogeneous interaction strength j (j = 1 for convenience). This model with
+two parameters has already been introduced in [24] with a diﬀerent aim, i.e. for improving the transmission capability
+of an XX spin chain, without any encodings. Indeed, we have shown in Section 3 that, with a single parameter, the
+two competing eﬀects for obtaining coherent ballistic dynamics cannot be optimized simultaneously and one has to
+choose a compromise. On the other hand, in [24] it has been shown that using two parameters these two constraints
+can be satisﬁed independently. Due to the lack of the encoding/decoding algorithm, that scheme is suitable only for
+particular initial states of ˜Γ, and optimizes just the transmission from site 1 to site N, i.e. from the sender to the
+receiver. The ﬁgure of merit for the transmission quality is given by Eq. (9), with v1(t) ≡0 while u1(t) is given by (17).
+Although the analytic expressions for ϱ(q) and ωq are slightly complicated because of j1 and the further parameter j2,
+one can analytically prove that F > 99% for N →∞. The resulting ﬁdelity of state transmission is therefore almost
+perfect for every N.
+
+
+[PDF PAGE 13]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+13
+Table 1. Transmission ﬁdelity (9) at the transmission time t∗, for diﬀerent length N, and with the optimal couplings. The left
+table refers to the cases discussed in [24], where j1 and j2 are set to their optimal values. In the right table on the other hand
+one also optimizes j3 allowing a higher value of u2(t∗) and accordingly a higher ﬁdelity.
+N
+t∗
+j1
+j2
+Fe(t∗)
+20
+26.5
+0.550
+0.818
+0.987
+30
+37.7
+0.497
+0.781
+0.979
+50
+59.5
+0.434
+0.735
+0.970
+70
+80.9
+0.397
+0.706
+0.964
+100
+112.5
+0.359
+0.675
+0.958
+150
+164.7
+0.320
+0.641
+0.951
+250
+267.8
+0.276
+0.599
+0.944
+350
+370.2
+0.250
+0.572
+0.939
+500
+523.0
+0.225
+0.544
+0.935
+t∗
+j1
+j2
+j3
+Fe(t∗)
+u1(t∗)
+u2(t∗)
+27.8
+0.503
+0.709
+0.880
+0.998
+0.999
+0.994
+39.4
+0.448
+0.648
+0.846
+0.996
+0.999
+0.991
+61.8
+0.386
+0.575
+0.803
+0.995
+0.998
+0.987
+83.6
+0.349
+0.529
+0.775
+0.994
+0.998
+0.985
+115.8
+0.313
+0.483
+0.744
+0.993
+0.998
+0.983
+168.6
+0.276
+0.434
+0.710
+0.993
+0.998
+0.982
+272.7
+0.236
+0.378
+0.667
+0.992
+0.998
+0.980
+375.9
+0.212
+0.344
+0.640
+0.992
+0.998
+0.979
+529.6
+0.189
+0.310
+0.611
+0.991
+0.998
+0.978
+0
+10
+20
+30
+40
+50
+60
+70
+800
+10
+20
+30
+40
+50
+0
+0.5
+1
+t
+n
+|U2n(t)|
+0
+10
+20
+30
+40
+50
+60
+70
+80 0
+10
+20
+30
+40
+50
+0
+0.2
+0.4
+0.6
+0.8
+1
+t
+n
+|U1n(t)|
+Fig. 5. Evolution operators U1n(t) and U2n(t) for diﬀerent position n and time t. The wave-like motion displays the coherent
+excitation traveling from site 2 to site N −1 (left) and from site 1 to site N (right). An almost perfect reconstruction of the
+states occurs at the opposite sides when the optimal couplings are used. Here N = 50 and the optimal couplings are shown in
+Table 1.
+Here we use that scheme for studying quantum state transfer with the two-qubit encoding protocol. In this case,
+Eq.(39) shows that the eﬃcient transmission of one fermion from site 1 to N is not enough and also the transmission
+from site 2 to site N −1 has to be optimal. Although the minimal engineering scheme with the two parameters j1 and
+j2 derived in [24] has not been designed for this purpose, Table 1 shows that the ﬁnal transmission quality Fe(t∗) is
+very good. Thanks to the analytical results available [43,24] one can estimate the value of Fe(t∗) for N →∞. Indeed
+u1(t∗) ≈
+
+X
+q
+ϱ(q)ei[Nq−ωqt∗]
+
+N→∞
+≃
+0.987 ,
+u2(t∗) ≈
+
+X
+q
+ω2
+q
+j2
+1
+ϱ(q)ei[Nq−ωqt∗]
+
+N→∞
+≃
+0.712 ,
+(40)
+from which one estimates Fe(t∗) ≈89.7% for N →∞. The ﬁrst result in the above formula has been obtained in [24]
+while the second one has been obtained by using the identities known for tridiagonal matrices [43] and going to the
+continuum limit. The lower value of u2(t∗) can be improved by numerically optimizing j1 and j2 in order to maximize
+both u1(t∗) and u2(t∗). However, the results obtained are not signiﬁcantly better: even if one tries to maximise u2(t∗)
+alone, one obtains u2(t∗) ≈0.732 in the thermodynamic limit.
+Almost perfect transmission for very long chains can be obtained by adding a further parameter j3 to be optimized.
+As shown in Table. 1, thanks to this further parameter one can obtain a ﬁdelity higher than 99% for chains as long
+as 500 qubits. The introduction of this further parameter guides the creation of a coherent wave-packet both from
+site 1 and from site 2. As shown in Fig. 5 the excitation travelling from site 2 generates two wave-packets. The ﬁrst
+wave-packet goes towards site 1, where it is reﬂected from the boundary, and then goes towards to the opposite end.
+The second wave-packet on the other hand goes directly towards the opposite boundary, where it is reﬂected. Thanks
+to the optimized constructive interference, these two wave-packets come together in site N −1 at the transmission
+time with a probability u2(t∗) ≈98% for chains up to N = 500. When this three-parameter optimization is used the
+transmission times are slightly longer, though they are still comparable with the previously obtained ballistic times
+(see Table 1).
+
+
+[PDF PAGE 14]
+14
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+Without the two-qubit encoding there is a temperature threshold, depending on the gap of the Hamiltonian, above
+which the transmission quality is suppressed [46], though no signiﬁcant alterations are expected in the dynamics of
+the z component of the magnetization [50]. In this section we have shown that with a two-qubit encoding one can
+reliably transfer quantum information with minimal engineered chains even in the inﬁnite temperature regime.
+6 Towards experimental realizations
+The ballistic approach to state transfer using minimally engineered models has been guided all along by the quest
+for experimental simplicity; however, there are some theoretical simpliﬁcations that must be overcome in looking for
+possible implementations. Some general imperfections in the transfer scheme may arise irrespective of the speciﬁc
+setup, such as the gradual (non-sudden) switching of the coupling between the sender (receiver) qubit and the bus, or
+the role of spurious interactions. In [38] it has been shown that a linear switching of j1 from 0 to jopt
+1
+does not alter
+signiﬁcantly the transmission quality, provided that the switching time is smaller than 1/jopt
+1
+. Another experimentally
+relevant feature is that the overall “reading time” tR, i.e. the interval during which the state remains at the receiver
+site, is ﬁnite, as seen for instance in Fig. 5. In the optimal regime [22], the transfer time scales with the system size
+as t∗≈N + 2.3N 1/3 while the “reading time” increases with N according to the asymptotic behaviour tR ≈1.9N 1/3.
+As a result, the quantum channels based on the optimal transfer scheme might be embedded also in a macroscopic
+setups.
+Another detrimental eﬀect can arise from the interaction between quasi-particles due to residual non-quadratic
+terms in the Hamiltonian that cannot be completely screened out. These eﬀects are investigated [38] with an XXZ
+model. It is found that the introduction of a coupling Jz along the z direction between adjacent spins evidently aﬀects
+the quality of the channel. In fact, it weakly deteriorates the ﬁdelity when |Jz| < 0.2, while the negative eﬀects of
+this interaction are more pronounced for Jz < −0.2. Moreover, the eﬀect of static noise in the coupling strength has
+been investigated in [53,54]. A non-uniform deviation is introduced in the couplings of the internal chain, jn ≃1 + δn,
+δn ≪1, while the optimal parameters are supposed not to be aﬀected by imperfections. It is shown that the quality
+of the transmission generated by the optimal couplings weakly deteriorates when |δn| ≲0.05. When the strength of
+the imperfections is stronger the performance of minimally engineered chains is comparable to that of fully engineered
+ones. If disorder cannot be avoided, the full engineering of the chain is therefore unnecessary, as minimally engineered
+models, which are easier to implement in an experiment, have comparable transmission ﬁdelities. On the other hand,
+imperfect tuning of the optimal parameters does not signiﬁcantly alter the transmission quality. For instance, in Fig. 2
+(see also [22]) one can see that there is an optimal region around the optimal values where the ﬁdelity remains very
+high.
+In addition to the imperfections described above, whose eﬀects depend on the particular setup, there can also be
+other speciﬁc ones. As a matter of fact, in order to use many-body dynamics for transferring quantum information,
+long coherence times are required, together with the ability of performing single-site addressing and time-dependent
+measurements. An imperfect implementation of these requisites could introduce further error sources. Understanding
+whether a currently established experimental apparatus can be used as a coherent ballistic quantum data-bus is
+complicated, as one has to fathom if the various requisites might be somehow achieved in the near future.
+In [18,55] a chain of coupled nitrogen-vacancy (NV) defects in diamonds has been proposed to operate as a high-
+quality transmission wire, provided that j1 ≪1. In [56] a thorough analysis of the role of the typical decoherence times
+found in experiments has shown that a NV-wire can act as an entanglement transmission channel. It is there showed
+that non-perturbative couplings to the wire are favorable, so one is inclined to think that the techniques developed in
+this paper may help the design of proper experimental setups based on NV centers.
+Cold atom experiments [57,58,59,60,61,62,63] are now established quantum simulators; they can eﬀectively im-
+plement a spin chain and seem the most convenient for testing the predictions of this paper. They have long coherence
+times, operating practically at zero temperature and without decoherence. For this reason, in [38] we have put for-
+ward a promising possible experimental realization using cold atoms trapped in optical lattices and near ﬁeld Fresnel
+trapping potentials.
+Nuclear magnetic resonance experiments are also promising candidates for simulating quantum information trans-
+port [50,64,65,66,67,68]. However, their highly mixed (high-temperature) initial state prevents the possibility of using
+such a setup for transferring superpositions of quantum states without any other control on the system. Coherent
+transmission of quantum superpositions can, in principle, be performed using the two-qubit encoding and engineering
+proposed in Section 5.2 provided that local gates acting on the boundaries can be implemented in the experimental
+setting. Despite the diﬃculties in maintaining the phase coherence required for transferring quantum superposition
+of states, some results of the present paper might be observed even with currently available technology. Indeed, the
+wave-packet generated by the two “classical” states |0⟩and |1⟩survives, and it is not altered, even at ﬁnite temper-
+ature. The corresponding wave-like evolution [24] can then be observed by measuring the magnetization along the z
+direction ⟨σz
+n(t)⟩. The coherent magnetization dynamics allows the transmission of the two classical states |0⟩and |1⟩,
+irrespective of what happens to their superposition, making the spin-wire still useful for classical information transfer.
+
+
+[PDF PAGE 15]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+15
+7 Concluding remarks
+High-quality quantum state transmission between distant qubits can be obtained via the dynamics of a spin chain
+according to several diﬀerent schemes. The one here reviewed relies on the optimization of the interactions between
+the boundaries (where the sender’s and receiver’s qubits are located) and the spin-chain bus. Once such couplings
+are properly chosen, the excitations with linear dispersion relation get to rule the dynamics and a coherent ballistic
+transmission is consequently obtained. The procedure does not require any further design either of the bus, or of its
+initial state. When the approach is implemented with the spin-1/2 XX and XY models, the problem can be mapped
+to the optimization of a Fermionic quantum walk in one dimension.
+Due to the induced ballistic dynamics, the transfer time scale is considerably shorter than in previous works [7,16,
+69,70,71]. It essentially depends on the group velocity of the elementary excitations, which can be tuned by varying
+the global parameters of the data-bus, namely the anisotropy γ and the magnetic ﬁeld h. The optimal average ﬁdelity,
+namely the ﬁgure of merit used for measuring the transmission quality, in the optimal regime only slightly deteriorates
+as the length of the bus increases.
+A two qubit encoding protocol based on the optimal dynamics can also be designed such that the destructive eﬀects
+of a (possible) thermal bath are overcome. The transfer quality is investigated using a speciﬁc ﬁgure of merit which
+takes into account the two-qubit encoding protocol. It turns out that the maximization of the transfer quality requires
+the optimization of the dynamics so that the states of qubit 1 and 2 are transmitted to the states of qubits N and
+N −1. A minimal engineering which does not require further control on the system is then introduced to achieve this
+goal. The proposed protocol permits to reliably perform quantum state transmission even at inﬁnite temperature.
+Acknowledgements
+The author thanks B. Antonio, T.J.G. Apollaro, A. Bayat, S. Bose, A. Cuccoli, R. Vaia and P. Verrucchi for interesting
+discussions and insightful comments. The author is currently supported by the ERC grant PACOMANEDIA.
+A Diagonalization of quadratic Fermi Hamiltonian
+The Hamiltonian (1) can be written in the form
+H = 1
+2η† S η + 1
+2 Tr A,
+S =
+
+A
+B
+−B −A
+
+,
+(41)
+where ηi = ci, ηi+N = c†
+i and i = 1, . . . , N. In [10,72] it is shown that the above Hamiltonian can be diagonalized via
+a canonical transformation and written in the form
+H = 1
+2η†
+
+P Q
+Q P
+T 
+ω
+0
+0 −ω
+ 
+P Q
+Q P
+
+η + 1
+2 Tr A = 1
+2η′†
+
+ω
+0
+0 −ω
+
+η′ + 1
+2 Tr A,
+(42)
+where the energies ωk are diagonal and non-negative. That is, in terms of some diagonal Fermi operators bk = η′
+k,
+b†
+k = η′
+k+N, k = 1, . . . N the Hamiltonian takes the form H = P
+k ωk b†
+k bk + 1
+2 Tr(A −ω). This transformation
+diagonalizing the Hamiltonian can be obtained from a singular value decomposition [34] and written as
+A −B = ΦT ω Ψ ,
+P = (Φ + Ψ)/2 ,
+Q = (Φ −Ψ)/2 .
+(43)
+where Ψ,Φ are orthogonal matrices and ω diagonal and non-negative. The time evolution (4) follows from the calculation
+of the canonical transformation e−itS and reads [10]
+U(t) = P T e-iωt P + QT eiωt Q,
+V (t) = P T e-iωt Q + QT eiωt P.
+(44)
+A.1 Mirroring conditions for XY models
+A complication of the XY model is that the corresponding fermionic Hamiltonian does not conserve the number of
+particles. In this case the perfect mirroring condition reads U(t∗) = eiα X and V (t∗) = 0, i.e.
+
+P T QT
+QT P T
+ 
+e-iEt∗
+0
+0
+eiEt∗
+ 
+P Q
+Q P
+
+=
+
+eiα X
+0
+0
+e−iα X
+
+≡ˆX .
+
+
+[PDF PAGE 16]
+16
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+As in the XX case, this means that the matrix on the r.h.s. of the above equation can be diagonalized using the same
+matrices P and Q, and that the energy-eigenvalues have to satisfy the condition (15). Accordingly one must impose
+[S, ˆX] = 0, i.e. that X A X = A, X B X = e2iαB. The matrix A has to be persymmetric while there is still some
+freedom in the symmetry properties of B. As B is real the parameter α, which in the B = 0 case is a free parameter, has
+to be a multiple of π
+2 : the matrix B thus has to be persymmetric, when for instance α = π
+2 or anti-persymmetric, i.e.
+γN−n = −γn, when for instance α = π. The physical origin of these constraints is still unclear, but there is an argument
+supporting the persymmetric case α = π
+2 . Indeed, the XY model does not conserve the number of particles and the
+phase (−1)
+¯n(¯n−1)
+2
+in (13) is not a constant of motion. However, the parity is conserved and (−1)
+¯n(¯n−1)
+2
+eiπ¯n/2 = eiπ¯n2/2
+has a ﬁxed value in each sector with constant parity. In the persymmetric case insofar, the dynamics eﬀectively mirrors
+the state |ψ⟩without relative phases when the initial state has a deﬁnite parity.
+We now generalize Lemma 2 of Ref. [12] for showing that, even in the less stringent case of perfect transmission
+only between the boundary qubits (irrespective of the bulk), the Hamiltonian has to satisfy some symmetries, and as
+a particular case it can be persymmetric. Indeed, let us assume that
+
+P T QT
+QT P T
+ 
+e-iEt∗
+0
+0
+eiEt∗
+ 
+P Q
+Q P
+
+e1 = eiαeN ,
+being ei the vector with components (ei)j = δij. Then it must hold
+e−iωkt∗Pk1 = eiαPkN,
+eiωkt∗Qk1 = eiαQkN,
+∀k .
+In particular, this reveals that P 2
+k1 = P 2
+kN, Q2
+k1 = Q2
+kN, and Pk1Qk1 = e2iαPkNQkN. Again the above constraints are
+satisﬁed only if α is a multiple of π/2. By rising the Hamiltonian matrix S of (41) to an integer power, m, we can
+relate
+eT
+1 Sme1 =
+X
+k
+ωm
+k (P 2
+k1 + (−1)mQ2
+k1) = eT
+NSmeN ,
+eT
+N+1S2me1 = 2
+X
+k
+ω2m
+k (Pk1Qk1) = ei2αeT
+N+NS2meN .
+(45)
+For m = 1, this gives that h1 = hN. For m = 2, we ﬁnd that J2
+1 −J2
+N−1 +γ2
+1 −γ2
+N−1 = 0 and J1γ1 +e2iαJN−1γN−1 = 0,
+i.e. that j1 = jN−1 and γ1 = −e2iαγN−1. Each time that m is increased by 1, new variables are introduced on each
+side of the equation. Since these sides must be equals the required symmetry properties follow. In particular we ﬁnd
+that B has to be persymmetric for α = π/2, 3π/2 and anti-persymmetric for α = 0, π.
+A.2 Reﬂection symmetry: mirror symmetric XY models
+The reﬂection symmetry, or mirror-symmetry, occurs when the system is invariant under reﬂection, i.e. when the
+Hamiltonian does not change by exchanging the sites i and N −i + 1, being N the number of sites. Formally this
+means that Ai,j = AN−j+1,N−i+1 and Bi,j = BN−j+1,N−i+1, i.e.,
+X A X = AT = A,
+X B X = BT = −B,
+(46)
+being X the exchange matrix deﬁned in (12). Matrices P satisfying the condition X P X = P T are also called
+persymmetric. One important property of persymmetric matrices is that P X and X P are symmetric, and thus can
+be diagonalized by standard eigenvalue decomposition. Let
+(A −B) X = W T ΩW ,
+be the eigenvalue decomposition of (A −B)X. Eq .(43) is obtained by setting W = Φ, ω = |Ω| and Ψ = s W X, where
+s = sign Ω. Moreover, Eq. (A.1) for α = π/2 impose that
+
+P Q
+Q P
+ 
+X
+0
+0 −X
+ 
+P Q
+Q P
+†
+=
+
+x+ 0
+0 x−
+
+,
+is diagonal, with diagonal x+ and x−. Explicit calculations show that if ω is ordered in increasing order, then x+ =
+−x−= s.
+
+
+[PDF PAGE 17]
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+17
+References
+1. D. Press, T.D. Ladd, B. Zhang, Y. Yamamoto, Nature 456(7219), 218 (2008)
+2. C. Weitenberg, M. Endres, J. Sherson, M. Cheneau, P. Schauß, T. Fukuhara, I. Bloch, S. Kuhr, Nature 471(7338), 319
+(2011)
+3. I. Chiorescu, Y. Nakamura, C.M. Harmans, J. Mooij, Science 299(5614), 1869 (2003)
+4. F. Schmidt-Kaler, H. H¨aﬀner, M. Riebe, S. Gulde, G.P. Lancaster, T. Deuschle, C. Becher, C.F. Roos, J. Eschner, R. Blatt,
+Nature 422(6930), 408 (2003)
+5. L.M. Vandersypen, M. Steﬀen, G. Breyta, C.S. Yannoni, M.H. Sherwood, I.L. Chuang, Nature 414(6866), 883 (2001)
+6. S. Bose, Physical review letters 91(20), 207901 (2003)
+7. S. Bose, Contemp. Phys. 48, 13 (2007)
+8. M. Takahashi, Thermodynamics of one-dimensional solvable models (Cambridge University Press, 2005)
+9. A. Bayat, S. Bose, Phys. Rev. A 81, 012304 (2010)
+10. A. Bayat, L. Banchi, S. Bose, P. Verrucchi, Physical Review A 83(6), 062328 (2011)
+11. M. Christandl, N. Datta, A. Ekert, A. Landahl, Physical review letters 92(18), 187902 (2004)
+12. A. Kay, Arxiv preprint arXiv:0903.4274 (2009)
+13. C. Di Franco, M. Paternostro, M. Kim, Physical review letters 101(23), 230502 (2008)
+14. R. Heule, C. Bruder, D. Burgarth, V.M. Stojanovi´c, Phys. Rev. A 82, 052333 (2010)
+15. H. Haselgrove, Physical Review A 72(6), 062326 (2005)
+16. A. W´ojcik, T. Luczak, P. Kurzy´nski, A. Grudka, T. Gdala, M. Bednarska, Phys. Rev. A 72(3), 034303 (2005)
+17. A. W´ojcik, T. Luczak, P. Kurzy´nski, A. Grudka, T. Gdala, M. Bednarska, Phys. Rev. A 75, 022330 (2007)
+18. N.Y. Yao, L. Jiang, A.V. Gorshkov, Z.X. Gong, A. Zhai, L.M. Duan, M.D. Lukin (2010), 1011.2762
+19. S. Lorenzo, T. Apollaro, A. Sindona, F. Plastina, Physical Review A 87(4), 042313 (2013)
+20. S. Paganelli, S. Lorenzo, T.J. Apollaro, F. Plastina, G.L. Giorgi, Physical Review A 87(6), 062309 (2013)
+21. L. Banchi, T.J.G. Apollaro, A. Cuccoli, R. Vaia, P. Verrucchi, Phys. Rev. A 82(5), 052321 (2010)
+22. L. Banchi, T. Apollaro, A. Cuccoli, R. Vaia, P. Verrucchi, New Journal of Physics 13(12), 123006 (2011)
+23. L. Banchi, T. Apollaro, A. Cuccoli, R. Vaia, P. Verrucchi, Nanomaterials and Nanotechnology 1(1), 24 (2011)
+24. T. Apollaro, L. Banchi, A. Cuccoli, R. Vaia, P. Verrucchi, Physical Review A 85(5), 052319 (2012)
+25. T.J. Apollaro, S. Lorenzo, F. Plastina, International Journal of Modern Physics B 27(01n03) (2013)
+26. M.A. Nielsen, I.L. Chuang, Quantum Computation and Quantum Information (Cambridge University Press, 2000)
+27. A. Fujiwara, P. Algoet, Phys. Rev. A 59, 3290 (1999)
+28. R. Horodecki, M. Horodecki, Phys. Rev. A 54, 1838 (1996)
+29. G. Bowen, S. Bose, Phys. Rev. Lett. 87, 267901 (2001)
+30. M. Horodecki, P. Horodecki, R. Horodecki, Phys. Rev. A 60, 1888 (1999)
+31. D. Kretschmann, R.F. Werner, New Journal of Physics 6(1), 26 (2004)
+32. A. Koetsier, R.A. Duine, I. Bloch, H.T.C. Stoof, Phys. Rev. A 77(2), 023623 (2008)
+33. P. Barmettler, A.M. Rey, E. Demler, M.D. Lukin, I. Bloch, V. Gritsev, Phys. Rev. A 78(1), 012330 (2008)
+34. E. Lieb, T. Schultz, D. Mattis, Ann. Phys. 16, 407 (1961)
+35. M. Christandl, N. Datta, T.C. Dorlas, A. Ekert, A. Kay, A.J. Landahl, Phys. Rev. A 71(3), 032312 (2005)
+36. C. Albanese, M. Christandl, N. Datta, A. Ekert, Physical review letters 93(23), 230502 (2004)
+37. M. Yung, S. Bose, Physical Review A 71(3), 032310 (2005)
+38. L. Banchi, A. Bayat, P. Verrucchi, S. Bose, Phys. Rev. Lett. 106, 140501 (2011)
+39. A. Cantoni, P. Butler, Linear Algebra Appl. 13, 275 (1976)
+40. B.N. Parlett, The Symmetric Eigenvalue Problem (SIAM, Philadelphia, 1998)
+41. M. Bruderer, K. Franke, S. Ragg, W. Belzig, D. Obreschkow, Physical Review A 85(2), 022312 (2012)
+42. C. Albanese, M. Christandl, N. Datta, A. Ekert, Phys. Rev. Lett. 93(23), 230502 (2004)
+43. L. Banchi, R. Vaia, Journal of Mathematical Physics 54, 043501 (2013)
+44. T.J. Osborne, N. Linden, Phys. Rev. A 69(5), 052315 (2004)
+45. H.L. Haselgrove, Phys. Rev. A 72(6), 062326 (2005)
+46. L. Campos Venuti, C. Degli Esposti Boschi, M. Roncaglia, Phys. Rev. Lett. 99(6), 060401 (2007)
+47. C. Di Franco, M. Paternostro, D. Tsomokos, S. Huelga, Physical Review A 77(6), 062337 (2008)
+48. M. Markiewicz, M. Wie´sniak, Phys. Rev. A 79, 054304 (2009)
+49. N.Y. Yao, Z.X. Gong, C.R. Laumann, S.D. Bennett, L.M. Duan, M.D. Lukin, L. Jiang, A.V. Gorshkov, Physical Review A
+87(2), 022306 (2013)
+50. P. Cappellaro, L. Viola, C. Ramanathan, Physical Review A 83(3), 032304 (2011)
+51. A. Ajoy, P. Cappellaro, Physical Review A 85(4), 042305 (2012)
+52. P. Badzia¸g, M. Horodecki, P. Horodecki, R. Horodecki, Phys. Rev. A 62, 012311 (2000)
+53. A. Zwick, G. ´Alvarez, J. Stolze, O. Osenda, Arxiv preprint arXiv:1111.2238 (2011)
+54. A. Zwick, G.A. ´Alvarez, J. Stolze, O. Osenda, arXiv preprint arXiv:1306.1695 (2013)
+55. N.Y. Yao, L. Jiang, A.V. Gorshkov, P.C. Maurer, G. Giedke, J.I. Cirac, M.D. Lukin, Nature Communications 3, 800 (2012)
+56. Y. Ping, B.W. Lovett, S.C. Benjamin, E.M. Gauger, Physical review letters 110(10), 100503 (2013)
+57. W. Bakr, J. Gillen, A. Peng, S. F¨olling, M. Greiner, Nature 462(7269), 74 (2009)
+58. G.K. Brennen, C.M. Caves, P.S. Jessen, I.H. Deutsch, Phys. Rev. Lett. 82, 1060 (1999)
+
+
+[PDF PAGE 18]
+18
+Leonardo Banchi: Ballistic quantum state transfer in spin chains
+59. O. Mandel, M. Greiner, A. Widera, T. Rom, T. H¨ansch, I. Bloch, Arxiv preprint quant-ph/0308080 (2003)
+60. M. Greiner, O. Mandel, T. Esslinger, T.W. H¨ansch, I. Bloch, Nature 415, 39 (2002)
+61. J. Sherson, C. Weitenberg, M. Endres, M. Cheneau, I. Bloch, S. Kuhr, Nature (2010)
+62. W. Bakr, A. Peng, M. Tai, R. Ma, J. Simon, J. Gillen, S. Foelling, L. Pollet, M. Greiner, Science 329(5991), 547 (2010)
+63. M. Karski, L. F¨orster, J. Choi, A. Steﬀen, N. Belmechri, W. Alt, D. Meschede, A. Widera, New Journal of Physics 12,
+065027 (2010)
+64. P. Cappellaro, C. Ramanathan, D. Cory, Physical review letters 99(25), 250506 (2007)
+65. C. Ramanathan, P. Cappellaro, L. Viola, D. Cory, New Journal of Physics 13, 103015 (2011)
+66. C. Ramanathan, P. Cappellaro, L. Viola, D. Cory, Arxiv preprint arXiv:1102.3400 (2011)
+67. A. Ajoy, R.K. Rao, A. Kumar, P. Rungta, Physical Review A 85(3), 030303 (2012)
+68. K.R.K. Rao, A. Kumar, International Journal of Quantum Information 10(04) (2012)
+69. F. Plastina, T.J.G. Apollaro, Phys. Rev. Lett. 99(17), 177210 (2007)
+70. G. Gualdi, V. Kostak, I. Marzoli, P. Tombesi, Phys. Rev. A 78(2), 022325 (2008)
+71. S.I. Doronin, A.I. Zenchuk, Phys. Rev. A 81(2), 022321 (2010)
+72. J. Blaizot, G. Ripka, Quantum theory of ﬁnite systems (MIT Press, 1986), ISBN 9780262022149

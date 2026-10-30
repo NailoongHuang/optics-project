@@ -1,0 +1,687 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2025-01-09T05:31:46Z",
+      "timestamp": 1736400706543,
+      "version": "3.32.0"
+    },
+    "reference-count": 43,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              26
+            ]
+          ],
+          "date-time": "2023-04-26T00:00:00Z",
+          "timestamp": 1682467200000
+        },
+        "content-version": "am",
+        "delay-in-days": 268,
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Magnetism and Magnetic Materials"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jmmm.2022.169392",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          21
+        ]
+      ],
+      "date-time": "2022-04-21T15:46:46Z",
+      "timestamp": 1650556006000
+    },
+    "page": "169392",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "special_numbering": "C",
+    "title": [
+      "Space-time duality in magnonics: Temporal diffraction in magnonic waveguides"
+    ],
+    "prefix": "10.1016",
+    "volume": "555",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4006-6402",
+        "authenticated-orcid": false,
+        "given": "A.A.",
+        "family": "Stashkevich",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0005",
+        "volume": "50",
+        "author": "Chumak",
+        "year": "2017",
+        "journal-title": "J. Phys. D"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "020408(R)",
+        "DOI": "10.1103/PhysRevB.92.020408",
+        "volume": "92",
+        "author": "Davies",
+        "year": "2015",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0015",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1103/PhysRevLett.114.247206",
+        "volume": "114",
+        "author": "Garcia-Sanchez",
+        "year": "2015",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "1517",
+        "DOI": "10.1103/RevModPhys.80.1517",
+        "article-title": "Nobel lecture: Origin, development, and future of spintronics",
+        "volume": "80",
+        "author": "Fert",
+        "year": "2008",
+        "journal-title": "Rev. Mod. Phys."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "262",
+        "DOI": "10.1038/nature08876",
+        "volume": "464",
+        "author": "Kajiwara",
+        "year": "2010",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "549",
+        "DOI": "10.1038/nmat3628",
+        "article-title": "and E",
+        "volume": "12",
+        "author": "An",
+        "year": "2013",
+        "journal-title": "Saitoh Nature Mater"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "453",
+        "DOI": "10.1038/nphys3347",
+        "volume": "11",
+        "author": "Chumak",
+        "year": "2015",
+        "journal-title": "Nat. Phys."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0040",
+        "volume": "26",
+        "author": "Krawczyk",
+        "year": "2014",
+        "journal-title": "J. Phys.: Condens. Matter"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0045",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/5.0019328",
+        "volume": "128",
+        "author": "Mahmoud",
+        "year": "2020",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "3160",
+        "DOI": "10.1038/srep03160",
+        "volume": "3",
+        "author": "Jamali",
+        "year": "2013",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "6422",
+        "DOI": "10.1038/s41467-021-26711-z",
+        "volume": "12",
+        "author": "Papp",
+        "year": "2021",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "360",
+        "DOI": "10.1038/s41928-019-0360-9",
+        "volume": "3",
+        "author": "Grollier",
+        "year": "2020",
+        "journal-title": "Nat Electron"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0065",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/1.5042417",
+        "volume": "124",
+        "author": "Brächer",
+        "year": "2018",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0070",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1103/PhysRevApplied.13.034057",
+        "volume": "13",
+        "author": "Watt",
+        "year": "2020",
+        "journal-title": "Phys. Rev. Appl."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0075",
+        "unstructured": "A. N. Slavin, B. A. Kalinikos, and N. G. Kovshikov, in Nonlinear Phenomena and Chaos in Magnetic Materials, edited by P. E. Wigen World Scientific, Singapore, 1995, Chap. 9."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "4781",
+        "DOI": "10.1021/acsphotonics.8b01522",
+        "volume": "5",
+        "author": "Hughes",
+        "year": "2018",
+        "journal-title": "ACS Photonics"
+      },
+      {
+        "year": "2009",
+        "series-title": "Spin Waves: Theory and Applications",
+        "author": "Stancil",
+        "key": "10.1016/j.jmmm.2022.169392_b0085"
+      },
+      {
+        "year": "1996",
+        "series-title": "Magnetization Oscillations and Waves",
+        "author": "Gurevich",
+        "key": "10.1016/j.jmmm.2022.169392_b0090"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "1445",
+        "DOI": "10.1038/s41467-020-15265-1",
+        "volume": "11",
+        "author": "Che",
+        "year": "2020",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "2133",
+        "DOI": "10.1007/s12274-020-3251-5",
+        "volume": "14",
+        "author": "Wang",
+        "year": "2021",
+        "journal-title": "Nano Res."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0105",
+        "doi-asserted-by": "crossref",
+        "unstructured": "H. Yu, O. d' Allivy Kelly, V. Cros, R. Bernard, P. Bortolotti, A. Anane, F. Brandl, F. Heimbach, and D. Grundler, Nat. Commun. 7 (2016) 11255.",
+        "DOI": "10.1038/ncomms11255"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "2702",
+        "DOI": "10.1038/ncomms3702",
+        "volume": "4",
+        "author": "Yu",
+        "year": "2013",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0115",
+        "volume": "100",
+        "author": "Chen",
+        "year": "2019",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0120",
+        "doi-asserted-by": "crossref",
+        "unstructured": "K. Baumgaertl, J. Gräfe, P. Che, A. Mucchietto, J. Förster, N. Träger, M. Bechtel, M. Weigand, G. Schutz, and D. Grundler, Nano Lett. 20 (2020) 7281.",
+        "DOI": "10.1021/acs.nanolett.0c02645"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "738",
+        "DOI": "10.1038/s41467-018-03199-8",
+        "volume": "9",
+        "author": "Liu",
+        "year": "2018",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0130",
+        "volume": "119",
+        "author": "Wang",
+        "year": "2021",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "4374",
+        "DOI": "10.1038/s41467-018-06589-0",
+        "volume": "9",
+        "author": "Houshang",
+        "year": "2018",
+        "journal-title": "Nat. Comms."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0140",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1103/PhysRevLett.120.127201",
+        "volume": "120",
+        "author": "Klingler",
+        "year": "2018",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0145",
+        "doi-asserted-by": "crossref",
+        "unstructured": "V. Sluka, T. Schneider, R. A. Gallardo, A. K akay, M. Weigand, T. Warnatz, R. Mattheis, A. Roldn-molina, P. Landeros, V.Tiberkevich, A. Slavin, G. Schutz, A. Erbe, A. Deac, J. Lindner, J. Raabe, J. Fassbender, and S. Wintz, Nat. Nanotechnol. 14 (2019) 328.",
+        "DOI": "10.1038/s41565-019-0383-4"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "4372",
+        "DOI": "10.1021/acsnano.0c07805",
+        "volume": "15",
+        "author": "Chen",
+        "year": "2021",
+        "journal-title": "ACS Nano"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0155",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1103/PhysRevLett.122.117202",
+        "volume": "122",
+        "author": "Dieterle",
+        "year": "2019",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0160",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1103/PhysRevLett.106.216601",
+        "volume": "106",
+        "author": "Sandweg",
+        "year": "2011",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0165",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/1.4861343",
+        "volume": "104",
+        "author": "Pirro",
+        "year": "2014",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "4220",
+        "DOI": "10.1021/acs.nanolett.0c00657",
+        "volume": "20",
+        "author": "Heinz",
+        "year": "2020",
+        "journal-title": "Nano Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "17A501",
+        "DOI": "10.1063/1.4852135",
+        "volume": "115",
+        "author": "Liu",
+        "year": "2014",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0180",
+        "doi-asserted-by": "crossref",
+        "unstructured": "O. d’Allivy Kelly, A. Anane, R. Bernard, J. Ben Youssef, C. Hahn, A H. Molpeceres, C. Carretero, E. Jacquet, C. Deranlot, P. Bortolotti, R. Lebourgeois, J.-C. Mage, G. de Loubens, O. Klein, V. Cros, and A. Fert, Appl. Phys. Lett. 103 (2013) 082408.",
+        "DOI": "10.1063/1.4819157"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0185",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/1.4976708",
+        "volume": "110",
+        "author": "Collet",
+        "year": "2017",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0190",
+        "doi-asserted-by": "crossref",
+        "unstructured": "V. Torres-Company, J. Lancis, and P. Andrés, “Chapter 1 - Space-Time Analogies in Optics, ” in Progress in Optics, E. Wolf, ed. (Elsevier, 2011), pp. 1-80.",
+        "DOI": "10.1016/B978-0-444-53886-4.00001-0"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "274",
+        "DOI": "10.1364/AOP.5.000274",
+        "volume": "5",
+        "author": "Salem",
+        "year": "2013",
+        "journal-title": "Adv. Opt. Photon."
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "1951",
+        "DOI": "10.1109/3.301659",
+        "volume": "30",
+        "author": "Kolner",
+        "year": "1994",
+        "journal-title": "IEEE J Quantum Electron"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "827",
+        "DOI": "10.1109/3.286176",
+        "volume": "30",
+        "author": "Godil",
+        "year": "1994",
+        "journal-title": "IEEE J Quantum Electron"
+      },
+      {
+        "key": "10.1016/j.jmmm.2022.169392_b0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "625",
+        "DOI": "10.1103/PhysRev.88.625",
+        "volume": "88",
+        "author": "Moshinsky",
+        "year": "1952",
+        "journal-title": "Phys. Rev."
+      },
+      {
+        "year": "1968",
+        "series-title": "Goodman",
+        "author": "Joseph",
+        "key": "10.1016/j.jmmm.2022.169392_b0215"
+      }
+    ],
+    "container-title": [
+      "Journal of Magnetism and Magnetic Materials"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304885322003298?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0304885322003298?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2025-01-08T21:21:44Z",
+      "timestamp": 1736371304000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0304885322003298"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "references-count": 43,
+    "alternative-id": [
+      "S0304885322003298"
+    ],
+    "URL": "https://doi.org/10.1016/j.jmmm.2022.169392",
+    "relation": {},
+    "ISSN": [
+      "0304-8853"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0304-8853"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Space-time duality in magnonics: Temporal diffraction in magnonic waveguides",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Magnetism and Magnetic Materials",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jmmm.2022.169392",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2022 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "169392"
+  }
+}

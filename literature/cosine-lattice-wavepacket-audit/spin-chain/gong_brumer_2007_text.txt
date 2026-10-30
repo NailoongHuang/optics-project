@@ -1,0 +1,724 @@
+[PDF PAGE 1]
+arXiv:quant-ph/0702265v1  28 Feb 2007
+Controlled Quantum State Transfer in a Spin Chain
+Jiangbin Gong1 and Paul Brumer2
+1Department of Physics and Center for Computational Science and Engineering,
+National University of Singapore, 117542, Republic of Singapore
+2Chemical Physics Theory Group and Center for Quantum Information and Quantum Control,
+University of Toronto, Toronto, Canada M5S 3H6
+(Dated: OCT. 25, 2006)
+Control of the transfer of quantum information encoded in quantum wavepackets moving along
+a spin chain is demonstrated. Speciﬁcally, based on a relationship with control in a paradigm of
+quantum chaos, it is shown that wavepackets with slow dispersion can automatically emerge from
+a class of initial superposition states involving only a few spins, and that arbitrary unspeciﬁed
+travelling wavepackets can be nondestructively stopped and later relaunched with perfection. The
+results establish an interesting application of quantum chaos studies in quantum information science.
+PACS numbers: 03.67.Hk, 32.80.Qk, 05.45.Mt, 75.10.Pq
+I.
+INTRODUCTION
+Great eﬀort is being devoted to studies of spin chains
+as promising “quantum wires” for quantum information
+transfer. With spin chains, a quantum state can be trans-
+ferred without requiring an interface between the commu-
+nication channel and a quantum computer [1], i.e., quan-
+tum information can be transferred and processed with
+the same hardware. Spin chains also allow for quantum
+computing with an always-on interaction [2, 3], even in
+the presence of a a global control ﬁeld [3]. The latest ex-
+perimental progress on fabrication and characterization
+of atomic spin chains was reported in Ref. [4]. Spin chain
+Hamiltonians may be also realized by atomic gas in an
+optical lattice.
+Perfect state transfer in spin chains might occur un-
+der special circumstances [5, 6, 7]. However, in the gen-
+eral case, dispersion eﬀects often degrade the transmis-
+sion ﬁdelity and improving the ﬁdelity becomes a central
+issue.
+Notably, it has been proven that the transmis-
+sion ﬁdelity can be signiﬁcantly improved if the receiver
+stores the received signal in a large quantum memory
+before decoding [8]. Another general approach to high-
+ﬁdelity quantum state transfer advocates the use of quan-
+tum wavepackets to encode the quantum state of a qubit
+[9, 10]. This approach is important because dispersion of
+wavepackets can be insigniﬁcant. In particular, Osborne
+and Linden [9] have shown that high transmission ﬁdelity
+can be achieved by exploiting, if attainable, a Gaussian
+wavepacket whose shape is well preserved. The slow dis-
+persion of a wavepacket can be further suppressed by
+applying a static parabolic (hence global) magnetic ﬁeld
+[11].
+In the context of the wavepacket approach to quantum
+state transfer, we focus below on two questions: (1) how
+can one create spin wavepackets with certain desired fea-
+tures, and (2) how can one control the motion of a quan-
+tum wavepacket in a spin chain so that the packet can
+be stopped at an arbitrary time, held, and then restarted
+later, without loss of quantum information. Such type of
+controlled quantum state transfer, if possible, should be
+a highly valuable tool in a variety of situations, e.g., cases
+in which the information receivers need additional wait-
+ing time to repair a quantum memory, or to prepare for
+a time window of high transmission ﬁdelity. The impor-
+tance of stoppable quantum state transfer may be also
+appreciated by noting the analogy to the potential im-
+pact of the stopping of light [12] in quantum information
+science. Further, a working scenario for the stopping and
+perfect relaunching of quantum state evolution of a spin
+chain should be also of considerable interest in the con-
+text of perfect quantum state reconstruction and perfect
+quantum state storage in systems of interacting qubits
+[13].
+In this paper we ﬁrst show that by optimizing a
+particular transport property using quantum superpo-
+sition states comprising only a few spins (e.g., four or
+ﬁve), wavepacket pairs with some highly desired fea-
+tures emerge automatically from the ensuing dynam-
+ics. We then demonstrate that by applying a sequence
+of pulsed parabolic magnetic ﬁelds one can manipulate
+these wavepackets, stopping them and later relaunching
+the travelling wavepackets without individually address-
+ing the spins. As shown below, the stopping, followed by
+relaunching, can in principle perfectly preserve the quan-
+tum information being transferred. This is made possible
+by taking advantage of powerful relationships between
+controlling spin dynamics and controlling quantum dif-
+fusion dynamics in a paradigm of quantum chaos.
+This paper is organized as follows. In Sec. II we intro-
+duce a mapping between a Heisenberg spin chain kicked
+by a parabolic magnetic ﬁeld and a paradigm in quan-
+tum chaos [14, 15]. In Sec. III we propose a conceptually
+simple approach to the creation of spin wavepacket pairs
+moving along the spin chain with slow dispersion and
+other desired features. The key result of this work is in
+Sec. IV, where stopping and relaunching spin wavepack-
+ets are studied both numerically and analytically. Section
+V concludes this paper.
+
+
+[PDF PAGE 2]
+2
+II.
+HEISENBERG SPIN CHAIN IN A PULSED
+MAGNETIC FIELD AND THE DETLA-KICKED
+ROTOR
+Consider then an open-ended Heisenberg chain of N
+spins in a constant magnetic ﬁeld B and subject to a
+parabolic δ-pulsed magnetic ﬁeld.
+The Hamiltonian is
+given by
+H = −J
+2
+N−1
+X
+n=1
+σn · σn+1 −B
+N
+X
+n=1
+σz
+n
++
+X
+j
+δ(t −jT0)
+N
+X
+n=1
+σz
+nCj
+(n −n0)2
+2
+,
+(1)
+where σ ≡(σx, σy, σz) are the Pauli matrices, J is
+the nearest-neighbor spin-spin interaction constant, Cj
+and n0 are the coeﬃcient and minimum location of the
+parabolic kicking ﬁeld, and T0 is the kicking period. Be-
+low, we denote the n = 1 (n = N) spin as the left (right)
+end of the chain. The constant ﬁeld B lifts the system
+degeneracy and the dynamics is restricted to a subspace
+with ﬁxed total polarization Sz deﬁned as
+Sz ≡
+N
+X
+n=1
+σz
+n.
+(2)
+Throughout this work we consider only the subspace of
+Sz = 1.
+Let |m⟩be one of the basis states, with the mth spin
+up and all other spins down. The propagator for the time
+period [jT0 −0+, (j + 1)T0 −0+] is ˆV (2JT0) ˆU(Cj). Here
+ˆU(Cj) represents the action due to the delta pulse, with
+⟨m| ˆU(Cj)|n⟩= exp[−i(Cj/2)(n −n0)2]δmn.
+(3)
+The term ˆV stems from the evolution inherent in the
+Heisenberg interaction. An important recent study [14]
+has shown that, in the N →+∞limit (and apart from
+some irrelevant phase)
+⟨m| ˆV (2JT0)|n⟩≈i(m−n)J(m−n)(2JT0),
+(4)
+where J(m−n) is an ordinary Bessel function. The ana-
+lytical behavior of ˆU(Cj) and ˆV (2JT0) is therefore com-
+pletely in parallel with that associated with the propaga-
+tor of the δ-kicked rotor (DKR) (the best known model
+in quantum chaos [16]) with Hamiltonian
+HDKR = ( ˆP −P0)2/2 −K cos(θ)
+X
+j
+δ(t −j).
+(5)
+Indeed, in the representation of the basis states |m⟩≡
+cos(mθ)/√π and for an eﬀective Planck constant ¯h, the
+DKR propagator takes the familiar form ˆv(k)ˆu(¯h), with
+⟨m|ˆu(¯h)|n⟩= exp[−i(¯h/2)(n −˜n0)2]δmn,
+(6)
+and
+⟨m|ˆv(k)|n⟩≈i(m−n)J(m−n)(k)
+(7)
+with (k = K/¯h).
+Comparing these two systems, it is
+clear that upon the mapping
+|m⟩↔|m⟩,
+(8)
+2JT0 ↔k,
+(9)
+n0 ↔P0/¯h,
+(10)
+Cj ↔¯h,
+(11)
+the many-body spin chain dynamics is mapped to that of
+DKR [14, 15, 17], i.e., the motion of a spin wavepacket
+along the spin chain is mapped to DKR quantum dif-
+fusion dynamics in its m-space. Hence we can, when-
+ever possible, shed light on the former by considering as-
+pects of the latter, e.g., quantum resonance, Kolmogorov-
+Arnold-Moser (KAM) curves in phase space, etc. More
+signiﬁcantly for this work, as shown below, it allows us
+to use tools from the control of quantum DKR dynamics
+[18, 19, 20] to manipulate states in the spin chain. Fur-
+ther, this mapping between spin-chain and DKR allows
+us to go beyond the parameter regime conﬁned by the
+true DKR (discussed below).
+III.
+GENERATION OF SPIN WAVEPACKETS
+In the context of the wavepacket approach to quantum
+state transfer, we now consider the ﬁrst issue on spin
+wavepacket generation [21].
+Given a small number of
+basis states that could be used for encoding the state
+of a qubit, what initial superposition states should be
+exploited to induce the creation of quantum wavepackets
+with slow dispersion? Here this interesting question is
+considered in the absence of an external ﬁeld, where the
+system propagator is given by ˆV (2JT0). Remarkably, the
+associated DKR analogy now becomes a case of quantum
+resonance with ¯h = 4π, with a propagator analogously
+given by
+ˆv(k = 2JT0) = exp[i(2JT0) cos(θ)].
+(12)
+Using this connection, the issue becomes to ﬁnd initial
+superposition states within a given small subspace, such
+that the evolving quantum state remains well localized.
+At ﬁrst glance this “localization” requirement seems too
+demanding because the main feature of quantum res-
+onance dynamics is ballistic diﬀusion in the DKR m-
+space. However, as we have discovered, this can still be
+obtained by maximizing a diﬀusion rate of DKR. Qual-
+itatively speaking, for superposition states maximizing
+a quadratic diﬀusion rate introduced below, the ensu-
+ing dynamics will push outwards as much as possible the
+excitation proﬁle in the m-space, thus generating two
+well-separated wavepackets with almost zero amplitude
+in between.
+
+
+[PDF PAGE 3]
+3
+ 0
+ 0.05
+ 0.1
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+ 
+(a)
+ 0
+ 0.05
+ 0.1
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+index of spins
+(b)
+FIG. 1: Emergence of a wavepacket pair in a Heisenberg chain
+of 201 spins, shown with the projection probability of the
+many-body wavefunction onto basis states |m⟩. The initial
+condition is a superposition state |ψm0⟩given by Eq. (15), for
+m0 = 101 in (a) and m0 = 30 in (b). Th system wavefunction
+then evolves, with its shape given by the solid lines at time t1
+with 2Jt1 = 15, and by the dashed lines after an additional
+period t2, with 2Jt2 = 30 in (a) and 2Jt2 = 45 in (b). The
+arrows show the travel direction of the wavepackets.
+Quantitatively, let us ﬁrst deﬁne the diﬀusion rate op-
+erator as
+ˆD =
+lim
+t→+∞
+ˆE(t) −ˆE(0)
+t2
+,
+(13)
+where ˆE(t) is the energy operator for the free rotor in the
+Heisenberg representation. For the quantum resonance
+case considered here one obtains
+ˆD = A sin2(θ),
+(14)
+where A is a constant. Note that ˆD only couples states
+|m⟩of the same parity. Consider now a sample case where
+a superposition state
+|ψm0⟩=
+n=2
+X
+n=−2
+β2n|m0 + 2n⟩
+(15)
+is exploited to encode a qubit state, i.e., only ﬁve basis
+states are used here. The state with the largest diﬀusion
+rate, denoted D, is simply given by the eigenfunction of
+ˆD in the subspace of |m0 + 2n⟩(−2 ≤n ≤2) with the
+largest eigenvalue. In particular, if these basis states do
+not involve state |0⟩, then the maximized D is attained
+if β0 = 0.577, β−2 = β+2 = −0.5, β−4 = β+4 = 0.289.
+The signiﬁcance of such an initial superposition state
+with maximized D is demonstrated in Fig. 1(a), with
+m0 = 101 for a 201-spin chain.
+In particular, a well-
+separated wavepacket pair is seen to quickly emerge, and
+its dispersion after its emergence is impressively slow in
+the absence of any external static ﬁelds. Note that, unlike
+the accelerator mode approach proposed in Ref. [14], the
+wavepacket pair is created by the system dynamics itself.
+Note also that the excitation amplitudes between the two
+wavepackets are surprisingly small. Because the total po-
+larization here is ﬁxed, a well-separated wavepacket pair
+directly indicate quantum entanglement between well-
+separated parts of the spin chain, and their travel in
+opposite directions distributes information or entangle-
+ment to both ends of the spin chain.
+Further results
+(not shown) indicate that in the case of minimized D or
+an arbitrarily chosen initial state, the system dynamics
+generically creates a quickly delocalizing state (note also
+that even in chaotic cases diﬀerent initial superposition
+states may also lead to dramatic diﬀerences in the en-
+suing quantum diﬀusion dynamics [22]). These further
+demonstrate the important role of an initial superposi-
+tion state with a maximized diﬀusion rate in encoding
+the quantum information. Certainly, if more basis states
+are allowed in encoding the quantum information, then
+wavepacket pairs with even slower dispersion can be cre-
+ated with the same approach.
+It is also desirable to be able to create a well-separated
+wavepacket pair that transfers information to a common
+end of the spin chain. For example, if two wavepackets
+with identical shape can be created, then one of them
+may be analogous to a “backup” copy as the other is be-
+ing transferred and received ﬁrst. Note that this possibil-
+ity is not in violation of the quantum no-cloning theorem,
+because here the two wavepackets do not independently
+describe the quantum state of the involved spins. Rather,
+the two wavepackets describe the entanglement between
+two particular sections of the spin chain.
+The creation of such a wavepacket pair is achieved here
+by going beyond the kicked rotor perspective and exploit-
+ing the boundary eﬀect associated with the spin chain.
+That is, we apply the above scenario, but with the ini-
+tial encoding state |ψm0⟩located at m0 < N/2, and with
+the requirement that no information receiver presents at
+the left (n = 1) end.
+To be more speciﬁc, consider a
+sample result shown in Fig. 1(b), with m0 = 30. The
+wavepacket creation dynamics in the early stage is seen to
+be analogous to the case of Fig. 1(a). Sometime later, the
+generated wavepacket moving to the left hits the bound-
+ary and gets reﬂected. As demonstrated in Fig. 1(b),
+this then creates a pair of wavepackets where both of the
+members of the pair are moving to the right, with their
+shape indistinguishable from one another, with almost
+zero excitation in-between, and a peak-to-peak distance
+of 2(m0 −1) spins.
+IV.
+STOPPING AND RELAUNCHING
+WAVEPACKET PROPAGATION
+In this section, taking the wavepackets obtained in the
+previous section as examples, we shall consider an in-
+dependent issue, namely, stopping and relaunching the
+quantum state transfer along a spin chain. A parabolic
+magnetic ﬁeld [see Eq. (1)] is proposed as the control
+ﬁeld with a simple global feature, and we aim to achieve
+our control objective with an always-on Heisenberg in-
+teraction.
+Thanks to the DKR analogy discussed above, the prob-
+
+
+[PDF PAGE 4]
+4
+ 0
+ 0.04
+ 0.08
+ 0.12
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+  
+(a)
+ 0
+ 0.04
+ 0.08
+ 0.12
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+  
+(b)
+ 0
+ 0.04
+ 0.08
+ 0.12
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+index of spins
+(c)
+FIG. 2: Stopping of quantum state transfer in a spin chain by
+a parabolic kicking ﬁeld, with Cj = 0.5. The initial state, the
+meaning of the wavefunction proﬁle, and the spin chain used
+for calculations are the same as in Fig. 1(a). 2JT0 = 0.25,
+and the ﬁrst δ-kick comes at time t1 with 2Jt1 = 15. (a) and
+(b) are the results after 100 and 200 kicks. The kicking ﬁeld is
+then turned oﬀand (c) displays the state after an additional
+period t2 with 2Jt2 = 30.
+lem is now converted into the question of how to stop and
+successfully restart the transport process in the DKR m-
+space. We do so below by exploiting control features of
+the DKR system. Two features are relevant, one classical
+and one quantal.
+The classical basis of our control scenario arises by
+exploiting the phase space KAM curves of the underly-
+ing classical dynamics. That is, if the kicking magnetic
+ﬁeld is suﬃciently frequent that the chaoticity parame-
+ter |2JT0Cj| in the classical DKR is suﬃciently small, the
+underlying classical dynamics will be mainly integrable
+and the associated KAM curves will present strong bar-
+riers to the quantum transport in the m-space. Because
+KAM curves will be almost everywhere, these classical
+structures can eﬀectively stop the travel of arbitrary and
+unknown quantum wavepackets.
+Figure 2 displays the fate of the moving wavepacket
+pair shown in Fig.
+1(a) (solid lines) after a kicking
+parabolic ﬁeld is introduced. As is clearly seen in Fig.
+2(a) and Fig. 2(b), the transfer of the wavepacket pair
+to both ends of the spin chain is stopped. This dynam-
+ical eﬀect can also be understood as a type of quantum
+Zeno eﬀect achieved by frequently applying (but far from
+inﬁnitely fast) external pulses to a system.
+However, although the wavepacket pair in Figs 2(a)
+and 2(b) has stopped moving, its internal structure is
+seen to be changing in a subtle manner. This indicates
+that evolution of the quantum phases characterizing the
+stopped wavepackets is still not frozen. This fact turns
+out to be disastrous when the kicking ﬁeld is turned oﬀ
+in order to relaunch the state transfer. For example, Fig.
+2(c) displays the wavefunction after the kicking ﬁeld has
+been oﬀfor a period of t2 with 2Jt2 = 30: the background
+ﬂuctuation is greatly increased, and the main peaks of the
+wavepacket pair do not move further.
+Hence, using KAM curves alone, which is a purely
+TABLE I: The j-dependence of Cj [see Eq. (1)] in an ex-
+plicitly designed pulse sequence for the stopping of arbitrary
+wavepackets for a period of 2M kicks. C is a constant dis-
+cussed in the text. Note that some system parameters used
+here are beyond what is allowed in a true kicked rotor system.
+j
+1
+(1, M]
+M + 1 (M + 1, 2M]
+2M + 1
+Cj
+C/2 + 2π
+C
+2π
+−C
+−C/2
+classical control mechanism, does not oﬀer a satisfactory
+means of stopping the wavepacket. To improve the con-
+trol one must compensate for the quantum phases that
+are accumulated during the stopping process. This phase
+accumulation is due to the spin-spin interaction as well
+as the kicking ﬁeld.
+Consider then an important observation made in our
+previous work on the quantum control of DKR dynamics
+[18, 20], i.e.,
+⟨m|ˆv(k)|n⟩= 1
+π
+Z 2π
+0
+cos(mθ) exp[ik cos(θ)] cos(nθ)dθ
+= ⟨m|(−1)mˆv(−k)(−1)n|n⟩
+= ⟨m|ˆu(2π)ˆv(−k)ˆu(2π)|n⟩.
+(16)
+The ﬁrst line in Eq. (16) holds by deﬁnition, the sec-
+ond line becomes obvious if the integration variable θ is
+changed to θ + π, and the last line is obtained by use of
+the deﬁnition of ˆu(¯h). Equation (16) hence proves
+ˆv(k) = ˆu(2π)ˆv(−k)ˆu(2π).
+(17)
+Returning to a ﬁnite spin chain system, this result indi-
+cates that
+ˆV (2JT0) ≈ˆU(2π) ˆV (−2JT0) ˆU(2π).
+(18)
+That is, the sign of the intrinsic interaction constant J
+can be eﬀectively reversed if we apply two parabolic δ-
+kicks of particular strength. As such, it becomes possible
+to compensate for the quantum phase evolution inherent
+in the spin chain. As to the quantum phases induced by
+the kicking ﬁeld, they can also be compensated for by
+considering kicking ﬁelds with the sign of Cj reversed.
+Given these considerations we present in Table I an
+explicitly designed special pulse sequence that can re-
+launch stopped wavepackets with perfection.
+For this
+special pulse sequence, the KAM curves associated with
+small |2JT0C| still play a key role because they directly
+prevent the state transfer, in the same manner as demon-
+strated in Fig. 2. What is remarkable now is the total
+time evolution operator associated with the entire stop-
+ping process. In terms of the DKR analogy, this operator
+can be written as (after some manipulation)
+[ˆu(−C/2)ˆv(k)ˆu(−C/2)]M [ˆu(C′/2)ˆv(k)ˆu(C′/2)]M
+= [ˆu(−C/2)ˆv(k)ˆu(−C/2)]M [ˆu(C/2)ˆv(−k)ˆu(C/2)]M
+= [ˆu(−C/2)ˆv(k)ˆu(−C/2)]M′
+[ˆu(C/2)ˆv(−k)ˆu(C/2)]M′
+= · · · = 1,
+(19)
+
+
+[PDF PAGE 5]
+5
+ 0
+ 0.05
+ 0.1
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+ 
+(a)
+ 0
+ 0.05
+ 0.1
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+ 
+(b)
+ 0
+ 0.05
+ 0.1
+ 1
+ 51
+ 101
+ 151
+ 201
+prob.
+index of spins
+(c)
+FIG. 3:
+Same as in Fig. 2, but for an explicitly designed
+pulse sequence given in Table I, with C = 0.5, M = 100. The
+transfer of the wavepacket pair along the spin chain is stopped
+for 2M kicks. Panels (a) and (b) are the results after 100 and
+200 kicks. The result in (c) shows that the state transfer is
+indeed relaunched with perfection.
+where C′ = C + 4π, M ′ = M −1. In obtaining Eq. (19)
+we have used
+ˆu(C) = ˆu(C/2 + 2π)ˆu(C/2 + 2π)
+(20)
+and Eq. (16). Equation (19) proves that at the end of the
+stopping time all properties characteristic of an unknown
+quantum wavepacket can be exactly restored. This exact
+rephasing indicates that the dynamical evolution associ-
+ated with the second M/2 kicks, in addition to oﬀering
+a dynamical barrier to stop the quantum transport, pre-
+cisely reverses the evolution associated with the ﬁrst M/2
+kicks. As such, the stopping is entirely nondestructive,
+as long as the system is not subject to noise eﬀects dur-
+ing the stopping process. Evidently then, wavepacket-
+assisted information transfer can be perfectly relaunched
+as the kicking ﬁeld is turned oﬀ. This theoretical result
+applies exactly to an inﬁnitely long spin chain. But fortu-
+nately, as also demonstrated below, it applies extremely
+well to a ﬁnite-length chain. Note also that the designed
+pulse sequence in Table I is a signiﬁcant extension beyond
+a true DKR system because both positive and negative
+“¯h” (¯h ↔Cj) are exploited here.
+In parallel with Fig. 2, Fig. 3 displays a computational
+example using the pulse sequence given in Table I. As in
+Fig. 2, right before the ﬁrst kick the quantum state is the
+wavepacket pair described by the solid lines in Fig. 1(a).
+Figure 3(a) conﬁrms that the wavepacket pair is not mov-
+ing as the special pulse sequence is on. Figure 3(b) shows
+that at the end of the stopping period, we have restored
+the initial condition [compare Fig. 3(b) with the solid
+lines in Fig. 1(a)]. The restoration ﬁdelity in the numer-
+ical calculations for a 201-spin chain is found to be higher
+than [1 −10−13]. The kicking ﬁeld is then turned oﬀ. As
+expected, quantum state transfer is relaunched and the
+wavepackets continue their journey, with slow dispersion,
+towards both ends of the spin chain [Fig. 3(c)]. Indeed,
+results in Fig. 3(c) are indistinguishable from the dashed
+lines in Fig. 1(a).
+The control scenario proposed in this work can also
+lead to other very interesting approaches to the manipu-
+lation of quantum entanglement dynamics of a spin chain.
+Here we brieﬂy discuss three possibilities. First, by mod-
+ifying the kicking ﬁeld proﬁle we can choose to stop only
+one component of a wavepacket pair, e.g., of the pair
+shown in Fig. 1(b) with dashed lines, thereby oﬀering an
+interesting method of tuning the time delay between two
+wavepackets moving in the same direction.
+This then
+oﬀers a means of controlling the distance between two
+entangled parts of the spin chain. Second, because the
+sign of the intrinsic spin-spin interaction constant J can
+be eﬀectively reversed if we apply δ-kicks of particular
+strength, it can be easily shown that one can bounce
+back an arbitrary and unknown moving wavepacket to
+the sender at a time of our choosing. Third, by control-
+ling the time delay between the two wavepackets and/or
+taking advantage of the feasibility of time-reversal, we
+may also recombine two localized wavepackets at a lo-
+cation diﬀerent from that of the initial state. This re-
+combination dynamics resembles that of a double-slit ex-
+periment, thereby generating interesting interference pat-
+terns along the spin chain. Such kind of interference pat-
+terns of spin excitations, and their fate under a variety
+of circumstances, may work as a novel interferometer for
+fundamental studies in quantum physics.
+V.
+CONCLUSION
+To conclude, based on a mapping between a kicked
+spin chain and the delta-kicked rotor system [14], we
+have shown that previous quantum control results in the
+delta-kicked rotor system [18, 19, 20, 22] can be applied
+to the control of spin wavepacket propagation and hence
+the control of propagating quantum information encoded
+in wavepackets. Speciﬁcally, we have proposed a simple
+approach to wavepacket creation in a Heisenberg spin
+chain and demonstrated the possibility of stopping and
+relaunching information transfer without individually ad-
+dressing spins or turning oﬀspin-spin interactions. Sev-
+eral interesting applications of this work in manipulating
+the dynamics of a spin chain are also discussed. The re-
+sults indicate that many insights from the quantum chaos
+research can be very useful for quantum information sci-
+ence. This work also adds more support to the use of
+spin chains as quantum wires, and might be useful in
+designing new quantum computation algorithms with an
+always-on qubit-qubit interaction [2, 3]. Extensions to
+other types of spin chains are under consideration.
+Acknowledgments: The authors thank one of the
+referees for thought-provoking comments.
+J.G. is sup-
+ported by the start-up funding (WBS No.
+R-144-050-
+193-101 and No. R-144-050-193-133), National Univer-
+sity of Singapore, and the “YIA” funding (WBS No.
+R-144-000-195-123) from the oﬃce of Deputy President
+(Research & Technology), National University of Singa-
+pore. P.B. was supported by the Natural Sciences and
+
+
+[PDF PAGE 6]
+6
+Engineering Research Council of Canada. J.G. thanks
+Prof. Berthold-Georg Englert for an interesting comment
+on this work, and Dario Poletti and Wenge Wang for crit-
+ical reading of this manuscript.
+[1] S. Bose, Phys. Rev. Lett. 91, 207901 (2003).
+[2] S.C. Benjamin and S. Bose, Phys. Rev. Lett. 90, 247901
+(2003).
+[3] J. Fitzsimons and J. Twamley, Phys. Rev. Lett. 97,
+090502 (2006).
+[4] C.F. Hirjibehedin, C.P. Lutz, and A. J. Heinrich, Science
+312, 1021 (2006).
+[5] M. Christandl et al., N. Datta, A. Ekert, and A.J. Lan-
+dahl, Phys. Rev. Lett. 92, 187902 (2004); D. Burgarth,
+V. Giovannetti and S. Bose, J. Phys. A 38, 6793 (2005).
+[6] D. Burgarth and S. Bose, Phys. Rev. A 71, 052315
+(2005); A. Kay, ibid 73, 032306 (2006).
+[7] D.L. Feder, Phys. Rev. Lett. 97, 180502 (2006).
+[8] V. Giovannetti and D. Burgarth, Phys. Rev. Lett. 96,
+030501 (2006).
+[9] T.J. Osborne and N. Linden, Phys. Rev. A 69, 052315
+(2004).
+[10] H.L. Haselgrove, Phys. Rev. A 72, 062326 (2005).
+[11] T. Shi, Y. Li, Z. Song, and C.P. Sun, Phys. Rev. A 71,
+032309 (2005).
+[12] C. Liu et al., Nature 409, 490 (2001); M. Bajcsy, A.S.
+Zibrov, and M.D. Lukin, ibid 426, 638 (2003).
+[13] For example, S.M. Giampaolo, F. Illuminati, A. Dilisi,
+and G. Mazzarella, Inter. J. Quant. Info., Vol. 4, No. 3,
+507 (2006), and references therein.
+[14] T. Boness, S. Bose, and T.S. Monteiro, Phys. Rev. Lett.
+96, 187201 (2006).
+[15] T.
+Boness,
+M.M.A.
+Stocklin,
+and
+T.S.
+Monteiro,
+quant-ph/0612074.
+[16] G. Casati and B. Chirikov, Quantum chaos: between or-
+der and disorder (Cambridge University Press, New York,
+1995).
+[17] For an early study of mapping many-body systems to
+one-dimensional dynamical systems, see T. Prosen, Phys.
+Rev. Lett. 80, 1808 (1998).
+[18] J.B. Gong, H.J. W¨orner, and P. Brumer, Phys. Rev. E
+68, 056202 (2003); 68, 026209 (2003).
+[19] J.B. Gong and P. Brumer, Phys. Rev. E 70, 016202
+(2004).
+[20] J.B. Gong and P. Brumer, Ann. Rev. Phys. Chem. 56, 1
+(2005).
+[21] Within the framework of the wavepacket approach to
+quantum state transfer, the decoding of the transported
+wavepackets is assumed to be doable and is not discussed
+in this work.
+[22] J.B. Gong and P. Brumer, Phys. Rev. Lett. 86, 1741
+(2001).

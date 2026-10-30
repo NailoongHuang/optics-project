@@ -1,0 +1,476 @@
+=== PDF PAGE 1 ===
+Non-Dispersive Space-Time Wave Packets Propagating in Dispersive Media
+Hao He,1, 2 Cheng Guo,3, ∗and Meng Xiao1, †
+1Key Laboratory of Artiﬁcial Micro- and Nano-structures of Ministry of Education
+and School of Physics and Technology, Wuhan University, Wuhan 430072, China
+2Hongyi Honor school, Wuhan University, Wuhan 430072, China
+3Department of Applied Physics, Stanford University, California 94305, USA
+Space-time wave packets can propagate invariantly in free space with arbitrary group velocity thanks to the
+spatio-temporal correlation. Here it is proved that the space-time wave packets are stable in dispersive media
+as well and free from the spread in time caused by material dispersion. Furthermore, the law of anomalous
+refraction for space-time wave packets is generalized to the weakly dispersive situation. These results reveal
+new potential of space-time wave packets for the applications in real dispersive media.
+INTRODUCTION
+Most materials are dispersive media in which waves of dif-
+ferent frequencies travel at different velocities.[1, 2] Disper-
+sion causes the shape of a wave pulse to change as it travels,
+which is known as group velocity dispersion.[3] The group
+velocity dispersion limits many applications such as broad-
+band optical communication and nanophotonics devices.[4, 5]
+In addition to dispersion, diffraction also causes the distortion
+of a pulse during the propagation. There have been a number
+of studies on diffraction-free beams, such as the well-known
+Bessel beams, Airy beams and X-shaped waves.[6–10] How-
+ever, little efforts have been devoted to resist the dispersive
+propagation in real linear material, and the dispersion is con-
+sidered as an intrinsic and inevitable nature of material.
+We are interested here in resisting the temporal spread
+caused by dispersion of material. Achieving this goal can have
+tremendous implications for optical communication, where
+information may get lost as pulses spread in time and merge
+due to dispersion effect.[11, 12] One typical strategy for ma-
+terial dispersion compensation in optical ﬁber is to strike
+a balance between the material dispersion and waveguide
+dispersion.[12] However, such compensation only works at
+ﬁxed wavelength, i.e.
+the zero-dispersion wavelength for
+single-mode optical ﬁber.
+Here we prove that a recently proposed propagation-
+invariant wave called space-time wave packet does not suf-
+fer from material dispersion.[13] Without any requirement
+for the medium, space-time wave packet serves as a general
+method for dispersion-free propagation in dispersive media.
+Moreover, we ﬁnd that other unconventional properties of the
+space-time wave packets also exist in dispersive medium, for
+example, arbitrary group velocity.[13] We also modify the
+law of refraction for space-time wave packets, with additional
+terms introduced by material dispersion.[14] Our work here
+provides a general theoretical framework for space-time wave
+packets in dispersive media.
+The rest of the paper is organized as follows. In Sec.2 , we
+validate the non-dispersive propagation of space-time wave
+packets in dispersive media. In Sec.3 , we modify the refrac-
+tion law for space-time wave packets at the interface of two
+dispersive media. In Sec.4 , we consider the high order con-
+tribution to the rigid propagation of space-time wave packets.
+We conclude in Sec.5 .
+SPACE-TIME WAVE PACKETS IN DISPERSIVE MEDIA
+In this section, we ﬁrst show the existence of space-
+time wave packets in dispersive media both theoretically and
+numerically, then consider a more speciﬁc case of quasi-
+monochromatic and paraxial condition in weakly dispersive
+media.
+Consider a light pulse with scalar ﬁeld U(x, y, z, t) =
+A(x, y, z, t)exp[−i(ω0t −n0k0z)] propagating along the z-
+axis in a dispersive medium whose refraction index is fre-
+quency dependent n = n(Ω), where A(x, y, z, t) is the slowly
+varying envelope, ω0 is the frequency of the carrier, n0 is the
+refraction index of the center frequency ω0, k0 = ω0/c is the
+wave number and Ω= ω −ω0 is the frequency with respect
+to ω0. The wave can be decomposed into plane waves:
+A(x, y, z; t) =
+ZZZ
+˜A(kx, ky, Ω)×
+ei{kxx+kyy−Ωt+[kz(kx,ky,Ω)−n0k0]z}dkxdkydΩ
+(1)
+where kx and ky are components of the transverse wave vector
+k⊥= (kx, ky) and
+kz(kx,ky,Ω) =
+q
+[n(ω0 + Ω)/c]2 −(k2x + k2y)
+(2)
+Ideally, space-time wave packet consists of precisely se-
+lected plane waves such that its spectrum exhibits a special
+delta function:
+˜A(kx, ky, Ω) = ˜A0(kx, ky, Ω) · δ[Ω−vg(kz −n0k0)]
+(3)
+where ˜A0(kx, ky, Ω) is a spectrum of an arbitrary wave pulse.
+Substitute Equation (3) into Equation (1) and we obtain
+A(x, y, z; t) =
+ZZ
+˜A0[kx, ky, Ω(k⊥)]×
+ei[kxx+kyy+(kz−n0k0)·(z−vgt)]dkxdky
+= A(x, y, 0; t −z/vg)
+(4)
+arXiv:2109.00782v1  [physics.optics]  2 Sep 2021
+
+
+=== PDF PAGE 2 ===
+2
+Equation (4) implies that the space-time wave packet can also
+exist in dispersive medium. This leads to several unconven-
+tional properties of space-time wave packet. First, the trans-
+verse ﬁeld proﬁle is unchanged during the propagation. Sec-
+ond, the temporal proﬁle does not spread despite the disper-
+sion of material. Third, the wave packet travels at a ﬁxed
+group velocity vg whatever the actual dispersion is like.
+To be more speciﬁc, the role of such a δ spectrum in Equa-
+tion (3) can be interpreted in the following geometry. The
+band structure of light in free space is a 3D light cone in the
+4D (ω, k) space (Figure 1a), and in dispersive medium the
+band structure is a 3D hypersurface, for example Figure 1b.
+Ordinary pulses has a 3D spectrum distribution on the 3D hy-
+persurface because of the independence between space-time
+coordinates. However, the δ function, denoted by the tilted
+hyperplane Ω= vg(kz −n0k0) in Figure 1a&b, selects a 2D
+distribution out of the 3D distribution, by correlating time and
+space. In this way one can construct a both diffraction-free
+and dispersion-free wave packet in dispersive media by lin-
+ear superposition of the plane waves at the intersection of the
+hyperplane and band dispersion.
+Through a rigid numerical demonstration, we validate
+the non-dispersive propagation of space-time wave packets,
+shown schematically in Figure 1c. Here we consider a homo-
+geneous material with a frequency-dependent refraction index
+n(Ω) = n0 + βΩ, where n0 = 0.7, β = 5 × 10−15 s. A Gaus-
+sian wave packet propagates inside such a medium with its
+central wave length λ0 = 1 µm, waist radius W0 = 30 µm
+and temporal width τ0 ≈1.7 ps. Here the ﬁeld is assumed
+to be uniform along the transverse dimension y for simplic-
+ity.
+Figure 1d shows the spectrum of the Gaussian wave
+packet, and Figure 1e&f show the amplitude distribution at
+z=0 and z=0.4 m respectively (depicted in the moving refer-
+ence frame). Such a Gaussian wave packet spreads in time
+and space as expected (Figure 1e&f). And Figure 1g shows
+the nomalized amplitude of the Gaussian wave packet on the
+axis, which broadens due to material dispersion. By impos-
+ing the spatio-temporal correlation upon the Gaussian wave
+packet, we construct a space-time wave packet with group
+velocity vg = 0.097c, whose spetrum exhibits a parabolic
+shape(Figure 1h). Figure 1i&j show its amplitude distribu-
+tion at z=0 and z=0.4 m, and its proﬁle hardly changed, which
+is in line with Equation (4). As shown in Figure 1k, the tem-
+poral proﬁle of the space-time wave packet does not change
+despite the material dispersion. That reveals its unique resis-
+tance to material dispersion.
+The resistance of space-time wave packets to temporal dis-
+persion could be interpreted as follows: the spatio-temporal
+correlation forces light of different frequencies, thus differ-
+ent group velocities, to travel in distinct directions, resulting
+in the same group velocity components along the z-direction.
+Dispersion of different media just changes the phase veloc-
+ity of every monochromatic light, and the propagation in-
+variance of space-time wave packets remains as long as such
+monochromatic lights travel in their speciﬁc directions. Note
+here, though we formulate with a scalar ﬁeld, the extenstion
+to a vector ﬁeld is straight forward.
+However, such precise control over Ωand k⊥is impossible
+in practice due to the inﬁnite intensity such δ function requires
+and the ﬁnite precision in experiments.[15, 16] In addition, the
+numerical aperture is also restricted in a small range in most
+cases.[17] So it stands critical to explore the more realistic
+case, with narrow bandwidth, limited control over the spec-
+trum and paraxial condition. For a space-time wave packet
+which is quasi-monochromatic, the frequency-dependent re-
+fraction index can be expanded in the vicinity of its center
+frequency ω0 as n(Ω) ≈n0 + βΩ, and the spectrum reduces
+to the parabolic form:
+Ω≈
+c
+2αn0ω0
+k2
+⊥
+(5)
+where α = (n0 + βω0)/c −1/vg. So the parabolic spectrum
+shown in Equation (5) sufﬁces to sculpt the spatio-temporal
+spectrum depicted in Figure 1h for a dispersive medium, as
+long as the omitted high order terms in the dispersion relation
+are relatively small compared with βΩ,
+REFRACTION OF SPACE-TIME WAVE PACKETS AT
+INTERFACE OF DISPERSIVE MEDIA
+One unique property of space-time wave packets is the
+anomalous refraction at the interface of two non-dispersive
+media, where some corollaries of the Snell’s law no longer
+hold.[14] Here we extend the study to the interface of two
+possibly dispersive media, and modify the law of refraction
+for space-time wave packets.
+When travelling through different media of distinct disper-
+sion relation, the spatio-temporal correlation is expected to be
+conserved, because such correlation exhibits the same form of
+a parabola shown in Equation (5) in different weakly disper-
+sive media. To be more speciﬁc, with respect to the normal
+incidence of space-time wave packets between two dispersive
+media, conservation of energy and transverse momentum lead
+to the invariance of ω and k⊥for every monochromatic com-
+ponent. Therefore the parabolic spectrum in Equation (5) is
+also preserved under the refraction, so is the value of the coef-
+ﬁcient. Such invariant coefﬁcient, expressed in two dispersive
+media separately, gives rise to the refraction law for space-
+time wave packets.
+n01(n01 + β1ω0 −˜n1) = n02(n02 + β2ω0 −˜n2)
+(6)
+where n0i is the refraction index of the medium i(i = 1, 2)
+at the center frequency, ˜ni = c/vgi is the group index and
+βi refers to the ﬁrst order of dispersion. For non-dispersive
+medium, the refraction law above reduces to:
+n01(n01 −˜n1) = n02(n02 −˜n2)
+(7)
+which agrees with the result of Bhaduri et al..[14]
+Although the dispersion near ω0 can be relatively small:
+βΩ≪n0, such a small term could actually cause appre-
+ciable change in the refraction of space-time wave packets,
+
+
+=== PDF PAGE 3 ===
+3
+FIG. 1. a) Intersection of the light cone and a tilted space-time hyperplane. b) Intersection of a dispersive hypersurface and a tilted space-time
+hyperplane. c) Dispersive propagation of ordinary Gaussian pulse and non-dispersive propagation of space-time wave packet. d)-k) Numerical
+demonstration of the propagation in dispersive medium. d) The spectrum of Gaussian pulse. e)& f) The normalized amplitude distribution of
+Gaussian pulse at origin z=0 and z=0.4 m. Depicted in the moving reference frame: τ = t −z/vgauss, where vgauss is the velocity of the
+Gaussian pulse. Gaussian pulse suffers from both dispersion and diffraction. g) Normalized center intensity distribution of Gaussian pulse. h)
+The spectrum of space-time wave packet. i)& j) The nomalized amplitude distribution of space-time wave packet at origin z=0 and z=0.4 m.
+Depicted in the moving reference frame: τ = t −z/vg. k) Normalized center intensity distribution of space-time wave packet. Space-time
+wave packet propagates with a ﬁxed proﬁle.
+as the change introduced by β is actually βω0. To demon-
+strate its effect, Figure 2 compares two refraction processes
+both from non-dispersive air to a weakly dispersive medium
+β = 1.64 × 10−16 s, ω0 = 1.89 × 1015 s−1 and n0 = 1.34
+(green line) and a non-dispersive medium β = 0 with other
+parameters the same (blue line). In this ﬁgure, we show the
+law of refraction Equation (6) as a relation between (vg1, vg2)
+and (θ1, θ2), here θ = acot˜n stands for the tilt angle of space-
+time hyperplane shown in Figure 1b. Both the two lines in
+Figure 2a have the shape of the inverse proportional function
+[indicated by Equation (6)] and the existence of dispersion
+just shifts the center of such shape and stretches the coor-
+dinates. The green triangles in Figure 2a represent the nu-
+merical results of the refraction process making use of Fres-
+nel equation, which validates Equation (6). In terms of the
+tilt angle θ, the normal dispersion (β > 0) tends to “drag”
+the blue line in Figure 2b downward. Meanwhile, compared
+with ordinary pulsed beams with only ﬁxed group velocity,
+the group velocity of space-time wave packets can increase,
+decrease or remain the same in the refraction process depend-
+ing on the group velocity of incident space-time wave packets
+[Figure 2b]. The region to the left of the dashed lines (Blue
+and green denote respectively, the nondispersive and disper-
+sive cases.) in Figure 2b corresponding to vg1 < vg2 stands
+for the “anomalous” refraction of space-time wave packets,
+because the group velocity does not decrease as expected
+when n1 < n2. Compare the blue and the green dashed lines,
+we can conclude from Figure 2b that the dispersion here also
+can change the range of group velocity in “anomalous” refrac-
+tion.
+
+
+=== PDF PAGE 4 ===
+4
+-5
+0
+5
+vg1/c
+-5
+0
+5
+vg2/c
+a
+= 0
+0
+0°
+90°
+180°
+1
+0°
+90°
+180°
+2
+b
+= 0
+0
+FIG. 2. a) The group velocity relation between the two media in the normal incidence. b) The group velocity relation expressed in terms of the
+tilt angle θ of the space-time hyperplane. The dashed lines in b) represent the equivalence of θ1 and θ2, i.e., vg1 = vg2. The left hand side of
+the dashed line corresponds to vg1 < vg2 (anomalous) and right hand side corresponds to vg1 > vg2 (normal).
+For oblique incidence (Figure 3), the condition kx1 = kx2
+turns into kx1cosΦ1 = kx2cosΦ2 as kx is no longer parallel
+to the interface.[14] The law of refraction for space-time wave
+packet changes correspondingly:
+n01(n01+β1ω0−˜n1)cos2Φ1 = n02(n02+β2ω0−˜n2)cos2Φ2,
+(8)
+where Φ1, Φ2 are the angle of incidence and refraction re-
+spectively, determined by Snell’s law: n1sinΦ1 = n2sinΦ2.
+For instance, an incident space-time wave packet with group
+velocity vg = 0.1c could be refracted to have a new group
+velocity in a wide and continuous range when it comes from
+different Φ1, as illustrated in Figure 3b, and the existence of
+dispersion tends to change such velocity range from approxi-
+mately 0.1c∼0.75c to 0.1c∼0.6c. Therefore, the dispersion
+here narrows (can also broaden in case of anomalous disper-
+sion) the vg range of the refracted wave.
+HIGH ORDER TERMS IN THE SPECTRUM
+In practice, sculpting a spectrum of accurate parabola
+shape is sometimes intractable, [14, 18] but a polynomial
+spectrum also provides additional measure to shape the
+propagation.[19] A more general case is to reconsider the rel-
+atively small high order terms in the parabolic spectrum, for
+example:
+Ω(k⊥) ≈α1(k2
+x + k2
+y) + α2(k2
+x + k2
+y)2
+(9)
+For simplicity, we discuss its behavior in free space. And the
+result will deviate slightly from the case for ideal space-time
+wave packets:
+A(x, y, z; t) ∝
+ZZ
+˜Aei(kxx+kyy)×
+exp[−iα1k2
+⊥(t −z/vg) −iα2k4
+⊥(t −z/v′)]dkxdky
+(10)
+where1/vg = 1/c −c/(2ω0α1) is the reciprocal of group ve-
+locity and 1/v′ = 1/c−c3/(8ω3
+0α2) is the high term contribu-
+tion with the dimension of the inverse of speed controlled by
+α2. Therefore the previous rigid propagation fails to satisfy as
+the amplitude distribution has a nonvanishing z-dependence:
+A(x, y, z; t) ∝
+ZZ
+˜Aei(kxx+kyy)×
+exp[−iα1k2
+⊥t′ −iα2k4
+⊥(t′ −z/v′ + z/vg)]dkxdky
+(11)
+where t′ = t −z/vg. Such a deviation would gets larger at
+long distance or time.
+However, the paraxial condition ensures A(x, y, z; t) ≈
+A(x, y, 0; t−z/vg) again at least within a ﬁnite space and time
+since α2k2
+⊥≪α1, and actually the propagation distance of
+space-time wave packets is also ﬁnite due to the “fuzziness” in
+the spatio-temporal correlation.[16] Such deviation, therefore,
+can be relatively small in the propagation of space-time wave
+packets. In fact, such deviation corresponds to the ﬁrst disper-
+sive term of space-time wave packets in free space.[19] To be
+more speciﬁc, only one of the two terms in v′ is introduced
+by α2 while the other comes from the high terms in Taylor
+series, which is previously omitted in the expansion of kz. In
+other words, one can make A(x, y, z; t) = A(x, y, 0; t−z/vg)
+strictly true at the order of k4
+⊥if we choose α2 properly such
+that v′ = vg, in which case the z-dependence in Equation (11)
+vanishes.
+Furthermore, one can always complete Equation (9) with
+
+
+=== PDF PAGE 5 ===
+5
+FIG. 3. a) Inclined refraction of space-time wave packet. b) The relation between incident angle Φ1 and the group velocity vg of refracted
+wave.
+additional high terms correspondingly to compensate the de-
+struction of rigid propagation that is caused by the omitted
+terms in the expansion of kz. The more terms one compen-
+sates, the closer the spectrum is to the δ function, thus closer
+to the ideal space-time wave packet. From another point of
+view, putting more power series terms in Equation (9) can
+make the free space to exhibit arbitrary magnitude, sign and
+order of dispersion.[19] For example, a linear term added in
+Equation (9) will result in an effective group-velocity disper-
+sion (GVD), which has been demonstrated theoretically and
+experimentally by Murat Yessenov et al..[20]
+DISCUSSION AND CONCLUSION
+Until now, space-time wave packets have mostly been in-
+vestigated in free space.
+[17, 19, 21] However, there has
+been attempt using spatio-temporal correlation in surface plas-
+mon polaritons.[22] More generally, our work presented here
+reveals the great potential of imposing spatio-temporal fre-
+quency correlation in the dispersive media, which is proved to
+resist the temporal broadening in dispersive medium. Here,
+the ﬁrst dispersion term in the medium provides a handle
+to change the group velocity without destroying the spatio-
+temporal correlation. Meanwhile, the higher order dispersion
+do not affect the the propagation of space-time wave packet,
+although that always leads to some unique properties to other
+diffraction-free wave like an Airy pulse.[23] Apart from that,
+we generalize the refraction law for space-time wave packet
+to dispersive media. These ﬁndings further support the idea
+of imposing spatio-temporal correlation to shape the propa-
+gation of wave, and pave the way for dispersion resistance in
+dispersive media.
+The recent method proposed to impose precise spatio-
+temporal correlation with a compact photonic crystal slab
+freed the generation of space-time wave packets from sophis-
+ticated procedure using a two-dimensional pulse shaper.[14,
+18] On that basis, we prove that the possibly high order terms
+in the band dispersion of such photonic crystal slab actually
+open up a new avenue for sculpting the arbitrary dispersion
+for space-time wave packets.[19]
+This work is supported by the National Natural Science
+Foundation of China (Grant No.11904264).
+∗guocheng@stanford.edu
+† phmxiao@whu.edu.cn
+[1] J. Dionne, L. Sweatlock, H. Atwater, and A. Polman, Planar
+metal plasmon waveguides: frequency-dependent dispersion,
+propagation, localization, and loss beyond the free electron
+model, Phys. Rev. B 72, 075405 (2005).
+[2] J. Dionne, L. Sweatlock, H. Atwater, and A. Polman, Plas-
+mon slot waveguides: Towards chip-scale propagation with
+subwavelength-scale localization, Phys. Rev. B 73, 035407
+(2006).
+[3] B. E. Saleh and M. C. Teich, Fundamentals of photonics (John
+Wiley & Sons, Ltd, 2019).
+[4] B. Edwards, A. Al`u, M. E. Young, M. Silveirinha, and N. En-
+gheta, Experimental veriﬁcation of epsilon-near-zero metama-
+terial coupling and energy squeezing using a microwave waveg-
+uide, Phys. Rev. Lett. 100, 033903 (2008).
+[5] P. Lalanne, J.-P. Hugonin, H. Liu, and B. Wang, A microscopic
+view of the electromagnetic properties of sub-λ metallic sur-
+faces, Surf. Sci. Rep. 64, 453 (2009).
+[6] J. Durnin, J. Miceli Jr, and J. H. Eberly, Diffraction-free beams,
+Phys. Rev. Lett. 58, 1499 (1987).
+[7] D. McGloin and K. Dholakia, Bessel beams: diffraction in a
+new light, Contemp. Phys. 46, 15 (2005).
+[8] G. Siviloglou, J. Broky, A. Dogariu, and D. Christodoulides,
+Observation of accelerating airy beams, Phys. Rev. Lett. 99,
+213901 (2007).
+[9] J.-Y. Lu and J. F. Greenleaf, Nondiffracting x waves-exact solu-
+
+
+=== PDF PAGE 6 ===
+6
+tions to free-space scalar wave equation and their ﬁnite aperture
+realizations, IEEE Trans. Sonics Ultrason. 39, 19 (1992).
+[10] P. Saari and K. Reivelt, Evidence of x-shaped propagation-
+invariant localized light waves, Phys. Rev. Lett. 79, 4135
+(1997).
+[11] G. P. Agrawal, Nonlinear Fiber Optics (Academic Press, 2019).
+[12] B. P. Pal, Guided wave optical components and devices: basics,
+technology, and applications (Academic Press, 2010).
+[13] H. E. Kondakci and A. F. Abouraddy, Optical space-time wave
+packets having arbitrary group velocities in free space, Nat.
+Commun. 10, 1 (2019).
+[14] B. Bhaduri, M. Yessenov, and A. F. Abouraddy, Anomalous re-
+fraction of optical spacetime wave packets, Nat. Photonics , 1
+(2020).
+[15] M. A. Porras, Nature, diffraction-free propagation via space-
+time correlations, and nonlinear generation of time-diffracting
+light beams, Phys. Rev. A 97, 063803 (2018).
+[16] M. Yessenov, L. Mach, B. Bhaduri, D. Mardani, H. E. Kon-
+dakci, G. K. Atia, M. A. Alonso, and A. F. Abouraddy, What
+is the maximum differential group delay achievable by a space-
+time wave packet in free space?, Opt. Express 27, 12443 (2019).
+[17] L. A. Hall and A. F. Abouraddy, Spectrally recycling space-time
+wave packets, Phys. Rev. A 103, 023517 (2021).
+[18] C. Guo, M. Xiao, M. Orenstein, and S. Fan, Structured 3d linear
+space-time light bullets by nonlocal nanophotonics, Light: Sci.
+Appl. (2021).
+[19] M. Yessenov, L. A. Hall, and A. F. Abouraddy, Engineering the
+optical vacuum: Arbitrary magnitude, sign, and order of dis-
+persion in free space using space-time wave packets, (Preprint)
+arXiv:2102.09443, v1, submitted: Feb (2021).
+[20] L. A. Hall and A. F. Abouraddy, V-waves: Spatio-temporally
+induced group-velocity dispersion in free space, (Preprint)
+arXiv:2104.06371, v1, submitted: Apr (2021).
+[21] A. M. A. Motz, M. Yessenov, and A. F. Abouraddy, Axial spec-
+tral encoding of space-time wave packets, Phys. Rev. Appl. 15,
+024067 (2021).
+[22] K. L. Schepler, M. Yessenov, Y. Zhiyenbayev, and A. F.
+Abouraddy, Space–time surface plasmon polaritons: A new
+propagation-invariant surface wave packet, ACS Photonics 7,
+2966 (2020).
+[23] R. Driben, Y. Hu, Z. Chen, B. A. Malomed, and R. Morandotti,
+Inversion and tight focusing of airy pulses under the action of
+third-order dispersion, Opt. Lett. 38, 2499 (2013).

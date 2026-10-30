@@ -1,0 +1,15 @@
+{
+  "N": 256,
+  "S": 0.5,
+  "h": 0,
+  "a": 1,
+  "Jx": 1,
+  "hbar": 1,
+  "time_definition": "tau=Jx*t/hbar",
+  "eta_definition": "eta=Jy/Jx",
+  "initial_state": "one normalized spin flip at (0,0)",
+  "boundary": "periodic; edge mass and N=512 comparison checked",
+  "method": "FFT exp[-i ((1-cos qx)+eta(1-cos qy))*tau]",
+  "data_file": "local_flip_data.npz",
+  "description": "All static figure data and sampled diagnostic trajectories; animation timestamps are stored in manifest_b.json."
+}

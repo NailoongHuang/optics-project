@@ -1,0 +1,14 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/xbn4ab","index":1,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/vexwnix8","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"研究对象与报告问题","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/wf6xwnet","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/xgfepsfe","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"原理 PDF 第 3–5 页　动画 B14","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/i1ofyxwj","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"02","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/qdofud4f","kind":"image","position":{"left":45,"top":132,"width":700,"height":437},"fit":"contain","alt":"b14-early-spreading"},
+{"id":"sh/k3qx07ep","kind":"textbox","position":{"left":790,"top":145,"width":430,"height":34},"text":"物理对象","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/54zetsva","kind":"textbox","position":{"left":790,"top":188,"width":430,"height":140},"text":"二维正方晶格，每格点自旋 1/2。\n最近邻交换 Jₓ、Jᵧ，零外场。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/658f2xwv","kind":"textbox","position":{"left":790,"top":323,"width":430,"height":34},"text":"需要回答的问题","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/r6hwv2dg","kind":"textbox","position":{"left":790,"top":366,"width":430,"height":140},"text":"局域翻转怎样向外传播？\n载波怎样决定传播方向？\n有限宽度波包为什么会展宽？","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/f2l4nupo","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/u1cnep83","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"本报告把原理推导与可观测的概率分布逐一对应。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

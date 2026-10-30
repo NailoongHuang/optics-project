@@ -1,0 +1,46 @@
+[
+  {
+    "file": "01_linear.gif",
+    "frames": 121,
+    "size": [
+      1155,
+      556
+    ],
+    "duration_ms": 10380,
+    "loop": 0,
+    "decoded_all_frames": true
+  },
+  {
+    "file": "02_quadratic.gif",
+    "frames": 121,
+    "size": [
+      1155,
+      556
+    ],
+    "duration_ms": 10380,
+    "loop": 0,
+    "decoded_all_frames": true
+  },
+  {
+    "file": "03_inflection.gif",
+    "frames": 121,
+    "size": [
+      1155,
+      556
+    ],
+    "duration_ms": 10380,
+    "loop": 0,
+    "decoded_all_frames": true
+  },
+  {
+    "file": "04_local_linear.gif",
+    "frames": 121,
+    "size": [
+      1155,
+      556
+    ],
+    "duration_ms": 10380,
+    "loop": 0,
+    "decoded_all_frames": true
+  }
+]

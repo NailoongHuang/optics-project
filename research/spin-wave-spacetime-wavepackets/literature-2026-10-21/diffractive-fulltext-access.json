@@ -1,0 +1,16 @@
+[
+  {
+    "key": "diffractive_2026_accepted",
+    "source_url": "https://link.aps.org/accepted/10.1103/7zfd-p48s",
+    "accessed": "2026-10-21",
+    "status": "unavailable",
+    "error": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "key": "diffractive_2026_harvest",
+    "source_url": "https://harvest.aps.org/v2/journals/articles/10.1103/7zfd-p48s/fulltext",
+    "accessed": "2026-10-21",
+    "status": "unavailable",
+    "error": "curl: (22) The requested URL returned error: 401"
+  }
+]

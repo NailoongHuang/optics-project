@@ -1,0 +1,471 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2026-07-30T14:00:14Z",
+      "timestamp": 1785420014225,
+      "version": "3.56.0"
+    },
+    "reference-count": 31,
+    "publisher": "American Physical Society (APS)",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2026-06-01T00:00:00Z",
+          "timestamp": 1780272000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. A"
+    ],
+    "accepted": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    Quantum backflow refers to the appearance of negative probability current in a state whose momentum distribution is essentially positive. We propose a scheme to prepare such states in a noninteracting Bose-Einstein condensate using large-momentum-transfer (LMT) atom interferometry. Our approach extends the single-pulse proposal of Palmero . [] by allowing one interferometer arm to undergo a tunable sequence of momentum-transfer pulses before recombination with a freely propagating arm. For realistic parameters for\n                    <a:math xmlns:a=\"http://www.w3.org/1998/Math/MathML\">\n                      <a:mmultiscripts>\n                        <a:mi>Sr</a:mi>\n                        <a:mprescripts/>\n                        <a:none/>\n                        <a:mn>88</a:mn>\n                      </a:mmultiscripts>\n                    </a:math>\n                    , the protocol generates interference states with tunable probability current and negligible negative-momentum contamination. We evaluate both the probability current and the critical-density criterion introduced by Palmero . [], and identify parameter regimes in which the backflow signature is enhanced relative to the single-pulse scheme. These results present LMT interferometry as a flexible route for preparing candidate quantum-backflow states in cold-atom experiments.\n                  </jats:p>",
+    "DOI": "10.1103/3b4f-6nfr",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ],
+      "date-time": "2026-05-19T18:35:51Z",
+      "timestamp": 1779215751000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Preparing quantum backflow states by large momentum transfer"
+    ],
+    "prefix": "10.1103",
+    "volume": "113",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0009-0134-4140",
+        "authenticated-orcid": true,
+        "given": "Yuchong",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/013meh722",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Cambridge"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-3873-7337",
+        "authenticated-orcid": true,
+        "given": "Yijun",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/013meh722",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Cambridge"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "3b4f-6nfrCc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0003-4916(69)90252-8",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/27/6/040",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rspa.2025.0577",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0305-4470/39/2/012",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1751-8113/43/41/415302",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.100.052101",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0143-0807/33/5/1147",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.103.022217",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.110.022216",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.107.032204",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.062218",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1140/epjp/s13360-020-00336-5",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rinp.2020.103426",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1140/epjp/s13360-020-00655-7",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.96.012112",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc16R1",
+        "unstructured": "A. H. de Vasconcelos Junior, Quantum backflow in the presence of defects, Ph.D. thesis, University of York, 2021.",
+        "type": "other"
+      },
+      {
+        "key": "3b4f-6nfrCc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.023334",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/adb77e",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/k9km-k3dm",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1209/0295-5075/106/60004",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.87.053618",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22331/q-2021-09-07-536",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.22331/q-2021-01-11-379",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPTICA.371494",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/aca70b",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPTICA.495710",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.540905",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/tm9s-pkg5",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevD.78.042003",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.124.083604",
+        "type": "journal-article"
+      },
+      {
+        "key": "3b4f-6nfrCc31R1",
+        "volume-title": "Degenerate Quantum Gases of Strontium",
+        "author": "S. Stellmer",
+        "year": "2013",
+        "type": "book"
+      }
+    ],
+    "container-title": [
+      "Physical Review A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/3b4f-6nfr",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/3b4f-6nfr/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2026-06-01T12:47:46Z",
+      "timestamp": 1780318066000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/3b4f-6nfr"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ]
+    },
+    "references-count": 31,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            6
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/3b4f-6nfr",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.48550/arXiv.2602.12767",
+          "asserted-by": "subject"
+        }
+      ]
+    },
+    "ISSN": [
+      "2469-9926",
+      "2469-9934"
+    ],
+    "issn-type": [
+      {
+        "value": "2469-9926",
+        "type": "print"
+      },
+      {
+        "value": "2469-9934",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2026-02-13",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "Published by the American Physical Society. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright_statement",
+        "label": "Copyright statement",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "2026",
+        "name": "copyright_year",
+        "label": "Copyright year",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "https://creativecommons.org/licenses/by/4.0/",
+        "name": "creative_commons_license",
+        "label": "Creative Commons license",
+        "group": {
+          "name": "licenses",
+          "label": "Licenses"
+        }
+      },
+      {
+        "value": "©2026 The authors",
+        "name": "copyright_holder",
+        "label": "Copyright holder",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      }
+    ],
+    "article-number": "063304"
+  }
+}

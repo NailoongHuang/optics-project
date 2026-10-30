@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "slides": 18,
+  "user_maximum": 20,
+  "gif_frames": [
+    61
+  ],
+  "sha256": "e53abcb9d6e8fa27c7059bda9186997f069d77e09c507476a60145f58f977970",
+  "native_charts": 5,
+  "roundtrip_max_pixel_mae": 0.0003393454218106996,
+  "preview_pages": 18,
+  "powerpoint_application_playback_tested": false
+}

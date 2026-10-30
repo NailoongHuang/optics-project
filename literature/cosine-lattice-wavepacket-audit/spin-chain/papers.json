@@ -1,0 +1,404 @@
+{
+  "date": "2026-10-20",
+  "records": [
+    {
+      "key": "osborne_linden_2004",
+      "arxiv_version": "quant-ph/0312141v1",
+      "abstract_url": "https://arxiv.org/abs/quant-ph/0312141v1",
+      "pdf_url": "https://arxiv.org/pdf/quant-ph/0312141v1",
+      "file": "osborne_linden_2004_quant-ph_0312141v1.pdf",
+      "bytes": 528957,
+      "pages": "052315",
+      "sha256": "eec3b4d4acb52d637949abafd535d1a91d5c8b1439a67d366cfa4eda8d047b34",
+      "metadata": {
+        "citation_title": [
+          "The Propagation of Quantum Information Through a Spin System"
+        ],
+        "citation_author": [
+          "Osborne, Tobias J.",
+          "Linden, Noah"
+        ],
+        "citation_doi": [
+          "10.1103/PhysRevA.69.052315"
+        ],
+        "citation_date": [
+          "2003/12/16"
+        ],
+        "citation_online_date": [
+          "2003/12/16"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/quant-ph/0312141"
+        ],
+        "citation_arxiv_id": [
+          "quant-ph/0312141"
+        ],
+        "citation_abstract": [
+          " It has been recently suggested that the dynamics of a quantum spin system may provide a natural mechanism for transporting quantum information. We show that one dimensional rings of qubits with fixed (time-independent) interactions, constant around the ring, allow high fidelity communication of quantum states. We show that the problem of maximising the fidelity of the quantum communication is related to a classical problem in fourier wave analysis. By making use of this observation we find that if both communicating parties have access to limited numbers of qubits in the ring (a fraction that vanishes in the limit of large rings) it is possible to make the communication arbitrarily good."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "Physical Review A",
+      "volume": "69",
+      "year": 2004,
+      "doi": "10.1103/PhysRevA.69.052315",
+      "relevance": "direct-prior-art",
+      "evidence_location": "arXiv PDF pp. 4-6; Eq. (7), Fig. 2, Fig. 3, and the unnumbered third-order broadening formula on p. 6",
+      "evidence": "在均匀Heisenberg环的单激发子空间，将Gaussian调制的格点波包放在波矢编号N/4，亦即ka=pi/2。正文明确指出二阶导数消失后仍须保留三阶色散；图示传播和拖尾振荡，并讨论包宽按N^(1/3)增长。",
+      "comparison": "与当前每个方向的cosine带及pi/2中心Gaussian是直接同类机制。当前二维可分离乘积态同时选择两个方向的该点，不足以构成新的保形原理。",
+      "inference": "将文中归一化环坐标换回格点单位，三阶控制参数对应t/(初始格点宽度)^3；这是标度对应，不是照抄其宽度定义下的数值常数。",
+      "limits": "论文是有限环、高保真传输和有限展宽，非无限时间严格保形；其Airy措辞在本项目宜表述为Airy型高阶色散形变。",
+      "pdf_pages": 7,
+      "title": "The Propagation of Quantum Information Through a Spin System",
+      "authors": [
+        "Osborne, Tobias J.",
+        "Linden, Noah"
+      ],
+      "publication_url": "https://doi.org/10.1103/PhysRevA.69.052315"
+    },
+    {
+      "key": "haselgrove_2005",
+      "arxiv_version": "quant-ph/0404152v2",
+      "abstract_url": "https://arxiv.org/abs/quant-ph/0404152v2",
+      "pdf_url": "https://arxiv.org/pdf/quant-ph/0404152v2",
+      "file": "haselgrove_2005_quant-ph_0404152v2.pdf",
+      "bytes": 358161,
+      "pages": "062326",
+      "sha256": "67d4638ccf7907e756692fd62b0a793bb20497300d34b905336bfa8020b9adbf",
+      "metadata": {
+        "citation_title": [
+          "Optimal state encoding for quantum walks and quantum communication over spin systems"
+        ],
+        "citation_author": [
+          "Haselgrove, Henry L."
+        ],
+        "citation_doi": [
+          "10.1103/PhysRevA.72.062326"
+        ],
+        "citation_date": [
+          "2004/04/27"
+        ],
+        "citation_online_date": [
+          "2004/05/12"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/quant-ph/0404152"
+        ],
+        "citation_arxiv_id": [
+          "quant-ph/0404152"
+        ],
+        "citation_abstract": [
+          " Recent work has shown that a simple chain of interacting spins can be used as a medium for high-fidelity quantum communication. We describe a scheme for quantum communication using a spin system that conserves z-spin, but otherwise is arbitrary. The sender and receiver are assumed to directly control several spins each, with the sender encoding the message state onto the larger state-space of her control spins. We show how to find the encoding that maximises the fidelity of communication, using a simple method based on the singular-value decomposition. Also, we show that this solution can be used to increase communication fidelity in a rather different circumstance: where no encoding of initial states is used, but where the sender and receiver control exactly two spins each and vary the interactions on those spins over time. The methods presented are computationally efficient, and numerical examples are given for systems having up to 300 spins."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "Physical Review A",
+      "volume": "72",
+      "year": 2005,
+      "doi": "10.1103/PhysRevA.72.062326",
+      "relevance": "encoding-method-and-benchmark",
+      "evidence_location": "arXiv PDF p. 3, Section II and Eqs. (7)-(8); p. 5, Section II discussion and Fig. 2",
+      "evidence": "用发送区到接收区的受限演化算符的最大奇异值和对应右奇异向量优化编码。均匀Heisenberg链例子中，最优单激发编码快速变为近Gaussian的传播波包。",
+      "comparison": "说明任取Gaussian并非优化极限，若研究目标是指定接收窗口和时间的传输，应与SVD最优编码作比较。",
+      "inference": "本项目若只调载波点和Gaussian宽度，尚不能声称最优状态传输。",
+      "limits": "优化的是给定发送/接收区域及时间的通信指标，不等价于要求整段传播始终保形；引用的文件为v2预印本。",
+      "pdf_pages": 10,
+      "title": "Optimal state encoding for quantum walks and quantum communication over spin systems",
+      "authors": [
+        "Haselgrove, Henry L."
+      ],
+      "publication_url": "https://doi.org/10.1103/PhysRevA.72.062326"
+    },
+    {
+      "key": "gong_brumer_2007",
+      "arxiv_version": "quant-ph/0702265v1",
+      "abstract_url": "https://arxiv.org/abs/quant-ph/0702265v1",
+      "pdf_url": "https://arxiv.org/pdf/quant-ph/0702265v1",
+      "file": "gong_brumer_2007_quant-ph_0702265v1.pdf",
+      "bytes": 151719,
+      "pages": "032331",
+      "sha256": "fa36bbb8aa671581c88b1529fb7dd89c9d206b11012208383977553c615b6387",
+      "metadata": {
+        "citation_title": [
+          "Controlled Quantum State Transfer in a Spin Chain"
+        ],
+        "citation_author": [
+          "Gong, Jiangbin",
+          "Brumer, Paul"
+        ],
+        "citation_date": [
+          "2007/02/28"
+        ],
+        "citation_online_date": [
+          "2007/02/28"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/quant-ph/0702265"
+        ],
+        "citation_arxiv_id": [
+          "quant-ph/0702265"
+        ],
+        "citation_abstract": [
+          " Control of the transfer of quantum information encoded in quantum wavepackets moving along a spin chain is demonstrated. Specifically, based on a relationship with control in a paradigm of quantum chaos, it is shown that wavepackets with slow dispersion can automatically emerge from a class of initial superposition states involving only a few spins, and that arbitrary unspecified travelling wavepackets can be nondestructively stopped and later relaunched with perfection. The results establish an interesting application of quantum chaos studies in quantum information science."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "Physical Review A",
+      "volume": "75",
+      "year": 2007,
+      "doi": "10.1103/PhysRevA.75.032331",
+      "relevance": "packet-preparation-and-control",
+      "evidence_location": "arXiv PDF pp. 2-3, Eqs. (13)-(15), Fig. 1; pp. 4-5, Figs. 2-3",
+      "evidence": "选取少数格点的相干初态，使Heisenberg链自然产生向两侧传播、色散较慢的波包对。抛物形磁场脉冲可以停止并重新发射波包。",
+      "comparison": "已有从有限自旋控制产生低色散波包、调控运动的研究；比只预设宽Gaussian更接近制备问题。",
+      "inference": "制备效率和控制资源可作为后续应用问题，但本文已经提供一个先例。",
+      "limits": "涉及外场脉冲和量子踢转子对应，不能说与当前无外场自由演化完全相同；停止运动也不自动冻结内部相位。",
+      "pdf_pages": 6,
+      "title": "Controlled Quantum State Transfer in a Spin Chain",
+      "authors": [
+        "Gong, Jiangbin",
+        "Brumer, Paul"
+      ],
+      "publication_url": "https://doi.org/10.1103/PhysRevA.75.032331"
+    },
+    {
+      "key": "apollaro_2012",
+      "arxiv_version": "1203.5516v1",
+      "abstract_url": "https://arxiv.org/abs/1203.5516v1",
+      "pdf_url": "https://arxiv.org/pdf/1203.5516v1",
+      "file": "apollaro_2012_1203.5516v1.pdf",
+      "bytes": 949717,
+      "pages": "052319",
+      "sha256": "3b55de66f88d7f8f906f0f4233520ceb162dfd6ebfb5e7ee9734cc254c20ad7e",
+      "metadata": {
+        "citation_title": [
+          "99%-fidelity ballistic quantum-state transfer through long uniform channels"
+        ],
+        "citation_author": [
+          "Apollaro, T. J. G.",
+          "Banchi, L.",
+          "Cuccoli, A.",
+          "Vaia, R.",
+          "Verrucchi, P."
+        ],
+        "citation_doi": [
+          "10.1103/PhysRevA.85.052319"
+        ],
+        "citation_date": [
+          "2012/03/25"
+        ],
+        "citation_online_date": [
+          "2012/03/25"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/1203.5516"
+        ],
+        "citation_arxiv_id": [
+          "1203.5516"
+        ],
+        "citation_abstract": [
+          "Quantum-state transfer with fidelity higher than 0.99 can be achieved in the ballistic regime of an arbitrarily long one-dimensional chain with uniform nearest-neighbor interaction, except for the two pairs of mirror symmetric extremal bonds, say x (first and last) and y (second and last-but-one). These have to be roughly tuned to suitable values x ~ 2 N^{-1/3} and y ~ 2^{3/4} N^{-1/6}, N being the chain length. The general framework can describe the end-to-end response in different models, such as fermion or boson hopping models and XX spin chains."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "Physical Review A",
+      "volume": "85",
+      "year": 2012,
+      "doi": "10.1103/PhysRevA.85.052319",
+      "relevance": "boundary-engineered-transport",
+      "evidence_location": "arXiv PDF pp. 2-3, Eqs. (10)-(17); pp. 8-9, Figs. 10-11 and conclusions",
+      "evidence": "均匀最近邻通道只调两对端部键，使被激发的模式近似相干传播；比较均匀、单参数、双参数与完全工程化通道的波包演化，渐近传输保真度约0.991。",
+      "comparison": "利用近线性色散模式做低展宽传输已有成熟设计；当前周期晶格没有注入和接收界面，因此不同于端到端器件表现。",
+      "inference": "把自由传播动画推进到器件主张时，需要加入端部耦合或制备/接收基准。",
+      "limits": "其最优键强度标度不同于自由Gaussian的宽度标度，不能混用；非完全均匀、无限晶格的逐点保形定理。",
+      "pdf_pages": 12,
+      "title": "99%-fidelity ballistic quantum-state transfer through long uniform channels",
+      "authors": [
+        "Apollaro, T. J. G.",
+        "Banchi, L.",
+        "Cuccoli, A.",
+        "Vaia, R.",
+        "Verrucchi, P."
+      ],
+      "publication_url": "https://doi.org/10.1103/PhysRevA.85.052319"
+    },
+    {
+      "key": "banchi_2013",
+      "arxiv_version": "1309.0069v2",
+      "abstract_url": "https://arxiv.org/abs/1309.0069v2",
+      "pdf_url": "https://arxiv.org/pdf/1309.0069v2",
+      "file": "banchi_2013_1309.0069v2.pdf",
+      "bytes": 1603063,
+      "pages": "137",
+      "sha256": "39c9ca58c1955a0ba98f7c992d5d8e041ec3fad78b2fb51c15fbe23669bf1d05",
+      "metadata": {
+        "citation_title": [
+          "Ballistic quantum state transfer in spin chains: general theory for quasi-free models and arbitrary initial states"
+        ],
+        "citation_author": [
+          "Banchi, Leonardo"
+        ],
+        "citation_doi": [
+          "10.1140/epjp/i2013-13137-6"
+        ],
+        "citation_date": [
+          "2013/08/31"
+        ],
+        "citation_online_date": [
+          "2013/10/15"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/1309.0069"
+        ],
+        "citation_arxiv_id": [
+          "1309.0069"
+        ],
+        "citation_abstract": [
+          "Ballistic quantum-information transfer through spin chains is based on the idea of making the spin dynamics ruled by collective excitations with linear dispersion relation. Unlike perfect state transfer schemes, a ballistic transmission requires only a minimal engineering of the interactions; in fact, for most practical purposes, the optimization of the couplings to the ends of the chain is sufficient to obtain an almost perfect transmission. In this work we review different ballistic quantum-state transfer protocols based on the dynamics of quasi-free spin chains, and further generalize them both at zero and finite temperature. In particular, besides presenting novel analytical results for XX, XY, and Ising spin models, it is shown how, via a complete control on the first and last two qubits of the chain, destructive thermal effects can be cancelled, leading to a high-quality state transmission irrespective of the temperature."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "The European Physical Journal Plus",
+      "volume": "128",
+      "year": 2013,
+      "doi": "10.1140/epjp/i2013-13137-6",
+      "relevance": "review-with-analytical-extension",
+      "evidence_location": "arXiv PDF pp. 6-7, Eq. (17), Eq. (22), Section 3.2; p. 8, XX inflection k0=pi/2",
+      "evidence": "以集中在色散拐点的波包解释弹道量子态传输，区分多格点初态编码与端部工程形成的谱权重，并指出首个非线性谱修正来自三次项。",
+      "comparison": "为本项目的中心波矢选择、高阶展宽和与通信方案的区别提供直接综述入口。",
+      "inference": "综述引用Osborne-Linden与Haselgrove，因此本次向后引文追踪建立了早期到后续工作的连续链路。",
+      "limits": "文中non-linearity指色散关系的非线性，不是相互作用引起的非线性波动方程。",
+      "pdf_pages": 18,
+      "title": "Ballistic quantum state transfer in spin chains: general theory for quasi-free models and arbitrary initial states",
+      "authors": [
+        "Banchi, Leonardo"
+      ],
+      "publication_url": "https://doi.org/10.1140/epjp/i2013-13137-6"
+    },
+    {
+      "key": "thompson_2016",
+      "arxiv_version": "1511.05656v3",
+      "abstract_url": "https://arxiv.org/abs/1511.05656v3",
+      "pdf_url": "https://arxiv.org/pdf/1511.05656v3",
+      "file": "thompson_2016_1511.05656v3.pdf",
+      "bytes": 2015270,
+      "pages": "073044",
+      "sha256": "76ff98eaca3b40af743cfab82e6ce6cfacd62bfcaa3f59c67d50d59e50d9d3d2",
+      "metadata": {
+        "citation_title": [
+          "Time Independent Universal Computing with Spin Chains: Quantum Plinko Machine"
+        ],
+        "citation_author": [
+          "Thompson, Kevin",
+          "Gokler, Can",
+          "Lloyd, Seth",
+          "Shor, Peter"
+        ],
+        "citation_doi": [
+          "10.1088/1367-2630/18/7/073044"
+        ],
+        "citation_date": [
+          "2015/11/18"
+        ],
+        "citation_online_date": [
+          "2016/01/05"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/1511.05656"
+        ],
+        "citation_arxiv_id": [
+          "1511.05656"
+        ],
+        "citation_abstract": [
+          "We present a scheme for universal quantum computing using XY Heisenberg spin chains. Information is encoded into packets propagating down these chains, and they interact with each other to perform universal quantum computation. A circuit using g gate blocks on m qubits can be encoded into chains of length $O(g^{3+\\delta} m^{3+\\delta})$ for all $\\delta >0$ with vanishingly small error."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "New Journal of Physics",
+      "volume": "18",
+      "year": 2016,
+      "doi": "10.1088/1367-2630/18/7/073044",
+      "relevance": "direct-prior-art-with-error-bound",
+      "evidence_location": "arXiv PDF pp. 9-10, Theorem 4.1 and Corollary 4.1; pp. 23-25, Section 6.3 proof",
+      "evidence": "对均匀XY环上以p0=N/4为中心的Gaussian波包，给出实际演化相对刚性平移的态向量误差界O(t Delta_p^3/N^3)，并将界扩展到多个可交换链的乘积波包。",
+      "comparison": "p0=N/4等价于ka=pi/2；以物理谱宽或格点包宽表达，误差界对应O(t/宽度^3)。高阶误差及乘积结构已有明确处理。",
+      "inference": "本项目数值验证三次寿命标度可作为复现与适用范围核查，不宜单独称新规律。",
+      "limits": "误差界为渐近Gaussian和窄谱条件下的上界；论文为量子计算构造，多个链不等于非可分离二维晶格。",
+      "pdf_pages": 34,
+      "title": "Time Independent Universal Computing with Spin Chains: Quantum Plinko Machine",
+      "authors": [
+        "Thompson, Kevin",
+        "Gokler, Can",
+        "Lloyd, Seth",
+        "Shor, Peter"
+      ],
+      "publication_url": "https://doi.org/10.1088/1367-2630/18/7/073044"
+    },
+    {
+      "key": "meier_2025",
+      "arxiv_version": "2407.07948v1",
+      "abstract_url": "https://arxiv.org/abs/2407.07948v1",
+      "pdf_url": "https://arxiv.org/pdf/2407.07948v1",
+      "file": "meier_2025_2407.07948v1.pdf",
+      "bytes": 3947540,
+      "pages": "1147-1152",
+      "sha256": "d37e2dbcec0edbf1de59570d7694bc56e58d789e11611c7707b693639eda16b5",
+      "metadata": {
+        "citation_title": [
+          "Precision is not limited by the second law of thermodynamics"
+        ],
+        "citation_author": [
+          "Meier, Florian",
+          "Minoguchi, Yuri",
+          "Sundelin, Simon",
+          "Apollaro, Tony J. G.",
+          "Erker, Paul",
+          "Gasparinetti, Simone",
+          "Huber, Marcus"
+        ],
+        "citation_doi": [
+          "10.1038/s41567-025-02929-2"
+        ],
+        "citation_date": [
+          "2024/07/10"
+        ],
+        "citation_online_date": [
+          "2024/07/10"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2407.07948"
+        ],
+        "citation_arxiv_id": [
+          "2407.07948"
+        ],
+        "citation_abstract": [
+          "Physical devices operating out of equilibrium are inherently affected by thermal fluctuations, limiting their operational precision. This issue is pronounced at microscopic and especially quantum scales and can only be mitigated by incurring additional entropy dissipation. Understanding this constraint is crucial for both fundamental physics and technological design. For instance, clocks are inherently governed by the second law of thermodynamics and need a thermodynamic flux towards equilibrium to measure time, which results in a minimum entropy dissipation per clock tick. Classical and quantum models and experiments often show a linear relationship between precision and dissipation, but the ultimate bounds on this relationship are unknown. Our theoretical discovery presents an extensible quantum many-body system that achieves clock precision scaling exponentially with entropy dissipation. This finding demonstrates that coherent quantum dynamics can surpass the traditional thermodynamic precision limits, potentially guiding the development of future high-precision, low-dissipation quantum devices."
+        ]
+      },
+      "status": "downloaded-and-text-readable",
+      "journal": "Nature Physics",
+      "volume": "21",
+      "year": 2025,
+      "doi": "10.1038/s41567-025-02929-2",
+      "relevance": "recent-application",
+      "evidence_location": "Published full text: Theoretical description near bulk propagation and Optimization results; arXiv PDF p. 5 and Supplementary Section C3b pp. 18-19",
+      "evidence": "自主量子时钟用静态耦合坡道生成波包，在均匀XY链bulk中围绕k0=pi/2传播。正文明确给出E(k)=2g cos(k)，以lambda_l~n^(1/3)平衡三阶形变和到达时间不确定度。",
+      "comparison": "与当前零二阶色散点机制高度一致，说明这一已知机制仍可用于新的器件/信息任务。",
+      "inference": "潜在价值在新应用、约束和性能指标，不在重新发现pi/2处的低展宽传播。",
+      "limits": "这是具有非均匀制备/吸收区和耗散复位环节的理论时钟模型，不是我们自由二维Gaussian的同一实验。arXiv仅v1，已另核对2025期刊正文。",
+      "published_fulltext": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/",
+      "pdf_pages": 22,
+      "title": "Precision is not limited by the second law of thermodynamics",
+      "authors": [
+        "Meier, Florian",
+        "Minoguchi, Yuri",
+        "Sundelin, Simon",
+        "Apollaro, Tony J. G.",
+        "Erker, Paul",
+        "Gasparinetti, Simone",
+        "Huber, Marcus"
+      ],
+      "publication_url": "https://doi.org/10.1038/s41567-025-02929-2"
+    }
+  ]
+}

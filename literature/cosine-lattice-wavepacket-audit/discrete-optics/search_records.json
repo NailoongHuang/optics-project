@@ -1,0 +1,157 @@
+{
+  "search_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "scope": "Prior optical work on Gaussian packets near the inflection point of a cosine lattice band; zero quadratic diffraction, two-dimensional one-axis versus two-axis suppression, and residual cubic propagation.",
+  "method": "Bounded English-language topic search with exact-title and reference chasing. Discovery used web search; scientific assessment used author-hosted PDFs, arXiv full text and original APS records. No completeness or novelty certificate is claimed.",
+  "queries": [
+    "waveguide arrays zero diffraction pi/2 third order diffraction Gaussian Eisenberg 2000",
+    "discrete diffraction management zero diffraction waveguide array third order diffraction",
+    "Airy Gaussian wave packet tight binding lattice inflection point cubic dispersion",
+    "\"The peculiarities of discrete diffraction\" pdf",
+    "\"10.1016/j.optcom.2006.10.031\"",
+    "\"Diffraction management\" Eisenberg Silberberg 1863 pdf",
+    "\"Discrete diffraction and shape-invariant beams\" Longhi",
+    "\"Phys. Rev. Lett.\" \"88\" \"093901\"",
+    "\"Hudock\" \"Efremidis\" \"268\" \"2004\"",
+    "\"Relativistic motion of an Airy wave packet in a lattice potential\"",
+    "\"waveguide\" \"third-order diffraction\" \"Gaussian\"",
+    "\"Anomalous refraction and diffraction in discrete optical systems\"",
+    "\"10.1103/PhysRevLett.88.093901\" pdf",
+    "\"Anisotropic diffraction and elliptic\" pdf",
+    "\"relativistic motion\" \"Creffield\" \"arxiv\""
+  ],
+  "deduplication": "DOI is the primary identity. arXiv:1001.0997 is the author version of Longhi's 2009 article, not a second paper.",
+  "records": [
+    {
+      "id": "chen2007",
+      "title": "The peculiarities of discrete diffraction in two-dimensional optical waveguide arrays",
+      "authors": [
+        "Hongyun Chen",
+        "Xianfeng Chen",
+        "Yuxing Xia"
+      ],
+      "journal": "Optics Communications",
+      "year": 2007,
+      "volume": "271",
+      "pages": "382-385",
+      "doi": "10.1016/j.optcom.2006.10.031",
+      "url": "https://doi.org/10.1016/j.optcom.2006.10.031",
+      "full_text_url": "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf",
+      "local_pdf": "chen2007_two-dimensional-discrete-diffraction.pdf",
+      "read_scope": "All four PDF pages; Fig. 3 rendered and visually inspected.",
+      "located_evidence": [
+        "PDF p.2, Eqs. (1)-(2): square waveguide array with axial coupling c1 and diagonal coupling c2; Kerr term is omitted in the low-power regime.",
+        "PDF p.3, Eq. (5) and Fig. 3: linear simulations compare Gaussian launch at (kxd,kyd)=(0,0),(pi/2,0),(pi/2,pi/2).",
+        "PDF p.4, first paragraph: asymmetry along the zero-quadratic-diffraction direction is attributed to residual third-order diffraction."
+      ],
+      "comparison": "Direct prior two-dimensional one-axis versus two-axis pi/2 comparison. Our nearest-neighbor cosine sum is the c2=0 separable limit, not identical to the reported c2=0.043 mm^-1 numerical example.",
+      "own_inference_from_equation": "At the double pi/2 point, Eq. (2) gives diagonal second derivatives zero but mixed derivative d^2 kz/(dkx dky)=4 c2 d^2. For nonzero c2 the Hessian determinant is negative. Therefore this paper must not be cited as demonstrating zero Gaussian curvature at that point."
+    },
+    {
+      "id": "longhi2009",
+      "title": "Discrete diffraction and shape-invariant beams in optical waveguide arrays",
+      "authors": [
+        "Stefano Longhi"
+      ],
+      "journal": "Physical Review A",
+      "year": 2009,
+      "volume": "79",
+      "article": "033847",
+      "doi": "10.1103/PhysRevA.79.033847",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.033847",
+      "arxiv": "1001.0997v1",
+      "arxiv_submission_date": "2010-01-06",
+      "arxiv_versions_visible": [
+        "v1"
+      ],
+      "full_text_url": "https://arxiv.org/pdf/1001.0997v1",
+      "local_pdf": "longhi2009_1001.0997v1_discrete-diffraction.pdf",
+      "read_scope": "Introduction, Sec. II.B-D, relevant nearest-neighbor example, conclusion and references; not a claim of detailed review of all 14 pages.",
+      "located_evidence": [
+        "PDF p.3, Eqs. (17)-(19): variance evolves as initial variance plus position-velocity covariance times z plus velocity variance times z^2.",
+        "PDF pp.3-4, Sec. II.C and Eqs. (20)-(24): nearest-neighbor band H0=-2 Delta cos p, self-collimation at p=+-pi/2; finite-width spreading is reduced, not eliminated.",
+        "PDF pp.5-6, Sec. II.D, Eqs. (30)-(33): coalescing stationary points at self-collimation directions give an amplitude decay scaling z^(-1/3), distinct from the global RMS width."
+      ],
+      "comparison": "Strong direct theoretical precedent for our reduced spreading and later deformation. The paper explicitly distinguishes finite-time subdiffraction from a changed long-time RMS growth law.",
+      "scope_limit": "Its statements about finite-moment localization are applied here only to the nonflat cosine band. The discrete Bessel family preserves a functional form with changing parameters, not necessarily rigidly translating Gaussian density."
+    },
+    {
+      "id": "eisenberg2000",
+      "title": "Diffraction Management",
+      "authors": [
+        "H. S. Eisenberg",
+        "Y. Silberberg",
+        "R. Morandotti",
+        "J. S. Aitchison"
+      ],
+      "journal": "Physical Review Letters",
+      "year": 2000,
+      "volume": "85",
+      "pages": "1863-1866",
+      "doi": "10.1103/PhysRevLett.85.1863",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.1863",
+      "read_scope": "Official PRL abstract and metadata; the author's 2002 PhD thesis provides full-text exposition and related experimental discussion. The original four-page PRL PDF was not accessed.",
+      "located_evidence": [
+        "Official abstract: waveguide arrays with reduced, canceled and reversed diffraction were fabricated and experimentally compared with coupled-mode theory.",
+        "Author thesis PDF pp.10-12 (printed pp.5-7), Eq. (1.7) and following list: cosine band and zero curvature at |kx|=pi/(2d).",
+        "Author thesis PDF pp.42-46 (printed pp.37-41), Sec.3.3 and Figs.3.6-3.7: fixed pi/2 tilt retains higher-order asymmetric spreading; alternating opposite tilts in zigzag arrays cancel higher orders within coupled-mode theory."
+      ],
+      "comparison": "Foundational experimental precedent for diffraction management. Uniform inflection-point propagation and longitudinally alternating zigzag cancellation are distinct; only the former matches the present static lattice.",
+      "author_full_text_url": "https://openscholar.huji.ac.il/sites/default/files/hagai/files/hagaielectronicthesis.pdf",
+      "author_full_text_local": "eisenberg_thesis.pdf"
+    },
+    {
+      "id": "pertsch2002",
+      "title": "Anomalous Refraction and Diffraction in Discrete Optical Systems",
+      "authors": [
+        "T. Pertsch",
+        "T. Zentgraf",
+        "U. Peschel",
+        "A. Braeuer",
+        "F. Lederer"
+      ],
+      "journal": "Physical Review Letters",
+      "year": 2002,
+      "publication_date": "2002-02-12",
+      "volume": "88",
+      "article": "093901",
+      "doi": "10.1103/PhysRevLett.88.093901",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.88.093901",
+      "read_scope": "Official APS abstract and metadata; full text not obtained in this branch.",
+      "located_evidence": [
+        "Official abstract reports experimental control of diffraction magnitude and sign by launch conditions, including arrested spreading.",
+        "Longhi 2009 Sec. II.C identifies this article as the experimental Gaussian self-collimation example."
+      ],
+      "comparison": "Supporting experimental history; do not attribute uninspected quantitative details to this paper."
+    }
+  ],
+  "additional_leads_not_promoted_to_core_evidence": [
+    {
+      "title": "Anisotropic diffraction and elliptic discrete solitons in two-dimensional waveguide arrays",
+      "doi": "10.1364/OL.29.000268",
+      "url": "https://stars.library.ucf.edu/facultybib2000/4445/",
+      "reason": "Author institution verifies metadata and abstract; full text not assessed. Its nonlinear elliptic solitons are not direct evidence for our linear packet."
+    },
+    {
+      "title": "Relativistic motion of an Airy wave packet in a lattice potential",
+      "doi": "10.1103/PhysRevA.98.063609",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.063609",
+      "reason": "Different prepared Airy initial state; not evidence that the present unforced Gaussian develops a new relativistic effect."
+    },
+    {
+      "title": "Broadband diffraction management and self-collimation of white light in photonic lattices",
+      "doi": "10.1103/PhysRevE.74.066609",
+      "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.74.066609",
+      "reason": "Curved, longitudinally engineered arrays; distinct mechanism from uniform static nearest-neighbor propagation."
+    }
+  ],
+  "failures_and_limits": [
+    "APS full-text PDF opening for Eisenberg 2000 failed in the root branch; official abstract remains accessible and author-hosted alternatives were delegated.",
+    "Chen DOI redirect was unavailable to the web tool; author-hosted final four-page PDF was available and downloaded.",
+    "The local Python environment lacks requests; downloads succeeded using standard-library urllib without installing packages.",
+    "ResearchGate snippets were used for discovery only; Chen scientific assessment uses the author-group host.",
+    "No subscription access, citation-count ranking, Scopus/Web of Science exhaustive search, or formal PRISMA claim.",
+    "Stopped after finding direct two-dimensional launch comparisons, nearest-neighbor pi/2 theory and foundational experimental records; further broad hits mostly concerned different modulated or nonlinear systems."
+  ],
+  "completion_date": "2026-10-21"
+}

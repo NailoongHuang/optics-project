@@ -1,0 +1,133 @@
+固定距离传输中的 onsite 与 bond 无序
+日期：2026-10-21
+
+结论
+
+这是一个闭合的对照测试，结果支持把该方向保留为模型校准基准，而非当前最优先的新机制方向。
+
+在相同 Hamiltonian Frobenius 误差预算下，onsite 与 bond 无序造成的接收损失并不相等；但在一个针对性的对照中，将两者的最低阶后向散射强度匹配后，接收概率差几乎完全消失。不能把最初差异直接归因于带中心的 chiral 保护，也不能据此宣称推翻了原作者宽泛的“影响可比较”预期。
+
+作者留下的具体问题
+
+Meier et al., Precision is not limited by the second law of thermodynamics,
+Nature Physics 21, 1147–1152 (2025).
+DOI：https://doi.org/10.1038/s41567-025-02929-2
+期刊全文：https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/
+定位：正式发表版 Methods “Stability under perturbations”，第二段；含封面的
+published PDF 第 9 页。本地全文的 1044–1047 行提及 bare-qubit frequency disorder，
+并预期其影响与 coupling imperfections 可比较。
+
+正式发表版已经计算了 coupling disorder 与 amplitude damping，不能继续沿用旧预印本的
+“所有损耗稳定性都未做”表述。本 demo 只检查其中没有数值比较的 onsite-vs-bond bulk
+子问题，不计算完整时钟的制备、吸收、首次到达分布、复位或熵—精度关系。
+
+测试定义
+
+干净 XY／腔阵列的单激发 Hamiltonian 为：
+H_nn = J，H_n,n+1 = H_n+1,n = -J/2。
+计算单位 a=hbar=J=1。开放链 N=1024，Gaussian 初态概率 RMS 宽度 sigma=6a，
+初始中心 x=-160a，固定接收窗 -12a <= x <= 12a。
+
+主测试取 k0*a=pi/2。按干净频谱平均速度 v=0.99653379897 aJ/hbar，
+固定观察时刻 t=160.55652118 hbar/J，即干净质心传播距离160a。
+64 个配对无序实现，seed=2026102100,...,2026102163。
+误差强度 w/J=0.02,0.05,0.10,0.20。
+
+离中心对照取 k0*a=0.7，保持相同初始宽度、传播距离与接收窗，干净到达时刻
+t=249.22712363 hbar/J；在 w/J=0.05,0.10 各使用32个配对实现。
+这些参数、时刻和 demo seed 在计算前固定。没有逐 realization 优化时刻、挑选较好
+样本、后选择或将接收概率重新归一化。
+
+主误差预算：
+E Tr[(delta H)^2]/N = w^2。
+
+三种无序：
+1. 独立 onsite：delta H_nn 的标准差为 w。
+2. 独立 bond-only：跃迁扰动标准差为 w sqrt[N/(2(N-1))]。
+3. 物理 Heisenberg 交换无序：每条边 delta J 的标准差为
+   w sqrt[N/(N-1)]；同时改变跃迁 -delta J/2 与相邻两格点对角项 delta J/2。
+   这是相关对角—非对角无序，不能与只改跃迁的 XY 模型混同。
+   其开放链干净端点对角为J/2，内部为J，严格保持加权图 Laplacian 行和为零。
+
+主要指标：
+- 固定接收窗内的绝对概率。
+- 与同一干净 Hamiltonian 演化态的重叠模方，用来隔离无序造成的误差。
+- 与初始 Gaussian 刚性平移参考的重叠模方，另行保留在 results.json。
+- 范数、边缘概率、质心及参与格点数作为诊断。
+
+所有误差条均为无序均值的95% t置信区间；配对比较使用逐 seed 的差值。
+“接收概率相差不超过±5个百分点”是本测试的操作性等效区，不是原论文的定量要求。
+当两种传输都接近零时，落入等效区不能当作有用传输成功。
+
+结果
+
+k0*a=pi/2，接收概率的 ensemble 均值：
+
+w/J     onsite       bond-only     Heisenberg
+0       0.962132     0.962132      0.962132
+0.02    0.906975     0.855820      0.906243
+0.05    0.671020     0.475718      0.665729
+0.10    0.251136     0.077091      0.232645
+0.20    0.010248     0.000224      0.004956
+
+例如w=0.05J时，onsite减bond的配对接收概率差为0.195301，
+95% CI为[0.186195,0.204407]。
+这表示相同总体 Hamiltonian 扰动预算不等于相同散射损失。
+所有演化仍守恒总概率；这里的“损失”指接收窗效率降低，并非耗散。
+
+离中心k0*a=0.7对照在w=0.05J时：
+干净接收概率0.538893，onsite为0.216738，bond-only为0.096120，
+Heisenberg交换无序为0.510800。
+onsite与bond的差也在离中心对照存在，所以仅此差异不能证明带中心chiral机制。
+Heisenberg结果不同也提醒：把交换无序简化成纯 hopping 无序会改变问题。
+
+针对归因的闭合对照
+
+对归一化平面波，最低阶后向散射矩阵元的 ensemble 方差为：
+onsite：w^2/N；
+bond-only：4(N-1) sigma_h^2/N^2。
+
+因此另设一个诊断对照：仍取onsite标准差w=0.05J，将bond跃迁标准差改为
+w sqrt[N/(4(N-1))]=0.025012216J。这个对照匹配最低阶后向散射，
+不再声称匹配Frobenius误差预算（bond的该预算是onsite的一半）。
+
+同一初态、距离和64个seed得到：
+onsite接收概率 = 0.67101957；
+后向散射匹配的bond接收概率 = 0.67110487；
+onsite减bond = -0.00008530，配对95% CI = [-0.00213426,0.00196365]。
+
+原来的约0.195接收概率差因此几乎消失。这支持将主要差异归于误差预算映射到
+后向散射强度的不同，而不是一个额外的保护现象。
+两者并非严格动力学等价：与干净态的重叠模方仍相差约0.00922，
+反映相位／形状误差可以与接收窗概率不同。
+Born控制只在这里选定的弱无序点进行；没有把它提升为所有强度和距离的定理。
+
+数值检查
+
+- H严格Hermitian。
+- 无无序的稀疏矩阵指数与独立干净FFT演化L2差小于3.2e-14。
+- 一个无序实现另用完整三对角本征分解，L2差为4.3e-14。
+- 保持同一物理无序实现，N=1024加倍至2048，代表性强无序末态差小于2.5e-14。
+- 全ensemble最大范数误差约4.6e-13。
+- Heisenberg加权图Laplacian行和残差约2.3e-16。
+- 独立检查了有限N误差预算系数和开放Heisenberg边界对角项。
+
+示范文件
+
+summary.png / summary.svg：两类中心波矢的ensemble对照。
+born_matched_control.png / born_matched_control.svg：后向散射匹配的归因对照。
+demo.gif：预先固定seed=2026102100、w=0.05J的65帧传播。
+绿色接收窗固定，坐标、纵轴、归一化固定；这一个 realization 仅用于展示，
+结论来自ensemble数据。
+demo_frame_00.png、demo_frame_32.png、demo_frame_64.png：动画检查帧。
+results.json、ensemble.csv、born_matched_control.csv：全部指标和验证。
+
+复现：
+python research/wavepacket-prospects/demos/transport-disorder/run.py
+
+研究判断
+
+该demo完成了一个来源明确、可证伪、带对照的子测试。它没有显示值得单独宣称新颖的
+输运机制，因此应低于新的受限逆设计或可检测backflow问题。
+如果后续要研究实际时钟，则必须回到论文的完整制备—传播—吸收模型，加入真实
+器件的频率误差与耦合误差协方差，而不能从此处接收窗概率直接推断时钟精度。

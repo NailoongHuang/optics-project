@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-21",
+  "scope": "Author-stated unperformed proposals in the discrete-optics sources most directly matching the current cosine-band wavepacket model; bounded follow-up check.",
+  "sources": [
+    {
+      "id": "longhi2009",
+      "title": "Discrete diffraction and shape-invariant beams in optical waveguide arrays",
+      "doi": "10.1103/PhysRevA.79.033847",
+      "url": "https://arxiv.org/pdf/1001.0997v1",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/discrete-optics/longhi2009_extracted.txt",
+      "read_locations": [
+        "PDF p.12, Section IV.B immediately before Conclusions",
+        "PDF p.12, Section V Conclusions"
+      ],
+      "author_explicit_unperformed_question": null,
+      "assessment": "Conclusions summarize completed moment laws, self-collimation, discrete Bessel beams, beam tilting, self-imaging and polygonal Bloch oscillations. No explicit unresolved future program is stated. The separable two-dimensional extension is already given in Eqs.91-94, so it is not a future-work gap."
+    },
+    {
+      "id": "chen2007",
+      "title": "The peculiarities of discrete diffraction in two-dimensional optical waveguide arrays",
+      "doi": "10.1016/j.optcom.2006.10.031",
+      "url": "https://olab.physics.sjtu.edu.cn/papers/2007/Hongyun%20Chen-OC.pdf",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/discrete-optics/chen2007_extracted.txt",
+      "read_locations": [
+        "PDF p.4, final scientific paragraph and Conclusion"
+      ],
+      "author_explicit_unperformed_question": null,
+      "assessment": "The conclusion restates the achieved two-dimensional diffraction control by launch tilt. There is no concrete future experiment or unresolved question. The immediately preceding paragraph already attributes asymmetric shape at one zero-quadratic-diffraction direction to remaining cubic diffraction."
+    },
+    {
+      "id": "eisenberg2002",
+      "title": "Nonlinear Effects in Waveguide Arrays",
+      "author": "Hagai Eisenberg",
+      "kind": "Author PhD thesis",
+      "year": 2002,
+      "url": "https://openscholar.huji.ac.il/sites/default/files/hagai/files/hagaielectronicthesis.pdf",
+      "local_source": "literature/cosine-lattice-wavepacket-audit/discrete-optics/eisenberg_thesis.txt",
+      "read_locations": [
+        "PDF p.43, printed p.38, Section 3.3, Eqs.3.4-3.5 and following paragraph"
+      ],
+      "author_explicit_unperformed_question": "The author proposes engineering arbitrary periodic diffraction by composing segments with different cosine harmonics, and gives a triangular-dispersion target and a two-array approximation. This is a concrete proposal rather than a question stated in a conclusion.",
+      "short_quotes": [
+        "any arbitrary periodic function can be spanned by its sine and cosine Fourier elements",
+        "only two directions while experiencing no diffraction"
+      ],
+      "quote_word_total": 21,
+      "completed_in_same_work": "The following experiment uses otherwise identical equal-length sections with alternating tilt to demonstrate reduced, zero and anomalous average diffraction. It does not demonstrate the arbitrary triangular-band target proposed in the preceding paragraph.",
+      "scope_limit": "The proposed piecewise optical arrays are not automatically equivalent to static long-range exchange in a magnet. A Fourier-harmonic Hamiltonian is a transferable toy-model implementation."
+    }
+  ],
+  "followup_checks": [
+    {
+      "title": "Long-range interaction in waveguide lattices",
+      "authors": [
+        "Alexander Szameit",
+        "Thomas Pertsch",
+        "Stefan Nolte",
+        "Andreas Tuennermann",
+        "Falk Lederer"
+      ],
+      "year": 2008,
+      "doi": "10.1103/PhysRevA.77.043804",
+      "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.77.043804",
+      "read_scope": "Official APS abstract and bibliographic record; full text not obtained in this branch.",
+      "relevance": "Official abstract already describes general two-dimensional long-range coupling and engineered diffraction-free possibilities. Thus adding distant neighbors or claiming general band engineering is not novel."
+    },
+    {
+      "title": "Waveguide Arrays: Interaction to Many Neighbors",
+      "authors": [
+        "Marco A. Tapia-Valerdi",
+        "Iran Ramos-Prieto",
+        "Francisco Soto-Eguibar",
+        "Hector M. Moya-Cessa"
+      ],
+      "year": 2025,
+      "doi": "10.3390/dynamics5030025",
+      "url": "https://www.mdpi.com/2673-8716/5/3/25",
+      "preprint_url": "https://www.preprints.org/manuscript/202505.1458/v1",
+      "read_scope": "Publisher-indexed full text excerpts including model examples and complete Section 5 Conclusions; direct web open returned HTTP429.",
+      "relevance": "Analytical general long-range propagator and illustrative first-through-fourth-neighbor cases already exist. Its conclusion does not add a specific future-work promise."
+    },
+    {
+      "title": "Waveguide Arrays Interaction to Second Neighbors: Semi-Infinite Case",
+      "year": 2025,
+      "doi": "10.3390/dynamics5040051",
+      "url": "https://www.mdpi.com/2673-8716/5/4/51",
+      "read_scope": "Publisher-indexed introduction and abstract; direct page opening failed.",
+      "author_future_statement_paraphrase": "Extending the paraxial formalism to explicit nonparaxial corrections is named as future research.",
+      "assessment": "This is an explicit recent future direction, but it changes the optical propagation approximation and is poorly matched to the present single-magnon lattice problem. Not recommended as a minimal demo for this project."
+    },
+    {
+      "title": "On-chip arbitrary dispersion engineering with deep photonic networks",
+      "arxiv": "2504.05505",
+      "url": "https://arxiv.org/abs/2504.05505",
+      "read_scope": "Official arXiv abstract",
+      "assessment": "Experimental triangular group-delay-dispersion versus wavelength in Mach-Zehnder networks is not the triangular Bloch dispersion versus wavevector of the thesis proposal. It cannot establish that exact proposal solved."
+    }
+  ],
+  "queries": [
+    "\"waveguide\" \"triangular dispersion\"",
+    "\"waveguide arrays\" \"third-neighbor\" \"diffraction\"",
+    "\"long-range coupling\" \"linear dispersion\" \"waveguide\"",
+    "\"zero\" \"third-order diffraction\" \"waveguide\"",
+    "\"waveguide\" \"third\" \"dispersion\" \"cancel\" array",
+    "\"long-range hopping\" \"dispersionless\"",
+    "\"cos(3\" \"wave packet\"",
+    "\"diffraction\" \"1/27\"",
+    "\"Waveguide Arrays: Interaction to Many Neighbors\"",
+    "\"Waveguide Arrays: Interaction to Many Neighbors\" \"future\"",
+    "\"waveguide Arrays\" \"g3\" \"1/27\"",
+    "\"Long-range interaction in waveguide lattices\"",
+    "\"Discrete solitons in nonlinear zigzag optical waveguide arrays with tailored diffraction properties\"",
+    "\"waveguide\" \"fifth-order\" \"diffraction\"",
+    "\"Long-range interaction in waveguide lattices\" pdf",
+    "\"Szameit\" \"043804\" pdf",
+    "\"third-order\" \"diffraction management\" waveguide array"
+  ],
+  "selection": "Do not promote Longhi2009 or Chen2007 to author-explicit open questions. Harmonic band engineering is a feasible benchmark-inspired toy demo, not an established novel project; prioritize newer explicit gaps if other branches provide them.",
+  "coverage_limit": "Bounded primary-source search through 2026-10-21. Not finding an exact 1/27 Gaussian-lifetime example does not prove novelty. No simulations performed in this branch."
+}

@@ -1,0 +1,1145 @@
+=== PDF PAGE 1 ===
+Magnon-Cherenkov effect from a picosecond strain
+pulse
+Iaroslav Filatov 
+Ioffe Institute https://orcid.org/0000-0001-6151-5874
+Petr Gerevenkov 
+Ioffe Institute
+Andrei Azovtsev 
+Ioffe Institute
+Valeria Kovaleva 
+Ioffe Institute
+Nikolai Khokhlov 
+Radboud University
+Aleksandra Kalashnikova 
+Ioffe Institute https://orcid.org/0000-0001-5635-6186
+Article
+Keywords: Cherenkov effect, spin waves, magnonics, picosecond acoustics
+Posted Date: March 25th, 2025
+DOI: https://doi.org/10.21203/rs.3.rs-5971617/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+Additional Declarations: There is NO Competing Interest.
+Version of Record: A version of this preprint was published at Nature Physics on January 23rd, 2026. See
+the published version at https://doi.org/10.1038/s41567-025-03137-8.
+
+
+=== PDF PAGE 2 ===
+Magnon-Cherenkov eﬀect from a picosecond strain pulse
+Iaroslav A. Filatov1*, Petr I. Gerevenkov1, Andrei V. Azovtsev1,
+Valeria A. Kovaleva1, Nikolai E. Khokhlov1,2, Alexandra M. Kalashnikova1
+1Ioﬀe Institute, 26 Politekhnicheskaya, St. Petersburg, 194021, St. Petersburg, Russian
+Federation.
+2*Institute for Molecules and Materials, Radboud University, 6525AJ, Nijmegen, The
+Netherlands.
+*Corresponding author(s). E-mail(s): yaroslav.ﬁlatov@mail.ioﬀe.ru;
+Contributing authors: petr.gerevenkov@mail.ioﬀe.ru; azovtsev@mail.ioﬀe.ru;
+valeria.kovaleva@mail.ioﬀe.ru; n.e.khokhlov@gmail.com; kalashnikova@mail.ioﬀe.ru;
+Abstract
+Radiation from an uniformly moving source, referred to as the Cherenkov eﬀect, is a universal phe-
+nomenon, which enables emission of waves and ﬁnds important applications in various areas of physics
+from particle physics to plasmonics and beyond. Currently, unveiling the potential of Cherenkov
+emission of coherent spin waves, or magnons, is hampered by a lack of experimentally implemented
+fast-moving magnetic perturbations. In this work, we uncover the magnon-Cherenkov eﬀect demon-
+strating experimentally the emission of the exchange spin waves enabled by an optically induced
+picosecond strain pulse, which acts as a spatially localized propagating perturbation of the internal
+eﬀective magnetic ﬁeld as a result of magnetoelastic coupling. Through time-resolved measurements
+and micromagnetoelastic simulations, we reveal the sagittal propagation of a strain pulse in a dielec-
+tric ferrimagnet followed by the emitted SWs fully in line with the conditions of the Cherenkov eﬀect.
+The spectral characteristics of the emitted spin waves are controlled with an applied magnetic ﬁeld
+and the shape of the strain pulse itself. Establishing a picosecond strain pulse as a source for the
+magnon-Cherenkov eﬀect signiﬁcantly expands the possibilities to realize and control non-dissipative
+spin transport in various laterally and vertically structured magnonic devices.
+Keywords: Cherenkov eﬀect, spin waves, magnonics, picosecond acoustics
+Magnonic devices use coherent spin waves (SWs) to encode, transfer, and process information [1]. Consid-
+erable advancement has been made in recent years in the development of planar two-dimensional (2-D)
+magnonic structures, featuring GHz magnetostatic waves that are guided laterally from their area of
+origin [2]. As a result, magnonic elements with diverse functionalities are actively being developed for
+analog and digital computing [3] with a potential to outperform conventional electronic-based schemes in
+terms of scaling down, operating frequencies and power consumption [4, 5]. In addition to the implemen-
+tation of classical binary logic operations [6, 7], non-conventional computation paradigms computation
+paradigms [8], including magnonic neuromorphic computing [9] are emerging. Scaling down, bursting oper-
+ation frequencies, and increasing the density of magnonic elements demand means to generate SWs
+1
+
+
+=== PDF PAGE 3 ===
+beyond the magnetostatic regime, i.e. possessing short wavelengths and high velocities, with low damp-
+ing, and propagating in any lateral or sagittal direction in magnetic heterostructures [10]. Currently, the
+two main paradigms to excite coherent SWs exploit either localized alternating magnetic ﬁeld or spin
+current, or propagating acoustic waves coupled to SWs. However, as waves of any nature, coherent SWs
+can be generated via the Cherenkov mechanism, which is the fundamental process of wave emission from
+a uniformly moving and spatially localized source [11]. The breakthrough discovery of electromagnetic
+wave emission from uniformly moving charged particles by Pavel Cherenkov [12] was awarded the Nobel
+Prize in 1958, and the Cherenkov eﬀect has been investigated in multiple ﬁelds of physics and beyond:
+particle physics [13], plasmonics [14] and biomedicine [15]. The potential of this mechanism for magnon-
+ics lies in the accessibility of the exchange SWs and the possibility of guiding them by controlling the
+direction of propagation of the source, which requires the search for a suitable moving perturbation of
+the magnetic media [16].
+In analogy to the Cherenkov eﬀect for electromagnetic and sound waves, such an emission of SWs
+requires the perturbation of a magnetic medium which moves with a velocity matching the SW phase
+velocity Vph and is suﬃciently localized in the direction of propagation. In a one-dimensional scenario,
+an inﬁnitely localized magnetic ﬁeld pulse of strength H0 exempliﬁes the concept of Cherenkov emission
+of SWs. This pulse propagates through a magnetically ordered medium along the z axis at the velocity
+V , and is represented by the Dirac delta function H(t, z) = H0δ(z −V t), where t is time (Fig. 1a). The
+impact of the ﬁeld on magnetic moments is described by the torque T(z, t) = T0δ(z −tV ), where T0 is its
+magnitude. This spatially localized torque is known to trigger SWs propagating in the ±z direction with
+the distribution of wavenumbers k deﬁned by the Fourier transform (FT) of the torque T(z, t) [17–19].
+Thus, the Dirac delta torque enables the generation of SWs with any k when considering that T(z) is
+ﬁxed in space, and the corresponding frequencies ω are given by the SW dispersion relation ω(k). When
+the pulse moves through a media, 2-D FT of the torque ˆδ(kV + ω) yields that only SWs satisfying the
+velocity matching (VM) condition will be generated:
+V = |ω
+k | ≡Vph(k).
+(1)
+The torque of a ﬁnite spatial size and an arbitrary shape imposes a constraint on the amplitudes of
+the SWs depending on their wavenumbers [20]. When this torque is moving, SWs emitted due to the
+Cherenkov eﬀect are determined by the VM-condition with additional restriction given by its spectrum
+ˆT(k):
+ˆT(ω, k) = ˆT(k)ˆδ(kV + ω).
+(2)
+Thus, to realize Cherenkov emission of SWs, a source producing a spatially localized torque with a
+required spectrum and moving with the SW phase velocity is required.
+In Ref. [21], an experimental realization of the magnon-Cherenkov eﬀect is demonstrated with
+magnetic-ﬁeld ﬂux quanta produced by moving Abrikosov vortices in a superconductor/ferromagnet struc-
+ture, which serve as moving localized magnetic ﬁeld pulses. This experiment conﬁrms the excitation of
+monochromatic exchange SWs with wavelengths as short as 35 nm at cryogenic temperatures. Neverthe-
+less, the problem remains of an implementation of a fast-moving localized ﬁeld at room temperature with
+the possibility to propagate in various directions and controllable spectral characteristics. A perspective
+candidate for a propagating torque is a moving domain wall [22, 23], which acts locally on a magneti-
+zation, and an extremely narrow wall can be considered in the same way as the moving Dirac pulse
+with the VM-condition deﬁned by equation (1). However, the Walker breakdown limits the propagation
+velocity of domain walls in ﬂat structures, and an experimental demonstration is challenging and yet to
+be realized. Here, magnetic nanotubes are a promising platform to overcome the speed limit [24]. Laser
+pulses are known to produce eﬀective magnetic ﬁeld pulses, i.e. a perturbation of internal ﬁelds, via var-
+ious femtomagnetic processes [25, 26]. However, with the large group and phase velocities, such pulses
+satisfy the VM-condition only at very low k, resulting mostly in the excitation of the uniform precession
+of magnetization.
+2
+
+
+=== PDF PAGE 4 ===
+In this work, we exploit the propagating eﬀective ﬁeld provided by a bipolar picosecond strain pulse,
+which can be implemented at room temperature in various media [27]. Consider a mechanical displace-
+ment of atoms uz(z, t) in the form of a Gaussian function moving with a sound velocity, which induces
+an eﬀective ﬁeld through a perturbation of the magnetoelastic energy and the associated torque T(z)
+(Fig. 1a). In general, the dispersion curves of the exchange SWs and acoustic phonons have two inter-
+section points, marked with the brown points in Fig. 1b,c, where the VM-condition (1) is satisﬁed, and
+the Cherenkov emission of the SWs is expected to occur. In addition, the amplitude of the emitted SWs
+is given by the Fourier amplitude at a particular kI,II, which is controlled by the spatial length of the
+displacement pulse (Fig, 1b). The signiﬁcant diﬀerence in the group velocities of SWs at the intersec-
+tion points of the dispersion curves results in the propagation of the SWs with kI and kII behind and
+ahead of the strain pulse, respectively, as schematically illustrated in Fig. 1a. In the following, we exper-
+imentally uncover the magnon-Cherenkov eﬀect resulting in the emission of the exchange SWs from the
+picosecond strain pulse propagating sagittally in iron garnet and support the experimental results with
+micromagnetoelastic simulations.
+Observation of Cherenkov emission of spin waves
+We explore the Cherenkov emission of SWs on the platform of the 1.74-µm-thick ﬁlm of lutetium iron gar-
+net (LuBi)3(FeGa)5O12 (LuIG) grown on the gadolinium gallium garnet (GGG) substrate. The sample
+was partially covered with a 100-nm-thick gold layer (Au) that serves as an optoacoustic transducer [28].
+Linearly polarized femtosecond laser pump pulses with the central wavelength of 515 nm are focused
+either onto the Au layer to generate a sagittally propagating strain pulse via a thermoelastic mechanism
+or onto the uncovered LuIG ﬁlm to directly excite magnetization dynamics (see Fig. 2a and Methods).
+The time-resolved response is detected at the opposite interface of the LuIG ﬁlm as a change of inten-
+sity or polarization rotation of the 450 nm probe pulses reﬂected from the LuIG/GGG interface. The
+central wavelengths of the pump and probe pulses guarantee their spatial separation in LuIG, since the
+penetration depths of both pulses are below 100 nm.
+To verify that the strain pulse is indeed generated in the structure, we ﬁrst measure pump-induced
+changes in the reﬂectivity. The resulting time trace consists of high-frequency oscillations with increas-
+ing amplitude, which emerge slightly after the pump pulse impact on the Au/LuIG (Fig. 2b). Then, the
+oscillations experience an abrupt change at t ≈0.26 ns, when the frequency is reduced and the enve-
+lope acquires a complex shape (see inset of Fig. 2b). The fast Fourier transform (FFT) spectrum of the
+entire time trace comprises three main frequency peaks (dark blue bottom spectrum in Fig. 2c): the low-
+frequency group of peaks around 13 GHz, the narrow peak at 55.2 GHz and the broad peak at 69.4 GHz.
+The sagittal propagation of the acoustic pulse results in a time-domain Brillouin scattering (TDBS) and
+corresponding oscillations in the measured time traces. The mechanism behind the TDBS oscillations lies
+in the interference of the probe pulse reﬂected from the LuIG/GGG interface with that reﬂected from the
+propagating strain pulse [29]. We observe that the time trace before t = 0.26 ns reveals the only TDBS
+frequency 69.4 GHz (gray middle spectrum in Fig. 2c) corresponding to the strain pulse propagating in
+the LuIG with the velocity 6.55 km s−1 of the longitudinal acoustic (LA) phonons [30]. The rest of the
+time trace consists of the oscillations with the TDBS frequency 55.2 GHz originating from the strain pulse
+in GGG with the LA sound velocity of 6.2 km s−1 along with the low-frequency group of peaks (light blue
+top spectrum in Fig. 2c). Therefore, the strain pulse is produced on the Au/LuIG side of the sample and
+propagates to the LuIG/GGG interface. To identify the dynamics corresponding to the low-frequency
+peaks, we study the transient magneto-optical response.
+In the probe polarization rotation measurements, when the pump pulse is focused onto the Au/LuIG,
+the magneto-optical response is identiﬁed as oscillations with an amplitude and frequency dependent
+on the external magnetic ﬁeld. Such oscillations occur at time delays exceeding ∆t ≈0.26 ns, i.e. the
+magnetization dynamics follows the strain pulse (blue line in Fig. 2d and Extended Data Fig. E1). In
+contrast, direct excitation of the uncovered LuIG ﬁlm yields the excitation of the magnetization dynamics
+right after the pump impact (red line in Fig. 2d). The FFT of these time traces reveals that the two main
+3
+
+
+=== PDF PAGE 5 ===
+uz(z)
+T(z)
+0
+50
+100
+150
+2.5
+5.0
+7.5
+Velocity (km s-1)
+Wavenumber, k (rad m-1)
+c
+LA
+SW Vph
+SW Vgr
+I
+II
+a
+0
+50
+100
+150
+0
+50
+100
+150
+Frequency, f (GHz)
+Wavenumber, k (rad m-1)
+b
+SW
+LA
+(z-Vt)
+z
+kI
+kII
+Mz(z)
+0
+1
+Amplitude (arb. units)
+acoustic pulse
+spin wave
+Fig. 1 The Cherenkov emission of spin waves from a propagating strain pulse. a, The longitudinal mechanical
+displacement uz(z) with a Gaussian proﬁle induces a localized eﬀective magnetic ﬁeld and associated torque T(z) acting
+on magnetization. The VM-condition is imposed by the convolution of T(z) and moving Dirac delta function (black dashed
+arrow), resulting in the excitation of SWs with wavenumbers kI and kII. b, The dispersion curves of the exchange SWs
+(dark blue) and the LA phonon (gray) with two intersection points corresponding to the VM-condition(1). The strain pulse
+of a particular spatial length implies the exact amplitude spectrum ˆT(k) shown by purple dashed line. c, SW phase velocity
+Vph (dark blue), SW group velocity Vgr (dashed purple) and the LA phonon (gray) is plotted against the wavenumber. The
+VM-condition is satisﬁed as the velocity of the LA phonons exceeds the minimal SW Vph. The corresponding points are
+marked with the brown circles.
+frequency peaks (f0 and fI) have diﬀerent amplitude ratios when the pump is focused onto the Au/LuIG
+and directly onto the LuIG (Fig. 2e). We attribute the lowest frequency peak (11.9 GHz) to a sagittally
+quasi-homogeneous precession of magnetization at the ferromagnetic resonance (FMR) frequency, which
+dominates under the direct LuIG excitation. The excitation of the FMR mode is routinely realized in
+experiments with picosecond acoustic pulses [29, 31], and is observed under the Au/LuIG excitation in
+our experiment as well. The higher frequency peak (13 GHz) is more pronounced when the strain pulse
+is generated in the Au/LuIG structure, corresponds to the SW with non-zero k, and can be a signature
+of the magnon-Cherenkov eﬀect.
+To conﬁrm the Cherenkov emission of SWs, we study the magnetization dynamics as a function of
+the strength of the external magnetic ﬁeld Hext. The FFT of the corresponding time traces at µ0Hext
+between 0.3 and 0.7 T reveals that f0 and fI depend on the ﬁeld in a distinct manner (Fig. 3a). The FMR
+frequency f0 shows linear dependence on the ﬁeld. Note that the same trend of f0 is observed under the
+direct excitation of the LuIG (inset in Fig. 3a). The frequency fI grows non-linearly with Hext, signifying
+4
+
+
+=== PDF PAGE 6 ===
+Au
+LuIG
+Hext
+Pump
+z
+y
+x
+GGG
+Probe
+a
+Fig. 2 Time-resolved optical excitation of the strain pulse and detection of SWs. a, The scheme of the exper-
+iments when the pump pulses are focused either onto the Au/LuIG or onto the LuIG. Probe pulse is focused onto the
+LuIG/GGG interface, and its in-depth intensity proﬁle is shown by gray area. b, The time trace of the reﬂectivity changes
+after the pump pulse impact. Gray and light blue regions before and after t = 0.26 ns mark the propagation of the strain
+pulse in the LuIG ﬁlm and in the GGG substrate, respectively, Inset shows the zoom of time window before 0.5 ns. c, The
+FFT amplitude spectra obtained from the data on b: bottom (dark blue) spectrum corresponds to the FFT of the whole
+time trace, the middle (gray) and top (light blue) spectra correspond to the FFT with sharp window edge before and after
+t = 0.26 ns, respectively. Spectra are shifted vertically for clarity. d, The time traces of the probe polarization rotation angle
+after the impact of the pump pulse focused onto the Au/LuIG (blue) and the LuIG (red, scaled by factor of 10 and shifted
+vertically by -50 mdeg for clarity). Inset shows the time shift between the emergence of the oscillations ∆t ≈0.26 ns. e, The
+FFT amplitude spectra obtained from the data on d. The external magnetic ﬁeld is µ0Hext = 0.4 T.
+that this is the frequency of the emitted SW, which satisﬁes the VM-condition for the magnon-Cherenkov
+eﬀect.
+As the VM-condition (1) imposes the speciﬁc ratio ω
+k = Vs, where Vs is the LA phonon velocity in our
+case, we ﬁnd the emitted SW frequency as a function of Hext. The exchange SWs dispersion relation is
+ω(Hext, k) = ω0(Hext) + Dk2,
+(3)
+where ω = 2πf is the SW angular frequency, ω0 = 2πf0 is the FMR angular frequency, D = 2AexγM −1
+s
+is the spin stiﬀness, Aex is the exchange constant, γ = 1.76 × 1011 rad s−1 T−1 is the gyromagnetic ratio,
+and Ms is the saturation magnetization. Solving the LA phonon dispersion relation ω(k) = Vsk and
+equation (3) together, we obtain the frequency of SWs emitted via the magnon-Cherenkov eﬀect:
+ωI,II = Vs
+2D
+
+Vs ∓
+p
+V 2
+s −4Dω0
+
+,
+(4)
+where the minus and plus signs correspond to the SWs at frequencies ωI = 2πfI and ωII = 2πfII,
+respectively.
+We acquire the LA phonon dispersion with Vs = 6.55 km s−1 and the exchange SW dispersion using
+equation (3) with Aex = 1.8 × 10−12 J m−1 in the range of the experimentally used Hext (Fig. 3b). As
+Hext increases and the exchange SW dispersion shifts towards higher frequencies, the wavenumber of
+the emitted SW kI (kII) increases (decreases), as shown by the solid (dashed) brown line in Fig. 3b. The
+resulting ﬁeld dependencies of the Cherenkov radiation frequencies fI and fII are non-linearly approaching
+5
+
+
+=== PDF PAGE 7 ===
+0.3
+0.4
+0.5
+0.6
+0.7
+10
+20
+30
+Field, µ0Hext  (T)
+Frequency, f (GHz)
+Au/LuIG
+0
+1
+FFT amplitude (arb. units)
+fI
+f0
+0
+0.5
+1
+S
+b
+a
+f0
+0
+50
+100
+150
+0
+50
+100
+150
+200
+Frequency, f (GHz)
+Wavenumber, k (rad m-1)
+µ0Hext = 0.3-0.7 T
+kI
+kII
+ SW
+ LA phonon
+0.5
+1.0
+0
+50
+100
+150
+f (GHz)
+µ0Hext (T)
+fI
+fII
+0.3
+0.4
+0.5
+0.6
+0.7
+10
+20
+30
+µ0Hext (T)
+f (GHz)
+LuIG
+Fig. 3 Magnetic ﬁeld dependence of the excited magnetization dynamics. a, The ﬁeld dependence of the FFT
+spectra acquired in time-resolved magneto-optical measurements when the pump is focused onto the Au/LuIG (color-coded).
+Solid lines correspond to the FMR frequency f0 (red) and to the frequency of the Cherenkov radiation fI (brown). Inset in
+a demonstrates the ﬁeld dependence when the pump is focused directly onto the LuIG. b, Calculated SW dispersion (blue)
+in the range of the external magnetic ﬁeld µ0Hext between 0.3 and 0.7 T and the LA phonon dispersion (gray). The VM-
+condition of the Cherenkov radiation is satisﬁed in the two intersection points of the dispersion curves, which shift with
+Hext is traced by the brown solid (I) and dashed (II) lines. With the increase of Hext the wavenumber kI and frequency fI
+of the emitted SWs increase, while kII and fII decrease according to the shift of the exchange SW dispersion curve (inset
+in b). Color code of the background represents the sensitivity S(k) of the 450 nm probe laser pulses in reciprocal space.
+each other (inset in Fig. 3b). The ﬁeld dependence of fI demonstrates good agreement with that obtained
+experimentally (brown line in Fig. 3a). It follows that the observed SW at fI is the wave emitted from
+the strain pulse via the magnon-Cherenkov eﬀect and lagging behind its source. The exchange SWs
+frequencies fI observed in the experiments correspond to wavelengths ranging from 0.27 to 0.5 µm. SWs
+with frequency fII and wavelength between 49 and 54 nm are not detected in the experiment.
+Micromagnetoelastic simulations
+We support our interpretation of the experimental results as the strain pulse-driven Magnon-Cherenkov
+eﬀect with micromagnetoelastic simulations. We numerically solved the system of coupled Landau-
+Lifshitz-Gilbert equation for magnetization M(r, t) and the elastodynamic equation (Navier-Cauchy) for
+mechanical displacement u(r, t). The strain pulse is given a Gaussian proﬁle uz(z, t) with a total duration
+of 20 ps and injected into LuIG, and the magnetization dynamics in response to the pulse propagation is
+calculated. Details of the numerical methods are presented in Ref. [32] and Methods.
+A snapshot of the spatial distribution of the out-of-plane magnetization component over the sagittal
+direction Mz(z), the displacement uz(z) and the strain tensor component εzz(z) at t = 141 ps are shown in
+Fig. 4a and d. It is seen that there are long-(short-)wavelength SW propagates behind (ahead) the strain
+pulse. These SWs are continuously emitted as the strain pulse traverses the ﬁlm (see Supplementary Movie
+1). The probe pulse with penetration depth δpr = 75 nm is sensitive to a small portion of the magnetization
+dynamics averaged over a narrow region near the LuIG/GGG interface, thus limiting the wavenumber
+resolution (see gray area in Fig. 4a and Methods). Therefore, SWs with wavelengths shorter than 186 nm
+(k larger than 33.7 rad µm−1) cannot be resolved in the experiments, justifying why SWs with frequency
+fII are not present in the experimental data. We employ spatial averaging with exponentially decaying
+weights to obtain Mz(t) time trace to account for the penetration depth available in the experiment.
+Turning to Fig. 4b, we observe that the magnetization dynamics emerges exactly at ∆t = 0.26 ns after
+the injection of the strain pulse. Its FFT spectrum consists of the large peak corresponding to the exchange
+6
+
+
+=== PDF PAGE 8 ===
+0
+1
+1.74
+0
+5
+10
+15
+0
+1
+1.74
+4.6
+4.7
+4.8
+Mz/Ms (%)
+z (m)
+t=141 ps
+a
+kI
+kII
+Displacement, uz (pm)
+z (m)
+t=141 ps
+d
+
+0
+5
+zz (10-4)
+0
+1
+2
+3
+4
+5
+4.6
+4.7
+4.8
+4.9
+Mz/Ms (%)
+Time, t (ns)
+b
+10
+20
+0
+1
+FFT amplitude (arb. units)
+Frequency, f (GHz)
+c
+fI
+f0
+
+0
+100
+0
+50
+100
+150
+Wavenumber, k (rad m-1)
+Frequency, f (GHz)
+2D FFT amplitude (arb. units)
+f
+0
+10-3
+
+0
+100
+0
+50
+100
+150
+Wavenumber, k (rad m-1)
+Frequency, f (GHz)
+2D FFT amplitude (arb. units)
+e
+0
+1
+0
+1
+Probe intensity
+0
+0.3
+4.7
+4.8
+b
+Fig. 4 Micromagnetoelastic simulations of the Cherenkov emission of the SWs from the strain pulse a,
+Spatial snapshot of the normalized out-of-plane Mz component at t = 141 ps after the strain pulse injection. Gray area
+corresponds to the intensity proﬁle of 450 nm probe with penetration depth δpr = 75 nm. b, Time trace Mz(t) obtained by
+spatial averaging with weights corresponding to the probe penetration proﬁle. c, The FFT spectrum of the time trace from
+b. d, Spatial snapshot of the mechanical displacement uz (dashed line) and ∂uz
+∂z
+corresponding to the strain εzz(z) (solid
+line) at t = 141 ps. Strain pulse duration is 20 ps. e, Dispersion characteristic of the simulated acoustic pulse, obtained
+by the 2-D FFT of the spatio-temporal evolution of uz. Gray solid line corresponds to the LA phonon dispersion with
+Vs = 6.55 km s−1. f, Dispersion characteristic of the simulated magnetization dynamics obtained by the 2-D FFT of the
+spatio-temporal evolution of Mz(t, z). Gray line corresponds to the LA phonon dispersion, and dark blue curve corresponds
+to the exchange SWs dispersion calculated with equation (3). The external magnetic ﬁeld is µ0Hext = 0.4 T.
+SW with frequency fI and of the less pronounced FMR peak with frequency f0, which agrees with the
+experimentally obtained values (compare Fig. 4c and Fig. 2e). To detect the SW with wavenumber kII one
+needs to reduce δpr by tuning the probe wavelength into the ultraviolet range (Extended Data Fig. E3 and
+Methods). Finally, the dispersion characteristic of the magnetization dynamics is obtained using the 2-D
+FFT of the simulated spatio-temporal evolution of Mz(z, t) and compared to analytical ones (Fig. 4f).
+The increased amplitude of SWs at the intersections of the dispersion curves serves as conﬁrmation of
+the magnon-Cherenkov eﬀect responsible for the SW emission.
+Discussion
+The group velocities of the emitted SWs are in the range between 1.2 and 2.2 km s−1 for kI and between
+10.9 and 11.9 km s−1 for kII, which diﬀer signiﬁcantly from the strain pulse velocity (Fig. 1c) and lead to
+SWs propagation behind and ahead of the strain pulse (Fig. 4a,d). However, SW with kII, propagating
+ahead of the strain, is not observed in the experiments. Although the VM-condition is satisﬁed for both
+intersection points, equation (2) yields the amplitude condition on the magnon-Cherenkov eﬀect, which is
+ˆT(k) = exp
+
+−1
+2k2σ2
+|k|σ for the Gaussian displacement pulse with spatial length σ. Assuming that SWs
+with a particular k are emitted with suﬃcient amplitude only if ˆT(k) exceeds 10% of its maximum value,
+7
+
+
+=== PDF PAGE 9 ===
+we obtain that the SW wavenumber should be in the range between 0.06σ−1 and 2.76σ−1. For the 20 ps
+long strain pulse (σ = 16 nm), this range is from 4 to 170 rad µm−1. Evidently, for longer strain pulses,
+the range of accessible SW wavenumbers reduces and shifts toward the lower k. We numerically conﬁrm
+this showing the absence of SW with kII and the increased amplitude of SW with kI during the Cherenkov
+emission from the strain pulse with a duration of 70 ps (Extended Data Fig. E2 and Supplementary movie
+2). This is fully consistent with conservation laws of momentum and energy for the magnon-phonon
+system, which also implies a modiﬁcation of the initial spectrum of the strain pulse by emitted SWs.
+Consequently, the strain pulse acquires a small distortion during propagation. At the same time, the 2-D
+FFT of the spatio-temporal evolution of uz(z, t) shows that the phonon dispersion remains linear (see
+Fig. 4e), indicating an absence of a strong hybridization between the emitted SWs and the strain pulse.
+Since the Cherenkov emission accompanies the strain pulse during its propagation, we attempted to
+detect these SWs using probe pulses with 900 nm central wavelength. Since the studied LuIG sample is
+almost transparent at 900 nm, such probe pulses are sensitive to the magnetization dynamics averaged
+over the entire sample thickness. When the pump pulse is focused directly onto the LuIG, only the
+magnetization dynamics at the FMR frequency f0 is detected. Under the excitation of the Au/LuIG the
+magnetization dynamics is detected without a time delay (Extended Data Fig. E4). The FFT spectra of
+this dynamics show, in addition to the FMR mode, the presence of spin waves generated through the
+Cherenkov eﬀect. Moreover, distinct frequency combs appear in the spectra, arising from the strain pulse
+and corresponding SWs reﬂecting multiple times between the sample interfaces.
+In the outlook, we discuss the possible impact of the demonstrated magnon-Cherenkov eﬀect on the
+development of magnonics. Unlike other propagating SW sources, such as domain walls, vortices, and
+even light pulses, strain pulses generally have favorable propagation properties in various media and
+heterostructures. The magnon-Cherenkov eﬀect therefore enables generation of SWs from strain pulses
+moving within magnetic/magnetic or magnetic/nonmagnetic multilayers, as well as in patterned struc-
+tures [31, 33, 34]. Here, SWs in diﬀerent constituents remain coherent but exhibit distinct characteristics
+determined by the speciﬁc magnetic and acoustic properties of the layers involved. Thus, complex mag-
+netic dynamics, controlled by external magnetic ﬁelds, could ﬁnd applications in reservoir computing [35].
+On the other hand, one could envisage multilayer or patterned structures with a large acoustic impedance
+mismatch at a particular interface, thus making it possible to inject SW without injection of the strain
+pulse through the interface, or even through an air spacer [36]. This makes it possible to physically decou-
+ple the source of an exchange SW and a waveguide. By designing optoacoustic transducers, sequences of
+strain pulses with controlled distance can be obtained and utilized for a unidirectional Cherenkov emission
+of SW in analogy to the numerical concept proposed in [37]. Regarding the development of approaches to
+realize Cherenkov emission of a SW, we note that in heterostructures, such as magnonic crystals [38] and
+in hybrid magnon-phonon crystals [39], the velocity threshold can be modiﬁed in an analogy to Cherenkov
+electromagnetic radiation by a charged particle moving in a photonic crystal [40]. An intriguing possi-
+bility to generate SW by acoustic solitons [27] has yet to be explored to access exceptionally high SW
+wavenumbers owing to the strong localization of mechanical displacements to be utilized as, e.g. sources
+of THz electromagnetic waves [41]. Finally, as the SWs excitation is possible through dynamical perturba-
+tions of exchange, spin-orbital, and magneto-dipolar eﬀective ﬁelds, mechanisms of SW generation from
+a strain pulse beyond magnetoelastic coupling can be explored.
+Methods
+Sample
+The sample is a single-crystal ﬁlm (LuBi)3(FeGa)5O12 with a thickness of 1.74 µm, grown by a liquid-
+phase epitaxy method on (110) gadolinium gallium garnet (GGG) substrate. The surface of the sample
+was covered with a 100-nm-thick gold layer using a thermal evaporation process. The 256 × 256 µm2
+windows in gold are made using electron beam lithography combined with reactive ion etching by an
+Ar-ion plasma.
+8
+
+
+=== PDF PAGE 10 ===
+The magnetic parameters of the sample were characterized using the Smit-Beljers approach [42] in
+combination with the pump-probe FMR frequency measurements. We performed FFT of time traces at
+diﬀerent azimuthal directions of the magnetic ﬁeld with µ0Hext = 415 mT (Extended Data Fig. E5), when
+the pump pulses are focused onto the Au/LuIG and the probe pulses central wavelength of 1030 nm.
+The free energy density for substituted iron garnets grown on the (110)-type substrates is written in a
+form [43]:
+U = EH + EM + Eu + Ei + Exz,
+(5)
+where EH and EM are Zeeman and magnetostatic energy terms, respectively, as well as Eu, Ei and
+Exz are responsible for the uniaxial out-of-plane, in-plane and orthorhombic anisotropy, respectively. All
+terms are expressed as follows:
+EH = −µ0Ms(mxHx + myHy),
+EM = 1
+2µ0M 2
+s m2
+z,
+Eu = −Kum2
+z,
+Ei = −Kim2
+x,
+Exz = −Kxzmxmz,
+(6)
+where mj = Mj/Ms (j = x, y, z) are the normalized components of the magnetization M; Hx and Hy
+are the in-plane components of the external magnetic ﬁeld Hext; Ku, Ki and Kxz are the uniaxial out-
+of-plane, in-plane and orthorhombic anisotropy parameters, respectively. Writing (5) in the spherical
+coordinates allows a numerical calculation of the FMR frequency, knowing the equilibrium direction of
+M, as described elsewhere [42, 44]. By ﬁtting the azimuthal and ﬁeld dependence of FMR frequency
+(solid red line in Extended Data Fig. E5 and red dashed line in Fig. 3a) we acquire the following magnetic
+parameters of the sample: Ms = 13.5 kA m−1, Ku = 194 J m−3, Ki = 449 J m−3 and Kxz = 325 J m−3.
+Pump-probe experiment details
+We used the Yb:KGW regenerative ampliﬁer laser system (PHAROS, Light Conversion) as a source of
+laser pulses with a duration of 170 fs, central wavelength of 1030 nm, 5 kHz repetition rate, and pulse
+energy up to 1 mJ. We split the laser pulses into two parts. The ﬁrst part was used as a linearly polar-
+ized pump pulse with a central wavelength of 515 nm after frequency doubling with β-barium borate
+(BBO) crystal. The second part of the initial pulses was used to pump the optical parametric ampliﬁer
+(ORPHEUS, Light Conversion), which produced linearly polarized pulses with a duration of 150 fs and a
+central wavelength of 900 nm. We used the second BBO crystal to achieve the probe pulses with a central
+wavelength of 450 nm.
+The pump pulses after passing a mechanical delay line were focused onto the sample in a spot with a
+diameter of 50 µm with typical ﬂuence of 50 mJ cm−2. The probe pulses were focused from the opposite
+side through an optically transparent GGG substrate in a spot with a diameter of 25 µm and a ﬂuence
+of at least 10 times less than for the pump pulses. An angle of incidence of probe pulses was 17◦, and a
+spatial ﬁlter was used on the reﬂected beams. The scheme allows distinguishing the probe pulses reﬂected
+from the diﬀerent sample interfaces and, therefore, to exclude parasitic back-reﬂection from the substrate.
+Pump-induced rotation of the probe’s polarization was measured using the balanced photodetector (New
+Focus 2107, Newport) in combination with the Wollaston prism and half-wave plate. The signal from
+the detector was demodulated by the lock-in ampliﬁer (SR830, Stanford Research Systems) synchronized
+with the optical chopper placed in the pump pulse optical path. The sample was placed inside the
+electromagnet to apply the external magnetic ﬁeld in the sample’s plane. All experiments were carried
+out at room temperature.
+9
+
+
+=== PDF PAGE 11 ===
+Probe laser pulses sensitivity
+The probe pulse of 150 fs duration sets an upper frequency limitation of an order of THz and does not
+obscure the detection of SWs of interest. Detection of the propagating SW through the Bragg mechanism
+used in Ref.[45] requires the matching between the SW and the light wavevectors and is not applicable
+in our case. Indeed, the probe pulse of 450 nm is sensitive to the SW with k = 66 rad µm−1, and SW
+frequency lies between f = 44.5 GHz and f = 52.8 GHz at used Hext, which is not observed in our
+experiments. However, the strongly decaying 450 nm probe intensity proﬁle in the sample itself enables
+the detection of sagittally propagating magnetization disturbances. With the FT of the exponential depth
+proﬁle of the probe intensity, we obtain the spectral amplitude S of SW with particular k in the detected
+signal, which scales with the probe penetration depth δpr as:
+S(k) =
+1
+p
+1 + (kδpr)2 .
+(7)
+Thus, the use of the 450 nm probe pulses with δpr = 75 nm enables eﬃcient detection of SWs with k up to
+33.7 rad µm−1 determined as S(k) = e−1 in equation (7), which corresponds to the wavelength of 186 nm
+(value S(k) is color-coded background in Fig.3b). The frequency of SW detected in the experiments fI,
+according to equation (3) corresponds to the wavenumbers kI in the range from 12.6 to 23.3 rad µm−1. SW
+with these wavenumbers appear to be detected eﬃciently, while fII SW with kII from 116 to 127 rad µm−1
+are not resolved.
+Micromagnetoelastic simulations details
+The interrelated dynamics of magnetization m(r, t) = M(r, t)/Ms and mechanical displacement u(r, t)
+were described by a numerical solution of a system of Landau-Lifshitz-Gilbert (LLG) and Navier-Cauchy
+equations accounting for the two-way magnetoelastic coupling between them. The LLG equation was
+solved in the form
+dm
+dt = −γm × Heﬀ−αγm × (m × Heﬀ) ,
+(8)
+where γ is the (absolute value of) electron’s gyromagnetic ratio and α is the Gilbert damping parameter.
+The eﬀective magnetic ﬁeld Heﬀacting on magnetization was calculated via Heﬀ= −1/(µ0Ms) ∂F
+∂m, where
+F is the free energy density of LuIG including the magnetoelastic term in the form
+Fmel = B1(εxxm2
+x + εyym2
+y + εzzm2
+z)+
++ B2 [(εxy + εyx)mxmy + (εxz + εzx)mxmz + (εyz + εzy)mymz] ,
+(9)
+where εij are the elastic strains, B1 = 3.39 × 106 erg cm−3 [46] and B2 = 5.5 × 106 erg cm−3 [47] are the
+magnetoelastic constants of LuIG assumed to be equal to those of YIG.
+The Navier-Cauchy equation was solved in the form
+ρ∂2u
+∂t2 + β ∂u
+∂t = ∇σ,
+(10)
+where ρ is the mass density, β is the elastic damping coeﬃcient and σ is the Cauchy stress tensor including
+the magnetoelastic term σmel having the components σmel
+ii
+= B1m2
+i and σmel
+ij
+= σmel
+ji
+= B2mimj. We
+used ρ = 7.39 g cm−3[30] and elastic moduli c11 = 3.1705 × 1012 erg cm−3, c44 = 0.6920 × 1012 erg cm−3.
+The material was quantized using a computational cell size ∆z = 2 nm in a 1-D geometry. It was
+assumed that m(z, t) and u(z, t) are homogeneous in the xy plane and can only change along the z
+axis corresponding to the LuIG out-of-plane dimension. However, the demagnetizing ﬁeld was accurately
+calculated, taking into account the variation of m along z and an inﬁnite-plane geometry in lateral
+dimensions [48]. LLG equation was solved using a 4-order projective Runge-Kutta method with time step
+10
+
+
+=== PDF PAGE 12 ===
+3×10−14 s, and Navier-Cauchy equation was solved using a ﬁnite diﬀerence approximation with the time
+step 1.5 × 10−14 s. The free magnetic boundary condition ∂m/∂n = 0 was imposed on both surfaces of
+LuIG, where n is the normal vector to the surface, and the free-surface mechanical boundary condition
+σzi = 0 was employed at the surface z = 0, while the opposite surface at z = 1.74 µm was described by a
+ﬁxed boundary condition u = 0.
+In order to correctly describe the magnetoelastic dynamics, ﬁrst we found an equilibrium distribution
+of m(H) and u(H) in a relaxed ﬁlm of LuIG in a magnetic ﬁeld H. Then, the strain pulse was applied to
+the ﬁlm in the relaxed state. Modeling of the pulse injection was performed by imparting a time-varied
+displacement u(z = 0, t) of such a form as to produce a bipolar Gaussian strain εzz with amplitude
+5 × 10−4 and duration τ = 20 or 70 ps, corresponding to the spatial lengths σ of 16 and 23 nm. In the
+calculations, a Gilbert damping value α = 10−3 was used. We assigned the elastic damping parameter β
+an arbitrarily small value of β/ρ = 2 × 108 s−1.
+Data availability
+All the experimental data from this work are available through ﬁgshare at https://doi.org/10.6084/m9.
+ﬁgshare.28351496.
+Acknowledgments
+We thank Dr. Iaroslav A. Mogunov and Dr. MengXing Na for fruitful discussions, and Leonid A. Snigirev
+for help with sample characterization. The work of Ia.A.F., A.V.A., and A.M.K. was supported by the
+RSF grant No. 23-12-00251 (https://rscf.ru/project/23-12-00251/).
+Declarations
+The authors declare no competing interests.
+11
+
+
+=== PDF PAGE 13 ===
+Extended Data
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+
+
+0
+20
+40
+Rotation (mdeg)
+Delay time, t (ns)
+0
+0.1
+0.2
+0.3
+
+
+0
+5
+10
+Rotation (mdeg)
+Delay time, t (ns)
+0Hext (T):
+ 0.3   
+ 0.4
+ 0.5   
+ 0.6
+ 0.7
+Fig. E1 Experimental time traces of 450 nm probe pulses polarization rotation under diﬀerent Hext obtained
+when the pump is focused onto the Au/LuIG. The left panel shows the enlarged area of the right one (dashed box).
+12
+
+
+=== PDF PAGE 14 ===
+0
+1
+1.74
+4.5
+5.0
+Mz/Ms (%)
+z (m)
+t=141 ps
+t=141 ps
+0
+1
+1.74
+0
+25
+50
+Displacement, uz (pm)
+z (m)
+
+0
+5
+zz (10-4)
+0
+1
+2
+3
+4
+5
+4
+5
+6
+Mz/Ms (%)
+Time, t (ns)
+10
+20
+0
+1
+FFT amplitude (arb. units)
+Frequency, f (GHz)
+f0
+fI
+
+0
+100
+0
+50
+100
+150
+Wavenumber, k (rad m-1)
+Frequency, f (GHz)
+2D FFT amplitude (arb. units)
+10-2
+0
+
+0
+100
+0
+50
+100
+150
+Wavenumber, k (rad m-1)
+Frequency, f (GHz)
+2D FFT amplitude (arb. units)
+a
+b
+c
+d
+e
+f
+1
+0
+0
+1
+Probe intensity
+0
+0.3
+4
+5
+Fig. E2 Micromagnetoelastic simulations of the Cherenkov emission of the SWs by the strain pulse with
+duration of 70 ps a, Spatial snapshot of the normalized out-of-plane Mz component at t = 141 ps after the strain pulse
+injection. Gray area corresponds to the intensity proﬁle of 450 nm probe with penetration depth δpr = 75 nm. b, Time trace
+Mz(t) obtained by spatial averaging with weights corresponding to the probe penetration proﬁle. c, The FFT spectrum of
+the time trace from b. d, Spatial snapshot of the mechanical displacement uz (dashed line) and ∂uz
+∂z
+corresponding to the
+strain εzz(z) (solid line) at t = 141 ps. Strain pulse duration is 20 ps. e, Dispersion characteristic of the simulated acoustic
+pulse, obtained by the 2-D FFT of the spatio-temporal evolution of uz. Gray solid line corresponds to the LA phonon
+dispersion with Vs = 6.55 km s−1. f, Dispersion characteristic of the simulated magnetization dynamics obtained by the 2-D
+FFT of the spatio-temporal evolution of Mz(t, z). Gray line corresponds to the LA phonon dispersion, and dark blue curve
+corresponds to the exchange SWs dispersion calculated with equation (3). The external magnetic ﬁeld is µ0Hext = 0.4 T.
+13
+
+
+=== PDF PAGE 15 ===
+0
+1
+2
+3
+4
+5
+4.5
+4.75
+5
+5.25
+5.5
+5.75
+Mz/Ms (%)
+Time, t (ns)
+a
+ Uniform average
+ =1 m
+ =0.5 m
+ =250 nm
+ =125 nm
+ =75 nm
+ =30 nm
+ =10 nm
+Simulation
+10
+20
+130
+140
+0
+1
+2
+3
+FFT amplitude (arb. units)
+Frequency, f (GHz)
+b
+fI
+fII
+ Uniform average
+ =1 m
+ =0.5 m
+ =250 nm
+ =125 nm
+ =75 nm
+ =30 nm
+ =10 nm
+f0
+Fig. E3 Probe pulses sensitivity depending on the penetration depth. a, Simulated time traces of the out-of-
+plane magnetization component Mz(t) obtained by spatial averaging with weights corresponding to the penetration proﬁles
+with diﬀerent δpr. b, The FFT of the data from a.
+14
+
+
+=== PDF PAGE 16 ===
+0
+1
+2
+3
+
+
+
+0
+5
+Rotation (mdeg)
+Delay time (ns)
+a
+b
+c
+d
+Au/LuIG
+LuIG
+Experiment
+10
+15
+20
+0
+1
+FFT amplitude (arb. units)
+Frequency (GHz)
+Au/LuIG
+LuIG
+0.3
+0.4
+0.5
+0.6
+0.7
+10
+20
+30
+Field, Hext  (T)
+Frequency, f (GHz)
+FFT amplitude (arb. units)
+LuIG
+0
+1
+0.3
+0.4
+0.5
+0.6
+0.7
+10
+20
+30
+Field, Hext  (T)
+Frequency, f (GHz)
+FFT amplitude (arb. units)
+Au/LuIG
+0
+1
+Fig. E4 Pump-probe experimental results obtained with probe pulses with central wavelength of 900 nm.
+a, Time traces of probe polarization rotation when the pump is focused onto the Au/LuIG (blue line) and onto the LuIG
+(red line). b, The FFT of the data from a. c,d, Field dependencies of the FFT of the polarization rotation time traces when
+the pump is focused onto the LuIG and onto the Au/LuIG, respectively.
+15
+
+
+=== PDF PAGE 17 ===
+0
+45
+90
+135
+180
+225
+270
+315
+5
+10
+15
+20
+ FIT
+Sample orientation (°)
+Frequency, f (GHz)
+0
+0.5
+1
+FFT amplitude (arb. units)
+Fig. E5 Dependence of the magnetization dynamics frequency on the azimuthal orientation of the external
+magnetic ﬁeld. The color map corresponds to the FFT of the time traces measured with the applied in-plane ﬁeld
+µ0Hext = 415 mT. The red line corresponds to the ﬁt of the FMR frequency versus the in-plane orientation of the magnetic
+ﬁeld, obtained using the Smit-Beljers approach.
+16
+
+
+=== PDF PAGE 18 ===
+References
+[1] Flebus, B., Grundler, D., Rana, B., Otani, Y., Barsukov, I., Barman, A., Gubbiotti, G., Landeros, P.,
+Akerman, J., Ebels, U., Pirro, P., Demidov, V.E., Schultheiss, K., Csaba, G., Wang, Q., Ciubotaru,
+F., Nikonov, D.E., Che, P., Hertel, R., Ono, T., Afanasiev, D., Mentink, J., Rasing, T., Hillebrands,
+B., Kusminskiy, S.V., Zhang, W., Du, C.R., Finco, A., Sar, T., Luo, Y.K., Shiota, Y., Sklenar, J.,
+Yu, T., Rao, J.: The 2024 magnonics roadmap. Journal of Physics: Condensed Matter 36, 363501
+(2024) https://doi.org/10.1088/1361-648X/ad399c
+[2] Pirro, P., Vasyuchka, V.I., Serga, A.A., Hillebrands, B.: Advances in coherent magnonics. Nature
+Reviews Materials 6, 1114–1135 (2021) https://doi.org/10.1038/s41578-021-00332-w
+[3] Mahmoud, A., Ciubotaru, F., Vanderveken, F., Chumak, A.V., Hamdioui, S., Adelmann, C., Coto-
+fana, S.: Introduction to spin wave computing. Journal of Applied Physics 128, 161101 (2020)
+https://doi.org/10.1063/5.0019328
+[4] Mahmoud, A., Cucu-Laurenciu, N., Vanderveken, F., Ciubotaru, F., Adelmann, C., Cotofana,
+S., Hamdioui, S.: Would magnonic circuits outperform cmos counterparts? In: Proceedings
+of the Great Lakes Symposium on VLSI 2022. GLSVLSI ’22, pp. 309–313. Association for
+Computing Machinery, New York, NY, USA (2022). https://doi.org/10.1145/3526241.3530368 .
+https://doi.org/10.1145/3526241.3530368
+[5] Chumak, A.V., Kabos, P., Wu, M., Abert, C., Adelmann, C., Adeyeye, A.O., ˚Akerman, J., Aliev,
+F.G., Anane, A., Awad, A., Back, C.H.: Advances in magnetics roadmap on spin-wave computing.
+IEEE Transactions on Magnetics 58, 1–72 (2022) https://doi.org/10.1109/TMAG.2022.3149664
+[6] Chumak, A.V., Serga, A.A., Hillebrands, B.: Magnon transistor for all-magnon data processing.
+Nature Communications 5, 4700 (2014) https://doi.org/10.1038/ncomms5700
+[7] Wang, Q., Kewenig, M., Schneider, M., Verba, R., Kohl, F., Heinz, B., Geilen, M., Mohseni, M.,
+L¨agel, B., Ciubotaru, F., Adelmann, C., Dubs, C., Cotofana, S.D., Dobrovolskiy, O.V., Br¨acher,
+T., Pirro, P., Chumak, A.V.: A magnonic directional coupler for integrated magnonic half-adders.
+Nature Electronics 3, 765–774 (2020) https://doi.org/10.1038/s41928-020-00485-6
+[8] Wang, C., Rao, J., Chen, Z., Zhao, K., Sun, L., Yao, B., Yu, T., Wang, Y.-P., Lu, W.: Enhancement
+of magnonic frequency combs by exceptional points. Nature Physics 20, 1139–1144 (2024) https:
+//doi.org/10.1038/s41567-024-02478-0
+[9] K¨orber, L., Heins, C., Hula, T., Kim, J.-v., Thlang, S., Schultheiss, H., Fassbender, J., Schultheiss, K.:
+Pattern recognition in reciprocal space with a magnon-scattering reservoir. Nature Communications
+14, 3954 (2023) https://doi.org/10.1038/s41467-023-39452-y
+[10] Girardi, D., Finizio, S., Donnelly, C., Rubini, G., Mayr, S., Levati, V., Cuccurullo, S., Maspero, F.,
+Raabe, J., Petti, D., Albisetti, E.: Three-dimensional spin-wave dynamics, localization and interfer-
+ence in a synthetic antiferromagnet. Nature Communications 15, 3057 (2024) https://doi.org/10.
+1038/s41467-024-47339-9
+[11] Ginzburg, V.L.: Radiation by uniformly moving sources (vavilov-cherenkov eﬀect, transition
+radiation, and other phenomena). Phys. Usp. 39(10), 973–982 (1996) https://doi.org/10.1070/
+PU1996v039n10ABEH000171
+[12] ˇCerenkov, P.A.: Visible radiation produced by electrons moving in a medium with velocities exceeding
+that of light. Physical Review 52, 378–379 (1937) https://doi.org/10.1103/PhysRev.52.378
+17
+
+
+=== PDF PAGE 19 ===
+[13] Liu, F., Xiao, L., Ye, Y., Wang, M., Cui, K., Feng, X., Zhang, W., Huang, Y.: Integrated cherenkov
+radiation emitter eliminating the electron velocity threshold. Nature Photonics 11, 289–292 (2017)
+https://doi.org/10.1038/nphoton.2017.45
+[14] Kaminer, I., Katan, Y.T., Buljan, H., Shen, Y., Ilic, O., L´opez, J.J., Wong, L.J., Joannopoulos,
+J.D., Soljaˇci´c, M.: Eﬃcient plasmonic emission by the quantum ˇCerenkov eﬀect from hot carriers in
+graphene. Nature Communications 7, 11880 (2016) https://doi.org/10.1038/ncomms11880
+[15] Pogue, B.W., Feng, J., LaRochelle, E.P., Bruˇza, P., Lin, H., Zhang, R., Shell, J.R., Dehghani,
+H., Davis, S.C., Vinogradov, S.A., Gladstone, D.J., Jarvis, L.A.: Maps of in vivo oxygen pressure
+with submillimetre resolution and nanomolar sensitivity enabled by cherenkov-excited lumines-
+cence scanned imaging. Nature Biomedical Engineering 2, 254–264 (2018) https://doi.org/10.1038/
+s41551-018-0220-3
+[16] Yan, M., K´akay, A., Andreas, C., Hertel, R.: Spin-cherenkov eﬀect and magnonic mach cones. Phys.
+Rev. B 88, 220412 (2013) https://doi.org/10.1103/PhysRevB.88.220412
+[17] J¨ackl, M., Belotelov, V.I., Akimov, I.A., Savochkin, I.V., Yakovlev, D.R., Zvezdin, A.K., Bayer, M.:
+Magnon accumulation by clocked laser excitation as source of long-range spin waves in transparent
+magnetic ﬁlms. Physical Review X 7, 021009 (2017) https://doi.org/10.1103/PhysRevX.7.021009
+[18] Khokhlov, N.E., Filatov, I.A., Kalashnikova, A.M.: Spatial asymmetry of optically excited spin waves
+in anisotropic ferromagnetic ﬁlm. Journal of Magnetism and Magnetic Materials 589, 171514 (2024)
+https://doi.org/10.1016/j.jmmm.2023.171514
+[19] Filatov, I.A., Gerevenkov, P.I., Khokhlov, N.E., Kalashnikova, A.M.: Tunable quasi-discrete spectrum
+of spin waves excited by periodic laser patterns. Journal of Applied Physics 136 (2024) https://doi.
+org/10.1063/5.0216091
+[20] Satoh, T., Terui, Y., Moriya, R., Ivanov, B.A., Ando, K., Saitoh, E., Shimura, T., Kuroda, K.:
+Directional control of spin-wave emission by spatially shaped light. Nature Photonics 6, 662–666
+(2012) https://doi.org/10.1038/nphoton.2012.218
+[21] Knauer, S., Dobrovolskiy, O., Qi Wang, D.V., Sachser, R., Huth, M., Buzdin, A.: Magnon-Cherenkov
+eﬀect in superconductor-ferromagnet heterostructures. preprint (2024). https://doi.org/10.21203/rs.
+3.rs-4807057/v1
+[22] Yan, M., Andreas, C., K´akay, A., Garc´ıa-S´anchez, F., Hertel, R.: Fast domain wall dynamics in mag-
+netic nanotubes: Suppression of walker breakdown and cherenkov-like spin wave emission. Applied
+Physics Letters 99 (2011) https://doi.org/10.1063/1.3643037
+[23] Ma, X.-P., Zheng, J., Piao, H.-G., Kim, D.-H., Fischer, P.: Cherenkov-type three-dimensional break-
+down behavior of the bloch-point domain wall motion in the cylindrical nanowire. Applied Physics
+Letters 117 (2020) https://doi.org/10.1063/5.0013002
+[24] Hertel, R.: Ultrafast domain wall dynamics in magnetic nanotubes and nanowires. Journal of Physics:
+Condensed Matter 28, 483002 (2016) https://doi.org/10.1088/0953-8984/28/48/483002
+[25] Nˇemec, P., Fiebig, M., Kampfrath, T., Kimel, A.V.: Antiferromagnetic opto-spintronics. Nature
+Physics 14, 229–241 (2018) https://doi.org/10.1038/s41567-018-0051-x
+[26] Kimel, A.V., Kalashnikova, A.M., Pogrebna, A., Zvezdin, A.K.: Fundamentals and perspectives
+of ultrafast photoferroic recording. Physics Reports 852, 1–46 (2020) https://doi.org/10.1016/j.
+18
+
+
+=== PDF PAGE 20 ===
+physrep.2020.01.004
+[27] Capel, P.J.S., P´eronne, E., Dijkhuis, J.I.: Nonlinear ultrafast acoustics at the nano scale. Ultrasonics
+56, 36–51 (2015) https://doi.org/10.1016/j.ultras.2014.09.021
+[28] Matsuda, O., Larciprete, M.C., Voti, R.L., Wright, O.B.: Fundamentals of picosecond laser
+ultrasonics. Ultrasonics 56, 3–20 (2015) https://doi.org/10.1016/j.ultras.2014.06.005
+[29] Deb, M., Popova, E., Hehn, M., Keller, N., Petit-Watelot, S., Bargheer, M., Mangin, S., Malinowski,
+G.: Femtosecond laser-excitation-driven high frequency standing spin waves in nanoscale dielectric
+thin ﬁlms of iron garnets. Phys. Rev. Lett. 123, 027202 (2019) https://doi.org/10.1103/PhysRevLett.
+123.027202
+[30] Hioki, T., Hashimoto, Y., Saitoh, E.: Coherent oscillation between phonons and magnons. Commu-
+nications Physics 5, 115 (2022) https://doi.org/10.1038/s42005-022-00888-1
+[31] Scherbakov, A.V., Salasyuk, A.S., Akimov, A.V., Liu, X., Bombeck, M., Br¨uggemann, C., Yakovlev,
+D.R., Sapega, V.F., Furdyna, J.K., Bayer, M.: Coherent magnetization precession in ferromagnetic
+(ga,mn)as induced by picosecond acoustic pulses. Physical Review Letters 105, 117204 (2010) https:
+//doi.org/10.1103/PhysRevLett.105.117204
+[32] Azovtsev, A.V., Pertsev, N.A.: Antiferromagnetic standing spin waves generated in nio thin ﬁlms by
+short strain pulses. Physical Review B 110, 144430 (2024) https://doi.org/10.1103/PhysRevB.110.
+144430
+[33] Deb, M., Popova, E., Hehn, M., Keller, N., Mangin, S., Malinowski, G.: Picosecond acoustic-
+excitation-driven ultrafast magnetization dynamics in dielectric bi-substituted yttrium iron garnet.
+Physical Review B 98, 174407 (2018) https://doi.org/10.1103/PhysRevB.98.174407
+[34] Zeuschner, S.P., Parpiiev, T., Pezeril, T., Hillion, A., Dumesnil, K., Anane, A., Pudell, J., Willig, L.,
+R¨ossle, M., Herzog, M., Reppert, A., Bargheer, M.: Tracking picosecond strain pulses in heterostruc-
+tures that exhibit giant magnetostriction. Structural Dynamics 6 (2019) https://doi.org/10.1063/1.
+5084140
+[35] Yaremkevich, D.D., Scherbakov, A.V., Clerk, L.D., Kukhtaruk, S.M., Nadzeyka, A., Campion,
+R., Rushforth, A.W., Savel’ev, S., Balanov, A.G., Bayer, M.: On-chip phonon-magnon reservoir
+for neuromorphic computing. Nature Communications 14, 8296 (2023) https://doi.org/10.1038/
+s41467-023-43891-y
+[36] Matsumoto, K., Yoshimine, I., Himeno, K., Shimura, T., Satoh, T.: Observation of evanescent
+spin waves in the magnetic dipole regime. Physical Review B 101 (2020) https://doi.org/10.1103/
+PhysRevB.101.184407
+[37] Philippe, G., Moalic, M., K los, J.W.: Unidirectional spin wave emission by traveling pair of magnetic
+ﬁeld proﬁles. Journal of Magnetism and Magnetic Materials 587, 171359 (2023) https://doi.org/10.
+1016/j.jmmm.2023.171359
+[38] Chumak, A.V., Serga, A.A., Hillebrands, B.: Magnonic crystals for data processing. Journal of
+Physics D: Applied Physics 50, 244001 (2017) https://doi.org/10.1088/1361-6463/aa6a65
+[39] Liao, L., Liu, J., Puebla, J., Shao, Q., Otani, Y.: Hybrid magnon-phonon crystals. npj Spintronics
+2, 47 (2024) https://doi.org/10.1038/s44306-024-00052-1
+19
+
+
+=== PDF PAGE 21 ===
+[40] Luo, C., Ibanescu, M., Johnson, S.G., Joannopoulos, J.D.: Cerenkov radiation in photonic crystals.
+Science 299, 368–371 (2003) https://doi.org/10.1126/science.1079549
+[41] Zhuang, S., Meisenheimer, P.B., Heron, J., Hu, J.-M.: A narrowband spintronic terahertz emitter
+based on magnetoelastic heterostructures. ACS Applied Materials & Interfaces 13, 48997–49006
+(2021) https://doi.org/10.1021/acsami.1c13461
+[42] Gurevich, A.G., Melkov, G.A.: Magnetization Oscillations and Waves. CRC Press, London (1996).
+https://doi.org/10.1201/9780138748487
+[43] Shelukhin, L.A., Pavlov, V.V., Usachev, P.A., Shamray, P.Y., Pisarev, R.V., Kalashnikova, A.M.:
+Ultrafast laser-induced changes of the magnetic anisotropy in a low-symmetry iron garnet ﬁlm.
+Physical Review B 97, 014422 (2018) https://doi.org/10.1103/PhysRevB.97.014422
+[44] Gerevenkov, P.I., Kuntu, D.V., Filatov, I.A., Shelukhin, L.A., Wang, M., Pattnaik, D.P., Rushforth,
+A.W., Kalashnikova, A.M., Khokhlov, N.E.: Eﬀect of magnetic anisotropy relaxation on laser-induced
+magnetization precession in thin galfenol ﬁlms. Physical Review Materials 5, 094407 (2021) https:
+//doi.org/10.1103/PhysRevMaterials.5.094407
+[45] Hortensius, J.R., Afanasiev, D., Matthiesen, M., Leenders, R., Citro, R., Kimel, A.V., Mikhaylovskiy,
+R.V., Ivanov, B.A., Caviglia, A.D.: Coherent spin-wave transport in an antiferromagnet. Nature
+Physics 17, 1001–1006 (2021) https://doi.org/10.1038/s41567-021-01290-4
+[46] Clark, A.E., DeSavage, B., Coleman, W., Callen, E.R., Callen, H.B.: Saturation magnetostriction
+of single-crystal yig. Journal of Applied Physics 34, 1296–1297 (1963) https://doi.org/10.1063/1.
+1729480
+[47] Kamra, A., Keshtgar, H., Yan, P., Bauer, G.E.W.: Coherent elastic excitation of spin waves. Physical
+Review B 91, 104409 (2015) https://doi.org/10.1103/PhysRevB.91.104409
+[48] Azovtsev, A.V., Pertsev, N.A.: Magnetization dynamics and spin pumping induced by standing
+elastic waves. Physical Review B 94, 184401 (2016) https://doi.org/10.1103/PhysRevB.94.184401
+20
+
+
+=== PDF PAGE 22 ===
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+SupplementaryMovie1.mp4
+SupplementaryMovie2.mp4

@@ -1,0 +1,1153 @@
+[PDF PAGE 1]
+New J. Phys. 26 (2024) 013041
+https://doi.org/10.1088/1367-2630/ad19fd
+OPEN ACCESS
+RECEIVED
+21 June 2023
+REVISED
+12 December 2023
+ACCEPTED FOR PUBLICATION
+2 January 2024
+PUBLISHED
+22 January 2024
+Original Content from
+this work may be used
+under the terms of the
+Creative Commons
+Attribution 4.0 licence.
+Any further distribution
+of this work must
+maintain attribution to
+the author(s) and the title
+of the work, journal
+citation and DOI.
+PAPER
+Inverse engineering for robust state transport along a spin chain
+via low-energy subspaces
+Yunlan Ji1, Ze Wu2,3, Ran Liu2,3, Yuchen Li2,3, Fangzhou Jin4, Hui Zhou1,5,∗and Xinhua Peng2,3,∗
+1 School of Physics, Hefei University of Technology, Hefei, Anhui 230009, People’s Republic of China
+2 CAS Key Laboratory of Microscale Magnetic Resonance and School of Physical Sciences, University of Science and Technology of
+China, Hefei, Anhui 230026, People’s Republic of China
+3 CAS Center for Excellence in Quantum Information and Quantum Physics, University of Science and Technology of China, Hefei,
+Anhui 230026, People’s Republic of China
+4 Department of Fundamental Subjects, Wuchang Shouyi University, Wuhan 430064, People’s Republic of China
+5 Department of Physics, Shaanxi University of Science and Technology, Xi’an 710021, People’s Republic of China
+∗Authors to whom any correspondence should be addressed.
+E-mail: zhouhui9240@163.com and xhpeng@ustc.edu.cn
+Keywords: shortcuts to adiabaticity, quantum state transfer, spin chains
+Abstract
+Quantum state transfer (QST) plays a central role in the field of quantum computation and
+communication, but its quality will be deteriorated by the ubiquitous variations and noise in
+quantum systems. Here we propose robust and nonadiabatic protocols for transmitting quantum
+state across a strongly coupled spin chain, especially in the presence of unwanted disorders in the
+couplings. To this end, we approximately map the low-energy subspaces of the odd-size Heisenberg
+chain to a two-level system, and derive the sensitivity of the final fidelity with respect to systematic
+deviations or time-varying fluctuations. Subsequently, leveraging the flexibility of the
+inverse-engineering technique, we optimize the state-transfer robustness concerning these
+perturbations individually. The resulting schemes allow for more stable QST than the original
+accelerated schemes and only require manipulating the two boundary couplings instead of the
+whole system, which open up the possibility of fast and robust information transfer in spin-based
+quantum systems.
+1. Introduction
+To tap the full potentials of quantum information processing and computation, high-fidelity quantum state
+transfer (QST) between remote qubits is required [1, 2]. Spin chains are paradigmatic systems for
+short-distance QST due to native spin–spin interactions [3, 4], which can be realized in a variety of physical
+systems such as Josephson junction arrays [5], quantum dots [6], trapped ions [7] and compounds [8].
+Impressive protocols for spin chains typically require to engineer couplings among qubits and evolution time
+precisely [9–21], which are vulnerable to environmental noises, time errors and etc. On the other hand, the
+quantum adiabatic control for QST [22–29], though carrying the advantage of inherent robustness to
+parameter variations, is often time-consuming, and thus it may suffer from decoherence. To mitigate these
+drawbacks, recently developed schemes [30–39] by shortcut to adiabaticity (STA) [40, 41] have been used to
+realize QST in arrays of spin qubits, which can greatly accelerate quantum-information processing and
+simultaneously inherit the robustness of adiabatic dynamics.
+However, in reality it is not easy to create identical qubits and ideal quantum information processors
+based on artificial structures, such as superconducting circuits [42], optical lattices [43] and quantum
+dots [28]. The emergence of the unwanted disorders from the couplings or external fields in spin chain [44,
+45] will spoil the STA passages. Take spin qubits based on electrons in quantum dots for example, an
+appealing platform for quantum information possessing merits of perceived scalability and long coherence
+times. The imperfect fabrications and the inevitable gate voltage fluctuations [25–27] would induce
+perturbations in exchange couplings, and thus the state transport become imperfect. In short, deviations
+© 2024 The Author(s). Published by IOP Publishing Ltd on behalf of the Institute of Physics and Deutsche Physikalische Gesellschaft
+
+
+[PDF PAGE 2]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+from ideal values for various control parameters are inevitable in practical quantum systems [46–53]. It is of
+importance to engineer more stable shortcuts to QST with various perturbations considered. For
+instance, [51] proposed a systematic approach to design robust control protocols capable of mitigating the
+influence of various noise types. By exploiting the traditional control techniques with differentiable
+programming, Coopmans also investigated the optimal strategies for the robust magnon transport in the
+presence of disordered magnetic fields [52].
+Inspired by these work, here we put forward robust schemes to achieve nonadiabatic quantum state
+transport along an odd-size spin chain, where the systematic errors and time-varying noise in the
+qubit-chain couplings are taken into consideration. Both protocols only require the control of the couplings
+at the edges of the system, which can greatly benefit experimental implementations. Furthermore, they
+exhibit excellent robustness against undesired perturbations. The rest of the paper is organized as follows. In
+section 2, we briefly derive the two-level effective quantum system and then present the basic schemes for fast
+QST based on inverse engineering. Using the perturbation theory, in section 3 a detailed study of the
+sensitivity on the systematic errors and time-varying noise is provided separately. Then the strategies to
+mitigate the impact of different perturbations are proposed. Numerical simulations demonstrate the validity
+of our protocols. Finally, a brief summary and outlook are presented in section 4.
+2. Effective two-level Hamiltonian for QST
+The Heisenberg spin model is ubiquitous in many physical systems and plays an important role in both
+condensed-matter physics and quantum computation [8, 9, 28, 43]. The system we consider, two external
+spins weakly coupled to an odd-size spin chain, is shown in figure 1, and its Hamiltonian is
+H0 (t) = J1 (t)⃗σS ·⃗σ1 + J2 (t)⃗σN ·⃗σR + J0
+N−1
+X
+k=1⃗
+σk ·⃗σk+1.
+(1)
+Here⃗σ = [σx, σy, σz] denote Pauli matrices, and the couplings at both ends are much weaker than internal
+ones, i.e, J1,2(t) ≪J0. As shown in [36, 39], an arbitrary quantum state of the sender |ψ0⟩= a|0⟩+ b|1⟩
+(|a|2 + |b|2 = 1) can be transferred to the receiver by initializing the whole system
+|Ψ(0)⟩= |ψ0⟩⊗|ψg⟩,
+(2)
+and then adiabatically switching on the leftmost coupling J1(t) and off the rightmost one J2(t). Here |ψg⟩is
+the ground state of the rest subsystems. The target state is |Ψ(T)⟩= |ψg⟩⊗|ψ0⟩, and the final QST quality
+can be assessed by performing quantum state tomography on the receiver.
+The odd-size spin channel has twofold degenerate ground states {|0C⟩,|1C⟩}, and it behaves like a central
+spin at the low energies when two qubits are weakly coupled to this chain [12, 54, 55]. The effective
+Hamiltonian to first order is
+H1 (t) =˜J1 (t)⃗σS ·⃗σC +˜J2 (t)⃗σC ·⃗σR,
+(3)
+where the central spin operator⃗σC is defined by σx
+C = |0C⟩⟨1C| + |1C⟩⟨0C|, σy
+C = −i|0C⟩⟨1C| + i|1C⟩⟨0C|,
+σz
+C = |0C⟩⟨0C| −|1C⟩⟨1C|, and the effective couplings˜J1,2 read
+˜J1 (t) = mJ1 (t),
+˜J2 (t) = mJ2 (t).
+(4)
+Here m=m1,N =⟨0C|σz
+1,N|0C⟩represent the dimensionless local magnetic moments of the first and end spins
+of the chain [12]. To simplify notations, we use subscripts {1,2,3} to represent the three spins in the
+following. Thus, the initial and target states become |˜Ψ(0)⟩= (a|0⟩+ b|1⟩) ⊗(|01⟩−|10⟩)/
+√
+2 and
+|˜Ψ(T)⟩= (|01⟩−|10⟩) ⊗(a|0⟩+ b|1⟩)/
+√
+2.
+Notice that the effective system preserves the number of excitations during the evolution for
+[H1,P3
+i=1 σz
+i ] = 0, which enables H1 to be diagonalized in the rearranged basis {|000⟩, |100⟩, |010⟩, |001⟩,
+|011⟩, |101⟩, |110⟩, |111⟩}, that is,
+HX = diag
+n
+HX+
+1
+,HX+
+2
+,HX−
+2
+,HX−
+1
+o
+.
+(5)
+2
+
+
+[PDF PAGE 3]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+Figure 1. Schematic of QST through an odd-size Heisenberg spin chain, where two qubits S and R are weakly coupled to the
+channel.
+Here HX±
+1
+=˜J1 +˜J2 in the subspaces X +
+1 = {|000⟩} and X −
+1 = {|111⟩}, respectively; HX±
+2
+take the form of
+HX±
+2
+(t) =
+
+
+˜J2 −˜J1
+2˜J1
+0
+2˜J1
+−˜J1 −˜J2
+2˜J2
+0
+2˜J2
+˜J1 −˜J2
+
+
+(6)
+in the subspaces X ±
+2 spanned by {|100⟩, |010⟩, |001⟩} and {|011⟩, |101⟩, |110⟩}, respectively.
+At time t = 0, the ground states of the system in subspaces X ±
+2 are |GX+(0)⟩= (|001⟩−|010⟩)/
+√
+2 and
+|GX−(0)⟩= (|101⟩−|110⟩)/
+√
+2, respectively, so |˜Ψ(0)⟩can be expressed as the superposition of the two
+ground states
+|˜Ψ(0)⟩= a|GX+ (0)⟩+ b|GX−(0)⟩,
+(7)
+which only involves the subspaces X +
+2 and X −
+2 . Due to the exciton conservation, the transitions between the
+subspaces with different numbers of excitons will not occur. The Hamiltonian (6) in both subspaces have the
+same form, which will generate the same dynamics in X ±
+2 . Thus, we can consider the system dynamics in
+either subspace, for example, X +
+2 . The initial state turns to |˜Ψ(0)⟩= (|001⟩−|010⟩)/
+√
+2. Meanwhile, the
+Hamiltonian (3) can be simplified as HX+
+2
+(t), which can be further block diagonalized by a unitary
+transformation
+HX+
+v
+= V†HX+
+2
+V =
+
+
+˜J1 −2˜J2
+√
+3˜J2
+0
+√
+3˜J2
+−3˜J1
+0
+0
+0
+˜J1 +˜J2
+
+.
+(8)
+Here V = {|ξ+
+1 ⟩, |ξ+
+2 ⟩, |ξ+
+3 ⟩} and the basis are
+|ξ+
+1 ⟩= 1
+√
+6
+
+
+1
+1
+−2
+
+,|ξ+
+2 ⟩= 1
+√
+2
+
+
+1
+−1
+0
+
+,|ξ+
+3 ⟩= 1
+√
+3
+
+
+1
+1
+1
+
+,
+in the subspace X +
+2 = {|100⟩, |010⟩, |001⟩}. It follows that the initial state in this new basis reads
+|Ψ(0)⟩v = V†|˜Ψ(0)⟩= −
+√
+3
+2 |ξ+
+1 ⟩+ 1
+2|ξ+
+2 ⟩,
+(9)
+which only consists of the first two basis. Thus, the system driven by HX+
+v
+would remain in the sub-subspaces
+spanned by {|ξ+
+1 ⟩, |ξ+
+2 ⟩}. The Hamiltonian (8) can be mapped into a two-level system and eventually
+simplified as
+H0 =
+˜J1 −2˜J2
+√
+3˜J2
+√
+3˜J2
+−3˜J1
+
+=
+ 2˜J1 −˜J2
+
+σz +
+√
+3˜J2σx −
+ ˜J2 + ˜J1
+
+I2.
+(10)
+Here I2 represents the 2 × 2 identity matrix. The last term contributes only a global phase in the evolution,
+which can be neglected for simplicity. Therefore, the original QST scheme in the spin chain (1) can be dealt
+with the effective two-level Hamiltonian in the basis {|ξ+
+1 ⟩, |ξ+
+2 ⟩}
+H0 = hz (t)
+2
+σz + hx (t)
+2
+σx
+(11)
+with hz(t) = 4˜J1(t) −2˜J2(t) and hx(t) = 2
+√
+3˜J2(t). The corresponding initial and target states are
+|Ψ(0)⟩v = 1
+2
+−
+√
+3
+1
+
+,
+|Ψ(T)⟩v =
+0
+1
+
+.
+(12)
+3
+
+
+[PDF PAGE 4]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+To construct the feasible shortcuts for QST, we can adopt the inverse engineering method. For a two-level
+system, the dynamical invariant of the Schrödinger equation is given by [56]
+I (t) = µ
+2
+ cosθ
+e−iβ sinθ
+eiβ sinθ
+−cosθ
+
+,
+(13)
+satisfying the following relation (¯h = 1)
+∂
+∂tI (t) + i[H0 (t),I (t)] = 0.
+(14)
+Here the parameters θ and β are the polar and azimuthal angles in the Bloch sphere, meeting the
+relationships with hx,z:
+˙θ = −hx sinβ,
+(15)
+˙β = hz −hx cotθcosβ,
+(16)
+where the dot denotes the time derivative.
+The corresponding eigenvectors of the invariant I(t) are
+|ϕ+ (t)⟩=
+e−iβ cos θ
+2
+sin θ
+2
+
+,|ϕ−(t)⟩=
+
+sin θ
+2
+−eiβ cos θ
+2
+
+,
+(17)
+with the eigenvalues ± µ
+2 . Then the solution of the time-dependent Schrödinger equation can be written as
+|Ψ(t)⟩=
+X
+n
+cn |ϕn (t)⟩eiγn,
+(18)
+in which the Lewis–Riesenfeld phase reads
+γ± = ±1
+2
+ˆ t
+0
+dt′
+ 
+˙β +
+˙θcotβ
+sinθ
+!
+.
+(19)
+Finally, we can choose the state evolves along the dynamical mode |ϕ−(t)⟩for nonadiabatic QST by
+imposing the boundary conditions
+θ(0) = 2π/3,
+θ(T) = 0,
+β (0) = 0.
+(20)
+Furthermore, equations (15) and (16) suggest the following conditions
+˙θ(0) = 0,
+˙θ(T) = 0,
+β (T) = π/2,
+(21)
+should be added, so that the control fields are finite and smooth at the boundaries. Meanwhile, the invariant
+I and H0 commute at the final time, which share the same eigenstates. Once θ(t) and β(t) are interpolated
+with the boundaries, the time-dependent couplings J1,2(t) can be inversely designed, and theoretically
+numerous schemes satisfy these boundaries. A major purpose of our work is to improve the state-transfer
+robustness against different perturbations by virtue of the inverse engineering.
+3. Robust nonadiabatic QST
+In this section we explore the influence of the disorders in exchange couplings on QST schemes. Note that
+creating a desirable spin channel with uniform couplings in the quantum system is challenging, and the
+inner couplings J0 inevitably have static variations. Nevertheless, the spin channel with the strong couplings
+still behaves as an effective spin-1/2 system [48]. Therefore, we primarily assume that the disorders take
+place on the time-dependent J1,2(t) and are independent of the others, which can be simulated as
+Ji (t) = Ji (t) + ϵsys
+i
++ ϵrand
+i
+(t),
+i = 1, 2.
+(22)
+Here ϵsys and ϵrand(t) denote the static systematic error and time-varying fluctuations, respectively. Next the
+aforementioned two types of perturbations are separately considered.
+4
+
+
+[PDF PAGE 5]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+3.1. Systematic errors
+Due to imperfect fabrications and possible impurities, the time-dependent exchange couplings in the spin
+chain will suffer from the constant systematic errors ϵsys
+i . We here suppose the two systematic errors have
+relative ratio ϵsys
+2 = Kϵsys
+1 . According to equations (4) and (11), the corresponding perturbative Hamiltonian
+for these errors can be described by
+H ′ = δ
+h
+(2 −K)σz +
+√
+3Kσxi
+(23)
+with δ = mϵsys
+1 . Using the time-dependent purturbation theroy up to second order, we have
+|Ψ′ (T)⟩=|Φ−(T)⟩−i
+ˆ T
+0
+dtU0 (T,t)H ′ |Φ−(t)⟩
+−
+ˆ T
+0
+dt
+ˆ t
+0
+dt′U0 (T,t)H ′U0 (t,t′)H ′ |Φ−(t′)⟩,
+where the unperturbed time evolution operator
+U0 (T,t) = |Φ+ (T)⟩⟨Φ+ (t)| + |Φ−(T)⟩⟨Φ−(t)|
+(24)
+with |Φ±(t)⟩= eiγ±(t) |ϕ±(t)⟩. Thus, at final time the quantum fidelity with respect to the target state is
+F ≃1 −
+
+ˆ T
+0
+dt⟨Φ+ (t)|H ′ |Φ−(t)⟩
+2
+(25)
+= 1 −δ2(2 −K)M +
+√
+3KN
+2
+(26)
+with
+M =
+ˆ T
+0
+dtei2γ−eiβ sinθ,
+(27)
+N =
+ˆ T
+0
+dtei2γ−eiβ (−cosβ cosθ −isinβ).
+(28)
+By defining the systematic-error sensitivity (SES) as [56]
+Qs := −1
+2
+∂2F
+∂δ2
+
+δ=0
+= −∂F
+∂(δ2)
+
+δ=0
+,
+(29)
+the optimally robust invariant-based shortcuts are those making Qs as small as possible. Since it is hard to get
+the analytical solution here, we utilize numerical method for minimizing Qs. Following the references [57,
+58], we assume
+2γ−+ β = −2θ −2αsin2θ + 2
+r
+2π
+3 −θ = Z (α,θ).
+(30)
+Here θ(t) ∈[0,2π/3] and α is a to-be-optimized parameter. Differentiating the above equation, we have
+2˙γ−+ ˙β = ˙θ
+
+−2 −4αcos2θ −
+1
+q
+2π
+3 −θ
+
+.
+(31)
+From equation (19) we get
+2˙γ−+ ˙β = −
+˙θcotβ
+sinθ .
+(32)
+Then, combining the equations (31) and (32), one has
+cotβ =
+
+2 + 4αcos2θ +
+1
+q
+2π
+3 −θ
+
+sinθ = W (α,θ).
+(33)
+5
+
+
+[PDF PAGE 6]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+Figure 2. (a) Systematic-error sensitivity Qs versus the parameter α when K = 1. (b) The squares and crosses denote˜Jmax
+1
+and
+˜Jmax
+2
+, respectively, when Qs is local minimum in subgraph (a). (c) The time-dependent couplings˜J1,2(t) in our optimal protocol
+versus t/T for αm = 0.030. (d) Fidelity F as a function of the relative systematic error η where the SES-optimized shortcut (solid
+line), non-optimized method (dashed line), and the UECD method (dashed-dotted line) are compared. Here we set evolution
+time T = 1. (e) and (f) Comparison of the fidelity using three protocols for K = 0.2 and −2.
+Finally, the SES can be rewritten as
+Qs =
+
+ˆ T
+0
+dteiZ
+
+(2 −K)sinθ −
+√
+3K(i + W cosθ)
+√
+W2 + 1
+
+2
+,
+and the corresponding couplings˜J1,2(t) are
+˜J1 (t) = −
+˙θ
+4
+"
+dW
+dθ +
+ W + W3
+cotθ
+1 + W2
++
+r
+W2 + 1
+3
+#
+,
+(34)
+˜J2 (t) = −
+˙θ
+2
+r
+W2 + 1
+3
+.
+(35)
+We are interested in the protocol which the maximum of˜J1,2(t), denoted by˜Jmax
+1,2 = max0⩽t⩽T{˜J1,2(t)}, is
+as small as possible. In other words, a small α is preferable according to equations (34) and (35) if Qs works
+similarly for different α. To interpolate at intermediate times, we choose θ(t) with polynomial function
+θ(t) = 2π
+3 −2πt2
+T2 + 4πt3
+3T3 .
+(36)
+Figure 2(a) shows the SES as a function of α for K = 1. The possible solutions to these local minimal Qs
+are labeled with circles in the interval α ∈[−6, 6]. The corresponding maximum amplitude of˜J1,2(t)
+(squares and crosses), as depicted in figure 2(b), increases monotonously with |α|. Therefore the optimal
+solution here is αm =0.030, which not only makes Qs =0.28 × 10−2 almost zero but also provides the
+smallest˜Jmax
+1,2 . Figure 2(c) presents the time-dependent couplings˜J1,2(t) in this case. Figure 2(d) shows the
+robustness of our SES-optimized shortcut (solid line) versus the relative systematic error
+η = δ/max{˜Jmax
+1
+,˜Jmax
+2
+}. For comparison, we also numerically simulate the results using: (i) the
+non-optimized method (dashed line) with β(t) = π t
+2T and θ(t) taking the same form of equation (36), (ii) the
+unitarily equivalent counterdiabatic (UECD) driving (dashed-dotted line; details can be found in the
+appendix A). Our simulation manifests the SES-optimized scheme has excellent robustness, even if the
+relative systematic error |η| = 10%. Figures 2(e) and (f) present the results for different ratio K with the
+same procedure, which also confirm the good stability of the SES-optimized shortcuts.
+6
+
+
+[PDF PAGE 7]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+Figure 3. The logarithm of infidelity log10(1 −F) in five-spin chains versus the relative systematic error η using the (a)
+SES-optimized scheme, (b) non-optimized protocol, and (c) UECD driving when K = 1. In all subfigures J0 = 120 MHz and the
+dashed isolines denote the fidelity being 0.99. The color bar represents the value of log10(1 −F).
+We also explore the dynamical evolution in the whole spin chain, by substituting J1,2(t) in original
+Hamiltonian H0 with the newly redesigned couplings, and assess the QST fidelity F at the final time T, i.e.
+F(T) = ⟨ψ0|ϱf (T)|ψ0⟩,
+(37)
+in which |ψ0⟩= a|0⟩+ b|1⟩is the target state and
+ϱf (T) = TrR
+
+U(0,T)|Ψ(0)⟩⟨Ψ(0)|U† (0,T)
+
+(38)
+denotes the reduced density matrix of the last spin by tracing over others. Without loss of generality, we carry
+out the numerical simulations on a five-spin chain. Here the coefficients a, b are randomly chosen as
+a = cos( π
+5 ), b = sin( π
+5 )e−i π
+4 , respectively. Note that the other values have no influence on the final results.
+Figure 3 presents the QST fidelity F with different methods when we consider the relative systematic error η
+for K = 1. We find that the high-fidelity QST can be realized within several nanoseconds. More importantly,
+compared to the non-optimized and UECD protocols, the optimized SES scheme is more robust, where F
+can exceed 0.99 in most situations. Note the inner exchange couplings J0 is actually finite. If we transport the
+state as fast as possible i.e. T →0, the infidelity from imperfectly mapping the whole system to the simplified
+model would appear obviously in all cases.
+3.2. Stochastic amplitude noise
+Now we consider the robustness with respect to noise. Specifically, we assume there exists independent noise
+in two manipulated couplings J1,2(t), which can be expressed as the form λξi(t)Hi(t) with i = 1,2. Here λ
+and Hi(t) are the noise strength and the ‘noisy’ Hamiltonian, respectively; ξi(t) denoting a given noise
+realization satisfies [59]
+⟨ξi (t)⟩= 0,
+⟨ξi (t)ξi (t′)⟩= C(t −t′),
+(39)
+where C(t −t′) is the correlation function of the noise. According to the ratio between the noise correlation
+time and the typical system time scale, the corresponding master equations have been derived
+approximately [60]. In this paper we only consider the amplitude of couplings J1,2(t) with the common
+Gaussian white noise, which contributes to analytical treatment and understanding more complex noise
+types. The corresponding correlation function is C(t −t′) = δ(t −t′), and the power spectrum is constant.
+Thus, the master equation (¯h = 1) can be derived [53, 56, 59, 61, 62]:
+d
+dtρ = −i[H0,ρ] −λ2
+2 ([H1,[H1,ρ]] + [H2,[H2,ρ]]),
+(40)
+where ρ is the density matrix and the operators
+H1 =
+2˜J1
+0
+0
+−2˜J1
+
+,
+H2 =
+ −˜J2
+√
+3˜J2
+√
+3˜J2
+˜J2
+
+.
+(41)
+7
+
+
+[PDF PAGE 8]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+For convenience, we can represent ρ by the Bloch vector⃗
+r =
+
+
+ρ12 + ρ21
+i(ρ12 −ρ21)
+ρ11 −ρ22
+
+
+(42)
+such that ρ = 1
+2 (1 +⃗r ·⃗σ). The Bloch equation for the master equation (40) is
+d
+dt⃗r =
+
+L0 −λ2 (L1 + L2)
+⃗
+r,
+(43)
+in which L0,1,2 denote the operators H0,1,2 in the basis of Pauli operators, respectively, i.e.
+L0 =
+
+
+0
+−hz
+0
+hz
+0
+−hx
+0
+hx
+0
+
+,
+L1 = J 2
+1
+2
+
+
+1
+0
+0
+0
+1
+0
+0
+0
+0
+
+,
+L2 = J 2
+2
+2
+
+
+1
+0
+√
+3
+0
+4
+0
+√
+3
+0
+3
+
+,
+(44)
+with hz = 4˜J1 −2˜J2,hx = 2
+√
+3˜J2, J1 = 4˜J1, and J2 = 2˜J2.
+The initial and target states can be written as⃗
+r(0) = −1
+2
+
+
+√
+3
+0
+−1
+
+,⃗
+r(T) =
+
+
+0
+0
+−1
+
+,
+(45)
+respectively. It is known that the unperturbed Bloch vector is⃗
+r0 (t) =
+
+
+sinθcosβ
+sinθsinβ
+cosθ
+
+.
+(46)
+We can obtain the final fidelity utilizing the time-dependent perturbation theory
+F ≃1 −λ2
+2
+ˆ T
+0
+dt⃗r0 (t)T [L1 + L2]⃗r0 (t).
+(47)
+Thus, the amplitude–noise sensitivity (ANS) can be defined as [56]
+Qr := −1
+2
+∂2F
+∂λ2
+
+λ=0
+= −∂F
+∂(λ2)
+
+λ=0
+.
+(48)
+It indicates that a smaller Qr can give a more robust scheme for QST. According to equations (47) and (48),
+we get
+Qr =
+ˆ T
+0
+dtL
+
+t,θ,β, ˙θ, ˙β
+
+,
+(49)
+in which the parameter
+L =˜J2
+2
+√
+3sin2θcosβ −3cos2 β sin2 θ + 3 + sin2 θ
+
++ 4˜J2
+1 sin2 θ,
+(50)
+and the couplings˜J1,2 read
+˜J2 = −
+˙θ
+2
+√
+3sinβ , ˜J1 =
+˙β
+4 −
+˙θcosβ cosθ
+4sinβ sinθ −
+˜J2
+2 .
+(51)
+To make Qr as small as possible, here we fix β(t) with a linear function and express θ(t) as the modified
+sine Fourier series
+β (t) = π
+2
+t
+T,
+(52)
+θ(t) = 2π
+3
+
+1 −t
+T
+
++
+X
+n
+Cn sin
+2nπt
+T
+
+.
+(53)
+8
+
+
+[PDF PAGE 9]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+Figure 4. (a) The fidelity F versus the strength of amplitude noise λ using the ANS-optimized (blue solid line) with
+Cn(n = 1,2,3) = [0.2651,0.0279,0.0041], non-optimized scheme (green dashed line) with three random parameters being
+Cn(n = 1,2,3) = [−1
+6, 1
+9, 5
+54], SES-optimized (orange dash-dotted line), and UECD (red dotted line) protocols, respectively. (b)
+The time-dependent couplings˜J1,2(t) for the protocols above-mentioned. (c) The corresponding evolutions on the Bloch sphere
+when λ = 0.1, in which the red triangle and blue circle denote the initial and target state.
+Figure 5. QST fidelity F in the five spin chain versus the amplitude noise parameter λ for different durations T using (a) the
+minimal ANS , (b) the non-optimized, (c) the optimized SES and (d) UECD schemes. The values of contour lines are labeled in
+each subplots. Here the inner couplings are set as J0 = 120 MHz.
+Here Cn is a set of to-be-optimized and time-independent coefficients, which should satisfy
+X
+n
+nCn −1
+3 = 0
+(54)
+such that the boundary conditions ˙θ(t)
+
+t=0,T = 0 is guaranteed. In principle, the increasing number of Cn
+provides a better chance to obtain a smaller Qr.
+Figure 4(a) shows the fidelity F in the two-level effective system versus the noise parameter λ with the
+following shortcuts: (i) the ANS-optimized scheme with three coefficients, (ii) the not-optimized passage
+with three random coefficients in equation (53), (iii) the SES-optimized protocol, and (iv) the UECD
+driving. We can see that the ANS-optimized shortcut is more stable against the amplitude noise compared
+with the other methods. Figure 4(b) presents the time-dependent couplings˜J1,2(t) for the four schemes.
+Figure 4(c) shows the corresponding instantaneous trajectories on the Bloch sphere when λ = 0.1 and T = 1,
+from which we can see that the final state using optimized ANS scheme gets closer to the target state.
+To further confirm the validity of our scheme, we substitute the original couplings J1,2(t) with the
+ANS-optimized ones above in the five-spin system, and we numerically investigate the spin-state transfer
+fidelity F, described by equation (37), with respect to the amplitude noise parameter λ when J0 = 120 MHz.
+As displayed in figure 5, the final fidelity F in all speeding-up schemes reasonably descend with λ increasing,
+but the ANS-optimized scheme holds stronger robustness compared to other schemes. Though the optimal
+SES protocol is robust concerning systematic errors, it is sensitive to amplitude noise, showing the ultimate
+robustness depends on the specific type of perturbation. Notably, when T approaches zero, F in all cases
+obviously drop down, as the increasing couplings J1,2(t) invalidate the two-level approximate model. In
+principle, we can increase the inner couplings strength J0 to mitigate this problem. However, it is intractable
+as the inner coupling of spin chain is finite in experiments. For example, the maximum strength of couplings
+9
+
+
+[PDF PAGE 10]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+in typical quantum dots is usually about 100 MHz [28]. A higher-order approximation [54] should be
+introduced into the effective Hamiltonian. We will not discuss here the effects of higher-order approximation
+in equation (3), which is also an interesting issue but quite separate from our focus.
+4. Conclusion
+Faithful transfer of quantum state is necessary for quantum information processing. However, the inevitable
+environmental noise and imperfect system parameters will result in control fields deviating from ideal values,
+and hence the QST fidelity is significantly affected. Here we propose feasible, robust and high-fidelity STA
+schemes to transport quantum states along a Heisenberg spin chain with different types of perturbations
+being considered. To be specific, in the low-energy subspaces of an odd-size and strong-coupled spin
+channel, we approximate the Hamiltonian of the original system to a two-level system. Then, combining the
+perturbation theory and invariant-based engineering, we analyze and optimize the QST sensitivities with
+respect to the systematic errors and stochastic noise arising from the time-dependent couplings, respectively.
+Both protocols only require controlling two marginal couplings, which can greatly reduce the difficulty of
+implementations in experiments. Numerical simulations show that our schemes can provide robust and fast
+strategies for long-distance quantum information transport in various spin-based systems.
+We would like to emphasize that our studies primarily focus on the analysis of systematic errors and
+amplitude noise in disordered couplings individually. In fact, both types of errors may take place together,
+and the optimal schemes in this situation usually depend on the ratio between amplitude–noise error and
+systematic error [56]. In addition, here we consider the special cases of white noise existing in the amplitudes
+of the disordered couplings. More complex types of noise [59], such as the Gaussian colored noise and
+non-Gaussian cases, can also be analyzed in principle. For instance, the influence of Ornstein–Uhlenbeck
+noise and flicker noise using STA for lattice transport have been studied [61, 62]. Combining the
+invariant-based engineering with optimal control techniques [52, 63, 64] will allow for better stability under
+different physical constraints and noise types during QST process, which is of course an important topic but
+beyond the scope of the present paper.
+Data availability statement
+All data that support the findings of this study are included within the article (and any supplementary files).
+Acknowledgment
+We are grateful for valuable discussions with Dr Jianpei Geng. This research was supported by the National
+Natural Science Foundation of China (Grants Nos. 12104282 and 12305014), the Natural Science Basic
+Research Program of Shaanxi Province (Grant No. 2021JQ-522) and Fundamental Research Funds for the
+Central Universities (Grant No. JZ2023HGTA0172).
+Appendix A. Unitarily equivalent CD driving
+Counterdiabatic (CD) driving provides a simple way to exactly suppress nonadiabatic transitions by adding a
+CD term to the original Hamiltonian. For a general two-level system
+H0 = Γ(t)σz + ω(t)σx,
+(A1)
+the CD field can be calculated explicitly and it has the form Hcd(t) = fcd(t)σy with
+fcd (t) = ˙ωΓ −˙Γω
+ω2 + Γ2 .
+(A2)
+Despite taking a simple form in the two-level system, this CD term Hcd(t) typically involves highly nonlocal
+many-body operators in the full Hilbert space [65, 66]. An alternative to construct feasible shortcuts from
+existing CD protocols is to perform suitable unitary transformations [67, 68].
+10
+
+
+[PDF PAGE 11]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+If we apply the unitary rotation Uz(θ) = exp(−iθσz/2) to the CD Hamiltonian
+HA = H0 + Hcd
+(A3)
+by a time-dependent angle θ(t) = arctan fcd
+ω , the auxiliary operators Hcd(t) can be removed and the
+Hamiltonian of the unitarily equivalent CD (UECD) driving becomes
+HU =
+"
+Γ(t) −
+˙θ
+2
+#
+σz + [ω(t)cosθ + fcd (t)sinθ]σx,
+(A4)
+which is structurally equivalent to the original one in equation (A1). The wave functions and Hamiltonians
+in the two reference frames will coincide at the boundary times if U(0) = U(T) = 1 and ˙U(0) = ˙U(T) = 0.
+According to the equations (4) and (11), we can demand the original J1,2(t) follow the boundary constraints
+˙J1,2 (0) = 0,
+¨J1,2 (T) = 0.
+(A5)
+Since the designed HU does not introduce new operators, nonexistent in H0, we only need to manipulate the
+qubit-chain couplings, which facilitate the experimental realization. Then, based on equation (A5), different
+driving protocols can be designed. In the main text, we choose the original couplings J1,2(t) as
+J1 (t) = t3
+T3 ,
+J2 (t) =
+
+1 −t
+T
+3
+,
+(A6)
+and the redesigned couplings (red dotted lines) are presented in figure 4(b).
+Appendix B. The performance with regard to different system sizes and the validity of
+weak-coupling condition
+For a given evolution time T, the marginal couplings become stronger with increasing lengths of the spin
+chain, and they also have an impact on the final results. Figures 6(a) and (b) numerically present the QST
+fidelity as the length of the spin chain increases, where we take either the systematic deviations or stochastic
+amplitude noise into consideration, respectively. The lines without symbols denote the optimized schemes,
+and the corresponding lines with symbols represent the non-optimized results. The results show that as the
+system size N increases, the QST fidelity F still reaches a high level and exhibits good robustness against the
+perturbations. Note that for the ANS-optimized scheme, we only present the results up to an N = 7 spin
+chain limited by numerical computing abilities. The couplings J1,2(t) increase with the system size, which
+may invalidate the low-energy approximation. Therefore, the QST fidelity drops slightly for longer chains. In
+this situation, a stronger internal couplings J0 contributes to a higher fidelity in principle. However, the
+strength of the spin–spin couplings is usually limited in experiments. To briefly illustrate the reasonable
+region of the internal coupling J0 that ensures the validity of the weak-coupling condition, we perform
+numerical simulations in the N = 7 spin chain based on the SES-optimized scheme, without considering the
+perturbation. Figure 6(c) shows the final ground-state population P as a function of the relative proportion
+µ, between the maximum value of Jmax
+1,2 and J0, i.e.
+µ = max{Jmax
+1
+,Jmax
+2
+}
+J0
+.
+Here Jmax
+1,2 denotes the maximum of J1,2(t) within the evolution time T. We find that the final ground-state
+population P > 0.99 when µ < 0.2. However, in the region µ > 0.2, where the internal coupling is not strong
+enough, the population decreases obviously, which indicates the weak-coupling condition breaks down. If so,
+we need to make use of other methods for fast quantum-state transport.
+11
+
+
+[PDF PAGE 12]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+Figure 6. (a) and (b) The QST fidelity F versus the different lengths of the chain using the (a) SES-optimized scheme for K = 1
+and (b) ANS-optimized protocol, respectively. In both cases the inner couplings J0 = 200 MHz and evolution time T = 60 ns. (c)
+The final ground-state population P vs the parameter µ in the N = 7 spin chain using the SES-optimized scheme. The dotted line
+denotes a population of 0.99.
+ORCID iDs
+Hui Zhou https://orcid.org/0000-0002-5377-2886
+Xinhua Peng https://orcid.org/0000-0001-5260-2976
+References
+[1] Nielsen M A and Chuang I L 2000 Quantum Computation and Quantum Information (Cambridge University Press)
+[2] Bose S 2007 Quantum communication through spin chain dynamics: an introductory overview Contemp. Phys. 48 13
+[3] Bose S 2003 Quantum communication through an unmodulated spin chain Phys. Rev. Lett. 91 207901
+[4] Nikolopoulos G M and Jex I 2014 Quantum State Transfer and Network Engineering (Springer)
+[5] Romito A, Fazio R and Bruder C 2005 Solid-state quantum communication with Josephson arrays Phys. Rev. B 71 100501(R)
+[6] Petta J R, Johnson A C, Taylor J M, Laird E A, Yacoby A, Lukin M D, Marcus C M, Hanson M P and Gossard A C 2005 Coherent
+manipulation of coupled electron spins in semiconductor quantum dots Science 309 2180
+[7] Porras D and Cirac J I 2004 Effective quantum spin systems with trapped ions Phys. Rev. Lett. 92 207901
+[8] Mourigal M, Enderle M, Klöpperpieper A, Caux J-S, Stunault A and Rønnow H M 2013 Fractional spinon excitations in the
+quantum Heisenberg antiferromagnetic chain Nat. Phys. 9 435
+[9] Marchukov O V, Volosniev A G, Valiente M, Petrosyan D and Zinner N T 2016 Quantum spin transistor with a Heisenberg spin
+chain Nat. Commun. 7 13070
+[10] Christandl M, Datta N, Ekert A and Landahl A J 2004 Perfect state transfer in quantum spin networks Phys. Rev. Lett. 92 187902
+[11] Wójcik A, uczak T, Kurzy´nski P, Grudka A, Gdala T and Bednarska M 2005 Unmodulated spin chains as universal quantum wires
+Phys. Rev. A 72 034303
+[12] Friesen M, Biswas A, Hu X and Lidar D 2007 Efficient multiqubit entanglement via a spin bus Phys. Rev. Lett. 98 230503
+[13] Wu L-A, Liu Y-X and Nori F 2009 Universal existence of exact quantum state transmissions in interacting media Phys. Rev. A
+80 042315
+[14] Paganelli S, Lorenzo S, Apollaro T J G, Plastina F and Giorgi G L 2013 Routing quantum information in spin chains Phys. Rev. A
+87 062309
+[15] Ashhab S 2015 Quantum state transfer in a disordered one-dimensional lattice Phys. Rev. A 92 062305
+[16] Almeida G M A 2018 Interplay between speed and fidelity in off-resonant quantum-state-transfer protocols Phys. Rev. A 98 012334
+[17] Wang Z-M, Sarandy M S and Wu L-A 2020 Almost exact state transfer in a spin chain via pulse control Phys. Rev. A 102 022601
+[18] Wang C, Li L, Gong J and Liu Y-X 2022 Arbitrary entangled state transfer via a topological qubit chain Phys. Rev. A 106 052411
+[19] Qiao H, Kandel Y P, Fallahi S, Gardner G C, Manfra M J, Hu X and Nichol J M 2021 Long-distance superexchange between
+semiconductor quantum-dot electron spins Phys. Rev. Lett. 126 017701
+[20] Serra P, Ferrón A and Osenda O 2022 Almost perfect quantum state transfer on isotropic and anisotropic Heisenberg spin chains
+with tailored site dependent exchange couplings Phys. Lett. A 449 128362
+[21] Apollaro T J G, Lorenzo S, Plastina F, Consiglio M and ˙Zyczkowski K 2022 Quantum transfer of interacting qubits New J. Phys.
+24 083025
+[22] Balachandran V and Gong J 2008 Adiabatic quantum transport in a spin chain with a moving potential Phys. Rev. A 77 012303
+[23] Jong L M, Greentree A D, Conrad V I, Hollenberg L C L and Jamieson D N 2009 Coherent tunneling adiabatic passage with the
+alternating coupling scheme Nanotechnology 20 405402
+[24] Longhi S 2014 Coherent transfer by adiabatic passage in two-dimensional lattices Ann. Phys. 348 161
+[25] Gullans M J and Petta J R 2020 Coherent transport of spin by adiabatic passage in quantum dot arrays Phys. Rev. B 102 155404
+[26] Farooq U, Bayat A, Mancini S and Bose S 2015 Adiabatic many-body state preparation and information transfer in quantum dot
+arrays Phys. Rev. B 91 134303
+[27] Kandel Y P, Qiao H, Fallahi S, Gardner G C, Manfra M J and Nichol J M 2021 Adiabatic quantum state transfer in a semiconductor
+quantum-dot spin chain Nat. Commun. 12 2156
+[28] Kandel Y P, Qiao H, Fallahi S, Gardner G C, Manfra M J and Nichol J M 2019 Coherent spin-state transfer via Heisenberg exchange
+Nature 573 553
+[29] Liu X-Q, Liu J and Xue Z-Y 2023 Robust and fast quantum state transfer on superconducting circuits JETP Lett. 117 859–64
+[30] Wang Z-M, Bishop C A, Jing J, Gu Y-J, Garcia C and Wu L-A 2016 Shortcut to nonadiabatic quantum state transmission Phys. Rev.
+A 93 062338
+[31] Baksic A, Belyansky R, Ribeiro H and Clerk A A 2017 Shortcuts to adiabaticity in the presence of a continuum: applications to
+itinerant quantum state transfer Phys. Rev. A 96 021801(R)
+12
+
+
+[PDF PAGE 13]
+New J. Phys. 26 (2024) 013041
+Y Ji et al
+[32] Huang B-H, Kang Y-H, Chen Y-H, Shi Z-C, Song J and Xia Y 2018 Quantum state transfer in spin chains via shortcuts to
+adiabaticity Phys. Rev. A 97 012333
+[33] Wang Z-M, Luo D-W, Byrd M S, Wu L-A, Yu T and Shao B 2018 Adiabatic speedup in a non-Markovian quantum open system
+Phys. Rev. A 98 062118
+[34] Chen Y, Zhang L, Gu Y and Wang Z-M 2018 Acceleration of adiabatic quantum state transfer in a spin chain under
+zero-energy-change pulse control Phys. Lett. A 382 2795
+[35] Kiely A and Campbell S 2021 Fast and robust magnon transport in a spin chain New J. Phys. 23 033033
+[36] Agundez R R, Hill C D, Hollenberg L C L, Rogge S and Blaauboer M 2017 Superadiabatic quantum state transfer in spin chains
+Phys. Rev. A 95 012317
+[37] Zhou H, Chen X, Nie X, Bian J, Ji Y, Li Z and Peng X 2019 Floquet-engineered quantum state transfer in spin chains Sci. Bull. 64 888
+[38] D’Angelis F M, Pinheiro F A, Guéry-Odelin D, Longhi S and Impens F 2020 Fast and robust quantum state transfer in a topological
+Su-Schrieffer-Heeger chain with next-to-nearest-neighbor interactions Phys. Rev. Res. 2 033475
+[39] Ji Y, Zhou F, Chen X, Liu R, Li Z, Zhou H and Peng X 2022 Counterdiabatic transfer of a quantum state in a tunable Heisenberg
+spin chain via the variational principle Phys. Rev. A 105 052422
+[40] Guéry-Odelin D, Ruschhaupt A, Kiely A, Torrontegui E, Martínez-Garaot S and Muga J G 2019 Shortcuts to adiabaticity: concepts,
+methods and applications Rev. Mod. Phys. 91 045001
+[41] del Campo A and Kim K 2019 Focus on shortcuts to adiabaticity New J. Phys. 21 050201
+[42] Wilen C D et al 2021 Correlated charge noise and relaxation errors in superconducting qubits Nature 594 369
+[43] Bohnet J G, Sawyer B C, Britton J W, Wall M L, Rey A M, Foss-Feig M and Bollinger J J 2016 Quantum spin dynamics and
+entanglement generation with hundreds of trapped ions Science 352 1297
+[44] Burrell C K, Eisert J and Osborne T J 2009 Information propagation through quantum chains with fluctuating disorder Phys. Rev.
+A 80 052319
+[45] Allcock J and Linden N 2009 Quantum communication beyond the localization length in disordered spin chains Phys. Rev. Lett.
+102 110501
+[46] Zwick A, ´Alvarez G A, Stolze J and Osenda O 2011 Robustness of spin-coupling distributions for perfect quantum state transfer
+Phys. Rev. A 84 022311
+[47] Ronke R, Spiller T P and D’Amico I 2011 Effect of perturbations on information transfer in spin chains Phys. Rev. A 83 012325
+[48] Oh S, Shim Y-P, Fei J, Friesen M and Hu X 2012 Effect of randomness on quantum data buses of Heisenberg spin chains Phys. Rev.
+B 85 224418
+[49] Keele C and Kay A 2022 Combating the effects of disorder in quantum state transfer Phys. Rev. A 105 032612
+[50] Zwick A, ´Alvarez G A, Bensky G and Kurizki G 2014 Optimized dynamical control of state transfer through noisy spin chains New
+J. Phys. 16 065021
+[51] Levy A, Kiely A, Muga J G, Kosloff R and Torrontegui E 2018 Noise resistant quantum control using dynamical invariants New J.
+Phys. 20 025006
+[52] Coopmans L, Campbell S, De Chiara G and Kiely A 2022 Optimal control in disordered quantum systems Phys. Rev. Res. 4 043138
+[53] Whitty C, Kiely A and Ruschhaupt A 2022 Robustness of enhanced shortcuts to adiabaticity in lattice transport Phys. Rev. A
+105 013311
+[54] Oh S, Wu L-A, Shim Y-P, Fei J, Friesen M and Hu X 2011 Heisenberg spin bus as a robust transmission line for quantum-state
+transfer Phys. Rev. A 84 022330
+[55] Oh S, Friesen M and Hu X 2010 Even-odd effects of Heisenberg chains on long-range interaction and entanglement Phys. Rev. B
+82 140403(R)
+[56] Ruschhaupt A, Chen X, Alonso D and Muga J G 2012 Optimally robust shortcuts to population inversion in two-level quantum
+systems New J. Phys. 14 093040
+[57] Lu X-J, Chen X, Ruschhaupt A, Alonso D, Guérin S and Muga J G 2013 Fast and robust population transfer in two-level quantum
+systems with dephasing noise and/or systematic frequency errors Phys. Rev. A 88 033406
+[58] Yu X-T, Zhang Q, Ban Y and Chen X 2018 Fast and robust control of two interacting spins Phys. Rev. A 97 062317
+[59] Kiely A 2021 Exact classical noise master equations: applications and connections Europhys. Lett. 134 10001
+[60] Yu T, Diósi L, Gisin N and Strunz W T 1999 Non-Markovian quantum-state diffusion: perturbation approach Phys. Rev. A 60 91
+[61] Lu X-J, Muga J G, Chen X, Poschinger U G, Schmidt-Kaler F and Ruschhaupt A 2014 Fast shuttling of a trapped ion in the presence
+of noise Phys. Rev. A 89 063414
+[62] Lu X-J, Ruschhaupt A and Muga J G 2018 Fast shuttling of a particle under weak spring-constant noise of the moving trap Phys.
+Rev. A 97 053402
+[63] Hegerfeldt G C 2013 Driving at the quantum speed limit: optimal control of a two-level system Phys. Rev. Lett. 111 260501
+[64] Koch C P et al 2022 Quantum optimal control in quantum technologies. Strategic report on current status, visions and goals for
+research in Europe EPJ Quantum Technol. 9 19
+[65] Takahashi K 2013 Transitionless quantum driving for spin systems Phys. Rev. E 87 062117
+[66] Sels D and Polkovnikov A 2017 Minimizing irreversible losses in quantum systems by local counterdiabatic driving Proc. Natl Acad.
+Sci. USA 114 E3909
+[67] Ibá nez S, Chen X, Torrontegui E, Muga J G and Ruschhaupt A 2012 Multiple Schrödinger pictures and dynamics in shortcuts to
+adiabaticity Phys. Rev. Lett. 109 100403
+[68] Baksic A, Ribeiro H and Clerk A A 2016 Speeding up adiabatic quantum state transfer by using dressed states Phys. Rev. Lett.
+116 230503
+13

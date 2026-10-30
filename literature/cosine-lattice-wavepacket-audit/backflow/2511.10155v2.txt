@@ -1,0 +1,2191 @@
+
+=== PDF PAGE 1 ===
+General quantum backflow in realistic wave packets
+Tomasz Paterek1, 2 and Arseni Goussev3, 4
+1School of Mathematics and Physics, Xiamen University Malaysia, 43900 Sepang, Malaysia
+2Institute of Theoretical Physics and Astrophysics, Faculty of Mathematics,
+Physics and Informatics, University of Gdańsk, 80-308 Gdańsk, Poland
+3Section of Mathematics, University of Geneva, Rue du Conseil-Général 7-9, 1205 Geneva, Switzerland
+4Quantum Physics Corner Ltd, 20–22 Wenlock Road, London N1 7GU, United Kingdom
+Quantum backflow is a counterintuitive phenomenon in which the probability density of a quantum
+particle propagates opposite to its momentum. Experimental observation of backflow has remained
+elusive due to two main challenges: (i) the effect is intrinsically small, with less than 4% of the
+probability able to flow backward, and (ii) it requires wave packets with a well-defined momentum
+direction, which are difficult both to prepare and to verify under realistic, noisy conditions. Here,
+we overcome these challenges by introducing a general formulation of quantum backflow applicable
+to arbitrary momentum distributions. The framework recovers the standard backflow limit for
+unidirectional states and identifies general backflow as probability flow exceeding that predicted
+by the particle’s momentum distribution alone. We show that this excess can reach nearly 13%,
+surpassing the standard backflow bound by more than a factor of three. Furthermore, we extend
+the framework to the closely related phenomenon of quantum reentry, provide explicit examples
+of quantum states exhibiting large general backflow and reentry, and discuss the foundational
+implications of these nonclassical effects. Our results open a pathway toward the experimental
+observation of quantum backflow in realistic settings.
+Introduction. Interference of matter waves—evidenced
+by the appearance of characteristic density fringes ob-
+tained through repeated position measurements of a par-
+ticle at a given time—has been a cornerstone of quantum
+mechanics since its early days. Only relatively recently,
+however, has it been recognized that performing position
+measurements at multiple distinct times can reveal non-
+classical aspects of probability transport even for a free
+nonrelativistic particle. Perhaps the most well-known ex-
+ample is quantum backflow [1–5], but other notable effects
+include quantum reentry [6], Tsirelson’s precession [7–
+12], and quantum advantage in various transportation
+tasks [13–16]. These effects appeal to the very core of
+quantum mechanics, much like interference and diffrac-
+tion. Yet even quantum backflow, which manifests as a
+classically impossible transfer of probability against the
+particle’s momentum, has not yet been experimentally
+observed.1
+Two main obstacles have hindered the experimental ob-
+servation of quantum backflow. The first arises from the
+intrinsic weakness of the effect. Bracken and Melloy [4]
+established a limit to the probability that can flow against
+the particle’s momentum—the Bracken–Melloy constant
+cBM—which they estimated to be about 4%. This es-
+1 There has been significant experimental progress in studying
+optical analogs of quantum backflow, where the instantaneous
+local momentum of a light field is shown to point opposite to the
+local momentum of its constituent modes. Such effects have been
+demonstrated in linear motion using classical optical beams [17,
+18], and in rotational motion using both classical light [19] and
+single photons [20].
+However, because these experiments are
+effectively time-independent, they do not capture the probability
+dynamics that fundamentally define quantum backflow.
+timate has been progressively refined [21, 22], with the
+most accurate value being cBM = 0.0384506 [23]. (Exact
+but not optimal analytical bounds on cBM are reported in
+Refs. [10, 16].) However, the state saturating this limit is
+highly singular: it possesses a discontinuous momentum
+distribution, infinite energy, and diverging probability
+current, making it physically unrealistic. More regular
+wave functions [4, 21, 24–29] yield substantially smaller
+backflow values, typically below 0.016, rendering the effect
+challenging to detect.
+The second obstacle is the strict requirement of a fixed
+momentum direction. Such states are difficult to engi-
+neer and verify because realistic, noisy measurements
+inevitably produce spurious outcomes that can indicate
+an incorrect momentum direction even for properly pre-
+pared initial states. Moreover, in some systems—such as
+ballistic electrons in mesoscopic conductors—preparing a
+strictly unidirectional wave packet is fundamentally im-
+possible [30]. While Bracken has generalized the standard
+backflow formulation to systems with any momentum
+cutoff [5], these considerations motivate the development
+of a broader framework capable of describing quantum
+backflow for arbitrary momentum distributions.
+Here, we develop such a general formulation, applicable
+to both quantum backflow and the closely related phe-
+nomenon of quantum reentry. The latter describes the
+nonzero probability that a free quantum particle reenters a
+spatial region it has previously left—a behavior forbidden
+to classical free particles, whose motion is unidirectional
+in the absence of external forces. Backflow emerges as
+a special case of reentry [31]. We show that, when ex-
+tended to arbitrary momentum distributions, quantum
+reentry can be tested by examining only a finite region
+of the experimental interferogram, making this approach
+arXiv:2511.10155v2  [quant-ph]  2 Mar 2026
+
+
+=== PDF PAGE 2 ===
+2
+particularly suitable for experimental implementation.
+Our approach is founded on the observation that quan-
+tum interference enables a particle to reach spatial regions
+inaccessible to classical particles. We express the classical
+limits on probability transport as two inequalities—one
+for backflow and one for reentry—that make no assump-
+tions about momentum direction or spatial localization.
+Quantum mechanics can violate these inequalities, with
+up to 0.1281 of the particle’s probability flowing opposite
+to the classical expectation. The optimal state yielding
+this maximal violation differs from the standard backflow-
+maximizing state. We also investigate general backflow
+in experimentally relevant settings using superpositions
+of Gaussian wave packets. While Gaussian states have
+been considered in prior studies of standard backflow [24],
+only the present work provides a rigorous treatment that
+accounts for their infinite momentum support.
+Classical limits. We begin by characterizing the ab-
+sence of backflow in classical systems. Consider a free
+classical particle of mass m moving along the x axis,
+with an unrestricted phase-space distribution f(x, p, t) =
+f(x −pt/m, p, 0).
+The central quantity in backflow-
+like problems is the probability of finding the particle
+to the left of the origin x = 0 at time t, denoted as
+P−(t) = Prob(x < 0, t). This probability can change
+between times t1 and t2 = t1 + T in two distinct ways:
+(i) particles with positive momentum (p > 0) initially
+located in the interval x ∈(−pT/m, 0) will leave the re-
+gion, while (ii) particles with negative momentum (p < 0)
+initially positioned in x ∈(0, −pT/m) will enter it. Since
+in general backflow we are interested in the increment of
+this probability, we upper-bound the probability gain by
+the second contribution only:
+P−(t2) −P−(t1) ≤
+Z 0
+−∞
+dp
+Z −pT
+m
+0
+dx f(x, p, t1) ≤˜P−.
+(1)
+Here, ˜P−= Prob(p < 0) is the probability of negative
+momentum, which remains time independent under free
+evolution. The second inequality follows by extending the
+x-integration limits to the entire real line and using the
+non-negativity of the probability density f.
+Inequality (1) is expressed solely in terms of measurable
+position and momentum marginals, making it directly
+comparable to quantum results. For ˜P−= 0, it reduces
+to the familiar statement that the probability of finding
+a right-moving particle to the left of the origin cannot
+increase with time. In its general form, however, the
+inequality makes no assumptions about the marginals
+and simply bounds the position-probability gain by the
+probability of negative momentum. Any violation of this
+bound—shown below to be possible for quantum wave
+packets—therefore signals a nonclassical transport effect
+where the particle moves backward more than is permitted
+by its momentum distribution.
+The momentum probability in (1) can be traded for
+a position probability to produce a generalization of the
+reentry problem [6]. Consider a finite interval along the
+x axis, r = (−s, 0) for concreteness, and define Pr(t) =
+Prob(x ∈r, t) as the probability for the particle to be
+inside r at time t. The difference Pr(t2)−Pr(t1) quantifies
+the fraction of particles that have entered r between times
+t1 and t2 > t1. Since classical particles can only enter from
+outside the region, this increase cannot exceed the total
+fraction of particles that were outside r at any earlier time
+t0 < t1, namely 1 −Pr(t0). This leads to the following
+inequality characterizing the impossibility of reentry for
+classical particles:
+Pr(t2) −Pr(t1) ≤1 −Pr(t0) ,
+(2)
+which holds for any t0 < t1 < t2.2 For Pr(t0) = 1 and
+s →∞, it reduces to the classical reentry condition
+discussed in Refs. [6, 31].
+Compared to (1) the reentry inequality offers two no-
+table advantages. First, it depends solely on position
+measurements, allowing it to be tested experimentally by
+comparing interference patterns at three distinct times.
+Second, only a finite region of the interferogram, corre-
+sponding to r, needs to be analyzed, provided the total
+flux of particles is known.
+Simple example. We now demonstrate that the classi-
+cal bounds expressed in inequalities (1) and (2) can be
+violated by quantum particles. Consider a wave function
+consisting of a superposition of two Gaussian wave packets,
+Ψ(x, t) = P
+n=1,2 cngn(x, t), directly accessible in optical
+systems and Bose-Einstein condensates (BECs). This type
+of superposition was previously analyzed in Ref. [24] for
+real coefficients cn and Gaussians gn(x, t) with identical
+widths, yielding quantum backflow of 0.0061. Although
+strictly nonzero, the corresponding probability of negative
+momentum was found to be small, ˜P−≈10−10, and was
+therefore neglected.
+To systematically study the effect of negative momen-
+tum, we define
+∆QB = P−(t2) −P−(t1) −˜P−,
+(3)
+∆RE = P−(t2) −P−(t1) + P−(t0) −1 ,
+(4)
+which, according to Eqs. (1) and (2), cannot exceed zero
+in classical mechanics. Details of maximizing these quan-
+tities over the set of superposed Gaussian states are pro-
+vided in the Supplemental Material (SM). Using the same
+assumptions as in Ref. [24], we find that the generalized
+quantum backflow reaches ∆QB = 0.0106. Relaxing the
+assumptions on the Gaussian superposition increases the
+maximum backflow to ∆QB = 0.0120. The same enhance-
+ments are observed for quantum reentry, ∆RE. While
+2 See Supplemental Material for an alternative derivation of Eqs. (1)
+and (2).
+
+
+=== PDF PAGE 3 ===
+3
+these values remain modest, they clearly demonstrate
+that incorporating negative-momentum components al-
+lows substantially larger violations of classical probability
+bounds.
+Large backflow example.
+The previous illustration
+showed that general quantum backflow can exceed the
+magnitude observed in the standard scenario. Remark-
+ably, general backflow can even significantly surpass the
+Bracken–Melloy constant, cBM = 0.0384506. Inspired by
+Ref. [25], we construct an explicit example using the
+momentum-space wave function ˜ψ(p) = Θ(p)a1(b1 −
+p)e−c2
+1p2 + Θ(−p)a2(b2 −p)e−c2
+2p2, where a’s, b’s, and
+c’s are constants, and Θ(·) is the Heaviside step func-
+tion. Such superpositions are feasible in BEC platforms.
+With a suitable choice of parameters, this state achieves
+a general backflow of ∆QB = 0.0624. There also exists
+a corresponding state exhibiting the same value of ∆RE.
+Detailed derivations and parameter choices are provided
+in the SM.
+Unified approach. We now demonstrate that the ex-
+pressions for ∆QB and ∆RE with the range r = (−∞, 0)
+can be cast in the same mathematical form. For general
+backflow, we write the time-dependent wave function of
+a free particle as
+Ψ(x, t) =
+1
+√
+2πℏ
+Z +∞
+−∞
+dp ˜ψ(p) exp
+
+−it
+2mℏp2 + ix
+ℏp
+
+,
+(5)
+where ˜ψ(p) is the normalized momentum-space wave func-
+tion at t = 0. The relevant probabilities in Eq. (3) are
+then
+P−(t) =
+Z 0
+−∞
+dx |Ψ(x, t)|2 ,
+˜P−=
+Z 0
+−∞
+dp
+ ˜ψ(p)
+2 . (6)
+Following the approach of Ref. [4], detailed for convenience
+in the SM, we find that ∆QB = ∆, where
+∆=
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ∗(u)K(u, u′)φ(u′) ,(7)
+K(u, u′) = −
+sin
+
+u2 −u′2
+π(u −u′)
+−Θ(−u)δ(u −u′) ,
+(8)
+and
+φ(u) =
+ 4ℏm
+t2 −t1
+1/4
+exp
+
+−it2 + t1
+t2 −t1
+u2
+
+˜ψ
+ 
+u
+r
+4ℏm
+t2 −t1
+!
+.
+(9)
+Here, δ(·) denotes the Dirac delta function, and φ(u) is a
+rescaled momentum-space wave function normalized as
+R +∞
+−∞du |φ(u)|2 = 1.
+For quantum reentry with r = (−∞, 0), we express
+Ψ(x, t) via the free-particle propagator
+Ψ(x, t) =
+r
+m
+2πiℏτ
+Z +∞
+−∞
+dx′ exp
+
+im(x −x′)2
+2ℏτ
+
+ψ(x′) ,
+(10)
+where τ = t −t0, and ψ(x) is the position-space wave
+function at t = t0. Following the method of Ref. [6],
+detailed in the SM, ∆RE can be expressed in the same
+form, ∆RE = ∆, with φ(u) now representing a rescaled
+position-space wave function:
+φ(u) =
+
+4ℏτ2τ1
+m(τ2 −τ1)
+1/4
+exp
+
+iτ2 + τ1
+τ2 −τ1
+u2
+
+× ψ
+ 
+−u
+s
+4ℏτ2τ1
+m(τ2 −τ1)
+!
+,
+(11)
+where τ1 = t1 −t0 and τ2 = t2 −t0.
+Thus, ∆captures the probability transfer in both the
+general backflow and reentry scenarios. Compared with
+the standard backflow [4] and reentry [6] formulations, two
+key differences appear: the integrals over u and u′ extend
+over the entire real line, and the kernel K(u, u′) includes
+an additional term, −Θ(−u)δ(u−u′). These modifications
+account for the larger values of ∆observed in the general
+setting. In the SM we also give a perturbative argument,
+based on modifications of the state maximizing standard
+positive-momentum backflow, showing that ∆can exceed
+the Bracken–Melloy limit.
+Supremum of ∆. The maximal quantum violation of
+the classical inequalities (1) and (2) is obtained by op-
+timizing ∆over all normalized functions φ(u). This is
+achieved by performing an unconstrained optimization of
+∆+λ
+R +∞
+−∞du |φ(u)|2, where λ is a Lagrange multiplier [4].
+The resulting Euler-Lagrange equation reads
+Z +∞
+−∞
+du′ K(u, u′)φ(u′) = λ φ(u).
+(12)
+so that the supremum of ∆corresponds to the largest
+eigenvalue of the integral operator: supφ ∆= sup{λ}.
+To evaluate supφ ∆numerically, we first truncate the
+integration domain in Eq. (12) to (−L, L), giving eigen-
+values λL such that λ = limL→∞λL. We then discretize
+(−L, L) into 2N intervals, replacing the integral with a
+finite sum, thereby converting the integral eigenproblem
+into a matrix eigenproblem with eigenvalues λL,N, which
+satisfy limN→∞λL,N = λL.
+In our calculations, L was varied from 10 to 40 in steps
+of 5, and for each L, N was increased from hundreds to
+thousands to determine the maximal λL,N. For fixed L,
+the maximal λL,N scales approximately linearly with 1/N;
+we therefore estimate the limit N →∞and obtain λL
+by fitting a linear function to the computed eigenvalues.
+The optimal fit parameters and associated uncertainties
+are obtained via standard linear regression [32]. Similarly,
+the maximal λL scales approximately linearly with 1/L,
+allowing us to estimate the limit L →∞and its uncer-
+tainty. The resulting value, with one standard deviation
+error, is
+sup ∆= 0.128100 ± 0.000002 .
+(13)
+
+
+=== PDF PAGE 4 ===
+4
+FIG. 1.
+Rescaled state maximizing general backflow and
+reentry compared with the standard (positive-momentum)
+backflow-maximizing state.
+Comprehensive details of the numerical analysis are pro-
+vided in the SM.
+The eigenvector corresponding to the largest eigenvalue
+provides an approximation of the state φ(u) that max-
+imizes general backflow or reentry. As shown in Fig. 1
+this state (solid orange curve) exhibits a discontinuity at
+u = 0 and long oscillatory tails extending to infinity, sim-
+ilar to the standard backflow-maximizing state (dashed
+blue curve for positive-momentum problem).
+Analytical bounds. Analytical lower and upper bounds
+on sup ∆can be inferred from the results of Refs. [8,
+10, 16]. Let us express ˜P−= Tr(ρ Θ(−ˆp)), where ρ is
+the initial density matrix of the particle and ˆp is the
+momentum operator. The probability of finding the par-
+ticle at negative positions at time t is then P−(t) =
+Tr(ρt Θ(−ˆx)) = Tr(ρ Θ(−ˆx −ˆpt/m)), where ˆx is the posi-
+tion operator, ρt = UρU †, and U = exp
+ −itˆp2/2ℏm
+
+is
+the free-evolution operator. For the case m = 1, t1 = 0,
+and t2 = 1, Eq. (3) can be written as ∆QB = Tr(ρ Ω),
+with Ω= Θ(−ˆx −ˆp) −Θ(−ˆx) −Θ(−ˆp). The operator
+Ωwas introduced in Ref. [16] to estimate the transport
+efficiency of quantum projectiles with the same position
+and momentum marginals as their classical counterparts.
+(These assumptions are not present in our analysis.)
+The best known analytical bounds on the maximal
+eigenvalue of Ωwere established by connecting it to
+Tsirelson’s precession problem [7], and applying very re-
+cent results of Ref. [8, 10]. This shows that 0.128092 ≤
+sup ∆≤0.192466, exceeding the Bracken-Melloy bound
+cBM ≃0.0384506 by more than a factor of three, and with
+the lower bound coming remarkably close to our estimate,
+given by Eq. (13).
+Discussion. We conclude with remarks on the founda-
+tional implications of our results. In the general backflow
+formulation, we considered the probability of locating
+the particle to the left of the origin.
+Naturally, the
+origin can be replaced by any point b on the x axis.
+Quantum backflow occurs whenever ∆QB = Prob(x <
+b, t2) −Prob(x < b, t1) −˜P−[c.f. Eq. (3)] becomes pos-
+itive. Similarly, one can consider quantum “overflow”,
+recently introduced in Ref. [23], which occurs when
+∆QO = Prob(x > f, t2) −Prob(x > f, t1) −˜P+ becomes
+positive, with f an arbitrary point and ˜P+ = 1 −˜P−the
+probability of positive momentum. Since in the general
+formulation introduced here the particle can move in any
+direction, a natural question arises: can a particle simul-
+taneously exhibit backflow and overflow? In other words,
+does there exist a wave function for which ∆QB > 0 and
+∆QO > 0 for some choice of parameters? The answer is
+negative. It can be shown (see SM) that ∆QB + ∆QO ≤0
+for all parameters, revealing a trade-off and mutual in-
+compatibility between these two effects. It is also worth
+noting that while quantum overflow can occur only over
+multiple disjoint time intervals in states with strictly
+positive momentum [23], it can already arise within a
+single interval for states with an arbitrary momentum
+distributions. In fact, quantum backflow and overflow are
+qualitatively equivalent phenomena, distinguished only
+by the direction of the probability transport.
+The Bracken–Melloy constant cBM characterizes maxi-
+mal standard (positive-momentum) backflow and is inde-
+pendent of the particle’s mass, the backflow duration, and
+Planck’s constant. It was proposed to reflect the mathe-
+matical structure of quantum free-particle evolution [4].
+The same properties hold for the general backflow con-
+stant sup ∆, given by Eq. (13), suggesting that quantum
+free evolution is characterized by at least two fundamen-
+tal dimensionless constants. Understanding the relation
+between them presents a promising direction for future
+research.
+A more pragmatic follow-up question is how the
+strength of general backflow changes when the exper-
+imental evaluation of Prob(x < 0, t) uses a smoothed
+spatial window rather than a sharp one.
+In the case
+of the standard positive-momentum formulation, such
+smoothing is known to lead to an underestimation of
+quantum backflow [24]. Another important aspect of a
+future experimental validation of general backflow is en-
+suring that any violation of inequalities (1) or (2) arises
+from quantum interference rather than from a failure of
+the dynamical assumptions (e.g., force-free motion) of
+the system under investigation. A theoretical framework
+for eliminating such a dynamical loophole in the context
+of the Tsirelson precession problem has recently been
+developed in Ref. [12].
+The classical limits, Eqs. (1) and (2), rely on two as-
+sumptions: (i) the existence of a joint probability density
+f(x, p, t), and (ii) the validity of classical equations of
+motion for a free particle, xt = x0 + pt/m and pt = const.
+Quantum backflow, reentry, and other nonclassical prob-
+
+
+=== PDF PAGE 5 ===
+5
+ability transport effects violate at least one of these as-
+sumptions. Relaxing (i) while keeping (ii) leads to pseudo-
+probability frameworks, such as the Wigner function for-
+malism, in which backflow emerges as negative probability
+transfer of particles in straight line motion [4, 24]. Con-
+versely, retaining (i) and relaxing (ii) leads to Bohmian
+mechanics, where even free particles follow curved trajec-
+tories due to an effective nonlocal potential [22, 33]. Yet,
+these trajectories have to comply with the Ehrenfest theo-
+rem. Moreover, one can demonstrate that any covariance
+measurements remain compatible with the straight line
+motion. Consequently, any signatures of backflow can
+only appear in the dynamics of third and higher moments
+of the position distribution. This demonstrates both the
+subtlety of the effect and the sensitivity of our methods
+to these higher-order changes.
+We also note that the derivation of the inequalities (1)
+and (2) does not require strictly free-particle equations of
+motion. Rather, they hold for any continuous phase-space
+flow satisfying sgn(dxt/dt) = sgn(pt) and sgn(pt) = const,
+where sgn(·) denotes the sign function. These conditions
+require that the particle’s velocity be aligned with its
+momentum and that the direction of motion be preserved.
+This observation opens the possibility of investigating
+general quantum backflow and reentry beyond the free-
+particle setting.
+In summary, the methods developed here provide a re-
+alistic route toward experimental observation of quantum
+backflow and reentry, while raising several fundamental
+and practical questions for further exploration.
+Acknowledgments. The authors thank Anat Daniel,
+Bohnishikha Ghosh, Bernard Gorzkowski, Thomas Juff-
+mann, Radosław Łapkiewicz, Timon Zipfelmaier for in-
+sightful discussions.
+[1] G. Allcock, The time of arrival in quantum mechanics
+III. The measurement ensemble, Ann. Phys. 53, 311–348
+(1969).
+[2] J. Kijowski, On the time operator in quantum mechanics
+and the Heisenberg uncertainty relation for energy and
+time, Rep. Math. Phys. 6, 361–386 (1974).
+[3] R. F. Werner, Wigner quantisation of arrival time and
+oscillator phase, J. Phys. A: Math. Gen. 21, 4565 (1988).
+[4] A. J. Bracken and G. F. Melloy, Probability backflow and
+a new dimensionless quantum number, J. Phys, A: Math.
+Gen. 27, 2197–2211 (1994).
+[5] A. J. Bracken, Probability flow for a free particle: new
+quantum effects, Phys. Scr. 96, 045201 (2021).
+[6] A. Goussev, Equivalence between quantum backflow and
+classically forbidden probability flow in a diffraction-in-
+time problem, Phys. Rev. A 99, 043626 (2019).
+[7] B. Tsirelson, How often is the coordinate of a harmonic
+oscillator positive?, arXiv:2505.13184.
+[8] L. H. Zaw, C. C. Aw, Z. Lasmar, and V. Scarani, Detecting
+quantumness in uniform precessions, Phys. Rev. A 106,
+032222 (2022).
+[9] L. H. Zaw, M. Weilenmann, and V. Scarani, Tsirelson’s
+Inequality for the Precession Protocol Is Maximally Vio-
+lated by Quantum Theory, Phys. Rev. Lett. 134, 190201
+(2025).
+[10] L. H. Zaw and V. Scarani, All three-angle variants of
+Tsirelson’s precession protocol, and improved bounds for
+wedge integrals of Wigner functions, npj Quan. Inf. 11,
+152 (2025).
+[11] A. Vaartjes, M. Nurizzo, L. H. Zaw, B. Wilhelm, X. Yu,
+D. Holmes, D. Schwienbacher, A. Kringhøj, M. R. van
+Blankenstein, A. M. Jakob, F. E. Hudson, K. M. Itoh,
+R. J. Murray, R. Blume-Kohout, N. Anand, A. S. Dzurak,
+D. N. Jamieson, V. Scarani, and A. Morello, Certifying the
+quantumness of a nuclear spin qudit through its uniform
+precession, Newton 1, 100017 (2025).
+[12] A. Garg, J. Halliwell, and T. Venkataraman, Assessing
+the dynamical assumptions in Tsirelson inequality tests of
+non-classicality in harmonic oscillators, arXiv:2509.03166.
+[13] H. F. Hofmann, Quantum interference of position and
+momentum: A particle propagation paradox, Phys. Rev.
+A 96, 020101(R) (2017).
+[14] H. F. Hofmann, How to put quantum particles on magic
+bullet trajectories that can hit two targets without a clear
+line-of-sight, Sci. Rep. 11, 7964 (2021).
+[15] T. Ono, N. Samantarray, and J. G. Rarity, Controlling
+and measuring a superposition of position and momentum,
+Phys. Rev. A 108, 012215 (2023).
+[16] D. Trillo, T. P. Le, and M. Navascués, Quantum advan-
+tages for transportation tasks - projectiles, rockets and
+quantum backflow, npj Quant. Inf. 9, 69 (2023).
+[17] Y. Eliezer, T. Zacharias, and A. Bahabad, Observation
+of optical backflow, Optica 7, 72 (2020).
+[18] A. Daniel, B. Ghosh, B. Gorzkowski, and R. Lapkiewicz,
+Demonstrating backflow in classical two beams’ interfer-
+ence, New J. Phys. 24, 123011 (2022).
+[19] B. Ghosh, A. Daniel, B. Gorzkowski, and R. Lapkiewicz,
+Azimuthal backflow in light carrying orbital angular mo-
+mentum, Optica 10, 1217 (2023).
+[20] Z.-F. Zhang, P.-F. Huang, S.-C. Dong, Y.-X. Rong, J.-S.
+Xu, Y.-J. Gu, and Y. Xiao, Observation of single-photon
+azimuthal backflow with weak measurement, Opt. Lett.
+50, 333 (2025).
+[21] S. P. Eveson, C. J. Fewster, and R. Verch, Quantum
+Inequalities in Quantum Mechanics, Ann. Henri Poincaré
+6, 1 (2005).
+[22] M. Penz, G. Grübl, S. Kreidl, and P. Wagner, A new
+approach to quantum backflow, J. Phys. A: Math. Gen.
+39, 423 (2006).
+[23] C. J. Fewster and H. J. Kirk-Karakaya, Repeated quantum
+backflow and overflow, Proc. R. Soc. A 481, 20250577
+(2025).
+[24] J. M. Yearsley, J. J. Halliwell, R. Hartshorn, and
+A. Whitby, Analytical examples, measurement models,
+and classical limit of quantum backflow, Phys. Rev. A 86,
+042116 (2012).
+[25] J. J. Halliwell, E. Gillman, O. Lennon, M. Patel, and
+I. Ramirez, Quantum backflow states from eigenstates of
+the regularized current operator, J. Phys. A: Math. Theor.
+46, 475303 (2013).
+[26] M. Palmero, E. Torrontegui, J. G. Muga, and M. Mod-
+ugno, Detecting quantum backflow by the density of
+a Bose-Einstein condensate, Phys. Rev. A 87, 053618
+(2013).
+[27] M. Miller, C. Y. Woo, R. Dumke, and T. Paterek,
+
+
+=== PDF PAGE 6 ===
+6
+Experiment-friendly formulation of quantum backflow,
+Quantum 5, 379 (2021).
+[28] M. Barbier and A. Goussev, On the experiment-friendly
+formulation of quantum backflow, Quantum 5, 536 (2021).
+[29] I. Chremmos, Design of quantum backflow in the complex
+plane, J. Phys. A: Math. Theor. 57, 055301 (2024).
+[30] A. Goussev and G. V. Morozov, Searching for Bloch wave
+packets with almost definite momentum direction, Phys.
+Rev. A 112, 032223 (2025).
+[31] A. Goussev, Probability backflow for correlated quantum
+states, Phys. Rev. Research 2, 033206 (2020).
+[32] P. Bevington and D. Robinson, Data Reduction and Error
+Analysis for the Physical Sciences (McGraw-Hill Educa-
+tion, 2003).
+[33] J. G. Muga and C. R. Leavens, Arrival time in quantum
+mechanics, Phys. Rep. 338, 353 (2000).
+SUPPLEMENTAL MATERIAL
+Alternative derivation of classical constraints
+Consider the left panel of Fig. 2, which illustrates the phase space of classical one-dimensional motion. A classical
+particle is measured first at time t = 0 and then again at time t. For free particles, the phase-space flow is purely
+horizontal, mapping lines through the origin to other lines through the origin. This leads to the following regions that
+contribute to the marginal probabilities:
+P−(0) =
+Z
+B+C+D
+dp dx f(x, p, 0) ,
+P−(t) =
+Z
+C+D+E
+dp dx f(x, p, 0) ,
+˜P−=
+Z
+D+E+F
+dp dx f(x, p, 0) .
+These can be treated as follows:
+P−(t) ≤
+Z
+C+D+E
+dp dx f(x, p, 0) +
+Z
+B
+dp dx f(x, p, 0) = P−(0) +
+Z
+E
+dp dx f(x, p, 0)
+≤P−(0) +
+Z
+D+E+F
+dp dx f(x, p, 0) = P−(0) + ˜P−.
+This inequality characterizes the absence of backflow.
+The right panel of Fig. 2 illustrates the scenario in which only position measurements are performed at three distinct
+instants of time. The corresponding probabilities are given by
+P−(t1) =
+Z
+C+D+E+F
+dp dx f(x, p, 0) ,
+FIG. 2.
+Phase-space diagram used to derive inequalities characterizing the absence of backflow and reentry in classical
+mechanics.
+
+
+=== PDF PAGE 7 ===
+7
+P−(t2) =
+Z
+D+E+F +G
+dp dx f(x, p, 0) ,
+1 −P−(0) =
+Z
+A+H+G+F
+dp dx f(x, p, 0) .
+Therefore,
+P−(t2) −P−(t1) =
+Z
+G
+dp dx f(x, p, 0) −
+Z
+C
+dp dx f(x, p, 0)
+≤
+Z
+G+A+F +H
+dp dx f(x, p, 0) = 1 −P−(0) .
+This inequality characterizes the absence of reentry in classical systems.
+Rescaling of general backflow
+The time-dependent wave function of a free particle can be written as
+Ψ(x, t) =
+1
+√
+2πℏ
+Z +∞
+−∞
+dp ˜ψ(p) exp
+
+−it
+2mℏp2 + ix
+ℏp
+
+,
+where ˜ψ(p) is the momentum-space wave function at time t = 0. The latter satisfies the normalization condition
+Z +∞
+−∞
+dp
+ ˜ψ(p)
+2 = 1 .
+The associated probability current through x = 0 at time t is given by
+j(0, t) = ℏ
+m Im
+
+Ψ∗(x, t)∂Ψ(x, t)
+∂x
+
+x=0
+=
+1
+4πℏm
+Z +∞
+−∞
+dp
+Z +∞
+−∞
+dp′ (p + p′) ˜ψ(p)∗˜ψ (p′) exp
+ it
+2ℏm
+
+p2 −p′2
+.
+The probability transfer into the region x < 0 during a time interval (t1, t2), with t1 < t2, is
+P−(t2) −P−(t1) = −
+Z t2
+t1
+dt j(0, t)
+= −
+1
+4πℏm
+Z +∞
+−∞
+dp
+Z +∞
+−∞
+dp′ (p + p′) ˜ψ(p)∗˜ψ (p′)
+Z t2
+t1
+dt exp
+ it
+2ℏm
+
+p2 −p′2
+= −1
+2πi
+Z +∞
+−∞
+dp
+Z +∞
+−∞
+dp′ (p + p′) ˜ψ(p)∗˜ψ (p′)
+exp
+h
+it2
+2ℏm(p2 −p′2)
+i
+−exp
+h
+it1
+2ℏm(p2 −p′2)
+i
+p2 −p′2
+.
+Writing
+t1 = ¯t −T
+2 ,
+t2 = ¯t + T
+2 ,
+we obtain
+P−(t2) −P−(t1) = −1
+π
+Z +∞
+−∞
+dp
+Z +∞
+−∞
+dp′ ˜ψ(p)∗˜ψ(p′) exp
+ i¯t
+2ℏm(p2 −p′2)
+ sin
+h
+T
+4ℏm(p2 −p′2)
+i
+p −p′
+.
+Changing the integration variables to
+u = p
+r
+T
+4ℏm ,
+u′ = p′
+r
+T
+4ℏm ,
+
+
+=== PDF PAGE 8 ===
+8
+we get
+P−(t2) −P−(t1) = −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′
+r
+4ℏm
+T
+˜ψ
+ 
+u
+r
+4ℏm
+T
+!∗
+˜ψ
+ 
+u′
+r
+4ℏm
+T
+!
+exp
+
+i2¯t
+T
+ u2 −u′2 sin
+ u2 −u′2
+u −u′
+.
+We now introduce the rescaled momentum-space wave function
+φ(u) =
+4ℏm
+T
+1/4
+exp
+
+−i2¯t
+T u2
+
+˜ψ
+ 
+u
+r
+4ℏm
+T
+!
+=
+ 4ℏm
+t2 −t1
+1/4
+exp
+
+−it2 + t1
+t2 −t1
+u2
+
+˜ψ
+ 
+u
+r
+4ℏm
+t2 −t1
+!
+.
+Then,
+P−(t2) −P−(t1) = −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗φ(u′)sin
+ u2 −u′2
+u −u′
+.
+The normalization condition now reads
+Z +∞
+−∞
+du |φ(u)|2 = 1 ,
+and the probability of negative momentum becomes
+˜P−=
+Z 0
+−∞
+du |φ(u)|2 .
+Combining the results, we find
+∆QB = P−(t2) −P−(t1) −˜P−
+= −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗φ(u′)sin
+ u2 −u′2
+u −u′
+−
+Z 0
+−∞
+du |φ(u)|2
+= −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗φ(u′)sin
+ u2 −u′2
+u −u′
+−
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗φ(u′)Θ(−u)δ(u −u′)
+=
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗K(u, u′)φ(u′) ,
+where
+K(u, u′) = −1
+π
+sin
+ u2 −u′2
+u −u′
+−Θ(−u)δ(u −u′) .
+Rescaling of general reentry
+The time-dependent wave function of a free particle can also be expressed via the free-particle propagator:
+Ψ(x, t) =
+r
+m
+2πiℏτ
+Z +∞
+−∞
+dx′ exp
+
+im(x −x′)2
+2ℏτ
+
+ψ(x′) ,
+where τ = t −t0, and ψ(x) is the position-space wave function at t = t0 that satisfies the normalization condition
+Z +∞
+−∞
+dx |ψ(x)|2 = 1 .
+In this representation, the probability current through x = 0 at time t becomes
+j(0, t) = ℏ
+m Im
+
+Ψ∗(x, t)∂Ψ(x, t)
+∂x
+
+x=0
+
+
+=== PDF PAGE 9 ===
+9
+= −
+m
+4πℏτ 2
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ (x + x′) exp
+"
+−im
+ x2 −x′2
+2ℏτ
+#
+ψ(x)∗ψ(x′) .
+The probability transfer into the region x < 0 during a time interval (t1, t2), with t1 < t2, is
+P−(t2) −P−(t1) = −
+Z t2
+t1
+dt j(0, t)
+= m
+4πℏ
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ (x + x′)ψ(x)∗ψ(x′)
+Z t2−t0
+t1−t0
+dτ
+τ 2 exp
+"
+−im
+ x2 −x′2
+2ℏτ
+#
+.
+Making the substitution z = 1/τ, we write
+P−(t2) −P−(t1) = m
+4πℏ
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ (x + x′)ψ(x)∗ψ(x′)
+Z 1/(t1−t0)
+1/(t2−t0)
+dz exp
+"
+−im
+ x2 −x′2
+2ℏ
+z
+#
+= i
+2π
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ (x + x′)ψ(x)∗ψ(x′)
+exp
+
+−i
+m(x2−x′2)
+2ℏ(t1−t0)
+
+−exp
+
+−i
+m(x2−x′2)
+2ℏ(t2−t0)
+
+x2 −x′2
+.
+Introducing ν and ω such that
+1
+t2 −t0
+= ν −ω
+2 ,
+1
+t1 −t0
+= ν + ω
+2 ,
+and, consequently,
+ν =
+t2 + t1 −2t0
+2(t2 −t0)(t1 −t0) ,
+ω =
+t2 −t1
+(t2 −t0)(t1 −t0) ,
+we get
+P−(t2) −P−(t1) = i
+2π
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ ψ(x)∗ψ(x′) exp
+"
+−im
+ x2 −x′2
+2ℏ
+ν
+# exp
+
+−i
+m(x2−x′2)
+4ℏ
+ω
+
+−exp
+
+i
+m(x2−x′2)
+4ℏ
+ω
+
+x −x′
+= 1
+π
+Z +∞
+−∞
+dx
+Z +∞
+−∞
+dx′ ψ(x)∗ψ(x′) exp
+"
+−im
+ x2 −x′2
+2ℏ
+ν
+# sin
+
+m(x2−x′2)
+4ℏ
+ω
+
+x −x′
+.
+We then change the integration variables as
+u = −x
+rmω
+4ℏ,
+u′ = −x′
+rmω
+4ℏ.
+This yields
+P−(t2) −P−(t1) = −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′
+r
+4ℏ
+mω ψ
+ 
+−u
+r
+4ℏ
+mω
+!∗
+ψ
+ 
+−u′
+r
+4ℏ
+mω
+!
+exp
+
+−i2ν
+ω
+ u2 −u′2 sin
+ u2 −u′2
+u −u′
+.
+Now, defining
+φ(u) =
+ 4ℏ
+mω
+1/4
+exp
+
+i2ν
+ω u2
+
+ψ
+ 
+−u
+r
+4ℏ
+mω
+!
+=
+4ℏ(t2 −t0)(t1 −t0)
+m(t2 −t1)
+1/4
+exp
+
+it2 + t1 −2t0
+t2 −t1
+u2
+
+ψ
+ 
+−u
+s
+4ℏ(t2 −t0)(t1 −t0)
+m(t2 −t1)
+!
+,
+we obtain
+P−(t2) −P−(t1) = −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗φ(u′)sin
+ u2 −u′2
+u −u′
+.
+
+
+=== PDF PAGE 10 ===
+10
+FIG. 3. Approximation to probability current in standard backflow. The plot shows the probability current, label J, and the
+simple approximation given by Eq. (14), label Js, for the optimal parameters of Ref. [24]. The backflow interval is marked with
+light blue area. The two curves are practically indistinguishable up to t ≃15 units.
+In view of the normalization of ψ(x), the rescaled wave function φ(u) is normalized to unity,
+Z +∞
+−∞
+du |φ(u)|2 = 1 .
+Finally, since
+1 −P−(t0) =
+Z +∞
+0
+dx |ψ(x)|2
+=
+Z 0
+−∞
+du |φ(u)|2
+=
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ Θ(−u)δ(u −u′)φ(u)∗φ(u′) ,
+we obtain
+∆RE = P−(t2) −P−(t1) −
+ 1 −P−(t0)
+
+=
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗K(u, u′)φ(u′) ,
+where
+K(u, u′) = −1
+π
+sin
+ u2 −u′2
+u −u′
+−Θ(−u)δ(u −u′) .
+Superposition of two Gaussians
+For comparison with the standard backflow, we first derive a simple approximation to the probability current.
+Consider the following quantum state at time t:
+ψ(x, t) = c1g1(x, t) + c2g2(x, t) ,
+where |c1|2 + |c2|2 = 1, and the free-particle Gaussian wave functions read
+gn(x, t) =
+
+1
+2πσ2n(1 + iωnt)2
+1/4
+exp
+
+−(x −pnt/m)2
+4σ2n(1 + iωnt)
+
+exp
+ i
+ℏpnx
+
+exp
+
+−it
+ℏ
+p2
+n
+2m
+
+,
+ωn =
+ℏ
+2mσ2n
+.
+
+
+=== PDF PAGE 11 ===
+11
+Here, pn is the mean momentum of the nth Gaussian, and σn is its standard deviation. The probability current at
+x = 0 and time t can be written as
+j(0, t) = j1(0, t) + j2(0, t) + j×(0, t) ,
+with the contributions from the individual Gaussians given by
+jn(0, t) = pn
+m |cn|2|gn(0, t)|2
+1
+1 + ω2nt2 ,
+and the cross-term:
+j×(0, t) = |z|
+m cos φ
+
+p2
+1 + ω2
+2t2 +
+p1
+1 + ω2
+1t2
+
++ |z|
+m sin φ
+ p2ω2t
+1 + ω2
+2t2 −
+p1ω1t
+1 + ω2
+1t2
+
+,
+where |z|eiφ = c∗
+1c2g1(0, t)∗g2(0, t).
+For comparison with Ref. [24] we assume that σ1 = σ2 ≡σ, hence ω1 = ω2 ≡ω, and that coefficients c1 and c2 are
+purely real. In this case,
+|z| = c1c2
+
+1
+2πσ2(1 + ω2t2)
+1/2
+exp
+
+−(p1t/m)2 + (p2t/m)2
+4σ2(1 + ω2t2)
+
+,
+φ =
+(p2
+1 −p2
+2)t
+2ℏm(1 + ω2t2) .
+The current admits a simple form under further assumption that ωt ≪1. It turns out that this is not restrictive and
+includes maximal standard backflow identified in [24], as shown in Fig. 3. The current reads:
+js = c2
+1
+p1
+m
+
+1
+2πσ2
+1/2
+exp
+
+−(p1t/m)2
+2σ2
+
++ c2
+2
+p2
+m
+
+1
+2πσ2
+1/2
+exp
+
+−(p2t/m)2
+2σ2
+
++c1c2
+p1 + p2
+m
+
+1
+2πσ2
+1/2
+exp
+
+−(p2t/m)2 + (p1t/m)2
+4σ2
+
+cos
+(p2
+1 −p2
+2)t
+2m
+
+.
+(14)
+Using these assumptions on the parameters, we numerically explored the general backflow quantity ∆QB =
+−
+R t2
+t1 dt j(0, t) −˜P−and found the quoted value of 0.0106 attained for c1 = 1.8, c2 = 1, σ = 1.6, p1 = 1, p2 = 5.7,
+t1 = 0.152246, and t2 = 0.246813.
+For the full optimization of ∆QB, as well as of ∆RE, over the most general superposition of two Gaussian packets
+(without the assumption considered above), we write the problem in the dimensionless form:
+∆= −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗sin
+ u2 −u′2
+u −u′
+φ(u′) −
+Z 0
+−∞
+du |φ(u)|2
+with
+φ(u) = C
+
+e−a1(u−b1)2 cos α + e−a2(u−b2)2eiβ sin α
+
+.
+Here, a1, b1, a2, b2 ∈C and α, β ∈R are parameters, and the constant C, given by
+C−2 = cos2 α
+r
+π
+2ℜa1
+exp
+2(ℜa1b1)2
+ℜa1
+−2(ℜa1b2
+1)
+
++ sin2 α
+r
+π
+2ℜa2
+exp
+2(ℜa2b2)2
+ℜa2
+−2(ℜa2b2
+2)
+
++ sin 2αℜ
+r
+π
+a1 + a∗
+2
+exp
+(a1b1 + a∗
+2b∗
+2)2
+a1 + a∗
+2
+−a1b2
+1 −(a2b2
+2)∗−iβ
+
+,
+ensures the normalization condition
+R +∞
+−∞du |φ(u)|2 = 1. The function φ(u) represents the rescaled momentum-
+space wave function of the particle in the case of general backflow (see Sec. ), and the rescaled position-space wave
+function in the case of general reentry (see Sec. ). Performing a numerical optimization over the space of parameters
+a1, b1, a2, b2, α, β, we find a (local) maximum with ∆= 0.012011, attained for a1 = 28.95, b1 = 0.8479, a2 = 83.28,
+b2 = 0.1637, α = 1.271, and β = π.
+
+
+=== PDF PAGE 12 ===
+12
+Perturbative argument
+Here we construct a state φ(u) that satisfies the normalization condition
+Z +∞
+−∞
+du |φ(u)|2 = 1
+and is accompanied by
+∆= −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+dv φ∗(u)sin
+ u2 −v2
+u −v
+φ(v) −
+Z 0
+−∞
+du |φ(u)|2
+larger than the Bracken-Melloy constant cBM ≃0.03845.
+Consider two real-valued functions f, g : [0, +∞) →R, and let φ(u) be given by
+φ(u) =
+(
+f(u)
+if u > 0
+g(−u) if u < 0
+The normalization condition takes the form
+Z ∞
+0
+du f(u)2 +
+Z ∞
+0
+du g(u)2 = 1 ,
+(15)
+and ∆reads
+∆= −1
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv f(u)sin
+ u2 −v2
+u −v
+f(v)
++ 1
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv g(u)sin
+ u2 −v2
+u −v
+g(v)
+−2
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv f(u)sin
+ u2 −v2
+u + v
+g(v) −
+Z ∞
+0
+du g(u)2 .
+(16)
+Consider F(u) to be the backflow-maximizing state in the standard Bracken-Melloy problem:
+−1
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv F(u)sin
+ u2 −v2
+u −v
+F(v) = cBM ,
+Z ∞
+0
+du F(u)2 = 1 .
+We superpose it with yet-to-be-specified function G(u) such that
+Z ∞
+0
+du G(u)2 = 1 ,
+as follows:
+f(u) =
+p
+1 −ϵ2F(u) ,
+g(u) = ϵG(u) ,
+where 0 ≤ϵ ≪1. Notice that the normalization condition, Eq. (15), is automatically fulfilled. Equation (16) now reads
+∆= (1 −ϵ2)cBM
++ ϵ2
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv G(u)sin
+ u2 −v2
+u −v
+G(v)
+−2ϵ
+√
+1 −ϵ2
+π
+Z ∞
+0
+du
+Z ∞
+0
+dv F(u)sin
+ u2 −v2
+u + v
+G(v) −ϵ2 ,
+or
+∆= cBM + ϵI + O(ϵ2) ,
+where
+I =
+Z ∞
+0
+dvH(v)G(v)
+with
+H(v) ≡−2
+π
+Z ∞
+0
+du F(u)sin
+ u2 −v2
+u + v
+.
+The function G(u) can be always chosen such that I > 0. Subsequently, the positivity of I implies that ∆> cBM for a
+sufficiently small ϵ.
+
+
+=== PDF PAGE 13 ===
+13
+Example of large general backflow
+Here we present a state that admits general backflow (or reentry) exceeding the Bracken-Melloy constant. We
+employ the unified framework described in Secs. and , in which both ∆QB and ∆RE are represented by
+∆= −1
+π
+Z +∞
+−∞
+du
+Z +∞
+−∞
+du′ φ(u)∗sin
+ u2 −u′2
+u −u′
+φ(u′) −
+Z 0
+−∞
+du |φ(u)|2 ,
+where φ(u) denotes the rescaled momentum-space wave function of the particle in the case of general backflow, and
+the rescaled position-space wave function in the case of general reentry.
+Motivated by Ref. [25], we consider the state
+φ(u) =
+(
+C cos α (β1 −u)e−γ2
+1u2 if
+u > 0
+C sin α (β2 −u)e−γ2
+2u2
+if
+u < 0
+where α, β1, γ1, β2, γ2 are real parameters, and C is the normalization constant ensuring
+R +∞
+−∞du |φ(u)|2 = 1. By
+computing both C and ∆numerically, we perform a numerical optimization of ∆over the parameter space and find a
+(local) maximum of ∆= 0.0624188, attained for α = 0.1654, β1 = 0.5641, γ1 = 1.265, β2 = 0.03529, and γ2 = 0.6365.
+Backflow and overflow
+Recall the parameter characterizing general backflow for any point b on the x axis:
+∆QB = Prob(x < b, t2) −Prob(x < b, t1) −˜P−.
+(17)
+Similarly, we consider the parameter quantifying overflow by
+∆QO = Prob(x > f, t2) −Prob(x > f, t1) −˜P+ ,
+(18)
+where f is an arbitrary point and ˜P+ = 1 −˜P−is the probability of positive momentum. We now show that both of
+these quantities cannot be simultaneously positive and, in fact, the following trade-off relation holds:
+∆QB + ∆QO ≤0 .
+Indeed, summing up Eqs. (17) and (18), we note that the momentum probabilities add to −1, and the remaining terms
+are, at any time t, of the form:
+Prob(x < b, t) + Prob(x > f, t) = 1 −Prob[x ∈(b, f), t]
+if
+b ≤f ,
+Prob(x < b, t) + Prob(x > f, t) = 1 + Prob[x ∈(b, f), t]
+if
+f < b .
+Therefore,
+∆QB + ∆QO = ±Prob[x ∈(b, f), t2] ∓Prob[x ∈(b, f), t1] −1 ≤0 ,
+because each probability satisfies 0 ≤Prob[x ∈(b, f), t] ≤1.
+Numerical evaluation of sup ∆
+Here, we present details of the numerical estimation of sup{λ} (= sup ∆) in the eigenproblem
+−1
+π
+Z +∞
+−∞
+dv (u + v) sinc(u2 −v2)φ(v) −Θ(−u)φ(u) = λ φ(u) ,
+(19)
+where sinc(z) ≡sin(z)/z. Truncating the integral, we obtain a new eigenproblem,
+−1
+π
+Z L
+−L
+dv (u + v) sinc(u2 −v2)f(v) −Θ(−u)f(u) = λLf(u) .
+
+
+=== PDF PAGE 14 ===
+14
+Subsequently, discretizing the integral yields yet another eigenproblem,
+N
+X
+m=−N
+Knmgm = λL,Ngn
+(20)
+with
+Knm = −L2(n + m)
+πN 2
+sinc L2(n2 −m2)
+N 2
+−Θ(−n)δnm .
+Our strategy for estimating sup{λ} is based on the assumption that
+sup{λ} = lim
+L→∞sup{λL} = lim
+L→∞lim
+N→∞max{λL,N} .
+(21)
+We now present values of max{λL,N} for L = 10, 15, 20, 25, 30, 35, 40, obtained using linalg.eigh function from
+Python’s NumPy package. For each L, we perform an extrapolation as N →∞to evaluate the corresponding value of
+sup{λL}. All data in intermediate calculations are presented with full precision (of 16 significant figures), and rounding
+is applied only to the final result.
+Case of L = 10
+Table I gives max{λ10,N} for ten different values of N. We fit max{λ10,N} to a straight line in 1/N:
+j
+N max{λ10,N}
+1
+100 0.1089941477648881
+2
+200 0.1139918526091255
+3
+300 0.1156769692627627
+4
+400 0.1165224285063283
+5
+500 0.1170305983268448
+6
+600 0.1173697450068959
+7
+700 0.1176121707518563
+8
+800 0.1177940869441254
+9
+900 0.1179356345180387
+10 1000 0.1180489085192777
+TABLE I. The largest eigenvalue in Eq. (20) for L = 10 and different N.
+max{λ10,N} = a(10) + b(10)
+N
+.
+The optimal fitting parameters are determined by the linear regression theory (see, e.g., Ref. [32]) and read
+a =
+ P x2
+j
+
+(P yj) −(P xj) (P xjyj)
+J P x2
+j −(P xj)2
+,
+b = J P xjyj −(P xj) (P yj)
+J P x2
+j −(P xj)2
+,
+where, for brevity, we have defined xj = 1/Nj, yj = max{λ10,N}j, and J = max{j} = 10 (see Table I). In the present
+case, these formulas yield a(10) = 0.1190457811547612 and b(10) = −1.006541101888894.
+Figure 4 illustrates the accuracy of the fit. The fit residual, defined as P(yj −a −bxj)2, is 1.1 × 10−9.
+The uncertainty (or, more precisely, the standard deviation) σa in the fitting parameter a is given by
+σ2
+a =
+P(yj −a −bxj)2
+J −2
+·
+P x2
+j
+J P x2
+j −(P xj)2 .
+In our case, this formula yields σa(10) = 5.561804879449029×10−6. We note that in this and all subsequent calculations,
+we cross-check our results for the fitting parameters and their associated uncertainties against the output of the
+polyfit function from Python’s NumPy package.
+Since sup{λ10} = limN→∞max{λ10,N} = a(10), with the standard deviation σsup{λ10} ≡σa(10), we obtain the
+following estimate:
+sup{λ10} = 0.1190457811547612 ,
+σsup{λ10} = 5.561804879449029 × 10−6 .
+(22)
+
+
+=== PDF PAGE 15 ===
+15
+0.000
+0.002
+0.004
+0.006
+0.008
+0.010
+1/N
+0.108
+0.110
+0.112
+0.114
+0.116
+0.118
+max {λ10,N}
+FIG. 4. max{λ10,N} versus 1/N. The orange dots correspond to the values given in Table I. The blue line represents the fit
+detailed in the text.
+j
+N max{λ15,N}
+1
+150 0.1119434239699512
+2
+300 0.1169883703222082
+3
+450 0.1186785116904098
+4
+600 0.1195264258732301
+5
+750 0.1200361158663618
+6
+900 0.1203763059276854
+7 1050 0.1206194942121110
+8 1200 0.1208019926220471
+9 1350 0.1209439994908275
+10 1500 0.1210576451546305
+TABLE II. The largest eigenvalue in Eq. (20) for L = 15 and different N.
+We now repeat the same procedure to obtain the estimates of sup{λL} and σsup{λL} for L = 15, 20, 25, 30, 35, 40.
+Case of L = 15
+Table II gives max{λ15,N} for ten different values of N. The fitting procedure yields
+max{λ15,N} = a(15) + b(15)
+N
+with a(15) = 0.1220638424358060 and b(15) = −1.519279315595413. Figure 5 illustrates the accuracy of the fit. The fit
+residual is 4.1 × 10−10. The standard deviation of a(15) is σa(15) = 3.375966537451888 × 10−6. Therefore, for sup{λ15}
+and the corresponding uncertainty, we have
+sup{λ15} = 0.1220638424358060 ,
+σsup{λ15} = 3.375966537451888 × 10−6 .
+(23)
+Case of L = 20
+Table III gives max{λ20,N} for ten different values of N. The fitting procedure yields
+max{λ20,N} = a(20) + b(20)
+N
+with a(20) = 0.1235739992757623 and b(20) = −2.039355860145372. Figure 6 illustrates the accuracy of the fit. The fit
+
+
+=== PDF PAGE 16 ===
+16
+0.000
+0.002
+0.004
+0.006
+1/N
+0.112
+0.114
+0.116
+0.118
+0.120
+0.122
+max {λ15,N}
+FIG. 5. max{λ15,N} versus 1/N. The orange dots correspond to the values given in Table II. The blue line represents the fit
+detailed in the text.
+j
+N max{λ20,N}
+1
+400 0.1184799591245791
+2
+600 0.1201715170800806
+3
+800 0.1210211077144216
+4 1000 0.1215320463086800
+5 1200 0.1218731553662990
+6 1400 0.1221170385559465
+7 1600 0.1223000778432970
+8 1800 0.1224425165250773
+9 2000 0.1225565144042943
+10 2200 0.1226498163346949
+TABLE III. The largest eigenvalue in Eq. (20) for L = 20 and different N.
+residual is 6.9 × 10−11. The standard deviation of a(20) is σa(20) = 1.794581838275372 × 10−6. Therefore, for sup{λ20}
+and the corresponding uncertainty, we have
+sup{λ20} = 0.1235739992757623 ,
+σsup{λ20} = 1.794581838275372 × 10−6 .
+(24)
+Case of L = 25
+Table IV gives max{λ25,N} for ten different values of N. The fitting procedure yields
+max{λ25,N} = a(25) + b(25)
+N
+with a(25) = 0.1244822862467697 and b(25) = −2.556926934667362. Figure 7 illustrates the accuracy of the fit. The fit
+residual is 4.7 × 10−11. The standard deviation of a(25) is σa(25) = 1.477042007656790 × 10−6. Therefore, for sup{λ25}
+and the corresponding uncertainty, we have
+sup{λ25} = 0.1244822862467697 ,
+σsup{λ25} = 1.477042007656790 × 10−6 .
+(25)
+Case of L = 30
+Table V gives max{λ30,N} for ten different values of N. The fitting procedure yields
+
+
+=== PDF PAGE 17 ===
+17
+0.0000
+0.0005
+0.0010
+0.0015
+0.0020
+0.0025
+1/N
+0.118
+0.119
+0.120
+0.121
+0.122
+0.123
+max {λ20,N}
+FIG. 6. max{λ20,N} versus 1/N. The orange dots correspond to the values given in Table III. The blue line represents the fit
+detailed in the text.
+j
+N max{λ25,N}
+1
+500 0.1193720192594545
+2
+750 0.1210700920114530
+3 1000 0.1219223352025476
+4 1250 0.1224346215338796
+5 1500 0.1227765382427701
+6 1750 0.1230209570947946
+7 2000 0.1232043766828351
+8 2250 0.1233470988716490
+9 2500 0.1234613160028462
+10 2750 0.1235547924141025
+TABLE IV. The largest eigenvalue in Eq. (20) for L = 25 and different N.
+j
+N max{λ30,N}
+1
+600 0.1199705773485895
+2
+900 0.1216727154735607
+3 1200 0.1225237102038637
+4 1500 0.1230354498337929
+5 1800 0.1233770750757993
+6 2100 0.1236213172702387
+7 2400 0.1238046200925763
+8 2700 0.1239472601723789
+9 3000 0.1240614168298270
+10 3300 0.1241548470766964
+TABLE V. The largest eigenvalue in Eq. (20) for L = 30 and different N.
+max{λ30,N} = a(30) + b(30)
+N
+with a(30) = 0.1250829195703286 and b(30) = −3.068533796622797. Figure 8 illustrates the accuracy of the fit. The fit
+residual is 1.9 × 10−11. The standard deviation of a(30) is σa(30) = 9.338351587060546 × 10−7. Therefore, for sup{λ30}
+
+
+=== PDF PAGE 18 ===
+18
+0.0000
+0.0005
+0.0010
+0.0015
+0.0020
+1/N
+0.119
+0.120
+0.121
+0.122
+0.123
+0.124
+max {λ25,N}
+FIG. 7. max{λ25,N} versus 1/N. The orange dots correspond to the values given in Table IV. The blue line represents the fit
+detailed in the text.
+0.0000
+0.0005
+0.0010
+0.0015
+1/N
+0.120
+0.121
+0.122
+0.123
+0.124
+0.125
+max {λ30,N}
+FIG. 8. max{λ30,N} versus 1/N. The orange dots correspond to the values given in Table V. The blue line represents the fit
+detailed in the text.
+and the corresponding uncertainty, we have
+sup{λ30} = 0.1250829195703286 ,
+σsup{λ30} = 9.338351587060546 × 10−7 .
+(26)
+Case of L = 35
+Table VI gives max{λ35,N} for ten different values of N. The fitting procedure yields
+max{λ35,N} = a(35) + b(35)
+N
+
+
+=== PDF PAGE 19 ===
+19
+j
+N max{λ35,N}
+1
+800 0.1210457163111231
+2 1200 0.1225236257266571
+3 1600 0.1232707319394567
+4 2000 0.1237196617010170
+5 2400 0.1240192405176445
+6 2800 0.1242333716554072
+7 3200 0.1243940508807573
+8 3600 0.1245190718418926
+9 4000 0.1246191191181317
+10 4400 0.1247009962047494
+TABLE VI. The largest eigenvalue in Eq. (20) for L = 35 and different N.
+0.00000 0.00025 0.00050 0.00075 0.00100 0.00125
+1/N
+0.121
+0.122
+0.123
+0.124
+0.125
+max {λ35,N}
+FIG. 9. max{λ35,N} versus 1/N. The orange dots correspond to the values given in Table VI. The blue line represents the fit
+detailed in the text.
+with a(35) = 0.1255108771862945 and b(35) = −3.577085710064331. Figure 9 illustrates the accuracy of the fit. The fit
+residual is 1.3 × 10−10. The standard deviation of a(35) is σa(35) = 2.433955824900637 × 10−6. Therefore, for sup{λ35}
+and the corresponding uncertainty, we have
+sup{λ35} = 0.1255108771862945 ,
+σsup{λ35} = 2.433955824900637 × 10−6 .
+(27)
+Case of L = 40
+Table VII gives max{λ40,N} for eight different values of N. The fitting procedure yields
+max{λ40,N} = a(40) + b(40)
+N
+with a(40) = 0.1258365731314665 and b(40) = −4.100558963340225. Figure 10 illustrates the accuracy of the fit. The fit
+residual is 1.1 × 10−11. The standard deviation of a(40) is σa(40) = 1.017018984296298 × 10−6. Therefore, for sup{λ40}
+and the corresponding uncertainty, we have
+sup{λ40} = 0.1258365731314665 ,
+σsup{λ40} = 1.017018984296298 × 10−6 .
+(28)
+Limit of sup{λL} as L →∞
+
+
+=== PDF PAGE 20 ===
+20
+j
+N max{λ40,N}
+1 1200 0.1224211080034019
+2 1800 0.1235567482529446
+3 2400 0.1241265265788500
+4 3000 0.1244689068130608
+5 3600 0.1246973635442337
+6 4200 0.1248606442986848
+7 4800 0.1249831574822948
+8 5400 0.1250784764658047
+TABLE VII. The largest eigenvalue in Eq. (20) for L = 40 and different N.
+0.0000
+0.0002
+0.0004
+0.0006
+0.0008
+1/N
+0.123
+0.124
+0.125
+0.126
+max {λ40,N}
+FIG. 10. max{λ40,N} versus 1/N. The orange dots correspond to the values given in Table VII. The blue line represents the fit
+detailed in the text.
+j
+L sup{λL}
+σsup{λL}
+1 10 0.1190457811547612 5.561804879449029 × 10−6
+2 15 0.1220638424358060 3.375966537451888 × 10−6
+3 20 0.1235739992757623 1.794581838275372 × 10−6
+4 25 0.1244822862467697 1.477042007656790 × 10−6
+5 30 0.1250829195703286 9.338351587060546 × 10−7
+6 35 0.1255108771862945 2.433955824900637 × 10−6
+7 40 0.1258365731314665 1.017018984296298 × 10−6
+TABLE VIII. The largest eigenvalues in Eq. (20), along with their uncertainties, for different values of L.
+Table VIII summarizes the values for sup{λL} and its standard deviation σsup{λL} obtained in Eqs. (22–28). We
+now fit sup{λL} to a straight line in 1/L:
+sup{λL} = a + b
+L .
+The optimal fitting parameters are given by
+a =
+P x2
+j
+σ2
+j
+ P yj
+σ2
+j
+
+−
+P xj
+σ2
+j
+ P xjyj
+σ2
+j
+
+P 1
+σ2
+j
+ P x2
+j
+σ2
+j
+
+−
+P xj
+σ2
+j
+2
+,
+b =
+P 1
+σ2
+j
+ P xjyj
+σ2
+j
+
+−
+P xj
+σ2
+j
+ P yj
+σ2
+j
+
+P 1
+σ2
+j
+ P x2
+j
+σ2
+j
+
+−
+P xj
+σ2
+j
+2
+,
+
+
+=== PDF PAGE 21 ===
+21
+where, for brevity, xj = Lj, yj = sup{λL}j, and σj =
+ σsup{λL}
+
+j (see Table VIII). In the present case, these formulas
+yield
+a = 0.1280997589328653 ,
+b = −9.050752023369246 × 10−2 .
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+1/L
+0.120
+0.122
+0.124
+0.126
+0.128
+sup {λL}
+FIG. 11. sup{λL} versus 1/L. The orange dots correspond to the values given in Table VIII. The blue line represents the fit
+detailed in the text.
+Figure 11 illustrates the accuracy of the fit. The fit residual is 3.2 × 10−11.
+The standard deviation σa of the fitting parameter a is given by
+σ2
+a =
+P (yj−a−bxj)2
+σ2
+j
+J −2
+·
+P x2
+j
+σ2
+j
+P 1
+σ2
+j
+ P x2
+j
+σ2
+j
+
+−
+P xj
+σ2
+j
+2 ,
+which, in the present case, gives
+σa = 1.995873910685532 × 10−6 .
+Finally, in view of Eq. (21), we state our estimate for the supremum of the eigenvalue spectrum in Eq. (19):
+sup{λ} = 0.128100 ± 0.000002 .
+As a reminder, the quoted uncertainty corresponds to one standard deviation, representing a 68% confidence level.

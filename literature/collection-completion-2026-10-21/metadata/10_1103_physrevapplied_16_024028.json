@@ -1,0 +1,637 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T18:09:12Z",
+      "timestamp": 1790532552888,
+      "version": "4.1.0"
+    },
+    "reference-count": 46,
+    "publisher": "American Physical Society (APS)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              8,
+              17
+            ]
+          ],
+          "date-time": "2021-08-17T00:00:00Z",
+          "timestamp": 1629158400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "433682494"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "433682494"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "SFB 1459"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "SFB 1459"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001665",
+        "name": "French National Research Agency",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "18-CE24-0021"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "18-CE24-0021"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001665",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. Applied"
+    ],
+    "DOI": "10.1103/physrevapplied.16.024028",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2021-08-17T16:35:30Z",
+      "timestamp": 1629218130000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 16,
+    "title": [
+      "Dispersionless Propagation of Ultrashort Spin-Wave Pulses in Ultrathin Yttrium Iron Garnet Waveguides"
+    ],
+    "prefix": "10.1103",
+    "volume": "16",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6833-7035",
+        "authenticated-orcid": true,
+        "given": "B.",
+        "family": "Divinskiy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2531-9427",
+        "authenticated-orcid": true,
+        "given": "H.",
+        "family": "Merbouche",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0214-6850",
+        "authenticated-orcid": true,
+        "given": "K.O.",
+        "family": "Nikolaev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3584-0635",
+        "authenticated-orcid": true,
+        "given": "S.",
+        "family": "Michaelis de Vasconcellos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2368-2548",
+        "authenticated-orcid": true,
+        "given": "R.",
+        "family": "Bratschitsch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "D.",
+        "family": "Gouéré",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "R.",
+        "family": "Lebrun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.",
+        "family": "Cros",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9518-9285",
+        "authenticated-orcid": true,
+        "given": "J.",
+        "family": "Ben Youssef",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.",
+        "family": "Bortolotti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A.",
+        "family": "Anane",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4422-4201",
+        "authenticated-orcid": true,
+        "given": "S.O.",
+        "family": "Demokritov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.E.",
+        "family": "Demidov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "PhysRevApplied.16.024028Cc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4759039"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4819157"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep20827"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adma.200900809"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0022-3727/43/26/264001"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physrep.2011.06.003"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphys3347"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0022-3727/43/26/264005"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep09861"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physleta.2017.02.042"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0019328"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/C5NR06808H"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.122.247202"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.12.054031"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.0c00657"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep06848"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4976708"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-03199-8"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.98.144430"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.100.214416"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.5131689"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-020-15265-1"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.abd3556"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMAG.2014.2388196"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4948252"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms10377"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.102.024404"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.10.041002"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc29R1",
+        "volume-title": "Magnetization Oscillations and Waves",
+        "author": "A. G. Gurevich",
+        "year": "1996"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc30R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/9780470918524",
+        "volume-title": "Fiber-optic Communication Systems",
+        "author": "G. P. Agrawal",
+        "year": "2010"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.77.054425"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphoton.2012.218"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.110.097201"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc34R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.94.020401"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc35R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep22117"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc36R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.126.037204"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc37R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.89.237202"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc38R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.087201"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc39R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.3464569"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc40R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep03160"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc41R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4972244"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc42R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0028664"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc43R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.3231875"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc45R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/ip-h-1.1980.0002"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc46R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4899186"
+      },
+      {
+        "key": "PhysRevApplied.16.024028Cc47R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0022-3727/48/1/015001"
+      }
+    ],
+    "container-title": [
+      "Physical Review Applied"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/PhysRevApplied.16.024028",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevApplied.16.024028/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2021-08-17T16:35:34Z",
+      "timestamp": 1629218134000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/PhysRevApplied.16.024028"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          17
+        ]
+      ]
+    },
+    "references-count": 46,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/physrevapplied.16.024028",
+    "relation": {},
+    "ISSN": [
+      "2331-7019"
+    ],
+    "issn-type": [
+      {
+        "value": "2331-7019",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          17
+        ]
+      ]
+    },
+    "article-number": "024028"
+  }
+}

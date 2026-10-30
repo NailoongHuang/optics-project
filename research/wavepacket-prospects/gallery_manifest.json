@@ -1,0 +1,134 @@
+{
+  "intro": "从论文明确留下的问题出发，完成四个有对照、有限参数范围和数值核验的最小测试。这里展示的是研究可行性证据，不是已完成的实验器件或新颖性证明。",
+  "footer": "2026-10-21 · 图像与 GIF 已校验；受环境策略限制，HTML 未做自动浏览器交互实测。原动画与讲义保留；模型范围在各项说明中明确列出。",
+  "demos": [
+    {
+      "id": "finite-source-caustic",
+      "shortTitle": "有限源高阶 caustic",
+      "title": "高阶聚焦的收益，能否经得住损耗和接收误差？",
+      "status": "优先继续 · 有条件增强",
+      "verdict": "同一有限输入角谱下，近高阶点有明确几何优势；但慢群速增加损耗，轻微频偏也可能把波束移出固定接收窗。应优化实际收到的信号，而非只追求全局峰值。",
+      "question": "Wartelle 2023 把高阶 caustic 相比普通点的幅度增强及有限实验幅度预测留作后续问题。",
+      "test": "使用论文实际偶极—交换等频线和 Fig.13 参数，保持输入标量范数、横向谱宽与传播距离相同；固定接收窗为 ±2 倍初始 RMS。比较三组并扫描损耗与频偏。",
+      "sources": [
+        {"label": "Wartelle 2023 · §III.D / Fig.13", "url": "https://arxiv.org/html/2301.01220v1"},
+        {"label": "论文记录", "url": "https://doi.org/10.1103/PhysRevB.107.144431"}
+      ],
+      "metrics": [
+        {"value": "1.589 ×", "label": "无损时近高阶／普通峰值，z = 10⁴d"},
+        {"value": "0.562 ×", "label": "Γ/ωM = 10⁻⁴ 时的峰值比"},
+        {"value": "0.959 → 约 0.03", "label": "±0.5% 频偏后的固定窗标量权重"}
+      ],
+      "summary": "demos/finite-source-caustic/summary.png",
+      "animation": "demos/finite-source-caustic/demo.gif",
+      "summaryCaption": "比较使用相同输入标量范数。d 是膜厚；峰值比不是实际磁化率或微波功率增益。右下显示损耗足以反转无损优势。",
+      "animationCaption": "沿传播距离演示三种等频线位置的有限角谱传播，使用共同色标／纵轴。它是单色波束截面演化，不是整个二维短脉冲的保形。",
+      "scope": "实际色散上的归一化标量角谱子测试。未包含完整动态磁化率、真实天线耦合和材料标定；近高阶参数是论文数值近似点。",
+      "checks": [
+        "核对等频线残差、群速度方向及角谱分支的单调性。",
+        "检查 Parseval 范数、FFT 盒尺寸及采样收敛；较小盒的失败记录保留。",
+        "同时报告峰值、主瓣宽和固定接收窗权重，避免只看最亮点。"
+      ],
+      "next": "优先把实际磁化率、阻尼和有限接收孔径纳入同一优化目标。关键问题是有误差时的接收收益，不是理想高阶点的发散幅度。",
+      "results": "demos/finite-source-caustic/results.json",
+      "report": "demos/finite-source-caustic/report.txt",
+      "script": "demos/finite-source-caustic/run.py"
+    },
+    {
+      "id": "backflow-resolution",
+      "shortTitle": "有限分辨率反流",
+      "title": "数学上的反流，能否成为可认证的测量信号？",
+      "status": "有条件继续 · 检测成本较高",
+      "verdict": "原自然 Gaussian 拖尾在半格点模糊下失去认证。受空间预算约束的两载波相干制备可保留正见证，但检测仍需要大量重复测量；分辨率感知再优化只带来约 0.91% 的增益。",
+      "question": "Paterek–Goussev 2026 明确提出平滑空间测量窗对 general backflow 的影响；Chen–Tang 2026 指出强反流的细密度条纹给成像带来困难。",
+      "test": "固定截面、时间窗、初始中心和 RMS 宽度，比较单 Gaussian、相干两载波和非相干混合。见证扣除负群速度谱权重，并扫描已知 Gaussian PSF。",
+      "sources": [
+        {"label": "Paterek–Goussev 2026 · Discussion", "url": "https://arxiv.org/html/2511.10155v2"},
+        {"label": "Chen–Tang 2026 · Conclusion", "url": "https://arxiv.org/html/2602.12767v2"}
+      ],
+      "metrics": [
+        {"value": "+0.005621", "label": "PSF = 0.5a 的一般反流见证"},
+        {"value": "−0.01773", "label": "同载波非相干混合的否定对照"},
+        {"value": "约 39.6 万 / 组", "label": "给定二元计数模型的 5σ 估计，共三组"}
+      ],
+      "summary": "demos/backflow-resolution/summary.png",
+      "animation": "demos/backflow-resolution/demo.gif",
+      "summaryCaption": "自然拖尾与新制备实验采用不同几何，分开显示。右上同一制备比较中，只有扣除负速度权重后仍为正的值才认证这里的反流。",
+      "animationCaption": "显示同一冻结态的概率、模糊成像和固定窗概率变化。超过负速度谱权重才违反指定的经典弹道粒子零假设。",
+      "scope": "自由余弦晶格的测量子测试。计数估计未包含技术噪声与 PSF 标定误差；a 尚未映射到具体材料。该判据不排除所有经典相干波动类比。",
+      "checks": [
+        "概率增量与加权键流积分一致；周期另一端贡献可忽略。",
+        "连续 Bloch 谱积分和盒尺寸加倍均通过，有限 DFT 端点误差另行披露。",
+        "冻结设计后检查载波、相位、幅度误差；保留非相干和普通左行对照。",
+        "补充更紧的 PSF 经典界改变了冻结态排序；原判据下的 0.91% 优势不能推广。"
+      ],
+      "next": "研究受限制备与实际探测分辨率的认证边界。补充测量界把最佳冻结态的估计降到约 25 万次／组，但需要速度分辨测量和已知 PSF。详情见完整研究笔记；没有按新目标重新优化。",
+      "results": "demos/backflow-resolution/results.json",
+      "report": "demos/backflow-resolution/report.txt",
+      "script": "demos/backflow-resolution/run.py"
+    },
+    {
+      "id": "loss-aware-pulse",
+      "shortTitle": "受限损耗补偿",
+      "title": "补偿损耗改善了相干匹配，但代价是什么？",
+      "status": "条件性方案 · 未见额外鲁棒优势",
+      "verdict": "损耗补偿提高复场保真度，却降低绝对目标权重。强度形状本来已很接近目标；公平训练对照也没有建立 ensemble 设计的额外优势。",
+      "question": "Casulleras 2023 提出在逆传播中加入波长相关损耗；2026 年逆设计展望强调系统容差和激发端设计。",
+      "test": "在共同输入谱范数、有限带宽和峰值预算下，对比忽略损耗、正则补偿、同样训练选参数的名义模型、ensemble 和 matched filter；使用独立留出误差。",
+      "sources": [
+        {"label": "Casulleras 2023 · Conclusion", "url": "https://arxiv.org/html/2209.06608v1"},
+        {"label": "Vilsmeier 2026 · §4.1–4.2", "url": "https://arxiv.org/html/2607.07324v1"}
+      ],
+      "metrics": [
+        {"value": "0.799 → 0.953", "label": "名义复场保真度 F"},
+        {"value": "0.0771 → 0.0459", "label": "绝对目标权重 Q 的代价"},
+        {"value": "0.9834 → 0.9836", "label": "强度形状重叠几乎不变"}
+      ],
+      "summary": "demos/loss-aware-pulse/overview.png",
+      "animation": "demos/loss-aware-pulse/demo.gif",
+      "summaryCaption": "形状与输出权重分别报告。仅右上形状对比面板归一化，左侧仍显示绝对目标权重，不能据归一化曲线推断效率提升。",
+      "animationCaption": "比较不同预补偿输入到目标时刻的传播。演示是目标平面匹配，不声称中途一直保持同一形状。",
+      "scope": "线性谱传递 surrogate；输入预算是无量纲平方范数，不是已标定的微波能量。未完成真实天线阻抗、因果驱动波形和 YIG 器件映射。",
+      "checks": [
+        "包含 matched-filter 绝对重叠上界与相同训练选 λ 的名义模型。",
+        "留出成功率 86.25% 与 85% 只差 2/160 样本；两者均未达到 95% 目标。",
+        "无损极限、单调损耗、FFT 范数、网格加倍及强损耗失败情形均记录。"
+      ],
+      "next": "仅在接收任务需要复场／相位匹配时优先考虑。下一步需要测得的传递函数和真实驱动约束；若目标只是强度包络，本次没有显示值得付出输出代价的优势。",
+      "results": "demos/loss-aware-pulse/results.json",
+      "report": "demos/loss-aware-pulse/report.txt",
+      "script": "demos/loss-aware-pulse/run.py"
+    },
+    {
+      "id": "transport-disorder",
+      "shortTitle": "两类无序的公平对照",
+      "title": "误差类型的差异，还是散射预算的差异？",
+      "status": "闭合否定性基准 · 降低优先级",
+      "verdict": "相同矩阵扰动范数下，onsite 与 bond 无序看似有明显差别；匹配最低阶后向散射强度后，接收概率差基本消失，没有支持额外的新保护机制。",
+      "question": "Meier 2025 正式版预期裸 qubit 频率无序与耦合误差影响相近，但没有给出频率无序的直接数值对照。",
+      "test": "固定 Gaussian、160a 传播距离、接收窗与干净到达时刻，用 64 个配对实现对比两类预算，并加入物理 Heisenberg 相关无序和离带中心控制。",
+      "sources": [
+        {"label": "Meier 2025 · Stability under perturbations", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263443/"}
+      ],
+      "metrics": [
+        {"value": "0.6710 / 0.4757", "label": "同 Frobenius 预算：onsite / bond 接收概率"},
+        {"value": "0.6710 / 0.6711", "label": "同后向散射预算：两者几乎重合"},
+        {"value": "−0.000085", "label": "匹配后配对均差；95% CI 跨过零"}
+      ],
+      "summary": "demos/transport-disorder/born_matched_control.png",
+      "animation": "demos/transport-disorder/demo.gif",
+      "summaryCaption": "匹配散射强度后，配对均差的 95% 区间为约 [−0.00213, 0.00196]。这不证明严格等价，也没有支持新的带中心保护。",
+      "animationCaption": "单个固定无序实现的传播例子使用共同 Frobenius 预算。它展示初始差异；不能替代结果图中匹配后向散射强度的集合对照。",
+      "scope": "XY／cavity bulk 输运子测试，不是完整量子时钟的精度或熵验证。随机 Heisenberg 交换同时改变对角和跃迁项，已单独处理。",
+      "checks": [
+        "64 个配对实现和置信区间；不逐次优化接收时间或归一化幸存信号。",
+        "匹配 Born 后向散射的控制关闭了主要差异。",
+        "Hermiticity、干净 FFT、独立本征分解、概率守恒与盒尺寸检查通过。"
+      ],
+      "next": "保留为后续器件研究的校准基准，不优先作为新物理方向。它说明首先需要定义合理的误差资源，而不是只给两类噪声相同数字。",
+      "results": "demos/transport-disorder/results.json",
+      "report": "demos/transport-disorder/report.txt",
+      "script": "demos/transport-disorder/run.py"
+    }
+  ]
+}

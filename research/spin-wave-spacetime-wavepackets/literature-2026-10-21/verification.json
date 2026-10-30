@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-21",
+  "scope": "Artifact integrity and provenance checks; not independent scientific review or a proof of novelty",
+  "report_characters": 9570,
+  "core_records": 17,
+  "local_evidence_pdfs": 14,
+  "new_readable_pdf_versions": 7,
+  "checked_local_links": 42,
+  "web_query_count": 74,
+  "metadata_returned_rows": 228,
+  "metadata_deduplicated_records": 200,
+  "citation_returned_rows": 260,
+  "citation_unique_openalex_ids": 231,
+  "errors": []
+}

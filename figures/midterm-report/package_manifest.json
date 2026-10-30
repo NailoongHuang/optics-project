@@ -1,0 +1,821 @@
+{
+  "static_figures": 39,
+  "animations": 8,
+  "pdf_pages": 40,
+  "files": [
+    {
+      "path": "a-dispersion/a01-lattice.png",
+      "kind": "png",
+      "bytes": 133844,
+      "sha256": "86bae8d486852e9e364f9172f3293fd048102775d9a815dc7d048773a2550822"
+    },
+    {
+      "path": "a-dispersion/a01-lattice.svg",
+      "kind": "svg",
+      "bytes": 113065,
+      "sha256": "d816c1f6112a3e95fc6ef42577bc3893a97172ff613bc563c519fe564d7b32b6"
+    },
+    {
+      "path": "a-dispersion/a01-lattice.pdf",
+      "kind": "pdf",
+      "bytes": 74696,
+      "sha256": "40bffc3095e8242674c4a7eca6fcee285cda10b4b1dcc5737633f86f065d1360"
+    },
+    {
+      "path": "a-dispersion/a02-isotropic-surface.png",
+      "kind": "png",
+      "bytes": 374431,
+      "sha256": "d6efed3eb2bce6ce888fb2a685e68d8a67850825a0a71902bf4f8824e7f0cc36"
+    },
+    {
+      "path": "a-dispersion/a02-isotropic-surface.svg",
+      "kind": "svg",
+      "bytes": 619511,
+      "sha256": "f6f5535a84e3295fc34ee7fc288ae83c93f31ee7457b83e93be07615f6bf3ae9"
+    },
+    {
+      "path": "a-dispersion/a02-isotropic-surface.pdf",
+      "kind": "pdf",
+      "bytes": 164871,
+      "sha256": "3950e5c5466ea57e2a8455a25afc31fc74a2ece9d0637100875b2e1f50dcafd6"
+    },
+    {
+      "path": "a-dispersion/a03-anisotropic-surface.png",
+      "kind": "png",
+      "bytes": 370708,
+      "sha256": "416e88b92672ccac3d9f14fb271d5df2d14df7ab2522f6ce8dbd28595b57b633"
+    },
+    {
+      "path": "a-dispersion/a03-anisotropic-surface.svg",
+      "kind": "svg",
+      "bytes": 622344,
+      "sha256": "fd881e03eb84ca1b45ebe15eeaaf3a658790b57fee94aeb4aabcaf5df7988a27"
+    },
+    {
+      "path": "a-dispersion/a03-anisotropic-surface.pdf",
+      "kind": "pdf",
+      "bytes": 165845,
+      "sha256": "8a81c84b4e5da5a7373a9d84b29b0eafc84bcf4d08b7f0b64360b1b97f8d6d94"
+    },
+    {
+      "path": "a-dispersion/a04-axial-cuts.png",
+      "kind": "png",
+      "bytes": 199600,
+      "sha256": "34fc41e247755f2f9cc8d526b0f4d61894a306aad821412647af117fb7a8d79e"
+    },
+    {
+      "path": "a-dispersion/a04-axial-cuts.svg",
+      "kind": "svg",
+      "bytes": 116414,
+      "sha256": "f2df46d5499e8b623cc25bc5370f254765ec8d87f18fd08fe78184073f129a23"
+    },
+    {
+      "path": "a-dispersion/a04-axial-cuts.pdf",
+      "kind": "pdf",
+      "bytes": 75101,
+      "sha256": "12f4719ab1eaa299cd291b7bd42b683f066e22f15cf5b7af4aa39f66451accae"
+    },
+    {
+      "path": "a-dispersion/a05-equal-frequency.png",
+      "kind": "png",
+      "bytes": 307445,
+      "sha256": "0090a22321b89560456b9c455726d8c2f8b3017efa29d8e80aa5d06ed8a3b1a4"
+    },
+    {
+      "path": "a-dispersion/a05-equal-frequency.svg",
+      "kind": "svg",
+      "bytes": 137651,
+      "sha256": "90ccc4e81e7786c6cd841b65c631104ae092f714a42611cdb4fad9d77870d6a1"
+    },
+    {
+      "path": "a-dispersion/a05-equal-frequency.pdf",
+      "kind": "pdf",
+      "bytes": 85118,
+      "sha256": "cacd489aeab4833d887e10ab44f1b2170f951ed6a294818aabf17602744cbf5a"
+    },
+    {
+      "path": "a-dispersion/a06-group-velocity-field.png",
+      "kind": "png",
+      "bytes": 437807,
+      "sha256": "cefd51a4d79aa5e192e0f90a26d73465005e0c9d47778b025cd66cb5547e5ef8"
+    },
+    {
+      "path": "a-dispersion/a06-group-velocity-field.svg",
+      "kind": "svg",
+      "bytes": 326655,
+      "sha256": "b7a6a75119c31c4acaf5329443a03a194c029fbbf6beef6237168ebbc43c5e04"
+    },
+    {
+      "path": "a-dispersion/a06-group-velocity-field.pdf",
+      "kind": "pdf",
+      "bytes": 115549,
+      "sha256": "db0ade0786479fbafd5bc3a460e35d172dd7e061619ac7b654e4b3a76c3805a1"
+    },
+    {
+      "path": "a-dispersion/a07-slope-and-speed.png",
+      "kind": "png",
+      "bytes": 165537,
+      "sha256": "f8f22cd64b902209b3c7bb19bb9f33892a485fef08a1170c36f3d761cb121ab6"
+    },
+    {
+      "path": "a-dispersion/a07-slope-and-speed.svg",
+      "kind": "svg",
+      "bytes": 97321,
+      "sha256": "db9f8e3aa039c50a5b247cf70e662bda516352cf8474afd89cc3fdf38c47172e"
+    },
+    {
+      "path": "a-dispersion/a07-slope-and-speed.pdf",
+      "kind": "pdf",
+      "bytes": 70505,
+      "sha256": "90441692b8d16a3777447b2f41e14420af7e7af5c27d7cbf27864e99ad720133"
+    },
+    {
+      "path": "a-dispersion/a08-long-wave-approximation.png",
+      "kind": "png",
+      "bytes": 190750,
+      "sha256": "dcd688536c0a65dc6e2b38fff0bfc2837b20960ec98fef0ac69758b21bc8c11d"
+    },
+    {
+      "path": "a-dispersion/a08-long-wave-approximation.svg",
+      "kind": "svg",
+      "bytes": 110633,
+      "sha256": "5afc1bb4379b4aa1cd96464959c6620ee9e7f95cb60a4f52069979b346727f04"
+    },
+    {
+      "path": "a-dispersion/a08-long-wave-approximation.pdf",
+      "kind": "pdf",
+      "bytes": 75494,
+      "sha256": "3df5e6c4deb484e90e44307f31b443d1985d17fefbf41dec2d188ea1b6828de1"
+    },
+    {
+      "path": "a-dispersion/a09-long-wave-error.png",
+      "kind": "png",
+      "bytes": 188712,
+      "sha256": "0afd3b3b076bbb784b03812f92a2bfba18f7a2eaa191b7bfd95c259d2497b193"
+    },
+    {
+      "path": "a-dispersion/a09-long-wave-error.svg",
+      "kind": "svg",
+      "bytes": 113872,
+      "sha256": "e1d7cc8b95b64fbb56b87b6ebbc3acb6d6a283dad6597cca6f7eed56525b6f6b"
+    },
+    {
+      "path": "a-dispersion/a09-long-wave-error.pdf",
+      "kind": "pdf",
+      "bytes": 76712,
+      "sha256": "fa5cb391ef996407cfbcf1b1aa0b820f7b22359143b81e8dbda175cdc5b50bbe"
+    },
+    {
+      "path": "a-dispersion/a10-wavevector-velocity-direction.png",
+      "kind": "png",
+      "bytes": 144866,
+      "sha256": "2444cbddd9dc8af8e037b3f52fab35509ccc730a2a80ef62504646b497d39269"
+    },
+    {
+      "path": "a-dispersion/a10-wavevector-velocity-direction.svg",
+      "kind": "svg",
+      "bytes": 87773,
+      "sha256": "382e586b56138931d52b117cb4f866b9f27913d0944e1c3bd16a94336d196fb5"
+    },
+    {
+      "path": "a-dispersion/a10-wavevector-velocity-direction.pdf",
+      "kind": "pdf",
+      "bytes": 71620,
+      "sha256": "fe4e4d4966669e2468d2c50ff26b29fc0f64587178204c61a43c28bd81381f3c"
+    },
+    {
+      "path": "a-dispersion/a11-curvature-and-cubic.png",
+      "kind": "png",
+      "bytes": 218052,
+      "sha256": "7ed27fb9a4420a1cb3ba08f4814cb245a22c0c2f291f21db22533a8f2c3a03d0"
+    },
+    {
+      "path": "a-dispersion/a11-curvature-and-cubic.svg",
+      "kind": "svg",
+      "bytes": 125231,
+      "sha256": "a62372183e6cd88bc6b50afccd7b704f5ac1fe914aa2013155814dc1e0f7b3e8"
+    },
+    {
+      "path": "a-dispersion/a11-curvature-and-cubic.pdf",
+      "kind": "pdf",
+      "bytes": 80069,
+      "sha256": "e34f0f2020e9eaf60c35f0503f3ac6a8ec5d1f40bca9d9df8c738bdc6fc52b74"
+    },
+    {
+      "path": "a-dispersion/a12-exchange-and-scales.png",
+      "kind": "png",
+      "bytes": 199413,
+      "sha256": "424f87fdf9f874b93a53550f09756f6c540aa6e300061703a074babe98b85550"
+    },
+    {
+      "path": "a-dispersion/a12-exchange-and-scales.svg",
+      "kind": "svg",
+      "bytes": 133332,
+      "sha256": "b6dbcdc1b2226d7b94b4d96e69d92fde037f67ab023f2e0380e4c44a1036b8d1"
+    },
+    {
+      "path": "a-dispersion/a12-exchange-and-scales.pdf",
+      "kind": "pdf",
+      "bytes": 88817,
+      "sha256": "8d6424891a417045c17557b52c09e8e1c376288be2d3360060f21ba9a3d271a3"
+    },
+    {
+      "path": "b-local-flip/b01-initial-local-flip.png",
+      "kind": "png",
+      "bytes": 126872,
+      "sha256": "cfd4ec2a71dbb3fd5d673c914dd933da07389e956c9fd690e8393f7307e2a8cc"
+    },
+    {
+      "path": "b-local-flip/b01-initial-local-flip.svg",
+      "kind": "svg",
+      "bytes": 102886,
+      "sha256": "285c030852a4dc159438baf640399f7311d4d195d4384b8dcc02b97617d4fb6f"
+    },
+    {
+      "path": "b-local-flip/b01-initial-local-flip.pdf",
+      "kind": "pdf",
+      "bytes": 68485,
+      "sha256": "6039ad1066d9532625add1ff3f8cf58159c6f6365ff5eedd266d6b5e5725eec7"
+    },
+    {
+      "path": "b-local-flip/b02-flat-spectrum.png",
+      "kind": "png",
+      "bytes": 117244,
+      "sha256": "dac3fb8b252f4859d86e60447fed3caa422d5379b08a0bd30f680aca96e90a65"
+    },
+    {
+      "path": "b-local-flip/b02-flat-spectrum.svg",
+      "kind": "svg",
+      "bytes": 97855,
+      "sha256": "b3331570c81d61e3384ebc5c84d4f1a04b90919c08d590d83991c36f2eb03f45"
+    },
+    {
+      "path": "b-local-flip/b02-flat-spectrum.pdf",
+      "kind": "pdf",
+      "bytes": 69052,
+      "sha256": "0f7862e7b4e6587eeab534ebc362d4c3392c498acd18b836c530c8676de407a5"
+    },
+    {
+      "path": "b-local-flip/b03-early-neighbor-spreading.png",
+      "kind": "png",
+      "bytes": 117641,
+      "sha256": "3ea4701ec877b71d296eac6c675c5541527dc7f51e0fbc1133189fadde87e860"
+    },
+    {
+      "path": "b-local-flip/b03-early-neighbor-spreading.svg",
+      "kind": "svg",
+      "bytes": 103332,
+      "sha256": "5abe1ae1e27267ea4f1611e33710c78d91d20e9743eb3a13e510cdb0e4a1e877"
+    },
+    {
+      "path": "b-local-flip/b03-early-neighbor-spreading.pdf",
+      "kind": "pdf",
+      "bytes": 71110,
+      "sha256": "8bfde9a62f16e5a6fd97b2cb7f8636ec6ff4f1817913c95b74a05d905cf03d04"
+    },
+    {
+      "path": "b-local-flip/b04-isotropic-late-snapshots.png",
+      "kind": "png",
+      "bytes": 184019,
+      "sha256": "386742c380c654190e72d9ebb61619807b4d1e3a1ffd45a1d1258c2dbe7d11af"
+    },
+    {
+      "path": "b-local-flip/b04-isotropic-late-snapshots.svg",
+      "kind": "svg",
+      "bytes": 181180,
+      "sha256": "d76a0e08cb68e00996584d5fd74bebb13d6dc7e81b92400117a5e6890f371472"
+    },
+    {
+      "path": "b-local-flip/b04-isotropic-late-snapshots.pdf",
+      "kind": "pdf",
+      "bytes": 93329,
+      "sha256": "dcb06f516ea62ba8f3e5dd24a64ed7b59e8b1ced8b10f01c54c176cd4433905e"
+    },
+    {
+      "path": "b-local-flip/b05-anisotropy-comparison.png",
+      "kind": "png",
+      "bytes": 143768,
+      "sha256": "916629269207988124d192874fcee4316a674dc5907a33f7f1a02561a9e70a99"
+    },
+    {
+      "path": "b-local-flip/b05-anisotropy-comparison.svg",
+      "kind": "svg",
+      "bytes": 134218,
+      "sha256": "9a5ddd8ec9c4a45dcf445a6684c0b3081d787e9dcfb50e04994a2ddb95685102"
+    },
+    {
+      "path": "b-local-flip/b05-anisotropy-comparison.pdf",
+      "kind": "pdf",
+      "bytes": 77538,
+      "sha256": "423d118b921e3e2d57a64806da844ee356500f24c0605cc99499ff31bf9c1f29"
+    },
+    {
+      "path": "b-local-flip/b06-marginal-probabilities.png",
+      "kind": "png",
+      "bytes": 171602,
+      "sha256": "0ebfb80568fd2a8fcf35385d391d5c7c6780eeb3d0b54d97cb455cc1f2d67945"
+    },
+    {
+      "path": "b-local-flip/b06-marginal-probabilities.svg",
+      "kind": "svg",
+      "bytes": 87198,
+      "sha256": "f9a9b63817230ee6681252497602b558c34f247e86c9d320c7db0aaae27690bf"
+    },
+    {
+      "path": "b-local-flip/b06-marginal-probabilities.pdf",
+      "kind": "pdf",
+      "bytes": 62609,
+      "sha256": "e6bba44044328db71aa78167916345776e2cbda2fb628530ec2dd23c6c57ebf6"
+    },
+    {
+      "path": "b-local-flip/b07-spacetime-isotropic.png",
+      "kind": "png",
+      "bytes": 173662,
+      "sha256": "7caaa0f6338f64b9644ce372cb2f8bf40c4914e4f64e17cdab5f676ac864a1aa"
+    },
+    {
+      "path": "b-local-flip/b07-spacetime-isotropic.svg",
+      "kind": "svg",
+      "bytes": 150483,
+      "sha256": "9d3dbeb20ab9a75293e929f6714843a412fdbee39fcb72863ad6ae5d5a6ff327"
+    },
+    {
+      "path": "b-local-flip/b07-spacetime-isotropic.pdf",
+      "kind": "pdf",
+      "bytes": 92543,
+      "sha256": "e51b11fcae02e109b04c78f6509947cab68a37d63f4a4e2a0267dc70f51fac67"
+    },
+    {
+      "path": "b-local-flip/b08-anisotropic-spacetime.png",
+      "kind": "png",
+      "bytes": 204803,
+      "sha256": "09cfffa7ec2011239c5ba09c649f12c010202dac9406a0f381fba6404c8565c5"
+    },
+    {
+      "path": "b-local-flip/b08-anisotropic-spacetime.svg",
+      "kind": "svg",
+      "bytes": 172053,
+      "sha256": "cf50b1c7179d862e7db9cb934d881847b3c04e0b0e90dd49cad7966696dde9c8"
+    },
+    {
+      "path": "b-local-flip/b08-anisotropic-spacetime.pdf",
+      "kind": "pdf",
+      "bytes": 101712,
+      "sha256": "77b1096ff68807e230912c57662c362b19df1c5a6e8130c28eba9833ed368180"
+    },
+    {
+      "path": "b-local-flip/b09-ballistic-rms.png",
+      "kind": "png",
+      "bytes": 177936,
+      "sha256": "fa0e674b0cb3d1c83172e39b0648f1accbd93123fb2f361430eaf811ac50d093"
+    },
+    {
+      "path": "b-local-flip/b09-ballistic-rms.svg",
+      "kind": "svg",
+      "bytes": 127568,
+      "sha256": "5a619ee7f33f2bc6aaa4c14a403e80a52dc9ea87b20d1ef569b3337a75ebcf71"
+    },
+    {
+      "path": "b-local-flip/b09-ballistic-rms.pdf",
+      "kind": "pdf",
+      "bytes": 69989,
+      "sha256": "e2624502c9947327b823aeb37b38c8d912fe8f0913fb89885d1a135681ce6114"
+    },
+    {
+      "path": "b-local-flip/b10-return-probability.png",
+      "kind": "png",
+      "bytes": 228164,
+      "sha256": "5c3e26746ce0e1fc5216dcf4b22d892e75beea3a1cf963f82fb1667fc013bc39"
+    },
+    {
+      "path": "b-local-flip/b10-return-probability.svg",
+      "kind": "svg",
+      "bytes": 136300,
+      "sha256": "8cc4c3032f22ee3273ae0ae47b61af658980c9f7782e1519b9da6fa89b0dd0ba"
+    },
+    {
+      "path": "b-local-flip/b10-return-probability.pdf",
+      "kind": "pdf",
+      "bytes": 74028,
+      "sha256": "9ea6ed7df9f20be6f35888620e384c7dfbe9aa6171b7c55a9f2dc327683d822d"
+    },
+    {
+      "path": "b-local-flip/b11-anisotropy-scan.png",
+      "kind": "png",
+      "bytes": 164445,
+      "sha256": "0d2768c8e16b4901dcf5c3998c21aabdc0985a75f0416b454ddc899520a76593"
+    },
+    {
+      "path": "b-local-flip/b11-anisotropy-scan.svg",
+      "kind": "svg",
+      "bytes": 111939,
+      "sha256": "ad4f78f56fa3d187d0ec873ac945c317a4805e320e5424b95606bb183ca281e0"
+    },
+    {
+      "path": "b-local-flip/b11-anisotropy-scan.pdf",
+      "kind": "pdf",
+      "bytes": 68207,
+      "sha256": "611d2e3eb0e3f4c8556e372cfdefffe74f30607c6e704b9d5bb2edd0d315b3ff"
+    },
+    {
+      "path": "b-local-flip/b12-probability-to-spin.png",
+      "kind": "png",
+      "bytes": 206556,
+      "sha256": "0439cc09425ead8e668f0f1968529a01bb6b88c780c4cd98b42d749c0bc86161"
+    },
+    {
+      "path": "b-local-flip/b12-probability-to-spin.svg",
+      "kind": "svg",
+      "bytes": 105340,
+      "sha256": "9987a3816c2669216680f27db76542e7af172cebb1aec1b7953a1087dfb21e80"
+    },
+    {
+      "path": "b-local-flip/b12-probability-to-spin.pdf",
+      "kind": "pdf",
+      "bytes": 69575,
+      "sha256": "c18299cebbbf9c236ca776d1012be5f208549ed2deb1f9b77ac8d29e7e9a6094"
+    },
+    {
+      "path": "b-local-flip/b13-independent-bessel-check.png",
+      "kind": "png",
+      "bytes": 212351,
+      "sha256": "9450cff2a85a2d5832b97c9909e9dcb9f34086f23775972cfec9c7d1779d80ae"
+    },
+    {
+      "path": "b-local-flip/b13-independent-bessel-check.svg",
+      "kind": "svg",
+      "bytes": 144675,
+      "sha256": "55f02fd81a62c605f8855e3251dcd88c2c2ed7814f356d3cff1e946545f22322"
+    },
+    {
+      "path": "b-local-flip/b13-independent-bessel-check.pdf",
+      "kind": "pdf",
+      "bytes": 83295,
+      "sha256": "2da695792aec475835957dd3424d26b9c44d1fbd2a7db5f453354f4d34fe4845"
+    },
+    {
+      "path": "b-local-flip/b14-early-spreading.gif",
+      "kind": "gif",
+      "bytes": 1821356,
+      "sha256": "de3072720d525a7c2cba29b2e2a6bb56fc9e95e07ac6b74857f9256cce57bf1d"
+    },
+    {
+      "path": "b-local-flip/b15-isotropic-propagation.gif",
+      "kind": "gif",
+      "bytes": 3084828,
+      "sha256": "65104c05b7878789c095f9f3514738d24034ecb2b6d0dc25ac0fb754e388c3b2"
+    },
+    {
+      "path": "b-local-flip/b16-anisotropic-propagation.gif",
+      "kind": "gif",
+      "bytes": 4095265,
+      "sha256": "4ef49cf9c5fe7f82f78e356e0b3a47a283c6e2f04868c67955ff3551b7c0e0ce"
+    },
+    {
+      "path": "b-local-flip/b17-marginal-animation.gif",
+      "kind": "gif",
+      "bytes": 3648103,
+      "sha256": "7bd8953549b122819231d90c44e6a00e587a3c98d6b7bb421d6017b1e815a187"
+    },
+    {
+      "path": "c-gaussian/c01-carrier-envelope-spectrum.png",
+      "kind": "png",
+      "bytes": 223247,
+      "sha256": "9c991a860c84802529e45af27658c777fc14337cab0382b404b3460884fa4de9"
+    },
+    {
+      "path": "c-gaussian/c01-carrier-envelope-spectrum.svg",
+      "kind": "svg",
+      "bytes": 132588,
+      "sha256": "8c17ce7d620ae07862daaeeb9f2946b2a058ecf697b34482fa52c5a4aefd35ab"
+    },
+    {
+      "path": "c-gaussian/c01-carrier-envelope-spectrum.pdf",
+      "kind": "pdf",
+      "bytes": 80257,
+      "sha256": "06c871fd77c05563d465ecb9d1e239fdd8fca91b5b864758791ff64dbd14fb86"
+    },
+    {
+      "path": "c-gaussian/c02-space-bandwidth.png",
+      "kind": "png",
+      "bytes": 214799,
+      "sha256": "f37ef3c7c28180b693c7952609980e22ac4880eb325d401523eff85797737b61"
+    },
+    {
+      "path": "c-gaussian/c02-space-bandwidth.svg",
+      "kind": "svg",
+      "bytes": 116342,
+      "sha256": "87ac0d9300f977dffff36ad695b8f5bc4e444b45add8943bde8f484d88d08b7f"
+    },
+    {
+      "path": "c-gaussian/c02-space-bandwidth.pdf",
+      "kind": "pdf",
+      "bytes": 74102,
+      "sha256": "bdeb219cdc76e9636610f88ed66e6db1e191eed30a4be9f7389f1d63fc2a83c5"
+    },
+    {
+      "path": "c-gaussian/c03-zero-carrier-spreading.png",
+      "kind": "png",
+      "bytes": 145191,
+      "sha256": "2a64e5e18100f9c00a678eb25c8a29b162f6eeb31421602020701f30d7ac9032"
+    },
+    {
+      "path": "c-gaussian/c03-zero-carrier-spreading.svg",
+      "kind": "svg",
+      "bytes": 113622,
+      "sha256": "dec12fff278a41798214bcf57e4bf06bbbeb7e1ffa16ee3810bfd5915bf3b635"
+    },
+    {
+      "path": "c-gaussian/c03-zero-carrier-spreading.pdf",
+      "kind": "pdf",
+      "bytes": 77921,
+      "sha256": "6ea15266ff308aa0f3dac6790b1210c5755cd04a5f9141fa0f1883188d6d5d90"
+    },
+    {
+      "path": "c-gaussian/c04-moving-gaussian.png",
+      "kind": "png",
+      "bytes": 150536,
+      "sha256": "51d14c4872f51dbfc13a67a1a17f09cf52aeca6b2bfc2d123148669705c33a5c"
+    },
+    {
+      "path": "c-gaussian/c04-moving-gaussian.svg",
+      "kind": "svg",
+      "bytes": 117865,
+      "sha256": "95aba63ffb1522fb4a3d809e7351d5ce58d481f03694740b3561fc14c78c8bcf"
+    },
+    {
+      "path": "c-gaussian/c04-moving-gaussian.pdf",
+      "kind": "pdf",
+      "bytes": 77626,
+      "sha256": "0091521fe206a4071be480334a1ce215b66a3e87297260561a351c3d5466d585"
+    },
+    {
+      "path": "c-gaussian/c05-carrier-directions.png",
+      "kind": "png",
+      "bytes": 138356,
+      "sha256": "2332b0135c11877bfd233cb94b633d484ffc90a7921780439b74d826c6560143"
+    },
+    {
+      "path": "c-gaussian/c05-carrier-directions.svg",
+      "kind": "svg",
+      "bytes": 111583,
+      "sha256": "59e1e97786e770ded031052afe5e0eb91e6bca25ba06518f2290767934172eb4"
+    },
+    {
+      "path": "c-gaussian/c05-carrier-directions.pdf",
+      "kind": "pdf",
+      "bytes": 80385,
+      "sha256": "ee5edb43018c64febb03a1713e3d6b20ea38877ccae329ada481476fb35e525c"
+    },
+    {
+      "path": "c-gaussian/c06-centroid-velocity.png",
+      "kind": "png",
+      "bytes": 178887,
+      "sha256": "a7eca561834283eb5da52fecb26c1771a1fb4a492b0c21a8a7e187e9fca87e9d"
+    },
+    {
+      "path": "c-gaussian/c06-centroid-velocity.svg",
+      "kind": "svg",
+      "bytes": 138842,
+      "sha256": "9c7a840dc2a22b9312a516a5a53f845e452225f8322d61d5d95fa9d366fadf73"
+    },
+    {
+      "path": "c-gaussian/c06-centroid-velocity.pdf",
+      "kind": "pdf",
+      "bytes": 78027,
+      "sha256": "a5b36267a252e92fddee56a7cc1e2519295342b82c0dbc3cb8cb761ebfd446b3"
+    },
+    {
+      "path": "c-gaussian/c07-comoving-marginals.png",
+      "kind": "png",
+      "bytes": 225152,
+      "sha256": "8650f83fb829c6d1b4ad5ac46e4ddf1f3da654e78d1f968de7553b1024e4fe74"
+    },
+    {
+      "path": "c-gaussian/c07-comoving-marginals.svg",
+      "kind": "svg",
+      "bytes": 109911,
+      "sha256": "9830e22f4f487e45905d6f7aeddd01dd8d089e6cc047fee500494c357ce100ee"
+    },
+    {
+      "path": "c-gaussian/c07-comoving-marginals.pdf",
+      "kind": "pdf",
+      "bytes": 77686,
+      "sha256": "9644320353ac4f33e6af0048a7dd951e37ccd2e74c3631c5c96ac385bd2b1999"
+    },
+    {
+      "path": "c-gaussian/c08-width-comparison.png",
+      "kind": "png",
+      "bytes": 233008,
+      "sha256": "a77d917365cd0af1a39b3178474667b838d2fcc895c4ac0af9b242d453a33fee"
+    },
+    {
+      "path": "c-gaussian/c08-width-comparison.svg",
+      "kind": "svg",
+      "bytes": 122559,
+      "sha256": "787789b2a38847d52c9b12cacb73eacecfdb778a1a010e050060ee0030f20249"
+    },
+    {
+      "path": "c-gaussian/c08-width-comparison.pdf",
+      "kind": "pdf",
+      "bytes": 76937,
+      "sha256": "9828858b4184395350468bcc3b176d5072e307f96c287a2902aeb37db7371e56"
+    },
+    {
+      "path": "c-gaussian/c09-rms-exact-moments.png",
+      "kind": "png",
+      "bytes": 165359,
+      "sha256": "2de86e2e782f06d3677bf49ed9d4622a3288d83c9f2991ef2631cedae7503689"
+    },
+    {
+      "path": "c-gaussian/c09-rms-exact-moments.svg",
+      "kind": "svg",
+      "bytes": 114534,
+      "sha256": "4b21fe363ee6ed1f28a8b4d7d04cc017b29ee3a4ffd4b63591cc32c291dd7709"
+    },
+    {
+      "path": "c-gaussian/c09-rms-exact-moments.pdf",
+      "kind": "pdf",
+      "bytes": 73193,
+      "sha256": "9eb6f9f48311aa451863d75da5b3c05d2c6787b2ff9d9480ae73055c3d9ff9e4"
+    },
+    {
+      "path": "c-gaussian/c10-anisotropy-direction.png",
+      "kind": "png",
+      "bytes": 134031,
+      "sha256": "e52af0b3ff25d4e4c8ad5dc31eec7f9ceb7088f10adcc2d53034b47f2127a8cc"
+    },
+    {
+      "path": "c-gaussian/c10-anisotropy-direction.svg",
+      "kind": "svg",
+      "bytes": 104491,
+      "sha256": "729405164397973de1b813dae425d88157ef95ea9e60726baaaa36e20b74dc54"
+    },
+    {
+      "path": "c-gaussian/c10-anisotropy-direction.pdf",
+      "kind": "pdf",
+      "bytes": 78695,
+      "sha256": "24f12cc24cadda89e194cdefe52e3bc0c6a44c5c8447d25248374268992abb84"
+    },
+    {
+      "path": "c-gaussian/c11-anisotropy-width.png",
+      "kind": "png",
+      "bytes": 146596,
+      "sha256": "2ff4c8151409d67e0a75af813d794848f831fb409772c425fc6d0c9d3f4099dd"
+    },
+    {
+      "path": "c-gaussian/c11-anisotropy-width.svg",
+      "kind": "svg",
+      "bytes": 98033,
+      "sha256": "f57d42caed6653fa32c5ff46c7686388b34030f993fa675cdf297cbaca7ae77a"
+    },
+    {
+      "path": "c-gaussian/c11-anisotropy-width.pdf",
+      "kind": "pdf",
+      "bytes": 69656,
+      "sha256": "9f0e470de53f189e5cc7668dc573c714066a4bf1e2822fd6a4c177a2b5fb9f37"
+    },
+    {
+      "path": "c-gaussian/c12-spectrum-phase.png",
+      "kind": "png",
+      "bytes": 226916,
+      "sha256": "858abc3a952a4aeeb2377968f36d7aee7f0ac215d7827cecf3240e7ba00f9c93"
+    },
+    {
+      "path": "c-gaussian/c12-spectrum-phase.svg",
+      "kind": "svg",
+      "bytes": 139095,
+      "sha256": "df4f190320d951fed17bb0d7003a19a7cbc06c09a0be56218869ff402bac8ccb"
+    },
+    {
+      "path": "c-gaussian/c12-spectrum-phase.pdf",
+      "kind": "pdf",
+      "bytes": 89395,
+      "sha256": "a32d5c026d91430b9ff56d98a311a1758943c289141afccb351eeb79e1dbbcbc"
+    },
+    {
+      "path": "c-gaussian/c13-extension-inflection.png",
+      "kind": "png",
+      "bytes": 166029,
+      "sha256": "3e1d5a831918fd5fdbd6b5b0ee26b5d5db77deeb4fd313c7caf479b85c8e71fc"
+    },
+    {
+      "path": "c-gaussian/c13-extension-inflection.svg",
+      "kind": "svg",
+      "bytes": 110631,
+      "sha256": "6d9ed5c6c6fec43ad86c76b4f93dfec5de2b8c4f29d504c82de8ae011ea8b812"
+    },
+    {
+      "path": "c-gaussian/c13-extension-inflection.pdf",
+      "kind": "pdf",
+      "bytes": 78084,
+      "sha256": "d330c0aff2293d4e47838982e75591efe084859713e8a8431b8134371fe1cc83"
+    },
+    {
+      "path": "c-gaussian/c14-extension-cubic-distortion.png",
+      "kind": "png",
+      "bytes": 218929,
+      "sha256": "1a5b6f465ee66cdb45e592f9ceccc1c4aae13684bc628f6a0b85002bf44b1cd5"
+    },
+    {
+      "path": "c-gaussian/c14-extension-cubic-distortion.svg",
+      "kind": "svg",
+      "bytes": 139983,
+      "sha256": "07072953ef44bfa339f271614b03b72293cc5711ddecab480ac203d2e6ca7211"
+    },
+    {
+      "path": "c-gaussian/c14-extension-cubic-distortion.pdf",
+      "kind": "pdf",
+      "bytes": 89754,
+      "sha256": "ecb5ba273ba1f8e35edc02d256c0556dda81c346c85c64dcad074a6248fdd0fe"
+    },
+    {
+      "path": "c-gaussian/c15-animation-carrier.gif",
+      "kind": "gif",
+      "bytes": 2316780,
+      "sha256": "20467254f235fb54e2ba5bcd4dd55cd428737f0c55462afca6eeb3888353be79"
+    },
+    {
+      "path": "c-gaussian/c16-animation-directions.gif",
+      "kind": "gif",
+      "bytes": 2300662,
+      "sha256": "83fe40169bcdd4c9d6cee5a26ac6537d4dfae3ac00f9e2f37e133d1a283e2c80"
+    },
+    {
+      "path": "c-gaussian/c17-animation-width.gif",
+      "kind": "gif",
+      "bytes": 2580492,
+      "sha256": "26e2b69c9b142305654983a7bbb23077abe9374ea2f6d37711897ca5ada3be5b"
+    },
+    {
+      "path": "c-gaussian/c18-animation-anisotropy.gif",
+      "kind": "gif",
+      "bytes": 2171377,
+      "sha256": "4916995359765aa74116c7ab9a209a285263868db3a3420e20cfb81634972be8"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Note/single_magnon_derivation/main.tex",
+      "sha256": "0f37a677f72943eea827e32ba0de5e780cf3147b844cf50929ca63eda7e8c60a"
+    },
+    {
+      "path": "code/spin_wave_2d.py",
+      "sha256": "09482691799eb8dcae9bdc4395fd47ba06390b5fcc5a62ced4c36c7cdec13acb"
+    },
+    {
+      "path": "figures/midterm-report/build_all.py",
+      "sha256": "4ebf510137ea18f0eb512c8cfe4618d6a1ff07ea15a19db117ffcc569227dba9"
+    },
+    {
+      "path": "figures/midterm-report/build_catalog.py",
+      "sha256": "e7b9a36c73ad2512c38a370005b52f062bd363be846cc401280497f10e38b26d"
+    },
+    {
+      "path": "figures/midterm-report/common.py",
+      "sha256": "628585a31530a5615f5ddb35c4d3e3a4b6d1af9c3035a5c8b2e4cd04a560cc39"
+    },
+    {
+      "path": "figures/midterm-report/generate_dispersion.py",
+      "sha256": "a8d1dd175ecee8a8614a32c293d1455e84633dc132ce9c0ffddda4e4e782e2b8"
+    },
+    {
+      "path": "figures/midterm-report/generate_gaussian.py",
+      "sha256": "4dfa1f853266ae8b2698f9e6f949286e305590964d921bddd416d0e7e17351a7"
+    },
+    {
+      "path": "figures/midterm-report/generate_local_flip.py",
+      "sha256": "28cf02dde8d79dda80d0d2ac97c4615e2e75489d1b5adb62e2eefb326305936c"
+    },
+    {
+      "path": "figures/midterm-report/validate_package.py",
+      "sha256": "ceb95f16da8ed26dd862f4bfe21bee5464e2a9c0a7abf4e2080b8541dc1c1e56"
+    },
+    {
+      "path": "figures/midterm-report/verify_numerics.py",
+      "sha256": "089166a764681c7df2c25845947f0da792e6ce96b213ba61bb4ba674eec851fd"
+    }
+  ],
+  "datasets": [
+    {
+      "path": "a-dispersion/data/dispersion_arrays.npz",
+      "bytes": 68079,
+      "sha256": "4de154685bb0fd0d6ed0faa9b6c762dcff7f59c410f4edd3af65c4d8149fd1e1"
+    },
+    {
+      "path": "b-local-flip/local_flip_data.npz",
+      "bytes": 5912711,
+      "sha256": "e80fec5ac6cd8d87140d57ec8504ab16160efd32174f6addb4b14e14fd31e10f"
+    },
+    {
+      "path": "c-gaussian/gaussian_simulation_data.npz",
+      "bytes": 18270525,
+      "sha256": "786da3bb010e6c4893932be9005772a683fce901349e23a7c116aad1a1706b23"
+    }
+  ],
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.2",
+    "pymupdf": "1.28.2"
+  }
+}

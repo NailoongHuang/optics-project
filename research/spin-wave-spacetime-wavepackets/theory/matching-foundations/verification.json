@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "scope": "Artifact integrity plus self-review record; not formal theorem verification or independent third-party review",
+  "note_sha256": "1a24bc385a21e998057380e48b1fe7870a53834f9a2513ba9d45f7f6a22871e5",
+  "note_lines": 346,
+  "checked_local_links": 28,
+  "symbolic_expressions_checked": 14,
+  "errors": [],
+  "proof_obligations": [
+    {
+      "claim": "spectral matching iff strict complex translation",
+      "argument": "bounded Fourier multipliers and differentiation at zero, followed by direct substitution"
+    },
+    {
+      "claim": "no normalized nonzero state under stated infinite-lattice definition",
+      "argument": "nonzero real-analytic fixed-qy slices, zero-measure level set by Fubini, then L2 support contradiction"
+    },
+    {
+      "claim": "isotropic crossing produces only a monochromatic line in the selected BZ",
+      "argument": "strict monotonicity and oddness of h(s)=s-sin(s), exact energy substitution, and inverse-Fourier field structure"
+    },
+    {
+      "claim": "anisotropic local branch and energy slope",
+      "argument": "analytic cubic factorization with a locally invertible real branch; leading coefficient checked symbolically"
+    },
+    {
+      "claim": "fidelity error bound",
+      "argument": "double-integral expression and 1-cos(z)<=z^2/2"
+    }
+  ],
+  "prose_review": {
+    "retained_conditions": "infinite lattice, fixed BZ translation, complex rather than density invariance, eta>0 and real arccos domain",
+    "separated_evidence": "literature method, model derivation, CAS identities and untested performance/novelty are labeled separately",
+    "unresolved": "no propagation or material verification; restricted PRB overlap remains pending"
+  }
+}

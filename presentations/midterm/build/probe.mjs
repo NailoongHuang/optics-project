@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import {Presentation,PresentationFile} from '@oai/artifact-tool';
+import {GlobalFonts} from '@napi-rs/canvas';
+const out='C:/Users/xuanm/Desktop/optics/presentations/midterm/build';
+console.log('Fonts:',GlobalFonts.families.filter(x=>/YaHei|Cambria/.test(x.family)).map(x=>x.family));
+const p=Presentation.create({slideSize:{width:1280,height:720}});
+const s=p.slides.add();s.background.fill='#FFFFFF';
+const t=s.shapes.add({geometry:'textbox',position:{left:55,top:35,width:1150,height:70},fill:'none',line:{fill:'none',width:0}});
+t.text='自旋激发的传播与展宽';t.text.style={typeface:'Microsoft YaHei',fontSize:42,bold:true,color:'#203648',insets:0};
+const body=s.shapes.add({geometry:'textbox',position:{left:60,top:140,width:400,height:200},fill:'none',line:{fill:'none',width:0}});
+body.text='相同的初始概率包络\n载波决定波矢分布\n交换强度控制传播速度';body.text.style={typeface:'Microsoft YaHei',fontSize:26,color:'#203648',insets:0};
+const c=s.charts.add('scatter',{position:{left:520,top:140,width:700,height:450},title:'质心随时间变化',titleTextStyle:{fontSize:22},series:[{name:'数值结果',xValues:[0,10,20,30,40,50,60],values:[0,6.4,12.8,19.2,25.6,32,38.4],line:{fill:'#246B9A',width:3},marker:{symbol:'circle',size:5}}],scatterOptions:{style:'lineWithMarkers'},hasLegend:true,legend:{position:'bottom',textStyle:{fontSize:18}},xAxis:{title:'时间 τ',min:0,max:60,majorUnit:20,textStyle:{fontSize:18}},yAxis:{title:'质心 x/a',min:0,max:40,majorUnit:10,textStyle:{fontSize:18}}});
+const {applyPresentationChartFont}=await import('file:///C:/Users/xuanm/.codex/plugins/cache/openai-primary-runtime/presentations/26.1017.11052/skills/presentations/container_tools/artifact_tool_utils.mjs');
+applyPresentationChartFont(c,{fontFamily:'Microsoft YaHei'});
+const png=await p.export({slide:s,format:'png',scale:1});await fs.writeFile(out+'/probe.png',new Uint8Array(await png.arrayBuffer()));
+await(await PresentationFile.exportPptx(p)).save(out+'/probe.pptx');
+console.log('Probe done');

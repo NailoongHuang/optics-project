@@ -1,0 +1,592 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          21
+        ]
+      ],
+      "date-time": "2025-02-21T11:37:56Z",
+      "timestamp": 1740137876532,
+      "version": "3.37.3"
+    },
+    "reference-count": 24,
+    "publisher": "IOP Publishing",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              4
+            ]
+          ],
+          "date-time": "2024-03-04T00:00:00Z",
+          "timestamp": 1709510400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              4
+            ]
+          ],
+          "date-time": "2024-03-04T00:00:00Z",
+          "timestamp": 1709510400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100010418",
+        "name": "Institute for Information & communications Technology Promotion",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "No. 2019-0-00003"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "No. 2019-0-00003"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100010418",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003725",
+        "name": "National Research Foundation of Korea",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "NRF- 2021M3H3A1038085"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NRF- 2021M3H3A1038085"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003725",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "iopscience.iop.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Phys. Scr."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Quantum backflow is a counterintuitive effect in which the probability density of a free particle moves in the direction opposite to the particle’s momentum. If the particle is electrically charged, then the effect can be viewed as the contrast between the direction of electric current and that of the momentum. To date, there has been no direct experimental observation of quantum backflow. However, the effect has been simulated numerically (using classical computers) and optically (using classical light). In this study, we present the first simulation of quantum backflow using a real quantum computer.</jats:p>",
+    "DOI": "10.1088/1402-4896/ad2be7",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          21
+        ]
+      ],
+      "date-time": "2024-02-21T22:55:51Z",
+      "timestamp": 1708556151000
+    },
+    "page": "045104",
+    "update-policy": "https://doi.org/10.1088/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Simulating quantum backflow on a quantum computer"
+    ],
+    "prefix": "10.1088",
+    "volume": "99",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9903-3299",
+        "authenticated-orcid": true,
+        "given": "Arseni",
+        "family": "Goussev",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0491-980X",
+        "authenticated-orcid": true,
+        "given": "Jaewoo",
+        "family": "Joo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "266",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "psad2be7bib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "311",
+        "DOI": "10.1016/0003-4916(69)90253-X",
+        "article-title": "The time of arrival in quantum mechanics III. The measurement ensemble",
+        "volume": "53",
+        "author": "Allcock",
+        "year": "1969",
+        "journal-title": "Ann. Phys. (N. Y)."
+      },
+      {
+        "key": "psad2be7bib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "361",
+        "DOI": "10.1016/S0034-4877(74)80004-2",
+        "article-title": "On the time operator in quantum mechanics and the Heisenberg uncertainty relation for energy and time",
+        "volume": "6",
+        "author": "Kijowski",
+        "year": "1974",
+        "journal-title": "Rep. Math. Phys."
+      },
+      {
+        "key": "psad2be7bib3",
+        "doi-asserted-by": "publisher",
+        "first-page": "2197",
+        "DOI": "10.1088/0305-4470/27/6/040",
+        "article-title": "Probability backflow and a new dimensionless quantum number",
+        "volume": "27",
+        "author": "Bracken",
+        "year": "1994",
+        "journal-title": "J. Phys. A: Math. Gen."
+      },
+      {
+        "key": "psad2be7bib4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.103.022217",
+        "article-title": "Quantum backflow in a ring",
+        "volume": "103",
+        "author": "Goussev",
+        "year": "2021",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "psad2be7bib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1147",
+        "DOI": "10.1088/0143-0807/33/5/1147",
+        "article-title": "Large quantum probability backflow and the azimuthal angle-angular momentum uncertainty relation for an electron in a constant magnetic field",
+        "volume": "33",
+        "author": "Strange",
+        "year": "2012",
+        "journal-title": "Eur. J. Phys."
+      },
+      {
+        "key": "psad2be7bib6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.102.062218",
+        "article-title": "Angular momentum quantum backflow in the noncommutative plane",
+        "volume": "102",
+        "author": "Paccoia",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "psad2be7bib7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.107.032204",
+        "article-title": "Unbounded quantum backflow in two dimensions",
+        "volume": "107",
+        "author": "Barbier",
+        "year": "2023",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "psad2be7bib8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physleta.2023.128831",
+        "article-title": "Quantum backflow for a massless Dirac fermion on a ring",
+        "volume": "474",
+        "author": "Di Bari",
+        "year": "2023",
+        "journal-title": "Phys. Lett. A"
+      },
+      {
+        "key": "psad2be7bib9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-6596/442/1/012055",
+        "article-title": "An introduction to the quantum backflow effect",
+        "volume": "442",
+        "author": "Yearsley",
+        "year": "2013"
+      },
+      {
+        "key": "psad2be7bib10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1402-4896/abdd54",
+        "article-title": "Probability flow for a free particle: new quantum effects",
+        "volume": "96",
+        "author": "Bracken",
+        "year": "2021",
+        "journal-title": "Phys. Scr."
+      },
+      {
+        "key": "psad2be7bib11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.87.053618",
+        "article-title": "Detecting quantum backflow by the density of a Bose-Einstein condensate",
+        "volume": "87",
+        "author": "Palmero",
+        "year": "2013",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "key": "psad2be7bib12",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1364/OPTICA.371494",
+        "article-title": "Observation of optical backflow",
+        "volume": "7",
+        "author": "Eliezer",
+        "year": "2020",
+        "journal-title": "Optica"
+      },
+      {
+        "key": "psad2be7bib13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/aca70b",
+        "article-title": "Demonstrating backflow in classical two beams’ interference",
+        "volume": "24",
+        "author": "Daniel",
+        "year": "2022",
+        "journal-title": "New J. Phys."
+      },
+      {
+        "key": "psad2be7bib14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1217",
+        "DOI": "10.1364/OPTICA.495710",
+        "article-title": "Azimuthal backflow in light carrying orbital angular momentum",
+        "volume": "10",
+        "author": "Ghosh",
+        "year": "2023",
+        "journal-title": "Optica"
+      },
+      {
+        "key": "psad2be7bib15"
+      },
+      {
+        "key": "psad2be7bib16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.101.010301",
+        "article-title": "Variational quantum algorithms for nonlinear problems",
+        "volume": "101",
+        "author": "Lubasch",
+        "year": "2020",
+        "journal-title": "Phys. Rev. A"
+      },
+      {
+        "author": "Joo",
+        "key": "psad2be7bib17",
+        "article-title": "Quantum variational PDE solver with machine learning"
+      },
+      {
+        "year": "2010",
+        "author": "Nielsen",
+        "key": "psad2be7bib18"
+      },
+      {
+        "key": "psad2be7bib19",
+        "doi-asserted-by": "publisher",
+        "first-page": "68",
+        "DOI": "10.1038/nature08688",
+        "article-title": "Quantum simulation of the Dirac equation",
+        "volume": "463",
+        "author": "Gerritsma",
+        "year": "2010",
+        "journal-title": "Nature"
+      },
+      {
+        "author": "Somma",
+        "key": "psad2be7bib20",
+        "article-title": "Quantum simulations of one dimensional quantum systems"
+      },
+      {
+        "key": "psad2be7bib21",
+        "doi-asserted-by": "publisher",
+        "first-page": "027001",
+        "DOI": "10.1103/PRXQuantum.4.027001",
+        "article-title": "Quantum Simulation for High-Energy Physics",
+        "volume": "4",
+        "author": "Bauer",
+        "year": "2023",
+        "journal-title": "PRX Quantum"
+      },
+      {
+        "key": "psad2be7bib22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1007/s00023-005-0197-9",
+        "article-title": "Quantum Inequalities in Quantum Mechanics",
+        "volume": "6",
+        "author": "Eveson",
+        "year": "2005",
+        "journal-title": "Ann. Henri Poincaré"
+      },
+      {
+        "key": "psad2be7bib23",
+        "doi-asserted-by": "publisher",
+        "first-page": "423",
+        "DOI": "10.1088/0305-4470/39/2/012",
+        "article-title": "A new approach to quantum backflow",
+        "volume": "39",
+        "author": "Penz",
+        "year": "2006",
+        "journal-title": "J. Phys. A: Math. Gen."
+      },
+      {
+        "key": "psad2be7bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1038/s41534-023-00739-z",
+        "article-title": "Quantum advantages for transportation tasks—projectiles, rockets and quantum backflow",
+        "volume": "9",
+        "author": "Trillo",
+        "year": "2023",
+        "journal-title": "npj Quantum Inf."
+      }
+    ],
+    "container-title": [
+      "Physica Scripta"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7",
+        "content-type": "text/html",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          4
+        ]
+      ],
+      "date-time": "2024-03-04T11:06:19Z",
+      "timestamp": 1709550379000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1088/1402-4896/ad2be7"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          4
+        ]
+      ]
+    },
+    "references-count": 24,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1088/1402-4896/ad2be7",
+    "relation": {},
+    "ISSN": [
+      "0031-8949",
+      "1402-4896"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "0031-8949"
+      },
+      {
+        "type": "electronic",
+        "value": "1402-4896"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Simulating quantum backflow on a quantum computer",
+        "name": "article_title",
+        "label": "Article Title"
+      },
+      {
+        "value": "Physica Scripta",
+        "name": "journal_title",
+        "label": "Journal Title"
+      },
+      {
+        "value": "paper",
+        "name": "article_type",
+        "label": "Article Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by IOP Publishing Ltd",
+        "name": "copyright_information",
+        "label": "Copyright Information"
+      },
+      {
+        "value": "2023-11-16",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2024-02-21",
+        "name": "date_accepted",
+        "label": "Date Accepted",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2024-03-04",
+        "name": "date_epub",
+        "label": "Online publication date",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      }
+    ]
+  }
+}

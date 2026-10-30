@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scaled_graph_axes": "(kx*a, ky*a, epsilon/Jx)",
+  "physical_derivative_curvature_residual": 0,
+  "units": {
+    "position": "x,y",
+    "wavevector": "kx,ky",
+    "energy": "epsilon",
+    "time": "t",
+    "plot_time": "t in hbar/Jx"
+  },
+  "data_sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84",
+  "old_to_physical": {
+    "q": "a*k",
+    "e": "epsilon/Jx",
+    "tau": "Jx*t/hbar",
+    "n": "x/a",
+    "s": "sigma/a",
+    "eta": "Jy/Jx"
+  },
+  "evidence": "Rendering reuses the saved complex wavefields; phase epsilon*t/hbar equals stored e*tau exactly."
+}

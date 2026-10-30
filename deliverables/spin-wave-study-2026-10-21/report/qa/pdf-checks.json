@@ -1,0 +1,62 @@
+{
+  "pages": 9,
+  "bytes": 1061322,
+  "sha256": "98b04c4b1e5bfb1a4fd635bc36ee438a5904d036093f82db5040b5ac797bee3f",
+  "metadata_title": "自旋波传播研究整理报告",
+  "page_checks": [
+    {
+      "page": 1,
+      "text_characters": 562,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 2,
+      "text_characters": 600,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 3,
+      "text_characters": 461,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 4,
+      "text_characters": 749,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 5,
+      "text_characters": 545,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 6,
+      "text_characters": 547,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 7,
+      "text_characters": 649,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 8,
+      "text_characters": 715,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    },
+    {
+      "page": 9,
+      "text_characters": 1849,
+      "out_of_page_text": [],
+      "forbidden_line_starts": []
+    }
+  ]
+}

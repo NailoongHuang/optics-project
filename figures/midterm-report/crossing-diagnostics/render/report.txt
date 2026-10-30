@@ -1,0 +1,59 @@
+Crossing packet red-blue rendering diagnosis
+
+Sources inspected:
+  notation/g15_lab_real_animation.gif
+  notation/g13_real_animation.gif
+  notation/generate_lab_animations.py
+  notation/generate_notation.py
+  curvature-design/generate_design.py
+  curvature-design/chart_data.json
+
+Controls:
+  inspect_render.py reuses the actual g15 animation function, retaining its
+  stored initial states, phase convention, fixed color normalization, extent,
+  nearest-neighbor rendering, and adaptive palette. Only selected frame
+  indices and export destinations are changed. Original files are untouched.
+  Selected indices: 0, 2, 3, 5, 8, 10; times: 0, 6, 9, 15, 24, 30 hbar/Jx.
+  True-color RGB at 120 dpi is compared to the original 192-color GIF.
+  The same frames are also rendered at 360 dpi.
+
+Findings:
+  1. Reconstructed palette RGB matches the original GIF exactly in all six
+     selected frames: maximum absolute channel error is zero.
+  2. C changes between a checkerboard-like carrier pattern (t=0 and 15) and
+     diagonal stripe-like pattern (t=9 and 24). This occurs in the true-color
+     render and the 3x-resolution render, as well as the original GIF.
+     Selected full frames of the older comoving g13 movie show the same
+     distinction. The pattern change is not created by GIF palette encoding.
+  3. Palette mean absolute channel error within a moving 36a x 36a square
+     around C is 1.08 to 1.29 on the 0..255 scale. The whole-frame mean is
+     0.115 to 0.126. Color quantization can slightly alter colors but is too
+     small to explain the observed pattern change.
+  4. As a defined display metric, the mean RGB channel range (max-minus-min,
+     averaged over the same moving square) changes from 32.70 at t=0 to
+     48.81 at t=9 in the native true-color render. At 3x resolution these
+     values are 32.85 and 48.70. Thus color-density modulation remains when
+     raster resolution is tripled. This metric is not probability or norm.
+  5. The original main C panel is 437.14 pixels wide over 260a:
+     1.681 pixels/site, or 6.725 pixels for the 4a carrier period.
+     Small display sizes can alter the visible fine pattern, but the tested
+     native resolution is not the primary source of the modulation.
+  6. Frames are spaced by 3 hbar/Jx. For the crossing field's fixed-site
+     carrier frequency 2 Jx/hbar, the phase advance 6 rad/frame is equivalent
+     to -0.283185 rad/frame. Fixed-site phase motion is temporally aliased.
+     A whole-packet flicker period cannot be inferred from this alone:
+     centroid-following locations and moving crops add spatial phase and
+     lattice-site selection changes.
+
+Interpretation:
+  The numerical dynamics analysis establishes the underlying exact
+  crossing-phase/parity mechanism. Rendering controls show that its real-part
+  pattern and color-density changes survive removal of palette quantization
+  and increased pixel density. Keep these real-part changes distinct from
+  changes in |psi|^2 or in the total real-part squared norm.
+
+Evidence:
+  render_metrics.json: all numerical display metrics.
+  render_contact.png: original GIF, true-color, and 3x raster comparison.
+  original_C_frame*.png, rgb_C_frame*.png, highres_C_frame*.png: native crops.
+  comoving_full_frame*.png: selected original g13 full frames.

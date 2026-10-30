@@ -1,0 +1,235 @@
+[
+  {
+    "id": "oneil2017",
+    "title": "Sensitivity and Robustness of Quantum Spin-1/2 Rings to Parameter Uncertainty",
+    "authors": [
+      "Sean O'Neil",
+      "Edmond Jonckheere",
+      "Sophie Schirmer",
+      "Frank Langbein"
+    ],
+    "year": 2017,
+    "doi": "10.1109/CDC.2017.8264584",
+    "arxiv": "1708.09649v1",
+    "version": "arXiv v1",
+    "file": "1708.09649v1_spin-ring-robustness.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/1708.09649v1",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://arxiv.org/pdf/1708.09649v1",
+    "final_url": "https://arxiv.org/pdf/1708.09649v1",
+    "pages": 6,
+    "bytes": 853836,
+    "sha256": "4a71b513f751ee09025016620506a91273278280894a8d2dbc6a792536c15c12",
+    "first_page_excerpt": " \n \nAbstract— Selective transfer of information between spin-1/2 \nparticles arranged in a ring is achieved by optimizing the \ntransfer fidelity over a readout time window via shaping, \nexternally applied, static bias fields. Such static control fields \nhave properties that clash with the expectations of classical \ncontrol theory. Previous work has shown that there are cases in \nwhich the logarithmic differential sensitivity of the transfer \nfidelity to uncertainty in coupling strength or spillage of the bias \nfield to adjacent spins is minimized by controllers that produce \nthe best fidelity.  Here we expand upon these examples and \nexamine cases of both classical and non-classical behavior of \nlogarithmic sensitivity to parameter uncertainty and robustness \nas measured by the 𝝁 function for quantum systems. In \nparticular we examine these properties in an 11-spin ring with a \nsingle uncertainty in coupling strength or a single bias spillage.   \nI. INTRODUCTION \nInformation encoded in networks of coupled spins can \npropagate without mass or change transport. For example, \nspintronic devices using nuclear or electron spins confined to \nquantum dots in 2D electron gas (2DEG) controlled by surface \nelectrodes could overcome limitations imposed by mass or \ncharge transport and hold significant promise for on-chip \ncommunication [1]. Linear chains and rings can be used as the \ncomponents of quantum wires and routers. Due to the complex \nwave-like propagation of excitations in suc",
+    "title_identity_check": true,
+    "title_identity_note": "Verified visually: printed fraction 1/2 uses a single fraction glyph in the PDF text.",
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "krishna2021",
+    "title": "Beyond the universal Dyson singularity for 1-D chains with hopping disorder",
+    "authors": [
+      "Akshay Krishna",
+      "R. N. Bhatt"
+    ],
+    "year": 2021,
+    "doi": "10.1016/j.aop.2021.168537",
+    "arxiv": "2107.08518v1",
+    "version": "arXiv v1",
+    "file": "2107.08518v1_dyson-disorder.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/2107.08518v1",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://arxiv.org/pdf/2107.08518v1",
+    "final_url": "https://arxiv.org/pdf/2107.08518v1",
+    "pages": 13,
+    "bytes": 863733,
+    "sha256": "f1b1a9428820e76b5a5b4b851cce0f1352a87f1cf2d087b1d6cb8898ddf37fc4",
+    "first_page_excerpt": "Beyond the universal Dyson singularity for 1-D chains with hopping\ndisorder\nAkshay Krishnaa,b, R. N. Bhatta\naDepartment of Electrical Engineering, Princeton University, Princeton NJ 08544, USA\nbKLA Corporation, 2350 Green Road Suite 100, Ann Arbor, MI, 48105, USA\nAbstract\nWe study a simple non-interacting nearest neighbor tight-binding model in one dimension with disorder,\nwhere the hopping terms are chosen randomly. This model exhibits a well-known singularity at the band\ncenter both in the density of states and localization length. If the probability distribution of the hopping\nterms is well-behaved, then the singularities exhibit universal behavior, the functional form of which was\nﬁrst discovered by Freeman Dyson in the context of a chain of classical harmonic oscillators. We show here\nthat this universal form can be violated in a tunable manner if the hopping elements are chosen from a\ndivergent probability distribution. We also demonstrate a connection between a breakdown of universality\nin this quantum problem and an analogous scenario in the classical domain – that of random walks and\ndiﬀusion with anomalous exponents.\n1. Introduction\nThe question “How do particles move?” is a central one in physics, and one that has played a key role in\nthe development of modern physics over the centuries. The work of Galileo and Newton on ballistic motion\nin the classical domain was perhaps the progenitor of the study of transport. In the early twentieth century,\nthe study of transp",
+    "title_identity_check": true,
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "krapivsky2011",
+    "title": "Dynamics of a quantum particle in low-dimensional disordered systems with extended states",
+    "authors": [
+      "P. L. Krapivsky",
+      "J. M. Luck"
+    ],
+    "year": 2011,
+    "doi": "10.1088/1742-5468/2011/02/P02031",
+    "arxiv": "1101.2101v2",
+    "version": "arXiv v2",
+    "file": "1101.2101v2_disordered-dynamics.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/1101.2101v2",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://arxiv.org/pdf/1101.2101v2",
+    "final_url": "https://arxiv.org/pdf/1101.2101v2",
+    "pages": 20,
+    "bytes": 406468,
+    "sha256": "008f62ad4e42a706123615ed1a17f2f7c84ac4e5a18d50adcac755cbe8a94795",
+    "first_page_excerpt": "arXiv:1101.2101v2  [cond-mat.dis-nn]  18 Feb 2011\nDynamics of a quantum particle in low-dimensional\ndisordered systems with extended states\nP L Krapivsky1,2 and J M Luck2\n1 Department of Physics, Boston University, Boston, MA 02215, USA\n2 Institut de Physique Th´eorique, IPhT, CEA Saclay and URA 2306, CNRS, 91191\nGif-sur-Yvette cedex, France\nAbstract.\nWe investigate the dynamics of a quantum particle in disordered tight-\nbinding models in one and two dimensions which are exceptions to the common wisdom\non Anderson localization, in the sense that the localization length diverges at some\nspecial energies. We provide a consistent picture for two well-known one-dimensional\nexamples: the chain with oﬀ-diagonal disorder and the random-dimer model. In both\ncases the quantum motion exhibits a peculiar kind of anomalous diﬀusion which can\nbe referred to as bi-fractality. The disorder-averaged density proﬁle of the particle\nbecomes critical in the long-time regime.\nThe q-th moment of the position of the\nparticle diverges with time whenever q exceeds some q0. We obtain q0 = 2 for oﬀ-\ndiagonal disorder on the chain (and conjecturally on two-dimensional bipartite lattices\nas well). For the random-dimer model, our result q0 = 1/2 corroborates known rigorous\nresults.\nPACS numbers: 72.15.Rn, 73.20.Fz, 73.20.At\nE-mail: pkrapivsky@gmail.com,jean-marc.luck@cea.fr\n",
+    "title_identity_check": true,
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "gorgulu2025",
+    "title": "On-chip arbitrary dispersion engineering with deep photonic networks",
+    "authors": [
+      "Kazim Gorgulu",
+      "Aycan Deniz Vit",
+      "Ali Najjar Amiri",
+      "Emir Salih Magden"
+    ],
+    "year": 2025,
+    "doi": "10.1364/OL.564441",
+    "arxiv": "2504.05505v2",
+    "version": "arXiv v2",
+    "file": "2504.05505v2_photonic-dispersion.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/2504.05505v2",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://arxiv.org/pdf/2504.05505v2",
+    "final_url": "https://arxiv.org/pdf/2504.05505v2",
+    "pages": 5,
+    "bytes": 735300,
+    "sha256": "7d42f0e83874cfeee5bdd194bef0462c87083d914ec31b01e9e6526164e4bf90",
+    "first_page_excerpt": "arXiv:2504.05505v2  [physics.optics]  19 Jun 2025\n1\nOn-chip arbitrary dispersion engineering with deep\nphotonic networks\nKazim Gorgulu1,2, Aycan Deniz Vit1, Ali Najjar Amiri3,\nEmir Salih Magden1,4∗\n1Department of Electrical & Electronics Engineering, Koc¸ University, 34450, Istanbul, Turkey\n2Sicoya GmbH, 12489 Berlin, Germany\n3Department of Electrical and Computer Engineering, Northwestern University, Evanston, IL 60208, USA\n4KUIS-AI Center, Koc University, 34450, Istanbul, Turkey\nAbstract—We demonstrate the design and optimization of on-\nchip arbitrary dispersion profiles using deep photonic networks\nconstructed from custom-designed Mach-Zehnder interferome-\nters. These photonic networks employ optimizable waveguide\ntapers, enabling precise engineering of wavelength-dependent\ndispersion profiles. We experimentally demonstrate a proof-\nof-concept two-port photonic network that exhibits a highly\nnonintuitive triangular dispersion profile over the wavelength\nrange of 1.54 µm to 1.58 µm while simultaneously achieving\na flat-band transmission with an insertion loss of less than\n0.7 dB. We also illustrate the potential of multi-port photonic\nnetworks to enhance design freedom for more complex and\ncustomizable dispersion profiles, enabling new possibilities for\non-chip dispersion engineering.\nIndex Terms—dispersion engineering, photonic networks, sili-\ncon photonics\nI. INTRODUCTION\nEfficient dispersion management is crucial for applications\nsuch as high-speed optical communication ",
+    "title_identity_check": true,
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "tapia_many2025",
+    "title": "Waveguide Arrays: Interaction to Many Neighbors",
+    "authors": [
+      "Marco A. Tapia-Valerdi",
+      "Irán Ramos-Prieto",
+      "Francisco Soto-Eguibar",
+      "Héctor M. Moya-Cessa"
+    ],
+    "year": 2025,
+    "doi": "10.3390/dynamics5030025",
+    "preprint_doi": "10.20944/preprints202505.1458.v1",
+    "version": "publisher PDF",
+    "file": "tapia2025_many-neighbors.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00025/article_deploy/dynamics-05-00025.pdf",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00025/article_deploy/dynamics-05-00025.pdf",
+    "final_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00025/article_deploy/dynamics-05-00025.pdf",
+    "pages": 11,
+    "bytes": 967335,
+    "sha256": "b46793e770456c456ad522de61d4dfc055c5696655e7da13f07f920db3d13f04",
+    "first_page_excerpt": "Academic Editor: Christos Volos\nReceived: 19 May 2025\nRevised: 18 June 2025\nAccepted: 23 June 2025\nPublished: 1 July 2025\nCitation: Tapia-Valerdi, M.A.;\nRamos-Prieto, I.; Soto-Eguibar, F.;\nMoya-Cessa, H.M. Waveguide Arrays:\nInteraction to Many Neighbors.\nDynamics 2025, 5, 25. https://\ndoi.org/10.3390/dynamics5030025\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nWaveguide Arrays: Interaction to Many Neighbors\nMarco A. Tapia-Valerdi\n, Irán Ramos-Prieto\n, Francisco Soto-Eguibar\nand Héctor M. Moya-Cessa *\nInstituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla,\nPuebla 72840, Mexico; mvalerdi@inaoep.mx (M.A.T.-V.); iran@inaoep.mx (I.R.-P.); feguibar@inaoep.mx (F.S.-E.)\n* Correspondence: hmmc@inaoep.mx\nAbstract\nWe present an analytical framework for describing light propagation in infinite waveguide\narrays, incorporating a generalized long-range coupling to achieve a more realistic model.\nWe demonstrate that the resulting solution can be expressed in terms of generalized Bessel-\nlike functions. Additionally, by applying the concept of eigenstates, we borrow from\nquantum mechanics a basis given in terms of phase states that allows the analysis of\nthe transition from the discrete to the continuum limit, obtaining a rel",
+    "title_identity_check": true,
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "tapia_second2025",
+    "title": "Waveguide Arrays Interaction to Second Neighbors: Semi-Infinite Case",
+    "authors": [
+      "Marco A. Tapia-Valerdi",
+      "Irán Ramos-Prieto",
+      "Francisco Soto-Eguibar",
+      "Héctor M. Moya-Cessa"
+    ],
+    "year": 2025,
+    "doi": "10.3390/dynamics5040051",
+    "version": "publisher PDF",
+    "file": "tapia2025_second-neighbors.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00051/article_deploy/dynamics-05-00051.pdf",
+        "outcome": "success"
+      }
+    ],
+    "status": "downloaded-and-readable",
+    "source_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00051/article_deploy/dynamics-05-00051.pdf",
+    "final_url": "https://mdpi-res.com/d_attachment/dynamics/dynamics-05-00051/article_deploy/dynamics-05-00051.pdf",
+    "pages": 15,
+    "bytes": 1075327,
+    "sha256": "463384b5be1348b97b61c4c40661e5fcc5fe6ceeff5ac09312ccb2d0844744ca",
+    "first_page_excerpt": "Academic Editor: Christos Volos\nReceived: 16 October 2025\nRevised: 14 November 2025\nAccepted: 18 November 2025\nPublished: 1 December 2025\nCitation: Tapia-Valerdi M.A.;\nRamos-Prieto, I.; Soto-Eguibar, F.;\nMoya-Cessa, H.M. Waveguide Arrays\nInteraction to Second Neighbors:\nSemi-Infinite Case. Dynamics 2025, 5,\n51. https://doi.org/10.3390/\ndynamics5040051\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nWaveguide Arrays Interaction to Second Neighbors:\nSemi-Infinite Case\nMarco A. Tapia-Valerdi\n, Irán Ramos-Prieto\n, Francisco Soto-Eguibar\nand Héctor M. Moya-Cessa *\nInstituto Nacional de Astrofísica Óptica y Electrónica, Calle Luis Enrique Erro No. 1, Santa María Tonantzintla,\nPuebla 72840, Mexico; mvalerdi@inaoep.mx (M.A.T.-V.); iran@inaoep.mx (I.R.-P.); feguibar@inaoep.mx (F.S.-E.)\n* Correspondence: hmmc@inaoep.mx\nAbstract\nWe provide an analytical framework for describing the propagation of light in waveguide\narrays, considering both infinite and semi-infinite cases. The interaction up to second\nneighbors is taken into account, which provides a more realistic setup. We show that\nthese solutions follow a distinctive structural pattern. This pattern reflects a transition\nfrom conventional Bessel functions to the lesser-known one-parameter generalized Bessel\nfunctions, offeri",
+    "title_identity_check": true,
+    "first_page_visually_checked": true
+  },
+  {
+    "id": "bensmann2025",
+    "title": "Dispersion-tunable low-loss implanted spin-wave waveguides for large magnonic networks",
+    "authors": [
+      "Jannis Bensmann",
+      "Robert Schmidt",
+      "Kirill O. Nikolaev",
+      "Dimitri Raskhodchikov",
+      "Shraddha Choudhary",
+      "Richa Bhardwaj",
+      "Shabnam Taheriniya",
+      "Akhil Varri",
+      "Sven Niehues",
+      "Ahmad El Kadri",
+      "Johannes Kern",
+      "Wolfram H. P. Pernice",
+      "Sergej O. Demokritov",
+      "Vladislav E. Demidov",
+      "Steffen Michaelis de Vasconcellos",
+      "Rudolf Bratschitsch"
+    ],
+    "year": 2025,
+    "doi": "10.1038/s41563-025-02282-y",
+    "version": "publisher PDF",
+    "file": "bensmann2025_implanted-waveguides.pdf",
+    "role": "supporting follow-up already discussed; not an additional core-result claim",
+    "retrieved_date": "2026-10-21",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41563-025-02282-y.pdf",
+        "outcome": "Response is not a PDF"
+      },
+      {
+        "url": "https://link.springer.com/content/pdf/10.1038/s41563-025-02282-y.pdf",
+        "outcome": "Response is not PDF"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41563-025-02282-y.pdf?download=1",
+        "outcome": "Response is not PDF"
+      }
+    ],
+    "status": "not-downloaded",
+    "access_note": "The publisher marks this article open access and its full text/PDF is readable via the web retrieval service, but three normal local downloads returned HTML rather than PDF. No binary saved.",
+    "alternative_full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12657222/"
+  }
+]

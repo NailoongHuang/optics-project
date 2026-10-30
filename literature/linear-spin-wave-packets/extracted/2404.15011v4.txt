@@ -1,0 +1,936 @@
+=== PDF PAGE 1 ===
+Shaping non-reciprocal caustic spin wave beams
+Dinesh Wagle,1 Daniel Stoeffler,2 Loic Temdie,3 Mojtaba Taghipour Kaffash,4 Vincent Castel,3 Hicham Majjad,2
+Romain Bernard,2 Yves Henry,2 Matthieu Bailleul,2 M. Benjamin Jungfleisch,4, ∗and Vincent Vlaminck3, †
+1Department of Physics and Astronomy, University of Delaware, Newark, Delaware 19716, USA
+2IPCMS - UMR 7504 CNRS Institut de Physique et Chimie des Materiaux de Strasbourg, France
+3IMT Atlantique, Dpt.
+MO, Lab-STICC - UMR 6285 CNRS,
+Technopole Brest-Iroise CS83818, 29238 Brest Cedex 03, France
+4Department of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+(Dated: February 12, 2026)
+Caustics are intricate and challenging to control near-field interference patterns that exist in a
+wide range of physical systems, and which usually exhibit a reciprocal wave propagation. Here,
+we utilize the highly anisotropic dispersion and inherent non-reciprocity of a magnonic system to
+shape non-reciprocal emission of caustic like spin wave beams in an extended yttrium iron gar-
+net (YIG) film from a nano-constricted waveguide.
+We introduce a near-field diffraction model
+to study spin wave beamforming in homogeneous in-plane magnetized thin films, and reveal the
+propagation of non-reciprocal spin wave beams directly emitted from the nanoconstriction by spa-
+tially resolved microfocused Brillouin light spectroscopy. The experimental results agree well with
+both micromagnetic simulation, and the near-field diffraction model. The proposed method can be
+readily implemented to study spin wave interference at the sub-µm scale, which is central to the
+development of wave-based computing applications and magnonic devices.
+Caustics is a commonly used term to describe concen-
+tration of wave intensity influenced by curvlinear land-
+scape of diffusion or emission. They have been a subject
+of curiosity in a variety of physical systems, ranging from
+optics [1] and dark matter physics [2, 3] to condensed
+matter physics, including phononics [4–6], plasmonics
+[7, 8], electronics [9–11], and magnonics [12–23]. While
+the concept of caustics in optics refers to the concentra-
+tion of light rays due to reflection or refraction within a
+heterogeneous system, caustic beams in condensed mat-
+ter physics are related to the anisotropy of the dispersion
+relation in a homogeneous system, where the direction of
+the group velocity and wavevector do not coincide. More
+specifically, the existence of inflection points in the isofre-
+quency curve of an anisotropic system leads to a range
+of wavevectors with group velocity pointing in the same
+direction. This low spread in group velocity directions
+around these inflection points results in the generation
+of a caustic beam.
+In the last decade, caustics in spin systems have been ex-
+tensively studied theoretically [12, 13, 23, 24], and experi-
+mentally for their advantages with respect to the develop-
+ment of wave-based computing applications such as reser-
+voir computing [25–27], holographic memory [28, 29],
+and neuromorphic computing [30, 31]. They appear as
+a promising effect to shape and steer well-defined spin
+wave beams in adjustable frequency bands, and with a
+higher power density than conventional plane waves. The
+most established technique to excite well-defined caustic
+beams is to launch spin waves in a narrow ferromagnetic
+waveguide that enters a semi-infinite plane [14, 15, 32],
+where the junction acts as a pointlike diffracting source.
+Other methods to create spin wave caustics include the
+utilization of a collapsing bullet mode [16], nonlinear
+higher harmonic generation from localized edge modes
+[17], or are based on all-optical pointlike sources based
+on frequency comb rapid demagnetization [21]. Recently,
+the excitation of spin wave caustics has been achieved
+in extended films from the edges of a straight segment
+via NV magnetometry [33], using a periodic diffraction
+grating [34], or in a circular stripline antenna in both the
+Damon-Eshbach [23], and the backward-volume wave ge-
+ometry [19]. However, the unique potential of magnonic
+systems to combine non-reciprocity with nanoscale spin
+wave beam shaping in an extended thin film remains to
+be demonstrated.
+Here, we show the non-reciprocal emission of caustic spin
+wave beams in an extended yttrium iron garnet (YIG)
+film from a nano-constricted rf waveguide. We extend the
+previously developed near-field diffraction model (NFD)
+of spin waves in out-of-plane magnetized films [35, 36]
+to in-plane magnetized films, which we use to identify
+suitable antenna designs for shaping spin wave caustic
+beams. The predictions are then experimentally tested
+using microfocused Brillouin light scattering (BLS) by
+mapping the spin wave beam emission. Our experiments
+reveal a non-reciprocity in the caustic emission that de-
+pends on the relative orientation between microwave and
+biasing magnetic fields.
+The experimentally obtained
+spin wave maps agree well with NFD modeling and mi-
+cromagnetic simulations. Our results highlight the pos-
+sibility to control the shaping and steering of spin wave
+caustic beams, which feature narrow adjustable band-
+width, and long-range propagation.
+Experimentally, the excitation of coherent spin waves
+is achieved within a range of wavevector for which
+the dynamic dipolar interaction usually plays a major
+role (e.g. k ≤100 rad/µm). For thin films magnetized
+arXiv:2404.15011v4  [cond-mat.mes-hall]  11 Feb 2026
+
+
+=== PDF PAGE 2 ===
+2
+(e)
+𝑚𝑣[mT]
+v [µm]
+(a)
+u
+v
+ℎ
+𝐻𝑒𝑥𝑡
+𝑘𝑙
+𝑘𝑟
+u
+𝑚𝜉
+𝑚𝑢
+𝜉
+v
+𝐻𝑒𝑥𝑡
+𝑘𝑙
+𝑘𝑟
+u
+𝑚𝜉𝑚𝑣
+𝜉
+v [µm]
+u [µm]
+Hext
+MuMax3
+v [µm]
+u [µm]
+Hext
+MuMax3
+v [µm]
+NFD
+Hext
+𝑚𝑢[mT]
+Hext
+NFD
+(d)
+(h)
+(g)
+(c)
+kc
+Hext
+ℜ𝑒(෨ℎ𝑢)
+ku [rad/µm]
+kv [rad/µm]
+vg
+(b)
+෥𝑚𝑢[µT.µm²]    
+0
+2
+4
+20
+0
+ku [rad/µm]
+kv [rad/µm]
+kc
+vg
+Hext
+(f)
+ℑ𝑚(෨ℎ𝜉)
+෥𝑚𝑣[µT.µm²]    
+10
+0
+0
+-6
+6
+FIG. 1. (a) Sketch of the spin wave profiles along half a wave-
+length for oppositely propagating waves in DE configuration,
+together with the ac field generated by the antenna.(b) Su-
+perposition of in-plane Fourier components of the ac magneti-
+zation | ˜mu| (black-red scale bar), and ac field Re(˜hu) (green-
+blue scale bar) for a 500 nm square segment (white dotted line
+is the isofrequency curve). (c) NFD, and (d) MuMax3 sim-
+ulations in the DE-like configuration at 7.9 GHz for a 50 nm
+thick YIG film magnetized along v axis under a bias field of
+200 mT. (e),(f) Same as (a), (b) for bias field along along u-
+axis, showing out-of-plane ac field Im(˜hξ). (g) MuMax3, and
+(h) NFD simulations in the BVW-like configuration.
+in-plane, it is specifically this dipolar term that leads to
+an anisotropic dispersion relation, where the frequency
+of the spin waves, among other parameters, depends
+on the relative orientation between magnetization and
+wavevector [37].
+For suitable combinations of field,
+frequency and wavevector, the isofrequency curve in
+reciprocal space (ku, kv) possesses an inflection point⃗kc,
+which is referred to as a caustic point d2kv
+dk2
+u |k=kc = 0. In
+the vicinity of this point kc of zero curvature, a finite
+range of wavevectors have a group velocity pointing
+in the same direction [⃗vg =⃗∇k(ω)], which can lead to
+the emission of a spin wave caustic beam.
+The larger
+the region where the condition
+d2kv
+dk2
+u
+≈0 extends, the
+easier it will be to excite the caustic beams.
+Besides,
+a sufficiently constrained (ideally pointlike) spin wave
+source is required in order to effectively shape caustic
+beams. Figures 1(b), 1(f) show the isofrequency curves
+(white dotted lines) at 7.9 GHz for a 50 nm-thick YIG
+film magnetized by a bias field of 200 mT along the v-
+and u-axis respectively, superimposed on the Fourier
+transform of the ac field from a fictitious spin wave
+antenna consisting of a 500 nm side square in which
+a spatially uniform microwave current is assumed to
+flow along the v axis [Fig. 1(a), 1(e)]. One can see the
+necessary condition of having the caustic point located
+within an effective region of the two-dimensional (2D)
+emission spectrum in order to generate well-defined
+beams; see also the Supplemental Material (SM) [38] for
+the comparison with a rectangular segment.
+In the following, we adapt the NFD approach, which
+was shown to benchmark spin wave diffraction in out-of-
+plane magnetized films [35], for investigating the beam-
+forming in in-plane configurations. The approach con-
+sists of defining the dynamic susceptibility tensor ¯¯χxy in
+reciprocal space, which is obtained by inverting the lin-
+earized Landau-Lifschitz-Gilbert (LLG) equation [37, 39]
+in the 2D frame (x, y) transverse to the bias field direc-
+tion (z).
+For simplicity, we ignore magnetocrystalline
+anisotropy, and consider unpinned conditions at both
+top and bottom surfaces. We also restrict ourselves to
+the fundamental mode (n = 0), for which the spin wave
+profile is uniform across the thickness, and assume no
+coupling with higher-order modes. This last assumption
+is all the more relevant the thinner the film is, for which
+higher-order modes are fairly decoupled.
+The diffraction pattern from an arbitrarily shaped
+coplanar waveguide (CPW) can then be obtained by com-
+puting the inverse Fourier transform of the matrix prod-
+uct of the susceptibility tensor with the Fourier transform
+of the excitation field:⃗
+m(u, v, t) = eiωt
+ZZ +∞
+−∞
+dkudkv ¯¯χ⃗h(ku, kv) e−i(kuu+kvv),
+(1)
+where the susceptibility tensor ¯¯χ, and the excitation
+field⃗h(ku, kv) have been expressed in the laboratory
+frame (u, v), which is related to the shape of the spin
+wave antenna [38].⃗h(ku, kv) is a two-dimensional vector,
+made of the out-of-plane component hξ, and the in-plane
+component hin transverse to the bias field direction (z).
+Thus, we obtain a mapping in the steady state of the
+dynamic magnetization vector⃗m(u, v, t) = (mξ, min).
+Figure 1 shows the spin wave diffraction patterns ob-
+tained for the 500 nm square on top of a 50 nm-thick
+YIG film with a Gilbert damping α=2 ×10−4. In these
+simulations, we used a simple excitation profile derived
+from the expressions of the Oersted field of a 80 nm-thick
+
+
+=== PDF PAGE 3 ===
+3
+u [µm]
+v [µm]
+0
+MuMax 𝑚𝑢[mT]
+1.4
+(e)
+(f)
+u [µm]
+v [µm]
+0
+NFD 𝑚𝑢[mT]
+1.4
+(b)
+1µm
+Hext
+u
+v
+(a)
+u [µm]
+v [µm]
+(d)
+Hext>0
+Hext<0
+BLS (arb. unit)
+0
+Hext>0
+Hext<0
+v [µm]
+u [µm]
+ℎ𝑢
+[mT]
+Hext>0
+Hext<0
+Hext>0
+Hext<0
+0.07
+[µT.µm²]
+(i)
+-150
+0
+150
+ℑ𝑚(෨ℎ𝜉)
+kv [rad/µm]
+ku [rad/µm]
+ℜ𝑒(෨ℎ𝑢)
+[µT.µm²]
+(h)
+kv [rad/µm]
+ku [rad/µm]
+-20
+0
+60
+(c)
+v [µm]
+u [µm]
+ℎ𝜉
+[mT]
+(g)
+ku [rad/µm]
+kv [rad/µm]
+40
+0
+[µT.µm²]    
+0
+෥𝑚𝑢
+Hext
+kc
+vg
+FIG. 2. (a) Scanning microscope image of a 400 nm-wide and 2 µm-long constricted stripline. (b) 2D-field distribution of the in-
+plane hu, and (c) out-of-plane hξ components of the excitation field obtained via COMSOL MULTIPHYSICS. (d) BLS measurement
+at 7.5 GHz, and a bias field µ0Hext=±188 mT applied in the v-direction. (e) Corresponding MuMax3 simulations, and (f) NFD
+simulations for both bias field polarities. (g) In-plane Fourier components of the dynamic magnetization | ˜mu|. (h) Real part
+of the in-plane Fourier component of the ac field Re(hu). (i) Imaginary part of the out-of-plane Fourier component of the ac
+field Im(hξ) (dotted line is the isofrequency).
+straight rectangular conductor carrying uniform current
+density along v, for which we adjusted the current value
+to have maximum field of 0.1 mT. We simulate two lim-
+iting cases: (i) when the bias field is perpendicular to
+the in-plane component of the excitation field [Fig. 1(c),
+Damon-Eshbach (DE) like configuration], and (ii) when
+the bias field is parallel to the in-plane component of
+the excitation [(Fig. 1(g), backward volume wave (BVW)
+like configuration]. Alongside the NFD mapping, we also
+show in Figs. 1(d), 1(h) the corresponding micromag-
+netic simulations using MuMax3 [40], and taking into ac-
+count the same set of parameters and excitation geometry
+[38]. One can clearly appreciate the excellent quantita-
+tive agreement between both methods, and hence, these
+simple tests validate the NFD approach for sufficiently
+thin in-plane magnetized films. Moreover, the compar-
+ison between a 5 µm-long rectangular segment [38], and
+the 500 nm square evidence how a pointlike source is es-
+sential for properly shaping a single caustic beam.
+Furthermore, a pronounced non-reciprocity is observed in
+the DE-like configuration, for which a drastically reduced
+intensity is found on the left-hand side with respect to
+the bias field direction [Figs. 1(c), 1(d)]. As is sketched
+in Fig. 1(a), a chiral coupling occurs, in which the mi-
+crowave field distribution only matches the phase profile
+of spin waves for a single-sided propagation [38, 41–44].
+In essence, the chirality comes from the interplay of the
+even in-plane, and the odd out-of-plane components of
+the ac field with respect to center of the stripline. As the
+magnetic response results from the product in recipro-
+cal space between the antisymmetric susceptibility ten-
+sor and the excitation field, the wavevectors for which the
+in-plane and the out-of-plane component of the ac field
+have the same sign will be more effectively excited [38].
+We superimposed the in-plane Fourier component of the
+dynamic magnetization (black-red-yellow color scale) on
+the in-plane Re(˜hu), and the out-of-plane Im(˜hξ) com-
+ponents respectively in Figs. 1(b),(f). As expected, only
+the two caustic points on the right-hand side of the bias
+field (ku > 0) are effectively excited in the DE-like con-
+figuration. In contrast, the caustic beams appear fully
+symmetrical on either side of the bias field when it is
+parallel to the in-plane ac field [Figs. 1(g), 1(h)], as only
+the out-of-plane component of the ac field couples to
+the spin waves, and therefore the matching of the spin
+waves phase profiles is permitted for both propagation
+directions as sketched in Figs. 1(e), and all four caustic
+points are symmetrically excited in the BVW-like config-
+uration. In summary, chiral spin waves excitation favors
+directions to the right-hand side of the bias field direc-
+tion, accordingly with the Damon-Eshbach product rule⃗
+k⊥/k⊥=⃗n0 ×⃗M/Ms [45], where n0 is the internal nor-
+mal to the film top (bottom) surface if the antenna sits
+on top (bottom) of the film.
+To confirm our theoretical modeling results, we exper-
+imentally investigate the generation of caustic beams
+from a nano-constricted stripline patterned on top of an
+extended 200-nm thick YIG film by microfocused BLS
+spectroscopy [38].
+We fabricated two sets of antenna
+to study the two different field orientations: (i) DE-like
+configuration (Fig. 2), and (ii) BVW-like configuration
+(Fig. 3). Figure 2(a) shows an exemplary scanning elec-
+
+
+=== PDF PAGE 4 ===
+4
+tron image of a L=2 µm-long and w=400 nm-wide con-
+striction patterned on the top of the YIG film, using elec-
+tron beam lithography followed by ebeam evaporation of
+6 nm-Ti/80 nm-Au.
+(i) Damon-Eshbach-like configuration. We first
+present the BLS measurement for the geometry where
+the preponderant in-plane component of the excitation
+field hu at the constriction is perpendicular to the bias
+field. Figure 2(d) shows the 2D BLS maps obtained with
+continuous microwave power of −3 dBm at 7.5 GHz, and
+an applied field of µ0Hext=±188 mT. Only measure-
+ment on the right-hand side of the constriction were
+achievable as the BLS laser beam cannot penetrate
+through the gold antenna covering the left handside.
+For the positive polarity, e.g., field pointing upward [left
+panel of Fig. 2(d)], we observe two well-defined beams
+propagating symmetrically away from the constriction
+at about 58◦with respect to the x-axis. Conversely, for
+the negative polarity, e.g., field pointing downward [right
+panel of Fig. 2(d)], the beams are much less defined,
+and the signal rapidly decays as we move away from
+the constriction. This effect appears more pronounced
+in the corresponding MuMax3 and NFD simulations,
+shown respectively in Fig. 2(e) and Fig. 2(f), for which
+we used the microwave field distribution obtained with
+COMSOL MULTIPHYSICS as input, and which are shown in
+Fig. 2(b), 2(c) [38].
+This field-orientation non-reciprocity is due to the chiral
+coupling explained above. Figure 2(g) displays the in-
+plane Fourier component of the dynamic magnetization
+| ˜mu|, which indicates a much larger coupling strength
+for the wavevector pointing to the right-hand side of the
+bias field. In fact, the difference of parity between the
+in-plane and the out-of-plane components of the ac field
+shown respectively in Fig. 2(h) and Fig. 2(i) confirms
+a more effective contribution for ku > 0, where both
+components have the same sign.
+Despite some minor
+differences in chiral coupling between measurements and
+simulations, which could be due to the difficulty of defin-
+ing the microwave field distribution of the real device,
+a reasonable agreement between BLS measurements
+and simulations is found, demonstrating the control
+of caustic spin wave beam excitation at the nanoscale
+directly from an antenna.
+(ii) Backward-volume-wave-like configuration.
+In this configuration, the bias field is parallel to the
+in-plane component hu of the microwave magnetic field
+at the constriction.
+Figure 3(a) shows 2D BLS maps
+obtained using identical experimental conditions as in
+the DE-like configuration, e.g., an excitation frequency
+of 7.5 GHz, and an external field of µ0Hext=±188 mT.
+As is evident from the figure, a drastically different
+behavior is observed in the BVW-like configuration.
+Strikingly, the BLS measurements show a single sharply
+defined caustic beam emitted from the constriction,
+v [µm]
+u [µm]
+ℎ𝑣
+[mT]
+(d)
+(a)
+BLS (arb. unit)
+0
+0.07
+0
+MuMax 𝑚𝑣[mT]
+1.8
+(b)
+(c)
+u [µm]
+0
+NFD 𝑚𝑣[mT]
+1.8
+u [µm]
+u [µm]
+Hext>0
+Hext<0
+Hext>0
+Hext<0
+Hext>0
+Hext<0
+v [µm]
+v [µm]
+v [µm]
+ℎ
+𝐻𝑒𝑥𝑡
+𝑚𝜉
+𝑚𝑣
+𝑣
+𝜉
+𝑢
+(e)
+𝑘𝑟
+𝑘𝑙
+ku [rad/µm]
+kv [rad/µm]
+Hext
+(f)
+𝑘𝑐
+ℜ𝑒(෨ℎ𝑣)
+90
+0
+[µT.µm²]   
+Vg
+80
+-90
+0
+෥𝑚𝑣
+FIG. 3. (a) BLS measurement at 7.5 GHz, and a +188 mT
+(left) and -188 mT (right) bias field applied along u. (b) Cor-
+responding MuMax3, and (c) NFD simulations for both bias
+field polarities. (d) In-plane component hv of the microwave
+field obtained with COMSOL MULTIPHYSICS. (e) Sketch of the
+chiral coupling occurring at the edges of the constriction in
+the BVW-like configuration. (f) Superposition of the in-plane
+Fourier components of ac magnetization | ˜mv| (black-yellow
+color scale), and ac field |hv| (red-blue color scale) indicating
+the effective caustic locations.
+which exhibits a non-reciprocal behavior upon bias
+magnetic field reversal. If the magnetic field is positive
+along the u axis [Hext > 0, left panel of Fig. 3(a)], a
+single spin wave beam propagating in the negative v
+direction (downward) is detected. On the other hand,
+when Hext < 0 [right panel of Fig. 3(a)], a single upward
+propagating spin wave beam is detected. Each beam is
+comparable in intensity, and both have similar caustic
+angles ≈±45◦.
+We show the corresponding MuMax3
+and NFD simulations in Fig. 3(b) and Fig. 3(c) for
+which we also used the microwave field distribution
+obtained via COMSOL. Both simulations exhibit similar
+field-dependent single beam emission (see SM [38] for
+full-scale simulations).
+We again attribute this field-dependent non-reciprocity
+in the BVW-like configuration to a chiral coupling, but
+involving this time the interplay between the out-of-
+plane component hξ and the in-plane component hv of
+the microwave field. As shown in Fig. 3(d), the COMSOL
+simulations reveal that a significant microwave power
+localized around the edges of the coplanar waveguide,
+which creates a thin line of in-plane microwave field
+hv perpendicular to the bias field close to the con-
+
+
+=== PDF PAGE 5 ===
+5
+(b)
+(a)
+188mT
+188mT
+88mT
+58mT
+30mT
+88mT
+Hext>0
+5
+u [µm]
+0
+7.5 GHz
+4.4 GHz
+3.3 GHz
+Hext>0
+7.5 GHz
+4.4 GHz
+2.2 GHz
+y [µm]
+10
+0
+-10
+5
+u [µm]
+0
+BLS (arb. unit)
+0
+0.07
+Hext>0
+Hext>0
+Hext>0
+Hext>0
+y [µm]
+10
+0
+-10
+FIG. 4. (a) BLS measurement showing the angular depen-
+dence of the field and frequency.
+(b) Summary of caustic
+existence conditions. (Top) Frequency dependence of ampli-
+tude |mx|max, which corresponds to the maximum amplitude
+of |mx| at u=10 µm in the NFD simulations (black lines are
+for BVW-configuration, colored lines for DE-configuration).
+(Bottom) Comparison between measured caustic angles and
+theoretical values θc = π/2 −( \⃗
+vg,⃗Hext) extracted from the
+isofrequency curve at the corresponding applied fields. (black
+dashed line corresponds to FMR condition in field and fre-
+quency).
+striction.
+We sketched in Fig. 3(e) the essence of the
+chiral coupling in this configuration (bias field in the
+u direction), where the transverse propagation of spin
+waves in the v direction is only allowed on the right-hand
+side of the bias field.
+We also show in Fig. 3(f) the
+overlaying of the in-plane Fourier components of ac
+magnetization | ˜mv| with the FFT of the hv component
+of the microwave field confirming an efficient excitation
+only for the two caustic points located on the right-hand
+side of⃗Hext. Besides the satisfying agreement between
+measurement and simulations, one notices that the
+measured beam appears slightly thinner than in the
+simulations, which is likely due to the difficulty of repro-
+ducing the microwave field distribution of the real device.
+In the following, we analyze the angular dependence
+of the beam formation as a function of the bias field and
+excitation frequency, as well as the frequency dependence
+of the beam intensity at a given field. Figure 4(a) shows
+2D BLS maps at several bias fields (188, 88, 58, 30) mT,
+respectively at (7.5, 4.4, 3.3, 2.2) GHz for both config-
+urations. We observe that the beams can be gradually
+steered toward the bias field direction as the frequency is
+increased. In the DE-like configuration, the angle of the
+caustic beam with respect to the u axis increases with fre-
+quency, while in the BVW-like configuration, the angle
+decreases with increasing frequency.
+Figure 4(b) com-
+pares the experimentally obtained angles with the the-
+oretically expected caustic angles, derived numerically
+from f(ku, kv) as the angle between the group velocity
+and the direction perpendicular to the bias field [38]. We
+find a reasonable agreement within the error bars for the
+DE-like configuration, while the measured angles are sys-
+tematically lower than the theoretically expected ones for
+the BVW-like configuration.
+Additionally, we performed 50 NFD simulations for each
+bias field value over a 700 MHz frequency span to plot
+the frequency dependence of the caustic-beam amplitude,
+as presented in the top panel of Fig. 4(b).
+Strikingly,
+we find that the caustic-beam amplitude peaked right
+around the field-frequency values corresponding to the
+ferromagnetic resonance (FMR) condition. This obser-
+vation is consistent with the fact that the zero curvature
+(d2kv/dk2
+u ∼0) of the isofrequency curve extends over
+a broader range of wavevectors at around the FMR fre-
+quency for a given field. Furthermore, one notices that
+the peak amplitude of the caustic beams decreases with
+frequencies in the DE-configuration whereas it increases
+in the BVW-configuration [compare black and colored
+lines in the top panel of Fig. 4(b)].
+In conclusion,
+we demonstrated theoretically and
+experimentally the possibilty to shape non-reciprocal
+caustic beams in homogeneous ferromagnetic thin film
+directly from a nano-constricted stripline. First, we in-
+troduced a model that efficiently and accurately predicts
+spin wave diffraction in thin film magnetized in-plane,
+and which can readily predict the shaping of caustic spin
+wave beams from arbitrary shaped antenna. Then, using
+microfocused BLS, we confirmed the predictions of the
+model, revealing spin wave caustic chiral emission from
+nanometric constrictions. We studied two measurement
+configurations, one for which the in-plane microwave
+field was essentially perpendicular to the magnetization
+(DE) throughout the constriction, and the other one
+for which they were parallel to each other (BVW). In
+the DE configuration, we observed a chiral excitation of
+two spin wave beams for a given field polarity. In the
+BVW configuration, we observed a single non-reciprocal
+upward- or downward-going beam that can be controlled
+at ease by changing the polarity of the bias field, and
+with a steerability precisely controlled by tuning the
+bias field magnitude and the excitation frequency. Our
+work provides deep insight into tailoring spin wave
+caustics using nano-sized waveguides, which we expect
+will accelerate the development of interference-based
+
+
+=== PDF PAGE 6 ===
+6
+magnonic logic and computing devices.
+This work has benefited from a government grant op-
+erated by the French National Research Agency as part
+of the France 2030 program, Reference No.
+ANR-22-
+EXSP-0004 (SWING), as well as the ANR project Mag-
+Func/ANR-20-CE91-0005, and the Transatlantic Re-
+search Partnership, a program of FACE Foundation and
+the French Embassy. We also acknowledge financial sup-
+port by the Interdisciplinary Thematic Institute QMat,
+as part of the ITI 2021-2028 Program of the University of
+Strasbourg, CNRS and Inserm, IdEx Unistra (ANR 10
+IDEX 0002), SFRI STRAT’US Project (ANR 20 SFRI
+0012), and ANR-17-EURE-0024 under the framework of
+the French Investments for the Future Program, as well
+as the High Performance Computing Center of the Uni-
+versity of Strasbourg for supporting this work by pro-
+viding scientific support and access to computing re-
+sources.
+Part of the computing resources were funded
+by the Equipex Equip@Meso project (Programme In-
+vestissements d’Avenir) and the CPER Alsacalcul/Big
+Data. Research at the University of Delaware was sup-
+ported by the U.S. Department of Energy, Office of Basic
+Energy Sciences, Division of Materials Sciences and En-
+gineering under Award No. DE-SC0020308. The authors
+acknowledge the use of facilities and instrumentation sup-
+ported by NSF through the University of Delaware Ma-
+terials Research Science and Engineering Center, DMR-
+2011824. We thank Anish Rai for characterizing the YIG
+films by FMR.
+∗mbj@udel.edu
+† vincent.vlaminck@imt-atlantique.fr
+[1] Y.
+A.
+Kravtsov
+and
+Y.
+I.
+Orlov,
+Caustics, Catastrophes and Wave Fields
+(Springer
+Berlin, 1993).
+[2] D. Davydov and S. Troitsky, Testing universal dark-
+matter
+caustic
+rings
+with
+galactic
+rotation
+curves,
+Physics Letters B 839, 137798 (2023).
+[3] S. D. M. White and M. Vogelsberger, Dark matter caus-
+tics, Monthly Notices of the Royal Astronomical Society
+392, 281 (2009).
+[4] A. G. Every, Formation of phonon-focusing caustics in
+crystals, Physical Review B 34, 2852 (1986).
+[5] H. J. Maris, Enhancement of heat pulses in crystals due
+to elastic anisotropy, The Journal of the Acoustical So-
+ciety of America 50, 812–818 (1971).
+[6] B. Taylor, H. J. Maris, and C. Elbaum, Phonon focusing
+in solids, Physical Review Letters 23, 416–419 (1969).
+[7] X. Shi, X. Lin, F. Gao, H. Xu, Z. Yang, and B. Zhang,
+Caustic graphene plasmons with Kelvin angle, Physical
+Review B 92, 081404 (2015).
+[8] I. Epstein and A. Arie, Arbitrary bending plasmonic light
+waves, Physical Review Letters 112, 023903 (2014).
+[9] J. Spector, H. L. Stormer, K. W. Baldwin, L. N.
+Pfeiffer, and K. W. West, Electron focusing in two-
+dimensional systems by means of an electrostatic lens,
+Applied Physics Letters 56, 1290–1292 (1990).
+[10] V. V. Cheianov, V. Fal’ko, and B. L. Altshuler, The fo-
+cusing of electron flow and a veselago lens in graphene
+p-n junctions, Science 315, 1252–1255 (2007).
+[11] J. Cserti, A. P´alyi, and C. P´eterfalvi, Caustics due to a
+negative refractive index in circular graphene p−n junc-
+tions, Phys. Rev. Lett. 99, 246801 (2007).
+[12] O. B¨uttner, M. Bauer, S. O. Demokritov, B. Hillebrands,
+Y. S. Kivshar, V. Grimalsky, Y. Rapoport, and A. N.
+Slavin, Linear and nonlinear diffraction of dipolar spin
+waves in yttrium iron garnet films observed by space-
+and time-resolved brillouin light scattering, Phys. Rev.
+B 61, 11576 (2000).
+[13] V. Veerakumar and R. E. Camley, Magnon focusing in
+thin ferromagnetic films, Phys. Rev. B 74, 214401 (2006).
+[14] V. E. Demidov, S. O. Demokritov, D. Birt, B. O’Gorman,
+M. Tsoi, and X. Li, Radiation of spin waves from the open
+end of a microscopic magnetic-film waveguide, Physical
+Review B 80, 014429 (2009).
+[15] T. Schneider, A. A. Serga, A. V. Chumak, C. W.
+Sandweg, S. Trudel, S. Wolff, M. P. Kostylev, V. S.
+Tiberkevich, A. N. Slavin, and B. Hillebrands, Non-
+diffractive subwavelength wave beams in a medium with
+externally controlled anisotropy, Phys. Rev. Lett. 104,
+197203 (2010).
+[16] M. P. Kostylev, A. A. Serga, and B. Hillebrands, Radia-
+tion of caustic beams from a collapsing bullet, Physical
+Review Letters 106, 134101 (2011).
+[17] T. Sebastian, T. Br¨acher, P. Pirro, A. A. Serga, B. Hille-
+brands, T. Kubota, H. Naganuma, M. Oogane, and
+Y. Ando, Nonlinear emission of spin-wave caustics from
+an edge mode of a microstructured Co2Mn0.6Fe0.4Si
+waveguide, Physical Review Letters 110, 067201 (2013).
+[18] R. Gieniusz, H. Ulrichs, V. D. Bessonov, U. Guzowska,
+A. I. Stognii, and A. Maziewski, Single antidot as a pas-
+sive way to create caustic spin-wave beams in yttrium
+iron garnet films, Applied Physics Letters 102, 102409
+(2013).
+[19] M. Madami, Y. Khivintsev, G. Gubbiotti, G. Dudko,
+A. Kozhevnikov, V. Sakharov, A. Stal’makhov, A. Khi-
+tun, and Y. Filimonov, Nonreciprocity of backward vol-
+ume spin wave beams excited by the curved focusing
+transducer, Applied Physics Letters 113, 152403 (2018).
+[20] Y. Shiota, S. Funada, R. Hisatomi, T. Moriyama, and
+T. Ono, Imaging of caustic-like spin wave beams using op-
+tical heterodyne detection, Applied Physics Letters 116,
+192411 (2020).
+[21] S. Muralidhar, R. Khymyn, A. A. Awad, A. Alem´an,
+D. Hanstorp, and J. ˚Akerman, Femtosecond laser pulse
+driven caustic spin wave beams, Physical Review Letters
+126, 037204 (2021).
+[22] R. A. Gallardo, P. Alvarado-Seguel, A. K´akay, J. Lind-
+ner, and P. Landeros, Spin-wave focusing induced by
+dipole-dipole interaction in synthetic antiferromagnets,
+Phys. Rev. B 104, 174417 (2021).
+[23] A. Wartelle, F. Vilsmeier, T. Taniguchi, and C. H. Back,
+Caustic spin wave beams in soft thin films: Properties
+and classification, Phys. Rev. B 107, 144431 (2023).
+[24] J.-V. Kim, R. L. Stamps, and R. E. Camley, Spin wave
+power flow and caustics in ultrathin ferromagnets with
+the dzyaloshinskii-moriya interaction, Physical Review
+Letters 117, 10.1103/physrevlett.117.197204 (2016).
+[25] A. Papp, G. Csaba, and W. Porod, Characterization of
+
+
+=== PDF PAGE 7 ===
+7
+nonlinear spin-wave interference by reservoir-computing
+metrics, Applied Physics Letters 119, 112403 (2021).
+[26] M.-K. Lee and M. Mochizuki, Reservoir computing with
+spin waves in a skyrmion crystal, Phys. Rev. Appl. 18,
+014074 (2022).
+[27] O. Lee, T. Wei, K. D. Stenning, J. C. Gartside, D. Prest-
+wood, S. Seki, A. Aqeel, K. Karube, N. Kanazawa,
+Y. Taguchi, C. Back, Y. Tokura, W. R. Branford, and
+H. Kurebayashi, Task-adaptive physical reservoir com-
+puting, Nature Materials 23, 79 (2024).
+[28] A. Khitun, Magnonic holographic devices for special type
+data processing, Journal of Applied Physics 113, 164503
+(2013).
+[29] A. Khitun, Parallel database search and prime factoriza-
+tion with magnonic holographic memory devices, Journal
+of Applied Physics 118, 243905 (2015).
+[30] A. Papp, W. Porod, and G. Csaba, Nanoscale neural
+network using non-linear spin-wave interference, Nature
+Commun. 12, 6422 (2021).
+[31] D. V. Christensen, R. Dittmann, B. Linares-Barranco,
+A. Sebastian, M. Le Gallo, A. Redaelli, S. Slesazeck,
+T. Mikolajick, S. Spiga, S. Menzel, I. Valov, G. Mi-
+lano, C. Ricciardi, S.-J. Liang, F. Miao, M. Lanza, T. J.
+Quill, S. T. Keene, A. Salleo, J. Grollier, D. Markovi´c,
+A. Mizrahi, P. Yao, J. J. Yang, G. Indiveri, J. P. Stra-
+chan, S. Datta, E. Vianello, A. Valentian, J. Feldmann,
+X. Li, W. H. P. Pernice, H. Bhaskaran, S. Furber,
+E. Neftci, F. Scherr, W. Maass, S. Ramaswamy, J. Tap-
+son, P. Panda, Y. Kim, G. Tanaka, S. Thorpe, C. Bar-
+tolozzi, T. A. Cleland, C. Posch, S. Liu, G. Panuccio,
+M. Mahmud, A. N. Mazumder, M. Hosseini, T. Mohs-
+enin, E. Donati, S. Tolu, R. Galeazzi, M. E. Christensen,
+S. Holm, D. Ielmini, and N. Pryds, 2022 roadmap on
+neuromorphic computing and engineering, Neuromorphic
+Computing and Engineering 2, 022501 (2022).
+[32] F. Heussner, M. Nabinger, T. Fischer, T. Br¨acher,
+A. A. Serga, B. Hillebrands, and P. Pirro, Frequency-
+division multiplexing in magnonic logic networks based
+on caustic-like spin-wave beams, Phys. Status Solidi
+Rapid Res. Lett. 12, 1800409 (2018).
+[33] I. Bertelli, J. J. Carmiggelt, T. Yu, B. G. Simon, C. C.
+Pothoven, G. E. W. Bauer, Y. M. Blanter, J. Aarts, and
+T. van der Sar, Magnetic resonance imaging of spin-wave
+transport and interference in a magnetic insulator, Sci.
+Adv. 6, eabd3556 (2020).
+[34] U. Makartsou, M. Golebiewski, U. Guzowska, A. Stognij,
+R. Gieniusz, and M. Krawczyk, Spin-wave self-imaging:
+Experimental and numerical demonstration of caustic
+and talbot-like diffraction patterns, Applied Physics Let-
+ters 124, 192406 (2024).
+[35] V. Vlaminck, L. Temdie, V. Castel, M. B. Jungfleisch,
+D. Stoeffler, Y. Henry, and M. Bailleul, Spin wave diffrac-
+tion model for perpendicularly magnetized films, Journal
+of Applied Physics 133, 053903 (2023).
+[36] L. Temdie, V. Castel, M. Jungfleisch, R. Bernard, H. Ma-
+jjad, D. Stoeffler, Y. Henry, M. Bailleul, and V. Vlam-
+inck, Probing spin wave diffraction patterns of curved
+antennas, Phys. Rev. Appl. 21, 014032 (2024).
+[37] B. A. Kalinikos and A. N. Slavin, Theory of dipole-
+exchange spin wave spectrum for ferromagnetic films
+with mixed exchange boundary conditions, Journal of
+Physics C: Solid State Physics 19, 7013 (1986).
+[38] See
+Supplemental
+Material
+at
+http://link.aps.org/supplemental/DOI
+for:
+Sec.
+I,
+NFD model for in-plane magnetized thin film ; Sec. II,
+chiral excitation of caustics beam; Sec. III, microwave
+field distribution;
+Sec. VI, Brillouin light scattering
+spectroscopy.
+[39] B. A. Kalinikos, Spectrum and linear excitation of spin
+waves in ferromagnetic films, Soviet Physics Journal 24,
+718 (1981).
+[40] A. Vansteenkiste, J. Leliaert, M. Dvornik, M. Helsen,
+F. Garcia-Sanchez, and B. Van Waeyenberge, The design
+and verification of MuMax3, AIP Advances 4, 107133
+(2014).
+[41] T. Yu and G. E. W. Bauer, Chiral coupling to magne-
+todipolar radiation, in Topics in Applied Physics, Topics
+in Applied Physics (Springer International Publishing,
+Cham, 2021) pp. 1–23.
+[42] T. Devolder, Propagating-spin-wave spectroscopy using
+inductive antennas: Conditions for unidirectional energy
+flow, Phys. Rev. Appl. 20, 054057 (2023).
+[43] L. Temdie, V. Castel, C. Dubs, G. Pradhan, J. Solano,
+H. Majjad, R. Bernard, Y. Henry, M. Bailleul, and
+V. Vlaminck, High wave vector non-reciprocal spin wave
+beams, AIP Advances 13, 025207 (2023).
+[44] L. Temdie, V. Castel, T. Reimann, M. Lindner, C. Dubs,
+G. Pradhan, J. Solano, R. Bernard, H. Majjad, Y. Henry,
+M. Bailleul, and V. Vlaminck, Chiral excitation of ex-
+change spin waves using gold nanowire grating, Magne-
+tochem. 9, 199 (2023).
+[45] A.
+G.
+Gurevich
+and
+G.
+A.
+Melkov,
+Magnetization Oscillations and Waves
+(CRC
+Press,
+Boca Raton, 1996).
+[46] K. Y. Guslienko and A. N. Slavin, Magnetostatic green’s
+functions for the description of spin waves in finite rect-
+angular magnetic dots and stripes, Journal of Magnetism
+and Magnetic Materials 323, 2418–2424 (2011).
+[47] M. Kostylev, Non-reciprocity of dipole-exchange spin
+waves in thin ferromagnetic films, J. Appl. Phys. 113,
+053907 (2013).
+[48] M. Haidar, M. Bailleul, M. Kostylev, and Y. Lao, Nonre-
+ciprocal oersted field contribution to the current-induced
+frequency shift of magnetostatic surface waves, Phys.
+Rev. B 89, 094426 (2014).

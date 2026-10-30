@@ -1,0 +1,19 @@
+Editorial and factual review, 2026-10-21.
+
+The complete Chinese report draft was read under the writing skill.
+The revision replaced compressed terminology with direct explanations,
+removed repeated cautionary endings, and retained the work's main sequence:
+model, propagation, observed changes, literature, four tests, and next steps.
+
+An independent fact check verified the numerical comparisons and current
+artifact versions. The observation time and units were made explicit,
+the location of long-time tracking files was corrected, and reference [9]
+was completed with author names and DOI.
+
+The figure captions distinguish the shared preparation comparison from the
+separate natural-tail measurement test. The bibliography and methods detail
+remain in the library and code indexes rather than expanding the report body.
+
+Final source: report.md.
+Visual acceptance and the final PDF hash are in visual-review.txt and
+pdf-checks.json. This record does not claim a new scientific result.

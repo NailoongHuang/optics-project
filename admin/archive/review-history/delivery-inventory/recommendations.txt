@@ -1,0 +1,48 @@
+建议采用一个新交付包，原工作区不移动、不删除。
+
+推荐结构：
+  00_先读我.md
+  报告/（本次PDF与可编辑源）
+  文献索引/（统一目录、阅读顺序、来源与版本；可放唯一PDF阅读副本）
+  工作区/（保持原目录层级的项目快照）
+      code/
+      figures/
+      research/
+      Note/
+      literature/
+      presentations/
+      tmp/（旧稿与已有审阅证据）
+  inventory.csv / manifest.json
+
+保持原目录层级比把所有.py、PDF和图片分别移到平面文件夹可靠。
+Python图像与研究脚本大量按__file__寻找共享代码、NPZ与相邻JSON。
+
+当前入口：
+1. Note/single_magnon_derivation/main.pdf（配套main.tex，2页的现行推导）。
+2. presentations/midterm/output/中期报告_统一符号与传播优化版.pptx（19页现行汇报）。
+3. presentations/midterm/output/中期报告_统一符号与传播优化版_预览.pdf。
+4. research/wavepacket-prospects/index.html（四项最新最小测试Demo）。
+5. research/wavepacket-prospects/README.md（四项测试与展望汇总）。
+6. literature/cosine-lattice-wavepacket-audit/README.md（波包追踪与已有文献对照）。
+7. figures/midterm-report/index.html 和 midterm-figure-atlas.pdf（早期成套图表）。
+
+历史材料：
+- Note/toy_model 与 Note/toy_model_EOM 是旧笔记；应保留，但不要当现行推导入口。
+- code/backups/2026-10-19-before-spin-wave-fix/ 保存修正前代码和动画。
+- presentations中明确标18页、candidate、source-before、revisions的文件是历史阶段。
+- 当前PPT三个稳定文件名及-r2发布版哈希相同，不应当作四个不同研究结果。
+- tmp中保存前一版main.tex/PDF、多个推导稿及评论，体积约5MB，可一并归档。
+
+可省略的复制项：
+- presentations/midterm/build/node_modules：Windows Junction，指向外部运行时，必须在递归前跳过。
+- __pycache__、*.pyc、TeX辅助文件。
+- 四个deck.proto.json：仅由构建脚本写出，未找到读取者，共约1020.3MiB。
+- .codex属于本机协作配置，不进入研究资料包。
+
+不要整个排除presentations/midterm/build；它含编辑源、source-before导入文件、assets、历史PPT和审核记录。
+排除上述缓存后的当前快照约818.5MiB、1144文件。原始粗总量含外部node_modules Junction，不能把它算作作者资料。
+
+便携性说明：
+科学Python部分保留相对结构后可以复用；字体和Python包仍需安装。
+PowerPoint成品可独立查看和编辑，但其.mjs构建脚本含绝对项目路径和Codex运行时路径；换机器需重新配置，不应承诺开箱重建。
+打包前应再次清点本轮新增下载和报告，并对复制文件做SHA-256核对。

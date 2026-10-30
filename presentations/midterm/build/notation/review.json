@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "slides": 19,
+  "visual_reviewed_slides": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "inspection": "All final exported slides reviewed at full size. Fixed-coordinate GIF initial/middle/end frames reviewed. Both embedded GIF byte hashes match the checked laboratory assets.",
+  "notation_audit": {
+    "passed": true,
+    "slides": 19,
+    "unchanged_native_chart_count": 5,
+    "forbidden_aliases_absent": true,
+    "embedded_gifs_match_fixed_lab_assets": true,
+    "min_probability_in_fixed_view": 0.9999999988732283,
+    "numerical_source_unchanged_sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84"
+  },
+  "delivery_check": {
+    "passed": true,
+    "slides": 19,
+    "user_maximum": 20,
+    "gif_frames": [
+      61,
+      61
+    ],
+    "sha256": "d8cdafeca753e339bf2e4df9ad31fc54a528c7c999efa92a2d5bf3560e94fdd8",
+    "native_charts": 5,
+    "roundtrip_max_pixel_mae": 0.0003298611111111111,
+    "preview_pages": 19,
+    "powerpoint_application_playback_tested": false
+  },
+  "pptx_sha256": "d8cdafeca753e339bf2e4df9ad31fc54a528c7c999efa92a2d5bf3560e94fdd8",
+  "pdf_sha256": "9c520b0f5b486c52d4fe789e6f62b558ee94a622f7fbc8df3767b9a12599ad79",
+  "source_preserved": "source-before-notation.pptx and source-before-notation.pdf",
+  "limitations": [
+    "PDF is static",
+    "Native PowerPoint playback not tested",
+    "Original finite-time scientific scope preserved"
+  ]
+}

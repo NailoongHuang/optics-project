@@ -1,0 +1,14 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/lavsuc","index":25,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/ah83ytg7","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"各向异性同时改变方向与包络尺度","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/x4zm98zi","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/c3ql03yx","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C10、C11　q₀ = (0.7,0.7)，σ = 4","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/3exk3yhg","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"26","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/b21sn2do","kind":"image","position":{"left":45,"top":142,"width":791,"height":391},"fit":"contain","alt":"c10-anisotropy-direction"},
+{"id":"sh/pgzm5ozm","kind":"textbox","position":{"left":886,"top":150,"width":336,"height":34},"text":"相同的波矢方向","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/of6lw3y1","kind":"textbox","position":{"left":886,"top":193,"width":336,"height":140},"text":"q₀ 的方向均为 45°。\nη = 1：传播方向 45°。\nη = 0.3：传播方向 16.70°。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7a14fixk","kind":"textbox","position":{"left":886,"top":363,"width":336,"height":34},"text":"τ = 60 的宽度","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/m9s36dgz","kind":"textbox","position":{"left":886,"top":406,"width":336,"height":140},"text":"η = 0.3 时\nσₓ = 6.970a\nσᵧ = 4.351a","style":{"fontSize":24,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/w3qlkfmp","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/x4zmdk3a","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"减弱 y 方向交换会同时降低 y 向质心速度和速度方差。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

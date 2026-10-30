@@ -1,0 +1,408 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2026-09-09T00:15:49Z",
+      "timestamp": 1788912949304,
+      "version": "build-2803163510"
+    },
+    "reference-count": 36,
+    "publisher": "American Physical Society (APS)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2008,
+              4,
+              2
+            ]
+          ],
+          "date-time": "2008-04-02T00:00:00Z",
+          "timestamp": 1207094400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Phys. Rev. A"
+    ],
+    "DOI": "10.1103/physreva.77.043804",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2008-04-03T02:56:34Z",
+      "timestamp": 1207191394000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 48,
+    "title": [
+      "Long-range interaction in waveguide lattices"
+    ],
+    "prefix": "10.1103",
+    "volume": "77",
+    "author": [
+      {
+        "given": "Alexander",
+        "family": "Szameit",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Pertsch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefan",
+        "family": "Nolte",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andreas",
+        "family": "Tünnermann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Falk",
+        "family": "Lederer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2008,
+          4,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "PhysRevA.77.043804Cc1R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JQE.1983.1071950"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.85.1863"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.13.000794"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc4R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.81.3383"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.90.023902"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPEX.13.010552"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.66.046602"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01452"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.29.000468"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.14.006055"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.32.000397"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.173903"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.98.123903"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.74.043610"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.30.002611"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00340-005-2127-4"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.15.009737"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.74.066609"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.023901"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.29.002752"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.95.053902"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2735953"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OL.23.001701"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/JOSAB.24.002632"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc25R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.83.4756"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.83.4752"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.96.053903"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc28R1",
+        "volume-title": "Optical Electronics",
+        "author": "A. Yariv",
+        "year": "1991"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.75.053814"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.15.001579"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.65.056607"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00340-006-2556-8"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OPEX.13.010571"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc34R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.58.2059"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc35R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.355934"
+      },
+      {
+        "key": "PhysRevA.77.043804Cc36R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.apm.2005.06.008"
+      }
+    ],
+    "container-title": [
+      "Physical Review A"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.aps.org/article/10.1103/PhysRevA.77.043804",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevA.77.043804/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2017-04-05T17:04:31Z",
+      "timestamp": 1491411871000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/PhysRevA.77.043804"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          4,
+          2
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2008,
+            4
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/physreva.77.043804",
+    "relation": {},
+    "ISSN": [
+      "1050-2947",
+      "1094-1622"
+    ],
+    "issn-type": [
+      {
+        "value": "1050-2947",
+        "type": "print"
+      },
+      {
+        "value": "1094-1622",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2008,
+          4,
+          2
+        ]
+      ]
+    },
+    "article-number": "043804"
+  }
+}

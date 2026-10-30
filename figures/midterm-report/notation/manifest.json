@@ -1,0 +1,300 @@
+{
+  "items": [
+    {
+      "id": "g00_cover",
+      "title": "能带与零曲率轨迹",
+      "caption": "能带能量epsilon/Jx与解析零曲率轨迹。坐标kx a/pi、ky a/pi。",
+      "files": {
+        "png": "g00_cover.png",
+        "svg": "g00_cover.svg"
+      }
+    },
+    {
+      "id": "g01_multibz_eta1",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "Jy/Jx=1，扩展3x3布里渊区。左epsilon/Jx，右无量纲图面(kx a,ky a,epsilon/Jx)的高斯曲率，范围正负1。",
+      "files": {
+        "png": "g01_multibz_eta1.png",
+        "svg": "g01_multibz_eta1.svg"
+      }
+    },
+    {
+      "id": "g02_multibz_eta03",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "Jy/Jx=0.3，能量色标与上一图相同，曲率色标改为正负0.3。",
+      "files": {
+        "png": "g02_multibz_eta03.png",
+        "svg": "g02_multibz_eta03.svg"
+      }
+    },
+    {
+      "id": "g03_zero_locus_band",
+      "title": "扩展布里渊区：能带与高斯曲率",
+      "caption": "左侧只画精确零曲率轨迹上的epsilon/Jx，线外留空。右侧为对应完整曲率。",
+      "files": {
+        "png": "g03_zero_locus_band.png",
+        "svg": "g03_zero_locus_band.svg"
+      }
+    },
+    {
+      "id": "g04_candidates",
+      "title": "三类候选中心",
+      "caption": "中心波矢A=(0.7/a,0.7/a)，B=(pi/(2a),0.7/a)，C=(pi/(2a),pi/(2a))。",
+      "files": {
+        "png": "g04_candidates.png",
+        "svg": "g04_candidates.svg"
+      }
+    },
+    {
+      "id": "g05_spectral_support",
+      "title": "有限频谱与零曲率轨迹",
+      "caption": "局部波矢坐标为(kx-kx0)a和(ky-ky0)a。圆线表示初始谱功率相对峰值0.1、0.5、0.9。sigma=6a，Delta k=1/(12a)。背景曲率正负0.3。",
+      "files": {
+        "png": "g05_spectral_support.png",
+        "svg": "g05_spectral_support.svg"
+      }
+    },
+    {
+      "id": "eq_dispersion",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_dispersion.png",
+        "svg": "eq_dispersion.svg"
+      }
+    },
+    {
+      "id": "eq_lattice_H",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_lattice_H.png",
+        "svg": "eq_lattice_H.svg"
+      }
+    },
+    {
+      "id": "eq_action",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_action.png",
+        "svg": "eq_action.svg"
+      }
+    },
+    {
+      "id": "eq_state",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_state.png",
+        "svg": "eq_state.svg"
+      }
+    },
+    {
+      "id": "eq_eom",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_eom.png",
+        "svg": "eq_eom.svg"
+      }
+    },
+    {
+      "id": "eq_evolution",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_evolution.png",
+        "svg": "eq_evolution.svg"
+      }
+    },
+    {
+      "id": "eq_initial",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_initial.png",
+        "svg": "eq_initial.svg"
+      }
+    },
+    {
+      "id": "eq_derivatives1",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_derivatives1.png",
+        "svg": "eq_derivatives1.svg"
+      }
+    },
+    {
+      "id": "eq_derivatives2",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_derivatives2.png",
+        "svg": "eq_derivatives2.svg"
+      }
+    },
+    {
+      "id": "eq_curvature",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_curvature.png",
+        "svg": "eq_curvature.svg"
+      }
+    },
+    {
+      "id": "eq_zeros",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_zeros.png",
+        "svg": "eq_zeros.svg"
+      }
+    },
+    {
+      "id": "eq_reference",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_reference.png",
+        "svg": "eq_reference.svg"
+      }
+    },
+    {
+      "id": "eq_cubic",
+      "title": "Physical-variable equation",
+      "caption": "位置x,y与波矢kx,ky均为物理变量，a为晶格间距，hbar显式保留。",
+      "files": {
+        "png": "eq_cubic.png",
+        "svg": "eq_cubic.svg"
+      }
+    },
+    {
+      "id": "g_lattice",
+      "title": "局部交换晶格",
+      "caption": "位置用x,y表示，相邻格点相差晶格间距a，横向与纵向交换分别为Jx与Jy。",
+      "files": {
+        "png": "g_lattice.png",
+        "svg": "g_lattice.svg"
+      }
+    },
+    {
+      "id": "g06_initial_carriers",
+      "title": "相同概率包络，不同载波",
+      "caption": "t=0，sigma=6a，Jy/Jx=1。总概率1，相同初始包络，固定A0=max|psi(x,y,0)|。",
+      "files": {
+        "png": "g06_initial_carriers.png",
+        "svg": "g06_initial_carriers.svg"
+      }
+    },
+    {
+      "id": "g07_final_probability",
+      "title": "同初宽波包的末态对照",
+      "caption": "t=180 hbar/Jx，sigma=6a，Jy/Jx=1。各自质心坐标，固定共同P0=maxP(x,y,0)，虚线半径2sigma。",
+      "files": {
+        "png": "g07_final_probability.png",
+        "svg": "g07_final_probability.svg"
+      }
+    },
+    {
+      "id": "g08_final_real",
+      "title": "同初宽波包的末态对照",
+      "caption": "t=180 hbar/Jx，sigma=6a，Jy/Jx=1。固定相位与A0。",
+      "files": {
+        "png": "g08_final_real.png",
+        "svg": "g08_final_real.svg"
+      }
+    },
+    {
+      "id": "g10_anisotropic_design",
+      "title": "同一零曲率线点的交换比对照",
+      "caption": "B中心，固定sigma=6a和t=180 hbar/Jx，比较Jy/Jx=1和0.3。",
+      "files": {
+        "png": "g10_anisotropic_design.png",
+        "svg": "g10_anisotropic_design.svg"
+      }
+    },
+    {
+      "id": "g09_higher_order_limit",
+      "title": "有限带宽下的高阶形变",
+      "caption": "C中心，sigma=4a，t=0,180,360 hbar/Jx。右图减去常数与一次项后的epsilon/Jx，横轴(kx-pi/(2a))a，ky=pi/(2a)。",
+      "files": {
+        "png": "g09_higher_order_limit.png",
+        "svg": "g09_higher_order_limit.svg"
+      }
+    },
+    {
+      "id": "g12_phase_budget",
+      "title": "频谱内相对平移态的残余相位",
+      "caption": "t=180 hbar/Jx，减去按谱平均速度平移所需的相位及谱平均公共相位，所有面板正负3rad。",
+      "files": {
+        "png": "g12_phase_budget.png",
+        "svg": "g12_phase_budget.svg"
+      }
+    },
+    {
+      "id": "g13_real_animation",
+      "title": "三组初步设计的传播动画",
+      "caption": "三中心，同sigma=6a，t=0至180 hbar/Jx，共61帧，各自质心坐标，固定初始相位和A0。",
+      "files": {
+        "gif": "g13_real_animation.gif"
+      },
+      "frames": 61
+    },
+    {
+      "id": "g14_lab_probability_animation",
+      "title": "固定坐标中的波包传播",
+      "caption": "固定x,y实验室坐标，x/a,y/a范围均为-35至225；三组初宽6a，Jy=Jx，t=0至180hbar/Jx。虚线为实际概率质心轨迹。P0固定为共同初始峰值，不逐帧重标度。",
+      "files": {
+        "gif": "g14_lab_probability_animation.gif"
+      },
+      "frames": 61,
+      "min_mass_in_view": 0.9999999988732283,
+      "laboratory_limits_a": [
+        -35,
+        225
+      ],
+      "local_inset": false
+    },
+    {
+      "id": "g15_lab_real_animation",
+      "title": "固定坐标中的波包传播",
+      "caption": "固定x,y实验室坐标，x/a,y/a范围均为-35至225；三组初宽6a，Jy=Jx，t=0至180hbar/Jx。虚线为实际概率质心轨迹。左上附随质心移动的载波局部放大，主图仍为固定坐标。",
+      "files": {
+        "gif": "g15_lab_real_animation.gif"
+      },
+      "frames": 61,
+      "min_mass_in_view": 0.9999999988732283,
+      "laboratory_limits_a": [
+        -35,
+        225
+      ],
+      "local_inset": true
+    }
+  ],
+  "source_data": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\curvature-design\\design_data.npz",
+  "checks": {
+    "passed": true,
+    "scaled_graph_axes": "(kx*a, ky*a, epsilon/Jx)",
+    "physical_derivative_curvature_residual": 0,
+    "units": {
+      "position": "x,y",
+      "wavevector": "kx,ky",
+      "energy": "epsilon",
+      "time": "t",
+      "plot_time": "t in hbar/Jx"
+    },
+    "data_sha256": "2a31a8889ac08f91b45ce66b480c237b8822d670e6fc52f37fae42f201716a84",
+    "old_to_physical": {
+      "q": "a*k",
+      "e": "epsilon/Jx",
+      "tau": "Jx*t/hbar",
+      "n": "x/a",
+      "s": "sigma/a",
+      "eta": "Jy/Jx"
+    },
+    "evidence": "Rendering reuses the saved complex wavefields; phase epsilon*t/hbar equals stored e*tau exactly."
+  }
+}

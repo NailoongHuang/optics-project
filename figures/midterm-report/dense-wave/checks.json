@@ -1,0 +1,217 @@
+{
+  "parameters": {
+    "N": 512,
+    "sigma_a": 10.0,
+    "a": 1.0,
+    "hbar": 1.0,
+    "Jx": 1.0,
+    "S": 0.5,
+    "h": 0.0,
+    "boundary": "periodic",
+    "dimensionless_time": "tau=Jx*t/hbar",
+    "wavevectors": [
+      [
+        0.7,
+        0.0
+      ],
+      [
+        0.7,
+        0.7
+      ]
+    ],
+    "etas": [
+      1.0,
+      0.3
+    ],
+    "snapshot_times": [
+      0.0,
+      30.0,
+      60.0
+    ],
+    "animation_times": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0,
+      36.0,
+      37.0,
+      38.0,
+      39.0,
+      40.0,
+      41.0,
+      42.0,
+      43.0,
+      44.0,
+      45.0,
+      46.0,
+      47.0,
+      48.0,
+      49.0,
+      50.0,
+      51.0,
+      52.0,
+      53.0,
+      54.0,
+      55.0,
+      56.0,
+      57.0,
+      58.0,
+      59.0,
+      60.0
+    ],
+    "phase_convention": "Remove exp(-i E_F t/hbar) only; no per-frame rephasing.",
+    "field_maps": "Exact site values; imshow interpolation=nearest.",
+    "sampling": "N enlarges the periodic box. a and the carrier sampling are unchanged.",
+    "interpretation": "Re(psi) is the probability-amplitude real part in a fixed phase convention, not a transverse-spin expectation in a fixed one-magnon state.",
+    "gaussian_normalization": "A0=max|psi(t=0)|; P0=A0^2, held fixed in every panel/frame."
+  },
+  "gaussians": {
+    "x_eta1": {
+      "max_norm_error": 8.881784197001252e-16,
+      "max_probability_center_error_a": 3.552713678800501e-14,
+      "max_probability_variance_error_a2": 5.684341886080802e-14,
+      "N512_vs_N1024_amplitude_Linf_tau60": 5.815852873680767e-17,
+      "max_edge_probability": 9.659365756814964e-31,
+      "initial_amplitude_peak": 0.039894228040143274,
+      "initial_probability_peak": 0.001591549430918954,
+      "exact_spectral_mean_velocity": [
+        0.6434129182140714,
+        -3.469446951953614e-18
+      ],
+      "carrier_group_velocity": [
+        0.644217687237691,
+        0.0
+      ],
+      "final_center_a": [
+        38.604775092844264,
+        -1.7763568394002497e-15
+      ],
+      "final_rms_width_a": [
+        10.259452675541313,
+        10.439230692592814
+      ],
+      "passed": true
+    },
+    "x_eta03": {
+      "max_norm_error": 6.661338147750939e-16,
+      "max_probability_center_error_a": 3.552713678800501e-14,
+      "max_probability_variance_error_a2": 7.105427357601002e-14,
+      "N512_vs_N1024_amplitude_Linf_tau60": 4.563344992840995e-17,
+      "max_edge_probability": 5.324610191748371e-31,
+      "initial_amplitude_peak": 0.039894228040143274,
+      "initial_probability_peak": 0.001591549430918954,
+      "exact_spectral_mean_velocity": [
+        0.6434129182140714,
+        0.0
+      ],
+      "carrier_group_velocity": [
+        0.644217687237691,
+        0.0
+      ],
+      "final_center_a": [
+        38.604775092844264,
+        -8.881784197001246e-16
+      ],
+      "final_rms_width_a": [
+        10.259452675541311,
+        10.040317642922732
+      ],
+      "passed": true
+    },
+    "diagonal_eta1": {
+      "max_norm_error": 1.3322676295501878e-15,
+      "max_probability_center_error_a": 4.263256414560601e-14,
+      "max_probability_variance_error_a2": 5.684341886080802e-14,
+      "N512_vs_N1024_amplitude_Linf_tau60": 5.594315114139762e-17,
+      "max_edge_probability": 1.057587655779423e-30,
+      "initial_amplitude_peak": 0.03989422804014328,
+      "initial_probability_peak": 0.0015915494309189544,
+      "exact_spectral_mean_velocity": [
+        0.6434129182140716,
+        0.6434129182140716
+      ],
+      "carrier_group_velocity": [
+        0.644217687237691,
+        0.644217687237691
+      ],
+      "final_center_a": [
+        38.604775092844264,
+        38.604775092844264
+      ],
+      "final_rms_width_a": [
+        10.259452675541311,
+        10.25945267554131
+      ],
+      "passed": true
+    },
+    "diagonal_eta03": {
+      "max_norm_error": 1.1102230246251565e-15,
+      "max_probability_center_error_a": 5.684341886080802e-14,
+      "max_probability_variance_error_a2": 4.263256414560601e-14,
+      "N512_vs_N1024_amplitude_Linf_tau60": 5.419449386414209e-17,
+      "max_edge_probability": 7.320276870377145e-31,
+      "initial_amplitude_peak": 0.03989422804014328,
+      "initial_probability_peak": 0.0015915494309189544,
+      "exact_spectral_mean_velocity": [
+        0.6434129182140716,
+        0.19302387546422148
+      ],
+      "carrier_group_velocity": [
+        0.644217687237691,
+        0.1932653061713073
+      ],
+      "final_center_a": [
+        38.60477509284424,
+        11.581432527853272
+      ],
+      "final_rms_width_a": [
+        10.25945267554131,
+        10.023625752598232
+      ],
+      "passed": true
+    }
+  },
+  "delta": {
+    "tau": 24.0,
+    "bessel_amplitude_Linf": 2.1000903724951385e-16,
+    "norm_error": 2.220446049250313e-16,
+    "center_error_a": 9.946450611633825e-16,
+    "variance_error_a2": 5.684341886080802e-14,
+    "max_real_amplitude": 0.04075088661342183,
+    "max_probability": 0.003013088822274975,
+    "passed": true
+  },
+  "all_passed": true
+}

@@ -1,0 +1,81 @@
+{
+  "checked_date": "2026-10-20",
+  "article": {
+    "title": "Diffraction Management",
+    "authors": [
+      "H. S. Eisenberg",
+      "Y. Silberberg",
+      "R. Morandotti",
+      "J. S. Aitchison"
+    ],
+    "journal": "Physical Review Letters",
+    "volume": "85",
+    "pages": "1863-1866",
+    "year": 2000,
+    "doi": "10.1103/PhysRevLett.85.1863",
+    "publisher_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.85.1863",
+    "fulltext_status": "Publisher PDF requires access; no article PDF obtained"
+  },
+  "primary_fulltext": {
+    "title": "Nonlinear Effects in Waveguide Arrays",
+    "author": "Hagai Eisenberg",
+    "type": "PhD thesis",
+    "institution": "Weizmann Institute of Science",
+    "date": "November 2002",
+    "url": "https://openscholar.huji.ac.il/sites/default/files/hagai/files/hagaielectronicthesis.pdf",
+    "local_file": "eisenberg_thesis.pdf",
+    "pages": 75,
+    "bytes": 9812069,
+    "sha256": "a8815c9fad705571d912e17d073318f337ccba64d7884276fa1fd71ff1942da7"
+  },
+  "verified_locations": [
+    {
+      "pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "printed_pages": [
+        5,
+        6,
+        7
+      ],
+      "section": "1.3",
+      "evidence": "Eq. (1.7) gives kz=beta+2C cos(kx d); listed property 3 puts zero curvature at |kx|=pi/(2d)."
+    },
+    {
+      "pdf_pages": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "printed_pages": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "section": "3.3 Diffraction Management",
+      "evidence": "Author discusses fabricated equal-length zigzag arrays, reduced/zero/anomalous diffraction, experimental and two numerical comparisons. Fixed tilted pi/2 array retains higher derivatives causing asymmetric broadening; alternating opposite tilts cancel higher-order terms in the coupled-mode model."
+    },
+    {
+      "pdf_pages": [
+        70
+      ],
+      "printed_pages": [
+        65
+      ],
+      "evidence": "Bibliography [37] identifies PRL85,1863(2000)."
+    }
+  ],
+  "scope_note": "Thesis is a primary author account, not the publisher article full text. At a single inflection, higher-order spreading remains; zero averaged diffraction of the alternating zigzag array is a different engineered mechanism.",
+  "access_attempts": [
+    "web opening thesis timed out",
+    "Python urllib failed local certificate-chain verification",
+    "PowerShell Invoke-WebRequest succeeded with normal certificate validation",
+    "APS PDF returned unauthorized page"
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "group_title": "C Gaussian 波包、移动与展宽",
+  "items": [
+    {
+      "id": "c01-carrier-envelope-spectrum",
+      "title": "载波、包络与频谱",
+      "caption": "两种归一化Gaussian初态只有载波不同：q0=(0,0)和(0.7,0)，sigma=4。左图的x边际概率严格相同；中图画中心区域连续展开的载波相位q0x*x，省略低振幅尾部；右图为单位正交FFT所得离散频谱的x边际概率，所有波矢的总概率为1。载波改变频谱中心及后续传播，但不改变初始概率包络。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qzero",
+            "sigma": 4.0,
+            "q0": [
+              0.0,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c01-carrier-envelope-spectrum.png",
+        "svg": "c-gaussian/c01-carrier-envelope-spectrum.svg",
+        "pdf": "c-gaussian/c01-carrier-envelope-spectrum.pdf"
+      }
+    },
+    {
+      "id": "c02-space-bandwidth",
+      "title": "空间宽度与频谱宽度",
+      "caption": "比较sigma=3、6、10的无啁啾Gaussian初态，q0=(0.7,0)。sigma是概率分布的RMS宽度；不是振幅指数中再平方后的宽度。所有初态总概率为1，所以窄初态的空间峰值更高，而宽初态的频谱更窄。本图横轴和纵轴在各参数曲线之间统一。Delta q=1/(2 sigma)是宽包络、频谱远离Brillouin区接缝时的连续Gaussian表达式。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "sigma3",
+            "sigma": 3.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma6",
+            "sigma": 6.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma10",
+            "sigma": 10.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c02-space-bandwidth.png",
+        "svg": "c-gaussian/c02-space-bandwidth.svg",
+        "pdf": "c-gaussian/c02-space-bandwidth.pdf"
+      }
+    },
+    {
+      "id": "c03-zero-carrier-spreading",
+      "title": "零中心波矢：质心停留，概率向外展开",
+      "caption": "精确余弦色散下，sigma=4、q0=(0.0, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。谱分布关于零波矢对称，因此两个方向的平均群速度都为0，质心停留在原点；不同非零波矢成分仍会向外传播并引起展宽。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qzero",
+            "sigma": 4.0,
+            "q0": [
+              0.0,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c03-zero-carrier-spreading.png",
+        "svg": "c-gaussian/c03-zero-carrier-spreading.svg",
+        "pdf": "c-gaussian/c03-zero-carrier-spreading.pdf"
+      }
+    },
+    {
+      "id": "c04-moving-gaussian",
+      "title": "非零中心波矢：向右移动，同时逐渐展宽",
+      "caption": "精确余弦色散下，sigma=4、q0=(0.7, 0.0)的归一化Gaussian在tau=0、30、60的二维格点概率。三个面板采用相同位置坐标范围和固定线性色标。青色虚线标记由概率分布直接计算的质心，标注给出概率RMS宽度。频谱中心向正qx偏移，带来正x方向平均群速度；有限频宽仍使各成分群速度不同，所以包络一边移动一边展宽。y方向中心波矢为0，平均位移为0，但仍会展宽。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c04-moving-gaussian.png",
+        "svg": "c-gaussian/c04-moving-gaussian.svg",
+        "pdf": "c-gaussian/c04-moving-gaussian.pdf"
+      }
+    },
+    {
+      "id": "c05-carrier-directions",
+      "title": "由载波控制传播方向",
+      "caption": "保持sigma=4和初始概率包络相同，只将载波改成(-0.7,0)、(0.7,0)、(0.7,0.7)。在tau=60时分别得到左行、右行和斜向传播。白箭头由原点指向谱平均速度乘以时间得到的质心预测。对当前等宽、各向同性交换且两个非零波矢分量相同的例子，斜向群速度方向与载波方向一致；这一一致性并非任意色散或各向异性情形下的普遍规律。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qleft",
+            "sigma": 4.0,
+            "q0": [
+              -0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c05-carrier-directions.png",
+        "svg": "c-gaussian/c05-carrier-directions.svg",
+        "pdf": "c-gaussian/c05-carrier-directions.pdf"
+      }
+    },
+    {
+      "id": "c06-centroid-velocity",
+      "title": "质心运动与谱平均速度",
+      "caption": "四种载波的概率质心由精确FFT演化计算。圆点为数值结果，实线用初态全频谱的<sin qx>和eta<sin qy>预测，虚线用中心波矢处的(sin q0x,eta sin q0y)近似。对于sigma=4，有限频宽使两者存在虽小但真实的差异，不能把中心值近似称为精确质心速度。当前无边界污染的平移不变模型中，位置期望按谱平均速度作直线运动。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qzero",
+            "sigma": 4.0,
+            "q0": [
+              0.0,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qleft",
+            "sigma": 4.0,
+            "q0": [
+              -0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c06-centroid-velocity.png",
+        "svg": "c-gaussian/c06-centroid-velocity.svg",
+        "pdf": "c-gaussian/c06-centroid-velocity.pdf"
+      }
+    },
+    {
+      "id": "c07-comoving-marginals",
+      "title": "共动坐标下的包络展宽",
+      "caption": "对q0=(0.7,0)、sigma=4的同一个波包，画tau=0、20、40、60的x和y边际概率。仅在横轴减去数值质心，没有重新归一化峰值或宽度。曲线使用实际格点概率并连线。x、y方向的色散曲率不同，因而展宽程度不同；质心的直线移动与包络的形状变化是可以分别测量的两件事。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c07-comoving-marginals.png",
+        "svg": "c-gaussian/c07-comoving-marginals.svg",
+        "pdf": "c-gaussian/c07-comoving-marginals.pdf"
+      }
+    },
+    {
+      "id": "c08-width-comparison",
+      "title": "不同初始宽度的传播对照",
+      "caption": "sigma=3、6、10的Gaussian都以q0=(0.7,0)传播至tau=60，各自归一化总概率为1。左图画共动坐标下真实x边际概率；右图明确采用u=(x-<x>)/sigma、纵轴sigma*Px，以比较相对初始宽度的变化，保持分布面积一致。宽初态频谱更窄，因此相对展宽较小，但需要更大的初始空间范围。本图不把不同初始尺寸的波包解释成相同制备资源下的性能排名。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "sigma3",
+            "sigma": 3.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma6",
+            "sigma": 6.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma10",
+            "sigma": 10.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c08-width-comparison.png",
+        "svg": "c-gaussian/c08-width-comparison.svg",
+        "pdf": "c-gaussian/c08-width-comparison.pdf"
+      }
+    },
+    {
+      "id": "c09-rms-exact-moments",
+      "title": "概率宽度与精确速度方差",
+      "caption": "对于初始实Gaussian包络乘线性载波，初始位置与速度的对称协方差为零，因此无限晶格上Var(n_mu(tau))=Var(n_mu(0))+tau^2 Var(v_mu)精确成立。一般有啁啾的初态还会有2*tau*Cov_sym(n_mu,v_mu)项，不能直接套用本图公式。图中实线完全由初态离散频谱平均计算，圆点来自精确余弦色散演化；有限周期盒在tau<=60内已检查边缘概率与扩大网格误差。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qzero",
+            "sigma": 4.0,
+            "q0": [
+              0.0,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c09-rms-exact-moments.png",
+        "svg": "c-gaussian/c09-rms-exact-moments.svg",
+        "pdf": "c-gaussian/c09-rms-exact-moments.pdf"
+      }
+    },
+    {
+      "id": "c10-anisotropy-direction",
+      "title": "各向异性下波矢与传播方向",
+      "caption": "固定q0=(0.7,0.7)、sigma=4和tau=60，仅改变eta=Jy/Jx为1或0.3。青色虚箭头示意波矢方向，长度不代表物理速度；白色箭头表示实际质心位移。两个初态的波矢方向同为45度，谱平均群速度方向分别约为45度和16.7度。由于vy=eta sin qy，较弱的y方向交换降低了y方向传播速率。所有概率图用同一固定线性色标。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal_eta03",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 0.3
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c10-anisotropy-direction.png",
+        "svg": "c-gaussian/c10-anisotropy-direction.svg",
+        "pdf": "c-gaussian/c10-anisotropy-direction.pdf"
+      }
+    },
+    {
+      "id": "c11-anisotropy-width",
+      "title": "各向异性与二维宽度",
+      "caption": "相同圆对称Gaussian包络在eta=1和eta=0.3下的x、y概率RMS宽度。由于qx=qy=0.7且初始频宽相同，eta=1时两个方向的宽度曲线重合；eta=0.3保留相同x方向演化，但减小y方向的速度方差，导致宽度比sigma_x/sigma_y增大。这里的圆形和椭圆形描述包络尺度，不意味着离散晶格具有连续旋转对称性。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal_eta03",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 0.3
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c11-anisotropy-width.png",
+        "svg": "c-gaussian/c11-anisotropy-width.svg",
+        "pdf": "c-gaussian/c11-anisotropy-width.pdf"
+      }
+    },
+    {
+      "id": "c12-spectrum-phase",
+      "title": "频谱功率守恒与相位积累",
+      "caption": "左图从tau=0、30、60的实际演化波函数重新做单位正交FFT，显示频谱概率逐点不变。这里e=epsilon/Jx为无量纲能量，tau=Jx*t/hbar。右图在qy=0截面画精确传播因子的残余相位-tau[e(qx,0)-e(0.7,0)-sin(0.7)(qx-0.7)]，相位连续展开而不是模2pi显示；去掉的是整体相位和中心群速度平移对应的线性相位。频谱概率不变并不保证实空间形状不变，因为不同模式的相对相位仍会变化。",
+      "group": "c-gaussian",
+      "role": "core",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c12-spectrum-phase.png",
+        "svg": "c-gaussian/c12-spectrum-phase.svg",
+        "pdf": "c-gaussian/c12-spectrum-phase.pdf"
+      }
+    },
+    {
+      "id": "c13-extension-inflection",
+      "title": "拓展：零二阶曲率点",
+      "caption": "这是后续保形研究的初步入口。两种初态的sigma都为3、总概率都为1。q0=(pi/2,pi/2)处两个方向的二阶色散项消失，有限频宽内速度差减小，因此tau<=60内的展宽与形变明显较弱。右图比较实际波函数与按各自谱平均速度刚性平移的初态的模平方重合度，对整体相位不敏感，但会检测相对相位形变；它不是仅比较概率轮廓的指标。三阶及更高阶项仍存在，不能据此宣称无限时间严格保形。",
+      "group": "c-gaussian",
+      "role": "extension",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "extension_ordinary",
+            "sigma": 3.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "extension_inflection",
+            "sigma": 3.0,
+            "q0": [
+              1.5707963267948966,
+              1.5707963267948966
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c13-extension-inflection.png",
+        "svg": "c-gaussian/c13-extension-inflection.svg",
+        "pdf": "c-gaussian/c13-extension-inflection.pdf"
+      }
+    },
+    {
+      "id": "c14-extension-cubic-distortion",
+      "title": "拓展：高阶色散的有限带宽形变",
+      "caption": "为使高阶形变在中期报告图中可见，本图用sigma=2、q0=(pi/2,pi/2)的独立示例；它与C13的sigma=3不同，不能据此直接比较保形性能。左图画tau=0、20、40、60的实际x边际概率，仅减去实际质心，保持统一纵轴。右图固定qy=pi/2，精确能量去除常数与线性项后为sin(delta q)-delta q，其首项是-(delta q)^3/6。有限频谱因此仍有相位差累积，产生不对称形变与尾部。此图说明零二阶曲率不等于零色散。",
+      "group": "c-gaussian",
+      "role": "extension",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "extension_inflection_sigma2",
+            "sigma": 2.0,
+            "q0": [
+              1.5707963267948966,
+              1.5707963267948966
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "png": "c-gaussian/c14-extension-cubic-distortion.png",
+        "svg": "c-gaussian/c14-extension-cubic-distortion.svg",
+        "pdf": "c-gaussian/c14-extension-cubic-distortion.pdf"
+      }
+    },
+    {
+      "id": "c15-animation-carrier",
+      "title": "C15  有无载波：静止展宽与移动展宽",
+      "caption": "sigma=4的两个相同概率包络，载波分别为(0,0)与(0.7,0)，在精确色散下演化到tau=60。二维格点概率使用固定线性色标，图框和概率归一化固定，不逐帧放大。",
+      "group": "c-gaussian",
+      "role": "animation",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qzero",
+            "sigma": 4.0,
+            "q0": [
+              0.0,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "gif": "c-gaussian/c15-animation-carrier.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    },
+    {
+      "id": "c16-animation-directions",
+      "title": "C16  载波选择左行、右行与斜向传播",
+      "caption": "三个sigma=4的初态仅载波不同，分别为(-0.7,0)、(0.7,0)、(0.7,0.7)。在相同尺度下播放到tau=60，帮助将载波相位梯度与传播方向联系起来。色标、位置范围、总概率固定。",
+      "group": "c-gaussian",
+      "role": "animation",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qleft",
+            "sigma": 4.0,
+            "q0": [
+              -0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qright",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "gif": "c-gaussian/c16-animation-directions.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    },
+    {
+      "id": "c17-animation-width",
+      "title": "不同初始宽度的展宽动画",
+      "caption": "sigma=3、6、10的无啁啾Gaussian以q0=(0.7,0)传播。左图在各自共动坐标中显示真实边际概率，使用固定位置和纵轴范围；右图的移动点显示各自相对初始宽度的增长。所有初态总概率为1，初始尺寸不同是明确的物理输入。",
+      "group": "c-gaussian",
+      "role": "animation",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "sigma3",
+            "sigma": 3.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma6",
+            "sigma": 6.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "sigma10",
+            "sigma": 10.0,
+            "q0": [
+              0.7,
+              0.0
+            ],
+            "eta": 1.0
+          }
+        ]
+      },
+      "files": {
+        "gif": "c-gaussian/c17-animation-width.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    },
+    {
+      "id": "c18-animation-anisotropy",
+      "title": "C18  交换各向异性改变传播方向与形状",
+      "caption": "固定q0=(0.7,0.7)、sigma=4，比较eta=1与0.3。降低y方向交换后，y方向质心位移和宽度增长均减小。概率图采用相同固定线性色标及位置范围。",
+      "group": "c-gaussian",
+      "role": "animation",
+      "parameters": {
+        "N": 256,
+        "boundary": "periodic; verified against N=384",
+        "tau_max": 60,
+        "S": 0.5,
+        "h": 0.0,
+        "units": {
+          "position": "a",
+          "time": "hbar/Jx",
+          "momentum": "1/a"
+        },
+        "gaussian_convention": "psi0 ~ exp[-x^2/(4 sigma^2)-y^2/(4 sigma^2)] exp(i q0.r); sum |psi|^2=1",
+        "cases": [
+          {
+            "name": "qdiagonal",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 1.0
+          },
+          {
+            "name": "qdiagonal_eta03",
+            "sigma": 4.0,
+            "q0": [
+              0.7,
+              0.7
+            ],
+            "eta": 0.3
+          }
+        ]
+      },
+      "files": {
+        "gif": "c-gaussian/c18-animation-anisotropy.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    }
+  ]
+}

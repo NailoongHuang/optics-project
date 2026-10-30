@@ -1,0 +1,9158 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 26,
+    "db_response_time_ms": 39,
+    "page": null,
+    "per_page": 200,
+    "next_cursor": null,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get works where it cites (W3100550362) and published through 2026-10-21",
+      "x_new_oql": "get works through 2026-10-21 citing (W3100550362)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "referenced_works",
+            "value": "W3100550362"
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2026-10-21"
+          }
+        ]
+      },
+      "url": "/works?filter=referenced_works:W3100550362,to_publication_date:2026-10-21&per_page=200&cursor=%2A"
+    },
+    "cost_usd": 0.0001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W3133966277",
+      "doi": "https://doi.org/10.1088/1361-648x/abec1a",
+      "title": "The 2021 Magnonics Roadmap",
+      "publication_date": "2021-03-04",
+      "abstract_inverted_index": {
+        "Magnonics": [
+          0
+        ],
+        "is": [
+          1,
+          64
+        ],
+        "a": [
+          2,
+          65,
+          164,
+          169,
+          176,
+          186,
+          200
+        ],
+        "budding": [
+          3
+        ],
+        "research": [
+          4,
+          39,
+          171,
+          191
+        ],
+        "field": [
+          5,
+          29,
+          76
+        ],
+        "in": [
+          6,
+          34,
+          38,
+          74,
+          95,
+          193,
+          210
+        ],
+        "nanomagnetism": [
+          7
+        ],
+        "and": [
+          8,
+          21,
+          79,
+          111,
+          122,
+          138,
+          155,
+          195
+        ],
+        "nanoscience": [
+          9
+        ],
+        "that": [
+          10
+        ],
+        "addresses": [
+          11
+        ],
+        "the": [
+          12,
+          58,
+          81,
+          92,
+          99,
+          109,
+          112,
+          207,
+          211
+        ],
+        "use": [
+          13
+        ],
+        "of": [
+          14,
+          27,
+          36,
+          45,
+          51,
+          67,
+          88,
+          101,
+          114,
+          202
+        ],
+        "spin": [
+          15
+        ],
+        "waves": [
+          16
+        ],
+        "(magnons)": [
+          17
+        ],
+        "to": [
+          18,
+          56,
+          125,
+          162
+        ],
+        "transmit,": [
+          19
+        ],
+        "store,": [
+          20
+        ],
+        "process": [
+          22
+        ],
+        "information.": [
+          23
+        ],
+        "The": [
+          24
+        ],
+        "rapid": [
+          25
+        ],
+        "advancements": [
+          26
+        ],
+        "this": [
+          28,
+          75,
+          129
+        ],
+        "during": [
+          30
+        ],
+        "last": [
+          31
+        ],
+        "one": [
+          32
+        ],
+        "decade": [
+          33
+        ],
+        "terms": [
+          35
+        ],
+        "upsurge": [
+          37
+        ],
+        "papers,": [
+          40
+        ],
+        "review": [
+          41,
+          78
+        ],
+        "articles,": [
+          42
+        ],
+        "citations,": [
+          43
+        ],
+        "proposals": [
+          44
+        ],
+        "devices": [
+          46,
+          116
+        ],
+        "as": [
+          47,
+          49
+        ],
+        "well": [
+          48
+        ],
+        "introduction": [
+          50
+        ],
+        "new": [
+          52,
+          204
+        ],
+        "sub-topics": [
+          53
+        ],
+        "prompted": [
+          54
+        ],
+        "us": [
+          55
+        ],
+        "present": [
+          57
+        ],
+        "first": [
+          59
+        ],
+        "roadmap": [
+          60,
+          184
+        ],
+        "on": [
+          61,
+          108,
+          206
+        ],
+        "magnonics.": [
+          62
+        ],
+        "This": [
+          63,
+          183
+        ],
+        "collection": [
+          66
+        ],
+        "22": [
+          68
+        ],
+        "sections": [
+          69
+        ],
+        "written": [
+          70
+        ],
+        "by": [
+          71,
+          158
+        ],
+        "leading": [
+          72
+        ],
+        "experts": [
+          73
+        ],
+        "who": [
+          77
+        ],
+        "discuss": [
+          80
+        ],
+        "current": [
+          82
+        ],
+        "status": [
+          83
+        ],
+        "besides": [
+          84
+        ],
+        "presenting": [
+          85
+        ],
+        "their": [
+          86,
+          106
+        ],
+        "vision": [
+          87
+        ],
+        "future": [
+          89,
+          189
+        ],
+        "perspectives.": [
+          90
+        ],
+        "Today,": [
+          91
+        ],
+        "principal": [
+          93
+        ],
+        "challenges": [
+          94
+        ],
+        "applied": [
+          96
+        ],
+        "magnonics": [
+          97,
+          131,
+          173
+        ],
+        "are": [
+          98
+        ],
+        "excitation": [
+          100
+        ],
+        "sub-100": [
+          102
+        ],
+        "nm": [
+          103
+        ],
+        "wavelength": [
+          104
+        ],
+        "magnons,": [
+          105
+        ],
+        "manipulation": [
+          107
+        ],
+        "nanoscale": [
+          110
+        ],
+        "creation": [
+          113
+        ],
+        "sub-micrometre": [
+          115
+        ],
+        "using": [
+          117
+        ],
+        "low-Gilbert": [
+          118
+        ],
+        "damping": [
+          119
+        ],
+        "magnetic": [
+          120
+        ],
+        "materials": [
+          121
+        ],
+        "its": [
+          123,
+          180
+        ],
+        "interconnections": [
+          124
+        ],
+        "standard": [
+          126
+        ],
+        "electronics.": [
+          127
+        ],
+        "To": [
+          128
+        ],
+        "end,": [
+          130
+        ],
+        "offers": [
+          132
+        ],
+        "lower": [
+          133
+        ],
+        "energy": [
+          134
+        ],
+        "consumption,": [
+          135
+        ],
+        "easier": [
+          136
+        ],
+        "integrability": [
+          137
+        ],
+        "compatibility": [
+          139
+        ],
+        "with": [
+          140
+        ],
+        "CMOS": [
+          141
+        ],
+        "structure,": [
+          142
+        ],
+        "reprogrammability,": [
+          143
+        ],
+        "shorter": [
+          144
+        ],
+        "wavelength,": [
+          145
+        ],
+        "smaller": [
+          146
+        ],
+        "device": [
+          147
+        ],
+        "features,": [
+          148
+        ],
+        "anisotropic": [
+          149
+        ],
+        "properties,": [
+          150
+        ],
+        "negative": [
+          151
+        ],
+        "group": [
+          152
+        ],
+        "velocity,": [
+          153
+        ],
+        "non-reciprocity": [
+          154
+        ],
+        "efficient": [
+          156
+        ],
+        "tunability": [
+          157
+        ],
+        "various": [
+          159
+        ],
+        "external": [
+          160
+        ],
+        "stimuli": [
+          161
+        ],
+        "name": [
+          163
+        ],
+        "few.": [
+          165
+        ],
+        "Hence,": [
+          166
+        ],
+        "despite": [
+          167
+        ],
+        "being": [
+          168
+        ],
+        "young": [
+          170
+        ],
+        "field,": [
+          172
+        ],
+        "has": [
+          174
+        ],
+        "come": [
+          175
+        ],
+        "long": [
+          177
+        ],
+        "way": [
+          178
+        ],
+        "since": [
+          179
+        ],
+        "early": [
+          181
+        ],
+        "inception.": [
+          182
+        ],
+        "asserts": [
+          185
+        ],
+        "milestone": [
+          187
+        ],
+        "for": [
+          188
+        ],
+        "emerging": [
+          190
+        ],
+        "directions": [
+          192
+        ],
+        "magnonics,": [
+          194
+        ],
+        "hopefully,": [
+          196
+        ],
+        "it": [
+          197
+        ],
+        "will": [
+          198
+        ],
+        "inspire": [
+          199
+        ],
+        "series": [
+          201
+        ],
+        "exciting": [
+          203
+        ],
+        "articles": [
+          205
+        ],
+        "same": [
+          208
+        ],
+        "topic": [
+          209
+        ],
+        "coming": [
+          212
+        ],
+        "years.": [
+          213
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1088/1361-648x/abec1a",
+        "doi": "https://doi.org/10.1088/1361-648x/abec1a",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1088/1361-648x/abec1a",
+        "pdf_url": "https://iopscience.iop.org/article/10.1088/1361-648X/abec1a/pdf",
+        "source": {
+          "id": "https://openalex.org/S190924190",
+          "display_name": "Journal of Physics Condensed Matter",
+          "issn_l": "0953-8984",
+          "issn": [
+            "0953-8984",
+            "1361-648X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2"
+          ],
+          "host_organization": "https://openalex.org/P4310320083",
+          "host_organization_name": "IOP Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320083",
+            "https://openalex.org/P4310311669"
+          ],
+          "host_organization_lineage_names": [
+            "IOP Publishing",
+            "Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Physics: Condensed Matter",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3180797509",
+      "doi": "https://doi.org/10.1038/s41578-021-00332-w",
+      "title": "Advances in coherent magnonics",
+      "publication_date": "2021-07-14",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1038/s41578-021-00332-w",
+        "doi": "https://doi.org/10.1038/s41578-021-00332-w",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1038/s41578-021-00332-w",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2764917516",
+          "display_name": "Nature Reviews Materials",
+          "issn_l": "2058-8437",
+          "issn": [
+            "2058-8437"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1",
+            "poland-200",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Reviews Materials",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4321499228",
+      "doi": "https://doi.org/10.1002/smll.202207293",
+      "title": "Spin‐Wave Optics in YIG Realized by Ion‐Beam Irradiation",
+      "publication_date": "2023-02-21",
+      "abstract_inverted_index": {
+        "Direct": [
+          0
+        ],
+        "focused-ion-beam": [
+          1
+        ],
+        "writing": [
+          2
+        ],
+        "is": [
+          3,
+          25,
+          112
+        ],
+        "presented": [
+          4
+        ],
+        "as": [
+          5,
+          91,
+          114
+        ],
+        "an": [
+          6
+        ],
+        "enabling": [
+          7
+        ],
+        "technology": [
+          8,
+          111
+        ],
+        "for": [
+          9
+        ],
+        "realizing": [
+          10
+        ],
+        "functional": [
+          11
+        ],
+        "spin-wave": [
+          12
+        ],
+        "devices": [
+          13,
+          105,
+          121
+        ],
+        "of": [
+          14,
+          33,
+          54,
+          71,
+          74,
+          100,
+          103
+        ],
+        "high": [
+          15
+        ],
+        "complexity,": [
+          16
+        ],
+        "and": [
+          17,
+          67,
+          130
+        ],
+        "demonstrate": [
+          18
+        ],
+        "its": [
+          19
+        ],
+        "potential": [
+          20
+        ],
+        "by": [
+          21
+        ],
+        "optically-inspired": [
+          22
+        ],
+        "designs.": [
+          23
+        ],
+        "It": [
+          24
+        ],
+        "shown": [
+          26
+        ],
+        "that": [
+          27,
+          122
+        ],
+        "ion-beam": [
+          28
+        ],
+        "irradiation": [
+          29
+        ],
+        "changes": [
+          30
+        ],
+        "the": [
+          31,
+          51,
+          115
+        ],
+        "characteristics": [
+          32
+        ],
+        "yttrium": [
+          34
+        ],
+        "iron": [
+          35
+        ],
+        "garnet": [
+          36
+        ],
+        "films": [
+          37
+        ],
+        "on": [
+          38
+        ],
+        "a": [
+          39,
+          43,
+          101
+        ],
+        "submicron": [
+          40
+        ],
+        "scale": [
+          41
+        ],
+        "in": [
+          42,
+          77,
+          127
+        ],
+        "highly": [
+          44
+        ],
+        "controlled": [
+          45
+        ],
+        "way,": [
+          46
+        ],
+        "allowing": [
+          47
+        ],
+        "one": [
+          48
+        ],
+        "to": [
+          49,
+          57,
+          85,
+          117
+        ],
+        "engineer": [
+          50
+        ],
+        "magnonic": [
+          52,
+          78,
+          98,
+          119
+        ],
+        "index": [
+          53
+        ],
+        "refraction": [
+          55
+        ],
+        "adapted": [
+          56
+        ],
+        "desired": [
+          58
+        ],
+        "applications.": [
+          59
+        ],
+        "This": [
+          60
+        ],
+        "technique": [
+          61
+        ],
+        "does": [
+          62
+        ],
+        "not": [
+          63
+        ],
+        "physically": [
+          64
+        ],
+        "remove": [
+          65
+        ],
+        "material,": [
+          66
+        ],
+        "allows": [
+          68
+        ],
+        "rapid": [
+          69
+        ],
+        "fabrication": [
+          70
+        ],
+        "high-quality": [
+          72
+        ],
+        "architectures": [
+          73
+        ],
+        "modified": [
+          75
+        ],
+        "magnetization": [
+          76
+        ],
+        "media": [
+          79
+        ],
+        "with": [
+          80
+        ],
+        "minimal": [
+          81
+        ],
+        "edge": [
+          82
+        ],
+        "damage": [
+          83
+        ],
+        "(compared": [
+          84
+        ],
+        "more": [
+          86
+        ],
+        "common": [
+          87
+        ],
+        "removal": [
+          88
+        ],
+        "techniques": [
+          89
+        ],
+        "such": [
+          90
+        ],
+        "etching": [
+          92
+        ],
+        "or": [
+          93
+        ],
+        "milling).": [
+          94
+        ],
+        "By": [
+          95
+        ],
+        "experimentally": [
+          96
+        ],
+        "showing": [
+          97
+        ],
+        "versions": [
+          99
+        ],
+        "number": [
+          102
+        ],
+        "optical": [
+          104,
+          125
+        ],
+        "(lenses,": [
+          106
+        ],
+        "gratings,": [
+          107
+        ],
+        "Fourier-domain": [
+          108
+        ],
+        "processors)": [
+          109
+        ],
+        "this": [
+          110
+        ],
+        "envisioned": [
+          113
+        ],
+        "gateway": [
+          116
+        ],
+        "building": [
+          118
+        ],
+        "computing": [
+          120
+        ],
+        "rival": [
+          123
+        ],
+        "their": [
+          124,
+          128
+        ],
+        "counterparts": [
+          126
+        ],
+        "complexity": [
+          129
+        ],
+        "computational": [
+          131
+        ],
+        "power.": [
+          132
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1002/smll.202207293",
+        "doi": "https://doi.org/10.1002/smll.202207293",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1002/smll.202207293",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/smll.202207293",
+        "source": {
+          "id": "https://openalex.org/S94619837",
+          "display_name": "Small",
+          "issn_l": "1613-6810",
+          "issn": [
+            "1613-6810",
+            "1613-6829"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-c",
+            "jufo-3",
+            "ki-jl-2",
+            "medline",
+            "norway-2",
+            "poland-200",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Small",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3084908907",
+      "doi": "https://doi.org/10.1063/5.0029401",
+      "title": "Spin-wave focusing induced skyrmion generation",
+      "publication_date": "2020-11-30",
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "propose": [
+          1
+        ],
+        "a": [
+          2,
+          23,
+          102,
+          115
+        ],
+        "method": [
+          3
+        ],
+        "to": [
+          4,
+          18,
+          67,
+          110
+        ],
+        "generate": [
+          5
+        ],
+        "magnetic": [
+          6,
+          34,
+          79,
+          103
+        ],
+        "skyrmions": [
+          7,
+          80
+        ],
+        "through": [
+          8
+        ],
+        "spin-wave": [
+          9,
+          91
+        ],
+        "focusing": [
+          10
+        ],
+        "in": [
+          11,
+          117
+        ],
+        "chiral": [
+          12
+        ],
+        "ferromagnets.": [
+          13
+        ],
+        "A": [
+          14,
+          97
+        ],
+        "lens": [
+          15,
+          48,
+          88
+        ],
+        "is": [
+          16,
+          73,
+          136
+        ],
+        "constructed": [
+          17
+        ],
+        "focus": [
+          19,
+          84
+        ],
+        "spin": [
+          20
+        ],
+        "waves": [
+          21
+        ],
+        "by": [
+          22,
+          114
+        ],
+        "curved": [
+          24
+        ],
+        "interface": [
+          25
+        ],
+        "between": [
+          26
+        ],
+        "two": [
+          27
+        ],
+        "ferromagnetic": [
+          28
+        ],
+        "thin": [
+          29
+        ],
+        "films": [
+          30
+        ],
+        "with": [
+          31
+        ],
+        "different": [
+          32
+        ],
+        "perpendicular": [
+          33
+        ],
+        "anisotropies.": [
+          35
+        ],
+        "Based": [
+          36
+        ],
+        "on": [
+          37,
+          58
+        ],
+        "the": [
+          38,
+          47,
+          59,
+          69,
+          83,
+          87,
+          90,
+          111,
+          124,
+          130,
+          148
+        ],
+        "principle": [
+          39
+        ],
+        "of": [
+          40,
+          86,
+          129,
+          150
+        ],
+        "identical": [
+          41
+        ],
+        "magnonic": [
+          42
+        ],
+        "path": [
+          43
+        ],
+        "length,": [
+          44
+        ],
+        "we": [
+          45
+        ],
+        "derive": [
+          46
+        ],
+        "contour": [
+          49
+        ],
+        "that": [
+          50,
+          75,
+          101
+        ],
+        "can": [
+          51
+        ],
+        "be": [
+          52,
+          141
+        ],
+        "either": [
+          53
+        ],
+        "elliptical": [
+          54
+        ],
+        "or": [
+          55
+        ],
+        "hyperbolical": [
+          56
+        ],
+        "depending": [
+          57
+        ],
+        "magnon": [
+          60
+        ],
+        "refractive": [
+          61
+        ],
+        "index.": [
+          62
+        ],
+        "Micromagnetic": [
+          63
+        ],
+        "simulations": [
+          64
+        ],
+        "are": [
+          65
+        ],
+        "performed": [
+          66
+        ],
+        "verify": [
+          68
+        ],
+        "theoretical": [
+          70
+        ],
+        "design.": [
+          71
+        ],
+        "It": [
+          72
+        ],
+        "found": [
+          74
+        ],
+        "under": [
+          76
+        ],
+        "proper": [
+          77
+        ],
+        "conditions,": [
+          78
+        ],
+        "emerge": [
+          81
+        ],
+        "near": [
+          82
+        ],
+        "point": [
+          85
+        ],
+        "where": [
+          89
+        ],
+        "intensity": [
+          92
+        ],
+        "has": [
+          93
+        ],
+        "been": [
+          94
+        ],
+        "significantly": [
+          95
+        ],
+        "enhanced.": [
+          96
+        ],
+        "close": [
+          98
+        ],
+        "investigation": [
+          99
+        ],
+        "shows": [
+          100
+        ],
+        "droplet": [
+          104
+        ],
+        "first": [
+          105
+        ],
+        "forms": [
+          106
+        ],
+        "and": [
+          107,
+          126,
+          152
+        ],
+        "then": [
+          108
+        ],
+        "converts": [
+          109
+        ],
+        "skyrmion": [
+          112,
+          134
+        ],
+        "accompanied": [
+          113
+        ],
+        "change": [
+          116
+        ],
+        "topological": [
+          118
+        ],
+        "charge.": [
+          119
+        ],
+        "The": [
+          120
+        ],
+        "phase": [
+          121
+        ],
+        "diagram": [
+          122
+        ],
+        "about": [
+          123
+        ],
+        "amplitude": [
+          125
+        ],
+        "time": [
+          127
+        ],
+        "duration": [
+          128
+        ],
+        "exciting": [
+          131
+        ],
+        "field": [
+          132
+        ],
+        "for": [
+          133,
+          143
+        ],
+        "generation": [
+          135
+        ],
+        "obtained.": [
+          137
+        ],
+        "Our": [
+          138
+        ],
+        "findings": [
+          139
+        ],
+        "would": [
+          140
+        ],
+        "helpful": [
+          142
+        ],
+        "designing": [
+          144
+        ],
+        "spintronic": [
+          145
+        ],
+        "devices": [
+          146
+        ],
+        "combining": [
+          147
+        ],
+        "advantages": [
+          149
+        ],
+        "skyrmionics": [
+          151
+        ],
+        "magnonics.": [
+          153
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0029401",
+        "doi": "https://doi.org/10.1063/5.0029401",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1063/5.0029401",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S105243760",
+          "display_name": "Applied Physics Letters",
+          "issn_l": "0003-6951",
+          "issn": [
+            "0003-6951",
+            "1077-3118",
+            "1520-8842"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-a",
+            "jufo-3",
+            "ki-jl-1",
+            "norway-2",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Applied Physics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3009346489",
+      "doi": "https://doi.org/10.1103/physrevb.102.134402",
+      "title": "Spin-wave Talbot effect in a thin ferromagnetic film",
+      "publication_date": "2020-10-05",
+      "abstract_inverted_index": {
+        "The": [
+          0
+        ],
+        "Talbot": [
+          1,
+          63,
+          101
+        ],
+        "effect": [
+          2,
+          102
+        ],
+        "has": [
+          3,
+          14
+        ],
+        "been": [
+          4
+        ],
+        "known": [
+          5
+        ],
+        "in": [
+          6,
+          36,
+          115
+        ],
+        "linear": [
+          7
+        ],
+        "optics": [
+          8
+        ],
+        "since": [
+          9
+        ],
+        "the": [
+          10,
+          23,
+          30,
+          50,
+          57,
+          61,
+          76,
+          82,
+          86,
+          100
+        ],
+        "19th": [
+          11
+        ],
+        "century": [
+          12
+        ],
+        "and": [
+          13,
+          40,
+          105,
+          108,
+          112
+        ],
+        "found": [
+          15
+        ],
+        "various": [
+          16
+        ],
+        "technological": [
+          17
+        ],
+        "applications.": [
+          18
+        ],
+        "In": [
+          19
+        ],
+        "this": [
+          20
+        ],
+        "paper,": [
+          21
+        ],
+        "with": [
+          22
+        ],
+        "help": [
+          24
+        ],
+        "of": [
+          25,
+          60,
+          85,
+          99
+        ],
+        "micromagnetic": [
+          26
+        ],
+        "simulations,": [
+          27
+        ],
+        "we": [
+          28
+        ],
+        "demonstrate": [
+          29
+        ],
+        "self-imaging": [
+          31
+        ],
+        "phenomenon": [
+          32
+        ],
+        "for": [
+          33,
+          65
+        ],
+        "spin": [
+          34,
+          66
+        ],
+        "waves": [
+          35,
+          67
+        ],
+        "a": [
+          37,
+          72,
+          92,
+          95
+        ],
+        "thin,": [
+          38
+        ],
+        "out-of-plane": [
+          39
+        ],
+        "in-plane": [
+          41
+        ],
+        "magnetized": [
+          42
+        ],
+        "ferromagnetic": [
+          43
+        ],
+        "film": [
+          44
+        ],
+        "whose": [
+          45
+        ],
+        "propagation": [
+          46
+        ],
+        "is": [
+          47
+        ],
+        "described": [
+          48
+        ],
+        "by": [
+          49,
+          75,
+          81
+        ],
+        "Landau-Lifshitz": [
+          51
+        ],
+        "nonlinear": [
+          52
+        ],
+        "equation.": [
+          53
+        ],
+        "We": [
+          54
+        ],
+        "show": [
+          55
+        ],
+        "that": [
+          56
+        ],
+        "main": [
+          58
+        ],
+        "features": [
+          59
+        ],
+        "obtained": [
+          62
+        ],
+        "carpets": [
+          64
+        ],
+        "can": [
+          68
+        ],
+        "be": [
+          69
+        ],
+        "described,": [
+          70
+        ],
+        "to": [
+          71,
+          94
+        ],
+        "large": [
+          73
+        ],
+        "extent,": [
+          74
+        ],
+        "approximate": [
+          77
+        ],
+        "analytical": [
+          78
+        ],
+        "formulas": [
+          79
+        ],
+        "yielded": [
+          80
+        ],
+        "general": [
+          83
+        ],
+        "analysis": [
+          84
+        ],
+        "wave": [
+          87
+        ],
+        "phenomena.": [
+          88
+        ],
+        "Our": [
+          89
+        ],
+        "results": [
+          90
+        ],
+        "indicate": [
+          91
+        ],
+        "route": [
+          93
+        ],
+        "feasible": [
+          96
+        ],
+        "experimental": [
+          97
+        ],
+        "realization": [
+          98
+        ],
+        "at": [
+          103
+        ],
+        "low": [
+          104
+        ],
+        "high": [
+          106
+        ],
+        "frequencies": [
+          107
+        ],
+        "offer": [
+          109
+        ],
+        "interesting": [
+          110
+        ],
+        "effects": [
+          111
+        ],
+        "possible": [
+          113
+        ],
+        "applications": [
+          114
+        ],
+        "magnonics.": [
+          116
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevb.102.134402",
+        "doi": "https://doi.org/10.1103/physrevb.102.134402",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevb.102.134402",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4360825343",
+      "doi": "https://doi.org/10.1038/s41598-023-31607-7",
+      "title": "Reconfigurable magnon interference by on-chip dynamic wavelength conversion",
+      "publication_date": "2023-03-24",
+      "abstract_inverted_index": {
+        "Spin": [
+          0
+        ],
+        "waves": [
+          1
+        ],
+        "(SWs),": [
+          2
+        ],
+        "an": [
+          3,
+          45
+        ],
+        "ultra-low": [
+          4
+        ],
+        "power": [
+          5
+        ],
+        "magnetic": [
+          6
+        ],
+        "excitation": [
+          7
+        ],
+        "in": [
+          8,
+          39,
+          65,
+          101,
+          115
+        ],
+        "ferro": [
+          9
+        ],
+        "or": [
+          10
+        ],
+        "antiferromagnetic": [
+          11
+        ],
+        "media,": [
+          12
+        ],
+        "have": [
+          13
+        ],
+        "tremendous": [
+          14
+        ],
+        "potential": [
+          15
+        ],
+        "as": [
+          16
+        ],
+        "transport": [
+          17
+        ],
+        "less": [
+          18
+        ],
+        "data": [
+          19
+        ],
+        "carriers": [
+          20
+        ],
+        "for": [
+          21,
+          48
+        ],
+        "post-CMOS": [
+          22
+        ],
+        "technology": [
+          23
+        ],
+        "using": [
+          24,
+          85,
+          156
+        ],
+        "their": [
+          25
+        ],
+        "wave": [
+          26
+        ],
+        "interference": [
+          27,
+          33,
+          84,
+          117,
+          139
+        ],
+        "properties.": [
+          28
+        ],
+        "The": [
+          29
+        ],
+        "concept": [
+          30
+        ],
+        "of": [
+          31,
+          43,
+          56,
+          127
+        ],
+        "magnon": [
+          32,
+          49,
+          83
+        ],
+        "originates": [
+          34
+        ],
+        "from": [
+          35,
+          88
+        ],
+        "optical": [
+          36
+        ],
+        "interference,": [
+          37,
+          160
+        ],
+        "resulting": [
+          38
+        ],
+        "a": [
+          40,
+          77,
+          102,
+          137
+        ],
+        "historical": [
+          41
+        ],
+        "taboo": [
+          42
+        ],
+        "maintaining": [
+          44
+        ],
+        "identical": [
+          46
+        ],
+        "wavevector": [
+          47
+        ],
+        "interference-based": [
+          50
+        ],
+        "devices.": [
+          51
+        ],
+        "This": [
+          52
+        ],
+        "makes": [
+          53
+        ],
+        "the": [
+          54,
+          63,
+          72,
+          116,
+          121,
+          125,
+          128,
+          150
+        ],
+        "attainment": [
+          55
+        ],
+        "on-chip": [
+          57
+        ],
+        "design": [
+          58
+        ],
+        "reconfigurability": [
+          59,
+          114
+        ],
+        "challenging": [
+          60
+        ],
+        "owing": [
+          61
+        ],
+        "to": [
+          62,
+          80,
+          143
+        ],
+        "difficulty": [
+          64
+        ],
+        "phase": [
+          66,
+          113
+        ],
+        "tuning": [
+          67
+        ],
+        "via": [
+          68
+        ],
+        "external": [
+          69
+        ],
+        "fields.": [
+          70
+        ],
+        "Breaking": [
+          71
+        ],
+        "taboo,": [
+          73
+        ],
+        "this": [
+          74,
+          109
+        ],
+        "study": [
+          75
+        ],
+        "explores": [
+          76
+        ],
+        "novel": [
+          78
+        ],
+        "technique": [
+          79
+        ],
+        "systematically": [
+          81
+        ],
+        "control": [
+          82
+        ],
+        "asymmetric": [
+          86,
+          159
+        ],
+        "wavevectors": [
+          87
+        ],
+        "two": [
+          89
+        ],
+        "different": [
+          90
+        ],
+        "SW": [
+          91,
+          130
+        ],
+        "modes": [
+          92,
+          154
+        ],
+        "(magnetostatic": [
+          93
+        ],
+        "surface": [
+          94
+        ],
+        "SWs": [
+          95
+        ],
+        "and": [
+          96,
+          152,
+          158
+        ],
+        "backward": [
+          97
+        ],
+        "volume": [
+          98
+        ],
+        "magnetostatic": [
+          99
+        ],
+        "SWs)": [
+          100
+        ],
+        "microstructured": [
+          103
+        ],
+        "yttrium": [
+          104
+        ],
+        "iron": [
+          105
+        ],
+        "garnet": [
+          106
+        ],
+        "crossbar.": [
+          107
+        ],
+        "Using": [
+          108
+        ],
+        "system,": [
+          110
+        ],
+        "we": [
+          111,
+          133
+        ],
+        "demonstrate": [
+          112
+        ],
+        "pattern": [
+          118
+        ],
+        "by": [
+          119,
+          155
+        ],
+        "modulating": [
+          120
+        ],
+        "thermal": [
+          122
+        ],
+        "landscape,": [
+          123
+        ],
+        "modifying": [
+          124
+        ],
+        "dispersion": [
+          126
+        ],
+        "interfering": [
+          129
+        ],
+        "modes.": [
+          131
+        ],
+        "Thus,": [
+          132
+        ],
+        "manifest": [
+          134
+        ],
+        "that": [
+          135
+        ],
+        "such": [
+          136
+        ],
+        "tunable": [
+          138
+        ],
+        "can": [
+          140
+        ],
+        "be": [
+          141
+        ],
+        "used": [
+          142
+        ],
+        "implement": [
+          144
+        ],
+        "reconfigurable": [
+          145
+        ],
+        "logic": [
+          146
+        ],
+        "gates": [
+          147
+        ],
+        "operating": [
+          148
+        ],
+        "between": [
+          149
+        ],
+        "XNOR": [
+          151
+        ],
+        "XOR": [
+          153
+        ],
+        "symmetric": [
+          157
+        ],
+        "respectively.": [
+          161
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41598-023-31607-7",
+        "doi": "https://doi.org/10.1038/s41598-023-31607-7",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41598-023-31607-7",
+        "pdf_url": "https://www.nature.com/articles/s41598-023-31607-7.pdf",
+        "source": {
+          "id": "https://openalex.org/S196734849",
+          "display_name": "Scientific Reports",
+          "issn_l": "2045-2322",
+          "issn": [
+            "2045-2322"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-c",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Reports",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4308966681",
+      "doi": "https://doi.org/10.1103/physrevmaterials.6.114402",
+      "title": "Temperature-independent ferromagnetic resonance shift in Bi-doped YIG garnets through magnetic anisotropy tuning",
+      "publication_date": "2022-11-14",
+      "abstract_inverted_index": {
+        "Thin": [
+          0
+        ],
+        "garnet": [
+          1,
+          53
+        ],
+        "films": [
+          2,
+          56,
+          124
+        ],
+        "are": [
+          3,
+          95,
+          126
+        ],
+        "becoming": [
+          4
+        ],
+        "central": [
+          5
+        ],
+        "for": [
+          6
+        ],
+        "magnon-spintronics": [
+          7
+        ],
+        "and": [
+          8
+        ],
+        "spin-orbitronics": [
+          9
+        ],
+        "devices": [
+          10
+        ],
+        "as": [
+          11,
+          40,
+          105,
+          188
+        ],
+        "they": [
+          12
+        ],
+        "show": [
+          13
+        ],
+        "versatile": [
+          14
+        ],
+        "magnetic": [
+          15,
+          20,
+          77,
+          88,
+          181
+        ],
+        "properties": [
+          16
+        ],
+        "together": [
+          17
+        ],
+        "with": [
+          18
+        ],
+        "low": [
+          19
+        ],
+        "losses.": [
+          21
+        ],
+        "These": [
+          22,
+          163
+        ],
+        "fields": [
+          23
+        ],
+        "would": [
+          24
+        ],
+        "benefit": [
+          25
+        ],
+        "from": [
+          26,
+          101,
+          116
+        ],
+        "materials": [
+          27,
+          173
+        ],
+        "in": [
+          28,
+          121,
+          156,
+          174
+        ],
+        "which": [
+          29,
+          175
+        ],
+        "heat": [
+          30
+        ],
+        "does": [
+          31
+        ],
+        "not": [
+          32
+        ],
+        "affect": [
+          33
+        ],
+        "the": [
+          34,
+          41,
+          68,
+          71,
+          75,
+          86,
+          92,
+          98,
+          106,
+          111,
+          129,
+          166,
+          170,
+          176,
+          180,
+          185,
+          189,
+          199
+        ],
+        "magnetization": [
+          35,
+          138
+        ],
+        "dynamics,": [
+          36
+        ],
+        "an": [
+          37,
+          136,
+          157
+        ],
+        "effect": [
+          38
+        ],
+        "known": [
+          39
+        ],
+        "nonlinear": [
+          42
+        ],
+        "thermal": [
+          43
+        ],
+        "frequency": [
+          44
+        ],
+        "shift.": [
+          45
+        ],
+        "In": [
+          46
+        ],
+        "this": [
+          47
+        ],
+        "study,": [
+          48
+        ],
+        "low-damping": [
+          49
+        ],
+        "Bi": [
+          50
+        ],
+        "substituted": [
+          51
+        ],
+        "iron": [
+          52
+        ],
+        "(Bi:YIG)": [
+          54
+        ],
+        "ultrathin": [
+          55
+        ],
+        "have": [
+          57
+        ],
+        "been": [
+          58
+        ],
+        "grown": [
+          59
+        ],
+        "using": [
+          60
+        ],
+        "pulsed": [
+          61
+        ],
+        "laser": [
+          62
+        ],
+        "deposition.": [
+          63
+        ],
+        "Through": [
+          64
+        ],
+        "a": [
+          65,
+          82,
+          147
+        ],
+        "fine-tuning": [
+          66
+        ],
+        "of": [
+          67,
+          74,
+          85,
+          118,
+          161,
+          179,
+          203
+        ],
+        "growth": [
+          69,
+          93,
+          99
+        ],
+        "parameters,": [
+          70
+        ],
+        "precise": [
+          72
+        ],
+        "control": [
+          73
+        ],
+        "perpendicular": [
+          76
+        ],
+        "anisotropy": [
+          78,
+          158,
+          182
+        ],
+        "allows": [
+          79
+        ],
+        "to": [
+          80,
+          103,
+          114,
+          120,
+          128,
+          152,
+          198
+        ],
+        "achieve": [
+          81
+        ],
+        "full": [
+          83
+        ],
+        "compensation": [
+          84
+        ],
+        "dipolar": [
+          87,
+          130
+        ],
+        "anisotropy.": [
+          89
+        ],
+        "Strikingly,": [
+          90
+        ],
+        "once": [
+          91
+        ],
+        "conditions": [
+          94
+        ],
+        "optimized,": [
+          96
+        ],
+        "varying": [
+          97
+        ],
+        "temperature": [
+          100,
+          144,
+          149,
+          159,
+          177
+        ],
+        "${405}^{\\ensuremath{\\circ}}\\mathrm{C}$": [
+          102
+        ],
+        "${475}^{\\ensuremath{\\circ}}\\mathrm{C}$": [
+          104
+        ],
+        "only": [
+          107
+        ],
+        "tuning": [
+          108
+        ],
+        "parameter": [
+          109
+        ],
+        "induces": [
+          110
+        ],
+        "easy": [
+          112
+        ],
+        "axis": [
+          113
+        ],
+        "go": [
+          115
+        ],
+        "out": [
+          117
+        ],
+        "plane": [
+          119
+        ],
+        "plane.": [
+          122
+        ],
+        "For": [
+          123
+        ],
+        "that": [
+          125,
+          140
+        ],
+        "close": [
+          127
+        ],
+        "compensation,": [
+          131
+        ],
+        "ferromagnetic": [
+          132
+        ],
+        "resonance": [
+          133
+        ],
+        "measurements": [
+          134
+        ],
+        "yield": [
+          135
+        ],
+        "effective": [
+          137
+        ],
+        "${\\ensuremath{\\mu}}_{0}{M}_{\\mathrm{eff}}\\phantom{\\rule{0.28em}{0ex}}(\\mathrm{T})$": [
+          139
+        ],
+        "has": [
+          141
+        ],
+        "almost": [
+          142
+        ],
+        "no": [
+          143
+        ],
+        "dependence": [
+          145,
+          178
+        ],
+        "over": [
+          146
+        ],
+        "large": [
+          148
+        ],
+        "range": [
+          150
+        ],
+        "(260": [
+          151
+        ],
+        "400": [
+          153
+        ],
+        "K)": [
+          154
+        ],
+        "resulting": [
+          155
+        ],
+        "exponent": [
+          160
+        ],
+        "2.": [
+          162
+        ],
+        "findings": [
+          164
+        ],
+        "put": [
+          165
+        ],
+        "Bi:YIG": [
+          167
+        ],
+        "system": [
+          168
+        ],
+        "among": [
+          169
+        ],
+        "very": [
+          171
+        ],
+        "few": [
+          172
+        ],
+        "varies": [
+          183
+        ],
+        "at": [
+          184
+        ],
+        "same": [
+          186
+        ],
+        "rate": [
+          187
+        ],
+        "saturation": [
+          190
+        ],
+        "magnetization.": [
+          191
+        ],
+        "This": [
+          192
+        ],
+        "interesting": [
+          193
+        ],
+        "behavior": [
+          194
+        ],
+        "is": [
+          195
+        ],
+        "ascribed": [
+          196
+        ],
+        "phenomenologically": [
+          197
+        ],
+        "sizable": [
+          200
+        ],
+        "orbital": [
+          201
+        ],
+        "moment": [
+          202
+        ],
+        "${\\mathrm{Bi}}^{3+}$.": [
+          204
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevmaterials.6.114402",
+        "doi": "https://doi.org/10.1103/physrevmaterials.6.114402",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevmaterials.6.114402",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S2786256796",
+          "display_name": "Physical Review Materials",
+          "issn_l": "2475-9953",
+          "issn": [
+            "2475-9953",
+            "2476-0455"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-2",
+            "ki-jl-1",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review Materials",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4395022747",
+      "doi": "https://doi.org/10.1063/5.0195099",
+      "title": "Spin-wave self-imaging: Experimental and numerical demonstration of caustic and Talbot-like diffraction patterns",
+      "publication_date": "2024-05-06",
+      "abstract_inverted_index": {
+        "Extending": [
+          0
+        ],
+        "the": [
+          1,
+          4,
+          13,
+          20,
+          56,
+          69,
+          72,
+          79,
+          82,
+          87,
+          91,
+          103,
+          106,
+          114,
+          117,
+          129,
+          132,
+          148,
+          162
+        ],
+        "scope": [
+          2
+        ],
+        "of": [
+          3,
+          15,
+          26,
+          71,
+          81,
+          119,
+          125,
+          150,
+          161
+        ],
+        "self-imaging": [
+          5,
+          29,
+          133,
+          164
+        ],
+        "phenomenon,": [
+          6
+        ],
+        "traditionally": [
+          7
+        ],
+        "associated": [
+          8
+        ],
+        "with": [
+          9
+        ],
+        "linear": [
+          10
+        ],
+        "optics,": [
+          11
+        ],
+        "to": [
+          12,
+          77,
+          128
+        ],
+        "domain": [
+          14
+        ],
+        "magnonics,": [
+          16
+        ],
+        "this": [
+          17,
+          40
+        ],
+        "study": [
+          18
+        ],
+        "presents": [
+          19
+        ],
+        "experimental": [
+          21
+        ],
+        "demonstration": [
+          22
+        ],
+        "and": [
+          23,
+          55,
+          86,
+          100,
+          123,
+          135,
+          169
+        ],
+        "numerical": [
+          24
+        ],
+        "analysis": [
+          25
+        ],
+        "spin-wave": [
+          27
+        ],
+        "(SW)": [
+          28
+        ],
+        "in": [
+          30,
+          45,
+          166
+        ],
+        "an": [
+          31
+        ],
+        "in-plane": [
+          32
+        ],
+        "magnetized": [
+          33
+        ],
+        "yttrium": [
+          34
+        ],
+        "iron": [
+          35
+        ],
+        "garnet": [
+          36
+        ],
+        "film.": [
+          37
+        ],
+        "We": [
+          38,
+          66,
+          94
+        ],
+        "explore": [
+          39
+        ],
+        "phenomenon": [
+          41,
+          134
+        ],
+        "using": [
+          42,
+          62
+        ],
+        "a": [
+          43,
+          47,
+          52
+        ],
+        "setup": [
+          44
+        ],
+        "which": [
+          46
+        ],
+        "plane": [
+          48
+        ],
+        "SW": [
+          49,
+          151,
+          163
+        ],
+        "passes": [
+          50
+        ],
+        "through": [
+          51
+        ],
+        "diffraction": [
+          53,
+          101,
+          121
+        ],
+        "grating,": [
+          54,
+          115
+        ],
+        "resulting": [
+          57
+        ],
+        "interference": [
+          58,
+          107,
+          130,
+          152
+        ],
+        "pattern": [
+          59
+        ],
+        "is": [
+          60
+        ],
+        "detected": [
+          61
+        ],
+        "Brillouin": [
+          63
+        ],
+        "light": [
+          64,
+          146
+        ],
+        "scattering.": [
+          65
+        ],
+        "have": [
+          67
+        ],
+        "varied": [
+          68
+        ],
+        "frequencies": [
+          70,
+          99
+        ],
+        "source": [
+          73
+        ],
+        "dynamic": [
+          74
+        ],
+        "magnetic": [
+          75
+        ],
+        "field": [
+          76
+        ],
+        "discern": [
+          78
+        ],
+        "influence": [
+          80
+        ],
+        "anisotropic": [
+          83,
+          170
+        ],
+        "dispersion": [
+          84
+        ],
+        "relation": [
+          85
+        ],
+        "caustic": [
+          88
+        ],
+        "effect": [
+          89
+        ],
+        "on": [
+          90,
+          147
+        ],
+        "analyzed": [
+          92
+        ],
+        "phenomenon.": [
+          93
+        ],
+        "found": [
+          95
+        ],
+        "that": [
+          96
+        ],
+        "at": [
+          97,
+          110
+        ],
+        "low": [
+          98
+        ],
+        "fields,": [
+          102
+        ],
+        "caustics": [
+          104
+        ],
+        "determine": [
+          105
+        ],
+        "pattern.": [
+          108
+        ],
+        "However,": [
+          109
+        ],
+        "large": [
+          111
+        ],
+        "distances": [
+          112
+        ],
+        "from": [
+          113
+        ],
+        "when": [
+          116
+        ],
+        "waves": [
+          118
+        ],
+        "high": [
+          120
+        ],
+        "order": [
+          122
+        ],
+        "number": [
+          124
+        ],
+        "slits": [
+          126
+        ],
+        "contribute": [
+          127
+        ],
+        "pattern,": [
+          131
+        ],
+        "Talbot-like": [
+          136
+        ],
+        "patterns": [
+          137
+        ],
+        "are": [
+          138
+        ],
+        "formed.": [
+          139
+        ],
+        "This": [
+          140
+        ],
+        "methodological": [
+          141
+        ],
+        "approach": [
+          142
+        ],
+        "not": [
+          143
+        ],
+        "only": [
+          144
+        ],
+        "sheds": [
+          145
+        ],
+        "behavior": [
+          149
+        ],
+        "under": [
+          153
+        ],
+        "different": [
+          154
+        ],
+        "conditions": [
+          155
+        ],
+        "but": [
+          156
+        ],
+        "also": [
+          157
+        ],
+        "enhances": [
+          158
+        ],
+        "our": [
+          159
+        ],
+        "understanding": [
+          160
+        ],
+        "process": [
+          165
+        ],
+        "both": [
+          167
+        ],
+        "isotropic": [
+          168
+        ],
+        "media.": [
+          171
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0195099",
+        "doi": "https://doi.org/10.1063/5.0195099",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1063/5.0195099",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S105243760",
+          "display_name": "Applied Physics Letters",
+          "issn_l": "0003-6951",
+          "issn": [
+            "0003-6951",
+            "1077-3118",
+            "1520-8842"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-a",
+            "jufo-3",
+            "ki-jl-1",
+            "norway-2",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Applied Physics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3177907437",
+      "doi": "https://doi.org/10.1038/s41598-021-93700-z",
+      "title": "Experimental demonstration of a concave grating for spin waves in the Rowland arrangement",
+      "publication_date": "2021-07-09",
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          72
+        ],
+        "experimentally": [
+          1
+        ],
+        "demonstrate": [
+          2
+        ],
+        "the": [
+          3,
+          63,
+          70,
+          92,
+          95,
+          115,
+          127,
+          140,
+          149
+        ],
+        "operation": [
+          4
+        ],
+        "of": [
+          5,
+          66,
+          105,
+          151
+        ],
+        "a": [
+          6,
+          17,
+          30,
+          43,
+          135,
+          156
+        ],
+        "Rowland-type": [
+          7
+        ],
+        "concave": [
+          8
+        ],
+        "grating": [
+          9,
+          32,
+          51,
+          93
+        ],
+        "for": [
+          10,
+          142
+        ],
+        "spin": [
+          11,
+          24,
+          40,
+          78
+        ],
+        "waves,": [
+          12
+        ],
+        "with": [
+          13
+        ],
+        "potential": [
+          14
+        ],
+        "application": [
+          15
+        ],
+        "as": [
+          16,
+          134
+        ],
+        "microwave": [
+          18
+        ],
+        "spectrometer.": [
+          19,
+          136
+        ],
+        "In": [
+          20
+        ],
+        "this": [
+          21,
+          110
+        ],
+        "device": [
+          22,
+          129
+        ],
+        "geometry,": [
+          23
+        ],
+        "waves": [
+          25,
+          41,
+          79
+        ],
+        "are": [
+          26
+        ],
+        "coherently": [
+          27
+        ],
+        "excited": [
+          28
+        ],
+        "on": [
+          29,
+          155
+        ],
+        "diffraction": [
+          31,
+          50
+        ],
+        "and": [
+          33,
+          94
+        ],
+        "form": [
+          34
+        ],
+        "an": [
+          35,
+          83
+        ],
+        "interference": [
+          36
+        ],
+        "pattern": [
+          37
+        ],
+        "that": [
+          38,
+          74,
+          123,
+          147
+        ],
+        "focuses": [
+          39
+        ],
+        "to": [
+          42,
+          46,
+          60
+        ],
+        "point": [
+          44
+        ],
+        "corresponding": [
+          45
+        ],
+        "their": [
+          47
+        ],
+        "frequency.": [
+          48
+        ],
+        "The": [
+          49
+        ],
+        "was": [
+          52,
+          58
+        ],
+        "created": [
+          53,
+          81
+        ],
+        "by": [
+          54,
+          82,
+          87
+        ],
+        "focused-ion-beam": [
+          55
+        ],
+        "irradiation,": [
+          56
+        ],
+        "which": [
+          57
+        ],
+        "found": [
+          59,
+          73
+        ],
+        "locally": [
+          61
+        ],
+        "eliminate": [
+          62
+        ],
+        "ferrimagnetic": [
+          64
+        ],
+        "properties": [
+          65
+        ],
+        "YIG,": [
+          67
+        ],
+        "without": [
+          68
+        ],
+        "removing": [
+          69
+        ],
+        "material.": [
+          71
+        ],
+        "in": [
+          75
+        ],
+        "our": [
+          76,
+          99
+        ],
+        "experiments": [
+          77
+        ],
+        "were": [
+          80
+        ],
+        "indirect": [
+          84
+        ],
+        "excitation": [
+          85,
+          117,
+          126
+        ],
+        "mechanism,": [
+          86
+        ],
+        "exploiting": [
+          88
+        ],
+        "nonlinear": [
+          89,
+          116
+        ],
+        "resonance": [
+          90
+        ],
+        "between": [
+          91
+        ],
+        "coplanar": [
+          96
+        ],
+        "waveguide.": [
+          97
+        ],
+        "Although": [
+          98
+        ],
+        "demonstration": [
+          100
+        ],
+        "does": [
+          101
+        ],
+        "not": [
+          102,
+          112
+        ],
+        "include": [
+          103
+        ],
+        "separation": [
+          104
+        ],
+        "multiple": [
+          106
+        ],
+        "frequency": [
+          107
+        ],
+        "components,": [
+          108
+        ],
+        "since": [
+          109
+        ],
+        "is": [
+          111,
+          119
+        ],
+        "possible": [
+          113
+        ],
+        "if": [
+          114
+        ],
+        "mechanism": [
+          118
+        ],
+        "used,": [
+          120
+        ],
+        "we": [
+          121
+        ],
+        "believe": [
+          122
+        ],
+        "using": [
+          124
+        ],
+        "linear": [
+          125
+        ],
+        "same": [
+          128
+        ],
+        "geometry": [
+          130
+        ],
+        "could": [
+          131
+        ],
+        "be": [
+          132
+        ],
+        "used": [
+          133
+        ],
+        "Our": [
+          137
+        ],
+        "work": [
+          138
+        ],
+        "paves": [
+          139
+        ],
+        "way": [
+          141
+        ],
+        "complex": [
+          143
+        ],
+        "spin-wave": [
+          144
+        ],
+        "optic": [
+          145
+        ],
+        "devices-chips": [
+          146
+        ],
+        "replicate": [
+          148
+        ],
+        "functionality": [
+          150
+        ],
+        "integrated": [
+          152
+        ],
+        "optical": [
+          153
+        ],
+        "devices": [
+          154
+        ],
+        "chip-scale.": [
+          157
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41598-021-93700-z",
+        "doi": "https://doi.org/10.1038/s41598-021-93700-z",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41598-021-93700-z",
+        "pdf_url": "https://www.nature.com/articles/s41598-021-93700-z.pdf",
+        "source": {
+          "id": "https://openalex.org/S196734849",
+          "display_name": "Scientific Reports",
+          "issn_l": "2045-2322",
+          "issn": [
+            "2045-2322"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
+            "cwts-core",
+            "doaj",
+            "dongbi-c",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Reports",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3000898907",
+      "doi": "https://doi.org/10.1103/physrevb.102.014423",
+      "title": "Off-axial focusing of a spin-wave lens in the presence of Dzyaloshinskii-Moriya interaction",
+      "publication_date": "2020-07-15",
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          26,
+          51
+        ],
+        "theoretically": [
+          1
+        ],
+        "study": [
+          2
+        ],
+        "the": [
+          3,
+          9,
+          29,
+          34,
+          38,
+          41,
+          57,
+          62,
+          66
+        ],
+        "effect": [
+          4
+        ],
+        "of": [
+          5,
+          11,
+          40,
+          56,
+          68
+        ],
+        "Dzyaloshinskii-Moriya": [
+          6
+        ],
+        "interaction": [
+          7
+        ],
+        "on": [
+          8,
+          60
+        ],
+        "focusing": [
+          10,
+          49
+        ],
+        "a": [
+          12,
+          19,
+          46,
+          53
+        ],
+        "spin-wave": [
+          13
+        ],
+        "lens": [
+          14
+        ],
+        "that": [
+          15
+        ],
+        "is": [
+          16
+        ],
+        "constructed": [
+          17
+        ],
+        "by": [
+          18
+        ],
+        "circular": [
+          20
+        ],
+        "interface": [
+          21
+        ],
+        "between": [
+          22
+        ],
+        "two": [
+          23
+        ],
+        "magnetic": [
+          24
+        ],
+        "films.": [
+          25
+        ],
+        "analytically": [
+          27
+        ],
+        "derive": [
+          28
+        ],
+        "generalized": [
+          30
+        ],
+        "Snell's": [
+          31
+        ],
+        "law": [
+          32
+        ],
+        "in": [
+          33,
+          89
+        ],
+        "curved": [
+          35
+        ],
+        "geometry": [
+          36
+        ],
+        "and": [
+          37,
+          65,
+          92
+        ],
+        "position": [
+          39
+        ],
+        "focal": [
+          42,
+          58
+        ],
+        "point": [
+          43,
+          59
+        ],
+        "which": [
+          44
+        ],
+        "exhibits": [
+          45
+        ],
+        "peculiar": [
+          47
+        ],
+        "off-axial": [
+          48
+        ],
+        "behavior.": [
+          50
+        ],
+        "uncover": [
+          52
+        ],
+        "strong": [
+          54
+        ],
+        "dependence": [
+          55
+        ],
+        "both": [
+          61
+        ],
+        "material": [
+          63
+        ],
+        "parameters": [
+          64
+        ],
+        "frequency": [
+          67
+        ],
+        "incident": [
+          69
+        ],
+        "spin": [
+          70,
+          87
+        ],
+        "waves.": [
+          71
+        ],
+        "Full": [
+          72
+        ],
+        "micromagnetic": [
+          73
+        ],
+        "simulations": [
+          74
+        ],
+        "compare": [
+          75
+        ],
+        "well": [
+          76
+        ],
+        "with": [
+          77
+        ],
+        "theoretical": [
+          78
+        ],
+        "predictions.": [
+          79
+        ],
+        "Our": [
+          80
+        ],
+        "findings": [
+          81
+        ],
+        "would": [
+          82
+        ],
+        "be": [
+          83
+        ],
+        "helpful": [
+          84
+        ],
+        "to": [
+          85,
+          93
+        ],
+        "manipulate": [
+          86
+        ],
+        "waves": [
+          88
+        ],
+        "chiral": [
+          90
+        ],
+        "magnets": [
+          91
+        ],
+        "design": [
+          94
+        ],
+        "functional": [
+          95
+        ],
+        "magnonic": [
+          96
+        ],
+        "devices.": [
+          97
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevb.102.014423",
+        "doi": "https://doi.org/10.1103/physrevb.102.014423",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevb.102.014423",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3097496229",
+      "doi": "https://doi.org/10.1007/s10948-020-05742-5",
+      "title": "Effect of Damping on Magnetic Induced Resonances in Cross Waveguide Structures",
+      "publication_date": "2020-11-05",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1007/s10948-020-05742-5",
+        "doi": "https://doi.org/10.1007/s10948-020-05742-5",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1007/s10948-020-05742-5",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S89963981",
+          "display_name": "Journal of Superconductivity and Novel Magnetism",
+          "issn_l": "1557-1939",
+          "issn": [
+            "1557-1939",
+            "1557-1947"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-b",
+            "jufo-1",
+            "norway-1",
+            "poland-40",
+            "russia-white-list-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319900",
+          "host_organization_name": "Springer Science+Business Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319900",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Springer Science+Business Media",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Superconductivity and Novel Magnetism",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4321120774",
+      "doi": "https://doi.org/10.7498/aps.72.20221997",
+      "title": "Topological states and quantum effects in magnonics",
+      "publication_date": "2023-01-01",
+      "abstract_inverted_index": {
+        "In": [
+          0,
+          133
+        ],
+        "recent": [
+          1,
+          140
+        ],
+        "years,": [
+          2
+        ],
+        "with": [
+          3
+        ],
+        "the": [
+          4,
+          8,
+          12,
+          84,
+          110,
+          139,
+          143,
+          158,
+          174,
+          269
+        ],
+        "rapid": [
+          5
+        ],
+        "development": [
+          6,
+          271
+        ],
+        "of": [
+          7,
+          14,
+          53,
+          64,
+          95,
+          114,
+          148,
+          160,
+          177,
+          184,
+          245,
+          259,
+          274
+        ],
+        "emerging": [
+          9
+        ],
+        "technologies": [
+          10
+        ],
+        "including": [
+          11,
+          173,
+          204,
+          228,
+          256
+        ],
+        "internet": [
+          13
+        ],
+        "things,": [
+          15
+        ],
+        "cloud": [
+          16
+        ],
+        "computing,": [
+          17
+        ],
+        "big": [
+          18
+        ],
+        "data,": [
+          19
+        ],
+        "and": [
+          20,
+          51,
+          72,
+          83,
+          102,
+          131,
+          151,
+          197,
+          210,
+          222,
+          241,
+          265,
+          272,
+          278
+        ],
+        "artificial": [
+          21
+        ],
+        "intelligence,": [
+          22
+        ],
+        "higher": [
+          23
+        ],
+        "computing": [
+          24
+        ],
+        "capability": [
+          25
+        ],
+        "is": [
+          26,
+          55,
+          66,
+          88,
+          165
+        ],
+        "required.": [
+          27
+        ],
+        "Traditional": [
+          28
+        ],
+        "semiconductor": [
+          29
+        ],
+        "devices": [
+          30,
+          122
+        ],
+        "are": [
+          31,
+          76,
+          276
+        ],
+        "confronting": [
+          32
+        ],
+        "huge": [
+          33
+        ],
+        "challenges": [
+          34
+        ],
+        "brought": [
+          35
+        ],
+        "by": [
+          36,
+          208
+        ],
+        "device": [
+          37
+        ],
+        "miniaturization,": [
+          38
+        ],
+        "energy": [
+          39
+        ],
+        "consumption,": [
+          40
+        ],
+        "heat": [
+          41
+        ],
+        "dissipation,": [
+          42
+        ],
+        "etc.": [
+          43
+        ],
+        "Moore’s": [
+          44
+        ],
+        "law": [
+          45
+        ],
+        "which": [
+          46,
+          107
+        ],
+        "succeeds": [
+          47
+        ],
+        "in": [
+          48,
+          80,
+          117,
+          127,
+          142,
+          249
+        ],
+        "guiding": [
+          49
+        ],
+        "downscaling": [
+          50
+        ],
+        "upgrading": [
+          52
+        ],
+        "microelectronics": [
+          54
+        ],
+        "nearing": [
+          56
+        ],
+        "its": [
+          57
+        ],
+        "end.": [
+          58
+        ],
+        "A": [
+          59
+        ],
+        "new": [
+          60
+        ],
+        "information": [
+          61,
+          70,
+          129
+        ],
+        "carrier,": [
+          62
+        ],
+        "instead": [
+          63
+        ],
+        "electrons,": [
+          65
+        ],
+        "required": [
+          67
+        ],
+        "urgently": [
+          68
+        ],
+        "for": [
+          69
+        ],
+        "transmission": [
+          71
+        ],
+        "processing.": [
+          73
+        ],
+        "Spin": [
+          74
+        ],
+        "waves": [
+          75,
+          79,
+          150
+        ],
+        "collectively": [
+          77
+        ],
+        "excited": [
+          78
+        ],
+        "ordered": [
+          81
+        ],
+        "magnets,": [
+          82
+        ],
+        "quantized": [
+          85
+        ],
+        "quasi": [
+          86
+        ],
+        "particle": [
+          87
+        ],
+        "referred": [
+          89
+        ],
+        "to": [
+          90
+        ],
+        "as": [
+          91
+        ],
+        "magnon.": [
+          92
+        ],
+        "The": [
+          93
+        ],
+        "propagation": [
+          94,
+          188
+        ],
+        "magnons": [
+          96
+        ],
+        "does": [
+          97
+        ],
+        "not": [
+          98
+        ],
+        "involve": [
+          99
+        ],
+        "electron": [
+          100
+        ],
+        "motion": [
+          101
+        ],
+        "produces": [
+          103
+        ],
+        "no": [
+          104
+        ],
+        "Joule": [
+          105
+        ],
+        "heating,": [
+          106
+        ],
+        "can": [
+          108
+        ],
+        "solve": [
+          109
+        ],
+        "increasing": [
+          111
+        ],
+        "significant": [
+          112
+        ],
+        "issues": [
+          113
+        ],
+        "heating": [
+          115
+        ],
+        "dissipation": [
+          116
+        ],
+        "electronic": [
+          118
+        ],
+        "devices.": [
+          119,
+          153
+        ],
+        "Thus,": [
+          120
+        ],
+        "magnon-based": [
+          121,
+          152,
+          261
+        ],
+        "have": [
+          123
+        ],
+        "important": [
+          124
+        ],
+        "application": [
+          125
+        ],
+        "prospects": [
+          126
+        ],
+        "low-power": [
+          128
+        ],
+        "storage": [
+          130
+        ],
+        "computing.": [
+          132
+        ],
+        "this": [
+          134
+        ],
+        "review,": [
+          135
+        ],
+        "we": [
+          136,
+          155
+        ],
+        "first": [
+          137
+        ],
+        "introduce": [
+          138
+        ],
+        "advances": [
+          141
+        ],
+        "excitation,": [
+          144
+        ],
+        "propagation,": [
+          145
+        ],
+        "manipulation,": [
+          146
+        ],
+        "detection": [
+          147
+        ],
+        "spin": [
+          149,
+          179,
+          185
+        ],
+        "Then,": [
+          154
+        ],
+        "mainly": [
+          156
+        ],
+        "discuss": [
+          157
+        ],
+        "researches": [
+          159
+        ],
+        "our": [
+          161
+        ],
+        "group.": [
+          162
+        ],
+        "This": [
+          163
+        ],
+        "part": [
+          164
+        ],
+        "described": [
+          166
+        ],
+        "from": [
+          167
+        ],
+        "four": [
+          168
+        ],
+        "aspects:": [
+          169
+        ],
+        "1)": [
+          170
+        ],
+        "Chiral": [
+          171
+        ],
+        "magnonics,": [
+          172,
+          203,
+          227,
+          255
+        ],
+        "chiral": [
+          175,
+          190
+        ],
+        "propagarion": [
+          176
+        ],
+        "magnetostatic": [
+          178
+        ],
+        "waves,": [
+          180,
+          186
+        ],
+        "Dzyaloshinskii-Moriya": [
+          181
+        ],
+        "interaction(DMI)-induced": [
+          182
+        ],
+        "nonreciprocity": [
+          183
+        ],
+        "spin-wave": [
+          187,
+          195
+        ],
+        "at": [
+          189
+        ],
+        "interface,": [
+          191
+        ],
+        "magnonic": [
+          192,
+          198,
+          215,
+          232,
+          235
+        ],
+        "Goos-Hänchen": [
+          193
+        ],
+        "effect,": [
+          194,
+          231
+        ],
+        "lens,": [
+          196
+        ],
+        "Stern-Gerlach": [
+          199
+        ],
+        "effect;": [
+          200
+        ],
+        "2)": [
+          201
+        ],
+        "nonlinear": [
+          202
+        ],
+        "three-magnon": [
+          205
+        ],
+        "processes": [
+          206
+        ],
+        "induced": [
+          207
+        ],
+        "DMI": [
+          209
+        ],
+        "noncollinear": [
+          211
+        ],
+        "magnetic": [
+          212,
+          246
+        ],
+        "textures,": [
+          213
+        ],
+        "skyrmion-induced": [
+          214
+        ],
+        "frequency": [
+          216,
+          220
+        ],
+        "comb,": [
+          217,
+          221
+        ],
+        "twisted": [
+          218
+        ],
+        "magnon": [
+          219,
+          229
+        ],
+        "Penrose": [
+          223
+        ],
+        "superradiance;": [
+          224
+        ],
+        "3)": [
+          225
+        ],
+        "topological": [
+          226,
+          233,
+          236,
+          238
+        ],
+        "Hall": [
+          230
+        ],
+        "insulator,": [
+          234
+        ],
+        "semimetal,": [
+          237
+        ],
+        "edge": [
+          239
+        ],
+        "states": [
+          240,
+          244,
+          258
+        ],
+        "high-order": [
+          242
+        ],
+        "corner": [
+          243
+        ],
+        "solitons": [
+          247
+        ],
+        "arranged": [
+          248
+        ],
+        "different": [
+          250
+        ],
+        "crystal": [
+          251
+        ],
+        "lattices;": [
+          252
+        ],
+        "4)": [
+          253
+        ],
+        "quantum": [
+          254,
+          257,
+          263
+        ],
+        "magnon,": [
+          260
+        ],
+        "hybrid": [
+          262
+        ],
+        "systems,": [
+          264
+        ],
+        "cavity": [
+          266
+        ],
+        "magnonics.": [
+          267
+        ],
+        "Finally,": [
+          268
+        ],
+        "future": [
+          270
+        ],
+        "prospect": [
+          273
+        ],
+        "magnonics": [
+          275
+        ],
+        "analyzed": [
+          277
+        ],
+        "discussed.": [
+          279
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.7498/aps.72.20221997",
+        "doi": "https://doi.org/10.7498/aps.72.20221997",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.7498/aps.72.20221997",
+        "pdf_url": "https://wulixb.iphy.ac.cn/pdf-content/10.7498/aps.72.20221997.pdf",
+        "source": {
+          "id": "https://openalex.org/S950076683",
+          "display_name": "Acta Physica Sinica",
+          "issn_l": "1000-3290",
+          "issn": [
+            "1000-3290"
+          ],
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-1",
+            "ki-jl-1",
+            "norway-1",
+            "poland-20",
+            "russia-white-list-3"
+          ],
+          "host_organization": "https://openalex.org/P4310319982",
+          "host_organization_name": "Science Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319982"
+          ],
+          "host_organization_lineage_names": [
+            "Science Press"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Acta Physica Sinica",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4220845860",
+      "doi": "https://doi.org/10.1063/5.0086430",
+      "title": "Zero-field routing of spin waves in a multiferroic heterostructure",
+      "publication_date": "2022-03-14",
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          99
+        ],
+        "report": [
+          1
+        ],
+        "zero-field": [
+          2
+        ],
+        "routing": [
+          3,
+          82
+        ],
+        "of": [
+          4,
+          33,
+          40,
+          62,
+          83,
+          90
+        ],
+        "spin": [
+          5,
+          84,
+          102
+        ],
+        "waves": [
+          6,
+          48,
+          85,
+          103
+        ],
+        "in": [
+          7,
+          43,
+          65,
+          115
+        ],
+        "a": [
+          8,
+          12,
+          17,
+          30,
+          37
+        ],
+        "multiferroic": [
+          9
+        ],
+        "heterostructure": [
+          10
+        ],
+        "comprising": [
+          11
+        ],
+        "ferromagnetic": [
+          13
+        ],
+        "Fe": [
+          14,
+          28
+        ],
+        "film": [
+          15
+        ],
+        "and": [
+          16,
+          69,
+          86,
+          95,
+          125
+        ],
+        "ferroelectric": [
+          18
+        ],
+        "BaTiO3": [
+          19
+        ],
+        "substrate": [
+          20
+        ],
+        "with": [
+          21
+        ],
+        "fully": [
+          22
+        ],
+        "correlated": [
+          23
+        ],
+        "strain-coupled": [
+          24
+        ],
+        "domains.": [
+          25
+        ],
+        "In": [
+          26
+        ],
+        "the": [
+          27,
+          57,
+          66,
+          81,
+          88,
+          91,
+          96,
+          129
+        ],
+        "film,": [
+          29
+        ],
+        "regular": [
+          31
+        ],
+        "alternation": [
+          32
+        ],
+        "magnetic": [
+          34,
+          45,
+          58
+        ],
+        "anisotropy": [
+          35
+        ],
+        "produces": [
+          36
+        ],
+        "back-and-forth": [
+          38
+        ],
+        "rotation": [
+          39
+        ],
+        "uniform": [
+          41
+        ],
+        "magnetization": [
+          42
+        ],
+        "zero": [
+          44
+        ],
+        "field.": [
+          46
+        ],
+        "Spin": [
+          47
+        ],
+        "propagating": [
+          49
+        ],
+        "across": [
+          50
+        ],
+        "this": [
+          51
+        ],
+        "domain": [
+          52,
+          59
+        ],
+        "structure": [
+          53
+        ],
+        "are": [
+          54,
+          104,
+          120
+        ],
+        "refracted": [
+          55
+        ],
+        "at": [
+          56
+        ],
+        "walls": [
+          60
+        ],
+        "because": [
+          61
+        ],
+        "abrupt": [
+          63
+        ],
+        "changes": [
+          64
+        ],
+        "dispersion": [
+          67
+        ],
+        "relation": [
+          68
+        ],
+        "phase": [
+          70
+        ],
+        "velocity.": [
+          71
+        ],
+        "Using": [
+          72
+        ],
+        "super-Nyquist": [
+          73
+        ],
+        "sampling": [
+          74
+        ],
+        "magneto-optical": [
+          75
+        ],
+        "Kerr": [
+          76
+        ],
+        "effect": [
+          77,
+          92
+        ],
+        "microscopy,": [
+          78
+        ],
+        "we": [
+          79
+        ],
+        "image": [
+          80
+        ],
+        "analyze": [
+          87
+        ],
+        "dependence": [
+          89
+        ],
+        "on": [
+          93,
+          128
+        ],
+        "frequency": [
+          94
+        ],
+        "propagation": [
+          97
+        ],
+        "direction.": [
+          98
+        ],
+        "find": [
+          100
+        ],
+        "that": [
+          101
+        ],
+        "routed": [
+          105
+        ],
+        "efficiently": [
+          106
+        ],
+        "by": [
+          107,
+          122
+        ],
+        "angles": [
+          108
+        ],
+        "up": [
+          109
+        ],
+        "to": [
+          110
+        ],
+        "60°": [
+          111
+        ],
+        "without": [
+          112
+        ],
+        "measurable": [
+          113
+        ],
+        "loss": [
+          114
+        ],
+        "amplitude.": [
+          116
+        ],
+        "The": [
+          117
+        ],
+        "experimental": [
+          118
+        ],
+        "results": [
+          119
+        ],
+        "reproduced": [
+          121
+        ],
+        "micromagnetic": [
+          123
+        ],
+        "simulations": [
+          124
+        ],
+        "calculations": [
+          126
+        ],
+        "based": [
+          127
+        ],
+        "modified": [
+          130
+        ],
+        "Snell's": [
+          131
+        ],
+        "law": [
+          132
+        ],
+        "for": [
+          133
+        ],
+        "magnonics.": [
+          134
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0086430",
+        "doi": "https://doi.org/10.1063/5.0086430",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1063/5.0086430",
+        "pdf_url": "https://aip.scitation.org/doi/pdf/10.1063/5.0086430",
+        "source": {
+          "id": "https://openalex.org/S105243760",
+          "display_name": "Applied Physics Letters",
+          "issn_l": "0003-6951",
+          "issn": [
+            "0003-6951",
+            "1077-3118",
+            "1520-8842"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-a",
+            "jufo-3",
+            "ki-jl-1",
+            "norway-2",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Applied Physics Letters",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W7125413486",
+      "doi": "https://doi.org/10.1103/7zfd-p48s",
+      "title": "Spatiotemporal diffractive magnonics in two-dimensional magnetic systems",
+      "publication_date": "2026-01-22",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1103/7zfd-p48s",
+        "doi": "https://doi.org/10.1103/7zfd-p48s",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/7zfd-p48s",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W7148473863",
+      "doi": "https://doi.org/10.1103/j5hs-wsb7",
+      "title": "Antiferromagnetic skyrmion as a magnonic lens",
+      "publication_date": "2026-04-02",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1103/j5hs-wsb7",
+        "doi": "https://doi.org/10.1103/j5hs-wsb7",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/j5hs-wsb7",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3173255398",
+      "doi": "https://doi.org/10.3389/fphy.2021.729967",
+      "title": "Magnetic Skyrmion Generation by Reflective Spin Wave Focusing",
+      "publication_date": "2021-09-30",
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          37,
+          85
+        ],
+        "propose": [
+          1
+        ],
+        "a": [
+          2,
+          15,
+          79
+        ],
+        "method": [
+          3
+        ],
+        "to": [
+          4,
+          24,
+          41,
+          64,
+          74,
+          96
+        ],
+        "generate": [
+          5
+        ],
+        "magnetic": [
+          6,
+          68,
+          75
+        ],
+        "skyrmions": [
+          7
+        ],
+        "by": [
+          8,
+          14,
+          78
+        ],
+        "focusing": [
+          9
+        ],
+        "spin": [
+          10,
+          51
+        ],
+        "waves": [
+          11,
+          52
+        ],
+        "totally": [
+          12
+        ],
+        "reflected": [
+          13,
+          50
+        ],
+        "curved": [
+          16
+        ],
+        "film": [
+          17
+        ],
+        "edge.": [
+          18
+        ],
+        "The": [
+          19
+        ],
+        "edge": [
+          20
+        ],
+        "contour": [
+          21
+        ],
+        "is": [
+          22
+        ],
+        "derived": [
+          23
+        ],
+        "be": [
+          25,
+          108
+        ],
+        "parabolic": [
+          26
+        ],
+        "and": [
+          27,
+          99,
+          121
+        ],
+        "frequency-independent": [
+          28
+        ],
+        "based": [
+          29
+        ],
+        "on": [
+          30
+        ],
+        "the": [
+          31,
+          49,
+          56,
+          60,
+          65,
+          82,
+          88,
+          97,
+          102,
+          111,
+          117
+        ],
+        "identical": [
+          32
+        ],
+        "magnonic": [
+          33
+        ],
+        "path": [
+          34
+        ],
+        "length": [
+          35
+        ],
+        "principle.": [
+          36
+        ],
+        "performed": [
+          38
+        ],
+        "micromagnetic": [
+          39
+        ],
+        "simulations": [
+          40
+        ],
+        "verify": [
+          42
+        ],
+        "our": [
+          43
+        ],
+        "theoretical": [
+          44
+        ],
+        "design.": [
+          45
+        ],
+        "Under": [
+          46
+        ],
+        "proper": [
+          47
+        ],
+        "conditions,": [
+          48
+        ],
+        "first": [
+          53
+        ],
+        "converge": [
+          54
+        ],
+        "at": [
+          55
+        ],
+        "focal": [
+          57
+        ],
+        "point": [
+          58
+        ],
+        "with": [
+          59,
+          94
+        ],
+        "enhanced": [
+          61
+        ],
+        "intensity": [
+          62
+        ],
+        "leading": [
+          63
+        ],
+        "emergence": [
+          66
+        ],
+        "of": [
+          67,
+          91,
+          101,
+          113,
+          119
+        ],
+        "droplets,": [
+          69
+        ],
+        "which": [
+          70
+        ],
+        "are": [
+          71
+        ],
+        "then": [
+          72
+        ],
+        "converted": [
+          73
+        ],
+        "skyrmion": [
+          76,
+          92
+        ],
+        "accompanied": [
+          77
+        ],
+        "change": [
+          80
+        ],
+        "in": [
+          81
+        ],
+        "topological": [
+          83
+        ],
+        "charge.": [
+          84
+        ],
+        "numerically": [
+          86
+        ],
+        "obtain": [
+          87
+        ],
+        "phase": [
+          89
+        ],
+        "diagram": [
+          90
+        ],
+        "generation": [
+          93
+        ],
+        "respect": [
+          95
+        ],
+        "amplitude": [
+          98
+        ],
+        "frequency": [
+          100
+        ],
+        "driving": [
+          103
+        ],
+        "field.": [
+          104
+        ],
+        "Our": [
+          105
+        ],
+        "finding": [
+          106
+        ],
+        "would": [
+          107
+        ],
+        "helpful": [
+          109
+        ],
+        "for": [
+          110
+        ],
+        "design": [
+          112
+        ],
+        "spintronic": [
+          114
+        ],
+        "devices": [
+          115
+        ],
+        "combining": [
+          116
+        ],
+        "advantage": [
+          118
+        ],
+        "skyrmionics": [
+          120
+        ],
+        "magnonics.": [
+          122
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.3389/fphy.2021.729967",
+        "doi": "https://doi.org/10.3389/fphy.2021.729967",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.3389/fphy.2021.729967",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/fphy.2021.729967/pdf",
+        "source": {
+          "id": "https://openalex.org/S2596760093",
+          "display_name": "Frontiers in Physics",
+          "issn_l": "2296-424X",
+          "issn": [
+            "2296-424X"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "norway-1",
+            "poland-20",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320527",
+          "host_organization_name": "Frontiers Media",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320527"
+          ],
+          "host_organization_lineage_names": [
+            "Frontiers Media"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Frontiers in Physics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4286434105",
+      "doi": "https://doi.org/10.1002/aelm.202200373",
+      "title": "Self‐Imaging Based Programmable Spin‐Wave Lookup Tables",
+      "publication_date": "2022-07-21",
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Inclusion": [
+          1
+        ],
+        "of": [
+          2,
+          53
+        ],
+        "spin": [
+          3,
+          61
+        ],
+        "waves": [
+          4,
+          62
+        ],
+        "into": [
+          5
+        ],
+        "the": [
+          6,
+          16,
+          25,
+          44,
+          51
+        ],
+        "computing": [
+          7
+        ],
+        "paradigm,": [
+          8
+        ],
+        "where": [
+          9,
+          97
+        ],
+        "complementary": [
+          10
+        ],
+        "metal‐oxide‐semiconductor": [
+          11
+        ],
+        "devices": [
+          12
+        ],
+        "are": [
+          13,
+          76,
+          87
+        ],
+        "still": [
+          14
+        ],
+        "at": [
+          15
+        ],
+        "fore,": [
+          17
+        ],
+        "is": [
+          18,
+          68
+        ],
+        "now": [
+          19
+        ],
+        "a": [
+          20,
+          30
+        ],
+        "challenge": [
+          21
+        ],
+        "for": [
+          22,
+          89
+        ],
+        "scientists": [
+          23
+        ],
+        "around": [
+          24
+        ],
+        "world.": [
+          26
+        ],
+        "In": [
+          27
+        ],
+        "this": [
+          28,
+          74
+        ],
+        "work,": [
+          29
+        ],
+        "wave": [
+          31
+        ],
+        "phenomenon": [
+          32
+        ],
+        "that": [
+          33,
+          56
+        ],
+        "has": [
+          34
+        ],
+        "not": [
+          35
+        ],
+        "yet": [
+          36
+        ],
+        "been": [
+          37
+        ],
+        "used": [
+          38
+        ],
+        "in": [
+          39,
+          63,
+          73,
+          92
+        ],
+        "magnonics‐self‐imaging,": [
+          40
+        ],
+        "also": [
+          41
+        ],
+        "known": [
+          42
+        ],
+        "as": [
+          43
+        ],
+        "Talbot": [
+          45
+        ],
+        "effect,": [
+          46
+        ],
+        "to": [
+          47,
+          84
+        ],
+        "design": [
+          48
+        ],
+        "and": [
+          49,
+          81
+        ],
+        "simulate": [
+          50
+        ],
+        "operation": [
+          52
+        ],
+        "interference": [
+          54
+        ],
+        "systems": [
+          55
+        ],
+        "perform": [
+          57
+        ],
+        "logic": [
+          58,
+          99
+        ],
+        "functions": [
+          59
+        ],
+        "on": [
+          60
+        ],
+        "thin": [
+          64
+        ],
+        "ferromagnetic": [
+          65
+        ],
+        "multimode": [
+          66
+        ],
+        "waveguides": [
+          67
+        ],
+        "utilized.": [
+          69
+        ],
+        "Lookup": [
+          70
+        ],
+        "tables": [
+          71
+        ],
+        "operating": [
+          72
+        ],
+        "way": [
+          75
+        ],
+        "characterized": [
+          77
+        ],
+        "by": [
+          78
+        ],
+        "high": [
+          79
+        ],
+        "programmability": [
+          80
+        ],
+        "scalability;": [
+          82
+        ],
+        "thanks": [
+          83
+        ],
+        "which": [
+          85
+        ],
+        "they": [
+          86
+        ],
+        "promising": [
+          88
+        ],
+        "their": [
+          90
+        ],
+        "implementation": [
+          91
+        ],
+        "field‐programmable": [
+          93
+        ],
+        "gate": [
+          94
+        ],
+        "arrays": [
+          95
+        ],
+        "circuits,": [
+          96
+        ],
+        "multiple": [
+          98
+        ],
+        "realizations": [
+          100
+        ],
+        "can": [
+          101
+        ],
+        "be": [
+          102
+        ],
+        "obtained.": [
+          103
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1002/aelm.202200373",
+        "doi": "https://doi.org/10.1002/aelm.202200373",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1002/aelm.202200373",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aelm.202200373",
+        "source": {
+          "id": "https://openalex.org/S2765003236",
+          "display_name": "Advanced Electronic Materials",
+          "issn_l": "2199-160X",
+          "issn": [
+            "2199-160X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "dongbi-b",
+            "jufo-2",
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320595",
+          "host_organization_name": "Wiley",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320595"
+          ],
+          "host_organization_lineage_names": [
+            "Wiley"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc",
+        "license_id": "https://openalex.org/licenses/cc-by-nc",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Advanced Electronic Materials",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4386530605",
+      "doi": "https://doi.org/10.1063/5.0160280",
+      "title": "Rapid-prototyping of microscopic thermal landscapes in Brillouin light scattering spectroscopy",
+      "publication_date": "2023-09-01",
+      "abstract_inverted_index": {
+        "Since": [
+          0
+        ],
+        "temperature": [
+          1,
+          46,
+          87,
+          94
+        ],
+        "and": [
+          2,
+          5,
+          32,
+          71
+        ],
+        "its": [
+          3,
+          56
+        ],
+        "spatial,": [
+          4
+        ],
+        "temporal": [
+          6
+        ],
+        "variations": [
+          7
+        ],
+        "affect": [
+          8
+        ],
+        "a": [
+          9,
+          49
+        ],
+        "wide": [
+          10
+        ],
+        "range": [
+          11
+        ],
+        "of": [
+          12,
+          15,
+          27,
+          55,
+          89
+        ],
+        "physical": [
+          13,
+          31
+        ],
+        "properties": [
+          14
+        ],
+        "material": [
+          16
+        ],
+        "systems,": [
+          17
+        ],
+        "they": [
+          18
+        ],
+        "can": [
+          19,
+          96
+        ],
+        "be": [
+          20,
+          97
+        ],
+        "used": [
+          21
+        ],
+        "to": [
+          22,
+          85
+        ],
+        "create": [
+          23
+        ],
+        "reconfigurable": [
+          24
+        ],
+        "spatial": [
+          25,
+          93
+        ],
+        "structures": [
+          26
+        ],
+        "various": [
+          28
+        ],
+        "types": [
+          29
+        ],
+        "in": [
+          30,
+          65
+        ],
+        "biological": [
+          33
+        ],
+        "objects.": [
+          34
+        ],
+        "This": [
+          35
+        ],
+        "paper": [
+          36
+        ],
+        "presents": [
+          37
+        ],
+        "an": [
+          38,
+          53
+        ],
+        "experimental": [
+          39
+        ],
+        "optical": [
+          40
+        ],
+        "setup": [
+          41
+        ],
+        "for": [
+          42,
+          100
+        ],
+        "creating": [
+          43
+        ],
+        "tunable": [
+          44
+        ],
+        "two-dimensional": [
+          45
+        ],
+        "patterns": [
+          47
+        ],
+        "on": [
+          48
+        ],
+        "micrometer": [
+          50
+        ],
+        "scale.": [
+          51
+        ],
+        "As": [
+          52
+        ],
+        "example": [
+          54
+        ],
+        "practical": [
+          57
+        ],
+        "application,": [
+          58
+        ],
+        "we": [
+          59
+        ],
+        "have": [
+          60
+        ],
+        "produced": [
+          61
+        ],
+        "temperature-induced": [
+          62
+        ],
+        "magnetization": [
+          63
+        ],
+        "landscapes": [
+          64
+        ],
+        "ferrimagnetic": [
+          66
+        ],
+        "yttrium": [
+          67
+        ],
+        "iron": [
+          68
+        ],
+        "garnet": [
+          69
+        ],
+        "films": [
+          70
+        ],
+        "investigated": [
+          72
+        ],
+        "them": [
+          73
+        ],
+        "using": [
+          74
+        ],
+        "micro-focused": [
+          75
+        ],
+        "Brillouin": [
+          76
+        ],
+        "light": [
+          77
+        ],
+        "scattering": [
+          78
+        ],
+        "spectroscopy.": [
+          79
+        ],
+        "It": [
+          80
+        ],
+        "is": [
+          81
+        ],
+        "shown": [
+          82
+        ],
+        "that,": [
+          83
+        ],
+        "due": [
+          84
+        ],
+        "the": [
+          86,
+          90
+        ],
+        "dependence": [
+          88
+        ],
+        "magnon": [
+          91
+        ],
+        "spectrum,": [
+          92
+        ],
+        "distributions": [
+          95
+        ],
+        "visualized": [
+          98
+        ],
+        "even": [
+          99
+        ],
+        "microscale": [
+          101
+        ],
+        "thermal": [
+          102
+        ],
+        "patterns.": [
+          103
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0160280",
+        "doi": "https://doi.org/10.1063/5.0160280",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1063/5.0160280",
+        "pdf_url": "https://pubs.aip.org/aip/rsi/article-pdf/doi/10.1063/5.0160280/18115477/093903_1_5.0160280.pdf",
+        "source": {
+          "id": "https://openalex.org/S31010182",
+          "display_name": "Review of Scientific Instruments",
+          "issn_l": "0034-6748",
+          "issn": [
+            "0034-6748",
+            "1089-7623",
+            "1527-2400"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-c",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1",
+            "poland-70",
+            "russia-white-list-2",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Review of Scientific Instruments",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3189830104",
+      "doi": "https://doi.org/10.1063/5.0096192",
+      "title": "Spin wave computing using pre-recorded magnetization patterns",
+      "publication_date": "2022-10-21",
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "propose": [
+          1
+        ],
+        "a": [
+          2,
+          12,
+          17,
+          22,
+          27,
+          32,
+          48,
+          55,
+          59,
+          107
+        ],
+        "novel": [
+          3
+        ],
+        "type": [
+          4
+        ],
+        "of": [
+          5,
+          109,
+          118
+        ],
+        "spin": [
+          6,
+          87
+        ],
+        "wave": [
+          7
+        ],
+        "computing": [
+          8
+        ],
+        "device,": [
+          9
+        ],
+        "based": [
+          10
+        ],
+        "on": [
+          11,
+          90
+        ],
+        "bilayer": [
+          13
+        ],
+        "structure": [
+          14
+        ],
+        "that": [
+          15
+        ],
+        "includes": [
+          16
+        ],
+        "“bias": [
+          18
+        ],
+        "layer”": [
+          19,
+          29
+        ],
+        "made": [
+          20,
+          30
+        ],
+        "from": [
+          21,
+          31
+        ],
+        "hard": [
+          23
+        ],
+        "magnetic": [
+          24,
+          33
+        ],
+        "material": [
+          25,
+          34
+        ],
+        "and": [
+          26
+        ],
+        "“propagation": [
+          28
+        ],
+        "with": [
+          35,
+          58
+        ],
+        "low": [
+          36
+        ],
+        "damping,": [
+          37
+        ],
+        "for": [
+          38
+        ],
+        "example,": [
+          39
+        ],
+        "yttrium": [
+          40
+        ],
+        "garnet": [
+          41
+        ],
+        "or": [
+          42
+        ],
+        "permalloy.": [
+          43
+        ],
+        "The": [
+          44,
+          115
+        ],
+        "bias": [
+          45,
+          56
+        ],
+        "layer": [
+          46
+        ],
+        "maintains": [
+          47
+        ],
+        "stable": [
+          49
+        ],
+        "pre-recorded": [
+          50
+        ],
+        "magnetization": [
+          51,
+          69,
+          120
+        ],
+        "pattern,": [
+          52
+        ],
+        "which": [
+          53,
+          63
+        ],
+        "generates": [
+          54
+        ],
+        "field": [
+          57,
+          81
+        ],
+        "desired": [
+          60
+        ],
+        "spatial": [
+          61,
+          116
+        ],
+        "dependence,": [
+          62
+        ],
+        "in": [
+          64,
+          95
+        ],
+        "turn": [
+          65
+        ],
+        "sets": [
+          66
+        ],
+        "the": [
+          67,
+          71,
+          83,
+          91
+        ],
+        "equilibrium": [
+          68
+        ],
+        "inside": [
+          70
+        ],
+        "propagation": [
+          72,
+          84
+        ],
+        "layer.": [
+          73
+        ],
+        "When": [
+          74
+        ],
+        "an": [
+          75,
+          79
+        ],
+        "external": [
+          76
+        ],
+        "source": [
+          77
+        ],
+        "applies": [
+          78
+        ],
+        "RF": [
+          80
+        ],
+        "to": [
+          82,
+          105
+        ],
+        "layer,": [
+          85
+        ],
+        "excited": [
+          86
+        ],
+        "waves": [
+          88
+        ],
+        "scatter": [
+          89
+        ],
+        "magnetization's": [
+          92
+        ],
+        "inhomogeneities": [
+          93
+        ],
+        "resulting": [
+          94
+        ],
+        "complex": [
+          96
+        ],
+        "interference": [
+          97,
+          101
+        ],
+        "behavior.": [
+          98
+        ],
+        "This": [
+          99
+        ],
+        "scattering": [
+          100
+        ],
+        "can": [
+          102,
+          122
+        ],
+        "be": [
+          103,
+          123
+        ],
+        "utilized": [
+          104
+        ],
+        "perform": [
+          106
+        ],
+        "variety": [
+          108
+        ],
+        "mathematical": [
+          110
+        ],
+        "operations": [
+          111
+        ],
+        "including": [
+          112
+        ],
+        "Vector-Matrix": [
+          113
+        ],
+        "multiplication.": [
+          114
+        ],
+        "dependence": [
+          117
+        ],
+        "such": [
+          119
+        ],
+        "patterns": [
+          121
+        ],
+        "estimated": [
+          124
+        ],
+        "via": [
+          125
+        ],
+        "perturbation": [
+          126
+        ],
+        "theory.": [
+          127
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1063/5.0096192",
+        "doi": "https://doi.org/10.1063/5.0096192",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1063/5.0096192",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S187991544",
+          "display_name": "Journal of Applied Physics",
+          "issn_l": "0021-8979",
+          "issn": [
+            "0021-8979",
+            "1089-7550",
+            "1520-8850"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-d",
+            "jufo-1",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Applied Physics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3107770251",
+      "doi": "https://doi.org/10.1109/apede48864.2020.9255623",
+      "title": "Spin Waves Focused Beams in YIG Films",
+      "publication_date": "2020-09-24",
+      "abstract_inverted_index": {
+        "Spin": [
+          0
+        ],
+        "waves": [
+          1
+        ],
+        "(SW)": [
+          2
+        ],
+        "focused": [
+          3,
+          83
+        ],
+        "beams": [
+          4,
+          85
+        ],
+        "propagation": [
+          5,
+          41
+        ],
+        "and": [
+          6,
+          27,
+          71,
+          90
+        ],
+        "interference": [
+          7,
+          79
+        ],
+        "under": [
+          8
+        ],
+        "excitation": [
+          9,
+          88
+        ],
+        "by": [
+          10
+        ],
+        "curvilinear": [
+          11,
+          106
+        ],
+        "focusing": [
+          12,
+          65,
+          76,
+          108
+        ],
+        "transducers": [
+          13,
+          109
+        ],
+        "in": [
+          14,
+          42,
+          96
+        ],
+        "tangentially": [
+          15,
+          43
+        ],
+        "magnetized": [
+          16,
+          44
+        ],
+        "yttrium": [
+          17
+        ],
+        "iron": [
+          18
+        ],
+        "garnet": [
+          19
+        ],
+        "(YIG)": [
+          20
+        ],
+        "films": [
+          21,
+          45
+        ],
+        "were": [
+          22
+        ],
+        "studied": [
+          23
+        ],
+        "using": [
+          24
+        ],
+        "micromagnetic": [
+          25
+        ],
+        "simulations": [
+          26
+        ],
+        "Mandelstam-": [
+          28
+        ],
+        "Brillouin": [
+          29
+        ],
+        "light": [
+          30
+        ],
+        "scattering": [
+          31
+        ],
+        "technique.": [
+          32
+        ],
+        "It": [
+          33
+        ],
+        "is": [
+          34,
+          91
+        ],
+        "shown": [
+          35
+        ],
+        "that": [
+          36
+        ],
+        "due": [
+          37
+        ],
+        "to": [
+          38,
+          60,
+          68,
+          93,
+          104
+        ],
+        "anisotropic": [
+          39
+        ],
+        "SW": [
+          40,
+          50,
+          84,
+          107
+        ],
+        "the": [
+          46,
+          64,
+          75,
+          78,
+          82
+        ],
+        "two-dimensional": [
+          47
+        ],
+        "maps": [
+          48
+        ],
+        "of": [
+          49,
+          63,
+          74,
+          81
+        ],
+        "intensity": [
+          51
+        ],
+        "exhibit": [
+          52
+        ],
+        "nonreciprocal": [
+          53
+        ],
+        "properties": [
+          54
+        ],
+        "without": [
+          55
+        ],
+        "mirror": [
+          56
+        ],
+        "symmetry": [
+          57
+        ],
+        "with": [
+          58
+        ],
+        "respect": [
+          59
+        ],
+        "optic": [
+          61
+        ],
+        "axis": [
+          62
+        ],
+        "transducers.": [
+          66
+        ],
+        "Due": [
+          67
+        ],
+        "chromatic": [
+          69
+        ],
+        "aberration": [
+          70
+        ],
+        "caustics": [
+          72
+        ],
+        "formation": [
+          73
+        ],
+        "transducers,": [
+          77
+        ],
+        "pattern": [
+          80
+        ],
+        "depends": [
+          86
+        ],
+        "on": [
+          87,
+          114
+        ],
+        "frequency": [
+          89
+        ],
+        "sensitive": [
+          92
+        ],
+        "local": [
+          94
+        ],
+        "nonuniformities": [
+          95
+        ],
+        "YIG": [
+          97
+        ],
+        "film.": [
+          98
+        ],
+        "The": [
+          99
+        ],
+        "obtained": [
+          100
+        ],
+        "results": [
+          101
+        ],
+        "demonstrate": [
+          102
+        ],
+        "possibility": [
+          103
+        ],
+        "use": [
+          105
+        ],
+        "for": [
+          110
+        ],
+        "information": [
+          111
+        ],
+        "technologies": [
+          112
+        ],
+        "based": [
+          113
+        ],
+        "magnonic": [
+          115
+        ],
+        "optics.": [
+          116
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1109/apede48864.2020.9255623",
+        "doi": "https://doi.org/10.1109/apede48864.2020.9255623",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1109/apede48864.2020.9255623",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306423216",
+          "display_name": "International Conference on Actual Problems of Electron Devices Engineering",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "conference"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "2020 International Conference on Actual Problems of Electron Devices Engineering (APEDE)",
+        "raw_type": "proceedings-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W3112255790",
+      "doi": "https://doi.org/10.1134/s1063782620120192",
+      "title": "Spin Waves Interference under Excitation by Focusing Transducers: Logic and Signal Processing",
+      "publication_date": "2020-12-01",
+      "abstract_inverted_index": {
+        "Abstract": [
+          0
+        ],
+        "Micro-focused": [
+          1
+        ],
+        "Brillouin–Mandelstam": [
+          2
+        ],
+        "light": [
+          3
+        ],
+        "scattering": [
+          4
+        ],
+        "technique": [
+          5
+        ],
+        "and": [
+          6,
+          15,
+          61,
+          71,
+          91
+        ],
+        "micromagnetic": [
+          7
+        ],
+        "simulations": [
+          8
+        ],
+        "were": [
+          9
+        ],
+        "used": [
+          10
+        ],
+        "to": [
+          11,
+          31,
+          51,
+          68,
+          94,
+          107
+        ],
+        "study": [
+          12
+        ],
+        "surface": [
+          13
+        ],
+        "(SSW)": [
+          14
+        ],
+        "backward": [
+          16
+        ],
+        "volume": [
+          17
+        ],
+        "(BVSW)": [
+          18
+        ],
+        "spin": [
+          19
+        ],
+        "waves": [
+          20
+        ],
+        "(SW)": [
+          21
+        ],
+        "interference": [
+          22,
+          56,
+          79
+        ],
+        "under": [
+          23
+        ],
+        "excitation": [
+          24,
+          89
+        ],
+        "by": [
+          25
+        ],
+        "curvilinear": [
+          26,
+          109
+        ],
+        "focusing": [
+          27,
+          76,
+          111
+        ],
+        "transducers": [
+          28,
+          112
+        ],
+        "placed": [
+          29
+        ],
+        "oppositely": [
+          30
+        ],
+        "each": [
+          32
+        ],
+        "other": [
+          33
+        ],
+        "on": [
+          34,
+          87,
+          117
+        ],
+        "a": [
+          35,
+          38
+        ],
+        "top": [
+          36
+        ],
+        "of": [
+          37,
+          74,
+          81
+        ],
+        "tangentially": [
+          39
+        ],
+        "magnetized": [
+          40
+        ],
+        "yttrium": [
+          41
+        ],
+        "iron": [
+          42
+        ],
+        "garnet": [
+          43
+        ],
+        "(YIG)": [
+          44
+        ],
+        "film.": [
+          45,
+          100
+        ],
+        "It": [
+          46
+        ],
+        "is": [
+          47,
+          92
+        ],
+        "shown": [
+          48
+        ],
+        "that": [
+          49
+        ],
+        "due": [
+          50
+        ],
+        "anisotropic": [
+          52
+        ],
+        "propagation,": [
+          53
+        ],
+        "the": [
+          54,
+          75,
+          78,
+          82,
+          88,
+          98,
+          105
+        ],
+        "2D": [
+          55
+        ],
+        "patterns": [
+          57
+        ],
+        "for": [
+          58,
+          113
+        ],
+        "both": [
+          59
+        ],
+        "SSW": [
+          60
+        ],
+        "BVSW": [
+          62
+        ],
+        "focused": [
+          63,
+          83
+        ],
+        "beams": [
+          64,
+          85
+        ],
+        "are": [
+          65
+        ],
+        "nonreciprocal.": [
+          66
+        ],
+        "Due": [
+          67
+        ],
+        "chromatic": [
+          69
+        ],
+        "aberration": [
+          70
+        ],
+        "caustics": [
+          72
+        ],
+        "formation": [
+          73
+        ],
+        "transducers,": [
+          77
+        ],
+        "pattern": [
+          80
+        ],
+        "SW": [
+          84,
+          110
+        ],
+        "depends": [
+          86
+        ],
+        "frequency": [
+          90
+        ],
+        "sensitive": [
+          93
+        ],
+        "local": [
+          95
+        ],
+        "nonuniformities": [
+          96
+        ],
+        "in": [
+          97
+        ],
+        "YIG": [
+          99
+        ],
+        "The": [
+          101
+        ],
+        "obtained": [
+          102
+        ],
+        "results": [
+          103
+        ],
+        "demonstrate": [
+          104
+        ],
+        "possibility": [
+          106
+        ],
+        "use": [
+          108
+        ],
+        "information": [
+          114
+        ],
+        "technologies": [
+          115
+        ],
+        "based": [
+          116
+        ],
+        "magnonic": [
+          118
+        ],
+        "optics.": [
+          119
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1134/s1063782620120192",
+        "doi": "https://doi.org/10.1134/s1063782620120192",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1134/s1063782620120192",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S66392791",
+          "display_name": "Semiconductors",
+          "issn_l": "1063-7826",
+          "issn": [
+            "1063-7826",
+            "1090-6479"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [
+            "dongbi-d",
+            "jufo-1",
+            "norway-1",
+            "poland-70"
+          ],
+          "host_organization": "https://openalex.org/P4310320267",
+          "host_organization_name": "Pleiades Publishing",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320267",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Pleiades Publishing",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Semiconductors",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4308740191",
+      "doi": "https://doi.org/10.1016/j.jmmm.2022.170149",
+      "title": "Optimization of Y3Fe5O12 based layered structures for quasi-optic spin wave elements",
+      "publication_date": "2022-11-04",
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "present": [
+          1
+        ],
+        "theoretical": [
+          2
+        ],
+        "and": [
+          3,
+          9,
+          61,
+          93
+        ],
+        "experimental": [
+          4
+        ],
+        "results": [
+          5
+        ],
+        "on": [
+          6
+        ],
+        "the": [
+          7,
+          28,
+          67,
+          80,
+          85,
+          97,
+          100
+        ],
+        "losses": [
+          8,
+          69
+        ],
+        "confinement": [
+          10
+        ],
+        "of": [
+          11,
+          30,
+          34,
+          127
+        ],
+        "spin": [
+          12
+        ],
+        "waves": [
+          13
+        ],
+        "(SW)": [
+          14
+        ],
+        "in": [
+          15,
+          38
+        ],
+        "a": [
+          16,
+          31,
+          39,
+          51,
+          72,
+          90,
+          124
+        ],
+        "Ferromagnetic/Normal": [
+          17
+        ],
+        "Metal/Air/Ferrite": [
+          18
+        ],
+        "multilayer": [
+          19
+        ],
+        "structure.": [
+          20
+        ],
+        "The": [
+          21,
+          110
+        ],
+        "above": [
+          22
+        ],
+        "structure": [
+          23
+        ],
+        "can": [
+          24
+        ],
+        "be": [
+          25
+        ],
+        "used": [
+          26,
+          43
+        ],
+        "for": [
+          27
+        ],
+        "creation": [
+          29
+        ],
+        "desired": [
+          32
+        ],
+        "topology": [
+          33
+        ],
+        "static": [
+          35
+        ],
+        "magnetic": [
+          36
+        ],
+        "field": [
+          37
+        ],
+        "thin": [
+          40
+        ],
+        "ferrite": [
+          41
+        ],
+        "film,": [
+          42
+        ],
+        "as": [
+          44
+        ],
+        "SW": [
+          45,
+          59,
+          68,
+          81,
+          108
+        ],
+        "waveguide.": [
+          46
+        ],
+        "It": [
+          47,
+          75
+        ],
+        "is": [
+          48,
+          76,
+          107,
+          117,
+          121
+        ],
+        "shown": [
+          49,
+          78
+        ],
+        "that": [
+          50,
+          79
+        ],
+        "screening": [
+          52
+        ],
+        "Normal": [
+          53
+        ],
+        "Metal": [
+          54
+        ],
+        "(NMe)": [
+          55
+        ],
+        "layer,": [
+          56,
+          64,
+          95
+        ],
+        "inserted": [
+          57
+        ],
+        "between": [
+          58,
+          89
+        ],
+        "waveguide": [
+          60
+        ],
+        "ferromagnetic": [
+          62
+        ],
+        "(FM)": [
+          63
+        ],
+        "significantly": [
+          65
+        ],
+        "decreases": [
+          66
+        ],
+        "caused": [
+          70
+        ],
+        "by": [
+          71
+        ],
+        "lossy": [
+          73
+        ],
+        "FM.": [
+          74
+        ],
+        "also": [
+          77
+        ],
+        "amplitude": [
+          82
+        ],
+        "increases": [
+          83
+        ],
+        "within": [
+          84
+        ],
+        "air": [
+          86
+        ],
+        "gap": [
+          87,
+          98
+        ],
+        "(d)": [
+          88
+        ],
+        "Ferrite": [
+          91
+        ],
+        "film": [
+          92
+        ],
+        "NMe": [
+          94
+        ],
+        "when": [
+          96,
+          119
+        ],
+        "satisfies": [
+          99
+        ],
+        "relation": [
+          101
+        ],
+        "kd": [
+          102
+        ],
+        "=": [
+          103
+        ],
+        "1,": [
+          104
+        ],
+        "where": [
+          105
+        ],
+        "k": [
+          106
+        ],
+        "wavenumber.": [
+          109
+        ],
+        "power": [
+          111
+        ],
+        "flow": [
+          112
+        ],
+        "density": [
+          113
+        ],
+        "at": [
+          114
+        ],
+        "Ferrite/Air": [
+          115
+        ],
+        "interface": [
+          116
+        ],
+        "maximal": [
+          118
+        ],
+        "d": [
+          120
+        ],
+        "equal": [
+          122
+        ],
+        "to": [
+          123
+        ],
+        "quarter": [
+          125
+        ],
+        "wavelength": [
+          126
+        ],
+        "SW.": [
+          128
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1016/j.jmmm.2022.170149",
+        "doi": "https://doi.org/10.1016/j.jmmm.2022.170149",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1016/j.jmmm.2022.170149",
+        "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0304885322010344/pdf",
+        "source": {
+          "id": "https://openalex.org/S3649266",
+          "display_name": "Journal of Magnetism and Magnetic Materials",
+          "issn_l": "0304-8853",
+          "issn": [
+            "0304-8853",
+            "1873-4766"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-b",
+            "jufo-1",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Magnetism and Magnetic Materials",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4394679482",
+      "doi": "https://doi.org/10.18500/0869-6632-003104",
+      "title": "Detection of focused beams of surface magnetostatic waves in YIG / Pt structures",
+      "publication_date": "2024-01-01",
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          79
+        ],
+        "purpose": [
+          1
+        ],
+        "of": [
+          2,
+          18,
+          21,
+          47,
+          57,
+          82,
+          90,
+          111,
+          117,
+          134,
+          139,
+          154,
+          162,
+          184,
+          198,
+          202,
+          211,
+          234,
+          245,
+          265,
+          279,
+          285,
+          300,
+          309
+        ],
+        "this": [
+          3,
+          148,
+          255
+        ],
+        "work": [
+          4
+        ],
+        "is": [
+          5,
+          179,
+          206,
+          215,
+          237,
+          269
+        ],
+        "to": [
+          6,
+          173
+        ],
+        "experimentally": [
+          7
+        ],
+        "study,": [
+          8
+        ],
+        "using": [
+          9,
+          70
+        ],
+        "the": [
+          10,
+          16,
+          38,
+          44,
+          48,
+          55,
+          71,
+          77,
+          83,
+          87,
+          91,
+          108,
+          112,
+          115,
+          118,
+          132,
+          137,
+          151,
+          155,
+          158,
+          160,
+          163,
+          167,
+          185,
+          189,
+          195,
+          199,
+          203,
+          209,
+          218,
+          221,
+          231,
+          235,
+          240,
+          243,
+          246,
+          251,
+          257,
+          262,
+          266,
+          275,
+          280,
+          283,
+          288,
+          298,
+          307
+        ],
+        "inverse": [
+          11
+        ],
+        "spin": [
+          12,
+          303,
+          310
+        ],
+        "Hall": [
+          13
+        ],
+        "effect": [
+          14,
+          40
+        ],
+        "(ISHE),": [
+          15
+        ],
+        "detection": [
+          17
+        ],
+        "focused": [
+          19,
+          124,
+          168,
+          227
+        ],
+        "beams": [
+          20
+        ],
+        "magnetostatic": [
+          22
+        ],
+        "surface": [
+          23
+        ],
+        "waves": [
+          24
+        ],
+        "(MSSW)": [
+          25
+        ],
+        "in": [
+          26,
+          95,
+          136,
+          150,
+          194,
+          220,
+          230,
+          259,
+          261,
+          274
+        ],
+        "integrated": [
+          27
+        ],
+        "YIG": [
+          28,
+          247
+        ],
+        "(3.9": [
+          29
+        ],
+        "µm)": [
+          30
+        ],
+        "/": [
+          31
+        ],
+        "Pt": [
+          32,
+          252,
+          289
+        ],
+        "(4": [
+          33
+        ],
+        "nm)": [
+          34
+        ],
+        "thin-film": [
+          35
+        ],
+        "microstructures,": [
+          36
+        ],
+        "where": [
+          37
+        ],
+        "focusing": [
+          39,
+          186
+        ],
+        "was": [
+          41,
+          101
+        ],
+        "ensured": [
+          42
+        ],
+        "by": [
+          43,
+          61,
+          122,
+          142,
+          166,
+          208,
+          225,
+          271
+        ],
+        "curvilinear": [
+          45
+        ],
+        "shape": [
+          46
+        ],
+        "exciting": [
+          49
+        ],
+        "antenna.": [
+          50,
+          64,
+          146
+        ],
+        "Make": [
+          51
+        ],
+        "a": [
+          52,
+          62,
+          123,
+          143,
+          226
+        ],
+        "comparison": [
+          53
+        ],
+        "with": [
+          54,
+          181,
+          239,
+          250
+        ],
+        "case": [
+          56,
+          138
+        ],
+        "detecting": [
+          58
+        ],
+        "MSSWs": [
+          59
+        ],
+        "excited": [
+          60
+        ],
+        "rectilinear": [
+          63
+        ],
+        "Methods.": [
+          65
+        ],
+        "Experiments": [
+          66
+        ],
+        "were": [
+          67,
+          97
+        ],
+        "carried": [
+          68
+        ],
+        "out": [
+          69,
+          172
+        ],
+        "delay": [
+          72
+        ],
+        "line": [
+          73
+        ],
+        "structures": [
+          74
+        ],
+        "based": [
+          75
+        ],
+        "on": [
+          76,
+          157
+        ],
+        "YIG/Pt.": [
+          78
+        ],
+        "amplitude-frequency": [
+          80
+        ],
+        "characteristics": [
+          81
+        ],
+        "YIG/Pt": [
+          84
+        ],
+        "structure": [
+          85
+        ],
+        "and": [
+          86,
+          282,
+          306
+        ],
+        "frequency": [
+          88,
+          196
+        ],
+        "dependence": [
+          89,
+          197
+        ],
+        "EMF": [
+          92,
+          119,
+          164,
+          222
+        ],
+        "(V(f))": [
+          93
+        ],
+        "induced": [
+          94
+        ],
+        "platinum": [
+          96
+        ],
+        "studied.": [
+          98
+        ],
+        "Results.": [
+          99
+        ],
+        "It": [
+          100,
+          214
+        ],
+        "shown": [
+          102,
+          216
+        ],
+        "that": [
+          103,
+          217
+        ],
+        "at": [
+          104
+        ],
+        "frequencies": [
+          105
+        ],
+        "f": [
+          106
+        ],
+        "near": [
+          107
+        ],
+        "long-wavelength": [
+          109,
+          263
+        ],
+        "limit": [
+          110
+        ],
+        "MSSW": [
+          113,
+          125,
+          140,
+          169,
+          228,
+          267,
+          281
+        ],
+        "spectrum,": [
+          114,
+          156
+        ],
+        "magnitude": [
+          116,
+          161
+        ],
+        "V(f)": [
+          120,
+          135,
+          260
+        ],
+        "generated": [
+          121,
+          165,
+          224
+        ],
+        "can": [
+          126,
+          294
+        ],
+        "be": [
+          127,
+          174,
+          295
+        ],
+        "several": [
+          128
+        ],
+        "times": [
+          129
+        ],
+        "higher": [
+          130
+        ],
+        "than": [
+          131
+        ],
+        "values": [
+          133
+        ],
+        "excitation": [
+          141
+        ],
+        "common": [
+          144
+        ],
+        "(straight)": [
+          145
+        ],
+        "In": [
+          147,
+          254
+        ],
+        "case,": [
+          149,
+          256
+        ],
+        "short-wavelength": [
+          152,
+          232
+        ],
+        "part": [
+          153,
+          233
+        ],
+        "contrary,": [
+          159
+        ],
+        "beam": [
+          170,
+          229
+        ],
+        "turns": [
+          171
+        ],
+        "noticeably": [
+          175
+        ],
+        "smaller.": [
+          176
+        ],
+        "This": [
+          177
+        ],
+        "behavior": [
+          178
+        ],
+        "associated": [
+          180,
+          238
+        ],
+        "chromatic": [
+          182
+        ],
+        "aberration": [
+          183
+        ],
+        "antenna": [
+          187
+        ],
+        "for": [
+          188,
+          297
+        ],
+        "MSSW,": [
+          190
+        ],
+        "which": [
+          191,
+          205
+        ],
+        "manifests": [
+          192
+        ],
+        "itself": [
+          193
+        ],
+        "focal": [
+          200
+        ],
+        "length": [
+          201
+        ],
+        "antenna,": [
+          204
+        ],
+        "confirmed": [
+          207
+        ],
+        "results": [
+          210,
+          293
+        ],
+        "micromagnetic": [
+          212
+        ],
+        "modeling.": [
+          213
+        ],
+        "drop": [
+          219
+        ],
+        "signal": [
+          223
+        ],
+        "spectrum": [
+          236,
+          268
+        ],
+        "focus": [
+          241
+        ],
+        "reaching": [
+          242
+        ],
+        "area": [
+          244
+        ],
+        "not": [
+          248
+        ],
+        "covered": [
+          249
+        ],
+        "film.": [
+          253,
+          290
+        ],
+        "increase": [
+          258,
+          273
+        ],
+        "region": [
+          264
+        ],
+        "explained": [
+          270
+        ],
+        "an": [
+          272
+        ],
+        "linear": [
+          276
+        ],
+        "power": [
+          277
+        ],
+        "density": [
+          278
+        ],
+        "formation": [
+          284
+        ],
+        "caustics": [
+          286
+        ],
+        "under": [
+          287
+        ],
+        "Conclusion.": [
+          291
+        ],
+        "Obtained": [
+          292
+        ],
+        "used": [
+          296
+        ],
+        "development": [
+          299
+        ],
+        "highly": [
+          301
+        ],
+        "sensitive": [
+          302
+        ],
+        "wave": [
+          304
+        ],
+        "detectors": [
+          305
+        ],
+        "creation": [
+          308
+        ],
+        "logic": [
+          311
+        ],
+        "devices.": [
+          312
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.18500/0869-6632-003104",
+        "doi": "https://doi.org/10.18500/0869-6632-003104",
+        "is_oa": true,
+        "landing_page_url": "http://dx.doi.org/10.18500/0869-6632-003104",
+        "pdf_url": "https://andjournal.sgu.ru/sites/andjournal.sgu.ru/files/text-pdf/2024/04/and_2024-3_seleznev_et-al_ranniy_dostup.pdf",
+        "source": {
+          "id": "https://openalex.org/S4210237262",
+          "display_name": "Izvestiya VUZ Applied Nonlinear Dynamics",
+          "issn_l": "0869-6632",
+          "issn": [
+            "0869-6632",
+            "2542-1905"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": false,
+          "listed_in": [
+            "doaj",
+            "dongbi-d",
+            "poland-20",
+            "russia-white-list-2"
+          ],
+          "host_organization": "https://openalex.org/P4310321304",
+          "host_organization_name": "Saratov State University",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310321304"
+          ],
+          "host_organization_lineage_names": [
+            "Saratov State University"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Izvestiya VUZ. Applied Nonlinear Dynamics",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4403486285",
+      "doi": "https://doi.org/10.1103/physrevb.110.144428",
+      "title": "Spin-wave Goos-Hänchen effect induced by 360-degree domain walls in magnetic heterostructures",
+      "publication_date": "2024-10-17",
+      "abstract_inverted_index": {
+        "In": [
+          0
+        ],
+        "this": [
+          1
+        ],
+        "work,": [
+          2
+        ],
+        "lateral": [
+          3,
+          106
+        ],
+        "displacements": [
+          4,
+          107
+        ],
+        "of": [
+          5,
+          62,
+          86,
+          111,
+          114,
+          126
+        ],
+        "transmitted": [
+          6
+        ],
+        "and": [
+          7,
+          37
+        ],
+        "reflected": [
+          8
+        ],
+        "spin": [
+          9,
+          115
+        ],
+        "waves": [
+          10,
+          116
+        ],
+        "at": [
+          11,
+          44
+        ],
+        "a": [
+          12,
+          54,
+          131
+        ],
+        "360-degree": [
+          13
+        ],
+        "domain": [
+          14
+        ],
+        "wall": [
+          15
+        ],
+        "(360DW),": [
+          16
+        ],
+        "which": [
+          17,
+          94
+        ],
+        "is": [
+          18,
+          57
+        ],
+        "referred": [
+          19
+        ],
+        "to": [
+          20,
+          41,
+          89,
+          97
+        ],
+        "as": [
+          21
+        ],
+        "the": [
+          22,
+          42,
+          47,
+          60,
+          66,
+          84,
+          90,
+          98,
+          112
+        ],
+        "spin-wave": [
+          23,
+          135
+        ],
+        "Goos-H\\\"anchen": [
+          24
+        ],
+        "effect": [
+          25
+        ],
+        "(SWGHE),": [
+          26
+        ],
+        "are": [
+          27,
+          95,
+          108
+        ],
+        "systematically": [
+          28
+        ],
+        "investigated": [
+          29
+        ],
+        "in": [
+          30,
+          71,
+          83
+        ],
+        "magnetic": [
+          31
+        ],
+        "heterostructures": [
+          32
+        ],
+        "with": [
+          33,
+          73
+        ],
+        "perpendicular": [
+          34
+        ],
+        "easy/hard": [
+          35
+        ],
+        "axis": [
+          36
+        ],
+        "wall-extension": [
+          38
+        ],
+        "direction.": [
+          39
+        ],
+        "Similar": [
+          40
+        ],
+        "counterpart": [
+          43
+        ],
+        "heterochiral": [
+          45
+        ],
+        "interfaces,": [
+          46
+        ],
+        "interfacial": [
+          48
+        ],
+        "Dzyaloshinskii-Moriya": [
+          49
+        ],
+        "interaction": [
+          50
+        ],
+        "(IDMI)": [
+          51
+        ],
+        "originated": [
+          52
+        ],
+        "from": [
+          53
+        ],
+        "heavy-metal": [
+          55
+        ],
+        "substrate": [
+          56
+        ],
+        "important": [
+          58
+        ],
+        "for": [
+          59,
+          134
+        ],
+        "emergence": [
+          61
+        ],
+        "SWGHE.": [
+          63
+        ],
+        "More": [
+          64
+        ],
+        "interestingly,": [
+          65
+        ],
+        "SWGHE": [
+          67
+        ],
+        "can": [
+          68,
+          119
+        ],
+        "even": [
+          69
+        ],
+        "survive": [
+          70
+        ],
+        "ferromagnets": [
+          72
+        ],
+        "biaxial": [
+          74
+        ],
+        "anisotropy": [
+          75
+        ],
+        "(either": [
+          76
+        ],
+        "intrinsic": [
+          77
+        ],
+        "or": [
+          78
+        ],
+        "caused": [
+          79
+        ],
+        "by": [
+          80,
+          123
+        ],
+        "shape": [
+          81
+        ],
+        "anisotropy)": [
+          82
+        ],
+        "absence": [
+          85
+        ],
+        "IDMI": [
+          87
+        ],
+        "due": [
+          88
+        ],
+        "unique": [
+          91
+        ],
+        "360DW-induced": [
+          92
+        ],
+        "potentials": [
+          93
+        ],
+        "distinct": [
+          96
+        ],
+        "well-known": [
+          99
+        ],
+        "P\\\"oschl-Teller": [
+          100
+        ],
+        "ones.": [
+          101
+        ],
+        "Numerics": [
+          102
+        ],
+        "shows": [
+          103
+        ],
+        "that": [
+          104
+        ],
+        "these": [
+          105
+        ],
+        "generally": [
+          109
+        ],
+        "fractions": [
+          110
+        ],
+        "wavelength": [
+          113
+        ],
+        "involved.": [
+          117
+        ],
+        "They": [
+          118
+        ],
+        "be": [
+          120
+        ],
+        "further": [
+          121
+        ],
+        "enhanced": [
+          122
+        ],
+        "an": [
+          124
+        ],
+        "array": [
+          125
+        ],
+        "well-separated": [
+          127
+        ],
+        "360DWs": [
+          128
+        ],
+        "thus": [
+          129
+        ],
+        "provide": [
+          130
+        ],
+        "large": [
+          132
+        ],
+        "variety": [
+          133
+        ],
+        "manipulation.": [
+          136
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevb.110.144428",
+        "doi": "https://doi.org/10.1103/physrevb.110.144428",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevb.110.144428",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W4403640533",
+      "doi": "https://doi.org/10.1103/physrevb.110.134434",
+      "title": "Magnetostatic modes and wave equation",
+      "publication_date": "2024-10-22",
+      "abstract_inverted_index": {
+        "We": [
+          0,
+          42
+        ],
+        "propose": [
+          1
+        ],
+        "a": [
+          2,
+          11,
+          16,
+          62,
+          75,
+          83,
+          102,
+          126
+        ],
+        "mathematical": [
+          3
+        ],
+        "apparatus": [
+          4
+        ],
+        "which": [
+          5,
+          79
+        ],
+        "converts": [
+          6
+        ],
+        "magnetostatic": [
+          7
+        ],
+        "(Walker)": [
+          8
+        ],
+        "equations": [
+          9
+        ],
+        "into": [
+          10,
+          89
+        ],
+        "wave": [
+          12,
+          94
+        ],
+        "equation": [
+          13,
+          95
+        ],
+        "by": [
+          14,
+          29,
+          51,
+          57,
+          78
+        ],
+        "introducing": [
+          15
+        ],
+        "specific": [
+          17,
+          76
+        ],
+        "definition": [
+          18
+        ],
+        "of": [
+          19,
+          33,
+          104
+        ],
+        "the": [
+          20,
+          34,
+          38,
+          45,
+          53,
+          68,
+          98
+        ],
+        "``magnetic": [
+          21
+        ],
+        "refractive": [
+          22
+        ],
+        "index.''": [
+          23
+        ],
+        "Its": [
+          24
+        ],
+        "value": [
+          25
+        ],
+        "can": [
+          26,
+          47,
+          81
+        ],
+        "be": [
+          27,
+          48
+        ],
+        "manipulated": [
+          28
+        ],
+        "adjusting": [
+          30
+        ],
+        "spatial": [
+          31
+        ],
+        "distribution": [
+          32
+        ],
+        "saturation": [
+          35
+        ],
+        "magnetization": [
+          36,
+          58
+        ],
+        "or": [
+          37
+        ],
+        "bias": [
+          39,
+          54
+        ],
+        "magnetic": [
+          40,
+          65,
+          70,
+          91
+        ],
+        "field.": [
+          41
+        ],
+        "demonstrate": [
+          43
+        ],
+        "that": [
+          44
+        ],
+        "latter": [
+          46
+        ],
+        "accomplished": [
+          49
+        ],
+        "efficiently": [
+          50
+        ],
+        "utilizing": [
+          52
+        ],
+        "field": [
+          55
+        ],
+        "produced": [
+          56
+        ],
+        "patterns": [
+          59
+        ],
+        "recorded": [
+          60
+        ],
+        "onto": [
+          61
+        ],
+        "neighboring": [
+          63
+        ],
+        "hard": [
+          64
+        ],
+        "film": [
+          66
+        ],
+        "using": [
+          67
+        ],
+        "current": [
+          69
+        ],
+        "storage": [
+          71
+        ],
+        "technology": [
+          72
+        ],
+        "and": [
+          73,
+          107,
+          118
+        ],
+        "derive": [
+          74
+        ],
+        "algorithm": [
+          77
+        ],
+        "one": [
+          80
+        ],
+        "convert": [
+          82
+        ],
+        "near": [
+          84,
+          115
+        ],
+        "arbitrary": [
+          85
+        ],
+        "two-dimensional": [
+          86
+        ],
+        "optical": [
+          87
+        ],
+        "device": [
+          88
+        ],
+        "its": [
+          90
+        ],
+        "analogue.": [
+          92
+        ],
+        "The": [
+          93
+        ],
+        "formalism": [
+          96
+        ],
+        "opens": [
+          97
+        ],
+        "possibility": [
+          99
+        ],
+        "to": [
+          100,
+          113
+        ],
+        "adopt": [
+          101
+        ],
+        "number": [
+          103
+        ],
+        "optics-like": [
+          105
+        ],
+        "analytical": [
+          106
+        ],
+        "numerical": [
+          108
+        ],
+        "techniques,": [
+          109
+        ],
+        "including": [
+          110
+        ],
+        "those": [
+          111
+        ],
+        "applicable": [
+          112
+        ],
+        "scattering,": [
+          114
+        ],
+        "field,": [
+          116
+        ],
+        "diffraction": [
+          117
+        ],
+        "geometric": [
+          119
+        ],
+        "(Eikonal": [
+          120
+        ],
+        "equation)": [
+          121
+        ],
+        "optics,": [
+          122
+        ],
+        "as": [
+          123,
+          125
+        ],
+        "well": [
+          124
+        ],
+        "generic": [
+          127
+        ],
+        "finite": [
+          128
+        ],
+        "difference": [
+          129
+        ],
+        "time": [
+          130
+        ],
+        "domain": [
+          131
+        ],
+        "(FDTD)": [
+          132
+        ],
+        "algorithm.": [
+          133
+        ]
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevb.110.134434",
+        "doi": "https://doi.org/10.1103/physrevb.110.134434",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevb.110.134434",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210237713",
+          "display_name": "Physical review. B./Physical review. B",
+          "issn_l": "2469-9950",
+          "issn": [
+            "2469-9950",
+            "2469-9969",
+            "2469-9977"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "dongbi-a",
+            "jufo-2",
+            "norway-2",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review B",
+        "raw_type": "journal-article"
+      }
+    },
+    {
+      "id": "https://openalex.org/W7127915345",
+      "doi": "https://doi.org/10.1016/j.jmmm.2026.173901",
+      "title": "Spin wave focusing and reconfigurable routing in a magnetic nanodot array",
+      "publication_date": "2026-02-05",
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "id": "doi:10.1016/j.jmmm.2026.173901",
+        "doi": "https://doi.org/10.1016/j.jmmm.2026.173901",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1016/j.jmmm.2026.173901",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S3649266",
+          "display_name": "Journal of Magnetism and Magnetic Materials",
+          "issn_l": "0304-8853",
+          "issn": [
+            "0304-8853",
+            "1873-4766"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "anvur-scientific",
+            "cwts-core",
+            "dongbi-b",
+            "jufo-1",
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
+          ],
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Journal of Magnetism and Magnetic Materials",
+        "raw_type": "journal-article"
+      }
+    }
+  ],
+  "group_by": []
+}

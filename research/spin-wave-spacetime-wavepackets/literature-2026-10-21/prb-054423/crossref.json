@@ -1,0 +1,771 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T17:00:06Z",
+      "timestamp": 1790874006329,
+      "version": "4.1.0"
+    },
+    "reference-count": 72,
+    "publisher": "American Physical Society (APS)",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              12
+            ]
+          ],
+          "date-time": "2026-02-12T00:00:00Z",
+          "timestamp": 1770854400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://link.aps.org/licenses/aps-default-license"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100002367",
+        "name": "Chinese Academy of Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "YSBR-029"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "YSBR-029"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100002367",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "62171426"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "62171426"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100012333",
+        "name": "University of Science and Technology of China Center for Micro- and Nanoscale Research and Fabrication",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100012333",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.aps.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Phys. Rev. B"
+    ],
+    "accepted": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          22
+        ]
+      ]
+    },
+    "DOI": "10.1103/7zfd-p48s",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          22
+        ]
+      ],
+      "date-time": "2026-01-22T13:55:31Z",
+      "timestamp": 1769090131000
+    },
+    "update-policy": "https://doi.org/10.1103/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Spatiotemporal diffractive magnonics in two-dimensional magnetic systems"
+    ],
+    "prefix": "10.1103",
+    "volume": "113",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8603-900X",
+        "authenticated-orcid": true,
+        "given": "Xuefeng",
+        "family": "Zhao",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/04c4dkn09",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Science and Technology of China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9349-5556",
+        "authenticated-orcid": true,
+        "given": "Nan",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/04c4dkn09",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "University of Science and Technology of China"
+          },
+          {
+            "name": "Hefei Comprehensive National Science Center"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "16",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          12
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "7zfd-p48sCc1R1",
+        "unstructured": "See Supplemental Material at http://link.aps.org/supplemental/10.1103/7zfd-p48s for movies, tables, and further explanations, which includes Refs.   [33, 34, 35, 36, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72].",
+        "type": "other"
+      },
+      {
+        "key": "7zfd-p48sCc2R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRev.81.869",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc3R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphys3347",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc4R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1142/1687",
+        "type": "book",
+        "volume-title": "Linear and Nonlinear Spin Waves in Magnetic Films and Superlattices",
+        "author": "M. G. Cottam",
+        "year": "1994"
+      },
+      {
+        "key": "7zfd-p48sCc5R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-648X/abec1a",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc6R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1361-648X/ad399c",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc7R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.117.037204",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc8R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.61.11576",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc9R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.3237168",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc10R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.108.047204",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc11R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.85.012403",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc12R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.98.144430",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc13R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.102.134402",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc14R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0128666",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc15R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.21.014032",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc16R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.22.014038",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc17R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMAG.2014.2362723",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc18R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4917507",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc19R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jmmm.2016.12.022",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc20R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0018519",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc21R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smll.202207293",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc22R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.102.024420",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc23R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0029401",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc24R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-018-0631-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc25R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9781139644181",
+        "type": "book",
+        "volume-title": "Principles of Optics",
+        "author": "M. Born",
+        "year": "1999"
+      },
+      {
+        "key": "7zfd-p48sCc26R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.531249",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc27R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmat3823",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc28R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/RevModPhys.91.035004",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc29R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/RevModPhys.87.1213",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc30R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/RevModPhys.82.2731",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc31R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature03564",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc32R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.73.014421",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc33R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/237510a0",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc34R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0167-9317(99)00021-0",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc35R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0304-3991(84)90201-8",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc36R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.4c00129",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc37R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature03719",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc38R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4899186",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc39R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-018-23933-y",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc40R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4871516",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc41R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-07893-5",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc42R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/5.0102974",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc43R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/AO.13.001677",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc44R1",
+        "volume-title": "Introduction to Fourier Optics",
+        "author": "J. W. Goodman",
+        "year": "2005",
+        "type": "book"
+      },
+      {
+        "key": "7zfd-p48sCc45R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-48617-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc46R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1541/ieejfms.136.317",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc47R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12274-016-1305-5",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc48R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.3202354",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc49R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsnano.0c04748",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc50R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1240573",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc51R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.289.5481.930",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc52R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.75.012408",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc53R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-019-13642-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc54R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-021-03219-6",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc55R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0022-3719/6/7/010",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc56R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-018-0745-3",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc57R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature05240",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc58R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmat1867",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc59R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRev.80.580",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc60R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.42.8658",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc61R1",
+        "volume-title": "Spin Waves",
+        "author": "D. D. Stancil",
+        "year": "2009",
+        "type": "book"
+      },
+      {
+        "key": "7zfd-p48sCc62R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.107.177207",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc63R1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/oso/9780198517764.001.0001",
+        "type": "book",
+        "volume-title": "Physics of Ferromagnetism",
+        "author": "S. Chikazumi",
+        "year": "1997"
+      },
+      {
+        "key": "7zfd-p48sCc64R1",
+        "volume-title": "Perspectives in Theoretical Physics",
+        "author": "L. Landau",
+        "year": "1992",
+        "type": "book"
+      },
+      {
+        "key": "7zfd-p48sCc65R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMAG.2004.836740",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc66R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevB.101.134431",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc67R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.122.067204",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc68R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.2c04215",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc69R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevApplied.23.024023",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc70R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/RevModPhys.95.015003",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc71R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/admi.202300217",
+        "type": "journal-article"
+      },
+      {
+        "key": "7zfd-p48sCc72R1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physd.2024.134386",
+        "type": "journal-article"
+      }
+    ],
+    "container-title": [
+      "Physical Review B"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.aps.org/article/10.1103/7zfd-p48s",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/7zfd-p48s/fulltext",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T16:09:26Z",
+      "timestamp": 1790870966000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.aps.org/doi/10.1103/7zfd-p48s"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          12
+        ]
+      ]
+    },
+    "references-count": 72,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            2
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1103/7zfd-p48s",
+    "relation": {},
+    "ISSN": [
+      "2469-9950",
+      "2469-9969"
+    ],
+    "issn-type": [
+      {
+        "value": "2469-9950",
+        "type": "print"
+      },
+      {
+        "value": "2469-9969",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-03-30",
+        "name": "date_received",
+        "label": "Date Received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "©2026 American Physical Society. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright_statement",
+        "label": "Copyright statement",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "2026",
+        "name": "copyright_year",
+        "label": "Copyright year",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      },
+      {
+        "value": "American Physical Society",
+        "name": "copyright_holder",
+        "label": "Copyright holder",
+        "group": {
+          "name": "copyright",
+          "label": "copyright"
+        }
+      }
+    ],
+    "article-number": "054423"
+  }
+}

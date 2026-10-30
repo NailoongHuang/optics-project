@@ -1,0 +1,185 @@
+{
+  "parameters": {
+    "N": 512,
+    "sigma_a": 10.0,
+    "a": 1.0,
+    "hbar": 1.0,
+    "Jx": 1.0,
+    "S": 0.5,
+    "h": 0.0,
+    "boundary": "periodic",
+    "dimensionless_time": "tau=Jx*t/hbar",
+    "wavevectors": [
+      [
+        0.7,
+        0.0
+      ],
+      [
+        0.7,
+        0.7
+      ]
+    ],
+    "etas": [
+      1.0,
+      0.3
+    ],
+    "snapshot_times": [
+      0.0,
+      30.0,
+      60.0
+    ],
+    "animation_times": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0,
+      36.0,
+      37.0,
+      38.0,
+      39.0,
+      40.0,
+      41.0,
+      42.0,
+      43.0,
+      44.0,
+      45.0,
+      46.0,
+      47.0,
+      48.0,
+      49.0,
+      50.0,
+      51.0,
+      52.0,
+      53.0,
+      54.0,
+      55.0,
+      56.0,
+      57.0,
+      58.0,
+      59.0,
+      60.0
+    ],
+    "phase_convention": "Remove exp(-i E_F t/hbar) only; no per-frame rephasing.",
+    "field_maps": "Exact site values; imshow interpolation=nearest.",
+    "sampling": "N enlarges the periodic box. a and the carrier sampling are unchanged.",
+    "interpretation": "Re(psi) is the probability-amplitude real part in a fixed phase convention, not a transverse-spin expectation in a fixed one-magnon state.",
+    "gaussian_normalization": "A0=max|psi(t=0)|; P0=A0^2, held fixed in every panel/frame."
+  },
+  "items": [
+    {
+      "id": "w01_real_probability",
+      "title": "同一波包：载波振幅与翻转概率",
+      "caption": "N=512，σ=10a，q₀=(0.7,0)，η=1，τ=30。上方为同一复振幅的实部与模方；下方取 y=0 的实际格点截线。实部显出波峰和波谷，概率显示包络。A₀=max|ψ(0)|、P₀=A₀²；色标固定，未逐帧归一化。Reψ 依赖固定相位约定，不表示固定单磁子态的横向自旋期望。",
+      "files": {
+        "png": "w01_real_probability.png",
+        "svg": "w01_real_probability.svg",
+        "pdf": "w01_real_probability.pdf"
+      }
+    },
+    {
+      "id": "w02_carrier_sequence",
+      "title": "载波随波包传播的三个时刻",
+      "caption": "q₀=(0.7,0)，σ=10a，η=1。τ=0、30、60 使用相同空间窗口与同一固定色标；虚线为概率质心。热图显示实际格点，没有连续插值。载波波峰与包络质心不必以同一速度运动。",
+      "files": {
+        "png": "w02_carrier_sequence.png",
+        "svg": "w02_carrier_sequence.svg",
+        "pdf": "w02_carrier_sequence.pdf"
+      }
+    },
+    {
+      "id": "w03_comoving_sections",
+      "title": "跟随质心观察波形与包络",
+      "caption": "q₀=(0.7,0)，σ=10a，η=1；取 y=0 的真实格点数据，以 x−〈x〉作横坐标，并未空间插值或逐帧重定相位。蓝线为 Reψ/A₀，橙线为 ±|ψ|/A₀，灰虚线为初始正包络。共动坐标消去质心平移，但仍能看见载波相位变化及有限展宽。",
+      "files": {
+        "png": "w03_comoving_sections.png",
+        "svg": "w03_comoving_sections.svg",
+        "pdf": "w03_comoving_sections.pdf"
+      }
+    },
+    {
+      "id": "w04_local_interference",
+      "title": "单格点翻转形成密集干涉结构",
+      "caption": "初态 ψₘₙ(0)=δₘ₀δₙ₀，η=1，N=512，τ=24。图示实际格点的振幅实部与翻转概率。两者直接使用原数值；指定色标范围为 Reψ∈[−0.06,0.06]、P∈[0,0.0036]，无归一化缩放。干涉结构是全布里渊区模式相干叠加的结果，不能用一个中心波矢的群速度解释全部细节。",
+      "files": {
+        "png": "w04_local_interference.png",
+        "svg": "w04_local_interference.svg",
+        "pdf": "w04_local_interference.pdf"
+      }
+    },
+    {
+      "id": "w05_anisotropic_waves",
+      "title": "相同载波在不同交换各向异性下传播",
+      "caption": "两图均为 q₀=(0.7,0.7)、σ=10a、τ=60。仅改变 η=Jᵧ/Jₓ：左1，右0.3；箭头从初始中心指向此刻概率质心。同一固定振幅色标。各向异性改变 y 方向群速度，载波相位法线方向与群速度方向因此一般不重合。",
+      "files": {
+        "png": "w05_anisotropic_waves.png",
+        "svg": "w05_anisotropic_waves.svg",
+        "pdf": "w05_anisotropic_waves.pdf"
+      }
+    },
+    {
+      "id": "w06_lattice_sampling",
+      "title": "波长与真实格点采样",
+      "caption": "τ=0，q₀=(0.7,0.7)，σ=10a。左图逐格显示振幅实部；右图每个圆点是一个实际格点，连线只帮助读图。沿 x 每个载波周期约9个格点，二维波峰沿对角方向排列。增大 N 扩大周期盒，并不改变格距或每个波长的采样数；波的可见度来自选取合适局部视窗并画出相位敏感振幅。",
+      "files": {
+        "png": "w06_lattice_sampling.png",
+        "svg": "w06_lattice_sampling.svg",
+        "pdf": "w06_lattice_sampling.pdf"
+      }
+    },
+    {
+      "id": "w07_wave_probability_animation",
+      "title": "振幅实部与概率：完整传播过程",
+      "caption": "N=512，q₀=(0.7,0)，σ=10a，η=1，τ=0…60。两图是同一复态，色标分别为固定 Reψ/A₀∈[−1,1]、P/P₀∈[0,1]。无逐帧归一化、无相位重置、无热图插值。",
+      "files": {
+        "gif": "w07_wave_probability_animation.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    },
+    {
+      "id": "w08_anisotropy_animation",
+      "title": "交换各向异性改变波包传播方向",
+      "caption": "两侧均 q₀=(0.7,0.7)、σ=10a，分别 η=1 与0.3；τ=0…60。固定初始峰值 A₀，统一色标 Reψ/A₀∈[−1,1]。热图严格取实际格点值；未改变格距。",
+      "files": {
+        "gif": "w08_anisotropy_animation.gif"
+      },
+      "frame_count": 61,
+      "frames_decoded": true
+    }
+  ],
+  "data": "dense_wave_data.npz",
+  "checks": "checks.json",
+  "generator": "generate_dense_wave.py"
+}

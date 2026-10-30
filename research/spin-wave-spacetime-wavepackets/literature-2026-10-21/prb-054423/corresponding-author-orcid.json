@@ -1,0 +1,2887 @@
+{
+  "last-modified-date": {
+    "value": 1789607281386
+  },
+  "group": [
+    {
+      "last-modified-date": {
+        "value": 1789607281386
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1103/yrrd-tv68",
+            "external-id-normalized": {
+              "value": "10.1103/yrrd-tv68",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1103/yrrd-tv68"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 226920051,
+          "created-date": {
+            "value": 1789574071430
+          },
+          "last-modified-date": {
+            "value": 1789607281386
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Central winding number transmutation of transient magnetic vortices"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1103/yrrd-tv68",
+                "external-id-normalized": {
+                  "value": "10.1103/yrrd-tv68",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1103/yrrd-tv68"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1103/yrrd-tv68"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "09"
+            },
+            "day": {
+              "value": "16"
+            }
+          },
+          "journal-title": {
+            "value": "Physical Review B"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/226920051",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1786774272015
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1088/1361-6463/ae931a",
+            "external-id-normalized": {
+              "value": "10.1088/1361-6463/ae931a",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1088/1361-6463/ae931a"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 222436449,
+          "created-date": {
+            "value": 1785543395257
+          },
+          "last-modified-date": {
+            "value": 1786774272015
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Self-propelled magnetic textures without external drive"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1088/1361-6463/ae931a",
+                "external-id-normalized": {
+                  "value": "10.1088/1361-6463/ae931a",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1088/1361-6463/ae931a"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1088/1361-6463/ae931a"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "14"
+            }
+          },
+          "journal-title": {
+            "value": "Journal of Physics D: Applied Physics"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/222436449",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1773224545312
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1021/acsami.5c23867",
+            "external-id-normalized": {
+              "value": "10.1021/acsami.5c23867",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1021/acsami.5c23867"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 206896752,
+          "created-date": {
+            "value": 1772182545643
+          },
+          "last-modified-date": {
+            "value": 1773224545312
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Magnetic Domain-Wall Racetrack Grating as a Multichannel Analog Optoelectronic Synapse"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1021/acsami.5c23867",
+                "external-id-normalized": {
+                  "value": "10.1021/acsami.5c23867",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1021/acsami.5c23867"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1021/acsami.5c23867"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "03"
+            },
+            "day": {
+              "value": "11"
+            }
+          },
+          "journal-title": {
+            "value": "ACS Applied Materials & Interfaces"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/206896752",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1772067689506
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1103/7zfd-p48s",
+            "external-id-normalized": {
+              "value": "10.1103/7zfd-p48s",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1103/7zfd-p48s"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 205515332,
+          "created-date": {
+            "value": 1770909428540
+          },
+          "last-modified-date": {
+            "value": 1772067689506
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Spatiotemporal diffractive magnonics in two-dimensional magnetic systems"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1103/7zfd-p48s",
+                "external-id-normalized": {
+                  "value": "10.1103/7zfd-p48s",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1103/7zfd-p48s"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1103/7zfd-p48s"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "02"
+            },
+            "day": {
+              "value": "12"
+            }
+          },
+          "journal-title": {
+            "value": "Physical Review B"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/205515332",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1762738108450
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1063/5.0282414",
+            "external-id-normalized": {
+              "value": "10.1063/5.0282414",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1063/5.0282414"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 195904116,
+          "created-date": {
+            "value": 1762187293682
+          },
+          "last-modified-date": {
+            "value": 1762738108450
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Multi-step nucleation of magnetic domains"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1063/5.0282414",
+                "external-id-normalized": {
+                  "value": "10.1063/5.0282414",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1063/5.0282414"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1063/5.0282414"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "11"
+            },
+            "day": {
+              "value": "03"
+            }
+          },
+          "journal-title": {
+            "value": "Applied Physics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/195904116",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1752797428086
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1021/acsami.5c06399",
+            "external-id-normalized": {
+              "value": "10.1021/acsami.5c06399",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1021/acsami.5c06399"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 188148214,
+          "created-date": {
+            "value": 1752797428086
+          },
+          "last-modified-date": {
+            "value": 1752797428086
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Flexible Spintronic Neuromorphic Devices for Sensing Signal Processing"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1021/acsami.5c06399",
+                "external-id-normalized": {
+                  "value": "10.1021/acsami.5c06399",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1021/acsami.5c06399"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1944-8244",
+                "external-id-normalized": {
+                  "value": "1944-8244",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1944-8244"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1944-8252",
+                "external-id-normalized": {
+                  "value": "1944-8252",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1944-8252"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1021/acsami.5c06399"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "07"
+            },
+            "day": {
+              "value": "16"
+            }
+          },
+          "journal-title": {
+            "value": "ACS Applied Materials & Interfaces"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/188148214",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385102329
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1021/acs.nanolett.4c02773",
+            "external-id-normalized": {
+              "value": "10.1021/acs.nanolett.4c02773",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1021/acs.nanolett.4c02773"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 176401074,
+          "created-date": {
+            "value": 1737564776709
+          },
+          "last-modified-date": {
+            "value": 1743385102329
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Intrinsic Solution to the Dilemma between High-Efficiency and External-Field-Free Spin–Orbit Torque Switching Based on Biaxial Devices"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1021/acs.nanolett.4c02773",
+                "external-id-normalized": {
+                  "value": "10.1021/acs.nanolett.4c02773",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1021/acs.nanolett.4c02773"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1021/acs.nanolett.4c02773"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "02"
+            },
+            "day": {
+              "value": "12"
+            }
+          },
+          "journal-title": {
+            "value": "Nano Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/176401074",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385393589
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1021/acs.nanolett.4c02340",
+            "external-id-normalized": {
+              "value": "10.1021/acs.nanolett.4c02340",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1021/acs.nanolett.4c02340"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 181220395,
+          "created-date": {
+            "value": 1743385389538
+          },
+          "last-modified-date": {
+            "value": 1743385393589
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "An Antiferromagnetic Neuromorphic Memory Based on Perpendicularly Magnetized CoO"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1021/acs.nanolett.4c02340",
+                "external-id-normalized": {
+                  "value": "10.1021/acs.nanolett.4c02340",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1021/acs.nanolett.4c02340"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1530-6984",
+                "external-id-normalized": {
+                  "value": "1530-6984",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1530-6984"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1530-6992",
+                "external-id-normalized": {
+                  "value": "1530-6992",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1530-6992"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1021/acs.nanolett.4c02340"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2024"
+            },
+            "month": {
+              "value": "09"
+            },
+            "day": {
+              "value": "11"
+            }
+          },
+          "journal-title": {
+            "value": "Nano Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/181220395",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385105561
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1063/5.0201222",
+            "external-id-normalized": {
+              "value": "10.1063/5.0201222",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1063/5.0201222"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 156291693,
+          "created-date": {
+            "value": 1711458914857
+          },
+          "last-modified-date": {
+            "value": 1743385105561
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Spin–orbit torque reconfigurable diffraction gratings"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1063/5.0201222",
+                "external-id-normalized": {
+                  "value": "10.1063/5.0201222",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1063/5.0201222"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1063/5.0201222"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2024"
+            },
+            "month": {
+              "value": "03"
+            },
+            "day": {
+              "value": "25"
+            }
+          },
+          "journal-title": {
+            "value": "Applied Physics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/156291693",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385108074
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1063/5.0188618",
+            "external-id-normalized": {
+              "value": "10.1063/5.0188618",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1063/5.0188618"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 153599540,
+          "created-date": {
+            "value": 1708428424221
+          },
+          "last-modified-date": {
+            "value": 1743385108074
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Symmetry of spin–orbit torque induced meron annihilation"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1063/5.0188618",
+                "external-id-normalized": {
+                  "value": "10.1063/5.0188618",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1063/5.0188618"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1063/5.0188618"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2024"
+            },
+            "month": {
+              "value": "02"
+            },
+            "day": {
+              "value": "19"
+            }
+          },
+          "journal-title": {
+            "value": "Applied Physics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/153599540",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385110826
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/OL.486633",
+            "external-id-normalized": {
+              "value": "10.1364/ol.486633",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/OL.486633"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 133558466,
+          "created-date": {
+            "value": 1682112669336
+          },
+          "last-modified-date": {
+            "value": 1743385110826
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Magnetically tunable diffractive optical elements based on ion-irradiated ultrathin ferromagnetic stacks"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/OL.486633",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.486633",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/OL.486633"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1364/OL.486633"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2023"
+            },
+            "month": {
+              "value": "05"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/133558466",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1743385113028
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1016/j.jmmm.2022.169194",
+            "external-id-normalized": {
+              "value": "10.1016/j.jmmm.2022.169194",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1016/j.jmmm.2022.169194"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 108597170,
+          "created-date": {
+            "value": 1645488392430
+          },
+          "last-modified-date": {
+            "value": 1743385113028
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "A unified understanding of planar spiral domain walls in ferromagnet/antiferromagnet/ferromagnet trilayers"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1016/j.jmmm.2022.169194",
+                "external-id-normalized": {
+                  "value": "10.1016/j.jmmm.2022.169194",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1016/j.jmmm.2022.169194"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1016/j.jmmm.2022.169194"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2022"
+            },
+            "month": {
+              "value": "06"
+            },
+            "day": null
+          },
+          "journal-title": {
+            "value": "Journal of Magnetism and Magnetic Materials"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/108597170",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1038/s41467-019-13280-5",
+            "external-id-normalized": {
+              "value": "10.1038/s41467-019-13280-5",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1038/s41467-019-13280-5"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365276,
+          "created-date": {
+            "value": 1609992274344
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Coherent ac spin current transmission across an antiferromagnetic CoO insulator"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1038/s41467-019-13280-5",
+                "external-id-normalized": {
+                  "value": "10.1038/s41467-019-13280-5",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1038/s41467-019-13280-5"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2041-1723",
+                "external-id-normalized": {
+                  "value": "2041-1723",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2041-1723"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1038/s41467-019-13280-5"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2019"
+            },
+            "month": {
+              "value": "12"
+            },
+            "day": null
+          },
+          "journal-title": {
+            "value": "Nature Communications"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365276",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1038/s41467-019-13642-z",
+            "external-id-normalized": {
+              "value": "10.1038/s41467-019-13642-z",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1038/s41467-019-13642-z"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365266,
+          "created-date": {
+            "value": 1609992218628
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Creation and annihilation of topological meron pairs in in-plane magnetized films"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1038/s41467-019-13642-z",
+                "external-id-normalized": {
+                  "value": "10.1038/s41467-019-13642-z",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1038/s41467-019-13642-z"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2041-1723",
+                "external-id-normalized": {
+                  "value": "2041-1723",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2041-1723"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1038/s41467-019-13642-z"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2019"
+            },
+            "month": {
+              "value": "12"
+            },
+            "day": null
+          },
+          "journal-title": {
+            "value": "Nature Communications"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365266",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1063/1.5052297",
+            "external-id-normalized": {
+              "value": "10.1063/1.5052297",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1063/1.5052297"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365313,
+          "created-date": {
+            "value": 1609992382585
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Tuning magnetic anisotropy of epitaxial Ag/Fe/Fe0.5Co0.5/MgO(001) films"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1063/1.5052297",
+                "external-id-normalized": {
+                  "value": "10.1063/1.5052297",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1063/1.5052297"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0021-8979",
+                "external-id-normalized": {
+                  "value": "0021-8979",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0021-8979"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1089-7550",
+                "external-id-normalized": {
+                  "value": "1089-7550",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1089-7550"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1063/1.5052297"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2018"
+            },
+            "month": {
+              "value": "10"
+            },
+            "day": {
+              "value": "21"
+            }
+          },
+          "journal-title": {
+            "value": "Journal of Applied Physics"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365313",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1021/acs.nanolett.8b02806",
+            "external-id-normalized": {
+              "value": "10.1021/acs.nanolett.8b02806",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1021/acs.nanolett.8b02806"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365411,
+          "created-date": {
+            "value": 1609992422397
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Patterning-Induced Ferromagnetism of Fe3GeTe2 van der Waals Materials beyond Room Temperature"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1021/acs.nanolett.8b02806",
+                "external-id-normalized": {
+                  "value": "10.1021/acs.nanolett.8b02806",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1021/acs.nanolett.8b02806"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1530-6984",
+                "external-id-normalized": {
+                  "value": "1530-6984",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1530-6984"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1530-6992",
+                "external-id-normalized": {
+                  "value": "1530-6992",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1530-6992"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1021/acs.nanolett.8b02806"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2018"
+            },
+            "month": {
+              "value": "09"
+            },
+            "day": {
+              "value": "12"
+            }
+          },
+          "journal-title": {
+            "value": "Nano Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365411",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1002/aelm.201700493",
+            "external-id-normalized": {
+              "value": "10.1002/aelm.201700493",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1002/aelm.201700493"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365572,
+          "created-date": {
+            "value": 1609992514207
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Bulk-Like Electrical Properties Induced by Contact-Limited Charge Transport in Organic Diodes: Revised Space Charge Limited Current"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1002/aelm.201700493",
+                "external-id-normalized": {
+                  "value": "10.1002/aelm.201700493",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1002/aelm.201700493"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2199-160X",
+                "external-id-normalized": {
+                  "value": "2199-160X",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2199-160X"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1002/aelm.201700493"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2018"
+            },
+            "month": {
+              "value": "05"
+            },
+            "day": null
+          },
+          "journal-title": {
+            "value": "Advanced Electronic Materials"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365572",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1103/physrevb.96.165205",
+            "external-id-normalized": {
+              "value": "10.1103/physrevb.96.165205",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1103/physrevb.96.165205"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365583,
+          "created-date": {
+            "value": 1609992548857
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Temperature, electric-field, and carrier-density dependence of hopping magnetoresistivity in disordered organic semiconductors"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1103/physrevb.96.165205",
+                "external-id-normalized": {
+                  "value": "10.1103/physrevb.96.165205",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1103/physrevb.96.165205"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2469-9950",
+                "external-id-normalized": {
+                  "value": "2469-9950",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2469-9950"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2469-9969",
+                "external-id-normalized": {
+                  "value": "2469-9969",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2469-9969"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1103/physrevb.96.165205"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2017"
+            },
+            "month": {
+              "value": "10"
+            },
+            "day": {
+              "value": "31"
+            }
+          },
+          "journal-title": {
+            "value": "Physical Review B"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365583",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1103/physrevb.94.075201",
+            "external-id-normalized": {
+              "value": "10.1103/physrevb.94.075201",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1103/physrevb.94.075201"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365606,
+          "created-date": {
+            "value": 1609992578385
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Unified percolation model for bipolaron-assisted organic magnetoresistance in the unipolar transport regime"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1103/physrevb.94.075201",
+                "external-id-normalized": {
+                  "value": "10.1103/physrevb.94.075201",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1103/physrevb.94.075201"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2469-9950",
+                "external-id-normalized": {
+                  "value": "2469-9950",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2469-9950"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "2469-9969",
+                "external-id-normalized": {
+                  "value": "2469-9969",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/2469-9969"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1103/physrevb.94.075201"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2016"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "04"
+            }
+          },
+          "journal-title": {
+            "value": "Physical Review B"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365606",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1103/physrevb.92.214438",
+            "external-id-normalized": {
+              "value": "10.1103/physrevb.92.214438",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1103/physrevb.92.214438"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365609,
+          "created-date": {
+            "value": 1609992602846
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Spin diffusion in disordered organic semiconductors"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1103/physrevb.92.214438",
+                "external-id-normalized": {
+                  "value": "10.1103/physrevb.92.214438",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1103/physrevb.92.214438"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1098-0121",
+                "external-id-normalized": {
+                  "value": "1098-0121",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1098-0121"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1550-235X",
+                "external-id-normalized": {
+                  "value": "1550-235X",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1550-235X"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1103/physrevb.92.214438"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2015"
+            },
+            "month": {
+              "value": "12"
+            },
+            "day": {
+              "value": "29"
+            }
+          },
+          "journal-title": {
+            "value": "Physical Review B"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365609",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ol.40.001216",
+            "external-id-normalized": {
+              "value": "10.1364/ol.40.001216",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ol.40.001216"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365613,
+          "created-date": {
+            "value": 1609992632317
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Free space self-similar beams"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ol.40.001216",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.40.001216",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ol.40.001216"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0146-9592",
+                "external-id-normalized": {
+                  "value": "0146-9592",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0146-9592"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4794",
+                "external-id-normalized": {
+                  "value": "1539-4794",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4794"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ol.40.001216"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2015"
+            },
+            "month": {
+              "value": "04"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365613",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ol.39.003619",
+            "external-id-normalized": {
+              "value": "10.1364/ol.39.003619",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ol.39.003619"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365624,
+          "created-date": {
+            "value": 1609992655891
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Parabolic scaling beams"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ol.39.003619",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.39.003619",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ol.39.003619"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0146-9592",
+                "external-id-normalized": {
+                  "value": "0146-9592",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0146-9592"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4794",
+                "external-id-normalized": {
+                  "value": "1539-4794",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4794"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ol.39.003619"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2014"
+            },
+            "month": {
+              "value": "06"
+            },
+            "day": {
+              "value": "15"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365624",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ol.38.002829",
+            "external-id-normalized": {
+              "value": "10.1364/ol.38.002829",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ol.38.002829"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365626,
+          "created-date": {
+            "value": 1609992679260
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Quasi-periodic gratings: diffraction orders accelerate along curves"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ol.38.002829",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.38.002829",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ol.38.002829"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0146-9592",
+                "external-id-normalized": {
+                  "value": "0146-9592",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0146-9592"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4794",
+                "external-id-normalized": {
+                  "value": "1539-4794",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4794"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ol.38.002829"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2013"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365626",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ol.37.003255",
+            "external-id-normalized": {
+              "value": "10.1364/ol.37.003255",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ol.37.003255"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365628,
+          "created-date": {
+            "value": 1609992705227
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Experimental demonstration of free-space optical vortex transmutation with polygonal lenses"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ol.37.003255",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.37.003255",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ol.37.003255"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0146-9592",
+                "external-id-normalized": {
+                  "value": "0146-9592",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0146-9592"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4794",
+                "external-id-normalized": {
+                  "value": "1539-4794",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4794"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ol.37.003255"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2012"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365628",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ao.50.00g142",
+            "external-id-normalized": {
+              "value": "10.1364/ao.50.00g142",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ao.50.00g142"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365647,
+          "created-date": {
+            "value": 1609992786874
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Circular Fibonacci gratings"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ao.50.00g142",
+                "external-id-normalized": {
+                  "value": "10.1364/ao.50.00g142",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ao.50.00g142"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0003-6935",
+                "external-id-normalized": {
+                  "value": "0003-6935",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0003-6935"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4522",
+                "external-id-normalized": {
+                  "value": "1539-4522",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4522"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ao.50.00g142"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2011"
+            },
+            "month": {
+              "value": "11"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Applied Optics"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365647",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1364/ol.36.004251",
+            "external-id-normalized": {
+              "value": "10.1364/ol.36.004251",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1364/ol.36.004251"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365638,
+          "created-date": {
+            "value": 1609992739916
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "High-order diffraction suppression using modulated groove position gratings"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1364/ol.36.004251",
+                "external-id-normalized": {
+                  "value": "10.1364/ol.36.004251",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1364/ol.36.004251"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0146-9592",
+                "external-id-normalized": {
+                  "value": "0146-9592",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0146-9592"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1539-4794",
+                "external-id-normalized": {
+                  "value": "1539-4794",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1539-4794"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1364/ol.36.004251"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2011"
+            },
+            "month": {
+              "value": "11"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": {
+            "value": "Optics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365638",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1609992905636
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1063/1.3581044",
+            "external-id-normalized": {
+              "value": "10.1063/1.3581044",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.1063/1.3581044"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 86365642,
+          "created-date": {
+            "value": 1609992762827
+          },
+          "last-modified-date": {
+            "value": 1609992905636
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0001-9349-5556",
+              "path": "0000-0001-9349-5556",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Nan Gao"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Square optical vortices generated by binary spiral zone plates"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1063/1.3581044",
+                "external-id-normalized": {
+                  "value": "10.1063/1.3581044",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1063/1.3581044"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "0003-6951",
+                "external-id-normalized": {
+                  "value": "0003-6951",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/0003-6951"
+                },
+                "external-id-relationship": "part-of"
+              },
+              {
+                "external-id-type": "issn",
+                "external-id-value": "1077-3118",
+                "external-id-normalized": {
+                  "value": "1077-3118",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://portal.issn.org/resource/ISSN/1077-3118"
+                },
+                "external-id-relationship": "part-of"
+              }
+            ]
+          },
+          "url": {
+            "value": "http://dx.doi.org/10.1063/1.3581044"
+          },
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2011"
+            },
+            "month": {
+              "value": "04"
+            },
+            "day": {
+              "value": "11"
+            }
+          },
+          "journal-title": {
+            "value": "Applied Physics Letters"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-9349-5556/work/86365642",
+          "display-index": "1"
+        }
+      ]
+    }
+  ],
+  "path": "/0000-0001-9349-5556/works"
+}

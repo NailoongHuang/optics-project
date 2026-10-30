@@ -1,0 +1,154 @@
+{
+  "independent_propagator": {
+    "n": 64,
+    "t": 3.0,
+    "real_space_exponential_vs_spectral_l2": 4.685090033606565e-15
+  },
+  "convergence": [
+    {
+      "delta": 0.02,
+      "reference_sigma": [
+        5.613596603730632,
+        17.206631251936816
+      ],
+      "coarse_sigma": [
+        5.613490750900203,
+        17.20663101791761
+      ],
+      "coarse_fidelity_max_error": 2.9515556665415943e-10,
+      "normalization_max_error": 1.3322676295501878e-15,
+      "maximum_comoving_edge_mass": 2.0395283247018586e-09,
+      "maximum_lab_edge_mass": 2.4419722484114938e-08,
+      "gaussian_size_relative_error": 2.220446049250313e-16,
+      "velocity_error_correlated": 3.3306690738754696e-16,
+      "velocity_error_gaussian": 1.6971944417402975e-16,
+      "max_moment_variance_relative_residual": 1.596189380845445e-08
+    },
+    {
+      "delta": 0.04,
+      "reference_sigma": [
+        3.5375964628915337,
+        8.587929404425187
+      ],
+      "coarse_sigma": [
+        3.5374221588391883,
+        8.587927729256013
+      ],
+      "coarse_fidelity_max_error": 2.1687127094160985e-09,
+      "normalization_max_error": 1.3322676295501878e-15,
+      "maximum_comoving_edge_mass": 2.1396819515720044e-10,
+      "maximum_lab_edge_mass": 2.0275026758887226e-10,
+      "gaussian_size_relative_error": 0.0,
+      "velocity_error_correlated": 1.1102230246251565e-16,
+      "velocity_error_gaussian": 4.441027621704298e-16,
+      "max_moment_variance_relative_residual": 7.285035812667658e-09,
+      "fine_sigma": [
+        3.537591359179147,
+        8.587929459379273
+      ],
+      "fine_correlated_fidelity_max_error": 1.7593704271234856e-12,
+      "fine_gaussian_fidelity_max_error": 1.3322676295501878e-15
+    },
+    {
+      "delta": 0.06,
+      "reference_sigma": [
+        2.9830290631934346,
+        5.735594671274121
+      ],
+      "coarse_sigma": [
+        2.982821861977509,
+        5.735560374715878
+      ],
+      "coarse_fidelity_max_error": 3.249682301031953e-09,
+      "normalization_max_error": 8.881784197001252e-16,
+      "maximum_comoving_edge_mass": 1.492226320363843e-10,
+      "maximum_lab_edge_mass": 1.359805167054276e-10,
+      "gaussian_size_relative_error": 1.1102230246251565e-16,
+      "velocity_error_correlated": 0.0,
+      "velocity_error_gaussian": 2.514331927660129e-16,
+      "max_moment_variance_relative_residual": 6.196427309984122e-09
+    }
+  ],
+  "branch": {
+    "qx_interval": [
+      0.05,
+      1.45
+    ],
+    "positive_qy_range": [
+      0.4683715569398267,
+      0.7999999945470715
+    ],
+    "ideal_energy_range": [
+      0.14719262537686398,
+      0.9871926253768639
+    ],
+    "minimum_sampled_gradient_norm": 0.5983443697144935,
+    "analytic_curve_residual": 3.3306690738754696e-16
+  },
+  "space_spectrum_overlap_max_error": 1.887379141862766e-14,
+  "fine_density_checks": [
+    {
+      "label": "correlated",
+      "t": 10,
+      "D_error": 1.8800927481521512e-10,
+      "sigma_relative_error": 1.0899009552645111e-06,
+      "edge_mass": 2.4391451296258813e-14
+    },
+    {
+      "label": "correlated",
+      "t": 30,
+      "D_error": 1.4837649442434042e-09,
+      "sigma_relative_error": 3.674903935602103e-07,
+      "edge_mass": 2.6046338873697743e-14
+    },
+    {
+      "label": "correlated",
+      "t": 60,
+      "D_error": 1.670110839555039e-09,
+      "sigma_relative_error": 1.1198732408068679e-07,
+      "edge_mass": 3.150805720001457e-14
+    },
+    {
+      "label": "gaussian",
+      "t": 10,
+      "D_error": 1.5543122344752192e-15,
+      "sigma_relative_error": 1.1102230246251565e-16,
+      "edge_mass": 5.569189391929081e-32
+    },
+    {
+      "label": "gaussian",
+      "t": 30,
+      "D_error": 1.2212453270876722e-15,
+      "sigma_relative_error": 0.0,
+      "edge_mass": 2.9948958521979825e-31
+    },
+    {
+      "label": "gaussian",
+      "t": 60,
+      "D_error": 1.4432899320127035e-15,
+      "sigma_relative_error": 2.220446049250313e-16,
+      "edge_mass": 1.1268046107193088e-30
+    }
+  ],
+  "optimization_resolution": [
+    {
+      "delta": 0.02,
+      "objective_fine": 0.01136665055928665,
+      "objective_optimization_grid": 0.011366650559246239,
+      "absolute_difference": 4.04121180963557e-14
+    },
+    {
+      "delta": 0.04,
+      "objective_fine": 0.017954354358261537,
+      "objective_optimization_grid": 0.01795435435826309,
+      "absolute_difference": 1.5543122344752192e-15
+    },
+    {
+      "delta": 0.06,
+      "objective_fine": 0.01687168951775364,
+      "objective_optimization_grid": 0.016854531372553883,
+      "absolute_difference": 1.7158145199758223e-05
+    }
+  ],
+  "scope": "Deterministic numerical checks; parameterized search, not a global optimality proof or novelty claim."
+}

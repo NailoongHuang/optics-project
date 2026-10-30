@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/hx2qfj","index":26,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/hojud03q","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"频谱概率守恒，实空间形状仍会改变","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/u1sv254f","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/v21cbalk","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 C12　e = ε/Jₓ，τ = Jₓt/ℏ","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/8zat0vm9","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"27","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/or2h4zi1","kind":"image","position":{"left":44,"top":125,"width":1192,"height":365},"fit":"contain","alt":"c12-spectrum-phase"},
+{"id":"sh/mx8byl43","kind":"textbox","position":{"left":59,"top":500,"width":551,"height":34},"text":"时间演化保持谱权重","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7yhc7q5o","kind":"textbox","position":{"left":59,"top":543,"width":551,"height":140},"text":"A(q,τ) = A(q,0) exp[−ie(q)τ]。\n每个模式的概率保持不变。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/svudcfmd","kind":"textbox","position":{"left":665,"top":500,"width":550,"height":34},"text":"相对相位产生形变","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/tw3ulk3y","kind":"textbox","position":{"left":665,"top":543,"width":550,"height":140},"text":"去掉整体与平移相位后，\n高阶残余相位继续累积。\n动力学本身仍为线性。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

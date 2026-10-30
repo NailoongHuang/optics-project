@@ -1,0 +1,15 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/z0uqao","index":2,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/6dczmp8n","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"两电子的直接积分与交换积分","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/t0nyh47y","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/szehozqd","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"原理 PDF 第 1–2 页，式 (1)–(9)","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/f250jup4","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"03","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/3i10bels","kind":"image","position":{"left":61,"top":155,"width":790,"height":205},"fit":"contain","alt":"原理公式 2-3"},
+{"id":"sh/14nil47a","kind":"textbox","position":{"left":900,"top":145,"width":320,"height":34},"text":"固定占据的出发点","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/g3ehszqp","kind":"textbox","position":{"left":900,"top":188,"width":320,"height":140},"text":"轨道 a、b 正交归一，各有一个电子。\n库仑核作用在两电子坐标上。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/v61g7ap0","kind":"textbox","position":{"left":900,"top":345,"width":320,"height":34},"text":"两种矩阵元","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/a5sze58f","kind":"textbox","position":{"left":900,"top":388,"width":320,"height":140},"text":"D 对应保持轨道配对的直接项。\nK 对应交换轨道配对的交换项。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"tb/32dorq5g","kind":"table","position":{"left":61,"top":393,"width":785,"height":188},"text":"积分\t依赖的空间结构\t在自旋模型中的作用\nD\t两轨道的密度分布\t贡献共同能量常数\nK\t两轨道的交叉乘积\t决定自旋交换耦合","rows":3,"cols":3},
+{"id":"sh/xkbqtc7e","kind":"shape","position":{"left":54,"top":614,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/ah07iho3","kind":"textbox","position":{"left":57,"top":629,"width":1166,"height":44},"text":"在固定轨道模型中，交换积分把电子的空间结构带入自旋动力学。","style":{"fontSize":23,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

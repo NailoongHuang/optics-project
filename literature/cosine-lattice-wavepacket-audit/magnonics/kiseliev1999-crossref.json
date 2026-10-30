@@ -1,0 +1,313 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          1
+        ]
+      ],
+      "date-time": "2026-04-01T10:25:59Z",
+      "timestamp": 1775039159508,
+      "version": "3.50.1"
+    },
+    "reference-count": 15,
+    "publisher": "IOP Publishing",
+    "issue": "17",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Phys.: Condens. Matter"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1999,
+          5,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1088/0953-8984/11/17/305",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2002-08-25T02:35:54Z",
+      "timestamp": 1030242954000
+    },
+    "page": "3461-3474",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Non-linear spin dynamics in ferromagnetic films and Schrödinger's equation in the vicinity of the zero-dispersion point"
+    ],
+    "prefix": "10.1088",
+    "volume": "11",
+    "author": [
+      {
+        "given": "V V",
+        "family": "Kiseliev",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "A P",
+        "family": "Tankeyev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "A V",
+        "family": "Kobelev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "A G",
+        "family": "Shagalov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "266",
+    "published-online": {
+      "date-parts": [
+        [
+          1999,
+          1,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1",
+        "first-page": "38",
+        "volume": "82",
+        "author": "Kiseliev V V",
+        "year": "1966",
+        "journal-title": "Fiz. Met. Metalloved.",
+        "ISSN": "https://id.crossref.org/issn/0015-3230",
+        "issn-type": "print"
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/20.573853"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.70.1707"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "crossref",
+        "first-page": "510",
+        "DOI": "10.1109/JQE.1987.1073392",
+        "volume": "23",
+        "author": "Kodama Y",
+        "year": "1987",
+        "journal-title": "IEEE J. Quantum Electron.",
+        "ISSN": "https://id.crossref.org/issn/0018-9197",
+        "issn-type": "print"
+      },
+      {
+        "key": "5",
+        "first-page": "1892",
+        "volume": "113",
+        "author": "Zakharov V E",
+        "year": "1988",
+        "journal-title": "Zh. Eksp. Teor. Fiz.",
+        "ISSN": "https://id.crossref.org/issn/0044-4510",
+        "issn-type": "print"
+      },
+      {
+        "key": "6",
+        "first-page": "628",
+        "volume": "114",
+        "author": "Savchenko L L",
+        "year": "1998",
+        "journal-title": "Zh. Eksp. Teor. Fiz.",
+        "ISSN": "https://id.crossref.org/issn/0044-4510",
+        "issn-type": "print"
+      },
+      {
+        "key": "7",
+        "first-page": "137",
+        "volume": "110",
+        "author": "Gromov E M",
+        "year": "1996",
+        "journal-title": "Zh. Eksp. Teor. Fiz.",
+        "ISSN": "https://id.crossref.org/issn/0044-4510",
+        "issn-type": "print"
+      },
+      {
+        "key": "8",
+        "first-page": "320",
+        "author": "Zakharov V E",
+        "year": "1980"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.41.426"
+      },
+      {
+        "key": "10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.859288"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.47.2073"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0375-9601(98)00251-5"
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1002/sapm197757113",
+        "volume": "57",
+        "author": "Ablowitz M J",
+        "year": "1977",
+        "journal-title": "Studies Appl. Math.",
+        "ISSN": "https://id.crossref.org/issn/0022-2526",
+        "issn-type": "print"
+      },
+      {
+        "key": "14",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1002/sapm197960159",
+        "volume": "60",
+        "author": "Miles J W",
+        "year": "1979",
+        "journal-title": "Studies Appl. Math.",
+        "ISSN": "https://id.crossref.org/issn/0022-2526",
+        "issn-type": "print"
+      },
+      {
+        "key": "15",
+        "first-page": "444",
+        "author": "Ablowitz M J",
+        "year": "1987"
+      }
+    ],
+    "container-title": [
+      "Journal of Physics: Condensed Matter"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          11
+        ]
+      ],
+      "date-time": "2020-04-11T07:52:54Z",
+      "timestamp": 1586591574000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://iopscience.iop.org/article/10.1088/0953-8984/11/17/305"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 15,
+    "journal-issue": {
+      "issue": "17",
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            5,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0953-8984(99)01513-1"
+    ],
+    "URL": "https://doi.org/10.1088/0953-8984/11/17/305",
+    "relation": {},
+    "ISSN": [
+      "0953-8984",
+      "1361-648X"
+    ],
+    "issn-type": [
+      {
+        "value": "0953-8984",
+        "type": "print"
+      },
+      {
+        "value": "1361-648X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          1,
+          1
+        ]
+      ]
+    }
+  }
+}

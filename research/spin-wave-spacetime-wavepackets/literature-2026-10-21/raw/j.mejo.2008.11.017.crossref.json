@@ -1,0 +1,390 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          2
+        ]
+      ],
+      "date-time": "2026-08-02T15:07:46Z",
+      "timestamp": 1785683266611,
+      "version": "3.56.0"
+    },
+    "reference-count": 6,
+    "publisher": "Elsevier BV",
+    "issue": "4-5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2009,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2009-04-01T00:00:00Z",
+          "timestamp": 1238544000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Microelectronics Journal"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.mejo.2008.11.017",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          31
+        ]
+      ],
+      "date-time": "2008-12-31T09:25:42Z",
+      "timestamp": 1230715542000
+    },
+    "page": "779-781",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "Space–time evolution of spin-wave packets"
+    ],
+    "prefix": "10.1016",
+    "volume": "40",
+    "author": [
+      {
+        "given": "P.",
+        "family": "Pereyra",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "V.G.",
+        "family": "Ibarra-Sierra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.L.",
+        "family": "Cardoso",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1769",
+        "DOI": "10.1063/1.1589581",
+        "volume": "94",
+        "author": "Seikin",
+        "year": "2003",
+        "journal-title": "J. Appl. Phys."
+      },
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1088/0268-1242/17/4/301",
+        "volume": "17",
+        "author": "Young",
+        "year": "2002",
+        "journal-title": "Semicond. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1088/0268-1242/17/4/302",
+        "volume": "17",
+        "author": "Oestreich",
+        "year": "2002",
+        "journal-title": "Semicond. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "153301",
+        "DOI": "10.1103/PhysRevB.63.153301",
+        "volume": "63",
+        "author": "Cardoso",
+        "year": "2001",
+        "journal-title": "Phys. Rev. B"
+      },
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "2677",
+        "DOI": "10.1103/PhysRevLett.80.2677",
+        "volume": "80",
+        "author": "Pereyra",
+        "year": "1998",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "10.1016/j.mejo.2008.11.017_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.aop.2005.05.010",
+        "volume": "320",
+        "author": "Pereyra",
+        "year": "2005",
+        "journal-title": "Ann. Phys."
+      }
+    ],
+    "container-title": [
+      "Microelectronics Journal"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0026269208005326?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0026269208005326?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          8
+        ]
+      ],
+      "date-time": "2024-07-08T08:24:06Z",
+      "timestamp": 1720427046000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0026269208005326"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "references-count": 6,
+    "journal-issue": {
+      "issue": "4-5",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0026269208005326"
+    ],
+    "URL": "https://doi.org/10.1016/j.mejo.2008.11.017",
+    "relation": {},
+    "ISSN": [
+      "1879-2391"
+    ],
+    "issn-type": [
+      {
+        "value": "1879-2391",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Space–time evolution of spin-wave packets",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Microelectronics Journal",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.mejo.2008.11.017",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2008 Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

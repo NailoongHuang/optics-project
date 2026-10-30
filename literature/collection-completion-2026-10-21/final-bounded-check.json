@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "scope": "One final bounded search requested by parent; no new files downloaded",
+  "queries": [
+    "\"Dispersion-tunable low-loss implanted spin-wave waveguides\" arxiv",
+    "\"Dispersion-tunable low-loss implanted spin-wave waveguides\" \"pdf\" \"uni-muenster\"",
+    "\"Long-range interaction in waveguide lattices\" \"pdf\" \"uni-jena\""
+  ],
+  "findings": [
+    {
+      "title": "Bensmann et al. 2025",
+      "sources": [
+        "https://www.kip.uni-heidelberg.de/Veroeffentlichungen/details.php?id=4889",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12657222/"
+      ],
+      "result": "Institutional record points back to Nature, no separate downloadable PDF. PMC returned browser verification/reCAPTCHA; did not bypass. No arXiv copy located."
+    },
+    {
+      "title": "Szameit et al. 2008",
+      "result": "No new primary OA PDF lead returned; existing inaccessible status unchanged."
+    }
+  ],
+  "counts_unchanged": true,
+  "final_pdf_files": 37,
+  "final_available_works": 36,
+  "missing_pdf_works": 7
+}

@@ -1,0 +1,16 @@
+
+test_default_amplitude_is_small (test_spin_wave_2d.SpinWaveTests.test_default_amplitude_is_small) ... ok
+test_default_step_conserves_norm_and_matches_fft (test_spin_wave_2d.SpinWaveTests.test_default_step_conserves_norm_and_matches_fft) ... ok
+test_exact_spin_half_one_magnon_hamiltonian (test_spin_wave_2d.SpinWaveTests.test_exact_spin_half_one_magnon_hamiltonian) ... ok
+test_invalid_background_and_unstable_step_are_rejected (test_spin_wave_2d.SpinWaveTests.test_invalid_background_and_unstable_step_are_rejected) ... ok
+test_packet_handedness_sets_actual_momentum (test_spin_wave_2d.SpinWaveTests.test_packet_handedness_sets_actual_momentum) ... ok
+test_plane_wave_frequency_and_velocity (test_spin_wave_2d.SpinWaveTests.test_plane_wave_frequency_and_velocity) ... ok
+test_rk4_matches_exact_fft_and_converges (test_spin_wave_2d.SpinWaveTests.test_rk4_matches_exact_fft_and_converges) ... ok
+test_uniform_mode_is_not_excluded_from_spectrum (test_spin_wave_2d.SpinWaveTests.test_uniform_mode_is_not_excluded_from_spectrum) ... ok
+test_uniform_rotation_has_only_zeeman_frequency (test_spin_wave_2d.SpinWaveTests.test_uniform_rotation_has_only_zeeman_frequency) ... ok
+test_zero_hamiltonian_is_stationary (test_spin_wave_2d.SpinWaveTests.test_zero_hamiltonian_is_stationary) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.237s
+
+OK

@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/jcSTYiLCRrduUP5qFtUU57xn5as</id>
+  <title>arXiv Query: search_query=all:"space-time" AND (all:"spin-wave" OR all:magnon)&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-10-21T10:16:34Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22space-time%22+AND+(all:%22spin-wave%22+OR+all:magnon)&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>18</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.02021v1</id>
+    <title>An efficient formalism for inertial spin waves: Dzyaloshinskii-Moriya antiferromagnets as case studies</title>
+    <updated>2026-07-02T10:51:27Z</updated>
+    <link href="https://arxiv.org/abs/2607.02021v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.02021v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Magnetic inertia, emerging in the ultrafast regime, supports inertial spin waves (SWs) as novel magnetic excitations. Despite considerable efforts devoted to inertial SWs, a systematic formalism for fully characterizing their intrinsic properties, especially chirality and polarization, is still lacking, and inertial SWs in spatially nonuniform magnetic configurations remain poorly explored. Here, we develop a framework for calculating inertial SWs and establish a general definition of their chirality and polarization via the ellipticity angle, a unified parameter encoding frequency sign, phase difference, and elliptical axis ratio. Using this method, we systematically investigate precessional and nutational SWs in uniaxial antiferromagnets with staggered and homogeneous Dzyaloshinskii-Moriya interactions (DMIs), covering uniform collinear, canted, and spiral magnetic configurations. The results reveal that small staggered DMI preserves spin-wave degeneracy, whereas small homogeneous DMI lifts it. Further space-time inversion symmetry breaking in canted and spiral structures fully removes spin-wave degeneracy across the entire Brillouin zone. Long-wavelength nutational SWs behave as backward waves, and flat bands emerge in canted and spiral configurations near a critical inertial relaxation time. In canted and spiral configurations, nutational modes are always lefthanded whereas precessional modes are always righthanded; additionally, the dispersion spectra of the canted configuration can be derived from those of the spiral configuration via band folding. Polarization is wavenumber insensitive for uniform configurations but becomes strongly dispersive for nonuniform ones. This work advances the fundamental understanding of magnetic inertial dynamics and provides theoretical insights for the development of ultrafast magnonic devices.</summary>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-02T10:51:27Z</published>
+    <arxiv:primary_category term="cond-mat.mes-hall"/>
+    <author>
+      <name>De-Yun Zhao</name>
+    </author>
+    <author>
+      <name>Ri-Xing Wang</name>
+    </author>
+    <author>
+      <name>Meng-Qiu Cai</name>
+    </author>
+    <author>
+      <name>Mikhail Cherkasskii</name>
+    </author>
+    <author>
+      <name>Peng-Bin He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.09043v1</id>
+    <title>Midpoint geometric integrators for inertial magnetization dynamics</title>
+    <updated>2023-10-13T12:11:50Z</updated>
+    <link href="https://arxiv.org/abs/2310.09043v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.09043v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider the numerical solution of the inertial version of Landau-Lifshitz-Gilbert equation (iLLG), which describes high-frequency nutation on top of magnetization precession due to angular momentum relaxation. The iLLG equation defines a higher-order nonlinear dynamical system with very different nature compared to the classical LLG equation, requiring twice as many degrees of freedom for space-time discretization. It exhibits essential conservation properties, namely magnetization amplitude preservation, magnetization projection conservation, and a balance equation for generalized free energy, leading to a Lyapunov structure (i.e. the free energy is a decreasing function of time) when the external magnetic field is constant in time. We propose two second-order numerical schemes for integrating the iLLG dynamics over time, both based on implicit midpoint rule. The first scheme unconditionally preserves all the conservation properties, making it the preferred choice for simulating inertial magnetization dynamics. However, it implies doubling the number of unknowns, necessitating significant changes in numerical micromagnetic codes and increasing computational costs especially for spatially inhomogeneous dynamics simulations. To address this issue, we present a second time-stepping method that retains the same computational cost as the implicit midpoint rule for classical LLG dynamics while unconditionally preserving magnetization amplitude and projection. Special quasi-Newton techniques are developed for solving the nonlinear system of equations required at each time step due to the implicit nature of both time-steppings. The numerical schemes are validated on analytical solution for macrospin terahertz frequency response and the effectiveness of the second scheme is demonstrated with full micromagnetic simulation of inertial spin waves propagation in a magnetic thin-film.</summary>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-13T12:11:50Z</published>
+    <arxiv:comment>19 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.comp-ph"/>
+    <author>
+      <name>Massimiliano d'Aquino</name>
+    </author>
+    <author>
+      <name>Salvatore Perna</name>
+    </author>
+    <author>
+      <name>Claudio Serpico</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1911.13192v1</id>
+    <title>Real space observation of magnon interaction with driven space-time crystals</title>
+    <updated>2019-11-29T16:57:02Z</updated>
+    <link href="https://arxiv.org/abs/1911.13192v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1911.13192v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The concept of Space-Time Crystals (STC), i.e. translational symmetry breaking in time and space, was recently proposed and experimentally demonstrated for quantum systems. Here, we transfer this concept to magnons and experimentally demonstrate a driven STC at room temperature. The STC is realized by strong homogeneous micro-wave pumping of a micron-sized permalloy (Py) stripe and is directly imaged by Scanning Transmission X-ray Microscopy (STXM). For a fundamental understanding of the formation of the STC, micromagnetic simulations are carefully adapted to model the experimental findings. Beyond the mere generation of a STC, we observe the formation of a magnonic band structure due to back folding of modes at the STC's Brillouin zone boundaries. We show interactions of magnons with the STC that appear as lattice scattering. This results in the generation of ultra short spin waves down to 100 nm wavelength that cannot be described by classical dispersion relations for linear spin wave excitations. We expect that room temperature STCs will be a useful tool to investigate non-linear wave physics, as they can be easily generated and manipulated to control their spatial and temporal band structure.</summary>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-11-29T16:57:02Z</published>
+    <arxiv:primary_category term="cond-mat.mes-hall"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 126, 057201 (2021)</arxiv:journal_ref>
+    <author>
+      <name>Nick Träger</name>
+    </author>
+    <author>
+      <name>Paweł Gruszecki</name>
+    </author>
+    <author>
+      <name>Filip Lisiecki</name>
+    </author>
+    <author>
+      <name>Felix Groß</name>
+    </author>
+    <author>
+      <name>Johannes Förster</name>
+    </author>
+    <author>
+      <name>Markus Weigand</name>
+    </author>
+    <author>
+      <name>Hubert Głowiński</name>
+    </author>
+    <author>
+      <name>Piotr Kuświk</name>
+    </author>
+    <author>
+      <name>Janusz Dubowik</name>
+    </author>
+    <author>
+      <name>Gisela Schütz</name>
+    </author>
+    <author>
+      <name>Maciej Krawczyk</name>
+    </author>
+    <author>
+      <name>Joachim Gräfe</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.126.057201</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.126.057201" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1903.10517v2</id>
+    <title>Quantum Many-Body Scars and Space-Time Crystalline Order from Magnon Condensation</title>
+    <updated>2019-03-27T19:50:41Z</updated>
+    <link href="https://arxiv.org/abs/1903.10517v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1903.10517v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the eigenstate properties of a nonintegrable spin chain that was recently realized experimentally in a Rydberg-atom quantum simulator. In the experiment, long-lived coherent many-body oscillations were observed only when the system was initialized in a particular product state. This pronounced coherence has been attributed to the presence of special "scarred" eigenstates with nearly equally-spaced energies and putative nonergodic properties despite their finite energy density. In this paper we uncover a surprising connection between these scarred eigenstates and low-lying quasiparticle excitations of the spin chain. In particular, we show that these eigenstates can be accurately captured by a set of variational states containing a macroscopic number of magnons with momentum $π$. This leads to an interpretation of the scarred eigenstates as finite-energy-density condensates of weakly interacting $π$-magnons. One natural consequence of this interpretation is that the scarred eigenstates possess long-range order in both space and time, providing a rare example of the spontaneous breaking of continuous time-translation symmetry. We verify numerically the presence of this space-time crystalline order and explain how it is consistent with established no-go theorems precluding its existence in ground states and at thermal equilibrium.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.quant-gas" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-03-25T18:00:04Z</published>
+    <arxiv:comment>13 pages, 8 figures; v2 updated references</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <arxiv:journal_ref>Phys. Rev. B 100, 184312 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Thomas Iadecola</name>
+    </author>
+    <author>
+      <name>Michael Schecter</name>
+    </author>
+    <author>
+      <name>Shenglong Xu</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.100.184312</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.100.184312" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.05801v1</id>
+    <title>Tunable space-time crystal in room-temperature magnetodielectrics</title>
+    <updated>2018-11-14T14:18:14Z</updated>
+    <link href="https://arxiv.org/abs/1811.05801v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.05801v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We report the experimental realization of a space-time crystal with tunable periodicity in time and space in the magnon Bose-Einstein Condensate (BEC), formed in a room-temperature Yttrium Iron Garnet (YIG) film by radio-frequency space-homogeneous magnetic field. The magnon BEC is prepared to have a well defined frequency and non-zero wavevector. We demonstrate how the crystalline "density" as well as the time and space textures of the resulting crystal may be tuned by varying the experimental parameters: external static magnetic field, temperature, thickness of the YIG film and power of the radio-frequency field. The proposed space-time crystals provide a new dimension for exploring dynamical phases of matter and can serve as a model nonlinear Floquet system, that brings in touch the rich fields of classical nonlinear waves, magnonics and periodically driven systems.</summary>
+    <category term="cond-mat.quant-gas" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-14T14:18:14Z</published>
+    <arxiv:primary_category term="cond-mat.quant-gas"/>
+    <arxiv:journal_ref>Physical Review B 100, 020406 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Alexander J. E. Kreil</name>
+    </author>
+    <author>
+      <name>Halyna Yu. Musiienko-Shmarova</name>
+    </author>
+    <author>
+      <name>Dmytro A. Bozhko</name>
+    </author>
+    <author>
+      <name>Anna Pomyalov</name>
+    </author>
+    <author>
+      <name>Victor S. L'vov</name>
+    </author>
+    <author>
+      <name>Sebastian Eggert</name>
+    </author>
+    <author>
+      <name>Alexander A. Serga</name>
+    </author>
+    <author>
+      <name>Burkard Hillebrands</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.100.020406</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.100.020406" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1803.10776v3</id>
+    <title>Unidirectional Magnon-Driven Domain Wall Motion Due to the Interfacial Dzyaloshinskii-Moriya Interaction</title>
+    <updated>2019-04-11T01:00:02Z</updated>
+    <link href="https://arxiv.org/abs/1803.10776v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1803.10776v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We demonstrate a unidirectional motion of a quasiparticle without an explicit symmetry breaking along the space-time coordinate of the particle motion. This counterintuitive behavior originates from a combined action of two intrinsic asymmetries in the other two directions. We realize this idea with the magnon-driven motion of a magnetic domain wall in thin films with interfacial asymmetry. Contrary to previous studies, the domain wall moves along the same direction regardless of the magnon-flow direction. Our general symmetry analysis and numerical simulation reveal that the odd order contributions from the interfacial asymmetry is unidirectional, which is dominant over bidirectional contributions in the realistic regime. We develop a simple analytic theory on the unidirectional motion, which provides an insightful description of this counterintuitive phenomenon.</summary>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-03-28T18:00:02Z</published>
+    <arxiv:comment>5 pages, 3 figures, 3 pages SM</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mes-hall"/>
+    <arxiv:journal_ref>Phys. Rev. Lett. 122, 147202 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Kyoung-Whan Kim</name>
+    </author>
+    <author>
+      <name>Seo-Won Lee</name>
+    </author>
+    <author>
+      <name>Jung-Hwan Moon</name>
+    </author>
+    <author>
+      <name>Gyungchoon Go</name>
+    </author>
+    <author>
+      <name>Aurelien Manchon</name>
+    </author>
+    <author>
+      <name>Hyun-Woo Lee</name>
+    </author>
+    <author>
+      <name>Karin Everschor-Sitte</name>
+    </author>
+    <author>
+      <name>Kyung-Jin Lee</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.122.147202</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.122.147202" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1507.08624v2</id>
+    <title>Quasi-soliton scattering in quantum spin chains</title>
+    <updated>2015-08-17T15:15:56Z</updated>
+    <link href="https://arxiv.org/abs/1507.08624v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1507.08624v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The quantum scattering of magnon bound states in the anisotropic Heisenberg spin chain is shown to display features similar to the scattering of solitons in classical exactly solvable models. Localized colliding Gaussian wave packets of bound magnons are constructed from string solutions of the Bethe equations and subsequently evolved in time, relying on an algebraic Bethe ansatz based framework for the computation of local expectation values in real space-time. The local magnetization profile shows the trajectories of colliding wave packets of bound magnons, which obtain a spatial displacement upon scattering. Analytic predictions on the displacements for various values of anisotropy and string lengths are derived from scattering theory and Bethe ansatz phase shifts, matching time evolution fits on the displacements. The time evolved block decimation (TEBD) algorithm allows for the study of scattering displacements from spin-block states, showing similar scattering displacement features.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.quant-gas" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-07-30T18:51:30Z</published>
+    <arxiv:comment>15 pages, 7 figures. (v2: citations added)</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <arxiv:journal_ref>Phys. Rev. B 92, 214427 (2015)</arxiv:journal_ref>
+    <author>
+      <name>Rogier Vlijm</name>
+    </author>
+    <author>
+      <name>Martin Ganahl</name>
+    </author>
+    <author>
+      <name>Davide Fioretto</name>
+    </author>
+    <author>
+      <name>Michael Brockmann</name>
+    </author>
+    <author>
+      <name>Masudul Haque</name>
+    </author>
+    <author>
+      <name>Hans Gerd Evertz</name>
+    </author>
+    <author>
+      <name>Jean-Sébastien Caux</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.92.214427</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.92.214427" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1404.3421v2</id>
+    <title>Superradiance: Classical, Relativistic and Quantum Aspects</title>
+    <updated>2014-07-12T19:07:16Z</updated>
+    <link href="https://arxiv.org/abs/1404.3421v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1404.3421v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Several physical systems can be treated as a scattering process, and, for these processes, a natural observed quantity arises: the ratio between the reflected and incident intensities, known as the reflection coefficient. This dissertation is concerned with the phenomenon known as superradiance, that is, when this coefficient is larger than unity.
+  We shall explore many examples of such systems, and, more importantly, we shall also see how, apart from the interest in its own right, superradiance is related to a number of important current research physical issues. We begin with a small survey of important results on chapter one. On chapter two, we establish a general criteria to decide whether or not superradiant scattering is observed based on the linear, second order, homogeneous ordinary differential equation (ODE) or linear, first order homogeneous systems of ODEs which describes the process and we shall give an example of system in which superradiance is observed. On chapter three, we focus on spinning black hole superradiance, we shall describe how one can compute explicitly the reflection coefficient for different spin waves. Chapter four is dedicated to the relations with thermodynamics. We develop what is meant by black hole thermodynamics, particularly the so-called first and second law of black hole thermodynamics, and apply them in the context of superradiance, so we can generalise some of the results from chapter three to more general black holes. Finally, on chapter five, we explore many of the quantum aspects of superradiance, including the relation with the Klein paradox, and the quantum version of black hole superradiance, for the later we will explain briefly how one usually quantise fields in curved space-time. A further connection with thermodynamics is explored. Thorough all this text we analyse the connection between superradiance and spin and statistics.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-04-13T20:20:02Z</published>
+    <arxiv:primary_category term="gr-qc"/>
+    <author>
+      <name>Bruno Arderucio</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1101.4267v2</id>
+    <title>Brief Note on AMD Conserved Quantities in Quadratic Curvature Theories</title>
+    <updated>2011-04-12T06:34:48Z</updated>
+    <link href="https://arxiv.org/abs/1101.4267v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1101.4267v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Motivated by the recent work on critical gravity theories in dimensions D&gt;3, we reexamine the results in [arXiv:hep-th/0501044], where the conformal mass definition of Ashtekar, Magnon and Das (AMD) for asymptotically AdS space-times was generalized to incorporate curvature squared terms. The results in [arXiv:hep-th/0501044] appear to contradict the findings in critical gravity, where, using the methods of Deser and Tekin, black holes were shown to have zero mass. We show that after correcting an error in [arXiv:hep-th/0501044], the AMD approach actually produces results in complete agreement with those obtained by using the methods of Deser and Tekin.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-01-22T06:56:32Z</published>
+    <arxiv:comment>6 pages</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Rev.D83:087501,2011</arxiv:journal_ref>
+    <author>
+      <name>Yi Pang</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.83.087501</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.83.087501" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1101.2919v1</id>
+    <title>Antiferromagnets at low Temperatures</title>
+    <updated>2011-01-14T22:22:23Z</updated>
+    <link href="https://arxiv.org/abs/1101.2919v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1101.2919v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The low-temperature properties of the Heisenberg antiferromagnet in 2+1 space-time dimensions are analyzed within the framework of effective Lagrangians. It is shown that the magnon-magnon interaction is very weak and repulsive, manifesting itself through a term proportional to five powers of the temperature in the pressure. The structure of the low-temperature series for antiferromagnets in 2+1 dimensions is compared with the structure of the analogous series for antiferromagnets in 3+1 dimensions. The model-independent and systematic effective field theory approach clearly proves to be superior to conventional condensed matter methods such as spin-wave theory.</summary>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-01-14T22:22:23Z</published>
+    <arxiv:comment>Presented at 12th Mexican Workshop on Particles and Fields, Mazatlan, Sinaloa, Mexico, 9-14 Nov 2009</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.str-el"/>
+    <arxiv:journal_ref>AIP Conf.Proc.1361:257-261,2011</arxiv:journal_ref>
+    <author>
+      <name>Christoph P. Hofmann</name>
+    </author>
+    <arxiv:doi>10.1063/1.3622710</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1063/1.3622710" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1003.0865v2</id>
+    <title>Field Theory for a Deuteron Quantum Liquid</title>
+    <updated>2010-04-16T14:31:04Z</updated>
+    <link href="https://arxiv.org/abs/1003.0865v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1003.0865v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Based on general symmetry principles we study an effective Lagrangian for a neutral system of condensed spin-1 deuteron nuclei and electrons, at greater-than-atomic but less-than-nuclear densities. We expect such matter to be present in thin layers within certain low-mass brown dwarfs. It may also be produced in future shock-wave-compression experiments as an effective fuel for laser induced nuclear fusion. We find a background solution of the effective theory describing a net spin zero condensate of deuterons with their spins aligned and anti-aligned in a certain spontaneously emerged preferred direction. The spectrum of low energy collective excitations contains two spin waves with linear dispersions -- like in antiferromagnets -- as well as gapped longitudinal and transverse modes related to the Meissner effect -- like in superconductors. We show that counting of the Nambu-Goldstone modes of spontaneously broken internal and space-time symmetries obeys, in a nontrivial way, the rules of the Goldstone theorem for Lorentz non-invariant systems. We discuss thermodynamic properties of the condensate, and its potential manifestation in the low-mass brown dwarfs.</summary>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-03-03T17:24:26Z</published>
+    <arxiv:comment>19 LaTeX pages; v2: 2 refs added, JHEP version</arxiv:comment>
+    <arxiv:primary_category term="hep-ph"/>
+    <author>
+      <name>Lasha Berezhiani</name>
+    </author>
+    <author>
+      <name>Gregory Gabadadze</name>
+    </author>
+    <author>
+      <name>David Pirtskhalava</name>
+    </author>
+    <arxiv:doi>10.1007/JHEP04(2010)122</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/JHEP04(2010)122" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0903.1536v1</id>
+    <title>An EOM-assisted wave-vector-resolving Brillouin light scattering setup</title>
+    <updated>2009-03-09T14:22:37Z</updated>
+    <link href="https://arxiv.org/abs/0903.1536v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0903.1536v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Brillouin light scattering spectroscopy is a powerful technique which incorporates several extensions such as space-, time-, phase- and wave-vector resolution.
+  Here, we report on the improvement of the wave-vector resolution by including an electro-optical modulator. This provides a reference to calibrate the position of the diaphragm hole which is used for wave-vector selection. The accuracy of this calibration is only limited by the accuracy of the wave-vector measurement itself. To demonstrate the validity of the approach the wave vectors of dipole-dominated spin waves excited by a microstrip antenna were measured.</summary>
+    <category term="cond-mat.other" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2009-03-09T14:22:37Z</published>
+    <arxiv:comment>5 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.other"/>
+    <arxiv:journal_ref>Rev. Sci. Instrum. 80, 053905 (2009)</arxiv:journal_ref>
+    <author>
+      <name>T. Neumann</name>
+    </author>
+    <author>
+      <name>T. Schneider</name>
+    </author>
+    <author>
+      <name>A. A. Serga</name>
+    </author>
+    <author>
+      <name>B. Hillebrands</name>
+    </author>
+    <arxiv:doi>10.1063/1.3131663</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1063/1.3131663" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0804.1090v1</id>
+    <title>Phase reciprocity of spin-wave excitation by a microstrip antenna</title>
+    <updated>2008-04-07T17:38:30Z</updated>
+    <link href="https://arxiv.org/abs/0804.1090v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0804.1090v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Using space-, time- and phase-resolved Brillouin light scattering spectroscopy we investigate the difference in phase of the two counterpropagating spin waves excited by the same microwave microstrip transducer. These studies are performed both for backward volume magnetostatic waves and magnetostatic surface waves in an in-plane magnetized yttrium iron garnet film. The experiments show that for the backward volume magnetostatic spin waves (which are reciprocal and excited symmetrically in amplitude) there is a phase difference of $π$ associated with the excitation process and thus the phase symmetry is distorted. On the contrary, for the magnetostatic surface spin waves (which are non-reciprocal and unsymmetrical in amplitude) the phase symmetry is preserved (there is no phase difference between the two waves associated with the excitation). Theoretical analysis confirms this effect.</summary>
+    <category term="cond-mat.other" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-04-07T17:38:30Z</published>
+    <arxiv:comment>8 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.other"/>
+    <arxiv:journal_ref>Phys. Rew. B 77, 214411 (2008)</arxiv:journal_ref>
+    <author>
+      <name>T. Schneider</name>
+    </author>
+    <author>
+      <name>A. A. Serga</name>
+    </author>
+    <author>
+      <name>T. Neumann</name>
+    </author>
+    <author>
+      <name>B. Hillebrands</name>
+    </author>
+    <author>
+      <name>M. P. Kostylev</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.77.214411</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.77.214411" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/gr-qc/0304063v5</id>
+    <title>Spin Waves as Metric in a Kinetic Space-Time</title>
+    <updated>2004-11-29T19:33:33Z</updated>
+    <link href="https://arxiv.org/abs/gr-qc/0304063v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/gr-qc/0304063v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  1) A wave equation is derived from the kinetic equations governing media with rotational as well as translational degrees of freedom. In this wave the fluctuating quantity is a vector, the bulk spin. The transmission is similar to compressive waves but propagation is possible even in the limit of incompressibility, where such disturbances could become dominant. 2) In this context a kinetic theory of space-time is introduced, in which hypothetical constituents of the space-time manifold possess such a rotational degree of freedom (spin). Physical fields (i.e. electromagnetic or gravitational) in such a theory are represented as moments of a statistical distribution of these constituents. The spin wave equation from 1) is treated as a candidate for governing light and metric. Such a theory duplicates to first order Maxwell's equations of electromagnetism, Schrodinger's equation for the electron, and the Lorentz transformations of special relativity. Slight deviations from the classical approach are predicted and should be experimentally verifiable.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2003-04-17T04:17:00Z</published>
+    <arxiv:comment>13 pages + errata</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Phys.Lett. A314 (2003) 472-478</arxiv:journal_ref>
+    <author>
+      <name>Lukas Saul</name>
+    </author>
+    <arxiv:doi>10.1016/S0375-9601(03)00947-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0375-9601(03)00947-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0205227v1</id>
+    <title>Spin-dynamics simulations of the triangular antiferromagnetic XY model</title>
+    <updated>2002-05-10T19:49:56Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0205227v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0205227v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Using Monte Carlo and spin-dynamics methods, we have investigated the dynamic behavior of the classical, antiferromagnetic XY model on a triangular lattice with linear sizes $L \leq 300$. The temporal evolutions of spin configurations were obtained by solving numerically the coupled equations of motion for each spin using fourth-order Suzuki-Trotter decompositions of exponential operators.
+  From space- and time-displaced spin-spin correlation functions and their space-time Fourier transforms we obtained the dynamic structure factor $S({\bf q},w)$ for momentum ${\bf q}$ and frequency $ω$. Below $T_{KT}$(Kosterlitz-Thouless transition), both the in-plane ($S^{xx}$) and the out-of-plane ($S^{zz}$) components of $S({\bf q},ω)$ exhibit very strong and sharp spin-wave peaks. Well above $T_{KT}$, $S^{xx}$ and $S^{zz}$ apparently display a central peak, and spin-wave signatures are still seen in $S^{zz}$. In addition, we also observed an almost dispersionless domain-wall peak at high $ω$ below $T_{c}$(Ising transition), where long-range order appears in the staggered chirality. Above $T_{c}$, the domain-wall peak disappears for all $q$. The lineshape of these peaks is captured reasonably well by a Lorentzian form. Using a dynamic finite-size scaling theory, we determined the dynamic critical exponent $z$ = 1.002(3). We found that our results demonstrate the consistency of the dynamic finite-size scaling theory for the characteristic frequeny $ω_{m}$ and the dynamic structure factor $S({\bf q},ω)$ itself.</summary>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-05-10T19:49:56Z</published>
+    <arxiv:comment>8 pages, RevTex, 10 figures, submitted to PRB</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.stat-mech"/>
+    <author>
+      <name>Kwangsik Nho</name>
+    </author>
+    <author>
+      <name>D. P. Landau</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.66.174403</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.66.174403" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/0111429v2</id>
+    <title>Finite size and temperature effects in the $J_1-J_2$ model on a strip</title>
+    <updated>2002-05-22T11:05:34Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/0111429v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/0111429v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Within Takahashi's spin-wave theory we study finite size and temperature effects near the quantum critical point in the $J_{1}-J_{2}$ Heisenberg antiferromagnet defined on a strip ($L\times\infty$). In the continuum limit, the theory predicts universal finite size and temperature corrections and describes the dimensional crossover in magnetic properties from 2+1 to 1+1 space-time dimensions.</summary>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2001-11-22T09:49:57Z</published>
+    <arxiv:comment>4 PRB pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.stat-mech"/>
+    <arxiv:journal_ref>Phys. Rev. B 65, 212404 (2002)</arxiv:journal_ref>
+    <author>
+      <name>E. S. Pisanova</name>
+    </author>
+    <author>
+      <name>N. B. Ivanov</name>
+    </author>
+    <author>
+      <name>N. S. Tonchev</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.65.212404</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.65.212404" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/0103101v1</id>
+    <title>Strings in a Space with Tensor Central Charge Coordinates</title>
+    <updated>2001-03-13T22:51:14Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0103101v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0103101v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  New string models in D=4 space-time extended by tensor central charge coordinates $z_{mn}$ are constructed. We use the $z_{mn}$ coordinates to generate string tension using a minimally extended string action linear in $dz^{mn}$. It is shown that the presence of $z_{mn}$ lifts the light-like character of the tensionless string worldsheet and the degeneracy of its induced metric. We analyse the equations of motion and find a solution of the string equations in the generalized D=(4+6)-dimensional space $X^{\cal M}=(x^{m},z^{mn})$ with $z_{mn}$ describing a spin wave process. A supersymmetric version of the proposed model is formulated.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2001-03-13T22:51:14Z</published>
+    <arxiv:comment>10 pages, Latex, style file espcrc2.sty. Talk given by AZ at the D.V. Volkov Memorial Conference ``Supersymmetry and Quantum Field Theory'', July 25-30, 2000, Kharkov, to be published in the Nuclear Physics B Conference Supplements</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Nucl.Phys.Proc.Suppl.102:126-135,2001</arxiv:journal_ref>
+    <author>
+      <name>A. A. Zheltukhin</name>
+    </author>
+    <author>
+      <name>U. Lindström</name>
+    </author>
+    <arxiv:doi>10.1016/S0920-5632(01)01547-X</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0920-5632(01)01547-X" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cond-mat/9607063v1</id>
+    <title>Critical dynamics in the 2d classical XY-model: a spin dynamics study</title>
+    <updated>1996-07-08T14:01:44Z</updated>
+    <link href="https://arxiv.org/abs/cond-mat/9607063v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/cond-mat/9607063v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Using spin-dynamics techniques we have performed large-scale computer simulations of the dynamic behavior of the classical three component XY-model (i.e. the anisotropic limit of an easy-plane Heisenberg ferromagnet), on square lattices of size up to 192^2, for several temperatures below, at, and above T_KT. The temporal evolution of spin configurations was determined numerically from coupled equations of motion for individual spins by a fourth order predictor-corrector method, with initial spin configurations generated by a hybrid Monte Carlo algorithm. The neutron scattering function S(q,omega) was calculated from the resultant space-time displaced spin-spin correlation function. Pronounced spin-wave peaks were found both in the in-plane and the out-of-plane scattering function over a wide range of temperatures. The in-plane scattering function S^xx also has a large number of clear but weak additional peaks, which we interpret to come from two-spin-wave scattering. In addition, we observed a small central peak in S^xx, even at temperatures well below the phase transition. We used dynamic finite size scaling theory to extract the dynamic critical exponent z. We find z=1.00(4) for all T &lt;= T_KT, in excellent agreement with theoretical predictions, although the shape of S(q,omega) is not well described by current theory.</summary>
+    <category term="cond-mat" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1996-07-08T14:01:44Z</published>
+    <arxiv:comment>31 pages, LaTex, 13 figures (38 subfigures) included as eps-files, needs psfig, 260 KB</arxiv:comment>
+    <arxiv:primary_category term="cond-mat"/>
+    <arxiv:journal_ref>Phys. Rev. B54 (1996) 12302</arxiv:journal_ref>
+    <author>
+      <name>H. G. Evertz</name>
+    </author>
+    <author>
+      <name>D. P. Landau</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevB.54.12302</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevB.54.12302" title="doi"/>
+  </entry>
+</feed>

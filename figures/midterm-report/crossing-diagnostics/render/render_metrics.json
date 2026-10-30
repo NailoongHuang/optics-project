@@ -1,0 +1,124 @@
+{
+  "source": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\notation\\generate_lab_animations.py",
+  "original_movie": "C:\\Users\\xuanm\\Desktop\\optics\\figures\\midterm-report\\notation\\g15_lab_real_animation.gif",
+  "original_size": [
+    1800,
+    672
+  ],
+  "main_panel_width_pixels": 437.1428571428571,
+  "main_panel_range_lattice_constants": 260,
+  "main_pixels_per_site": 1.6813186813186811,
+  "carrier_period_sites": 4,
+  "carrier_pixels_per_period": 6.7252747252747245,
+  "frame_spacing_dimensionless_time": 3,
+  "frames": [
+    {
+      "frame": 0,
+      "t": 0,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 41.0,
+      "palette_full_mean_abs_rgb_error": 0.11585923721340388,
+      "palette_c_lower_mean_abs_rgb_error": 0.05151499527369597,
+      "palette_packet_mean_abs_rgb_error": 1.2162037037037037,
+      "packet_rgb_mean_chroma_255": 32.70166666666667,
+      "packet_palette_mean_chroma_255": 31.90222222222222,
+      "packet_highres_mean_chroma_255": 32.84640273495925,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    },
+    {
+      "frame": 2,
+      "t": 6,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 49.0,
+      "palette_full_mean_abs_rgb_error": 0.12569940476190475,
+      "palette_c_lower_mean_abs_rgb_error": 0.05651284695368222,
+      "palette_packet_mean_abs_rgb_error": 1.2871296296296297,
+      "packet_rgb_mean_chroma_255": 47.065555555555555,
+      "packet_palette_mean_chroma_255": 46.76555555555556,
+      "packet_highres_mean_chroma_255": 46.98184688239937,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    },
+    {
+      "frame": 3,
+      "t": 9,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 50.0,
+      "palette_full_mean_abs_rgb_error": 0.1215175815696649,
+      "palette_c_lower_mean_abs_rgb_error": 0.05358769442296125,
+      "palette_packet_mean_abs_rgb_error": 1.1621296296296297,
+      "packet_rgb_mean_chroma_255": 48.805277777777775,
+      "packet_palette_mean_chroma_255": 48.565555555555555,
+      "packet_highres_mean_chroma_255": 48.69998785744642,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    },
+    {
+      "frame": 5,
+      "t": 15,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 38.0,
+      "palette_full_mean_abs_rgb_error": 0.11590195105820106,
+      "palette_c_lower_mean_abs_rgb_error": 0.05274211566554954,
+      "palette_packet_mean_abs_rgb_error": 1.1610185185185184,
+      "packet_rgb_mean_chroma_255": 37.63638888888889,
+      "packet_palette_mean_chroma_255": 37.08361111111111,
+      "packet_highres_mean_chroma_255": 37.282423620335706,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    },
+    {
+      "frame": 8,
+      "t": 24,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 54.0,
+      "palette_full_mean_abs_rgb_error": 0.12034253747795415,
+      "palette_c_lower_mean_abs_rgb_error": 0.0554197817306866,
+      "palette_packet_mean_abs_rgb_error": 1.1535185185185186,
+      "packet_rgb_mean_chroma_255": 49.58583333333333,
+      "packet_palette_mean_chroma_255": 49.26416666666667,
+      "packet_highres_mean_chroma_255": 49.35526076133811,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    },
+    {
+      "frame": 10,
+      "t": 30,
+      "reconstructed_gif_original_max_abs_rgb_error": 0.0,
+      "palette_full_max_abs_rgb_error": 38.0,
+      "palette_full_mean_abs_rgb_error": 0.11522789902998236,
+      "palette_c_lower_mean_abs_rgb_error": 0.05264243361691157,
+      "palette_packet_mean_abs_rgb_error": 1.0806481481481482,
+      "packet_rgb_mean_chroma_255": 42.17944444444444,
+      "packet_palette_mean_chroma_255": 41.91638888888889,
+      "packet_highres_mean_chroma_255": 41.97568453645802,
+      "c_main_box_pixels": [
+        1192,
+        114,
+        1629,
+        551
+      ]
+    }
+  ]
+}

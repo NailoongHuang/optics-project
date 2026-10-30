@@ -1,0 +1,1845 @@
+=== PDF PAGE 1 ===
+arXiv:1001.0997v1  [physics.optics]  6 Jan 2010
+Discrete diﬀraction and shape-invariant beams in optical waveguide arrays
+Stefano Longhi
+Dipartimento di Fisica and Istituto di Fotonica e Nanotecnologie del CNR,
+Politecnico di Milano, Piazza L. da Vinci 32, I-20133 Milano, Italy
+General properties of linear propagation of discretized light in homogeneous and curved waveguide
+arrays are comprehensively investigated and compared to those of paraxial diﬀraction in continuous
+media. In particular, general laws describing beam spreading, beam decay and discrete far-ﬁeld
+patterns in homogeneous arrays are derived using the method of moments and the steepest descend
+method. In curved arrays, the method of moments is extended to describe evolution of global beam
+parameters. A family of beams which propagate in curved arrays maintaining their functional shape
+-referred to as discrete Bessel beams- is also introduced. Propagation of discrete Bessel beams in
+waveguide arrays is simply described by the evolution of a complex q parameter similar to the
+complex q parameter used for Gaussian beams in continuous lensguide media. A few applications of
+the q parameter formalism are discussed, including beam collimation and polygonal optical Bloch
+oscillations.
+PACS numbers: 42.82.Et, 42.79.Gn
+I.
+INTRODUCTION
+Linear and nonlinear propagation of ’discretized’ light
+in arrays of evanescently-coupled optical waveguides has
+received a great and increasing interest in the past recent
+years (see, for instance, [1, 2] and references therein).
+As compared to diﬀraction or refraction in continuous
+(non-structured) media, discrete diﬀraction and refrac-
+tion in waveguide arrays show rather uncommon eﬀects
+which result from the evanescent coupling among ad-
+jacent waveguides forming a one-dimensional or a two-
+dimensional lattice. For instance, linear propagation of
+light waves in homogeneous arrays may show diﬀrac-
+tion reversal and self-collimation eﬀects [3, 4], anomalous
+refraction [4], the discrete Talbot eﬀect [5], and quasi-
+incoherent propagation [6] to name a few. Remarkably,
+discrete diﬀraction can be tailored by properly introduc-
+ing inhomogeneities in the lattice or by varying its topol-
+ogy. In particular, since the ﬁrst proposals and demon-
+strations of optical Bloch oscillations [7–9] and ’diﬀrac-
+tion management’ in zig-zag arrays [3], the use of waveg-
+uide arrays with curved optical axis has been extensively
+investigated both theoretically and experimentally, with
+the demonstration of diﬀraction suppression via Bloch
+oscillations [1, 7–10] or dynamic localization [12, 13],
+polychromatic diﬀraction management [14], astigmatic
+diﬀraction control [15], multicolor Talbot eﬀect [14], and
+discrete soliton management [16]. Linear and nonlinear
+light propagation at the surface or at the interface of
+two waveguide lattices also exhibits a variety of inter-
+esting properties which have been investigated in several
+recent works (see, for instance, [2, 17–19] and references
+therein). In spite of such a great amount of works, some
+facets of discrete diﬀraction, even in the simplest linear
+propagation regime, have been overlooked. Though in
+the linear regime the impulse response (Green function)
+of the array may be rather generally calculated analyti-
+cally -either in straight or curved geometries and in pres-
+ence or not of boundaries- and its knowledge is enough
+to predict light evolution for any assigned initial exci-
+tation condition (see, for instance, [13, 17]), some gen-
+eral issues of discrete diﬀraction, which are well known
+for paraxial propagation of beams in continuous media,
+have not been comprehensively addressed, including: (i)
+a description of global beam parameter evolution in a
+closed analytical form; (ii) far-ﬁeld discrete diﬀraction in
+homogeneous array (the analogue of Fraunhofer diﬀrac-
+tion in homogeneous continuous media); (iii) the gen-
+eral scaling law of beam broadening and beam decay,
+especially close to the self-collimation condition (also re-
+ferred to as sub-diﬀraction) which is commonplace to the
+more general class of photonic crystal structures (see,
+for instance, [20]); (iv) the existence of shape-invariant
+discretized beams, i.e. special families of ﬁeld distribu-
+tions which -like Gaussian beams in continuous lensguide
+media- do propagate in straight or curved waveguide ar-
+rays maintaining their functional shape. It is the aim of
+this work to shed some light into such issues. In par-
+ticular, it is shown rather generally that: (i) the scaling
+law describing broadening of discretized light in homo-
+geneous arrays is the same as that of standard parax-
+ial diﬀraction theory of homogeneous continuous media
+(beam size asymptotically grows linearly with propaga-
+tion distance), independently of the precise array disper-
+sion curve and even along self-collimation directions; (ii)
+in a homogenous array, the discrete far-ﬁeld pattern is
+not the (discrete) Fourier transform of the near-ﬁeld dis-
+tribution, and the scaling law of beam decay may depend
+on the observation angle; (iii) special ﬁeld distributions,
+which propagate in straight or curved waveguide arrays
+maintaining their functional shape and referred to as ’dis-
+crete Bessel beams’, can be introduced for simple tight-
+binding waveguide models; (iv) a discrete Bessel beam is
+deﬁned by a complex q parameter, analogous to the one
+used for Gaussian beams in continuous lensguide media,
+and propagation of the q parameter along the array ad-
+mits of a simple geometric interpretation.
+The paper is organized as follows. In Sec.II general prop-
+
+
+=== PDF PAGE 2 ===
+2
+erties of discrete diﬀraction in homogeneous waveguide
+arrays are presented, including the derivation of the gen-
+eral scaling laws of beam broadening and beam decay, far-
+ﬁeld discrete diﬀraction, with a a note on self-collimation
+regimes.
+In Sec.III, some general rules of beam prop-
+agation in curved waveguide arrays are derived within
+the nearest-neighbor coupling approximation, whereas
+in Sec.IV the family of shape-invariant discrete Bessel
+beams is introduced, together with the complex q param-
+eter formalism.
+Applications to beam collimation and
+polygonal optical Bloch oscillations are also presented.
+Finally, in Sec.V the main conclusions are outlined.
+II.
+DISCRETE DIFFRACTION IN A
+HOMOGENEOUS WAVEGUIDE ARRAY
+A.
+Continuous model of discrete diﬀraction
+The starting point of our analysis is provided by a
+rather standard model describing linear propagation of
+monochromatic light waves along the z direction of a
+one-dimensional or two-dimensional array of waveguides
+in the single band and tight-binding approximations. For
+instance, in a one-dimensional array such conditions are
+satisﬁed when the tilt of beams and waveguides at the in-
+put facet is less than the Bragg angle, so that the lowest-
+order band of the array is excited and beam propagation
+is primarily characterized by coupling between the funda-
+mental modes of the waveguides. For a two-dimensional
+array, the relevant equations describing discrete diﬀrac-
+tion in a single band approximation read
+i˙cn,m = −
+X
+l,r
+∆n−l,m−rcl,r
+(1)
+where cn,m(z) is the complex amplitude of the fundamen-
+tal waveguide mode at the lattice site rn,m = na + mb
+identiﬁed by the indices (n, m), a and b are the lattice
+vectors of the unit cell, the dot denotes the derivative
+with respect to z, and ∆n,m = ∆∗
+m,n are the coupling
+rates. In order to derive a general rule of beam broaden-
+ing due to discrete diﬀraction, it is worth introducing a
+continuous ﬁeld envelope ψ(x, y, z) satisfying the scalar
+Schr¨odinger-like equation
+i∂zψ(r, z) = H0(p)ψ(r, z),
+(2)
+where r = (x, y), p = −i∇r,
+H0(p) ≡−
+X
+n,m
+∆n,m exp (−irn,m · p) ,
+(3)
+and rn,m
+=
+na + mb.
+Taking into account that
+exp(−iR · p)ψ(r, z) = ψ(r + R, z), it follows that the
+solution cn,m(z) to the discrete equation (1) can be iden-
+tiﬁed with ψ(r = na + mb, z). The formulation of the
+discrete light propagation problem [Eq.(1)] as a contin-
+uous problem [Eq.(3)] is a well-established procedure in
+solid-state physics [21] which enable the use of certain
+analytical techniques, such as the method of moments,
+developed for the continuous Schr¨odinger equation or for
+the paraxial wave equation (see, for instance, [22, 23]). In
+addition, the continuous model includes, as a particular
+case, the problem of paraxial diﬀraction in a homoge-
+neous medium (e.g. in the vacuum), which is attained
+by simply assuming for the Hamiltonian H0(p), in place
+of Eq.(3), the (normalized) parabolic form
+H0(p) = p2
+2 .
+(4)
+The normalization conditions
+R
+dr|ψ(r, z)|2
+=
+1 for
+Eq.(2), and P
+n,m |cn,m(z)|2 = 1 for the discrete prob-
+lem (1), will be assumed in the following analysis.
+B.
+General law for beam spreading: moment
+analysis
+Two global parameters describing beam propagation
+are the beam center of mass ⟨r⟩= ⟨x⟩ux + ⟨y⟩uy and the
+transverse beam spot sizes wx(z) and wy(z) deﬁned by
+⟨r⟩=
+Z
+drr|ψ(r, z)|2,
+(5)
+wx(z) =
+p
+⟨x2⟩−⟨x⟩2
+(6)
+wy(z) =
+p
+⟨y2⟩−⟨y⟩2
+(7)
+where
+⟨x2⟩(z) =
+Z
+drx2|ψ(r, z)|2 , ⟨y2⟩(z) =
+Z
+dry2|ψ(r, z)|2.
+(8)
+Note that the above deﬁnitions hold for both continu-
+ous and discrete diﬀraction models. In the latter case,
+assuming ψ(r, z) to be a piecewise constant function in
+each cell of the lattice and taking |a×b| = 1 for the area
+of the unit cell, the integral over r may be replaced by
+a double sum over the cell indices n and m, i.e. in the
+discrete model one has
+R
+dr →P
+m,n.
+The evolution equations for r and wx,y can be readily
+obtained in a closed form by writing a set of Eherenfest
+equations for the expectation values of r, x2, y2, and of
+commutator operators that arise in the calculation. The
+expectation value ⟨A⟩≡
+R
+drψ∗(r, z)A(r, p)ψ(r, z) of any
+operator A(r, p) (not necessarily self-adjoint) evolves ac-
+cording to
+d⟨A⟩
+dz
+= −i⟨[A, H0]⟩
+(9)
+and the following commutation relations
+[r, f(p)] = i∇pf , [g(r), p] = i∇rg
+(10)
+
+
+=== PDF PAGE 3 ===
+3
+hold for any functions f(p) and g(r). For A = r, one
+obtains
+d⟨r⟩
+dz
+= ⟨∇pH0⟩, d⟨∇pH0⟩
+dz
+= 0,
+(11)
+i.e.
+⟨r⟩(z) = ⟨r⟩(0) + ⟨∇pH0⟩z
+(12)
+which is the evolution equation of the beam center of
+mass. Note that the path followed by any beam is al-
+ways straight, regardless of the speciﬁc form of H0 or
+initial ﬁeld distribution which just determine the trans-
+verse drift velocity ⟨∇pH0⟩of the beam. To determine
+the evolution equation of the beam spot size wx, let us as-
+sume A = x2, so that the following cascade of Eherenfest
+equations [Eq.(9)] is obtained
+d⟨x2⟩
+dz
+= ⟨x∂H0
+∂px
++ ∂H0
+∂px
+x⟩
+(13)
+d
+dz ⟨x∂H0
+∂px
++ ∂H0
+∂px
+x⟩= 2⟨
+∂H0
+∂px
+2
+⟩
+(14)
+d
+dz ⟨
+∂H0
+∂px
+2
+⟩= 0.
+(15)
+After integration, one obtains
+⟨x2⟩(z) = ⟨x2⟩(0) + ⟨x∂H0
+∂px
++ ∂H0
+∂px
+x⟩z + ⟨
+∂H0
+∂px
+2
+⟩z2,
+(16)
+where the expectation values on the right hand side of
+Eq.(16) are calculated at z = 0, i.e. for the initial beam
+distribution. From Eqs.(6), (12) and (16) the following
+evolution equation for the beam spot size wx is then ob-
+tained
+w2
+x(z) = w2
+x(0) + αxz + β2
+xz2,
+(17)
+where we have set
+αx = ⟨(x −⟨x⟩)∂H0
+∂px
++ ∂H0
+∂px
+(x −⟨x⟩)⟩,
+(18)
+β2
+x = ⟨
+∂H0
+∂px
+2
+⟩−
+
+⟨∂H0
+∂px
+⟩
+2
+(19)
+and the expectation values are calculated at z = 0. A
+similar expression for wy(z) can be obtained by replac-
+ing x with y in Eqs.(17), (18) and (19).
+A major re-
+sult expressed by Eq.(17) is that, regardless of the par-
+ticular form of H0, wx(z) (and similarly wy(z)) asymp-
+totically grows with z linearly, with a diﬀraction length
+given by ∼1/βx.
+Therefore -and this one of the ma-
+jor result of this section- the broadening law of a spatial
+beam due to diﬀraction does not diﬀer for discrete or
+continuous diﬀraction.
+In addition, for a beam carry-
+ing a ﬁnite power and admitting of ﬁnite moments ⟨x2⟩
+and ⟨y2⟩, the coeﬃcient β2
+x given by Eq.(19) is always
+strictly positive and does not vanish. This can be gen-
+erally proven by observing that β2
+x is the variance of the
+operator (∂H0/∂px), which is always positive and van-
+ishes solely when the initial ﬁeld distribution ψ(x, y, 0) is
+an eigenfunction of (∂H0/∂px), i.e. of px = −i∂x. Since
+such eigenfunctions are delocalized plane waves, it then
+follows that the variance of (∂H0/∂px) is strictly positive
+for any initial beam distribution carrying a ﬁnite power,
+regardless of the speciﬁc form of H0.
+C.
+Self-collimation regime
+Beam self-collimation (also referred to as beam sub-
+diﬀraction) is a well known phenomenon occuring in
+homogeneous arrays and, more generally, in photonic
+crystal structures with engineered band structure H0(p)
+showing points of local ﬂatness (see, for instance, [20]).
+The simplest example of sub diﬀraction is the ’arrest’ of
+beam spreading in a one-dimensional tight-binding lat-
+tice with nearest-neighboring couplings, which was ob-
+served in Ref.[4] using relatively broad Gaussian beams
+at an incidence angle set in correspondence of an inﬂex-
+ion point of the band dispersion curve. Though it is well
+understood that in such a regime diﬀraction is cancelled
+solely at low orders, it was perhaps overlooked the fact
+that self-collimation does not modify the beam broaden-
+ing scaling law [Eq.(17)]. In other words, self-collimation
+will correspond to a reduction of the coeﬃcient β2
+x for
+special initial ﬁeld distributions, but not to a change of
+the scaling law describing beam broadening. If we con-
+sider, for the sake of simplicity, a one-dimensional lat-
+tice and assume that the spectrum F(k) of the exciting
+beam, deﬁned as F(k) = 1/(2π)
+R
+dxψ(x, 0) exp(−ikx),
+is narrow at around its mean k0, the value of β2
+x, as
+given by Eq.(19), can be expanded in series of moments
+Il =
+R
+dk(k −k0)l|F(k)|2 (l = 2, 3, 4, ...) as
+β2
+x = b2
+2I2+b2b3I3 + 1
+12
+ 4b2b4 + 3b2
+3
+
+I4−b2
+3
+4 I2
+2 +... (20)
+where bl is the value of the derivative (∂lH0/∂kl) evalu-
+ated at k = k0. As Il rapidly goes to zero as the order l
+increases, Eq.(20) shows that at the points k0 of the dis-
+persion curve where b2 (and possibly b3, b4, ...) vanishes
+beam broadening is reduced. We will refer to such points,
+where the dispersion curve H0(k) is locally ﬂat, to as self-
+collimation points [note that the condition H′
+0(k0) = 0 is
+not requested].
+As an example,
+let us consider the simplest one-
+dimensional waveguide array in the nearest-neighboring
+approximation, considered in Ref.[4] to demonstrate self-
+collimation eﬀects.
+The Hamiltonian H0 has the form
+H0 = −2∆cos(p), and the self-collimation points are lo-
+
+
+=== PDF PAGE 4 ===
+4
+cated at p = ±π/2. From Eq.(19) one obtains
+β2
+x = 2∆2
+"
+1 −Re
+ X
+n
+c∗
+ncn+2
+!#
++
++ ∆2
+"X
+n
+c∗
+n (cn+1 −cn−1)
+#2
+.
+(21)
+For a bell-shaped (e.g. Gaussian-shaped) and ﬂat beam
+incident onto the array at a given tilting angle θ (nor-
+malized to the Bragg angle), we may write cn
+=
+|cn| exp(−iπθn), and one obtains
+β2
+x(θ) = 2∆2 
+1 −κ2
+1 + (κ2
+1 −κ2) cos(2πθ)
+
+(22)
+where κ1 and κ2 are deﬁned by
+κ1 =
+X
+n
+|cncn+1| , κ2 =
+X
+n
+|cncn+2|.
+(23)
+Generally, it turns out that κ2
+1 > κ2, so that the minimum
+of βx is attained at θ = ±1/2, i.e. at the self-collimation
+points as expected from Eq.(20). Conversely, the max-
+imal diﬀraction (maximum value of βx) is attained at
+normal incidence ( θ = 0). The ratio between the mini-
+mum and maximum values of βx, given by
+Γ = βx(θ = 1/2)
+βx(θ = 0)
+=
+s
+1 + κ2 −2κ2
+1
+1 −κ2
+,
+(24)
+may get very small for a broad input beam. To illustrate
+this point, let us consider as an example the following
+beam distribution at the input plane : |cn| = Nα|n|,
+where the parameter α (0 < α < 1) determines the spot
+size of the input beam (α →0 for single waveguide ex-
+citation, and α →1 for a plane wave excitation), and
+N = [(1 −α2)/(1 + α2)]1/2 is a normalization factor. For
+such a ﬁeld distribution, the values of coeﬃcients κ1 and
+κ2 can be evaluated in a closed form, and read
+κ1 =
+2α
+1 + α2 , κ2 = α2(3 −α2)
+1 + α2
+.
+(25)
+The ratio Γ between the diﬀraction parameters at subd-
+iﬀractive (θ = 1/2) and normal incidence (θ = 0) regimes
+takes then the form [see Eq.(24)] Γ = [(1 −α2)/(1 +
+α2)]1/2.
+Note that, for a very broad beam excitation
+(α →1), both κ1 and κ2 gets close to 1, βx tends to
+vanish [see Eq.(22)], and the diﬀraction length ∼1/βx
+diverges independently of beam tilting angle θ, as ex-
+pected for a very broad input beam. However, in this
+case the ratio of diﬀraction lengths in the normal (θ = 0)
+and subdiﬀractive (θ = 1/2) regimes, which scales as
+∼Γ, tends to vanish as Γ ∼(1 −α)1/2. Conversely, for a
+very narrow input beam (α →0), both κ1 and κ2 vanish
+and the diﬀraction length ∼1/βx turns out to be inde-
+pendent of tilting angle and given by ∼1/(
+√
+2∆) [see
+Eq.(22)] as expected for single waveguide excitation.
+D.
+Discrete far-ﬁeld pattern and anomalous beam
+decay
+In spite of the fact that the asymptotic law describing
+beam broadening due to diﬀraction is the same for dis-
+crete and continuous media, a deep diﬀerence is found
+when analyzing the decay behavior of the ﬁeld intensity
+versus propagation distance and the far-ﬁeld diﬀraction
+patterns. For the sake of simplicity, we will consider the
+diﬀraction problem in one dimension, though the results
+may be generalized to the two-dimensional diﬀraction
+problem. We then rewrite Eq.(2) as
+i∂zψ(x, z) = H0(p)ψ(x, z),
+(26)
+where p = px = −i∂x.
+For the usual paraxial one-
+dimensional diﬀraction problem in a homogeneous con-
+tinuous medium, one has H0(p) = p2/2, whereas for dis-
+crete diﬀraction in a one-dimensional waveguide array
+one has H0(−p) = H0(p) (−π ≤p < π) and H′
+0(p) = 0
+at p = 0 and at the band edges p = ±π.
+The most
+general solution to Eq.(26) can be written as
+ψ(x, z) =
+Z
+dkF(k) exp[ikx −iH0(k)z]
+(27)
+where the spectrum F(k) is determined by the beam dis-
+tribution at the input plane ψ(x, 0)
+F(k) = 1
+2π
+Z
+dxψ(x, 0) exp(−ikx)
+(28)
+(
+R
+dx →P
+n, x →n and ψ(x = n) →cn in the discrete
+diﬀraction problem). Our aim is to calculate the decay
+behavior of the ﬁeld amplitude ψ(x, z) as the propaga-
+tion distance z increases, at either a constant x position
+(for instance at x = 0) or along a line x = αz, where α
+is a constant parameter deﬁning the ’observation angle’
+of the diﬀracted pattern. Note that, as the observation
+angle α is varied, the function ψ0(α; z) = ψ(x = αz, z)
+corresponds, for large values of z, to the far ﬁeld diﬀrac-
+tion pattern. We need thus to calculate the asymptotic
+behavior of the integral
+ψ0(α; z) =
+Z
+dkF(k) exp[izg(k)]
+(29)
+for z →∞, where we have set
+g(k) = αk −H0(k).
+(30)
+For this purpose, we may use the methods of station-
+ary phase or steepest descend (see, for instance, [24]),
+which predict that the asymptotic behavior of ψ0(α; z)
+as z →∞depends on the existence and of the order of
+stationary points of the phase g(k) inside the integration
+domain.
+Let us ﬁrst consider the continuous diﬀraction problem,
+H0(p) = p2/2, and re-derive the well-known result that
+the amplitude ψ0(α; z) decays as ∼1√z for any obser-
+vation angle α and the far-ﬁeld pattern is proportional
+
+
+=== PDF PAGE 5 ===
+5
+-100
+-50
+0
+50
+100
+5
+10
+15
+20
+25
+0
+1
+2
+diffraction cone
+(a)
+Intensity (arb. units)
+x
+zD
+-2000
+0
+2000
+0
+1
+Intensity (arb. units)
+x
+zD=500
+(b)
+(c)
+0
+0
+1
+p
+-p
+Spectrum (arb. units)
+k
+-60
+-40
+-20
+0
+20
+40
+60
+0
+0.05
+0.1
+0.15
+x
+zD=20
+FIG. 1: (color online) Beam propagation in a one-dimensional
+tight binding lattice with nearest neighboring coupling terms,
+showing far-ﬁeld properties of discrete diﬀraction.
+In (a)
+the intensity distributions |ψ(x, z)|2 are plotted, in arbitrary
+units, for propagation distances z = 0, z = 5/∆, z = 10/∆,
+z = 15/∆, z = 20/∆, and z = 25/∆, where ∆is the coupling
+rate between adjacent waveguides. The inset in (a) shows the
+Gaussian spectrum F(k) of the beam (wk = 1.5). In (c) the
+intensity distribution |ψ(x, z)|2 is depicted for a propagation
+distance z = 20/∆as numerically calculated by Eq.(27) (solid
+curve) and by the approximate relation (33) (dotted curve, al-
+most overlapped with the solid one). In (c) the beam intensity
+is plotted at a propagation distance z = 500/∆, clearly show-
+ing the dominance of two peaks at the diﬀraction cone edges
+(self-collimation directions) and the onset of three diﬀerent
+decay laws at |α| > 2∆, α = ±2∆, and |α| < 2∆.
+to the Fourier spectrum of the input (near-ﬁeld) distri-
+bution.
+In this case, g(k) = αk −k2/2 has a unique
+saddle point at k = k0 = α, with g′′(k0) = −1̸ = 0;
+therefore, provided that the spectrum F(k) has a nonva-
+nishing component at k = k0 and F(k0) does not diverge
+[25], according to the method of steepest descend one has
+ψ0(α; z) ∼F(α)
+r
+2π
+z exp[izα2/2 −iπ/4]
+(31)
+as z →∞. From Eq.(31) we obtain the well-known
+result of paraxial diﬀraction theory that the amplitude
+ψ0(α; z) of the beam decays as ∼1√z for any observation
+angle α [25], and that the far-ﬁeld diﬀraction pattern is
+shaped as the Fourier spectrum F(α) of the near-ﬁeld
+distribution. This scaling law may be referred to as the
+normal scaling law, in the sense that the beam intensity
+I ∝|ψ|2 decays as ∼1/z whereas the beam spot size wx
+increases asymptotically as ∼z [see Eq.(17)], the product
+Iwx being constant according to the power conservation
+law.
+For the discrete diﬀraction problem, we prove now that
+the decay law is generally slower than ∼1/√z at the
+observation angles corresponding to self-collimation, and
+that the far-ﬁeld pattern is peaked at such angles and
+does not reproduce the spectrum F of the near-ﬁeld dis-
+tribution.
+To this aim, let us observe that, according
+to the steepest descend method, the slowest decay term
+in the integral of Eq.(29) comes from the saddle points
+g′(k0) = 0 of largest order. In particular, if k0 is a saddle
+point of order n ≥2, i.e. g(k) ≃g(k0)+[g(n)(k0)/n!](k −
+k0)n for k close to k0 (g(n)(k0)̸ = 0), the contribution of
+the saddle point to the integral in Eq.(29) for large values
+of z is given by [24]
+ψ0(α; z) ∼
+F(k0)
+|zg(n)(k0)|1/n (n!)
+1
+n Γ
+ 1
+n
+
+exp
+h
+izg(k0) ± i π
+2n
+i
+.
+(32)
+Therefore, the decay law for ψ0(α; z) scales as ∼z−1/n,
+where n is the highest order of the saddle points of g(k),
+provided that F(k0)̸ = 0. In the case of diﬀraction in
+a homogeneous continuous medium, the order of saddle
+point is always n = 2. To determine n for the discrete
+diﬀraction problem, let us note that the dispersion curve
+H0(k) admits of at least a couple of inﬂection points, say
+at k = ±k0, at which H′′
+0 (k0) = 0. These points cor-
+respond to the self-collimation directions introduced in
+Sec.II.C. Since g′(k) = α −H′
+0(k), the inﬂection points
+k = ±k0 turn out to be also saddle points when the ob-
+servation angle α is chosen equal to H′
+0(±k0). Therefore,
+for the discrete diﬀraction problem the largest order n
+of saddle points is at least n = 3, and the decay law
+of ψ0(α; z), at the two observation angles α = ±H′
+0(k0)
+corresponding to the self-collimation directions ±k0, is
+slowed down -as compared to continuous diﬀraction- to
+(at least) ∼z−1/3.
+More generally, if the dispersion
+curve H0(k) of the lattice is engineered to achieve a very
+ﬂat behavior near a self-collimation point k = k0, with
+g′′(k0) = g′′′(k0) = ... = g(n−1)(k0) = 0 and g(n)(k0)̸ = 0
+(n ≥3), the decay law of ψ0(α; z) scales as ∼z−1/n
+at the observation angle α = H′(k0). This scaling law
+of beam decaying in the discrete diﬀraction problem is
+therefore anomalous, in the sense that along the self-
+collimation directions the intensity decays slower that
+1/z, i.e. of the characteristic decay law that one might
+expect from power conservation arguments. This seem-
+ingly paradoxical circumstance may be solved by observ-
+ing that, for an observation angle α diﬀerent than any
+of the self-collimation directions, the decay of ψ0(α; z)
+may be either normal (i.e. ∼1/√z) or even faster. More
+precisely, for a ﬁxed value of α in modulus larger than
+αmax = maxk|H
+′
+0(k)|, the function g(k) given by Eq.(30)
+does not have saddle points on the real axis, and ψ0(α; z)
+decays as ∼1/z. Conversely, for |α| < αmax the equation
+g′(k) = α −H
+′
+0(k) = 0 admits of at least one solution,
+
+
+=== PDF PAGE 6 ===
+6
+with g′′(k)̸ = 0 for a second-order saddle point. In this
+case, according to the method of stationary phase the
+asymptotic behavior of ψ0(α; z) for large values of z fol-
+lows the normal law ∼1/√z. To summarize, ψ0(α; z)
+scales: as ∼F(k0)z−1/n at a self collimation direction
+α, where H
+′
+0(k0) = α and k0 is a saddle point of order
+n ≥3; as ∼F(k0)z−1 for an observation angle α outside
+the ’diﬀraction cone’ |α| > αmax; as ∼F(k0)z−1/2 in-
+side the diﬀraction cone region |α| < αmax but far from
+a self collimation direction. The far-ﬁeld pattern of dis-
+crete diﬀraction tends therefore to conﬁne light inside
+the diﬀraction cone |α| ≤αmax with asymptotic peaks
+at the propagation directions corresponding to the angles
+of self-collimation.
+This very general behavior may be illustrated more in
+details for the case of a tight-binding lattice in the
+nearest-neighbor approximation considered in Sec.II.C,
+for which H0(k) = −2∆cosk. In this lattice model one
+has g′(k) = α −2∆sin k, g′′(k) = −2∆cosk, so that the
+angle of diﬀraction cone is given by αmax = 2∆. Two
+saddle points of second-order are found at k = k0 = ±π/2
+for the observation angles α = ±αmax, i.e at the edge of
+the diﬀraction cone, at which the far-ﬁeld discrete diﬀrac-
+tion pattern is thus expected to show two peaks. For an
+observation angle α strictly inside the diﬀraction cone
+(|α| < 2∆), the equation g′(k) = 0 has two solutions
+which are saddle points of ﬁrst order since g′′(k)̸ = 0.
+The main contribution to the integral on the right hand
+side of Eq.(29) comes from these two saddle points, and
+can be calculated by the method of stationary phase,
+yielding explicitly
+ψ(α; z) ∼
+s
+iπ
+z
+p
+∆2 −(α/2)2 {−iF(k0) exp [iαk0z + 2i∆z cos k0] + F(π −k0) exp [iαz(π −k0) −2i∆z cos k0]}
+(α > 0)
+ψ(α; z) ∼
+s
+iπ
+z
+p
+∆2 −(α/2)2 {−iF(−k0) exp [−iαk0z + 2i∆z cos k0] + F(−π + k0) exp [iαz(−π + k0) −2i∆z cos k0]}
+(α < 0)
+(33)
+where k0 is the solution to the equation sin k0 = |α/2∆|
+in the interval 0 ≤k0 < π/2. It should be noted that
+the far-ﬁeld discrete diﬀraction pattern given by Eq.(33)
+holds for |α| < 2∆. As |α| approaches 2∆from below,
+the two saddle points of second order coalesce into a sin-
+gle saddle point of third order, and this explain the di-
+vergence of Eq.(33) as |α| →2∆, i.e at the self colli-
+mation directions, where the decay is slower and scales
+as ∼z−1/3. For |α| > 2∆, i.e. outside the diﬀraction
+cone, there are not saddle points on the real axis and
+the decay is faster and scales as ∼1/z.
+An example
+of far-ﬁeld discrete diﬀraction for a beam with a Gaus-
+sian spectrum F(k) ∼exp[−(k/wk)2] (−π ≤k < π)
+is shown in Fig.1. In Fig.1(a) the intensity distribution
+|ψ(x, z)|2, as obtained by accurate numerical computa-
+tion of the integral entering in Eq.(27), is plotted for a
+few propagation distances z. For the sake of readabil-
+ity, at each propagation distance z the ﬁeld intensity has
+been normalized to its peak value. The diﬀraction cone
+and the emergence of two intensity peaks at the self-
+collimation directions α = ±αmax are clearly visible just
+after a propagation distance z of ∼10−20 times the cou-
+pling length 1/∆[Fig.1(a)]. Inside the diﬀraction cone,
+the intensity distribution at such propagation distances
+is very well ﬁtted by the analytical far-ﬁeld distribution
+given by Eq.(33), as shown in Fig.1(b). At much longer
+propagation distances, the self-collimation peaks become
+dominant, and the appearance of three diﬀerent scaling
+laws of beam decay (fast decay outside the diﬀraction
+cone |x| > 2∆z; normal decay inside the diﬀraction cone
+|x| < 2∆z; slower decay at the self-collimation directions
+x = ±2∆z) is very clearly visible, as shown in Fig.1(c).
+III.
+BEAM PROPAGATION IN CURVED
+WAVEGUIDE ARRAYS
+Discrete diﬀraction of light waves in linear optical
+waveguide arrays can be controlled by introducing trans-
+verse index gradients or local phase slips, which may
+produce a kind of refocusing or re-imaging of beam dis-
+tributions along the propagation distances (see, for in-
+stance, [3, 9, 12, 13, 26]) similarly to what happens to
+light propagating in continuous lensguide media. In par-
+ticular, waveguide arrays with a curved axis provide a
+particularly interesting set up to manage discrete diﬀrac-
+tion for both monochromatic and polychromatic light
+[9, 12–15]. It is therefore of major interest to have gen-
+eral laws describing the global behavior of beam prop-
+agation in curved waveguide arrays.
+In addition, it is
+well known that for the problem of paraxial diﬀraction
+in homogeneous continuous media or, more generally, of
+paraxial propagation in elementary optical systems and
+lensguides, one can introduce special families of ﬁeld dis-
+
+
+=== PDF PAGE 7 ===
+7
+tributions (such as the Gaussian beams) that propagate
+maintaining unchanged their functional shape (shape-
+invariant beams), and that ﬁeld propagation may be sim-
+ply described by means of algebraic equations ruling out
+the evolution of some complex-valued beam parameters
+(such as the complex q-parameter for Gaussian beams;
+see, for instance, [27]). A natural question is whether one
+can similarly introduce shape-invariant discrete beams,
+i.e. ﬁeld distributions that do not change their functional
+shape when propagating along curved waveguide arrays.
+As the problem of discrete diﬀraction in waveguide arrays
+with curved axis or transverselly-imposed index gradi-
+ents is analogous to the problem of one-dimensional or
+two-dimensional Bloch oscillations of electrons in peri-
+odic potentials with an applied electric ﬁeld or of cold
+atoms in optical lattices, some results are already avail-
+able in the literature. In particular, in recent works [28–
+30] an algebraic approach has been developed, capable of
+providing rather general results for wave packet center of
+mass evolution and wave packet spreading in certain lat-
+tice models. In this approach, after the introduction of a
+dynamical Lie algebra, an explicit form of the evolution
+operator is ﬁrst derived, and then the expectation val-
+ues of operators are calculated in the Heisenberg picture.
+However, the question of existence of shape-invariant dis-
+crete beams and of their propagation in curved waveg-
+uide arrays does not seem to have been addressed yet. In
+this section, we present a generalization of Eqs.(12) and
+(17) describing the evolution of beam center of mass and
+beam width in curved waveguide arrays using the method
+of moments.
+Though similar results have been previ-
+ously published in Refs.[28–30] using an algebraic oper-
+ator approach, they are here re-derived for the sake of
+completeness using the method of moments, which does
+not require the explicit calculation of the evolution op-
+erator and the formulation of the problem in terms of a
+Lie algebra. In the subsequent section a family of shape-
+invariant discrete beams will be introduced, proving that
+their propagation in a generally-curved waveguide array
+is simply described by the evolution of a complex-q beam
+parameter, which plays an analogous role of e.g.
+the
+complex-q parameter of Gaussian beams propagating in
+paraxial continuous optical systems.
+Let us consider monochromatic light propagation in a
+two-dimensional waveguide array with a curved axis de-
+scribed by the parametric equations x = x0(z) and
+y = y0(z); the coupled mode equations describing light
+transfer among coupled waveguides in the single-band
+and tight-binding approximations are an extension of
+Eq.(1) to include ﬁctitious transverse index gradients in-
+duced by waveguide curvature and read explicitly
+i˙cn,m = −
+X
+l,r
+∆n−l,m−rcl,r −E(z) · rn,m
+(34)
+where E(t) = Ex(t)ux + Ey(t)uy, Ex(z) = −(ns/λ)¨x0(z),
+Ey(z) = −(ns/λ)¨y0(z), ns is the refractive index of the
+waveguide substrate, and λ = λ/(2π) is the reduced
+wavelength of light. It should be noticed that the trans-
+verse index gradient entering in Eq.(34) may be also re-
+alized by applying a thermal gradient, or may describe
+lumped phase gradients [26] or an abrupt tilt of waveg-
+uide axis direction [3], in which cases E(z) shows a delta-
+like behavior. After introduction of a continuous function
+ψ(r, z) such that ψ(rn,m, z) = cn,m(z), one can read-
+ily check that the discrete diﬀraction equations (34) are
+equivalent to the following continuous Hamiltonian prob-
+lem
+i∂zψ(r, z) = H(r, p)ψ(r, z)
+(35)
+(p = −i∇r) with Hamiltonian
+H = H0(p) −E(z) · r,
+(36)
+where H0 is the Hamiltonian of the homogeneous ar-
+ray deﬁned by Eq.(3). The laws governing the evolution
+of beam center of mass and beam variance can be ob-
+tained by extending the method of moments described
+in Sec.II.B for the free diﬀraction problem. In general,
+the cascade of equations that one obtains by applying
+the Eherenfest equation (9) to ⟨r⟩, ⟨x2⟩, ⟨y2⟩- and to the
+commutators found throughout the calculations- turns
+out to be unlimited for a general form of H0, and a
+closed set of equations are found solely for special forms
+of H0.
+Such a special circumstance is encountered in
+case of a one-dimensional waveguide array in the nearest-
+neighboring approximation, and in case of a rectangular-
+lattice waveguide array neglecting diagonal interactions.
+The ﬁrst model corresponds to the Hamiltonian
+H(x, p) = −2∆cosp −Ex(z)x,
+(37)
+where ∆is the coupling rate between adjacent waveg-
+uides, and p = px = −i∂x. The second model, which
+has been for instance considered in the experiment of
+Ref.[32], is described by the Hamiltonian
+H(r, p) = −2∆x cos(px)−2∆y cos(py)−Ex(t)x−Ey(z)y,
+(38)
+where ∆x (∆y) is the coupling rate between adjacent
+horizontal (vertical) waveguides of the lattice [31].
+A.
+One-dimensional array
+Application of the moment method to the one-
+dimensional Hamiltonian model (37) yields a set of closed
+coupled equations for the expectation values of operators
+x, θ, and of x2, ρ and σ, where
+θ = exp(ip)
+(39)
+ρ = 1
+2 {1 −exp(−2ip)}
+(40)
+σ = i {x exp(−ip) + exp(−ip)x} .
+(41)
+
+
+=== PDF PAGE 8 ===
+8
+Successive application of the Ehrenfest equation (9)
+yields the following equations for ⟨x⟩and ⟨θ⟩
+d⟨x⟩
+dz
+= 2∆Im (⟨θ⟩)
+(42)
+d⟨θ⟩
+dz
+= iEx(z)⟨θ⟩,
+(43)
+and the following coupled equations for ⟨x2⟩, ⟨ρ⟩and ⟨σ⟩
+d⟨x2⟩
+dz
+= 2∆Re (⟨σ⟩)
+(44)
+d⟨ρ⟩
+dz
+= −2iEx(z)⟨ρ⟩+ iEx(z)
+(45)
+d⟨σ⟩
+dz
+= 4∆⟨ρ⟩−iEx(z)⟨σ⟩.
+(46)
+Equation (43) can be readily integrated, yielding the fol-
+lowing evolution equation for the beam center of mass
+⟨x(z)⟩= ⟨x(0)⟩+ 2Im {q0Ω∗(z)}
+(47)
+where we have set
+Ω(z) ≡
+Z z
+0
+dξ∆exp[−iφ(ξ)],
+(48)
+φ(z) ≡
+Z z
+0
+dξEx(ξ),
+(49)
+q0 ≡
+X
+n
+c∗
+n(0)cn+1(0).
+(50)
+Similarly, integration of Eqs.(45) and (46) yields
+⟨ρ(z)⟩= exp[−2iφ(z)] ×
+×
+
+⟨ρ(0)⟩+ 1
+2 exp[2iφ(z)] −1
+2
+
+(51)
+⟨σ(z)⟩= exp[−iφ(z)] ×
+×
+
+⟨σ(0)⟩+ 4Ω(z)
+
+⟨ρ(0)⟩−1
+2
+
++ 2Ω∗(z)
+
+(52)
+Taking into account that ∆exp[−iφ(z)] = dΩ/dz and
+that 2Re
+R z
+0 dξΩ∗(ξ)(dΩ/dξ)
+	
+= |Ω(z)|2, substitution of
+Eq.(52) into Eq.(44) yields
+⟨x2(z)⟩= ⟨x2(0)⟩+ 2|Ω(z)|2 + 2Re
+
+q1Ω(z) −q2Ω2(z)
+	
+,
+(53)
+where we have set
+q1 ≡i
+X
+n
+(2n −1)c∗
+n(0)cn−1(0)
+(54)
+q2 ≡
+X
+n
+c∗
+n(0)cn−2(0).
+(55)
+The beam size wx is then given by
+wx(z) =
+p
+⟨x2(z)⟩−⟨x(z)⟩2.
+(56)
+For a given ﬁeld distribution cn(0) at the input plane,
+the evolution of the beam center of mass ⟨x(z)⟩and beam
+size wx(z) are thus ruled by Eqs.(47), (53) and (56). Note
+that beam evolution depend on the input beam parame-
+ters q1, q2 and q3 -deﬁned by Eqs.(50),(54) and (55)- and
+by the complex amplitude Ω(z), deﬁned by Eqs.(48-49)
+and accounting for bending of waveguide axis. Note also
+that for straight arrays Ω(z) = ∆z, and one thus retrieves
+the results of discrete diﬀraction derived in Sec.II.B, in
+particular the linear asymptotic increase of wx with z.
+The condition for diﬀraction suppression, i.e.
+a non-
+secular growth of wx(z) with z, is that Ω(z) remains a
+limited function of z as z increases. This condition is
+always satisﬁed for a constant value of Ex, which corre-
+sponds to circularly-curved waveguides and to the onset
+of the optical analogue of Bloch oscillations [9]. Similarly,
+for periodic axis bending with spatial period Λ, Ex(z) is
+a periodic function of z, and the condition of boundness
+of Ω(z) is given by
+Z Λ
+0
+dξ exp[−iφ(ξ)] = 0,
+(57)
+which is precisely the condition of ’dynamic localization’
+previously investigated in Refs.[12, 13].
+B.
+Two-dimensional array
+For the two-dimensional waveguide array model (38),
+the moment equations turn out to decouple into two set of
+equations, similar to Eqs.(42-46), separately acting onto
+the x and y directions. The evolution equations for the
+beam center of mass ⟨x⟩, ⟨y⟩are then given by
+⟨x(z)⟩= ⟨x(0)⟩+ 2Im {q0xΩ∗
+x(z)}
+(58)
+⟨y(z)⟩= ⟨y(0)⟩+ 2Im
+
+q0yΩ∗
+y(z)
+	
+(59)
+where we have set
+Ωx,y(z) =
+Z z
+0
+dξ∆x,y exp[−iφx,y(ξ)]
+(60)
+φx,y(z) =
+Z z
+0
+dξEx,y(ξ)
+(61)
+and
+q0x =
+X
+n,m
+c∗
+n,m(0)cn+1,m(0)
+(62)
+q0y =
+X
+n,m
+c∗
+n,m(0)cn,m+1(0).
+(63)
+Similarly, the beam sizes wx and wy, deﬁned as
+wx(z) =
+p
+⟨x2(z)⟩−⟨x(z)⟩2
+(64)
+wy(z) =
+p
+⟨y2(z)⟩−⟨y(z)⟩2,
+(65)
+are calculated using Eqs.(58-59) and the following evolu-
+tion equations for ⟨x2(z)⟩and ⟨y2(z)⟩
+⟨x2(z)⟩= ⟨x2(0)⟩+ 2|Ωx|2 + 2Re
+
+q1xΩx −q2xΩ2
+x
+	
+(66)
+
+
+=== PDF PAGE 9 ===
+9
+⟨y2(z)⟩= ⟨y2(0)⟩+ 2|Ωy|2 + 2Re
+
+q1yΩy −q2yΩ2
+y
+	
+(67)
+where we have set
+q1x = i
+X
+n,m
+(2n −1)c∗
+n,m(0)cn−1,m(0)
+(68)
+q2x =
+X
+n,m
+c∗
+n,m(0)cn−2,m(0)
+(69)
+q1y = i
+X
+n,m
+(2m −1)c∗
+n,m(0)cn,m−1(0)
+(70)
+q2y =
+X
+n,m
+c∗
+n,m(0)cn,m−2(0).
+(71)
+IV.
+SHAPE-INVARIANT DISCRETE BEAMS
+The existence of shape-invariant beams, i.e. families of
+ﬁeld distributions that propagate without changing their
+functional shape, is well-known for paraxial propagation
+in Gaussian optics or in continuous lensguide media (see,
+for instance, [27]). Here we address the related problem
+of investigating the existence of shape-invariant discrete
+beams, i.e. ﬁeld distributions that do not change their
+functional shape when propagating along waveguide ar-
+rays with arbitrarily curved optical axis. This is a rather
+challenging problem because no general method capable
+of constructing shape-invariant beams seems to be avail-
+able. However, for the simple waveguide array models
+considered in the previous section, a family of shape-
+invariant discrete beams can be introduced in a simple
+manner. Owing to their functional form, such beams are
+referred to as discrete Bessel beams.
+A.
+Discrete Bessel beams in one-dimensional
+arrays
+Let us consider a one-dimensional waveguide array
+with an arbitrarily curved optical axis.
+In the tight-
+binding and nearest neighboring coupling approxima-
+tions, light propagation is described by the following set
+of coupled-mode equations
+i˙cn = −∆(cn+1 + cn−1) −nf(z)cn
+(72)
+where f(z) describes the rate of transverse index gradi-
+ent induced by waveguide bending [13], lumped waveg-
+uide tilting [3] or locally imposed phase changes among
+adjacent waveguides [26] as discussed previously. Let us
+ﬁst observe that, if cn(z) is a solution to Eq.(72) corre-
+sponding to a given initial ﬁeld distribution cn(0), then
+for an arbitrary integer n0
+gn(z) = cn−n0(z) exp
+
+in0
+Z z
+0
+dξf(ξ)
+
+(73)
+is the solution to Eq.(72) corresponding to the trans-
+lated initial ﬁeld distribution gn(0) = cn−n0(0). There-
+fore, apart from an unimportant phase change, shape-
+invariant beams remain invariant for an arbitrary trans-
+verse translation on the lattice.
+Let us tentatively search for a solution to Eq.(72) of the
+form
+cn(z) = Jn(α) exp(−iσn)
+(74)
+where Jn is the Bessel function of ﬁrst kind of order n,
+and α = α(z), σ = σ(z) are unknown functions which de-
+pend on propagation distance z, but not on lattice site n.
+Note that, as P
+n n|Jn(α)|2 = 0 and [P
+n |Jn(α)|2n2] =
+α2/2, the parameter α is related to the beam size wx
+[Eq.(6)] by the simple relation wx = α/
+√
+2, whereas σ
+deﬁnes a transverse tilt of the beam ’phase front’. Sub-
+stitution of Eq.(74) into Eq.(72) and taking into account
+the identities of Bessel functions Jn+1(α) + Jn−1(α) =
+(2n/α)Jn(α) and Jn−1(α) −Jn+1(α) = 2J′
+n(α), one ob-
+tains that Eq.(74) is indeed a solution to Eq.(72) pro-
+vided that α and σ satisfy the coupled equations
+˙α = −2∆sin σ
+(75)
+˙σ = −2∆
+α cos σ −f.
+(76)
+Owing to the functional form of cn, we will refer such
+shape-invariant beams to as discrete Bessel beams. Let
+us deﬁne a complex-q parameter for the discrete Bessel
+beam (74) according to
+q(z) = α(z) exp[iσ(z)]
+(77)
+so that the modulus of the complex q parameter gives
+the beam spot size at propagation distance z, whereas
+its phase corresponds to the phase front gradient. From
+Eqs.(75) and (76) one readily obtains for the complex q
+parameter the following simple evolution equation
+dq
+dz = −2i∆−if(z)q.
+(78)
+The general solution to Eq.(78), for a given initial value
+q(0) at the z = 0 input plane, is given by
+q(z) = exp[−iφ(z)]
+
+q(0) −2i
+Z z
+0
+dξ∆exp[iφ(ξ)]
+
+(79)
+where
+φ(z) =
+Z z
+0
+dξf(ξ).
+(80)
+The propagation of a discrete Bessel beam along a
+curved waveguide array is thus reduced to the prop-
+agation of its complex q parameter, which plays an
+analogous role of the complex-q parameter for Gaussian
+beams in lensguide media. The propagation law of the q
+parameter admits of a simple geometrical interpretation
+in the complex q plane.
+According to Eq.(78), for an
+inﬁnitesimal propagation distance δz the change of q(z)
+is given by the superposition of the two paths AB and
+
+
+=== PDF PAGE 10 ===
+10
+(a)
+Re( )
+q
+Im( )
+q
+O
+A
+B
+C
+dg
+q z+ z
+(
+)
+d
+q z( )
+Re( )
+q
+Im( )
+q
+O
+(b)
+FIG. 2: (a) Geometric construction of the evolution of the
+complex q parameter for an inﬁnitesimal propagation distance
+δz. The length of the segment AB is 2∆δz, whereas the ro-
+tation angle is δγ = f(z)δz. The points A and C correspond
+to q(z) and q(z + δz), respectively. (b) Geometric representa-
+tion of a self-imaging array: the path followed by the complex
+parameter q(z), starting from the origin O, is closed.
+BC shown in Fig.2(a). The path AB, of length 2δz∆,
+accounts for discrete diﬀraction and corresponds to a
+change of q(z) along the imaginary q axis; the path BC
+is due to the transverse index gradient which produces a
+clockwise rotation by the angle δγ = f(z)δz around the
+origin O of the complex plane. It is interesting to note
+that, since Jn(0) = δn,0, for q(0) = 0 the discrete Bessel
+beam (74) reduces to the well-known impulse response
+of a tight-binding array with nearest neighbor couplings
+(see, for instance, [33]).
+To appreciate the usefulness of the q-parameter descrip-
+tion and some properties of discrete Bessel beams, let us
+now discuss a few examples and applications.
+Propagation of discrete Bessel beams in homoge-
+neous arrays.
+For a homogeneous array (f = 0), the propagation law
+of the complex-q parameter is simply given by
+q(z) = q(0) −2i∆z.
+(81)
+If we assume, for the sake of deﬁniteness, that at the
+input plane z = 0 the phase front of the beam is ﬂat, i.e.
+q(0) = α(0) = α0 real valued, the following propagation
+laws for beam size α and beam phase tilt σ are derived
+α(z) = α0
+s
+1 +
+2∆z
+α0
+2
+(82)
+σ(z) = −arctan
+2∆z
+α0
+
+.
+(83)
+From Eq.(82) we may introduce, as for Gaussian beams
+propagating in free space [27], the Rayleigh range zR and
+divergence angle θd such that α(zR) =
+√
+2α0 and θd =
+limz→∞α(z)/z, i.e.
+zR =
+α0
+2∆
+(84)
+θd = 2∆.
+(85)
+(a)
+(b)
+q
+a
+q
+x
+z
+d
+Re( )
+q
+Im( )
+q
+O
+g
+q z( )
+0
+q z( )
+0-
++
+z
+z0
+Re( )
+q
+Im( )
+q
+O
+0
+FIG. 3: (color online) (a) Schematic of a one-dimensional
+waveguide array with a tilt of waveguide axis at z = z0, and
+the transformation induced on the complex q parameter by
+the tilt (inset). (b) Principle of beam collimation via waveg-
+uide axis tilt [tilt angle θ = λ/(4ans)], and path followed by
+the complex q parameter for single waveguide input excitation
+from z = 0 to z = d+ (inset).
+It should be noted that, as opposed to the case of
+Gaussian beams in free space -for which the Rayleigh
+range zR is proportional to the square of the spot size
+α0 at the beam waist and the diﬀraction angle θd is
+inversely proportional to α0- for discrete Bessel beams
+the Rayleigh range zR is proportional to the spot size
+α0 at the beam waist whereas the divergence angle is
+independent of the beam spot size and always equal to
+the diﬀraction cone angle introduced in Sec.II.D. This
+peculiar property is closely related to the very general
+result, proven in Sec.II.D, that the far ﬁeld of discrete
+diﬀraction in a homogenous waveguide array is peaked
+at the observation angles corresponding to the ﬂattest
+points (self-collimation points) of the band dispersion
+curve.
+Transformation of a discrete Bessel beam through a
+waveguide axis tilt. A tilt of the waveguide axis at z = z0
+by a (small) angle θ corresponds to impressing a phase
+shift
+γ = 2π
+λ aθns
+(86)
+between adjacent waveguides, where a is the waveguide
+spacing and ns the eﬀective index of propagating modes
+[see Fig.3(a)]. Light propagation across the tilt can be
+thus modelled by assuming f(z) = γδ(z −z0) in Eq.(72),
+and its eﬀect on the complex q parameter is to produce
+a rotation around the origin of the complex plane by an
+angle γ [see the inset of Fig.3(a)].
+A tilt of the waveguide axis may be used to ’collimate’
+a discrete beam, as schematically shown in Fig.3(b).
+Here a single waveguide is initially excited at the input
+plane, and after a propagation distance d the axis of
+the array is tilted by an angle θ = λ/(4ans) such that
+γ = π/2. The 90o rotation of the q parameter in the
+complex plane due to axis bending [see the inset in
+
+
+=== PDF PAGE 11 ===
+11
+Fig.3(b)] brings the q parameter on the real axis, with
+a zero phase gradient σ = 0 and an enlarged beam size
+α = 2∆d.
+The axis tilt thus plays a similar role of a
+collimating lens for a diverging Gaussian beam.
+Note
+however that, contrary to a conventional lens, the tilting
+angle θ to achieve beam collimation is independent of
+the distance d between source point (at z = 0) and
+the lens plane (z = d).
+Figure 4 shows an example
+of beam collimation in a 6-cm-long one-dimensional
+array as obtained by numerical analysis of the scalar
+wave equation for the electric ﬁeld envelope E(x, z)
+propagating in the structure based on a standard beam
+propagation method. Figure 4(a) shows a pseudocolor
+map of the intensity beam evolution |E(x, z)|2 along
+the structure when a single waveguide is excited in its
+fundamental mode at the input plane z = 0 and the
+waveguide axis is tilted at a distance d = 2 cm from the
+input plane [horizontal dotted curve in Fig.4(a)]. The
+refractive index proﬁle n(x) used in the simulations is
+depicted in Fig.4(b), and the values of other parameters
+are λ = 1.55 µm, ns = 1.52, and a = 11 µm, corre-
+sponding to a tilting angle θ = λ/(4ans) ≃23.2 mrad.
+For the sake of readability, the intensity distribution
+is plotted with the waveguide axis z unfolded along a
+straight line.
+Note that the numerical results provide
+a realistic behavior of beam propagation beyond the
+couple-mode equation approximation, accounting for
+radiation losses and coupling to higher-order bands due
+to axis bending. These latter eﬀects, however, are very
+small for the parameter values adopted in the simu-
+lations, and the coupled-mode equation model works ﬁne.
+A geometric interpretation of the self-imaging condition
+and polygonal Bloch oscillations.
+An array of length
+d shows a self-imaging property (also referred to as
+diﬀraction cancellation or dynamic localization) , when-
+ever |cn(d)|2 = |cn(0)|2 for any initial ﬁeld distribution.
+The dynamic localization condition has a rather simple
+geometric interpretation in the complex q plane. In fact,
+if the array is excited in waveguide n = 0, q(0) = 0 and
+to achieve self-imaging after a propagation distance d
+one has necessarily to have q(d) = q(0) = 0, i.e the path
+described by the complex q parameter, starting from
+the origin O of the complex plane, should be closed
+[see Fig.2(b)].
+Owing to the translational invariance
+of discrete Bessel beams [Eq.(73)], this condition is
+also suﬃcient. From Eq.(79), the closed-path condition
+q(d) = q(0) = 0 yields
+Z d
+0
+dz exp[iφ(z)] = 0
+(87)
+which is precisely the condition for dynamic localization
+derived originally by Dunlap and Kenkre in Ref.[33].
+An application of the geometric condition of dynamic lo-
+calization is that of polygonal Bloch oscillations. Let us
+consider a waveguide array whose axis forms an (open)
+polygonal curve of large (mean) radius R made of a se-
+quence of straight segments of same length b and with tilt
+-20
+-15
+-10
+-5
+0
+5
+10
+15
+20
+0
+0.005
+0.01
+x ( m)
+m
+x ( m)
+m
+z (cm)
+-300
+300
+0
+6
+0
+2
+4
+n x -n
+( )
+s
+(b)
+(a)
+FIG. 4: (color online) (a) Pseudocolor map of beam intensity
+propagation in a waveguide array with one axis tilting as ob-
+tained by numerical simulations, showing beam collimation.
+(b) Refractive index proﬁle of the waveguide array used in
+the numerical simulations.
+The values of other parameters
+are given in the text.
+angle θ, as shown in Fig.5(a). The function φ(z), deﬁned
+by Eq.(80), is thus a staircase function, which increases in
+steps of γ = (2π/λ)aθns [see Eq.(86)] at z = b, 2b, 3b, ...
+(the coordinate z is measured along the polygonal curve).
+After a propagation d = (N + 1)b from the input z = 0
+plane, where N is an integer number, it then follows that
+Z d
+0
+dz exp[iφ(z)] = b
+N
+X
+n=0
+exp(iγn).
+(88)
+The sum of complex numbers (phasors) on the right hand
+side of Eq.(88) can be done analytically and has a well-
+known geometric interpretation; in particular, if γ satis-
+ﬁes the condition γ = 2π/(N + 1), i.e. if the tilt angle θ
+is given by
+θ =
+λ
+ans(N + 1)
+(89)
+the sum on the right hand side of Eq.(88) vanishes, and
+the condition for self-imaging is attained. An example of
+the self-imaging property of a polygonal waveguide array
+is shown in Fig.5(b) for the case N = 5.
+The ﬁgure
+depicts a characteristic breathing mode corresponding to
+a single waveguide excitation at the input plane. The
+waveguide array parameters are the same as in Fig.4,
+and a sequence of axis tilts are placed at distances b = 1
+cm one to the next. The tilt angle θ, chosen according to
+Eq.(89), is θ ≃15.5 mrad, yielding a self-imaging plane
+at d = (N + 1)b = 6 cm, as clearly shown in Fig.5(b).
+Note that, in the limit b →0, N →∞and b/θ →R
+ﬁnite, the polygonal of Fig.5(a) approximates an arc of
+
+
+=== PDF PAGE 12 ===
+12
+x ( m)
+m
+z (cm)
+200
+0
+8
+0
+2
+4
+(b)
+R
+z
+q
+b
+b
+b
+(a)
+6
+-200
+FIG. 5: (color online) (a) Schematic of a polygonal waveg-
+uide array for the observation of Bloch oscillations. (b) Pseu-
+docolor image of beam intensity propagation in a 8-cm-long
+polygonal array showing a Bloch oscillation breathing mode.
+The refractive index proﬁle of the waveguide array used in the
+numerical simulations is the same as in Fig.4(b). The values
+of other parameters are given in the text.
+a circumference of radius R, and the condition (89) for
+self-imaging is satisﬁed for a propagation distance
+d = (N + 1)b →λR
+nsa
+(90)
+which is the spatial period of Bloch oscillations on a
+curved waveguide array (radius of curvature R) previ-
+ously considered in Refs.[9, 10]. The usual Bloch oscil-
+lations on a curved waveguide array may be therefore
+viewed as a limiting case of Bloch oscillations on a polyg-
+onal array.
+B.
+Discrete Bessel beams in two-dimensional arrays
+A simple extension of the analysis of Sec.IV.A can be
+done for a two-dimensional rectangular-lattice waveguide
+array with nearest-neighboring coupling when the diago-
+nal coupling is neglected. This model is described by the
+coupled mode equations
+i˙cn,m = −∆x(cn+1,m + cn−1,m) −∆y(cn,m+1 + cn,m−1)
+−fx(z)ncn,m −fy(z)mcn,m
+(91)
+where fx,y(z) describe the rates of transverse index gra-
+dients induced by waveguide bending or lumped waveg-
+uide axis tilting along the x and y directions. Since Eqs.
+(91) admit of separable solutions cn,m(z) = cn(z)cm(z),
+with cn(z) and cm(z) solutions to the one-dimensional
+problem (72) with ∆= ∆x,y and f(z) = fx,y(z), a two-
+dimensional discrete Bessel beam has the form
+cn,m(z) = Jn(αx)Jm(αy) exp(−iσxn −σym).
+(92)
+The complex-q parameters of the beam along the x and
+y directions are deﬁned by
+qx(z) = αx(z) exp[iσx(z)] , qy(z) = αy(z) exp[iσy(z)]
+(93)
+and their evolution is ruled out by the equations
+˙qx,y = −2i∆x,y −ifx,y(z)
+(94)
+which have a similar geometric interpretation as that dis-
+cussed in Sec.IV.A. The propagation properties of two-
+dimensional discrete Bessel beams in homogeneous ar-
+rays, across tilted axis regions or polygonal curves are the
+same as those investigated for one-dimensional beams,
+and are therefore not further discussed here.
+V.
+CONCLUSIONS
+In this work, a comprehensive study of discrete diﬀrac-
+tion and linear propagation of light in homogeneous and
+curved waveguide arrays has been presented. In partic-
+ular, general laws describing beam spreading, beam de-
+cay and discrete far-ﬁeld patterns in homogeneous arrays
+have been derived using the method of moments and the
+steepest descend method, and some remarks on the well-
+known self-collimation regime have been pointed out. In
+curved arrays and within the nearest neighboring cou-
+pling approximation, the method of moments has been
+extended to describe the evolution of global beam pa-
+rameters. This method provides an alternative means to
+algebraic operator techniques recently proposed in other
+physical contexts to study general properties of Bloch
+oscillations [28–30]. Finally, a family of shape-invariant
+discrete beams -referred to as discrete Bessel beams ow-
+ing to their functional form- has been introduced. It has
+been shown that propagation of such beams in curved
+waveguide arrays is simply described by the evolution of
+a complex q parameter, which plays a similar role to the
+complex q parameter used for Gaussian beams in contin-
+uous lensguide media. A few applications of the q param-
+eter formalism are discussed, including beam collimation
+via waveguide axis tilting, a geometric interpretation of
+the self-imaging eﬀect in waveguide arrays, and optical
+Bloch oscillations on a polygonal array.
+
+
+=== PDF PAGE 13 ===
+13
+[1] D. N. Christodoulides, F. Lederer, and Y. Silberberg,
+Nature 424, 817 (2003).
+[2] F. Lederer, G.I. Stegeman, D.N. Christodoulides, G. As-
+santo, M. Segev, and Y. Silberberg, Phys. Rep. 463, 1
+(2008).
+[3] H. S. Eisenberg, Y. Silberberg, R. Morandotti, J. S.
+Aitchison, Phys. Rev. Lett. 85, 1863 (2000) .
+[4] T. Pertsch, T. Zentgraf, U. Peschel, A. Br¨auer, and F.
+Lederer, Phys. Rev. Lett. 88, 093901 (2002).
+[5] R. Iwanow, D.A. May-Arrioja, D.N. Christodoulides,
+G.I. Stegeman, Y. Min, and W. Sohler, Phys. Rev. Lett.
+95, 053902 (2005).
+[6] A. Szameit, F. Dreisow, H. Hartung, S. Nolte, A.
+T¨unnermann and F. Lederer, Appl. Phys. Lett. 90,
+241113 (2007).
+[7] U. Peschel, T. Pertsch, and F. Lederer, Opt. Lett. 23,
+1701 (1998).
+[8] R. Morandotti, U. Peschel, J. S. Aitchison, H. S. Eisen-
+berg, and Y. Silberberg, Phys. Rev. Lett. 83, 4756
+(1999); T. Pertsch, P. Dannberg, W. Elﬂein, A. Br¨auer,
+and F. Lederer, Phys. Rev. Lett. 83, 4752 (1999).
+[9] G. Lenz, I. Talanina, and C.M. de Sterke, Phys. Rev.
+Lett. 83, 963 (1999).
+[10] B.A. Usievich, V.A. Sychugov, J.Kh. Nirligareev, and
+K.M. Golant, Opt. Spectrosc. 97, 790 (2004); N. Chiodo,
+G. DellaValle, R. Osellame, S. Longhi, G. Cerullo, R.
+Ramponi, P. Laporta, and U. Morgner, Opt. Lett. 31,
+1651 (2006); H. Trompeter, T. Pertsch, F. Lederer, D.
+Michaelis, U. Streppel, A. Br¨auer, and U. Peschel, Phys.
+Rev. Lett. 96, 023901 (2006); H. Trompeter, W. Kro-
+likowski, D. N. Neshev, A. S. Desyatnikov, A. A. Sukho-
+rukov, Yu. S. Kivshar, T. Pertsch, U. Peschel, and F.
+Lederer, Phys. Rev. Lett. 96, 053903 (2006).
+[11] A. Szameit, T. Pertsch, S. Nolte, A. T¨unnermann, U.
+Peschel, and F. Lederer, J. Opt. Soc. Am. B 24, 2632
+(2007).
+[12] G. Lenz, R. Parker, M. C. Wanke, and C. M. Sterke,
+Opt. Commun. 218, 87 (2003); J. Wan, M. Laforest, C.
+M. de Sterke, and M.M. Dignam, Opt. Commun. 247,
+353 (2005).
+[13] S. Longhi, Opt. Lett. 30, 2137 (2005); S. Longhi, M.
+Marangoni, M. Lobino, R. Ramponi, P. Laporta, E.
+Cianci, and V. Foglietti, Phys. Rev. Lett. 96, 243901
+(2006); S. Longhi, M. Lobino, M. Marangoni, R. Ram-
+poni, P. Laporta, E. Cianci, and V. Foglietti, Phys. Rev.
+B 74, 155116 (2006); R. Iyer, J. S. Aitchison, J. Wan, M.
+M. Dignam, and C. M. de Sterke, Opt. Express 15, 3212
+(2007); F. Dreisow, M. Heinrich, A. Szameit, S. D¨oring,
+S. Nolte, A. T¨unnermann, S. Fahr, and F. Lederer, Opt.
+Express 16, 3474 (2008).
+[14] I.L. Garanovich, A.A. Sukhorukov, and Y.S. Kivshar,
+Phys. Rev. E 74, 066609 (2006); I. L. Garanovich, A.A.
+Sukhorukov, and Y.S. Kivshar, Opt. Express 15, 9547
+(2007); I.L. Garanovich, Phys. Lett. A 372, 3922 (2008).
+[15] I.L. Garanovich,
+A. Szameit,
+A.A. Sukhorukov,
+T.
+Pertsch,
+W. Krolikowski,
+S. Nolte,
+D. Neshev,
+A.
+T¨unnermann, and Y. S. Kivshar, Opt. Express 15, 9737
+(2007).
+[16] M.J. Ablowitz and Z.H. Musslimani, Phys. Rev. Lett.
+87, 254102 (2001); I.L. Garanovich, A.A. Sukhorukov,
+and Yu. S. Kivshar, Opt. Express 15, 9547 (2007); A.
+Szameit, I.L. Garanovich, M. Heinrich, A. Minovich, F.
+Dreisow, A.A. Sukhorukov, T. Pertsch, D.N. Neshev, S.
+Nolte, W. Krolikowski, A. T¨unnermann, A. Mitchell, and
+Y.S. Kivshar, Phys. Rev. A 78, 031801(R) (2008).
+[17] K.G. Makris and D.N. Christodoulides, Phys. Rev. E
+73, 036616 (2006); S. Longhi, Phys. Rev. E 74, 026602
+(2006); A. Szameit, T. Pertsch, F. Dreisow, S. Nolte, A.
+T¨unnermann, U. Peschel, and F. Lederer, Phys. Rev. A
+75, 053814 (2007).
+[18] R. Iwanow, R. Schiek, G.I. Stegeman, T. Pertsch, F. Led-
+erer, Y. Min, and W. Sohler, Phys. Rev. Lett. 93, 113902
+(2004); S. Suntsov, K.G. Makris, D.N. Christodoulides,
+G.I. Stegeman, A. Hache, R. Morandotti, H. Yang, G.
+Salamo, and M. Sorel, Phys. Rev. Lett. 96, 063901
+(2006); Y.V. Kartashov, L. Torner, and V.A. Vysloukh,
+Phys. Rev. Lett. 96, 073901 (2006); M. Molina, Y. Kar-
+tashov, L. Torner, and Y. Kivshar, Opt. Lett. 32, 2668
+(2007); A. Szameit, Y.V. Kartashov, F. Dreisow, T.
+Pertsch, S. Nolte, A. T¨unnermann, and L. Torner, Phys.
+Rev. Lett. 98, 173903 (2007); X. Wang, A. Bezryadina,
+Z. Chen, K.G. Makris, D.N. Christodoulides, and G.I.
+Stegeman, Phys. Rev. Lett. 98, 123903 (2007).
+[19] I.L. Garanovich, A.A. Sukhorukov, and Y. S. Kivshar,
+Phys. Rev. Lett. 100, 203904 (2008); A. Szameit, I.L.
+Garanovich, M. Heinrich, A.A. Sukhorukov, F. Dreisow,
+T. Pertsch, S. Nolte, A. T¨unnermann, and Yu. S.
+Kivshar, Phys. Rev. Lett. 101, 203902 (2008).
+[20] H. Kosaka, T. Kawashima, A. Tomita, M. Notomi, T.
+Tamamura, T. Sato, S. Kawakami, Appl. Phys. Lett.
+74, 1212 (1999) ; J. Witzens, M. Loncar, A. Scherer,
+IEEE J. Sel. Topics Quantum Electron. 8, 1246 (2002) ;
+Z. Lu, S. Shi, J.A. Murakowski, G.J. Schneider, C.A.
+Schuetz, D.W. Prather, Phys. Rev. Lett. 96, 173902
+(2006); P. T. Rakich, M. S. Dahlem, S. Tandon, M.
+Ibanescu, M. Soljacic, G. S. Petrich, J. D. Joannopou-
+los, L. A. Kolodziejski, E. P. Ippen, Nat. Mater. bf 5, 93
+(2006).
+[21] See, for instance: J. M. Ziman, Principles of the Theory
+of Solids (second edition, Cambridge University Press,
+Cambridge, 1979).
+[22] S.G. Krivoshlykov,Quantum-Theoretical Formalism for
+Inhomogeneous
+Graded-IndexWaveguides
+(Akademie-
+Verlag, Berlin 1994).
+[23] J.R. Klein, Am. J. Phys. 48, 1035 (1080); D.F. Styer,
+Am. J. Phys. 58, 742 (1990); P.A. B´elanger, Opt. Lett.
+16, 196 (1991); V.M. P´erez-Garca, P. Torres, J.J. Garcia-
+Ripoll, and H. Michinel, J. Opt. B: Quantum Semiclass.
+Opt. 2, 353 (2000); S. Longhi, G. Della Valle, and D.
+Janner, Phys. Rev. E 69, 056608 (2004); A.K. Potemkin
+and E.A. Khazanov, Quantum Electron. 35, 1042 (2005).
+[24] F. W. J. Olver, Asymptotics and Special Functions (Aca-
+demic Press, New York and London, 1974).
+[25] It should be noted that for special initial ﬁeld distribu-
+tions with low decaying tails, yet carrying a ﬁnite power,
+the spectrum F(k) may diverge, and the decay law may
+be slower than ∼1/√z [see: K. Unnikrishnan, Am. J.
+Phys. 65, 526 (1997); F. Lillo and R. N. Mantegna, Phys.
+Rev. Lett. 84, 1061 (2000)]. This curious circumstance
+happens, for instance, for beams with power-law decay
+tails. However, for such special beams the moment ⟨x2⟩
+is unbounded. In this work we will limit ourselves to con-
+
+
+=== PDF PAGE 14 ===
+14
+sider beams with a bounded variance, for which the cor-
+responding spectrum F(k) is not singular.
+[26] A. Szameit, F. Dreisow, M. Heinrich, T. Pertsch, S.
+Nolte, A. T¨unnermann, E. Suran, F. Louradour, A.
+Barth´el´emy, and S. Longhi, Appl. Phys. Lett. 93, 181109
+(2008).
+[27] A.E. Siegman, Lasers (University Science, Mill Valley,
+California, 1986).
+[28] H.L. Haroutyunyan and G. Nienhuis, Phys. Rev. A 64,
+033424 (2001).
+[29] H.J. Korsch and S. Mossmann, Phys. Lett. A 317, 54
+(2003).
+[30] S. Mossmann, A. Schulze, D. Witthaut and H.J. Korsch,
+J. Phys. A: Math. Gen. 38 3381 (2005).
+[31] Analytical results can be also provided for a more general
+two-dimensional lattice model, in which nearest diagonal
+coupling terms are accounted for in the Hamiltonian (38)
+(see Ref.[30]). However, the resulting equations are very
+cumbersome, and this case will not be considered here.
+[32] T. Pertsch, U. Peschel, F. Lederer, J. Burghoﬀ, M. Will,
+S. Nolte, and A. T¨unnermann, Opt. Lett. 29, 468 (2004).
+[33] D.H. Dunlap, V.M. Kenkre, Phys. Rev. B 34 (1986) 3625.

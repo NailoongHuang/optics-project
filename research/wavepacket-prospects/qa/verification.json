@@ -1,0 +1,194 @@
+{
+  "browser_interaction": {
+    "status": "not_verified",
+    "reason": "Background preview launch blocked by execution policy; file URL denied by browser protocol policy. No bypass attempted."
+  },
+  "media": [
+    {
+      "demo": "finite-source-caustic",
+      "kind": "summary",
+      "path": "demos/finite-source-caustic/summary.png",
+      "size": [
+        1920,
+        1350
+      ],
+      "frames_decoded": 1
+    },
+    {
+      "demo": "finite-source-caustic",
+      "kind": "animation",
+      "path": "demos/finite-source-caustic/demo.gif",
+      "size": [
+        1150,
+        450
+      ],
+      "frames_decoded": 51
+    },
+    {
+      "demo": "backflow-resolution",
+      "kind": "summary",
+      "path": "demos/backflow-resolution/summary.png",
+      "size": [
+        1875,
+        1305
+      ],
+      "frames_decoded": 1
+    },
+    {
+      "demo": "backflow-resolution",
+      "kind": "animation",
+      "path": "demos/backflow-resolution/demo.gif",
+      "size": [
+        1150,
+        430
+      ],
+      "frames_decoded": 51
+    },
+    {
+      "demo": "loss-aware-pulse",
+      "kind": "summary",
+      "path": "demos/loss-aware-pulse/overview.png",
+      "size": [
+        2000,
+        1392
+      ],
+      "frames_decoded": 1
+    },
+    {
+      "demo": "loss-aware-pulse",
+      "kind": "animation",
+      "path": "demos/loss-aware-pulse/demo.gif",
+      "size": [
+        950,
+        640
+      ],
+      "frames_decoded": 61
+    },
+    {
+      "demo": "transport-disorder",
+      "kind": "summary",
+      "path": "demos/transport-disorder/born_matched_control.png",
+      "size": [
+        1376,
+        784
+      ],
+      "frames_decoded": 1
+    },
+    {
+      "demo": "transport-disorder",
+      "kind": "animation",
+      "path": "demos/transport-disorder/demo.gif",
+      "size": [
+        1040,
+        640
+      ],
+      "frames_decoded": 65
+    }
+  ],
+  "local_links": [
+    {
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "target": "demos/finite-source-caustic/summary.png",
+      "exists": true
+    },
+    {
+      "target": "demos/finite-source-caustic/demo.gif",
+      "exists": true
+    },
+    {
+      "target": "demos/finite-source-caustic/report.txt",
+      "exists": true
+    },
+    {
+      "target": "demos/finite-source-caustic/results.json",
+      "exists": true
+    },
+    {
+      "target": "demos/backflow-resolution/summary.png",
+      "exists": true
+    },
+    {
+      "target": "demos/backflow-resolution/demo.gif",
+      "exists": true
+    },
+    {
+      "target": "demos/backflow-resolution/results.json",
+      "exists": true
+    },
+    {
+      "target": "demos/backflow-resolution/supplemental_bound_report.txt",
+      "exists": true
+    },
+    {
+      "target": "demos/loss-aware-pulse/overview.png",
+      "exists": true
+    },
+    {
+      "target": "demos/loss-aware-pulse/demo.gif",
+      "exists": true
+    },
+    {
+      "target": "demos/loss-aware-pulse/report.txt",
+      "exists": true
+    },
+    {
+      "target": "demos/loss-aware-pulse/results.json",
+      "exists": true
+    },
+    {
+      "target": "demos/transport-disorder/born_matched_control.png",
+      "exists": true
+    },
+    {
+      "target": "demos/transport-disorder/demo.gif",
+      "exists": true
+    },
+    {
+      "target": "demos/transport-disorder/report.txt",
+      "exists": true
+    },
+    {
+      "target": "demos/transport-disorder/results.json",
+      "exists": true
+    },
+    {
+      "target": "../../literature/wavepacket-prospects-2026-10/outlooks/",
+      "exists": true
+    },
+    {
+      "target": "../../literature/wavepacket-prospects-2026-10/outlooks/backflow/outlook_records.json",
+      "exists": true
+    },
+    {
+      "target": "../../literature/wavepacket-prospects-2026-10/outlooks/magnon-design/outlook-evidence.json",
+      "exists": true
+    },
+    {
+      "target": "../../literature/wavepacket-prospects-2026-10/outlooks/transport-clock/outlook_evidence.json",
+      "exists": true
+    },
+    {
+      "target": "../../literature/wavepacket-prospects-2026-10/outlooks/discrete-optics/outlook_evidence.json",
+      "exists": true
+    }
+  ],
+  "javascript_syntax": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "hashes": {
+    "README.md": "2b576fc1d0a2115786fd2715036512e4ee51050771840337189d379d11246008",
+    "index.html": "b0ab7c6274232c2960d997c3718dc57286e3cbb9fa713b9b02ccdab3da19ab4f",
+    "gallery_manifest.json": "200097ed5304011659a8ba1802d6181ff02c8c4c18124c56decbaf14b56cf88d"
+  },
+  "scientific_review": "qa/review.txt",
+  "result_hashes": {
+    "demos\\backflow-resolution\\results.json": "101edd9fb3254ae98b66c5a0d494fbdd84d018f7f66d370b9421cc4cc250b828",
+    "demos\\finite-source-caustic\\results.json": "2d6c65561fa96bd6595b282967661337f919965dff422e4b19a8317b7e7365fb",
+    "demos\\loss-aware-pulse\\results.json": "2bf9ad3a83b4a5c4afb7c1bbd2bf217ba210dbc93ecb47f9005ac3da2e3f1618",
+    "demos\\transport-disorder\\results.json": "0275f4b575454e5eb364d2e64f1c6a20263443dc9b10d51f428b05d0df10a40e"
+  }
+}

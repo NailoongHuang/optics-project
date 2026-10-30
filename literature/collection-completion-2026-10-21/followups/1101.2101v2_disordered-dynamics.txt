@@ -1,0 +1,1321 @@
+=== PDF PAGE 1 ===
+arXiv:1101.2101v2  [cond-mat.dis-nn]  18 Feb 2011
+Dynamics of a quantum particle in low-dimensional
+disordered systems with extended states
+P L Krapivsky1,2 and J M Luck2
+1 Department of Physics, Boston University, Boston, MA 02215, USA
+2 Institut de Physique Th´eorique, IPhT, CEA Saclay and URA 2306, CNRS, 91191
+Gif-sur-Yvette cedex, France
+Abstract.
+We investigate the dynamics of a quantum particle in disordered tight-
+binding models in one and two dimensions which are exceptions to the common wisdom
+on Anderson localization, in the sense that the localization length diverges at some
+special energies. We provide a consistent picture for two well-known one-dimensional
+examples: the chain with oﬀ-diagonal disorder and the random-dimer model. In both
+cases the quantum motion exhibits a peculiar kind of anomalous diﬀusion which can
+be referred to as bi-fractality. The disorder-averaged density proﬁle of the particle
+becomes critical in the long-time regime.
+The q-th moment of the position of the
+particle diverges with time whenever q exceeds some q0. We obtain q0 = 2 for oﬀ-
+diagonal disorder on the chain (and conjecturally on two-dimensional bipartite lattices
+as well). For the random-dimer model, our result q0 = 1/2 corroborates known rigorous
+results.
+PACS numbers: 72.15.Rn, 73.20.Fz, 73.20.At
+E-mail: pkrapivsky@gmail.com,jean-marc.luck@cea.fr
+
+
+=== PDF PAGE 2 ===
+Dynamics in low-dimensional disordered systems with extended states
+2
+1. Introduction
+Over ﬁfty years after Anderson’s seminal paper on localization [1], the common wisdom
+is that in one dimension any disorder drives the phenomenon of Anderson localization.
+Even when the strength of disorder is arbitrarily small, all the eigenstates of the
+Hamiltonian get exponentially localized. The same picture applies to a large extent
+to the two-dimensional case as well.
+In a number of low-dimensional disordered systems the localization length ξ(E)
+is however known to diverge at special energies.
+This phenomenon is usually the
+manifestation of some symmetry. A well-known example is that of tight-binding models
+with oﬀ-diagonal disorder, both in one dimension [2, 3, 4, 5, 6, 7] and on higher-
+dimensional bipartite lattices [8, 9, 10, 11].
+In this context the localization length
+becomes inﬁnite at the center of the band (E →0).
+This phenomenon is due to
+particle-hole symmetry (E ↔−E). In the one-dimensional situation, it was already
+investigated in the pioneering work by Dyson [2] on disordered harmonic chains, while
+the interest in two-dimensional models has been revived by a connection with the integer
+Quantum Hall Eﬀect [12, 13].
+It is natural to wonder what are the dynamical consequences of the divergence of
+the localization length at the band center in this class of models. The usual setting
+consists in looking at the spreading of the wave-packet of a particle initially launched
+at the origin. A variety of rigorous general results, following the pioneering work by
+Guarneri [14], relate the growth of the moments of the position of the particle to
+dimensions of the spectral measure. The latter results however have very little predictive
+power in the present situation.
+The goal of this work is to obtain quantitative, albeit non-rigorous dynamical
+results, which can be checked against numerical data. Our main ﬁnding will be that the
+quantum motion exhibits a peculiar kind of anomalous diﬀusion which can be referred
+to as bi-fractality [15]. The disorder-averaged density proﬁle ρn(t) of the particle at
+time t becomes critical in the long-time regime, in the sense that it falls oﬀas a
+power of distance, as ρn = limt→∞ρn(t) ∼1/|n|q0+1. As a consequence, the moments
+Mq(t) = ⟨|n|q⟩t = P
+n |n|q ρn(t) of the position of the particle diverge with time t
+whenever q exceeds q0, while they have ﬁnite asymptotic values for q < q0. For the
+chain with oﬀ-diagonal disorder, investigated in Section 2, we obtain q0 = 2.
+Another example of interest is the random-dimer model [16, 17, 18, 19]. This is
+a one-dimensional tight-binding model with diagonal binary disorder, so that the site
+energies Vn = ±V assume the same values on dimers, i.e., pairs of consecutive sites. The
+localization length is known to diverge at the special energies E = ±V when V ≤1,
+in units where the hopping amplitude is one. We demonstrate in Section 3 that the
+dynamics of the random-dimer model ﬁts within exactly the same framework, with
+q0 = 1/2. These ﬁndings conﬁrm earlier heuristic results [16], namely M2(t) ∼t3/2 in
+the generic situation (V < 1), while M2(t) ∼t in the critical situation (V = 1). In the
+ﬁrst case, our predictions are in agreement with recent rigorous results [19].
+
+
+=== PDF PAGE 3 ===
+Dynamics in low-dimensional disordered systems with extended states
+3
+Section 4 is devoted to a summary and discussion of our ﬁndings. We also argue why
+the same framework is expected to describe the quantum dynamics on two-dimensional
+bipartite lattices with oﬀ-diagonal disorder.
+2. The chain with oﬀ-diagonal disorder
+In this section we investigate the time-dependent discrete Schr¨odinger (tight-binding)
+equation on the one-dimensional chain with oﬀ-diagonal disorder:
+i ˙ψn = Vnψn+1 + Vn−1ψn−1.
+(2.1)
+The hopping amplitudes Vn between sites n and n+1 are modelled as i.i.d. (independent
+and identically distributed) random variables. We set‡
+Vn = eεn,
+εn = 0,
+ε2
+n = σ2.
+(2.2)
+2.1. Spectral properties revisited
+The time-independent (spectral) problem, deﬁned by the eigenvalue equation
+Eψn = Vnψn+1 + Vn−1ψn−1,
+(2.3)
+has been the subject of much activity since the pioneering work of Dyson [2].
+The
+tight-binding equation (2.3) has the peculiar feature that the even and odd sub-lattices
+decouple at zero energy. Hence the general solution at E = 0 can be written down
+explicitly:
+ψ2p = (−1)p eB2pψ0,
+ψ2p+1 = (−1)p eB1−B2p+1ψ1,
+(2.4)
+where Bn is the following random walk (discrete Brownian motion) associated with the
+disorder:
+Bn =
+n−1
+X
+m=0
+(−1)mεm.
+(2.5)
+The wavefunction (2.4) exhibits unusual scaling properties [5]. We have B2n = σ2n, and
+so the zero-energy wavefunction typically grows sub-exponentially as ln |ψn| ∼σn1/2. In
+other words, the eﬀective localization length grows with distance as
+ξ(n) ∼n1/2
+σ ,
+(2.6)
+so that in the thermodynamic limit, the localization length is inﬁnite at zero energy.
+This peculiarity aﬀects the behavior of various quantities near the band center. The
+Lyapunov exponent γ(E) at energy E and the integrated density of states H(E) up to
+energy E exhibit the following Dyson singularities [2, 4, 6] as E →0:
+γ(E) ≈
+σ2
+−ln |E|,
+H(E) −1
+2
+ ≈
+σ2
+2(ln |E|)2 .
+(2.7)
+‡ Our deﬁnition of σ2 diﬀers from that used in [6] by a factor 4.
+
+
+=== PDF PAGE 4 ===
+Dynamics in low-dimensional disordered systems with extended states
+4
+The ﬁrst result implies that the localization length ξ(E) = 1/γ(E) exhibits a logarithmic
+divergence as energy E approaches the band center, whereas the second one shows that
+states pile up near the band center, as the density of states strongly diverges as E →0 as
+ρ(E) ≈
+σ2
+|E|(−ln |E|)3 .
+(2.8)
+This expression is at the verge of being non integrable.
+It will prove useful to ﬁrst consider the ﬁnite-size scaling consequences of the Dyson
+singularity. On a ﬁnite chain made of an even number N of sites, with periodic boundary
+conditions, the spectrum manifests an exact particle-hole symmetry [9, 20]: if ψn is an
+eigenvector for the energy eigenvalue E, then (−1)nψn is an eigenvector for the opposite
+energy (−E). Furthermore the expressions (2.4) show that E = 0 can be an eigenvalue
+only if N is a multiple of 4. This eigenvalue is then twofold degenerate. The condition
+on the disorder for this to occur is BN = 0, i.e., V1V3 . . . VN−1 = V2V4 . . . VN.
+We denote by E1 the energy gap of a ﬁnite system, deﬁned as the smallest positive
+energy eigenvalue. The form (2.7) of the integrated density of states suggests to set
+X1 = −ln E1. Typical values of the latter quantity can be expected to be such that
+H(E1) −1/2 ≈σ2/(2X2
+1) ∼1/N. We thus obtain the ﬁnite-size scaling law
+X1 = −ln E1 ≈σ N1/2 Y1,
+(2.9)
+where Y1 is a ﬂuctuating quantity of order unity. The eigenstates at energy ±E1 are
+expected to be the most extended ones. The Dyson singularity (2.7) implies that their
+localization length scales as ξ1 ∼X1/σ2 ∼N1/2/σ. This result is in agreement with
+the estimate (2.6) of the eﬀective distance-dependent localization length ξ(n) at zero
+energy, taken at the maximal distance n ∼N.
+Figure 1 shows a plot of X1/σ against N1/2. The energy gap E1 is obtained by a
+numerical diagonalization of the Hamiltonian matrix on ﬁnite chains of N sites, with
+periodic boundary conditions. Only values of N multiples of 4 have been used. [Data
+for N ≡2 (mod 4) exhibit stronger corrections to the asymptotic linear behavior. This
+phenomenon can be related to the preceding observation that E = 0 can only be an
+exact eigenvalue if N is a multiple of 4.] In numerical simulations hereinafter, the εn are
+drawn uniformly in the interval −W/2 < εn < W/2, with W 2 = 12σ2. We shall report
+results for three values of the disorder strength: σ = 0.5, 1, and 2. Data are averaged
+over 105 samples for each value of N and σ. The observed linear behavior corroborates
+the scaling law (2.9). The slope of a common least-square ﬁt to all datasets (blue line)
+yields Y1 ≈0.98.
+Figure 2 shows a histogram plot of the distribution of the reduced variable
+y = Y1/Y1 = X1/X1 for the largest system considered, i.e., N = 100. This distribution
+is observed to fall oﬀvery fast, both at small and large values of the variable, and to
+have a rather weak dependence on σ.
+
+
+=== PDF PAGE 5 ===
+Dynamics in low-dimensional disordered systems with extended states
+5
+2
+4
+6
+8
+10
+ N
+1/2
+0
+2
+4
+6
+8
+10
+12
+X−
+1/σ
+σ=0.5
+σ=1
+σ=2
+fit
+Figure 1. Plot of X1/σ against N 1/2, for three values of the disorder strength σ. The
+blue line is the result of a common least-square ﬁt to all datasets.
+0
+0.5
+1
+1.5
+2
+y
+0
+0.4
+0.8
+1.2
+1.6
+f(y)
+σ=0.5
+σ=1
+σ=2
+Figure 2. Histogram plot of the distribution of y = Y1/Y1 = X1/X1 for N = 100.
+2.2. Dynamical properties
+Let us now return to the quantum dynamics of the particle described by the time-
+dependent equation (2.1). We assume that the particle starts at the origin:
+ψn(0) = δn,0 .
+(2.10)
+Our basic observables will be the moments of the position of the particle at time t:
+Mq(t) = ⟨|n|q⟩t =
+X
+n
+|n|q ρn(t),
+(2.11)
+where
+ρn(t) = |ψn(t)|2
+(2.12)
+is the disorder-averaged density proﬁle at time t, whereas q is an arbitrary positive index.
+Hereinafter, the brackets ⟨· · ·⟩t denote an average over the quantum state at time t
+
+
+=== PDF PAGE 6 ===
+Dynamics in low-dimensional disordered systems with extended states
+6
+described by the wavefunction ψn(t), whereas the bar · · · denotes an ensemble average
+over the disorder, i.e., over the distribution of the random hopping amplitudes {Vn}.
+On a ﬁnite sample made of N sites, the moments
+⟨|n|q⟩t =
+X
+n
+|n|q |ψn(t)|2
+(2.13)
+can be expressed in terms of the N energy eigenvalues Eα and of the corresponding (real
+and normalized) eigenvectors ψα
+n. Expanding the initial condition as
+ψn(0) = δn,0 =
+X
+α
+ψα
+n ψα
+0 ,
+(2.14)
+we ﬁnd the wavefunction at arbitrary time t ≥0:
+ψn(t) =
+X
+α
+e−iEαtψα
+n ψα
+0 .
+(2.15)
+Combining (2.13) and (2.15), we arrive at
+⟨|n|q⟩t =
+X
+α,β
+e−i(Eα−Eβ)tψα
+0 ψβ
+0
+X
+n
+|n|q ψα
+n ψβ
+n.
+(2.16)
+The long-time behavior of the above exact expression can be analyzed in the
+following heuristic way, along the line of thought of [15]. First, neglecting interference
+terms between diﬀerent quantum states, we obtain
+⟨|n|q⟩t ≈
+X
+α
+(ψα
+0 )2 X
+n
+|n|q(ψα
+n)2.
+(2.17)
+Second, we model the eigenstates by considering that the probability density (ψα
+n)2 is
+roughly uniform over the range |n −nα
+cm| ≤ξα, where we have introduced the center-of-
+mass co-ordinate nα
+cm and the localization length ξα of eigenstate α, deﬁned as
+nα
+cm =
+X
+n
+n(ψα
+n)2,
+(ξα)2 =
+X
+n
+(n −nα
+cm)2(ψα
+n)2.
+(2.18)
+This picture implies that the eigenstates which contribute to the sum (2.17) are those
+such that |nα
+cm| ≤ξα.
+Putting everything together, we are left with the following
+asymptotic long-time estimate for the disorder-averaged moments:
+Mq = lim
+t→∞Mq(t) ∼1
+N
+X
+α
+(ξα)q .
+(2.19)
+Finally, for a large system, the sum over discrete states can be replaced by an integral
+over the spectrum:
+Mq ∼
+Z
+ξ(E)q ρ(E) dE.
+(2.20)
+In the customary situation of the Anderson model with diagonal disorder, the
+moments of the position are thus predicted to saturate to ﬁnite limiting values of order
+Mq ∼ξq
+0, where for deﬁniteness ξ0 is the localization length at the band center. More
+quantitative predictions can be worked out, including universal pre-factors in the weak-
+disorder regime [15].
+The present situation of the Anderson model with oﬀ-diagonal disorder is radically
+diﬀerent. Indeed, the Dyson singularities (2.7) which aﬀect the localization length and
+
+
+=== PDF PAGE 7 ===
+Dynamics in low-dimensional disordered systems with extended states
+7
+the density of states near the band center cause the integral in (2.20) to diverges for
+suﬃciently large q. More precisely, taking X = −ln |E| ≫1 as independent variable,
+the expressions (2.7) yield ξ(E) ≈X/σ2 and ρ(E) dE = dH(E) ≈σ2 dX/X3, and
+so (2.20) reads
+Mq = ⟨|n|q⟩∼σ2
+Z X
+σ2
+q dX
+X3 .
+(2.21)
+The integral is divergent for q > 2.
+Let us ﬁrst consider the stationary regime of very long times, and focus onto the
+integrand in (2.21), not paying attention to the integration bounds for the time being.
+It is natural to identify the integration variable X with the position |n| of the particle,
+according to |n| = X/σ2. We can thus read oﬀfrom (2.21) that the asymptotic disorder-
+averaged density proﬁle reached by the particle in the long-time regime,
+ρn = lim
+t→∞ρn(t),
+(2.22)
+falls oﬀas the power law
+ρn ∼
+1
+σ2 |n|3 .
+(2.23)
+Let us move to the late stages of the dynamics of the quantum particle. As the
+latter starts from the origin, its wavefunction spreads progressively over larger and
+larger distances. For a large but ﬁnite time t, the power-law density proﬁle (2.23) is
+therefore expected to be cutoﬀat some scale n∗(t). The growth law of the crossover
+scale n∗(t) can be estimated as follows.
+First, as a consequence of the uncertainty
+principle, the ﬁniteness of the observation time t induces a ﬁnite energy resolution
+E∗(t) ∼1/t. The largest observable localization length at time t therefore scales as
+the localization length at energy E∗(t) near the band center.
+Hence it diverges as
+ξ∗(t) ∼−(ln E∗(t))/σ2 ∼(ln t)/σ2. Then, the cutoﬀscale n∗(t) can be estimated by
+equating the above ξ∗(t) to the eﬀective localization length ξ(n) of (2.6). We thus obtain
+n∗(t) ∼(ln t)2
+σ2
+.
+(2.24)
+The crossover scale n∗(t) provides the appropriate cutoﬀto the integral in (2.21).
+The disorder-averaged moments Mq(t) of the position can now be evaluated by means of
+the estimates (2.23) and (2.24). We are thus left with the prediction that the moments
+grow with time on a logarithmic scale for q ≥2, whereas they saturate to ﬁnite values
+for q < 2:
+Mq(t) ∼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(ln t)2(q−2)
+σ2(q−1)
+(q > 2),
+1
+σ2 ln (ln t)2
+σ2
+(q = 2),
+ﬁnite
+(q < 2).
+(2.25)
+We have in particular
+M3(t) ≈a3
+(ln t)2
+σ4
+,
+M4(t) ≈a4
+(ln t)4
+σ6
+.
+(2.26)
+
+
+=== PDF PAGE 8 ===
+Dynamics in low-dimensional disordered systems with extended states
+8
+The above analysis has been tested against numerical data generated by directly
+simulating the time-dependent tight-binding equation (2.1).
+Figure 3 shows a log-
+log plot of the disorder-averaged density ρn(t) against time t, for σ = 0.5 and even
+distances n ranging from 0 to 12. The convergence to asymptotic densities ρn is observed
+to be slower and slower for larger distances.
+For each distance n, a black symbol
+marks the crossover time t∗(n), deﬁned operationally as the time where ρn(t) = ρn/e
+(e ≈2.718281). The oscillations which can be seen in ρ0(t), and to some extent in ρ2(t),
+are reminiscent of those which are present in the absence of disorder, where the time-
+dependent wavefunction reads ψn(t) = (−i)nJn(2t), with Jn being the Bessel functions.
+We mention for further reference that the latter wavefunction exhibits ballistic peaks
+around the positions n = ±2t, whose width and height respectively scale as t1/3
+and t−1/3. More precisely, setting |n| = 2t + t1/3z, one ﬁnds [15]
+inψn(t) ≈t−1/3Ai(z),
+(2.27)
+with Ai(z) being the Airy function.
+−2
+0
+2
+4
+6
+8
+ ln t
+−14
+−12
+−10
+−8
+−6
+−4
+−2
+0
+ln ρn(t)
+0
+2
+4
+6
+8
+10
+12
+Figure 3.
+Log-log plot of the disorder-averaged density ρn(t) against time t, for
+σ = 0.5 and various even distances n. Symbols: crossover times t∗(n).
+Figure 4 shows a log-log plot of σ2 times the asymptotic densities ρn, against
+distance n. The data corroborate the prediction (2.23), shown by the blue line with
+slope (−3). The amplitude of the 1/n3 law may have some weak residual dependence
+on σ, besides the main scaling in 1/σ2. The corrections to the asymptotic behavior are
+observed to be larger at weaker disorder.
+Figure 5 shows a plot of (ln t∗(n))/σ against n1/2, where the crossover time t∗(n)
+has been deﬁned by the condition ρn(t) = ρn/e, as said above. This plot is a dynamical
+analogue of Figure 1, where the system size N is replaced by the distance n traveled by
+the particle, whereas time t replaces the inverse of the energy gap E1. It is clearly far
+more diﬃcult to get accurate dynamical data than spectral ones of the same quality. In
+spite of this, and although the available data span a rather limited range, they however
+point toward an asymptotic linear growth, whose slope is nearly independent of disorder.
+
+
+=== PDF PAGE 9 ===
+Dynamics in low-dimensional disordered systems with extended states
+9
+0
+1
+2
+3
+4
+ ln n
+−10
+−8
+−6
+−4
+−2
+0
+ln (σ
+2ρn)
+σ=0.5
+σ=1
+σ=2
+slope=−3
+Figure 4. Log-log plot of σ2 times the asymptotic densities ρn, against distance n.
+The blue line with slope (−3) illustrates the theoretical prediction (2.23).
+These observations support the prediction (2.24), again up to a possible weak residual
+dependence on σ. The slope of the blue line has been chosen for deﬁniteness to be the
+same as that of Figure 1.
+2
+3
+4
+5
+6
+7
+8
+ n
+1/2
+0
+2
+4
+6
+8
+(ln t*(n))/σ
+σ=0.5
+σ=1
+σ=2
+slope=0.98
+Figure 5. Plot of (ln t∗(n))/σ against n1/2. The slope of the blue line is the same as
+that of Figure 1.
+Figure 6 shows plots of (σ4M3(t))1/2 (left) and (σ6M4(t))1/4 (right), against ln t.
+The data exhibit linear growth laws, whose slopes seem independent of σ, at least to a
+good approximation, thus corroborating (2.26). The slopes of common least-square ﬁts
+yield a3 ≈12 and a4 ≈6.
+Figure 7 shows a plot of σ2M2(t) against (ln t)/σ.
+This quantity is predicted
+in (2.25) to grow logarithmically, with an amplitude independent of the disorder
+strength σ.
+The available data cannot lead to a ﬁrm conclusion in this marginal
+situation. They however show a trend toward the predicted behavior, shown by the
+blue line (up to an unknown multiplicative factor).
+
+
+=== PDF PAGE 10 ===
+Dynamics in low-dimensional disordered systems with extended states
+10
+0
+2
+4
+6
+8
+ ln t
+0
+10
+20
+30
+(σ
+4M3(t))
+1/2
+σ=0.5
+σ=1
+σ=2
+fit
+0
+2
+4
+6
+8
+ ln t
+0
+5
+10
+15
+20
+(σ
+6M4(t))
+1/4
+σ=0.5
+σ=1
+σ=2
+fit
+Figure 6. Plot of (σ4M3(t))1/2 (left) and (σ6M4(t))1/4 (right), against ln t. Straight
+lines: common least-square ﬁts yielding the amplitudes given in the text.
+0
+5
+10
+15
+(ln t)/σ
+0
+10
+20
+30
+σ
+2M2(t)
+σ=0.5
+σ=1
+σ=2
+Figure 7. Plot of σ2M2(t) against (ln t)/σ. The blue line illustrates the expected
+logarithmic growth (2.25).
+The estimate (2.24) of the dynamical crossover scale n∗(t) provides the opportunity
+of putting the present problem in perspective with the Sinai walk [21], namely the
+diﬀusion of a classical particle in a one-dimensional quenched random potential W(x),
+modeled as a Brownian motion such that W(x)2 = σ2x. The Sinai particle is known to
+have a very slow anomalous motion, such that x∗(t) = (⟨x(t)2⟩)1/2 ∼(ln t)2/σ2. This
+estimate bears a striking resemblance with our crossover scale n∗(t). Both models are
+indeed known to share a certain number of common features [22].
+The diﬀerent behaviors of the moments Mq(t) for q < q0 and q > q0 emphasized
+in (2.25) (with q0 = 2) can be referred to as bi-fractality. This word was already used
+in the framework of a free quantum particle described by a tight-binding model in one
+dimension [15]. In this situation, the moments of the position of the particle exhibit
+ballistic scaling, i.e., Mq ∼tq for all positive q. The moments of the probability density
+
+
+=== PDF PAGE 11 ===
+Dynamics in low-dimensional disordered systems with extended states
+11
+however exhibit a non-trivial scaling:
+Sq(t) =
+X
+n
+|ψn(t)|2q ∼
+
+
+
+
+
+
+
+
+
+
+
+t−(q−1)
+(q < 2),
+ln t
+t
+(q = 2),
+t−(2q−1)/3
+(q > 2).
+(2.28)
+This behavior is due to the ballistic peaks of the wavefunction ψn(t) around n = ±2t
+[see (2.27)]. These peaks bring negligible (resp. dominating) contributions for q < 2
+(resp. q > 2). The word bi-fractal had already appeared in the context of the distribution
+of matter in the Universe [23].
+Coming back to our ﬁndings, the main consequence of the divergence of the
+localization length at the band center turns out to be the critical nature of the asymptotic
+density proﬁle of the particle in the long-time regime, which falls oﬀas a power of
+distance, as ρn ∼1/|n|q0+1. As long as we probe a moment Mq(t) with q < q0, the
+fat power-law tail of the latter proﬁle is irrelevant, and so Mq(t) remains ﬁnite. The
+marginal moment (q = q0) slowly diverges with time, as the logarithm of the cutoﬀ
+scale n∗(t). For q > q0, the divergence of the localization length is somewhat faster, as
+Mq(t) ∼(n∗(t))q−q0.
+Finally, there is a qualitative diﬀerence between the kind of anomalous diﬀusion
+implied by the bi-fractal behavior met in the present work [see (2.25), (3.16), (3.19)] and
+conventional anomalous diﬀusion. The latter phenomenon is usually characterized by a
+single growing length scale ℓ(t), so that Mq(t) ∼ℓ(t)q for all positive q. In the case of
+self-similar growth, like e.g. in fractional diﬀusion, one has ℓ(t) ∼tα, and so Mq(t) ∼tαq
+for all positive q [see [24] and the references therein].
+3. The random-dimer model
+We now turn to another example of a one-dimensional tight-binding model with unusual
+localization properties, namely the random-dimer model [16, 17, 18, 19]. The time-
+dependent Schr¨odinger equation reads
+i ˙ψn = ψn+1 + ψn−1 + Vnψn,
+(3.1)
+where the site energies Vn follow a sequence of dimers, i.e., they take random values on
+pairs of consecutive sites. In other words,
+V2k = V2k+1 = V εk,
+(3.2)
+where εk takes values +1 and −1 with equal probabilities, and V > 0 for deﬁniteness.
+3.1. Spectral properties revisited
+The time-independent problem is deﬁned by the eigenvalue equation
+Eψn = ψn+1 + ψn−1 + Vnψn.
+(3.3)
+It was shown ﬁrst by Dunlap et al [16] that the random-dimer model exhibits a
+transparency phenomenon at E = ±V , and extended states near these special energies
+
+
+=== PDF PAGE 12 ===
+Dynamics in low-dimensional disordered systems with extended states
+12
+for V ≤1.
+This phenomenon is best described in terms of transfer matrices.
+The
+tight-binding equation (3.3) can be recast as
+ ψn+1
+ψn
+!
+= T(E, Vn)
+ ψn
+ψn−1
+!
+,
+T(E, V ) =
+ E −V
+−1
+1
+0
+!
+.
+(3.4)
+The generic localization properties of the customary Anderson model with diagonal
+disorder, where the site energies Vn are i.i.d. variables, can be related to the fact that
+the transfer matrices associated with single sites do not commute:
+[T(E, V1), T(E, V2)] = (V1 −V2)
+ 
+0
+1
+1
+0
+!
+.
+(3.5)
+The transfer matrices T(E, V )2 and T(E, −V )2 associated with the dimers however obey
+[T(E, V )2, T(E, −V )2] = 2V (E2 −V 2)
+ 
+0
+1
+1
+0
+!
+.
+(3.6)
+This identity underlines that something special occurs for the dimer model at E = ±V .
+Owing to symmetry it is suﬃcient to consider the case E = V . We have then
+T(E, V )2 = −
+ 
+1
+0
+0
+1
+!
+,
+(3.7)
+so that adding a dimer with ε = +1 amounts to changing the sign of the wavefunction.
+The system therefore supports extended states at (and near) E = V , provided this
+energy lies in the spectrum of the other species of dimers (ε = −1).
+For the sites
+belonging to the latter dimers, (3.3) reads
+(E + V )ψn = ψn+1 + ψn−1.
+(3.8)
+For E = V , the dispersion law of the latter equation reads V = cos q. The condition for
+having extended states therefore reads V ≤1.
+The following properties are known for the random-dimer model [16, 17, 18, 19].
+• In the generic situation (V
+< 1), the special energy E = V is inside the
+band of (3.8).
+The localization length is known to diverge quadratically and
+symmetrically as
+ξ(E) ∼
+1
+(E −V )2
+(E →V ),
+(3.9)
+whereas the density of states is regular at E = V .
+Neglecting localization eﬀects in the immediate vicinity of the special energy, the
+dispersion law of (3.8) reads E + V = 2 cos q. As a consequence, the dynamics of
+the eﬀectively extended states is characterized by the ballistic (group) velocity
+v =
+
+dE
+dq
+
+E=V
+= 2(1 −V 2)1/2.
+(3.10)
+• In the critical situation (V = 1), the special energy E = 1 meets the band edge
+of (3.8), and so the velocity v vanishes. The properties of the spectrum are very
+
+
+=== PDF PAGE 13 ===
+Dynamics in low-dimensional disordered systems with extended states
+13
+asymmetric in the vicinity of the special energy. The localization length and the
+density of states respectively diverge as
+ξ(E) ∼
+1
+1 −E ,
+ρ(E) ∼
+1
+(1 −E)1/2
+(E →1−),
+(3.11)
+whereas the density of states is exponentially small as E →1+.
+Consider now, along the lines of Section 2, a ﬁnite sample made of an even number N
+of sites, covered by N/2 dimers.
+The number of eigenstates which are eﬀectively
+extended grows as N1/2, both in the generic and in the critical situation [17]. In the
+generic situation (V < 1), the eigenstates such that the diﬀerence δ = E −V is smaller
+than N−1/2 have a localization length ξ larger than N. As the density of states is ﬁnite at
+E = V , the number of such eﬀectively extended states grows as Nδ ∼N1/2. Diﬀerent
+estimates yield the same outcome in the critical situation (V = 1). The eﬀectively
+extended states are now such that the diﬀerence δ = E −1 is negative and of the order
+of 1/N. As the density of states diverges according to (3.11), the number of eﬀectively
+extended states grows as δ−1/2 ∼N1/2.
+The above property will be the cornerstone of our heuristic analysis of the dynamical
+problem. It is therefore worth checking its range of applicability by means of numerical
+data. Let Eα be the N energy eigenvalues of a ﬁnite chain made of an even number N
+of sites, and ψα
+n be the corresponding (real and normalized) eigenvectors. We deﬁne the
+participation ratio P α of state number α as
+P α =
+1
+X
+n
+(ψα
+n)4.
+(3.12)
+This quantity is known to provide a measure of the extension of the eigenstate α, i.e.,
+of the number of sites which participate in the wavefunction ψα, in the sense that ψα
+n
+takes appreciable values [25]. The participation ratio scales as N for an extended state,
+whereas it is of order unity for a localized state. As a consequence, the disorder-averaged
+mean participation ratio
+P = 1
+N
+X
+α
+P α
+(3.13)
+provides an operational measure of the number of eﬀectively extended states on a ﬁnite
+sample of size N.
+Figure 8 shows a plot of P against N1/2. Data have been obtained by means of
+a numerical diagonalization of the Hamiltonian matrix on ﬁnite chains with periodic
+boundary conditions. The observed asymptotic linear growth conﬁrms that the number
+of extended states follows the predicted N1/2 growth law, both in the generic and in the
+critical situation, with prefactors of order unity, down to system sizes as small as 10.
+3.2. Dynamical properties
+We now move to the investigation of the quantum dynamics of the random-dimer model.
+We again assume that the particle starts at the origin, according to (2.10).
+
+
+=== PDF PAGE 14 ===
+Dynamics in low-dimensional disordered systems with extended states
+14
+2
+4
+6
+8
+10
+ N
+1/2
+0
+10
+20
+30
+P−
+V=0.6 
+V=1 
+fit (A=3.24)
+fit (A=2.17)
+Figure 8. Plot of the disorder-averaged mean participation ratio P against N 1/2, for
+V = 0.6 (generic situation) and V = 1 (critical situation). Curves going almost exactly
+through the data points: ﬁts to the form P = AN 1/2 + B + CN −1/2.
+The generic situation (V < 1)
+The dynamical properties of the random-dimer model in the generic situation have been
+the subject of recent rigorous works [19]. We proceed along an entirely diﬀerent route
+and employ the following heuristic line of reasoning.
+On a large but ﬁnite sample of size N, the model has a number of order N1/2
+of eﬀectively extended states. The projection of the initial wavefunction (2.10) onto
+extended states therefore scales as the weight of those states in the whole spectrum,
+i.e., as N−1/2. This component of the wavefunction spreads ballistically with velocity
+v in a transient regime (t ≪N).
+Now, considering an inﬁnite system but a ﬁnite
+observation time t, we are led to the picture that some random projection of the initial
+wavefunction (2.10), carrying a fraction of order (vt)−1/2 of the total intensity, spreads
+ballistically. This picture translates into the following scaling form for the disorder-
+averaged density proﬁle:
+ρn(t) ≈
+1
+(vt)3/2 F
+ n
+vt
+
+=
+1
+|n|3/2 G
+ n
+vt
+
+,
+(3.14)
+in the scaling regime where both n and t are large and proportional.
+The asymptotic disorder-averaged density proﬁle ρn thus falls oﬀas a power law:
+ρn ∼
+1
+|n|3/2 .
+(3.15)
+Figure 9 shows a log-log plot of the disorder-averaged density ρn(t) against distance n,
+for V = 0.6 (so that v = 1.6) and times t = 100, 200, 400, and 800. The data exhibit
+sharp ballistic peaks around the expected locations n = vt (arrowheads).
+Both the
+width and the structure of these peaks are reminiscent of the behavior (2.27) of the
+wavefunction in the absence of disorder. For t > n/v, the data then soon saturate to
+the predicted asymptotic power-law proﬁle (3.15).
+
+
+=== PDF PAGE 15 ===
+Dynamics in low-dimensional disordered systems with extended states
+15
+3
+4
+5
+6
+7
+8
+ ln n
+−12
+−10
+−8
+−6
+−4
+ln ρn(t)
+t=100
+t=200
+t=400
+t=800
+slope=−3/2
+Figure 9. Log-log plot of the disorder-averaged density ρn(t) against distance n, for
+V = 0.6 and various observation times. Arrowheads: expected positions of the ballistic
+peaks (n = vt). Straight line with slope (-3/2): asymptotic power-law proﬁle (3.15).
+The disorder-averaged moments Mq(t) of the position of the particle at time t grow
+with time for q ≥1/2, whereas they saturate to ﬁnite values for q < 1/2:
+Mq(t) ∼
+
+
+
+
+
+(vt)(2q−1)/2
+(q > 1/2),
+ln(vt)
+(q = 1/2),
+ﬁnite
+(q < 1/2).
+(3.16)
+These predictions, and especially the power-law divergence with exponent (2q −1)/2,
+are in agreement with recent rigorous results [19]. We thus have in particular
+M1(t) ≈b1t1/2,
+M2(t) ≈b2t3/2.
+(3.17)
+Figure 10 shows plots of M1(t) (left) and M2(t)/t (right) against t1/2, for V = 0.6
+(so that v = 1.6) and V = 0.8 (so that v = 1.2). The plotted data exhibit linear
+growth laws with a very high accuracy. The corresponding amplitudes read b1 ≈4.2
+and b2 ≈4.2 for V = 0.6, and b1 ≈2.8 and b2 ≈2.0 for V = 0.8.
+The critical situation (V = 1)
+Consider now the critical situation (V = 1), where the velocity v vanishes. It is worth
+mentioning that no rigorous result is available in this case.
+The previous line of reasoning can be adapted in the following heuristic way.
+On a large but ﬁnite sample of size N, the model has a number of order N1/2 of
+eﬀectively extended states. The projection of the initial wavefunction (2.10) onto those
+states therefore again scales as N−1/2. The latter component of the wavefunction is
+again expected to spread ballistically in a transient regime, with a non-zero eﬀective
+velocity v∗(N) due to the ﬁniteness of the system.
+The latter can be estimated as
+follows. The eﬀectively extended states have an energy E such that 1 −E ∼1/N,
+whereas the velocity v is such that 1 −V ≈v2/8 [see (3.10)]. Equating both estimates
+of the energy shift 1−E ∼1−V yields v∗(N) ∼N−1/2, implying therefore the existence
+
+
+=== PDF PAGE 16 ===
+Dynamics in low-dimensional disordered systems with extended states
+16
+0
+5
+10
+15
+20
+25
+30
+35
+t
+1/2
+0
+20
+40
+60
+80
+100
+120
+140
+M1(t)
+V=0.6
+fit
+V=0.8
+fit
+0
+5
+10
+15
+20
+25
+30
+35
+t
+1/2
+0
+20
+40
+60
+80
+100
+120
+140
+M2(t)/t
+V=0.6
+fit
+V=0.8
+fit
+Figure 10. Plots of M1(t) (left) and of M2(t)/t (right) against t1/2, for V = 0.6 and
+V = 0.8. Straight lines (slightly translated for readability): least-square ﬁts yielding
+the amplitudes given in the text.
+of a crossover time t∗(N) ∼N/v∗(N) ∼N3/2. The growth law of this time scale is
+intermediate between the ballistic one (t ∼N) and the diﬀusive one (t ∼N2).
+The above argument suggests the following scaling form for the disorder-averaged
+density proﬁle:
+ρn(t) ≈1
+t F1
+ n
+t2/3
+
+=
+1
+|n|3/2 G1
+ n
+t2/3
+
+.
+(3.18)
+The asymptotic disorder-averaged density proﬁle ρn again falls oﬀaccording to (3.15).
+The left panel of Figure 11 shows a log-log plot of the disorder-averaged density ρn(t)
+against distance n, for times t = 100, 400, and 1600. The data converge toward the
+predicted asymptotic power-law proﬁle (3.15). A comparison with Figure 9 however
+shows that the sharp ballistic peaks are replaced by broad shoulders. The right panel of
+Figure 11 shows a rescaled plot of the same data. The very good quality of the observed
+data collapse, especially for the larger values of the ratio n/t2/3, strongly supports the
+scaling law (3.18) derived by heuristic means.
+As a consequence of (3.18), the disorder-averaged moments Mq(t) of the position of
+the particle at time t grow with time for q ≥1/2, whereas they saturate to ﬁnite values
+for q < 1/2:
+Mq(t) ∼
+
+
+
+
+
+t(2q−1)/3
+(q > 1/2),
+ln t
+(q = 1/2),
+ﬁnite
+(q < 1/2).
+(3.19)
+We have in particular
+M1(t) ≈c1t1/3,
+M2(t) ≈c2t.
+(3.20)
+Figure 12 shows plots of M1(t) against t1/3 (left) and M2(t) against t (right). The plotted
+data clearly exhibit linear growth laws, thus corroborating (3.20). The corresponding
+amplitudes read c1 ≈3.2 and c2 ≈5.3.
+
+
+=== PDF PAGE 17 ===
+Dynamics in low-dimensional disordered systems with extended states
+17
+2
+3
+4
+5
+6
+7
+ ln n
+−12
+−10
+−8
+−6
+−4
+ln ρn(t)
+t=100
+t=400
+t=1600
+slope=−3/2
+−2
+−1
+0
+1
+2
+ ln (n/t
+2/3)
+−4
+−3
+−2
+−1
+0
+1
+2
+3
+ln (tρn(t))
+t=100
+t=400
+t=1600
+slope=−3/2
+Figure 11. Left: Log-log plot of the disorder-averaged density ρn(t) against n, for
+V = 1 and various observation times.
+Straight line with slope (-3/2): asymptotic
+power-law proﬁle (3.15). Right: Rescaled plot of the same data demonstrating the
+scaling law (3.18).
+0
+2
+4
+6
+8
+10
+t
+1/3
+0
+10
+20
+30
+40
+M1(t)
+M1(t)
+fit
+0
+200
+400
+600
+800
+1000
+t
+0
+2
+4
+6
+M2(t) [10
+3]
+M2(t)
+fit
+Figure 12.
+Plots of M1(t) against t1/3 (left) and of M2(t) against t (right) for
+V = 1. Straight lines (slightly translated for readability): least-square ﬁts yielding
+the amplitudes given in the text.
+4. Discussion
+We have investigated two examples of disordered one-dimensional Hamiltonians which
+are exceptions to the common wisdom on Anderson localization, in the sense that the
+localization length diverges at some special energies.
+The main goal of the present study has been to provide a uniﬁed picture for the
+dynamical consequences of this divergence.
+The two examples we have considered
+are very diﬀerent in nature. On the chain with oﬀ-diagonal disorder (Section 2), the
+localization length has a mild logarithmic divergence as E →0. As a consequence, on
+a ﬁnite sample of N sites, the most extended eigenstate has an eﬀective localization
+
+
+=== PDF PAGE 18 ===
+Dynamics in low-dimensional disordered systems with extended states
+18
+length of the order of N1/2/σ. The system therefore supports no eﬀectively extended
+state. On the contrary, in the random-dimer model (Section 3), the localization length
+has a strong power-law divergence as E →±V . A large but ﬁnite sample now supports
+a large number of eﬀectively extended states, growing as N1/2. This diﬀerence probably
+explains why the study of the random-dimer model is far easier than that of the chain
+with oﬀ-diagonal disorder, both from the mathematical and the numerical standpoints.
+The main features of the quantum dynamics put forward in this work are
+nevertheless very similar in both models:
+• The disorder-averaged densities ρn = |ψn(t)|2 converge to non-trivial asymptotic
+values ρn, which fall oﬀat large distances as a power law of the form
+ρn ∼
+1
+|n|q0+1
+(4.1)
+[see (2.23), (3.15)].
+• For a large but ﬁnite observation time, the power-law density proﬁle is cutoﬀat
+some spatial scale n∗(t) which keeps growing with time.
+• The disorder-averaged moments of the position of the particle keep growing with
+time as
+Mq(t) ∼
+( (n∗(t))q−q0
+(q > q0),
+ln n∗(t)
+(q = q0),
+(4.2)
+while they reach ﬁnite limits for q < q0 [see (2.25), (3.16), (3.19)]. This kind of
+dichotomous behavior can be referred to as bi-fractality.
+Table 1. Summary of main results on the spectral and dynamical properties of a
+quantum particle on the chain with oﬀ-diagonal disorder and on the random-dimer
+model, both in the generic situation (V < 1) and in the critical one (V = 1).
+Model
+oﬀ-diagonal disorder
+generic dimers
+(V < 1)
+critical dimers
+(V = 1)
+Special energies Ec
+0
+±V
+±1
+Localization length ξ(E)
+−ln |E|/σ2
+1/(E ∓V )2
+1/|E ∓1|
+Asymptotic proﬁle ρn
+1/n3
+1/n3/2
+1/n3/2
+Index q0
+2
+1/2
+1/2
+Crossover scale n∗(t)
+(ln t)2/σ2
+vt
+t2/3
+Moment Mq(t) (q > q0)
+(ln t)2(q−2)/σ2(q−1)
+(vt)(2q−1)/2
+t(2q−1)/3
+Table 1 summarizes our quantitative ﬁndings concerning the chain with oﬀ-diagonal
+disorder and the random-dimer model.
+On higher-dimensional bipartite lattices, tight-binding models with oﬀ-diagonal
+disorder also exhibit speciﬁc features near their band center, again because of particle-
+hole symmetry [8, 9, 10, 11]. In two dimensions, it has been argued that the energy
+
+
+=== PDF PAGE 19 ===
+Dynamics in low-dimensional disordered systems with extended states
+19
+gap E1 on a ﬁnite sample of linear size L scales as X1 = −ln E1 ∼(ln L)x.
+As a
+consequence, the integrated density of states exhibits an essential singularity of the form
+H(E) −1/2 ∼exp(−c(−ln |E|)1/x)
+(4.3)
+as E →0, i.e., near the band center. The dynamical exponent has been ﬁrst predicted
+by Gade [8] to be x = 2, while more recent studies [10, 11] predict that the exact
+value of the dynamical exponent is somewhat smaller: x = 3/2.
+The dimensional
+scaling Ansatz H −1/2 ∼1/ξ2 suggests that the localization length diverges as
+ξ(E) ∼exp((c/2)(−ln |E|)1/x).
+These rough results ﬁt within the same framework
+as our one-dimensional ﬁndings, with an asymptotic density proﬁle falling oﬀas
+ρn ∼
+1
+σ2 |n|4 ,
+(4.4)
+a critical index q0 = 2, and bi-fractal moments scaling as
+Mq(t) ∼
+
+
+
+
+
+exp((q −2)(c/2)(ln t)2/3)
+(q > 2),
+(ln t)2/3
+(q = 2),
+ﬁnite
+(q < 2).
+(4.5)
+One of the chief challenges for future work would be to establish by means of a more
+controlled approach the criticality of the stationary density proﬁle and the validity
+of (4.5) in the two-dimensional situation.
+Acknowledgment
+We are thankful to Pierre Pujol for valuable discussions. The work of PLK has been
+supported by NSF grant CCF-0829541.
+Note added
+After completion of this article we became aware of the recent work [26] by Lepri et al.
+These authors investigate the spreading of a wavepacket in disordered harmonic and
+anharmonic chains. In the harmonic case they predict a power-law fall-oﬀof the energy
+proﬁle averaged over time and disorder, with a universal exponent equal to 5/2 for
+an initial displacement excitation, and to 3/2 for an initial momentum excitation. The
+anomalous spreading and the existence of a non-trivial limiting proﬁle are demonstrated
+to be due to the divergence of the localization length of the phonon modes at low
+frequency. The work by Lepri et al and the present one therefore strongly corroborate
+each other, as they put forward essentially the same scenario.
+We thank Stefano Lepri for having made us aware of this very interesting piece of
+work.
+References
+[1] Abrahams E ed, 2010 50 Years of Anderson Localization (Singapore: World Scientiﬁc)
+
+
+=== PDF PAGE 20 ===
+Dynamics in low-dimensional disordered systems with extended states
+20
+[2] Dyson F J, 1953 Phys. Rev. 92 1331
+[3] Herbert D C and Jones R, 1971 J. Phys. C 4 1145
+[4] Theodorou G and Cohen M H, 1976 Phys. Rev. B 13 4597
+[5] Fleishman L and Licciardello D C, 1977 J. Phys. C 10 L126
+[6] Eggarter T P and Riedinger R, 1978 Phys. Rev. B 18 569
+[7] Evangelou S N, 1986 J. Phys. C 19 4291
+[8] Gade R and Wegner F, 1991 Nucl. Phys. B 360 213
+Gade R, 1993 Nucl. Phys. B 398 499
+[9] Inui M, Trugman S A, and Abrahams E, 1994 Phys. Rev. B 49 3190
+[10] Motrunich O, Damle K, and Huse D A, 2002 Phys. Rev. B 65 064206
+[11] Mudry C, Ryu S, and Furusaki A, 2003 Phys. Rev. B 67 064202
+[12] Hikami S, Shirai M, and Wegner F, 1993 Nucl. Phys. B 408 415
+[13] Ludwig A W W, Fisher M P A, Shankar R, and Grinstein G, 1994 Phys. Rev. B 50 7526
+[14] Guarneri I, 1989 Europhys. Lett. 10 95
+Guarneri I, 1993 Europhys. Lett. 21 729
+[15] De Toro Arias S and Luck J M, 1998 J. Phys. A 31 7699
+[16] Dunlap D H, Kundu K, and Phillips P W, 1989 Phys. Rev. B 40 10999
+Dunlap D H, Wu H L, and Phillips P W, 1990 Phys. Rev. Lett. 65 88
+[17] Bovier A, 1992 J. Phys. A 25 1021
+[18] Flores J C and Hilke M, 1993 J. Phys. A 26 L1255
+[19] Jitomirskaya S, Schulz-Baldes H, and Stolz G, 2003 Commun. Math. Phys. 233 27
+Jitomirskaya S and Schulz-Baldes H, 2007 Commun. Math. Phys. 273 601
+[20] Brouwer P W, Racine E, Furusaki A, Hatsugai Y, Morita Y, and Mudry C, 2002 Phys. Rev. B 66
+014204
+[21] Kesten H, Koslov M, and Spitzer F, 1975 Compositio Math. 30 145
+Sinai Ya G, 1982 Theor. Prob. Appl. 27 256
+[22] Bouchaud J P and Georges A, 1990 Phys. Rep. 195 127
+Igloi F and Monthus C, 2005 Phys. Rep. 412 277
+[23] Balian R and Schaeﬀer R, 1989 Astron. Astrophys. 226 373
+[24] Metzler R and Klafter J, 2000 Phys. Rep. 339 1
+[25] Bell R J and Dean P, 1970 Discuss. Faraday Soc. 50 55
+Thouless D J, 1974 Phys. Rep. 13C 93
+[26] Lepri S, Schilling R, and Aubry S, 2010 Phys. Rev. E 82 056602

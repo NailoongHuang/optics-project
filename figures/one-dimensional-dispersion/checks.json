@@ -1,0 +1,11 @@
+{
+  "local_affine_residual_in_selected_band": 0.0,
+  "parabolic_velocity_range_in_band": [
+    0.49500000000000005,
+    1.665
+  ],
+  "sine_velocity_at_center": 1.0,
+  "sine_velocity_at_band_edge": 0.6216099682706644,
+  "scope": "Static plots of exact illustrative functions; not time-propagation simulations.",
+  "spectral_band_semantics": "Support range, not a rectangular amplitude spectrum."
+}

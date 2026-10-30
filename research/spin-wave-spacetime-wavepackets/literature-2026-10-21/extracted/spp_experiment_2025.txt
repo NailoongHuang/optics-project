@@ -1,0 +1,1901 @@
+=== PDF PAGE 1 ===
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Observation of space-time surface plasmon
+polaritons
+Naoki Ichiji
+1,2, Hibiki Kikuchi1, Murat Yessenov
+3,4, Kenneth L. Schepler
+4,
+Ayman F. Abouraddy
+4
+& Atsushi Kubo
+5
+Surface plasmon polaritons (SPPs) at metal-dielectric interfaces provide
+strong out-of-plane conﬁnement enabling nano-scale sensing and imaging, yet
+diffraction causes spatial delocalization. Conventional strategies to combat
+diffraction through spatial structuring are inapplicable to dimensionally
+restricted SPPs, except for nonlocalized cosine plasmons and Airy plasmons
+that follow curved trajectories. Here we demonstrate space-time SPPs (ST-
+SPPs), ultrashort (16-fs) diffraction-free SPPs that propagate rectilinearly via
+precise sculpting of their spatiotemporal spectra. By synthesizing a spatio-
+temporally structured ﬁeld in free space and coupling the ﬁeld to an axially
+invariant ST-SPP at a metal-dielectric surface, we control the ST-SPP group
+velocity and propagation characteristics. Time-resolved two-photon ﬂuores-
+cence microscopy reconstructs the surface-bound ﬁeld in space and time,
+verifying the predicted spatiotemporal wavefront and diffraction-free propa-
+gation. Our work opens new avenues for combining spatiotemporally struc-
+tured light with the ﬁeld-localization associated with nanophotonics, and may
+thus enable novel applications in surface-enhanced sensing and nonlinear
+optical interactions.
+Surface plasmon polaritons (SPPs) are optical surface waves that pro-
+pagate along metal-dielectric interfaces1,2. Because SPPs are strongly
+localized orthogonally to the interface, they are suitable for a host of
+photonic applications ranging from biosensing3 and tweezers4, to
+nanofocusing5,6, modulators7–9, and harvesting solar energy10,11, among
+other fascinating possibilities12–15. This strong ﬁeld conﬁnement of the
+SPP at the interface is marred by free in-plane propagation, resulting in
+diffractive spreading of its transverse spatial proﬁle. In addition, SPPs
+are dispersive, so that the temporal (axial) proﬁle of a pulsed SPP
+undergoes dispersive spreading (Fig. 1a). Producing diffraction-free,
+tightly focused, ultrashort pulsed SPPs would yield strong ﬁeld loca-
+lization in all dimensions that is maintained over extended propaga-
+tion distances, which can help enhance many SPP applications.
+Axially maintained, in-plane conﬁnement can be provided by
+surface-patterned
+waveguide
+structures16,17,
+or
+by
+hyperbolic
+metamaterials that require strongly anisotropic materials18–21. In free
+space, so-called diffraction-free optical beams can maintain their
+spatial proﬁle axially over considerable distances if their proﬁle con-
+forms to particular functional distributions, e.g., Bessel beams22.
+However, the one-dimensional (1D) transverse nature of SPPs is a
+restrictive condition with regard to achieving diffraction-free propa-
+gation. Indeed, there are no monochromatic diffraction-free light
+sheets – which are localized along one transverse dimension and uni-
+form along the other – that travel in a straight line23. Conventional
+diffraction-free beams require two transverse dimensions for their
+viability; so that even a light-sheet that conforms to a Bessel function in
+1D is diffractive, in contrast to its 2D counterpart. There are only two
+exceptions: the cosine wave that is not localized, and the Airy beam
+that does not travel along a straight line23. Both of these monochro-
+matic ﬁeld structures have been implemented as SPPs: the cosine
+Received: 21 February 2025
+Accepted: 4 October 2025
+Check for updates
+1Graduate School of Pure and Applied Sciences, University of Tsukuba, Tsukuba-shi, Japan. 2Institute of Industrial Science, The University of Tokyo, Meguro-
+Ku, Japan. 3Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, MA, USA. 4CREOL, The College of Optics &
+Photonics, University of Central Florida, Orlando, FL, USA. 5Department of Physics, Institute of Pure and Applied Sciences, University of Tsukuba, Tsukuba-
+shi, Japan.
+e-mail: raddy@creol.ucf.edu; kubo.atsushi.ka@u.tsukuba.ac.jp
+Nature Communications|  (2025) 16:10697 
+1
+1234567890():,;
+1234567890():,;
+
+
+=== PDF PAGE 2 ===
+plasmon24,25 and the Airy plasmon26,27. Therefore, no diffraction-free
+SPP traveling along a straight path has been realized to date. This
+remains a fundamental challenge that cannot be overcome by means
+of spatially structuring the excitation, which is a consequence of the
+dimensionality of SPPs as surface waves, along with the mono-
+chromaticity of the excitation. Whereas the ﬁrst restriction cannot be
+avoided, the second can be readily circumvented by sculpting a pulsed
+SPP wave packet.
+Recently, free-space diffraction-free light sheets that travel along
+a straight line have been ﬁnally realized using a class of pulsed beams
+known as space-time wave packets (STWPs), which are diffraction-free
+without imposing a particular 1D transverse spatial proﬁle28. Key to this
+unique feature is lifting the monochromaticity constraint, and then
+introducing a strict spectral association between the spatial and tem-
+poral frequencies undergirding the ﬁeld spatiotemporal structure,
+thereby yielding unique characteristics such as propagation invariance
+in linear media28–31, tunable group velocities independently of the
+medium refractive index30,32, self-healing upon traversing opaque
+obstacles33, and anomalous refraction34. We have proposed a pulsed
+SPP beam (or SPP wave packet) that adapts the characteristic structure
+underpinning freely propagating STWPs to the particular setting of
+surface waves35. Because STWPs are the only propagation-invariant
+light sheets, they offer the potential for ﬁnally yielding diffraction-free
+SPPs that propagate along a straight line. By restricting the spatio-
+temporal spectrum of the SPP to the intersection of the SPP light-cone
+with a tilted spectral plane, one obtains a space-time SPP wave packet
+(ST-SPP) that inherits many of the unique propagation characteristics
+of STWPs; in particular, ST-SPPs propagate in a straight line without
+diffraction or dispersion at a metal-dielectric interface at a group
+velocity thatmay be tuned above (superluminal) or below (subluminal)
+that of a conventional SPP wave packet35,36; see Fig. 1b. However,
+experimentally realizing an ST-SPP and ascertaining its propagation
+characteristics offers up a host of challenges. Because the typical decay
+length due to ohmic losses on a metal surface is limited to tens of
+microns37–39, unambiguously monitoring the propagation of a pulsed
+SPP necessitates utilizing a broadband ultrashort pulse of width <20
+fs, which then raises the question of coupling a broadband spatio-
+temporally structured optical ﬁeld to a surface-bound ﬁeld40.
+Here we observe for the ﬁrst time diffraction-free ST-SPPs tra-
+veling along a straight path with tunable group velocity at a metal-
+dielectric interface, which is made possible by resolving the multi-
+dimensional experimental challenge outlined above. First, we make
+use of ultrashort pulses of width 16-fs pulses (110-nm bandwidth),
+which correspond to an SPP of axial extent ≈3.6 μm, thereby enabling
+the monitoring of their propagation over a short distance, and thus
+enabling us to conﬁrm the tunability of the ST-SPP group velocity
+above and below that of an SPP as determined by its intrinsic disper-
+sion. Second, we make use of a nano-slit milled into the metal surface
+for efﬁcient broadband coupling of STWPs from free space to an ST-
+SPP (predicted theoretically35,41 and demonstrated with minimally
+structured ﬁelds42), while maintaining the structure of the target spa-
+tiotemporal spectrum. Third, the use of ultrashort pulses plays a cru-
+cial role in the phase-sensitive detection of the spatially and temporally
+resolved surface-bound ﬁeld through two-photon ﬂuorescence exci-
+ted by a reference pulse interfering with the evanescent tail of the SPP
+at the metal surface. We thus reconstruct the surface-bound ﬁeld for a
+variety of ST-SPPs, in addition to conventional SPP wave packets, and
+verify the details of their spatiotemporal structure, including a pre-
+dicted signature tilt in their phase front with respect to the propaga-
+tion direction. Furthermore, by exciting conventional SPP wave
+packets and ST-SPPs of the same bandwidth, we conﬁrm the diffractive
+spreading of the former and the diffraction-free propagation of
+the latter. These results establish a new form of SPP wave packets that
+offers unprecedented control over their propagation characteristics.
+This may enable novel applications in enhanced surface nonlinear
+optical interactions mediated by the tunable group velocity of ST-SPPs,
+in generating radiation through accelerating ST-SPPs43, and launching
+isolated propagating topological SPP spin textures13,44,45 or SPPs
+endowed with transverse orbital angular momentum46,47.
+Results
+Theoretical formulation
+The conceptual formulation of ST-SPPs is best understood by visua-
+lizing their spectral representation on the surface of the light-cone. For
+(2 + 1)D pulsed optical ﬁelds restricted to one transverse dimension x
+in addition to the axial dimension z, the light-cone is the geometric
+representation of the dispersion relationship involving the transverse
+wave number kx (or spatial frequency), the longitudinal wave number
+kz, and the temporal frequency ω. In free space, the light-cone is
+k2
+x + k2
+z = ðω
+cÞ2, and that for an SPP at a metal-dielectric interface is
+k2
+x + k2
+z = k2
+SPPðωÞ;
+where
+c
+is
+the
+speed
+of
+light
+in
+vacuum,
+kSPP = ω
+c
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+ϵmϵd
+ϵm + ϵd
+q
+, and ϵm and ϵd are the relative permittivities of the
+metal and dielectric, respectively (Fig. 1a). In free space, where a (2 + 1)
+D pulsed beam (or wave packet) takes the form of a light-sheet that is
+a
+b
+kx
+kz
+kx
+kz
+kx
+kz
+kx
+kz
+ω
+ω
+ω
+ω
+Conventional SPP wave packet
+ST-SPP
+free-space
+light-cone
+SPP
+light-cone
+x
+z
+y
+spectral
+planes
+Si
+Ag
+Pulsed
+Gaussian beam
+ST
+wave packets
+Fig. 1 | Comparison of SPPs and ST-SPPs at a metal-dielectric interface.
+a Schematic of a free-space pulsed beam coupled to a conventional SPP wave
+packet bound to a metal-dielectric interface via scattering from a nanoslit in the
+metal surface. The sample is depicted here as a silver (Ag) layer atop a silicon (Si)
+substrate and clad by free space. The spectral support for the free-space pulsed
+beam is a 2D domain on the surface of the free-space light-cone k2
+x + k2
+z = ðω
+cÞ2, and
+that for the conventional SPP wave packet is a 2D domain on the surface of the SPP
+light-cone k2
+x + k2
+z = k2
+SPP. This conventional SPP wave packet undergoes both spatial
+diffractive spreading and temporal dispersive spreading. b Schematic of a free-
+space STWP coupled to an ST-SPP on the same sample as in (a). The spectral
+supports for the STWP and for the ST-SPP are curves at the intersection of a tilted
+spectral plane with the free-space light-cone and the SPP light-cone, respectively.
+The ST-SPP propagates invariantly on the metal surface without diffraction or
+dispersion.
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+2
+
+
+=== PDF PAGE 3 ===
+uniform along y and localized along x, its spectral support is a two-
+dimensional (2D) region on the surface of the free-space light-cone
+(Fig. 1a). Such a light-sheet undergoes diffractive spreading with free
+propagation. A conventional SPP wave packet is a (2 + 1)D surface wave
+with ﬁnite transverse-spatial extent along x in addition to surface
+localization along y, whose spectral support in turn corresponds to a
+2D region on the surface of the SPP light-cone (Fig. 1a)35,48. This con-
+ventional SPP wave packet undergoes both diffractive spreading in
+space and dispersive spreading in time.
+Ideal STWPs are pulsed beams that propagate rigidly in linear
+media without diffraction or dispersion, and whose propagation
+characteristics can be tuned largely independently of the material
+parameters23,28. Rather than the 2D spectral support on the free-space
+light-cone associated with conventional pulsed light sheets, the spa-
+tiotemporal spectrum of an STWP is restricted to a 1D curve (a conic
+section) at the intersection of the light-cone with a plane that is parallel
+to the kx-axis and makes an angle θ with the kz-axis (Fig. 1b)28. This
+plane, ω  ωo = ðkz  koÞc tan θ, results in a straight-line spectral pro-
+jection onto the ðkz, ω
+cÞ-plane, which indicates a ﬁxed group velocity
+ev = c tan θ and the absence of dispersion to all orders49; here ωo is a
+ﬁxed carrier frequency, and ko = ωo
+c is its associated wave number.
+Moreover, the one-to-one association between ω and ∣kx∣guarantees
+diffraction-free propagation of the time-averaged intensity23. Similarly
+for ST-SPPs, their spectral support as shown in Fig. 1b is also a 1D curve
+at
+the
+intersection
+of
+the
+SPP
+light-cone
+with
+the
+plane
+ω  ωo = ðkz  k0
+oÞevSPP tan θ, where evSPP is the group velocity of a plane-
+wave pulsed SPP at ω = ωo, and k0
+o is the SPP wave number at ωo
+35. The
+spectral projection onto the (kz, ω
+c)-plane for the ST-SPP is also a
+straight line, indicating that – in addition to being diffraction-free – ST-
+SPPs propagate dispersion-free at a group velocity ev =evSPP tan θ
+despite the intrinsic GVD associated with freely propagating SPPs
+(Fig. 1b)35.
+We show in Fig. 2 (ﬁrst row) the spectral support for a conven-
+tional SPP wave packet on the SPP light-cone (Fig. 2a), its spectral
+projections onto the ðkx, ω
+cÞ and ðkz, ω
+cÞ planes (Fig. 2b, c), along with
+the out-of-plane ﬁeld proﬁle (Fig. 2d). We assume a separable Gaussian
+spectrum in space and time, and take into account the temporal
+bandwidth Δ λ ≈110 nm (FWHM) utilized in our experiments (Meth-
+ods). Crucially, the phase front for this conventional SPP wave packet is
+orthogonal to the propagation axis z (Fig. 2d).
+Striped ST-SPP 
+Superluminal ST-SPP 
+-15
+15
+0
+1
+-1
+striped
+ST-SPP
+ω/2π (THz)
+400
+300
+200
+100
+0
+ω/2π (THz)
+400
+300
+200
+100
+0 super
+α
+ω/2π (THz)
+400
+300
+200
+100
+0 sub
+40
+0
+-40
+kx (rad/μm)
+α
+-15
+15
+0
+-15
+15
+0
+z (μm)
+15
+0
+-15
+Δx
+λx
+-15
+15
+0
+Ey (x,z; t = 0)
+SPP 
+light-line
+ω/2π (THz)
+400
+300
+200
+100
+0
+ωo
+Conventoinal SPP
+a
+c
+d
+b
+Subluminal ST-SPP 
+0.95 1.05
+ω/2π (THz)
+ω/2π (THz)
+ω/2π (THz)
+ω/2π (THz)
+kz-ko-Ω/vSPP (rad/μm)
+‘
+420
+380
+340
+420
+380
+340
+420
+380
+340
+420
+380
+340
+0
+-0.8
+-0.4
+k’o
+2π/λx
+Δkx
+Δkx
+Δω
+Δx
+Δz
+Δx
+x (μm)
+x (μm)
+x (μm)
+x (μm)
+kx
+kz
+ω/c
+kx
+kz
+ω/c
+kx
+kz
+ω/c
+kx
+kz
+ω/c
+vST /vSPP
+ωU
+ωL
+1
+0
+1
+0
+1
+0
+Fig. 2 | Spectral representation of SPPs and ST-SPPs. The ﬁrst row corresponds to
+a conventional SPP wave packet with Δx = 9 μm; the second to a striped ST-SPP with
+λx = 10 μm; the third to a subluminal ST-SPP with Δx = 5 μm; and the fourth to a
+superluminal ST-SPP with Δx = 5 μm. (a) The spectral support on the surface of the
+SPP light-cone k2
+x + k2
+z = k2
+SPP in ðkx, kz, ω
+cÞ-space (shown in red). b The projection of
+the spectral support in a onto the ðkx, ω
+cÞ-plane. This spectral projection is invariant
+upon coupling the ﬁeld from free space to the metal-dielectric interface (as a
+consequence of conservation of energy and transverse momentum). The gray band
+corresponds to the bandwidth Δω of the laser pulse used in our experiments, and
+the dashed horizontal line is at ωo
+2π  375 THz (λo ≈800 nm in free space). c The
+spectral projection onto the ðkz, ω
+cÞ-plane after implementing kz ! kz  k0
+o 
+Ω
+evSPP
+for clarity, where Ω = ω−ωo. The panel to the right shows the group velocity of the
+wave packet ev = dω
+dkz normalized to evSPP. The spectral range on the vertical axis
+corresponds to the bandwidth of the laser pulse. d The calculated out-of-plane real
+part of the ﬁeld distribution Ey(x, y, z; t) at y = 0 and t = 0 (Methods). The black
+curves on the left and bottom are cross-sections at z = 0 and x = 0, respectively. The
+right panels show magniﬁed views of the dashed squares in the left panel, high-
+lighting the structure of the phase fronts.
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+3
+
+
+=== PDF PAGE 4 ===
+Producing an ideal ST-SPP with a bandwidth Δ λ = 110 nm is pro-
+hibitive, as can be understood by considering a so-called ‘striped ST-
+SPP’ whose spatial proﬁle results simply from the interference of a pair
+of plane waves with ﬁxed spatial frequencies ± kx (i.e., the ﬁeld takes
+the transverse form cos kxx)42. Consequently, a striped ST-SPP is
+separable with respect to space and time, and it thus does not offer the
+possibility of tuning the group velocity (indeed, its group velocity is
+ev  evSPP; Methods). We plot in Fig. 2a–c (second row) the spectral
+support for a striped ST-SPP, which is the intersection of iso-∣kx∣planes
+with the SPP light-cone. The out-of-plane ﬁeld is separable, extended
+and periodic along x (with period λx ≡2π/kx = 10 μm), and its phase
+front is orthogonal to the z-axis, leading to a lattice-like spatial dis-
+tribution at any instant t (Fig. 2d).
+A broadband ST-SPP is composed of a multiplicity of cosine SPPs
+with different kx, each of which is associated with a prescribed ω, such
+that kz is maintained in a linear relationship with ω. However, main-
+taining this linear relationship between kz and ω over a large temporal
+bandwidth Δ ω is prohibitive for SPPs because the curvature of the SPP
+light-line dictates a large accompanying spatial bandwidth Δ kx.
+Indeed, even if ev it remains within 1% of evSPP, we still needΔkx
+ko  0:23
+(with the parameters used in our experiments below) to maintain the
+spatiotemporal spectrum of an ideal ST-SPP over the large bandwidth
+Δ λ ≈110 nm used here. Because our experimental scheme conserves
+the spatial bandwidth Δ kx from free space to the surface-bound ﬁeld, a
+large numerical aperture is required. We deﬁne kxðλÞ = 2π
+λ sinfφðλÞg = 2π
+λx
+in free space, where λ is the free-space wavelength, φ(λ) is the its
+propagation angle with the z-axis, and λx = λ= sin φðλÞ is the transverse
+period of the ﬁeld along x. Our system is limited to a maximum angular
+acceptance φmax  ± 5, a numerical aperture (NA) of ≈0.09, which
+restricts the minimum spatial feature size to ≈9 μm which falls con-
+siderably short of the requirement for an ideal ST-SPP over Δ λ = 110
+nm. To address this challenge, we have implemented a compromise
+regarding the structure of the realized ST-SPP with respect to an ideal
+ST-SPP: (1) we maintain the one-to-one correspondence between ∣kx∣
+and ω that is necessary for diffraction-free propagation; (2) we main-
+tain control over the group velocity ev of the ST-SPP away from that for
+a conventional SPP evSPP in both the subluminal (ev <evSPP) and super-
+luminal (ev >evSPP) regimes; however (3) we allow the spectral projection
+onto the ðkz, ω
+cÞ-plane to be curved such that it lies in the ðkz, ω
+cÞ-plane
+between the SPP light-line and the linear spectral projection for an
+ideal ST-SPP (Fig. 2c). Consequently, we can operate with the available
+system NA, but at the cost of vouchsaﬁng the complete elimination of
+GVD. This is a minimal disadvantage in light of the short SPP propa-
+gation distance limited by ohmic losses.
+The spectral support of the realized ST-SPP is still a 1D curve on
+the surface of the SPP light-cone, but this curve results from the
+intersection of the SPP light-cone with a curved planar surface
+(rather than a plane) designed to yield a V-shaped spectral projec-
+tion onto the ðkx, ω
+cÞ-plane50. For a subluminal ST-SPP (ev <evSPP), this
+projection takes the form ω  ωU = cjkxj tan α, where ωU = ωo + Δω
+2 is
+the maximum frequency, ω < ωU, α is the angle with the kx-axis, and
+tan α < 0.
+For
+a
+superluminal
+ST-SPP
+(ev >evSPP),
+we
+have
+ω  ωL = cjkxj tan α, where ωL = ωo  Δω
+2 is the minimum frequency,
+ω > ωL, and tan α > 0. In both cases, ωo is the central frequency, so
+that ωo  Δω
+2 < ω < ωo + Δω
+2 . This curved surface remains parallel to
+the kx-axis, but its projection onto the ðkz, ω
+cÞ-plane is no longer a
+straight line and is instead a curve that remains closer to the SPP
+light-line than in the case of the ideal ST-SPP (to remain within the
+system NA). The analytical relationship between ST-SPP group
+velocity ev and the angle α is derived in Methods. The GVD coefﬁcient
+for a conventional SPP wave packet in this case is 2.5 × 103 fs2/mm,
+and is 2.5 × 103, 2.3 × 102, and 2.0 × 102 fs2/mm for a striped ST-SPP
+(with λx = 10 μm), a subluminal ST-SPP (with α = −64.5∘), and a
+superluminal ST-SPP (with α = 64. 5°), respectively.
+We plot in Fig. 2 the spectral representation for the subluminal
+ST-SPP (third row) and the superluminal ST-SPP (fourth row). Of
+particular interest is the spatial proﬁle of the out-of-plane ﬁeld for
+both ST-SPPs, which is no longer separable as a result of the non-
+separability of their spatiotemporal spectra. Instead, we observe an
+X-shaped proﬁle reminiscent of free-space STWPs49,51. Crucially, the
+direction of the phase fronts varies across the wave front. In the
+vicinity of the center x = 0, the phase front is orthogonal to the
+propagation axis. However, along the branches of the X-shaped
+proﬁle, the phase fronts are tilted with respect to the z-axis. Cru-
+cially, the sign of this phase-front tilt switches between the sub-
+luminal and superluminal regimes, and the magnitude of the tilt
+angle increases with the deviation of ev from evSPP
+52.
+Experimental arrangement
+We sketch in Fig. 3a the optical arrangement for synthesizing free-
+space STWPs, launching them into ST-SPPs on a metal-dielectric
+interface via scattering from a nano-slit, and observing the propaga-
+tion of surface-bound ST-SPPs via spatially and temporally resolved
+two-photon ﬂuorescence produced from the interference of the ST-
+SPP with a free-space reference pulse. We start with pulses from a
+Ti:sapphire laser oscillator of bandwidth Δ λ ≈110 nm (FWHM), center
+wavelength λo ≈800 nm, and a 10-fs transform-limited pulse duration
+(FWHM). However, the measured pulse width at the sample surface is
+Δ T ≈16 fs (FWHM) because of residual chirp in the optical system.
+Synthesis of ST-SPPs. The STWPs are synthesized from the pulsed laser
+via spatiotemporal spectral phase modulation as established in refs. 28,49.
+The pulse spectrum is spatially resolved by a grating (300 lines/mm), the
+ﬁrst diffraction order is selected and collimated using a cylindrical lens,
+which then impinges on a reﬂective, phase-only spatial light modulator
+(SLM); see Fig. 3a. This SLM imparts a 2D phase distribution to the inci-
+dent wave front to deﬂect each wavelength λ by angles
+± φ(λ) with
+respect to the z-axis, where sinfφðλÞg = ± ð1  λ
+λcÞ cot α. Here λc is the
+minimum (λ > λc) or the maximum (λ < λc) wavelength in the superluminal
+or subluminal regimes, respectively. The reﬂected phase-modulated
+wavefront is directed to a second grating identical to the ﬁrst, whereupon
+the pulse is reconstituted to produce the STWP. For simplicity, the
+synthesis system in Fig. 3a is depicted as retro-reﬂecting from the SLM
+(whereupon the second grating coincides with the ﬁrst); see Methods for
+details.
+Sample preparation and launching ST-SPPs onto a metal-dielectric
+interface. The sample is a 100-nm-thick Ag ﬁlm deposited on a silicon
+substrate. A crucial experimental challenge is to couple a broadband
+free-space STWP to a surface-bound ST-SPP at the metal-dielectric
+interface. We have recently examined theoretically an alternative
+approach to launching free-space STWPs into ST-SPPs that relies on
+scattering from a nano-slit in the metal surface (Fig. 3b)41. This coupling
+strategy retains a high efﬁciency over the bandwidth used here, and is
+thus preferable to conventional approaches for SPP coupling (e.g.,
+gratings or evanescent prism-coupling) that modify the transverse
+wave number or do not operate over large bandwidths. Such a nano-
+slit conserves the transverse wave number kfree
+x
+= kSPP
+x
+= kx, where kfree
+x
+and kSPP
+x
+are the transverse wave numbers for the free-space ﬁeld and
+the launched SPP on either side of the nano-slit, respectively, so that
+the axial wave number is kz = ±
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+k2
+SPP  k2
+x
+q
+.
+Two sets of 170-nm-wide, 100-nm-deep nano-slits were milled into
+the Ag ﬁlm (Fig. 3c, e). One set of nano-slits has a lateral length of 200
+μm and is used to launch ST-SPPs onto the Ag surface when illuminated
+with a free-space STWP (Fig. 3c). When illuminated with a conventional
+pulsed beam of large transverse extent along x, a conventional SPP
+wave packet is launched with a transverse width equal to that of the
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+4
+
+
+=== PDF PAGE 5 ===
+incident ﬁeld (Fig. 3d). The second set of nano-slits has a reduced
+lateral length of 5 μm (Fig. 3e), and is used to launch conventional SPPs
+with a 5-μm-wide spatial proﬁle (Fig. 3f). We have experimentally
+conﬁrmed the efﬁcacy of the nano-slit coupling methodology with
+striped ST-SPPs42, the spatiotemporally separable building blocks of
+ST-SPPs that comprise a single spatial frequency. Our results here
+conﬁrm the theoretical predictions in ref. 41 regarding the broadband
+coupling of STWPs to ST-SPPs. Finally, the sample is coated by a
+30-nm-thick
+dye-doped
+PMMA
+ﬁlm
+to
+form
+a
+two-photon
+ﬂuorescent layer.
+Spatiotemporal characterization of the ST-SPPs. A portion of the
+initial laser pulse (20% by power) is split off to serve as a reference
+pulse, while the remainder (80%) is directed to the above-described
+STWP synthesis system (Fig. 3a). The synthesized STWP that excites
+the ST-SPP is incident obliquely at an angle ψex = −45∘with respect to
+the sample normal, and is focused via a combination of spherical
+mirror and cylindrical lens onto the nano-slit, which launches it onto
+the sample surface (Fig. 3b; Methods)42. The incident free-space ﬁeld is
+launched by the nano-slit in both the forward and backward
+directions53,54 (Fig. 3b). The reference pulse traverses an optical delay
+line τ and is then focused onto the metal surface away from the nano-
+slit to interact with the surface-bound SPP. The interference beat
+pattern of the SPP and the reference pulse excites two-photon ﬂuor-
+escence from the polymer layer55. Because we aim at detecting exclu-
+sively the interference of the reference pulse with the SPP, after
+eliminating any interference between the incident STWP excitation
+and the excited ST-SPP, we make use of the backward-coupled SPP
+(z > 0) rather than the stronger forward-coupled SPP (z < 0); see Fig. 3b.
+Observation of SPPs and ST-SPPs
+Time-resolved measurements. We show in Fig. 3d the ﬂuorescence
+proﬁle of a conventional SPP wave packet with a large transverse
+spatial proﬁle excited by irradiating the nano-slit in Fig. 3c with a
+conventional pump pulse after setting the SLM phase to 0 everywhere;
+i.e., φ(λ) = 0. The beat proﬁle to the left of the nano-slit (z < 0) results
+from self-interference of the launched SPP and the incident free-space
+excitation, which is thus stationary and independent of τ because the
+reference pulse is not involved. The two-photon ﬂuorescence beat
+proﬁle to the right is delimited by the irradiation area of the reference
+pulse on the sample surface (green dashed circle; focal spot
+30 × 60 μm2). The delay τ is adjusted to correspond to the propagating
+SPP wave packet reaching z ~ 30 μm. We deﬁne t as the time incurred by
+the surface-bound SPP (that travels at a group velocity ev) to propagate
+from the nano-slit to the observation location. The time t will be dif-
+ferent from the free-space delay τ placed in the path of the focused
+reference pulse (that travels at a group velocity c= sin ψref along the
+metal surface) to reach the samelocation and produce the interference
+beat pattern; see Methods for the conversion between the delay τ and
+the time t.
+We are now in a position to compare the time-resolved mea-
+surements of conventional SPP wave packets and ST-SPPs. We ﬁrst
+investigate a conventional SPP wave packet where the initial laser
+pulses are focused onto the metal surface at the location of a 5-
+μm-long nano-slit (Fig. 3e). A conventional SPP wave packet is thus
+launched at the metal surface with a ﬂat intensity proﬁle, 5-μm trans-
+verse spatial width, and 16-fs temporal pulse width. The recorded two-
+photon ﬂuorescence beat proﬁle resulting from the launched SPP
+interfering with the reference pulse (focused spot size 60 × 15 μm2) is
+shown in Fig. 3f. The intensity drops due to ohmic losses and dif-
+fractive spreading, and only a faint arc-shaped beat pattern is visible
+when the SPP wave packet reaches z ~ 40 μm.From this intensity proﬁle
+we extract the SPP ﬁeld distribution U(x, z; τ) plotted in the bottom
+panel of Fig. 3 f at ﬁxed delay τ ≈80 fs (Methods); see Supplementary
+Movies 1 and 2.
+In Fig. 4 we plot the experimentally recorded and the computed
+two-photon ﬂuorescence beatproﬁles ata ﬁxed delay τ (Methods) for a
+conventional SPP of width 5 μm (Fig. 4a,b); a striped ST-SPP with
+transverse period
+≈10 μm (Fig. 4c,d); a subluminal ST-SPP with
+α = −64. 5∘(Fig. 4e,f); and a superluminal ST-SPP with α = 64. 5∘(Fig. 4g,
+h). The differences in the wave packet center position and the extent of
+the interference envelopes are attributed to uncertainties in the time
+origin, spatial inhomogeneity in the ﬂuorescent ﬁlm, and variations in
+the intensity distribution of the probe beam. Typical time-resolved
+measurements of ST-SPPs are provided in Supplementary Movies 3–6.
+Computed spatiotemporal proﬁles capture all the key features of their
+Laser
+CCD
+G
+S
+SLM
+F
+Mf
+LS
+LC
+Mf
+Mf
+LC
+τ
+Delay
+line
+Mf: focusing
+mirror
+L: lens
+G: grating
+S: sample
+F: filter
+nano-slit
+-50
+0
+50
+reference
+pulse
+x (μm)
+1
+0
+x
+z
+τ≈100 fs
+0
+20
+40
+z (μm)
+nano-slit
+60
+x (μm)
+-20
+λbeat
+λlight
+excitation
+pulse
+SPP
++
+SPP
++
+0
+20
+40
+z (μm)
+60
+-20
+nano-slit
+w=170 nm
+L=5 μm
+L=200 μm
+Ag
+x (μm)
+10
+-10
+0
+10
+-10
+0
+τ≈80 fs
+nano-slit
+nano-slit
+Ag
+Si
+excitation
+x
+y
+z
+reference
+pulse
+forward SPP
+backward SPP
+ψex
+ψref
+U(x,z;τ)
+b
+d
+1
+-1
+c
+e
+f
+a
+Fig. 3 | Experimental arrangement for synthesizing, launching, and observing
+ST-SPPs. a Schematic of the setup for synthesizing free-space STWPs, launching
+them onto the sample, and imaging of the surface-bound ﬁeld. b Schematic of the
+sample irradiation conﬁguration. The STWP incidence angle is ψex = −45∘to the
+surface normal, and the reference pulse incidence angle is ψref = 45∘. c SEM
+micrograph of the nano-slit milled into the Ag ﬁlm. The inset shows a section of the
+nano-slit. d Two-photon ﬂuorescence beat proﬁle I(x, z; τ) at a ﬁxed delay τ for a
+conventional SPP wave packet launched from the nano-slit. The yellow curve at the
+bottom is the axial proﬁle I(z; τ) = ∫dx I(x, z; τ) at a ﬁxed τ. The red arrow at the top
+indicates the nano-slit location. Dashed orange lines enclose the irradiation area of
+the excitation, and the dashed green circle encloses that for the reference pulse.
+e SEM micrograph of the 5-μm-long nano-slit used to launch a conventional SPP
+wave packet of that width. f The two-photon ﬂuorescence beat pattern (upper
+panel) after irradiating the nano-slit in (e), and the extracted ﬁeld U(x, z; τ) (lower
+panel), both at ﬁxed delay τ ≈80 fs (see Supplementary Movies 1 and 2). The dotted
+black curves correspond to the width of a Gaussian beam of width 5 μm (1/e2 full
+width of the intensity), and serve as a guide for the eye.
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+5
+
+
+=== PDF PAGE 6 ===
+measured counterparts. Crucially, the different phase front structures
+predicted in Fig. 2d are clearly observable, as depicted in the insets of
+the corresponding panels in Fig. 4. Whereas the conventional SPP has a
+ﬂat phase front orthogonal to the z-axis (Fig. 4a, b, and Fig. 2d, ﬁrst
+row), the striped ST-SPP has a checkered lattice-like structure
+(Fig. 4c,d, and Fig. 2d, second row). The phase front for the subluminal
+ST-SPP away from its center is tilted with respect to the z-axis (Fig. 4e, f,
+and Fig. 2d, third row). The sign of this phase-front tilt is reversed for
+the superluminal ST-SPP (Fig. 4g, h, and Fig. 2d, fourth row). The
+remaining quantitative differences between the computed and mea-
+sured proﬁles in Fig. 4 are attributed to the residual chirp in the laser
+pulses, additional chirp encumbered in the STWP synthesis system,
+and spectral dissipation at the metal surface.
+We have thus conﬁrmed that the nano-slit is capable of launching
+free-space STWPs onto the metal surface as ST-SPPs, and that our
+experimental conﬁguration can capture the time-resolved structure of
+the surface-bound, propagating ST-SPPs. We proceed to utilize this
+capability to verify two key features of ST-SPPs: their diffraction-free
+propagation, and the controllability of their group velocity (ev) above
+and below that of a conventional SPP (evSPP).
+Diffraction-free propagation of ST-SPPs. To verify the diffraction-
+free behavior of the ST-SPPs, we evaluated the intensity proﬁles
+I(x, z) = ∫dτ∣Ubeat(x, z; τ)∣2 at different axial positions by time-integration
+of the extracted ﬁeld proﬁles Ubeat(x, z; t) obtained by removing
+background intensity from the two-photon ﬂuorescence beat proﬁles
+(Methods). We plot in Fig. 5 the time-averaged intensity proﬁles for the
+striped ST-SPP (Fig. 5a), the subluminal ST-SPP (Fig. 5b), and the
+superluminal ST-SPP (Fig. 5c). For each case, we plot the intensity
+proﬁles obtained after focusing the reference pulse at two different
+axial positions along the sample surface: at z ≈35 μm and z ≈85 μm
+measured from the location of the nano-slit.
+In contrast to a conventional SPP wave packet whose proﬁle dif-
+fracts rapidly with propagation (Fig. 3f), the proﬁles of the ST-SPPs
+remain unchanged over the same propagation distance. In the case of
+the striped ST-SPP, this is to be expected because it contains only a
+single transverse wave number (i.e., an extended cosine wave proﬁle).
+The limited transverse proﬁle is a result of the narrow reference pulse
+irradiation spot utilized at the sample surface. The intensity proﬁles in
+Fig. 5a demonstrate that the striped ST-SPP maintains the same proﬁle
+over a range of ≈5 × the Rayleigh range (zR ≈18.2 μm; Methods). The
+transverse proﬁles of the subluminal (Fig. 5b) and superluminal
+(Fig. 5c) ST-SPPs are also maintained over the distance examined,
+which is over ≈4 × Rayleigh lengths (the Rayleigh length is zR ≈21 μm).
+The reduced visibility in these time-averaged proﬁles compared to the
+time-resolved measurements in Fig. 4e,g is attributed to the integra-
+tion over the full spatiotemporal ﬁeld, which includes a broadband
+55
+35
+15
+b
+x (μm)
+c
+105
+85
+65
+z (μm)
+x (μm)
+z (μm)
+0
+1
+5.1 μm
+4.9 μm
+4.8 μm
+4.9 μm
+superluminal ST-SPP
+subluminal ST-SPP
+Δx
+striped ST-SPP
+a
+0
+45
+-45
+x (μm)
+9.4 μm
+0
+1
+λx
+9.4 μm
+0
+1
+0
+45
+-45
+0
+45
+-45
+Fig. 5 | Diffraction-free propagation of ST-SPPs. We plot the measured time-
+averaged intensity proﬁles for a a striped ST-SPP, b a subluminal ST-SPP, and c a
+superluminal ST-SPP. Time-averaged intensity proﬁles I(x, z; τ) are measured at two
+locations for the reference pulse. The left panel corresponds to the reference pulse
+focused near the nano-slit at 15 < z < 55 μm (with delay in the range τ ≈20 −130 fs),
+and the right panel to the reference pulse focused away from it at 65 < z < 105 μm
+(τ ≈130−230 fs). The intensity proﬁles I(x) plotted to the right of each panel are
+obtained by axial integration I(x) = ∫dz I(x, z) over the range identiﬁed by the black
+arrows on top (red curves), along with least-square ﬁts (blue curves). The overall
+intensity distribution of the ﬂuorescence proﬁles is affected by the irradiated
+region of the reference light. The Rayleigh ranges for the corresponding beam
+waists are 18.2 μm for the striped ST-SPP and 21 μm for the superluminal and
+subluminal ST-SPPs, respectively.
+a
+z (μm)
+65
+35
+20
+50
+-45
+45
+0
+x (μm)
+b
+5
+65
+35
+20
+50
+-45
+45
+0
+x (μm)
+z (μm)
+τ = 76 fs
+measured
+calculated
+d
+c
+5
+-45
+45
+0
+x (μm)
+5
+65
+35
+subluminal ST-SPP
+superluminal ST-SPP
+20
+50
+z (μm)
+-45
+45
+0
+x (μm)
+5
+65
+35
+20
+50
+z (μm)
+τ = 72 fs
+(t =161 fs)
+measured
+calculated
+e
+f
+h
+g
+conventional SPP
+striped ST-SPP
+τ = 76 fs
+τ = 78 fs
+(t =155 fs)
+(t =159 fs)
+(t =159 fs)
+Fig. 4 | Time-resolved two-photon ﬂuorescence beat proﬁles for SPPs and ST-
+SPPs. a Measured two-photon ﬂuorescence beat proﬁles I(x, z; τ) at a ﬁxed delay τ
+produced by the interference of a conventional SPP wave packet (of transverse
+spatial width 5 μm) with the reference pulse. Inset is a contrast-adjusted magniﬁed
+view of the area enclosed in the dashed white rectangle (10 × 16 μm2) to highlight
+the ﬂat wave front. b Calculated proﬁle I(x, z; τ) corresponding to the measurement
+in (a); see Methods. c, d Same as a, b but for a striped ST-SPP with λx ≈10 μm.
+e, f Same asa, b but for a subluminalST-SPP; and g, h for a superluminal ST-SPP. The
+white dashed lines are guides for the eye representing the propagating wavefronts,
+and the insets highlight the tilted wave fronts at the edges of the ST-SPPs. All the
+two-photon ﬂuorescence micrographs are acquired at a delay τ ≈75 fs. The time t
+listed at the bottom left of the calculated proﬁles is that needed for each SPP to
+reach z = 35 μm (Methods). The focused spot size of the reference pulse was
+≈60 × 15 μm2 in (a–d), and ≈30 × 50 μm2 in (e–h).
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+6
+
+
+=== PDF PAGE 7 ===
+pedestal that partially obscures the localized structures.28,49 In all cases,
+the integrated cross-section along x plotted in the right panel is rea-
+sonably ﬁtted by the (superposition) of Gaussian functions (repre-
+senting the focused spot of the reference pulse) and the square of the
+sinusoidal-Gaussian function (representing the ST-SPP). The propaga-
+tion distance here is limited by the ohmic losses. It is expected that the
+diffraction-free behavior extends signiﬁcantly beyond 4zR, which can
+become manifest by increasing the NA and reducing the width Δ x of
+the ST-SPP (reducing zR signiﬁcantly below the loss-restricted propa-
+gation distance).
+Tuning of the group velocity of ST-SPPs. A unique feature of ST-
+SPPs is the possibility of tuning their group velocity by modifying
+only the structure of their spatiotemporal spectrum – without
+changing the sample itself. The group velocities of the ST-SPPs were
+estimated by examining a sequence of time-resolved two-photon
+ﬂuorescence beat proﬁles. All group velocity measurements were
+performed at a ﬁxed location on the sample to eliminate variability
+arising
+from
+spatial
+inhomogeneity
+in
+the
+ﬂuorescent
+ﬁlm.
+Additionally, the delay time τ was adjusted such that the center of
+the ST-SPP wave packet appeared at z = 0 when t = 0. An example is
+shown in Fig. 6a corresponding to the striped ST-SPP. For different
+values of the relative delay τ, we extract the ﬁeld structure U(x, z; τ)
+and then ﬁt (in the least-square sense) a sinusoidally modulated
+Gaussian function to the axial ﬁeld U(0, z; τ) at each τ (Fig. 6a). We
+take the peak of this ﬁtted function to be the axial center-of-weight z
+of the propagating ST-SPP. The delay τ was converted into propa-
+gation time t of the ST-SPP on the metal surface by factoring in that
+the surface-bound ST-SPP travels at a group velocity ev, whereas the
+reference pulse travels at c= sin ψref along the surface (Methods). We
+plot in Fig. 6b the measured axial positions z of the striped ST-SPP
+with real time t, and the estimated slope yields the group velocity
+evSPP = ð2:22 ± 0:004Þ × 108 m/s (0.74c), which is consistent with the
+group velocity of a conventional SPP evSPP = 2:22 × 108 m/s obtained
+from the ﬁrst derivative of the dispersion curve of the SPP mode at
+the PMMA-coated Ag surface.
+We repeated the procedure for the subluminal and superluminal
+ST-SPPs, and the estimated group velocities are ev = ð2:18 ± 0:02Þ × 108
+m/s (≈0.73c) and ev + = ð2:28 ± 0:03Þ × 108 m/s (≈0.76c), respectively.
+The
+relative
+relationships
+of
+the
+measured
+group
+velocities
+ev <evSPP <ev + are thus consistent with theoretical expectations and
+with the wavefront tilts in the two-photon ﬂuorescence beat patterns
+in Fig. 4. We plot in Fig. 6c the measured group velocities compared to
+ev calculated as a function of the opening angle α after taking into
+consideration the uncertainty resulting from the ﬁnite accuracy of
+determining the thickness (30 ± 2.5 nm) of the ﬂuoresecent
+PMMA layer.
+Discussion
+We have conﬁrmed that broadband ST-SPPs with complex separable
+and non-separable spatiotemporal structures can be excited at a
+metal-dielectric interface from a free-space STWP via a nano-slit
+milled into the metal surface. By appropriately sculpting the free-
+space spatiotemporal spectrum, we synthesized a variety of ST-SPP
+structures,
+monitored
+the
+time-resolved
+surface-bound
+ﬁelds,
+observed their signature wave-front tilt, conﬁrmed their diffraction-
+free propagation along a straight line, and veriﬁed that their group
+velocity ev can be tuned above (superluminal) and below (subluminal)
+that of a conventional SPP wave packet having the same bandwidth.
+The demonstrated tuning range of ev was limited by the numerical
+aperture of our optical system (NA ≈0.09), given the broad spectral
+bandwidth (~110 nm) required to ensure sufﬁcient temporal resolu-
+tion for resolving the propagation dynamics. However, the coupling
+efﬁciency is not signiﬁcantly affected by the group velocity, and
+simulations have conﬁrmed that ST-SPPs with a broader group
+velocity range can be excited41. Accordingly, broader tunability of ev
+can be achieved by increasing the NA or reducing the spectral
+bandwidth.
+This work builds upon our previous demonstration of striped ST-
+SPPs42, sharing the femtosecond laser source and a single-nano-slit
+light-SPP coupling strategy. While retaining these foundations, the
+present study signiﬁcantly extends the experimental framework to
+access a broader class of ST-SPPs35. Speciﬁcally, whereas the prior work
+treated separable ST-SPPs associated with a single transverse spatial
+frequency kx, the current setup accommodates spatiotemporalspectra
+with ﬁnite spatial bandwidths, thereby enabling the excitation of non-
+separable ST-SPPs with tunable group velocity.
+By incorporating an interferometric detection scheme, we can
+now obtain time-resolved measurements of the evolving ST-SPP
+ﬁeld–rather than the time-averaged intensity proﬁles used pre-
+viously. This capability allows direct evaluation of both the spatio-
+temporal
+structure
+of
+the
+wave
+packet
+and
+its
+propagation
+characteristics. The detection scheme developed here may be useful
+investigating the temporal evolution of light-matter interaction of
+a
+striped ST-SPP
+U(0,z;τ)
+U(x,z;τ)
+τ = 48 fs
+75 fs
+102 fs
+129 fs
+156 fs
+183 fs
+z (μm)
+0
+20
+40
+60
+80
+100
+20 μm
+x
+z (μm)
+80
+60
+40
+20
+0
+b
+400
+300
+200
+100
+0
+time t (fs)
+c
+-π/2
+0
+v/c
+α (rad)
+π/2
+Theory
+Experiment
+0.82
+0.78
+0.74
+0.70
+0.66
+superluminal
+subluminal
+striped
+superluminal
+subluminal
+v
+0.82
+0.65
+Fig. 6 | Tuning the group velocity of ST-SPPs. a The real part of the extracted ﬁeld
+proﬁles U(x, z; τ) for a striped ST-SPP at different delays τ (listed on the right). We
+plot underneath each proﬁle the longitudinal section U(x = 0, z; τ). Each peak
+position was obtained by least-square ﬁtting with a sinusoidally modulated Gaus-
+sian wave packet. b The axial center coordinate z of the peak of the intensity beat-
+proﬁle from a plotted as a function of real time t (of the propagating striped ST-
+SPP) calculated from the external delay time τ (of the reference pulse; Methods).
+The corresponding range of the values of the delay is τ = 0 −200 fs. c Measured and
+calculated group velocities for the ST-SPPs (striped, superluminal, and subluminal).
+The solid curves are the calculated group velocities for ST-SPPs with Δx = 5 μm. The
+uncertainty bands surrounding the theoretical curves ev result from a ± 2.5-nm
+uncertainty in the thickness of the 30-nm-thick ﬂuorescent PMMA layer.
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+7
+
+
+=== PDF PAGE 8 ===
+structured light on small lengths and time scales. By demonstrating the
+feasibility of launching broadband ST-SPPs at a metal-dielectric inter-
+face, this proof-of-principle experiment thus extends the frontier of
+the burgeoning ﬁeld of spatiotemporally structured optical ﬁelds into
+plasmonics and surface waves in general, including potentially water
+waves and surface acoustic waves.
+A plethora of avenues for further investigation can now be pur-
+sued. The experimental arrangement is so far limited by the numerical
+aperture within the paraxial regime. An immediate extension would
+involve increasing the numerical aperture of the free-space synthesis
+system, thereby increasing the spatial bandwidth of the STWP,
+resulting in stronger focusing of the excited ST-SPPs, with wavelength-
+scale and potentially sub-wavelength scale transverse spatial width35.
+Here, the unique advantages of ST-SPPs with regards to diffraction-free
+propagation
+become
+more
+pronounced,
+potentially
+reaching
+~300 × zR for Δ x ≈3 μm (reaching 1/e of its initial on-axis peak value at
+z = 2100zR)35. Another improvement in ﬁeld localization can be
+achieved in the unique context of SPPs. The central spatial feature of
+the ST-SPP rides atop a broad pedestal, which drops signiﬁcantly as we
+increasethe spectral uncertainty undergirding the launched free-space
+STWP23. In previous work in free space, efforts have been devoted to
+reducing the spectral uncertainty in order to increase the propagation
+distance Lmax. This is not a pressing concern here for ST-SPPs (as it is
+for free-space optical communications, for example) in light of the
+typical SPP decay lengths35,52. As long as Lmax  40 μm, one may
+increase δλ accordingly and thus substantially reduce the background
+term in the time-averaged intensity23.
+Recent studies have shown that structured SPPs can possess both
+in-plane and out-of-plane spin angular momentum56,57, which raises the
+intriguing possibility of structured SPP wave packets, such as ST-SPPs
+having three-dimensional spin textures52, and hence the potential for
+observing the interaction between structured SPPs and electron spin in
+magnetic materials. Another intriguing possibility is to exploit axial
+acceleration of ST-SPPs58 in contrast to transverse acceleration of
+SPPs43 induced by curved Airy beams is envisioned as a potential route
+for inducing radiation from the metal surface. Finally, our work opens
+new avenues for combining spatiotemporally structured light with the
+ﬁeld localization associated with nanophotonics. The tunable group
+velocity of the ST-SPPs (which also includes a negative-ev regime35) may
+enable phase-matching of nonlinear effects in thin ﬁlms. Finally, ST-
+SPPs can be designed to become omni-resonant59 with surface Fabry-
+Pérot cavities60, such that the full bandwidth of broadband ST-SPPs
+couples to a single axial resonant mode. This raises the possibility of
+resonant – yet broadband – ﬁeld enhancement at the metal interface
+for surface-enhanced Raman scattering (SERS) detection of molecules
+and pathogens.
+Methods
+Calculating the SPP and ST-SPP electric-ﬁeld distributions
+The calculated proﬁles of the out-of-plane electric ﬁelds for the SPPs
+and ST-SPPs plotted in Fig. 2d assume a 100-nm-thick Ag ﬁlm on a Si
+substrate, with a 30-nm-thick PMMA coating clad with free space. The
+SPP dispersion curve kSPP(ω) was calculated using a model proposed
+by Pockrand61, and employed the dielectric function for Ag proposed
+by Rakic et al.62. The measured refractive index of PMMA is n ≈1.53 at
+the operating wavelength. We take the pulse spectrum to be ~EðωÞ,
+which
+is
+the
+Fourier
+transform
+of
+the
+pulse
+proﬁle
+EðtÞ =
+R
+dω eEðωÞeiωt. We assume a Gaussian proﬁle in time:
+EðtÞ = Eo eiωot exp 
+t2
+22ðΔTÞ2
+ 
+!
+,
+ð1Þ
+where Δ T = 10 fs is the FWHM of the intensity proﬁle, and ωo
+2π = 375 THz.
+In general, the out-of-plane ﬁeld is given by:
+Eðx, z; tÞ =
+Z Z
+dkxdω eψðkx, ωÞ eiðkxx + kzziωtÞ,
+ð2Þ
+where eψðkx, ωÞ is the spatiotemporal spectrum, which is the Fourier
+transform of the initial ﬁeld E(x, 0; t). The ﬁrst row in Fig. 2 corresponds
+to a conventional SPP wave packet, where eψðkx, ωÞ is separable,
+eψðkx, ωÞ = eψðkxÞeEðωÞ; here eψðkxÞ is the spatial spectrum of the excited
+SPP and assumed also to have a Gaussian proﬁle.
+The second row in Fig. 2 corresponds to a striped ST-SPP.
+The
+spatiotemporal
+spectrum
+is
+once
+again
+separable
+eψðkx, ωÞ = fδðkx  kxoÞ + δðkx + kxoÞgeEðωÞ. The electric-ﬁeld distribution
+is thus given by:
+Eðx, z; tÞ / cosðkxoxÞ
+Z
+dω ~EðωÞeiðkzðωÞzωtÞ,
+ð3Þ
+where the spatial frequency kxo is ﬁxed and is independent of ω, so that
+the transverse spatial DoF is separable with respect to the axial spatial
+and temporal DoFs. Consequently, the striped ST-SPP is diffraction-
+free (the transverse spatial proﬁle does not change with propagation),
+but it is not localized.
+The third and fourth rows in Fig. 2 correspond to subluminal and
+superluminal ST-SPPs, respectively. The spatiotemporal spectrum is
+no longer separable, in which ω and ∣kx∣are in one-to-one correspon-
+dence after selecting a value for the angle α. The ﬁeld distribution for
+the ST-SPP is given by:
+Eðx, z; tÞ /
+Z
+dω ~EðωÞ cosfkxðωÞxgeifkzðωÞzωtg,
+ð4Þ
+which is not separable with respect to the spatial and temporal DoFs. In
+all cases we have kzðωÞ =
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+k2
+SPPðωÞ  k2
+x
+q
+, and we take the same spectral
+proﬁle eEðωÞ used above for the conventional SPP, the striped ST-SPPs,
+and the ST-SPPs.
+Relationship between the spectral tilt angle θ and the opening
+angle α
+We deﬁne the axial group velocity ev of the ST-SPP in the usual way as
+ev =
+dkz
+dω jωo
+
+1
+. For the V-shaped spectra realized here (Fig. 2a, b, third
+and fourth rows), tuning the opening angle α varies θ, and thus in turn
+ev. For subluminal ST-SPPs we have ω  ωU = cjkxj tan α, where
+ωU = ωo + Δω
+2 is the upper temporal frequency in the spectrum, ω < ωU
+and
+tan α < 0
+(−90∘
+<
+α
+<
+0).
+The
+axial
+wave
+number
+is
+kzðωÞ =
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+k2
+SPPðωÞ  k2
+xðωÞ
+q
+, and we make use of a Taylor expansion for
+kSPP(ω): kSPP  k0
+o +
+Ω
+evSPP + 1
+2 k2Ω2, where evSPP and k2 are the group
+velocity and GVD coefﬁcient for a plane-wave pulsed SPP, respectively,
+and k2
+xðωÞ =
+ΩΔω=2
+c tanα
+
+2
+. We can thus write kz =
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+A + 2BΩ + CΩ2
+p
+, where:
+A = k02
+o  ðΔkÞ2
+4tan2α, B =
+k0
+o
+evSPP +
+Δk
+2ctan2α, C = k0
+ok2 +
+1
+ev
+2
+SPP
+
+1
+c2tan2α, and Δk = Δω
+c . We
+now have the following expression for the group velocity:
+ev =
+dkz
+dΩ jΩ = 0
+
+1
+=
+ﬃﬃﬃ
+A
+p
+B :
+ð5Þ
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+8
+
+
+=== PDF PAGE 9 ===
+Deﬁning a group index en = c
+ev = cot θ for the ST-SPP and enSPP =
+c
+evSPP for a
+conventional SPP wave packet, we have:
+en =
+enSPP + Δk=k0
+o
+2tan2α
+
+
+1 + ðΔk=k0
+oÞ
+2
+8tan2α
+ 
+!
+,
+ð6Þ
+so that en > enSPP (ev <evSPP) as expected for a subluminal ST-SPP.
+For the superluminal ST-SPP we have ω  ωL = cjkxj tan α, where
+ωL = ωo  Δω
+2 is the lower temporal frequency in the spectrum, ω > ωL
+and tan α > 0 (0 < α < 90°). The coefﬁcients A and C are identical to
+those for the subluminal ST-SPP, and B =
+k0
+o
+evSPP 
+Δk
+2ctan2α, so that the group
+index for the ST-SPP is:
+en =
+enSPP  Δk=k0
+o
+2tan2α
+
+
+1 + ðΔk=k0
+oÞ
+2
+8tan2α
+ 
+!
+,
+ð7Þ
+and to ﬁrst order we have en  ðenSPP  Δk=k0
+o
+2tan2αÞ, en < enSPP (ev >evSPP) as
+expected for a superluminal ST-SPP.
+Synthesizing free-space STWPs
+The light source used in our experiments is a custom-built Ti:sapphire
+laser oscillator with a transform-limited pulse duration of 10 fs, center
+wavelength λo = 800 nm, FWHM-bandwidth Δ λ ≈110 nm, a repetition
+rate 90 MHz, and average power ≈400 mW. The spectrum is mea-
+sured via a spectrometer (Ocean Optics HR4000) after coupling to an
+optical ﬁber with diameter 200 μm. Because of residual chirp accu-
+mulated through various optical components such as lenses, gratings,
+and the SLM, the pulses are not transform-limited, and instead have a
+pulse duration of Δ T ≈16 fs at the sample surface. The pulse width is
+estimated by a home-built auto-corrrelator55.
+A portion of the laser power (20%) is reserved for subsequent use
+as a reference pulse. The remainder of the laser power (80%) is
+directed by a beam splitter to an optical system for synthesizing
+STWPs built along the lines described in ref. 28. The spectrum of the
+femtosecond pulse is spatially resolved by a grating (300 lines/mm),
+collimated by a cylindrical lens Lc (focal length f = 250 mm), and
+directed to a 2D phase-only, reﬂective SLM (Hamamatsu X13138-07).
+Each wavelength λ occupies a column of the SLM, along which the SLM
+imparts a spatial phase distribution ± 2π
+λ sinfφðλÞgx. The overall 2D
+phase distribution imparted to the wave front corresponds to each
+wavelength being deﬂected by a prescribed propagation angle ± φ(λ)
+to yield the target relationship between kx and λ. The reﬂected phase-
+modulated, spectrally resolved wavefront is directed to a second
+grating (identical to the ﬁrst), whereupon the pulse is reconstituted to
+produce an STWP, which is then directed to the sample to excite an
+ST-SPP.
+Sample fabrication
+The sample was prepared by ﬁrst depositing a 100-nm-thick Ag layer
+on a Si substrate via sputtering. The nanoslit structure was then milled
+into the Ag surface using a focused ion beam. The dimensions of the
+nanoslit are as follows: width w = 170 nm, depth h = 100 nm into the Ag
+layer, and extending across the sample by a length L = 200 μm (Fig. 3c).
+These were used to excite the ST-SPPs, including the striped ST-SPPs,
+and the subluminal and superluminal ST-SPPs (Figs. 4, 6, and 5). This
+nano-slit was also used to excite the conventional plane-wave SPP wave
+packet (Fig. 3d). A second set of nano-slits was prepared with the same
+dimensions w and h, but with length L = 5 μm (Fig. 1e). These nano-slits
+were used to excite conventional SPP wave packets with 5-μm-wide
+transverse proﬁles (Fig. 3f).
+The full sample area was spin-coated with a 30-nm-thick poly
+(methyl methacrylate) (PMMA) layer doped with a laser dye (coumarin
+343). The thickness of the coating was measured by spectral ellipso-
+metry (Uvisel plus), from which we estimated an uncertainty in the
+coating thickness of ~ 5 nm. This in turn results in an uncertainty in
+estimating the SPP group velocity of ~ 0.1 × 108 m/s.
+SPP detection
+Two wave packets overlap and interfere in the ﬂuorescent polymer
+layer: the free-space incident reference pulse and the surface-bound
+SPP. The interference of these two wave packets produces a beat
+proﬁle that excites two-photon ﬂuorescence. The two-photon-
+ﬂuorescence emission from the sample surface is collected with an
+objective lens (M Plan Apo SL20X, Mitutoyo) equipped with a band-
+pass ﬁlter transmitting light in the range 475−495 nm (Semrock, FT-02-
+485/20-25), followed by a CCD camera (Rolera EM-C2, QImaging). The
+two-photon ﬂuorescence signal is expected at a wavelength ≈490 nm
+from the dye used.
+In this study, we chose a ﬁeld of view of approximately
+150 × 150 μm, which allowed simultaneous imaging of both the light-
+SPP coupler and the full extent of the ST-SPP wave packet, while
+maintaining the spatial resolution required for accurate phase retrie-
+val. As a result, the observation range was primarily limited to
+approximately 100 μm from the slit, despite the ST-SPPs propagating
+beyond this distance.
+Calculating the SPP intensity proﬁle
+The intensity distribution I(x, z; τ) on the sample surface detected by
+the CCD camera is the time-average of the fourth power of the total
+electric ﬁeld55:
+Iðx, z; τÞ =
+Z
+dt jESPPðx, z; tÞ + Efreeðx, z; t + τÞj2
+
+2;
+ð8Þ
+Here, a proportionality constant is ignored because we are only
+interested in the relative intensity. The term ESPP and Efree are the scalar
+ﬁeld components of the excited SPP and the free-space ﬁelds,
+respectively, that overlap in the PMMA ﬁlm. The interference of the
+two ﬁelds produces a spatial pattern having a spatial beat wavelength
+λbeat given by:
+λbeat =
+2π
+jkz  ko sin ψrefj ,
+ð9Þ
+where kz(ωo, kx) is the SPP axialwave number atω = ωo, and ko sin ψref is
+the in-plane axial wave number of the incident free-space ﬁeld of the
+reference pulse. Similarly, the interference beat between the pump-
+probe pulse pair is λlight =
+2π
+jko sin ψexko sin ψrefj, where ko sin ψex is the in-
+plane axial wave number of the incident free-space ﬁeld of the pump
+pulse. Therefore, the intensity, phase, and spatial distribution of the
+SPP wave packet can be extracted from the observed beat pattern
+through appropriate analysis. However, it is important to note that the
+beat pattern is not a direct representation of the SPP ﬁeld itself. In
+particular, due to the interference-based nature of the detection
+method, the spatial frequency of the beat does not directly correspond
+to the SPP wavevector, and the detected signal decays more rapidly
+than the actual SPP ﬁeld because it scales with the fourth power of the
+electric ﬁeld amplitude. When employing ψex and ψref with the same
+signs to observe forward-coupling SPP, λlight ≈λbeat if the values of ψex
+and ψref are comparable, making differentiation between them
+difﬁcult. Consequently, we employed a contrasting conﬁguration in
+which the signs of ψex and ψref are opposite of each other, such that
+λlight is signiﬁcantly less than λSPP, thereby facilitating their delineation.
+The interference beats caused by this pump-probe pulse pair can be
+seen as the intensity distribution moving from right to left at the
+beginning of Supplementary Movies 1 and 3.
+Intensity proﬁles in Fig. 4 were calculated from the two-photon
+ﬂuorescence signal resulting from the interference of the ST-SPP and
+the incident free-space conventional reference pulse. The intensity
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+9
+
+
+=== PDF PAGE 10 ===
+proﬁle was calculated using Eq. (8) and assuming that both the ST-SPP
+and
+reference
+pulses
+are of
+width
+≈
+16
+fs
+as
+determined
+experimentally.
+Removing the background
+To extract the ﬁeld distribution U(x, z; τ) from the measured two-
+photon ﬂuorescence, we need to experimentally estimate the back-
+ground constants. This is achieved by changing the delay τ in the path
+of the reference pulse by 2.7 fs, which corresponds to moving the
+excitation-reference interference beat proﬁle by the laser carrier
+wavelength laser λo (a phase shift of 2π rad), and carrying out the time-
+resolved measurements. To obtain the background intensity, we ﬁrst
+obtain the time-resolved ﬁeld U(x, z; τ) from the interference beat
+proﬁles, and then obtain their average Uðx, z; τÞ evaluated over an
+optical cycle:
+Uðx, z; τÞ = 1
+m
+X
+m
+i = 1
+U
+x, z; τ + ði  2Þ × 2:7
+m
+
+
+:
+ð10Þ
+In our work here, we have used m = 2 or 4 according to the exposure
+time used to avoid bleaching the ﬂuorescence layer during laser irra-
+diation. This averaging eliminates the excitation-reference oscillatory
+beat proﬁle and extracts only the delay-independent background. This
+procedure assumes that minimal spatial change occurs in the SPP
+proﬁle while advancing τ by 2.7 fs. By subtracting the averaged proﬁle
+Uðx, z; τÞ from the time-resolved proﬁles U(x, z; τ) we obtain the
+background-free proﬁle of the pump-probe beat pattern at τ,
+Ubeatðx, z; τÞ = Uðx, z; τÞ  Uðx, z; τÞ. This procedure yields the ﬁeld
+proﬁle displayed in the bottom panel of Figs. 3f,
+6a, and
+Supplementary Movies 2 and 4.
+Rayleigh range
+The intensity distribution of the microscopic ﬂuorescence beat images
+obtained via two-photon ﬂuorescence are not proportional to the
+electric ﬁeld intensity. We estimate the beam waist of the striped ST-
+SPP by obtaining λx by ﬁtting the striped ST-SPP to a sinusoidal dis-
+tribution along x. For a striped ST-SPP with λx ≈9.4 μm, the beam waist
+is 2.15 μm, corresponding to a Rayleigh range zR ≈18.2 μm at a wave-
+length of 800 nm.
+Group-velocity calculation
+The two-photon ﬂuorescence beat pattern is formed by the spatial
+overlap of the SPP propagating at a group velocity ev and the reference
+pulse traveling along the sample surface at a group velocity
+ev = c= sin ψref, where ψref is the reference-pulse incident angle. We need
+to convert the external relative delay τ between the excitation and
+reference pulses to the propagation time t of the surface-bound SPP.
+As the SPP travels after a time t a distance z1 =evt, whereas the delayed
+reference pulse travels a distance z2 =
+c
+sin ψref ðt  τÞ. For the two wave
+packets to meet at z1 = z2 = zo, and thus a two-photon ﬂuorescence beat
+proﬁle to be observed in the vicinity of zo, we have τ = zo
+1
+ev  sin ψref
+c
+
+
+.
+This leads to the sought-after conversion t = τð1 ev
+c sin ψrefÞ
+1
+. This
+conversion between t and τ was used in plotting Fig. 4 and 6b.
+Data availability
+All data supporting the ﬁndings of this study are available within the
+article and its Supplementary Movies. The raw ﬂuorescent images are
+openly
+accessible
+on
+Figshare
+under
+the
+DOI:
+10.6084/
+m9.ﬁgshare.30225220.
+References
+1.
+Zayats, A. V., Smolyaninov, I. I. & Maradudin, A. A. Nano-optics of
+surface plasmon polaritons. Phys. Rep. 408, 131–314 (2005).
+2.
+Stockman, M. I. et al. Roadmap on plasmonics. J. Opt. 20,
+043001 (2018).
+3.
+Anker, J. N. et al. Biosensing with plasmonic nanosensors. Nat.
+Mater. 7, 442–453 (2008).
+4.
+Zhang, Y. et al. Plasmonic tweezers: for nanoscale optical trapping
+and beyond. Light Sci. Appl. 10, 59 (2021).
+5.
+Berweger, S., Atkin, J. M., Olmon, R. L. & Raschke, M. B. Adiabatic
+tip-plasmon focusing for nano-raman spectroscopy. J. Phys. Chem.
+Lett. 1, 3427–3432 (2010).
+6.
+Umakoshi, T., Tanaka, M., Saito, Y. & Verma, P. White nanolight
+source for optical nanoimaging. Sci. Adv. 6, eaba4179 (2020).
+7.
+Haffner, C. et al. Low-loss plasmon-assisted electro-optic mod-
+ulator. Nature 556, 483–486 (2018).
+8.
+Ono, M. et al. Ultrafast and energy-efﬁcient all-optical switching
+with graphene-loaded deep-subwavelength plasmonic wave-
+guides. Nat. Photon. 14, 37–43 (2020).
+9.
+Eppenberger, M. et al. Resonant plasmonic micro-racetrack mod-
+ulators with high bandwidth and high temperature tolerance. Nat.
+Photon. 17, 360–367 (2023).
+10.
+Atwater, H. A. & Polman, A. Plasmonics for improved photovoltaic
+devices. Nat. Mater. 9, 205–213 (2010).
+11.
+Yang,B., Li, C., Wang,Z. & Dai, Q. Thermoplasmonics in solar energy
+conversion: Materials, nanostructured designs, and applications.
+Adv. Mater. 34, 2107351 (2022).
+12.
+Zhang, Z., Fang, Y., Wang, W., Chen, L. & Sun, M. Propagating sur-
+face plasmon polaritons: Towards applications for remote-
+excitation surface catalytic reactions. Adv. Sci. 3, 1500215 (2016).
+13.
+Dai, Y. et al. Plasmonic topological quasiparticle on the nanometre
+and femtosecond scales. Nature 588, 616–619 (2020).
+14.
+Zhang, D. et al. Coherent surface plasmon polariton ampliﬁcation
+via free-electron pumping. Nature 611, 55–60 (2022).
+15.
+Dreher, P., Janoschka, D., Frank, B., Giessen, H. & Meyer zu Her-
+ingdorf, F. J. Focused surface plasmon polaritons coherently cou-
+ple to electronic states in above-threshold electron emission.
+Commun. Phys. 6, 15 (2023).
+16.
+Bozhevolnyi, S. I., Volkov, V. S., Devaux, E., Laluet, J.-Y. & Ebbesen,
+T. W. Channel plasmon subwavelength waveguide components
+including interferometers and ring resonators. Nature 440,
+508–511 (2006).
+17.
+Oulton, R. F., Sorger, V. J., Genov, D. A., Pile, D. F. P. & Zhang, X. A
+hybrid plasmonic waveguide for subwavelength conﬁnement and
+long-range propagation. Nat. Photon. 2, 496–500 (2008).
+18.
+Jacob, Z., Alekseyev, L. V. & Narimanov, E. Optical Hyperlens: Far-
+ﬁeld imaging beyond the diffraction limit. Opt. Express 14,
+8247–8256 (2006).
+19.
+Poddubny, A., Iorsh, I., Belov, P. & Kivshar, Y. Hyperbolic metama-
+terials. Nat. Photon. 7, 948–957 (2013).
+20. High, A. A. et al. Visible-frequency hyperbolic metasurface. Nature
+522, 192–196 (2015).
+21.
+Mekawy, A. & Alú, A. Hyperbolic surface wave propagation in mid-
+infrared metasurfaces with extreme anisotropy. J. Phys. Photonics 3,
+034006 (2021).
+22. Durnin, J., Miceli, J. J. & Eberly, J. H. Diffraction-free beams. Phys.
+Rev. Lett. 58, 1499–1501 (1987).
+23. Yessenov, M., Hall, L. A., Schepler, K. L. & Abouraddy, A. F. Space-
+time wave packets. Adv. Opt. Photon. 14, 455–570 (2022).
+24. Lin, J. et al. Cosine-Gauss plasmon beam: A localized long-range
+nondiffracting surface wave. Phys. Rev. Lett. 109, 093904 (2012).
+25. Wei, S. et al. Singular diffraction-free surface plasmon beams
+generated by overlapping phase-shifted sources. Opt. Lett. 38,
+1182–1184 (2013).
+26. Salandrino, A. & Christodoulides, D. N. Airy plasmon: a non-
+diffracting surface wave. Opt. Lett. 35, 2082–2084 (2010).
+27.
+Minovich, A. et al. Generation and near-ﬁeld imaging of Airy surface
+plasmons. Phys. Rev. Lett. 107, 116802 (2011).
+28. Kondakci, H. E. & Abouraddy, A. F. Diffraction-free space-time light
+sheets. Nat. Photon. 11, 733–740 (2017).
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+10
+
+
+=== PDF PAGE 11 ===
+29. Bhaduri, B. et al. Broadband space-time wave packets propagating
+for 70 m. Opt. Lett. 44, 2073–2076 (2019).
+30. Hall, L. A. & Abouraddy, A. F. Canceling and inverting normal and
+anomalous group-velocity dispersion using space-time wave
+packets. Laser Photon. Rev. 17, 2200119 (2023).
+31.
+He, H., Guo, C. & Xiao, M. Nondispersive space-time wave packets
+propagating in dispersive media. Laser Photon. Rev. 16, 2100634
+(2022).
+32. Bhaduri, B., Yessenov, M. & Abouraddy, A. F. Space-time wave
+packets that travel in optical materials at the speed of light in
+vacuum. Optica 6, 139–146 (2019).
+33. Kondakci, H. E. & Abouraddy, A. F. Self-healing of space-time light
+sheets. Opt. Lett. 43, 3830–3833 (2018).
+34. Bhaduri, B., Yessenov, M. & Abouraddy, A. F. Anomalous refraction
+of optical spacetime wave packets. Nat. Photon. 14, 416–421 (2020).
+35. Schepler, K. L., Yessenov, M., Zhiyenbayev, Y. & Abouraddy, A. F.
+Space–time surface plasmon polaritons: A new propagation-
+invariant surface wave packet. ACS Photonics 7, 2966–2977 (2020).
+36. Cho, E.-S. & Lee, S.-Y. Propagation-invariant space-time plasmonic
+pulse in subwavelength mim waveguide. Nanomaterials 14,
+425 (2024).
+37. Gramotnev, D. K. & Bozhevolnyi, S. I. Plasmonics beyond the dif-
+fraction limit. Nat. Photon. 4, 83–91 (2010).
+38. Iqbal, T. Propagation length of surface plasmon polaritons excited
+by a 1d plasmonic grating. Curr. Appl. Phys. 15, 1445–1452 (2015).
+39. Yi, J.-M. et al. Probing coherent surface plasmon polariton propa-
+gation using ultrabroadband spectral interferometry. ACS Photo-
+nics 4, 347–354 (2017).
+40. Diouf, M. et al. Excitation of surface plasmon polaritons by
+diffraction-free and vector beams. Appl. Opt. 61, 7469–7473 (2022).
+41.
+Ichiji, N., Yessenov, M., Schepler, K. L., Abouraddy, A. F. & Kubo, A.
+Exciting space-time surface plasmon polaritons by irradiating a
+nanoslit structure. J. Opt. Soc. Am. A 41, 396–405 (2024).
+42. Ichiji, N. et al. Observation of ultrabroadband striped space-time
+surface plasmon polaritons. ACS Photonics 10, 374–382 (2023).
+43. Henstridge, M. et al. Synchrotron radiation from an accelerating
+light pulse. Science 362, 439–442 (2018).
+44. Lei, X. et al. Photonic spin lattices: Symmetry constraints for sky-
+rmion and meron topologies. Phys. Rev. Lett. 127, 237403 (2021).
+45. Dreher, P. et al. Spatiotemporal topology of plasmonic spin meron
+pairs revealed by polarimetric photo-emission microscopy. Adv.
+Photonics 6, 066007 (2024).
+46. Spektor, G. et al. Revealing the subfemtosecond dynamics of
+orbital angular momentum in nanoplasmonic vortices. Science
+355, 1187–1191 (2017).
+47. Hancock, S. W., Zahedpour, S., Gofﬁn, A. & Milchberg, H. M. Free-
+space propagation of spatiotemporal optical vortices. Optica 6,
+1547–1553 (2019).
+48. Lassaline, N. et al. Optical Fourier surfaces. Nature 582, 506–510
+(2020).
+49. Kondakci, H. E. & Abouraddy, A. F. Optical space-time wave packets
+of arbitrary group velocity in free space. Nat. Commun. 10,
+929 (2019).
+50. Hall, L. A. & Abouraddy, A. F. Free-space group-velocity dispersion
+induced in space-time wave packets by v-shaped spectra. Phys.
+Rev. A 104, 013505 (2021).
+51.
+Yessenov, M. et al. Space-time wave packets localized in all
+dimensions. Nat. Commun. 13, 4513 (2022).
+52. Ichiji, N. et al. Transverse spin angular momentum of a space-time
+surface plasmon polariton wave packet. Phys. Rev. A 107,
+063517 (2023).
+53. Lalanne, P., Hugonin, J. P., Liu, H. T. & Wang, B. A microscopic view
+of the electromagnetic properties of sub-lambda metallic surfaces.
+Sur. Sci. Rep. 64, 453–469 (2009).
+54. Zhang, L., Kubo, A., Wang, L., Petek, H. & Seideman, T. Imaging of
+surface plasmon polariton ﬁelds excited at a nanometer-scale slit.
+Phys. Rev. B 84, 245442 (2011).
+55. Ichiji, N., Otake, Y. & Kubo, A. Femtosecond imaging of spatial
+deformation of surface plasmon polariton wave packet during
+resonant interaction with nanocavity. Nanophotonics 11,
+1321–1333 (2022).
+56. Bliokh, K. Y. & Nori, F. Transverse spin of a surface polariton. Phys.
+Rev. A 85, 061801 (2012).
+57. Shi, P., Du, L., Li, C., Zayats, A. V. & Yuan, X. Transverse spin
+dynamics in structured electromagnetic guided waves. Proc. Natl
+Acad. Sci. USA 118, e2018816118 (2021).
+58. Hall, L. A., Yessenov, M. & Abouraddy, A. F. Arbitrarily accelerating
+space-time wave packets. Opt. Lett. 47, 694–697 (2022).
+59. Shiri, A., Yessenov, M., Aravindakshan, R. & Abouraddy, A. F.
+Omni-resonant space-time wave packets. Opt. Lett. 45,
+1774–1777 (2020).
+60. Zhu, W. et al. Surface plasmon polariton laser based on a metallic
+trench Fabry-Perot resonator. Sci. Adv. 3, e1700909 (2017).
+61.
+Pockrand, I. Surface plasma oscillations at silver surfaces with
+thin transparent and absorbing coatings. Surf. Sci. 72, 577–588
+(1978).
+62. Rakić, A. D., Djurišić, A. B., Elazar, J. M. & Majewski, M. L. Optical
+properties of metallic ﬁlms for vertical-cavity optoelectronic devi-
+ces. Appl. Opt. 37, 5271–5283 (1998).
+Acknowledgements
+N.I. was supported by JSPS KAKENHI (JP20J21825, JP23KJ0355,
+JP25K17906). A.K. was supported by JSPS KAKENHI (JP16823280,
+JP22H05131, JP23H04575, JP25H01606, JP25K01648) and MEXT Q-LEAP
+ATTO (JPMXS0118068681). M.Y., K.L.S., and A.F.A. were supported by
+the U.S. Ofﬁce of Naval Research (ONR) under contract N00014-20-1-
+2789; M.Y. and A.F.A. were also supported under contract N00014-17-1-
+2458. The sample fabrication was supported by the Nanotechnology
+Platform Project (JPMXP09F-17-NM-0068); and by the Nanofabrication
+Platform of NIMS and University of Tsukuba.
+Author contributions
+A. F. A. and A. K. developed the concept and supervised the research; N.
+I. designed the experiments, carried out the measurements, and ana-
+lyzed the data, with assistance from H. K; M. Y. and K. L. S. advised on the
+experiments and analyzed the data; all authors contributed to writing
+the paper.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-025-65289-8.
+Correspondence and requests for materials should be addressed to
+Ayman F. Abouraddy or Atsushi Kubo.
+Peer review information : Nature Communications thanks the anon-
+ymous reviewers for their contribution to the peer review of this work. A
+peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+11
+
+
+=== PDF PAGE 12 ===
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’s Creative Commons licence and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2025
+Article
+https://doi.org/10.1038/s41467-025-65289-8
+Nature Communications|  (2025) 16:10697 
+12

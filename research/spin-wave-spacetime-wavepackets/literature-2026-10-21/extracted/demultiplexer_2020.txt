@@ -1,0 +1,732 @@
+=== PDF PAGE 1 ===
+Experimental Realization of a Passive Gigahertz Frequency-
+Division Demultiplexer for Magnonic Logic Networks
+Frank Heussner,* Giacomo Talmelli, Moritz Geilen, Björn Heinz, Thomas Brächer,
+Thomas Meyer, Florin Ciubotaru, Christoph Adelmann, Kei Yamamoto,
+Alexander A. Serga, Burkard Hillebrands, and Philipp Pirro
+The concept of parallel data processing in single elements is
+very promising as it can multiply the throughput of future logic
+networks signiﬁcantly.[1] One important requirement, the
+wave-based processing of data, has already been demonstrated
+using spin waves[2] in micro- and nanostructures.[3,4] Further-
+more, the similar necessary technique of simultaneous infor-
+mation transport in separated frequency-channels, called
+frequency-division multiplexing,[5] has been used in various
+other wave-based applications such as in ﬁber-optic networks.
+However, its implementation into magnonic networks has only
+been studied theoretically[1,6] or discussed in preparatory
+works,[7–9] as a device for the efﬁcient
+combination and separation of spin-wave
+signals of different frequencies is missing
+until now. In this work, we present the
+experimental realization of this required
+device, which uses caustic-like spin-wave
+beams to create a so-called magnonic
+frequency-division demultiplexer. Hence,
+our results enable the realization of mag-
+nonic multifrequency circuits[6] which allow
+for
+parallel
+data
+processing
+in
+single
+devices.[1]
+Spin waves offer many advantages for
+wave-based computing[10–15] due to their
+micro- to nanometer small wavelengths
+at gigahertz frequencies,[16–18] their enor-
+mous tunability by various parameters[19]
+and the possibility of chargeless informa-
+tion transport. One exceptional property
+utilized in the following work is the aniso-
+tropic propagation of spin waves in suitable magnetic media,
+which can lead to the creation of narrow spin-wave beams
+and caustics[6,20–27] (see Experimental Section). Their subwave-
+length transverse aperture[24] is an outstanding reason for their
+potential use in nanostructured networks, especially when con-
+sidering the beam formation of high-wavevector magnons.[21]
+The caustic-like spin-wave beams can be radiated from point-like
+sources into unpatterned magnetic ﬁlms,[22–25] and they are
+formed due to the noncollinearity of the wavevector and the
+group velocity vector. Furthermore, their propagation direction
+can be versatilely controlled by, e.g., frequency,[6,20,22,25–27]
+Dr. F. Heussner, M. Geilen, B. Heinz, Dr. T. Brächer, Dr. T. Meyer,[+]
+Dr. A. A. Serga, Prof. B. Hillebrands, Prof. P. Pirro
+Fachbereich Physik and Landesforschungszentrum OPTIMAS
+Technische Universität Kaiserslautern
+Kaiserslautern D-67663, Germany
+E-mail: heussner@rhrk.uni-kl.de
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/pssr.201900695.
+[+]Present address: THATec Innovation GmbH, Mannheim 68165,
+Germany
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA,
+Weinheim. This is an open access article under the terms of the Creative
+Commons Attribution License, which permits use, distribution and
+reproduction in any medium, provided the original work is properly cited.
+DOI: 10.1002/pssr.201900695
+G. Talmelli, Dr. F. Ciubotaru, Dr. C. Adelmann
+Imec
+Leuven 3001, Belgium
+G. Talmelli
+Departement Materiaalkunde
+SIEM
+KU Leuven
+Leuven 3001, Belgium
+B. Heinz
+Graduate School Materials Science in Mainz
+Staudingerweg 9, Mainz 55128, Germany
+Dr. K. Yamamoto
+Advanced Science Research Center
+Japan Atomic Energy Agency
+Tokai 319-1195, Japan
+The emerging ﬁeld of magnonics uses spin waves and their quanta, magnons, to
+implement wave-based computing on the micro- and nanoscale. Multifrequency
+magnon networks would allow for parallel data processing within single logic
+elements, whereas this is not the case with conventional transistor-based
+electronic logic. However, a lack of experimentally proven solutions to efﬁciently
+combine and separate magnons of different frequencies has impeded the
+intensive use of this concept. Herein, the experimental realization of a spin-wave
+demultiplexer enabling frequency-dependent separation of magnonic signals in
+the gigahertz range is demonstrated. The device is based on 2D magnon trans-
+port in the form of spin-wave beams in unpatterned magnetic ﬁlms. The intrinsic
+frequency dependence of the beam direction is exploited to realize a passive
+functioning obviating an external control and additional power consumption.
+This approach paves the way to magnonic multiplexing circuits enabling
+simultaneous information transport and processing.
+RAPID RESEARCH LETTER
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (1 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+
+=== PDF PAGE 2 ===
+magnetic
+ﬁeld
+strength,[20]
+and
+direction
+of
+the
+local
+magnetization.[23,24]
+In this work, we experimentally demonstrate how these
+caustic-like spin-wave beams can be used to realize controllable
+information transport in 2D magnetic ﬁlms with thicknesses of a
+few tens of nanometers. The guidance is neither achieved by
+geometrical structuring[2,3] nor by different internal magnetic
+ﬁelds as it has been demonstrated, e.g., in bicomponent mag-
+nonic crystals which offer different spatial channels for different
+spin-wave frequencies.[28,29] Our system is also not relying on
+inhomogeneous magnetic ground states,[30] but it guides the
+waves purely by the anisotropy of the magnonic system.
+Utilizing this anisotropic signal propagation allows for the
+realization of passive elements without any additional energy
+consumption as the magnonic system inherently collimates
+and steers the energy transport. As just one of the many possible
+applications of this concept, we present the realization of a
+passive demultiplexer exploiting the frequency dependence of
+the beam direction. By inverting the geometry, i.e., inverting
+the role of the input and output waveguides, a multiplexer can
+be realized equally well.[31]
+The experimental realization of the frequency-division demul-
+tiplexer is based on a 30 nm-thin ﬁlm of the magnetic alloy
+CoFeB. In contrast to magnetic insulators like yttrium iron
+garnet (YIG),[26] the metallic ferromagnet CoFeB is much more
+compatible with state-of-the-art fabrication techniques of silicon-
+based microchips. Furthermore, CoFeB exhibits a much higher
+saturation magnetization (see Experimental Section), which
+enables the creation of caustic-like spin-wave beams in a broad-
+frequency range. Based on our previous studies,[6] we have
+designed a demultiplexer prototype by micromagnetic modeling.
+Subsequently, the sample has been fabricated and studied by
+detecting the spin-wave intensity using micro-focused Brillouin
+light-scattering spectroscopy (μBLS).[32] After investigating the
+frequency dependence of the spin-wave beam directions and
+comparing it with theoretical calculations, we verify the full
+functionality of the demultiplexer by 2D measurements of the
+spin-wave intensity.
+Figure 1a,b shows the simulated intensity distribution
+inside of the designed structure for spin waves of frequencies
+f 1 ¼ 11.2GHz and f 2 ¼ 13.8GHz. The dashed arrows mark
+the beam directions that are predicted by the developed theoreti-
+cal model (see Figure 1c and Experimental Section). The func-
+tional part of the device comprises the unpatterned area in
+the center of the structure in which the 2D energy transport takes
+place. Input and output waveguides, which can serve as interfa-
+ces to adjacent magnonic building blocks in larger magnonic
+networks, are connected to this area. To provide an input signal,
+magnon excitation is simulated by applying localized alternating
+magnetic ﬁelds hrf inside the input waveguide. The ﬁeld distri-
+bution is chosen in accordance with the experiment in which
+these ﬁelds are created by microwave currents ﬂowing through
+a microstrip antenna placed across the waveguide. The spin
+waves propagate toward the unpatterned area and, in agreement
+with previous observations,[6,22–24] two symmetric spin-wave
+beams are emitted from the waveguide opening, which acts as
+a point-like source exhibiting a broad wavevector spectrum.
+The anisotropy of the spin-wave dispersion leads to a strong
+focusing of the energy. Furthermore, the initial width of the
+spin-wave beams is determined by the width of the waveguide
+opening, for which reason an abrupt transition into the unstruc-
+tured ﬁlm area without widening was chosen. The observed
+frequency dependence of the beam directions is utilized to real-
+ize the demultiplexing functionality by properly adding two
+output waveguides after a certain propagation distance. Their
+positions are asymmetric with respect to the input, leading to the
+following consequence: at frequency f 1 ¼ 11.2GHz (Figure 1a),
+the upper spin-wave beam, which propagates at an angle of
+θtheo
+B,1 ¼ 77.6° as predicted by the theoretical model, is channeled
+into output 1 and transmits the information through the device.
+The lower one is blocked by the edge of the magnetic structure so
+that the signal cannot reach output 2. In contrast, the beam
+angles of spin waves of frequency f 2 ¼ 13.8GHz are changed
+to θtheo
+B,2 ¼ 68.9° (θ’
+B,2 ¼ 180°  θB,2, respectively) resulting in a
+sole signal transmission into output 2 (Figure 1b). Hence, the
+device separates spin-wave signals of two frequencies into two
+spatially detached output waveguides, whose transition zones
+Figure 1. Micromagnetic modeling of the frequency-division demulti-
+plexer and microscope image of the fabricated sample. The positions
+of the output waveguides along the y-direction are asymmetric with
+respect to the input waveguide which enables the demultiplexing function-
+ality of the device. a) Design of the demultiplexer and simulated spin-wave
+propagation at f1 ¼ 11.2 GHz. The signal is guided from the input wave-
+guide into output 1 by a spin-wave beam. b) Spin-wave distribution at
+f2 ¼ 13.8 GHz. The signal is channeled into output 2 due to the changed
+direction of the spin-wave beams in the unstructured ﬁlm area.
+c) Isofrequency curves of the studied system. The directions of the group
+velocity vectors, which are perpendicular to the curve, vary with spin-wave
+carrier frequency. d) Fabricated sample according to the developed layout
+of the demultiplexer.
+www.advancedsciencenews.com
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (2 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+
+=== PDF PAGE 3 ===
+are especially tailored to enable an efﬁcient channeling of the
+spin waves into the ﬁrst waveguide mode and to avoid reﬂections.
+The exploited frequency dependence of the beam directions
+results from the modiﬁcation of the spin-wave isofrequency
+curve with frequency (see Figure 1c) and the according variation
+of the group-velocity vectors, which are always perpendicular to
+this curve (see Experimental Section). It should be mentioned
+that the exact operating frequencies of the device can be con-
+trolled by changing, e.g., the external ﬁeld strength since this
+shifts the magnon dispersion. Here, the external magnetic ﬁeld
+is set to μ0Hext ¼ 75 mT.
+Based on the design developed and optimized by micromag-
+netic modeling, the prototype of the passive demultiplexer has
+been fabricated based on a 30 nm-thin ﬁlm of CoFeB, as shown
+in Figure 1d. To prove the functionality of the frequency-division
+demultiplexer, μBLS measurements of the spin-wave intensity
+have been performed at two positions in the center of the output
+waveguides, as shown in Figure 1d. Spin waves are excited in the
+input in a frequency range from 10.5 to 15.5 GHz in the steps of
+0.1 GHz by applying an according microwave signal to the micro-
+strip antenna. Figure 2a shows the detected frequency depen-
+dence of the spin-wave intensity in the two spatially detached
+output waveguides. A clear separation of spin-wave signals
+depending on their frequency is visible. Signals in the narrow
+range from 10.8 to 11.8 GHz are channeled into output 1. In con-
+trast, output 2 accepts only spin waves in the broader frequency
+band from 12.3 to 15.3 GHz, hence, without any overlap.
+This measurement clearly demonstrates that spin-wave signals
+with appropriately chosen frequencies, e.g., the frequencies of
+maximum intensity in the different outputs f 1 ¼ 11.2 GHz and
+f 2 ¼ 13.8GHz, are spatially separated by the prototype device as
+predicted by the micromagnetic modeling.
+The beam angle θB shown in Figure 2b is experimentally
+determined by measuring the spin-wave intensity along a line
+in the input transition zone (left green dotted line, Figure 1d)
+and along a line in the second third of the unpatterned area (right
+green dotted line). From the observed shift of the intensity
+maxima, the angle θB is calculated. No beams are detected
+below 10.8 GHz as the dispersion relation is very ﬂat until
+the frequency of ferromagnetic resonance f FMR ¼ 10.94 GHz
+is reached. The measured data agrees well with the theoretically
+predicted curve (solid line in Figure 2b). This is due to the fact
+that, in addition to the peculiarities of anisotropic magnon
+propagation,[20] our model considers such important parameters
+like the excited wavevector spectrum and the distance between
+the observation point and the source. The optimum angles
+θexp
+B,1 ¼ 77.9° and θexp
+B,2 ¼ 69.6°, leading to maximum intensity in
+the outputs, are shown in Figure 2b together with the shaded
+acceptance intervals, which result from the assumption that
+beams are channeled into the outputs if their direction deviates
+less than 2.5 from the optimum angles. These acceptance inter-
+vals in combination with the curve θBð f Þ can explain the differ-
+ing widths of the accepted frequency bands of the two outputs:
+The angle variation is quite large in the region of f1 ¼ 11.2 GHz.
+Hence, only frequencies within a small range around f1 create
+beams whose directions lie inside the angular acceptance interval
+of output 1. In contrast, the slope of the mentioned curve is sig-
+niﬁcantly lower at f 2 ¼ 13.8 GHz. Thus, a larger variation of the
+frequency is permitted around f2 until the occurring beam angles
+are out of the acceptance interval of output 2.
+For a detailed visualization, the spin-wave intensity was
+measured in the entire demultiplexer area at the frequencies
+f1 and f2 by performing 2D μBLS scans. (The experimental proof
+of the simultaneous transmission of spin waves of these two
+frequencies through a shared waveguide can be found in the
+Supporting Information.) A comparison of the 2D measure-
+ments (Figure 3) with the results of the micromagnetic modeling
+(Figure 1a,b) reveals a remarkably good agreement. This con-
+ﬁrms that the whole demultiplexing mechanism works exactly
+as predicted and is based on the creation of spin-wave beams,
+their frequency-dependent propagation though the unstructured
+area, and the channeling of the signals into different outputs.
+Furthermore, these measurements can be used to determine
+the input–output ratio κ of the device to reveal the inﬂuence
+of the beam formation on signal losses. Considering the trans-
+mission from the input waveguide into output 1 at frequency f1
+yields a value of κexp
+1
+¼ ð18.1  2.1Þ dB, whereas a ratio of
+κexp
+2
+¼ ð18.2  1.9ÞdB is obtained for a signal at frequency f2
+channeled into output 2. For comparison, the ratio κtheo
+Figure 2. Experimental realization of spin-wave demultiplexing using the
+developed prototype device. a) Frequency-dependence of the spin-wave
+intensity in the output waveguides measured by μBLS. Spin-wave signals
+are detected inside the two outputs within nonoverlapping frequency
+ranges exhibiting signal maxima at the frequencies f1 and f2. b) The mea-
+sured frequency-dependence of the direction of the spin-wave beams is
+compared with the developed theoretical model. Shaded areas mark
+the angular intervals of signal acceptance of both outputs. The centers
+of the intervals are given by the optimal angles θexp
+B,1 and θexp
+B,2.
+www.advancedsciencenews.com
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (3 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+
+=== PDF PAGE 4 ===
+can be calculated analytically considering the energy splitting
+and the propagation losses only (see Experimental Section).
+The resulting values, κtheo
+1
+¼ ð18.95  1.84ÞdB and κtheo
+2
+¼
+ð17.64  1.69ÞdB, show that the major fraction of the losses
+arise from the intrinsic spin-wave damping during their propa-
+gation and not due to the demultiplexing mechanism based on
+beam formation and channeling (the splitting is suppressible[6]).
+Finally, the scalability and advantages of the presented concept
+should be discussed. The used spin-wave beams are created due
+to the anisotropy of the magnonic system and, for limited length
+scales, their width is primary determined by the size of the
+source.[24] In the presented case, the anisotropy is induced by
+the dipole–dipole interaction, which is dominant in the low-
+wavevector range of the magnon spectrum. However, a beam
+formation is also possible for high-wavevector spin waves whose
+dispersion characteristics are mainly dominated by the exchange
+interaction.[21] Hence, the presented concept to guide 2D energy
+transport by spin-wave beams, formed due to the intrinsic anisot-
+ropy of the system, can be scaled down to signiﬁcantly smaller
+length scales. Furthermore, the passive character of the signal
+steering is an important advantage over other concepts requiring
+energy-consuming external control. This is the case, e.g., with the
+previously demonstrated spin-wave time-division multiplexer,
+which relies on external charge currents.[33]
+In conclusion, we have developed and experimentally realized
+a passive frequency-division demultiplexer, which is based on
+intrinsically steered 2D signal transport in unpatterned magnetic
+ﬁlms. The prototype device enables the spatial separation of spin-
+wave signals of different frequencies. It exploits the frequency-
+dependence of the direction of narrow spin-wave beams, which
+are formed in in-plane magnetized ﬁlms due to the anisotropic
+spin-wave dispersion. A theoretical approach to predict the beam
+directions has been developed and veriﬁed. The utilized beam
+steering requires no external control or additional power con-
+sumption, and it can be used to realize a whole multifrequency
+circuit which enables simultaneous data transport through single
+transmission lines using the technique of frequency-division
+multiplexing. This is the basis for exploiting one of the main
+advantages of wave-based computing, namely, the technique
+of parallel data processing in single devices, which can now
+be implemented in an energy-efﬁcient way building on the
+presented prototype.
+Experimental Section
+μBLS Measurements: The spin-wave intensity was experimentally
+measured using μBLS[32] with a spatial resolution of around 250 nm. In
+all cases, the shown spin-wave intensity of frequency f is the detected
+time-averaged μBLS intensity integrated over the frequency interval
+[ f  0.25 GHz, f þ 0.25 GHz]. The error of the measured beam angles
+θB shown in Figure 2b results from the spatial resolution of the setup
+and is calculated to 3.5. For reasons of clarity, error bars are omitted
+in the ﬁgure. The spin-wave intensity shown in Figure 3 is normalized
+along the y-direction to the interval [0,1] to compensate for the background
+noise of the setup and for the spin-wave damping so that a clear compari-
+son of the two output signals is easily possible. Due to this normalization,
+the visibility of spin-wave beams, which are reﬂected from the edge of the
+structure and are much weaker than the incident beams, is reduced.
+Micromagnetic Modeling: The micromagnetic modeling was conducted
+using the graphics processing unit-accelerated simulation program
+MuMax3.[34] The simulated structure of size 31.5 μm  15 μm  30 nm
+was discretized into cells of 15 nm  15 nm  30 nm, leading to a
+consideration of in-plane wavevectors of at least up to 100 rad μm1.
+Furthermore, the experimentally determined material parameters of
+CoFeB (MS ¼ 1558 kA m1, Aex ¼ 17.6 pJ m1, α ¼ 0.0043) were used.
+On the outer vertical edges of the waveguides (shape of the structure,
+as shown in Figure 1), the damping was incrementally increased (25 steps
+over a distance of 0.5 μm) to a value of α ¼ 0.5 to suppress reﬂections of
+the spin-wave energy. Furthermore, periodic boundary conditions were
+used along the horizontal edges of the unstructured ﬁlm area. Spin-wave
+excitation and propagation were simulated for 7.5 ns by applying an alter-
+nating magnetic ﬁeld inside the input waveguide. The used ﬁeld distribu-
+tion was calculated according to Biot–Savart’s law for a 0.5 μm-wide and
+100 nm-thick microstrip antenna (as used in the experiment) through
+which the alternating current (AC) ﬂows (with 5 mA amplitude). The result-
+ing raw data of the modeling were the time-dependent vector of the mag-
+netization inside every cell, which had been saved every 25 ps. A temporal
+Fourier-transformation of the data from 2.5 to 7.5 ns and a squaring of the
+resulting amplitude were performed to calculate the frequency-dependent,
+time-averaged spin-wave intensity. This intensity was integrated over the
+frequency interval [ f  0.25 GHz, f þ 0.25 GHz], so that a direct compari-
+son with the experimental results obtained by μBLS measurements was
+possible. Furthermore, the simulated spin-wave intensity distribution
+shown in Figure 1 is normalized along the y-direction to its sum to com-
+pensate for the spin-wave damping and to allow for a clear comparison of
+the two output signals.
+Sample Fabrication: The basis of the sample fabrication[35] was a 30 nm
+thin ﬁlm of the magnetic alloy CoFeB, which was deposited as part of the
+layer stack Ta(3 nm)/CoFeB(30 nm)/Ta(3 nm) onto a Si/SiO2(300 nm)
+wafer. The ﬁlm thickness of the magnetic material CoFeB was chosen
+as a tradeoff so that both an efﬁcient spin-wave beam formation and
+propagation (rather large ﬁlm thickness preferred) and an efﬁcient struc-
+turing of the device (rather small ﬁlm thickness preferred) was possible.
+First, the material parameters of this unpatterned sample were measured
+using two methods. The saturation magnetization MS ¼ 1558 kA m1
+and the Gilbert damping constant α ¼ 0.0043 were determined by meas-
+urements of the ferromagnetic resonance (FMR). Furthermore, the
+exchange constant Aex ¼ 17.6 pJ m1 resulted from μBLS measurements
+Figure 3. Experimental veriﬁcation of the beam-based demultiplexing
+mechanism. μBLS measurements of the spin-wave intensity are performed
+to visualize the 2D spin-wave transport. The separation of spin-wave
+signals from one shared input waveguide by frequency-dependent
+channeling into spatially detached output waveguides occurs due to the
+intrinsically controlled beam formation. a) Spin-wave guidance into
+output 1 at f1 ¼ 11.2 GHz and b) into output 2 at f2 ¼ 13.8 GHz.
+www.advancedsciencenews.com
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (4 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+
+=== PDF PAGE 5 ===
+of the thermal magnon spectrum and a comparison with analytical calcu-
+lations according to the theory.[36] Afterward, the magnetic layer was struc-
+tured by e-beam lithography of a hydrogen silsesquioxane (HSQ) hard
+mask and subsequent ion beam etching, leaving around 70 nm of the
+resist on top of the structure. To reduce the height differences, a plana-
+rization step using spin-on carbon (SoC) was followed with a subsequent
+deposition of a 30 nm thin layer of SiN (150 C, chemical vapor deposi-
+tion). Finally, the microstrip antenna was fabricated by creating a mask
+using polymethylmethacrylate (PMMA) resist and e-beam lithography
+followed by sputtering deposition of Ti (10 nm)/Au (100 nm) and the
+removal of the unwanted parts by a lift-off process in acetone. The result-
+ing sample is shown in Figure 1d. The magnetic structure consists of an
+unpatterned ﬁlm area and three 1.5 μm wide waveguides. The positions of
+the output waveguides along the y-direction are asymmetric with respect
+to the input waveguide which enables the demultiplexing functionality of
+the device, as demonstrated in the main text. The light shading on
+the edge of the transition zones is due to some residual material,
+which, however, does not inﬂuence the functionality of the device. The
+0.5 μm-wide and 100 nm-thick microstrip antenna, which was placed on
+top of the input waveguide, was connected to a microwave setup consist-
+ing of a microwave generator and an ampliﬁer which provided the high-
+frequency current with a nominal output power of P ¼ þ7 dBm. The ﬁnal
+power reaching the sample was very likely signiﬁcantly reduced. The
+rectangular structures around the actual device were used to stabilize
+the positioning of the μBLS microscope. It should be mentioned that
+the dimensions of the presented prototype had been chosen to allow
+for an optical investigation using μBLS. Further miniaturization is
+possible as discussed in the main text.
+Calculation of the Input–Output Ratio κ: To calculate the experimental
+values κexp of the input–output ratio, the spin-wave intensity at the position
+0.5 μm in front of the input transition zone and the intensity 5.1 μm behind
+the output transition zone were integrated over the waveguide width and
+both results were divided by each other. The mentioned error resulted
+from the deviations around the mean value in case the surrounding mea-
+suring points were considered. For both frequencies, the detected intensity
+inside the output, which was not hit by the spin-wave beam, was equal or
+only marginally above the noise-level of the μBLS setup. This highlights the
+pronounced demultiplexing functionality.
+The theoretical reference values κtheo were calculated from the distan-
+ces L which the spin waves had to travel from the position in the input to
+the position in the output, where the intensity had been measured to deter-
+mine the experimental value. The calculations were carried out according
+to the formula
+κtheo ¼ 10 log10½1=2 expðLf =ð0.5 νf τf Þ  Lw=ð0.5 νw τwÞÞ
+(1)
+in which the occurring energy splitting into two spin-wave beams was
+considered by the factor 1/2. It should be mentioned that the splitting
+can be suppressed by changing the design of the demultiplexer as shown
+in the study by Heussner et al.[6] Furthermore, the factor 0.5 had to be
+introduced as the spin-wave intensity was measured instead of the
+amplitude.
+The group velocity v of the spin waves differs inside the waveguides (vw)
+and
+in
+the
+unpatterned
+ﬁlm
+area
+(vf )
+and
+can
+be
+calculated
+according to the studies by Kalinikos and Slavin and Brächer et al.[36,37]
+To determine vf, the spin-wave wavevector relating to the occurring beam
+angle was used for the calculations. Furthermore, Lw is the spin-wave
+propagation distance in the waveguides, whereas Lf is the corresponding
+distance in the ﬁlm area. Finally, the spin-wave lifetime τ results from the
+damping parameter α and was approximated by the value τðk ¼ 0Þ at fer-
+romagnetic resonance.[37] For all calculations, the effective values of the
+magnetic ﬁeld μ0Heff (75 mT inside the ﬁlm, 50 mT inside the waveguide)
+and the waveguide width weff ¼ 1.3 μm were used. These effective values
+result from the demagnetizing ﬁeld at the edge of the waveguides and can
+be extracted from the micromagnetic modeling or calculated as shown in
+the study by Brächer et al.[37]
+The following values were obtained for the different frequencies
+f1 ¼ 11.2 GHz
+and
+f2 ¼ 13.8 GHz:
+L1,w ¼ 5.48 μm,
+L1,f ¼ 13.05 μm,
+v1,w ¼ 11.65 μm ns1, v1,f ¼ 7.08 μm ns1, τw ¼ 1.284 ns, τf ¼ 1.254 ns, and
+L2,w ¼ 5.51 μm, L2,f ¼ 13.90 μm, v2,w ¼ 9.70 μm ns1, v2,f ¼ 8.93 μm ns1
+resulting in the values for the input–output ratio κtheo as mentioned in
+the main text. The error of κtheo was calculated by assuming a slightly larger
+Gilbert damping parameter (α ¼ 0.0048), which was very likely to occur
+due to, e.g., the structuring process of the device.
+Theoretical Description of Spin-Wave Beams and Caustics: The basis of the
+developed theoretical model is the anisotropic isofrequency curve
+(Figure 1c), which describes the dependence of the wavevector compo-
+nent ky on the component kx at a particular frequency f. The dispersion
+calculations are based on the study by Kalinikos and Slavin,[36] considering
+ky || Hext, kx ⊥Hext, μ0Hext ¼ 75 mT and the material parameters of CoFeB.
+The direction of the anisotropic spin-wave propagation can be derived
+from the curve as the spin-wave group velocity vector is perpendicular
+to
+it
+at
+every
+point.
+For
+a
+precise
+prediction of
+the
+resulting
+spin-wave beam orientation, the excited wavevector spectrum Ak and
+the distance d between the beam source and the observation point are
+considered, as explained in the following. This is the main difference to
+a previous theoretical approach[20] and our results reveal, that the
+observed direction of maximum focusing is not always given by the caustic
+direction (according to the study by Veerakumar and Camley,[20] caustics
+occur at the points of the isofrequency curve where its curvature is zero).
+Due to this reason, we refer to the observed beams resulting from the
+focused energy transport as (caustic-like) spin-wave beams instead of
+caustics.
+The ﬁrst step of the developed approach is to include the wavevector
+spectrum Ak of the beam source in the calculations. It can be assumed that
+the spin waves propagate through the input in the form of the ﬁrst wave-
+guide mode having a sinusoidal shape along the short axis of the wave-
+guide and only one maximum in the center. As soon as the input waves
+reach the transition zone at the connection between the waveguide and
+the unstructured area, the waveguide mode acts as a 1D source (with
+effective width weff, explanation is given earlier) for secondary spin waves
+propagating into the unpatterned ﬁlm area and forming beams due to their
+anisotropic propagation. The conﬁnement of the mode across the wave-
+guide leads to a broad spectrum Ak of the respective wavevector compo-
+nent ky, which can be calculated to Ak(ky) ¼ cos(ky weff/2)/(π2/weff
+2  ky
+2)
+by spatial Fourier transformation of the mode proﬁle. This spectrum is
+considered using the following procedure. First, the angle θvg between
+the group velocity vector and the external ﬁeld direction is calculated from
+the isofrequency curve as a function of the wavevector component ky.
+Second, the wavevector spectrum Ak(ky) is projected onto the curve
+θvg(ky) by a numerical integration to determine the amount of excited spin
+waves propagating into the direction θvg. The result of this procedure is the
+spin-wave amplitude Ainitial
+SW ðθvgÞ, which reﬂects the angle distribution of
+the spin-wave ﬂow under consideration of the initial wavevector spectrum
+Ak. Maxima of Ainitial
+SW ðθvgÞ reveal a wave focusing into the respective direc-
+tions. Their occurrence can be explained by the fact that the anisotropy of
+the system leads to isofrequency curves with expanded regions where the
+group velocity direction θvg is (nearly) unchanged for a broad range of
+wavevectors ky. If the excited spectrum Ak has a signiﬁcant magnitude
+in these ranges of ky, an amplitude concentration occurs into the respec-
+tive directions θvg leading to the maxima of Ainitial
+SW ðθvgÞ. Hence, these max-
+ima indicate the beam creation.
+However, a second step is necessary to precisely determine the beam
+directions. The beam source described earlier has a certain extent which
+leads to the fact that the overall spin-wave amplitude at the observation
+point results from the superposition of spin waves which are generated at
+different positions within the source. If the observation point is close, the
+source appears under a large angular range and spin waves from consid-
+erably
+different
+directions
+superpose.
+In
+this
+case,
+the
+focusing
+pattern can be signiﬁcantly inﬂuenced. This effect is included in the further
+calculations by considering both the initial angle distribution of the spin-
+wave amplitudes Ainitial
+SW ðθvgÞ and the sinusoidal mode proﬁle in the transi-
+tion zone, which represents the source of the beams. Based on these
+quantities, the ﬁnal spin-wave amplitude Afinal
+SW at a given observation point
+is calculated by integrating the amplitudes of all spin waves which origi-
+nate at different points of the source and reach the observation point from
+www.advancedsciencenews.com
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (5 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+
+
+=== PDF PAGE 6 ===
+different directions. Finally, this amplitude is squared to obtain the overall
+spin-wave intensity Ifinal
+SW ðθvg, dÞ occurring at a distance d from the source
+and in the direction θvg in relation to the external magnetic ﬁeld.
+Spin-wave beams occur if the curve Ifinal
+SW ðθvg, dÞ exhibits pronounced
+peaks into certain directions θB. The angles θB of the theory curve shown
+in Figure 2b belong to the maxima of the calculated intensity distribution
+Ifinal
+SW ðθvgÞ when assuming a distance of d ¼ 10μm and using the
+parameters of the investigated system (material parameters of CoFeB,
+μ0Hext ¼ 75 mT, weff ¼ 1.3 μm, and f ∈[10.8, 15.4] GHz).
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research
+Foundation) - TRR 173 - 268565370, project B01 and A03. Financial support
+from the EU Horizon 2020 research and innovation program within
+the CHIRON project (contract no. 801055) is gratefully acknowledged.
+The sample fabrication was supported by imec’s Industrial Afﬁliation
+Program on Beyond-CMOS Logic. B.He. was supported by a fellowship
+of the Graduate School Materials Science in Mainz (MAINZ) through
+DFG funding of the Excellence Initiative (GSC-266).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Keywords
+Brillouin light scattering, frequency-division multiplexing, parallel data
+processing, spin-wave caustics, wave-based logics
+Received: December 8, 2019
+Revised: January 13, 2020
+Published online: February 14, 2020
+[1] A. Khitun, J. Appl. Phys. 2012, 111, 054307.
+[2] T. Fischer, M. Kewenig, D. A. Bozhko, A. A. Serga, I. I. Syvorotka,
+F. Ciubotaru, C. Adelmann, B. Hillebrands, A. V. Chumak, Appl.
+Phys. Lett. 2017, 110, 152401.
+[3] K.-S. Lee, S.-K. Kim, J. Appl. Phys. 2008, 104, 053909.
+[4] N. Sato, K. Sekiguchi, Y. Nozaki, Appl. Phys. Express 2013, 6, 063001.
+[5] R. L. Freeman, Fundamentals of Telecommunications. Wiley-IEEE
+Press, Hoboken, NJ 2005.
+[6] F. Heussner, M. Nabinger, T. Fischer, T. Brächer, A. A. Serga,
+B. Hillebrands, P. Pirro, Phys. Status Solidi RRL 2018, 12, 1800409.
+[7] Q. Wang, P. Pirro, R. Verba, A. Slavin, B. Hillebrands, A. V. Chumak,
+Sci. Adv. 2018, 4, e1701517.
+[8] A. V. Sadovnikov, V. A. Gubanov, S. E. Sheshukova, Y. P. Sharaevskii,
+S. A. Nikitov, Phys. Rev. Appl. 2018, 9, 051002.
+[9] V. E. Demidov, J. Jersch, S. O. Demokritov, K. Rott, P. Krzysteczko,
+G. Reiss, Phys. Rev. B 2009, 79, 054417.
+[10] A. V. Chumak, V. I. Vasyuchka, A. A. Serga, B. Hillebrands, Nat. Phys.
+2015, 11, 453.
+[11] B. Lenk, H. Ulrichs, F. Garbs, M. Münzenberg, Phys. Rep. 2011,
+507, 107.
+[12] V. V. Kruglyak, S. O. Demokritov, D. Grundler, J. Phys. D: Appl. Phys.
+2010, 43, 264001.
+[13] A. Khitun, M. Bao, K. L. Wang, J. Phys. D: Appl. Phys. 2010, 43, 264005.
+[14] G. Csaba, A. Papp, W. Porod, J. Appl. Phys. 2014, 115, 17C741.
+[15] D. Sander, S. O. Valenzuela, D. Makarov, C. H. Marrows,
+E. E. Fullerton, P. Fischer, J. McCord, P. Vavassori, S. Mangin,
+P. Pirro, B. Hillebrands, A. D. Kent, T. Jungwirth, O. Gutﬂeisch,
+C. G. Kim, A. Berger, J. Phys. D: Appl. Phys. 2017, 50, 363001.
+[16] C. Liu, J. Chen, T. Liu, F. Heimbach, H. Yu, Y. Xiao, J. Hu, M. Liu,
+H. Chang, T. Stueckler, S. Tu, Y. Zhang, Y. Zhang, P. Gao, Z. Liao,
+D. Yu, K. Xia, N. Lei, W. Zhao, M. Wu, Nat. Commun. 2018, 9, 738.
+[17] P. Graczyk, M. Zelent, M. Krawczyk, New J. Phys. 2018, 20, 053021.
+[18] M. Madami, S. Bonetti, G. Consolo, S. Tacchi, G. Carlotti,
+G. Gubbiotti, F. B. Mancoff, M. A. Yar, J. Åkerman, Nat.
+Nanotechnol. 2011, 6, 635.
+[19] S. J. Hämäläinen, M. Madami, H. Qin, G. Gubbiotti, S. van Dijken,
+Nat. Commun. 2018, 9, 4853.
+[20] V. Veerakumar, R. E. Camley, Phys. Rev. B 2006, 74, 214401.
+[21] J. J. Bible, R. E. Camley, Phys. Rev. B 2017, 95, 224412.
+[22] V. E. Demidov, S. O. Demokritov, D. Birt, B. O’Gorman, M. Tsoi, X. Li,
+Phys. Rev. B 2009, 80, 014429.
+[23] F. Heussner, A. A. Serga, T. Brächer, B. Hillebrands, P. Pirro, Appl.
+Phys. Lett. 2017, 111, 122401.
+[24] T. Schneider, A. A. Serga, A. V. Chumak, C. W. Sandweg, S. Trudel,
+S. Wolff, M. P. Kostylev, V. S. Tiberkevich, A. N. Slavin, B. Hillebrands,
+Phys. Rev. Lett. 2010, 104, 197203.
+[25] T. Sebastian, T. Brächer, P. Pirro, A. A. Serga, B. Hillebrands,
+T. Kubota, H. Naganuma, M. Oogane, Y. Ando, Phys. Rev. Lett.
+2013, 110, 067201.
+[26] R. Gieniusz, H. Ulrichs, V. D. Bessonov, U. Guzowska, A. I. Stognii,
+A. Maziewski, Appl. Phys. Lett. 2013, 102, 102409.
+[27] J.-V. Kim, R. L. Stamps, R. E. Camley, Phys. Rev. Lett. 2016, 117,
+197204.
+[28] G. Duerr, M. Madami, S. Neusser, S. Tacchi, G. Gubbiotti, G. Carlotti,
+D. Grundler, Appl. Phys. Lett. 2011, 99, 202502.
+[29] S. Tacchi, G. Duerr, J. W. Klos, M. Madami, S. Neusser, G. Gubbiotti,
+G. Carlotti, M. Krawczyk, D. Grundler, Phys. Rev. Lett. 2012, 109,
+137202.
+[30] K. Wagner, A. Kákay, K. Schultheiss, A. Henschke, T. Sebastian,
+H. Schultheiss, Nat. Nanotechnol. 2016, 11, 432.
+[31] The direction of the external magnetic ﬁeld does not necessarily have
+to be inverted since the spin-wave dispersion relation of the studied
+system shows symmetry under magnetic ﬁeld reversal.
+[32] T. Sebastian, K. Schultheiss, B. Obry, B. Hillebrands, H. Schultheiss,
+Front. Phys. 2015, 3, 35.
+[33] K. Vogt, F. Y. Fradin, J. E. Pearson, T. Sebastian, S. D. Bader,
+B. Hillebrands, A. Hoffmann, H. Schultheiss, Nat. Commun. 2014,
+5, 3727.
+[34] A.
+Vansteenkiste,
+J.
+Leliaert,
+M.
+Dvornik,
+M.
+Helsen,
+F. Garcia-Sanchez, B. Van Waeyenberge, AIP Adv. 2014, 4, 107133.
+[35] G. Talmelli, F. Ciubotaru, K. Garello, X. Sun, M. Heyns, I. P. Radu,
+C. Adelmann, T. Devolder, Phys. Rev. Appl. 2018, 10, 044060.
+[36] B. A. Kalinikos, A. N. Slavin, J. Phys. C: Solid State Phys. 1986, 19, 7013.
+[37] T. Brächer, O. Boulle, G. Gaudin, P. Pirro, Phys. Rev. B 2017, 95, 064429.
+www.advancedsciencenews.com
+www.pss-rapid.com
+Phys. Status Solidi RRL 2020, 14, 1900695
+1900695 (6 of 6)
+© 2020 The Authors. Published by WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim

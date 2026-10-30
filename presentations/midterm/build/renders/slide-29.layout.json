@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/hdknqo","index":28,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/5kfypcr2","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"当前结果与下一阶段问题","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/yx4feh8b","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/jydwn29w","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"理论 PDF 第 1–5 页　模拟 A、B、C 组","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/sn6xkrqd","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"29","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"tb/gbul4b6h","kind":"table","position":{"left":55,"top":144,"width":1170,"height":333},"text":"理论或模拟结果\t已建立的物理认识\t下一步需要回答\n两电子矩阵与 J = 2K\t交换作用连接不同翻转位置\t具体材料的有效交换参数\n色散曲面与群速度\t斜率控制运动，曲率影响展宽\t给定波包尺寸下的参数选择\n单点与 Gaussian 传播\t质心、宽度和干涉可分别度量\t完整二维波包的保形指标\n零二阶曲率点对照\t有限时间内形变受到抑制\t高阶残差与可用传播距离","rows":5,"cols":3},
+{"id":"sh/6lofih8n","kind":"textbox","position":{"left":60,"top":518,"width":280,"height":38},"text":"模型范围","style":{"fontSize":27,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/7mxgrmp8","kind":"textbox","position":{"left":293,"top":520,"width":925,"height":90},"text":"均匀晶格、单磁子、零外场、无耗散。当前结论对应记录的参数与时间窗口。","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

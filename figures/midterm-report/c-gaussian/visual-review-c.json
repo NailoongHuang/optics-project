@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "static_count": 14,
+  "static_contact": "contact-sheet-c.png",
+  "animation_contact": "animation-contact-c.png",
+  "animations": [
+    {
+      "file": "c15-animation-carrier.gif",
+      "frames_decoded": 61
+    },
+    {
+      "file": "c16-animation-directions.gif",
+      "frames_decoded": 61
+    },
+    {
+      "file": "c17-animation-width.gif",
+      "frames_decoded": 61
+    },
+    {
+      "file": "c18-animation-anisotropy.gif",
+      "frames_decoded": 61
+    }
+  ],
+  "full_resolution_inspected": [
+    "c06-centroid-velocity.png",
+    "c12-spectrum-phase.png",
+    "c14-extension-cubic-distortion.png"
+  ],
+  "repairs": [
+    "Corrected dimensionless phase energy notation to e=epsilon/Jx in C12.",
+    "Removed duplicate numerical annotation in C06.",
+    "Reserved a separate footer band to prevent close axis-label and footer spacing."
+  ],
+  "scientific_scope": "C13 and C14 are marked extension. Fidelity is complex-wavefunction overlap and includes relative-phase changes. Every animation uses fixed probability scaling and axis limits."
+}

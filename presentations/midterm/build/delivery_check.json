@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "final_sha256": "63a063b8f8a51b3ada4849975f8f1c2f14c877804a231654e6335a2f525b319e",
+  "slides": 35,
+  "charts": 8,
+  "embedded_gifs": [
+    {
+      "part": "ppt/media/image.gif",
+      "frames": 65
+    },
+    {
+      "part": "ppt/media/image2.gif",
+      "frames": 73
+    },
+    {
+      "part": "ppt/media/image3.gif",
+      "frames": 61
+    }
+  ],
+  "final_render_count": 35,
+  "max_roundtrip_pixel_mae": 0.0005034722222222222,
+  "powerpoint_application_playback_tested": false
+}

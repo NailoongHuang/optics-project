@@ -1,0 +1,12 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/n1bh0i","index":11,"layout":{"id":"ly/qtkrq5cf","name":"Blank"},"backgroundColor":"rgba(255,255,255,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/2toz2tcz","kind":"textbox","position":{"left":54,"top":29,"width":1170,"height":65},"text":"群速度由色散斜率决定","style":{"fontSize":40,"typeface":"Microsoft YaHei","color":"#203648","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/pwfyxovq","kind":"shape","position":{"left":54,"top":108,"width":1170,"height":1.4},"geometry":"rect","fillColor":"#D8E1E7","lineWidth":0},
+{"id":"sh/ov6h4ju5","kind":"textbox","position":{"left":55,"top":680,"width":1115,"height":24},"text":"模拟 A07　ω = ε / ℏ","style":{"fontSize":14,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/byhgzydw","kind":"textbox","position":{"left":1186,"top":678,"width":42,"height":24},"text":"12","style":{"fontSize":15,"typeface":"Microsoft YaHei","color":"#586C7B","alignment":"right"},"geometry":"rect","lineWidth":0},
+{"id":"im/n21kf2to","kind":"image","position":{"left":44,"top":125,"width":1192,"height":365},"fit":"contain","alt":"a07-slope-and-speed"},
+{"id":"sh/d0zy18vm","kind":"textbox","position":{"left":59,"top":500,"width":551,"height":34},"text":"群速度","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/czqh83u1","kind":"textbox","position":{"left":59,"top":543,"width":551,"height":140},"text":"v = (1/ℏ)∇ₖε。沿 x 方向，vₓ = (Jₓa/ℏ) sin qₓ。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/z2hg3ids","kind":"textbox","position":{"left":665,"top":500,"width":550,"height":34},"text":"方向与速度上限","style":{"fontSize":25,"typeface":"Microsoft YaHei","color":"#246B9A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/y18zadc7","kind":"textbox","position":{"left":665,"top":543,"width":550,"height":140},"text":"近原点，qₓ 的符号决定方向。\n最大 |vₓ| 对应 qₓ = ±π/2。","style":{"fontSize":22,"typeface":"Microsoft YaHei","color":"#203648","alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

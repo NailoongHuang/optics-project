@@ -1,0 +1,935 @@
+[PDF PAGE 1]
+arXiv:quant-ph/0312141v1  16 Dec 2003
+The Propagation of Quantum Information Through a Spin System
+Tobias J. Osborne∗and Noah Linden†
+Department of Mathematics, University of Bristol,
+University Walk, Bristol BS8 1TW, United Kingdom
+(Dated: 19th November 2003)
+It has been recently suggested that the dynamics of a quantum spin system may provide a natural
+mechanism for transporting quantum information. We show that one dimensional rings of qubits
+with ﬁxed (time-independent) interactions, constant around the ring, allow high ﬁdelity communi-
+cation of quantum states. We show that the problem of maximising the ﬁdelity of the quantum
+communication is related to a classical problem in fourier wave analysis. By making use of this
+observation we ﬁnd that if both communicating parties have access to limited numbers of qubits in
+the ring (a fraction that vanishes in the limit of large rings) it is possible to make the communication
+arbitrarily good.
+PACS numbers: 03.67.Hk, 05.50.+q, 32.80.Lg
+In quantum information science it is a crucial problem
+to develop techniques for communicating qubits. A key
+task is to develop protocols for taking a qubit’s state at
+one location to another while minimising the degradation
+of the quantum coherence.
+In this paper we consider whether it is possible to use
+a one dimensional arrangement of qubits – a ring – cou-
+pled by nearest-neighbour interactions, to communicate
+a qubit from one part of the ring to another with high-
+ﬁdelity.
+It is clear that this communication can be done, for
+example, if one can perform fast local unitary opera-
+tions on the individual qubits (by fast we mean that
+the local unitary operations are eﬀectively instantaneous
+compared with the time it takes the interaction between
+qubits to change the state appreciably). This is because
+any nearest-neighbour interaction can be used to perform
+a swap operation on pairs of qubits [1, 2, 3, 4]. Thus
+the communication can be performed by putting a given
+qubit into the state to be communicated and then mov-
+ing it along the chain of qubits by swapping the state
+along the line to the required position.
+In this paper, however, we have in mind the situation
+that we do not have access to the whole set of spins during
+the communication; rather the set of spins behaves more
+like a ﬁbre into which one can input a qubit state, and
+hope that the state appears at the other end of the ﬁbre.
+The question is whether it is possible for a set of spins
+with only its passive interaction to act as an eﬀective
+communication channel.
+We would also like the qubit ﬁbre to have the property
+that we could increase the length of the ﬁbre without
+needing to completely re-fabricate it; thus if we wanted
+to communicate twice as far we would like to be able
+to simply add two identical ﬁbres together and ﬁnd that
+the ﬁdelity and time of transmission depended in a simple
+way on the ﬁdelity and time of the individual ﬁbre.
+Some interesting work has already been done in this
+area concerning communication of qubits along a 1D
+Heisenberg spin chain [5] (and, more recently, in the 1D
+XY model, [6]).
+In [5] the aim was to put one qubit
+in a chain or ring into a given state and to transfer the
+state, as well as possible, along the chain (or ring) to
+the output qubit.
+The input and output qubits were
+placed at diametrically opposite places in the chain (or
+ring) and the interaction between neighbouring qubits
+was time-independent and constant around the length
+of the system.
+Interestingly if a ring has length four,
+there is a time after which the state of the output qubit
+is precisely the same as that of the input qubit. As the
+length of the system is increased, however, the maximum
+ﬁdelity achievable was found to go down with increasing
+separation. For example, chains of length approximately
+80 have ﬁdelity not much better that 2/3 (this is the ﬁ-
+delity of the best classical transmission of an unknown
+qubit); thus the approach would not be useful for trans-
+mission over long distances. A further notable feature
+of the protocol is that the time at which the maximum
+ﬁdelity is reached does not depend in any simple way on
+the length of the ring.
+This is because the maximum
+ﬁdelity arises when an expression of the form P
+j eiπαjt
+reaches its maximum (where t is the time, and the αj
+are rational constants which depend on the length of the
+ring). Thus in this framework there is no natural notion
+of the speed of transmission along the ﬁbre.
+Further progress was made in [7] where the authors
+show that a single qubit can be communicated perfectly
+in a hypercube geometry. The authors also show how to
+communicate a qubit perfectly in a linear chain with vari-
+able couplings given by a speciﬁc arithmetic sequence.
+Using this idea for communicating arbitrary distances,
+would however require re-fabricating the channel for each
+distance.
+A further interesting proposal for communicating
+quantum information using the ground state of a certain
+spin system has been recently developed in [8]. There it
+was found that perfect transmission is possible when the
+freedom to apply local measurements on all the spins is
+
+
+[PDF PAGE 2]
+2
+allowed.
+We can summarise our desiderata in this paper by
+saying that we wish to develop schemes for high ﬁdelity
+quantum communication with three essential criteria; (i)
+Minimum control requirements. We require that it is un-
+necessary to apply many fast control operations through-
+out the transmission; (ii) Robustness. We want the de-
+vice to be capable of tolerating small errors without di-
+minishing the quality of the communication too much;
+and (iii) Flexibility. We want to be able to change param-
+eters (such as the locations of the communicating parties)
+simply without requiring a new device be fabricated.
+Our proposal makes quantum spin chains behave as a
+medium through which quantum information propagates.
+Using the fact that dynamics in restricted subspaces for
+1D quantum spin chains can be described by classical
+fourier wave analysis we show that there are natural no-
+tions of group velocity and dispersion for quantum infor-
+mation. We propose a ﬁgure of merit for the information
+propagation, the qubit rate, and analyse this quantity for
+a family of ideal and realistic physical models: nearest-
+neighbour 1D spin chains. In addition, we argue that our
+protocols satisfy the requirements (i)-(iii) we outlined in
+the previous paragraph.
+We show how to increase the quality of quantum com-
+munication in a variety of realistic spin models by relax-
+ing the restriction that the two parties can only access a
+single qubit. We allow both parties the ability to access
+a limited number of extra sites, a fraction which tends
+to zero as the length of the chain increases. The con-
+nection between propagation of quantum information in
+spin rings and classical fourier wave analysis provides a
+way to visualise the propagation of quantum information
+as a pulse through a medium.
+We now turn to a precise description of the protocol
+we will study. We consider a ring of N spin-1/2 systems
+evolving according to a nearest-neighbour hamiltonian
+H. We identify the (N + 1)th site with the 1st site, i.e.
+AN+1 ≡A1. We imagine that two parties, Alice A and
+Bob B are located at sites 1 and N/2, respectively. (We
+assume, for simplicity, that the ring is composed of an
+even number of spins. Note, however, that our subse-
+quent results do not depend on this fact.) We suppose
+that Alice and Bob are able to access a total of Λ sites
+each, centred on the 1st and N/2th sites, respectively.
+Alice and Bob are allowed to perform any operation al-
+lowed by the rules of quantum mechanics on their sites.
+Finally, we assume that the completely polarised state
+|00 · · · 0⟩is an eigenstate of the hamiltonian H, and that
+before the protocol begins the system is prepared in this
+state.
+Alice wants to communicate a (possibly unknown)
+qubit state |ψ⟩to Bob. Given a speciﬁcation of H (as-
+sumed to be known to both Alice and Bob) Alice per-
+forms some encoding operation UA on her Λ qubits. The
+system is now in the state |Ψ(0)⟩= UA|00 · · ·0⟩. As the
+ring is always evolving according to H this state imme-
+diately begins to evolve: |Ψ(t)⟩= e−iHt|Ψ(0)⟩. Bob now
+waits a certain period of time T which depends only on
+H, Λ and N, and when this duration elapses he performs
+a decoding operation UB on his addressable qubits in or-
+der to decode or refocus the communicated state into one
+of the qubits in the ring. (Additionally, Bob could ap-
+ply a swap operation to move the decoded state into a
+static register qubit. We prefer to ignore such register
+qubits because we imagine that decoding unitary oper-
+ations could also be performed as intermediate steps in
+a kind of quantum repeater.) The protocol is deemed to
+succeed when the average ﬁdelity
+F(H, N, Λ, T, UA, UB) ≜1
+4π
+Z
+dΩ⟨ψ|ρ|ψ⟩,
+(1)
+where |ψ⟩is the input state, which we average over the
+Bloch sphere, and ρ is the decoded output state, is above
+some prespeciﬁed threshold value τ.
+Ultimately we are interested in how well a spin ring
+performs as a conduit for quantum information. In this
+more general scenario we allow Alice and Bob the free-
+dom to apply a number of encoding/decoding operations
+in succession. The objective is to maximise the number
+of qubits successfully communicated (i.e. when F ≥τ)
+per unit time. Write the maximum number of qubits that
+can successfully communicated (where the maximum is
+taken over the encoding/decoding operations) in a du-
+ration T as Mτ(T ).
+We deﬁne the long-time average
+Qτ(H) ≜limT →∞1
+T Mτ(T ) to be the qubit rate for H.
+Obviously the evaluation of Qτ(H) is extremely diﬃ-
+cult, even for the simplest systems. We only obtain lower
+bounds for this quantity for a class of rotationally invari-
+ant nearest-neighbour hamiltonians.
+There is a simple case where we can evaluate Qτ(H)
+exactly, namely when H is a hamiltonian corresponding
+to the translation operator H = −i log(T ), where T is
+deﬁned by the following action on computational basis
+vectors, T (|a1, a2, . . . , aN⟩) ≜|a2, a3, . . . , aN, a1⟩. When
+H is of this form the qubit rate takes the maximum value
+Qτ(H) = 1 for all τ. (We have adopted rescaled time
+units; we will discuss how to calculate the constant of
+rescaling later.) In order to see this ﬁrst note that when
+t = n is an integer the propagator U(n) = e−iHn = T n is
+a power of the translation operator. To achieve the qubit
+rate, Alice needs to encode the state of a qubit into one
+site of the ring at every integral t.
+As we’ll argue presently, every hamiltonian H corre-
+sponding to the translation operation is massively non-
+local and contains interaction terms between many sep-
+arated subsystems. For this reason it is unlikely that a
+system will be fabricated which naturally evolves accord-
+ing to H.
+Consider now the translation operator T . It is easy to
+see that the action of T on computational basis states
+breaks up into blocks, for example, the states |00 · · ·0⟩
+
+
+[PDF PAGE 3]
+3
+and |11 · · · 1⟩form blocks all by themselves, and the
+states |j⟩, j = 1, . . . , N, where |j⟩denotes the state of all
+|0⟩’s with a |1⟩in the jth site, form a block (we’ll often
+refer to these states as one-particle states). The remain-
+ing basis states each segregate into blocks in a similar
+fashion. Consider a block of states of size M. Choose a
+state from this block and call it |α1⟩. Every state |αk⟩
+within the block can be written as |αk⟩= T k−1|α0⟩. Us-
+ing these M states one can construct M eigenstates of
+T : |βk⟩= 1/
+√
+M PM
+j=1 ν(j−1)k|αj⟩, where ν = e
+2π
+M i is
+the Mth root of unity. We note that each set of eigen-
+states so constructed is a quantum fourier transform of
+the set {|αj⟩| j = 1, . . . , M}. Performing this procedure
+for each block gives rise to the complete set of eigenstates
+for T .
+We study the qubit rate for the class of rotationally
+invariant nearest-neighbour spin-1/2 models. Because of
+the rotational invariance [H, T ] = 0 and we may simul-
+taneously diagonalise both H and T .
+We restrict our
+attention further to the class of 1D spin rings which ﬁx
+the following special eigenstates of T , which we call the
+twisted W-states, |W(k)⟩≜
+1
+√
+N
+PN
+j=1 µ(j−1)k|j⟩, where
+µ is the Nth root of unity µ = e
+2π
+N i. All the protocols we
+describe in this paper take place in the subspace formed
+by the twisted W-states.
+The spin hamiltonian H ﬁxes the states |W(k)⟩with
+eigenvalues ω(k) (and also, via a rescaling of energy,
+H ﬁxes |00 · · ·0⟩with eigenvalue 0). Suppose we start
+the system in the arbitrary state |Ψ(0)⟩= α|00 · · · 0⟩+
+β PN
+j=1 cj|j⟩, where |α|2 + |β|2 = 1 and PN
+j=1 |cj|2 = 1.
+The subsequent time evolution of this state can be writ-
+ten
+|Ψ(t)⟩= α|00 · · · 0⟩+ β
+N
+X
+k=1
+˜cke−iω(k)t|W(k)⟩,
+(2)
+where ˜ck =
+1
+√
+N
+PN
+j=1 µ−(j−1)kcj. The coeﬃcient cj(t) of
+the |j⟩term can be found as
+cj(t) =
+1
+√
+N
+N
+X
+k=1
+˜cke−iω(k)t+2πi(j−1)k/N .
+Because the dynamics only take place in the zero- and
+one-particle subspace we can establish the following use-
+ful result. Suppose α = 0. If we bipartition the spin sys-
+tem into two subsystems A and A we can always write
+the system’s state |Ψ(t)⟩= PN
+j=1 ej(t)|j⟩in the following
+way,
+|Ψ(t)⟩=
+q
+1 −CA(t)|φ⟩A|0⟩A +
+q
+CA(t)|0⟩A|φ′⟩A,
+(3)
+where
+CA(t) =
+X
+j∈A
+|ej(t)|2,
+|φ⟩=
+1
+p
+1 −CA(t)
+X
+j∈A
+ej(t)|j⟩,
+and
+|φ′⟩=
+1
+p
+CA(t)
+X
+j∈A
+ej(t)|j⟩.
+Note that Eq. (3) is a two-term Schmidt decomposition
+of |Ψ(t)⟩because A⟨φ|0⟩A = A⟨φ′|0⟩A = 0.
+When Alice wants to send the state |ψ⟩= α|0⟩+ β|1⟩
+she will encode this state as α|00 · · · 0⟩+β PN
+j=1 cj(0)|j⟩,
+where she is free to choose nonzero cj(0) as long as the
+index j lies within her subset of addressable spins. Af-
+ter time T has elapsed then this state can be written,
+following the discussion in the previous paragraph, as
+|Ψ(T )⟩= β
+p
+1 −CB(T )|η⟩B|0⟩B+
+|0⟩B(α|0⟩B + β
+p
+CB(T )|η′⟩B),
+(4)
+where now the bipartition is given by BB, where B is
+Bob’s addressable spins and B now refers to all the other
+spins and
+CB(T ) =
+X
+j∈B
+|ej(t)|2.
+Bob now applies a decoding unitary UB to his part B of
+the ring. The unitary is (partially) deﬁned by UB|0⟩B =
+|0B⟩and UB|η′⟩B = |N/2⟩.
+(There is a great deal of
+arbitrariness in how Bob decodes his state. We choose to
+concentrate the state into one qubit in order to facilitate
+the evaluation of the average ﬁdelity of the channel.)
+After decoding, the state ρ of the qubit N/2 has density
+operator
+ρ =
+
+|α|2 + |β|2(1 −CB(T ))
+p
+CB(T )αβ∗
+p
+CB(T )α∗β
+|β|2CB(T )
+
+(5)
+with respect to the basis {|0⟩N/2, |1⟩N/2} of qubit N/2.
+This state may be written ρ
+=
+ET (|ψ⟩N/2⟨ψ|)
+=
+M0|ψ⟩N/2⟨ψ|M †
+0 + M1|ψ⟩N/2⟨ψ|M †
+1, where |ψ⟩N/2
+=
+α|0⟩N/2 + β|1⟩N/2 and M0 and M1 are the Kraus op-
+erators of an amplitude damping channel E,
+M0 =
+1
+0
+0
+p
+CB(T )
+
+and
+M1 =
+
+0
+p
+1 −CB(T )
+0
+0
+
+,
+with respect to the basis {|0⟩N/2, |1⟩N/2} (cf. [5]).
+The ﬁdelity ⟨ψ|UBρU †
+B|ψ⟩of Bob’s state with the input
+state is given by
+|α|4 + (1 + 2
+p
+CB(T ) −CB(T ))|α|2|β|2 + CB(T )|β|4. (6)
+
+
+[PDF PAGE 4]
+4
+The average ﬁdelity Eq. (1) can be evaluated as
+1
+2 +
+1
+3
+p
+CB(T ) + 1
+6CB(T ). This function depends monoton-
+ically on the quantity CB(T ).
+It is clear from the discussion in the preceding para-
+graphs that the quantity CB(T ) plays a central role in
+determining the eﬀectiveness of the communication pro-
+tocol.
+We now study this quantity further, and show
+how to reduce the problem of its maximisation to a well-
+known type of problem in Fourier wave analysis.
+Motivated by the importance of CB(T ) we introduce a
+method for visualising quantum states which lie within
+the one-particle subspace.
+Given such a state |ν⟩=
+α|00 · · · 0⟩+ β PN
+j=1 cj|j⟩, we visualise it by plotting the
+quantities νj ≜|cj|2 against site number.
+Clearly the
+area under the resulting (bar) graph equals 1. Obviously
+this pictorial representation does not represent any of
+the phase information contained in the system’s state.
+However, this phase information plays no part in the
+quantity we are interested in, CB(T ), which is simply the
+area under the graph of the state |ν(T )⟩between sites
+N/2 −Λ/2, . . ., N/2 + Λ/2. The graph of the system’s
+state |ν(T )⟩is given by
+νj(T ) = 1
+N
+
+N
+X
+k=1
+˜cke−iω(k)t+2πi(j−1)k/N
+
+2
+.
+It is worth emphasising that the method we have
+just introduced for visualising quantum states of the
+ring depends crucially on the properties of our spin sys-
+tems.
+The dynamics for the ring occurs solely within
+the zero- and one-particle subspaces spanned by |0⟩and
+{|j⟩| j = 1, . . . , N}. This subspace scales linearly with
+the ring. It is precisely this feature which facilitates our
+construction for the graph of the state, which is essen-
+tially a method for representing, visually, a linear number
+(in N) of degrees of freedom.
+The problem of maximising the area under the graph
+νj(T ) between certain sites is a well-known a classical
+problem in fourier wave analysis; our problem has re-
+duced to studying the linear dynamics of superpositions
+of complex scalar waves. The quantity ω(k) is the dis-
+persion relation and the position variable is given by
+xj = (j −1)/N. We wish to work out an assignment
+cj(0) of initial amplitudes in Alice’s subsystem, or a
+wavepacket of quantum information, so that subsequent
+evolution preserves as much of the width and integrity of
+the wavepacket as possible.
+Given a speciﬁcation of the dispersion relation ω(k)
+we have all the information we require to embark on the
+design of wavepackets which preserve their shape. These
+numbers are, of course, the eigenvalues of H for the eigen-
+states |W(k)⟩.
+To illustrate our ideas in the following we use the
+Heisenberg model on N sites
+H = χN
+2 I −χ
+2
+N
+X
+j=1
+σj · σj+1,
+where we have introduced an arbitrary constant χ. We
+will explain which value of χ we choose in the follow-
+ing. The dispersion relation for the Heisenberg model is
+ω(k) = 2χ
+1 −cos( 2πk
+N )
+
+. (We have rescaled the zero of
+energy for the Heisenberg model so that |0⟩has eigen-
+value zero.)
+Currently our problem is not identical to the well-
+studied problems in wave motion (see, for example, [9]).
+The diﬀerence is that we are dealing with wave mo-
+tion in a discrete system whereas most of the theory of
+wave motion (at least in regards to the design of optimal
+wavepackets) is for continuous systems.
+In the subse-
+quent discussion we will make use of the results from
+the continuous theory, but it must be understood that
+these results only hold asymptotically in the limit where
+N →∞and the intersite spacing δ →0. In particular,
+we emphasise that the appearance of derivatives must
+be understood as a formal device and really only make
+sense in this limit. We’ll justify the applicability of these
+asymptotic results presently by comparing them with nu-
+merical results.
+In classical fourier wave theory the concept of group
+velocity plays a crucial role in the design of wavepack-
+ets which preserve their shape as time evolves [9]. The
+group velocity v(k0) for a wavenumber k0 is deﬁned to be
+v(k0) =
+1
+2π
+dω(k)
+dk
+
+k=k0. (For the models we consider we
+are given a speciﬁcation of ω(k) which makes sense for
+fractional k, so that it is possible to compute this deriva-
+tive.)
+The signiﬁcance of this quantity is that an ini-
+tial wavepacket PN
+k=1 wke2πixjk consisting of fundamen-
+tal waves with large amplitude focussed on wavenumber
+k0 will translate with velocity v(k0) as time evolves.
+Unless the system is dispersionless (ω(k) = ck) the
+initial wavepacket will spread as time evolves [9]. The
+rate-of-spread of the initial wavepacket is proportional to
+the second order term
+1
+2π
+d2ω(k)
+dk2
+
+k=k0. If this derivative is
+zero (as will be the case in one of the models we consider)
+there is no appreciable spread of the wavepacket to sec-
+ond order in ω(k). There may, however, be contributions
+from third and higher order terms, which cause an initial
+wavepacket to spread.
+The generic strategy [10] for designing wavepackets
+which change shape as little as possible is to use a
+gaussian-modulated wave of variance ∆centred at po-
+sition xk and wavenumber k0 corresponding to the max-
+imum available group velocity v(k0).
+In our case the
+“wave” is a twisted W-state, so this “wavepacket” is writ-
+
+
+[PDF PAGE 5]
+5
+0
+50
+100
+0
+50
+100
+0
+0.5
+1
+Site
+Time
+FIG. 1: Propagation of the state |N/2⟩in a 100-site Heisen-
+berg spin ring.
+ten |Ψ(0)⟩= α|0⟩+ β|G(xk, k0, ∆)⟩, where
+|G(xk, k0, ∆)⟩= 1/
+√
+N
+N
+X
+j=1
+e−
+(xj −xk)2
+2∆2
++2πik0xj|j⟩
+and N is chosen to normalise the state. The graph for
+the initial state is given by
+Ψj(0) = 1
+N
+
+N
+X
+j=1
+e−
+(xj −xi)2
+2∆2
++2πik0xj
+
+2
+.
+This state has exactly the form of a gaussian-modulated
+complex scalar wave centred around wavenumber k0 and
+with (spatial) width L. (We deﬁne width L to be when
+more than some prespeciﬁed area, say 95%, lies within
+an interval L centred on the maximum of the gaussian.
+We note that L is some multiple of ∆. Throughout the
+remainder of this paper we choose L = 4∆.)
+It is known that an initial gaussian wavepacket, un-
+der time-evolution, remains, to good approximation, a
+gaussian of width L(t) satisfying [10]
+L(t)
+L(0) =
+"
+1 +
+ω′′(k0)t
+L2(0)
+2# 1
+2
+.
+(7)
+Because Alice is assumed able to address only NL(0)
+sites (recall we have rescaled the length of the ring to
+be 1 by deﬁning the position variable xj = (j −1)/N)
+we propose using the gaussian initial pulse introduced
+in the previous paragraph truncated (and renormalised)
+after NL(0) sites.
+We want to design a wavepacket that spreads by an
+amount that scales favourably with N. We demand that
+0
+50
+100
+0
+50
+100
+0
+0.1
+0.2
+Site
+Time
+FIG. 2: Propagation of a truncated gaussian-modulated W -
+state of width 10 and wavenumber N/4 in a 100-site Heisen-
+berg spin ring.
+0
+1000
+2000
+3000
+4000
+5000
+10
+15
+20
+25
+30
+35
+40
+45
+50
+Number of sites
+Width of final wavepacket
+FIG. 3: Dots: size of the ﬁnal wavepacket in the Heisen-
+berg spin ring for N = 50 to N = 5000. (Initial wavepacket
+is a gaussian modulated wave of variance N
+1
+3 truncated af-
+ter 2N
+1
+3 sites.) Final width F is deﬁned to be when more
+than 95% of the wavepacket lies between F sites. Solid line:
+graph of 2.8N
+1
+3 for comparison. The apparent jumps of inte-
+ger amounts greater than 1 in the numerical results is an arti-
+fact of the way the width of the ﬁnal wavepacket is calculated.
+The ﬁnal wavepacket has a sequence trailing oscillations. In
+order to get an area of more than some arbitrary amount (like
+0.95) it is sometimes necessary to include several more sites
+in a go.
+
+
+[PDF PAGE 6]
+6
+a wavepacket of width L spreads by only a constant fac-
+tor to a ﬁnal width of L′ ≈κL by the time it reaches
+Bob. To simplify the discussion we note that for typical
+wavenumbers close to k0 we have ω′′(k0) = λ/N 2 (this is
+true of all the models we consider). We analyse the scal-
+ing, with t ≈N (the time it takes for a wavepacket to
+traverse the ring), of the spread S(N) of the wavepacket:
+S(N) = L(N)/L(0) =
+
+1 +
+
+λ
+NL2(0)
+2 1
+2
+. If we want the
+ﬁnal width of the wavepacket to be independent of the
+length of the ring we need to choose L(0) = 1/
+√
+N. This
+means that the initial packet needs to be supported on
+a subsystem containing on the order of
+√
+N sites. In the
+“mesoscopic” limit of large but ﬁnite N the fraction of
+the ring that Alice and Bob need to access can be made
+arbitrarily small (it scales as N −1
+2 ).
+We now analyse these results for the Heisenberg model.
+We want a signal pulse to travel as fast as possible. Look-
+ing at the group velocity ω′(k) =
+2χ
+N sin( 2π
+N k) we ﬁnd
+that this occurs for k = N/4, 3N/4, ν(k) = ± 2χ
+N .
+At
+this point we choose χ = 1/4. We do this so that the
+ﬁnal wavepacket will arrive at Bob’s portion of the ring
+at time t = N (recall that Alice and Bob are separated
+by a distance N/2). So we choose the initial wavepacket
+to be a truncated gaussian-modulated superposition of
+width
+√
+N of twisted W-states centred around k = N/4.
+The case of wavepackets centred on k0 = N/4 is rather
+special — note that the dispersion ω′′(k0) for this model
+is identically 0.
+Na¨ıvely applying formula Eq. (7) for
+the spread of the wavepacket suggests that an initial
+wavepacket of any width will not spread at all.
+This
+is an artifact of our approximation; we assumed that the
+dispersion relation could be expanded and truncated at
+second order with little error. In the special situation
+where ω′′(k0) vanishes we need to go to third order. For
+this case a gaussian pulse does not remain a gaussian.
+(Instead, it becomes an Airy function [11].) The formula
+Eq. (7) is invalid in this case and we need to use the
+third-order broadening factor [11]
+L(t)
+L(0) =
+"
+1 + 1
+2
+ ω′′′(k0)t
+√
+2L3(0)
+2# 1
+2
+.
+We solve this equation for t = N to ﬁnd the width L(0)
+of initial wavepacket which has constant spread with N.
+We ﬁnd that L(0) need only scale as N −2
+3 .
+Such a
+wavepacket consists of NL(0) = N
+1
+3 sites.
+We illustrate these results for the Heisenberg ring of
+N = 100 sites in Fig. (1) and Fig. (2). By way of con-
+trast, in Fig. (1) we ﬁrst show the dynamics of the state
+with a single |1⟩at site N/2 (this type of localised initial
+state is what is used in the protocols of [5], [6] and [7]).
+Because the state |N/2⟩is an equal superposition of all
+the twisted W-states all the waves are involved in the dy-
+namics and hence the initial packet disperses rapidly. In
+Fig. (2) we see that the shaped pulse retains its shape for
+much longer durations. This is because fewer waves are
+involved in the superposition. We note that, generically,
+for wavepackets centred around wavenumbers not equal
+to N/4 a square-root scaling for the ﬁnal wavepacket is
+observed.
+Before we conclude our discussion of the numerical re-
+sults we refer to Fig. (3). In this graph we have plotted,
+for the Heisenberg ring, the width of the ﬁnal wavepacket
+(we deﬁne the width F to be when more than 95% of
+the area lies within F/2 sites either side of site N/2) for
+rings of sizes 50 through 5000 sites. We have also plotted
+2.8N
+1
+3 for comparison. Because the Heisenberg model
+is diﬀusionless to second order in the dispersion relation
+ω′′(k0) = 0, we expect that the numerically recorded
+spread ought to be smaller than the spread predicted for
+models with second-order dispersion. We can see, from
+Fig. (3) that this is indeed the case. For N = 5000 the
+proportion of the ring that Alice and Bob must be able
+to access is less than 1% each.
+To conclude we construct all the rotationally invari-
+ant nearest-neighbour spin hamiltonians which ﬁx the
+|0⟩and twisted W-states. An easy way to construct all
+such hamiltonians is to ﬁrst assume that the hamiltonian
+preserves Sz ≜PN
+j=1 σz
+j . Any such hamiltonian may be
+written as
+H = c0I+
+N
+X
+j=1
+h
+c1σ+
+j σ−
+j +c2σ−
+j σ+
+j +d1(σ+
+j σ−
+j+1+σ−
+j σ+
+j+1)
++ d2(σ+
+j σ−
+j+1 + σ−
+j σ+
+j+1)2 + e1i(σ+
+j σ−
+j+1 −σ−
+j σ+
+j+1)
++ f1i(σ+
+j σ−
+j+1 −σ−
+j σ+
+j+1)(σ+
+j σ−
+j+1 + σ−
+j σ+
+j+1)
+i
+,
+(8)
+where σ±
+j
+≜
+1
+2(σx
+j ± iσy
+j ).
+It may be veriﬁed, with a
+little algebra, that this is the most general rotationally
+invariant nearest-neighbour hamiltonian which nontriv-
+ially ﬁxes the twisted W-states. (There is one additional
+term which ﬁxes the twisted W-states, σ−
+j σ−
+j+1, however,
+it trivially annihilates these states and thus contributes
+nothing to the dispersion relation. Note also that the f1
+term annihilates the twisted W-states.)
+The hamiltonian Eq. (8) gives rise to the following dis-
+persion relation
+ω(k) = A + B cos
+2π
+N k
+
++ B′ sin
+2π
+N k
+
+,
+(9)
+where A = c0 + c1(N −1) + c2 + 2d2, B = 2d1 and
+B′ = −2e1. We note that both the Heisenberg model in
+a magnetic ﬁeld and the XY model in a magnetic ﬁeld
+can both be expressed as in Eq. (8) for speciﬁc choices
+of cj, dj, e1 and f1. The dispersion relation Eq. (9) is no
+more general than that for the Heisenberg model so all of
+our discussion concerning the design of optimal signals for
+the Heisenberg model carries through straightforwardly
+for the general class of models Eq. (8).
+
+
+[PDF PAGE 7]
+7
+We see from the dispersion relation Eq. (9) that
+the most general rotationally invariant nearest-neighbour
+hamiltonian ﬁxing the twisted W-states is dispersive.
+This shows us that, in order for a hamiltonian H to ex-
+ponentiate to the translation operator T = eiH, it is nec-
+essary for H to contain interaction terms between sepa-
+rated parties. This veriﬁes our earlier claim that such a
+hamiltonian must be nonlocal.
+Finally, we note that our results imply that the qubit
+rate for a rotationally invariant nearest-neighbour Hamil-
+tonian on N sites is bounded below: Q0.95(H) ≥1/N.
+We have introduced a method for improving the quan-
+tum communication characteristics of 1D quantum spin
+rings. According to the connection between the dynam-
+ics of quantum information in these rings with fourier
+wave analysis we have been able to import many of the
+results concerning the design of signals which disperse
+minimally. Clearly our results illustrate that our commu-
+nication protocol has minimal control requirements and
+is ﬂexible. We have not tackled the problem of determin-
+ing the resistance of our protocol to error.
+Many future problems suggest themselves at this stage.
+Perhaps the most interesting is the extension of the re-
+sults to linear chains. In this case our results cannot be
+applied because the twisted W-states are not eigenstates
+for nearest-neighbour hamiltonians on a chain. However,
+a generalisation of our method of pulse shaping ought to
+be possible. Another important future problem concerns
+the resistance of the protocol to errors. We believe that
+the protocol is robust, but a full analysis needs to be
+done. Finally, we note that all our protocols take place
+in the single-particle subspace.
+The dimension of this
+subspace increases linearly with increasing numbers of
+qubits; however the hilbert space of the system increases
+exponentially with N. Perhaps it is possible to increase
+the qubit rate substantially by taking advantage of larger
+subspaces which include two and higher particles. Fur-
+ther investigations along these lines are being conducted.
+We are grateful to the EU for support for this research
+under the IST project RESQ.
+∗T.J.Osborne@bristol.ac.uk
+† N.Linden@bristol.ac.uk
+[1] W. D¨ur, G. Vidal, J. I. Cirac, N. Linden, and S. Popescu,
+Phys. Rev. Lett. 87, 137901 (2001), quant-ph/0006034.
+[2] C. H. Bennett, J. I. Cirac, M. S. Leifer, D. W. Leung,
+N. Linden, S. Popescu, and G. Vidal, Phys. Rev. A 66,
+012305, 16 (2002), quant-ph/0107035.
+[3] J. L. Dodd, M. A. Nielsen, M. J. Bremner, and R. T.
+Thew, Phys. Rev. A 65, 040301, 4 (2002), quant-
+ph/0106064.
+[4] N. Khaneja and S. J. Glaser, Phys. Rev. A 66, 032301
+(2002), quant-ph/0202013.
+[5] S. Bose, Phys. Rev. Lett. 91, 207901 (2003), quant-
+ph/0212041.
+[6] V. Subrahmanyam (2003), quant-ph/0307135.
+[7] M. Christandl, N. Datta, A. Ekert, and A. J. Landahl
+(2003), quant-ph/0309131.
+[8] F. Verstraete, M. A. Mart´ın-Delgado, and J. I. Cirac
+(2003), quant-ph/0311087.
+[9] G. B. Whitham, Linear and nonlinear waves, Pure and
+Applied Mathematics (John Wiley & Sons Inc., New
+York, 1999).
+[10] J. D. Jackson, Classical electrodynamics (John Wiley &
+Sons Inc., New York, 1999), 3rd ed.
+[11] G. P. Agrawal, Fiber-optic communication systems (John
+Wiley & Sons Inc., New York, 2002), 3rd ed.
