@@ -27,9 +27,21 @@ $$s^y(r)=\exp(ik\cdot r)\sum_Gs^y_G\exp(iG\cdot r)$$
 $$s^z(r)=\exp(ik\cdot r)\sum_Gs^z_G\exp(iG\cdot r)$$
 and then we have:
 \begin{align}
-    &i\omega s_G^y=s_G^z[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]\\
-    &i\omega s_G^z=-s_G^y[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]
+    &-i\omega s_G^y=s_G^z[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]\\
+    &-i\omega s_G^z=-s_G^y[h-2S(J_x\cos(k_xa)+J_y\cos(k_ya))]
 \end{align}
 \par
-Set $\tilde{s}_G=s_G^y \pm is_G^z$, then we have $\omega=\pm [2S(J_x\cos(k_xa)+J_y\cos(k_ya))-h]$.
+Set $\tilde{s}_G=s_G^y \pm is_G^z$, then we have $\omega=\mp [2S(J_x\cos(k_xa)+J_y\cos(k_ya))-h]$. We choose $k_x=\frac{\pi}{2},k_y=\frac{\pi}{2}$ and use the gauge $\tilde{s}_G=s_G^y \pm is_G^z$, the dispersion relation becomes:
+\begin{equation}
+    \omega = \left(h-\pi SJ_x-\pi SJ_y\right)+2SJ_xk_x+2SJ_yk_y+\omega_{nonlin}
+\end{equation}
+\begin{equation}
+    \omega_{nonlin}=-\frac{1}{3}S[J_x(k_x-\frac{\pi}{2})^3+J_y(k_y-\frac{\pi}{2})^3]
+\end{equation}
+So for the wave packet surrounding $(\frac{\pi}{2},\frac{\pi}{2})$, the solution of EOM can be written as:
+\begin{align*}
+    \tilde{s}(x,y,t)&=\int\int dk_xdk_y\psi(k_x,k_y)e^{ik_xx+ik_yy}e^{-i2SJ_xk_xt-i2SJ_yk_yt-i\omega_{nonlin}t}\\
+    &=\int\int dk_xdk_y\psi(k_x,k_y)e^{ik_x(x-2SJ_xt)+ik_y(y-2SJ_yt)}e^{-i\omega_{nonlin}t}
+\end{align*} 
+Therefore we can introduce a compensation phase shift to mitigate the dispersion caused by the nonlinear term: $e^{i\omega_{nonlin}T}$, where $T$ is a positive constant.
 \end{document}
