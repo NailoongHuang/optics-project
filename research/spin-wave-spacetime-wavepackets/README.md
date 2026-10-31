@@ -21,3 +21,16 @@
 3. 需要继续执行时，先确定具体问题、对照与验证证据，再更新本页。研究规划本身不启动计算。
 
 [自旋波类比引力灵感](../ideas/2026-10-25-spin-wave-analogue-gravity.md)另行保留为候选问题。早期四项探索测试见[原测试记录](../wavepacket-prospects/README.md)。
+
+
+## Contributed precompensation material (2026-10-31)
+
+[PR #1](https://github.com/NailoongHuang/optics-project/pull/1) supplies a
+separate classical Gaussian-packet simulation, authored output figures and
+a cubic-phase precompensation derivation. See the
+[integration and model notes](../../code/README.md#contributed-classical-precompensation-example-2026-10-31)
+and [compensation comparison](../../code/classical_simulation/compensation/20261028_233550/compensation_M2.png).
+This is contributed exploratory material for refocusing near a selected time,
+not established evidence of continuous shape preservation. Integration used
+static source review; no new research simulation was run. Its field convention
+and amplitude assumptions remain to be reconciled with the current model.

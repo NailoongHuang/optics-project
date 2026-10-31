@@ -112,7 +112,7 @@ matplotlib.use("Agg")                       # 无窗口后端，直接出图/出
 import matplotlib.pyplot as plt
 from PIL import Image
 
-import aux                      # 倒空间构造波包（同目录）
+import packet_utils as aux                      # 倒空间构造波包（同目录）
 
 # 中文字体（Windows 自带）
 plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]

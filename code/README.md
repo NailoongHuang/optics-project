@@ -108,3 +108,26 @@ Hamiltonian require a separate microscopic derivation. A field-induced
 difference between Jx and Jy is not established by the phenomenological
 Hamiltonian. These limitations do not prevent using specified positive Jx,Jy
 as effective model parameters.
+
+
+## Contributed classical precompensation example (2026-10-31)
+
+[PR #1](https://github.com/NailoongHuang/optics-project/pull/1) by xianjun-jiang
+adds [classical_simulation/main.py](classical_simulation/main.py), its packet
+utilities and authored output images, and extends the historical
+[toy-model EOM note](../Note/toy_model_EOM/toy_model_EOM.tex). The reviewed
+elementary solver and its regression contract above remain the current model.
+
+The contribution compares ordinary Gaussian propagation with cubic spectral
+phase precompensation intended to refocus near a chosen time T. Its width
+second moment alone does not establish continuous shape preservation. Static
+integration review identified the older equation without the onsite exchange
+term 2S(Jx+Jy), and defaults S=1 with peak transverse amplitude 0.5. These
+model conventions still need reconciliation with the current solver. The
+submitted simulations have not been independently rerun during integration.
+
+Windows compatibility relocation: `classical_simulation/aux.py` ->
+[classical_simulation/packet_utils.py](classical_simulation/packet_utils.py).
+The helper bytes are unchanged; SHA-256: `2094c3328385ee7b14e3f44ed2a657488118511f42dafb2ddbdc61df87b86b89`.
+Only its import in main.py was adjusted (`import packet_utils as aux`).
+The original filename and all contributed files remain in the PR history.
